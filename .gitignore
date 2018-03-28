@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.ear
 *.zip
@@ -20,3 +20,21 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Others
+/bin/
+XLingPaperPDFTemp
+*.xml~
+/.settings/
+/target/
+build/build
+build/deploy
+build/dist
+build/doc
+build/externalLibs
+build/project
+resources/images
+*.orig
+*.bak
+*.xso
+*.properties~
