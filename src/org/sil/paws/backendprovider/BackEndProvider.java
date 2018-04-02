@@ -20,13 +20,13 @@ public abstract class BackEndProvider {
      * 
      * @param file
      */
-    public abstract void loadAnswersDataFromFile(File file);
+    public abstract void loadLanguageDataFromFile(File file);
 
     /**
      * Saves the current tree data to the backend storage.
      * 
      * @param file
      */
-    public abstract void saveAnswersDataToFile(File file);
+    public abstract void saveLanguageDataToFile(File file);
 
 }

@@ -8,6 +8,9 @@ package org.sil.paws.view;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.MessageFormat;
 import java.util.Locale;
 import java.util.Map;
@@ -15,8 +18,17 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.TreeMap;
 
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+
+import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Worker.State;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -32,15 +44,21 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.Clipboard;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import netscape.javascript.JSObject;
 
+import org.controlsfx.dialog.FontSelectorDialogWithColor;
+import org.sil.paws.model.FontInfo;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.Constants;
-import org.sil.paws.model.PAWSAnswers;
+import org.sil.paws.model.Language;
+import org.sil.paws.service.WebPageInteractor;
 import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.MainApp;
 import org.sil.utility.StringUtilities;
@@ -107,6 +125,10 @@ public class RootLayoutController implements Initializable {
 	private MenuItem menuItemEditPaste;
 	@FXML
 	private CheckMenuItem menuItemShowStatusBar;
+	@FXML
+	private MenuItem menuItemViewBack;
+	@FXML
+	private MenuItem menuItemViewForward;
 
 	@FXML
 	private WebView browser;
@@ -115,12 +137,15 @@ public class RootLayoutController implements Initializable {
 
 	protected Clipboard systemClipboard = Clipboard.getSystemClipboard();
 
-	private PAWSAnswers answers;
+	private Language language;
 	private Locale currentLocale;
 	ResourceBundle bundle;
 	String sDescription;
 	org.sil.paws.ApplicationPreferences applicationPreferences;
 	boolean fIsDirty;
+	private static final String kHTMsFolder = "/resources/configuration/HTMs/";
+	private String sProgramLocation;
+	private String sPAWSWorkingDirectory;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -130,15 +155,80 @@ public class RootLayoutController implements Initializable {
 
 		webEngine = browser.getEngine();
 		webEngine.setOnAlert(event -> showAlert(event.getData()));
+		RootLayoutController rlc = this;
+		webEngine.getLoadWorker().stateProperty().addListener(
+		        new ChangeListener<State>() {
+		            public void changed(ObservableValue ov, State oldState, State newState) {
+		                if (newState == State.SUCCEEDED) {
+		                    changeStatusOfBackForwardItems();
+		                    JSObject win = (JSObject) webEngine.executeScript("window");
+		                    win.setMember("external", new WebPageInteractor(language, browser, rlc));
+		                } else if (newState == State.FAILED) {
+		                	Throwable e = webEngine.getLoadWorker().getException();
+		                	if (e != null) {
+		                		System.out.println("Page load failed!");
+		                		e.printStackTrace();
+		                	}
+		                }
+		            }
+		        });
 
+		try {
+			sProgramLocation = "file:///" + new File(".").getCanonicalPath();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		sPAWSWorkingDirectory = getConfigurationDirectory();
+		
 		Platform.runLater(new Runnable() {
 			@Override
 			public void run() {
 				browser.requestFocus();
 			}
 		});
+
+	}
+	
+	public static String getAppDataDirectory() {
+		String os = System.getProperty("os.name");
+		if (os.toLowerCase().contains("windows")) {
+			return System.getenv("APPDATA");
+		} else {
+			return System.getProperty("user.home");
+		}
+	}
+	
+	public static String getConfigurationDirectory() {
+		String os = System.getProperty("os.name");
+		String appDir = getAppDataDirectory();
+		String configDir = "paws";
+		if (!os.toLowerCase().contains("windows")) {
+			configDir = ".paws"; 
+		}
+		System.out.println("config directory='" + appDir + File.separator + configDir + "'");
+		return appDir + File.separator + configDir;
 	}
 
+	private void changeStatusOfBackForwardItems() {
+		final WebHistory history = webEngine.getHistory();
+		if (canGoForward(history)) {
+			buttonToolbarForward.setDisable(false);
+			menuItemViewForward.setDisable(false);
+		} else {
+			buttonToolbarForward.setDisable(true);
+			menuItemViewForward.setDisable(true);
+		}
+		if (canGoBack(history)) {
+			buttonToolbarBack.setDisable(false);
+			menuItemViewBack.setDisable(false);
+		} else {
+			buttonToolbarBack.setDisable(true);
+			menuItemViewBack.setDisable(true);
+		} 
+	}
+	
 	protected void createToolbarButtons(ResourceBundle bundle) {
 		ControllerUtilities.createToolbarButtonWithImage("newAction.png", buttonToolbarFileNew,
 				tooltipToolbarFileNew, bundle.getString("tooltip.new"));
@@ -193,7 +283,7 @@ public class RootLayoutController implements Initializable {
 			askAboutSaving();
 		}
 		doFileOpen(false);
-		answers = mainApp.getAnswers();
+		language = mainApp.getAnswers();
 		browser.requestFocus();
 	}
 
@@ -201,7 +291,7 @@ public class RootLayoutController implements Initializable {
 		File file = ControllerUtilities.getFileToOpen(mainApp, pawsFilterDescription,
 				Constants.PAWS_DATA_FILE_EXTENSIONS);
 		if (file != null) {
-			mainApp.loadAnswers(file);
+			mainApp.loadLanguageData(file);
 			String sDirectoryPath = file.getParent();
 			applicationPreferences.setLastOpenedDirectoryPath(sDirectoryPath);
 		} else if (fCloseIfCanceled) {
@@ -216,7 +306,7 @@ public class RootLayoutController implements Initializable {
 	}
 
 	@FXML
-	private void handleSaveLanguage() {
+	public void handleSaveLanguage() {
 	}
 
 	@FXML
@@ -320,29 +410,45 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	private void handleBack() {
 		final WebHistory history = webEngine.getHistory();
-//		ObservableList<WebHistory.Entry> entryList = history.getEntries();
-//		int currentIndex = history.getCurrentIndex();
-		
-		Platform.runLater(new Runnable() {
-			public void run() {
-				history.go(-1);
-			}
-		});
+		if (canGoBack(history)) {
+			Platform.runLater(new Runnable() {
+				public void run() {
+					history.go(-1);
+				}
+			});
+		}
 	}
 
+	private boolean canGoBack(WebHistory history) {
+		ObservableList<WebHistory.Entry> entryList = history.getEntries();
+		int currentIndex = history.getCurrentIndex();
+		if (entryList.size() > 1 && currentIndex > 0) {
+			return true;
+		}
+		return false;
+	}
+	
 	@FXML
 	private void handleForward() {
 		final WebHistory history = webEngine.getHistory();
-//		ObservableList<WebHistory.Entry> entryList = history.getEntries();
-//		int currentIndex = history.getCurrentIndex();
-		
-		Platform.runLater(new Runnable() {
-			public void run() {
-				history.go(1);
-			}
-		});
+		if (canGoForward(history)) {
+			Platform.runLater(new Runnable() {
+				public void run() {
+					history.go(1);
+				}
+			});
+		}
 	}
 
+	private boolean canGoForward(WebHistory history) {
+		ObservableList<WebHistory.Entry> entryList = history.getEntries();
+		int currentIndex = history.getCurrentIndex();
+		if (entryList.size() > 1 && currentIndex < entryList.size() - 1) {
+			return true;
+		}
+		return false;
+	}
+	
 	@FXML
 	private void handleRefresh() {
 		webEngine.reload();
@@ -371,15 +477,57 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleExit() {
+		if (fIsDirty) {
+			askAboutSaving();
+		}
 		System.exit(0);
 	}
 
-	public PAWSAnswers getAnswers() {
-		return answers;
+	public FontInfo showFontInfo(FontInfo fontInfo) {
+		// TODO: improve the font selector dialog so that one can type the font
+		// family name
+		// Can we improve the color picker to use color names, too?
+		FontSelectorDialogWithColor dlg = new FontSelectorDialogWithColor(fontInfo.getFont(),
+				fontInfo.getColor(), bundle);
+		dlg.initOwner(mainApp.getPrimaryStage());
+		dlg.showAndWait();
+		Font chosenFont = dlg.getResult();
+		if (chosenFont != null) {
+			fontInfo.setFont(chosenFont);
+			Color color = dlg.getColor();
+			fontInfo.setColor(color);
+			markAsDirty();
+		}
+		return fontInfo;
 	}
 
-	public void setAnswers(PAWSAnswers answers) {
-		this.answers = answers;
+	public void showLanguageLastPage() {
+
+		String lastPage = language.getValue("/paws/leftOffAt");
+		if (StringUtilities.isNullOrEmpty(lastPage)) {
+			// load contents page
+			webEngine.load(sProgramLocation + kHTMsFolder + "Contents.htm");
+		} else if (Files.exists(Paths.get(lastPage))) {
+			// load the language-specific page
+			webEngine.load(lastPage);
+		} else {
+			// load the standard page
+			// TODO: what if it doesn't exist?
+			String sPageToLoad = sProgramLocation + kHTMsFolder + lastPage;
+			webEngine.load(sPageToLoad);
+		}
+	}
+
+	public Language getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(Language language) {
+		this.language = language;
+	}
+
+	public ResourceBundle getBundle() {
+		return bundle;
 	}
 
 	public boolean isDirty() {

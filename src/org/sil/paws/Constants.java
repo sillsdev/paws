@@ -26,10 +26,10 @@ public class Constants {
 
 	// Unit Testing constants
 	public static final String UNIT_TEST_DATA_FILE_NAME = "test/org/sil/paws/testdata/TestData.";
-	public static final String UNIT_TEST_DATA_FILE = "test/org/sil/paws/testdata/TestData.tre";
-	public static final String UNIT_TEST_DATA_FILE_BAD_TREE = "test/org/sil/paws/testdata/TestDataBadTree.tre";
-	public static final String UNIT_TEST_DATA_FILE_VERSION_000 = "test/org/sil/paws/testdata/TestDataVersion000.tre";
-	public static final String UNIT_TEST_DATA_FILE_VERSION_001 = "test/org/sil/paws/testdata/TestDataVersion001.tre";
-	public static final String UNIT_TEST_DATA_FILE_VERSION_002 = "test/org/sil/paws/testdata/TestDataVersion002.tre";
-	public static final String UNIT_TEST_DATA_FILE_VERSION_2 = "test/org/sil/paws/testdata/TestDataVersion2.tre";
+	public static final String UNIT_TEST_DATA_FILE = "test/org/sil/paws/testdata/TestData.paw";
+	public static final String UNIT_TEST_DATA_FILE_BAD_TREE = "test/org/sil/paws/testdata/TestDataBadTree.paw";
+	public static final String UNIT_TEST_DATA_FILE_VERSION_000 = "test/org/sil/paws/testdata/TestDataVersion000.paw";
+	public static final String UNIT_TEST_DATA_FILE_VERSION_001 = "test/org/sil/paws/testdata/TestDataVersion001.paw";
+	public static final String UNIT_TEST_DATA_FILE_VERSION_002 = "test/org/sil/paws/testdata/TestDataVersion002.paw";
+	public static final String UNIT_TEST_DATA_FILE_VERSION_2 = "test/org/sil/paws/testdata/TestDataVersion2.paw";
 }

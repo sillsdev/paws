@@ -58,8 +58,8 @@
                   <items>
                     <CheckMenuItem mnemonicParsing="true" onAction="#handleMenuShowStatusBar" text="%menu.showstatusbar" />
 					<SeparatorMenuItem />
-					<MenuItem mnemonicParsing="true" onAction="#handleBack" text="%menu.back" accelerator="alt+left" />
-					<MenuItem mnemonicParsing="true" onAction="#handleForward" text="%menu.forward" accelerator="alt+right" />
+					<MenuItem mnemonicParsing="true" onAction="#handleBack" text="%menu.back" fx:id="menuItemViewBack" accelerator="alt+left" />
+					<MenuItem mnemonicParsing="true" onAction="#handleForward" text="%menu.forward" fx:id="menuItemViewForward" accelerator="alt+right" />
 					<MenuItem mnemonicParsing="true" onAction="#handleRefresh" text="%menu.refresh" accelerator="F5"/>
                   </items>
                 </Menu>

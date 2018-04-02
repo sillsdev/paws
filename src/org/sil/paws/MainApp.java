@@ -3,16 +3,19 @@
 // (http://www.gnu.org/licenses/lgpl-2.1.html)
 
 package org.sil.paws;
-	
+
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Locale;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
 import org.sil.paws.backendprovider.XMLBackEndProvider;
 import org.sil.paws.ApplicationPreferences;
-import org.sil.paws.model.PAWSAnswers;
+import org.sil.paws.model.Language;
 import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.view.RootLayoutController;
 
@@ -24,6 +27,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.Dialog;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.Alert.AlertType;
@@ -35,19 +39,18 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
-
 public class MainApp extends Application {
-	private static final String kApplicationIconResource = "file:resources/images/LingTree128x128.png";
+	private static final String kApplicationIconResource = "file:resources/images/PAWS128x128.png";
 	private Stage primaryStage;
 	private BorderPane rootLayout;
 	private Locale locale;
-	public static String kApplicationTitle = "LingTree";
+	public static String kApplicationTitle = "PAWS Starter Kit";
 	private RootLayoutController controller;
 	private ApplicationPreferences applicationPreferences;
 	private final String sOperatingSystem = System.getProperty("os.name");
 	static String[] userArgs;
 	private XMLBackEndProvider xmlBackEndProvider;
-	private PAWSAnswers answers;
+	private Language language;
 
 	public Stage getPrimaryStage() {
 		return primaryStage;
@@ -67,8 +70,16 @@ public class MainApp extends Application {
 			applicationPreferences = new ApplicationPreferences(this);
 			locale = new Locale(applicationPreferences.getLastLocaleLanguage());
 
-			answers = new PAWSAnswers();
-			xmlBackEndProvider = new XMLBackEndProvider(answers, locale);
+//			Path configDir = Paths.get(getConfigurationDirectory());
+//			if (!Files.exists(configDir) || !Files.isDirectory(configDir)) {
+//				Dialog<Void> alert = new Dialog<>();
+//				alert.getDialogPane().setContentText("oops!");
+//				alert.getDialogPane().getButtonTypes().add(ButtonType.OK);
+//				alert.showAndWait();
+//				System.exit(1);
+//			}
+			language = new Language();
+			xmlBackEndProvider = new XMLBackEndProvider(language, locale);
 			this.primaryStage = primaryStage;
 			this.primaryStage.setTitle(kApplicationTitle);
 			this.primaryStage.getIcons().add(getNewMainIconImage());
@@ -76,11 +87,11 @@ public class MainApp extends Application {
 			restoreWindowSettings();
 
 			initRootLayout();
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		userArgs = args;
 		launch(args);
@@ -119,9 +130,9 @@ public class MainApp extends Application {
 				file = applicationPreferences.getLastOpenedFile();
 			}
 			if (file != null && file.exists()) {
-//				loadTreeData(file);
-//				controller.setTree(ltTree);
-//				controller.handleDrawTree();
+				loadLanguageData(file);
+				controller.setLanguage(language);
+				controller.showLanguageLastPage();
 			} else {
 				boolean fSucceeded = askUserForNewOrToOpenExistingFile(bundle, controller);
 				if (!fSucceeded) {
@@ -140,24 +151,24 @@ public class MainApp extends Application {
 		}
 	}
 
-	public void loadAnswers(File file) {
-		//DatabaseMigrator migrator = new DatabaseMigrator(file);
-//		int version = migrator.getVersion();
-//		if (version < Constants.CURRENT_DATABASE_VERSION) {
-//			if (version == 1) {
-//				migrator.setDpi(Screen.getPrimary().getDpi());
-//			}
-//			migrator.doMigration();
-//		}
-		xmlBackEndProvider.loadAnswersDataFromFile(file);
-		answers = xmlBackEndProvider.getAnswers();
+	public void loadLanguageData(File file) {
+		// DatabaseMigrator migrator = new DatabaseMigrator(file);
+		// int version = migrator.getVersion();
+		// if (version < Constants.CURRENT_DATABASE_VERSION) {
+		// if (version == 1) {
+		// migrator.setDpi(Screen.getPrimary().getDpi());
+		// }
+		// migrator.doMigration();
+		// }
+		xmlBackEndProvider.loadLanguageDataFromFile(file);
+		language = xmlBackEndProvider.getLanguage();
 		applicationPreferences.setLastOpenedFilePath(file);
 		applicationPreferences.setLastOpenedDirectoryPath(file.getParent());
 		updateStageTitle(file);
 	}
 
 	public void saveAnswers(File file) {
-		xmlBackEndProvider.saveAnswersDataToFile(file);
+		xmlBackEndProvider.saveLanguageDataToFile(file);
 		applicationPreferences.setLastOpenedFilePath(file);
 		applicationPreferences.setLastOpenedDirectoryPath(file.getParent());
 	}
@@ -192,6 +203,7 @@ public class MainApp extends Application {
 		Image img = ControllerUtilities.getIconImageFromURL(kApplicationIconResource);
 		return img;
 	}
+
 	public String getOperatingSystem() {
 		return sOperatingSystem;
 	}
@@ -211,30 +223,42 @@ public class MainApp extends Application {
 		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(getNewMainIconImage());
 
-		ButtonType buttonCreateNewLanguage = new ButtonType(bundle.getString("label.createnewlanguage"));
+		ButtonType buttonCreateNewLanguage = new ButtonType(
+				bundle.getString("label.createnewlanguage"));
 		ButtonType buttonOpenExistingLanguage = new ButtonType(
 				bundle.getString("label.openexistinglanguage"));
 		ButtonType buttonCancel = new ButtonType(bundle.getString("label.cancel"),
 				ButtonData.CANCEL_CLOSE);
 
-		alert.getButtonTypes().setAll(buttonCreateNewLanguage, buttonOpenExistingLanguage, buttonCancel);
+		alert.getButtonTypes().setAll(buttonCreateNewLanguage, buttonOpenExistingLanguage,
+				buttonCancel);
 
 		boolean fSucceeded = true;
 		Optional<ButtonType> result = alert.showAndWait();
 		if (result.isPresent() && result.get() == buttonCreateNewLanguage) {
 			controller.handleNewLanguage();
-			if (controller.getAnswers() == null) {
+			if (controller.getLanguage() == null) {
 				// The user canceled creating a new project
 				fSucceeded = false;
 			}
 		} else if (result.get() == buttonOpenExistingLanguage) {
 			controller.doFileOpen(true);
-			controller.setAnswers(answers);
+			controller.setLanguage(language);
 		} else {
 			// ... user chose CANCEL or closed the dialog
 			System.exit(0);
 		}
 		return fSucceeded;
+	}
+
+	@Override
+	public void stop() throws IOException {
+		applicationPreferences.setLastWindowParameters(ApplicationPreferences.LAST_WINDOW,
+				primaryStage);
+		applicationPreferences.setLastLocaleLanguage(locale.getLanguage());
+		if (controller.isDirty()) {
+			controller.askAboutSaving();
+		}
 	}
 
 	public void setLocale(Locale locale) {
@@ -248,12 +272,12 @@ public class MainApp extends Application {
 		return xmlBackEndProvider;
 	}
 
-	public PAWSAnswers getAnswers() {
-		return answers;
+	public Language getAnswers() {
+		return language;
 	}
 
-	public void setAnswers(PAWSAnswers answers) {
-		this.answers = answers;
+	public void setAnswers(Language answers) {
+		this.language = answers;
 	}
 
 }
