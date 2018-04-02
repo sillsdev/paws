@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
+<?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
+<page id="NPQP" count="1/1">
+    <title level="2">Las frases nominales - Las frases cuantificadoras como modificadores</title>
+    <introduction id="NPQPIntroNotPractical" show="swNotPractical">Next to be added to the nominal phrase as we work our way down the tree are quantifier phrases (QP), discussed earlier in <section number="2">Las frases cuantificadoras</section>.  This means we will be able to parse nominal phrases such as these in English:</introduction>
+    <introduction id="NPQPIntroPractical" show="swPractical">Siguiente en la frase nominal son las frases cuantificadoras, discutidas anteriormente en  <section number="2">Las frases cuantificadoras</section>. Con las cuantificadores dentro de la frase nominal podemos analizar frases nominales como estas en español:</introduction>    <EnglishExample>
+        <exItem label="1.">esos muy pocos libros.</exItem>
+        <exItem label="2.">los muchos perros del muchacho.</exItem>
+        <exItem label="3.">solamente los primeros cien muchachos.</exItem>
+       <exItem label="4.">veintiún niños.</exItem>
+    </EnglishExample>
+    <form section="np">
+        <prompt>Escriba ejemplos similares en su lengua aquí:</prompt>
+        <textBox id="NPQPExample" dataItem="qpExample"/>
+        <br/>
+       <checkboxGroup>
+          <prompt>De acuerdo con los ejemplos, ¿dónde se presentan las frases cuantificadoras (incluyendo los números cardinales) con respecto al sustantivo?  Seleccione todas las opciones que son correctas en su lengua</prompt>
+          <checkbox id="NPQPPosBefore" dataItem="qpPosBefore">Antes del sustantivo</checkbox>
+          <checkbox id="NPQPPosAfter" dataItem="qpPosAfter">Después del sustantivo</checkbox>
+          <checkbox id="NPQPPosBoth" dataItem="qpPosBoth">En ambos lados en la misma frase nominal</checkbox>
+          <checkbox id="NPQPPosOther" dataItem="qpPosOther">En mi lengua, las frases cuantificadoras pueden presentarse: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" rows="2"/></checkbox>
+       </checkboxGroup>
+       <prompt id="NPQPPosNoCheckPrompt" show="swNPQPNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las frases cuantificadoras con respecto al sustantivo en su lengua.</prompt>
+       <radioGroup id="NPQPPosEitherorBothRestrictedTable" show="swNPQPPosEitherorBothRestricted">
+          <groupName dataItem="qpEitherRestrictedNumPos" default="unknown" position="yesSpec">RNPQPPosEitherRestrictedNum</groupName>
+          <prompt>¿Se presentan todos los números en solamente un lado del sustantivo?</prompt>
+          <radio id="NPQPPosEitherRestrictedNumBefore" dataValue="before">Sí, todos los números se presentan antes del sustantivo</radio>
+          <radio id="NPQPPosEitherRestrictedNumAfter" dataValue="after">Sí, todos los números se presentan después del sustantivo</radio>
+          <radio id="NPQPPosEitherRestrictedNumNo" dataValue="no">No, algunos pueden presentarse en cada lado</radio>
+       </radioGroup>
+       <radioGroup id="NPQClassifierSpecificTable" show="swOTClassifierSpecific">
+          <groupName dataItem="classifierPresentQ" default="no">RNPQClassifierPresent</groupName>
+          <prompt><br/>De acuerdo con los ejemplos, ¿Se presentan los clasificadores en las frases nominales completas con los cuantificadores o los números?</prompt>
+          <radio id="NPQClassifierPresentYes"  dataValue="yes">Sí, un clasificador se requiere presentarse en todas las frases nominales de esta tipo</radio>
+          <radio id="NPQClassifierPresentSome" dataValue="some">Se presenta un clasificador en algunas de esta tipo de frase nominal, pero no se requiere en todas</radio>
+          <radio id="NPQClassifierPresentNo" dataValue="no">No, un clasificador nunca se presenta en esta tipo de frase nominal</radio>
+       </radioGroup>
+       <checkboxGroup id="NPQClassifierSpecificPos" show="swOTClassifierSpecificAndNPQClassifierPresentYesOrSome">
+          <prompt><br/>De acuerdo con los ejemplos, ¿dónde se presentan los clasificadores con respecto a los cuantificadores y al sustantivo?  Seleccione todas las opciones que son correctas en su lengua</prompt>
+          <checkbox id="NPQClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificQPosBeforeBoth">Primero, antes de ambos el cuantificador y el sustantivo</checkbox>
+          <checkbox id="NPQClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificQPosAfterBoth">Final, después de ambos el sustantivo y el cuantificador</checkbox>
+          <checkbox id="NPQClassifierSpecificPosAfterQBeforeN"  dataItem="classifierSpecificQPosAfterQBeforeN">Después del cuantificador pero antes del sustantivo</checkbox>
+          <checkbox id="NPQClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificQPosAfterNBeforeQ">Después del sustantivo pero antes del cuantificador</checkbox>
+          <checkbox id="NPQClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificQPosPrefixQ">Como un prefijo en el cuantificador</checkbox>
+          <checkbox id="NPQClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificQPosSuffixQ">Como un sufijo en el cuantificador</checkbox>
+          <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" rows="2"/></checkbox>
+       </checkboxGroup>
+       <prompt id="NPQClassifierSpecificPosNoCheckPrompt" show="swNPQClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto a estos cuantificadores y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
+       
+       <br/>
+        <instruction id="NPQPPosEitherRestrictedNumBeforeInstruction" show="swNPQPPosEitherRestrictedNumBefore">The program will mark numbers with the default feature <feature>DP-initial</feature>, so you only need to mark other quantifiers.  In the lexicon, mark those quantifiers which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any quantifier which can occur on either side.</instruction>
+        <instruction id="NPQPPosEitherRestrictedNumAfterInstruction" show="swNPQPPosEitherRestrictedNumAfter">The program will mark numbers with the default feature <feature>DP-final</feature>, so you only need to mark other quantifiers.  In the lexicon, mark those quantifiers which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any quantifier which can occur on either side.</instruction>
+        <instruction id="NPQPPosEitherRestrictedNumNoInstruction" show="swNPQPPosEitherRestrictedNumNo">In the lexicon, mark those quantifiers or numbers which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any quantifier or number which can occur on either side.</instruction>
+        <br/>
+        <instruction id="NPQPNumberMarkingInstruction" show="swNPQPNumberMarking">
+           To handle the number marking, we will assume that all numbers are plural by default.  Therefore, only the number “one” needs to be marked with the feature <feature>singular</feature>.  If your language makes a further distinction for dual marking, add the feature <feature>dual</feature> to the number “two”.  
+<br/>
+For other quantifiers, in the lexicon:
+<ul>
+                <li>Mark the quantifiers that signify the whole nominal phrase is singular with the feature <feature>singular</feature>.</li>
+                <li>Mark the quantifiers that signify the whole nominal phrase is plural with the feature <feature>plural</feature>.  This should be most of the quantifiers.</li>
+                <li>If your language makes a further distinction for dual marking, add the feature <feature>dual</feature> to the appropriate quantifiers, if any.
+                </li>
+            </ul>
+        </instruction>
+        <instruction id="NPQPNumberAgreementInstruction" show="swNPQPNumberAgreement">
+           To handle the number agreement, we will assume that all numbers are plural by default.  Therefore, only the number “one” needs to be marked with the feature <feature>singular</feature>.  If your language makes a further distinction for dual marking, add the feature <feature>dual</feature> to the number “two”.  
+<br/>
+For other quantifiers, in the lexicon:
+<ul>
+                <li>Mark the quantifiers that only go with singular nouns with the feature <feature>singular</feature>.</li>
+                <li>Mark the quantifiers that only go with plural nouns with the feature <feature>plural</feature>.  This should be most of the quantifiers.</li>
+                <li>If your language makes a further distinction for dual marking, add the feature <feature>dual</feature> to the appropriate quantifiers, if any.
+                </li>
+            </ul>
+        </instruction>
+        <instruction id="NPQPAgreementAnimacyInstruction" show="swNPAgreementAnimacyYes">
+To handle animacy agreement:
+<ul>
+                <li>Mark the numbers or quantifiers (or the appropriate affixes) that can only go with animate nouns with the feature <feature>animate</feature>.</li>
+                <li>Mark the numbers or quantifiers (or the appropriate affixes) that can only go with inanimate nouns with the feature <feature>-animate</feature>.</li>
+                <li>Do not add any animacy agreement feature to those which can go with either animate or inanimate nouns.</li>
+            </ul>
+        </instruction>
+        <instruction id="NPQPAgreementGenderInstruction" show="swNPAgreementGenderYes">
+Add the gender features <feature>masculine</feature>, <feature>feminine</feature>, <feature>neuter</feature> to any numbers or quantifiers (or the appropriate affixes) that can only go with that type of noun.  Do not add any gender agreement feature to those which can go with either masculine or feminine nouns.      </instruction>
+        <instruction id="NPQPAgreementClassInstruction" show="swNPAgreementClassYes">
+To handle class marking and agreement, in the lexicon:
+<ul>
+                <li>Mark the quantifiers or numbers that can only go with a particular class with the feature <feature>class_##</feature>, where ## is replaced by a number between 1 and 99.</li>
+                <li>It may be the case that the same affixes that mark the class number on nouns are also used on numbers and/or quantifiers.  If this is the case in your language, you should have already added the class feature to the affixes, so all the words will automatically come from the morphological parser with the class number marked.</li>
+            </ul>
+        </instruction>
+        <br/>
+        <buttons>
+            <button id="NPQPBack" value="Back" goto="NPContents.htm"/>
+            <button id="NPQPNext" value="Next" goto="NPContents.htm"/>
+        </buttons>
+    </form>
+   <showWhen id="swNPQPNoCheck">
+      <not/>
+      <whenCheckbox button="NPQPPosBefore"/>
+      <and/><not/>
+      <whenCheckbox button="NPQPPosAfter"/>
+      <and/><not/>
+      <whenCheckbox button="NPQPPosBoth"/>
+      <and/><not/>
+      <whenCheckbox button="NPQPPosOther"/>
+   </showWhen>
+   <showWhen id="swNPQPPosEitherorBoth">
+      <not/>
+      <whenRadio button="NPQPPosBefore"/>
+      <and/>
+      <not/>
+      <whenRadio button="NPQPPosAfter"/>
+   </showWhen>
+   <showWhen id="swNPQPPosEitherorBothRestricted">
+      <whenCheckbox button="NPQPPosAfter"/>
+      <and/>
+      <whenCheckbox button="NPQPPosBefore"/>
+      <or/>
+      <whenCheckbox button="NPQPPosBoth"/>
+   </showWhen>
+   <showWhen id="swNPQPPosEitherRestrictedNumBefore">
+      <whenRadio button="NPQPPosEitherRestrictedNumBefore"/>
+      <and/>
+      <whenCheckbox button="NPQPPosAfter"/>
+      <and/>
+      <whenCheckbox button="NPQPPosBefore"/>
+      <or/>
+      <whenRadio button="NPQPPosEitherRestrictedNumBefore"/>
+      <and/>
+      <whenCheckbox button="NPQPPosBoth"/>
+   </showWhen>
+   <showWhen id="swNPQPPosEitherRestrictedNumAfter">
+      <whenRadio button="NPQPPosEitherRestrictedNumAfter"/>
+      <and/>
+      <whenCheckbox button="NPQPPosAfter"/>
+      <and/>
+      <whenCheckbox button="NPQPPosBefore"/>
+      <or/>
+      <whenRadio button="NPQPPosEitherRestrictedNumAfter"/>
+      <and/>
+      <whenCheckbox button="NPQPPosBoth"/>
+   </showWhen>
+   <showWhen id="swNPQPPosEitherRestrictedNumNo">
+      <whenRadio button="NPQPPosEitherRestrictedNumNo"/>
+      <and/>
+      <whenCheckbox button="NPQPPosAfter"/>
+      <and/>
+      <whenCheckbox button="NPQPPosBefore"/>
+      <or/>
+      <whenRadio button="NPQPPosEitherRestrictedNumNo"/>
+      <and/>
+      <whenCheckbox button="NPQPPosBoth"/>
+   </showWhen>
+   <showWhen id="swNPQPNumberMarking">
+      <whenValue element="np" attr="agreeNumber" value="no"/>
+   </showWhen>
+   <showWhen id="swNPQPNumberAgreement">
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPAgreementAnimacyYes">
+      <whenValue element="np/agreeAnimacy" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPAgreementGenderYes">
+      <whenValue element="np/agreeGender" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPAgreementClassYes">
+      <whenValue element="np/agreeClass" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNotPractical">
+      <whenValue  element="paws" attr="outputGrammar" value="True"/>
+   </showWhen>
+   <showWhen id="swPractical">
+      <whenValue  element="paws" attr="outputGrammar" value="False"/>
+   </showWhen>
+
+   <showWhen id="swOTClassifierSpecific">
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+   </showWhen>
+   <showWhen id="swOTClassifierSpecificAndNPQClassifierPresentYesOrSome">
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/>
+      <openParen/>
+      <whenRadio button="NPQClassifierPresentYes"/>
+      <or/>
+      <whenRadio button="NPQClassifierPresentSome"/>
+      <closeParen/>
+   </showWhen>
+   <showWhen id="swNPQClassifierPresentYesOrSomeAndNoCheck">
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/>
+      <openParen/>
+      <whenRadio button="NPQClassifierPresentYes"/>
+      <or/>
+      <whenRadio button="NPQClassifierPresentSome"/>
+      <closeParen/>
+      <and/><not/>
+      <whenCheckbox button="NPQClassifierSpecificPosAfterBoth"/>
+      <and/><not/>
+      <whenCheckbox button="NPQClassifierSpecificPosBeforeBoth"/>
+      <and/><not/>
+      <whenCheckbox button="NPQClassifierSpecificPosAfterQBeforeN"/>
+      <and/><not/>
+      <whenCheckbox button="NPQClassifierSpecificPosAfterNBeforeQ"/>
+      <and/><not/>
+      <whenCheckbox button="NPQClassifierSpecificPosPrefixQ"/>
+      <and/><not/>
+      <whenCheckbox button="NPQClassifierSpecificPosSuffixQ"/>
+      <and/><not/>
+      <whenCheckbox button="NPQClassifierSpecificPosOther"/>
+   </showWhen>
+   
+</page>

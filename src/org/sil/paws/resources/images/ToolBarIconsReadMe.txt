@@ -36,8 +36,11 @@ THE SOFTWARE.
 
 Using:
 
+back.png (was arrow_plain_blue_W.png)
 copyAction.png (was copy.png)
 deleteAction.png (was no.png)
+forward.png (was arrow_plain_blue_E.png)
 insertAction.png (was plus_green.png)
 pasteAction.png (was paste.png)
+refresh.png (was repeat_green.png)
 saveAction.png (was floppy_35inch_blue.png)

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
+<!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
+<page id="CoordMain" count="1/4">
+	<title>Coordination Constructions</title>
+   <introduction>This section mainly considers basic coordination constructions where there is an <technicalTermRef term="ttOvert"/> conjunction between the parts being conjoined (called ‘conjuncts’).  We will deal with coordination at the sentence level and at the verb phrase, nominal phrase, <span id="CoordPrepSpan" show="swPPPosPrep">prepositional</span><span id="CoordPostSpan" show="swPPPosPost">postpositional</span><span id="CoordPBothSpan" show="swPPPosBoth">prepositional or postpositional</span> phrase and adjective phrase levels. Then, at the nominal phrase level only, we will deal with lists and appositive constructions. More complex types of coordination constructions, such as gapping, and other possible levels of coordination will need to be dealt with later.</introduction>
+		<introduction>In English, the conjunctions which can be used between two conjuncts are <example>and</example>, <example>or</example>, <example>but</example> and <example>and/or</example>.  In addition, there are coordination constructions which require an initial conjunction, such as <example>either...or</example> and <example>neither...nor</example> constructions.  Some languages also use a word meaning <example>with</example> as a conjunction between nominal phrases.</introduction>
+   <form section="coord" transparent="no">
+      <prompt><br/>Key how your language expresses these conjunctions in the following text boxes.  If there is more than one option, enter each form on a separate line.  If the conjunction is a clitic, key an equal sign indicating which side it attaches on.</prompt>
+		<prompt>Key the conjunction(s) your language uses for ‘and’ here:</prompt>
+		<textBox id="CoordAnd" dataItem="and" rows="3"/>
+		<br/>
+   	<prompt>Key the sequential conjunction(s) your language uses for sentence level coordination meaning ‘and then’ here:</prompt>
+   	<textBox id="CoordSeq" dataItem="andThen" rows="3"/>
+   	<br/>
+   	<prompt>Key the conjunction(s) your language uses for ‘or’ here:</prompt>
+		<textBox id="CoordOr" dataItem="or" rows="3"/>
+		<br/>
+		<prompt>Key the conunction(s) your language uses for ‘but’ here:</prompt>
+		<textBox id="CoordBut" dataItem="but" rows="3"/>
+		<br/>
+		<prompt>Key the conjunction(s) your language uses for ‘and/or’ here:</prompt>
+		<textBox id="CoordAndOr" dataItem="andOr" rows="3"/>
+      <instruction id="CoordAndOrInstruction">Note that a word like ‘and/or’ which is written with a slash (/) in the word, must be entered in your lexicon with a backslash in front of the slash (eg. ‘and\/or’) for <tool>CARLA Studio</tool> to process it correctly.</instruction>
+      <br/>
+		<prompt>If your language uses ‘with’ as a nominal phrase conjunction, key that form here:</prompt>
+		<textBox id="CoordWith" dataItem="with" rows="3"/>
+		<br/>
+		<prompt>Key any additional conjunction(s) your language uses alone between conjuncts here:</prompt>
+		<textBox id="CoordOther" dataItem="other" rows="3"/>
+		<br/>
+		<prompt>Key the initial conjunction(s) meaning ‘either’ that your language uses for ‘either...or’ constructions here (only the initial part):</prompt>
+		<textBox id="CoordEither" dataItem="either" rows="3"/>
+		<br/>
+      <prompt>Key the medial conjunction(s) that your language uses for ‘either...or’ constructions here (only the second part):</prompt>
+      <textBox id="CoordEitherOr" dataItem="eitherOr" rows="3"/>
+      <br/>
+      <prompt>Key the initial negative conjunction(s) meaning ‘neither’ that your language uses for ‘neither...nor’ constructions here (only the initial part):</prompt>
+		<textBox id="CoordNeither" dataItem="neither" rows="3"/>
+		<br/>
+		<prompt>Key the negative conjunction(s) meaning ‘nor’ that your language uses, either alone or  for ‘neither...nor’ constructions here (only the part meaning ‘nor’):</prompt>
+		<textBox id="CoordNor" dataItem="nor" rows="3"/>
+		<br/>
+<radioGroup>
+   <groupName dataItem="conjWord" default="yes">RCoordConjWord</groupName>
+   <prompt><br/>Are the conjunctions in your language written as independent words between the conjuncts?</prompt>
+   <radio id="CoordConjWordYes" dataValue="yes">Yes, they are all independent words</radio>
+   <radio id="CoordConjWordSome" dataValue="some">Some are independent words, but some attach to one of the conjuncts</radio>
+   <radio id="CoordConjWordNo" dataValue="no">No, all the conjunctions attach to one of the conjuncts</radio>
+</radioGroup>   
+      <instruction id="CoordInstruction" show="swCoordWordNotNo">In the lexicon, add the feature <feature>plural</feature> to the conjunctions written as an independent word meaning ‘and’, ‘and/or’ and ‘with’, and also to any other conjunctions in your language which require plural agreement when they are used to conjoin nominal phrases.  
+      Also, add the feature <feature>-conjoins_IP</feature> to any conjunction, such as ‘with’, used for conjoining nominal phrases only.  
+      Add the feature <feature>negative</feature> to the negative conjunctions meaning ‘nor’ and ‘neither’.  
+      Add the feature <feature>makeInitialConj</feature> to the conjunction words meaning ‘either’ and ‘neither’ that are used in the initial position.  
+      If the same conjunction word can also be used in the medial position, you will need to make two lexical entries, so one can maintain the category <category>Conj</category>. </instruction>
+ 
+      <checkboxGroup id="CoordConjAttachTable" show="swCoordWordNotYes">
+         <prompt><br/>How do the conjunctions attach within the coordination construction?  Choose all that apply:</prompt>
+         <checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">As a proclitic which attaches to the beginning of the second conjunct</checkbox>
+         <checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">As an enclitic which attaches to the end of the first conjunct</checkbox>
+         <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">In my language, the conjunctions may attach in this other way within the coordination construction: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="2"/></checkbox>
+      </checkboxGroup>
+      <prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">WARNING: You did not check any boxes to describe how the conjunctions may attach in your language.  Please check one or more boxes as appropriate, or change your answer above to ‘Yes, they are all independent words’.</prompt>
+      
+            <br/>
+	      <instruction id="CoordConjAttachesProcliticInstruction" show="swCoordWordAttachesProclitic">In the lexicon, add the feature <feature>conj_prefix</feature> to the conjunctions that attach to the beginning of the second conjunct.  
+	         Also add the feature <feature>conj_prefix_pl</feature> to the conjunctions that attach to the beginning of the second conjunct meaning ‘and’, ‘and/or’ and ‘with’, and also to any others which require plural agreement when they are used to conjoin nominal phrases.
+	         In addition, add the feature <feature>conj_prefix_neg</feature> to the negative conjunctions meaning ‘nor’ that attach to the beginning of the second conjunct.</instruction>	   
+	   <instruction id="CoordConjAttachesEncliticInstruction" show="swCoordWordAttachesEnclitic">In the lexicon, add the feature <feature>conj_suffix</feature> to the conjunctions that attach to the end of the first conjunct. 
+	      Also add the feature <feature>conj_suffix_pl</feature> to the conjunctions that attach to the end of the first conjunct meaning ‘and’, ‘and/or’ and ‘with’, and also to any others which require plural agreement when they are used to conjoin nominal phrases.
+	      In addition, add the feature <feature>conj_suffix_neg</feature> to the negative conjunctions meaning ‘nor’ that attach to the end of the first conjunct.</instruction>	   
+	   
+	   <instruction id="CoordConjAttachesOtherInstruction" show="swCoordWordAttachesOther">Specific phrase structure rules for the coordination constructions with attached conjunctions in your language will need to be added after completion of the PAWS Starter Kit.  For now, the rules without any conjunction are given, and they should work fairly well.</instruction>
+	   <br/>
+	   <radioGroup>
+	      <groupName dataItem="noConj" default="no">RCoordNoConj</groupName>
+	      <prompt><br/>Does your language also allow normal coordination of nominal phrases and perhaps also sentences and other categories without any conjunction between the two parts?</prompt>
+	      <radio id="CoordNoConjNo" dataValue="no">No, when there are only two items being conjoined, a conjunction must appear between them</radio>
+	      <radio id="CoordNoConjYes" dataValue="yes">Yes, two items may be conjoined without any conjunction between them</radio>
+	   </radioGroup>  
+	   <br/>
+	   <br/>
+	   <introduction>In general, coordination is between like categories.  For sentence-level coordination, this means that two declarative sentences may be conjoined, as in 1-2, or two questions, as in 3.  When the conjunction is the one meaning ‘but’, one of the conjuncts must be negative, as in 4.  English examples of full sentence coordination include:</introduction>
+		<EnglishExample>
+			<exItem label="1.">John went to the office this morning and he just returned.</exItem>
+		   <exItem label="2.">Either I will come to the party or I will send my sister.</exItem>
+		   <exItem label="3.">When did the mail come and where is my package?</exItem>	  
+		   <exItem label="4.">John went to the office this morning but he did not return.</exItem>
+		</EnglishExample>
+		<prompt>Key examples of full sentence coordination in your language here:</prompt>
+		<textBox id="CoordSent" dataItem="sentExample" rows="5"/>
+		<br/>
+   	<prompt>Now key some examples of full sentence coordination using the sequential conjunction, such as <example>Mary went to the store and then she got ready for the party</example> here:</prompt>
+   	<textBox id="CoordSeqSent" dataItem="sentSeqExample" rows="5"/>
+   	<br/>
+   	<introduction>Verb phrase coordination involves two full verb phrases that share a single subject.  English examples of verb phrase coordination, with the coordinates bracketed, include:</introduction>
+		<EnglishExample>
+			<exItem label="5.">Bill [ran the race] and [won the prize].</exItem>
+			<exItem label="6.">I will [come to the party] or [send my sister].</exItem>
+			<exItem label="7.">I will not [come to the party] nor [send my sister].</exItem>
+		</EnglishExample>
+		<prompt>Key examples of verb phrase coordination in your language here (without brackets):</prompt>
+		<textBox id="CoordVP" dataItem="vpExample" rows="5"/>
+		<br/>
+	   <introduction>Coordinate nominal phrases can normally occur as subjects, objects, indirect objects and objects of a preposition or postposition, just like a regular nominal phrase.  English examples of nominal phrase coordination, with the coordinates bracketed, include:</introduction>
+		<EnglishExample>
+			<exItem label="8.">Bill ran in [the Boston Marathon] and [the Olympics].</exItem>
+			<exItem label="9.">[My sister] or [I] will be there.</exItem>
+			<exItem label="10.">Neither [my sister] nor [I] will be there.</exItem>
+			<exItem label="11.">I will come to [the rehearsal] but not [the dinner].</exItem>
+			<exItem label="12.">I will come to [the wedding] and/or [the reception].</exItem>
+		</EnglishExample>
+		<prompt>Key examples of nominal phrase coordination in your language here (without brackets).  Include only examples with two conjuncts and an overt conjunction between the conjuncts.  Other types of nominal phrase coordination will be dealt with on the next page.</prompt>
+		<textBox id="CoordDP" dataItem="dpExample" rows="5"/>
+		<br/>
+      <introduction>It is also normally possible to have coordinate <span id="PPPrepSpan1" show="swPPPosPrep">prepositional</span>
+         <span id="PPPostSpan1" show="swPPPosPost">postpositional</span>
+         <span id="PPBothSpan1" show="swPPPosBoth">prepositional or postpositional</span> phrases in all the places that a regular <span id="PPPrepSpan2" show="swPPPosPrep">prepositional</span>
+         <span id="PPPostSpan2" show="swPPPosPost">postpositional</span>
+         <span id="PPBothSpan2" show="swPPPosBoth">prepositional or postpositional</span> phrase normally occurs.  English examples with prepositional phrase coordination, with the coordinates bracketed, include:</introduction>
+		<EnglishExample>
+			<exItem label="13.">Bill ran [through the forest] and [over the bridge].</exItem>
+			<exItem label="14.">I will come with you [to the rehearsal] but not [back home].</exItem>
+			<exItem label="15.">I will come either [to the wedding] or [to the reception].</exItem>
+		</EnglishExample>
+	   <prompt>Key examples of <span id="PPPrepSpan" show="swPPPosPrep">prepositional</span>
+	      <span id="PPPostSpan" show="swPPPosPost">postpositional</span>
+	      <span id="PPBothSpan" show="swPPPosBoth">prepositional and/or postpositional</span> phrase coordination in your language here (without brackets):</prompt>
+		<textBox id="CoordPP" dataItem="coordppExample" rows="5"/>
+		<br/>
+	   <introduction>Finally, adjectives or adjective phrases can usually be coordinated, both when they are modifying a noun, as in 16-18,  and when they are acting as the predicate adjective in a copular sentence, as in 19-20.  English examples of adjective phrase coordination, with the coordinates bracketed where not clear, include:</introduction>
+		<EnglishExample>
+			<exItem label="16.">The black and white dog belongs to my son.</exItem>
+		   <exItem label="17.">My sister wants a [bright red] or [light blue] candle.</exItem>
+		   <exItem label="18.">That looks like an [awfully painful] and [very dangerous] sore on your leg.</exItem>
+		   <exItem label="19.">The sore on your leg is [awfully painful] and [very dangerous].</exItem>
+		   <exItem label="20.">This material feels [very smooth] and [silky].</exItem>
+		</EnglishExample>
+		<prompt>Key examples of adjective phrase coordination in your language here (without brackets):</prompt>
+		<textBox id="CoordAdj" dataItem="adjExample" rows="5"/>
+		<br/>
+		<br/>
+		<buttons>
+			<button id="CoordMainBack" value="Back" goto="Contents.htm"/>
+		    <button id="CoordMainNext" value="Next" goto="CoordDP.xml"/>
+		</buttons>
+	</form>
+   <showWhen id="swPPPosPrep">
+      <whenValue element="pp" attr="pPos" value="before"/>
+   </showWhen>
+   <showWhen id="swPPPosPost">
+      <whenValue element="pp" attr="pPos" value="after"/>
+   </showWhen>
+   <showWhen id="swPPPosBoth">
+      <whenValue element="pp" attr="pPos" value="both"/>
+      <or/>
+      <whenValue element="pp" attr="pPos" value="unknown"/>
+   </showWhen>
+   <showWhen id="swCoordWordNotNo">
+      <not/><whenRadio button="CoordConjWordNo"/>
+   </showWhen>
+   <showWhen id="swCoordWordNotYes">
+      <not/><whenRadio button="CoordConjWordYes"/>
+   </showWhen>
+   <showWhen id="swCoordWordAttachesProclitic">
+      <not/><whenRadio button="CoordConjWordYes"/>
+      <and/>
+      <whenCheckbox button="CoordConjAttachesProclitic"/>
+   </showWhen>
+   <showWhen id="swCoordWordAttachesEnclitic">
+      <not/><whenRadio button="CoordConjWordYes"/>
+      <and/>
+      <whenCheckbox button="CoordConjAttachesEnclitic"/>
+   </showWhen>
+   <showWhen id="swCoordWordAttachesOther">
+      <not/><whenRadio button="CoordConjWordYes"/>
+      <and/>
+      <whenCheckbox button="CoordConjAttachesOther"/>
+   </showWhen>
+   <showWhen id="swCoordConjWordNotYesAndNoCheck">
+      <not/><whenRadio button="CoordConjWordYes"/>
+      <and/><not/>
+      <whenCheckbox button="CoordConjAttachesProclitic"/>
+      <and/><not/>
+      <whenCheckbox button="CoordConjAttachesEnclitic"/>
+      <and/><not/>
+      <whenCheckbox button="CoordConjAttachesOther"/>
+   </showWhen>
+   &TechnicalTerms; 
+</page>
