@@ -8,16 +8,27 @@ package org.sil.paws.view;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.attribute.FileAttribute;
 import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.TreeMap;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
@@ -61,7 +72,10 @@ import org.sil.paws.model.Language;
 import org.sil.paws.service.WebPageInteractor;
 import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.MainApp;
+import org.sil.utility.HandleExceptionMessage;
 import org.sil.utility.StringUtilities;
+import org.sil.utility.XsltParameter;
+import org.w3c.dom.Document;
 
 public class RootLayoutController implements Initializable {
 
@@ -146,6 +160,8 @@ public class RootLayoutController implements Initializable {
 	private static final String kHTMsFolder = "/resources/configuration/HTMs/";
 	private String sProgramLocation;
 	private String sPAWSWorkingDirectory;
+	private String htmlMapperStylesheet;
+	private String sCSSContent;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -156,32 +172,38 @@ public class RootLayoutController implements Initializable {
 		webEngine = browser.getEngine();
 		webEngine.setOnAlert(event -> showAlert(event.getData()));
 		RootLayoutController rlc = this;
-		webEngine.getLoadWorker().stateProperty().addListener(
-		        new ChangeListener<State>() {
-		            public void changed(ObservableValue ov, State oldState, State newState) {
-		                if (newState == State.SUCCEEDED) {
-		                    changeStatusOfBackForwardItems();
-		                    JSObject win = (JSObject) webEngine.executeScript("window");
-		                    win.setMember("external", new WebPageInteractor(language, browser, rlc));
-		                } else if (newState == State.FAILED) {
-		                	Throwable e = webEngine.getLoadWorker().getException();
-		                	if (e != null) {
-		                		System.out.println("Page load failed!");
-		                		e.printStackTrace();
-		                	}
-		                }
-		            }
-		        });
+		webEngine.getLoadWorker().stateProperty().addListener(new ChangeListener<State>() {
+			public void changed(ObservableValue ov, State oldState, State newState) {
+				if (newState == State.SUCCEEDED) {
+					changeStatusOfBackForwardItems();
+					JSObject win = (JSObject) webEngine.executeScript("window");
+					win.setMember("external", new WebPageInteractor(language, browser, rlc));
+				} else if (newState == State.FAILED) {
+					String sUrl = webEngine.getLocation();
+//					System.out.println("ready/scheduled: url='" + sUrl + "'");
+					if (sUrl.endsWith(".xml")) {
+//						System.out.println("\tneeds to be transformed and loaded");
+						transformAndLoadPage(sUrl);
+					} else {
+						Throwable e = webEngine.getLoadWorker().getException();
+						if (e != null) {
+//							System.out.println("Page load failed!");
+							e.printStackTrace();
+						}
+					}
+				}
+			}
+		});
 
 		try {
-			sProgramLocation = "file:///" + new File(".").getCanonicalPath();
+			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
-		sPAWSWorkingDirectory = getConfigurationDirectory();
-		
+		sPAWSWorkingDirectory = getWorkingConfigurationDirectory();
+
 		Platform.runLater(new Runnable() {
 			@Override
 			public void run() {
@@ -190,8 +212,115 @@ public class RootLayoutController implements Initializable {
 		});
 
 	}
-	
-	public static String getAppDataDirectory() {
+
+	private void initMapperAndCSS() {
+		try {
+			String sConfigurationDirectory = new File(".").getCanonicalPath() + File.separator
+					+ "resources" + File.separator + "configuration" + File.separator;
+			htmlMapperStylesheet = sConfigurationDirectory + "Transforms" + File.separator
+					+ "PAWSSKHtmlMapper.xsl";
+			File xslt = new File(htmlMapperStylesheet);
+			if (!xslt.exists()) {
+				throw new IOException(xslt.getPath());
+			}
+			String cssStylesheet = sConfigurationDirectory + "Styles" + File.separator
+					+ "PAWSStarterKitMaster.css";
+			File css = new File(cssStylesheet);
+			if (!css.exists()) {
+				throw new IOException(css.getPath());
+			}
+			sCSSContent = new String(Files.readAllBytes(css.toPath()), StandardCharsets.UTF_8)
+					+ getvernacularstyle();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private void transformAndLoadPage(String sUrl) {
+		try {
+			int i = sUrl.lastIndexOf("/");
+			String sBaseName = sUrl.substring(i + 1, sUrl.length() - 4);
+//			System.out.println("basename='" + sBaseName + "'");
+			File pageToLoadFile = new File(sPAWSWorkingDirectory + File.separator + sBaseName
+					+ ".htm");
+			Path working = Paths.get(sPAWSWorkingDirectory);
+			if (!Files.exists(working)) {
+				Files.createDirectories(working);
+			}
+			String sAdjustedUrl = sUrl.replace(Constants.FILE_PROTOCOL + "/", "").replace("HTMs",
+					"XmlPageDescriptions");
+			String sInstallPath = sUrl.replace("HTMs", "").replace(sBaseName + ".xml", "");
+//			System.out.println("xml = '" + sAdjustedUrl + "'");
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document document = builder.parse(sAdjustedUrl);
+			TransformerFactory tFactory = TransformerFactory.newInstance();
+			StreamSource stylesource = new StreamSource(htmlMapperStylesheet);
+			Transformer transformer = tFactory.newTransformer(stylesource);
+			createTransformParameters(sInstallPath, transformer);
+			DOMSource source = new DOMSource(document);
+			StreamResult result = new StreamResult(pageToLoadFile);
+			transformer.transform(source, result);
+			String sPageToLoad = Constants.FILE_PROTOCOL + pageToLoadFile.toURI().getPath();
+//			System.out.println("loading '" + sPageToLoad + "'");
+			webEngine.load(sPageToLoad);
+		} catch (Exception e) {
+			e.printStackTrace();
+			HandleExceptionMessage.show("Transform Error", "Failed to transform", e.getMessage(),
+					true);
+		}
+
+	}
+
+	public void createTransformParameters(String sInstallPath, Transformer transformer) {
+		List<XsltParameter> params = new ArrayList<XsltParameter>();
+		params.add(new XsltParameter("prmInstallPath", sInstallPath));
+		params.add(new XsltParameter("prmLangAbbr", language
+				.getValue("/paws/language/langAbbr")));
+		params.add(new XsltParameter("prmRtlScript", language
+				.getValue("/paws/language/font/@rtl")));
+		params.add(new XsltParameter("prmStylesheet", sCSSContent));
+		params.add(new XsltParameter("prmWorkingPath", sPAWSWorkingDirectory));
+
+		if (params.size() > 0) {
+			for (XsltParameter param : params) {
+				transformer.setParameter(param.name, param.value);
+			}
+		}
+	}
+
+	private String getvernacularstyle() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(".vernacular {");
+		sb.append("font-family: ");
+		sb.append(language.getValue("//language/font/fontName"));
+		sb.append(";");
+		sb.append("font-size: ");
+		sb.append(language.getValue("//language/font/fontSize"));
+		sb.append("pt;");
+		sb.append("color: ");
+		sb.append(language.getValue("//language/font/fontColor"));
+		sb.append(";");
+		if ("True" == language.getValue("//language/font/@bold"))
+			sb.append("font-weight: bold;");
+		if ("True" == language.getValue("//language/font/@italic"))
+			sb.append("font-style: italic;");
+		boolean bFontUnderline = ("True" == language.getValue("//language/font/@under"));
+		boolean bFontStrikeout = ("True" == language.getValue("//language/font/@strike"));
+		if (bFontUnderline || bFontStrikeout) {
+			sb.append("text-decoration: ");
+			if (bFontUnderline)
+				sb.append("underline ");
+			if (bFontStrikeout)
+				sb.append("line-through");
+			sb.append(";");
+		}
+		sb.append("}");
+		return sb.toString();
+	}
+
+	public String getAppDataDirectory() {
 		String os = System.getProperty("os.name");
 		if (os.toLowerCase().contains("windows")) {
 			return System.getenv("APPDATA");
@@ -199,16 +328,21 @@ public class RootLayoutController implements Initializable {
 			return System.getProperty("user.home");
 		}
 	}
-	
-	public static String getConfigurationDirectory() {
+
+	public String getWorkingConfigurationDirectory() {
 		String os = System.getProperty("os.name");
 		String appDir = getAppDataDirectory();
 		String configDir = "paws";
 		if (!os.toLowerCase().contains("windows")) {
-			configDir = ".paws"; 
+			configDir = ".paws";
 		}
-		System.out.println("config directory='" + appDir + File.separator + configDir + "'");
-		return appDir + File.separator + configDir;
+		String langAbbr = "Z1Z2Z3";
+		if (language != null) {
+			langAbbr = language.getValue("/paws/language/langAbbr");
+		}
+		String sResult = appDir + File.separator + configDir + File.separator + langAbbr;
+//		System.out.println("config directory='" + sResult + "'");
+		return sResult;
 	}
 
 	private void changeStatusOfBackForwardItems() {
@@ -226,9 +360,9 @@ public class RootLayoutController implements Initializable {
 		} else {
 			buttonToolbarBack.setDisable(true);
 			menuItemViewBack.setDisable(true);
-		} 
+		}
 	}
-	
+
 	protected void createToolbarButtons(ResourceBundle bundle) {
 		ControllerUtilities.createToolbarButtonWithImage("newAction.png", buttonToolbarFileNew,
 				tooltipToolbarFileNew, bundle.getString("tooltip.new"));
@@ -427,7 +561,7 @@ public class RootLayoutController implements Initializable {
 		}
 		return false;
 	}
-	
+
 	@FXML
 	private void handleForward() {
 		final WebHistory history = webEngine.getHistory();
@@ -448,7 +582,7 @@ public class RootLayoutController implements Initializable {
 		}
 		return false;
 	}
-	
+
 	@FXML
 	private void handleRefresh() {
 		webEngine.reload();
@@ -502,7 +636,9 @@ public class RootLayoutController implements Initializable {
 	}
 
 	public void showLanguageLastPage() {
-
+		// Make sure we have the correct working directory
+		sPAWSWorkingDirectory = getWorkingConfigurationDirectory();
+		initMapperAndCSS();
 		String lastPage = language.getValue("/paws/leftOffAt");
 		if (StringUtilities.isNullOrEmpty(lastPage)) {
 			// load contents page

@@ -23,6 +23,7 @@ public class Constants {
 
 	public static final String UTF8_ENCODING = "UTF8";
 	public static final String MIGRATION_XSLT_FILE_NAME = "resources/DataMigration";
+	public static final String FILE_PROTOCOL = "file://";
 
 	// Unit Testing constants
 	public static final String UNIT_TEST_DATA_FILE_NAME = "test/org/sil/paws/testdata/TestData.";
