@@ -174,11 +174,6 @@ public class RootLayoutController implements Initializable {
 		RootLayoutController rlc = this;
 		webEngine.getLoadWorker().stateProperty().addListener(new ChangeListener<State>() {
 			public void changed(ObservableValue ov, State oldState, State newState) {
-				// if (newState == State.RUNNING) {
-				// JSObject win = (JSObject) webEngine.executeScript("window");
-				// win.setMember("external", new WebPageInteractor(language,
-				// browser, rlc));
-				// } else
 				if (newState == State.SUCCEEDED) {
 					changeStatusOfBackForwardItems();
 					// TODO: is there a way to associate the Java code with the

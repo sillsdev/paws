@@ -65,7 +65,7 @@ BODY {
   - - - - - - - -
   -->
 	<xsl:template name="JScript">
-		<script language="jscript" id="clientEventHandlersJS">
+		<script language="javascript" id="clientEventHandlersJS">
   // variables used throughout functions below
 var attr;
 	// would like to use enums, but apparently they are not supported yet
@@ -77,17 +77,23 @@ var SpecPosInternal = 2;
 var SpecPosFinal = 3;
 var SpecPosUnknown = 4;
 
-  function Initialize()
+function sleep(ms) {
+return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function Initialize()
 {
+// We wait a bit for the WebPageInteractor object to be loaded in Java after this page gets loaded.
+// Otherwise the javascript to Java code calls do not work.
+await sleep(10);
 <xsl:apply-templates select="//textBox | //groupName | //catMap | //featureItem | //checkbox | //contentCheckBoxOther" mode="load"/>
-window.external.SetLeftOffAt("<xsl:value-of select="$prmWorkingPath"/>
+pawsApp.setLeftOffAt("<xsl:value-of select="$prmWorkingPath"/>
 			<xsl:value-of select="//page/@id"/>.htm");
 Refresh()
 }
 function GetSpecifierPos()
 {
-	window.external.GetAnswerValue("//typology/@wordOrder");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("//typology/@wordOrder");
 	if (attr == "SVO" || attr == "SOV")
 		return SpecPosInitial;
 	else
@@ -100,8 +106,7 @@ function GetSpecifierPos()
 }
 function GetHeadPos()
 {
-	window.external.GetAnswerValue("//typology/@wordOrder");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("//typology/@wordOrder");
 	if (attr == "SVO" || attr == "VSO" || attr == "VOS")
 	   return HeadPosInitial;
 	else
@@ -157,8 +162,7 @@ var sTemp;
 function ButtonNext()
 {
 	saveData();
-	window.external.GetAnswerValue("/paws/@outputGrammar");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");
 	if (attr == "False")
 	window.navigate ("<xsl:variable name="sGoToNoGrammar" select="normalize-space(//button[@value='Next']/@gotoNoGrammar)"/>
 			<xsl:variable name="sGoTo" select="normalize-space(//button[@value='Next']/@goto)"/>
@@ -176,8 +180,7 @@ function ButtonNext()
 function ButtonBack()
 {
 	saveData();
-	window.external.GetAnswerValue("/paws/@outputGrammar");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");
 	if (attr == "False")
 	window.navigate ("<xsl:variable name="sBackGoToNoGrammar" select="normalize-space(//button[@value='Back']/@gotoNoGrammar)"/>
 			<xsl:variable name="sBackGoTo" select="normalize-space(//button[@value='Back']/@goto)"/><xsl:choose>
@@ -206,13 +209,13 @@ var valArray = new Array();
 					<xsl:if test="name()='whenValue'">
 						<xsl:choose>
 							<xsl:when test="@attr">
-	window.external.GetAnswerValue("//<xsl:value-of select="@element"/>/@<xsl:value-of select="@attr"/>");
+	sTemp = pawsApp.getAnswerValue("//<xsl:value-of select="@element"/>/@<xsl:value-of select="@attr"/>");
 											  </xsl:when>
 							<xsl:otherwise>
-	window.external.GetAnswerValue("//<xsl:value-of select="@element"/>");
+	sTemp = pawsApp.getAnswerValue("//<xsl:value-of select="@element"/>");
 	  </xsl:otherwise>
 						</xsl:choose>
-		valArray[<xsl:value-of select="position()"/>] = window.external.OutValue;
+		valArray[<xsl:value-of select="position()"/>] = sTemp;
 					</xsl:if>
 				</xsl:for-each>
 if (<xsl:for-each select="./*">
@@ -251,8 +254,7 @@ else
 					</xsl:choose>
 				</xsl:for-each>  }
 	  </xsl:for-each>
-window.external.GetAnswerValue("/paws/@outputGrammar");
-attr = window.external.OutValue;
+attr = pawsApp.getAnswerValue("/paws/@outputGrammar");
 if (attr == "False")
 {
 			<xsl:for-each select="//instruction[ancestor::form and string-length(normalize-space(@id)) &gt; 0]">
@@ -279,7 +281,7 @@ Refresh();
 
 function ShowTermDefinition(msg)
 {
-window.external.ShowTermDefinition(msg);
+pawsApp.showTermDefinition(msg);
 }
 		</script>
 	</xsl:template>
@@ -289,7 +291,7 @@ window.external.ShowTermDefinition(msg);
   - - - - - - - -
   -->
 	<xsl:template match="//textBox | //catMap" mode="load">
-		<xsl:text>window.external.GetAnswerValue("//</xsl:text>
+		<xsl:value-of select="@id"/>.value = <xsl:text>pawsApp.getAnswerValue("//</xsl:text>
 		<xsl:choose>
 			<xsl:when test="@section">
 				<xsl:value-of select="@section"/>
@@ -300,7 +302,6 @@ window.external.ShowTermDefinition(msg);
 		</xsl:choose>
 		<xsl:text>/</xsl:text>
 		<xsl:value-of select="./@dataItem"/>");
-<xsl:value-of select="@id"/>.value = window.external.OutValue;
 </xsl:template>
 	<!--
   - - - - - - - -
@@ -308,7 +309,7 @@ window.external.ShowTermDefinition(msg);
   - - - - - - - -
   -->
 	<xsl:template match="//textBox | //catMap" mode="save">
-		<xsl:text>window.external.SetAnswerValue("//</xsl:text>
+		<xsl:text>pawsApp.setAnswerValue("//</xsl:text>
 		<xsl:choose>
 			<xsl:when test="@section">
 				<xsl:value-of select="@section"/>
@@ -326,8 +327,7 @@ window.external.ShowTermDefinition(msg);
    - - - - - - - -
   -->
 	<xsl:template match="//featureItem" mode="load">
-	window.external.GetAnswerValue("//<xsl:value-of select="$Section"/>/<xsl:value-of select="@dataValue"/>/@checked");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("//<xsl:value-of select="$Section"/>/<xsl:value-of select="@dataValue"/>/@checked");
 	if (attr == "yes")
 		  <xsl:value-of select="@name"/>.checked = true;
 	else
@@ -343,7 +343,7 @@ window.external.ShowTermDefinition(msg);
 	sTemp = "no" // use default if all else fails...
 	if (<xsl:value-of select="@name"/>.checked)
 	  sTemp = "yes";
-	window.external.SetAnswerValue("//<xsl:value-of select="$Section"/>/<xsl:value-of select="./@dataValue"/>/@checked", sTemp);
+	pawsApp.setAnswerValue("//<xsl:value-of select="$Section"/>/<xsl:value-of select="./@dataValue"/>/@checked", sTemp);
 </xsl:template>
 	<!--
   - - - - - - - -
@@ -351,8 +351,7 @@ window.external.ShowTermDefinition(msg);
    - - - - - - - -
   -->
 	<xsl:template match="//groupName" mode="load">
-	window.external.GetAnswerValue("//<xsl:value-of select="$Section"/>/@<xsl:value-of select="./@dataItem"/>");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("//<xsl:value-of select="$Section"/>/@<xsl:value-of select="./@dataItem"/>");
 <xsl:choose>
 			<xsl:when test="@position='no'">
 				<xsl:for-each select="../radio | ../checkbox">
@@ -401,7 +400,7 @@ window.external.ShowTermDefinition(msg);
 	<xsl:for-each select="../radio | ../checkbox">if (<xsl:value-of select="@id"/>.checked)
 	sTemp = "<xsl:value-of select="@dataValue"/>";
 	</xsl:for-each>
-	window.external.SetAnswerValue("//<xsl:value-of select="$Section"/>/@<xsl:value-of select="./@dataItem"/>", sTemp);
+	pawsApp.setAnswerValue("//<xsl:value-of select="$Section"/>/@<xsl:value-of select="./@dataItem"/>", sTemp);
 </xsl:template>
 	<!--
   - - - - - - - -
@@ -507,8 +506,7 @@ Refresh();
 		- - - - - - - -
 	-->
 	<xsl:template match="//checkbox" mode="load">
-		window.external.GetAnswerValue("//<xsl:value-of select="$Section"/>/<xsl:value-of select="@dataItem"/>/@checked");
-		attr = window.external.OutValue;
+		attr = pawsApp.getAnswerValue("//<xsl:value-of select="$Section"/>/<xsl:value-of select="@dataItem"/>/@checked");
 		if (attr == "yes")
 		<xsl:value-of select="@id"/>.checked = true;
 		else
@@ -524,7 +522,7 @@ Refresh();
 		sTemp = "no" // use default if all else fails...
 		if (<xsl:value-of select="@id"/>.checked)
 		sTemp = "yes";
-		window.external.SetAnswerValue("//<xsl:value-of select="$Section"/>/<xsl:value-of select="@dataItem"/>/@checked", sTemp);
+		pawsApp.setAnswerValue("//<xsl:value-of select="$Section"/>/<xsl:value-of select="@dataItem"/>/@checked", sTemp);
 	</xsl:template>
 	<!--
 		checkbox
@@ -1164,9 +1162,9 @@ Refresh();
 		</td>
 	</xsl:template>
 	<xsl:template match="//contentCheckBoxOther" mode="load">
-		<xsl:text>window.external.GetAnswerValue("//</xsl:text>
+		<xsl:text>sTemp = pawsApp.getAnswerValue("//</xsl:text>
 		<xsl:value-of select="./@contentLoc"/>");
-		document.getElementById("<xsl:value-of select="@id"/>").innerHTML = window.external.OutValue;
+		document.getElementById("<xsl:value-of select="@id"/>").innerHTML = sTemp;
 	</xsl:template>
 <!--
 technicalTermRef
