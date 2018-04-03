@@ -6,7 +6,14 @@ var sImg;
 var sTemp;
 var xpath;
 
-function Initialize() {
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function Initialize() {
+// We wait a bit for the WebPageInteractor object to be loaded in Java after this page gets loaded.
+// Otherwise the javascript to Java code calls do not work.
+    await sleep(10);
 	displayStatus(ContentsOverallTypologyQuestionsStatus, "typology");
 	displayStatus(ContentsQuantifiersStatus, "qp");
 	displayStatus(ContentsAdverbsStatus, "advp");
@@ -32,19 +39,17 @@ function Initialize() {
 	displayCheckBoxValue(OutputWriterPracticalSpanish, "/paws/@outputWriterPracticalSpanish");
 	displayCheckBoxValue(OutputWriterPracticalFrench, "/paws/@outputWriterPracticalFrench");
 
-	window.external.SetLeftOffAt("Contents.htm");
+    pawsApp.setLeftOffAt("Contents.htm");
 	Refresh();
 }
 function displayCheckBoxValue(checkboxID, xpath) {
-	window.external.GetAnswerValue(xpath);
-	sTemp = checkboxID.value = window.external.OutValue;
+	sTemp = checkboxID.value = pawsApp.getAnswerValue(xpath);
 	if (sTemp == "True")
 	checkboxID.checked = true; else
 	checkboxID.checked = false;
 }
 function displayStatus(idOfItem, strElem) {
-	window.external.GetAnswerValue("//" + strElem + "/@checkedOff");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("//" + strElem + "/@checkedOff");
 	sImg = "&nbsp;&nbsp;<img src='";
 	if (attr == "no") {
 		sImg = sImg + "UnCheckedOff.GIF'>";
@@ -54,17 +59,17 @@ function displayStatus(idOfItem, strElem) {
 	idOfItem.innerHTML = sImg;
 }
 function saveData() {
-	window.external.SetAnswerValue("/paws/@outputGrammar", OutputGrammar.value);
+	pawsApp.setAnswerValue("/paws/@outputGrammar", OutputGrammar.value);
 
-	/*window.external.SetAnswerValue("/paws/@outputWriter", OutputWriter.value);*/
+	/*pawsApp.setAnswerValue("/paws/@outputWriter", OutputWriter.value);*/
 
-	window.external.SetAnswerValue("/paws/@outputWriterPractical", OutputWriterPractical.value);
+	pawsApp.setAnswerValue("/paws/@outputWriterPractical", OutputWriterPractical.value);
 
-	window.external.SetAnswerValue("/paws/@outputWriterPracticalSpanish", OutputWriterPracticalSpanish.value);
+	pawsApp.setAnswerValue("/paws/@outputWriterPracticalSpanish", OutputWriterPracticalSpanish.value);
 
-	window.external.SetAnswerValue("/paws/@outputWriterPracticalFrench", OutputWriterPracticalFrench.value);
+	pawsApp.setAnswerValue("/paws/@outputWriterPracticalFrench", OutputWriterPracticalFrench.value);
 
-	window.external.SaveData();
+	pawsApp.saveData();
 }
 function SetOutputViaDescription(item) {
 	switch (item) {
@@ -149,8 +154,7 @@ function SetOutput(item) {
 }
 function StatusClicked(idOfItem, strElem) {
 	xpath = "//" + strElem + "/@checkedOff";
-	window.external.GetAnswerValue(xpath);
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue(xpath);
 	sImg = "&nbsp;&nbsp;<img src='";
 	if (attr == "no") {
 		sImg = sImg + "CheckedOff.GIF'>";
@@ -159,7 +163,7 @@ function StatusClicked(idOfItem, strElem) {
 		sImg = sImg + "UnCheckedOff.GIF'>";
 		sTemp = "no";
 	}
-	window.external.SetAnswerValue(xpath, sTemp);
+	pawsApp.setAnswerValue(xpath, sTemp);
 	idOfItem.innerHTML = sImg;
 }
 function Refresh() {

@@ -174,20 +174,30 @@ public class RootLayoutController implements Initializable {
 		RootLayoutController rlc = this;
 		webEngine.getLoadWorker().stateProperty().addListener(new ChangeListener<State>() {
 			public void changed(ObservableValue ov, State oldState, State newState) {
+				// if (newState == State.RUNNING) {
+				// JSObject win = (JSObject) webEngine.executeScript("window");
+				// win.setMember("external", new WebPageInteractor(language,
+				// browser, rlc));
+				// } else
 				if (newState == State.SUCCEEDED) {
 					changeStatusOfBackForwardItems();
+					// TODO: is there a way to associate the Java code with the
+					// javascript code *before* the page is loaded?
+					// We are working around it by sleeping for 10ms in the
+					// javascript onload() function.
 					JSObject win = (JSObject) webEngine.executeScript("window");
-					win.setMember("external", new WebPageInteractor(language, browser, rlc));
+					win.setMember("pawsApp", new WebPageInteractor(language, browser, rlc));
 				} else if (newState == State.FAILED) {
 					String sUrl = webEngine.getLocation();
-//					System.out.println("ready/scheduled: url='" + sUrl + "'");
+					// System.out.println("ready/scheduled: url='" + sUrl +
+					// "'");
 					if (sUrl.endsWith(".xml")) {
-//						System.out.println("\tneeds to be transformed and loaded");
+						// System.out.println("\tneeds to be transformed and loaded");
 						transformAndLoadPage(sUrl);
 					} else {
 						Throwable e = webEngine.getLoadWorker().getException();
 						if (e != null) {
-//							System.out.println("Page load failed!");
+							// System.out.println("Page load failed!");
 							e.printStackTrace();
 						}
 					}
@@ -241,7 +251,7 @@ public class RootLayoutController implements Initializable {
 		try {
 			int i = sUrl.lastIndexOf("/");
 			String sBaseName = sUrl.substring(i + 1, sUrl.length() - 4);
-//			System.out.println("basename='" + sBaseName + "'");
+			// System.out.println("basename='" + sBaseName + "'");
 			File pageToLoadFile = new File(sPAWSWorkingDirectory + File.separator + sBaseName
 					+ ".htm");
 			Path working = Paths.get(sPAWSWorkingDirectory);
@@ -251,7 +261,7 @@ public class RootLayoutController implements Initializable {
 			String sAdjustedUrl = sUrl.replace(Constants.FILE_PROTOCOL + "/", "").replace("HTMs",
 					"XmlPageDescriptions");
 			String sInstallPath = sUrl.replace("HTMs", "").replace(sBaseName + ".xml", "");
-//			System.out.println("xml = '" + sAdjustedUrl + "'");
+			// System.out.println("xml = '" + sAdjustedUrl + "'");
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document document = builder.parse(sAdjustedUrl);
@@ -263,7 +273,7 @@ public class RootLayoutController implements Initializable {
 			StreamResult result = new StreamResult(pageToLoadFile);
 			transformer.transform(source, result);
 			String sPageToLoad = Constants.FILE_PROTOCOL + pageToLoadFile.toURI().getPath();
-//			System.out.println("loading '" + sPageToLoad + "'");
+			// System.out.println("loading '" + sPageToLoad + "'");
 			webEngine.load(sPageToLoad);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -276,10 +286,8 @@ public class RootLayoutController implements Initializable {
 	public void createTransformParameters(String sInstallPath, Transformer transformer) {
 		List<XsltParameter> params = new ArrayList<XsltParameter>();
 		params.add(new XsltParameter("prmInstallPath", sInstallPath));
-		params.add(new XsltParameter("prmLangAbbr", language
-				.getValue("/paws/language/langAbbr")));
-		params.add(new XsltParameter("prmRtlScript", language
-				.getValue("/paws/language/font/@rtl")));
+		params.add(new XsltParameter("prmLangAbbr", language.getValue("/paws/language/langAbbr")));
+		params.add(new XsltParameter("prmRtlScript", language.getValue("/paws/language/font/@rtl")));
 		params.add(new XsltParameter("prmStylesheet", sCSSContent));
 		params.add(new XsltParameter("prmWorkingPath", sPAWSWorkingDirectory));
 
@@ -341,7 +349,7 @@ public class RootLayoutController implements Initializable {
 			langAbbr = language.getValue("/paws/language/langAbbr");
 		}
 		String sResult = appDir + File.separator + configDir + File.separator + langAbbr;
-//		System.out.println("config directory='" + sResult + "'");
+		// System.out.println("config directory='" + sResult + "'");
 		return sResult;
 	}
 

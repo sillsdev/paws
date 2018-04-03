@@ -33,6 +33,7 @@ public class WebPageInteractor {
 	 * @param lang
 	 */
 	public WebPageInteractor(Language lang, WebView viewer, RootLayoutController controller) {
+		System.out.println("In web page interactor constructor");
 		this.language = lang;
 		this.viewer = viewer;
 		this.controller = controller;
@@ -40,24 +41,22 @@ public class WebPageInteractor {
 	}
 
 	/**
-	 * Puts the value of the answer attribute/element specified in sXPath into
-	 * the OutValue property
+	 * Returns the value of the answer attribute/element specified in sXPath
 	 * 
 	 * @param sXPath
-	 *            XPath of the attribute/element I (Andy) could not figure out
-	 *            how to get javascript to recognize an "out" parameter, so am
-	 *            doing this. Note that the javascript must first invoke
-	 *            GetAnswerValue() and then get the result by referring to the
-	 *            OutValue property
+	 * XPath of the attribute/element
 	 */
-	public final void getAnswerValue(String sXPath) {
+	public String getAnswerValue(String sXPath) {
+		System.out.println("in getAnswerValue; sXPath='" + sXPath + "'");
 		sOutValue = language.getValue(sXPath);
+		return sOutValue;
 	}
 
-	public final String getOutValue() {
+	public String getOutValue() {
 		if (sOutValue == null) {
-			return "";
+			sOutValue = "";
 		}
+		System.out.println("out value ='" + sOutValue + "'");
 		return sOutValue;
 	}
 
@@ -127,16 +126,19 @@ public class WebPageInteractor {
 	// {
 	// viewer.refreshMenuUI();
 	// }
-	public final void saveData() {
+	public void saveData() {
+		System.out.println("saveData called");
 		controller.handleSaveLanguage();
 	}
 
-	public final void setAnswerValue(String sXPath, String sValue) {
+	public void setAnswerValue(String sXPath, String sValue) {
 		language.setValue(sXPath, sValue);
+		System.out.println("setAnswerValue: path='" + sXPath + "'; value = '" + sValue + "'");
 	}
 
-	public final void setLeftOffAt(String sValue) {
+	public void setLeftOffAt(String sValue) {
 		language.setValue("/paws/leftOffAt", sValue);
+		System.out.println("setLeftOffAt = '" + sValue + "'");
 	}
 
 	public final void createNewLanguage() {
