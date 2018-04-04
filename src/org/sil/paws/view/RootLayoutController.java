@@ -175,6 +175,7 @@ public class RootLayoutController implements Initializable {
 		webEngine.getLoadWorker().stateProperty().addListener(new ChangeListener<State>() {
 			public void changed(ObservableValue ov, State oldState, State newState) {
 				if (newState == State.SUCCEEDED) {
+					System.out.println("succeeded: url='" + webEngine.getLocation() + "'");
 					changeStatusOfBackForwardItems();
 					// TODO: is there a way to associate the Java code with the
 					// javascript code *before* the page is loaded?
@@ -182,13 +183,14 @@ public class RootLayoutController implements Initializable {
 					// javascript onload() function.
 					JSObject win = (JSObject) webEngine.executeScript("window");
 					win.setMember("pawsApp", new WebPageInteractor(language, browser, rlc));
+					webEngine.executeScript("Initialize()");
 				} else if (newState == State.FAILED) {
 					String sUrl = webEngine.getLocation();
-					// System.out.println("ready/scheduled: url='" + sUrl +
-					// "'");
+					System.out.println("failed: url='" + sUrl + "'");
 					if (sUrl.endsWith(".xml")) {
-						// System.out.println("\tneeds to be transformed and loaded");
 						transformAndLoadPage(sUrl);
+					} else if (sUrl.endsWith("LeftOffAt")) {
+						handleBack();
 					} else {
 						Throwable e = webEngine.getLoadWorker().getException();
 						if (e != null) {
@@ -596,7 +598,7 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleAbout() {
-		webEngine.load("about page");
+		webEngine.load(sProgramLocation + kHTMsFolder + "About.htm");
 	}
 
 	@FXML

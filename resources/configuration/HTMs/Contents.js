@@ -6,14 +6,7 @@ var sImg;
 var sTemp;
 var xpath;
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function Initialize() {
-// We wait a bit for the WebPageInteractor object to be loaded in Java after this page gets loaded.
-// Otherwise the javascript to Java code calls do not work.
-    await sleep(10);
+function Initialize() {
 	displayStatus(ContentsOverallTypologyQuestionsStatus, "typology");
 	displayStatus(ContentsQuantifiersStatus, "qp");
 	displayStatus(ContentsAdverbsStatus, "advp");

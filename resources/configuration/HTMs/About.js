@@ -1,7 +1,8 @@
 // About,js
 
 function Initialize() {
-	var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+// Leaving in case we try to get version number dynamically
+/*	var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
 	xmlDoc.async = "false";
 	//xmlDoc.onreadystatechange=verify;
 	xmlDoc.load("../paws.xml");
@@ -12,7 +13,7 @@ function Initialize() {
 	var versionNumber = versionNumberNode.nodeValue;
 	var version = document.getElementById("PAWSVersionNumber");
 	version.innerText = version.textContent = versionNumber;
-
+*/
 	/* window.external.GetLeftOffAt(); */
 }
 

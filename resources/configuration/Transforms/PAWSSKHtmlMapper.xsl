@@ -54,7 +54,7 @@ BODY {
 				</style>
 				<xsl:call-template name="JScript"/>
 			</head>
-			<body onload="Initialize()">
+			<body>
 				<xsl:apply-templates/>
 			</body>
 		</html>
@@ -65,7 +65,7 @@ BODY {
   - - - - - - - -
   -->
 	<xsl:template name="JScript">
-		<script language="javascript" id="clientEventHandlersJS">
+		<script type="text/javascript">
   // variables used throughout functions below
 var attr;
 	// would like to use enums, but apparently they are not supported yet
@@ -77,15 +77,8 @@ var SpecPosInternal = 2;
 var SpecPosFinal = 3;
 var SpecPosUnknown = 4;
 
-function sleep(ms) {
-return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function Initialize()
+function Initialize()
 {
-// We wait a bit for the WebPageInteractor object to be loaded in Java after this page gets loaded.
-// Otherwise the javascript to Java code calls do not work.
-await sleep(10);
 <xsl:apply-templates select="//textBox | //groupName | //catMap | //featureItem | //checkbox | //contentCheckBoxOther" mode="load"/>
 pawsApp.setLeftOffAt("<xsl:value-of select="$prmWorkingPath"/>
 			<xsl:value-of select="//page/@id"/>.htm");
