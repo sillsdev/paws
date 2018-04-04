@@ -1,5 +1,5 @@
 // Purpose.js
 
 function Initialize() {
-	window.external.SetLeftOffAt("Purpose.htm");
+	pawsApp.setLeftOffAt("Purpose.htm");
 }

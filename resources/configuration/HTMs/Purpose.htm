@@ -3,20 +3,23 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
          <title>Purpose Statement for PAWS</title>
          <link rel="stylesheet" href="../styles/PAWSStarterKitMaster.css">
-            <script language="jscript" src="Purpose.js">
+            <script type="text/javascript" src="Purpose.js">
             </script>
    </head>
-   <body onload="Initialize()">
+   <body>
       <h1>Purpose Statement for PAWS</h1>
       <div class="introduction">
 
          <p>As the name of the starter kit indicates, the Parser and Writer for Syntax (PAWS) has two basic purposes and two kinds of outputs:</p>
          <ul>
             <li>The Writer produces a rough draft of a grammar write-up of the syntax of your language, based on the answers to the questions in each section of PAWS.  A single file is output for each interface language, which can produce a practical style descriptive grammar of the language and/or a descriptive grammar comparative to the interface language, via a simple parameter change.
-               This output file is in both a web page format and in <a href="http://www.xlingpaper.org/" target="_blank">XLingPaper</a> XML format.
-               See also <a href="http://www.sil.org/silepubs/abstract.asp?id=52287" target="_blank">Simons and Black (2009)</a> and <a href="http://www.sil.org/silepubs/abstract.asp?id=52286" target="_blank">Black (2009)</a> for why this is a good format to use.</li>
+               This output file is in both a web page format and in <a onclick="pawsApp.launchWebPage('https://software.sil.org/xlingpaper/')" href="">XLingPaper</a> XML format.
+               See also <a onclick="pawsApp.launchWebPage('http://www.sil.org/resources/publications/entry/7783')" href="">Simons and Black (2009)</a>,
+               <a onclick="pawsApp.launchWebPage('http://www.sil.org/resources/publications/entry/7790')" href="">Black (2009)</a>, and
+               <a onclick="pawsApp.launchWebPage('http://software.sil.org/downloads/r/xlingpaper/resources/documentation/WhyUseXLingPaper.pdf')" href="">Black (2017)</a>
+               for why this is a good format to use.</li>
 
-            <li>The Parser produces all the files needed for using the PC-PATR syntactic parser (<a href="../Help/pcpatr.htm" target="_blank">McConnel 2002</a>, included in the Resources section of the Help menu item) for parsing and disambiguation within <a href="http://www.sil.org/computing/catalog/show_software.asp?id=84" target="_blank">CARLAStudio</a>. </li>
+            <li>The Parser produces all the files needed for using the PC-PATR syntactic parser (<a onclick="pawsApp.launchFile('../Help/pcpatr.htm')" href="">McConnel 2002</a>, included in the Resources section of the Help menu item) for parsing and disambiguation within <a onclick="pawsApp.launchWebPage('https://software.sil.org/carla/')" href="">CARLAStudio</a>. </li>
          </ul>
 
          <p>Those who wish to use the Writer only, be sure to uncheck the "Output PC-PATR grammar file and test example files" box on the Output Options section.
@@ -43,7 +46,7 @@
 
 
             <li>An articulated phrase structure following X-bar
-               theory is used (see <a href="../Help/CBGBTEXT.DOC" target="_blank">Black 1999</a>, included in the Resources section of the Help menu item, for an
+               theory is used (see <a onclick="pawsApp.launchFile('../Help/cbgbtext from pdf writer.pdf')" href="">Black 1999</a>, included in the Resources section of the Help menu item, for an
                introduction), since flat structures with lots of optionality are much harder
                to properly constrain and require more memory and processing time. </li>
 
@@ -52,7 +55,7 @@
                the phrase structure rules must model the output of
                transformations, not the underlying structure.  This parser
                does not include traces or other null elements which would
-               be necessary in a complete parser (see <a href="../Help/Black1997.htm" target="_blank">Black 1997</a> for an
+               be necessary in a complete parser (see <a onclick="pawsApp.launchFile('../Help/Black1997.htm')" href="">Black 1997</a> for an
                example; it is included in the Resources section of the Help menu item).</li>
          </ul>
 

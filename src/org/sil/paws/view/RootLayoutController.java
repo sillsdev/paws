@@ -396,6 +396,10 @@ public class RootLayoutController implements Initializable {
 		alert.showAndWait();
 	}
 
+	public MainApp getMainApp() {
+		return mainApp;
+	}
+
 	/**
 	 * Is called by the main application to give a reference back to itself.
 	 * 

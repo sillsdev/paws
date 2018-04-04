@@ -9,11 +9,18 @@ import javafx.scene.web.WebView;
 import javax.swing.*;
 
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
+import org.sil.paws.MainApp;
 import org.sil.paws.model.FontInfo;
 import org.sil.paws.model.Language;
 import org.sil.paws.view.RootLayoutController;
 import org.sil.utility.StringUtilities;
 
+import com.sun.deploy.uitoolkit.impl.fx.HostServicesFactory;
+import com.sun.javafx.application.HostServicesDelegate;
+
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.*;
 import java.util.ResourceBundle;
 
@@ -44,7 +51,7 @@ public class WebPageInteractor {
 	 * Returns the value of the answer attribute/element specified in sXPath
 	 * 
 	 * @param sXPath
-	 * XPath of the attribute/element
+	 *            XPath of the attribute/element
 	 */
 	public String getAnswerValue(String sXPath) {
 		System.out.println("in getAnswerValue; sXPath='" + sXPath + "'");
@@ -126,6 +133,38 @@ public class WebPageInteractor {
 	// {
 	// viewer.refreshMenuUI();
 	// }
+
+	public void launchFile(String sFile) {
+		System.out.println("launchFile: file ='" + sFile + "'");
+		WebEngine engine = viewer.getEngine();
+		String sUrl = engine.getLocation();
+		int i = sUrl.lastIndexOf("/");
+		showFileToUser(sUrl.substring(0, i + 1) + sFile);
+	}
+
+	public void launchWebPage(String sSite) {
+		System.out.println("launchWebPage: file ='" + sSite + "'");
+		showFileToUser(sSite);
+	}
+
+	protected void showFileToUser(String sFileToShow) {
+		System.out.println("show file='" + sFileToShow + "'");
+		MainApp mainApp = controller.getMainApp();
+		if (!mainApp.getOperatingSystem().equals("Mac OS X")) {
+			HostServicesDelegate hostServices = HostServicesFactory.getInstance(mainApp);
+			hostServices.showDocument(sFileToShow);
+		} else {
+			if (Desktop.isDesktopSupported()) {
+				try {
+					File myFile = new File(sFileToShow);
+					Desktop.getDesktop().open(myFile);
+				} catch (IOException ex) {
+					// no application registered for PDFs
+				}
+			}
+		}
+	}
+
 	public void saveData() {
 		System.out.println("saveData called");
 		controller.handleSaveLanguage();
