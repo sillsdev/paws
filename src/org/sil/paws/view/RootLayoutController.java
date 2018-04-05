@@ -607,7 +607,7 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	private void handleResources() {
-		webEngine.load("resources page");
+		webEngine.load(sProgramLocation + kHTMsFolder + "Resources.htm");
 	}
 
 	@FXML

@@ -1,5 +1,5 @@
 // Resources.js
 
 function Initialize() {
-	window.external.GetLeftOffAt();
+	pawsApp.setLeftOffAt("Resources.htm");
 }
