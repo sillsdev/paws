@@ -613,7 +613,7 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	private void handleLanguage() {
-		webEngine.load("language page");
+		webEngine.load(sProgramLocation + kHTMsFolder + "LanguageProperties.htm");
 	}
 
 	/**

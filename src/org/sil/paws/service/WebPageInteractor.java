@@ -49,7 +49,7 @@ public class WebPageInteractor {
 		this.viewer = viewer;
 		this.controller = controller;
 		this.bundle = controller.getBundle();
-		this.mainApp = controller.getMainApp(); 
+		this.mainApp = controller.getMainApp();
 		this.prefs = mainApp.getApplicationPreferences();
 	}
 
@@ -73,23 +73,23 @@ public class WebPageInteractor {
 		return sOutValue;
 	}
 
-	 public String getInterfaceLanguage()
-	 {
-		 sOutValue = prefs.getLastLocaleLanguage();
-		 if (StringUtilities.isNullOrEmpty(sOutValue)) {
-			 sOutValue = "en";
-		 }
-		 return sOutValue;
-	 }
-	 public void setInterfaceLanguage(String sLangCode)
-	 {
-		 mainApp.setLocale(new Locale(sLangCode));
-	 }
-	 public void saveInterfaceLanguage()
-	 {
-	 	Locale locale = mainApp.getLocale();
-	 	prefs.setLastLocaleLanguage(locale.getLanguage());
-	 }
+	public String getInterfaceLanguage() {
+		sOutValue = prefs.getLastLocaleLanguage();
+		if (StringUtilities.isNullOrEmpty(sOutValue)) {
+			sOutValue = "en";
+		}
+		return sOutValue;
+	}
+
+	public void setInterfaceLanguage(String sLangCode) {
+		mainApp.setLocale(new Locale(sLangCode));
+	}
+
+	public void saveInterfaceLanguage() {
+		Locale locale = mainApp.getLocale();
+		prefs.setLastLocaleLanguage(locale.getLanguage());
+	}
+
 	// public final void copyFiles(String sFromDirectory, String sToDirectory)
 	// {
 	// try
@@ -189,7 +189,13 @@ public class WebPageInteractor {
 		System.out.println("setLeftOffAt = '" + sValue + "'");
 	}
 
-	public final void createNewLanguage() {
+	public void languageNameChanged() {
+		// TODO: do we want to just show the file in the title bar or also the
+		// language name?  If both, then we will need to notify the controller.
+		//language.languageNameChanged();
+	}
+
+	public void createNewLanguage() {
 		controller.handleNewLanguage();
 	}
 
@@ -276,8 +282,13 @@ public class WebPageInteractor {
 				sStyle = kItalic;
 			}
 		}
+		System.out.println("changeFontInfo: '" + sFontName + "' at " + sFontSize + " with style '" + sStyle + "' using '" + sFontColor + "'" );
 		FontInfo fontInfo = new FontInfo(sFontName, Double.parseDouble(sFontSize), sStyle);
-		fontInfo.setColor(Color.web(sFontColor));
+		try {
+			fontInfo.setColor(Color.web(sFontColor));
+		} catch (IllegalArgumentException e) {
+			fontInfo.setColor(Color.BLACK);
+		}
 		fontInfo = controller.showFontInfo(fontInfo);
 		// set the values
 		language.setValue(ksFontName, fontInfo.getFontFamily());

@@ -70,7 +70,9 @@ public class Language {
 		try {
 			XPathExpression expr = xpath.compile(XPath);
 			Node node = (Node) expr.evaluate(answersDOM, XPathConstants.NODE);
-			node.setTextContent(sValue);
+			if (node != null) {
+				node.setTextContent(sValue);
+			}
 		} catch (XPathExpressionException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
