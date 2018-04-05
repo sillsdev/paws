@@ -19,11 +19,10 @@ function Initialize() {
 
 	displayOutputGrammarItems();
 
-	window.external.SetLeftOffAt("NPContents.htm");
+	pawsApp.setLeftOffAt("NPContents.htm");
 }
 function displayOutputGrammarItems() {
-	window.external.GetAnswerValue("/paws/@outputGrammar");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");
 
 	if (attr == "False") {
 		NPContentsCatMapRow.style.display = "none";
@@ -31,8 +30,7 @@ function displayOutputGrammarItems() {
 	}
 }
 function displayStatus(idOfItem, strElem) {
-	window.external.GetAnswerValue("//np/" + strElem + "/@checkedOff");
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue("//np/" + strElem + "/@checkedOff");
 	sImg = "&nbsp;&nbsp;<img src='";
 	if (attr == "no") {
 		sImg = sImg + "UnCheckedOff.GIF'>";
@@ -43,8 +41,7 @@ function displayStatus(idOfItem, strElem) {
 }
 function StatusClicked(idOfItem, strElem) {
 	xpath = "//np/" + strElem + "/@checkedOff";
-	window.external.GetAnswerValue(xpath);
-	attr = window.external.OutValue;
+	attr = pawsApp.getAnswerValue(xpath);
 	sImg = "&nbsp;&nbsp;<img src='";
 	if (attr == "no") {
 		sImg = sImg + "CheckedOff.GIF'>";
@@ -53,6 +50,6 @@ function StatusClicked(idOfItem, strElem) {
 		sImg = sImg + "UnCheckedOff.GIF'>";
 		sTemp = "no";
 	}
-	window.external.SetAnswerValue(xpath, sTemp);
+	pawsApp.setAnswerValue(xpath, sTemp);
 	idOfItem.innerHTML = sImg;
 }
