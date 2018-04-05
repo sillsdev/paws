@@ -4,8 +4,7 @@
 var attr;
 
 function Initialize() {
-	window.external.GetInterfaceLanguage();
-	attr = window.external.OutValue;
+	attr = pawsApp.getInterfaceLanguage();
 	if (attr == "en")
 	InterfaceLangEn.checked = true;
 	else if (attr == "es")
@@ -35,7 +34,7 @@ function saveData() {
 	if (InterfaceLangFr.checked)
 	sTemp = "fr";
 
-	window.external.SetInterfaceLanguage(sTemp);
+	pawsApp.setInterfaceLanguage(sTemp);
 }
 
 function copyFiles() {
@@ -49,11 +48,11 @@ function copyFiles() {
 	if (InterfaceLangFr.checked)
 	sTemp = "fr";
 
-	window.external.CopyFiles("Localizations/" + sTemp + "/HTMs", "HTMs");
-	window.external.CopyFiles("Localizations/" + sTemp + "/Transforms", "Transforms");
-	window.external.CopyFiles("Localizations/" + sTemp + "/XmlPageDescriptions", "XmlPageDescriptions");
-	window.external.CopyFile("Localizations/" + sTemp + "/LocalizedItems_" + sTemp + ".xml", "LocalizedItems.xml");
-	window.external.SaveInterfaceLanguage();
+	pawsApp.CopyFiles("Localizations/" + sTemp + "/HTMs", "HTMs");
+	pawsApp.CopyFiles("Localizations/" + sTemp + "/Transforms", "Transforms");
+	pawsApp.CopyFiles("Localizations/" + sTemp + "/XmlPageDescriptions", "XmlPageDescriptions");
+	pawsApp.CopyFile("Localizations/" + sTemp + "/LocalizedItems_" + sTemp + ".xml", "LocalizedItems.xml");
+	pawsApp.saveInterfaceLanguage();
 }
 
 function Refresh() {

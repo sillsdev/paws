@@ -508,32 +508,33 @@ public class RootLayoutController implements Initializable {
 			askAboutSaving();
 		}
 
-		Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
-		getListOfValidLocales(validLocales);
-
-		ChoiceDialog<String> dialog = new ChoiceDialog<>(
-				currentLocale.getDisplayLanguage(currentLocale), validLocales.keySet());
-		dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
-		dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
-		dialog.setContentText(bundle.getString("dialog.chooselanguage"));
-
-		Optional<String> result = dialog.showAndWait();
-		result.ifPresent(locale -> mainApp.setLocale(validLocales.get(locale).getLocale()));
+		webEngine.load(sProgramLocation + kHTMsFolder + "InterfaceLanguage.htm");
+//		Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
+//		getListOfValidLocales(validLocales);
+//
+//		ChoiceDialog<String> dialog = new ChoiceDialog<>(
+//				currentLocale.getDisplayLanguage(currentLocale), validLocales.keySet());
+//		dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
+//		dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
+//		dialog.setContentText(bundle.getString("dialog.chooselanguage"));
+//
+//		Optional<String> result = dialog.showAndWait();
+//		result.ifPresent(locale -> mainApp.setLocale(validLocales.get(locale).getLocale()));
 	}
 
-	private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
-		Locale[] locales = Locale.getAvailableLocales();
-		for (Locale locale : locales) {
-			ResourceBundle rb = ResourceBundle.getBundle("org.sil.lingtree.resources.LingTree",
-					locale);
-			if (rb != null) {
-				String localeName = rb.getLocale().getDisplayName(currentLocale);
-				if (!StringUtilities.isNullOrEmpty(localeName)) {
-					choices.putIfAbsent(localeName, rb);
-				}
-			}
-		}
-	}
+//	private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
+//		Locale[] locales = Locale.getAvailableLocales();
+//		for (Locale locale : locales) {
+//			ResourceBundle rb = ResourceBundle.getBundle("org.sil.paws.resources.paws",
+//					locale);
+//			if (rb != null) {
+//				String localeName = rb.getLocale().getDisplayName(currentLocale);
+//				if (!StringUtilities.isNullOrEmpty(localeName)) {
+//					choices.putIfAbsent(localeName, rb);
+//				}
+//			}
+//		}
+//	}
 
 	public void askAboutSaving() {
 		Alert alert = new Alert(AlertType.CONFIRMATION, "", ButtonType.YES, ButtonType.NO);

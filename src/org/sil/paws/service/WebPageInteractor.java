@@ -9,6 +9,7 @@ import javafx.scene.web.WebView;
 import javax.swing.*;
 
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
+import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.MainApp;
 import org.sil.paws.model.FontInfo;
 import org.sil.paws.model.Language;
@@ -22,6 +23,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
@@ -33,6 +35,8 @@ public class WebPageInteractor {
 	private String sOutValue;
 	private ResourceBundle bundle;
 	RootLayoutController controller;
+	MainApp mainApp;
+	ApplicationPreferences prefs;
 
 	/**
 	 * Requires a language object
@@ -45,6 +49,8 @@ public class WebPageInteractor {
 		this.viewer = viewer;
 		this.controller = controller;
 		this.bundle = controller.getBundle();
+		this.mainApp = controller.getMainApp(); 
+		this.prefs = mainApp.getApplicationPreferences();
 	}
 
 	/**
@@ -67,20 +73,23 @@ public class WebPageInteractor {
 		return sOutValue;
 	}
 
-	// public final void getInterfaceLanguage()
-	// {
-	// sOutValue = viewer.getInterfaceLanguage();
-	//
-	// }
-	// public final void setInterfaceLanguage(String sLangCode)
-	// {
-	// viewer.setInterfaceLanguage(sLangCode);
-	//
-	// }
-	// public final void saveInterfaceLanguage()
-	// {
-	// viewer.saveInterfaceLanguage();
-	// }
+	 public String getInterfaceLanguage()
+	 {
+		 sOutValue = prefs.getLastLocaleLanguage();
+		 if (StringUtilities.isNullOrEmpty(sOutValue)) {
+			 sOutValue = "en";
+		 }
+		 return sOutValue;
+	 }
+	 public void setInterfaceLanguage(String sLangCode)
+	 {
+		 mainApp.setLocale(new Locale(sLangCode));
+	 }
+	 public void saveInterfaceLanguage()
+	 {
+	 	Locale locale = mainApp.getLocale();
+	 	prefs.setLastLocaleLanguage(locale.getLanguage());
+	 }
 	// public final void copyFiles(String sFromDirectory, String sToDirectory)
 	// {
 	// try
