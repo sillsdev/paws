@@ -3,9 +3,10 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../Styles/PAWSStarterKitMaster.css"> 
     <title>Información acerca de los archivos para las respuestas y resultados</title>
-    <!-- we keep the script file here so we can make changes between
-        processing a new language and editing an existing one -->
-    <script language="jscript" id="clientEventHandlersJS">
+<!-- we keep the script file here so we can make changes between
+     processing a new language and editing an existing one
+	 and also to localize the file chooser options -->
+    <script type="text/javascript">
 // PAWSFiles.js
 
 function Initialize() {
@@ -13,78 +14,70 @@ function Initialize() {
 	var sTemp;
 	var index;
 
-	window.external.GetAnswerValue("//language/answerFile");
-	sAnswer = FileLocAnswer.value = window.external.OutValue;
+	sAnswer = FileLocAnswer.value = pawsApp.getAnswerValue("//language/answerFile");
 
-	window.external.GetAnswerValue("//language/grammarFile");
-	sTemp = FileLocGrammar.value = window.external.OutValue;
+	sTemp = FileLocGrammar.value = pawsApp.getAnswerValue("//language/grammarFile");
 	if (sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + ".grm";
-			window.external.SetAnswerValue("//language/grammarFile", sTemp);
+			pawsApp.setAnswerValue("//language/grammarFile", sTemp);
 			FileLocGrammar.value = sTemp;
 		}
 	}
 
-/*	window.external.GetAnswerValue("//language/writerFile");
-	sTemp = FileLocWriter.value = window.external.OutValue;
+/*	sTemp = FileLocWriter.value = pawsApp.getAnswerValue("//language/writerFile");
 	if (sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + ".xml";
-			window.external.SetAnswerValue("//language/writerFile", sTemp);
+			pawsApp.setAnswerValue("//language/writerFile", sTemp);
 			FileLocWriter.value = sTemp;
 		}
 	}
 */
-	window.external.GetAnswerValue("//language/writerPracticalFile");
-	sTemp = FileLocWriterPractical.value = window.external.OutValue;
+	sTemp = FileLocWriterPractical.value = pawsApp.getAnswerValue("//language/writerPracticalFile");
 	if (sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPractical.xml";
-			window.external.SetAnswerValue("//language/writerPracticalFile", sTemp);
+			pawsApp.setAnswerValue("//language/writerPracticalFile", sTemp);
 			FileLocWriterPractical.value = sTemp;
 		}
 	}
 
-	window.external.GetAnswerValue("//language/writerPracticalSpanishFile");
-	sTemp = FileLocWriterPracticalSpanish.value = window.external.OutValue;
+	sTemp = FileLocWriterPracticalSpanish.value = pawsApp.getAnswerValue("//language/writerPracticalSpanishFile");
 	if (sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPracticalSpanish.xml";
-			window.external.SetAnswerValue("//language/writerPracticalSpanishFile", sTemp);
+			pawsApp.setAnswerValue("//language/writerPracticalSpanishFile", sTemp);
 			FileLocWriterPracticalSpanish.value = sTemp;
 		}
 	}
 
-	window.external.GetAnswerValue("//language/writerPracticalFrenchFile");
-	sTemp = FileLocWriterPracticalFrench.value = window.external.OutValue;
+	sTemp = FileLocWriterPracticalFrench.value = pawsApp.getAnswerValue("//language/writerPracticalFrenchFile");
 	if (sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPracticalFrench.xml";
-			window.external.SetAnswerValue("//language/writerPracticalFrenchFile", sTemp);
+			pawsApp.setAnswerValue("//language/writerPracticalFrenchFile", sTemp);
 			FileLocWriterPracticalFrench.value = sTemp;
 		}
 	}
 
-	window.external.GetAnswerValue("//language/exampleFilesPath");
-	sTemp = FileLocExampleFiles.value = window.external.OutValue;
+	sTemp = FileLocExampleFiles.value = pawsApp.getAnswerValue("//language/exampleFilesPath");
 	if (sTemp == "") {
 		index = sAnswer.lastIndexOf("\\");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index);
-			window.external.SetAnswerValue("//language/exampleFilesPath", sTemp);
+			pawsApp.setAnswerValue("//language/exampleFilesPath", sTemp);
 			FileLocExampleFiles.value = sTemp;
 		}
 	}
 
 
-	window.external.GetAnswerValue("//language/textSFM");
-	FileTextSFM.value = window.external.OutValue;
+	FileTextSFM.value = pawsApp.getAnswerValue("//language/textSFM");
 
 	displayCheckBoxValue(OutputGrammar, "/paws/@outputGrammar");
 	/*displayCheckBoxValue(OutputWriter, "/paws/@outputWriter");*/
@@ -98,44 +91,43 @@ function Initialize() {
 	Refresh()
 }
 function displayCheckBoxValue(checkboxID, xpath) {
-	window.external.GetAnswerValue(xpath);
-	sTemp = checkboxID.value = window.external.OutValue;
+	sTemp = checkboxID.value = pawsApp.getAnswerValue(xpath);
 	if (sTemp == "True")
 	checkboxID.checked = true; else
 	checkboxID.checked = false;
 }
 function saveData() {
-	window.external.SetAnswerValue("//language/answerFile", FileLocAnswer.value);
+	pawsApp.setAnswerValue("//language/answerFile", FileLocAnswer.value);
 
-	window.external.SetAnswerValue("//language/grammarFile", FileLocGrammar.value);
+	pawsApp.setAnswerValue("//language/grammarFile", FileLocGrammar.value);
 
-/*	window.external.SetAnswerValue("//language/writerFile", FileLocWriter.value);*/
+/*	pawsApp.setAnswerValue("//language/writerFile", FileLocWriter.value);*/
 
-	window.external.SetAnswerValue("//language/writerPracticalFile", FileLocWriterPractical.value);
+	pawsApp.setAnswerValue("//language/writerPracticalFile", FileLocWriterPractical.value);
 
-	window.external.SetAnswerValue("//language/writerPracticalSpanishFile", FileLocWriterPracticalSpanish.value);
+	pawsApp.setAnswerValue("//language/writerPracticalSpanishFile", FileLocWriterPracticalSpanish.value);
 
-	window.external.SetAnswerValue("//language/writerPracticalFrenchFile", FileLocWriterPracticalFrench.value);
+	pawsApp.setAnswerValue("//language/writerPracticalFrenchFile", FileLocWriterPracticalFrench.value);
 
-	window.external.SetAnswerValue("//language/exampleFilesPath", FileLocExampleFiles.value);
+	pawsApp.setAnswerValue("//language/exampleFilesPath", FileLocExampleFiles.value);
 
-	window.external.SetAnswerValue("//language/textSFM", FileTextSFM.value);
+	pawsApp.setAnswerValue("//language/textSFM", FileTextSFM.value);
 
-	window.external.SetAnswerValue("/paws/@outputGrammar", OutputGrammar.value);
+	pawsApp.setAnswerValue("/paws/@outputGrammar", OutputGrammar.value);
 
-	/*window.external.SetAnswerValue("/paws/@outputWriter", OutputWriter.value);*/
+	/*pawsApp.setAnswerValue("/paws/@outputWriter", OutputWriter.value);*/
 
-	window.external.SetAnswerValue("/paws/@outputWriterPractical", OutputWriterPractical.value);
+	pawsApp.setAnswerValue("/paws/@outputWriterPractical", OutputWriterPractical.value);
 
-	window.external.SetAnswerValue("/paws/@outputWriterPracticalSpanish", OutputWriterPracticalSpanish.value);
+	pawsApp.setAnswerValue("/paws/@outputWriterPracticalSpanish", OutputWriterPracticalSpanish.value);
 
-	window.external.SetAnswerValue("/paws/@outputWriterPracticalFrench", OutputWriterPracticalFrench.value);
+	pawsApp.setAnswerValue("/paws/@outputWriterPracticalFrench", OutputWriterPracticalFrench.value);
 
-	window.external.SaveData();
+	pawsApp.saveData();
 }
 function processChanges() {
     saveData();
-	window.external.InitAnswerTransforms()
+	//pawsApp.initAnswerTransforms()
 }
 function Refresh() {
 	var valArray = new Array();
@@ -179,8 +171,7 @@ function Refresh() {
 }
 function ButtonFileLocAnswer() {
 	var result;
-	window.external.FileBrowse(FileLocAnswer.value, "PAWS Starter Kit (*.paw)|*.paw|" + "All Files (*.*)|*.*");
-	result = window.external.OutValue;
+	result = pawsApp.fileBrowse(FileLocAnswer.value, "PAWS Starter Kit (*.paw)", "*.paw");
 	if (result != "Cancel") {
 		FileLocAnswer.value = result;
 		saveData();
@@ -188,8 +179,7 @@ function ButtonFileLocAnswer() {
 }
 function ButtonFileLocGrammar() {
 	var result;
-	window.external.FileBrowse(FileLocGrammar.value, "PC-PATR Grammar  (*.grm)|*.grm|" + "All Files (*.*)|*.*");
-	result = window.external.OutValue;
+	result = pawsApp.fileBrowse(FileLocGrammar.value, "PC-PATR Grammar  (*.grm)", "*.*grm");
 	if (result != "Cancel") {
 		FileLocGrammar.value = result;
 		saveData();
@@ -197,8 +187,7 @@ function ButtonFileLocGrammar() {
 }
 /*function ButtonFileLocWriter() {
 	var result;
-	window.external.FileBrowse(FileLocWriter.value, "Writer File  (*.xml)|*.xml|" + "All Files (*.*)|*.*");
-	result = window.external.OutValue;
+	result = pawsApp.fileBrowse(FileLocWriter.value, "Archivo de la gramática  (*.xml)", "*.xml");
 	if (result != "Cancel") {
 		FileLocWriter.value = result;
 		saveData();
@@ -206,8 +195,7 @@ function ButtonFileLocGrammar() {
 }*/
 function ButtonFileLocWriterPractical() {
 	var result;
-	window.external.FileBrowse(FileLocWriterPractical.value, "Writer File  (*.xml)|*.xml|" + "All Files (*.*)|*.*");
-	result = window.external.OutValue;
+	result = pawsApp.fileBrowse(FileLocWriterPractical.value, "Archivo de la gramática  (*.xml)", "*.xml");
 	if (result != "Cancel") {
 		FileLocWriterPractical.value = result;
 		saveData();
@@ -215,8 +203,7 @@ function ButtonFileLocWriterPractical() {
 }
 function ButtonFileLocWriterPracticalSpanish() {
 	var result;
-	window.external.FileBrowse(FileLocWriterPracticalSpanish.value, "Writer File  (*.xml)|*.xml|" + "All Files (*.*)|*.*");
-	result = window.external.OutValue;
+	result = pawsApp.fileBrowse(FileLocWriterPracticalSpanish.value, "Archivo de la gramática  (*.xml)", "*.xml");
 	if (result != "Cancel") {
 		FileLocWriterPracticalSpanish.value = result;
 		saveData();
@@ -224,8 +211,7 @@ function ButtonFileLocWriterPracticalSpanish() {
 }
 function ButtonFileLocWriterPracticalFrench() {
 	var result;
-	window.external.FileBrowse(FileLocWriterPracticalFrench.value, "Writer File  (*.xml)|*.xml|" + "All Files (*.*)|*.*");
-	result = window.external.OutValue;
+	result = pawsApp.fileBrowse(FileLocWriterPracticalFrench.value, "Archivo de la gramática  (*.xml)", "*.xml");
 	if (result != "Cancel") {
 		FileLocWriterPracticalFrench.value = result;
 		saveData();
@@ -233,8 +219,7 @@ function ButtonFileLocWriterPracticalFrench() {
 }
 function ButtonFileLocExampleFiles() {
 	var result;
-	window.external.DirectoryBrowse(FileLocExampleFiles.value, "Example files directory");
-	result = window.external.OutValue;
+	result = pawsApp.directoryBrowse(FileLocExampleFiles.value, "Directorio de los archivos de los ejemplos");
 	if (result != "Cancel") {
 		FileLocExampleFiles.value = result;
 		saveData();
@@ -329,7 +314,7 @@ function ButtonNext() {
 	saveData();
 	window.navigate("Contents.htm");
 }
-  </script></head>
+</script></head>
 <body onload="Initialize()">
     <h2>Información acerca de los archivos para las respuestas y resultados</h2>
 <div class="introduction">

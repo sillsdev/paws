@@ -1,15 +1,20 @@
 package org.sil.paws.service;
 
+import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.paint.Color;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
 
 import javax.swing.*;
 
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
+import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.ApplicationPreferences;
+import org.sil.paws.Constants;
 import org.sil.paws.MainApp;
 import org.sil.paws.model.FontInfo;
 import org.sil.paws.model.Language;
@@ -138,10 +143,6 @@ public class WebPageInteractor {
 	// }
 	//
 	// }
-	// public final void refreshMenuUI()
-	// {
-	// viewer.refreshMenuUI();
-	// }
 
 	public void launchFile(String sFile) {
 		System.out.println("launchFile: file ='" + sFile + "'");
@@ -191,8 +192,8 @@ public class WebPageInteractor {
 
 	public void languageNameChanged() {
 		// TODO: do we want to just show the file in the title bar or also the
-		// language name?  If both, then we will need to notify the controller.
-		//language.languageNameChanged();
+		// language name? If both, then we will need to notify the controller.
+		// language.languageNameChanged();
 	}
 
 	public void createNewLanguage() {
@@ -215,36 +216,65 @@ public class WebPageInteractor {
 	// {
 	// viewer.onExitApplication(this);
 	// }
-	// public final void fileBrowse(String sFile, String sFilter)
-	// {
-	// SaveFileDialog dlg = new SaveFileDialog();
-	// dlg.Filter = sFilter;
-	// dlg.FileName = sFile;
-	// dlg.OverwritePrompt = false;
-	// if (dlg.ShowDialog() == JOptionPane.OK_OPTION)
-	// {
-	// sOutValue = dlg.FileName;
-	// }
-	// else
-	// {
-	// sOutValue = "Cancel";
-	// }
-	// }
-	// public final void directoryBrowse(String sDirectory, String sDescription)
-	// {
-	// FolderBrowserDialog dlg = new FolderBrowserDialog();
-	// dlg.SelectedPath = sDirectory;
-	// dlg.Description = sDescription;
-	// dlg.ShowNewFolderButton = true;
-	// if (dlg.ShowDialog() == JOptionPane.OK_OPTION)
-	// {
-	// sOutValue = dlg.SelectedPath;
-	// }
-	// else
-	// {
-	// sOutValue = "Cancel";
-	// }
-	// }
+	public String fileBrowse(String sFile, String sDescription, String sExtensions) {
+		sOutValue = "Cancel";
+		Platform.runLater(new Runnable() {
+
+			@Override
+			public void run() {
+				try {
+					FileChooser fileChooser = new FileChooser();
+					// Set extension filter
+					FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
+							sDescription, sExtensions);
+					fileChooser.getExtensionFilters().add(extFilter);
+					fileChooser.setInitialFileName(sFile);
+					String sDirectoryPath = prefs.getLastOpenedDirectoryPath();
+					if (!StringUtilities.isNullOrEmpty(sDirectoryPath)) {
+						File initialDirectory = new File(sDirectoryPath);
+						if (initialDirectory.exists() && initialDirectory.isDirectory()) {
+							fileChooser.setInitialDirectory(initialDirectory);
+						}
+					}
+					File file = fileChooser.showSaveDialog(mainApp.getPrimaryStage());
+
+					if (file == null) {
+						sOutValue = "Cancel";
+					} else {
+						sOutValue = file.getAbsolutePath();
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+		return sOutValue;
+	}
+
+	public String directoryBrowse(String sDirectory, String sDescription) {
+		sOutValue = "Cancel";
+		Platform.runLater(new Runnable() {
+
+			@Override
+			public void run() {
+				try {
+					DirectoryChooser dlg = new DirectoryChooser();
+					dlg.setInitialDirectory(new File(sDirectory));
+					dlg.setTitle(sDescription);
+					File result = dlg.showDialog(mainApp.getPrimaryStage());
+					if (result == null) {
+						sOutValue = "Cancel";
+					} else {
+						sOutValue = result.getAbsolutePath();
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+		return sOutValue;
+	}
+
 	public final void showTermDefinition(String sMsg) {
 		Alert alert = new Alert(AlertType.NONE);
 		alert.setTitle(bundle.getString("technicalterm.definition"));
@@ -282,7 +312,6 @@ public class WebPageInteractor {
 				sStyle = kItalic;
 			}
 		}
-		System.out.println("changeFontInfo: '" + sFontName + "' at " + sFontSize + " with style '" + sStyle + "' using '" + sFontColor + "'" );
 		FontInfo fontInfo = new FontInfo(sFontName, Double.parseDouble(sFontSize), sStyle);
 		try {
 			fontInfo.setColor(Color.web(sFontColor));

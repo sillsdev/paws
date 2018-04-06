@@ -458,7 +458,7 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	private void handleFileLocations() {
-		webEngine.load("file locations page");
+		webEngine.load(sProgramLocation + kHTMsFolder + "PAWSFiles.htm");
 	}
 
 	@FXML
