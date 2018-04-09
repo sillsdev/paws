@@ -9,9 +9,11 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.nio.file.attribute.FileAttribute;
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -155,7 +157,7 @@ public class RootLayoutController implements Initializable {
 	private Locale currentLocale;
 	ResourceBundle bundle;
 	String sDescription;
-	org.sil.paws.ApplicationPreferences applicationPreferences;
+	ApplicationPreferences applicationPreferences;
 	boolean fIsDirty;
 	private static final String kHTMsFolder = "/resources/configuration/HTMs/";
 	private String sProgramLocation;
@@ -163,10 +165,19 @@ public class RootLayoutController implements Initializable {
 	private String htmlMapperStylesheet;
 	private String sCSSContent;
 
+	private String sConfigurationDirectory;
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		bundle = resources;
 		sFileFilterDescription = bundle.getString("file.filterdescription");
+		try {
+			sConfigurationDirectory = new File(".").getCanonicalPath() + File.separator
+					+ "resources" + File.separator + "configuration" + File.separator;
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		createToolbarButtons(bundle);
 
 		webEngine = browser.getEngine();
@@ -222,8 +233,6 @@ public class RootLayoutController implements Initializable {
 
 	private void initMapperAndCSS() {
 		try {
-			String sConfigurationDirectory = new File(".").getCanonicalPath() + File.separator
-					+ "resources" + File.separator + "configuration" + File.separator;
 			htmlMapperStylesheet = sConfigurationDirectory + "Transforms" + File.separator
 					+ "PAWSSKHtmlMapper.xsl";
 			File xslt = new File(htmlMapperStylesheet);
@@ -407,6 +416,7 @@ public class RootLayoutController implements Initializable {
 	 */
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
+		this.applicationPreferences = mainApp.getApplicationPreferences();
 	}
 
 	public void setLocale(Locale currentLocale) {
@@ -418,6 +428,64 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	public void handleNewLanguage() {
+		if (fIsDirty) {
+			askAboutSaving();
+		}
+		String sDirectoryPath = applicationPreferences.getLastOpenedDirectoryPath();
+		if (sDirectoryPath == "") {
+			// probably creating a new file the first time the program is run;
+			// set the directory to the closest we can to a reasonable default
+			sDirectoryPath = tryToGetDefaultDirectoryPath();
+		}
+		applicationPreferences.setLastOpenedDirectoryPath(sDirectoryPath);
+		File fileCreated = ControllerUtilities.doFileSaveAs(mainApp, currentLocale, false,
+				pawsFilterDescription, bundle.getString("file.new"));
+		if (fileCreated != null) {
+			try {
+				String masterPAWS = sConfigurationDirectory + File.separator + "Data"
+						+ File.separator + "PAWSStarterKitMaster.paw";
+				Files.copy(Paths.get(masterPAWS), Paths.get(fileCreated.getAbsolutePath()),
+						StandardCopyOption.REPLACE_EXISTING);
+				mainApp.loadLanguageData(fileCreated);
+				handleRefresh();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} else {
+			language = null;
+		}
+	}
+
+	protected String tryToGetDefaultDirectoryPath() {
+		String sDirectoryPath = System.getProperty("user.home") + File.separator;
+		File dir = new File(sDirectoryPath);
+		if (dir.exists()) {
+			// See if there is a "Documents" directory as Windows, Linux, and
+			// Mac OS X tend to have
+			String sDocumentsDirectoryPath = sDirectoryPath + "Documents" + File.separator;
+			dir = new File(sDocumentsDirectoryPath);
+			if (dir.exists()) {
+				// Try and find or make the "My PAWS" subdirectory of
+				// Documents
+				String sMyPAWSDirectoryPath = sDocumentsDirectoryPath
+						+ Constants.DEFAULT_DIRECTORY_NAME + File.separator;
+				dir = new File(sMyPAWSDirectoryPath);
+				if (dir.exists()) {
+					sDirectoryPath = sMyPAWSDirectoryPath;
+				} else {
+					boolean success = (dir.mkdir());
+					if (success) {
+						sDirectoryPath = sMyPAWSDirectoryPath;
+					} else {
+						sDirectoryPath = sDocumentsDirectoryPath;
+					}
+				}
+			}
+		} else { // give up; let user set it
+			sDirectoryPath = "";
+		}
+		return sDirectoryPath;
 	}
 
 	@FXML
@@ -509,32 +577,36 @@ public class RootLayoutController implements Initializable {
 		}
 
 		webEngine.load(sProgramLocation + kHTMsFolder + "InterfaceLanguage.htm");
-//		Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
-//		getListOfValidLocales(validLocales);
-//
-//		ChoiceDialog<String> dialog = new ChoiceDialog<>(
-//				currentLocale.getDisplayLanguage(currentLocale), validLocales.keySet());
-//		dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
-//		dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
-//		dialog.setContentText(bundle.getString("dialog.chooselanguage"));
-//
-//		Optional<String> result = dialog.showAndWait();
-//		result.ifPresent(locale -> mainApp.setLocale(validLocales.get(locale).getLocale()));
+		// Map<String, ResourceBundle> validLocales = new TreeMap<String,
+		// ResourceBundle>();
+		// getListOfValidLocales(validLocales);
+		//
+		// ChoiceDialog<String> dialog = new ChoiceDialog<>(
+		// currentLocale.getDisplayLanguage(currentLocale),
+		// validLocales.keySet());
+		// dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
+		// dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
+		// dialog.setContentText(bundle.getString("dialog.chooselanguage"));
+		//
+		// Optional<String> result = dialog.showAndWait();
+		// result.ifPresent(locale ->
+		// mainApp.setLocale(validLocales.get(locale).getLocale()));
 	}
 
-//	private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
-//		Locale[] locales = Locale.getAvailableLocales();
-//		for (Locale locale : locales) {
-//			ResourceBundle rb = ResourceBundle.getBundle("org.sil.paws.resources.paws",
-//					locale);
-//			if (rb != null) {
-//				String localeName = rb.getLocale().getDisplayName(currentLocale);
-//				if (!StringUtilities.isNullOrEmpty(localeName)) {
-//					choices.putIfAbsent(localeName, rb);
-//				}
-//			}
-//		}
-//	}
+	// private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
+	// Locale[] locales = Locale.getAvailableLocales();
+	// for (Locale locale : locales) {
+	// ResourceBundle rb =
+	// ResourceBundle.getBundle("org.sil.paws.resources.paws",
+	// locale);
+	// if (rb != null) {
+	// String localeName = rb.getLocale().getDisplayName(currentLocale);
+	// if (!StringUtilities.isNullOrEmpty(localeName)) {
+	// choices.putIfAbsent(localeName, rb);
+	// }
+	// }
+	// }
+	// }
 
 	public void askAboutSaving() {
 		Alert alert = new Alert(AlertType.CONFIRMATION, "", ButtonType.YES, ButtonType.NO);
