@@ -495,7 +495,7 @@ Refresh();
 		<br/>
   Morphological category to be changed to <span class="category">
 			<xsl:value-of select="."/>
-		</span> is:&#x20;&#x20;<input type="text" size="30" style="position:relative;top=3px">
+		</span> is:&#x20;&#x20;<input type="text" size="30" style="position:relative;top=3px" id="{@id}">
 			<xsl:attribute name="name">
 				<xsl:value-of select="./@id"/>
 			</xsl:attribute>
@@ -536,6 +536,9 @@ Refresh();
 			<td valign="top">
 				<xsl:element name="input">
 					<xsl:attribute name="type">checkbox</xsl:attribute>
+					<xsl:attribute name="id">
+						<xsl:value-of select="@id"/>
+					</xsl:attribute>
 					<xsl:attribute name="name">
 						<xsl:value-of select="@id"/>
 					</xsl:attribute>

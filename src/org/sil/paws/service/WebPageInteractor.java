@@ -47,7 +47,6 @@ public class WebPageInteractor {
 	 * @param lang
 	 */
 	public WebPageInteractor(Language lang, WebEngine engine, RootLayoutController controller) {
-		System.out.println("In web page interactor constructor");
 		this.language = lang;
 		this.engine = engine;
 		this.controller = controller;
@@ -134,14 +133,12 @@ public class WebPageInteractor {
 	// }
 
 	public void launchFile(String sFile) {
-		System.out.println("launchFile: file ='" + sFile + "'");
 		String sUrl = engine.getLocation();
 		int i = sUrl.lastIndexOf("/");
 		showFileToUser(sUrl.substring(0, i + 1) + sFile);
 	}
 
 	public void launchWebPage(String sSite) {
-		System.out.println("launchWebPage: file ='" + sSite + "'");
 		showFileToUser(sSite);
 	}
 
@@ -168,7 +165,6 @@ public class WebPageInteractor {
 	}
 
 	public void saveData() {
-		System.out.println("saveData called");
 		controller.handleSaveLanguage();
 	}
 
@@ -179,7 +175,6 @@ public class WebPageInteractor {
 	public void setLeftOffAt(String sValue) {
 		language.setValue("/paws/leftOffAt", sValue);
 		saveData();
-		System.out.println("setLeftOffAt = '" + sValue + "'");
 	}
 
 	public void languageNameChanged() {

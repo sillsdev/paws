@@ -258,7 +258,6 @@ public class RootLayoutController implements Initializable {
 		try {
 			int i = sUrl.lastIndexOf("/");
 			String sBaseName = sUrl.substring(i + 1, sUrl.length() - 4);
-			// System.out.println("basename='" + sBaseName + "'");
 			File pageToLoadFile = new File(sPAWSWorkingDirectory + File.separator + sBaseName
 					+ ".htm");
 			Path working = Paths.get(sPAWSWorkingDirectory);
@@ -267,8 +266,7 @@ public class RootLayoutController implements Initializable {
 			}
 			String sAdjustedUrl = sUrl.replace(Constants.FILE_PROTOCOL + "/", "").replace("HTMs",
 					"XmlPageDescriptions");
-			String sInstallPath = sUrl.replace("HTMs", "").replace(sBaseName + ".xml", "");
-			// System.out.println("xml = '" + sAdjustedUrl + "'");
+			String sInstallPath = sUrl.replace("HTMs/", "").replace(sBaseName + ".xml", "");
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document document = builder.parse(sAdjustedUrl);
