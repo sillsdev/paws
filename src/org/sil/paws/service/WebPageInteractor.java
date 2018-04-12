@@ -9,8 +9,6 @@ import javafx.scene.web.WebView;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 
-import javax.swing.*;
-
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
 import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.ApplicationPreferences;
@@ -36,7 +34,7 @@ import java.util.ResourceBundle;
  */
 public class WebPageInteractor {
 	private Language language;
-	private WebView viewer;
+	private WebEngine engine;
 	private String sOutValue;
 	private ResourceBundle bundle;
 	RootLayoutController controller;
@@ -48,10 +46,10 @@ public class WebPageInteractor {
 	 * 
 	 * @param lang
 	 */
-	public WebPageInteractor(Language lang, WebView viewer, RootLayoutController controller) {
+	public WebPageInteractor(Language lang, WebEngine engine, RootLayoutController controller) {
 		System.out.println("In web page interactor constructor");
 		this.language = lang;
-		this.viewer = viewer;
+		this.engine = engine;
 		this.controller = controller;
 		this.bundle = controller.getBundle();
 		this.mainApp = controller.getMainApp();
@@ -65,16 +63,7 @@ public class WebPageInteractor {
 	 *            XPath of the attribute/element
 	 */
 	public String getAnswerValue(String sXPath) {
-		System.out.println("in getAnswerValue; sXPath='" + sXPath + "'");
 		sOutValue = language.getValue(sXPath);
-		return sOutValue;
-	}
-
-	public String getOutValue() {
-		if (sOutValue == null) {
-			sOutValue = "";
-		}
-		System.out.println("out value ='" + sOutValue + "'");
 		return sOutValue;
 	}
 
@@ -146,7 +135,6 @@ public class WebPageInteractor {
 
 	public void launchFile(String sFile) {
 		System.out.println("launchFile: file ='" + sFile + "'");
-		WebEngine engine = viewer.getEngine();
 		String sUrl = engine.getLocation();
 		int i = sUrl.lastIndexOf("/");
 		showFileToUser(sUrl.substring(0, i + 1) + sFile);
@@ -155,6 +143,10 @@ public class WebPageInteractor {
 	public void launchWebPage(String sSite) {
 		System.out.println("launchWebPage: file ='" + sSite + "'");
 		showFileToUser(sSite);
+	}
+
+	public void load(String page) {
+		engine.load(page);
 	}
 
 	protected void showFileToUser(String sFileToShow) {
@@ -182,11 +174,11 @@ public class WebPageInteractor {
 
 	public void setAnswerValue(String sXPath, String sValue) {
 		language.setValue(sXPath, sValue);
-		System.out.println("setAnswerValue: path='" + sXPath + "'; value = '" + sValue + "'");
 	}
 
 	public void setLeftOffAt(String sValue) {
 		language.setValue("/paws/leftOffAt", sValue);
+		saveData();
 		System.out.println("setLeftOffAt = '" + sValue + "'");
 	}
 

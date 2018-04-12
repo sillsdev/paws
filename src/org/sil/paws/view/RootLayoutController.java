@@ -166,6 +166,7 @@ public class RootLayoutController implements Initializable {
 	private String sCSSContent;
 
 	private String sConfigurationDirectory;
+	private String operatingSystem = System.getProperty("os.name");
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -193,7 +194,7 @@ public class RootLayoutController implements Initializable {
 					// We are working around it by sleeping for 10ms in the
 					// javascript onload() function.
 					JSObject win = (JSObject) webEngine.executeScript("window");
-					win.setMember("pawsApp", new WebPageInteractor(language, browser, rlc));
+					win.setMember("pawsApp", new WebPageInteractor(language, webEngine, rlc));
 					webEngine.executeScript("Initialize()");
 				} else if (newState == State.FAILED) {
 					String sUrl = webEngine.getLocation();
@@ -286,7 +287,6 @@ public class RootLayoutController implements Initializable {
 			HandleExceptionMessage.show("Transform Error", "Failed to transform", e.getMessage(),
 					true);
 		}
-
 	}
 
 	public void createTransformParameters(String sInstallPath, Transformer transformer) {
@@ -295,7 +295,11 @@ public class RootLayoutController implements Initializable {
 		params.add(new XsltParameter("prmLangAbbr", language.getValue("/paws/language/langAbbr")));
 		params.add(new XsltParameter("prmRtlScript", language.getValue("/paws/language/font/@rtl")));
 		params.add(new XsltParameter("prmStylesheet", sCSSContent));
-		params.add(new XsltParameter("prmWorkingPath", sPAWSWorkingDirectory));
+		String sAdjusted = sPAWSWorkingDirectory + File.separator;
+		if (operatingSystem.toLowerCase().contains("windows")) {
+			sAdjusted = sAdjusted.replace("\\", "\\\\");
+		}
+		params.add(new XsltParameter("prmWorkingPath", sAdjusted));
 
 		if (params.size() > 0) {
 			for (XsltParameter param : params) {
@@ -335,8 +339,7 @@ public class RootLayoutController implements Initializable {
 	}
 
 	public String getAppDataDirectory() {
-		String os = System.getProperty("os.name");
-		if (os.toLowerCase().contains("windows")) {
+		if (operatingSystem.toLowerCase().contains("windows")) {
 			return System.getenv("APPDATA");
 		} else {
 			return System.getProperty("user.home");
@@ -344,10 +347,9 @@ public class RootLayoutController implements Initializable {
 	}
 
 	public String getWorkingConfigurationDirectory() {
-		String os = System.getProperty("os.name");
 		String appDir = getAppDataDirectory();
 		String configDir = "paws";
-		if (!os.toLowerCase().contains("windows")) {
+		if (!operatingSystem.toLowerCase().contains("windows")) {
 			configDir = ".paws";
 		}
 		String langAbbr = "Z1Z2Z3";
@@ -518,6 +520,14 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	public void handleSaveLanguage() {
+		File file = mainApp.getLanguageFile();
+		if (file != null) {
+			mainApp.saveLanguageFile(file);
+			markAsClean();
+		} else {
+			handleSaveAs();
+		}
+
 	}
 
 	@FXML
@@ -722,17 +732,23 @@ public class RootLayoutController implements Initializable {
 		sPAWSWorkingDirectory = getWorkingConfigurationDirectory();
 		initMapperAndCSS();
 		String lastPage = language.getValue("/paws/leftOffAt");
-		if (StringUtilities.isNullOrEmpty(lastPage)) {
-			// load contents page
-			webEngine.load(sProgramLocation + kHTMsFolder + "Contents.htm");
-		} else if (Files.exists(Paths.get(lastPage))) {
-			// load the language-specific page
-			webEngine.load(lastPage);
-		} else {
-			// load the standard page
-			// TODO: what if it doesn't exist?
-			String sPageToLoad = sProgramLocation + kHTMsFolder + lastPage;
-			webEngine.load(sPageToLoad);
+		try {
+			if (StringUtilities.isNullOrEmpty(lastPage)) {
+				// load contents page
+				webEngine.load(sProgramLocation + kHTMsFolder + "Contents.htm");
+			} else if (Files.exists(Paths.get(lastPage))) {
+				// load the language-specific page
+				URL url = new File(lastPage).toURI().toURL();
+				webEngine.load(url.toString());
+			} else {
+				// load the standard page
+				// TODO: what if it doesn't exist?
+				String sPageToLoad = sProgramLocation + kHTMsFolder + lastPage;
+				webEngine.load(sPageToLoad);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 

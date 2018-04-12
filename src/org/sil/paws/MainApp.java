@@ -167,10 +167,19 @@ public class MainApp extends Application {
 		updateStageTitle(file);
 	}
 
-	public void saveAnswers(File file) {
+	public void saveLanguageFile(File file) {
 		xmlBackEndProvider.saveLanguageDataToFile(file);
 		applicationPreferences.setLastOpenedFilePath(file);
 		applicationPreferences.setLastOpenedDirectoryPath(file.getParent());
+	}
+
+	public File getLanguageFile() {
+		String filePath = applicationPreferences.getLastOpenedFilePath();
+		if (filePath != null) {
+			return new File(filePath);
+		} else {
+			return null;
+		}
 	}
 
 	public void updateStageTitle(File file) {

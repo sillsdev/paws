@@ -148,7 +148,7 @@ public class ControllerUtilities {
 			if (!file.getPath().endsWith(Constants.PAWS_DATA_FILE_EXTENSION)) {
 				file = new File(file.getPath() + Constants.PAWS_DATA_FILE_EXTENSION);
 			}
-			mainApp.saveAnswers(file);
+			mainApp.saveLanguageFile(file);
 			String sDirectoryPath = file.getParent();
 			ApplicationPreferences applicationPreferences = mainApp.getApplicationPreferences();
 			applicationPreferences.setLastOpenedDirectoryPath(sDirectoryPath);
