@@ -50,6 +50,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.ChoiceDialog;
 import javafx.scene.control.Dialog;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Tooltip;
@@ -57,6 +58,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.Clipboard;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.web.WebEngine;
@@ -78,6 +81,7 @@ import org.sil.utility.HandleExceptionMessage;
 import org.sil.utility.StringUtilities;
 import org.sil.utility.XsltParameter;
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 
 public class RootLayoutController implements Initializable {
 
@@ -151,6 +155,14 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	private WebEngine webEngine;
 
+	@FXML
+	private VBox statusBar;
+	@FXML
+	private Label labelPageDescription;
+	@FXML
+	private Label labelPageCount;
+	BorderPane border;
+
 	protected Clipboard systemClipboard = Clipboard.getSystemClipboard();
 
 	private Language language;
@@ -181,6 +193,8 @@ public class RootLayoutController implements Initializable {
 		}
 		createToolbarButtons(bundle);
 
+		border = (BorderPane) statusBar.getParent();
+
 		webEngine = browser.getEngine();
 		webEngine.setOnAlert(event -> showAlert(event.getData()));
 		RootLayoutController rlc = this;
@@ -196,6 +210,7 @@ public class RootLayoutController implements Initializable {
 					JSObject win = (JSObject) webEngine.executeScript("window");
 					win.setMember("pawsApp", new WebPageInteractor(language, webEngine, rlc));
 					webEngine.executeScript("Initialize()");
+					updatePageLabels();
 				} else if (newState == State.FAILED) {
 					String sUrl = webEngine.getLocation();
 					System.out.println("failed: url='" + sUrl + "'");
@@ -304,6 +319,22 @@ public class RootLayoutController implements Initializable {
 				transformer.setParameter(param.name, param.value);
 			}
 		}
+	}
+
+	private void updatePageLabels() {
+		labelPageDescription.setText(webEngine.getTitle());
+		String sCount = "";
+		Document doc = webEngine.getDocument();
+		if (doc != null) {
+			Node node = doc.getFirstChild();
+			if (node != null) {
+				node = node.getNextSibling();
+				if (node != null) {
+					sCount = node.getTextContent().replace("PageCount=\"", "").replace("\"", "");
+				}
+			}
+		}
+		labelPageCount.setText(sCount);
 	}
 
 	private String getvernacularstyle() {
@@ -417,6 +448,8 @@ public class RootLayoutController implements Initializable {
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
 		this.applicationPreferences = mainApp.getApplicationPreferences();
+		menuItemShowStatusBar.setSelected(applicationPreferences.getShowStatusBar());
+		handleMenuShowStatusBar();
 	}
 
 	public void setLocale(Locale currentLocale) {
@@ -570,7 +603,13 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	private void handleMenuShowStatusBar() {
-		applicationPreferences.setShowStatusBar(menuItemShowStatusBar.isSelected());
+		boolean isVisible = menuItemShowStatusBar.isSelected();
+		applicationPreferences.setShowStatusBar(isVisible);
+		if (isVisible) {
+			border.setBottom(statusBar);
+		} else {
+			border.setBottom(null);
+		}
 	}
 
 	/**

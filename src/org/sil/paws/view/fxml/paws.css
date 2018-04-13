@@ -1,1 +1,25 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* custom CSS for PAWS Starter Kit */
+/*
+ * Copyright (c) 2018 SIL International
+ *  This software is licensed under the LGPL, version 2.1 or later
+ * (http://www.gnu.org/licenses/lgpl-2.1.html)
+ *
+ */
+
+.pageInformation {
+	-fx-border-style: solid;
+	-fx-border-width: 2;
+	-fx-border-color: lightgrey;
+	-fx-border-radius: 0, 0;
+	-fx-border-insets: 1 1 1 1, 0;
+	-fx-background-color: #F6F6F6;
+}
+
+.pageInformation2 {
+	-fx-border-style: solid inside, solid outside ;
+	-fx-border-width: 2, 1;
+	-fx-border-color: lightgrey, grey;
+	-fx-border-radius: 0, 0;
+	-fx-border-insets: 0, 0;
+	-fx-background-color: #F6F6F6;
+}
