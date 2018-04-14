@@ -62,8 +62,12 @@
                   <items>
                     <CheckMenuItem fx:id="menuItemShowStatusBar" mnemonicParsing="true" onAction="#handleMenuShowStatusBar" text="%menu.showstatusbar" />
 					<SeparatorMenuItem />
+					<MenuItem fx:id="menuItemMakeLarger" accelerator="ctrl+'+'" mnemonicParsing="true" onAction="#handleMakeLarger" text="%menu.makelarger" />
+					<MenuItem fx:id="menuItemMakeSmaller" accelerator="ctrl+'-'" mnemonicParsing="true" onAction="#handleMakeSmaller" text="%menu.makesmaller" />
+					<SeparatorMenuItem />
 					<MenuItem fx:id="menuItemViewBack" accelerator="alt+left" mnemonicParsing="true" onAction="#handleBack" text="%menu.back" />
 					<MenuItem fx:id="menuItemViewForward" accelerator="alt+right" mnemonicParsing="true" onAction="#handleForward" text="%menu.forward" />
+					<SeparatorMenuItem />
 					<MenuItem accelerator="F5" mnemonicParsing="true" onAction="#handleRefresh" text="%menu.refresh" />
                   </items>
                 </Menu>

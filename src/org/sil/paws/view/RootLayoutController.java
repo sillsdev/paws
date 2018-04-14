@@ -602,6 +602,16 @@ public class RootLayoutController implements Initializable {
 	}
 
 	@FXML
+	private void handleMakeLarger() {
+		browser.setZoom(browser.getZoom() + 0.125);
+	}
+
+	@FXML
+	private void handleMakeSmaller() {
+		browser.setZoom(browser.getZoom() - 0.125);
+	}
+
+	@FXML
 	private void handleMenuShowStatusBar() {
 		boolean isVisible = menuItemShowStatusBar.isSelected();
 		applicationPreferences.setShowStatusBar(isVisible);
