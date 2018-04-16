@@ -143,7 +143,15 @@ public class WebPageInteractor {
 	}
 
 	public void load(String page) {
-		engine.load(page);
+		// We try and catch the XML and LeftOffAt pages here before
+		// actually loading them, if possible.
+		if (page.endsWith(".xml")) {
+			controller.transformAndLoadPage(page);
+		} else if (page.endsWith("LeftOffAt")) {
+			controller.handleBack();
+		} else {
+			engine.load(page);
+		}
 	}
 
 	protected void showFileToUser(String sFileToShow) {

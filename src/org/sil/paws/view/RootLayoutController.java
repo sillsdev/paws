@@ -179,6 +179,7 @@ public class RootLayoutController implements Initializable {
 
 	private String sConfigurationDirectory;
 	private String operatingSystem = System.getProperty("os.name");
+	private Transformer transformer;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -269,31 +270,38 @@ public class RootLayoutController implements Initializable {
 		}
 	}
 
-	private void transformAndLoadPage(String sUrl) {
+	public void transformAndLoadPage(String sUrl) {
 		try {
 			int i = sUrl.lastIndexOf("/");
 			String sBaseName = sUrl.substring(i + 1, sUrl.length() - 4);
 			File pageToLoadFile = new File(sPAWSWorkingDirectory + File.separator + sBaseName
 					+ ".htm");
+
 			Path working = Paths.get(sPAWSWorkingDirectory);
 			if (!Files.exists(working)) {
 				Files.createDirectories(working);
 			}
 			String sAdjustedUrl = sUrl.replace(Constants.FILE_PROTOCOL + "/", "").replace("HTMs",
 					"XmlPageDescriptions");
+
 			String sInstallPath = sUrl.replace("HTMs/", "").replace(sBaseName + ".xml", "");
+
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document document = builder.parse(sAdjustedUrl);
-			TransformerFactory tFactory = TransformerFactory.newInstance();
-			StreamSource stylesource = new StreamSource(htmlMapperStylesheet);
-			Transformer transformer = tFactory.newTransformer(stylesource);
+
+			if (transformer == null) {
+				TransformerFactory tFactory = TransformerFactory.newInstance();
+				StreamSource stylesource = new StreamSource(htmlMapperStylesheet);
+				transformer = tFactory.newTransformer(stylesource);
+			}
 			createTransformParameters(sInstallPath, transformer);
+
 			DOMSource source = new DOMSource(document);
 			StreamResult result = new StreamResult(pageToLoadFile);
 			transformer.transform(source, result);
+
 			String sPageToLoad = Constants.FILE_PROTOCOL + pageToLoadFile.toURI().getPath();
-			// System.out.println("loading '" + sPageToLoad + "'");
 			webEngine.load(sPageToLoad);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -313,11 +321,9 @@ public class RootLayoutController implements Initializable {
 			sAdjusted = sAdjusted.replace("\\", "\\\\");
 		}
 		params.add(new XsltParameter("prmWorkingPath", sAdjusted));
-
-		if (params.size() > 0) {
-			for (XsltParameter param : params) {
-				transformer.setParameter(param.name, param.value);
-			}
+		transformer.clearParameters();
+		for (XsltParameter param : params) {
+			transformer.setParameter(param.name, param.value);
 		}
 	}
 
@@ -681,7 +687,7 @@ public class RootLayoutController implements Initializable {
 	}
 
 	@FXML
-	private void handleBack() {
+	public void handleBack() {
 		final WebHistory history = webEngine.getHistory();
 		if (canGoBack(history)) {
 			Platform.runLater(new Runnable() {
