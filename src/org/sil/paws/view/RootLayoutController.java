@@ -41,9 +41,12 @@ import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.concurrent.Worker.State;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Cursor;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
@@ -239,7 +242,6 @@ public class RootLayoutController implements Initializable {
 		}
 
 		sPAWSWorkingDirectory = getWorkingConfigurationDirectory();
-		OutputGenerator.getInstance(language).initOutputTransforms(sConfigurationDirectory);
 
 		Platform.runLater(new Runnable() {
 			@Override
@@ -248,6 +250,19 @@ public class RootLayoutController implements Initializable {
 			}
 		});
 
+		initializeOutputTransforms();
+
+	}
+
+	public void initializeOutputTransforms() {
+		Task<Void> task = new Task<Void>() {
+			@Override
+			protected Void call() throws Exception {
+				OutputGenerator.getInstance(language).initOutputTransforms(sConfigurationDirectory);
+				return null;
+			}
+		};
+		Platform.runLater(task);
 	}
 
 	private void initMapperAndCSS() {
