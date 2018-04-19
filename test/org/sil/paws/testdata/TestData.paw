@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
-<paws dbversion="11" outputGrammar="False" outputWriter="True" outputWriterPractical="True" outputWriterPracticalSpanish="True">
+<paws dbversion="11" outputGrammar="False" outputWriter="True" outputWriterPractical="True" outputWriterPracticalSpanish="True" outputWriterPracticalFrench="False">
   <leftOffAt>Contents.htm</leftOffAt>
   <language>
     <langNames>
       <langName lang="en">Central Mam</langName>
       <langName lang="es">mam central</langName>
+      <langName lang="fr">mam centrale</langName>
     </langNames>
     <langAbbr>mvc</langAbbr>
     <font bold="False" italic="False" under="False" strike="False" rtl="False">
@@ -13,12 +14,13 @@
       <fontColor>0</fontColor>
     </font>
     <textSFM>\t</textSFM>
-    <answerFile>C:\Users\Andy Black\Documents\My PAWS\JavaVersion\MamCentral\mamCentral.paw</answerFile>
-      <grammarFile>C:\Users\Andy Black\Documents\My PAWS\JavaVersion\MamCentral\mamCentral.grm</grammarFile>
-      <writerFile>C:\Users\Andy Black\Documents\My PAWS\JavaVersion\MamCentral\mamCentral.xml</writerFile>
-      <writerPracticalFile>C:\Users\Andy Black\Documents\My PAWS\JavaVersion\MamCentral\mamCentralWriterPractical.xml</writerPracticalFile>
-      <writerPracticalSpanishFile>C:\Users\Andy Black\Documents\My PAWS\JavaVersion\MamCentral\mamCentralWriterPracticalSpanish.xml</writerPracticalSpanishFile>
-      <exampleFilesPath>C:\Users\Andy Black\Documents\My PAWS\JavaVersion\MamCentral</exampleFilesPath>
+    <answerFile>testdata/TestData.paw</answerFile>
+      <grammarFile>testdata/TestData.grm</grammarFile>
+      <writerFile>testdata/TestData.xml</writerFile>
+      <writerPracticalFile>testdata/TestDataWriterPractical.xml</writerPracticalFile>
+      <writerPracticalSpanishFile>testdata/TestDataWriterPracticalSpanish.xml</writerPracticalSpanishFile>
+      <writerPracticalFrenchFile>testdata/TestDataWriterPracticalFrench.xml</writerPracticalFrenchFile>
+      <exampleFilesPath>testdata</exampleFilesPath>
   </language>
   <typology checkedOff="yes" wordOrder="VSO" case="ergative" caseExperiencer="no" classifier="no" classifierNum="number" class1agr="irrelevant" class2agr="irrelevant" class3agr="irrelevant" class4agr="irrelevant" class5agr="irrelevant" class6agr="irrelevant" class7agr="irrelevant" class8agr="irrelevant" class9agr="irrelevant" class10agr="irrelevant" class11agr="irrelevant" class12agr="irrelevant" class13agr="irrelevant" class14agr="irrelevant" class15agr="irrelevant" class16agr="irrelevant" class17agr="irrelevant" class18agr="irrelevant" class19agr="irrelevant" class20agr="irrelevant" class21agr="irrelevant" class22agr="irrelevant" class23agr="irrelevant" class24agr="irrelevant" class25agr="irrelevant" classifierTypeNumAgr="no" noCaseExperiencer="no">
     <example>Ma kubꞌ tbꞌyoꞌn tata txꞌyan.
@@ -157,8 +159,36 @@ Nqo tzeꞌn.
     </classWoodExample>
     <classOtherExample>
     </classOtherExample>
+    <classifierHumanExample>
+    </classifierHumanExample>
+    <classifierAnimalExample>
+    </classifierAnimalExample>
+    <classifierBirdExample>
+    </classifierBirdExample>
+    <classifierBoatExample>
+    </classifierBoatExample>
+    <classifierClothingExample>
+    </classifierClothingExample>
+    <classifierTreeExample>
+    </classifierTreeExample>
+    <classifierLongThinExample>
+    </classifierLongThinExample>
+    <classifierLongWavyExample>
+    </classifierLongWavyExample>
+    <classifierFlatExample>
+    </classifierFlatExample>
+    <classifierCylindricalExample>
+    </classifierCylindricalExample>
+    <classifierMechanicalExample>
+    </classifierMechanicalExample>
+    <classifierGenericExample>
+    </classifierGenericExample>
+    <classifierOtherExample>
+    </classifierOtherExample>
     <classifierAgrExample>
     </classifierAgrExample>
+    <classifierSpecificExample>
+    </classifierSpecificExample>
     <classifierTypeExample>
     </classifierTypeExample>
   </typology>
@@ -236,6 +266,8 @@ Nqo tzeꞌn.
     </ordinalBoth>
     <ordinalNumOther checked="no">
     </ordinalNumOther>
+    <ordinalNumNowhere checked="no">
+    </ordinalNumNowhere>
     <all>jotx
 -kyaqilx
 jniꞌ</all>
@@ -341,6 +373,8 @@ Ilaꞌ-xix ja.</degreeAttachesNPExample>
     <cardinalNumbers80>kyajkꞌal</cardinalNumbers80>
     <cardinalNumbers90>lajaj toj jweꞌkꞌal</cardinalNumbers90>
     <cardinalNumbers100>jweꞌkꞌal</cardinalNumbers100>
+    <cardinalExample>
+    </cardinalExample>
     <ordinalNumbers1>tnejil</ordinalNumbers1>
     <ordinalNumbers2>tkabꞌ</ordinalNumbers2>
     <ordinalNumbers3>toxin</ordinalNumbers3>
@@ -374,6 +408,8 @@ a tjweꞌyin kyiꞌjjo winqen.</nextlastNPExample>
 nimxjo tiꞌj matij kꞌwal.
 Nyaꞌxix ilaꞌ tiꞌjjo netzꞌ.
 Noq junchꞌin tiꞌjjo lajaj.</partitiveQExample>
+    <partitiveConstruction>
+    </partitiveConstruction>
     <partitiveOf>tiꞌj
 kyiꞌj
 
@@ -411,6 +447,8 @@ jweꞌkꞌal</cardinalCompoundExample>
     </temporalIndefQPhrase>
     <temporalIndefQOther checked="no">
     </temporalIndefQOther>
+    <temporalIndefTypeQNone checked="no">
+    </temporalIndefTypeQNone>
     <temporalIndefTypeQPQBefore checked="yes">
     </temporalIndefTypeQPQBefore>
     <temporalIndefTypeQPQAfter checked="no">
@@ -424,6 +462,8 @@ jweꞌkꞌal</cardinalCompoundExample>
     <temporalIndefIntPhrase checked="no">
     </temporalIndefIntPhrase>
     <temporalIndefIntOther checked="yes">una palabra interrogativa seguido de una afijo de duda.</temporalIndefIntOther>
+    <temporalIndefTypeIntNone checked="no">
+    </temporalIndefTypeIntNone>
     <temporalIndefTypeIntBefore checked="no">
     </temporalIndefTypeIntBefore>
     <temporalIndefTypeIntAfter checked="no">
@@ -454,6 +494,8 @@ jweꞌkꞌal</cardinalCompoundExample>
     </locativeIndefQPhrase>
     <locativeIndefQOther checked="no">
     </locativeIndefQOther>
+    <locativeIndefTypeQNone checked="no">
+    </locativeIndefTypeQNone>
     <locativeIndefTypeQPQBefore checked="yes">
     </locativeIndefTypeQPQBefore>
     <locativeIndefTypeQPQAfter checked="no">
@@ -467,6 +509,8 @@ jweꞌkꞌal</cardinalCompoundExample>
     <locativeIndefIntPhrase checked="no">
     </locativeIndefIntPhrase>
     <locativeIndefIntOther checked="yes">una palabra interrogativa seguido de una afijo de duda.</locativeIndefIntOther>
+    <locativeIndefTypeIntNone checked="no">
+    </locativeIndefTypeIntNone>
     <locativeIndefTypeIntBefore checked="no">
     </locativeIndefTypeIntBefore>
     <locativeIndefTypeIntAfter checked="no">
@@ -730,15 +774,33 @@ qꞌanchꞌin</adjectiveDegreeAffixPhraseExample>
     <adjectiveCategory>
     </adjectiveCategory>
   </adjp>
-  <np checkedOff="no" agreeNumber="no" agreeOther="no" caseN="no" caseDefault="no" caseWord="yes" possCaseErg="genitive" artAndDem="both" artDefOnly="no" artPl="no" demPl="no" artDemClassifier="no" artCase="yes" artRequired="no" demRequired="no" artBothCooccur="different" demOrArtRequired="no" demAndArtDemRequired="no" demAndArtArtRequired="no" possNP="yes" possPronPos="unknown" possPPPos="unknown" possNounPos="unknown" possMarked="no" possWordRequired="no" possCooccur="yes" possNounCaseChange="no" possAlienable="no" possAgr="no" possAbsolutive="no" qpEitherRestrictedNumPos="unknown" adjpPart="no" adjpCaseChange="no" adjpCaseAffix="no" comp="no" compHead="right" compHeadMorpheme="right" ppComp="no" ppPos="unknown" partNP="no">
+  <np checkedOff="no" agreeNumber="no" caseN="no" caseDefault="no" caseWord="yes" possCaseErg="genitive" artAndDem="both" artDefOnly="no" artPl="no" demPl="no" artDemClassifier="no" artCase="yes" artRequired="no" demRequired="no" artBothCooccur="different" demOrArtRequired="no" demAndArtDemRequired="no" demAndArtArtRequired="no" possNP="yes" possPronPos="unknown" possPPPos="unknown" possNounPos="unknown" possMarked="no" possWordRequired="no" possCooccur="yes" possNounCaseChange="no" possAlienable="no" possAgr="no" possAbsolutive="no" qpEitherRestrictedNumPos="unknown" adjpPart="no" adjpCaseChange="no" adjpCaseAffix="no" comp="no" compHead="right" compHeadMorpheme="right" ppComp="no" ppPos="unknown" partNP="no" classifierPresent="no" classifierPresentDem="no" classifierPresentDemBoth="no" classifierPresentQ="no" classifierPresentAdj="no">
+    <classifierSpecificPosBeforeBoth checked="no">
+    </classifierSpecificPosBeforeBoth>
+    <classifierSpecificPosAfterBoth checked="no">
+    </classifierSpecificPosAfterBoth>
+    <classifierSpecificPosAfterQBeforeN checked="no">
+    </classifierSpecificPosAfterQBeforeN>
+    <classifierSpecificPosAfterNBeforeQ checked="no">
+    </classifierSpecificPosAfterNBeforeQ>
+    <classifierSpecificPosPrefixQ checked="no">
+    </classifierSpecificPosPrefixQ>
+    <classifierSpecificPosSuffixQ checked="no">
+    </classifierSpecificPosSuffixQ>
+    <classifierSpecificPosOther checked="no">
+    </classifierSpecificPosOther>
     <agreeClass checked="no">
     </agreeClass>
+    <agreeClassifier checked="no">
+    </agreeClassifier>
     <agreeGender checked="no">
     </agreeGender>
     <agreeAnimacy checked="no">
     </agreeAnimacy>
     <agreeOtherFeat checked="no">
     </agreeOtherFeat>
+    <agreeOtherNone checked="yes">
+    </agreeOtherNone>
     <caseWordBefore checked="no">
     </caseWordBefore>
     <caseWordAfter checked="no">
@@ -797,6 +859,34 @@ qꞌanchꞌin</adjectiveDegreeAffixPhraseExample>
     </demAndArtArtBoth>
     <demAndArtArtOther checked="no">
     </demAndArtArtOther>
+    <classifierSpecificDemPosBeforeBoth checked="no">
+    </classifierSpecificDemPosBeforeBoth>
+    <classifierSpecificDemPosAfterBoth checked="no">
+    </classifierSpecificDemPosAfterBoth>
+    <classifierSpecificDemPosAfterDemBeforeN checked="no">
+    </classifierSpecificDemPosAfterDemBeforeN>
+    <classifierSpecificDemPosAfterNBeforeDem checked="no">
+    </classifierSpecificDemPosAfterNBeforeDem>
+    <classifierSpecificDemPosPrefixDem checked="no">
+    </classifierSpecificDemPosPrefixDem>
+    <classifierSpecificDemPosSuffixDem checked="no">
+    </classifierSpecificDemPosSuffixDem>
+    <classifierSpecificDemPosOther checked="no">
+    </classifierSpecificDemPosOther>
+    <classifierSpecificDemBothPosBeforeBoth checked="no">
+    </classifierSpecificDemBothPosBeforeBoth>
+    <classifierSpecificDemBothPosAfterBoth checked="no">
+    </classifierSpecificDemBothPosAfterBoth>
+    <classifierSpecificDemBothPosAfterDemBeforeN checked="no">
+    </classifierSpecificDemBothPosAfterDemBeforeN>
+    <classifierSpecificDemBothPosAfterNBeforeDem checked="no">
+    </classifierSpecificDemBothPosAfterNBeforeDem>
+    <classifierSpecificDemBothPosPrefixDem checked="no">
+    </classifierSpecificDemBothPosPrefixDem>
+    <classifierSpecificDemBothPosSuffixDem checked="no">
+    </classifierSpecificDemBothPosSuffixDem>
+    <classifierSpecificDemBothPosOther checked="no">
+    </classifierSpecificDemBothPosOther>
     <possWordBefore checked="no">
     </possWordBefore>
     <possWordAfter checked="no">
@@ -813,6 +903,20 @@ qꞌanchꞌin</adjectiveDegreeAffixPhraseExample>
     </qpPosBoth>
     <qpPosOther checked="no">
     </qpPosOther>
+    <classifierSpecificQPosBeforeBoth checked="no">
+    </classifierSpecificQPosBeforeBoth>
+    <classifierSpecificQPosAfterBoth checked="no">
+    </classifierSpecificQPosAfterBoth>
+    <classifierSpecificQPosAfterQBeforeN checked="no">
+    </classifierSpecificQPosAfterQBeforeN>
+    <classifierSpecificQPosAfterNBeforeQ checked="no">
+    </classifierSpecificQPosAfterNBeforeQ>
+    <classifierSpecificQPosPrefixQ checked="no">
+    </classifierSpecificQPosPrefixQ>
+    <classifierSpecificQPosSuffixQ checked="no">
+    </classifierSpecificQPosSuffixQ>
+    <classifierSpecificQPosOther checked="no">
+    </classifierSpecificQPosOther>
     <adjBefore checked="no">
     </adjBefore>
     <adjAfter checked="no">
@@ -821,6 +925,20 @@ qꞌanchꞌin</adjectiveDegreeAffixPhraseExample>
     </adjBoth>
     <adjPosOther checked="no">
     </adjPosOther>
+    <classifierSpecificAdjPosBeforeBoth checked="no">
+    </classifierSpecificAdjPosBeforeBoth>
+    <classifierSpecificAdjPosAfterBoth checked="no">
+    </classifierSpecificAdjPosAfterBoth>
+    <classifierSpecificAdjPosAfterAdjBeforeN checked="no">
+    </classifierSpecificAdjPosAfterAdjBeforeN>
+    <classifierSpecificAdjPosAfterNBeforeAdj checked="no">
+    </classifierSpecificAdjPosAfterNBeforeAdj>
+    <classifierSpecificAdjPosPrefixAdj checked="no">
+    </classifierSpecificAdjPosPrefixAdj>
+    <classifierSpecificAdjPosSuffixAdj checked="no">
+    </classifierSpecificAdjPosSuffixAdj>
+    <classifierSpecificAdjPosOther checked="no">
+    </classifierSpecificAdjPosOther>
     <agreeNumberExample>jun chej matij
 oxe chej matij
 txqan chej matij
@@ -829,6 +947,8 @@ nimx chej matij
 </agreeNumberExample>
     <agreeClassExample>
     </agreeClassExample>
+    <agreeClassifierExample>
+    </agreeClassifierExample>
     <agreeGenderExample>
     </agreeGenderExample>
     <agreeAnimacyExample>
@@ -1193,7 +1313,7 @@ nimx chej matij
     <npPossAgrPossNonHuman checked="no">
     </npPossAgrPossNonHuman>
   </np>
-  <prop checkedOff="no" pnClassifier="no" pnDeterminer="no">
+  <prop checkedOff="no" pnClassifier="no" pnDeterminer="none">
     <example>Txolja
 Xleꞌn
 Pegr
@@ -1219,47 +1339,77 @@ Waja tuꞌn nxiꞌy Twiquqil, jaꞌ itzꞌje ntatiꞌy.</relClExample>
     <propInanimateCategory>
     </propInanimateCategory>
   </prop>
-  <pron checkedOff="no" pronounClassifier="no" pronounNumber="yes" pronounExcl="no" dependentPron="no" pronDepClassifier="no" poss="no" refl="no" recip="no" demAdjSame="no" demNumber="no" demCase="yes" pronMod="no" partitivePos="unknown">
-    <dependentTypeProclitic checked="no" />
-    <dependentTypeEnclitic checked="no" />
-    <dependentTypePrefix checked="no" />
-    <dependentTypeSuffix checked="no" />
+  <pron checkedOff="no" pronounClassifier="no" pronounNumber="yes" pronounExcl="no" dependentPron="no" pronDepClassifier="no" poss="no" refl="no" recip="no" demAdjSame="no" demNumber="no" demCase="yes" pronMod="no" partitivePos="unknown" classifierNoN="no">
+    <dependentTypeProclitic checked="no">
+    </dependentTypeProclitic>
+    <dependentTypeEnclitic checked="no">
+    </dependentTypeEnclitic>
+    <dependentTypePrefix checked="no">
+    </dependentTypePrefix>
+    <dependentTypeSuffix checked="no">
+    </dependentTypeSuffix>
     <dependentTypeOther checked="no">
     </dependentTypeOther>
-    <possDistinct checked="no" />
-    <possAffixPron checked="no" />
-    <possAffixWord checked="no" />
-    <possPhrase checked="no" />
+    <possDistinct checked="no">
+    </possDistinct>
+    <possAffixPron checked="no">
+    </possAffixPron>
+    <possAffixWord checked="no">
+    </possAffixWord>
+    <possPhrase checked="no">
+    </possPhrase>
     <possOther checked="no">
     </possOther>
-    <reflDistinct checked="no" />
-    <reflAffix checked="no" />
-    <reflNounPoss checked="no" />
-    <reflQP checked="no" />
+    <reflDistinct checked="no">
+    </reflDistinct>
+    <reflAffix checked="no">
+    </reflAffix>
+    <reflNounPoss checked="no">
+    </reflNounPoss>
+    <reflQP checked="no">
+    </reflQP>
     <reflOther checked="no">
     </reflOther>
-    <recipDistinct checked="no" />
-    <recipAffix checked="no" />
-    <recipNounPoss checked="no" />
-    <recipQP checked="no" />
+    <recipDistinct checked="no">
+    </recipDistinct>
+    <recipAffix checked="no">
+    </recipAffix>
+    <recipNounPoss checked="no">
+    </recipNounPoss>
+    <recipQP checked="no">
+    </recipQP>
     <recipOther checked="no">
     </recipOther>
-    <indefQWord checked="no" />
-    <indefQPhrase checked="no" />
+    <indefQWord checked="no">
+    </indefQWord>
+    <indefQPhrase checked="no">
+    </indefQPhrase>
     <indefQOther checked="no">
     </indefQOther>
-    <indefTypeQPQBefore checked="no" />
-    <indefTypeQPQAfter checked="no" />
-    <indefTypeQPQBoth checked="no" />
+    <pronIndefTypeQNone checked="no">
+    </pronIndefTypeQNone>
+    <indefTypeQPQBefore checked="no">
+    </indefTypeQPQBefore>
+    <indefTypeQPQAfter checked="no">
+    </indefTypeQPQAfter>
+    <indefTypeQPQBoth checked="no">
+    </indefTypeQPQBoth>
     <indefTypeQPQOther checked="no">
     </indefTypeQPQOther>
-    <indefIntWord checked="no" />
-    <indefIntPhrase checked="no" />
+    <indefIntWord checked="no">
+    </indefIntWord>
+    <indefIntPhrase checked="no">
+    </indefIntPhrase>
     <indefIntOther checked="no">
     </indefIntOther>
-    <indefTypeIntBefore checked="no" />
-    <indefTypeIntAfter checked="no" />
-    <indefTypeIntBoth checked="no" />
+    <pronIndefTypeIntNone checked="no">
+    </pronIndefTypeIntNone>
+    <indefTypeIntBefore checked="no">
+    </indefTypeIntBefore>
+    <indefTypeIntAfter checked="no">
+    </indefTypeIntAfter>
+    <indefTypeIntBoth checked="no">
+    </indefTypeIntBoth>
     <indefTypeIntOther checked="no">
     </indefTypeIntOther>
     <personalFirstSgNoCaseExample>
@@ -1323,7 +1473,8 @@ it
     <personalFirstPlNomPossessorExample>our</personalFirstPlNomPossessorExample>
     <personalFirstExclNomPossessorExample>
     </personalFirstExclNomPossessorExample>
-    <personalFirstInclNomPossessortExample />
+    <personalFirstInclNomPossessortExample>
+    </personalFirstInclNomPossessortExample>
     <personalSecondSgNomPossessorExample>your</personalSecondSgNomPossessorExample>
     <personalSecondPlNomPossessorExample>your</personalSecondPlNomPossessorExample>
     <personalThirdSgNomPossessorExample>his
@@ -1502,7 +1653,8 @@ it
     </personalDependentFirstExclNoneDativeExample>
     <personalDependentFirstInclNoneDativeExample>
     </personalDependentFirstInclNoneDativeExample>
-    <personalDependentSecondSgNoneDativeExample />
+    <personalDependentSecondSgNoneDativeExample>
+    </personalDependentSecondSgNoneDativeExample>
     <personalDependentSecondPlNoneDativeExample>
     </personalDependentSecondPlNoneDativeExample>
     <personalDependentThirdSgNoneDativeExample>
@@ -1547,7 +1699,8 @@ it
     </personalDependentFirstPlNomPossessorExample>
     <personalDependentFirstExclNomPossessorExample>
     </personalDependentFirstExclNomPossessorExample>
-    <personalDependentFirstInclNomPossessorExample />
+    <personalDependentFirstInclNomPossessorExample>
+    </personalDependentFirstInclNomPossessorExample>
     <personalDependentSecondSgNomPossessorExample>
     </personalDependentSecondSgNomPossessorExample>
     <personalDependentSecondPlNomPossessorExample>
@@ -1890,11 +2043,18 @@ it
     </indefTypeIntPhraseExample>
     <indefTypeIntOtherExample>
     </indefTypeIntOtherExample>
-    <standAloneNPExample />
-    <pronSentExample />
-    <pronRelClExample />
-    <partitiveExample />
-    <pronounCategory />
+    <standAloneNPExample>
+    </standAloneNPExample>
+    <pronSentExample>
+    </pronSentExample>
+    <pronRelClExample>
+    </pronRelClExample>
+    <partitiveExample>
+    </partitiveExample>
+    <classifierNoNExample>
+    </classifierNoNExample>
+    <pronounCategory>
+    </pronounCategory>
     <demProximalErgGenExample>3</demProximalErgGenExample>
     <demMedialErgGenExample>6</demMedialErgGenExample>
     <demDistalErgGenExample>9</demDistalErgGenExample>
@@ -2148,7 +2308,7 @@ Alkye laq tkuꞌxchibꞌj toj.
     <pCategory>
     </pCategory>
   </pp>
-  <ip checkedOff="no" proDropObject="no" impPolite="no" conditionWord="yes" consequence="no" consequencePos="unknown" subjunctiveCondWord="yes" aux="no" auxRequired="no" auxMany="no" auxOrder="yes" auxNonfinite="no" auxNonfiniteRequired="no" auxNonfiniteOrder="yes" auxOther="no" auxOtherOrder="yes" heartCompound="no" bodypartCompound="no" copular="yes" copularAffix="no" same="yes" compareN="yes" as="yes" compareAdj="yes" comparative="yes" comparativeAdj="no" gap="yes" diCat="pp" diOrder="direct" passive="no" passiveAgent="no" passiveAux="no" passiveAgentCat="pp" antipassive="no" voice="no" voiceCase="no">
+  <ip checkedOff="no" proDropObject="no" impPolite="no" conditionWord="yes" consequence="no" consequencePos="unknown" subjunctiveCondWord="yes" aux="no" auxRequired="no" auxMany="no" auxOrder="yes" auxNonfinite="no" auxNonfiniteRequired="no" auxNonfiniteOrder="yes" auxOther="no" auxOtherOrder="yes" heartCompound="no" bodypartCompound="no" copular="yes" copularAffix="no" same="yes" compareN="yes" as="yes" compareAdj="yes" comparative="yes" comparativeAdj="no" gap="yes" diCat="pp" diOrder="direct" passive="no" passiveAgent="no" passiveAux="no" passiveAgentCat="pp" antipassive="no" voice="no" voiceCase="no" applicative="no">
     <proDropYes checked="no">
     </proDropYes>
     <proDropClitic checked="no">
@@ -2229,6 +2389,8 @@ Alkye laq tkuꞌxchibꞌj toj.
     </nonPastTense>
     <nonFutureTense>
     </nonFutureTense>
+    <otherTense>
+    </otherTense>
     <completiveAspect>
     </completiveAspect>
     <contemplativeAspect>
@@ -2253,10 +2415,14 @@ Alkye laq tkuꞌxchibꞌj toj.
     </potentialAspect>
     <progressiveAspect>
     </progressiveAspect>
+    <purposiveAspect>
+    </purposiveAspect>
     <stativeAspect>
     </stativeAspect>
     <unrealAspect>
     </unrealAspect>
+    <otherAspect>
+    </otherAspect>
     <declarativeMood>
     </declarativeMood>
     <indicativeMood>
@@ -2273,6 +2439,36 @@ Alkye laq tkuꞌxchibꞌj toj.
     </subjunctiveMood>
     <irrealisMood>
     </irrealisMood>
+    <otherMood>
+    </otherMood>
+    <witnessEvident>
+    </witnessEvident>
+    <nonwitnessEvident>
+    </nonwitnessEvident>
+    <firsthandEvident>
+    </firsthandEvident>
+    <secondhandEvident>
+    </secondhandEvident>
+    <thirdhandEvident>
+    </thirdhandEvident>
+    <visualEvident>
+    </visualEvident>
+    <auditoryEvident>
+    </auditoryEvident>
+    <olfactoryEvident>
+    </olfactoryEvident>
+    <inferentialEvident>
+    </inferentialEvident>
+    <reportativeEvident>
+    </reportativeEvident>
+    <hearsayEvident>
+    </hearsayEvident>
+    <quotativeEvident>
+    </quotativeEvident>
+    <assumedEvident>
+    </assumedEvident>
+    <otherEvident>
+    </otherEvident>
     <finiteOther>
     </finiteOther>
     <nonfiniteOther>
@@ -2283,6 +2479,8 @@ Alkye laq tkuꞌxchibꞌj toj.
     </participleOther>
     <antipassiveVoice>
     </antipassiveVoice>
+    <applicativeVoice>
+    </applicativeVoice>
     <causativeVoice>
     </causativeVoice>
     <passiveVoice>
@@ -2299,6 +2497,8 @@ Alkye laq tkuꞌxchibꞌj toj.
     </locativeVoice>
     <objectVoice>
     </objectVoice>
+    <otherVoice>
+    </otherVoice>
     <firstSubjectPerson>
     </firstSubjectPerson>
     <firstObjectPerson>
@@ -2541,6 +2741,8 @@ Alkye laq tkuꞌxchibꞌj toj.
     </causativeMakeExample>
     <causativeOtherExample>
     </causativeOtherExample>
+    <applicativeExample>
+    </applicativeExample>
     <antipassiveExample>
     </antipassiveExample>
     <antipassiveAffixExample>
@@ -2699,6 +2901,8 @@ Alkye laq tkuꞌxchibꞌj toj.
     </ipInflFeatNonPast>
     <ipInflFeatNonFuture checked="no">
     </ipInflFeatNonFuture>
+    <ipInflFeatOtherTense checked="no">
+    </ipInflFeatOtherTense>
     <ipInflFeatCompletive checked="no">
     </ipInflFeatCompletive>
     <ipInflFeatContemplative checked="no">
@@ -2723,10 +2927,14 @@ Alkye laq tkuꞌxchibꞌj toj.
     </ipInflFeatPotential>
     <ipInflFeatProgressive checked="no">
     </ipInflFeatProgressive>
+    <ipInflFeatPurposive checked="no">
+    </ipInflFeatPurposive>
     <ipInflFeatStative checked="no">
     </ipInflFeatStative>
     <ipInflFeatUnreal checked="no">
     </ipInflFeatUnreal>
+    <ipInflFeatOtherAspect checked="no">
+    </ipInflFeatOtherAspect>
     <ipInflFeatDeclarative checked="no">
     </ipInflFeatDeclarative>
     <ipInflFeatIndicative checked="no">
@@ -2743,8 +2951,12 @@ Alkye laq tkuꞌxchibꞌj toj.
     </ipInflFeatSubjunctive>
     <ipInflFeatIrrealis checked="no">
     </ipInflFeatIrrealis>
+    <ipInflFeatOtherMood checked="no">
+    </ipInflFeatOtherMood>
     <ipInflFeatAntipassive checked="no">
     </ipInflFeatAntipassive>
+    <ipInflFeatApplicative checked="no">
+    </ipInflFeatApplicative>
     <ipInflFeatCausative checked="no">
     </ipInflFeatCausative>
     <ipInflFeatFinite checked="no">
@@ -2757,6 +2969,34 @@ Alkye laq tkuꞌxchibꞌj toj.
     </ipInflFeatGerund>
     <ipInflFeatParticiple checked="no">
     </ipInflFeatParticiple>
+    <ipInflFeatWitness checked="no">
+    </ipInflFeatWitness>
+    <ipInflFeatNonwitness checked="no">
+    </ipInflFeatNonwitness>
+    <ipInflFeatFirsthand checked="no">
+    </ipInflFeatFirsthand>
+    <ipInflFeatSecondhand checked="no">
+    </ipInflFeatSecondhand>
+    <ipInflFeatThirdhand checked="no">
+    </ipInflFeatThirdhand>
+    <ipInflFeatVisual checked="no">
+    </ipInflFeatVisual>
+    <ipInflFeatAuditory checked="no">
+    </ipInflFeatAuditory>
+    <ipInflFeatOlfactory checked="no">
+    </ipInflFeatOlfactory>
+    <ipInflFeatInferential checked="no">
+    </ipInflFeatInferential>
+    <ipInflFeatReportative checked="no">
+    </ipInflFeatReportative>
+    <ipInflFeatHearsay checked="no">
+    </ipInflFeatHearsay>
+    <ipInflFeatQuotative checked="no">
+    </ipInflFeatQuotative>
+    <ipInflFeatAssumed checked="no">
+    </ipInflFeatAssumed>
+    <ipInflFeatOtherEvident checked="no">
+    </ipInflFeatOtherEvident>
     <ipInflFeatActorVoice checked="no">
     </ipInflFeatActorVoice>
     <ipInflFeatDativeVoice checked="no">
@@ -2769,6 +3009,8 @@ Alkye laq tkuꞌxchibꞌj toj.
     </ipInflFeatLocativeVoice>
     <ipInflFeatObjectVoice checked="no">
     </ipInflFeatObjectVoice>
+    <ipInflFeatOtherVoice checked="no">
+    </ipInflFeatOtherVoice>
   </ip>
   <comp checkedOff="no" compTypeOther="no" comp="no" compNonfinite="no" compWord="yes">
     <compProclitic checked="no">
@@ -3179,6 +3421,8 @@ Alkye laq tkuꞌxchibꞌj toj.
     </attachesOther>
     <and>
     </and>
+    <andThen>
+    </andThen>
     <or>
     </or>
     <but>
@@ -3199,6 +3443,8 @@ Alkye laq tkuꞌxchibꞌj toj.
     </nor>
     <sentExample>
     </sentExample>
+    <sentSeqExample>
+    </sentSeqExample>
     <vpExample>
     </vpExample>
     <dpExample>
@@ -3274,5 +3520,6 @@ Alkye laq tkuꞌxchibꞌj toj.
   </final>
   <final checkedOff="no">
   </final>
-  <final checkedOff="no" />
+  <final checkedOff="no">
+  </final>
 </paws>

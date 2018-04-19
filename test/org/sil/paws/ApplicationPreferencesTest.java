@@ -37,6 +37,7 @@ public class ApplicationPreferencesTest {
 		applicationPreferences.setLastOpenedFilePath("last opened file");
 		applicationPreferences.setLastLocaleLanguage("en");
 		showStatusBarLastUsed = applicationPreferences.getShowStatusBar();
+		applicationPreferences.setShowStatusBar(false);
 		windowStageLastUsed = new Stage();
 		windowStageLastUsed = applicationPreferences.getLastWindowParameters(ApplicationPreferences.LAST_WINDOW, windowStageLastUsed, 400., 400.);
 	}

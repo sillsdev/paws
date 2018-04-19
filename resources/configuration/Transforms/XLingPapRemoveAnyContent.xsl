@@ -2,7 +2,7 @@
 <!-- transform to remove any needed content  from XLingPaper file
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" doctype-public="-//XMLmind//DTD XLingPap//EN" doctype-system="/Transforms/XLingPap.dtd"/>
+   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" doctype-public="-//XMLmind//DTD XLingPap//EN" doctype-system="XLingPap.dtd"/>
 
    <xsl:variable name="chosenContentControl" select="//contentControlChoices/contentControlChoice[@active='yes']"/>
    <xsl:variable name="chosenContentTypes" select="id($chosenContentControl/@exclude)"/>

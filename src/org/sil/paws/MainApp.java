@@ -268,6 +268,7 @@ public class MainApp extends Application {
 		if (controller.isDirty()) {
 			controller.askAboutSaving();
 		}
+		controller.handleGenerateFiles();
 	}
 	
 	public Locale getLocale() {

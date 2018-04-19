@@ -201,7 +201,7 @@
     <!--
         HandleLiteralLabelLayoutInfo
     -->
-    <xsl:template name="HandleLiteralLabelLayoutInfo" priority="-1">
+    <xsl:template name="HandleLiteralLabelLayoutInfo">
         <xsl:param name="layoutInfo"/>
         <!-- default is to do nothing -->
     </xsl:template>

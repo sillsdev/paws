@@ -74,6 +74,7 @@ import org.sil.paws.model.FontInfo;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.Constants;
 import org.sil.paws.model.Language;
+import org.sil.paws.service.OutputGenerator;
 import org.sil.paws.service.WebPageInteractor;
 import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.MainApp;
@@ -98,7 +99,7 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	private Button buttonToolbarFileNew;
 	@FXML
-	private Button buttonToolbarFileSave;
+	private Button buttonToolbarGenerateFiles;
 	@FXML
 	private Button buttonToolbarEditCut;
 	@FXML
@@ -117,7 +118,7 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	private Tooltip tooltipToolbarFileNew;
 	@FXML
-	private Tooltip tooltipToolbarFileSave;
+	private Tooltip tooltipToolbarGenerateFiles;
 	@FXML
 	private Tooltip tooltipToolbarEditCut;
 	@FXML
@@ -179,7 +180,7 @@ public class RootLayoutController implements Initializable {
 
 	private String sConfigurationDirectory;
 	private String operatingSystem = System.getProperty("os.name");
-	private Transformer transformer;
+	private Transformer transformerPAWSSKHtmlMapper;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -238,6 +239,7 @@ public class RootLayoutController implements Initializable {
 		}
 
 		sPAWSWorkingDirectory = getWorkingConfigurationDirectory();
+		OutputGenerator.getInstance(language).initOutputTransforms(sConfigurationDirectory);
 
 		Platform.runLater(new Runnable() {
 			@Override
@@ -290,16 +292,16 @@ public class RootLayoutController implements Initializable {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document document = builder.parse(sAdjustedUrl);
 
-			if (transformer == null) {
+			if (transformerPAWSSKHtmlMapper == null) {
 				TransformerFactory tFactory = TransformerFactory.newInstance();
 				StreamSource stylesource = new StreamSource(htmlMapperStylesheet);
-				transformer = tFactory.newTransformer(stylesource);
+				transformerPAWSSKHtmlMapper = tFactory.newTransformer(stylesource);
 			}
-			createTransformParameters(sInstallPath, transformer);
+			createTransformParameters(sInstallPath, transformerPAWSSKHtmlMapper);
 
 			DOMSource source = new DOMSource(document);
 			StreamResult result = new StreamResult(pageToLoadFile);
-			transformer.transform(source, result);
+			transformerPAWSSKHtmlMapper.transform(source, result);
 
 			String sPageToLoad = Constants.FILE_PROTOCOL + pageToLoadFile.toURI().getPath();
 			webEngine.load(sPageToLoad);
@@ -419,8 +421,9 @@ public class RootLayoutController implements Initializable {
 				tooltipToolbarFileNew, bundle.getString("tooltip.new"));
 		ControllerUtilities.createToolbarButtonWithImage("openAction.png", buttonToolbarFileOpen,
 				tooltipToolbarFileOpen, bundle.getString("tooltip.open"));
-		ControllerUtilities.createToolbarButtonWithImage("saveAction.png", buttonToolbarFileSave,
-				tooltipToolbarFileSave, bundle.getString("tooltip.save"));
+		ControllerUtilities.createToolbarButtonWithImage("saveAction.png",
+				buttonToolbarGenerateFiles, tooltipToolbarGenerateFiles,
+				bundle.getString("tooltip.save"));
 		ControllerUtilities.createToolbarButtonWithImage("cutAction.png", buttonToolbarEditCut,
 				tooltipToolbarEditCut, bundle.getString("tooltip.cut"));
 		ControllerUtilities.createToolbarButtonWithImage("copyAction.png", buttonToolbarEditCopy,
@@ -486,6 +489,8 @@ public class RootLayoutController implements Initializable {
 				Files.copy(Paths.get(masterPAWS), Paths.get(fileCreated.getAbsolutePath()),
 						StandardCopyOption.REPLACE_EXISTING);
 				mainApp.loadLanguageData(fileCreated);
+				language = mainApp.getBackEndProvider().getLanguage();
+				OutputGenerator.getInstance(language);
 				handleRefresh();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -534,6 +539,7 @@ public class RootLayoutController implements Initializable {
 		}
 		doFileOpen(false);
 		language = mainApp.getAnswers();
+		OutputGenerator.getInstance(language);
 		browser.requestFocus();
 	}
 
@@ -565,6 +571,14 @@ public class RootLayoutController implements Initializable {
 			handleSaveAs();
 		}
 
+	}
+
+	@FXML
+	public void handleGenerateFiles() {
+		OutputGenerator generator = OutputGenerator.getInstance(language);
+		generator.setConfigurationDirectory(sConfigurationDirectory);
+		generator.setPAWSVersionNumber(Constants.VERSION_NUMBER);
+		generator.generateOutputFiles(mainApp.getLanguageFile());
 	}
 
 	@FXML
@@ -759,6 +773,7 @@ public class RootLayoutController implements Initializable {
 		if (fIsDirty) {
 			askAboutSaving();
 		}
+		handleGenerateFiles();
 		System.exit(0);
 	}
 

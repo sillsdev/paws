@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:saxon="urn:schemas-microsoft-com:xslt">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
     <xsl:output method="html" version="4.0" encoding="utf-8"/>
     <!-- ===========================================================
       Parameters
@@ -3492,7 +3492,7 @@
     -->
     <xsl:template name="DoRefWorks">
         <xsl:variable name="thisAuthor" select="."/>
-        <xsl:variable name="works" select="refWork[@id=$citations[not(ancestor::comment)][not(ancestor::refWork) or ancestor::refWork[@id=$citations[not(ancestor::refWork)]/@ref]]/@ref] | $refWorks[@id=saxon:node-set($collOrProcVolumesToInclude)/refWork/@id][parent::refAuthor=$thisAuthor]"/>
+        <xsl:variable name="works" select="refWork[@id=$citations[not(ancestor::comment)][not(ancestor::refWork) or ancestor::refWork[@id=$citations[not(ancestor::refWork)]/@ref]]/@ref] | $refWorks[@id=$collOrProcVolumesToInclude/refWork/@id][parent::refAuthor=$thisAuthor]"/>
         <xsl:for-each select="$works">
             <p style="text-indent:-0.25in;margin-bottom:0in;margin-top:0in">
                 <xsl:choose>
@@ -3550,7 +3550,7 @@
                         <xsl:when test="collection/collCitation">
                             <xsl:variable name="citation" select="collection/collCitation"/>
                             <xsl:choose>
-                                <xsl:when test="saxon:node-set($collOrProcVolumesToInclude)/refWork[@id=$citation/@refToBook]">
+                                <xsl:when test="$collOrProcVolumesToInclude/refWork[@id=$citation/@refToBook]">
                                     <xsl:call-template name="DoRefCitation">
                                         <xsl:with-param name="citation" select="$citation"/>
                                     </xsl:call-template>
@@ -3816,7 +3816,7 @@
                             <xsl:text>  In </xsl:text>
                             <xsl:variable name="citation" select="proceedings/procCitation"/>
                             <xsl:choose>
-                                <xsl:when test="saxon:node-set($collOrProcVolumesToInclude)/refWork[@id=$citation/@refToBook]">
+                                <xsl:when test="$collOrProcVolumesToInclude/refWork[@id=$citation/@refToBook]">
                                     <xsl:call-template name="DoRefCitation">
                                         <xsl:with-param name="citation" select="$citation"/>
                                     </xsl:call-template>

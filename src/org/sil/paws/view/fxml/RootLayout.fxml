@@ -36,7 +36,7 @@
 					<MenuItem mnemonicParsing="true" onAction="#handleCloseLanguage" text="%menu.close" />
 					<MenuItem mnemonicParsing="true" onAction="#handleSaveAs" text="%menu.saveas" />
 					<SeparatorMenuItem />
-					<MenuItem accelerator="Ctrl+s" mnemonicParsing="true" onAction="#handleSaveLanguage" text="%menu.generatefiles" />
+					<MenuItem accelerator="Ctrl+s" mnemonicParsing="true" onAction="#handleGenerateFiles" text="%menu.generatefiles" />
 					<MenuItem mnemonicParsing="true" onAction="#handleFileLocations" text="%menu.filelocations" />
                     <SeparatorMenuItem />
                     <MenuItem mnemonicParsing="true" onAction="#handleExit" text="%menu.exit" />
@@ -62,8 +62,8 @@
                   <items>
                     <CheckMenuItem fx:id="menuItemShowStatusBar" mnemonicParsing="true" onAction="#handleMenuShowStatusBar" text="%menu.showstatusbar" />
 					<SeparatorMenuItem />
-					<MenuItem fx:id="menuItemMakeLarger" accelerator="ctrl+'+'" mnemonicParsing="true" onAction="#handleMakeLarger" text="%menu.makelarger" />
-					<MenuItem fx:id="menuItemMakeSmaller" accelerator="ctrl+'-'" mnemonicParsing="true" onAction="#handleMakeSmaller" text="%menu.makesmaller" />
+					<MenuItem accelerator="ctrl+'+'" mnemonicParsing="true" onAction="#handleMakeLarger" text="%menu.makelarger" />
+					<MenuItem accelerator="ctrl+'-'" mnemonicParsing="true" onAction="#handleMakeSmaller" text="%menu.makesmaller" />
 					<SeparatorMenuItem />
 					<MenuItem fx:id="menuItemViewBack" accelerator="alt+left" mnemonicParsing="true" onAction="#handleBack" text="%menu.back" />
 					<MenuItem fx:id="menuItemViewForward" accelerator="alt+right" mnemonicParsing="true" onAction="#handleForward" text="%menu.forward" />
@@ -89,7 +89,7 @@
               <items>
                     <Button fx:id="buttonToolbarFileNew" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" minWidth="17.0" mnemonicParsing="true" onAction="#handleNewLanguage" prefHeight="23.0" prefWidth="17.0" text="" />
 					<Button fx:id="buttonToolbarFileOpen" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" minWidth="17.0" mnemonicParsing="true" onAction="#handleOpenLanguage" prefHeight="23.0" prefWidth="17.0" text="" />
-					<Button fx:id="buttonToolbarFileSave" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" minWidth="17.0" mnemonicParsing="true" onAction="#handleSaveLanguage" prefHeight="23.0" prefWidth="17.0" text="" />
+					<Button fx:id="buttonToolbarGenerateFiles" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" minWidth="17.0" mnemonicParsing="true" onAction="#handleGenerateFiles" prefHeight="23.0" prefWidth="17.0" text="" />
 					<Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="3.0" />
 					<Button fx:id="buttonToolbarEditCut" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" minWidth="17.0" mnemonicParsing="true" onAction="#handleCut" prefHeight="23.0" prefWidth="17.0" text="" />
 					<Button fx:id="buttonToolbarEditCopy" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" minWidth="17.0" mnemonicParsing="true" onAction="#handleCopy" prefHeight="23.0" prefWidth="17.0" text="" />
