@@ -287,6 +287,10 @@ public class RootLayoutController implements Initializable {
 		}
 	}
 
+	private String getCurrentLocaleCode() {
+		return "_" + bundle.getLocale().getLanguage();
+	}
+
 	public void transformAndLoadPage(String sUrl) {
 		try {
 			int i = sUrl.lastIndexOf("/");
@@ -298,8 +302,9 @@ public class RootLayoutController implements Initializable {
 			if (!Files.exists(working)) {
 				Files.createDirectories(working);
 			}
-			String sAdjustedUrl = sUrl.replace(Constants.FILE_PROTOCOL + "/", "").replace("HTMs",
-					"XmlPageDescriptions");
+			String sLocaleCode = getCurrentLocaleCode();
+			String sAdjustedUrl = sUrl.replace(Constants.FILE_PROTOCOL + "/", "")
+					.replace("HTMs", "XmlPageDescriptions").replace(".xml", sLocaleCode + ".xml");
 
 			String sInstallPath = sUrl.replace("HTMs/", "").replace(sBaseName + ".xml", "");
 
@@ -662,43 +667,36 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleChangeInterfaceLanguage() {
-		// apparently changing the locale can reset the tree contents so
-		// we ask about saving the data first
-		if (fIsDirty) {
-			askAboutSaving();
-		}
+//		webEngine.load(sProgramLocation + kHTMsFolder + "InterfaceLanguage"
+//				+ getCurrentLocaleCode() + ".htm");
+		 Map<String, ResourceBundle> validLocales = new TreeMap<String,
+		 ResourceBundle>();
+		 getListOfValidLocales(validLocales);
 
-		webEngine.load(sProgramLocation + kHTMsFolder + "InterfaceLanguage.htm");
-		// Map<String, ResourceBundle> validLocales = new TreeMap<String,
-		// ResourceBundle>();
-		// getListOfValidLocales(validLocales);
-		//
-		// ChoiceDialog<String> dialog = new ChoiceDialog<>(
-		// currentLocale.getDisplayLanguage(currentLocale),
-		// validLocales.keySet());
-		// dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
-		// dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
-		// dialog.setContentText(bundle.getString("dialog.chooselanguage"));
-		//
-		// Optional<String> result = dialog.showAndWait();
-		// result.ifPresent(locale ->
-		// mainApp.setLocale(validLocales.get(locale).getLocale()));
+		 ChoiceDialog<String> dialog = new ChoiceDialog<>(
+		 currentLocale.getDisplayLanguage(currentLocale),
+		 validLocales.keySet());
+		 dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
+		 dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
+		 dialog.setContentText(bundle.getString("dialog.chooselanguage"));
+
+		 Optional<String> result = dialog.showAndWait();
+		 result.ifPresent(locale ->
+		 mainApp.setLocale(validLocales.get(locale).getLocale()));
 	}
 
-	// private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
-	// Locale[] locales = Locale.getAvailableLocales();
-	// for (Locale locale : locales) {
-	// ResourceBundle rb =
-	// ResourceBundle.getBundle("org.sil.paws.resources.paws",
-	// locale);
-	// if (rb != null) {
-	// String localeName = rb.getLocale().getDisplayName(currentLocale);
-	// if (!StringUtilities.isNullOrEmpty(localeName)) {
-	// choices.putIfAbsent(localeName, rb);
-	// }
-	// }
-	// }
-	// }
+	private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
+		Locale[] locales = Locale.getAvailableLocales();
+		for (Locale locale : locales) {
+			ResourceBundle rb = ResourceBundle.getBundle("org.sil.paws.resources.paws", locale);
+			if (rb != null) {
+				String localeName = rb.getLocale().getDisplayName(currentLocale);
+				if (!StringUtilities.isNullOrEmpty(localeName)) {
+					choices.putIfAbsent(localeName, rb);
+				}
+			}
+		}
+	}
 
 	public void askAboutSaving() {
 		Alert alert = new Alert(AlertType.CONFIRMATION, "", ButtonType.YES, ButtonType.NO);
@@ -767,7 +765,23 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleAbout() {
-		webEngine.load(sProgramLocation + kHTMsFolder + "About.htm");
+//		webEngine.load(sProgramLocation + kHTMsFolder + "About.htm");
+		sAboutHeader = bundle.getString("about.header");
+		Object[] args = { Constants.VERSION_NUMBER };
+		MessageFormat msgFormatter = new MessageFormat("");
+		msgFormatter.setLocale(currentLocale);
+		msgFormatter.applyPattern(bundle.getString("about.content"));
+		sAboutContent = msgFormatter.format(args);
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle(sAboutHeader);
+		alert.setHeaderText(null);
+		alert.setContentText(sAboutContent);
+		Image silLogo = ControllerUtilities
+				.getIconImageFromURL("file:resources/images/SILLogo.png");
+		alert.setGraphic(new ImageView(silLogo));
+		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+		stage.getIcons().add(mainApp.getNewMainIconImage());
+		alert.showAndWait();
 	}
 
 	@FXML

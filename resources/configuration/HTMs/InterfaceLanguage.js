@@ -35,6 +35,7 @@ function saveData() {
 	sTemp = "fr";
 
 	pawsApp.setInterfaceLanguage(sTemp);
+	pawsApp.savData();
 }
 
 function copyFiles() {
