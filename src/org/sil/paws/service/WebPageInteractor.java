@@ -8,6 +8,7 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
 import org.sil.paws.view.ControllerUtilities;
@@ -271,10 +272,12 @@ public class WebPageInteractor {
 	}
 
 	public final void showTermDefinition(String sMsg) {
-		Alert alert = new Alert(AlertType.NONE);
+		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle(bundle.getString("technicalterm.definition"));
 		alert.setHeaderText(null);
 		alert.setContentText(sMsg);
+		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+		stage.getIcons().add(mainApp.getNewMainIconImage());
 		alert.showAndWait();
 	}
 
