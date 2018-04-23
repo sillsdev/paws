@@ -84,55 +84,6 @@ public class WebPageInteractor {
 		prefs.setLastLocaleLanguage(locale.getLanguage());
 	}
 
-	// public final void copyFiles(String sFromDirectory, String sToDirectory)
-	// {
-	// try
-	// {
-	// String sConfigPath = language.getConfigurationPath();
-	// String[] asFromFiles = (new java.io.File(Path.Combine(sConfigPath,
-	// sFromDirectory))).list(java.io.File::isFile);
-	// String sTargetDirectory = Path.Combine(sConfigPath, sToDirectory);
-	// for (String sFile : asFromFiles)
-	// {
-	// // following two lines are for testing/debugging
-	// String sTargetFileName = (new java.io.File(sFile)).getName();
-	// String sTargetFile = Path.Combine(sTargetDirectory, sTargetFileName);
-	// Files.copy(Paths.get(sFile), Paths.get(Path.Combine(sTargetDirectory,
-	// (new java.io.File(sFile)).getName())),
-	// StandardCopyOption.COPY_ATTRIBUTES, StandardCopyOption.REPLACE_EXISTING);
-	// }
-	// }
-	// catch (RuntimeException e)
-	// {
-	//
-	// JOptionPane.showMessageDialog(null,
-	// "Error trying to copy files from directory '" + sFromDirectory + "' to '"
-	// + sToDirectory + "': " + e.getMessage() + "... " +
-	// e.getCause().getMessage());
-	// }
-	//
-	// }
-	// public final void copyFile(String sFromFile, String sToFile)
-	// {
-	// try
-	// {
-	// String sConfigPath = language.getConfigurationPath();
-	// // following two lines are for testing/debugging
-	// String sSourceFileName = Path.Combine(sConfigPath, sFromFile);
-	// String sTargetFileName = Path.Combine(sConfigPath, sToFile);
-	// Files.copy(Paths.get(sSourceFileName), Paths.get(sTargetFileName),
-	// StandardCopyOption.COPY_ATTRIBUTES, StandardCopyOption.REPLACE_EXISTING);
-	// }
-	// catch (RuntimeException e)
-	// {
-	//
-	// JOptionPane.showMessageDialog(null, "Error trying to copy file '" +
-	// sFromFile + "' to '" + sToFile + "': " + e.getMessage() + "... " +
-	// e.getCause().getMessage());
-	// }
-	//
-	// }
-
 	public void launchFile(String sFile) {
 		String sUrl = engine.getLocation();
 		int i = sUrl.lastIndexOf("/");
@@ -196,22 +147,6 @@ public class WebPageInteractor {
 		controller.handleNewLanguage();
 	}
 
-	// public final void findAnswerFile()
-	// {
-	// boolean fFound = language.openAnswerFile();
-	// if (fFound)
-	// {
-	// sOutValue = "true";
-	// }
-	// else
-	// {
-	// sOutValue = "false";
-	// }
-	// }
-	// public final void quitFromNewLanguagePage()
-	// {
-	// viewer.onExitApplication(this);
-	// }
 	public String fileBrowse(String sFile, String sDescription, String sExtensions) {
 		sOutValue = "Cancel";
 		Platform.runLater(new Runnable() {
