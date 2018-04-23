@@ -241,7 +241,7 @@ public class RootLayoutController implements Initializable {
 			e.printStackTrace();
 		}
 
-		sPAWSWorkingDirectory = getWorkingConfigurationDirectory();
+		sPAWSWorkingDirectory = getWorkingPageOutputDirectory();
 
 		Platform.runLater(new Runnable() {
 			@Override
@@ -250,7 +250,7 @@ public class RootLayoutController implements Initializable {
 			}
 		});
 
-		initializeOutputTransforms();
+		 initializeOutputTransforms();
 
 	}
 
@@ -265,14 +265,56 @@ public class RootLayoutController implements Initializable {
 		Platform.runLater(task);
 	}
 
-	private void initMapperAndCSS() {
+	private void initMapper() {
 		try {
-			htmlMapperStylesheet = sConfigurationDirectory + "Transforms" + File.separator
-					+ "PAWSSKHtmlMapper.xsl";
+			String workingTransforms = getWorkingConfigurationDirectory() + File.separator
+					+ "Transforms" + File.separator;
+			Path working = Paths.get(workingTransforms);
+			if (!Files.exists(working)) {
+				Files.createDirectories(working);
+			}
+
+			String sourceDir = sConfigurationDirectory + "Transforms" + File.separator;
+			String mapperSource = sourceDir + "PAWSSKHtmlMapper.xsl";
+			String mapperTarget = workingTransforms + "PAWSSKHtmlMapper.xsl";
+			Path mapperTargetPath = Paths.get(mapperTarget);
+			if (!Files.exists(mapperTargetPath)) {
+				Files.copy(Paths.get(mapperSource), mapperTargetPath,
+						StandardCopyOption.REPLACE_EXISTING);
+			}
+
+			String variablesSource = sourceDir + "PAWSSKHtmlMapperVariables";
+			String variablesTarget = workingTransforms + "PAWSSKHtmlMapperVariables";
+
+			Path variablesTargetPath = Paths.get(variablesTarget);
+			if (!Files.exists(variablesTargetPath)) {
+				Files.copy(Paths.get(variablesSource + ".xsl"), variablesTargetPath,
+						StandardCopyOption.REPLACE_EXISTING);
+			}
+			Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
+			getListOfValidLocales(validLocales);
+			for (Map.Entry<String, ResourceBundle> entry : validLocales.entrySet()) {
+				String ending = "_" + entry.getValue().getLocale().getLanguage() + ".xsl";
+				Path variablesLocaleTargetPath = Paths.get(variablesTarget + ending);
+				if (!Files.exists(variablesLocaleTargetPath)) {
+					Files.copy(Paths.get(variablesSource + ending), variablesLocaleTargetPath,
+							StandardCopyOption.REPLACE_EXISTING);
+				}
+			}
+
+			htmlMapperStylesheet = mapperTarget;
 			File xslt = new File(htmlMapperStylesheet);
 			if (!xslt.exists()) {
 				throw new IOException(xslt.getPath());
 			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private void initCSS() {
+		try {
 			String cssStylesheet = sConfigurationDirectory + "Styles" + File.separator
 					+ "PAWSStarterKitMaster.css";
 			File css = new File(cssStylesheet);
@@ -403,17 +445,29 @@ public class RootLayoutController implements Initializable {
 		}
 	}
 
-	public String getWorkingConfigurationDirectory() {
+	public String getWorkingDirectory() {
 		String appDir = getAppDataDirectory();
 		String configDir = "paws";
 		if (!operatingSystem.toLowerCase().contains("windows")) {
 			configDir = ".paws";
 		}
+		String sResult = appDir + File.separator + configDir + File.separator;
+		// System.out.println("config directory='" + sResult + "'");
+		return sResult;
+	}
+
+	public String getWorkingConfigurationDirectory() {
+		String sResult = getWorkingDirectory() + "configuration";
+		// System.out.println("config directory='" + sResult + "'");
+		return sResult;
+	}
+
+	public String getWorkingPageOutputDirectory() {
 		String langAbbr = "Z1Z2Z3";
 		if (language != null) {
 			langAbbr = language.getValue("/paws/language/langAbbr");
 		}
-		String sResult = appDir + File.separator + configDir + File.separator + langAbbr;
+		String sResult = getWorkingDirectory() + langAbbr;
 		// System.out.println("config directory='" + sResult + "'");
 		return sResult;
 	}
@@ -667,22 +721,43 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleChangeInterfaceLanguage() {
-//		webEngine.load(sProgramLocation + kHTMsFolder + "InterfaceLanguage"
-//				+ getCurrentLocaleCode() + ".htm");
-		 Map<String, ResourceBundle> validLocales = new TreeMap<String,
-		 ResourceBundle>();
-		 getListOfValidLocales(validLocales);
+		// webEngine.load(sProgramLocation + kHTMsFolder + "InterfaceLanguage"
+		// + getCurrentLocaleCode() + ".htm");
+		Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
+		getListOfValidLocales(validLocales);
 
-		 ChoiceDialog<String> dialog = new ChoiceDialog<>(
-		 currentLocale.getDisplayLanguage(currentLocale),
-		 validLocales.keySet());
-		 dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
-		 dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
-		 dialog.setContentText(bundle.getString("dialog.chooselanguage"));
+		ChoiceDialog<String> dialog = new ChoiceDialog<>(
+				currentLocale.getDisplayLanguage(currentLocale), validLocales.keySet());
+		dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
+		dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
+		dialog.setContentText(bundle.getString("dialog.chooselanguage"));
 
-		 Optional<String> result = dialog.showAndWait();
-		 result.ifPresent(locale ->
-		 mainApp.setLocale(validLocales.get(locale).getLocale()));
+		Optional<String> result = dialog.showAndWait();
+
+		result.ifPresent(locale -> {
+			Locale selectedLocale = validLocales.get(locale).getLocale();
+			if (!currentLocale.equals(selectedLocale)) {
+				copyLocalizedVariablesTransform(selectedLocale);
+				mainApp.setLocale(selectedLocale);
+			}
+		});
+	}
+
+	public void copyLocalizedVariablesTransform(Locale selectedLocale) {
+		String target = getWorkingConfigurationDirectory() + File.separator + "Transforms"
+				+ File.separator + "PAWSSKHtmlMapperVariables.xsl";
+		Path variablesLocaleTargetPath = Paths.get(target);
+		String ending = "_" + selectedLocale.getLanguage() + ".xsl";
+		String source = sConfigurationDirectory + "Transforms" + File.separator
+				+ "PAWSSKHtmlMapperVariables" + ending;
+		System.out.println("copying '" + source + "' to '" + target + "'");
+		try {
+			Files.copy(Paths.get(source), variablesLocaleTargetPath,
+					StandardCopyOption.REPLACE_EXISTING);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
@@ -765,7 +840,7 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleAbout() {
-//		webEngine.load(sProgramLocation + kHTMsFolder + "About.htm");
+		// webEngine.load(sProgramLocation + kHTMsFolder + "About.htm");
 		sAboutHeader = bundle.getString("about.header");
 		Object[] args = { Constants.VERSION_NUMBER };
 		MessageFormat msgFormatter = new MessageFormat("");
@@ -826,8 +901,9 @@ public class RootLayoutController implements Initializable {
 
 	public void showLanguageLastPage() {
 		// Make sure we have the correct working directory
-		sPAWSWorkingDirectory = getWorkingConfigurationDirectory();
-		initMapperAndCSS();
+		sPAWSWorkingDirectory = getWorkingPageOutputDirectory();
+		initMapper();
+		initCSS();
 		String lastPage = language.getValue("/paws/leftOffAt");
 		try {
 			if (StringUtilities.isNullOrEmpty(lastPage)) {
