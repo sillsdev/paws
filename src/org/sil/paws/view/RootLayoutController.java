@@ -283,24 +283,7 @@ public class RootLayoutController implements Initializable {
 						StandardCopyOption.REPLACE_EXISTING);
 			}
 
-			String variablesSource = sourceDir + "PAWSSKHtmlMapperVariables";
-			String variablesTarget = workingTransforms + "PAWSSKHtmlMapperVariables";
-
-			Path variablesTargetPath = Paths.get(variablesTarget);
-			if (!Files.exists(variablesTargetPath)) {
-				Files.copy(Paths.get(variablesSource + ".xsl"), variablesTargetPath,
-						StandardCopyOption.REPLACE_EXISTING);
-			}
-			Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
-			getListOfValidLocales(validLocales);
-			for (Map.Entry<String, ResourceBundle> entry : validLocales.entrySet()) {
-				String ending = "_" + entry.getValue().getLocale().getLanguage() + ".xsl";
-				Path variablesLocaleTargetPath = Paths.get(variablesTarget + ending);
-				if (!Files.exists(variablesLocaleTargetPath)) {
-					Files.copy(Paths.get(variablesSource + ending), variablesLocaleTargetPath,
-							StandardCopyOption.REPLACE_EXISTING);
-				}
-			}
+			initMapperVariables(workingTransforms, sourceDir);
 
 			htmlMapperStylesheet = mapperTarget;
 			File xslt = new File(htmlMapperStylesheet);
@@ -310,6 +293,26 @@ public class RootLayoutController implements Initializable {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+	}
+
+	public void initMapperVariables(String workingTransforms, String sourceDir) throws IOException {
+		String variablesSource = sourceDir + "PAWSSKHtmlMapperVariables";
+		String variablesTarget = workingTransforms + "PAWSSKHtmlMapperVariables";
+		Path variablesTargetPath = Paths.get(variablesTarget);
+		if (!Files.exists(variablesTargetPath)) {
+			Files.copy(Paths.get(variablesSource + ".xsl"), variablesTargetPath,
+					StandardCopyOption.REPLACE_EXISTING);
+		}
+		Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
+		getListOfValidLocales(validLocales);
+		for (Map.Entry<String, ResourceBundle> entry : validLocales.entrySet()) {
+			String ending = "_" + entry.getValue().getLocale().getLanguage() + ".xsl";
+			Path variablesLocaleTargetPath = Paths.get(variablesTarget + ending);
+			if (!Files.exists(variablesLocaleTargetPath)) {
+				Files.copy(Paths.get(variablesSource + ending), variablesLocaleTargetPath,
+						StandardCopyOption.REPLACE_EXISTING);
+			}
 		}
 	}
 
