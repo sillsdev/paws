@@ -12,6 +12,7 @@ package org.sil.paws;
 public class Constants {
 	public static final String VERSION_NUMBER = "1.0.0";
 	public static final int CURRENT_DATABASE_VERSION = 2;
+	public static final int OUTPUT_TRANSFORM_COUNT = 8;
 
 	public static final String RESOURCE_LOCATION = "org.sil.paws.resources.paws";
 

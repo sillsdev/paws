@@ -103,16 +103,20 @@ public class OutputGeneratorTest {
 	public void generateWriterOutputsTest() {
 		try {
 			generator.setConfigurationDirectory(sConfigurationDirectory);
+			generator.setupTransformInitialization();
 			generator.setDateTimeStamp("today at 1:00pm");
 			generator.setPAWSVersionNumber("testing 1, 2, 3");
 			StreamSource stylesource = new StreamSource(transformsDirectory
 					+ "PAWSSKMasterWriterPracticalMapper.xsl");
-			Transformer transformerPAWSSKMasterWriterPracticalMapper = tFactory.newTransformer(stylesource);
+			Transformer transformerPAWSSKMasterWriterPracticalMapper = tFactory
+					.newTransformer(stylesource);
 			assertNotNull(transformerPAWSSKMasterWriterPracticalMapper);
-			generator.initXLingPaperTransforms(transformsDirectory, tFactory);
+			generator.initXLingPaperTransform1();
+			generator.initXLingPaperTransform2();
 			DOMSource source = generator.createDOMSource(languageFile);
 			assertNotNull(source);
-			String sTestDir = new File(".").getCanonicalPath() + File.separator + "testdata" + File.separator;
+			String sTestDir = new File(".").getCanonicalPath() + File.separator + "testdata"
+					+ File.separator;
 			generator.generateWriterOutputs(source, "//language/writerPracticalFile",
 					transformerPAWSSKMasterWriterPracticalMapper);
 			Path xmlResultPath = Paths.get(sTestDir + "TestDataWriterPractical.xml");

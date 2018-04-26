@@ -44,6 +44,7 @@ import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.concurrent.Worker.State;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
@@ -56,6 +57,7 @@ import javafx.scene.control.Dialog;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.Tooltip;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
@@ -165,6 +167,8 @@ public class RootLayoutController implements Initializable {
 	private Label labelPageDescription;
 	@FXML
 	private Label labelPageCount;
+	@FXML
+	ProgressBar progressBarInitTransforms;
 	BorderPane border;
 
 	protected Clipboard systemClipboard = Clipboard.getSystemClipboard();
@@ -185,8 +189,11 @@ public class RootLayoutController implements Initializable {
 	private String operatingSystem = System.getProperty("os.name");
 	private Transformer transformerPAWSSKHtmlMapper;
 
+	URL location;
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+		this.location = location;
 		bundle = resources;
 		sFileFilterDescription = bundle.getString("file.filterdescription");
 		try {
@@ -234,6 +241,7 @@ public class RootLayoutController implements Initializable {
 			}
 		});
 
+		webEngine.setOnStatusChanged(event -> System.out.println("status changed:" + event.getData()));
 		try {
 			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
 		} catch (IOException e) {
@@ -243,6 +251,8 @@ public class RootLayoutController implements Initializable {
 
 		sPAWSWorkingDirectory = getWorkingPageOutputDirectory();
 
+		initializeOutputTransforms();
+
 		Platform.runLater(new Runnable() {
 			@Override
 			public void run() {
@@ -250,19 +260,38 @@ public class RootLayoutController implements Initializable {
 			}
 		});
 
-		 initializeOutputTransforms();
-
 	}
 
 	public void initializeOutputTransforms() {
-		Task<Void> task = new Task<Void>() {
+		Task<Void> taskinitTransforms = new Task<Void>() {
 			@Override
 			protected Void call() throws Exception {
-				OutputGenerator.getInstance(language).initOutputTransforms(sConfigurationDirectory);
+				updateProgress(1, Constants.OUTPUT_TRANSFORM_COUNT);
+				OutputGenerator generator = OutputGenerator.getInstance(language);
+				generator.setConfigurationDirectory(sConfigurationDirectory);
+				generator.setupTransformInitialization();
+				generator.initMasterGrammarMapperTransform();
+				updateProgress(2, Constants.OUTPUT_TRANSFORM_COUNT);
+				generator.initMasterWriterPracticalMapperTransform();
+				updateProgress(3, Constants.OUTPUT_TRANSFORM_COUNT);
+				generator.initXLingPaperTransform1();
+				updateProgress(4, Constants.OUTPUT_TRANSFORM_COUNT);
+				generator.initXLingPaperTransform2();
+				updateProgress(5, Constants.OUTPUT_TRANSFORM_COUNT);
+				generator.initMasterWriterPracticalSpanishMapperTransform();
+				updateProgress(6, Constants.OUTPUT_TRANSFORM_COUNT);
+				generator.initMasterWriterPracticalFrenchMapperTransform();
+				updateProgress(7, Constants.OUTPUT_TRANSFORM_COUNT);
+				generator.initParameterizedExampleTransform();
+				updateProgress(8, Constants.OUTPUT_TRANSFORM_COUNT);
 				return null;
 			}
 		};
-		Platform.runLater(task);
+		progressBarInitTransforms.progressProperty().bind(taskinitTransforms.progressProperty());
+		// Platform.runLater(task);
+		Thread initTransforms = new Thread(taskinitTransforms);
+		initTransforms.start();
+		taskinitTransforms.setOnSucceeded(event -> progressBarInitTransforms.setVisible(false));
 	}
 
 	private void initMapper() {
@@ -360,6 +389,7 @@ public class RootLayoutController implements Initializable {
 			if (transformerPAWSSKHtmlMapper == null) {
 				TransformerFactory tFactory = TransformerFactory.newInstance();
 				StreamSource stylesource = new StreamSource(htmlMapperStylesheet);
+				System.out.println("transforming: mapper='" + htmlMapperStylesheet + "'");
 				transformerPAWSSKHtmlMapper = tFactory.newTransformer(stylesource);
 			}
 			createTransformParameters(sInstallPath, transformerPAWSSKHtmlMapper);
@@ -655,7 +685,71 @@ public class RootLayoutController implements Initializable {
 		OutputGenerator generator = OutputGenerator.getInstance(language);
 		generator.setConfigurationDirectory(sConfigurationDirectory);
 		generator.setPAWSVersionNumber(Constants.VERSION_NUMBER);
-		generator.generateOutputFiles(mainApp.getLanguageFile());
+		if (!generator.isReadyToGenerate()) {
+			Alert alert = new Alert(AlertType.CONFIRMATION, "", ButtonType.YES, ButtonType.NO);
+			alert.setTitle(MainApp.kApplicationTitle);
+			alert.setHeaderText(bundle.getString("file.waitwhileloadingtransformsheader"));
+			alert.setContentText(bundle.getString("file.waitwhileloadingtransformscontent"));
+			Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+			stage.getIcons().add(mainApp.getNewMainIconImage());
+			Optional<ButtonType> result = alert.showAndWait();
+			if (result.get() == ButtonType.YES) {
+
+				// following is attempt to get cursor to change
+				Scene scene = mainApp.getPrimaryStage().getScene();
+				Cursor cursor = scene.getCursor();
+				scene.setCursor(Cursor.WAIT);
+				mainApp.getPrimaryStage().requestFocus();
+				while (!generator.isReadyToGenerate()) {
+					try {
+						Thread.sleep(500);
+						mainApp.getPrimaryStage().requestFocus();
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+
+				// attempt to show progress bar
+				// Platform.runLater(new Runnable() {
+				// @Override
+				// public void run() {
+				//
+				// try {
+				// // Load the fxml file and create a new stage for the popup.
+				// Stage dialogStage = new Stage();
+				// String resource = "fxml/SplashScreen.fxml";
+				// FXMLLoader loader = ControllerUtilities.getLoader(mainApp,
+				// currentLocale, dialogStage,
+				// resource, "");
+				//
+				// SplashScreenController controller = loader.getController();
+				// // controller.initialize(location, bundle);
+				// dialogStage.setResizable(false);
+				// System.out.println("about to show splash");
+				// dialogStage.showAndWait();
+				// } catch (IOException e) {
+				// e.printStackTrace();
+				// }
+				// }
+				// });
+
+				generator.generateOutputFiles(mainApp.getLanguageFile());
+				// attempt to reset cursor
+				scene.setCursor(cursor);
+
+				// show all done
+				alert = new Alert(AlertType.INFORMATION);
+				alert.setTitle(MainApp.kApplicationTitle);
+				alert.setHeaderText(bundle.getString("file.waitcompletedheader"));
+				alert.setContentText(bundle.getString("file.waitcompletedcontent"));
+				stage = (Stage) alert.getDialogPane().getScene().getWindow();
+				stage.getIcons().add(mainApp.getNewMainIconImage());
+				alert.showAndWait();
+			}
+		} else {
+			generator.generateOutputFiles(mainApp.getLanguageFile());
+		}
 	}
 
 	@FXML
@@ -691,6 +785,24 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	protected void handleUndo() {
 		// browser.undo();
+	}
+
+	@FXML
+	public void handleSplashScreen() {
+		try {
+			// Load the fxml file and create a new stage for the popup.
+			Stage dialogStage = new Stage();
+			String resource = "fxml/SplashScreen.fxml";
+			FXMLLoader loader = ControllerUtilities.getLoader(mainApp, currentLocale, dialogStage,
+					resource, "");
+
+			SplashScreenController controller = loader.getController();
+			// controller.initialize(location, bundle);
+			dialogStage.setResizable(false);
+			dialogStage.showAndWait();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@FXML

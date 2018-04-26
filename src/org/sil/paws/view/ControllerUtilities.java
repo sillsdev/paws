@@ -8,6 +8,7 @@ package org.sil.paws.view;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.text.MessageFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -31,6 +32,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -182,11 +184,13 @@ public class ControllerUtilities {
 	public static FXMLLoader getLoader(MainApp mainApp, Locale locale, Stage dialogStage,
 			String resource, String title) throws IOException {
 		FXMLLoader loader = new FXMLLoader();
+		URL here = RootLayoutController.class.getResource(resource);
+		System.out.println("here='" + here.getPath() + "'");
 		loader.setLocation(RootLayoutController.class.getResource(resource));
 		loader.setResources(ResourceBundle.getBundle(
-				"org.sil.lingtree.resources.LingTree", locale));
+				"org.sil.paws.resources.paws", locale));
 
-		AnchorPane page = loader.load();
+		Pane page = loader.load();
 		dialogStage.initModality(Modality.WINDOW_MODAL);
 		dialogStage.initOwner(mainApp.getPrimaryStage());
 		Scene scene = new Scene(page);
