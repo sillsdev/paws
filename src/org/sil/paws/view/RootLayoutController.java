@@ -100,6 +100,10 @@ public class RootLayoutController implements Initializable {
 	private String pawsFilterDescription;
 
 	@FXML
+	BorderPane mainPane;
+	@FXML
+	VBox topVBox;
+	@FXML
 	private Button buttonToolbarFileOpen;
 	@FXML
 	private Button buttonToolbarFileNew;
@@ -168,8 +172,7 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	private Label labelPageCount;
 	@FXML
-	ProgressBar progressBarInitTransforms;
-	BorderPane border;
+	ProgressBar progressBarGenerateFiles;
 
 	protected Clipboard systemClipboard = Clipboard.getSystemClipboard();
 
@@ -205,8 +208,6 @@ public class RootLayoutController implements Initializable {
 		}
 		createToolbarButtons(bundle);
 
-		border = (BorderPane) statusBar.getParent();
-
 		webEngine = browser.getEngine();
 		webEngine.setOnAlert(event -> showAlert(event.getData()));
 		RootLayoutController rlc = this;
@@ -241,7 +242,6 @@ public class RootLayoutController implements Initializable {
 			}
 		});
 
-		webEngine.setOnStatusChanged(event -> System.out.println("status changed:" + event.getData()));
 		try {
 			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
 		} catch (IOException e) {
@@ -251,49 +251,13 @@ public class RootLayoutController implements Initializable {
 
 		sPAWSWorkingDirectory = getWorkingPageOutputDirectory();
 
-		initializeOutputTransforms();
-
 		Platform.runLater(new Runnable() {
 			@Override
 			public void run() {
 				browser.requestFocus();
 			}
 		});
-
 	}
-
-	public void initializeOutputTransforms() {
-		Task<Void> taskinitTransforms = new Task<Void>() {
-			@Override
-			protected Void call() throws Exception {
-				updateProgress(1, Constants.OUTPUT_TRANSFORM_COUNT);
-				OutputGenerator generator = OutputGenerator.getInstance(language);
-				generator.setConfigurationDirectory(sConfigurationDirectory);
-				generator.setupTransformInitialization();
-				generator.initMasterGrammarMapperTransform();
-				updateProgress(2, Constants.OUTPUT_TRANSFORM_COUNT);
-				generator.initMasterWriterPracticalMapperTransform();
-				updateProgress(3, Constants.OUTPUT_TRANSFORM_COUNT);
-				generator.initXLingPaperTransform1();
-				updateProgress(4, Constants.OUTPUT_TRANSFORM_COUNT);
-				generator.initXLingPaperTransform2();
-				updateProgress(5, Constants.OUTPUT_TRANSFORM_COUNT);
-				generator.initMasterWriterPracticalSpanishMapperTransform();
-				updateProgress(6, Constants.OUTPUT_TRANSFORM_COUNT);
-				generator.initMasterWriterPracticalFrenchMapperTransform();
-				updateProgress(7, Constants.OUTPUT_TRANSFORM_COUNT);
-				generator.initParameterizedExampleTransform();
-				updateProgress(8, Constants.OUTPUT_TRANSFORM_COUNT);
-				return null;
-			}
-		};
-		progressBarInitTransforms.progressProperty().bind(taskinitTransforms.progressProperty());
-		// Platform.runLater(task);
-		Thread initTransforms = new Thread(taskinitTransforms);
-		initTransforms.start();
-		taskinitTransforms.setOnSucceeded(event -> progressBarInitTransforms.setVisible(false));
-	}
-
 	private void initMapper() {
 		try {
 			String workingTransforms = getWorkingConfigurationDirectory() + File.separator
@@ -485,13 +449,11 @@ public class RootLayoutController implements Initializable {
 			configDir = ".paws";
 		}
 		String sResult = appDir + File.separator + configDir + File.separator;
-		// System.out.println("config directory='" + sResult + "'");
 		return sResult;
 	}
 
 	public String getWorkingConfigurationDirectory() {
 		String sResult = getWorkingDirectory() + "configuration";
-		// System.out.println("config directory='" + sResult + "'");
 		return sResult;
 	}
 
@@ -501,7 +463,6 @@ public class RootLayoutController implements Initializable {
 			langAbbr = language.getValue("/paws/language/langAbbr");
 		}
 		String sResult = getWorkingDirectory() + langAbbr;
-		// System.out.println("config directory='" + sResult + "'");
 		return sResult;
 	}
 
@@ -682,74 +643,85 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	public void handleGenerateFiles() {
-		OutputGenerator generator = OutputGenerator.getInstance(language);
-		generator.setConfigurationDirectory(sConfigurationDirectory);
-		generator.setPAWSVersionNumber(Constants.VERSION_NUMBER);
-		if (!generator.isReadyToGenerate()) {
-			Alert alert = new Alert(AlertType.CONFIRMATION, "", ButtonType.YES, ButtonType.NO);
-			alert.setTitle(MainApp.kApplicationTitle);
-			alert.setHeaderText(bundle.getString("file.waitwhileloadingtransformsheader"));
-			alert.setContentText(bundle.getString("file.waitwhileloadingtransformscontent"));
-			Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-			stage.getIcons().add(mainApp.getNewMainIconImage());
-			Optional<ButtonType> result = alert.showAndWait();
-			if (result.get() == ButtonType.YES) {
-
-				// following is attempt to get cursor to change
-				Scene scene = mainApp.getPrimaryStage().getScene();
-				Cursor cursor = scene.getCursor();
-				scene.setCursor(Cursor.WAIT);
-				mainApp.getPrimaryStage().requestFocus();
-				while (!generator.isReadyToGenerate()) {
-					try {
-						Thread.sleep(500);
-						mainApp.getPrimaryStage().requestFocus();
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				}
-
-				// attempt to show progress bar
-				// Platform.runLater(new Runnable() {
-				// @Override
-				// public void run() {
-				//
-				// try {
-				// // Load the fxml file and create a new stage for the popup.
-				// Stage dialogStage = new Stage();
-				// String resource = "fxml/SplashScreen.fxml";
-				// FXMLLoader loader = ControllerUtilities.getLoader(mainApp,
-				// currentLocale, dialogStage,
-				// resource, "");
-				//
-				// SplashScreenController controller = loader.getController();
-				// // controller.initialize(location, bundle);
-				// dialogStage.setResizable(false);
-				// System.out.println("about to show splash");
-				// dialogStage.showAndWait();
-				// } catch (IOException e) {
-				// e.printStackTrace();
-				// }
-				// }
-				// });
-
-				generator.generateOutputFiles(mainApp.getLanguageFile());
-				// attempt to reset cursor
-				scene.setCursor(cursor);
-
-				// show all done
-				alert = new Alert(AlertType.INFORMATION);
-				alert.setTitle(MainApp.kApplicationTitle);
-				alert.setHeaderText(bundle.getString("file.waitcompletedheader"));
-				alert.setContentText(bundle.getString("file.waitcompletedcontent"));
-				stage = (Stage) alert.getDialogPane().getScene().getWindow();
-				stage.getIcons().add(mainApp.getNewMainIconImage());
-				alert.showAndWait();
-			}
-		} else {
-			generator.generateOutputFiles(mainApp.getLanguageFile());
+		if (!menuItemShowStatusBar.isSelected()) {
+			mainPane.setBottom(statusBar);
 		}
+		progressBarGenerateFiles.setVisible(true);
+		mainPane.cursorProperty().set(Cursor.WAIT);
+		browser.setDisable(true);
+		topVBox.setDisable(true);
+		Task<Void> taskGenerateFiles = new Task<Void>() {
+			@Override
+			protected Void call() throws Exception {
+				updateProgress(0, Constants.OUTPUT_TRANSFORM_COUNT);
+				OutputGenerator generator = OutputGenerator.getInstance(language);
+				generator.setConfigurationDirectory(sConfigurationDirectory);
+				generator.setupTransformInitialization();
+				generator.setupOutputFileGeneration(mainApp.getLanguageFile());
+				updateProgress(1, Constants.OUTPUT_TRANSFORM_COUNT);
+
+				String sResult = language.getValue("/paws/@outputGrammar");
+				if (sResult.equals("True")) {
+					generator.initMasterGrammarMapperTransform();
+					updateProgress(2, Constants.OUTPUT_TRANSFORM_COUNT);
+					generator.generateGrammarOutputFile();
+					updateProgress(3, Constants.OUTPUT_TRANSFORM_COUNT);
+					generator.initParameterizedExampleTransform();
+					updateProgress(4, Constants.OUTPUT_TRANSFORM_COUNT);
+					generator.generateParameterizedExamplesOutputFiles();
+				}
+				updateProgress(5, Constants.OUTPUT_TRANSFORM_COUNT);
+				sResult = language.getValue("/paws/@outputWriterPractical");
+				if (sResult.equals("True")) {
+					generator.initMasterWriterPracticalMapperTransform();
+					updateProgress(6, Constants.OUTPUT_TRANSFORM_COUNT);
+					initXLingPaperTransforms(generator);
+					updateProgress(7, Constants.OUTPUT_TRANSFORM_COUNT);
+					updateProgress(8, Constants.OUTPUT_TRANSFORM_COUNT);
+					generator.generateWriterPracticalOutputFile();
+				}
+				updateProgress(9, Constants.OUTPUT_TRANSFORM_COUNT);
+				sResult = language.getValue("/paws/@outputWriterPracticalFrench");
+				if (sResult.equals("True")) {
+					generator.initMasterWriterPracticalFrenchMapperTransform();
+					updateProgress(10, Constants.OUTPUT_TRANSFORM_COUNT);
+					initXLingPaperTransforms(generator);
+					updateProgress(11, Constants.OUTPUT_TRANSFORM_COUNT);
+					updateProgress(12, Constants.OUTPUT_TRANSFORM_COUNT);
+					generator.generateWriterPracticalFrenchOutputFile();
+				}
+				updateProgress(13, Constants.OUTPUT_TRANSFORM_COUNT);
+				sResult = language.getValue("/paws/@outputWriterPracticalSpanish");
+				if (sResult.equals("True")) {
+					generator.initMasterWriterPracticalSpanishMapperTransform();
+					updateProgress(14, Constants.OUTPUT_TRANSFORM_COUNT);
+					initXLingPaperTransforms(generator);
+					updateProgress(15, Constants.OUTPUT_TRANSFORM_COUNT);
+					updateProgress(16, Constants.OUTPUT_TRANSFORM_COUNT);
+					generator.generateWriterPracticalSpanishOutputFile();
+				}
+				updateProgress(17, Constants.OUTPUT_TRANSFORM_COUNT);
+
+				return null;
+			}
+
+			private void initXLingPaperTransforms(OutputGenerator generator) {
+				generator.initXLingPaperTransform1();
+				generator.initXLingPaperTransform2();
+			}
+		};
+		progressBarGenerateFiles.progressProperty().bind(taskGenerateFiles.progressProperty());
+		Thread threadGenerateFiles = new Thread(taskGenerateFiles);
+		threadGenerateFiles.start();
+		taskGenerateFiles.setOnSucceeded(event -> {
+			browser.setDisable(false);
+			topVBox.setDisable(false);
+			mainPane.cursorProperty().set(Cursor.DEFAULT);
+			progressBarGenerateFiles.setVisible(false);
+			if (!menuItemShowStatusBar.isSelected()) {
+				mainPane.setBottom(null);
+			}
+		});
 	}
 
 	@FXML
@@ -825,9 +797,9 @@ public class RootLayoutController implements Initializable {
 		boolean isVisible = menuItemShowStatusBar.isSelected();
 		applicationPreferences.setShowStatusBar(isVisible);
 		if (isVisible) {
-			border.setBottom(statusBar);
+			mainPane.setBottom(statusBar);
 		} else {
-			border.setBottom(null);
+			mainPane.setBottom(null);
 		}
 	}
 
@@ -992,7 +964,6 @@ public class RootLayoutController implements Initializable {
 		if (fIsDirty) {
 			askAboutSaving();
 		}
-		handleGenerateFiles();
 		System.exit(0);
 	}
 

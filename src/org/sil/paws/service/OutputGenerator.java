@@ -18,6 +18,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.Properties;
@@ -66,6 +67,8 @@ public class OutputGenerator {
 	private String sDtdPath;
 	private String sDateTimeStamp = "today";
 	private String sPAWSVersionNumber = "a number";
+	LocalDateTime dateTime;
+	DOMSource source;
 	private Transformer transformerPAWSSKMasterGrammarMapper;
 	private Transformer transformerPAWSSKMasterWriterPracticalMapper;
 	private Transformer transformerXLingPapRemoveAnyContent;
@@ -73,6 +76,9 @@ public class OutputGenerator {
 	private Transformer transformerPAWSSKMasterWriterPracticalSpanishMapper;
 	private Transformer transformerPAWSSKMasterWriterPracticalFrenchMapper;
 	private Transformer transformerPAWSSKParameterizedExample;
+
+	private List<String> parameters = Arrays.asList("QP", "AdvP", "AdjP", "NP", "PP", "Prop",
+			"Pron", "IP", "Comp", "Q", "RelCl", "AdvCl", "Neg", "Coord", "Focus", "Excl");
 
 	private OutputGenerator() {
 	}
@@ -144,27 +150,21 @@ public class OutputGenerator {
 					"net.sf.saxon.TransformerFactoryImpl", null);
 			StreamSource stylesource = new StreamSource(transformsDirectory
 					+ "PAWSSKMasterGrammarMapper.xsl");
-			System.out.println("PAWSSKMasterGrammarMapper");
 			transformerPAWSSKMasterGrammarMapper = tFactory.newTransformer(stylesource);
 			stylesource = new StreamSource(transformsDirectory
 					+ "PAWSSKMasterWriterPracticalMapper.xsl");
-			System.out.println("PAWSSKMasterWriterPracticalMapper");
 			transformerPAWSSKMasterWriterPracticalMapper = tFactory.newTransformer(stylesource);
 			initXLingPaperTransforms();
 			stylesource = new StreamSource(transformsDirectory
 					+ "PAWSSKMasterWriterPracticalSpanishMapper.xsl");
-			System.out.println("PAWSSKMasterWriterPracticalSpanishMapper");
 			transformerPAWSSKMasterWriterPracticalSpanishMapper = tFactory
 					.newTransformer(stylesource);
 			stylesource = new StreamSource(transformsDirectory
 					+ "PAWSSKMasterWriterPracticalFrenchMapper.xsl");
-			System.out.println("PAWSSKMasterWriterPracticalFrenchMapper");
 			transformerPAWSSKMasterWriterPracticalFrenchMapper = tFactory
 					.newTransformer(stylesource);
 			stylesource = new StreamSource(transformsDirectory + "PAWSSKParameterizedExample.xsl");
-			System.out.println("PAWSSKParameterizedExample");
 			transformerPAWSSKParameterizedExample = tFactory.newTransformer(stylesource);
-			System.out.println("Init transforms done");
 		} catch (TransformerConfigurationException e) {
 			e.printStackTrace();
 		}
@@ -172,76 +172,11 @@ public class OutputGenerator {
 
 	public void initMasterGrammarMapperTransform() {
 		try {
-			StreamSource stylesource = new StreamSource(transformsDirectory
-					+ "PAWSSKMasterGrammarMapper.xsl");
-			System.out.println("PAWSSKMasterGrammarMapper");
-			transformerPAWSSKMasterGrammarMapper = tFactory.newTransformer(stylesource);
-		} catch (TransformerConfigurationException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void initMasterWriterPracticalMapperTransform() {
-		try {
-			StreamSource stylesource = new StreamSource(transformsDirectory
-					+ "PAWSSKMasterWriterPracticalMapper.xsl");
-			System.out.println("PAWSSKMasterWriterPracticalMapper");
-			transformerPAWSSKMasterWriterPracticalMapper = tFactory.newTransformer(stylesource);
-		} catch (TransformerConfigurationException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void initXLingPaperTransforms() throws TransformerConfigurationException {
-		StreamSource stylesource = new StreamSource(transformsDirectory
-				+ "XLingPapRemoveAnyContent.xsl");
-		System.out.println("XLingPapRemoveAnyContent");
-		transformerXLingPapRemoveAnyContent = tFactory.newTransformer(stylesource);
-		stylesource = new StreamSource(transformsDirectory + "XLingPap1.xsl");
-		System.out.println("XLingPap1");
-		transformerXLingPap1 = tFactory.newTransformer(stylesource);
-	}
-
-	public void initXLingPaperTransform1() {
-		try {
-			StreamSource stylesource = new StreamSource(transformsDirectory
-					+ "XLingPapRemoveAnyContent.xsl");
-			System.out.println("XLingPapRemoveAnyContent");
-			transformerXLingPapRemoveAnyContent = tFactory.newTransformer(stylesource);
-		} catch (TransformerConfigurationException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void initXLingPaperTransform2() {
-		try {
-			StreamSource stylesource = new StreamSource(transformsDirectory + "XLingPap1.xsl");
-			System.out.println("XLingPap1");
-			transformerXLingPap1 = tFactory.newTransformer(stylesource);
-		} catch (TransformerConfigurationException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void initMasterWriterPracticalSpanishMapperTransform() {
-		try {
-			StreamSource stylesource = new StreamSource(transformsDirectory
-					+ "PAWSSKMasterWriterPracticalSpanishMapper.xsl");
-			System.out.println("PAWSSKMasterWriterPracticalSpanishMapper");
-			transformerPAWSSKMasterWriterPracticalSpanishMapper = tFactory
-					.newTransformer(stylesource);
-		} catch (TransformerConfigurationException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void initMasterWriterPracticalFrenchMapperTransform() {
-		try {
-			StreamSource stylesource = new StreamSource(transformsDirectory
-					+ "PAWSSKMasterWriterPracticalFrenchMapper.xsl");
-			System.out.println("PAWSSKMasterWriterPracticalFrenchMapper");
-			transformerPAWSSKMasterWriterPracticalFrenchMapper = tFactory
-					.newTransformer(stylesource);
+			if (transformerPAWSSKMasterGrammarMapper == null) {
+				StreamSource stylesource = new StreamSource(transformsDirectory
+						+ "PAWSSKMasterGrammarMapper.xsl");
+				transformerPAWSSKMasterGrammarMapper = tFactory.newTransformer(stylesource);
+			}
 		} catch (TransformerConfigurationException e) {
 			e.printStackTrace();
 		}
@@ -249,10 +184,86 @@ public class OutputGenerator {
 
 	public void initParameterizedExampleTransform() {
 		try {
-			StreamSource stylesource = new StreamSource(transformsDirectory
-					+ "PAWSSKParameterizedExample.xsl");
-			System.out.println("PAWSSKParameterizedExample");
-			transformerPAWSSKParameterizedExample = tFactory.newTransformer(stylesource);
+			if (transformerPAWSSKParameterizedExample == null) {
+				StreamSource stylesource = new StreamSource(transformsDirectory
+						+ "PAWSSKParameterizedExample.xsl");
+				transformerPAWSSKParameterizedExample = tFactory.newTransformer(stylesource);
+			}
+		} catch (TransformerConfigurationException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void initMasterWriterPracticalMapperTransform() {
+		try {
+			if (transformerPAWSSKMasterWriterPracticalMapper == null) {
+				StreamSource stylesource = new StreamSource(transformsDirectory
+						+ "PAWSSKMasterWriterPracticalMapper.xsl");
+				transformerPAWSSKMasterWriterPracticalMapper = tFactory.newTransformer(stylesource);
+			}
+		} catch (TransformerConfigurationException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void initXLingPaperTransforms() throws TransformerConfigurationException {
+		try {
+			if (transformerXLingPapRemoveAnyContent == null || transformerXLingPap1 == null) {
+				StreamSource stylesource = new StreamSource(transformsDirectory
+						+ "XLingPapRemoveAnyContent.xsl");
+				transformerXLingPapRemoveAnyContent = tFactory.newTransformer(stylesource);
+				stylesource = new StreamSource(transformsDirectory + "XLingPap1.xsl");
+				transformerXLingPap1 = tFactory.newTransformer(stylesource);
+			}
+		} catch (TransformerConfigurationException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void initXLingPaperTransform1() {
+		try {
+			if (transformerXLingPapRemoveAnyContent == null) {
+				StreamSource stylesource = new StreamSource(transformsDirectory
+						+ "XLingPapRemoveAnyContent.xsl");
+				transformerXLingPapRemoveAnyContent = tFactory.newTransformer(stylesource);
+			}
+		} catch (TransformerConfigurationException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void initXLingPaperTransform2() {
+		try {
+			if (transformerXLingPap1 == null) {
+				StreamSource stylesource = new StreamSource(transformsDirectory + "XLingPap1.xsl");
+				transformerXLingPap1 = tFactory.newTransformer(stylesource);
+			}
+		} catch (TransformerConfigurationException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void initMasterWriterPracticalSpanishMapperTransform() {
+		try {
+			if (transformerPAWSSKMasterWriterPracticalSpanishMapper == null) {
+				StreamSource stylesource = new StreamSource(transformsDirectory
+						+ "PAWSSKMasterWriterPracticalSpanishMapper.xsl");
+				transformerPAWSSKMasterWriterPracticalSpanishMapper = tFactory
+						.newTransformer(stylesource);
+			}
+		} catch (TransformerConfigurationException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void initMasterWriterPracticalFrenchMapperTransform() {
+		try {
+			if (transformerPAWSSKMasterWriterPracticalFrenchMapper == null) {
+				StreamSource stylesource = new StreamSource(transformsDirectory
+						+ "PAWSSKMasterWriterPracticalFrenchMapper.xsl");
+				transformerPAWSSKMasterWriterPracticalFrenchMapper = tFactory
+						.newTransformer(stylesource);
+			}
 		} catch (TransformerConfigurationException e) {
 			e.printStackTrace();
 		}
@@ -271,14 +282,34 @@ public class OutputGenerator {
 
 	}
 
+	public void setupOutputFileGeneration(File languageFile) {
+		try {
+			dateTime = LocalDateTime.now();
+			source = createDOMSource(languageFile);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	public void generateOutputFiles(File languageFile) {
 		try {
-			LocalDateTime dateTime = LocalDateTime.now();
+			if (source == null) {
+				setupOutputFileGeneration(languageFile);
+			}
 
-			DOMSource source = createDOMSource(languageFile);
+			if (!isReadyToGenerate()) {
+				setupTransformInitialization();
+			}
+			if (transformerXLingPapRemoveAnyContent == null || transformerXLingPap1 == null) {
+				initXLingPaperTransforms();
+			}
 
 			String sResult = language.getValue("/paws/@outputGrammar");
 			if (sResult.equals("True")) {
+				if (transformerPAWSSKMasterGrammarMapper == null) {
+					initMasterGrammarMapperTransform();
+				}
 				generateFile(transformerPAWSSKMasterGrammarMapper, source,
 						"//language/grammarFile", "grm");
 			}
@@ -288,6 +319,9 @@ public class OutputGenerator {
 				sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime,
 						new Locale("en"));
 				setDateTimeStamp(sDateTimeStamp);
+				if (transformerPAWSSKMasterWriterPracticalMapper == null) {
+					initMasterWriterPracticalMapperTransform();
+				}
 				generateWriterOutputs(source, "//language/writerPracticalFile",
 						transformerPAWSSKMasterWriterPracticalMapper);
 			}
@@ -297,6 +331,9 @@ public class OutputGenerator {
 				sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime,
 						new Locale("fr"));
 				setDateTimeStamp(sDateTimeStamp);
+				if (transformerPAWSSKMasterWriterPracticalFrenchMapper == null) {
+					initMasterWriterPracticalFrenchMapperTransform();
+				}
 				generateWriterOutputs(source, "//language/writerPracticalFrenchFile",
 						transformerPAWSSKMasterWriterPracticalFrenchMapper);
 			}
@@ -306,9 +343,94 @@ public class OutputGenerator {
 				sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime,
 						new Locale("es"));
 				setDateTimeStamp(sDateTimeStamp);
+				if (transformerPAWSSKMasterWriterPracticalSpanishMapper == null) {
+					initMasterWriterPracticalSpanishMapperTransform();
+				}
 				generateWriterOutputs(source, "//language/writerPracticalSpanishFile",
 						transformerPAWSSKMasterWriterPracticalSpanishMapper);
 			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void generateGrammarOutputFile() {
+		try {
+			if (transformerPAWSSKMasterGrammarMapper == null) {
+				initMasterGrammarMapperTransform();
+			}
+			generateFile(transformerPAWSSKMasterGrammarMapper, source, "//language/grammarFile",
+					"grm");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void generateParameterizedExamplesOutputFiles() {
+		try {
+			if (transformerPAWSSKParameterizedExample == null) {
+				initParameterizedExampleTransform();
+			}
+			String sDirectory = language.getValue("/paws/language/exampleFilesPath");
+			String sAbbreviation = language.getValue("/paws/language/langAbbr");
+			String sTextSFM = language.getValue("/paws/language/textSFM");
+			for (String outputParam : parameters) {
+				File resultFile = new File(sDirectory + File.separator + sAbbreviation + outputParam + "Test.txt");
+				List<XsltParameter> params = new ArrayList<XsltParameter>();
+				params.add(new XsltParameter("prmIdTitle", outputParam));
+				params.add(new XsltParameter("prmTextSFM", sTextSFM));
+				transformerPAWSSKParameterizedExample.clearParameters();
+				for (XsltParameter param : params) {
+					transformerPAWSSKParameterizedExample.setParameter(param.name, param.value);
+				}
+				StreamResult result = new StreamResult(resultFile);
+				transformerPAWSSKParameterizedExample.transform(source, result);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void generateWriterPracticalOutputFile() {
+		try {
+			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, new Locale(
+					"en"));
+			setDateTimeStamp(sDateTimeStamp);
+			if (transformerPAWSSKMasterWriterPracticalMapper == null) {
+				initMasterWriterPracticalMapperTransform();
+			}
+			generateWriterOutputs(source, "//language/writerPracticalFile",
+					transformerPAWSSKMasterWriterPracticalMapper);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void generateWriterPracticalFrenchOutputFile() {
+		try {
+			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, new Locale(
+					"fr"));
+			setDateTimeStamp(sDateTimeStamp);
+			if (transformerPAWSSKMasterWriterPracticalFrenchMapper == null) {
+				initMasterWriterPracticalFrenchMapperTransform();
+			}
+			generateWriterOutputs(source, "//language/writerPracticalFrenchFile",
+					transformerPAWSSKMasterWriterPracticalFrenchMapper);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void generateWriterPracticalSpanishOutputFile() {
+		try {
+			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, new Locale(
+					"es"));
+			setDateTimeStamp(sDateTimeStamp);
+			if (transformerPAWSSKMasterWriterPracticalSpanishMapper == null) {
+				initMasterWriterPracticalSpanishMapperTransform();
+			}
+			generateWriterOutputs(source, "//language/writerPracticalSpanishFile",
+					transformerPAWSSKMasterWriterPracticalSpanishMapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
