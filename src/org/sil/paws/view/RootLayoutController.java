@@ -89,6 +89,8 @@ import org.sil.utility.XsltParameter;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
+import sun.util.BuddhistCalendar;
+
 public class RootLayoutController implements Initializable {
 
 	// Reference to the main application
@@ -260,25 +262,7 @@ public class RootLayoutController implements Initializable {
 	}
 	private void initMapper() {
 		try {
-			String workingTransforms = getWorkingConfigurationDirectory() + File.separator
-					+ "Transforms" + File.separator;
-			Path working = Paths.get(workingTransforms);
-			if (!Files.exists(working)) {
-				Files.createDirectories(working);
-			}
-
-			String sourceDir = sConfigurationDirectory + "Transforms" + File.separator;
-			String mapperSource = sourceDir + "PAWSSKHtmlMapper.xsl";
-			String mapperTarget = workingTransforms + "PAWSSKHtmlMapper.xsl";
-			Path mapperTargetPath = Paths.get(mapperTarget);
-			if (!Files.exists(mapperTargetPath)) {
-				Files.copy(Paths.get(mapperSource), mapperTargetPath,
-						StandardCopyOption.REPLACE_EXISTING);
-			}
-
-			initMapperVariables(workingTransforms, sourceDir);
-
-			htmlMapperStylesheet = mapperTarget;
+			htmlMapperStylesheet = sConfigurationDirectory + "Transforms" + File.separator+ "PAWSSKHtmlMapper.xsl";
 			File xslt = new File(htmlMapperStylesheet);
 			if (!xslt.exists()) {
 				throw new IOException(xslt.getPath());
@@ -286,26 +270,6 @@ public class RootLayoutController implements Initializable {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-	}
-
-	public void initMapperVariables(String workingTransforms, String sourceDir) throws IOException {
-		String variablesSource = sourceDir + "PAWSSKHtmlMapperVariables";
-		String variablesTarget = workingTransforms + "PAWSSKHtmlMapperVariables";
-		Path variablesTargetPath = Paths.get(variablesTarget);
-		if (!Files.exists(variablesTargetPath)) {
-			Files.copy(Paths.get(variablesSource + ".xsl"), variablesTargetPath,
-					StandardCopyOption.REPLACE_EXISTING);
-		}
-		Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
-		getListOfValidLocales(validLocales);
-		for (Map.Entry<String, ResourceBundle> entry : validLocales.entrySet()) {
-			String ending = "_" + entry.getValue().getLocale().getLanguage() + ".xsl";
-			Path variablesLocaleTargetPath = Paths.get(variablesTarget + ending);
-			if (!Files.exists(variablesLocaleTargetPath)) {
-				Files.copy(Paths.get(variablesSource + ending), variablesLocaleTargetPath,
-						StandardCopyOption.REPLACE_EXISTING);
-			}
 		}
 	}
 
@@ -382,6 +346,13 @@ public class RootLayoutController implements Initializable {
 			sAdjusted = sAdjusted.replace("\\", "\\\\");
 		}
 		params.add(new XsltParameter("prmWorkingPath", sAdjusted));
+		params.add(new XsltParameter("sBackLabel", bundle.getString("webpage.back")));
+		params.add(new XsltParameter("sNextLabel", bundle.getString("webpage.next")));
+		params.add(new XsltParameter("sReturnToContentsLabel", bundle.getString("webpage.returntocontents")));
+		params.add(new XsltParameter("sTypeOfFeature", bundle.getString("webpage.typeoffeature")));
+		params.add(new XsltParameter("sFeature", bundle.getString("webpage.feature")));
+		params.add(new XsltParameter("sExplanation", bundle.getString("webpage.explanation")));
+		params.add(new XsltParameter("sMorphemes", bundle.getString("webpage.morphemes")));
 		transformer.clearParameters();
 		for (XsltParameter param : params) {
 			transformer.setParameter(param.name, param.value);
@@ -760,24 +731,6 @@ public class RootLayoutController implements Initializable {
 	}
 
 	@FXML
-	public void handleSplashScreen() {
-		try {
-			// Load the fxml file and create a new stage for the popup.
-			Stage dialogStage = new Stage();
-			String resource = "fxml/SplashScreen.fxml";
-			FXMLLoader loader = ControllerUtilities.getLoader(mainApp, currentLocale, dialogStage,
-					resource, "");
-
-			SplashScreenController controller = loader.getController();
-			// controller.initialize(location, bundle);
-			dialogStage.setResizable(false);
-			dialogStage.showAndWait();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	@FXML
 	protected void handleRedo() {
 		// browser.redo();
 	}
@@ -808,8 +761,6 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleChangeInterfaceLanguage() {
-		// webEngine.load(sProgramLocation + kHTMsFolder + "InterfaceLanguage"
-		// + getCurrentLocaleCode() + ".htm");
 		Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
 		getListOfValidLocales(validLocales);
 

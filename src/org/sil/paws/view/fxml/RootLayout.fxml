@@ -75,7 +75,6 @@
 				<Menu mnemonicParsing="true" text="%menu.settings">
 				  <items>
 					<MenuItem mnemonicParsing="true" onAction="#handleChangeInterfaceLanguage" text="%menu.changeinterfacelanguage" />
-					<MenuItem mnemonicParsing="true" onAction="#handleSplashScreen" text="splash screen" />
 				  </items>
 				</Menu>
                 <Menu mnemonicParsing="true" text="%menu.help">

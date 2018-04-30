@@ -23,7 +23,13 @@ Preamble
 	<xsl:param name="prmRtlScript"/>
 	<xsl:param name="prmStylesheet"/>
 	<xsl:param name="prmWorkingPath"/>
-	<xsl:include href="PAWSSKHtmlMapperVariables.xsl"/>
+	<xsl:param name="sBackLabel" select="'Back'"/>
+	<xsl:param name="sNextLabel" select="'Next'"/>
+	<xsl:param name="sReturnToContentsLabel" select="'Return to Contents'"/>
+	<xsl:param name="sTypeOfFeature" select="'Type of Feature'"/>
+	<xsl:param name="sFeature" select="'Feature'"/>
+	<xsl:param name="sExplanation" select="'Explanation'"/>
+	<xsl:param name="sMorphemes" select="'Morphemes'"/>
 	<xsl:variable name="Section">
 		<xsl:value-of select="//form/@section"/>
 	</xsl:variable>
@@ -54,7 +60,7 @@ BODY {
 				</style>
 				<xsl:call-template name="JScript"/>
 			</head>
-			<body onload="Initialize()">
+			<body>
 				<xsl:apply-templates/>
 			</body>
 		</html>
@@ -65,7 +71,7 @@ BODY {
   - - - - - - - -
   -->
 	<xsl:template name="JScript">
-		<script language="javascript" id="clientEventHandlersJS">
+		<script type="text/javascript">
   // variables used throughout functions below
 var attr;
 	// would like to use enums, but apparently they are not supported yet
@@ -77,15 +83,8 @@ var SpecPosInternal = 2;
 var SpecPosFinal = 3;
 var SpecPosUnknown = 4;
 
-function sleep(ms) {
-return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function Initialize()
+function Initialize()
 {
-// We wait a bit for the WebPageInteractor object to be loaded in Java after this page gets loaded.
-// Otherwise the javascript to Java code calls do not work.
-await sleep(10);
 <xsl:apply-templates select="//textBox | //groupName | //catMap | //featureItem | //checkbox | //contentCheckBoxOther" mode="load"/>
 pawsApp.setLeftOffAt("<xsl:value-of select="$prmWorkingPath"/>
 			<xsl:value-of select="//page/@id"/>.htm");
@@ -158,14 +157,17 @@ function saveData()
 {
 var sTemp;
 <xsl:apply-templates select="//textBox | //groupName | //catMap | //featureItem | //checkbox" mode="save"/>
+pawsApp.saveData();
 }
 function ButtonNext()
 {
 	saveData();
 	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");
-	if (attr == "False")
-	window.navigate ("<xsl:variable name="sGoToNoGrammar" select="normalize-space(//button[@value='Next']/@gotoNoGrammar)"/>
+	if (attr == "False") {
+			pawsApp.load ("<xsl:variable name="sGoToNoGrammar" select="normalize-space(//button[@value='Next']/@gotoNoGrammar)"/>
 			<xsl:variable name="sGoTo" select="normalize-space(//button[@value='Next']/@goto)"/>
+			<xsl:value-of select="$prmInstallPath"/>
+			<xsl:text>HTMs/</xsl:text>
 			<xsl:choose>
 				<xsl:when test="string-length($sGoToNoGrammar) &gt; 0">
 					<xsl:value-of select="$sGoToNoGrammar"/>
@@ -174,16 +176,21 @@ function ButtonNext()
 					<xsl:value-of select="$sGoTo"/>
 				</xsl:otherwise>
 			</xsl:choose>");
-	 else
-		window.navigate ("<xsl:value-of select="$sGoTo"/>");
+			}
+	 else {
+			pawsApp.load ("<xsl:value-of select="$prmInstallPath"/>HTMs/<xsl:value-of select="$sGoTo"/>");
+			}
 }
 function ButtonBack()
 {
 	saveData();
 	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");
 	if (attr == "False")
-	window.navigate ("<xsl:variable name="sBackGoToNoGrammar" select="normalize-space(//button[@value='Back']/@gotoNoGrammar)"/>
-			<xsl:variable name="sBackGoTo" select="normalize-space(//button[@value='Back']/@goto)"/><xsl:choose>
+	pawsApp.load ("<xsl:variable name="sBackGoToNoGrammar" select="normalize-space(//button[@value='Back']/@gotoNoGrammar)"/>
+			<xsl:variable name="sBackGoTo" select="normalize-space(//button[@value='Back']/@goto)"/>
+			<xsl:value-of select="$prmInstallPath"/>
+			<xsl:text>HTMs/</xsl:text>
+			<xsl:choose>
 				<xsl:when test="string-length($sBackGoToNoGrammar) &gt; 0">
 					<xsl:value-of select="$sBackGoToNoGrammar"/>
 				</xsl:when>
@@ -192,12 +199,12 @@ function ButtonBack()
 				</xsl:otherwise>
 			</xsl:choose>");
 			else
-			window.navigate ("<xsl:value-of select="$sBackGoTo"/>");
+			pawsApp.load ("<xsl:value-of select="$prmInstallPath"/>HTMs/<xsl:value-of select="$sBackGoTo"/>");
 }
 function ReturnContents()
 {
 	saveData();
-	window.navigate ("<xsl:value-of select="$prmInstallPath"/>HTMs/Contents.htm");
+	pawsApp.load ("<xsl:value-of select="$prmInstallPath"/>HTMs/Contents.htm");
 }
 function Refresh()
 {
@@ -494,7 +501,7 @@ Refresh();
 		<br/>
   Morphological category to be changed to <span class="category">
 			<xsl:value-of select="."/>
-		</span> is:&#x20;&#x20;<input type="text" size="30" style="position:relative;top=3px">
+		</span> is:&#x20;&#x20;<input type="text" size="30" style="position:relative;top=3px" id="{@id}">
 			<xsl:attribute name="name">
 				<xsl:value-of select="./@id"/>
 			</xsl:attribute>
@@ -535,6 +542,9 @@ Refresh();
 			<td valign="top">
 				<xsl:element name="input">
 					<xsl:attribute name="type">checkbox</xsl:attribute>
+					<xsl:attribute name="id">
+						<xsl:value-of select="@id"/>
+					</xsl:attribute>
 					<xsl:attribute name="name">
 						<xsl:value-of select="@id"/>
 					</xsl:attribute>

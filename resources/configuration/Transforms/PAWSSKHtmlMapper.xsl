@@ -23,7 +23,13 @@ Preamble
 	<xsl:param name="prmRtlScript"/>
 	<xsl:param name="prmStylesheet"/>
 	<xsl:param name="prmWorkingPath"/>
-	<xsl:include href="PAWSSKHtmlMapperVariables.xsl"/>
+	<xsl:param name="sBackLabel" select="'Back'"/>
+	<xsl:param name="sNextLabel" select="'Next'"/>
+	<xsl:param name="sReturnToContentsLabel" select="'Return to Contents'"/>
+	<xsl:param name="sTypeOfFeature" select="'Type of Feature'"/>
+	<xsl:param name="sFeature" select="'Feature'"/>
+	<xsl:param name="sExplanation" select="'Explanation'"/>
+	<xsl:param name="sMorphemes" select="'Morphemes'"/>
 	<xsl:variable name="Section">
 		<xsl:value-of select="//form/@section"/>
 	</xsl:variable>
