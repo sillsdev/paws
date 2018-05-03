@@ -49,8 +49,8 @@
         <instruction id="IPTransDiInstructionDitrans">Any verbs which require the second object to always be present should be marked with the feature <feature>ditransitive</feature>.  Those which allow the second object, but it is optional, can be marked <feature>transitive</feature>.</instruction>
        <br/><br/>
        <buttons>
-            <button id="IPTransBack" value="Back" goto="IPContents.htm"/>
-            <button id="IPTransNext" value="Next" goto="IPContents.htm"/>
+            <button id="IPTransBack" value="Back" goto="IPContents_fr.htm"/>
+            <button id="IPTransNext" value="Next" goto="IPContents_fr.htm"/>
         </buttons>
     </form>
    <showWhen id="swExpNotNo">

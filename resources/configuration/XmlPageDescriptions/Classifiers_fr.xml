@@ -457,7 +457,7 @@
        <br/>
         <buttons>
             <button id="ClassifiersBack" value="Back" goto="Case.xml"/>
-            <button id="ClassifiersNext" value="Next" goto="Contents.htm"/>
+            <button id="ClassifiersNext" value="Next" goto="Contents_fr.htm"/>
         </buttons>
     </form>
     <showWhen id="swNotPractical">

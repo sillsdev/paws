@@ -135,7 +135,7 @@
         <br/>
         <buttons>
             <button id="NPCaseBack" value="Back" goto="NPAgreement.xml"/>
-            <button id="NPCaseNext" value="Next" goto="NPContents.htm"/>
+            <button id="NPCaseNext" value="Next" goto="NPContents_fr.htm"/>
         </buttons>
     </form>
    <showWhen id="swNotPractical">

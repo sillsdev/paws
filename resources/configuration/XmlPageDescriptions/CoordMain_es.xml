@@ -141,7 +141,7 @@
 		<br/>
 		<br/>
 		<buttons>
-			<button id="CoordMainBack" value="Back" goto="Contents.htm"/>
+			<button id="CoordMainBack" value="Back" goto="Contents_es.htm"/>
 		    <button id="CoordMainNext" value="Next"  goto="CoordDP.xml"/>
 		</buttons>
 	</form>

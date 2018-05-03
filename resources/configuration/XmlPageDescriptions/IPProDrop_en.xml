@@ -52,7 +52,7 @@ Some languages are not really <i>pro</i>-drop languages, but at least some of th
        <textBox id="IPImpPoliteExamples" dataItem="impPoliteExample" cols="50" show="swIPImpPoliteYes"/>
        <br/><br/>
         <buttons>
-            <button id="IPProDropBack" value="Back" goto="IPContents.htm"/>
+            <button id="IPProDropBack" value="Back" goto="IPContents_en.htm"/>
             <button id="IPProDropNext" value="Next" goto="IPConditional.xml"/>
         </buttons>
     </form>

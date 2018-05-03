@@ -23,3 +23,7 @@
 	-fx-border-insets: 0, 0;
 	-fx-background-color: #F6F6F6;
 }
+.tooltip {
+   -fx-text-fill: black;
+   -fx-background-color: #f5deb3;
+}

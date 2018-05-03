@@ -32,7 +32,7 @@ or simple nominal phrases in the subject and direct object positions, rather tha
         </radioGroup>
         <br/>
         <buttons>
-            <button id="OverallTypologyBack" value="Back" goto="Contents.htm"/>
+            <button id="OverallTypologyBack" value="Back" goto="Contents_en.htm"/>
             <button id="OverallTypologyNext" value="Next" goto="Case.xml"/>
         </buttons>
     </form>

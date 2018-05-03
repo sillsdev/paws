@@ -55,6 +55,7 @@ import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.ChoiceDialog;
 import javafx.scene.control.Dialog;
 import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.ProgressBar;
@@ -79,6 +80,7 @@ import org.sil.paws.model.FontInfo;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.Constants;
 import org.sil.paws.model.Language;
+import org.sil.paws.service.ObservableResourceFactory;
 import org.sil.paws.service.OutputGenerator;
 import org.sil.paws.service.WebPageInteractor;
 import org.sil.paws.view.ControllerUtilities;
@@ -146,6 +148,24 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	private MenuBar menuBar;
 	@FXML
+	private Menu menuFile;
+	@FXML
+	private MenuItem menuItemFileNew;
+	@FXML
+	private MenuItem menuItemFileOpen;
+	@FXML
+	private MenuItem menuItemFileClose;
+	@FXML
+	private MenuItem menuItemFileSaveAs;
+	@FXML
+	private MenuItem menuItemFileGenerateFiles;
+	@FXML
+	private MenuItem menuItemFileLocations;
+	@FXML
+	private MenuItem menuItemFileExit;
+	@FXML
+	private Menu menuEdit;
+	@FXML
 	private MenuItem menuItemEditUndo;
 	@FXML
 	private MenuItem menuItemEditRedo;
@@ -156,11 +176,35 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	private MenuItem menuItemEditPaste;
 	@FXML
+	private Menu menuLanguage;
+	@FXML
+	private MenuItem menuItemLanguageProperties;
+	@FXML
+	private MenuItem menuItemLanguageLocations;
+	@FXML
+	private Menu menuView;
+	@FXML
 	private CheckMenuItem menuItemShowStatusBar;
 	@FXML
 	private MenuItem menuItemViewBack;
 	@FXML
 	private MenuItem menuItemViewForward;
+	@FXML
+	private MenuItem menuItemViewMakeLarger;
+	@FXML
+	private MenuItem menuItemViewMakeSmaller;
+	@FXML
+	private MenuItem menuItemViewRefresh;
+	@FXML
+	private Menu menuSettings;
+	@FXML
+	private MenuItem menuChangeInterfaceLanguage;
+	@FXML
+	private Menu menuHelp;
+	@FXML
+	private MenuItem menuHelpResources;
+	@FXML
+	private MenuItem menuHelpAbout;
 
 	@FXML
 	private WebView browser;
@@ -196,11 +240,19 @@ public class RootLayoutController implements Initializable {
 
 	URL location;
 
+	// following lines from
+	// https://stackoverflow.com/questions/32464974/javafx-change-application-language-on-the-run
+	private static final ObservableResourceFactory RESOURCE_FACTORY = new ObservableResourceFactory();
+	static {
+		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
+				new Locale("en")));
+	}
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		this.location = location;
 		bundle = resources;
-		sFileFilterDescription = bundle.getString("file.filterdescription");
+		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
 		try {
 			sConfigurationDirectory = new File(".").getCanonicalPath() + File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
@@ -208,7 +260,7 @@ public class RootLayoutController implements Initializable {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		createToolbarButtons(bundle);
+		initToolbarButtons(bundle);
 
 		webEngine = browser.getEngine();
 		webEngine.setOnAlert(event -> showAlert(event.getData()));
@@ -224,7 +276,7 @@ public class RootLayoutController implements Initializable {
 					// javascript onload() function.
 					JSObject win = (JSObject) webEngine.executeScript("window");
 					win.setMember("pawsApp", new WebPageInteractor(language, webEngine, rlc));
-					webEngine.executeScript("Initialize()");
+					webEngine.executeScript("Initialize('" + getCurrentLocaleCode() + "')");
 					updatePageLabels();
 				} else if (newState == State.FAILED) {
 					String sUrl = webEngine.getLocation();
@@ -244,6 +296,8 @@ public class RootLayoutController implements Initializable {
 			}
 		});
 
+		initMenuItemsForLocalization();
+
 		try {
 			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
 		} catch (IOException e) {
@@ -260,9 +314,51 @@ public class RootLayoutController implements Initializable {
 			}
 		});
 	}
+
+	private void initMenuItemsForLocalization() {
+		menuFile.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.file"));
+		menuItemFileNew.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.new"));
+		menuItemFileOpen.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.open"));
+		menuItemFileClose.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.close"));
+		menuItemFileSaveAs.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.saveas"));
+		menuItemFileGenerateFiles.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.generatefiles"));
+		menuItemFileLocations.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.filelocations"));
+		menuItemFileExit.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.exit"));
+		menuEdit.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.edit"));
+		menuItemEditUndo.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.undo"));
+		menuItemEditRedo.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.redo"));
+		menuItemEditCut.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.cut"));
+		menuItemEditCopy.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.copy"));
+		menuItemEditPaste.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.paste"));
+		menuLanguage.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.language"));
+		menuItemLanguageProperties.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.languageproperties"));
+		menuItemLanguageLocations.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.filelocations"));
+		menuView.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.view"));
+		menuItemShowStatusBar.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.showstatusbar"));
+		menuItemViewMakeLarger.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.makelarger"));
+		menuItemViewMakeSmaller.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.makesmaller"));
+		menuItemViewBack.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.back"));
+		menuItemViewForward.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.forward"));
+		menuItemViewRefresh.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.refresh"));
+		menuSettings.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.settings"));
+		menuChangeInterfaceLanguage.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.changeinterfacelanguage"));
+		menuHelp.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.help"));
+		menuHelpResources.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.resources"));
+		menuHelpAbout.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.about"));
+	}
+
 	private void initMapper() {
 		try {
-			htmlMapperStylesheet = sConfigurationDirectory + "Transforms" + File.separator+ "PAWSSKHtmlMapper.xsl";
+			htmlMapperStylesheet = sConfigurationDirectory + "Transforms" + File.separator
+					+ "PAWSSKHtmlMapper.xsl";
 			File xslt = new File(htmlMapperStylesheet);
 			if (!xslt.exists()) {
 				throw new IOException(xslt.getPath());
@@ -290,7 +386,7 @@ public class RootLayoutController implements Initializable {
 	}
 
 	private String getCurrentLocaleCode() {
-		return "_" + bundle.getLocale().getLanguage();
+		return "_" + currentLocale.getLanguage();
 	}
 
 	public void transformAndLoadPage(String sUrl) {
@@ -346,13 +442,21 @@ public class RootLayoutController implements Initializable {
 			sAdjusted = sAdjusted.replace("\\", "\\\\");
 		}
 		params.add(new XsltParameter("prmWorkingPath", sAdjusted));
-		params.add(new XsltParameter("sBackLabel", bundle.getString("webpage.back")));
-		params.add(new XsltParameter("sNextLabel", bundle.getString("webpage.next")));
-		params.add(new XsltParameter("sReturnToContentsLabel", bundle.getString("webpage.returntocontents")));
-		params.add(new XsltParameter("sTypeOfFeature", bundle.getString("webpage.typeoffeature")));
-		params.add(new XsltParameter("sFeature", bundle.getString("webpage.feature")));
-		params.add(new XsltParameter("sExplanation", bundle.getString("webpage.explanation")));
-		params.add(new XsltParameter("sMorphemes", bundle.getString("webpage.morphemes")));
+		params.add(new XsltParameter("prmLocale", getCurrentLocaleCode()));
+		params.add(new XsltParameter("prmBackLabel", RESOURCE_FACTORY.getStringBinding(
+				"webpage.back").get()));
+		params.add(new XsltParameter("prmNextLabel", RESOURCE_FACTORY.getStringBinding(
+				"webpage.next").get()));
+		params.add(new XsltParameter("prmReturnToContentsLabel", RESOURCE_FACTORY.getStringBinding(
+				"webpage.returntocontents").get()));
+		params.add(new XsltParameter("prmTypeOfFeature", RESOURCE_FACTORY.getStringBinding(
+				"webpage.typeoffeature").get()));
+		params.add(new XsltParameter("prmFeature", RESOURCE_FACTORY.getStringBinding(
+				"webpage.feature").get()));
+		params.add(new XsltParameter("prmExplanation", RESOURCE_FACTORY.getStringBinding(
+				"webpage.explanation").get()));
+		params.add(new XsltParameter("prmMorphemes", RESOURCE_FACTORY.getStringBinding(
+				"webpage.morphemes").get()));
 		transformer.clearParameters();
 		for (XsltParameter param : params) {
 			transformer.setParameter(param.name, param.value);
@@ -455,26 +559,42 @@ public class RootLayoutController implements Initializable {
 		}
 	}
 
-	protected void createToolbarButtons(ResourceBundle bundle) {
-		ControllerUtilities.createToolbarButtonWithImage("newAction.png", buttonToolbarFileNew,
-				tooltipToolbarFileNew, bundle.getString("tooltip.new"));
-		ControllerUtilities.createToolbarButtonWithImage("openAction.png", buttonToolbarFileOpen,
-				tooltipToolbarFileOpen, bundle.getString("tooltip.open"));
-		ControllerUtilities.createToolbarButtonWithImage("saveAction.png",
-				buttonToolbarGenerateFiles, tooltipToolbarGenerateFiles,
+	protected void initToolbarButtons(ResourceBundle bundle) {
+		tooltipToolbarFileNew = ControllerUtilities.createToolbarButtonWithImage("newAction.png",
+				buttonToolbarFileNew, tooltipToolbarFileNew, bundle.getString("tooltip.new"));
+		tooltipToolbarFileNew.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.new"));
+		tooltipToolbarFileOpen = ControllerUtilities.createToolbarButtonWithImage("openAction.png",
+				buttonToolbarFileOpen, tooltipToolbarFileOpen, bundle.getString("tooltip.open"));
+		tooltipToolbarFileOpen.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("tooltip.open"));
+		tooltipToolbarGenerateFiles = ControllerUtilities.createToolbarButtonWithImage(
+				"saveAction.png", buttonToolbarGenerateFiles, tooltipToolbarGenerateFiles,
 				bundle.getString("tooltip.save"));
-		ControllerUtilities.createToolbarButtonWithImage("cutAction.png", buttonToolbarEditCut,
-				tooltipToolbarEditCut, bundle.getString("tooltip.cut"));
-		ControllerUtilities.createToolbarButtonWithImage("copyAction.png", buttonToolbarEditCopy,
-				tooltipToolbarEditCopy, bundle.getString("tooltip.copy"));
-		ControllerUtilities.createToolbarButtonWithImage("pasteAction.png", buttonToolbarEditPaste,
-				tooltipToolbarEditPaste, bundle.getString("tooltip.paste"));
-		ControllerUtilities.createToolbarButtonWithImage("back.png", buttonToolbarBack,
-				tooltipToolbarBack, bundle.getString("tooltip.back"));
-		ControllerUtilities.createToolbarButtonWithImage("forward.png", buttonToolbarForward,
-				tooltipToolbarForward, bundle.getString("tooltip.forward"));
-		ControllerUtilities.createToolbarButtonWithImage("refresh.png", buttonToolbarRefresh,
-				tooltipToolbarRefresh, bundle.getString("tooltip.refresh"));
+		tooltipToolbarGenerateFiles.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("tooltip.save"));
+		tooltipToolbarEditCut = ControllerUtilities.createToolbarButtonWithImage("cutAction.png",
+				buttonToolbarEditCut, tooltipToolbarEditCut, bundle.getString("tooltip.cut"));
+		tooltipToolbarEditCut.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.cut"));
+		tooltipToolbarEditCopy = ControllerUtilities.createToolbarButtonWithImage("copyAction.png",
+				buttonToolbarEditCopy, tooltipToolbarEditCopy, bundle.getString("tooltip.copy"));
+		tooltipToolbarEditCopy.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("tooltip.copy"));
+		tooltipToolbarEditPaste = ControllerUtilities.createToolbarButtonWithImage(
+				"pasteAction.png", buttonToolbarEditPaste, tooltipToolbarEditPaste,
+				bundle.getString("tooltip.paste"));
+		tooltipToolbarEditPaste.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("tooltip.paste"));
+		tooltipToolbarBack = ControllerUtilities.createToolbarButtonWithImage("back.png",
+				buttonToolbarBack, tooltipToolbarBack, bundle.getString("tooltip.back"));
+		tooltipToolbarBack.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.back"));
+		tooltipToolbarForward = ControllerUtilities.createToolbarButtonWithImage("forward.png",
+				buttonToolbarForward, tooltipToolbarForward, bundle.getString("tooltip.forward"));
+		tooltipToolbarForward.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("tooltip.forward"));
+		tooltipToolbarRefresh = ControllerUtilities.createToolbarButtonWithImage("refresh.png",
+				buttonToolbarRefresh, tooltipToolbarRefresh, bundle.getString("tooltip.refresh"));
+		tooltipToolbarRefresh.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("tooltip.refresh"));
 	}
 
 	private void showAlert(String message) {
@@ -504,7 +624,8 @@ public class RootLayoutController implements Initializable {
 		this.currentLocale = currentLocale;
 		pawsFilterDescription = sFileFilterDescription + " (" + Constants.PAWS_DATA_FILE_EXTENSIONS
 				+ ")";
-
+		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
+				currentLocale));
 	}
 
 	@FXML
@@ -520,7 +641,7 @@ public class RootLayoutController implements Initializable {
 		}
 		applicationPreferences.setLastOpenedDirectoryPath(sDirectoryPath);
 		File fileCreated = ControllerUtilities.doFileSaveAs(mainApp, currentLocale, false,
-				pawsFilterDescription, bundle.getString("file.new"));
+				pawsFilterDescription, RESOURCE_FACTORY.getStringBinding("file.new").get());
 		if (fileCreated != null) {
 			try {
 				String masterPAWS = sConfigurationDirectory + File.separator + "Data"
@@ -766,36 +887,34 @@ public class RootLayoutController implements Initializable {
 
 		ChoiceDialog<String> dialog = new ChoiceDialog<>(
 				currentLocale.getDisplayLanguage(currentLocale), validLocales.keySet());
-		dialog.setTitle(bundle.getString("menu.changeinterfacelanguage"));
-		dialog.setHeaderText(bundle.getString("dialog.chooseinterfacelanguage"));
-		dialog.setContentText(bundle.getString("dialog.chooselanguage"));
-
+		dialog.setTitle(RESOURCE_FACTORY.getStringBinding("dialog.changeinterfacelanguage").get());
+		dialog.setHeaderText(RESOURCE_FACTORY.getStringBinding("dialog.chooseinterfacelanguage")
+				.get());
+		dialog.setContentText(RESOURCE_FACTORY.getStringBinding("dialog.chooselanguage").get());
 		Optional<String> result = dialog.showAndWait();
-
 		result.ifPresent(locale -> {
 			Locale selectedLocale = validLocales.get(locale).getLocale();
 			if (!currentLocale.equals(selectedLocale)) {
-				copyLocalizedVariablesTransform(selectedLocale);
 				mainApp.setLocale(selectedLocale);
+				RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
+						selectedLocale));
+				// TODO: figure out if XML or HTM and adjust accordingly
+				String currentWebPage = webEngine.getLocation();
+				if (currentWebPage.contains(kHTMsFolder)) {
+					// the page is a true htm file
+					currentWebPage = currentWebPage.replace(getCurrentLocaleCode(),
+							"_" + selectedLocale.getLanguage());
+				} else {
+					// the page is an xml page
+					int i = currentWebPage.lastIndexOf("/");
+					String sBaseName = currentWebPage.substring(i + 1, currentWebPage.length() - 4);
+					currentWebPage = Constants.FILE_PROTOCOL + "/" + sConfigurationDirectory.replace("\\", "/") + "HTMs/" + sBaseName + ".xml";
+					System.out.println("change: current='" + currentWebPage + "'");
+				}
+				currentLocale = selectedLocale;
+				webEngine.load(currentWebPage);
 			}
 		});
-	}
-
-	public void copyLocalizedVariablesTransform(Locale selectedLocale) {
-		String target = getWorkingConfigurationDirectory() + File.separator + "Transforms"
-				+ File.separator + "PAWSSKHtmlMapperVariables.xsl";
-		Path variablesLocaleTargetPath = Paths.get(target);
-		String ending = "_" + selectedLocale.getLanguage() + ".xsl";
-		String source = sConfigurationDirectory + "Transforms" + File.separator
-				+ "PAWSSKHtmlMapperVariables" + ending;
-		System.out.println("copying '" + source + "' to '" + target + "'");
-		try {
-			Files.copy(Paths.get(source), variablesLocaleTargetPath,
-					StandardCopyOption.REPLACE_EXISTING);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 	private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
@@ -814,8 +933,8 @@ public class RootLayoutController implements Initializable {
 	public void askAboutSaving() {
 		Alert alert = new Alert(AlertType.CONFIRMATION, "", ButtonType.YES, ButtonType.NO);
 		alert.setTitle(MainApp.kApplicationTitle);
-		alert.setHeaderText(bundle.getString("file.asktosaveheader"));
-		alert.setContentText(bundle.getString("file.asktosavecontent"));
+		alert.setHeaderText(RESOURCE_FACTORY.getStringBinding("file.asktosaveheader").get());
+		alert.setContentText(RESOURCE_FACTORY.getStringBinding("file.asktosavecontent").get());
 
 		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(mainApp.getNewMainIconImage());
@@ -879,11 +998,10 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	private void handleAbout() {
 		// webEngine.load(sProgramLocation + kHTMsFolder + "About.htm");
-		sAboutHeader = bundle.getString("about.header");
+		sAboutHeader = RESOURCE_FACTORY.getStringBinding("about.header").get();
 		Object[] args = { Constants.VERSION_NUMBER };
-		MessageFormat msgFormatter = new MessageFormat("");
-		msgFormatter.setLocale(currentLocale);
-		msgFormatter.applyPattern(bundle.getString("about.content"));
+		MessageFormat msgFormatter = new MessageFormat("", currentLocale);
+		msgFormatter.applyPattern(RESOURCE_FACTORY.getStringBinding("about.content").get());
 		sAboutContent = msgFormatter.format(args);
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle(sAboutHeader);

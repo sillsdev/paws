@@ -59,7 +59,7 @@
        <introduction>Both copular and perception verbs can also occur with an adjectival clause complement, where a sentence or complement clause follows the adjective.  These constructions will be covered in <section number="10.">Complement Clauses</section> under the discussion of perception verbs acting as ‘raising’ verbs.</introduction>
        <br/><br/>
        <buttons>
-            <button id="IPCopBack" value="Back" goto="IPContents.htm"/>
+            <button id="IPCopBack" value="Back" goto="IPContents_en.htm"/>
             <button id="IPCopNext" value="Next" goto="IPComparative.xml"/>
         </buttons>
     </form>

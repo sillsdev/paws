@@ -153,8 +153,8 @@
  <br/>      
        <br/>
       <buttons>
-           <button id="FinalBack" value="Back" goto="Contents.htm"/>
-            <button id="FinalNext" value="Next" goto="Contents.htm"/>
+           <button id="FinalBack" value="Back" goto="Contents_es.htm"/>
+            <button id="FinalNext" value="Next" goto="Contents_es.htm"/>
         </buttons>
     </form>
    <showWhen id="swNotPractical">

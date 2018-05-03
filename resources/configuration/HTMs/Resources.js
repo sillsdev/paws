@@ -1,5 +1,5 @@
 // Resources.js
 
-function Initialize() {
-	pawsApp.setLeftOffAt("Resources.htm");
+function Initialize(locale) {
+	pawsApp.setLeftOffAt("Resources" + locale + ".htm");
 }

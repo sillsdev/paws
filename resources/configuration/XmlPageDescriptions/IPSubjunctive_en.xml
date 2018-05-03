@@ -70,7 +70,7 @@
         <br/>
         <buttons>
             <button id="IPSubjunctiveBack" value="Back" goto="IPConditional.xml"/>
-               <button id="IPSubjunctiveNext" value="Next" goto="IPContents.htm"/>
+               <button id="IPSubjunctiveNext" value="Next" goto="IPContents_en.htm"/>
         </buttons>
    </form>
    <showWhen id="swIPSubjunctiveCondWordMood">

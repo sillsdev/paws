@@ -23,13 +23,14 @@ Preamble
 	<xsl:param name="prmRtlScript"/>
 	<xsl:param name="prmStylesheet"/>
 	<xsl:param name="prmWorkingPath"/>
-	<xsl:param name="sBackLabel" select="'Back'"/>
-	<xsl:param name="sNextLabel" select="'Next'"/>
-	<xsl:param name="sReturnToContentsLabel" select="'Return to Contents'"/>
-	<xsl:param name="sTypeOfFeature" select="'Type of Feature'"/>
-	<xsl:param name="sFeature" select="'Feature'"/>
-	<xsl:param name="sExplanation" select="'Explanation'"/>
-	<xsl:param name="sMorphemes" select="'Morphemes'"/>
+	<xsl:param name="prmLocale" select="'_en'"/>
+	<xsl:param name="prmBackLabel" select="'Back'"/>
+	<xsl:param name="prmNextLabel" select="'Next'"/>
+	<xsl:param name="prmReturnToContentsLabel" select="'Return to Contents'"/>
+	<xsl:param name="prmTypeOfFeature" select="'Type of Feature'"/>
+	<xsl:param name="prmFeature" select="'Feature'"/>
+	<xsl:param name="prmExplanation" select="'Explanation'"/>
+	<xsl:param name="prmMorphemes" select="'Morphemes'"/>
 	<xsl:variable name="Section">
 		<xsl:value-of select="//form/@section"/>
 	</xsl:variable>
@@ -83,7 +84,7 @@ var SpecPosInternal = 2;
 var SpecPosFinal = 3;
 var SpecPosUnknown = 4;
 
-function Initialize()
+function Initialize(locale)
 {
 <xsl:apply-templates select="//textBox | //groupName | //catMap | //featureItem | //checkbox | //contentCheckBoxOther" mode="load"/>
 pawsApp.setLeftOffAt("<xsl:value-of select="$prmWorkingPath"/>
@@ -204,7 +205,7 @@ function ButtonBack()
 function ReturnContents()
 {
 	saveData();
-	pawsApp.load ("<xsl:value-of select="$prmInstallPath"/>HTMs/Contents.htm");
+	pawsApp.load ("<xsl:value-of select="$prmInstallPath"/>HTMs/Contents<xsl:value-of select="$prmLocale"/>.htm");
 }
 function Refresh()
 {
@@ -453,10 +454,10 @@ Refresh();
 				<xsl:choose>
 					<xsl:when test="@value='Back'">
 						<xsl:text>&lt;&#x20;</xsl:text>
-						<xsl:value-of select="$sBackLabel"/>
+						<xsl:value-of select="$prmBackLabel"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:value-of select="$sNextLabel"/>
+						<xsl:value-of select="$prmNextLabel"/>
 						<xsl:text>&#x20;&gt;</xsl:text>
 					</xsl:otherwise>
 				</xsl:choose>
@@ -480,8 +481,8 @@ Refresh();
 		<scan>
 			<xsl:text disable-output-escaping="yes">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</xsl:text>
 			<a onclick="ReturnContents()">
-				<xsl:attribute name="href"><xsl:value-of select="$prmInstallPath"/>HTMs/Contents.htm</xsl:attribute>
-				<xsl:value-of select="$sReturnToContentsLabel"/>
+				<xsl:attribute name="href"><xsl:value-of select="$prmInstallPath"/>HTMs/Contents<xsl:value-of select="$prmLocale"/>.htm</xsl:attribute>
+				<xsl:value-of select="$prmReturnToContentsLabel"/>
 				<!--<xsl:text>Return to Contents</xsl:text>-->
 			</a>
 		</scan>
@@ -703,20 +704,20 @@ Refresh();
 			<tr>
 				<xsl:if test="@types='yes'">
 					<th align="left" valign="top">
-						<xsl:value-of select="$sTypeOfFeature"/>
+						<xsl:value-of select="$prmTypeOfFeature"/>
 					</th>
 				</xsl:if>
 				<th align="left" valign="top">
-					<xsl:value-of select="$sFeature"/>
+					<xsl:value-of select="$prmFeature"/>
 				</th>
 				<xsl:if test="not(@explanations='no')">
 					<th align="left" valign="top">
-						<xsl:value-of select="$sExplanation"/>
+						<xsl:value-of select="$prmExplanation"/>
 					</th>
 				</xsl:if>
 				<xsl:if test="descendant::textBox">
 					<th align="left" valign="top">
-						<xsl:value-of select="$sMorphemes"/>
+						<xsl:value-of select="$prmMorphemes"/>
 					</th>
 				</xsl:if>
 			</tr>

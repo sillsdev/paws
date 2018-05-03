@@ -324,7 +324,7 @@
    	<prompt id="IPIrrealisMoodPrompt" show="swIPIrrealisMoodMultiple">Le conditionnel et le subjonctif sont des types d’irréalis; veuillez choisir le mot général irréalis ou une ou deux des sous-types.</prompt>
       <br/><br/>
 		<buttons>
-			<button id="IPInflFeaturesBack" value="Back" goto="IPContents.htm"/>
+			<button id="IPInflFeaturesBack" value="Back" goto="IPContents_fr.htm"/>
 			<button id="IPInflFeaturesNext" value="Next" goto="IPAgrFeatures.xml"/>
 		</buttons>
 	</form>

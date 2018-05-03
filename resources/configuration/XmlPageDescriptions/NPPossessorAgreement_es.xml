@@ -116,7 +116,7 @@
        <br/><br/>
        <buttons>
           <button id="NPPossAgrBack" value="Back" goto="NPPossessors.xml"/>
-          <button id="NPPossAgrNext" value="Next" goto="NPContents.htm"/>
+          <button id="NPPossAgrNext" value="Next" goto="NPContents_es.htm"/>
        </buttons>
     </form>
    <showWhen id="swNPArtAgreementNone">

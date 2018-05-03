@@ -20,7 +20,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="PNTestingBack" value="Back" goto="PNCatMap.xml"/>
-			<button id="PNTestingNext" value="Next" goto="Contents.htm"/>
+			<button id="PNTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

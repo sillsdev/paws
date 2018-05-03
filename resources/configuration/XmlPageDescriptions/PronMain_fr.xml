@@ -1283,7 +1283,7 @@
        <instruction id="PronDepFeaturesInstruction" show="swPronDependentYes">Note that the dependent pronoun forms need additional features for their use as possessors when attached to nouns, which should have been added in <section number="5.4.">Nominal Phrases – Possessor Agreement</section>, The dependent pronoun forms will also need additional features for their use as agreement when attached to verbs.  These will be added in <section number="9.2.">Basic Sentences – Agreement Features</section>.</instruction>
        <br/>
         <buttons>
-            <button id="PronMainBack" value="Back" goto="Contents.htm"/>
+            <button id="PronMainBack" value="Back" goto="Contents_fr.htm"/>
             <button id="PronMainNext" value="Next" goto="PronPoss.xml"/>
         </buttons>
     </form>

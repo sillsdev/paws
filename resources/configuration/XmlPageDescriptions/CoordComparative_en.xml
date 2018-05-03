@@ -27,7 +27,7 @@
 		<br/>
 		<buttons>
 			<button id="CoordComparativeBack" value="Back" goto="CoordDP.xml"/>
-		    <button id="CoordComparativeNext" value="Next" goto="CoordCatMap.xml" gotoNoGrammar="Contents.htm"/>
+		    <button id="CoordComparativeNext" value="Next" goto="CoordCatMap.xml" gotoNoGrammar="Contents_en.htm"/>
 		</buttons>
 	</form>
    <showWhen id="swPPPosPrep">

@@ -61,7 +61,7 @@
       <br/>
         <br/>
         <buttons>
-            <button id="NPAgreementBack" value="Back" goto="NPContents.htm"/>
+            <button id="NPAgreementBack" value="Back" goto="NPContents_es.htm"/>
             <button id="NPAgreementNext" value="Next" goto="NPCase.xml"/>
         </buttons>
     </form>

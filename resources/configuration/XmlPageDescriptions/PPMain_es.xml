@@ -134,7 +134,7 @@
       <br/>
       <br/>
        <buttons>
-          <button id="PPMainBack" value="Back" goto="Contents.htm"/>
+          <button id="PPMainBack" value="Back" goto="Contents_es.htm"/>
           <button id="PPMainNext" value="Next" goto="PPComps.xml"/>
        </buttons>
     </form>

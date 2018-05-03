@@ -41,8 +41,8 @@ It may be difficult to understand the need for the change in English, because ar
         
         <br/><br/>
         <buttons>
-            <button id="NPMainBack" value="Back" goto="NPContents.htm"/>
-            <button id="NPMainNext" value="Next" goto="NPContents.htm"/>
+            <button id="NPMainBack" value="Back" goto="NPContents_fr.htm"/>
+            <button id="NPMainNext" value="Next" goto="NPContents_fr.htm"/>
         </buttons>
     </form>
     <showWhen id="swNotPractical">

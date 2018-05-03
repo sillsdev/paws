@@ -114,7 +114,7 @@ o <example>pocos</example>, y</li>
       <br/>
       <br/>      
       <buttons>
-         <button id="QPMainBack" value="Back" goto="Contents.htm"/>
+         <button id="QPMainBack" value="Back" goto="Contents_es.htm"/>
          <button id="QPMainNext" value="Next" goto="QPDeterminers.xml"/>
       </buttons>
    </form>

@@ -6,7 +6,7 @@ var sImg;
 var sTemp;
 var xpath;
 
-function Initialize() {
+function Initialize(locale) {
 	displayStatus(ContentsOverallTypologyQuestionsStatus, "typology");
 	displayStatus(ContentsQuantifiersStatus, "qp");
 	displayStatus(ContentsAdverbsStatus, "advp");
@@ -32,7 +32,7 @@ function Initialize() {
 	displayCheckBoxValue(OutputWriterPracticalSpanish, "/paws/@outputWriterPracticalSpanish");
 	displayCheckBoxValue(OutputWriterPracticalFrench, "/paws/@outputWriterPracticalFrench");
 
-    pawsApp.setLeftOffAt("Contents.htm");
+    pawsApp.setLeftOffAt("Contents" + locale + ".htm");
 	Refresh();
 }
 function displayCheckBoxValue(checkboxID, xpath) {

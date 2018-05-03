@@ -94,8 +94,8 @@ To handle class marking and agreement, in the lexicon:
         </instruction>
         <br/>
         <buttons>
-            <button id="NPQPBack" value="Back" goto="NPContents.htm"/>
-            <button id="NPQPNext" value="Next" goto="NPContents.htm"/>
+            <button id="NPQPBack" value="Back" goto="NPContents_es.htm"/>
+            <button id="NPQPNext" value="Next" goto="NPContents_es.htm"/>
         </buttons>
     </form>
    <showWhen id="swNPQPNoCheck">

@@ -76,7 +76,7 @@
       <br/><br/>
 		<buttons>
 			<button id="PronNPBack" value="Back" goto="PronIndefinite.xml"/>
-		    <button id="PronNPNext" value="Next" goto="PronCatMap.xml" gotoNoGrammar="Contents.htm"/>
+		    <button id="PronNPNext" value="Next" goto="PronCatMap.xml" gotoNoGrammar="Contents_en.htm"/>
 		</buttons>
 	</form>
 	<showWhen id="swNotPractical">

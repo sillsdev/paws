@@ -163,7 +163,7 @@
        <br/>
        <br/>
        <buttons>
-            <button id="AdvPExamplesBack" value="Back" goto="Contents.htm"/>
+            <button id="AdvPExamplesBack" value="Back" goto="Contents_es.htm"/>
             <button id="AdvPExamplesNext" value="Next" goto="AdvPLocative.xml"/>
         </buttons>
     </form>

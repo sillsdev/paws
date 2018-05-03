@@ -69,7 +69,7 @@
 	   <br/><br/>
 		<buttons>
 			<button id="IPVoiceBack" value="Back" goto="IPCausative.xml"/>
-			<button id="IPVoiceNext" value="Next" goto="IPContents.htm"/>
+			<button id="IPVoiceNext" value="Next" goto="IPContents_en.htm"/>
 		</buttons>
 	</form>
 <showWhen id="swIPVoiceYes">

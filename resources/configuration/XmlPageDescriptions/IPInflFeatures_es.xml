@@ -325,7 +325,7 @@
       <prompt id="IPIrrealisMoodPrompt" show="swIPIrrealisMoodMultiple">Condicional y subjuntivo son tipos de irrealis. Por favor, escoja el término irreals general, o uno o ambos de los subtipos.</prompt>
       <br/><br/>
 		<buttons>
-			<button id="IPInflFeaturesBack" value="Back" goto="IPContents.htm"/>
+			<button id="IPInflFeaturesBack" value="Back" goto="IPContents_es.htm"/>
 			<button id="IPInflFeaturesNext" value="Next" goto="IPAgrFeatures.xml"/>
 		</buttons>
 	</form>

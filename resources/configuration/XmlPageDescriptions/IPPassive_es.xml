@@ -59,7 +59,7 @@
 	   </instruction>
 	   <br/>
 		<buttons>
-			<button id="IPPassiveBack" value="Back" goto="IPContents.htm"/>
+			<button id="IPPassiveBack" value="Back" goto="IPContents_es.htm"/>
 			<button id="IPPassiveNext" value="Next" goto="IPCausative.xml"/>
 		</buttons>
 	</form>

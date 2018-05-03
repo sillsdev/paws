@@ -18,7 +18,7 @@ results and note any changes you need to make, most likely by adding features to
 		<br/>
 		<buttons>
 			<button id="PPTestingBack" value="Back" goto="PPCatMap.xml"/>
-			<button id="PPTestingNext" value="Next" goto="Contents.htm"/>
+			<button id="PPTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

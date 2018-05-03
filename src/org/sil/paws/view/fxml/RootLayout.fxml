@@ -30,20 +30,20 @@
          <children>
             <MenuBar fx:id="menuBar">
               <menus>
-                <Menu mnemonicParsing="true" text="%menu.file">
+                <Menu fx:id="menuFile" mnemonicParsing="true" text="%menu.file">
                   <items>
-                    <MenuItem accelerator="Ctrl+n" mnemonicParsing="true" onAction="#handleNewLanguage" text="%menu.new" />
-					<MenuItem accelerator="Ctrl+o" mnemonicParsing="true" onAction="#handleOpenLanguage" text="%menu.open" />
-					<MenuItem mnemonicParsing="true" onAction="#handleCloseLanguage" text="%menu.close" />
-					<MenuItem mnemonicParsing="true" onAction="#handleSaveAs" text="%menu.saveas" />
+                    <MenuItem fx:id="menuItemFileNew" accelerator="Ctrl+n" mnemonicParsing="true" onAction="#handleNewLanguage" text="%menu.new" />
+					<MenuItem fx:id="menuItemFileOpen" accelerator="Ctrl+o" mnemonicParsing="true" onAction="#handleOpenLanguage" text="%menu.open" />
+					<MenuItem fx:id="menuItemFileClose" mnemonicParsing="true" onAction="#handleCloseLanguage" text="%menu.close" />
+					<MenuItem fx:id="menuItemFileSaveAs" mnemonicParsing="true" onAction="#handleSaveAs" text="%menu.saveas" />
 					<SeparatorMenuItem />
-					<MenuItem accelerator="Ctrl+s" mnemonicParsing="true" onAction="#handleGenerateFiles" text="%menu.generatefiles" />
-					<MenuItem mnemonicParsing="true" onAction="#handleFileLocations" text="%menu.filelocations" />
+					<MenuItem fx:id="menuItemFileGenerateFiles" accelerator="Ctrl+s" mnemonicParsing="true" onAction="#handleGenerateFiles" text="%menu.generatefiles" />
+					<MenuItem fx:id="menuItemFileLocations" mnemonicParsing="true" onAction="#handleFileLocations" text="%menu.filelocations" />
                     <SeparatorMenuItem />
-                    <MenuItem mnemonicParsing="true" onAction="#handleExit" text="%menu.exit" />
+                    <MenuItem fx:id="menuItemFileExit" mnemonicParsing="true" onAction="#handleExit" text="%menu.exit" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="true" onShown="#handleShowingEditMenu" text="%menu.edit">
+                <Menu fx:id="menuEdit" mnemonicParsing="true" onShown="#handleShowingEditMenu" text="%menu.edit">
                   <items>
 					<MenuItem fx:id="menuItemEditUndo" accelerator="Ctrl+z" mnemonicParsing="true" onAction="#handleUndo" text="%menu.undo" />
 					<MenuItem fx:id="menuItemEditRedo" accelerator="Ctrl+y" mnemonicParsing="true" onAction="#handleRedo" text="%menu.redo" />
@@ -53,35 +53,35 @@
 					<MenuItem fx:id="menuItemEditPaste" accelerator="ctrl+v" mnemonicParsing="true" onAction="#handlePaste" text="%menu.paste" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="true" text="%menu.language">
+                <Menu fx:id="menuLanguage" mnemonicParsing="true" text="%menu.language">
                   <items>
-                    <MenuItem mnemonicParsing="true" onAction="#handleLanguage" text="%menu.languageproperties" />
-                    <MenuItem mnemonicParsing="true" onAction="#handleFileLocations" text="%menu.filelocations" />
+                    <MenuItem fx:id="menuItemLanguageProperties"  mnemonicParsing="true" onAction="#handleLanguage" text="%menu.languageproperties" />
+                    <MenuItem fx:id="menuItemLanguageLocations" mnemonicParsing="true" onAction="#handleFileLocations" text="%menu.filelocations" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="true" text="%menu.view">
+                <Menu fx:id="menuView" mnemonicParsing="true" text="%menu.view">
                   <items>
                     <CheckMenuItem fx:id="menuItemShowStatusBar" mnemonicParsing="true" onAction="#handleMenuShowStatusBar" text="%menu.showstatusbar" />
 					<SeparatorMenuItem />
-					<MenuItem accelerator="ctrl+'+'" mnemonicParsing="true" onAction="#handleMakeLarger" text="%menu.makelarger" />
-					<MenuItem accelerator="ctrl+'-'" mnemonicParsing="true" onAction="#handleMakeSmaller" text="%menu.makesmaller" />
+					<MenuItem fx:id="menuItemViewMakeLarger" accelerator="ctrl+'+'" mnemonicParsing="true" onAction="#handleMakeLarger" text="%menu.makelarger" />
+					<MenuItem fx:id="menuItemViewMakeSmaller" accelerator="ctrl+'-'" mnemonicParsing="true" onAction="#handleMakeSmaller" text="%menu.makesmaller" />
 					<SeparatorMenuItem />
 					<MenuItem fx:id="menuItemViewBack" accelerator="alt+left" mnemonicParsing="true" onAction="#handleBack" text="%menu.back" />
 					<MenuItem fx:id="menuItemViewForward" accelerator="alt+right" mnemonicParsing="true" onAction="#handleForward" text="%menu.forward" />
 					<SeparatorMenuItem />
-					<MenuItem accelerator="F5" mnemonicParsing="true" onAction="#handleRefresh" text="%menu.refresh" />
+					<MenuItem fx:id="menuItemViewRefresh" accelerator="F5" mnemonicParsing="true" onAction="#handleRefresh" text="%menu.refresh" />
                   </items>
                 </Menu>
-				<Menu mnemonicParsing="true" text="%menu.settings">
+				<Menu fx:id="menuSettings" mnemonicParsing="true" text="%menu.settings">
 				  <items>
-					<MenuItem mnemonicParsing="true" onAction="#handleChangeInterfaceLanguage" text="%menu.changeinterfacelanguage" />
+					<MenuItem fx:id="menuChangeInterfaceLanguage" mnemonicParsing="true" onAction="#handleChangeInterfaceLanguage" text="%menu.changeinterfacelanguage" />
 				  </items>
 				</Menu>
-                <Menu mnemonicParsing="true" text="%menu.help">
+                <Menu fx:id="menuHelp" mnemonicParsing="true" text="%menu.help">
                   <items>
-                    <MenuItem mnemonicParsing="true" onAction="#handleResources" text="%menu.resources" />
+                    <MenuItem fx:id="menuHelpResources" mnemonicParsing="true" onAction="#handleResources" text="%menu.resources" />
                     <SeparatorMenuItem />
-                    <MenuItem mnemonicParsing="true" onAction="#handleAbout" text="%menu.about" />
+                    <MenuItem fx:id="menuHelpAbout" mnemonicParsing="true" onAction="#handleAbout" text="%menu.about" />
                   </items>
                 </Menu>
               </menus>

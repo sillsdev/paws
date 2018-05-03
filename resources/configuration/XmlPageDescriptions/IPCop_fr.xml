@@ -59,7 +59,7 @@
         <introduction>Et les verbes copulatifs et les verbes de perception peuvent contenir un syntagme adjectival comme complément, là où une phrase ou bien une proposition complétive suit l’adjectif. On traitera ces constructions dans la <section number="10.">Propositions Complétives</section> au cours de la discussion  des verbes de perception qui agissent comme verbes « à montée ».</introduction>
        <br/><br/>
        <buttons>
-            <button id="IPCopBack" value="Back" goto="IPContents.htm"/>
+            <button id="IPCopBack" value="Back" goto="IPContents_fr.htm"/>
             <button id="IPCopNext" value="Next" goto="IPComparative.xml"/>
         </buttons>
     </form>

@@ -1286,7 +1286,7 @@
        <br/>
        <br/>
        <buttons>
-            <button id="PronMainBack" value="Back" goto="Contents.htm"/>
+            <button id="PronMainBack" value="Back" goto="Contents_es.htm"/>
             <button id="PronMainNext" value="Next" goto="PronPoss.xml"/>
         </buttons>
     </form>

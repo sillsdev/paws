@@ -42,7 +42,7 @@ import javafx.stage.Stage;
  *
  */
 public class ControllerUtilities {
-	public static void createToolbarButtonWithImage(String sUrl, Button buttonToolbar,
+	public static Tooltip createToolbarButtonWithImage(String sUrl, Button buttonToolbar,
 			Tooltip buttonTooltip, String sTooltip) {
 		ImageView imageView = new ImageView();
 		String sStandardIconURL = "file:resources/images/" + sUrl;
@@ -51,6 +51,7 @@ public class ControllerUtilities {
 		buttonToolbar.setGraphic(imageView);
 		buttonTooltip = new Tooltip(sTooltip);
 		buttonToolbar.setTooltip(buttonTooltip);
+		return buttonTooltip;
 	}
 
 	public static Image getIconImageFromURL(String sStandardIconURL) {

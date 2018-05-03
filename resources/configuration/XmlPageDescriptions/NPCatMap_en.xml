@@ -38,8 +38,8 @@
 <br/>
 		<br/>
 		<buttons>
-			<button id="NPCatMapBack" value="Back" goto="NPContents.htm"/>
-			<button id="NPCatMapNext" value="Next" goto="NPContents.htm"/>
+			<button id="NPCatMapBack" value="Back" goto="NPContents_en.htm"/>
+			<button id="NPCatMapNext" value="Next" goto="NPContents_en.htm"/>
 		</buttons>
 	</form>
 	<showWhen id="swNPArt">

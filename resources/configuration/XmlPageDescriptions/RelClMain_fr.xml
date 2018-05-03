@@ -120,8 +120,8 @@
         <br/>
         <br/>
         <buttons>
-            <button id="RelClMainBack" value="Back" goto="Contents.htm"/>
-            <button id="RelClMainNext" value="Next" goto="RelClTesting.xml" gotoNoGrammar="Contents.htm"/>
+            <button id="RelClMainBack" value="Back" goto="Contents_fr.htm"/>
+            <button id="RelClMainNext" value="Next" goto="RelClTesting.xml" gotoNoGrammar="Contents_fr.htm"/>
         </buttons>
     </form>
     <showWhen id="swRelClExistYes">

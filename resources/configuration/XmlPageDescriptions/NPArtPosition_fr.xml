@@ -204,7 +204,7 @@ To handle class marking and agreement:
         <br/>
         <buttons>
             <button id="NPArtPosBack" value="Back" goto="NPArtDem.xml"/>
-            <button id="NPArtPosNext" value="Next" goto="NPContents.htm"/>
+            <button id="NPArtPosNext" value="Next" goto="NPContents_fr.htm"/>
         </buttons>
     </form>
     <showWhen id="swNPArtAndDem">

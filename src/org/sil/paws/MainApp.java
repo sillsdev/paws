@@ -276,9 +276,6 @@ public class MainApp extends Application {
 
 	public void setLocale(Locale locale) {
 		this.locale = locale;
-		initRootLayout();
-		primaryStage.hide();
-		primaryStage.show();
 	}
 
 	public XMLBackEndProvider getXmlBackEndProvider() {

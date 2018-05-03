@@ -43,7 +43,7 @@
        <br/>  <br/>
        <buttons>
             <button id="IPExistBack" value="Back" goto="IPComparative.xml"/>
-            <button id="IPExistNext" value="Next" goto="IPContents.htm"/>
+            <button id="IPExistNext" value="Next" goto="IPContents_fr.htm"/>
         </buttons>
     </form>
     <showWhen id="swHeadInitial">

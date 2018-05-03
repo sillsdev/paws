@@ -327,7 +327,7 @@ For animacy, it is most likely a property of the semantics of the individual ver
       
         <buttons>
             <button id="IPAgrFeaturesBack" value="Back" goto="IPInflFeatures.xml"/>
-            <button id="IPAgrFeaturesNext" value="Next" goto="IPContents.htm"/>
+            <button id="IPAgrFeaturesNext" value="Next" goto="IPContents_es.htm"/>
         </buttons>
     </form>
    <showWhen id="swNotPractical">

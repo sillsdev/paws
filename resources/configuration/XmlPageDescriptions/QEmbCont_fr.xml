@@ -107,7 +107,7 @@
 		<br/><br/>
 		<buttons>
 			<button id="QEmbContBack" value="Back" goto="QMainCont.xml"/>
-		    <button id="QEmbContNext" value="Next" goto="QCatMap.xml" gotoNoGrammar="Contents.htm"/>
+		    <button id="QEmbContNext" value="Next" goto="QCatMap.xml" gotoNoGrammar="Contents_fr.htm"/>
 		</buttons>
 	</form>
 

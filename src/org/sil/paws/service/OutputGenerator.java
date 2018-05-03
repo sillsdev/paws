@@ -43,7 +43,6 @@ import org.sil.paws.Constants;
 import org.sil.paws.MainApp;
 import org.sil.paws.model.Language;
 import org.sil.paws.view.ControllerUtilities;
-import org.sil.paws.view.SplashScreenController;
 import org.sil.utility.DateTimeNormalizer;
 import org.sil.utility.XsltParameter;
 import org.w3c.dom.Document;

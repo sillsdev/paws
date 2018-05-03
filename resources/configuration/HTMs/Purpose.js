@@ -1,5 +1,5 @@
 // Purpose.js
 
-function Initialize() {
-	pawsApp.setLeftOffAt("Purpose.htm");
+function Initialize(locale) {
+	pawsApp.setLeftOffAt("Purpose" + locale + ".htm");
 }

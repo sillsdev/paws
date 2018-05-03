@@ -101,8 +101,8 @@
 		<br/>
 		<br/>
 		<buttons>
-			<button id="NPCompBack" value="Back" goto="NPContents.htm"/>
-			<button id="NPCompNext" value="Next" goto="NPContents.htm"/>
+			<button id="NPCompBack" value="Back" goto="NPContents_es.htm"/>
+			<button id="NPCompNext" value="Next" goto="NPContents_es.htm"/>
 		</buttons>
 	</form>
    <showWhen id="swNPCompYes">
