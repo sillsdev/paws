@@ -19,7 +19,7 @@ Add the feature <feature>makeInitialConj</feature> to any conjunction words like
 </instruction>
 		<br/>
 		<buttons>
-			<button id="CoordCatMapBack" value="Back" goto="CoordComparative.xml"/>
+			<button id="CoordCatMapBack" value="Back" goto="CoordDP.xml"/>
 			<button id="CoordCatMapNext" value="Next" goto="CoordTesting.xml"/>
 		</buttons>
 	</form>
