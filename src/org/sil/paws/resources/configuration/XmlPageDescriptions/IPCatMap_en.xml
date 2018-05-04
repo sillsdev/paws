@@ -27,8 +27,8 @@
 		<br/>
 		<br/>
 		<buttons>
-			<button id="IPCatMapBack" value="Back" goto="IPContents.htm"/>
-			<button id="IPCatMapNext" value="Next" goto="IPContents.htm"/>
+			<button id="IPCatMapBack" value="Back" goto="IPContents_en.htm"/>
+			<button id="IPCatMapNext" value="Next" goto="IPContents_en.htm"/>
 		</buttons>
 	</form>
 	<showWhen id="swAuxYes">

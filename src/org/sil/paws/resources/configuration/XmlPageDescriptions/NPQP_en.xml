@@ -97,8 +97,8 @@ Add the gender features <feature>masculine</feature>, <feature>feminine</feature
         </instruction>
         <br/>
         <buttons>
-            <button id="NPQPBack" value="Back" goto="NPContents.htm"/>
-            <button id="NPQPNext" value="Next" goto="NPContents.htm"/>
+            <button id="NPQPBack" value="Back" goto="NPContents_en.htm"/>
+            <button id="NPQPNext" value="Next" goto="NPContents_en.htm"/>
         </buttons>
     </form>
    <showWhen id="swNPQPNoCheck">

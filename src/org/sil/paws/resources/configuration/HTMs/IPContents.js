@@ -6,7 +6,7 @@ var sImg;
 var sTemp;
 var xpath;
 
-function Initialize() {
+function Initialize(locale) {
 	displayStatus(IPContentsOverviewStatus, "ipContents1");
 	displayStatus(IPContentsFeaturesStatus, "ipContents2");
 	displayStatus(IPContentsProDropStatus, "ipContents4");
@@ -20,7 +20,7 @@ function Initialize() {
 
 	displayOutputGrammarItems();
 
-	pawsApp.setLeftOffAt("IPContents.htm");
+	pawsApp.setLeftOffAt("IPContents" + locale + ".htm");
 }
 function displayOutputGrammarItems() {
 	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");

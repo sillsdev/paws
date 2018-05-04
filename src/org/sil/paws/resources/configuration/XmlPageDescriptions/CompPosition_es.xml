@@ -69,7 +69,7 @@
          <br/><br/>
         <buttons>
             <button id="CompPositionBack" value="Back" goto="CompFeatures.xml"/>
-            <button id="CompPositionNext" value="Next" goto="CompTesting.xml" gotoNoGrammar="Contents.htm"/>
+            <button id="CompPositionNext" value="Next" goto="CompTesting.xml" gotoNoGrammar="Contents_es.htm"/>
         </buttons>
     </form>
    <showWhen id="swCompYes">

@@ -157,8 +157,8 @@
 	   
 	   <br/>		<br/>
 		<buttons>
-			<button id="NPAdjPBack" value="Back" goto="NPContents.htm"/>
-			<button id="NPAdjPNext" value="Next" goto="NPContents.htm"/>
+			<button id="NPAdjPBack" value="Back" goto="NPContents_fr.htm"/>
+			<button id="NPAdjPNext" value="Next" goto="NPContents_fr.htm"/>
 		</buttons>
 	</form>
 	<showWhen id="swNPCaseSplitNotGen">

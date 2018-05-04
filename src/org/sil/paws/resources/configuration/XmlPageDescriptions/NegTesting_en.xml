@@ -21,7 +21,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="NegTestingBack" value="Back" goto="NegType.xml"/>
-			<button id="NegTestingNext" value="Next" goto="Contents.htm"/>
+			<button id="NegTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

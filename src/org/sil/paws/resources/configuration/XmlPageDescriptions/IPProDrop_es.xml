@@ -53,7 +53,7 @@
        <br/>
         <br/>
        <buttons>
-          <button id="IPProDropBack" value="Back" goto="IPContents.htm"/>
+          <button id="IPProDropBack" value="Back" goto="IPContents_es.htm"/>
           <button id="IPProDropNext" value="Next" goto="IPConditional.xml"/>
        </buttons>
     </form>

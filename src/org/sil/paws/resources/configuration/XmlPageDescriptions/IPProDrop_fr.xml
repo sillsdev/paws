@@ -52,7 +52,7 @@
        <textBox id="IPImpPoliteExamples" dataItem="impPoliteExample" cols="50" show="swIPImpPoliteYes"/>
        <br/><br/>
         <buttons>
-            <button id="IPProDropBack" value="Back" goto="IPContents.htm"/>
+            <button id="IPProDropBack" value="Back" goto="IPContents_fr.htm"/>
             <button id="IPProDropNext" value="Next" goto="IPConditional.xml"/>
         </buttons>
     </form>

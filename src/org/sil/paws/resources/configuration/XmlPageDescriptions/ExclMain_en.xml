@@ -73,8 +73,8 @@
 <instruction id="ExclMEitherRestrictedInstruction" show="swExclMYesAndBoth">In the lexicon, add the feature <feature>excl-initial</feature> to each word which signals an exclamation that only occurs before the adjective phrase and add the feature <feature>excl-final</feature> to each word which signals an exclamation that only occurs after the adjective phrase.  Do not add either feature to any words which may occur either before or after the adjective phrase.</instruction>
         <br/>
         <buttons>
-            <button id="ExclMainBack" value="Back" goto="Contents.htm"/>
-            <button id="ExclMainNext" value="Next" goto="ExclTesting.xml" gotoNoGrammar="Contents.htm"/>
+            <button id="ExclMainBack" value="Back" goto="Contents_en.htm"/>
+            <button id="ExclMainNext" value="Next" goto="ExclTesting.xml" gotoNoGrammar="Contents_en.htm"/>
         </buttons>
     </form>
 <showWhen id="swExclMYes">

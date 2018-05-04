@@ -28,7 +28,7 @@
         </radioGroup>
         <br/>
         <buttons>
-            <button id="OTBack" value="Back" goto="Contents.htm"/>
+            <button id="OTBack" value="Back" goto="Contents_es.htm"/>
             <button id="OTNext" value="Next" goto="Case.xml"/>
         </buttons>
     </form>

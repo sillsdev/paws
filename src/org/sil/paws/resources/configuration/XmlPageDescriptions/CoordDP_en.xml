@@ -32,7 +32,7 @@
 		<br/>
 		<buttons>
 			<button id="CoordDPBack" value="Back" goto="CoordMain.xml"/>
-		   <button id="CoordDPNext" value="Next" goto="CoordCatMap.xml" gotoNoGrammar="Contents.htm"/>
+		   <button id="CoordDPNext" value="Next" goto="CoordCatMap.xml" gotoNoGrammar="Contents_en.htm"/>
 		</buttons>
 	</form>
    <showWhen id="swPPPosPrep">

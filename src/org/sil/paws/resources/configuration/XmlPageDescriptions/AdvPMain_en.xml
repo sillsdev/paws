@@ -173,7 +173,7 @@ There are also two types of temporal adverbial <technicalTermRef term="ttIndefin
         <br/>
         <br/>
         <buttons>
-            <button id="AdvPExamplesBack" value="Back" goto="Contents.htm"/>
+            <button id="AdvPExamplesBack" value="Back" goto="Contents_en.htm"/>
             <button id="AdvPExamplesNext" value="Next" goto="AdvPLocative.xml"/>
         </buttons>
     </form>

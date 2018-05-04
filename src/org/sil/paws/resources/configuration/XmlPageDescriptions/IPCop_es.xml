@@ -59,7 +59,7 @@
     <introduction>Los verbos copulativos y de percepción también pueden presentarse con una cláusula adjetival como complemento, en que una oración o una cláusula de complemento sigue al adjetivo. Estas construcciones se presentan en  <section number="10.">Cláusulas de complemento</section> en la sección acreca de verbos de percepción que actúan como verbos de ‘ascenso’.</introduction>
     <br/><br/>
     <buttons>
-       <button id="IPCopBack" value="Back" goto="IPContents.htm"/>
+       <button id="IPCopBack" value="Back" goto="IPContents_es.htm"/>
        <button id="IPCopNext" value="Next" goto="IPComparative.xml"/>
     </buttons>
  </form>

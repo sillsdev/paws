@@ -19,7 +19,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="AdjPTestingBack" value="Back" goto="AdjPCatMap.xml"/>
-			<button id="AdjPTestingNext" value="Next" goto="Contents.htm"/>
+			<button id="AdjPTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

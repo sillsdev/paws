@@ -64,7 +64,7 @@
         <br/>
         <buttons>
             <button id="AdvClFeaturesBack" value="Back" goto="AdvClMain.xml"/>
-            <button id="AdvClFeaturesNext" value="Next" goto="AdvClTesting.xml" gotoNoGrammar="Contents.htm"/>
+            <button id="AdvClFeaturesNext" value="Next" goto="AdvClTesting.xml" gotoNoGrammar="Contents_es.htm"/>
         </buttons>
     </form>
    <showWhen id="swCompYes">

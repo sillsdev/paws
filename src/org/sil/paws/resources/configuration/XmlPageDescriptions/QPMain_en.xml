@@ -116,7 +116,7 @@ like <example>only</example> and <example>just</example> (which can also act as 
 		<br/>
 		<br/>
 		<buttons>
-			<button id="QPMainBack" value="Back" goto="Contents.htm"/>
+			<button id="QPMainBack" value="Back" goto="Contents_en.htm"/>
 			<button id="QPMainNext" value="Next" goto="QPDeterminers.xml"/>
 		</buttons>
 	</form>

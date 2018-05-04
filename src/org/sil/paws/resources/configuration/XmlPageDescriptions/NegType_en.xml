@@ -139,7 +139,7 @@ In Negative Concord languages, any number of negative elements expresses negativ
         <br/>
         <buttons>
             <button id="NegTypeBack" value="Back" goto="NegVerbal.xml"/>
-            <button id="NegTypeNext" value="Next" goto="NegTesting.xml" gotoNoGrammar="Contents.htm"/>
+            <button id="NegTypeNext" value="Next" goto="NegTesting.xml" gotoNoGrammar="Contents_en.htm"/>
         </buttons>
     </form>
     <showWhen id="swNegTypeChanging">

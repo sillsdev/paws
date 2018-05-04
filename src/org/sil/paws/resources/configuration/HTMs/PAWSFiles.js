@@ -1,6 +1,6 @@
 // PAWSFiles.js
 
-function Initialize() {
+function Initialize(locale) {
 	var sAnswer;
 	var sTemp;
 	var index;

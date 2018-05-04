@@ -21,8 +21,8 @@ Please check off this section now in ‘Contents’ and then proceed to
 <br/>
 		<br/>
 		<buttons>
-			<button id="IPTestingBack" value="Back" goto="IPContents.htm"/>
-			<button id="IPTestingNext" value="Next" goto="IPContents.htm"/>
+			<button id="IPTestingBack" value="Back" goto="IPContents_en.htm"/>
+			<button id="IPTestingNext" value="Next" goto="IPContents_en.htm"/>
 		</buttons>
 	</form>
 </page>

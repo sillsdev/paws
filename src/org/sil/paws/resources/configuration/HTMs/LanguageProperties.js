@@ -3,7 +3,7 @@
 // variables used throughout functions below
 var attr;
 
-function Initialize() {
+function Initialize(locale) {
 	LangPropLangNameEn.value = pawsApp.getAnswerValue("//language/langNames/langName[@lang='en']");
 	LangPropLangNameEs.value = pawsApp.getAnswerValue("//language/langNames/langName[@lang='es']");
 	LangPropLangNameFr.value = pawsApp.getAnswerValue("//language/langNames/langName[@lang='fr']");

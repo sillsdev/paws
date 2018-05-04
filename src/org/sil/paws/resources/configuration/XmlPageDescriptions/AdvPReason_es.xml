@@ -22,7 +22,7 @@ all adverbs that express reason or purpose, and also on the nouns like <example>
        <br/><br/>
         <buttons>
             <button id="AdvPReasonExamplesBack" value="Back" goto="AdvPManner.xml"/>
-           <button id="AdvPReasonExamplesNext" value="Next" goto="AdvPCatMap.xml" gotoNoGrammar="Contents.htm"/>
+           <button id="AdvPReasonExamplesNext" value="Next" goto="AdvPCatMap.xml" gotoNoGrammar="Contents_es.htm"/>
         </buttons>
     </form>
        <showWhen id="swNotPractical">

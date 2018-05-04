@@ -56,7 +56,7 @@
     <form section="comp" transparent="yes">
         <br/>
         <buttons>
-            <button id="CompMainBack" value="Back" goto="Contents.htm"/>
+            <button id="CompMainBack" value="Back" goto="Contents_es.htm"/>
             <button id="CompMainNext" value="Next" goto="CompFeatures.xml"/>
         </buttons>
     </form>

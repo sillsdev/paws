@@ -113,7 +113,7 @@
 		<br/>
 		<br/>
 		<buttons>
-			<button id="QPMainBack" value="Back" goto="Contents.htm"/>
+			<button id="QPMainBack" value="Back" goto="Contents_fr.htm"/>
 			<button id="QPMainNext" value="Next" goto="QPDeterminers.xml"/>
 		</buttons>
 	</form>

@@ -144,7 +144,7 @@
           <br/>
         <br/>
       <buttons>
-         <button id="NegMainBack" value="Back" goto="Contents.htm"/>
+         <button id="NegMainBack" value="Back" goto="Contents_es.htm"/>
          <button id="NegMainNext" value="Next" goto="NegVerbal.xml"/>
       </buttons>
    </form>

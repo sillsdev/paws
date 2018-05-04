@@ -130,7 +130,7 @@
        <instruction id="IPAuxOtherInstruction" show="swAuxOtherYes">Make sure that these words are included in the category mapping to <category>Aux</category> in the <section number="9.9">Basic Sentences - Category Mapper</section>.  Alternatively, you can add the feature <feature>makeAux</feature> now to be sure.  However, remember that if the word can also be used as another syntactic category (like <example>go</example> could be both a motion <category>Aux</category> and a main verb <category>V</category>), you need to make a separate lexical entry for each use.  Also, add the feature <feature>motion</feature> to the motion auxiliaries.</instruction>
        <br/><br/>
         <buttons>
-            <button id="IPAuxBack" value="Back" goto="IPContents.htm"/>
+            <button id="IPAuxBack" value="Back" goto="IPContents_en.htm"/>
             <button id="IPAuxNext" value="Next" goto="IPCompounds.xml"/>
         </buttons>
     </form>

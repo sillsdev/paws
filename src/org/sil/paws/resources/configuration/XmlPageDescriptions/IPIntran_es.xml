@@ -29,8 +29,8 @@
       <br/>
       <br/>
       <buttons>
-         <button id="IPIntranBack" value="Back" goto="IPContents.htm"/>
-         <button id="IPIntranNext" value="Next" goto="IPContents.htm"/>
+         <button id="IPIntranBack" value="Back" goto="IPContents_es.htm"/>
+         <button id="IPIntranNext" value="Next" goto="IPContents_es.htm"/>
       </buttons>
    </form>
    <showWhen id="swExpNotNo">

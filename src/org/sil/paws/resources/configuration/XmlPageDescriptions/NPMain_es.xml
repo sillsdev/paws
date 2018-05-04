@@ -42,8 +42,8 @@ It may be difficult to understand the need for the change in English or Spanish,
         
         <br/><br/>
         <buttons>
-            <button id="NPMainBack" value="Back" goto="NPContents.htm"/>
-            <button id="NPMainNext" value="Next" goto="NPContents.htm"/>
+            <button id="NPMainBack" value="Back" goto="NPContents_es.htm"/>
+            <button id="NPMainNext" value="Next" goto="NPContents_es.htm"/>
         </buttons>
     </form>
 <showWhen id="swNotPractical">

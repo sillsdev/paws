@@ -514,8 +514,8 @@
 </introduction>
       <br/><br/>
         <buttons>
-           <button id="FinalBack" value="Back" goto="Contents.htm"/>
-            <button id="FinalNext" value="Next" goto="Contents.htm"/>
+           <button id="FinalBack" value="Back" goto="Contents_fr.htm"/>
+            <button id="FinalNext" value="Next" goto="Contents_fr.htm"/>
         </buttons>
     </form>
    <showWhen id="swNotPractical">

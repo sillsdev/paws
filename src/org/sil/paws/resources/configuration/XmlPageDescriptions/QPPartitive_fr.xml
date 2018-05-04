@@ -46,7 +46,7 @@
 <br/>		<br/>
 		<buttons>
 			<button id="QPPartitiveBack" value="Back" goto="QPCardinal.xml"/>
-		    <button id="QPPartitiveNext" value="Next" goto="QPCatMap.xml" gotoNoGrammar="Contents.htm"/>
+		    <button id="QPPartitiveNext" value="Next" goto="QPCatMap.xml" gotoNoGrammar="Contents_fr.htm"/>
 		</buttons>
 	</form>
    <showWhen id="swQPPartitiveNo">

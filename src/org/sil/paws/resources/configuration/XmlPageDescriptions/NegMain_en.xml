@@ -145,7 +145,7 @@ The final page then deals with any co-occurrence restrictions between the variou
         <br/>
         <br/>
         <buttons>
-            <button id="NegMainBack" value="Back" goto="Contents.htm"/>
+            <button id="NegMainBack" value="Back" goto="Contents_en.htm"/>
             <button id="NegMainNext" value="Next" goto="NegVerbal.xml"/>
         </buttons>
     </form>

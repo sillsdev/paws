@@ -27,8 +27,8 @@
     <form section="ip" transparent="yes">
         <br/>
         <buttons>
-            <button id="IPMainBack" value="Back" goto="IPContents.htm"/>
-            <button id="IPMainNext" value="Next" goto="IPContents.htm"/>
+            <button id="IPMainBack" value="Back" goto="IPContents_es.htm"/>
+            <button id="IPMainNext" value="Next" goto="IPContents_es.htm"/>
         </buttons>
     </form>
     <showWhen id="swNotPractical">

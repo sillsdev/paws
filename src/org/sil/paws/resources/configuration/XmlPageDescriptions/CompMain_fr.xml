@@ -56,7 +56,7 @@ Next, a tree for example 8 with a nonfinite IP complement and required pro-drop 
     <form section="comp" transparent="yes">
         <br/>
         <buttons>
-            <button id="CompMainBack" value="Back" goto="Contents.htm"/>
+            <button id="CompMainBack" value="Back" goto="Contents_fr.htm"/>
             <button id="CompMainNext" value="Next" goto="CompFeatures.xml"/>
         </buttons>
     </form>

@@ -20,7 +20,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="AdvClTestingBack" value="Back" goto="AdvClFeatures.xml"/>
-			<button id="AdvClTestingNext" value="Next" goto="Contents.htm"/>
+			<button id="AdvClTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

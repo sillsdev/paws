@@ -103,8 +103,8 @@
 	   <textBox id="AdjPModifiersOtherExample" dataItem="adjectiveDegreeOtherExample" show="swAdjPModifiersOther"/>              
 	   <br/><br/>
 	   <buttons>
-	      <button id="AdjPMainBack" value="Back" goto="Contents.htm"/>
-	      <button id="AdjPMainNext" value="Next" goto="AdjPCatMap.xml" gotoNoGrammar="Contents.htm"/>
+	      <button id="AdjPMainBack" value="Back" goto="Contents_es.htm"/>
+	      <button id="AdjPMainNext" value="Next" goto="AdjPCatMap.xml" gotoNoGrammar="Contents_es.htm"/>
 	   </buttons>
 	</form>
 <showWhen id="swNotPractical">

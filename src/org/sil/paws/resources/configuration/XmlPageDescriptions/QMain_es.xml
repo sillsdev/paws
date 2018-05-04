@@ -27,7 +27,7 @@ As discussed in <section number="10">Complement Clauses</section>, X-bar theory 
     <form section="q" transparent="yes">
         <br/>
         <buttons>
-            <button id="QMainBack" value="Back" goto="Contents.htm"/>
+            <button id="QMainBack" value="Back" goto="Contents_es.htm"/>
             <button id="QMainNext" value="Next" goto="QMainYN.xml"/>
         </buttons>
     </form>

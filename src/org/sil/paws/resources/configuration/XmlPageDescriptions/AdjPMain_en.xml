@@ -99,8 +99,8 @@ The manner adverbs should already be marked with the feature <feature>manner</fe
 	   <textBox id="AdjPModifiersOtherExample" dataItem="adjectiveDegreeOtherExample" show="swAdjPModifiersOther"/>              
 		<br/><br/>
 		<buttons>
-			<button id="AdjPMainBack" value="Back" goto="Contents.htm"/>
-		    <button id="AdjPMainNext" value="Next" goto="AdjPCatMap.xml" gotoNoGrammar="Contents.htm"/>
+			<button id="AdjPMainBack" value="Back" goto="Contents_en.htm"/>
+		    <button id="AdjPMainNext" value="Next" goto="AdjPCatMap.xml" gotoNoGrammar="Contents_en.htm"/>
 		</buttons>
 	</form>
 	<showWhen id="swNotPractical">

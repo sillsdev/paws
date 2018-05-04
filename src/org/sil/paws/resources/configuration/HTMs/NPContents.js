@@ -6,7 +6,7 @@ var sImg;
 var sTemp;
 var xpath;
 
-function Initialize() {
+function Initialize(locale) {
 	displayStatus(NPContentsOverviewStatus, "npContents1");
 	displayStatus(NPContentsAgreementStatus, "npContents2");
 	displayStatus(NPContentsArticleStatus, "npContents3");
@@ -19,7 +19,7 @@ function Initialize() {
 
 	displayOutputGrammarItems();
 
-	pawsApp.setLeftOffAt("NPContents.htm");
+	pawsApp.setLeftOffAt("NPContents" + locale + ".htm");
 }
 function displayOutputGrammarItems() {
 	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");

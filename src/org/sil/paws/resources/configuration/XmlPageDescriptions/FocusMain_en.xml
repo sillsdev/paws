@@ -132,8 +132,8 @@
 <instruction id="FocusMarkerYesAffixInstruction2" show="swFocusMarkerYesAffix">In the lexicon, add the feature <feature>focus</feature> to each focus marker affix.</instruction>
         <br/>
         <buttons>
-            <button id="FocusMainBack" value="Back" goto="Contents.htm"/>
-            <button id="FocusMainNext" value="Next" goto="FocusTesting.xml" gotoNoGrammar="Contents.htm"/>
+            <button id="FocusMainBack" value="Back" goto="Contents_en.htm"/>
+            <button id="FocusMainNext" value="Next" goto="FocusTesting.xml" gotoNoGrammar="Contents_en.htm"/>
         </buttons>
     </form>
     <showWhen id="swTopicYes">

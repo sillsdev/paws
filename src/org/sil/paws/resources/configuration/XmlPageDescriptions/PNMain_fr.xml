@@ -37,8 +37,8 @@
 		<br/>
 		<br/>
 		<buttons>
-			<button id="PNMainBack" value="Back" goto="Contents.htm"/>
-		    <button id="PNMainNext" value="Next" goto="PNCatMap.xml" gotoNoGrammar="Contents.htm"/>
+			<button id="PNMainBack" value="Back" goto="Contents_fr.htm"/>
+		    <button id="PNMainNext" value="Next" goto="PNCatMap.xml" gotoNoGrammar="Contents_fr.htm"/>
 		</buttons>
 	</form>
    <showWhen id="swOTClassifierAgr">

@@ -1,5 +1,5 @@
 // CarlaStudioSetup.js
 
-function Initialize() {
-	window.external.SetLeftOffAt("CarlaStudioSetup.htm");
+function Initialize(locale) {
+	pawsApp.setLeftOffAt("CarlaStudioSetup" + locale + ".htm");
 }

@@ -38,7 +38,7 @@ The structure with an CP complement (example 4) is:
     <form section="advcl">
         <br/>
         <buttons>
-            <button id="AdvClMainBack" value="Back" goto="Contents.htm"/>
+            <button id="AdvClMainBack" value="Back" goto="Contents_fr.htm"/>
             <button id="AdvClMainNext" value="Next" goto="AdvClFeatures.xml"/>
         </buttons>
     </form>

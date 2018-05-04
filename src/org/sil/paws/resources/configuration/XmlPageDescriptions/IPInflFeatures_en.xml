@@ -324,7 +324,7 @@
       <prompt id="IPIrrealisMoodPrompt" show="swIPIrrealisMoodMultiple">Conditional and subjunctive are types of irrealis; please choose either the general irreals term or one or both of the subtypes.</prompt>
       <br/><br/>
 		<buttons>
-			<button id="IPInflFeaturesBack" value="Back" goto="IPContents.htm"/>
+			<button id="IPInflFeaturesBack" value="Back" goto="IPContents_en.htm"/>
 			<button id="IPInflFeaturesNext" value="Next" goto="IPAgrFeatures.xml"/>
 		</buttons>
 	</form>

@@ -154,7 +154,7 @@
 		<br/>
 		<br/>
 		<buttons>
-			<button id="NPPossBack" value="Back" goto="NPContents.htm"/>
+			<button id="NPPossBack" value="Back" goto="NPContents_es.htm"/>
 			<button id="NPPossNext" value="Next" goto="NPPossessorAgreement.xml"/>
 		</buttons>
 	</form>
