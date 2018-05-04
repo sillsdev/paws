@@ -82,6 +82,7 @@ import org.sil.paws.Constants;
 import org.sil.paws.model.Language;
 import org.sil.paws.service.ObservableResourceFactory;
 import org.sil.paws.service.OutputGenerator;
+import org.sil.paws.service.ValidLocaleCollector;
 import org.sil.paws.service.WebPageInteractor;
 import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.MainApp;
@@ -882,9 +883,9 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleChangeInterfaceLanguage() {
-		Map<String, ResourceBundle> validLocales = new TreeMap<String, ResourceBundle>();
-		getListOfValidLocales(validLocales);
-
+		ValidLocaleCollector collector = new ValidLocaleCollector(currentLocale);
+		collector.collectValidLocales();
+		Map<String, ResourceBundle> validLocales = collector.getValidLocales();
 		ChoiceDialog<String> dialog = new ChoiceDialog<>(
 				currentLocale.getDisplayLanguage(currentLocale), validLocales.keySet());
 		dialog.setTitle(RESOURCE_FACTORY.getStringBinding("dialog.changeinterfacelanguage").get());
@@ -915,19 +916,6 @@ public class RootLayoutController implements Initializable {
 				webEngine.load(currentWebPage);
 			}
 		});
-	}
-
-	private void getListOfValidLocales(Map<String, ResourceBundle> choices) {
-		Locale[] locales = Locale.getAvailableLocales();
-		for (Locale locale : locales) {
-			ResourceBundle rb = ResourceBundle.getBundle("org.sil.paws.resources.paws", locale);
-			if (rb != null) {
-				String localeName = rb.getLocale().getDisplayName(currentLocale);
-				if (!StringUtilities.isNullOrEmpty(localeName)) {
-					choices.putIfAbsent(localeName, rb);
-				}
-			}
-		}
 	}
 
 	public void askAboutSaving() {

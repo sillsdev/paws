@@ -95,18 +95,13 @@ public class WebPageInteractor {
 	}
 
 	public void load(String page) {
-		System.out.println("in load");
 		// We try and catch the XML and LeftOffAt pages here before
 		// actually loading them, if possible.
 		if (page.endsWith(".xml")) {
-			System.out.println("\ttransforming");
 			controller.transformAndLoadPage(page);
-			System.out.println("\ttransform done");
 		} else if (page.endsWith("LeftOffAt")) {
-			System.out.println("\tleft off at");
 			controller.handleBack();
 		} else {
-			System.out.println("\tloading page");
 			engine.load(page);
 		}
 	}
