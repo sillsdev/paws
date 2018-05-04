@@ -14,28 +14,46 @@ import javafx.beans.property.SimpleObjectProperty;
 
 /**
  * @author Andy Black
- * borrowed from https://stackoverflow.com/questions/32464974/javafx-change-application-language-on-the-run
+ * Singleton pattern
+ * borrowed from
+ *         https://stackoverflow.com/questions
+ *         /32464974/javafx-change-application-language-on-the-run
  */
 public class ObservableResourceFactory {
 
-	 private ObjectProperty<ResourceBundle> resources = new SimpleObjectProperty<>();
-	    public ObjectProperty<ResourceBundle> resourcesProperty() {
-	        return resources ;
-	    }
-	    public final ResourceBundle getResources() {
-	        return resourcesProperty().get();
-	    }
-	    public final void setResources(ResourceBundle resources) {
-	        resourcesProperty().set(resources);
-	    }
+	private static ObservableResourceFactory instance;
 
-	    public StringBinding getStringBinding(String key) {
-	        return new StringBinding() {
-	            { bind(resourcesProperty()); }
-	            @Override
-	            public String computeValue() {
-	                return getResources().getString(key);
-	            }
-	        };
-	    }
+	private ObjectProperty<ResourceBundle> resources = new SimpleObjectProperty<>();
+
+	public static ObservableResourceFactory getInstance() {
+		if (instance == null) {
+			instance = new ObservableResourceFactory();
+		}
+		return instance;
+	}
+
+	public ObjectProperty<ResourceBundle> resourcesProperty() {
+		return resources;
+	}
+
+	public final ResourceBundle getResources() {
+		return resourcesProperty().get();
+	}
+
+	public final void setResources(ResourceBundle resources) {
+		resourcesProperty().set(resources);
+	}
+
+	public StringBinding getStringBinding(String key) {
+		return new StringBinding() {
+			{
+				bind(resourcesProperty());
+			}
+
+			@Override
+			public String computeValue() {
+				return getResources().getString(key);
+			}
+		};
+	}
 }

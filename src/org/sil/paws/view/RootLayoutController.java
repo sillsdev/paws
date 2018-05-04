@@ -243,7 +243,7 @@ public class RootLayoutController implements Initializable {
 
 	// following lines from
 	// https://stackoverflow.com/questions/32464974/javafx-change-application-language-on-the-run
-	private static final ObservableResourceFactory RESOURCE_FACTORY = new ObservableResourceFactory();
+	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
 	static {
 		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
 				new Locale("en")));
@@ -823,7 +823,7 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	private void handleFileLocations() {
-		webEngine.load(sProgramLocation + kHTMsFolder + "PAWSFiles.htm");
+		webEngine.load(sProgramLocation + kHTMsFolder + "PAWSFiles" + getCurrentLocaleCode() +".htm");
 	}
 
 	@FXML
@@ -895,6 +895,7 @@ public class RootLayoutController implements Initializable {
 		Optional<String> result = dialog.showAndWait();
 		result.ifPresent(locale -> {
 			Locale selectedLocale = validLocales.get(locale).getLocale();
+			bundle = validLocales.get(locale);
 			if (!currentLocale.equals(selectedLocale)) {
 				mainApp.setLocale(selectedLocale);
 				RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
@@ -1005,12 +1006,12 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	private void handleResources() {
-		webEngine.load(sProgramLocation + kHTMsFolder + "Resources.htm");
+		webEngine.load(sProgramLocation + kHTMsFolder + "Resources" + getCurrentLocaleCode() + ".htm");
 	}
 
 	@FXML
 	private void handleLanguage() {
-		webEngine.load(sProgramLocation + kHTMsFolder + "LanguageProperties.htm");
+		webEngine.load(sProgramLocation + kHTMsFolder + "LanguageProperties" + getCurrentLocaleCode() + ".htm");
 	}
 
 	/**

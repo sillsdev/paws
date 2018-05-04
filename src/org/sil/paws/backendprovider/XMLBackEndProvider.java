@@ -24,6 +24,7 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.sil.paws.Constants;
 import org.sil.paws.model.Language;
+import org.sil.paws.service.ObservableResourceFactory;
 import org.sil.utility.HandleExceptionMessage;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
@@ -42,6 +43,12 @@ public class XMLBackEndProvider extends BackEndProvider {
 	String sFileErrorSaveHeader;
 	String sFileErrorSaveContent;
 
+	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
+	static {
+		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
+				new Locale("en")));
+	}
+
 	/**
 	 * @param language
 	 */
@@ -51,12 +58,12 @@ public class XMLBackEndProvider extends BackEndProvider {
 	}
 
 	private void setResourceStrings(Locale locale) {
-		ResourceBundle bundle = ResourceBundle.getBundle(Constants.RESOURCE_LOCATION, locale);
-		sFileError = bundle.getString("file.error");
-		sFileErrorLoadHeader = bundle.getString("file.error.load.header");
-		sFileErrorLoadContent = bundle.getString("file.error.load.content");
-		sFileErrorSaveHeader = bundle.getString("file.error.save.header");
-		sFileErrorSaveContent = bundle.getString("file.error.save.content");
+		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION, locale));
+		sFileError            = RESOURCE_FACTORY.getStringBinding("file.error").get();
+		sFileErrorLoadHeader  = RESOURCE_FACTORY.getStringBinding("file.error.load.header").get();
+		sFileErrorLoadContent = RESOURCE_FACTORY.getStringBinding("file.error.load.content").get();
+		sFileErrorSaveHeader  = RESOURCE_FACTORY.getStringBinding("file.error.save.header").get();
+		sFileErrorSaveContent = RESOURCE_FACTORY.getStringBinding("file.error.save.content").get();
 	}
 
 	public Language getLanguage() {

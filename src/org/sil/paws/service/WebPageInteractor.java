@@ -42,6 +42,12 @@ public class WebPageInteractor {
 	MainApp mainApp;
 	ApplicationPreferences prefs;
 
+	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
+	static {
+		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
+				new Locale("en")));
+	}
+
 	/**
 	 * Requires a language object
 	 * 
@@ -54,6 +60,8 @@ public class WebPageInteractor {
 		this.bundle = controller.getBundle();
 		this.mainApp = controller.getMainApp();
 		this.prefs = mainApp.getApplicationPreferences();
+		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
+				bundle.getLocale()));
 	}
 
 	/**
@@ -208,7 +216,7 @@ public class WebPageInteractor {
 
 	public final void showTermDefinition(String sMsg) {
 		Alert alert = new Alert(AlertType.INFORMATION);
-		alert.setTitle(bundle.getString("technicalterm.definition"));
+		alert.setTitle(RESOURCE_FACTORY.getStringBinding("technicalterm.definition").get());
 		alert.setHeaderText(null);
 		alert.setContentText(sMsg);
 		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
