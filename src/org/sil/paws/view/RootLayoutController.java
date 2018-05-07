@@ -356,11 +356,7 @@ public class RootLayoutController implements Initializable {
 		contextMenu.getItems().addAll(contextMenuMakeLarger, contextMenuMakeSmaller, smi1,
 				contextMenuBack, contextMenuForward, smi2, contextMenuRefresh);
 		browser.setOnMousePressed(e -> {
-			System.out.println("mouse pressed");
 			if (e.getButton() == MouseButton.SECONDARY) {
-				System.out.println("mouse button secondary");
-				System.out.println("\tcontext menu item count =" + contextMenu.getId() + "; "
-						+ contextMenu.getItems().size());
 				contextMenu.show(browser, e.getScreenX(), e.getScreenY());
 			} else {
 				contextMenu.hide();

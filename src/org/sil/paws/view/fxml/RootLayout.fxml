@@ -66,8 +66,8 @@
 					<MenuItem fx:id="menuItemViewMakeLarger" accelerator="ctrl+'+'" mnemonicParsing="true" onAction="#handleMakeLarger" text="%menu.makelarger" />
 					<MenuItem fx:id="menuItemViewMakeSmaller" accelerator="ctrl+'-'" mnemonicParsing="true" onAction="#handleMakeSmaller" text="%menu.makesmaller" />
 					<SeparatorMenuItem />
-					<MenuItem fx:id="menuItemViewBack" accelerator="alt+left" mnemonicParsing="true" onAction="#handleBack" text="%menu.back" />
-					<MenuItem fx:id="menuItemViewForward" accelerator="alt+right" mnemonicParsing="true" onAction="#handleForward" text="%menu.forward" />
+					<MenuItem fx:id="menuItemViewBack" accelerator="ctrl+left" mnemonicParsing="true" onAction="#handleBack" text="%menu.back" />
+					<MenuItem fx:id="menuItemViewForward" accelerator="ctrl+right" mnemonicParsing="true" onAction="#handleForward" text="%menu.forward" />
 					<SeparatorMenuItem />
 					<MenuItem fx:id="menuItemViewRefresh" accelerator="F5" mnemonicParsing="true" onAction="#handleRefresh" text="%menu.refresh" />
                   </items>
