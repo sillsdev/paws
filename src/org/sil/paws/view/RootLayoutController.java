@@ -53,17 +53,20 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.ChoiceDialog;
+import javafx.scene.control.ContextMenu;
 import javafx.scene.control.Dialog;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.SeparatorMenuItem;
 import javafx.scene.control.Tooltip;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.Clipboard;
+import javafx.scene.input.MouseButton;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -221,6 +224,13 @@ public class RootLayoutController implements Initializable {
 	@FXML
 	ProgressBar progressBarGenerateFiles;
 
+	ContextMenu contextMenu;
+	MenuItem contextMenuMakeLarger;
+	MenuItem contextMenuMakeSmaller;
+	MenuItem contextMenuBack;
+	MenuItem contextMenuForward;
+	MenuItem contextMenuRefresh;
+
 	protected Clipboard systemClipboard = Clipboard.getSystemClipboard();
 
 	private Language language;
@@ -243,7 +253,8 @@ public class RootLayoutController implements Initializable {
 
 	// following lines from
 	// https://stackoverflow.com/questions/32464974/javafx-change-application-language-on-the-run
-	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
+	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory
+			.getInstance();
 	static {
 		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
 				new Locale("en")));
@@ -298,6 +309,7 @@ public class RootLayoutController implements Initializable {
 		});
 
 		initMenuItemsForLocalization();
+		createContextMenu();
 
 		try {
 			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
@@ -314,6 +326,47 @@ public class RootLayoutController implements Initializable {
 				browser.requestFocus();
 			}
 		});
+	}
+
+	private void createContextMenu() {
+		browser.setContextMenuEnabled(false);
+		contextMenu = new ContextMenu();
+		contextMenuMakeLarger = new MenuItem();
+		contextMenuMakeSmaller = new MenuItem();
+		SeparatorMenuItem smi1 = new SeparatorMenuItem();
+		contextMenuBack = new MenuItem();
+		contextMenuForward = new MenuItem();
+		SeparatorMenuItem smi2 = new SeparatorMenuItem();
+		contextMenuRefresh = new MenuItem();
+
+		contextMenuMakeLarger.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.makelarger"));
+		contextMenuMakeSmaller.textProperty().bind(
+				RESOURCE_FACTORY.getStringBinding("menu.makesmaller"));
+		contextMenuBack.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.back"));
+		contextMenuForward.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.forward"));
+		contextMenuRefresh.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.refresh"));
+
+		contextMenuMakeLarger.setOnAction(e -> handleMakeLarger());
+		contextMenuMakeSmaller.setOnAction(e -> handleMakeSmaller());
+		contextMenuBack.setOnAction(e -> handleBack());
+		contextMenuForward.setOnAction(e -> handleForward());
+		contextMenuRefresh.setOnAction(e -> handleRefresh());
+
+		contextMenu.getItems().addAll(contextMenuMakeLarger, contextMenuMakeSmaller, smi1,
+				contextMenuBack, contextMenuForward, smi2, contextMenuRefresh);
+		browser.setOnMousePressed(e -> {
+			System.out.println("mouse pressed");
+			if (e.getButton() == MouseButton.SECONDARY) {
+				System.out.println("mouse button secondary");
+				System.out.println("\tcontext menu item count =" + contextMenu.getId() + "; "
+						+ contextMenu.getItems().size());
+				contextMenu.show(browser, e.getScreenX(), e.getScreenY());
+			} else {
+				contextMenu.hide();
+			}
+		});
+
 	}
 
 	private void initMenuItemsForLocalization() {
@@ -547,16 +600,20 @@ public class RootLayoutController implements Initializable {
 		if (canGoForward(history)) {
 			buttonToolbarForward.setDisable(false);
 			menuItemViewForward.setDisable(false);
+			contextMenuForward.setDisable(false);
 		} else {
 			buttonToolbarForward.setDisable(true);
 			menuItemViewForward.setDisable(true);
+			contextMenuForward.setDisable(true);
 		}
 		if (canGoBack(history)) {
 			buttonToolbarBack.setDisable(false);
 			menuItemViewBack.setDisable(false);
+			contextMenuBack.setDisable(false);
 		} else {
 			buttonToolbarBack.setDisable(true);
 			menuItemViewBack.setDisable(true);
+			contextMenuBack.setDisable(true);
 		}
 	}
 
@@ -823,7 +880,8 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	private void handleFileLocations() {
-		webEngine.load(sProgramLocation + kHTMsFolder + "PAWSFiles" + getCurrentLocaleCode() +".htm");
+		webEngine.load(sProgramLocation + kHTMsFolder + "PAWSFiles" + getCurrentLocaleCode()
+				+ ".htm");
 	}
 
 	@FXML
@@ -904,13 +962,15 @@ public class RootLayoutController implements Initializable {
 				String currentWebPage = webEngine.getLocation();
 				if (currentWebPage.contains(kHTMsFolder)) {
 					// the page is a true htm file
-					currentWebPage = currentWebPage.replace(getCurrentLocaleCode(),
-							"_" + selectedLocale.getLanguage());
+					currentWebPage = currentWebPage.replace(getCurrentLocaleCode(), "_"
+							+ selectedLocale.getLanguage());
 				} else {
 					// the page is an xml page
 					int i = currentWebPage.lastIndexOf("/");
 					String sBaseName = currentWebPage.substring(i + 1, currentWebPage.length() - 4);
-					currentWebPage = Constants.FILE_PROTOCOL + "/" + sConfigurationDirectory.replace("\\", "/") + "HTMs/" + sBaseName + ".xml";
+					currentWebPage = Constants.FILE_PROTOCOL + "/"
+							+ sConfigurationDirectory.replace("\\", "/") + "HTMs/" + sBaseName
+							+ ".xml";
 					System.out.println("change: current='" + currentWebPage + "'");
 				}
 				currentLocale = selectedLocale;
@@ -1006,12 +1066,14 @@ public class RootLayoutController implements Initializable {
 
 	@FXML
 	private void handleResources() {
-		webEngine.load(sProgramLocation + kHTMsFolder + "Resources" + getCurrentLocaleCode() + ".htm");
+		webEngine.load(sProgramLocation + kHTMsFolder + "Resources" + getCurrentLocaleCode()
+				+ ".htm");
 	}
 
 	@FXML
 	private void handleLanguage() {
-		webEngine.load(sProgramLocation + kHTMsFolder + "LanguageProperties" + getCurrentLocaleCode() + ".htm");
+		webEngine.load(sProgramLocation + kHTMsFolder + "LanguageProperties"
+				+ getCurrentLocaleCode() + ".htm");
 	}
 
 	/**
