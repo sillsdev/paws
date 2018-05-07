@@ -36,6 +36,8 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -76,6 +78,7 @@ import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import netscape.javascript.JSObject;
 
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
@@ -1125,6 +1128,17 @@ public class RootLayoutController implements Initializable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		// We add 500 ms wait and do a refresh because for some reason the
+		// WebPageInteractor is not seen otherwise
+		Platform.runLater(new Runnable() {
+			@Override
+			public void run() {
+				Timeline timeline = new Timeline(new KeyFrame(Duration.millis(500), event -> {
+					handleRefresh();
+				}));
+				timeline.play();
+			}
+		});
 	}
 
 	public Language getLanguage() {
