@@ -16,6 +16,7 @@ import java.util.ResourceBundle;
 import org.sil.paws.backendprovider.XMLBackEndProvider;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.model.Language;
+import org.sil.paws.service.DatabaseMigrator;
 import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.view.RootLayoutController;
 
@@ -69,21 +70,11 @@ public class MainApp extends Application {
 		try {
 			applicationPreferences = new ApplicationPreferences(this);
 			locale = new Locale(applicationPreferences.getLastLocaleLanguage());
-
-//			Path configDir = Paths.get(getConfigurationDirectory());
-//			if (!Files.exists(configDir) || !Files.isDirectory(configDir)) {
-//				Dialog<Void> alert = new Dialog<>();
-//				alert.getDialogPane().setContentText("oops!");
-//				alert.getDialogPane().getButtonTypes().add(ButtonType.OK);
-//				alert.showAndWait();
-//				System.exit(1);
-//			}
 			language = new Language();
 			xmlBackEndProvider = new XMLBackEndProvider(language, locale);
 			this.primaryStage = primaryStage;
 			this.primaryStage.setTitle(kApplicationTitle);
 			this.primaryStage.getIcons().add(getNewMainIconImage());
-			// this.primaryStage.getScene().getStylesheets().add(getClass().getResource("LingTree.css").toExternalForm());
 			restoreWindowSettings();
 
 			initRootLayout();
@@ -152,14 +143,11 @@ public class MainApp extends Application {
 	}
 
 	public void loadLanguageData(File file) {
-		// DatabaseMigrator migrator = new DatabaseMigrator(file);
-		// int version = migrator.getVersion();
-		// if (version < Constants.CURRENT_DATABASE_VERSION) {
-		// if (version == 1) {
-		// migrator.setDpi(Screen.getPrimary().getDpi());
-		// }
-		// migrator.doMigration();
-		// }
+		 DatabaseMigrator migrator = new DatabaseMigrator(file);
+		 String version = migrator.getVersion();
+		 if (!version.equals(Constants.CURRENT_DATABASE_VERSION)) {
+			 migrator.doMigration();
+		 }
 		xmlBackEndProvider.loadLanguageDataFromFile(file);
 		language = xmlBackEndProvider.getLanguage();
 		applicationPreferences.setLastOpenedFilePath(file);

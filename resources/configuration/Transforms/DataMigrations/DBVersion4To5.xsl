@@ -61,8 +61,8 @@
 	<!--
 		remove outdated attribute
 	-->
-	<xsl:template match="qp/@NPDegreeNegCooccur">
+<!--	<xsl:template match="qp/@NPDegreeNegCooccur">
 			<xsl:apply-templates select="@*"/>
 			<xsl:apply-templates/>
-	</xsl:template>
+	</xsl:template>-->
 </xsl:stylesheet>
