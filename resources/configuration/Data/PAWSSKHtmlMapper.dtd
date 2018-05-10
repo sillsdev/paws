@@ -133,6 +133,7 @@ transparent = 'yes' means do not show yellow background, let the grey background
 <!ATTLIST page
 	id ID #REQUIRED
 	count CDATA #IMPLIED
+	countOutputGrammar CDATA #IMPLIED
 >
 <!ELEMENT prompt (%embedded;)*>
 <!ATTLIST prompt

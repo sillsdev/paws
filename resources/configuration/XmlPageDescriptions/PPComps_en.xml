@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PPComps" count="2/5">
+<page id="PPComps" count="2/3" countOutputGrammar="2/5">
     <title level="2">Adpositional Phrases - Nominal Complements</title>
     <introduction>The main use of prepositions or postpositions is for expressing location.  Therefore, we will cover locative adpositions and PPs first.  Then, for those languages which do not mark case on nouns or nominal phrases, the adpositions used to express each minor case relation will be exemplified. 
     <br/><br/>

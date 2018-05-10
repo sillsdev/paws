@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PPOther" count="3/5">
+<page id="PPOther" count="3/3" countOutputGrammar="3/5">
 	<title level="2">Adpositional Phrases - Other Complements</title>
 	<introduction> In addition, some prepositions or postpositions can stand alone without a complement due to particle movement, such as in the sentences <example>Come [right in]</example> and <example>John turned the light [on/off]</example>.  Also, some languages allow prepositions or postpositions to be stranded when its complement is fronted with questions, as in <example>Who(m) did you give the book [to _ ]?</example>
 	</introduction>

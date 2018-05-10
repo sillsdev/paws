@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PPMain" count="1/5">
+<page id="PPMain" count="1/3" countOutputGrammar="1/5">
     <title>Adpositional Phrases</title>
    <introduction>This section considers the internal structure of <technicalTermRef term="ttAdpositionalPhrases"/> (PPs), which usually express location, accompaniment, goal, instrument, recipient, or agent in languages which do not mark case on nouns or noun  phrases.  Languages with case marking on nominals normally still have locative and temporal PPs.  These will be exemplified on the next page.<br/><br/>
        We will begin by determining whether your language has prepositions or postpositions and whether they are independent words or clitics.  

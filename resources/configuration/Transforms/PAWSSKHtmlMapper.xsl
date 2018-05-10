@@ -31,6 +31,7 @@ Preamble
 	<xsl:param name="prmFeature" select="'Feature'"/>
 	<xsl:param name="prmExplanation" select="'Explanation'"/>
 	<xsl:param name="prmMorphemes" select="'Morphemes'"/>
+	<xsl:param name="prmOutputGrammar" select="'False'"/>
 	<xsl:variable name="Section">
 		<xsl:value-of select="//form/@section"/>
 	</xsl:variable>
@@ -42,7 +43,18 @@ Main template
 -->
 	<xsl:template match="/">
 		<xsl:comment>PAWS generated html page</xsl:comment>
-		<xsl:comment>PageCount="<xsl:value-of select="page/@count"/>"</xsl:comment>
+		<xsl:comment>
+			<xsl:text>PageCount="</xsl:text>
+			<xsl:choose>
+				<xsl:when test="page/@countOutputGrammar and $prmOutputGrammar='True'">
+					<xsl:value-of select="page/@countOutputGrammar"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="page/@count"/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:text>"</xsl:text>
+		</xsl:comment>
 		<html>
 			<head>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>

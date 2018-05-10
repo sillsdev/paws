@@ -510,6 +510,7 @@ public class RootLayoutController implements Initializable {
 				"webpage.explanation").get()));
 		params.add(new XsltParameter("prmMorphemes", RESOURCE_FACTORY.getStringBinding(
 				"webpage.morphemes").get()));
+		params.add(new XsltParameter("prmOutputGrammar", language.getValue("/paws/@outputGrammar")));
 		transformer.clearParameters();
 		for (XsltParameter param : params) {
 			transformer.setParameter(param.name, param.value);
