@@ -106,7 +106,12 @@ public class WebPageInteractor {
 		// We try and catch the XML and LeftOffAt pages here before
 		// actually loading them, if possible.
 		if (page.endsWith(".xml")) {
-			controller.transformAndLoadPage(page);
+			Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					controller.transformAndLoadPage(page);
+				}
+			});
 		} else if (page.endsWith("LeftOffAt")) {
 			controller.handleBack();
 		} else {
