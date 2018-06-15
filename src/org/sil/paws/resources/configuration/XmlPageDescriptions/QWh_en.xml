@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QWh" count="4/9">
+<page id="QWh" count="11.4">
     <title level="2">Questions - Interrogative Phrases</title>
    <introduction>Content questions differ from Yes/No questions in that they contain an interrogative word or phrase, known as <i>wh</i>-phrases in English because they almost all begin with <example>wh</example> (<example>who(m)</example>, <example>what</example>, <example>why</example>, <example>where</example>, <example>when</example>, <example>how</example>, <example>how many</example>, <example>which</example>, <example>whose</example>).  In some languages, some or all of these interrogatives attach to another word.</introduction>
     <form section="q">

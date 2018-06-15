@@ -46328,7 +46328,7 @@
 </xsl:choose>
 <xsl:text>, </xsl:text>
 <xsl:choose>
-			<xsl:when test="//pron/@classifierNoN='yes'">classifiers may occur without a noun in these situations.  Some examples of nominal phrases where a classifier serves without a noun are:</xsl:when>
+			<xsl:when test="//pron/@classifierNoN='yes'">classifiers may occur without a noun in these situations.  Some examples of nominal phrases or sentences where a classifier serves without a noun are:</xsl:when>
 			<xsl:when test="//pron/@classifierNoN='no'">a noun is always required.</xsl:when>
 		</xsl:choose>
 </p>

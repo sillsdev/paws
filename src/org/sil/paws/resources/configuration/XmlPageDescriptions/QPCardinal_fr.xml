@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="QPCardinal" count="4/7">
+<page id="QPCardinal" count="2.4">
 	<title level="2">Quantificateurs et Syntagmes de Quantité – Nombres</title>
 	<introduction>Maintenant, considérez les nombres.  On ne peut pas les modifier avec des mots de degré comme les quantificateurs, bien qu’ils se présentent dans la même position.  Notez que les nombres <technicalTermRef term="ttCardinal">cardinaux</technicalTermRef> peuvent être modifiés par les nombres 
 		<technicalTermRef term="ttOrdinal">ordinaux</technicalTermRef> et par <example>suivant</example> et <example>dernier</example>, comme <example>les vingt premiers garçons</example> ou
@@ -132,7 +132,7 @@
 	   <br/>
 		<prompt>Entrez ici des exemples de syntagmes nominaux comprenant de différents nombres avec un substantif.  
 			<span id="ClassifiersSpecificSpan2" show="swOTClassifierSpecific"> (Veuillez essayer de donner des exemples avec de différentes sortes de substantifs pour illustrer les différents classificateurs dans votre langue.)</span></prompt>
-		<textBox id="QPCardinalExample" dataItem="cardinalExample"/>
+		<textBox id="QPCardinalExample" dataItem="cardinalExample" cols="80"/>
 		<br/>
 		<br/>
 		
@@ -182,7 +182,7 @@
 	   	<checkbox id="QPOrdinalAffix" checked="yes" dataItem="ordinalAffix">Un affixe est ajouté au nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalIndependent" checked="yes" dataItem="ordinalIndependent">Certains, ou tous les nombres ordinaux sont des mots distincts</checkbox>
 	   	<checkbox id="QPOrdinalWord" checked="yes" dataItem="ordinalWord">Un autre mot est ajouté au nombre cardinal</checkbox>
-	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">Dans ma langue, les nombres ordinaux sont formés comme suit: <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" rows="2"/></checkbox>
+	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">Dans ma langue, les nombres ordinaux sont formés comme suit: <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" cols="70" rows="1"/></checkbox>
 		</checkboxGroup>
 		<prompt id="QPOrdinalFormNoCheckPrompt" show="swQPOrdinalFormNoCheck">AVERTISSEMENT: Il faut cocher au moins une case pour décrire comment les nombres ordinaux sont formés dans votre langue.</prompt>  
 	   
@@ -197,17 +197,17 @@
 	   	<checkbox id="QPOrdinalWordBefore" dataItem="ordinalWordBefore">Avant le nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalWordAfter" dataItem="ordinalWordAfter">Après le nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalWordBoth" dataItem="ordinalWordBoth">Des deux côtés du nombre cardinal</checkbox>
-	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">Dans ma langue, le mot ordinal se présente comme suit: <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" rows="2"/></checkbox>
+	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">Dans ma langue, le mot ordinal se présente comme suit: <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>		
 		<prompt id="QPOrdinalWordPosNoCheckPrompt" show="swQPOrdinalWordPosNoCheck">AVERTISSEMENT: Il faut cocher au moins une case pour décrire où le mot ordinal se présente par rapport au nombre cardinal pour former le nombre ordinal dans votre langue, ou changez votre réponse ci-dessus pour dire que les nombres ordinaux sont formés d’une autre façon.</prompt>  
 		<br/>
 		<br/>
 		<prompt>Entrez ici vos exemples de syntagmes nominaux comprenant des nombres ordinaux avec un substantif, tels que « le troisième bateau »:</prompt>
-	   <textBox id="QPOrdinalExample" dataItem="ordinalExample"/>
+		<textBox id="QPOrdinalExample" dataItem="ordinalExample" cols="80"/>
 	   <br/>
 	   <br/>
 		<prompt>Entrez ici vos exemples de syntagmes nominaux comprenant des nombres ordinaux modifiant un nombre cardinal avec un substantif, tels que « les dix premiers enfants » si cela est permis:</prompt>
-	   <textBox id="QPOrdinalCardinalExample" dataItem="ordinalCardinalExample"/>
+		<textBox id="QPOrdinalCardinalExample" dataItem="ordinalCardinalExample" cols="80"/>
 	   <br/>
 	   <br/>
 		<prompt>Entrez ici comment votre langue exprime « suivant »:</prompt>
@@ -219,7 +219,7 @@
 	   <br/>
 	   <br/>
 		<prompt>Entrez ici vos exemples de syntagmes nominaux comprenant « suivant » ou « dernier » avec un substantif, tels que « la rue suivante ».  Entrez aussi des exemples de « suivant » or « dernier » avec un nombre cardinal tels que « les cinq dernières boîtes » si cela est permis.</prompt>
-	   <textBox id="QPNextLastNPExample" dataItem="nextlastNPExample"/>
+		<textBox id="QPNextLastNPExample" dataItem="nextlastNPExample" cols="80"/>
 	   <br/>
 	   <br/>
 	   <checkboxGroup>
@@ -227,7 +227,7 @@
 	   	<checkbox id="QPOrdinalBefore" checked="yes" dataItem="ordinalBefore">Avant le nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalAfter" checked="yes" dataItem="ordinalAfter">Après le nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalBoth" checked="yes" dataItem="ordinalBoth">Des deux côtés du nombre cardinal à la fois</checkbox>
-	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">Dans ma langue, ces éléments se présentent comme suit par rapport au nombre cardinal: <textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" rows="2"/></checkbox>
+	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">Dans ma langue, ces éléments se présentent comme suit par rapport au nombre cardinal: <textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>		
 		<prompt id="QPOrdinalNumNoCheckPrompt" show="swQPOrdinalNumNoCheck">AVERTISSEMENT: Il faut cocher au moins une case pour décrire où les nombres ordinaux et les mots pour « suivant » et « dernier » se présentent par rapport au nombre cardinal, à moins que votre langue ne permette ni les nombres ordinaux ni les mots pour « suivant » ou « dernier » avec un nombre cardinal.  Dans ce cas-là, choisissez « Nul part » ci-dessous.</prompt>  
 		<checkboxGroup id="QPOrdinalNumNowhereTable" show="swQPOrdinalNumNoCheck">
@@ -236,10 +236,10 @@
 		</checkboxGroup>
 		
 		<instruction id="QPOrdinalInstruction">
-			<span id="QPOrdinalWordInstruction" show="swQPOrdinalWord">In the lexicon, mark the ordinal word with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span>
-			<span id="QPOrdinalAffixInstruction" show="swQPOrdinalAffix">In the lexicon, mark the affix with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span>
-			<span id="QPOrdinalIndependentInstruction" show="swQPOrdinalIndependent">In the lexicon, mark each ordinal word with the feature <feature>ordinal</feature>. Also, mark the words meaning <example>next</example> and <example>last</example> with this feature.</span>
-			<span id="QPOrdinalBothInstruction" show="swQPOrdinalBoth">In the lexicon, mark the appropriate affix and each independent ordinal word with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span>
+			<span id="QPOrdinalWordInstruction" show="swQPOrdinalWord">In the lexicon, mark the ordinal word with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span><br/>
+			<span id="QPOrdinalAffixInstruction" show="swQPOrdinalAffix">In the lexicon, mark the affix with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span><br/>
+			<span id="QPOrdinalIndependentInstruction" show="swQPOrdinalIndependent">In the lexicon, mark each ordinal word with the feature <feature>ordinal</feature>. Also, mark the words meaning <example>next</example> and <example>last</example> with this feature.</span><br/>
+			<span id="QPOrdinalBothInstruction" show="swQPOrdinalBoth">In the lexicon, mark the appropriate affix and each independent ordinal word with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span><br/>
 			<span id="QPOrdinalEitherRestrictedInstruction" show="swQPOrdinalEitherRestricted">Those which can only occur before the cardinal number also need to have the feature <feature>QP-initial</feature>
 and those which can only occur after the cardinal number also need the
 feature <feature>QP-final</feature>.  Do not enter either
@@ -249,7 +249,7 @@ either side.</span>
 		<introduction>Aussi, les nombres cardinaux plus grands peuvent être des mots composés qu’on peut écrire comme des mots indépendants, tels que <example>cent trente-trois</example>.  Dans beaucoup de langues, les conjonctions sont nécessaires ou permis dans les mots composés.  La position de la conjonction est généralement du même côté que les plus petits nombres.  Par exemple, en français, dans les nombres composés la conjonction se présente vers la fin du nombre composé, avant le dernier nombre comme dans <example>six mille cent trente-et-un</example>. 
 </introduction>
 		<prompt>Entrez ici des exemples de nombres composés:</prompt>
-		<textBox id="QPCardinalCompoundExample" dataItem="cardinalCompoundExample" cols="50"/>
+		<textBox id="QPCardinalCompoundExample" dataItem="cardinalCompoundExample" cols="80"/>
 		<radioGroup>
 			<groupName dataItem="cardinalHead" default="final">RCardinalHead</groupName>
 			<prompt>Suivant ces exemples, où les nombres de zéro à neuf et une conjonction se présentent-ils dans les nombres composés?</prompt>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="NPQP" count="1/1">
+<page id="NPQP" count="5.5.1">
     <title level="2">Syntagmes Nominaux – Modificateurs de Syntagmes de Quantité</title>
     <introduction id="NPQPIntroNotPractical" show="swNotPractical">Ensuite, au syntagme nominal il faut ajouter les quantificateurs, que nous avons discutés dans la <section number="2">Quantificateurs et Syntagmes de Quantité</section>.  Nous pourrons donc analyser des syntagmes nominaux, comme les suivants:</introduction>
     <introduction id="NPQPIntroPractical" show="swPractical">Ensuite, au syntagme nominal il faut ajouter les quantificateurs, que nous avons discutés dans la <section number="2">Quantificateurs et Syntagmes de Quantité</section>.  Nous nous intéressons donc à des syntagmes nominaux comme les suivants:</introduction>    <EnglishExample>
@@ -13,14 +13,14 @@
     </EnglishExample>
     <form section="np">
         <prompt>Entrez ici des exemples de syntagmes nominaux pareils dans votre langue:</prompt>
-        <textBox id="NPQPExample" dataItem="qpExample"/>
+        <textBox id="NPQPExample" dataItem="qpExample" cols="80"/>
         <br/>
         <checkboxGroup>
             <prompt>Selon les données que vous avez écrites, cochez la position des quantificateurs (y compris la forme cardinale des numéros) par rapport au nom.  Cochez toutes les possibilités qui existent pour votre langue.</prompt>
             <checkbox id="NPQPPosBefore" dataItem="qpPosBefore">Avant le nom</checkbox>
             <checkbox id="NPQPPosAfter" dataItem="qpPosAfter">Après le nom</checkbox>
             <checkbox id="NPQPPosBoth" dataItem="qpPosBoth">Des deux côtés dans le même syntagme nominal</checkbox>
-            <checkbox id="NPQPPosOther" dataItem="qpPosOther">Dans ma langue les quantificateurs peuvent se mettre dans les positions suivantes: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" rows="2"/></checkbox>
+            <checkbox id="NPQPPosOther" dataItem="qpPosOther">Dans ma langue les quantificateurs peuvent se mettre dans les positions suivantes: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1"/></checkbox>
            </checkboxGroup>
         <prompt id="NPQPPosNoCheckPrompt" show="swNPQPNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire la position des quantificateurs par rapport au nom dans votre langue.</prompt>
            <radioGroup id="NPQPPosEitherorBothRestrictedTable" show="swNPQPPosEitherorBothRestricted">
@@ -46,7 +46,7 @@
             <checkbox id="NPQClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificQPosAfterNBeforeQ">Après le nom mais avant le quantificateur</checkbox>
             <checkbox id="NPQClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificQPosPrefixQ">Ajouté comme préfixe au quantificateur</checkbox>
             <checkbox id="NPQClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificQPosSuffixQ">Ajouté comme suffixe au quantificateur</checkbox>
-            <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">Dans ma langue les classificateurs peuvent se mettre dans la position ci-dessous: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" rows="2"/></checkbox>
+            <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">Dans ma langue les classificateurs peuvent se mettre dans la position ci-dessous: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1"/></checkbox>
         </checkboxGroup>
         <prompt id="NPQClassifierSpecificPosNoCheckPrompt" show="swNPQClassifierPresentYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire la position des classificateurs par rapport aux quantificateurs et au nom dans votre langue; autrement vous devez changer votre réponse pour lire: « Non, on n’utilise jamais de classificateur dans ce genre de syntagme nominal ».</prompt>
         

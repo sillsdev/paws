@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PPComps" count="2/5">
+<page id="PPComps" count="8.2">
     <title level="2">Las frases adposicionales - Los complementos nominales</title>
    <introduction>El uso principal de preposiciones o postpositions es para expresar el lugar. Por lo tanto, se cubren adpositions de lugar y sus frases primero. Entonces, para las lenguas que no marcan el caso en los sustantivos o frases nominales, se ejemplifica las adpositions utilizadas para expresar cada relación de caso menor.
       <br/> <br/>
@@ -30,9 +30,9 @@
        <textBox id="PPLocativePostExample" dataItem="locativePostExample" rows="6" show="swPPPostOrBoth"/>
        <instruction id="PPLocativePrepInstruction" show="swPPBoth">In the lexicon, add the feature <feature>PP-initial</feature> to each of the prepositions and the feature <feature>PP-final</feature> to each of the postpositions.  If any can appear either before or after the complement, do not add either feature to that entry.</instruction>
        <prompt id="PPLocativePrepPPPrompt" show="swPPPrepOrBoth">Ahora escriba algunos ejemplos de las preposiciones <span id="PPBodyPartYesSpan2" show="swPPBodyPartYes"> regulares</span> dentro de las frases preposicionales locativas aquí:</prompt>
-       <textBox id="PPLocativePrepPPExample" dataItem="locativePrepPPExample" rows="6" show="swPPPrepOrBoth"/>
+       <textBox id="PPLocativePrepPPExample" dataItem="locativePrepPPExample" rows="6" cols="80" show="swPPPrepOrBoth"/>
        <prompt id="PPLocativePostPPPrompt" show="swPPPostOrBoth">Ahora escriba algunos ejemplos de las posposiciones <span id="PPBodyPartYesSpan3" show="swPPBodyPartYes"> regulares</span> dentro de las frases posposicionales locativas aquí:</prompt>
-       <textBox id="PPLocativePostPPExample" dataItem="locativePostPPExample" rows="6" show="swPPPostOrBoth"/>
+       <textBox id="PPLocativePostPPExample" dataItem="locativePostPPExample" rows="6" cols="80" show="swPPPostOrBoth"/>
        <br/> <br/>
        <prompt id="PPBodyPartPrepPrompt" show="swPPPrepOrBothAndBodyPartYes">Escriba las partes del cuerpo que su lengua utiliza como preposiciones aquí <span id="PPCliticSomeSpan2" show="swPPCliticBoth"> con un signo igual después de las formas de clítico</span>:</prompt>
        <textBox id="PPBodyPartPrepExample" dataItem="bodyPartPrepExample" rows="6" show="swPPPrepOrBothAndBodyPartYes"/>
@@ -40,9 +40,9 @@
        <textBox id="PPBodyPartPostExample" dataItem="bodyPartPostExample" rows="6" show="swPPPostOrBothAndBodyPartYes"/>
        <instruction id="PPBodyPartPrepInstruction" show="swPPBodyPartYes">In the lexicon, you will need to make two entries for each body part, the noun entry with the category <category>N</category> and a second entry with the category <category>P</category>.  <span id="PPBodyPartPrepBothSpan" show="swPPBoth">In addition, add the feature <feature>PP-initial</feature> to each of the body part prepositions and the feature <feature>PP-final</feature> to each of the body part postpositions.  If any can appear either before or after the complement, do not add either feature to that entry.</span></instruction>
        <prompt id="PPBodyPartPrepPPPrompt" show="swPPPrepOrBothAndBodyPartYes">Ahora escriba algunos ejemplos de frases preposicionales locativas con las partes del cuerpo como preposiciones aquí:</prompt>
-       <textBox id="PPBodyPartPrepPPExample" dataItem="bodyPartPrepPPExample" rows="6" show="swPPPrepOrBothAndBodyPartYes"/>
+       <textBox id="PPBodyPartPrepPPExample" dataItem="bodyPartPrepPPExample" rows="6" cols="80" show="swPPPrepOrBothAndBodyPartYes"/>
        <prompt id="PPBodyPartPostPPPrompt" show="swPPPostOrBothAndBodyPartYes">Ahora escriba algunos ejemplos de frases posposicionales locativas con las partes del cuerpo como posposiciones aquí:</prompt>
-       <textBox id="PPBodyPartPostPPExample" dataItem="bodyPartPostPPExample" rows="6" show="swPPPostOrBothAndBodyPartYes"/>
+       <textBox id="PPBodyPartPostPPExample" dataItem="bodyPartPostPPExample" rows="6" cols="80" show="swPPPostOrBothAndBodyPartYes"/>
        <br/> <br/>
        <introduction id="PPCaseIntroduction" show="swNPCaseNNo">Desde que su lengua no marque el caso en los sustantivos o frases nominales, las relaciones de caso menores se deben detallar por las <span id="PPBodyPartPrepSpan10" show="swPPPrep"> preposiciones</span> <span id="PPBodyPartPostSpan10" show="swPPPost"> posposiciones</span> <span id="PPBodyPartBothSpan10" show="swPPBoth"> adposiciones</span>.</introduction>
        

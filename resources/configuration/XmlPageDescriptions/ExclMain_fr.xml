@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="ExclMain" count="1/2">
+<page id="ExclMain" count="17.1">
     <title>Salutations, Interjections et Exclamations</title>
     <introduction>Cette section considère les différents types d’expressions communes qui ne sont pas des phrases complètes. Les salutations, interjections et exclamations seront traitées tour à tour.</introduction>
     <form section="excl" transparent="no">
@@ -16,7 +16,7 @@
         <exItem label="7.">Bonne nuit, doux enfant.</exItem>
     </EnglishExample>
         <prompt>Entrez ici des exemples similaires de salutations dans votre langue:</prompt>
-        <textBox id="ExclGreet" dataItem="greetExample" rows="5"/>
+        <textBox id="ExclGreet" dataItem="greetExample" cols="80"/>
         <br/>
 <instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
 <br/>
@@ -29,7 +29,7 @@
         <exItem label="11.">Oh là là!</exItem>
     </EnglishExample>
         <prompt>Entrez ici des exemples semblables d’interjections dans votre langue:</prompt>
-        <textBox id="ExclIntj" dataItem="intjExample" rows="5"/>
+        <textBox id="ExclIntj" dataItem="intjExample" cols="80"/>
         <br/>
         <introduction>Des réponses « Oui » et « Non » à des questions seront traitées <span id="ExclYesNoNotPracticalSpan" show="swNotPractical">par la même règle qui permet </span><span id="ExclYesNoPracticalSpan" show="swPractical">comme </span>des interjections.  </introduction>
         <prompt>Entrez ici les mots qui peuvent rester seuls et signifier  « Oui », comme  « Oui » et  « Ouais » en français:</prompt>
@@ -40,14 +40,14 @@
         <br/>
         <instruction id="ExclYesNoInstruction">All of these words or phrases meaning  ‘yes’ and  ‘no’ and the interjections need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
 <br/>
-        <introduction>Les exclamations consistent typiquement en un mot particulier comme <example>comment</example>, <example>combien</example> ou <example>que</example> en français. suivis d’une syntagme adjectival et généralement ponctuée d’un point d’exclamation. Des exemples en français incluent:</introduction>
+        <introduction>Les exclamations consistent typiquement en un mot particulier comme <example>comment</example>, <example>combien</example> ou <example>que</example> en français. suivis d’un syntagme adjectival et généralement ponctuée d’un point d’exclamation. Des exemples en français incluent:</introduction>
     <EnglishExample>
         <exItem label="12.">Comme tu es grand!</exItem>
         <exItem label="13.">Que c’est chic!</exItem>
         <exItem label="14.">Combien c’est merveilleux que ta famille puisse venir!</exItem>
     </EnglishExample>
         <prompt>Entrez ici des exemples d’exclamation dans votre langue:</prompt>
-        <textBox id="ExclExcl" dataItem="exclExample" rows="5"/>
+        <textBox id="ExclExcl" dataItem="exclExample" cols="80"/>
         <br/>
 <radioGroup id="ExclMTable">
     <groupName dataItem="exclM" default="no">RExclM</groupName>
@@ -63,7 +63,7 @@
    <checkbox id="ExclMPosBefore" dataItem="exclMBefore">Avant</checkbox>
     <checkbox id="ExclMPosAfter" dataItem="exclMAfter">Après</checkbox>
     <checkbox id="ExclMPosBoth" dataItem="exclMBoth">Des deux côtés à la fois</checkbox>
-    <checkbox id="ExclMPosOther" dataItem="exclMOther" >Dans ma langue les mots qui signalent une exclamation peuvent se présenter dans la position suivante: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="2"/></checkbox>
+    <checkbox id="ExclMPosOther" dataItem="exclMOther" >Dans ma langue les mots qui signalent une exclamation peuvent se présenter dans la position suivante: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70"/></checkbox>
 </checkboxGroup>
         <prompt id="ExclMPosNoCheckPrompt" show="swExclMYesandNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où les mots qui marquent une exclamation apparaissent dans votre langue, ou changez la réponse ci-dessus en « Non ». Dans ce cas il ne devrait pas y avoir d’exemples dans la case de texte ci-.dessus.</prompt>       
 <instruction id="ExclMInstruction" show="swExclMYes">In the lexicon, add the feature <feature>makeExcl</feature> to each word which signals an exclamation to assure the proper category for the syntax.</instruction>

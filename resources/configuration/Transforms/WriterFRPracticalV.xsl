@@ -25131,7 +25131,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Yo compro un libro</langData>
-<xsl:text>.  On ne fait pas cela en anglais, ni en français, sauf pour les inpéritifs. (On traitera le phénomène de l’absence du sujet des infinitifs dans les propositions subordonnées à la section </xsl:text>
+<xsl:text>.  On ne fait pas cela en anglais, ni en français, sauf pour les impératifs. (On traitera le phénomène de l’absence du sujet des infinitifs dans les propositions subordonnées à la section </xsl:text>
 <sectionRef sec="sComp" />
 <xsl:text>.) </xsl:text>
 </p>

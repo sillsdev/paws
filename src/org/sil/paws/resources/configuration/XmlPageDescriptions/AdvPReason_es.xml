@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvPReason" count="4/6">
+<page id="AdvPReason" count="3.4">
     <title level="2">Frases adverbiales - Los adverbios que expresan razón o propósito</title>
     <introduction>Los adverbios que expresan razón o propósito son <example>por lo tanto</example> y
        <example>pues</example>.  Los adverbios que expresan razón o propósito normalmente no permiten modificadores.<br/><br/>
@@ -13,8 +13,8 @@
         <textBox id="AdvPReasonExample" dataItem="reasonExample"/>
        <prompt>Escriba ejemplos de frases adposicionales que expresan razón o propósito aquí:</prompt>
        <textBox id="AdvPReasonPPExample" dataItem="reasonPPExample" rows="3"/>
-       <prompt>Ahora escriba algunos ejemplos de oraciones completas con los adverbios que expresan razón o propósito o de las cláusulas adverbiales o de frases adposicionales que expresan razón o propósito (con un punto y una nueva línea después de cada ejemplo) aquí:</prompt>
-       <textBox id="AdvPReasonSentExample" dataItem="reasonSentExample" rows="5" cols="50"/> 
+       <prompt>Ahora escriba algunos ejemplos de oraciones completas con los adverbios que expresan razón o propósito o de las cláusulas adverbiales o de frases adposicionales que expresan razón o propósito (con una nueva línea después de cada ejemplo) aquí:</prompt>
+       <textBox id="AdvPReasonSentExample" dataItem="reasonSentExample" rows="5" cols="80"/> 
        <br/>
        <instruction id="AdvPReasonInstruction">In the lexicon, key the feature <feature>reason</feature> on
 all adverbs that express reason or purpose, and also on the nouns like <example>reason</example> and <example>purpose</example>.  Any multi-word forms, like <example>in order</example> are best handled as a single entry using <tool>Join Compound</tool>.

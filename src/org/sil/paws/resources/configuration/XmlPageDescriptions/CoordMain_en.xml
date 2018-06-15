@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="CoordMain" count="1/4">
+<page id="CoordMain" count="15.1">
 	<title>Coordination Constructions</title>
    <introduction>This section mainly considers basic coordination constructions where there is an <technicalTermRef term="ttOvert"/> conjunction between the parts being conjoined (called ‘conjuncts’).  We will deal with coordination at the sentence level and at the verb phrase, nominal phrase, <span id="CoordPrepSpan" show="swPPPosPrep">prepositional</span><span id="CoordPostSpan" show="swPPPosPost">postpositional</span><span id="CoordPBothSpan" show="swPPPosBoth">prepositional or postpositional</span> phrase and adjective phrase levels. Then, at the nominal phrase level only, we will deal with lists and appositive constructions. More complex types of coordination constructions, such as gapping, and other possible levels of coordination will need to be dealt with later.</introduction>
 		<introduction>In English, the conjunctions which can be used between two conjuncts are <example>and</example>, <example>or</example>, <example>but</example> and <example>and/or</example>.  In addition, there are coordination constructions which require an initial conjunction, such as <example>either...or</example> and <example>neither...nor</example> constructions.  Some languages also use a word meaning <example>with</example> as a conjunction between nominal phrases.</introduction>
@@ -60,7 +60,7 @@
          <prompt><br/>How do the conjunctions attach within the coordination construction?  Choose all that apply:</prompt>
          <checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">As a proclitic which attaches to the beginning of the second conjunct</checkbox>
          <checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">As an enclitic which attaches to the end of the first conjunct</checkbox>
-         <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">In my language, the conjunctions may attach in this other way within the coordination construction: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="2"/></checkbox>
+         <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">In my language, the conjunctions may attach in this other way within the coordination construction: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">WARNING: You did not check any boxes to describe how the conjunctions may attach in your language.  Please check one or more boxes as appropriate, or change your answer above to ‘Yes, they are all independent words’.</prompt>
       
@@ -80,6 +80,7 @@
 	      <radio id="CoordNoConjNo" dataValue="no">No, when there are only two items being conjoined, a conjunction must appear between them</radio>
 	      <radio id="CoordNoConjYes" dataValue="yes">Yes, two items may be conjoined without any conjunction between them</radio>
 	   </radioGroup>  
+   	<instruction id="CoordNoConjYesInstruction" show="swCoordNoConjYes">Note that this answer will add a lot of ambiguity in your PC-Patr output.  Consider commenting off some of the coordination rules in your PC-Patr grammar file to reduce the ambiguity as needed.</instruction>
 	   <br/>
 	   <br/>
 	   <introduction>In general, coordination is between like categories.  For sentence-level coordination, this means that two declarative sentences may be conjoined, as in 1-2, or two questions, as in 3.  When the conjunction is the one meaning ‘but’, one of the conjuncts must be negative, as in 4.  English examples of full sentence coordination include:</introduction>
@@ -90,10 +91,10 @@
 		   <exItem label="4.">John went to the office this morning but he did not return.</exItem>
 		</EnglishExample>
 		<prompt>Key examples of full sentence coordination in your language here:</prompt>
-		<textBox id="CoordSent" dataItem="sentExample" rows="5"/>
+		<textBox id="CoordSent" dataItem="sentExample" cols="80"/>
 		<br/>
    	<prompt>Now key some examples of full sentence coordination using the sequential conjunction, such as <example>Mary went to the store and then she got ready for the party</example> here:</prompt>
-   	<textBox id="CoordSeqSent" dataItem="sentSeqExample" rows="5"/>
+   	<textBox id="CoordSeqSent" dataItem="sentSeqExample" cols="80"/>
    	<br/>
    	<introduction>Verb phrase coordination involves two full verb phrases that share a single subject.  English examples of verb phrase coordination, with the coordinates bracketed, include:</introduction>
 		<EnglishExample>
@@ -102,7 +103,7 @@
 			<exItem label="7.">I will not [come to the party] nor [send my sister].</exItem>
 		</EnglishExample>
 		<prompt>Key examples of verb phrase coordination in your language here (without brackets):</prompt>
-		<textBox id="CoordVP" dataItem="vpExample" rows="5"/>
+   	<textBox id="CoordVP" dataItem="vpExample" cols="80"/>
 		<br/>
 	   <introduction>Coordinate nominal phrases can normally occur as subjects, objects, indirect objects and objects of a preposition or postposition, just like a regular nominal phrase.  English examples of nominal phrase coordination, with the coordinates bracketed, include:</introduction>
 		<EnglishExample>
@@ -113,7 +114,7 @@
 			<exItem label="12.">I will come to [the wedding] and/or [the reception].</exItem>
 		</EnglishExample>
 		<prompt>Key examples of nominal phrase coordination in your language here (without brackets).  Include only examples with two conjuncts and an overt conjunction between the conjuncts.  Other types of nominal phrase coordination will be dealt with on the next page.</prompt>
-		<textBox id="CoordDP" dataItem="dpExample" rows="5"/>
+   	<textBox id="CoordDP" dataItem="dpExample" cols="80"/>
 		<br/>
       <introduction>It is also normally possible to have coordinate <span id="PPPrepSpan1" show="swPPPosPrep">prepositional</span>
          <span id="PPPostSpan1" show="swPPPosPost">postpositional</span>
@@ -128,7 +129,7 @@
 	   <prompt>Key examples of <span id="PPPrepSpan" show="swPPPosPrep">prepositional</span>
 	      <span id="PPPostSpan" show="swPPPosPost">postpositional</span>
 	      <span id="PPBothSpan" show="swPPPosBoth">prepositional and/or postpositional</span> phrase coordination in your language here (without brackets):</prompt>
-		<textBox id="CoordPP" dataItem="coordppExample" rows="5"/>
+   	<textBox id="CoordPP" dataItem="coordppExample" cols="80"/>
 		<br/>
 	   <introduction>Finally, adjectives or adjective phrases can usually be coordinated, both when they are modifying a noun, as in 16-18,  and when they are acting as the predicate adjective in a copular sentence, as in 19-20.  English examples of adjective phrase coordination, with the coordinates bracketed where not clear, include:</introduction>
 		<EnglishExample>
@@ -139,7 +140,7 @@
 		   <exItem label="20.">This material feels [very smooth] and [silky].</exItem>
 		</EnglishExample>
 		<prompt>Key examples of adjective phrase coordination in your language here (without brackets):</prompt>
-		<textBox id="CoordAdj" dataItem="adjExample" rows="5"/>
+   	<textBox id="CoordAdj" dataItem="adjExample" cols="80"/>
 		<br/>
 		<br/>
 		<buttons>
@@ -157,6 +158,9 @@
       <whenValue element="pp" attr="pPos" value="both"/>
       <or/>
       <whenValue element="pp" attr="pPos" value="unknown"/>
+   </showWhen>
+   <showWhen id="swCoordNoConjYes">
+      <whenRadio button="CoordNoConjYes"/>
    </showWhen>
    <showWhen id="swCoordWordNotNo">
       <not/><whenRadio button="CoordConjWordNo"/>

@@ -42,7 +42,7 @@
                <caseText value="before">prépositions seulement.  </caseText>
                 <caseText value="after">postpositions seulement.  </caseText>
                <caseText value="both">prépositions et des postpositions.  </caseText>
-                <caseText value="unknown">_____-positions suelement.  </caseText>
+                <caseText value="unknown">_____-positions seulement.  </caseText>
             </case>
             <content/>
             <case element="pp" attr="pType">

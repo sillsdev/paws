@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="RelClTesting" count="2/2">
+<page id="RelClTesting" count="12.2">
 	<title level="2">Relative Clauses - Testing</title>
 	<form section="relcl">
 		<instruction>To test what you have done so far, save your work now.  This will generate the test file and grammar rules file created to this point.
@@ -19,7 +19,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="RelClTestingBack" value="Back" goto="RelClMain.xml"/>
-			<button id="RelClTestingNext" value="Next" goto="Contents_fr.htm"/>
+			<button id="RelClTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

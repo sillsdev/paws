@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PronTesting" count="9/9">
+<page id="PronTesting" count="7.9">
 	<title level="2">Pronouns - Testing</title>
 	<form section="pron">
 		<instruction>To test what you have done so far, save your work now.  This will generate the test file and grammar rules file created to this point.
@@ -18,7 +18,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="PronTestingBack" value="Back" goto="PronCatMap.xml"/>
-			<button id="PronTestingNext" value="Next" goto="Contents_fr.htm"/>
+			<button id="PronTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

@@ -3,9 +3,9 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPInflFeatures" count="1/2">
+<page id="IPInflFeatures" count="9.2.1">
 	<title level="2">Phrases Simples – La flexion</title>
-	<introduction>Au sein des phrases les verbes portent d’habitude une <technicalTermRef term="ttInflection">flexion</technicalTermRef> quelconque;  et  il y a souvent un accord entre le sujet, l’objet et le verbe. On présentera d’abord la flexion, ensuite – à la page suivante – l’accord.</introduction>
+	<introduction>Au sein des phrases les verbes portent d’habitude une <technicalTermRef term="ttInflection">flexion</technicalTermRef> n'importe quelle;  et  il y a souvent un accord entre le sujet, l’objet et le verbe. On présentera d’abord la flexion, ensuite – à la page suivante – l’accord.</introduction>
    <form section="ip">
    	<prompt><br/>Les verbes et les auxiliaires portent d’habitude les marques d’inflexion de temps, d’aspect, de voix et/ou de mode. Dans la plupart des cas il s’agit d’affixes, mais quelquefois ces marques font partie de verbes irréguliers.  Regardez les caractéristiques du tableau en-dessous et cochez ceux qui sont courants dans votre langue. Ecrivez à la troisième colonne les <technicalTermRef term="ttMorphemes">morphèmes</technicalTermRef>  qui représentent ces caractéristiques. Dans la boîte « autre » dressez une liste de temps, d’aspects, de modes, de marqueurs d’évidentialité ou de voix qui ne figurent pas ici pour ce caractéristique. 
    		<br/><br/>A la section mode veuillez noter que <feature>déclaratif</feature>, <feature>indicatif</feature> et <feature>réalis</feature> sont des synonymes, alors vous devez cocher une seule case. Egalement, le <feature>conditionnel</feature> et <feature>subjonctif</feature> sont des types de <feature>irréalis</feature>; choisissez ou bien l’<feature>irréalis</feature> ou bien une des sous-catégories.  Veuillez cochez <feature>non-fini</feature>  si votre langue a une forme verbale infinitive; ceci sera important à la <section number="10.">Propositions Complétives</section>. 

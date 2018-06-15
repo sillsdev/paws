@@ -495,7 +495,7 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>La fille a l’aire joli</langData>
+</xsl:attribute>La fille a l’air joli</langData>
 <xsl:text>, </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -3018,7 +3018,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>après</langData>
-<xsl:text>, et se sépare avec un virgule. La conséquence peut être marquée par un mot qui signifie </xsl:text>
+<xsl:text>, et se sépare avec une virgule. La conséquence peut être marquée par un mot qui signifie </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -3570,17 +3570,17 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>souhaiter</langData>
-<xsl:text> avec the complémentiseur </xsl:text>
+<xsl:text> avec le complémentiseur </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>que</langData>
-<xsl:text>.  Les exemples de les propositions subordonnées seront traits plus tard à la section </xsl:text>
+<xsl:text>.  Les exemples des propositions subordonnées seront traités plus tard à la section </xsl:text>
 <sectionRef sec="sComp" />
 <xsl:text>. </xsl:text>
 </p>
 	   	<p contentType="ctPracticalIntro">
-<xsl:text>On emploie le mode du subjonctif pour exprimer les notions qui sont spéculatives, qu’on supppose, doute, craint, ou désire. Elles ne constituent pas la réalité du moment. Les subjonctifs peuvent ressembler aux conditionnels, sauf à la première personne.  Dans beaucoup de langues les subjonctifs s’emploient le plus souvent dans les propositions subordonnées.  Les exemples de les propositions subordonnées seront traits plus tard à la section </xsl:text>
+<xsl:text>On emploie le mode du subjonctif pour exprimer les notions qui sont spéculatives, qu’on supppose, doute, craint, ou désire. Elles ne constituent pas la réalité du moment. Les subjonctifs peuvent ressembler aux conditionnels, sauf à la première personne.  Dans beaucoup de langues les subjonctifs s’emploient le plus souvent dans les propositions subordonnées.  Les exemples des propositions subordonnées seront traités plus tard à la section </xsl:text>
 <sectionRef sec="sComp" />
 <xsl:text>. </xsl:text>
 </p>

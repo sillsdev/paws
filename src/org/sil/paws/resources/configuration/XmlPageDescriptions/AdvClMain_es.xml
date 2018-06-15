@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvClMain" count="1/3">
+<page id="AdvClMain" count="13.1">
    <title>Las cláusulas adverbiales</title>
    <introduction>En esta sección se analizan los <technicalTermRef term="ttComplements"/> de los adverbios de tiempo y de razón.  Los adverbios de tiempo con los complementos se utilizan a continuación para ilustrar las construcciones, después ambos tipos se analizan para su lengua en la siguiente página. 
       <br/><br/>Algunos ejemplos en español de adverbios de tiempo con los complementos usados en oraciones completas son:</introduction>

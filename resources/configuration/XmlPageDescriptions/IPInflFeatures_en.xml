@@ -3,14 +3,14 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPInflFeatures" count="1/2">
+<page id="IPInflFeatures" count="9.2.1">
 	<title level="2">Basic Sentences - Inflection Features</title>
 	<introduction>Sentences normally include some kind of <technicalTermRef term="ttInflection"/> on the verbs and possibly agreement between the subject, object and verb.  We will begin with inflection and then cover agreement on the following page.</introduction>
    <form section="ip">
    	<prompt><br/>Verbs and auxiliaries usually carry inflection features, such as tense, aspect, voice and/or mood.  In most cases, these features are added by affixes, but they can also be part of irregular verbs.  Look through the features in the chart below and check any that your language uses. Key in the <technicalTermRef term="ttMorphemes"/> representing those features in the third column.  List any tenses, aspects, moods, evidentiality markers or voices that are not given here in the ‘other’ row for that feature. 
       	<br/><br/>Please note in the mood section that <feature>declarative</feature>, <feature>indicative</feature> and <feature>realis</feature> are synonyms, so you should only check one of them.  Similarly, <feature>conditional</feature> and <feature>subjunctive</feature> are types of <feature>irrealis</feature>, so you should choose either the general <feature>irrealis</feature> feature or one or both of the subtypes. Please be sure to check <feature>-finite</feature> if your language has an infinitive form for verbs, as this will be important in <section number="10.">Complement Clauses</section>. 
    		<br/><br/>Various choices in the aspect section are subtypes of one another as well, as you can see by clicking on the underlined term.  Choose the best set of features to describe the distinctions your language makes.  In general, languages use either tense or aspect, not both. </prompt>
-      <instruction>  <span id="IPInflFeaturesNotPracticalSpan" show="swNotPractical"> In the lexicon, add the appropriate features (as given in the chart) to the relevant affixes and also to any auxiliaries or irregular verb forms.</span> <br/>
+   	<instruction>  <span id="IPInflFeaturesNotPracticalSpan" show="swNotPractical"> In the lexicon, add the appropriate features (as given in the chart) to the relevant affixes and also to any auxiliaries or irregular verb forms.  If you have a tense, aspect, mood, evidentiality or voice feature that is not given (so you check  “other” here), you will need to add a new template for that feature in the PC-Patr grammar file by copying a similar one.  Then you can add that feature name to the appropriate entries in the  lexicon.</span> <br/>
 		<featureChart explanations="no">
 			<featureRow>
 				<featureType rowspan="6">tense</featureType>

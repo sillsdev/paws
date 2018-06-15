@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="ExclMain" count="1/2">
+<page id="ExclMain" count="17.1">
    <title>Los saludos, las interjecciones y las exclamaciones</title>
    <introduction>En esta sección se consideran los varios tipos de locuciones comunes que no son oraciones completas: los saludos, las interjecciones y las exclamaciones se presentan en ese orden.</introduction>
     <form section="excl" transparent="no">
@@ -19,21 +19,21 @@
         <exItem label="9.">Buenas noches, dulce bebé.</exItem>
     </EnglishExample>
 <prompt>Escriba ejemplos similares de saludos en su lengua aquí:</prompt>
-        <textBox id="ExclGreet" dataItem="greetExample" rows="5"/>
+       <textBox id="ExclGreet" dataItem="greetExample" cols="80"/>
         <br/>
 <instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
 <br/>
        <introduction>Las interjecciones consisten típicamente en una palabra o una frase específica que se utilizan sola para expresar emociones, generalmente con signos de exclamación. Muchas de las palabras en interjecciones no se utilizan en ningún otro contexto. Sin embargo, los adjetivos regulares también se utilizan de esta manera.  Algunos ejemplos de interjecciones en español son:
 </introduction>
     <EnglishExample>
-        <exItem label="1.">¡Ay!</exItem>
-        <exItem label="2.">¡Caramba!</exItem>
-        <exItem label="3.">¡Ay de mí!</exItem>
-        <exItem label="4.">¡Cuidado!</exItem>
-        <exItem label="5.">¡Jesús, María y José!</exItem>
+        <exItem label="10.">¡Ay!</exItem>
+        <exItem label="11.">¡Caramba!</exItem>
+        <exItem label="12.">¡Ay de mí!</exItem>
+        <exItem label="13.">¡Cuidado!</exItem>
+        <exItem label="14.">¡Jesús, María y José!</exItem>
     </EnglishExample>
 <prompt>Escriba ejemplos similares de interjecciones en su lengua aquí:</prompt>
-        <textBox id="ExclIntj" dataItem="intjExample" rows="5"/>
+       <textBox id="ExclIntj" dataItem="intjExample" cols="80"/>
         <br/>
        <prompt>Respuestas de “Sí” y “No” a las preguntas son similares a las interjecciones.  Escriba las palabras independientes que significan “sí”, por ejemplo ‘yes' y ‘yeah' en inglés, aquí:</prompt>
         <textBox id="ExclYes" dataItem="yesExample" rows="3"/>
@@ -45,12 +45,12 @@
 <br/>
        <introduction>Las exclamaciones consisten típicamente en una palabra específica, como <example>qué</example> o <example>cómo</example> en español, seguida de una frase adjetival y puntuada generalmente con signos de exclamación.  Algunos ejemplos en español son:</introduction>
     <EnglishExample>
-        <exItem label="1.">¡Qué tremendo para usted!</exItem>
-        <exItem label="2.">¡Qué agradable!</exItem>
-        <exItem label="3.">¡Cómo es maravilloso que su familia podría venir!</exItem>
+        <exItem label="15.">¡Qué tremendo para usted!</exItem>
+        <exItem label="16.">¡Qué agradable!</exItem>
+        <exItem label="17.">¡Cómo es maravilloso que su familia podría venir!</exItem>
     </EnglishExample>
 <prompt>Escriba ejemplos similares de exclamaciones en su lengua aquí:</prompt>
-        <textBox id="ExclExcl" dataItem="exclExample" rows="5"/>
+       <textBox id="ExclExcl" dataItem="exclExample" cols="80"/>
         <br/>
        <radioGroup id="ExclMTable">
           <groupName dataItem="exclM" default="no">RExclM</groupName>
@@ -66,7 +66,7 @@
           <checkbox id="ExclMPosBefore" dataItem="exclMBefore">Antes de la frase adjetival</checkbox>
           <checkbox id="ExclMPosAfter" dataItem="exclMAfter">Después de la frase adjetival</checkbox>
           <checkbox id="ExclMPosBoth" dataItem="exclMBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="ExclMPosOther" dataItem="exclMOther" >En mi lengua, la palabra especial que expresa una exclamación puede presentarse: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="2"/></checkbox>
+          <checkbox id="ExclMPosOther" dataItem="exclMOther" >En mi lengua, la palabra especial que expresa una exclamación puede presentarse: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70"/></checkbox>
        </checkboxGroup>
        <prompt id="ExclMPosNoCheckPrompt" show="swExclMYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estas palabras especiales que experesan una exclamación en su lengua, o cambia su respuesta de arriba a ‘No’. En este caso, no debe ser ningún ejemplo en el campo de arriba tampoco.</prompt>       
        <instruction id="ExclMInstruction" show="swExclMYes">In the lexicon, add the feature <feature>makeExcl</feature> to each word which signals an exclamation to assure the proper category for the syntax.</instruction>

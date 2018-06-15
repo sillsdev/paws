@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="CoordMain" count="1/4">
+<page id="CoordMain" count="15.1">
 	<title>Constructions Coordonnées</title>
 	<introduction>Cette section se concerne, pour la plupart, de constructions de coordination où il y a une conjonction <technicalTermRef term="ttOvert">explicite</technicalTermRef> entre les parties conjointes (appelées « conjoints »).  On traitera la coordination au niveau de la phrase et dans le syntagme verbal, dans le syntagme nominal, dans les syntagmes <span id="CoordPrepSpan" show="swPPPosPrep">prépositionnels</span><span id="CoordPostSpan" show="swPPPosPost">postpositionnels</span><span id="CoordPBothSpan" show="swPPPosBoth">prépositionnels ou postpositionnels</span>, et dans les syntagmes adjectivaux.  Ensuite, seulement dans le syntagme nominal, on traitera les listes et les constructions appositives.  Il faudra traiter plus tard les sortes de constructions de coordination plus complexes, telles que les trous syntaxiques, et d’autres niveaux possibles de coordination.</introduction>
 	<introduction>En français, les conjonctions qu’on peut utiliser entre les deux conjoints sont <example>et</example>, <example>ou</example>, <example>mais</example> et <example>et/ou</example>.  En plus, il y a des constructions de coordination qui exigent une conjonction initiale, telles que les constructions avec <example>ou...ou</example> et <example>ni...ni</example>.  Certaines langues utilisent aussi un mot avec le sens <example>avec</example> comme une conjonction entre les syntagmes nominaux.</introduction>
@@ -12,7 +12,7 @@
    	<prompt>Entrez ici la/les conjonction(s) que votre langue utilise pour « et »:</prompt>
 		<textBox id="CoordAnd" dataItem="and" rows="3"/>
 		<br/>
-   	<prompt>Entrez ici la/les construction(s) séquentielle(s) que votre langue utilise pour la coordination au niveau de la phrase avec le sens « et puis »:</prompt>
+   	<prompt>Entrez ici la/les construction(s) séquentielle(s) que votre langue utilise pour la coordination au niveau de la phrase avec le sens « et ensuite »:</prompt>
    	<textBox id="CoordSeq" dataItem="andThen" rows="3"/>
    	<br/>
    	<prompt>Entrez ici la/les conjonction(s) qu’utilise votre langue pour « ou »:</prompt>
@@ -60,7 +60,7 @@
       	<prompt><br/>Comment les constructions s’attachent-elles dans la construction de coordination?  Choisissez toutes les options applicables.</prompt>
       	<checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">Comme proclitique qui s’attache au début du deuxième conjoint</checkbox>
       	<checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">Comme enclitique qui s’attache à la fin du premier conjoint</checkbox>
-      	<checkbox id="CoordConjAttachesOther" dataItem="attachesOther">Dans ma langue, les conjonctions peuvent s’attacher dans cette autre façon dans la construction de coordination: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="2"/></checkbox>
+      	<checkbox id="CoordConjAttachesOther" dataItem="attachesOther">Dans ma langue, les conjonctions peuvent s’attacher dans cette autre façon dans la construction de coordination: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
    	<prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">AVERTISSEMENT: Vous n’avez marqué aucune case pour décrire comment les conjonctions peuvent s’attacher dans votre langue.  Veuillez marquer une (ou plusieurs) cases comme il convient, ou changez votre réponse à « Oui, ce sont tous des mots indépendants ».</prompt>
       
@@ -80,6 +80,7 @@
 	   	<radio id="CoordNoConjNo" dataValue="no">Non, quand il n’y a que deux choses conjointes, une conjonction doit être présente entre les deux</radio>
 	   	<radio id="CoordNoConjYes" dataValue="yes">Oui, deux choses peuvent être conjointes sans conjonction entr’elles</radio>
 	   </radioGroup>  
+   	<instruction id="CoordNoConjYesInstruction" show="swCoordNoConjYes">Note that this answer will add a lot of ambiguity in your PC-Patr output.  Consider commenting off some of the coordination rules in your PC-Patr grammar file to reduce the ambiguity as needed.</instruction>
 	   <br/>
 	   <br/>
    	<introduction>En général, la coordination fonctionne entre des catégories semblables.  Pour la coordination au niveau de la phrase, cela veut dire que des phrases déclaratives peuvent être conjointes, comme dans 1-2, ou deux questions, comme dans 3.  Quand la conjonction est celle qui veut dire « mais », une des conjoints doit être négative, comme dans 4.  Des exemples français comprennent:</introduction>
@@ -90,10 +91,10 @@
 			<exItem label="4.">Jean est allé au bureau ce matin mais il n’est pas revenu.</exItem>
 		</EnglishExample>
    	<prompt>Entrez ici des exemples de la coordination de phrases complètes:</prompt>
-		<textBox id="CoordSent" dataItem="sentExample" rows="5"/>
+   	<textBox id="CoordSent" dataItem="sentExample" cols="80"/>
 		<br/>
-   	<prompt>Maintenant, entrez ici des exemples de la coordination de phrases complètes, telles que <example>Marie est allée au magasin et puis elle s’est préparée pour la soirée</example>:</prompt>
-   	<textBox id="CoordSeqSent" dataItem="sentSeqExample" rows="5"/>
+   	<prompt>Maintenant, entrez ici des exemples de la coordination de phrases complètes, telles que <example>Marie est allée au magasin et ensuite elle s’est préparée pour la soirée</example>:</prompt>
+   	<textBox id="CoordSeqSent" dataItem="sentSeqExample" cols="80"/>
    	<br/>
    	<introduction>La coordination de syntagmes verbaux implique deux syntagmes verbaux complets qui ont le même sujet.  Des exemples de la coordination de syntagmes verbaux, avec les conjoints entre crochets, comprennent:</introduction>
 		<EnglishExample>
@@ -102,7 +103,7 @@
 			<exItem label="7.">Je ne [viendrai à la soirée] ni [enverrai ma sœur].</exItem>
 		</EnglishExample>
    	<prompt>Entrez ici  des exemples de la coordination de syntagmes verbaux dans votre langue [sans crochets]:</prompt>
-		<textBox id="CoordVP" dataItem="vpExample" rows="5"/>
+   	<textBox id="CoordVP" dataItem="vpExample" cols="80"/>
 		<br/>
    	<introduction>La coordination de syntagmes nominaux  peut se présenter comme sujets, objets, objets indirects et objets d’une préposition ou d’une postposition, tout comme un syntagme nominal normal.  Des exemples de la coordination de syntagmes nominaux, avec les conjoints entre crochets, comprennent:</introduction>
 		<EnglishExample>
@@ -112,7 +113,7 @@
 			<exItem label="11.">Je viendrai [à la répétition] mais pas [au dîner].</exItem>
 		</EnglishExample>
    	<prompt>Entrez ici des exemples de la coordination de syntagmes nominaux dans votre langue (sans crochets).  Entrez seulement des exemples avec deux conjoints et une conjonction manifeste entre les conjoints.  D’autres sortes de coordination de syntagmes nominaux seront traitées à la page suivante.</prompt>
-		<textBox id="CoordDP" dataItem="dpExample" rows="5"/>
+   	<textBox id="CoordDP" dataItem="dpExample" cols="80"/>
 		<br/>
    	<introduction>Il est normalement possible d’avoir des syntagmes <span id="PPPrepSpan1" show="swPPPosPrep">prépositionnels</span>
    		<span id="PPPostSpan1" show="swPPPosPost">postpositionnels</span>
@@ -128,7 +129,7 @@
    	<prompt>Entrez ici des exemples de coordination de syntagmes <span id="PPPrepSpan" show="swPPPosPrep">prépositionnels</span>
    		<span id="PPPostSpan" show="swPPPosPost">postpositionnels</span>
    		<span id="PPBothSpan" show="swPPPosBoth">prépositionnels et/ou postpositionnels</span> dans votre langue (sans crochets):</prompt>
-		<textBox id="CoordPP" dataItem="coordppExample" rows="5"/>
+   	<textBox id="CoordPP" dataItem="coordppExample" cols="80"/>
 		<br/>
    	<introduction>Finalement, les adjectifs ou les syntagmes adjectivaux peuvent généralement être coordonnés, quand ils modifient un substantif, comme dans 16-18, et quand ils fonctionnent comme prédicat adjectival dans un phrase copulative, comme dans 19-20.  Des exemples français de la coordination de syntagmes adjectivaux, avec les conjoints entre crochets où le cas n’est pas clair, comprennent:</introduction>
 		<EnglishExample>
@@ -139,7 +140,7 @@
 			<exItem label="20.">Cette étoffe est [très lisse] et [soyeuse].</exItem>
 		</EnglishExample>
    	<prompt>Entrez ici des exemples de la coordination de syntagmes adjectivaux dans votre langue (sans crochets):</prompt>
-		<textBox id="CoordAdj" dataItem="adjExample" rows="5"/>
+   	<textBox id="CoordAdj" dataItem="adjExample" cols="80"/>
 		<br/>
 		<br/>
 		<buttons>
@@ -157,6 +158,9 @@
       <whenValue element="pp" attr="pPos" value="both"/>
       <or/>
       <whenValue element="pp" attr="pPos" value="unknown"/>
+   </showWhen>
+   <showWhen id="swCoordNoConjYes">
+      <whenRadio button="CoordNoConjYes"/>
    </showWhen>
    <showWhen id="swCoordWordNotNo">
       <not/><whenRadio button="CoordConjWordNo"/>

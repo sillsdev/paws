@@ -516,7 +516,7 @@
 </xsl:attribute>I expect that Joe will come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends que Jacques va venir à la soirée »</xsl:text>
+<xsl:text>  « Je m’attends à ce que Jacques va venir à la soirée »</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -967,7 +967,7 @@
 </xsl:attribute>I expect that Joe will come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends que Jacques va venir à la soirée »</xsl:text>
+<xsl:text>  « Je m’attends à ce que Jacques va venir à la soirée »</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -1428,7 +1428,7 @@
 </xsl:attribute>I expect Joe will come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends que Jacques va venir à la soirée »</xsl:text>
+<xsl:text>  « Je m’attends à ce que Jacques va venir à la soirée »</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -1828,7 +1828,7 @@
 </xsl:attribute>I expect Joe will come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends que Jacques va venir à la soirée »</xsl:text>
+<xsl:text>  « Je m’attends à ce que Jacques va venir à la soirée »</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>

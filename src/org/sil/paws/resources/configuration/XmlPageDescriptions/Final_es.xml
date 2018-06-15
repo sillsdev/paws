@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="Final" count="1/1">
+<page id="Final" count="18.1">
    <title>Verificación final</title>
    <introduction>
       Usted ha llegado al final del programa Patas. Como una verificación final de su trabajo antes de salir del programa por última vez y comenzar a trabajar con el <span id="NorPracticalSpan1" show="swNotPractical"> archivo para PC-Patr gramática y el</span> archivo para la gramática escritor, mensajes de advertencia se muestran a continuación que se deben tratar. Estos mensajes decirle que usted no ha respondido a una pregunta o que las respuestas que dió a dos preguntas diferentes son incompatibles. Recuerda que si su lengua no parece tener una construcción particular, usted debe comprobar a la opción ‘otra’ y así que se puede decir lo que hace en su lengua.
@@ -139,13 +139,377 @@
    
    <introduction>   
       Una vez que no hay ADVERTENCIA mensajes de arriba, le sugerimos que también revise la página principal en <section number="7.">Los pronombres</section> para asegurarse de que le pidió el número correcto de sistemas de pronombres para su lengua. Si no, por favor siga las instrucciones sobre cómo cambiar su respuesta en <section number="1.">La tipología - Sistema de caso</section>. Si usted hace un cambio con respecto al sistema de caso cambiará muchas otras respuestas a lo largo, así que asegúrese de volver aquí después de rehacer los pronombres para ver si cualquier nuevos mensajes de advertencia necesitan ser atendidos.
-            <br/>
-      <br/>
-      <br/>
-      Ahora usted ha completado el programa Patas. <span id="NotPracticalSpan" show="swNotPractical"> Por favor, guarde el archivo de PC-Patr
-         gramática (.grm) con un nombre diferente antes de revisarlo.
-         Póngase en contacto con <a href="mailto:cheri_black@sil.org"> Cheri_Black@sil.org</a> para obtener ayuda sobre cómo proceder o cómo manejar las construcciones específicas si usted usa PC-Patr para parsear y desambiguación. </span>
-      Puede ver los boradores de la gramática si haga doble clic en los archivos de .htm.<br></br> <br/>
+      </introduction>
+     <instruction id="NotPracticalPrompt" show="swNotPractical">Please save the PC-Patr 
+          grammar file (.grm) with a different name before editing it.  Contact <a href="mailto:cheri_black@sil.org">Cheri_Black@sil.org</a> for help on how to proceed or how to handle specific constructions if you are using PC-Patr for parsing and disambiguation.  <br/><br/>
+         <span id="SpecialRulesSPan" show="swContentCheckBoxOtherYes">The following table provides a a list of the places where you noted that your language does something different than what was covered in PAWS.  These will require special rules in PC-Patr.  We suggest you copy and paste this table into a Word or Open Office Writer or XLingPaper file before exiting PAWS, so that this information will be available when you work with a consultant on editing the PC-Patr grammar file. </span>
+  </instruction>
+      <table id="SpecialRulesTable" show="swContentCheckBoxOtherYes" class="instruction">
+    <tr><th>Construction</th><th>Description or Question</th><th>Your Answer</th></tr>
+         <tr id="rCaseSplit" show="swCaseSplit"><td>Case system overall</td>
+            <td>My language has a Nominative-Accusative system normally, but the Ergative-Absolutive system is used under the following grammatical conditions:  (Note that all the rules for both the Nominative-Accusative and Ergative-Absolutive case systems have been added to your PC-Patr grammar file.  You will need to add the appropriate conditions to the rules, based on your answer here.)</td>
+            <td><contentCheckBoxOther contentLoc="typology/splitConditions" id="cCaseSplit"/></td>
+         </tr>
+         <tr id="rQPNPDegreePosOther" show="swQPNPDegreePosOtherYes"><td>Wide scope Quantifiers in DP</td>
+            <td>Where do these degree elements or wide scope quantifiers which are written as independent words occur with respect to the rest of the nominal phrase?</td>
+            <td><contentCheckBoxOther contentLoc="qp/npDegreePosOther" id="cQPNPDegreePosOther"/></td>
+         </tr>
+         <tr id="rQPNPDegreeTypeOther" show="swQPNPDegreeTypeOtherYes"><td>Wide scope Quantifiers in DP</td>
+            <td>Where do these degree elements or wide scope quantifiers that are not independent words attach within the nominal phrase?</td>
+            <td><contentCheckBoxOther contentLoc="qp/npDegreeTypeOther" id="cQPNPDegreeTypeOther"/></td>
+         </tr>
+         <tr id="rQPDeterminerPosOther" show="swQPDeterminerPosOtherYes"><td>Quantifier determiners in DP</td>
+            <td>Where do these quantifiers which are written as independent words and act as the only determiner in the nominal phrase occur with respect to the rest of the nominal phrase?</td>
+            <td><contentCheckBoxOther contentLoc="qp/determinerPosOther" id="cQPDeterminerPosOther"/></td>
+         </tr>
+         <tr id="rQPDeterminerTypeOther" show="swQPDeterminerTypeOtherYes"><td>Quantifier determiners in DP</td>
+            <td>Where do these quantifiers which act as the only determiner in the nominal phrase that are not independent words attach within the nominal phrase?</td>
+            <td><contentCheckBoxOther contentLoc="qp/determinerTypeOther" id="cQPDeterminerTypeOther"/></td>
+         </tr>
+         <tr id="rQPDegreeOther" show="swQPDegreeOtherYes"><td>Degree words in QP</td>
+            <td>Where do the degree words occur with respect to the quantifier?</td>
+            <td><contentCheckBoxOther contentLoc="qp/degreeOther" id="cQPDegreeOther"/></td>
+         </tr>
+         <tr id="rQPDegreeTypeOther" show="swQPDegreeTypeOtherYes"><td>Degree modifiers in QP</td>
+            <td>Where do the degree elements that are not independent words attach with respect to the quantifier?</td>
+            <td><contentCheckBoxOther contentLoc="qp/degreeTypeOther" id="cQPDegreeTypeOther"/></td>
+         </tr>
+         <tr id="rQPOrdinalOther" show="swQPOrdinalOtherYes"><td>Ordinal Numbers in QP</td>
+            <td>How are ordinal numbers formed in your language?</td>
+            <td><contentCheckBoxOther contentLoc="qp/ordinalOther" id="cQPOrdinalOther"/></td>
+         </tr>
+         <tr id="rQPOrdinalWordOther" show="swQPOrdinalWordOtherYes"><td>Ordinal Numbers in QP</td>
+            <td>Where does the ordinal word occur with respect to the cardinal number to form the ordinal number?</td>
+            <td><contentCheckBoxOther contentLoc="qp/ordinalWordOther" id="cQPOrdinalWordOther"/></td>
+         </tr>
+         <tr id="rQPOrdinalNumOther" show="swQPOrdinalNumOtherYes"><td>Ordinal Numbers in QP</td>
+            <td>Where do ordinal numbers and the words for ‘next’ and ‘last’ occur with respect to the cardinal number in phrases like ‘the first twenty boys’ or ‘the last five books’,? </td>
+            <td><contentCheckBoxOther contentLoc="qp/ordinalNumOther" id="cQPOrdinalNumOther"/></td>
+         </tr>
+         <tr id="rAdvPTemporalDegreeOther" show="swAdvPTemporalDegreeOtherYes"><td>Degree words in AdvP</td>
+            <td>My language does the following to intensify the meaning of the temporal adverb:</td>
+            <td><contentCheckBoxOther contentLoc="advp/temporalDegreeOther" id="cAdvPTemporalDegreeOther"/></td>
+         </tr>
+         <tr id="rAdvPTemporalDegreeWordOther" show="swAdvPTemporalDegreeWordOtherYes"><td>Degree words in AdvP</td>
+            <td>Where do the degree words occur with respect to the temporal adverb?</td>
+            <td><contentCheckBoxOther contentLoc="advp/temporalDegreeWordOther" id="cAdvPTemporalDegreeWordOther"/></td>
+         </tr>
+         <tr id="rAdvPTemporalIndefQOther" show="swAdvPTemporalIndefQOtherYes"><td>Indefinites in AdvP</td>
+            <td>How does your language express the temporal adverbial indefinites that include a quantifier, such as ‘everytime’, ‘anytime’ and ‘sometime’?</td>
+            <td><contentCheckBoxOther contentLoc="advp/temporalIndefQOther" id="cAdvPTemporalIndefQOther"/></td>
+         </tr>
+         <tr id="rAdvPTemporalIndefTypeQPQOther" show="swAdvPTemporalIndefTypeQPQOtherYes"><td>Indefinites in AdvP</td>
+            <td>Where does the quantifier occur with respect to the general temporal noun in these temporal indefinites?</td>
+            <td><contentCheckBoxOther contentLoc="advp/temporalIndefTypeQPQOther" id="cAdvPTemporalIndefTypeQPQOther"/></td>
+         </tr>
+         <tr id="rAdvPTemporalIndefIntOther" show="swAdvPTemporalIndefIntOtherYes"><td>Indefinites in AdvP</td>
+            <td>How does your language express the temporal adverbial indefinites that are based on the temporal interrogative word and an indefinite word, such as ‘whenever’?</td>
+            <td><contentCheckBoxOther contentLoc="advp/temporalIndefIntOther" id="cAdvPTemporalIndefIntOther"/></td>
+         </tr>
+         <tr id="rAdvPTemporalIndefTypeIntOther" show="swAdvPTemporalIndefTypeIntOtherYes"><td>Indefinites in AdvP</td>
+            <td>Where does the temporal interrogative word occur with respect to the indefinite word in these temporal indefinites?</td>
+            <td><contentCheckBoxOther contentLoc="advp/temporalIndefTypeIntOther" id="cAdvPTemporalIndefTypeIntOther"/></td>
+         </tr>
+         <tr id="rAdvPLocativeDegreeOther" show="swAdvPLocativeDegreeOtherYes"><td>Degree words in AdvP</td>
+            <td>My language does the following to intensify the meaning of the locative adverb:</td>
+            <td><contentCheckBoxOther contentLoc="advp/locativeDegreeOther" id="cAdvPLocativeDegreeOther"/></td>
+         </tr>
+         <tr id="rAdvPLocativeDegreeWordOther" show="swAdvPLocativeDegreeWordOtherYes"><td>Degree words in AdvP</td>
+            <td>Where do the degree words occur with respect to the locative adverb?</td>
+            <td><contentCheckBoxOther contentLoc="advp/locativeDegreeWordOther" id="cAdvPLocativeDegreeWordOther"/></td>
+         </tr>
+         <tr id="rAdvPLocativeIndefQOther" show="swAdvPLocativeIndefQOtherYes"><td>Indefinites in AdvP</td>
+            <td>How does your language express the locative adverbial indefinites that include a quantifier, such as ‘everywhere’ and ‘somewhere’?</td>
+            <td><contentCheckBoxOther contentLoc="advp/locativeIndefQOther" id="cAdvPLocativeIndefQOther"/></td>
+         </tr>
+         <tr id="rAdvPLocativeIndefTypeQPQOther" show="swAdvPLocativeIndefTypeQPQOtherYes"><td>Indefinites in AdvP</td>
+            <td>Where does the quantifier occur with respect to the general locative noun in these locative indefinites?</td>
+            <td><contentCheckBoxOther contentLoc="advp/locativeIndefTypeQPQOther" id="cAdvPLocativeIndefTypeQPQOther"/></td>
+         </tr>
+         <tr id="rAdvPLocativeIndefIntOther" show="swAdvPLocativeIndefIntOtherYes"><td>Indefinites in AdvP</td>
+            <td>How does your language express the locative adverbial indefinites that are based on the locative interrogative word and an indefinite word, such as ‘wherever’?</td>
+            <td><contentCheckBoxOther contentLoc="advp/locativeIndefIntOther" id="cAdvPLocativeIndefIntOther"/></td>
+         </tr>
+         <tr id="rAdvPLocativeIndefTypeIntOther" show="swAdvPLocativeIndefTypeIntOtherYes"><td>Indefinites in AdvP</td>
+            <td>Where does the locative interrogative word occur with respect to the indefinite word in these locative indefinites?</td>
+            <td><contentCheckBoxOther contentLoc="advp/locativeIndefTypeIntOther" id="cAdvPLocativeIndefTypeIntOther"/></td>
+         </tr>
+         <tr id="rAdvPMannerWordDegreeOther" show="swAdvPMannerWordDegreeOtherYes"><td>Degree words in AdvP</td>
+            <td>How does your language express the intensity of the manner adverbs which are independent words?</td>
+            <td><contentCheckBoxOther contentLoc="advp/mannerWordDegreeOther" id="cAdvPMannerWordDegreeOther"/></td>
+         </tr>
+         <tr id="rAdvPMannerDegreeWordOther" show="swAdvPMannerDegreeWordOtherYes"><td>Degree words in AdvP</td>
+            <td>Where do the degree words occur with respect to the manner adverb?</td>
+            <td><contentCheckBoxOther contentLoc="advp/mannerDegreeWordOther" id="cAdvPMannerDegreeWordOther"/></td>
+         </tr>
+         <tr id="rAdvPMannerAffixDegreeOther" show="swAdvPMannerAffixDegreeOtherYes"><td>Degree affixes in AdvP</td>
+            <td>How does your language express the intensity of the manner adverbs which are affixes?</td>
+            <td><contentCheckBoxOther contentLoc="advp/mannerAffixDegreeOther" id="cAdvPMannerAffixDegreeOther"/></td>
+         </tr>
+         <tr id="rAdjPModifiersOther" show="swAdjPModifiersOtherYes"><td>Modifiers in AdjP</td>
+            <td>How does your language modify adjectives?</td>
+            <td><contentCheckBoxOther contentLoc="adjp/modifiersOther" id="cAdjPModifiersOther"/></td>
+         </tr>
+         <tr id="rAdjPDegreeOther" show="swAdjPDegreeOtherYes"><td>Modifiers in AdjP</td>
+            <td>Where do the degree words occur with respect to the adjective?</td>
+            <td><contentCheckBoxOther contentLoc="adjp/degreeOther" id="cAdjPDegreeOther"/></td>
+         </tr>
+         <tr id="rAdjPMannerOther" show="swAdjPMannerOtherYes"><td>Modifiers in AdjP</td>
+            <td>Where do the manner adverbs occur with respect to the adjective?</td>
+            <td><contentCheckBoxOther contentLoc="adjp/mannerOther" id="cAdjPMannerOther"/></td>
+         </tr>
+         <tr id="rNPClassifierSpecificPosOther" show="swNPClassifierSpecificPosOtherYes"><td>Classifiers in DP</td>
+            <td>Where do the classifiers occur with respect to these wide-scope quantifiers or degree words and the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/classifierSpecificPosOther" id="cNPClassifierSpecificPosOther"/></td>
+         </tr>
+         <tr id="rNPAgreeOtherFeat" show="swNPAgreeOtherFeatYes"><td>Agreement in NP/DP</td>
+            <td>Which additional features on nouns may or must be marked on modifiers so that they agree with the head noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/agreeOtherFeat" id="cNPAgreeOtherFeat"/></td>
+         </tr>
+         <tr id="rNPCaseWordOther" show="swNPCaseWordOtherYes"><td>Case marking in DP</td>
+            <td>Where do these case markers which are written as independent words occur with respect to the rest of the nominal phrase?</td>
+            <td><contentCheckBoxOther contentLoc="np/caseWordOther" id="cNPCaseWordOther"/></td>
+         </tr>
+         <tr id="rNPCaseAttachesOther" show="swNPCaseAttachesOtherYes"><td>Case marking in DP</td>
+            <td>Where do these case markers that are not independent words attach within the nominal phrase?</td>
+            <td><contentCheckBoxOther contentLoc="np/caseAttachesOther" id="cNPCaseAttachesOther"/></td>
+         </tr>
+         <tr id="rNPArtOnlyOther" show="swNPArtOnlyOtherYes"><td>Articles in DP</td>
+            <td>Where does the article occur with respect to the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/artOnlyOther" id="cNPArtOnlyOther"/></td>
+         </tr>
+         <tr id="rNPDemOnlyOther" show="swNPDemOnlyOtherYes"><td>Demonstratives in DP</td>
+            <td>Where does the demonstrative occur with respect to the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/demOnlyOther" id="cNPDemOnlyOther"/></td>
+         </tr>
+         <tr id="rNPClassifierSpecificDemPosOther" show="swNPClassifierSpecificDemPosOtherYes"><td>Classifiers in DP</td>
+            <td>Where do the classifiers occur with respect to the demonstratives and the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/classifierSpecificDemPosOther" id="cNPClassifierSpecificDemPosOther"/></td>
+         </tr>
+         <tr id="rNPDemOrArtPosOther" show="swNPDemOrArtPosOtherYes"><td>Articles or Demonstratives in DP</td>
+            <td>Where does the demonstrative or article occur with respect to the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/demOrArtPosOther" id="cNPDemOrArtPosOther"/></td>
+         </tr>
+         <tr id="rNPDemAndArtArtOther" show="swNPDemAndArtArtOtherYes"><td>Articles in DP</td>
+            <td>Where does the article occur with respect to the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/demAndArtArtOther" id="cNPDemAndArtArtOther"/></td>
+         </tr>
+         <tr id="rNPDemAndArtDemOther" show="swNPDemAndArtDemOtherYes"><td>Demonstratives in DP</td>
+            <td>Where does the demonstrative occur with respect to the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/demAndArtDemOther" id="cNPDemAndArtDemOther"/></td>
+         </tr>
+         <tr id="rNPClassifierSpecificDemBothPosOther" show="swNPClassifierSpecificDemBothPosOtherYes"><td>Classifiers in DP</td>
+            <td>Where do the classifiers occur with respect to the demonstratives and the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/classifierSpecificDemBothPosOther" id="cNPClassifierSpecificDemBothPosOther"/></td>
+         </tr>
+         <tr id="rNPPossWordOther" show="swNPPossWordOtherYes"><td>Possessors in NP</td>
+            <td>Where does the possessive marker word occur with respect to the possessor?</td>
+            <td><contentCheckBoxOther contentLoc="np/possWordOther" id="cNPPossWordOther"/></td>
+         </tr>
+         <tr id="rNPQPPosOther" show="swNPQPPosOtherYes"><td>Quantifiers and numbers in NP</td>
+            <td>Where do narrow scope quantifier phrases (including cardinal numbers) occur with respect to the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/qpPosOther" id="cNPQPPosOther"/></td>
+         </tr>
+         <tr id="rNPClassifierSpecificQPosOther" show="swNPClassifierSpecificQPosOtherYes"><td>Classifiers in NP</td>
+            <td>Where do the classifiers occur with respect to the quantifier or number and the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/classifierSpecificQPosOther" id="cNPClassifierSpecificQPosOther"/></td>
+         </tr>
+         <tr id="rNPAdjPosOther" show="swNPAdjPosOtherYes"><td>Adjectives in NP</td>
+            <td>Where do adjective phrases occur with respect to the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/adjPosOther" id="cNPAdjPosOther"/></td>
+         </tr>
+         <tr id="rNPClassifierSpecificAdjPosOther" show="swNPClassifierSpecificAdjPosOtherYes"><td>Classifiers in NP</td>
+            <td>Where do the classifiers occur with respect to the adjective and the noun?</td>
+            <td><contentCheckBoxOther contentLoc="np/classifierSpecificAdjPosOther" id="cNPClassifierSpecificAdjPosOther"/></td>
+         </tr>
+         <tr id="rPronDependentTypeOther" show="swPronDependentTypeOtherYes"><td>Pronouns in NP</td>
+            <td>Where do the dependent pronouns attach to the verb or noun or other words?</td>
+            <td><contentCheckBoxOther contentLoc="pron/dependentTypeOther" id="cPronDependentTypeOther"/></td>
+         </tr>
+         <tr id="rPronPossOther" show="swPronPossOtherYes"><td>Pronouns in NP</td>
+            <td>How are the stand alone possessive pronouns (or phrases) built in your language?</td>
+            <td><contentCheckBoxOther contentLoc="pron/possOther" id="cPronPossOther"/></td>
+         </tr>
+         <tr id="rPronReflOther" show="swPronReflOtherYes"><td>Pronouns in NP</td>
+            <td>How are the reflexives that fill the object position formed in your language?</td>
+            <td><contentCheckBoxOther contentLoc="pron/reflOther" id="cPronReflOther"/></td>
+         </tr>
+         <tr id="rPronRecipOther" show="swPronRecipOtherYes"><td>Pronouns in NP</td>
+            <td>How are the reciprocals that fill the object position formed in your language?</td>
+            <td><contentCheckBoxOther contentLoc="pron/recipOther" id="cPronRecipOther"/></td>
+         </tr>
+         <tr id="rPronIndefQOther" show="swPronIndefQOtherYes"><td>Indefinites in NP</td>
+            <td>How does your language express the indefinites that include a quantifier, such as ‘everybody’ and ‘something’?</td>
+            <td><contentCheckBoxOther contentLoc="pron/indefQOther" id="cPronIndefQOther"/></td>
+         </tr>
+         <tr id="rPronIndefTypeQPQOther" show="swPronIndefTypeQPQOtherYes"><td>Indefinites in NP</td>
+            <td>Where does the quantifier occur with respect to the generic noun in these indefinites?</td>
+            <td><contentCheckBoxOther contentLoc="pron/indefTypeQPQOther" id="cPronIndefTypeQPQOther"/></td>
+         </tr>
+         <tr id="rPronIndefIntOther" show="swPronIndefIntOtherYes"><td>Indefinites in NP</td>
+            <td>How does your language express the indefinites that are based on an interrogative pronoun and an indefinite word, such as ‘whoever’ and ‘whatever’?</td>
+            <td><contentCheckBoxOther contentLoc="pron/indefIntOther" id="cPronIndefIntOther"/></td>
+         </tr>
+         <tr id="rPronIndefTypeIntOther" show="swPronIndefTypeIntOtherYes"><td>Indefinites in NP</td>
+            <td>Where does the interrogative pronoun occur with respect to the indefinite word in these indefinites?</td>
+            <td><contentCheckBoxOther contentLoc="pron/indefTypeIntOther" id="cPronIndefTypeIntOther"/></td>
+         </tr>
+         <tr id="rPPModifierOther" show="swPPModifierOtherYes"><td>Modifiers in PP</td>
+            <td>Which other modifiers occur either before or after PPs as independent words?</td>
+            <td><contentCheckBoxOther contentLoc="pp/ppModifierOther" id="cPPModifierOther"/></td>
+         </tr>
+         <tr id="rPPDegreePosOther" show="swPPDegreePosOtherYes"><td>Modifiers in PP</td>
+            <td>Where do these degree words occur with respect to the rest of the PP? </td>
+            <td><contentCheckBoxOther contentLoc="pp/ppDegreePosOther" id="cPPDegreePosOther"/></td>
+         </tr>
+         <tr id="rPPOrdinalPosOther" show="swPPOrdinalPosOtherYes"><td>Modifiers in PP</td>
+            <td>Where do these ordinals occur with respect to the rest of the PP? </td>
+            <td><contentCheckBoxOther contentLoc="pp/ppOrdinalPosOther" id="cPPOrdinalPosOther"/></td>
+         </tr>
+         <tr id="rPPMannerPosOther" show="swPPMannerPosOtherYes"><td>Modifiers in PP</td>
+            <td>Where do these manner adverbials occur with respect to the rest of the PP? </td>
+            <td><contentCheckBoxOther contentLoc="pp/ppMannerPosOther" id="cPPMannerPosOther"/></td>
+         </tr>
+         <tr id="rPPLocativePosOther" show="swPPLocativePosOtherYes"><td>Modifiers in PP</td>
+            <td>Where do these locative adverbials occur with respect to the rest of the PP? </td>
+            <td><contentCheckBoxOther contentLoc="pp/ppLocativePosOther" id="cPPLocativePosOther"/></td>
+         </tr>
+         <tr id="rIPProDropOther" show="swIPProDropOtherYes"><td>Pro-Drop in IP/VP</td>
+            <td>Under what other circumstances can a subject be missing from its normal position?</td>
+            <td><contentCheckBoxOther contentLoc="ip/proDropOther" id="cIPProDropOther"/></td>
+         </tr>
+         <tr id="rIPConditionWordOther" show="swIPConditionWordOtherYes"><td>Conditionals in VP</td>
+            <td>Where do the condition markers which are written as independent words occur with respect to the rest of the conditional phrase? </td>
+            <td><contentCheckBoxOther contentLoc="ip/conditionWordOther" id="cIPConditionWordOther"/></td>
+         </tr>
+         <tr id="rIPConditionOther" show="swIPConditionOtherYes"><td>Conditionals in VP</td>
+            <td>Where do the condition markers that are not independent words attach within the conditional phrase? </td>
+            <td><contentCheckBoxOther contentLoc="ip/conditionOther" id="cIPConditionOther"/></td>
+         </tr>
+         <tr id="rIPSubjunctiveCondWordOther" show="swIPSubjunctiveCondWordOtherYes"><td>Subjunctives in VP</td>
+            <td>Where do the subjunctive condition markers which are written as independent words occur with respect to the rest of the conditional phrase? </td>
+            <td><contentCheckBoxOther contentLoc="ip/subjunctiveCondWordOther" id="cIPSubjunctiveCondWordOther"/></td>
+         </tr>
+         <tr id="rIPSubjunctiveCondOther" show="swIPSubjunctiveCondOtherYes"><td>Subjunctives in VP</td>
+            <td>Where do the subjunctive condition markers that are not independent words attach within the conditional phrase? </td>
+            <td><contentCheckBoxOther contentLoc="ip/subjunctiveCondOther" id="cIPSubjunctiveCondOther"/></td>
+         </tr>
+         <tr id="rIPExistOther" show="swIPExistOtherYes"><td>Existentials in VP</td>
+            <td>What other special elements are used in your language especially in existential sentences?</td>
+            <td><contentCheckBoxOther contentLoc="ip/existOther" id="cIPExistOther"/></td>
+         </tr>
+         <tr id="rIPCausativeOther" show="swIPCausativeOtherYes"><td>Causatives in VP</td>
+            <td>What other ways are used in your language to express causatives?</td>
+            <td><contentCheckBoxOther contentLoc="ip/causativeOther" id="cIPCausativeOther"/></td>
+         </tr>
+         <tr id="rIPAntipassiveOther" show="swIPAntipassiveOtherYes"><td>Antipassives in VP</td>
+            <td>What other ways are used in your language to express antipassives?</td>
+            <td><contentCheckBoxOther contentLoc="ip/antipassiveOther" id="cIPAntipassiveOther"/></td>
+         </tr>
+         <tr id="rCompOther" show="swCompOtherYes"><td>Complementizers in CP</td>
+            <td>Where do the complementizers which are written as independent words occur with respect to the rest of the complement clause? </td>
+            <td><contentCheckBoxOther contentLoc="comp/compOther" id="cCompOther"/></td>
+         </tr>
+         <tr id="rCompAttachesOther" show="swCompAttachesOtherYes"><td>Complementizers in CP</td>
+            <td>Where do the complementizers that are not independent words attach within the complement clause? </td>
+            <td><contentCheckBoxOther contentLoc="comp/compAttachesOther" id="cCompAttachesOther"/></td>
+         </tr>
+         <tr id="rQMainYNWordOther" show="swQMainYNWordOtherYes"><td>Question markers in CP</td>
+            <td>Where do the Yes/No question markers which are written as independent words occur with respect to the rest of the question? </td>
+            <td><contentCheckBoxOther contentLoc="q/mainYNWordOther" id="cQMainYNWordOther"/></td>
+         </tr>
+         <tr id="rQMainYNCliticOther" show="swQMainYNCliticOtherYes"><td>Question markers in CP</td>
+            <td>Where do the Yes/No question markers that are not independent words attach within the question? </td>
+            <td><contentCheckBoxOther contentLoc="q/mainYNCliticOther" id="cQMainYNCliticOther"/></td>
+         </tr>
+         <tr id="rQEmbYNWordOther" show="swQEmbYNWordOtherYes"><td>Question markers in CP</td>
+            <td>Where do the Yes/No question markers which are written as independent words occur with respect to the rest of the embedded question? </td>
+            <td><contentCheckBoxOther contentLoc="q/embYNWordOther" id="cQEmbYNWordOther"/></td>
+         </tr>
+         <tr id="rQEmbYNCliticOther" show="swQEmbYNCliticOtherYes"><td>Question markers in CP</td>
+            <td>Where do the Yes/No question markers that are not independent words attach within the embedded question? </td>
+            <td><contentCheckBoxOther contentLoc="q/embYNCliticOther" id="cQEmbYNCliticOther"/></td>
+         </tr>
+         <tr id="rQMainContWordOther" show="swQMainContWordOtherYes"><td>Question markers in CP</td>
+            <td>Where do the question markers which are written as independent words occur with respect to the rest of the question? </td>
+            <td><contentCheckBoxOther contentLoc="q/mainContWordOther" id="cQMainContWordOther"/></td>
+         </tr>
+         <tr id="rQMainContVSOOther" show="swQMainContVSOOtherYes"><td>Question markers in CP</td>
+            <td>Where do the question markers which are written as independent words occur with respect to the rest of the question? </td>
+            <td><contentCheckBoxOther contentLoc="q/mainContVSOOther" id="cQMainContVSOOther"/></td>
+         </tr>
+         <tr id="rQMainContCliticOther" show="swQMainContCliticOtherYes"><td>Question markers in CP</td>
+            <td>Where do the question markers that are not independent words attach within the question? </td>
+            <td><contentCheckBoxOther contentLoc="q/mainContCliticOther" id="cQMainContCliticOther"/></td>
+         </tr>
+         <tr id="rQEmbContWordOther" show="swQEmbContWordOtherYes"><td>Question markers in CP</td>
+            <td>Where do the question markers which are written as independent words occur with respect to the rest of the embedded question? </td>
+            <td><contentCheckBoxOther contentLoc="q/embContWordOther" id="cQEmbContWordOther"/></td>
+         </tr>
+         <tr id="rQEmbContVSOOther" show="swQEmbContVSOOtherYes"><td>Question markers in CP</td>
+            <td>Where do the question markers which are written as independent words occur with respect to the rest of the embedded question? </td>
+            <td><contentCheckBoxOther contentLoc="q/embContVSOOther" id="cQEmbContVSOOther"/></td>
+         </tr>
+         <tr id="rQEmbContCliticOther" show="swQEmbContCliticOtherYes"><td>Question markers in CP</td>
+            <td>Where do the question markers that are not independent words attach within the embedded question? </td>
+            <td><contentCheckBoxOther contentLoc="q/embContCliticOther" id="cQEmbContCliticOther"/></td>
+         </tr>
+         <tr id="rRelclRelTypeOther" show="swRelclRelTypeOtherYes"><td>Relative clauses in CP</td>
+            <td>What other types of relative clauses does your language have?</td>
+            <td><contentCheckBoxOther contentLoc="relcl/relTypeOther" id="cRelclRelTypeOther"/></td>
+         </tr>
+         <tr id="rRelclRelWordOther" show="swRelclRelWordOtherYes"><td>Relative clauses in CP</td>
+            <td>Where does the relative marker word occur with respect to the sentence part of the relative clause? </td>
+            <td><contentCheckBoxOther contentLoc="relcl/relWordOther" id="cRelclRelWordOther"/></td>
+         </tr>
+         <tr id="rNegNPDegreeNegWordOther" show="swNegNPDegreeNegWordOtherYes"><td>Neg in DP</td>
+            <td>Where do the negative elements which are written as independent words occur with respect to the rest of the nominal phrase? </td>
+            <td><contentCheckBoxOther contentLoc="neg/npDegreeNegWordOther" id="cNegNPDegreeNegWordOther"/></td>
+         </tr>
+         <tr id="rNegNPDegreeNegOther" show="swNegNPDegreeNegOtherYes"><td>Neg in DP</td>
+            <td>Where do the negative elements that are not independent words attach within the nominal phrase? </td>
+            <td><contentCheckBoxOther contentLoc="neg/npDegreeNegOther" id="cNegNPDegreeNegOther"/></td>
+         </tr>
+         <tr id="rNegTemporalTypeOther" show="swNegTemporalTypeOtherYes"><td>Negatives in AdvP</td>
+            <td>How else does your language express the negative temporal meaning of 'never' or 'at no time'? </td>
+            <td><contentCheckBoxOther contentLoc="neg/negTemporalTypeOther" id="cNegTemporalTypeOther"/></td>
+         </tr>
+         <tr id="rNegTemporalAdverbWordOther" show="swNegTemporalAdverbWordOtherYes"><td>Negatives in AdvP</td>
+            <td>Where do the negative words occur with respect to the positive temporal adverb?  </td>
+            <td><contentCheckBoxOther contentLoc="neg/negTemporalAdverbWordOther" id="cNegTemporalAdverbWordOther"/></td>
+         </tr>
+         <tr id="rNegLocativeTypeOther" show="swNegLocativeTypeOtherYes"><td>Negatives in AdvP</td>
+            <td>How else does your language express the negative locative meaning of 'nowhere' or 'at no place'? </td>
+            <td><contentCheckBoxOther contentLoc="neg/negLocativeTypeOther" id="cNegLocativeTypeOther"/></td>
+         </tr>
+         <tr id="rNegLocativeAdverbWordOther" show="swNegLocativeAdverbWordOtherYes"><td>Negatives in AdvP</td>
+            <td>Where do the negative words occur with respect to the positive locative adverb?  </td>
+            <td><contentCheckBoxOther contentLoc="neg/negLocativeAdverbWordOther" id="cNegLocativeAdverbWordOther"/></td>
+         </tr>
+         <tr id="rNegVerbalOther" show="swNegVerbalOtherYes"><td>Negatives in IP or VP</td>
+            <td>How else does your language express negation on either an auxiliary or the verb?</td>
+            <td><contentCheckBoxOther contentLoc="neg/negVerbalOther" id="cNegVerbalOther"/></td>
+         </tr>
+         <tr id="rCoordAttachesOther" show="swCoordAttachesOtherYes"><td>Coordination in S, CP, IP, VP, DP, AdjP, AdvP, QP</td>
+            <td>In my language, the conjunctions may attach in this other way within the coordination construction: </td>
+            <td><contentCheckBoxOther contentLoc="coord/attachesOther" id="cCoordAttachesOther"/></td>
+         </tr>
+         <tr id="rFocusTopicMarkerOther" show="swFocusTopicMarkerOtherYes"><td>TopicP</td>
+            <td>Where does the topic marker occur with respect to the topic itself? </td>
+            <td><contentCheckBoxOther contentLoc="focus/topicMarkerOther" id="cFocusTopicMarkerOther"/></td>
+         </tr>
+         <tr id="rFocusFocusMarkerOther" show="swFocusFocusMarkerOtherYes"><td>FocusP</td>
+            <td>Where does the focus marker occur with respect to the focused phrase itself? </td>
+            <td><contentCheckBoxOther contentLoc="focus/focusMarkerOther" id="cFocusFocusMarkerOther"/></td>
+         </tr>
+         <tr id="rExclExclMOther" show="swExclExclMOtherYes"><td>Exclamations in S</td>
+            <td>Where does the particular word or words that signal an exclamation occur with respect to the adjective phrase? </td>
+            <td><contentCheckBoxOther contentLoc="excl/exclMOther" id="cExclExclMOther"/></td>
+         </tr>
+      </table>
+   
+ <introduction>Ahora usted ha completado el programa Patas. 
+      Puede ver los boradores de la gramática si haga doble clic en los archivos de _es.htm.<br></br> <br/>
       Por favor, guarde las versiones .xml con un nombre diferente antes de usted comience a corregirlas. Para un editor de XML agradable para la gramática, personalmente preferimos XMLMind XML Editor que hace revisar e imprimir una versión en pdf mucho más fácil,. Usted puede obtener más información en  <a href="http://www.xlingpaper.org/">http://www.xlingpaper.org/</a>.
       <br/> <br/>Usted ahora ha terminado el programa de PATAS. <br></br>
       Ahora puede salir el programa por su tiempo final. ¡ Felicidades!
@@ -157,12 +521,1056 @@
             <button id="FinalNext" value="Next" goto="Contents_es.htm"/>
         </buttons>
     </form>
-   <showWhen id="swNotPractical">
+    <showWhen id="swNotPractical">
       <whenValue  element="paws" attr="outputGrammar" value="True"/>
    </showWhen>
    <showWhen id="swPractical">
       <whenValue  element="paws" attr="outputGrammar" value="False"/>
    </showWhen>
+   <showWhen id="swContentCheckBoxOtherYes">
+      <whenValue  element="paws" attr="outputGrammar" value="True"/>
+      <and/>
+      <openParen/>
+      <whenValue element="typology" attr="case" value="split"/>
+      <or/>
+      <whenValue element="qp/npDegreePosOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="npDegree" value="no"/>
+      <or/>
+      <whenValue element="qp/npDegreeTypeOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="npDegree" value="yes"/>
+      <or/>
+      <whenValue element="qp/determinerPosOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="determinerType" value="no"/>
+      <and/>
+      <whenValue element="qp" attr="determiner" value="yes"/>
+      <or/>
+      <whenValue element="qp/determinerPosOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="determinerType" value="no"/>
+      <and/>
+      <whenValue element="qp" attr="determiner" value="some"/>
+      <or/>
+      <whenValue element="qp/determinerTypeOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="determinerType" value="yes"/>
+      <or/>
+      <whenValue element="qp/degreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp" attr="degree" value="yes"/>
+      <or/>
+      <whenValue element="qp/degreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp" attr="degree" value="attaches"/>
+      <or/>
+      <whenValue element="qp/degreeTypeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp" attr="degree" value="some"/>
+      <or/>
+      <whenValue element="qp/degreeTypeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp" attr="degree" value="some"/>
+      <or/>
+      <whenValue element="qp/ordinalOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="qp/ordinalWordOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp/ordinalWord" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="qp/ordinalNumOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="advp/temporalDegreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="temporalDegree" value="yes"/>
+      <or/>
+      <whenValue element="advp/temporalDegreeWordOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/temporalDegreeWord" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="temporalDegree" value="yes"/>
+ <or/>
+      <whenValue element="advp/temporalIndefQOther" attr="checked" value="yes"/>
+ <or/>
+      <whenValue element="advp/temporalIndefTypeQPQOther" attr="checked" value="yes"/>
+         <and/>
+         <whenValue element="advp/temporalIndefQPhrase" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="advp/temporalIndefIntOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="advp/temporalIndefTypeIntOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/temporalIndefIntPhrase" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="advp/locativeDegreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="locativeDegree" value="yes"/>
+      <or/>
+      <whenValue element="advp/locativeDegreeWordOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/locativeDegreeWord" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="locativeDegree" value="yes"/>
+      <or/>
+      <whenValue element="advp/locativeIndefQOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="advp/locativeIndefTypeQPQOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/locativeIndefQPhrase" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="advp/locativeIndefIntOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="advp/locativeIndefTypeIntOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/locativeIndefIntPhrase" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="advp/mannerWordDegreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="mannerDegree" value="yes"/>
+      <and/><not/>
+      <whenValue element="advp" attr="mannerType" value="affix"/>
+      <or/>
+      <whenValue element="advp/mannerDegreeWordOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/mannerWordDegreeWord" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="mannerDegree" value="yes"/>
+      <and/><not/>
+      <whenValue element="advp" attr="mannerType" value="affix"/>
+ <or/>
+      <whenValue element="advp/mannerAffixDegreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="mannerAffixDegree" value="yes"/>
+      <and/><not/>
+      <whenValue element="advp" attr="mannerType" value="word"/>
+      <or/>
+      <whenValue element="adjp/modifiersOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp" attr="modifiers" value="yes"/>
+ <or/>
+      <whenValue element="adjp/degreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp/modifiersDegree" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp" attr="modifiers" value="yes"/>
+  <or/>
+      <whenValue element="adjp/mannerOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp/modifiersManner" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp" attr="modifiers" value="yes"/>
+  <or/>
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresent" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificPosOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="np/agreeOtherFeat" attr="checked" value="yes"/>
+  <or/>
+      <whenValue element="np/caseWordOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="typology" attr="case" value="none"/>
+      <and/>
+      <whenValue element="np" attr="caseN" value="yes"/>
+      <and/><not/>
+      <whenValue element="np" attr="caseWord" value="no"/>
+ <or/>
+      <whenValue element="np/caseAttachesOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="typology" attr="case" value="none"/>
+      <and/>
+      <whenValue element="np" attr="caseN" value="yes"/>
+      <and/><not/>
+      <whenValue element="np" attr="caseWord" value="yes"/> 
+      <or/>
+      <whenValue element="np" attr="artAndDem" value="article"/>
+      <and/>
+      <whenValue element="np/artOnlyOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="np" attr="artAndDem" value="demonstrative"/>
+      <and/>
+      <whenValue element="np/demOnlyOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/>
+      <whenValue element="np" attr="artAndDem" value="demonstrative"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresentDem" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificDemPosOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="np" attr="artAndDem" value="both"/>
+      <and/>
+      <whenValue element="np/demOrArtPosOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="np" attr="artBothCooccur" value="no"/>
+ <or/>
+      <whenValue element="np" attr="artAndDem" value="both"/>
+      <and/>
+      <whenValue element="np/demAndArtArtOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="np" attr="artBothCooccur" value="no"/> 
+ <or/>
+      <whenValue element="np" attr="artAndDem" value="both"/>
+      <and/>
+      <whenValue element="np/demAndArtDemOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="np" attr="artBothCooccur" value="no"/>   
+      <or/>
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/>
+      <whenValue element="np" attr="artAndDem" value="both"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresentDemBoth" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificDemBothPosOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="np" attr="possNP" value="yes"/>
+      <and/>
+      <whenValue element="np" attr="possMarked" value="yesWord"/>
+      <and/>
+      <whenValue element="np/possWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="np" attr="possNP" value="yesOnly"/>
+      <and/>
+      <whenValue element="np" attr="possMarked" value="yesWord"/>
+      <and/>
+      <whenValue element="np/possWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="np/qpPosOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresentQ" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificQPosOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="np/adjPosOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresentAdj" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificAdjPosOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="pron/dependentTypeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron" attr="dependentPron" value="yes"/>
+      <or/>
+      <whenValue element="pron/possOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron" attr="poss" value="yes"/>
+      <or/>
+      <whenValue element="pron/reflOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron" attr="refl" value="yes"/>
+      <or/>
+      <whenValue element="pron/recipOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron" attr="recip" value="yes"/>
+  <or/>
+      <whenValue element="pron/indefQOther" attr="checked" value="yes"/>
+ <or/>
+      <whenValue element="pron/indefTypeQPQOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron/indefQPhrase" attr="checked" value="yes"/>
+<or/>
+      <whenValue element="pron/indefIntOther" attr="checked" value="yes"/>
+ <or/>
+      <whenValue element="pron/indefTypeIntOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron/indefIntPhrase" attr="checked" value="yes"/>
+    <or/>
+      <whenValue element="pp" attr="modifiers" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppModifierOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="pp" attr="modifiers" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppModifierDegree" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppDegreePosOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="pp" attr="modifiers" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppModifierOrdinal" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppOrdinalPosOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="pp" attr="modifiers" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppModifierManner" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppMannerPosOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="pp" attr="modifiers" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppModifierLocative" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pp/ppLocativePosOther" attr="checked" value="yes"/>
+  <or/>
+      <whenValue element="ip/proDropOther" attr="checked" value="yes"/>
+ <or/>
+      <whenValue element="ip/proDropOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="conditionWord" value="yes"/>
+      <and/>
+      <whenValue element="ip/conditionWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="conditionWord" value="some"/>
+      <and/>
+      <whenValue element="ip/conditionWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="conditionWord" value="no"/>
+      <and/>
+      <whenValue element="ip/conditionOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="conditionWord" value="some"/>
+      <and/>
+      <whenValue element="ip/conditionOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="subjunctiveCondWord" value="yes"/>
+      <and/>
+      <whenValue element="ip/subjunctiveCondWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="subjunctiveCondWord" value="some"/>
+      <and/>
+      <whenValue element="ip/subjunctiveCondWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="subjunctiveCondWord" value="no"/>
+      <and/>
+      <whenValue element="ip/subjunctiveCondOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="subjunctiveCondWord" value="some"/>
+      <and/>
+      <whenValue element="ip/subjunctiveCondOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/existOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="ip/causativeOther" attr="checked" value="yes"/>
+  <or/>
+      <whenValue element="ip/antipassiveOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="ip" attr="antipassive" value="yes"/>
+      <or/>
+      <whenValue element="comp" attr="comp" value="yes"/>
+      <and/><not/>
+      <whenValue element="comp" attr="compWord" value="no"/>
+      <and/>
+      <whenValue element="comp/compOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="comp" attr="comp" value="yes"/>
+      <and/><not/>
+      <whenValue element="comp" attr="compWord" value="yes"/>
+      <and/>
+      <whenValue element="comp/compAttachesOther" attr="checked" value="yes"/>
+ <or/>
+      <whenValue element="q" attr="mainYN" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainYNWord" value="no"/>
+      <and/>
+      <whenValue element="q/mainYNWordOther" attr="checked" value="yes"/>
+ <or/>
+      <whenValue element="q" attr="mainYN" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainYNWord" value="yes"/>
+      <and/>
+      <whenValue element="q/mainYNCliticOther" attr="checked" value="yes"/>
+ <or/>
+      <whenValue element="q" attr="embYN" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embYNWord" value="no"/>
+      <and/>
+      <whenValue element="q/embYNWordOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="q" attr="embYN" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embYNWord" value="yes"/>
+      <and/>
+      <whenValue element="q/embYNCliticOther" attr="checked" value="yes"/>
+    <or/>
+      <not/>
+      <whenValue element="typology" attr="wordOrder" value="VSO"/>
+      <and/>
+      <whenValue element="q" attr="mainCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainContWord" value="no"/>
+      <and/>
+      <whenValue element="q/mainContWordOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="typology" attr="wordOrder" value="VSO"/>
+      <and/>
+      <whenValue element="q" attr="mainCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainContWord" value="no"/>
+      <and/>
+      <whenValue element="q/mainContVSOOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="q" attr="mainCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainContWord" value="yes"/>
+      <and/>
+      <whenValue element="q/mainContCliticOther" attr="checked" value="yes"/>
+   <or/>
+      <not/>
+      <whenValue element="typology" attr="wordOrder" value="VSO"/>
+      <and/>
+      <whenValue element="q" attr="embCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embContWord" value="no"/>
+      <and/>
+      <whenValue element="q/embContWordOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="typology" attr="wordOrder" value="VSO"/>
+      <and/>
+      <whenValue element="q" attr="embCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embContWord" value="no"/>
+      <and/>
+      <whenValue element="q/embContVSOOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="q" attr="embCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embContWord" value="yes"/>
+      <and/>
+      <whenValue element="q/embContCliticOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="relcl/relTypeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="relcl" attr="exist" value="yes"/>
+      <or/>
+      <whenValue element="relcl/relWordOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="relcl/relTypeCPComp" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="relcl" attr="exist" value="yes"/>
+      <or/>
+      <whenValue element="relcl/relWordOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="relcl/relTypeCPRel" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="relcl" attr="exist" value="yes"/>
+ <or/>
+      <whenValue element="neg" attr="npDegreeNeg" value="yes"/>
+      <and/>
+      <whenValue element="neg/npDegreeNegWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="neg" attr="npDegreeNeg" value="some"/>
+      <and/>
+      <whenValue element="neg/npDegreeNegWordOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="neg" attr="npDegreeNeg" value="no"/>
+      <and/>
+      <whenValue element="neg/npDegreeNegOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="neg" attr="npDegreeNeg" value="some"/>
+      <and/>
+      <whenValue element="neg/npDegreeNegOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="neg/negTemporalTypeOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="neg/negTemporalTypeAdverbWord" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="neg/negTemporalAdverbWordOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="neg/negLocativeTypeOther" attr="checked" value="yes"/>
+<or/>
+      <whenValue element="neg/negLocativeTypeAdverbWord" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="neg/negLocativeAdverbWordOther" attr="checked" value="yes"/>
+   <or/>
+      <whenValue element="neg" attr="negVerbal" value="yes"/>
+      <and/>
+      <whenValue element="neg/negVerbalOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="coord/attachesOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="coord" attr="conjWord" value="yes"/>
+ <or/>
+      <whenValue element="focus/topicMarkerOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="focus" attr="topic" value="yes"/>
+      <and/>
+      <whenValue element="focus" attr="topicMarker" value="yesWord"/>
+      <or/>
+      <whenValue element="focus/focusMarkerOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="focus" attr="focus" value="yes"/>
+      <and/>
+      <whenValue element="focus" attr="focusMarker" value="yesWord"/>
+ <or/>     
+      <whenValue element="excl" attr="exclM" value="yes"/>
+      <and/>
+      <whenValue element="excl/exclMOther" attr="checked" value="yes"/>
+      <closeParen/> 
+   </showWhen>
+   
+   
+   <showWhen id="swCaseSplit">
+      <whenValue element="typology" attr="case" value="split"/>
+   </showWhen>
+   <showWhen id="swQPNPDegreePosOtherYes">
+      <whenValue element="qp/npDegreePosOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="npDegree" value="no"/>
+   </showWhen>
+   <showWhen id="swQPNPDegreeTypeOtherYes">
+      <whenValue element="qp/npDegreeTypeOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="npDegree" value="yes"/>
+   </showWhen>
+   <showWhen id="swQPDeterminerPosOtherYes">
+      <whenValue element="qp/determinerPosOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="determinerType" value="no"/>
+      <and/>
+      <whenValue element="qp" attr="determiner" value="yes"/>
+      <or/>
+      <whenValue element="qp/determinerPosOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="determinerType" value="no"/>
+      <and/>
+      <whenValue element="qp" attr="determiner" value="some"/>
+   </showWhen>
+   <showWhen id="swQPDeterminerTypeOtherYes">
+      <whenValue element="qp/determinerTypeOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="qp" attr="determinerType" value="yes"/>
+   </showWhen>
+   <showWhen id="swQPDegreeOtherYes">
+      <whenValue element="qp/degreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp" attr="degree" value="yes"/>
+      <or/>
+      <whenValue element="qp/degreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp" attr="degree" value="some"/>
+   </showWhen>
+   <showWhen id="swQPDegreeTypeOtherYes">
+      <whenValue element="qp/degreeTypeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp" attr="degree" value="attaches"/>
+      <or/>
+      <whenValue element="qp/degreeTypeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp" attr="degree" value="some"/>
+   </showWhen>
+   <showWhen id="swQPOrdinalOtherYes">
+      <whenValue element="qp/ordinalOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swQPOrdinalWordOtherYes">
+      <whenValue element="qp/ordinalWordOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="qp/ordinalWord" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swQPOrdinalNumOtherYes">
+      <whenValue element="qp/ordinalNumOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPTemporalDegreeOtherYes">
+      <whenValue element="advp/temporalDegreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="temporalDegree" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPTemporalDegreeWordOtherYes">
+   <whenValue element="advp/temporalDegreeWordOther" attr="checked" value="yes"/>
+   <and/>
+   <whenValue element="advp/temporalDegreeWord" attr="checked" value="yes"/>
+   <and/>
+   <whenValue element="advp" attr="temporalDegree" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPTemporalIndefQOtherYes">
+      <whenValue element="advp/temporalIndefQOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPTemporalIndefTypeQPQOtherYes">
+      <whenValue element="advp/temporalIndefTypeQPQOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/temporalIndefQPhrase" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPTemporalIndefIntOtherYes">
+      <whenValue element="advp/temporalIndefIntOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPTemporalIndefTypeIntOtherYes">
+      <whenValue element="advp/temporalIndefTypeIntOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/temporalIndefIntPhrase" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPLocativeDegreeOtherYes">
+      <whenValue element="advp/locativeDegreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="locativeDegree" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPLocativeDegreeWordOtherYes">
+      <whenValue element="advp/locativeDegreeWordOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/locativeDegreeWord" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="locativeDegree" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPLocativeIndefQOtherYes">
+      <whenValue element="advp/locativeIndefQOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPLocativeIndefTypeQPQOtherYes">
+      <whenValue element="advp/locativeIndefTypeQPQOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/locativeIndefQPhrase" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPLocativeIndefIntOtherYes">
+      <whenValue element="advp/locativeIndefIntOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPLocativeIndefTypeIntOtherYes">
+      <whenValue element="advp/locativeIndefTypeIntOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp/locativeIndefIntPhrase" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdvPMannerWordDegreeOtherYes">
+      <whenValue element="advp/mannerWordDegreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="mannerDegree" value="yes"/>
+      <and/><not/>
+      <whenValue element="advp" attr="mannerType" value="affix"/>
+   </showWhen>
+  <showWhen id="swAdvPMannerDegreeWordOtherYes">
+     <whenValue element="advp/mannerDegreeWordOther" attr="checked" value="yes"/>
+     <and/>
+     <whenValue element="advp/mannerWordDegreeWord" attr="checked" value="yes"/>
+     <and/>
+     <whenValue element="advp" attr="mannerDegree" value="yes"/>
+     <and/><not/>
+     <whenValue element="advp" attr="mannerType" value="affix"/>
+  </showWhen> 
+   <showWhen id="swAdvPMannerAffixDegreeOtherYes">
+      <whenValue element="advp/mannerAffixDegreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="advp" attr="mannerAffixDegree" value="yes"/>
+      <and/><not/>
+      <whenValue element="advp" attr="mannerType" value="word"/>
+   </showWhen>
+   <showWhen id="swAdjPModifiersOtherYes">
+      <whenValue element="adjp/modifiersOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp" attr="modifiers" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdjPDegreeOtherYes">
+      <whenValue element="adjp/degreeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp/modifiersDegree" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp" attr="modifiers" value="yes"/>
+   </showWhen>
+   <showWhen id="swAdjPMannerOtherYes">
+      <whenValue element="adjp/mannerOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp/modifiersManner" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="adjp" attr="modifiers" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPClassifierSpecificPosOtherYes">
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresent" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificPosOther" attr="checked" value="yes"/>
+   </showWhen>  
+<showWhen id="swNPAgreeOtherFeatYes">
+   <whenValue element="np/agreeOtherFeat" attr="checked" value="yes"/>
+</showWhen>   
+   <showWhen id="swNPCaseWordOtherYes">
+      <whenValue element="np/caseWordOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="typology" attr="case" value="none"/>
+      <and/>
+      <whenValue element="np" attr="caseN" value="yes"/>
+      <and/><not/>
+      <whenValue element="np" attr="caseWord" value="no"/>
+   </showWhen>
+   <showWhen id="swNPCaseAttachesOtherYes">
+      <whenValue element="np/caseAttachesOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="typology" attr="case" value="none"/>
+      <and/>
+      <whenValue element="np" attr="caseN" value="yes"/>
+      <and/><not/>
+      <whenValue element="np" attr="caseWord" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPArtOnlyOtherYes">
+   <whenValue element="np" attr="artAndDem" value="article"/>
+   <and/>
+   <whenValue element="np/artOnlyOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPDemOnlyOtherYes">
+      <whenValue element="np" attr="artAndDem" value="demonstrative"/>
+      <and/>
+      <whenValue element="np/demOnlyOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPClassifierSpecificDemPosOtherYes">
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/>
+      <whenValue element="np" attr="artAndDem" value="demonstrative"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresentDem" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificDemPosOther" attr="checked" value="yes"/>
+   </showWhen>  
+   <showWhen id="swNPDemOrArtPosOtherYes">
+      <whenValue element="np" attr="artAndDem" value="both"/>
+      <and/>
+      <whenValue element="np/demOrArtPosOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="np" attr="artBothCooccur" value="no"/>
+   </showWhen>
+   <showWhen id="swNPDemAndArtArtOtherYes">
+      <whenValue element="np" attr="artAndDem" value="both"/>
+      <and/>
+      <whenValue element="np/demAndArtArtOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="np" attr="artBothCooccur" value="no"/> 
+   </showWhen>
+   <showWhen id="swNPDemAndArtDemOtherYes">
+      <whenValue element="np" attr="artAndDem" value="both"/>
+      <and/>
+      <whenValue element="np/demAndArtDemOther" attr="checked" value="yes"/>
+      <and/><not/>
+      <whenValue element="np" attr="artBothCooccur" value="no"/> 
+   </showWhen>
+   <showWhen id="swNPClassifierSpecificDemBothPosOtherYes">
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/>
+      <whenValue element="np" attr="artAndDem" value="both"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresentDemBoth" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificDemBothPosOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPPossWordOtherYes">
+      <whenValue element="np" attr="possNP" value="yes"/>
+      <and/>
+      <whenValue element="np" attr="possMarked" value="yesWord"/>
+      <and/>
+      <whenValue element="np/possWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="np" attr="possNP" value="yesOnly"/>
+      <and/>
+      <whenValue element="np" attr="possMarked" value="yesWord"/>
+      <and/>
+      <whenValue element="np/possWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPQPPosOtherYes">
+      <whenValue element="np/qpPosOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPClassifierSpecificQPosOtherYes">
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresentQ" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificQPosOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPAdjPosOtherYes">
+      <whenValue element="np/adjPosOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNPClassifierSpecificAdjPosOtherYes">
+      <whenValue element="typology" attr="classifier" value="yesSpecific"/>
+      <and/><not/>
+      <whenValue element="np" attr="classifierPresentAdj" value="no"/>
+      <and/>
+      <whenValue element="np/classifierSpecificAdjPosOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swPronDependentTypeOtherYes">
+      <whenValue element="pron/dependentTypeOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron" attr="dependentPron" value="yes"/>
+   </showWhen>
+   <showWhen id="swPronPossOtherYes">
+      <whenValue element="pron/possOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron" attr="poss" value="yes"/>
+   </showWhen>
+   <showWhen id="swPronReflOtherYes">
+      <whenValue element="pron/reflOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron" attr="refl" value="yes"/>
+   </showWhen>
+   <showWhen id="swPronRecipOtherYes">
+      <whenValue element="pron/recipOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron" attr="recip" value="yes"/>
+   </showWhen>
+   <showWhen id="swPronIndefQOtherYes">
+      <whenValue element="pron/indefQOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swPronIndefTypeQPQOtherYes">
+      <whenValue element="pron/indefTypeQPQOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron/indefQPhrase" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swPronIndefIntOtherYes">
+      <whenValue element="pron/indefIntOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swPronIndefTypeIntOtherYes">
+      <whenValue element="pron/indefTypeIntOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="pron/indefIntPhrase" attr="checked" value="yes"/>
+   </showWhen>
+ <showWhen id="swPPModifierOtherYes">
+    <whenValue element="pp" attr="modifiers" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppModifierOther" attr="checked" value="yes"/>
+ </showWhen>
+   <showWhen id="swPPDegreePosOtherYes">
+    <whenValue element="pp" attr="modifiers" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppModifierDegree" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppDegreePosOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swPPOrdinalPosOtherYes">
+      <whenValue element="pp" attr="modifiers" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppModifierOrdinal" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppOrdinalPosOther" attr="checked" value="yes"/>
+      </showWhen>
+      <showWhen id="swPPMannerPosOtherYes">
+         <whenValue element="pp" attr="modifiers" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppModifierManner" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppMannerPosOther" attr="checked" value="yes"/>
+         </showWhen>
+     <showWhen id="swPPLocativePosOtherYes">   
+    <whenValue element="pp" attr="modifiers" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppModifierLocative" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="pp/ppLocativePosOther" attr="checked" value="yes"/>
+    </showWhen>
+  <showWhen id="swIPProDropOtherYes">
+     <whenValue element="ip/proDropOther" attr="checked" value="yes"/>
+  </showWhen>
+   <showWhen id="swIPConditionWordOtherYes">
+      <whenValue element="ip" attr="conditionWord" value="yes"/>
+      <and/>
+      <whenValue element="ip/conditionWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="conditionWord" value="some"/>
+      <and/>
+      <whenValue element="ip/conditionWordOther" attr="checked" value="yes"/>
+   </showWhen>
+    <showWhen id="swIPConditionOtherYes">
+   <whenValue element="ip" attr="conditionWord" value="no"/>
+   <and/>
+   <whenValue element="ip/conditionOther" attr="checked" value="yes"/>
+   <or/>
+   <whenValue element="ip" attr="conditionWord" value="some"/>
+   <and/>
+   <whenValue element="ip/conditionOther" attr="checked" value="yes"/>
+    </showWhen>
+   <showWhen id="swIPSubjunctiveCondWordOtherYes">
+      <whenValue element="ip" attr="subjunctiveCondWord" value="yes"/>
+      <and/>
+      <whenValue element="ip/subjunctiveCondWordOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="subjunctiveCondWord" value="some"/>
+      <and/>
+      <whenValue element="ip/subjunctiveCondWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swIPSubjunctiveCondOtherYes">
+      <whenValue element="ip" attr="subjunctiveCondWord" value="no"/>
+      <and/>
+      <whenValue element="ip/subjunctiveCondOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip" attr="subjunctiveCondWord" value="some"/>
+      <and/>
+      <whenValue element="ip/subjunctiveCondOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swIPExistOtherYes">
+      <whenValue element="ip/existOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swIPCausativeOtherYes">
+      <whenValue element="ip/causativeOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swIPAntipassiveOtherYes">
+      <whenValue element="ip/antipassiveOther" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="ip" attr="antipassive" value="yes"/>
+   </showWhen>
+ <showWhen id="swCompOtherYes">
+    <whenValue element="comp" attr="comp" value="yes"/>
+    <and/><not/>
+    <whenValue element="comp" attr="compWord" value="no"/>
+    <and/>
+    <whenValue element="comp/compOther" attr="checked" value="yes"/>
+ </showWhen>
+   <showWhen id="swCompAttachesOtherYes">
+    <whenValue element="comp" attr="comp" value="yes"/>
+    <and/><not/>
+    <whenValue element="comp" attr="compWord" value="yes"/>
+    <and/>
+    <whenValue element="comp/compAttachesOther" attr="checked" value="yes"/>
+ </showWhen>  
+   <showWhen id="swQMainYNWordOtherYes">
+      <whenValue element="q" attr="mainYN" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainYNWord" value="no"/>
+      <and/>
+      <whenValue element="q/mainYNWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swQMainYNCliticOtherYes">
+      <whenValue element="q" attr="mainYN" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainYNWord" value="yes"/>
+      <and/>
+      <whenValue element="q/mainYNCliticOther" attr="checked" value="yes"/>
+   </showWhen>  
+   <showWhen id="swQEmbYNWordOtherYes">
+      <whenValue element="q" attr="embYN" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embYNWord" value="no"/>
+      <and/>
+      <whenValue element="q/embYNWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swQEmbYNCliticOtherYes">
+      <whenValue element="q" attr="embYN" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embYNWord" value="yes"/>
+      <and/>
+      <whenValue element="q/embYNCliticOther" attr="checked" value="yes"/>
+   </showWhen>  
+   <showWhen id="swQMainContWordOtherYes">
+      <not/>
+      <whenValue element="typology" attr="wordOrder" value="VSO"/>
+      <and/>
+      <whenValue element="q" attr="mainCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainContWord" value="no"/>
+      <and/>
+      <whenValue element="q/mainContWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swQMainContVSOOtherYes">
+      <whenValue element="typology" attr="wordOrder" value="VSO"/>
+      <and/>
+      <whenValue element="q" attr="mainCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainContWord" value="no"/>
+      <and/>
+      <whenValue element="q/mainContVSOOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swQMainContCliticOtherYes">
+      <whenValue element="q" attr="mainCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="mainContWord" value="yes"/>
+      <and/>
+      <whenValue element="q/mainContCliticOther" attr="checked" value="yes"/>
+   </showWhen>  
+   <showWhen id="swQEmbContWordOtherYes">
+      <not/>
+      <whenValue element="typology" attr="wordOrder" value="VSO"/>
+      <and/>
+      <whenValue element="q" attr="embCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embContWord" value="no"/>
+      <and/>
+      <whenValue element="q/embContWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swQEmbContVSOOtherYes">
+      <whenValue element="typology" attr="wordOrder" value="VSO"/>
+      <and/>
+      <whenValue element="q" attr="embCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embContWord" value="no"/>
+      <and/>
+      <whenValue element="q/embContVSOOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swQEmbContCliticOtherYes">
+      <whenValue element="q" attr="embCont" value="yes"/>
+      <and/><not/>
+      <whenValue element="q" attr="embContWord" value="yes"/>
+      <and/>
+      <whenValue element="q/embContCliticOther" attr="checked" value="yes"/>
+   </showWhen>  
+ <showWhen id="swRelclRelTypeOtherYes">
+    <whenValue element="relcl/relTypeOther" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="relcl" attr="exist" value="yes"/>
+ </showWhen>
+   <showWhen id="swRelclRelWordOtherYes">
+    <whenValue element="relcl/relWordOther" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="relcl/relTypeCPComp" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="relcl" attr="exist" value="yes"/>
+    <or/>
+    <whenValue element="relcl/relWordOther" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="relcl/relTypeCPRel" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="relcl" attr="exist" value="yes"/>
+   </showWhen>  
+   <showWhen id="swNegNPDegreeNegWordOtherYes">
+      <whenValue element="neg" attr="npDegreeNeg" value="yes"/>
+      <and/>
+      <whenValue element="neg/npDegreeNegWordOther" attr="checked" value="yes"/>
+ <or/>
+      <whenValue element="neg" attr="npDegreeNeg" value="some"/>
+      <and/>
+      <whenValue element="neg/npDegreeNegWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNegNPDegreeNegOtherYes">
+      <whenValue element="neg" attr="npDegreeNeg" value="no"/>
+      <and/>
+      <whenValue element="neg/npDegreeNegOther" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="neg" attr="npDegreeNeg" value="some"/>
+      <and/>
+      <whenValue element="neg/npDegreeNegOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNegTemporalTypeOtherYes">
+      <whenValue element="neg/negTemporalTypeOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNegTemporalAdverbWordOtherYes">
+      <whenValue element="neg/negTemporalTypeAdverbWord" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="neg/negTemporalAdverbWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNegLocativeTypeOtherYes">
+      <whenValue element="neg/negLocativeTypeOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNegLocativeAdverbWordOtherYes">
+      <whenValue element="neg/negLocativeTypeAdverbWord" attr="checked" value="yes"/>
+      <and/>
+      <whenValue element="neg/negLocativeAdverbWordOther" attr="checked" value="yes"/>
+   </showWhen>
+   <showWhen id="swNegVerbalOtherYes">
+      <whenValue element="neg" attr="negVerbal" value="yes"/>
+      <and/>
+      <whenValue element="neg/negVerbalOther" attr="checked" value="yes"/>
+   </showWhen>
+ <showWhen id="swCoordAttachesOtherYes">
+    <whenValue element="coord/attachesOther" attr="checked" value="yes"/>
+    <and/><not/>
+    <whenValue element="coord" attr="conjWord" value="yes"/>
+ </showWhen>  
+ <showWhen id="swFocusTopicMarkerOtherYes">
+    <whenValue element="focus/topicMarkerOther" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="focus" attr="topic" value="yes"/>
+    <and/>
+    <whenValue element="focus" attr="topicMarker" value="yesWord"/>
+ </showWhen>
+   <showWhen id="swFocusFocusMarkerOtherYes">
+      <whenValue element="focus/focusMarkerOther" attr="checked" value="yes"/>
+    <and/>
+    <whenValue element="focus" attr="focus" value="yes"/>
+    <and/>
+    <whenValue element="focus" attr="focusMarker" value="yesWord"/>  
+ </showWhen>  
+   <showWhen id="swExclExclMOtherYes">
+      <whenValue element="excl" attr="exclM" value="yes"/>
+      <and/>
+      <whenValue element="excl/exclMOther" attr="checked" value="yes"/>
+   </showWhen>
+   
    <showWhen id="swQPNPDegreeNoandNoCheck">
       <not/>
       <whenValue element="qp" attr="npDegree" value="yes"/>
@@ -1613,7 +3021,7 @@
       <and/>
       <whenValue  element="np/classifierSpecificDemBothPosOther" attr="checked" value="no"/>
    </showWhen>
-   
+ 
    <showWhen id="swNPQClassifierPresentYesOrSomeAndNoCheck">
       <whenValue element="typology" attr="classifier" value="yesSpecific"/>
       <and/>
@@ -1662,6 +3070,6 @@
       <whenValue  element="np/classifierSpecificAdjPosOther" attr="checked" value="no"/>
    </showWhen>
    
-   
+
    
 </page>

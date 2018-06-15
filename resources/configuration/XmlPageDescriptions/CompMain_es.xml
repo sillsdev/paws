@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="CompMain" count="1/4">
+<page id="CompMain" count="10.1">
    <title>Las cláusulas de complemento</title>
    <introduction>Esta sección considera varios tipos de cláusulas subordinadas que son <technicalTermRef term="ttComplements">complementos</technicalTermRef> de verbos principales o de adjetivos que funcionan igual que el <technicalTermRef term="ttPredicates">predicado</technicalTermRef> de la oración, como los siguientes ejemplos del inglés. </introduction>
     <EnglishExample>

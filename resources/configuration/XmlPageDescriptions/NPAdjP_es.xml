@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPAdjP" count="1/1">
+<page id="NPAdjP" count="5.6.1">
 	<title level="2">Las frases nominales - Las frases adjetivales como modificadores</title>
 	<introduction>Las frases adjetivales fueron analizadas anteriormente en  <section number="4">Las frases adjetivales</section>.  Las frases adjetivales se presentan cerca del sustantivo.  Algunas frases nominales en inglés con adjetivos son:</introduction>
 	<EnglishExample>
@@ -15,7 +15,7 @@
    <introduction>Como se puede ver en los ejemplos en inglés, todos los adjetivos se presentan antes del sustantivo, y, al contrario de los otros modificadores, se permiten más de una frase adjetival. <span id="NPAdjPRecurringIntro" show="swNotPractical">  This will be handled in the syntactic parser by a recursive rule.</span>  En español, los adjetivos se presentan después del sustantivo y solamente se permite una frase adjetival, a menos que los adjetivos son coordinados o en una cláusula relativa.</introduction>
 	<form section="np">
 		<prompt>Escriba algunos ejemplos de las frases nominales con modificadores adjetivales en su lengua aquí:</prompt>
-		<textBox id="NPAdjpExample" dataItem="adjpExample"/>
+		<textBox id="NPAdjpExample" dataItem="adjpExample" cols="80"/>
 		<br/>
 		<br/>
 	   <checkboxGroup>
@@ -23,7 +23,7 @@
 	      <checkbox id="NPAdjPPosBefore" dataItem="adjBefore">Antes del sustantivo</checkbox>
 	      <checkbox id="NPAdjPPosAfter" dataItem="adjAfter">Después del sustantivo</checkbox>
 	      <checkbox id="NPAdjPPosBoth" dataItem="adjBoth">En ambos lados en la misma frase nominal</checkbox>
-	      <checkbox id="NPAdjPPosOther" dataItem="adjPosOther">En mi lengua, las frases adjetivales pueden presentarse: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" rows="2"/></checkbox>
+	   	<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">En mi lengua, las frases adjetivales pueden presentarse: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="NPAdjPPosNoCheckPrompt" show="swNPAdjPPosNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las frases adjetivales con respecto al sustantivo que las modifican.</prompt>
 	   <instruction id="NPAdjPPosEitherSideRestrictedInstruction" show="swNPAdjPPosEitherSideRestricted">In the lexicon, mark those adjectives which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>. Do not enter either feature on any adjective which can occur on either side.</instruction>
@@ -42,7 +42,7 @@
 			<checkbox id="NPAdjClassifierSpecificPosAfterNBeforeAdj"  dataItem="classifierSpecificAdjPosAfterNBeforeAdj">Después del sustantivo pero antes del adjetivo</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosPrefixAdj"  dataItem="classifierSpecificAdjPosPrefixAdj">Como un prefijo en el adjetivo</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosSuffixAdj"  dataItem="classifierSpecificAdjPosSuffixAdj">Como un sufijo en el adjetivo</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" rows="2"/></checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1"/></checkbox>
 		</checkboxGroup>
 		<prompt id="NPAdjClassifierSpecificPosNoCheckPrompt" show="swNPAdjClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto a los adjetivos y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
 		
@@ -83,7 +83,7 @@
 		</EnglishExample>
 	   <introduction>Algunas lenguas no pueden utilizar un participio para expresar significados similares, pero en su lugar, utilice una cláusula relativa.</introduction>
 	   <prompt><br/>Escriba ejemplos similares en su lengua aquí:</prompt>
-		<textBox id="NPAdjPPartExample" dataItem="partExample"/>
+		<textBox id="NPAdjPPartExample" dataItem="partExample" cols="80"/>
 		<br/>
 	   <radioGroup>
 	      <groupName dataItem="adjpPart" default="no" >RNPAdjPPart</groupName>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="ExclMain" count="1/2">
+<page id="ExclMain" count="17.1">
     <title>Greetings, Interjections and Exclamations</title>
     <introduction>This section considers various types of common utterances which are not complete sentences.  We will deal with greetings, interjections and exclamations in turn.</introduction>
     <form section="excl" transparent="no">
@@ -18,7 +18,7 @@
         <exItem label="9.">Good night, sweet baby.</exItem>
     </EnglishExample>
 <prompt>Key similar examples of greetings in your language here:</prompt>
-        <textBox id="ExclGreet" dataItem="greetExample" rows="5"/>
+        <textBox id="ExclGreet" dataItem="greetExample" cols="80"/>
         <br/>
 <instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
 <br/>
@@ -32,7 +32,7 @@
         <exItem label="14.">Jimminy Cricket!</exItem>
     </EnglishExample>
 <prompt>Key similar examples of interjections in your language here:</prompt>
-        <textBox id="ExclIntj" dataItem="intjExample" rows="5"/>
+        <textBox id="ExclIntj" dataItem="intjExample" cols="80"/>
         <br/>
        <introduction>‘Yes’ and ‘No’ answers to questions will be treated <span id="ExclYesNoNotPracticalSpan" show="swNotPractical">by the same rule that allows</span><span id="ExclYesNoPracticalSpan" show="swPractical">like</span> interjections.  </introduction>
 <prompt>Key the word(s) which can stand alone and mean ‘yes’, such as ‘yes’ and ‘yeah’ in English, here:</prompt>
@@ -50,7 +50,7 @@
         <exItem label="17.">How wonderful that your family could come!</exItem>
     </EnglishExample>
 <prompt>Key similar examples of exclamations in your language here:</prompt>
-        <textBox id="ExclExcl" dataItem="exclExample" rows="5"/>
+        <textBox id="ExclExcl" dataItem="exclExample" cols="80"/>
         <br/>
 <radioGroup id="ExclMTable">
     <groupName dataItem="exclM" default="no">RExclM</groupName>
@@ -66,7 +66,7 @@
    <checkbox id="ExclMPosBefore" dataItem="exclMBefore">Before it</checkbox>
    <checkbox id="ExclMPosAfter" dataItem="exclMAfter">After it</checkbox>
    <checkbox id="ExclMPosBoth" dataItem="exclMBoth">On both sides at the same time</checkbox>
-   <checkbox id="ExclMPosOther" dataItem="exclMOther" >In my language, these words which signal an exclamation may occur as follows: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="2"/></checkbox>
+   <checkbox id="ExclMPosOther" dataItem="exclMOther" >In my language, these words which signal an exclamation may occur as follows: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70"/></checkbox>
 </checkboxGroup>
        <prompt id="ExclMPosNoCheckPrompt" show="swExclMYesandNoCheck">WARNING: You need to check at least one box to describe where the words which mark an exclamation may occur in your language, or change the answer above to ‘No’. In that case there should not be examples in the textbox above.</prompt>       
 <instruction id="ExclMInstruction" show="swExclMYes">In the lexicon, add the feature <feature>makeExcl</feature> to each word which signals an exclamation to assure the proper category for the syntax.</instruction>

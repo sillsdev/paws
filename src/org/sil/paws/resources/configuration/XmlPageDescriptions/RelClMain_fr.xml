@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="RelClMain" count="1/2">
+<page id="RelClMain" count="12.1">
    <title>Propositions Relatives</title>
    <introduction id="RelClIntroNotPractical" show="swNotPractical">Les propositions relatives qualifient normalement un nom principal et elles ont une de ces quatre structures:
 <ul>
@@ -26,11 +26,11 @@
            <radio id="RelClExistNo" dataValue="no">Non, il n’y a pas de propositions relatives</radio>
         </radioGroup>
        <prompt id="RelClExamplePrompt" show="swRelClExistYes">Entrez ici des exemples de propositions relatives qui modifient un nom principal dans votre langue:</prompt>
-        <textBox id="RelClExample" show="swRelClExistYes" dataItem="example" cols="50"/>
+        <textBox id="RelClExample" show="swRelClExistYes" dataItem="example" cols="80"/>
         <br/>
         <br/>
        <prompt  id="RelClSentenceExamplePrompt" show="swRelClExistYes">Veuillez insérer chacun des exemples ci-dessus dans des phrases complètes (simples) et entrez-les ici:</prompt>
-        <textBox id="RelClSentenceExample" show="swRelClExistYes" dataItem="sentExample" cols="50"/>
+        <textBox id="RelClSentenceExample" show="swRelClExistYes" dataItem="sentExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup id="RelClClausePosRadioGroup"  show="swRelClExistYes">
@@ -47,7 +47,7 @@
            <checkbox id="RelClTypeCPWh" dataItem="relTypeCPWh">Semblable à une question de contenu commençant par « qui » ou « quel »</checkbox>
            <checkbox id="RelClTypeIPRel" dataItem="relTypeIPRel">Semblable à une phrase normale ayant un marqueur relative attaché au verbe</checkbox>
            <checkbox id="RelClTypeIP" dataItem="relTypeIP">Seulement une phrase normale qui modifie un nom, avec aucun marquage spécial</checkbox>
-           <checkbox id="RelClTypeOther" dataItem="relTypeOther">Dans ma langue les propositions relatives peuvent être formées comme suit: <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="2"/></checkbox>
+           <checkbox id="RelClTypeOther" dataItem="relTypeOther">Dans ma langue les propositions relatives peuvent être formées comme suit: <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70"/></checkbox>
         </checkboxGroup>
        <prompt id="RelClTypeNoCheckPrompt" show="swRelClExistYesAndTypeNoCheck">AVERTISSEMENT: Vous n’avez pas coché aucunes des boîtes pour décrire quels types de propositions relatives sont possibles dans votre langue. Veuillez en cocher un choix ou plusieurs ou changer votre réponse ci-dessus à « Non, il n’y a pas de propositions relatives ».</prompt>
        
@@ -93,7 +93,7 @@
           <checkbox id="RelClWordBefore" checked="yes" dataItem="relWordBefore">Avant la partie phrastique</checkbox>
           <checkbox id="RelClWordAfter" checked="yes" dataItem="relWordAfter">Après la partie phrastique</checkbox>
           <checkbox id="RelClWordBoth" checked="yes" dataItem="relWordBoth">Des deux côtés en même temps</checkbox>
-          <checkbox id="RelClWordOther" dataItem="relWordOther">Dans ma langue le mot relatif peut se trouver comme suit: <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="2"/></checkbox>
+          <checkbox id="RelClWordOther" dataItem="relWordOther">Dans ma langue le mot relatif peut se trouver comme suit: <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70"/></checkbox>
        </checkboxGroup>
        <prompt id="RelClWordPosNoCheckPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeAndNoCheck">AVERTISSEMENT: Vous n’avez pas coché aucune des boîtes pour décrire où le marqueur relatif peut se trouver dans votre langue. Veuillez cocher une boîte où plus, comme convenable.</prompt>
        <instruction id="RelClTypeCPCompEitherRestrictedInstruction" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeBoth">In the lexicon, mark those markers which can only occur initially with the feature <feature>CP-initial</feature> and those which can only occur finally with the feature <feature>CP-final</feature>.  Do not enter either feature on any markers which can occur on either side.</instruction>
@@ -116,7 +116,7 @@
         </radioGroup>
         <br/>
        <prompt id="RelClHeadlessYesPrompt" show="swRelClHeadlessYes">Entrez ici de quelques propositions relatives sans tête, comprises dans des phrases pleines (et simples):</prompt>
-        <textBox id="RelClHeadlessExample" dataItem="headlessExample" cols="50" show="swRelClHeadlessYes"/>
+        <textBox id="RelClHeadlessExample" dataItem="headlessExample" cols="80" show="swRelClHeadlessYes"/>
         <br/>
         <br/>
         <buttons>

@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPSubjunctive" count="3/3">
+<page id="IPSubjunctive" count="9.4.3">
     <title level="2">Basic Sentences - Subjunctives</title>
    <introduction>The <technicalTermRef term="ttSubjunctive"/> mood is used to express notions that are supposed, doubted, feared or desired.  They are not currently reality.  Subjunctives are not used very much in English and the examples look something like conditionals but in first person, such as:</introduction>
    <EnglishExample>
@@ -23,7 +23,7 @@
    </EnglishExample>
    <form section="ip">
       <prompt id="IPSubjunctiveExamplesPrompt"><br/>Key similar examples of main clause subjunctives such as examples 1-4 in your language here:</prompt>
-      <textBox id="IPSubjunctiveExamples" dataItem="subjunctiveExample" cols="50"/>
+      <textBox id="IPSubjunctiveExamples" dataItem="subjunctiveExample" cols="80"/>
       <radioGroup>
          <groupName dataItem="subjunctiveCondWord" default="yes">RIPSubjunctiveCondWord</groupName>
          <prompt><br/>Does your language mark the subjunctive condition using independent words like ‘if’ which modify the whole subjunctive conditional phrase?</prompt>
@@ -39,29 +39,29 @@
          <checkbox id="IPSubjunctiveCondEnclitic" dataItem="subjunctiveCondEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the subjunctive conditional phrase</checkbox>
          <checkbox id="IPSubjunctiveCondPrefix" dataItem="subjunctiveCondPrefix">As a prefix which attaches to the verb in the subjunctive conditional phrase</checkbox>
          <checkbox id="IPSubjunctiveCondSuffix" dataItem="subjunctiveCondSuffix">As a suffix which attaches to the verb in the subjunctive conditional phrase</checkbox>
-         <checkbox id="IPSubjunctiveCondOther" dataItem="subjunctiveCondOther">In my language, these elements may attach as follows: <textBox  id="IPSubjunctiveCondOtherContent" dataItem="subjunctiveCondOther" rows="2"/></checkbox>
+         <checkbox id="IPSubjunctiveCondOther" dataItem="subjunctiveCondOther">In my language, these elements may attach as follows: <textBox  id="IPSubjunctiveCondOtherContent" dataItem="subjunctiveCondOther" cols="70"  rows="1"/></checkbox>
       </checkboxGroup>
       <prompt id="IPSubjunctiveCondAttachesNoCheckPrompt" show="swIPSubjunctiveCondWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these subjunctive conditional markers attach in your language, or change the answer above to ‘Yes, they are all independent words’ or ‘No, there is no marker for the conditional in subjunctives in my language, only the subjunctive mood itself marked on the verb’.</prompt>
       
       <prompt id="IPSubjunctiveCondCliticPrompt" show="swIPSubjunctiveCondNoOrSomeAndClitic">Key the clitics which can mark a subjunctive conditional phrase here, with an equal sign to indicate which side it attaches on:</prompt>  
-      <textBox id="IPSubjunctiveCondCliticExample" dataItem="subjunctiveCondCliticExample" cols="40"  rows="3" show="swIPSubjunctiveCondNoOrSomeAndClitic"/>
+      <textBox id="IPSubjunctiveCondCliticExample" dataItem="subjunctiveCondCliticExample" rows="3" show="swIPSubjunctiveCondNoOrSomeAndClitic"/>
       <instruction id="IPSubjunctiveCondProcliticInstruction" show="swIPSubjunctiveCondNoOrSomeAndProclitic">In the lexicon, add the feature <feature>subjunctive_conditional_prefix</feature> to the proclitics which mark subjunctive conditional phrases.  If it is the same as the marker for conditionals, simply add this additional feature to the same entry.
       </instruction>
       <instruction id="SubjunctiveCondEncliticInstruction" show="swIPSubjunctiveCondNoOrSomeAndEnclitic">In the lexicon, add the feature <feature>subjunctive_conditional_suffix</feature> to the enclitics which mark subjunctive conditional phrases. If it is the same as the marker for conditionals, simply add this additional feature to the same entry.</instruction>
       <prompt id="IPSubjunctiveCondAffixPrompt" show="swIPSubjunctiveCondNoOrSomeAndAffix">Key the affixes which can mark a subjunctive conditional phrase here, with a hyphen to indicate which side it attaches on:</prompt>  
-      <textBox id="IPSubjunctiveCondAffixExample" dataItem="subjunctiveCondAffixExample" cols="40" rows="3" show="swIPSubjunctiveCondNoOrSomeAndAffix"/>
+      <textBox id="IPSubjunctiveCondAffixExample" dataItem="subjunctiveCondAffixExample" rows="3" show="swIPSubjunctiveCondNoOrSomeAndAffix"/>
       <instruction id="IPSubjunctiveCondAffixInstruction" show="swIPSubjunctiveCondNoOrSomeAndAffix">In the lexicon, add the feature <feature>subjunctive_conditional</feature> to the affixes which can mark the verb in a conditional phrase. If it is the same as the marker for conditionals, simply add this additional feature to the same entry.</instruction>
       <prompt id="IPSubjunctiveCondOtherPrompt" show="swIPSubjunctiveCondNoOrSomeAndOther">Key examples of the other elements which can mark a subjunctive conditional phrase in the other way your language allows here:</prompt>  
-      <textBox id="IPSubjunctiveCondOtherExample" dataItem="subjunctiveCondOtherExample" cols="40" rows="3" show="swIPSubjunctiveCondNoOrSomeAndOther"/>   
+      <textBox id="IPSubjunctiveCondOtherExample" dataItem="subjunctiveCondOtherExample" rows="3" show="swIPSubjunctiveCondNoOrSomeAndOther"/>   
       <prompt id="IPSubjunctiveCondYesPrompt" show="swIPSubjunctiveCondWordYesOrSome">Key the independent words which can mark a subjunctive conditional  phrase here:</prompt>
-      <textBox id="IPSubjunctiveCondWordExample" dataItem="subjunctiveCondWordExample" cols="40"  rows="3" show="swIPSubjunctiveCondWordYesOrSome"/>
+      <textBox id="IPSubjunctiveCondWordExample" dataItem="subjunctiveCondWordExample" rows="3" show="swIPSubjunctiveCondWordYesOrSome"/>
       <br/><br/>		
       <checkboxGroup id="IPSubjunctiveCondPos" show="swIPSubjunctiveCondWordYesOrSome">
          <prompt>Looking at the data in the box above, where do subjunctive condition markers which are written as independent words occur with respect to the rest of the conditional phrase? Check all options that are correct for your language</prompt>
          <checkbox id="IPSubjunctiveCondPosBefore"  dataItem="subjunctiveCondWordBefore">Before it</checkbox>
          <checkbox id="IPSubjunctiveCondPosAfter"  dataItem="subjunctiveCondWordAfter">After it</checkbox>
          <checkbox id="IPSubjunctiveCondPosBoth"  dataItem="subjunctiveCondWordBoth">On both sides in the same phrase</checkbox>
-         <checkbox id="IPSubjunctiveCondPosOther"  dataItem="subjunctiveCondWordOther">In my language, they may occur in the following position: <textBox  id="IPSubjunctiveCondPosOtherContent" dataItem="subjunctiveCondWordOther" rows="2"/></checkbox>
+         <checkbox id="IPSubjunctiveCondPosOther"  dataItem="subjunctiveCondWordOther">In my language, they may occur in the following position: <textBox  id="IPSubjunctiveCondPosOtherContent" dataItem="subjunctiveCondWordOther" cols="70"  rows="1"/></checkbox>
       </checkboxGroup>
       <prompt id="IPSubjunctiveCondPosNoCheckPrompt" show="swIPSubjunctiveCondYesandNoCheck">WARNING: You need to check at least one box to describe where these subjunctive condition markers occur with respect to the rest of the subjunctive conditional phrase in your language, or change the answer to one of the ‘No’ answers above.</prompt>
       <instruction id="IPSubjunctiveCondYesInstruction" show="swIPSubjunctiveCondWordYesOrSome">In the lexicon, if this word is the same as the conditional word for conditionals discussed on the last page, simply add the feature <feature>subjunctive_conditional</feature> to the same entry you added on the last page with the category <category>Cond</category>.  If it is distinct from that entry, give this entry the category <category>Cond</category> and the feature <feature>subjunctive_conditional</feature>.  If this word can also be used as a complementizers in embedded questions, you will need to add a separate entry for it.   </instruction>

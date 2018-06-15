@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPMain" count="1/1">
+<page id="NPMain" count="5.1.1">
     <title>Las frases nominales - Descripción en general</title>
     <introduction>
        Las frases nominales pueden ser muy complejas, así que serán divididas entre seis secciones en este programa. Esta sección se enfoca en las frases nominales con sustantivos comunes como el sustantivo principal  Se consideran la modificación producida por los artículos, los demonstrativos, los posesivos, los cuantificadores y las palabras de grado, las frases adjetivales y las frases adposicionales.    
@@ -36,7 +36,7 @@ It may be difficult to understand the need for the change in English or Spanish,
             <checkbox id="NPClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificPosAfterNBeforeQ">Después del sustantivo pero antes del cuantificador o palabra de grado</checkbox>
             <checkbox id="NPClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificPosPrefixQ">Como un prefijo en el cuantificador o palabra de grado</checkbox>
             <checkbox id="NPClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificPosSuffixQ">Como un sufijo en el cuantificador o palabra de grado</checkbox>
-            <checkbox id="NPClassifierSpecificPosOther"  dataItem="classifierSpecificPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPClassifierSpecificPosOtherContent" dataItem="classifierSpecificPosOther" rows="2"/></checkbox>
+            <checkbox id="NPClassifierSpecificPosOther"  dataItem="classifierSpecificPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPClassifierSpecificPosOtherContent" dataItem="classifierSpecificPosOther" cols="70" rows="1"/></checkbox>
         </checkboxGroup>
         <prompt id="NPClassifierSpecificPosNoCheckPrompt" show="swNPClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto a estos cuantificadores o palabras de grado que se escriben como palabras independientes y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
         

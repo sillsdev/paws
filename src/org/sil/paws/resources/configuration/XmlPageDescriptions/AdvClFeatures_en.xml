@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvClFeatures" count="2/3">
+<page id="AdvClFeatures" count="13.2">
     <title level="2">Adverbial Clauses - Examples and Features</title>
    <introduction>The English examples of temporal adverbs with complements used in full sentences given on the last page are repeated here: </introduction>
    <EnglishExample>
@@ -16,7 +16,7 @@
    </EnglishExample>
     <form section="advcl">
         <prompt><br/>Key similar examples of temporal adverbial clauses in your language, included in (simple) full sentences here:</prompt>
-        <textBox id="AdvlClTemporalExample" dataItem="tempSentExample" cols="50"/>
+        <textBox id="AdvlClTemporalExample" dataItem="tempSentExample" cols="80"/>
         <br/>
         <radioGroup>
             <groupName dataItem="advOrNPPos" default="unknown" position="yesHeadDiff">RAdvOrNPPos</groupName>
@@ -30,8 +30,8 @@
 <ul>
                 <li>If the adverb may have another adverb as its complement, add the feature <feature>takes_Adv</feature>.</li>
                 <li>If the adverb may have a nominal phrase complement, add the feature <feature>takes_DP</feature>.</li>
-                <li>If the adverb may have an IP complement, add the features <feature>sentential embedded_finite</feature>.</li>
-                <li id="CompYesOption" show="swCompYes">If the adverb requires a complementizer to be present in its sentential complement (CP), add the features <feature>sentential embedded_finite embedded_CP</feature>.</li>
+                <li>If the adverb may have an IP complement, add the features <feature>sentential_finite_IP</feature>.</li>
+                <li id="CompYesOption" show="swCompYes">If the adverb requires a complementizer to be present in its sentential complement (CP), add the feature <feature>sentential_finite_CP</feature> instead.</li>
             </ul>
         </instruction>
         <br/>
@@ -51,14 +51,14 @@
          </introduction>
         <br/>
         <prompt>The examples you keyed in <section number="3">Adverbs and AdvP</section> are shown below.  You may add any additional examples in (simple) full sentences as well.<span id="CompNoSpan" show="swCompNo">  Since your language does not have a complementizer for embedded clauses, all the examples should have only sentential complements.</span></prompt>
-        <textBox id="AdvPReasonSentExample" section="advp" dataItem="reasonSentExample" cols="50"/>
+        <textBox id="AdvPReasonSentExample" section="advp" dataItem="reasonSentExample" cols="80"/>
         <br/>
         <br/>
         <instruction id="AdvClReasonInstruction">In the lexicon, add the following features to the adverb entry, in addition to the feature <feature>reason</feature>.
 <ul>
-                <li>If the adverb may have a finite IP complement, add the features <feature>sentential embedded_finite</feature>.</li>
-   <li id="CompYesOptionReason" show="swCompYes">If the adverb requires a complementizer to be present in its finite sentential complement (CP), add the features <feature>sentential embedded_finite embedded_CP</feature>.</li>
-                <li id="CompYesOptionReason1" show="swCompYes">If the adverb requires either a nonfinite IP with a pro-dropped subject or a nonfinite CP complement, add the features <feature>sentential embedded_-finite embedded_IPpro-dropOrCP</feature>.</li>
+                <li>If the adverb may have a finite IP complement, add the feature <feature>sentential_finite_IP</feature>.</li>
+   <li id="CompYesOptionReason" show="swCompYes">If the adverb requires a complementizer to be present in its finite sentential complement (CP), add the feature <feature>sentential_finite_CP</feature>.</li>
+                <li id="CompYesOptionReason1" show="swCompYes">If the adverb requires either a nonfinite IP with a pro-dropped subject or a nonfinite CP complement (like <example>in order</example> above), add the feature <feature>sentential_-finite</feature>.</li>
 </ul>
            Those that are phrases, like <example>in order</example>, need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLA Studio</tool>.
         </instruction>

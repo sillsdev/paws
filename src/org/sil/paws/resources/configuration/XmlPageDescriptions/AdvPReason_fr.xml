@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvPReason" count="4/6">
+<page id="AdvPReason" count="3.4">
     <title level="2">Adverbes et Syntagmes Adverbiaux – Adverbes de raison ou de but</title>
     <introduction>Les adverbes de raison ou de but sont les mots comme <example>donc</example> et
         <example>puis</example>.  Les modificateurs ne sont pas souvent utilisés avec les adverbes de raison ou de but. <br/><br/>
@@ -14,7 +14,7 @@
         <prompt>Entrez ici vos exemples de syntagmes prépositionnels ou postpositionnels qui expriment une raison ou un but:</prompt>
         <textBox id="AdvPReasonPPExample" dataItem="reasonPPExample" rows="3"/>
         <prompt>Entrez quelques exemples de chacun des boîtes ci-dessus, mais en utilisant des phrases complètes (suivi d’une nouvelle ligne après chaque exemple):</prompt>
-        <textBox id="AdvPReasonSentExample" dataItem="reasonSentExample" rows="5" cols="50"/> 
+        <textBox id="AdvPReasonSentExample" dataItem="reasonSentExample" rows="5" cols="80"/> 
         <br/>
         <instruction id="AdvPReasonInstruction">In the lexicon, key the feature <feature>reason</feature> on
 all adverbs that express reason or purpose, and also on the nouns like <example>reason</example> and <example>purpose</example>.  Any multi-word forms, like <example>in order</example> are best handled as a single entry using <tool>Join Compound</tool>.

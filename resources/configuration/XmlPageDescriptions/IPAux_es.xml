@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPAux" count="1/2">
+<page id="IPAux" count="9.3.1">
    <title level="2">Las oraciones básicas - Los auxiliares</title>
     <introduction>Algunas lenguas tienen elementos auxiliares que son palabras independientes, y algunos pueden tener más de un elemento auxiliar con el verbo principal. Algunos ejemplos de las oraciones transitivas en inglés son:</introduction>
     <EnglishExample>
@@ -12,7 +12,7 @@
     <introduction>En español, estos son expresados principalmente por los cambios del tiempo y del aspecto, a excepción de ejemplos como <example>He oido algo importante</example> y ejemplos 2 and 3 anteriores en español.</introduction>
     <form section="ip">
         <prompt>Escriba ejemplos similares en su lengua aquí:</prompt>
-        <textBox id="IPAuxExample" dataItem="auxExample" cols="50"/>
+        <textBox id="IPAuxExample" dataItem="auxExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup>
@@ -50,6 +50,8 @@
         <prompt id="IPAuxiliaryExamplePrompt" show="swAuxYes">Escriba las palabras auxiliares que su lengua utiliza aquí:</prompt>
         <textBox id="IPAuxiliaryExample" dataItem="auxiliaryExample" rows="5" show="swAuxYes"/>       
         <br/><br/>
+<instruction id="IPAuxYesCatMap" show="swAuxYes">The category of these auliliaries will be dealt with using the Category Mapper at the end of this section.</instruction>
+        <br/><br/>
         <introduction>En inglés la palabra que indica no finito, <example>to</example>, que se usa en cláusulas subordinadas, también funciona igual que un auxiliar en que ocupa la misma posición y puede presentarse antes de otros auxiliares. Por ejemplo,</introduction>
         <EnglishExample>
            <exItem label="1.">The boy wanted to hit the ball. ‘El muchacho quiso golpear el beísbol.'</exItem>
@@ -58,7 +60,7 @@
         </EnglishExample>
        <introduction>Por el contrario, el español no tiene un indicador de no finifo independiente para las cláusulas subordinadas, sino utiliza simplemente la forma no finita del verbo.</introduction>
        <prompt>Escriba ejemplos de oraciones no finitas o con cláusulas subordinadas no finitas en su lengua aquí:</prompt>
-        <textBox id="IPAuxNonfiniteExample" dataItem="auxNonfiniteExample" cols="50"/>
+        <textBox id="IPAuxNonfiniteExample" dataItem="auxNonfiniteExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup>
@@ -105,7 +107,7 @@
             <radio id="IPAuxOtherYes" dataValue="yes">Sí</radio>
         </radioGroup>
        <prompt id="IPAuxOtherPrompt" show="swAuxOtherYes">Escriba algunos ejemplos de oraciones con estas otras clases de auxiliares en su lengua aquí: </prompt>
-       <textBox id="IPAuxOtherExample" dataItem="auxOtherExample" cols="50" show="swAuxOtherYes"/>
+       <textBox id="IPAuxOtherExample" dataItem="auxOtherExample" cols="80" show="swAuxOtherYes"/>
        <radioGroup id="IPAuxOtherOrderTable" show="swIPAuxOrderVSOorOSVandAuxOtherYes">
                 <groupName dataItem="auxOtherOrder" default="no">RIPAuxOtherOrder</groupName>
                 <prompt>

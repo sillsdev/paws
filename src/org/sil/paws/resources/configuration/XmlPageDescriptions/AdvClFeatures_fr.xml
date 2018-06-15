@@ -3,20 +3,20 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvClFeatures" count="2/3">
+<page id="AdvClFeatures" count="13.2">
     <title level="2">Propositions Adverbiales – Exemples et Caractéristiques</title>
     <introduction>Nous répétons les exemples en français d’adverbes temporels avec compléments utilisés dans des phrases complètes citées à la page précédente: </introduction>
    <EnglishExample>
        <exItem label="1.">[Depuis ce temps là], Jean est de mauvaise humeur.</exItem>
        <exItem label="2.">Jean est à la maison  [depuis la semaine dernière].</exItem>
-       <exItem label="3.">[Depuis que Jean est rentré de l'hôpital], il se porte mieux.</exItem>
-       <exItem label="4.">Jean se sent bien  [maintenant qu'il est rentré de l'hôpital].</exItem>
-       <exItem label="5.">Le chien a suivi Suzanne partout  [depuis qu’elle est revenue de l'université].</exItem>
-       <exItem label="6.">[Quand elle est revenue de l'université], le chien a suivi Suzanne partout.</exItem>
+       <exItem label="3.">[Depuis que Jean est rentré de l’hôpital], il se porte mieux.</exItem>
+       <exItem label="4.">Jean se sent bien  [maintenant qu’il est rentré de l’hôpital].</exItem>
+       <exItem label="5.">Le chien a suivi Suzanne partout  [depuis qu’elle est revenue de l’université].</exItem>
+       <exItem label="6.">[Quand elle est revenue de l’université], le chien a suivi Suzanne partout.</exItem>
    </EnglishExample>
     <form section="advcl">
         <prompt><br/>Entrez ici dans votre langue des exemples pareils de propositions adverbiales temporelles incorporées dans des phrases complètes simples:</prompt>
-        <textBox id="AdvlClTemporalExample" dataItem="tempSentExample" cols="50"/>
+        <textBox id="AdvlClTemporalExample" dataItem="tempSentExample" cols="80"/>
         <br/>
         <radioGroup>
             <groupName dataItem="advOrNPPos" default="unknown" position="yesHeadDiff">RAdvOrNPPos</groupName>
@@ -27,11 +27,11 @@
         </radioGroup>
         <br/>
         <instruction id="AdvClTemporalInstruction">In the lexicon, add the following features to the adverb entry, in addition to the feature <feature>temporal</feature>.  Note that the first two features can be added to the same entry, and either or both can be added to the other sets of features.
-<ul>
+            <ul>
                 <li>If the adverb may have another adverb as its complement, add the feature <feature>takes_Adv</feature>.</li>
                 <li>If the adverb may have a nominal phrase complement, add the feature <feature>takes_DP</feature>.</li>
-                <li>If the adverb may have an IP complement, add the features <feature>sentential embedded_finite</feature>.</li>
-                <li id="CompYesOption" show="swCompYes">If the adverb requires a complementizer to be present in its sentential complement (CP), add the features <feature>sentential embedded_finite embedded_CP</feature>.</li>
+                <li>If the adverb may have an IP complement, add the features <feature>sentential_finite_IP</feature>.</li>
+                <li id="CompYesOption" show="swCompYes">If the adverb requires a complementizer to be present in its sentential complement (CP), add the feature <feature>sentential_finite_CP</feature> instead.</li>
             </ul>
         </instruction>
         <br/>
@@ -51,21 +51,21 @@
          </introduction>
         <br/>
         <prompt>Les exemples que vous avez donnés à la <section number="3">Adverbes et Syntagmes Adverbiaux</section> sont cités en-dessous.  Vous pouvez ajouter d’autres exemples sous forme de phrases (simple) complètes.<span id="CompNoSpan" show="swCompNo">  Puisque votre langue n’a pas de complémentiseur pour les propositions subordonnées, tous vos exemples devraient contenir un complément sententiel.</span></prompt>
-        <textBox id="AdvPReasonSentExample" section="advp" dataItem="reasonSentExample" cols="50"/>
+        <textBox id="AdvPReasonSentExample" section="advp" dataItem="reasonSentExample" cols="80"/>
         <br/>
         <br/>
         <instruction id="AdvClReasonInstruction">In the lexicon, add the following features to the adverb entry, in addition to the feature <feature>reason</feature>.
-<ul>
-                <li>If the adverb may have a finite IP complement, add the features <feature>sentential embedded_finite</feature>.</li>
-   <li id="CompYesOptionReason" show="swCompYes">If the adverb requires a complementizer to be present in its finite sentential complement (CP), add the features <feature>sentential embedded_finite embedded_CP</feature>.</li>
-                <li id="CompYesOptionReason1" show="swCompYes">If the adverb requires either a nonfinite IP with a pro-dropped subject or a nonfinite CP complement, add the features <feature>sentential embedded_-finite embedded_IPpro-dropOrCP</feature>.</li>
-</ul>
-           Those that are phrases, like <example>in order</example>, need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLA Studio</tool>.
+            <ul>
+                <li>If the adverb may have a finite IP complement, add the feature <feature>sentential_finite_IP</feature>.</li>
+                <li id="CompYesOptionReason" show="swCompYes">If the adverb requires a complementizer to be present in its finite sentential complement (CP), add the feature <feature>sentential_finite_CP</feature>.</li>
+                <li id="CompYesOptionReason1" show="swCompYes">If the adverb requires either a nonfinite IP with a pro-dropped subject or a nonfinite CP complement (like <example>in order</example> above), add the feature <feature>sentential_-finite</feature>.</li>
+            </ul>
+            Those that are phrases, like <example>in order</example>, need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLA Studio</tool>.
         </instruction>
         <br/>
         <buttons>
             <button id="AdvClFeaturesBack" value="Back" goto="AdvClMain.xml"/>
-            <button id="AdvClFeaturesNext" value="Next" goto="AdvClTesting.xml" gotoNoGrammar="Contents_fr.htm"/>
+            <button id="AdvClFeaturesNext" value="Next" goto="AdvClTesting.xml" gotoNoGrammar="Contents_fr_fr.htm"/>
         </buttons>
     </form>
    <showWhen id="swCompYes">

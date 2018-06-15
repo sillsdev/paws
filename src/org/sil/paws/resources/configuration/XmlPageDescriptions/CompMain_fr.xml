@@ -3,13 +3,13 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="CompMain" count="1/4">
+<page id="CompMain" count="10.1">
     <title>Propositions Complétives</title>
     <introduction>Cette section considère divers types de propositions subordonnées qui sont <technicalTermRef term="ttComplements">compléments</technicalTermRef> de verbes principaux ou d’adjectifs qui fonctionnent comme <technicalTermRef term="ttPredicates">prédicats</technicalTermRef>, comme les exemples suivants en anglais. </introduction>
     <EnglishExample>
         <exItem label="1.">I believe that Jill is my friend.  « Je crois que Jeanne est mon amie. »</exItem>
         <exItem label="2.">Jill insists that she is my friend.  « Jeanne insiste qu’elle est mon amie. »</exItem>
-        <exItem label="3.">I expect that Joe will come to the party.  « Je m’attends que Jacques va venir à la soirée. »</exItem>
+        <exItem label="3.">I expect that Joe will come to the party.  « Je m’attends à ce que Jacques va venir à la soirée. »</exItem>
         <exItem label="4.">I expect Joe to come to the party.  « Je m’attends à Jacques à venir à la soirée. »</exItem>
         <exItem label="5.">I will persuade Joe that he should come to the party.  « Je vais persuader Jacques qu’il devrait venir à la soirée. »</exItem>
         <exItem label="6.">I will persuade Joe to come to the party.  « Je vais persuader Jacques de venir à la soirée. »</exItem>

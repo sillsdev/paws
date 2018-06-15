@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPCop" count="1/3">
+<page id="IPCop" count="9.5.1">
    <title level="2">Las oraciones básicas - Las oraciones copulativas</title>
    <introduction>Distinguimos aquí entre oraciones con verbos <technicalTermRef term="ttCopular">copulativos</technicalTermRef> y verbos de <technicalTermRef term="ttPerception"/>, comenzando con oraciones copulativas.
            <br/><br/>
@@ -16,7 +16,7 @@
         </EnglishExample>
  <form section="ip">
    <prompt>Escriba algunos ejemplos de oraciones copulativas aquí:</prompt>
-        <textBox id="IPExamplesCopularExample" dataItem="copularExample" cols="50"/>
+        <textBox id="IPExamplesCopularExample" dataItem="copularExample" cols="80"/>
         <radioGroup>
             <groupName dataItem="copular" default="yes">RIPCopVerb</groupName>
            <prompt>¿Existe un verbo <technicalTermRef term="ttOvert">explícito</technicalTermRef> que se usa en oraciones copulativas en su lengua?</prompt>
@@ -53,8 +53,8 @@
        <exItem label="6.">Ella parece agradable.</exItem>
     </EnglishExample> 
     <prompt>Escriba ejemplos similares en su lengua aquí:</prompt>
-    <textBox id="IPExamplesPerceptionExample" dataItem="perceptionExample" cols="50"/>
-    <instruction id="IPCopPerceptionInstruction">Add the feature <feature>perception</feature> to the lexical entry of the perception verbs. Since the perception verbs are a small, closed set, the feature must be entered in the lexicon on the appropriate verbs; the default setting is <feature>-perception</feature>.</instruction>
+    <textBox id="IPExamplesPerceptionExample" dataItem="perceptionExample" cols="80"/>
+    <instruction id="IPCopPerceptionInstruction">Add the feature <feature>perception</feature> to the lexical entry of the perception verbs. Since the perception verbs are a small, closed set, the feature must be entered in the lexicon on the appropriate verbs; the default setting is <feature>-perception</feature>.  Please note that these verbs should be distinct from the copular verbs.</instruction>
     <br/>
     <introduction>Los verbos copulativos y de percepción también pueden presentarse con una cláusula adjetival como complemento, en que una oración o una cláusula de complemento sigue al adjetivo. Estas construcciones se presentan en  <section number="10.">Cláusulas de complemento</section> en la sección acreca de verbos de percepción que actúan como verbos de ‘ascenso’.</introduction>
     <br/><br/>

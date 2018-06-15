@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPArtDem" count="1/2">
+<page id="NPArtDem" count="5.3.1">
     <title level="2">Las frases nominales - Los artículos y demonstrativos: ejemplos y caso</title>
     <introduction>Ahora se consideran los artículos y los demonstrativos.  En español, los artículos son <example>un</example>, <example>una</example>, <example>el</example>, y <example>la</example>.  Los demonstrativos en español son <example>esto</example>, <example>ese</example>, <example>estos</example>, y <example>esos</example>.  Algunos ejemplos simples son:</introduction>
     <EnglishExample>
@@ -62,158 +62,133 @@
        <prompt id="NPArtCaseNone" show="swNPArtCaseNoOrNone">Puesto que su lengua no indica el caso en los artículos, se debe tener solamente un sistema de artículos que pueden utilizarse en cualquier posición en la oración.</prompt>
        
        <prompt id="NPArtCaseNoPrompt" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef">Escriba los artículos definidos que su lengua utiliza <span id="SingularSpan" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseNoExample" dataItem="articleExample" rows="4" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseNoExample" dataItem="articleExample" rows="2" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseNo" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>  
-       <textBox id="NPArtPlCaseNoExample" dataItem="articlePlExample" rows="3" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseNoExample" dataItem="articlePlExample" rows="2" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseNoPrompt" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes">Escriba los artículos indefinidos que su lengua utiliza <span id="SingularSpan1" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseNoExample" dataItem="articleIndefExample" rows="4" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes"/> 
+       <textBox id="NPArtIndefCaseNoExample" dataItem="articleIndefExample" rows="2" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes"/> 
       <prompt id="NPArtIndefPlCaseNo" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseNoExample" dataItem="articleIndefPlExample" rows="3" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseNoExample" dataItem="articleIndefPlExample" rows="2" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes"/>
        
        <prompt id="NPArtCaseNom" show="swNPArtCaseNom">Puesto que su lengua tiene un sistema de caso nominativo-acusativo, se deben tener sistemas de artículos distintos para modificar a los sujetos, a los objetos y a los posesivos.</prompt>
        
        <prompt id="NPArtCaseNomNumberNo" show="swNPArtCaseNomAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos aquí, cada uno en una linea separada:</prompt>  
-       <textBox id="NPArtCaseNomExample" dataItem="articleNomExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseNomExample" dataItem="articleNomExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseNom" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseNomExample" dataItem="articlePlNomExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseNomExample" dataItem="articlePlNomExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseNomNumberNo" show="swNPArtCaseNomAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseNomExample" dataItem="articleIndefNomExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseNomExample" dataItem="articleIndefNomExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseNom" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseNomExample" dataItem="articleIndefPlNomExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseNomExample" dataItem="articleIndefPlNomExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseAcc" show="swNPArtCaseNomAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos directos que su lengua utiliza <span id="SingularSpan2" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseAccExample" dataItem="articleAccExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseAccExample" dataItem="articleAccExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseAcc" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos directos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseAccExample" dataItem="articlePlAccExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseAccExample" dataItem="articlePlAccExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseAcc" show="swNPArtCaseNomAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos directos que su lengua utiliza <span id="SingularSpan5" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefCaseAccExample" dataItem="articleIndefAccExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseAccExample" dataItem="articleIndefAccExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseAcc" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos directos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseAccExample" dataItem="articleIndefPlAccExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseAccExample" dataItem="articleIndefPlAccExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseGen" show="swNPArtCaseNomAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan4" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseGenExample" dataItem="articleGenExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseGenExample" dataItem="articleGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseGen" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseGenExample" dataItem="articlePlGenExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseGenExample" dataItem="articlePlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseGen" show="swNPArtCaseNomAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan3" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefCaseGenExample" dataItem="articleIndefGenExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseGenExample" dataItem="articleIndefGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseGen" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseGenExample" dataItem="articleIndefPlGenExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseGenExample" dataItem="articleIndefPlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
        <instruction id="NPArtCaseNomInstruction" show="swNPArtCaseNom">
-          <br/>In the lexicon:
-          <ul>
-             <li>Add the feature <feature>nominative</feature> to all the articles that occur in subjects.</li>
-             <li>Add the feature <feature>accusative</feature> to all the articles that occur in objects.</li>
-             <li>Add the feature <feature>genitive</feature> to all the articles that occur in possessors.</li>
-             <li>If a particular article can show up in any position, do not add any feature.</li>
-          </ul>
-       </instruction>
-       <prompt id="NPArtCaseErg" show="swNPArtCaseErg">Puesto que su lengua tiene un sistema de caso ergativo-absolutivo, se deben tener sistemas de artículos distintos para modificar a los sujetos de verbos transitivos, a los sujetos de verbos intransitivos y los objetos de verbos transitivos y a los posesivos.</prompt>
+ 
+          <prompt id="NPArtCaseErg" show="swNPArtCaseErg">Puesto que su lengua tiene un sistema de caso ergativo-absolutivo, se deben tener sistemas de artículos distintos para modificar a los sujetos de verbos transitivos, a los sujetos de verbos intransitivos y los objetos de verbos transitivos y a los posesivos.</prompt>
        <prompt id="NPArtCaseErgNumberNo" show="swNPArtCaseErgAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos de verbos transitivos que su lengua utiliza <span id="SingularSpan10" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseErgExample" dataItem="articleErgExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseErgExample" dataItem="articleErgExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseErg" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos de verbos transitivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtPlCaseErgExample" dataItem="articlePlErgExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseErgExample" dataItem="articlePlErgExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseErgNumberNo" show="swNPArtCaseErgAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos transitivos que su lengua utiliza <span id="SingularSpan11" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseErgExample" dataItem="articleIndefErgExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseErgExample" dataItem="articleIndefErgExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseErg" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos transitivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseErgExample" dataItem="articleIndefPlErgExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseErgExample" dataItem="articleIndefPlErgExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseAbs" show="swNPArtCaseErgAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos que su lengua utiliza <span id="SingularSpan12" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseAbsExample" dataItem="articleAbsExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseAbsExample" dataItem="articleAbsExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseAbs" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseAbsExample" dataItem="articlePlAbsExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseAbsExample" dataItem="articlePlAbsExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseAbs" show="swNPArtCaseErgAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos que su lengua utiliza <span id="SingularSpan13" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefCaseAbsExample" dataItem="articleIndefAbsExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseAbsExample" dataItem="articleIndefAbsExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseAbs" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlCaseAbsExample" dataItem="articleIndefPlAbsExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseAbsExample" dataItem="articleIndefPlAbsExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseErgGen" show="swNPArtCaseErgAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan14" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseErgGenExample" dataItem="articleErgGenExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseErgGenExample" dataItem="articleErgGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseErgGen" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseErgGenExample" dataItem="articleErgPlGenExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseErgGenExample" dataItem="articleErgPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseErgGen" show="swNPArtCaseErgAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan15" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefCaseErgGenExample" dataItem="articleErgIndefGenExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseErgGenExample" dataItem="articleErgIndefGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseErgGen" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseErgGenExample" dataItem="articleErgIndefPlGenExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseErgGenExample" dataItem="articleErgIndefPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
        <instruction id="NPArtCaseErgInstruction" show="swNPArtCaseErg">
-          <br/>In the lexicon:
-          <ul>
-             <li>Add the feature <feature>ergative</feature> to all the articles that occur in subjects of transitive verbs.</li>
-             <li>Add the feature <feature>absolutive</feature> to all the articles that occur in objects of transitive verbs and in subjects of intransitive verbs.</li>
-             <li>Add the feature <feature>genitive</feature> to all the articles that occur in possessors.</li>
-             <li>If a particular article can show up in any position, do not add any feature.</li>
-          </ul>
-       </instruction>
        
        <prompt id="NPArtCaseSplitNom" show="swNPArtCaseSplit">Puesto que su lengua tiene un sistema de caso de ergatividad escindida, se deben tener sistemas de artículos distintos para modificar a los sujetos, a los objetos y a los posesivos siguiendo el sistema nominativo-acusativo, más algunos sistemas especiales que se utilizan en casos de ergatividad escindida.</prompt>
        <prompt id="NPArtCaseSplitNomAndNumberNo" show="swNPArtCaseSplitAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos que su lengua utiliza <span id="SingularSpan16" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>  
-       <textBox id="NPArtCaseSplitNomExample" dataItem="articleSplitNomExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitNomExample" dataItem="articleSplitNomExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitNom" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtPlCaseSplitNomExample" dataItem="articleSplitPlNomExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitNomExample" dataItem="articleSplitPlNomExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitNomAndNumberNo" show="swNPArtCaseSplitAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos que su lengua utiliza <span id="SingularSpan17" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitNomExample" dataItem="articleSplitIndefNomExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitNomExample" dataItem="articleSplitIndefNomExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseSplitNom" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitNomExample" dataItem="articleSplitIndefPlNomExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitNomExample" dataItem="articleSplitIndefPlNomExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseSplitAcc" show="swNPArtCaseSplitAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos directos que su lengua utiliza <span id="SingularSpan18" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseSplitAccExample" dataItem="articleSplitAccExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitAccExample" dataItem="articleSplitAccExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitAcc" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos directos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseSplitAccExample" dataItem="articleSplitPlAccExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitAccExample" dataItem="articleSplitPlAccExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitAcc" show="swNPArtCaseSplitAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos directos que su lengua utiliza <span id="SingularSpan19" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitAccExample" dataItem="articleSplitIndefAccExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitAccExample" dataItem="articleSplitIndefAccExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseSplitAcc" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos directos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlCaseSplitAccExample" dataItem="articleSplitIndefPlAccExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitAccExample" dataItem="articleSplitIndefPlAccExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseSplitGen" show="swNPArtCaseSplitAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan20" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseSplitGenExample" dataItem="articleSplitGenExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitGenExample" dataItem="articleSplitGenExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitGen" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseSplitGenExample" dataItem="articleSplitPlGenExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitGenExample" dataItem="articleSplitPlGenExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitGen" show="swNPArtCaseSplitAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan21" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitGenExample" dataItem="articleSplitIndefGenExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitGenExample" dataItem="articleSplitIndefGenExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseSplitGen" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlCaseSplitGenExample" dataItem="articleSplitIndefPlGenExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitGenExample" dataItem="articleSplitIndefPlGenExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        
        <prompt id="NPArtCaseSplitErg" show="swNPArtCaseSplitAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza <span id="SingularSpan22" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseSplitErgExample" dataItem="articleSplitErgExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitErgExample" dataItem="articleSplitErgExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitErg" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseSplitErgExample" dataItem="articleSplitPlErgExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitErgExample" dataItem="articleSplitPlErgExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitErg" show="swNPArtCaseSplitAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza <span id="SingularSpan23" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitErgExample" dataItem="articleSplitIndefErgExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitErgExample" dataItem="articleSplitIndefErgExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseSplitErg" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlCaseSplitErgExample" dataItem="articleSplitIndefPlErgExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitErgExample" dataItem="articleSplitIndefPlErgExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseSplitAbs" show="swNPArtCaseSplitAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza <span id="SingularSpan24" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseSplitAbsExample" dataItem="articleSplitAbsExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitAbsExample" dataItem="articleSplitAbsExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitAbs" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtPlCaseSplitAbsExample" dataItem="articleSplitPlAbsExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitAbsExample" dataItem="articleSplitPlAbsExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitAbs" show="swNPArtCaseSplitAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza <span id="SingularSpan25" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitAbsExample" dataItem="articleSplitIndefAbsExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>       
+       <textBox id="NPArtIndefCaseSplitAbsExample" dataItem="articleSplitIndefAbsExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>       
        <prompt id="NPArtIndefPlCaseSplitAbs" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitAbsExample" dataItem="articleSplitIndefPlAbsExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitAbsExample" dataItem="articleSplitIndefPlAbsExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        
-       <instruction id="NPArtCaseSplitInstruction" show="swNPArtCaseSplit">
-          <br/>In the lexicon:
-          <ul>
-             <li>Add the feature <feature>nominative</feature> to all the articles that occur in subjects.</li>
-             <li>Add the feature <feature>accusative</feature> to all the articles that occur in objects.</li>
-             <li>Add the feature <feature>genitive</feature> to all the articles that occur in possessors.</li>
-             <li>For the split ergativity cases, add the feature <feature>ergative</feature> to all the articles that can only occur in subjects of transitive verbs and add the feature <feature>absolutive</feature> to all the articles that can only occur in subjects of intransitive verbs and objects of transitive verbs.  Note that if there is some overlap between the sets for nominative-accusative versus ergative-absolutive, you will probably need to have two entries in your lexicon for those articles, each marked with the appropriate case feature.</li>
-             <li>If a particular article can show up in any position, do not add any feature.</li>
-          </ul>
-       </instruction>  
-       <prompt id="NPArtDativeSet" show="swNPCaseNotNoneAndArtCaseArt">
+     <prompt id="NPArtDativeSet" show="swNPCaseNotNoneAndArtCaseArt">
           <br/>También puede tener un sistema adicional de artículos dativos.  
        </prompt>
        <prompt id="NPArtDative" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan" show="swExperiencerYesDat">y sujetos-experimentadores </span>que su lengua utiliza <span id="SingularSpan26" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
        <textBox id="NPArtDativeExample" dataItem="articleDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlDative" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan2" show="swExperiencerYesDat">y sujetos-experimentadores </span> que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlDativeExample" dataItem="articlePlDatExample" rows="3" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlDativeExample" dataItem="articlePlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefDative" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos indirectos <span id="ExpereincerSpan1" show="swExperiencerYesDat">y sujetos-experimentadores </span>que su lengua utiliza <span id="SingularSpan27" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
        <textBox id="NPArtIndefDativeExample" dataItem="articleIndefDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlDative" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes">Escriba los artículos definidos que pueden presentarse en objetos indirectos <span id="ExpereincerSpan3" show="swExperiencerYesDat">y sujetos-experimentadores </span>que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlDativeExample" dataItem="articleIndefPlDatExample" rows="3" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlDativeExample" dataItem="articleIndefPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes"/>
        
        <instruction id="NPArtCaseDativeInstruction" show="swNPCaseNotNoneAndArtCaseArt">
           <br/>In the lexicon, add the feature <feature>dative</feature> to all the articles that occur in indirect objects or Experiencer subjects.</instruction>
@@ -419,6 +394,11 @@
                     <span id="NPArtAndDemCaseSplitSpan" show="swNPArtAndDemBoth">article or demonstrative</span> can show up in any position, do not add any feature.</li>
             </ul>
         </instruction>
+       <instruction id="NPArtAndOrDemNumberSpan" show="swNPArtAndOrDemNumberYes">Add the feature <feature>singular</feature> to each of the <span id="NPArtOnlyNumberSpan" show="swNPArtAndDemArt">articles</span>
+          <span id="NPDemOnlyNumberSpan" show="swNPArtAndDemDem">demonstratives</span>
+          <span id="NPArtAndDemNumberSpan" show="swNPArtAndDemBoth">articles and demonstratives</span> that are used only with singular items and the feature <feature>plural</feature> to each of the <span id="NPArtOnlyNumberSpan1" show="swNPArtAndDemArt">articles</span>
+          <span id="NPDemOnlyNumberSpan1" show="swNPArtAndDemDem">demonstratives</span>
+          <span id="NPArtAndDemNumberSpan1" show="swNPArtAndDemBoth">articles and demonstratives</span> that are used only with plural items.  Do not add any number feature to any that are used with singular or plural items.</instruction>
        <prompt id="NPDemDativeSet" show="swNPCaseNotNoneAndArtCaseDem">
           <br/>También puede tener un sistema adicional de demostrativos dativos.   
        </prompt>
@@ -439,7 +419,7 @@
           <br/>In the lexicon, add the feature <feature>dative</feature> to all the demonstratives that occur in indirect objects or Experiencer subjects.</instruction>
 <br/>
        <br/>
-        <buttons>
+       <buttons>
             <button id="NPArtDemBack" value="Back" goto="NPContents_es.htm"/>
             <button id="NPArtDemNext" value="Next" goto="NPArtPosition.xml"/>
         </buttons>
@@ -460,7 +440,18 @@
         <not/>
         <whenRadio button="NPArtAndDemNo"/>
         </showWhen>
-        <showWhen id="swNPArtAndOrDemAndCaseYes">
+   <showWhen id="swNPArtAndOrDemNumberYes">
+      <not/>
+      <whenRadio button="NPArtAndDemNo"/>
+      <and/>
+      <whenRadio button="NPArtPlYes"/>
+      <or/>
+      <not/>
+      <whenRadio button="NPArtAndDemNo"/>
+      <and/>
+      <whenRadio button="NPDemPlYes"/>
+   </showWhen> 
+   <showWhen id="swNPArtAndOrDemAndCaseYes">
             <not/>
             <whenRadio button="NPArtAndDemNo"/>
             <and/>
@@ -503,11 +494,15 @@
         <whenRadio button="NPArtAndDemArt"/>
         <and/>
         <whenRadio button="NPArtPlNo"/>
-       <or/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
+      <or/>
         <whenRadio button="NPArtAndDemBoth"/>       
         <and/>
         <whenRadio button="NPArtPlNo"/>
- <or/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
+      <or/>
        <whenRadio button="NPArtAndDemArt"/>
        <and/>
        <whenValue element="np" attr="agreeNumber" value="no"/>
@@ -638,13 +633,17 @@
       <whenRadio button="NPArtCaseNo"/>
       <and/>
       <whenRadio button="NPDemPlYes"/>
-      <or/>
+       <and/>
+       <whenValue element="np" attr="agreeNumber" value="yes"/>
+       <or/>
       <whenRadio button="NPArtCaseYes"/>   
       <and/>
       <whenValue element="typology" attr="case" value="none"/>
       <and/>
       <whenRadio button="NPDemPlYes"/>
-   </showWhen>
+       <and/>
+       <whenValue element="np" attr="agreeNumber" value="yes"/>
+    </showWhen>
    <showWhen id="swNPDemCaseNom">
       <openParen/>
       <whenRadio button="NPArtAndDemDem"/>
@@ -690,6 +689,8 @@
       <whenValue element="typology" attr="case" value="nominative"/>
       <and/>
       <whenRadio button="NPDemPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
    </showWhen>
    <showWhen id="swNPDemCaseErgAndNumberYes">
       <openParen/>
@@ -703,6 +704,8 @@
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>
       <whenRadio button="NPDemPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
    </showWhen>
    <showWhen id="swNPDemCaseSplitAndNumberYes">
       <openParen/>
@@ -716,6 +719,8 @@
       <whenValue element="typology" attr="case" value="split"/>
       <and/>
       <whenRadio button="NPDemPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
    </showWhen>
    
    <showWhen id="swNPDemCaseNoOrNone">
@@ -766,7 +771,7 @@
       <whenValue element="typology" attr="case" value="none"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyIndef"/>
-   <closeParen/>
+      <closeParen/>
    </showWhen>
    <showWhen id="swNPArtCaseNoOrNoneAndDefOnlyNotYes">
       <openParen/>
@@ -785,7 +790,7 @@
       <whenValue element="typology" attr="case" value="none"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyYes"/>
-   <closeParen/>
+<closeParen/>
    </showWhen>
    <showWhen id="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef">
       <openParen/>
@@ -798,6 +803,8 @@
       <whenRadio button="NPArtCaseNo"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyIndef"/>
       <or/>
@@ -806,9 +813,11 @@
       <whenValue element="typology" attr="case" value="none"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyIndef"/>
-   <closeParen/>
+<closeParen/>
    </showWhen>
    <showWhen id="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes">
       <openParen/>
@@ -821,6 +830,8 @@
       <whenRadio button="NPArtCaseNo"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyYes"/>
       <or/>
@@ -829,9 +840,11 @@
       <whenValue element="typology" attr="case" value="none"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyYes"/>
-   <closeParen/>
+ <closeParen/>
    </showWhen>
    <showWhen id="swNPArtCaseNom">
       <openParen/>
@@ -956,6 +969,8 @@
       <whenValue element="typology" attr="case" value="nominative"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyIndef"/>
    </showWhen>
@@ -971,6 +986,8 @@
       <whenValue element="typology" attr="case" value="nominative"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyYes"/>
    </showWhen>
@@ -986,6 +1003,8 @@
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyIndef"/>
    </showWhen>
@@ -1001,6 +1020,8 @@
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyYes"/>
    </showWhen>
@@ -1016,6 +1037,8 @@
       <whenValue element="typology" attr="case" value="split"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyIndef"/>
    </showWhen>
@@ -1031,6 +1054,8 @@
       <whenValue element="typology" attr="case" value="split"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyYes"/>
    </showWhen>
@@ -1070,6 +1095,8 @@
       <and/>
       <whenRadio button="NPArtPlYes"/>
       <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
+      <and/>
       <whenRadio button="NPArtCaseYes"/>
    </showWhen>
    <showWhen id="swNPCaseNotNoneAndArtCaseAndDemPlYes">
@@ -1083,6 +1110,8 @@
       <whenValue element="typology" attr="case" value="none"/>
       <and/>
       <whenRadio button="NPDemPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/>
       <whenRadio button="NPArtCaseYes"/>
    </showWhen>
@@ -1126,6 +1155,8 @@
       <and/>
       <whenRadio button="NPArtPlYes"/>
       <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
+      <and/>
       <whenRadio button="NPArtCaseYes"/>
       <and/><not/>
       <whenRadio button="NPArtDefOnlyYes"/>
@@ -1141,6 +1172,8 @@
       <whenValue element="typology" attr="case" value="none"/>
       <and/>
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
       <and/>
       <whenRadio button="NPArtCaseYes"/>
       <and/><not/>
@@ -1160,9 +1193,13 @@
    </showWhen>
    <showWhen id="swArtPlYes">
       <whenRadio button="NPArtPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
    </showWhen>
    <showWhen id="swDemPlYes">
       <whenRadio button="NPDemPlYes"/>
+      <and/>
+      <whenValue element="np" attr="agreeNumber" value="yes"/>
    </showWhen>
    <showWhen id="swExperiencerYesDat">
       <whenValue element="typology" attr="caseExperiencer" value="yesDat"/>

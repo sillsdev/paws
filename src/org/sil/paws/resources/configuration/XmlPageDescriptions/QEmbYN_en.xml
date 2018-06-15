@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QEmbYN" count="3/9">
+<page id="QEmbYN" count="11.3">
     <title level="2">Questions - Embedded Clause Yes/No Questions</title>
    <introduction>Embedded Yes/No questions in English have a question marker or complementizer (<example>whether</example> or <example>if</example>) before the embedded question, which is otherwise the same as a declarative sentence.  Other languages may have other ways to signal an embedded Yes/No question.  Representative examples of English embedded Yes/No questions include:</introduction>
         <EnglishExample>
@@ -11,9 +11,9 @@
         </EnglishExample>
    <form section="q">
       <prompt><br/>Key similar examples of embedded Yes/No questions in your language here:</prompt>
-        <textBox id="QEmbYNExample" dataItem="embYNExample" cols="50"/>
+        <textBox id="QEmbYNExample" dataItem="embYNExample" cols="80"/>
         <br/>
-        <instruction id="QEmbYNInstruction">Only certain verbs can take a question complement. In the lexicon, mark the verbs from your examples and any others that come to mind with the features <feature>sentential embedded_question</feature> if they can only take an embedded question complement (like ‘wonder’), but use the features <feature>sentential embedded_question_allowed</feature> if they can take an embedded question as well as a non-question complement (like ‘know’).
+      <instruction id="QEmbYNInstruction">Only certain verbs can take a question complement. In the lexicon, mark the verbs from your examples and any others that come to mind with the features <feature>sentential_question sentential_CP</feature> if they can only take an embedded question complement (like <example>wonder</example>), but for a verb that can take an embedded question as well as some other complements (like <example>know</example> and <example>ask</example>), they only need to features as added in <section number="10.">Complement Clauses</section>.  If you want to include examples with <example>learn</example>, which were not covered here or in <section number="10.">Complement Clauses</section>, add the feature <feature>sentential_-finiteIPpro-drop_or_transitive_or_question</feature> (without any additional <feature>transitive</feature> feature) to its lexical entry.
         </instruction>
         <radioGroup>
             <groupName dataItem="embYN" default="no">RQEmbYN</groupName>
@@ -37,7 +37,7 @@
          <checkbox id="QEmbYNCliticEnclitic" dataItem="embYNEnclitic">As an enclitic which attaches to the end of the last word in the embedded Yes/No question</checkbox>
          <checkbox id="QEmbYNCliticPrefix" dataItem="embYNPrefix">As a prefix which attaches to the verb</checkbox>
          <checkbox id="QEmbYNCliticSuffix" dataItem="embYNSuffix">As a suffix which attaches to the verb</checkbox>
-         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="2"/></checkbox>
+         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNCliticPosNoCheckPrompt" show="swQEmbYNWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these Yes/No question markers attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
       <prompt id="QEmbYNCliticsExamplesPrompt" show="swQEmbYNCliticProcliticOrEnclitic"><br/>Key the clitics which are used to mark embedded Yes/No questions here, with an equal sign to indicate which side it attaches to the Yes/No question on:</prompt>    
@@ -57,7 +57,7 @@
          <checkbox id="QEmbYNPosBefore"  dataItem="embYNWordBefore">Before it</checkbox>
          <checkbox id="QEmbYNPosAfter"  dataItem="embYNWordAfter">After it</checkbox>
          <checkbox id="QEmbYNPosBoth"  dataItem="embYNWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">In my language, they may occur in the following position: <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="2"/></checkbox>
+         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">In my language, they may occur in the following position: <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNPosNoCheckPrompt" show="swQEmbYNWordYesOrSomeandNoCheck">WARNING: You need to check at least one box to describe where these Yes/No question markers occur with respect to the rest of the embedded question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       

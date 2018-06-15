@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="ExclTesting" count="2/2">
+<page id="ExclTesting" count="17.2">
 	<title level="2">Exclamations and Greetings - Testing</title>
 	<form section="excl">
 		<instruction>
@@ -16,7 +16,7 @@ results and note any changes you need to make, most likely by adding features to
 		<br/>
 		<buttons>
 			<button id="ExclTestingBack" value="Back" goto="ExclMain.xml"/>
-			<button id="ExclTestingNext" value="Next" goto="Contents_fr.htm"/>
+			<button id="ExclTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

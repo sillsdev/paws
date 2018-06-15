@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="IPConditional" count="2/3">
+<page id="IPConditional" count="9.4.2">
    <title level="2">Phrases Simples – Conditionnels</title>
-   <introduction>Les conditionnels ont deux parties: une condition et une conséquence. La condition est présentée par un mot de condition, par exemple <example>si</example>, <example>quand</example> ou <example>après</example>, et se sépare avec un virgule. La conséquence peut être marquée par un mot qui signifie <example>alors</example> dans des examples où la comparaison vient en tête. Des exemples en français:</introduction>
+   <introduction>Les conditionnels ont deux parties: une condition et une conséquence. La condition est présentée par un mot de condition, par exemple <example>si</example>, <example>quand</example> ou <example>après</example>, et se sépare avec une virgule. La conséquence peut être marquée par un mot qui signifie <example>alors</example> dans des examples où la comparaison vient en tête. Des exemples en français:</introduction>
    <EnglishExample>
       <exItem label="1.">Si tu épargnes assez d’argent, alors tu pourras acheter cela.</exItem>
       <exItem label="2.">Après que tu auras nettoyé ta chambre, alors tu pourras jouer.</exItem>
@@ -17,7 +17,7 @@
    </EnglishExample>
    <form section="ip">
       <prompt id="IPConditionalExamplesPrompt"><br/>Entrez ici des exemples de conditionnels dans votre langue:</prompt>
-      <textBox id="IPConditionalExamples" dataItem="conditionalExample" cols="50"/>
+      <textBox id="IPConditionalExamples" dataItem="conditionalExample" cols="80"/>
       <radioGroup>
          <groupName dataItem="conditionWord" default="yes">RIPConditionWord</groupName>
          <prompt><br/>Est-ce que votre langue indique la condition au moyen de mots indépendants qui modifient tout le syntagme conditionnel?</prompt>
@@ -33,29 +33,29 @@
          <checkbox id="IPConditionEnclitic" dataItem="conditionEnclitic">Comme enclitique qui s’attache au début du mot qui termine le syntagme conditionnel</checkbox>
          <checkbox id="IPConditionPrefix" dataItem="conditionPrefix">Comme préfixe qui s’attache au verbe du syntagme conditionnel</checkbox>
          <checkbox id="IPConditionSuffix" dataItem="conditionSuffix">Comme suffixe qui s’attache au verbe du syntagme conditionnel</checkbox>
-         <checkbox id="IPConditionOther" dataItem="conditionOther">Dans ma langue, ces éléments peuvent s’attacher comme suit: <textBox  id="IPConditionOtherContent" dataItem="conditionOther" rows="2"/></checkbox>
+         <checkbox id="IPConditionOther" dataItem="conditionOther">Dans ma langue, ces éléments peuvent s’attacher comme suit: <textBox  id="IPConditionOtherContent" dataItem="conditionOther" cols="70"  rows="1"/></checkbox>
       </checkboxGroup>
       <prompt id="IPConditionAttachesNoCheckPrompt" show="swIPConditionWordNoOrSomeandNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire comment ces marqueurs de condition fonctionnent dans votre langue; sinon, changez la réponse ci-dessus en « Oui, ce sont tous des mots indépendants » , ou bien « Non, le seul marqueur de conditionnels dans ma langue est le mode conditionnel visible au verbe même » .</prompt>
       
       <prompt id="IPConditionCliticPrompt" show="swIPConditionNoOrSomeAndClitic">Entrez ici les clitiques qui peuvent marquer un syntagme conditionnel, indiquez d’un signe d’égalité de quel côté il s’attache:</prompt>  
-      <textBox id="IPConditionCliticExample" dataItem="conditionCliticExample" cols="40"  rows="3" show="swIPConditionNoOrSomeAndClitic"/>
+      <textBox id="IPConditionCliticExample" dataItem="conditionCliticExample" rows="3" show="swIPConditionNoOrSomeAndClitic"/>
       <instruction id="IPConditionProcliticInstruction" show="swIPConditionNoOrSomeAndProclitic">In the lexicon, add the feature <feature>conditional_prefix</feature> to the proclitics which mark conditional phrases.
       </instruction>
       <instruction id="IPConditionEncliticInstruction" show="swIPConditionNoOrSomeAndEnclitic">In the lexicon, add the feature <feature>conditional_suffix</feature> to the enclitics which mark conditional phrases.</instruction>
       <prompt id="IPConditionAffixPrompt" show="swIPConditionNoOrSomeAndAffix">Entrez ici les affixes qui peuvent marquer un syntagme conditionnel, indiquez d’un tiret de quel côté il s’attache:</prompt>  
-      <textBox id="IPConditionAffixExample" dataItem="conditionAffixExample" cols="40" rows="3" show="swIPConditionNoOrSomeAndAffix"/>
+      <textBox id="IPConditionAffixExample" dataItem="conditionAffixExample" rows="3" show="swIPConditionNoOrSomeAndAffix"/>
       <instruction id="IPConditionAffixInstruction" show="swIPConditionNoOrSomeAndAffix">In the lexicon, add the feature <feature>conditional</feature> to the affixes which can mark the verb in a conditional phrase.</instruction>
       <prompt id="IPConditionOtherPrompt" show="swIPConditionNoOrSomeAndOther">Entrez des exemples des autres éléments qui peuvent marquer un syntagme conditionnel de l’autre manière permise par votre langue:</prompt>  
-      <textBox id="IPConditionOtherExample" dataItem="conditionOtherExample" cols="40" rows="3" show="swIPConditionNoOrSomeAndOther"/>   
+      <textBox id="IPConditionOtherExample" dataItem="conditionOtherExample" rows="3" show="swIPConditionNoOrSomeAndOther"/>   
       <prompt id="IPConditionYesPrompt" show="swIPConditionWordYesOrSome">Entrez ici les mots indépendants qui peuvent marquer un syntagme conditionnel:</prompt>
-      <textBox id="IPConditionWordExample" dataItem="conditionWordExample" cols="40"  rows="3" show="swIPConditionWordYesOrSome"/>
+      <textBox id="IPConditionWordExample" dataItem="conditionWordExample" rows="3" show="swIPConditionWordYesOrSome"/>
       <br/><br/>		
       <checkboxGroup id="IPConditionPos" show="swIPConditionWordYesOrSome">
          <prompt>Dans les exemples ci-dessus, par rapport au reste du syntagme conditionnel, où se mettent les marqueurs de condition sous forme de mots indépendants? Cochez toutes les options qui sont valables pour votre langue.</prompt>
          <checkbox id="IPConditionPosBefore"  dataItem="conditionWordBefore">Avant</checkbox>
          <checkbox id="IPConditionPosAfter"  dataItem="conditionWordAfter">Après</checkbox>
          <checkbox id="IPConditionPosBoth"  dataItem="conditionWordBoth">Des deux côtés dans le même syntagme</checkbox>
-         <checkbox id="IPConditionPosOther"  dataItem="conditionWordOther">Dans ma langue les marqueurs peuvent se mettre dans la position suivante: <textBox  id="IPConditionPosOtherContent" dataItem="conditionWordOther" rows="2"/></checkbox>
+         <checkbox id="IPConditionPosOther"  dataItem="conditionWordOther">Dans ma langue les marqueurs peuvent se mettre dans la position suivante: <textBox  id="IPConditionPosOtherContent" dataItem="conditionWordOther" cols="70"  rows="1"/></checkbox>
       </checkboxGroup>
       <prompt id="IPConditionPosNoCheckPrompt" show="swIPConditionYesandNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire pour votre langue la position de ces marqueurs de condition par rapport au reste du syntagme conditionnel, sinon changez la réponse ci-dessus en « Non, ils s’attachent à un autre mot du syntagme conditionnel » , ou bien « Non, le seul marqueur de conditionnels dans ma langue est le mode conditionnel visible au verbe même » .</prompt>
       <instruction id="IPConditionYesInstruction" show="swIPConditionWordYesOrSome">In the lexicon, you will likely need to add a separate entry for each of these words, if they can also be used as adverbs and/or complementizers in embedded questions.  Give this entry the category <category>Cond</category> and the feature <feature>conditional</feature>.</instruction>

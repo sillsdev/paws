@@ -3183,12 +3183,12 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>plusiers</langData>
+</xsl:attribute>plusieurs</langData>
 <xsl:text>, </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>nombreaux</langData>
+</xsl:attribute>nombreux</langData>
 <xsl:text> ou </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -3944,7 +3944,7 @@
 <td align="left">
                            <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>quelconque</xsl:text>
+<xsl:text>quelquonque</xsl:text>
 </gloss>
                         </td>
 </xsl:with-param>
@@ -3961,7 +3961,7 @@
 <td align="left">
                            <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>quelconque</xsl:text>
+<xsl:text>quelquonque</xsl:text>
 </gloss>
                         </td>
 </tr>
@@ -4341,12 +4341,12 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>plusiers</langData>
+</xsl:attribute>plusieurs</langData>
 <xsl:text>, </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>nombreaux</langData>
+</xsl:attribute>nombreux</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -4357,7 +4357,7 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>a few sad children  (peu de enfants tristes)</langData>
+</xsl:attribute>a few sad children  (peu d’enfants tristes)</langData>
 <xsl:text> ou </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -4409,7 +4409,7 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>très peu de enfants</langData>
+</xsl:attribute>très peu d’enfants</langData>
 <xsl:text>.</xsl:text>
 </p>
                  <xsl:if test="normalize-space(//typology/@classifier)='yesAgr' and normalize-space(//qp/@quantifierClassifier)='yes'">
@@ -4472,7 +4472,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>beaucoup, plusiers, nombreaux (many)</xsl:text>
+<xsl:text>beaucoup, plusieurs, nombreux (many)</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4489,7 +4489,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>beaucoup, plusiers, nombreaux (many)</xsl:text>
+<xsl:text>beaucoup, plusieurs, nombreux (many)</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4520,7 +4520,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>beaucoup, plusiers, nombreaux (much)</xsl:text>
+<xsl:text>beaucoup, plusieurs, nombreux (much)</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4537,7 +4537,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>beaucoup, plusiers, nombreaux (much)</xsl:text>
+<xsl:text>beaucoup, plusieurs, nombreux (much)</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5019,7 +5019,7 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>beaucoup des femmes</langData>
+</xsl:attribute>beaucoup de ces femmes</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">

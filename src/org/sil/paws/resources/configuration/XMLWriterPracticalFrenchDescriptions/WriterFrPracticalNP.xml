@@ -391,9 +391,9 @@
 		<section2 id="sNPPoss">
 			<secTitle>Possesseurs</secTitle>
 		   <p contentType="ctPracticalIntro">
-		   	<content>La possession peut s’exprimer normalement par un pronom ou par une syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.</content></p>
+		   	<content>La possession peut s’exprimer normalement par un pronom ou par un syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.</content></p>
 		   <p contentType="ctComparativeIntro">
-		   	<content>La possession peut s’exprimer normalement par un pronom ou par une syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.  
+		   	<content>La possession peut s’exprimer normalement par un pronom ou par un syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.  
 		   		Cependant le français permet seulement les pronoms dans la position possesseur qu’avant le nom, avec tous les possesseurs nominaux et possesseurs de syntagmes nominaux entiers exprimés dans un syntagme prépositionnelle avec </content><langData>de</langData><content> après le nom.</content></p>
 			<p contentType="ctComparativeIntro"><content>Dans les langues qui expriment les possesseurs par des noms ou des syntagmes nominaux entiers aussi bien que par des pronoms, beaucoup ajoutent aussi une sorte de marque comme le </content>
 				<langData>’s</langData>
@@ -437,7 +437,7 @@
 		   	<caseText value="both">adpositionnel</caseText>
 		   	<caseText value="unknown">adpositionnel</caseText>
 		   	</case>.  </caseText>
-		   	<caseText value="none">ni les syntagmes nominaux ni les pronoms ne peuvent posséder un nom directement; la possession est exprimée seulement dans une syntagme <case element="pp" attr="pPos">
+		   	<caseText value="none">ni les syntagmes nominaux ni les pronoms ne peuvent posséder un nom directement; la possession est exprimée seulement dans un syntagme <case element="pp" attr="pPos">
 		      	<caseText value="before">prepositionnel</caseText>
 		      	<caseText value="after">postpositionnel</caseText>
 		      	<caseText value="both">adpositionnel</caseText>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronDem" count="5/9">
+<page id="PronDem" count="7.5">
     <title level="2">Los pronombres - Los demostrativos</title>
    <introduction>Muchas lenguas tienen pronombres demostrativos que están relacionados con los demostrativos que modifican a un sustantivo o a los adverbios de lugar.  
       Los pronombres demostrativos especifican la distancia entre el hablante y el objeto que representa el pronombre y pueden tener formas singulares y plurales.  Ejemplos en español son <example>este, esto, estos, aquellos</example> y <example>esos</example>, que son casi idénticos a los demostrativos que modifican a un sustantivo.  Los pronombres demostrativos pueden presentarse como el sujeto u objeto de una oración, como en:
@@ -226,7 +226,7 @@
        </instruction>  
        <instruction id="PronDemFeaturesInstruction" show="swPronDemAdjSameNotYes">Each of these demonstrative pronouns needs to have the feature <feature>demonstrative</feature> and have the category <category>Pron</category> or have a category that will be mapped to it via the category mapper at the end of this section.  Note that if your langauge is like English and uses the same demonstratives as both stand-alone pronouns and nominal modifiers, they will each need two entries in the lexicon.
           <br/><br/>
-          <span id="PronDemNumberSpan" show="swPronDemNumberYes">Add the feature <feature>singular</feature> to each of the demonstrative pronouns  that refer only to singular items and the feature <feature>plural</feature> to each of the demonstrative pronouns that refer only to plural items.  Do no add any  number feature to any demonstrative pronouns that can refer to singular or plural items.</span></instruction>
+          <span id="PronDemNumberSpan" show="swPronDemNumberYes">Add the feature <feature>singular</feature> to each of the demonstrative pronouns  that refer only to singular items and the feature <feature>plural</feature> to each of the demonstrative pronouns that refer only to plural items.  Do not add any  number feature to any demonstrative pronouns that can refer to singular or plural items.</span></instruction>
        
        <prompt id="PronDemDativeSet" show="swNPCaseNotNone">
           <br/>También puede tener un sistema adicional de pronombres demostrativos en caso dativo.  

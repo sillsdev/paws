@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QEmbCont" count="7/9">
+<page id="QEmbCont" count="11.7">
 	<title level="2">Questions - Embedded Content Questions</title>
    <introduction>In English embedded content questions, an interrogative phrase is required to be fronted to the beginning of the embedded clause.  However, in contrast to the main clause content questions, there is no auxiliary fronting.  Examples of English embedded content questions include:</introduction>
 		<EnglishExample>
@@ -12,9 +12,10 @@
 		</EnglishExample>
    <form section="q">
       <prompt><br/>Key similar examples from your language, whether or not fronting or auxiliary movement is required, here:</prompt>
-		<textBox id="QEmbContentExample" dataItem="embContentExample" cols="50"/>
+		<textBox id="QEmbContentExample" dataItem="embContentExample" cols="80"/>
 		<br/>
-      <instruction id="QEmbContInstruction">If any of the main verbs used in these examples are different from the verbs used in the examples of embedded Yes/No questions, you need to add the appropriate features in the lexicon.  Use the features <feature>sentential embedded_question</feature> if they can only take an embedded question complement (like ‘wonder’), but use the features <feature>sentential embedded_question_allowed</feature> if they can take an embedded question as well as a non-question complement (like ‘know’).</instruction>
+      <instruction id="QEmbContInstruction">If any of the main verbs used in these examples are different from the verbs used in the examples of embedded Yes/No questions, you need to add the appropriate features in the lexicon.  Use the features <feature>sentential_question sentential_CP</feature> if they can only take an embedded question complement (like <example>wonder</example>), but for a verb that can take an embedded question as well as some other complements (like <example>know</example> and <example>ask</example>),
+          they only need to features as added in <section number="10.">Complement Clauses</section>.  If you want to include examples with <example>learn</example>, which were not covered here or in <section number="10.">Complement Clauses</section>, add the feature <feature>sentential_-finiteIPpro-drop_or_transitive_or_question</feature> (without any additional <feature>transitive</feature> feature) to its lexical entry.</instruction>
 
      <radioGroup>
          <groupName dataItem="embCont" default="no">RQEmbCont</groupName>
@@ -42,7 +43,7 @@
          <checkbox id="QEmbContBetweenEnclitic" dataItem="embContBetweenEnclitic" show="swQContFrontYes">As an enclitic which attaches to the end of the last word in the fronted interrogative phrase, before the rest of the embedded question</checkbox>
          <checkbox id="QEmbContCliticPrefix" dataItem="embContPrefix">As a prefix which attaches to the embedded clause verb</checkbox>
          <checkbox id="QEmbContCliticSuffix" dataItem="embContSuffix">As a suffix which attaches to the embedded clause verb</checkbox>
-         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContCliticPosNoCheckPrompt" show="swQEmbContWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these embedded clause question markers attach in your language, or change the answer above to ‘Yes’.</prompt>
       
@@ -63,7 +64,7 @@
          <checkbox id="QEmbContPosBefore"  dataItem="embContWordBefore">Before it</checkbox>
          <checkbox id="QEmbContPosAfter"  dataItem="embContWordAfter">After it</checkbox>
          <checkbox id="QEmbContPosBoth"  dataItem="embContWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">In my language, they may occur in the following position: <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">In my language, they may occur in the following position: <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContPosNoCheckPrompt" show="swQEmbContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">WARNING: You need to check at least one box to describe where these embedded clause question markers occur with respect to the rest of the embedded question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       <instruction id="QEmbContWordYesInstruction" show="swQEmbContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
@@ -74,7 +75,7 @@
          <checkbox id="QEmbContVSOAfterWh" dataItem="embContVSOAfterWh">Immediately after the fronted interrogative phrase</checkbox>
          <checkbox id="QEmbContVSOBeforeWh" dataItem="embContVSOBeforeWh">At the beginning of the embedded question, before the fronted interrogative phrase</checkbox>
          <checkbox id="QEmbContVSOEnd" dataItem="embContVSOEnd">At the end of the embedded question</checkbox>
-         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">In my language, they may occur in the following position: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">In my language, they may occur in the following position: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">WARNING: You need to check at least one box to describe where these embedded clause question markers occur with respect to the interrogative phrase and the rest of the embedded question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       
@@ -88,7 +89,7 @@
          <radio id="QEmbContRequiredNo" dataValue="no">No, a question marker is always optional</radio>
          <radio id="QEmbContRequiredSpecial" dataValue="special">No, a question marker is not used under the following circumstances:</radio>
       </radioGroup>
-      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="50" rows="2" show="swQEmbContRequiredSpecial"/>
+      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial"/>
       
       <radioGroup id="QEmbContAuxPosTable" show="swQEmbContNoAux">
          <groupName dataItem="embContAuxPos" default="unknown" position="yesHead">RQEmbContAuxPos</groupName>

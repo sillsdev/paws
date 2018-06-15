@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPCompounds" count="1/1">
+<page id="NPCompounds" count="5.7.1">
    <title level="2">Las frases nominales - Los compuestos del sustantivo, los complementos y los gerúndios</title>
 	<introduction>Mientras que el español requiere una frase con <example>de</example> en esta situación, muchas otras lenguas tienen modificadores del sustantivo.  
 	   Parece que todos los sustantivos también se pueden funcionar como adjetivos, pero un estudio más detallada revela que los adjetivos verdaderos se presentan antes del modificador del sustantivo, como en  <example>large, round [syrup bottle] ‘grande, redondo [botella del jarabe]'</example> pero no <example>*round, syrup large bottle ‘redondo, botella grande del jarabe'</example>.  Por lo tanto, los modificadores del sustantivo se tratan como sustantivos compuestos que se escriben con palabras independientes.<br/>
@@ -49,7 +49,7 @@
 	   <br/>
 	   <br/>
 	   <prompt>Escriba ejemplos de las frases adposicionales que modifican a sustantivos (sin los soportes), si se permiten en su lengua.  No incluye ejemplos de las frases adposicionales del genitivo que pueden funcionar como el posesivo, puesto que estos ya sen cubren en <section number="5.4">Las frases nominales - Los posesivos</section>.  Si su lengua no utiliza frases adposicionales para expresar a estos modificadores, escriba ejemplos de cómo su lengua expresa frases nominales con significados similares.</prompt>
-		<textBox id="NPCompPPExample" dataItem="compPPExample"/>
+		<textBox id="NPCompPPExample" dataItem="compPPExample" cols="80"/>
 	   <br/>
 		<br/>
 	   <radioGroup>
@@ -82,11 +82,11 @@
 	   <br/>
 		<br/>
 	   <prompt>Escriba cómo su lengua se expresan ejemplos similares de frases nominales (como las partes entre corchetes de ejemplos 6-8 o los ejemplos en el párrafo que sigue 6-8) aquí:</prompt>
-		<textBox id="NPPartExample" dataItem="partHeadExample"/>
+		<textBox id="NPPartExample" dataItem="partHeadExample" cols="80"/>
 		<br/>
 <br/>
 	   <prompt>Ahora escriba algunas oraciones completas con los gerundios o las frases de gerundio que escribió anteriormente aquí:</prompt>
-		<textBox id="NPPartSentExample" dataItem="partHeadSentExample"/>
+		<textBox id="NPPartSentExample" dataItem="partHeadSentExample" cols="80"/>
 		<br/>
 	   <radioGroup>
 	      <groupName dataItem="partNP" default="no" >RNPPartNP</groupName>

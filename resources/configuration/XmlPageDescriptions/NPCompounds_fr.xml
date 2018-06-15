@@ -3,10 +3,10 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPCompounds" count="1/1">
+<page id="NPCompounds" count="5.7.1">
 	<title level="2">Syntagmes Nominaux – Composés nominaux, Compléments et Gérondifs</title>
 	<introduction>Plusieurs langues sont comme l’anglais en ce sens qu’elles ont des modificateurs de nom. Normalement, nous pensons simplement que tous les noms en anglais peuvent être utilisés comme adjectifs, mais une attention plus précise révèle que les varais adjectifs viennent avant le modificateur de nom comme dans <example>large, round [syrup bottle] (une grande bouteille à syrop ronde)</example> mais pas <example>*round, syrup large bottle (ronde, syrop grande bouteille)</example>.  C’est pourquoi nous allons traiter les modificateurs de nom comme noms composés qui sont écrits comme mots indépendants.<br/>
-		<br/>En anglais dans les exemples ci-dessus <example>bottle  « bouteille »</example> est clairement le nom principal alors que <example>syrup  « syrop »</example> restreint le type de <example>bottle</example> et non l’inverse. Dans tous les noms composés et les constructions de modificateur de nom en anglais, le principal est le nom le plus à droite dans la série.
+		<br/>En anglais dans les exemples ci-dessus <example>bottle  « bouteille »</example> est clairement le nom principal alors que <example>syrup  « syrop »</example> restreint le type de <example>bottle</example> et non l’réciproque. Dans tous les noms composés et les constructions de modificateur de nom en anglais, le principal est le nom le plus à droite dans la série.
 	<br/><br/>
 		Par contraste, en français de tels exemples sont plus rares.  <example>Kitchen table</example> peut être traduit <example>table de cuisine</example> s’il s’agit d’un type de meuble en général, ou <example>la table de la cuisine</example> si c’est une table en particulier, celle dans la cuisine. <example>Table cuisine</example> ou <example>cuisine table</example> ne seraient pas permis. Certains noms peuvent agir en adjective – par exemple, <example>panneau indicateur</example> mais <example>indicateur de vitesse</example>.  
 		<br/><br/>
@@ -46,12 +46,12 @@
 		   </radioGroup>
 		</radioGroup>
 	   <br/>
-		<introduction>Considérez maintenant les modificateurs de syntagme prépositionnel ou postpositionnel (ou compléments), tels que dans <example>la grande bouteille [de sirop]</example> et <example>la lettre du garçon [à cette fille]</example>.  Toutes les langues ne permettent pas ce type de modificateur de nom ou de complément, mais peuvent exprimer la même signification dans un proposition relative.
+		<introduction>Considérez maintenant les modificateurs de syntagme prépositionnel ou postpositionnel (ou compléments), tels que dans <example>la grande bouteille [de sirop]</example> et <example>la lettre du garçon [à cette fille]</example>.  Toutes les langues ne permettent pas ce type de modificateur de nom ou de complément, mais peuvent exprimer la même signification dans une proposition relative.
 	   </introduction>
 	   <br/>
 	   <br/>
 		<prompt>Entrez vos exemples de syntagmes prépositionnels ou postpositionnels qui modifient les noms (sans les corchets) si votre langue le permet. N’incluez pas des syntagmes possessifs puisque ceux-ci ont déjà été traités dans la <section number="5.4">Syntagmes Nominaux – Possesseurs</section>.  Si votre langue n’utilise pas de syntagmes prépositionnels ou postpositionnels pour exprimer ces sortes de modificateurs, entrez des exemples de la façon dont votre langue exprime des syntagmes nominaux pareils.</prompt>
-	   <textBox id="NPCompPPExample" dataItem="compPPExample"/>
+	   <textBox id="NPCompPPExample" dataItem="compPPExample" cols="80"/>
 	   <br/>
 	   <br/>
 	   <radioGroup>
@@ -71,7 +71,7 @@
 		<prompt id="NPCompRelClPrompt" show="swNPPPCompNo">La structure et la position des propositions relatives seront traitées dans la <section number="12">Propositions Relatives</section>.</prompt>
 		<br/>
 		<br/>
-		<introduction>Un autre cas qui peut paraître comme un nom et un complément peut en fait être un <technicalTermRef term="ttGerund">gérondif</technicalTermRef> ou une syntagme au gérondif. Le syntagme entier occupe une position d’ argument normal tels que sujet, objet, objet indirect ou l’objet d’une préposition. Des exemples en anglais de syntagmes entiers avec le syntagme au gérondif entre corchets incluent::
+		<introduction>Un autre cas qui peut paraître comme un nom et un complément peut en fait être un <technicalTermRef term="ttGerund">gérondif</technicalTermRef> ou un syntagme au gérondif. Le syntagme entier occupe une position d’ argument normal tels que sujet, objet, objet indirect ou l’objet d’une préposition. Des exemples en anglais de syntagmes entiers avec le syntagme au gérondif entre corchets incluent::
 </introduction> 
 	<EnglishExample>
 		<exItem label="6.">[Studying grammar] is challenging.  « [Etudier la grammaire] est difficile. »</exItem>
@@ -88,11 +88,11 @@
 	      <br/>
 		<br/>
 		<prompt>Entrez ici comment votre langue exprime des sortes pareils de syntagme nominal (comme les exemples entre parenthèses des exemples 6-9 ou ceux de la section qui suit 8-9):</prompt>
-		<textBox id="NPPartExample" dataItem="partHeadExample"/>
+		<textBox id="NPPartExample" dataItem="partHeadExample" cols="80"/>
 		<br/>
 <br/>
 		<prompt>Mettez maintenant les syntagmes que vous avez entrés ci-dessus dans des phrases avec un verbe principal:</prompt>
-		<textBox id="NPPartSentExample" dataItem="partHeadSentExample"/>
+		<textBox id="NPPartSentExample" dataItem="partHeadSentExample" cols="80"/>
 		<br/>
 	   <radioGroup>
 	      <groupName dataItem="partNP" default="no" >RNPPartNP</groupName>

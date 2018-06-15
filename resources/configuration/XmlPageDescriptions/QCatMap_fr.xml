@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QCatMap" count="8/9">
+<page id="QCatMap" count="11.8">
 	<title level="2">Questions - Category Mapper</title>
 	<form section="q">
 		<instruction>You need to make sure the interrogative words which act as pronouns in your lexicon will be mapped to the syntactic category <category>Pron</category>.  Choose one of the following options, depending on your situation (be sure that you have also entered the feature <feature>wh</feature> on each entry as directed earlier):
@@ -12,9 +12,9 @@
 					<catMap id="QWhPronCategory" dataItem="whPronCategory">Pron</catMap>
 				</li>
 			</ul>
-
+	
 </instruction>
-			<br/>
+			<br/>    
 				<br/>
 		<buttons>
 			<button id="QCatMapBack" value="Back" goto="QEmbCont.xml"/>
@@ -22,3 +22,4 @@
 		</buttons>
 	</form>
 </page>
+

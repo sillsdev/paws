@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronMain" count="1/9">
+<page id="PronMain" count="7.1">
     <title>Los pronombres</title>
    <introduction>Hay pronombres de varios tipos: personales, <technicalTermRef term="ttPossessors">posesivos</technicalTermRef>, <technicalTermRef term="ttReflexives">reflexivos</technicalTermRef>,<technicalTermRef term="ttReciprocals">recíprocos</technicalTermRef>, demostrativos e <technicalTermRef term="ttIndefinite">indefinidos</technicalTermRef>.  (Los pronombres <technicalTermRef term="ttInterrogative">interrogativos</technicalTermRef> se presentan en la sección <section number="11.">Las preguntas - Las frases interrogativas</section>.)
       Estos pronombres por lo regular se colocan solamente en lugar de una frase nominal completa, pero pueden también ser modificados por una cláusula relativa y en algunas lenguas pueden ser modificados por una frase <technicalTermRef term="ttPartitive">partitiva</technicalTermRef> y por los <technicalTermRef term="ttDeterminers">determinantes</technicalTermRef> y cuantificadores.  Algunas lenguas tienen sistemas independientes y dependientes del pronombre. 
@@ -654,7 +654,7 @@
           <checkbox id="PronDependentEnclitic" dataItem="dependentTypeEnclitic">Como enclíticos que se unen al final de cualquier palabra termina la frase verbal o frase nominal</checkbox>
           <checkbox id="PronDependentPrefix" dataItem="dependentTypePrefix">Como prefijos que se unen al verbo o sustantivo</checkbox>
           <checkbox id="PronDependentSuffix" dataItem="dependentTypeSuffix">Como sufijos que se unen al verbo o sustantivo</checkbox>
-          <checkbox id="PronDependentOther" dataItem="dependentTypeOther">En mi lengua, los pronombres dependientes pueden unirse: <textBox  id="PronDependentContent" dataItem="dependentTypeOther" rows="2"/></checkbox>
+          <checkbox id="PronDependentOther" dataItem="dependentTypeOther">En mi lengua, los pronombres dependientes pueden unirse: <textBox  id="PronDependentContent" dataItem="dependentTypeOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <prompt id="PronDependentNoCheckPrompt" show="swPronDependentYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se unen los pronombres dependientes en su lengua, o cambia su repuesta de arriba a ‘No, solamente pronombres independientes’.</prompt>
        <br/>

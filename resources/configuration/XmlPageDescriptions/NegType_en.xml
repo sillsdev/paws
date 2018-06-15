@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NegType" count="3/4">
+<page id="NegType" count="14.3">
     <title level="2">Negative Constructions - Type of Negation System</title>
     <introduction id="NegTypeIntroNotPractical" show="swNotPractical">Languages fall into two major classifications with respect to negation: Polarity Changing languages versus Negative Concord languages, exemplified by standard English and Spanish or Black English, respectively.  <br/>
         <br/>
@@ -82,16 +82,16 @@ In Negative Concord languages, any number of negative elements expresses negativ
       <textBox id="NegNPDegreeNegSubjExample2" dataItem="npDegreeSubjExample" rows="4" cols="50" show="swNegNPDegreeNegNotNone"/>
       
       <prompt id="NegSubjectPronounPrompt">The examples you gave previously of negative indefinite <span id="NegPronounSentSpana" show="swNegPronIndefYes">pronouns</span><span id="NegPronounSentSpan2a" show="swNegPronIndefSome">pronouns or nominal phrases</span><span id="NegNPSentSpana" show="swNegPronIndefNo">nominal phrases</span> as the subject of a full sentence are:</prompt>
-        <textBox id="NegPronounSubjExample" dataItem="negIndefSubjExample" rows="4" cols="50"/>
+        <textBox id="NegPronounSubjExample" dataItem="negIndefSubjExample" cols="80"/>
 <br/><br/>
       <prompt id="NegObjectPrompt" show="swPolarityItemsNo">Now give similar examples where the negative nominal phrase is the object and the subject is positive, such as <example>John saw nobody</example>.</prompt>
                 <prompt id="NegPolarityObjectPrompt" show="swPolarityItemsYes">Now give similar examples but with a positive subject and a negative polarity item as the object, such as <example>John didn’t see anybody</example>.</prompt>
       <prompt id="NegObjectNegConcordPrompt" show="swNegTypeConcord">Now give similar examples where the negative nominal phrase is the object and the subject is positive, such as <example>John saw nobody</example> or <example>John didn't see nobody</example>.</prompt>
-        <textBox id="NegObjectExample" dataItem="objectExample" rows="4" cols="50"/>
+        <textBox id="NegObjectExample" dataItem="objectExample" cols="80"/>
                 <prompt id="NegIObjectPrompt" show="swPolarityItemsNo">Now give similar examples where the negative nominal phrase is the indirect object and the subject is positive, such as <example>Mary gave gifts to nobody</example>.</prompt>
                 <prompt id="NegPolarityIObjectPrompt" show="swPolarityItemsYes">Now give similar examples with a positive subject and a negative polarity item as the indirect object, such as <example>Mary didn’t give gifts to anybody</example></prompt>
       <prompt id="NegIObjectNegConcordPrompt" show="swNegTypeConcord">Now give similar examples where the negative nominal phrase is the indirect object and the subject is positive, such as <example>Mary gave gifts to nobody</example> or <example>Mary didn't give gifts to nobody</example></prompt>
-        <textBox id="NegIObjectExample" dataItem="indirectObjectExample" rows="4" cols="50"/>
+        <textBox id="NegIObjectExample" dataItem="indirectObjectExample" cols="80"/>
       <br/>
       <br/>
       <radioGroup id="NegFrontTable" show="swNegTypeConcord">
@@ -106,7 +106,7 @@ In Negative Concord languages, any number of negative elements expresses negativ
            <prompt id="NegSubjectObjectPrompt" show="swPolarityItemsNo">Finally, give examples where both the subject and object are negative, such as <example>Nobody saw nothing</example>, or key in how your language would express the same meaning.</prompt>
                 <prompt id="NegPolaritySubjectObjectPrompt" show="swPolarityItemsYes">Finally, give examples with a negative subject and a negative polarity item as the object, such as <example>Nobody saw anything</example>.</prompt>
       <prompt id="NegSubjectObjectNegConcordPrompt" show="swNegTypeConcord">Finally, give examples where both the subject and object are negative, such as <example>Nobody saw nothing</example> or <example>Nobody didn't see nothing</example>.</prompt>    
-        <textBox id="NegSubjectObjectExample" dataItem="subjectObjectExample" rows="4" cols="50"/>
+        <textBox id="NegSubjectObjectExample" dataItem="subjectObjectExample" cols="80"/>
       <br/>
       <br/>
       <radioGroup id="NegTwoTable" show="swPolarityItemsNoOrFrontNo">
@@ -154,6 +154,8 @@ In Negative Concord languages, any number of negative elements expresses negativ
         <whenRadio button="PolarityItemsNo"/>
         <and/>
         <whenRadio button="NegTypeChanging"/>
+   <or/>
+      <whenRadio button="NegTypeConcord"/>
     </showWhen>
    <showWhen id="swPolarityItemsNoOrFrontNo">
       <whenRadio button="PolarityItemsNo"/>

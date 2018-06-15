@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="NPQP" count="1/1">
+<page id="NPQP" count="5.5.1">
     <title level="2">Nominal Phrases - Quantifier Phrase Modifiers</title>
     <introduction id="NPQPIntroNotPractical" show="swNotPractical">Next to be added to the nominal phrase as we work our way down the tree are quantifier phrases (QP), discussed earlier in <section number="2">Quantifiers and QP</section>.  This means we will be able to parse nominal phrases such as these in English:</introduction>
     <introduction id="NPQPIntroPractical" show="swPractical">Next to be added to the nominal phrase are quantifier phrases, discussed earlier in <section number="2">Quantifiers and QP</section>.  This means we are interested in nominal phrases such as these in English:</introduction>    <EnglishExample>
@@ -13,14 +13,14 @@
     </EnglishExample>
     <form section="np">
         <prompt>Key examples of similar nominal phrases in your language here:</prompt>
-        <textBox id="NPQPExample" dataItem="qpExample"/>
+        <textBox id="NPQPExample" dataItem="qpExample" cols="80"/>
         <br/>
         <checkboxGroup>
             <prompt>Based on the data you keyed, where do quantifier phrases (including cardinal numbers) occur with respect to the noun?  Check all options that are correct for your language</prompt>
            <checkbox id="NPQPPosBefore" dataItem="qpPosBefore">Before the noun</checkbox>
               <checkbox id="NPQPPosAfter" dataItem="qpPosAfter">After the noun</checkbox>
                     <checkbox id="NPQPPosBoth" dataItem="qpPosBoth">On both sides in the same nominal phrase</checkbox>
-           <checkbox id="NPQPPosOther" dataItem="qpPosOther">In my language, the quantifier phrases may occur as follows: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" rows="2"/></checkbox>
+            <checkbox id="NPQPPosOther" dataItem="qpPosOther">In my language, the quantifier phrases may occur as follows: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1"/></checkbox>
            </checkboxGroup>
            <prompt id="NPQPPosNoCheckPrompt" show="swNPQPNoCheck">WARNING: You need to check at least one box to describe where the quantifier phrases occur with respect to the noun in your language.</prompt>
            <radioGroup id="NPQPPosEitherorBothRestrictedTable" show="swNPQPPosEitherorBothRestricted">
@@ -46,7 +46,7 @@
             <checkbox id="NPQClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificQPosAfterNBeforeQ">After the noun but before the quantifier</checkbox>
             <checkbox id="NPQClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificQPosPrefixQ">As a prefix on the quantifier</checkbox>
             <checkbox id="NPQClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificQPosSuffixQ">As a suffix on the quantifier</checkbox>
-            <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" rows="2"/></checkbox>
+            <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1"/></checkbox>
         </checkboxGroup>
         <prompt id="NPQClassifierSpecificPosNoCheckPrompt" show="swNPQClassifierPresentYesOrSomeAndNoCheck">WARNING: You need to check at least one box to describe where the classifiers occur with respect to the quantifiers and the noun in your language, or change your answer above to “No, a classifier is never used in this type of nominal phrase”.</prompt>
         

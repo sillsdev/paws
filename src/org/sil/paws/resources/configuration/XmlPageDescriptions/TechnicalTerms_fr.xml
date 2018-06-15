@@ -434,7 +434,7 @@
    <technicalTerm id="ttPossessors">
       <termInLang>
          <term>possesseurs</term>
-         <termDefinition>Le possesseur est la personne, l’animal ou la chose qui possède quelque chose ou quelqu’un, ou qui appartient ou se rapporte au possesseur. Ce programme considère que le possesseur soit le syntagme nominal indépendant, pas un pronom attaché ; le pronom est considéré être d’accord avec le syntagme nominal possesseur s’il est présent, mais les langues qui ont des affixes pronominaux pour marquer le possesseur aussi permettent généralement le possesseur indépendant à ne pas être exprimé (anaphore zéro).</termDefinition>
+         <termDefinition>Le possesseur est la personne, l’animal ou la chose qui possède quelque chose ou quelqu’un, ou qui appartient ou se rapporte au possesseur. Ce logiciel considère que le possesseur soit le syntagme nominal indépendant, pas un pronom attaché ; le pronom est considéré être d’accord avec le syntagme nominal possesseur s’il est présent, mais les langues qui ont des affixes pronominaux pour marquer le possesseur aussi permettent généralement le possesseur indépendant à ne pas être exprimé (anaphore zéro).</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttPotential">

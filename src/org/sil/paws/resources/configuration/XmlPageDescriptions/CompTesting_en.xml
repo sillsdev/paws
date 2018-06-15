@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="CompTesting" count="4/4">
+<page id="CompTesting" count="10.4">
 	<title level="2">Complement Clauses - Testing</title>
 	<form section="comp">
 		<instruction>

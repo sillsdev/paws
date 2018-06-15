@@ -3,10 +3,10 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPVoice" count="3/3">
+<page id="IPVoice" count="9.8.3">
 	<title level="2">Basic Sentences - Other Voice Marking</title>
 	<introduction>Some languages, such as Tagalog and other Austronesian languages, have affixes on the verb which help define the roles and relationships of the nominal phrases in the sentence. This is a <technicalTermRef term="ttVoice"/> change like passive in that it gives empasis to a particular nominal phrase. 
-		The verbal affix marks which nominal phrase is prominent, and may involve a change in word order to a <technicalTermRef term="ttFocus"/> position and/or <technicalTermRef term="ttCase"/> marking.<br/><br/>Some examples from Tagalog (Kroeger, Paul. 1993. Phrase structure and grammatical relations in Tagalog. Stanford, California: CSLI) showing a change in case marking (but not word order), where the voice marker reflects the role of the <technicalTermRef term="ttNominative"/> <technicalTermRef term="ttArgument"/> are:
+		The verbal affix marks which nominal phrase is prominent, and may involve a change in word order to a <technicalTermRef term="ttFocus"/> position and/or <technicalTermRef term="ttCase"/> marking.<br/><br/>Some examples from Tagalog (Kroeger, Paul. 1993. Phrase structure and grammatical relations in Tagalog. Stanford, California: CSLI) showing a change in case marking (but not word order), where the voice marker reflects the role of the <technicalTermRef term="ttNominative"/>  <technicalTermRef term="ttArgument"/> are:
 		</introduction>
 	<table class="EnglishExample">
 		<tr>
@@ -49,7 +49,7 @@
 	   <prompt id="IPVoiceYesPrompt" show="swIPVoiceYesAndFeaturesNo">WARNING: In <section number="9.2">Basic Sentences - Inflection Features</section> you did not check any of the voice features as occurring in your language.  This is inconsistent with your answer here.  If your language has this kind of voice marking, 
 	      return to <section number="9.2">Basic Sentences - Inflection  Features</section> and check the appropriate voice features there and key in the morphemes before returning here.</prompt>
 	   <prompt id="IPVoicePrompt" show="swIPVoiceYes">Key examples of sentences showing this voice marking in your language here.  Consider giving a set of several related sentences with the only difference being in the voice marking as above.</prompt>
-	   <textBox id="IPVoiceExample" dataItem="voiceExample" cols="50" show="swIPVoiceYes"/>
+	   <textBox id="IPVoiceExample" dataItem="voiceExample" cols="80" show="swIPVoiceYes"/>
 
 	   <br></br>	
 		<radioGroup id="IPVoiceCase" show="swIPVoiceYesCase">

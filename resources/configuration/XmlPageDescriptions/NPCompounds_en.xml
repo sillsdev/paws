@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPCompounds" count="1/1">
+<page id="NPCompounds" count="5.7.1">
 	<title level="2">Nominal Phrases - Noun Compounds, Complements and Gerunds</title>
 	<introduction>Many languages are like English, in that they have noun modifiers. Normally, we simply think that all nouns can also be used as adjectives, but a closer look reveals that true adjectives come before the noun modifier, as in <example>large, round [syrup bottle]</example> but not <example>*round, syrup large bottle</example>.  Therefore, we will treat noun modifiers as compound nouns which are written as independent words.<br/>
 		<br/>In the English examples above, <example>bottle</example> is clearly the head noun rather than <example>syrup</example>, because <example>syrup</example> is restricting the type of <example>bottle</example>, not the other way around.  In all compound nouns and noun modifier constructions in English, the head is the right-most noun in the series.
@@ -49,7 +49,7 @@
 	   <br/>
 	   <br/>
 	   <prompt>Key your examples of prepositional phrases or postpositional phrases modifying nouns (without the brackets), if allowed in your language.  Do not include possessor phrases, since those were already covered in <section number="5.4">Nominal Phrases - Possessors</section>.  If your language does not use prepositional or postpositional phrases to express these kinds of modifiers, key examples of how your language would express similar nominal phrases.</prompt>
-	   <textBox id="NPCompPPExample" dataItem="compPPExample"/>
+	   <textBox id="NPCompPPExample" dataItem="compPPExample" cols="80"/>
 	   <br/>
 	   <br/>
 	   <radioGroup>
@@ -82,11 +82,11 @@
 	      <br/>
 		<br/>
 	   <prompt>Key how your language would express similar kinds of nominal phrase examples (like the bracketed parts of examples 6-8 or the examples in the paragraph following 6-8) here:</prompt>
-		<textBox id="NPPartExample" dataItem="partHeadExample"/>
+		<textBox id="NPPartExample" dataItem="partHeadExample" cols="80"/>
 		<br/>
 <br/>
 			<prompt>Now put the phrases you keyed above into sentences with a main verb:</prompt>
-		<textBox id="NPPartSentExample" dataItem="partHeadSentExample"/>
+		<textBox id="NPPartSentExample" dataItem="partHeadSentExample" cols="80"/>
 		<br/>
 	   <radioGroup>
 	      <groupName dataItem="partNP" default="no" >RNPPartNP</groupName>

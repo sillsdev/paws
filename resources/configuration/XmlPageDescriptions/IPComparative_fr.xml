@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPComparative" count="2/3">
+<page id="IPComparative" count="9.5.2">
    <title level="2">Phrases Simples – Comparatifs</title>
    <introduction>Les comparatifs sont une sous-catégorie des phrases copulatives. Nous allons traiter deux types qui considèrent que deux parties sont égales, puis les comparatifs (où une partie est meilleure que l’autre), puis les superlatifs. Tous ces types peuvent d’habitude utiliser un verbe copulatif ou de perception.
 <br></br><br/>
@@ -14,7 +14,7 @@
    </EnglishExample>
     <form section="ip">
        <prompt><br/>Entrez ici des exemples de votre langue:</prompt>
-       <textBox id="IPComparativeSameExample" dataItem="sameExample" cols="50"/>   
+       <textBox id="IPComparativeSameExample" dataItem="sameExample" cols="80"/>   
        <br/><br/>
        <radioGroup>
           <groupName dataItem="same" default="yes">RIPCopComparativeSame</groupName>
@@ -48,7 +48,7 @@
        </EnglishExample>
        <br/><br/>       
        <prompt>Entrez ici des exemples pareils dans votre langue:</prompt>
-       <textBox id="IPComparativeAsExample" dataItem="asExample" cols="50"/>   
+       <textBox id="IPComparativeAsExample" dataItem="asExample" cols="80"/>   
        <br/><br/>
        <radioGroup>
           <groupName dataItem="as" default="yes">RIPCopComparativeAs</groupName>
@@ -80,7 +80,7 @@
           <exItem label="11.">Jean semble moins certain de ses réponses que Suzanne.</exItem>
        </EnglishExample>
        <prompt>Entrez ici des pareils exemples de votre langue:</prompt>
-       <textBox id="IPExamplesComparativeExample" dataItem="comparativeExample" cols="50"/>   
+       <textBox id="IPExamplesComparativeExample" dataItem="comparativeExample" cols="80"/>   
        <br/><br/>
        <radioGroup>
           <groupName dataItem="comparative" default="yes">RIPCopComparative</groupName>
@@ -101,7 +101,7 @@
        </radioGroup>
        <prompt id="IPCopComparativeAffix" show="swIPCopComparativeAdjYesOrBoth">Entrez ici les affixes attachés aux adjectifs du prédicat (indiquez d’un tiret de quel côté il s’attache):</prompt>     
        <textBox id="IPExamplesComparativeAffixExample" dataItem="comparativeAffixExample" rows="3" show="swIPCopComparativeAdjYesOrBoth"/>       
-       <instruction id="IPCopComparativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>comparative_prefix</feature> or the feature <feature>comparative_suffix</feature> on the appropriate lexical entries.</instruction>
+       <instruction id="IPCopComparativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>comparative</feature> on the lexical entries for these affixes.</instruction>
        <br/>
        <prompt id="IPCopComparativeDegBoth" show="swIPCopComparativeAdjDeg">Entrez ici les mots de degré comparatif qu’on utilise avec les adjectifs et les prédicats nominaux, y compris les mots qui signifient « plus », « beaucoup », « moins » et « pire »:</prompt>     
        <prompt id="IPCopComparativeDeg" show="swIPCopComparativeAdjYes">Entrez ici les mots de degré comparatif utilisés avec les prédicats nominaux,  y compris les mots qui signifient « plus », « moins » et « pire »:</prompt>     
@@ -119,7 +119,7 @@
        </EnglishExample>
        <introduction>Certaines langues ne permettent pas l’absence d’une partie de la deuxième phrase; par contre, la comparaison se fait avec deux phrases complètes. En plus, les langues qui n’ont pas de mot comparatif indépendant « que » pour les constructions comparatives plus courtes auront deux parties successifs.</introduction>
        <prompt><br/>Entrez ici des exemples de phrases comparatives dans votre langue:</prompt>
-          <textBox id="CoordComparativeSentExample" dataItem="comparativeSentExample" cols="50"/>
+          <textBox id="CoordComparativeSentExample" dataItem="comparativeSentExample" cols="80"/>
           
           <radioGroup>
              <groupName dataItem="gap" default="yes">RCoordGap</groupName>
@@ -139,11 +139,11 @@
           <exItem label="21.">John seems the least certain of his answers of all my students.  « Jean semble le moins confiant de ses réponses de tous mes étudiants. »</exItem>
        </EnglishExample>
        <prompt>Entrez ici des exemples pareils dans votre langue:</prompt>
-       <textBox id="IPExamplesSuperlativeExample" dataItem="superlativeExample" cols="50"/>     
+       <textBox id="IPExamplesSuperlativeExample" dataItem="superlativeExample" cols="80"/>     
        <br/>
        <prompt id="IPCopSuperlativeAffix" show="swIPCopComparativeAdjYesOrBoth">Entrez l’affixe utilisé aux adjectifs du prédicat (indiquez d’un tiret de quel côté il s’attache):</prompt>     
        <textBox id="IPExamplesSuperlativeAffixExample" dataItem="superlativeAffixExample" rows="3" show="swIPCopComparativeAdjYesOrBoth"/>     
-       <instruction id="IPCopSuperlativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>superlative_prefix</feature> or the feature <feature>superlative_suffix</feature> on the appropriate lexical entries.</instruction>
+       <instruction id="IPCopSuperlativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>superlative</feature> on the lexical entries for these affixes.</instruction>
        <br/>
        <prompt id="IPCopSuperlativeDegBoth" show="swIPCopComparativeAdjDeg">Entrez ici les mots de degré superlatif utilisés avec les adjectifs  et les prédicats nominaux, y compris ceux qui veulent dire « le plus », « le meilleur », « le moins » et « la pire »:</prompt>     
        <prompt id="IPCopSuperlativeDeg" show="swIPCopComparativeAdjYes">Entrez ici les mots de degré superlatif utilisés avec les prédicats nominaux, y compris ceux qui veulent dire « le meilleur » et « la pire »:</prompt>     

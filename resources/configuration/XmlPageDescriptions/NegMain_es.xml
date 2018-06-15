@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NegMain" count="1/4">
+<page id="NegMain" count="14.1">
    <title>Las construcciones de negación</title>
     <introduction>Todos las lenguas tienen la capacidad de expresar la negación. Esto generalmente se realiza con el uso de:
 <ul>
@@ -33,7 +33,7 @@
              <u>ninguna</u> hija</exItem>
        </EnglishExample>
        <form section="neg">       
-          <prompt>Escriba la manera que su lengua expresa ‘no’ o ‘ningún’ (cuando modifica a una frase nominal en vez de una frase verbal), con cada palabra seguida con un punto y en una línea separada. (Si ‘no’ o ‘ningún’ es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
+          <prompt>Escriba la manera que su lengua expresa ‘no’ o ‘ningún’ (cuando modifica a una frase nominal en vez de una frase verbal), con cada palabra seguida con una línea separada. (Si ‘no’ o ‘ningún’ es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
           <textBox id="NegNotExample" dataItem="not" rows="3"/>
           <br/><br/>
           <radioGroup>
@@ -50,34 +50,34 @@
              <checkbox id="NegNPDegreeNegEnclitic" dataItem="npDegreeNegEnclitic">Como enclíticos que se unen al final de cualquiera palabra con que termina la frase nominal</checkbox>
              <checkbox id="NegNPDegreeNegPrefix" dataItem="npDegreeNegPrefix">Como prefijos que se unen al sustantivo principal de la frase nominal</checkbox>
              <checkbox id="NegNPDegreeNegSuffix" dataItem="npDegreeNegSuffix">Como sufijos que se unen al sustantivo principal de la frase nominal</checkbox>
-             <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">En mi lengua, estos elementos negativos se unen: <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="2"/></checkbox>
+             <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">En mi lengua, estos elementos negativos se unen: <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="1" cols="70"/></checkbox>
           </checkboxGroup>	
           <prompt id="NegNPDegreeAttachesNoCheckPrompt" show="swNegNPDegreeNoAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se unen los elementos negativos que no son palabras en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
           <br/>
           <prompt id="NegDegreeNegNPCliticPrompt" show="swNegNPDegreeNegNoOrSomeClitic">Escriba ejemplos de frases nominales con los clíticos negativos, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí</prompt>
-          <textBox id="NegNPNegCliticExample" dataItem="negCliticExample" cols="50" show="swNegNPDegreeNegNoOrSomeClitic"/>
+          <textBox id="NegNPNegCliticExample" dataItem="negCliticExample" cols="80" show="swNegNPDegreeNegNoOrSomeClitic"/>
           <instruction id="NegNPDegreeNegProcliticInstruction" show="swNegNPDegreeNegNoOrSomeProclitic">In the lexicon, mark the negative proclitic(s) with the feature <feature>negative_prefix</feature>. 
           </instruction>
           <instruction id="NegNPDegreeNegEncliticInstruction" show="swNegNPDegreeNegNoOrSomeEnclitic">In the lexicon, mark the negative enclitic(s) with the feature <feature>negative_suffix</feature>.
           </instruction>
           <prompt id="NegDegreeNegNPAffixPrompt" show="swNegNPDegreeNegNoOrSomeAffix">Escriba ejemplos de frases nominales con los afijos negativos, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí</prompt>
-          <textBox id="NegNPNegAffixExample" dataItem="negAffixExample" cols="50" show="swNegNPDegreeNegNoOrSomeAffix"/>
+          <textBox id="NegNPNegAffixExample" dataItem="negAffixExample" cols="80" show="swNegNPDegreeNegNoOrSomeAffix"/>
           <instruction id="NegNPDegreeNegPrefixInstruction" show="swNegNPDegreeNegNoOrSomePrefix">In the lexicon, mark the negative prefix(es) with the feature <feature>negative</feature>. 
           </instruction>
           <instruction id="NegNPDegreeNegSuffixInstruction" show="swNegNPDegreeNegNoOrSomeSuffix">In the lexicon, mark the negative suffix(es) with the feature <feature>negative</feature>. 
           </instruction>
           <prompt id="NegDegreeNegNPOtherPrompt" show="swNegNPDegreeNegNoOrSomeOther">Escriba ejemplos de frases nominales con los elementos negativos unidos como se permiten en su lengua, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí</prompt>
-          <textBox id="NegNPNegOtherExample" dataItem="negOtherExample" cols="50" show="swNegNPDegreeNegNoOrSomeOther"/>
+          <textBox id="NegNPNegOtherExample" dataItem="negOtherExample" cols="80" show="swNegNPDegreeNegNoOrSomeOther"/>
           
           <prompt id="NegDegreeNegNPPrompt" show="swNegNPDegreeNegYesOrSome">Escriba ejemplos de frases nominales con las palabras negativas que significan ‘no'  o ‘ningún', como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí</prompt>
-          <textBox id="NegNPNegExample" dataItem="negExample" cols="50" show="swNegNPDegreeNegYesOrSome"/>
+          <textBox id="NegNPNegExample" dataItem="negExample" cols="80" show="swNegNPDegreeNegYesOrSome"/>
           <br/><br/>
           <checkboxGroup id="NegNPDegreeNegYesTable" show="swNegNPDegreeNegYesOrSome">
              <prompt>De acuerdo con los ejemplos de arriba, ¿dónde se presentan las palabras negativas con respecto al resto de la frase nominal?</prompt>
              <checkbox id="NegNPDegreeNegWordBefore" dataItem="npDegreeNegWordBefore">Antes de la frase nominal</checkbox>
              <checkbox id="NegNPDegreeNegWordAfter"  dataItem="npDegreeNegWordAfter">Después de la frase nominal</checkbox>
              <checkbox id="NegNPDegreeNegWordBoth"  dataItem="npDegreeNegWordBoth">En ambos lados en la misma oración</checkbox>
-             <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">En mi lengua, estos elementos pueden presentarse: <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="2"/></checkbox>
+             <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">En mi lengua, estos elementos pueden presentarse: <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70"/></checkbox>
           </checkboxGroup>	
           <prompt id="NegNPDegreeWordNoCheckPrompt" show="swNegNPDegreeYesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las palabras negativas con respecto al resto de la frase nominal en su lengua, o cambia su respuesta arriba a ‘No, todos se unen a otra palabra en la frase nominal’.</prompt>
           <instruction id="NegNPDegreeNegYesInstruction" show="swNegNPDegreeNegYesOrSome">In the lexicon, mark the words meaning ‘not’  and ‘no’  with the features <feature>makeNeg modifies_DP</feature>. </instruction>
@@ -90,7 +90,7 @@
              <radio id="NegNPDegreeNegCooccurNo" dataValue="no">No</radio>
           </radioGroup>
           <prompt id="NegNPDegreeNegCooccurPrompt" show="swNegNPDegreeNegNotNoneAndNegCooccurYes">Escriba ejemplos de frases nominales completas con las palabras negativas que significan ‘no' y conlas cuantificadores o palabras de grado de ámbito amplio aquí:</prompt>
-          <textBox id="NegNPNegCooccurExample" dataItem="negCooccurExample" cols="50" show="swNegNPDegreeNegNotNoneAndNegCooccurYes"/>
+          <textBox id="NegNPNegCooccurExample" dataItem="negCooccurExample" cols="80" show="swNegNPDegreeNegNotNoneAndNegCooccurYes"/>
           <br/><br/>
           <introduction>Ahora se consideran estas frases nominales negativas en oraciones completas, empezando con ejemplos en que la frase negativa es el sujteo, como en:
           </introduction>
@@ -100,7 +100,7 @@
           </EnglishExample>
           <br/><br/>
           <prompt id="NegNPDegreeSentencePrompt" show="swNegNPDegreeNegNotNone">Escoja al menos una de las frases nominales negativas en los campos de arriba y utilízala como el sujeto de una oración completa, como en ejemplos 7-8 y escríbala aquí:</prompt>
-          <textBox id="NegNPDegreeNegSubjExample" dataItem="npDegreeSubjExample" rows="4" cols="50" show="swNegNPDegreeNegNotNone"/>
+          <textBox id="NegNPDegreeNegSubjExample" dataItem="npDegreeSubjExample" cols="80" show="swNegNPDegreeNegNotNone"/>
           <br/>
           <br/>
           <introduction>Hay también versiones negativas de los pronombres indefinidos, como <example>nadie</example>, <example>nada</example> y <example>ninguno</example>.  Observe que alguinos se forman de un elemento negativo y un sustantivo genérico o un número.  En algunas lenguas no combinarse en una sola palabra, como en <example>no one ‘nadie'</example> para el inglés.</introduction>
@@ -131,7 +131,7 @@
           </EnglishExample>
           <br/><br/>     
           <prompt id="NegPronounSentPrompt">Escoja al menos uno de los ejemplos de <span id="NegPronounSentSpan" show="swNegPronIndefYes">los pronombres negativos</span><span id="NegPronounSentSpan2" show="swNegPronIndefSome">los pronombres negativos o las frases nominales negativas</span><span id="NegNPSentSpan" show="swNegPronIndefNo">las frases nominales negativas</span> de arriba y utilízalo como el sujeto de una oración completa como en ejemplo 9. aquí:</prompt>
-          <textBox id="NegPronIndefSubjExample" dataItem="negIndefSubjExample" rows="4" cols="50"/>
+          <textBox id="NegPronIndefSubjExample" dataItem="negIndefSubjExample" cols="80"/>
           <br/>
           <br/>
           <radioGroup id="NegSubjVerbRequiredTable"  show="swNegVerbalYes">

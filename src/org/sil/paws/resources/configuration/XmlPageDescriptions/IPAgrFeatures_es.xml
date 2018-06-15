@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPAgrFeatures" count="2/2">
+<page id="IPAgrFeatures" count="9.2.2">
     <title level="2">Las oraciones básicas - La concordancia verbal</title>
    <introduction>Los verbos y los auxiliares también pueden sufrir cambios para expresar concordancia con el sujeto, y a veces también con el objeto directo, incluyen persona, número, género, animado y clase.  La mayoría de los cambios o accidentes se agregan como afijos o clíticos pronominales que pueden unirse con el verbo. Las lenguas difieren en cuántos accidentes se marcan en los verbos o auxliairies.</introduction>
    <form section="ip">

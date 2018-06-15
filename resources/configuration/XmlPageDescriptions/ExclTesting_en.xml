@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="ExclTesting" count="2/2">
+<page id="ExclTesting" count="17.2">
 	<title level="2">Exclamations and Greetings - Testing</title>
 	<form section="excl">
 		<instruction>

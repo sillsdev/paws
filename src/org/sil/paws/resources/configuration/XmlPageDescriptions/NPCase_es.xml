@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPCase" count="2/2">
+<page id="NPCase" count="5.2.2">
     <title level="2">Las frases nominales - El caso</title>
    <introduction>Como se presenta en <section number="1.">La tipología - Sistema de caso</section>, lenguas pueden utilizar ningún sistema de <technicalTermRef term="ttCase"/>, o pueden seguir un sistema <technicalTermRef term="ttNominative"/>-<technicalTermRef term="ttAccusative"/>, un sistema <technicalTermRef term="ttErgative"/>-<technicalTermRef term="ttAbsolutive"/>, o ergatividad escindida, que consiste en ambos sistemas de caso bajo ciertas condiciones gramaticales.<br/><br/>
       Algunas lenguas marcan el caso de sustantivos o frases nominales así como los pronombres, mientras que otras solo muestran el caso en los pronombres, si lo marcan. <br/><br/>     
@@ -22,7 +22,7 @@
           <radio id="NPCaseDefaultNom" dataValue="nominative">Sí, el caso nominativo es totalmente no marcado, pero los otros son maracdos (algumos <technicalTermRef term="ttAllomorph">alomorfos</technicalTermRef> tácitos son aceptables)</radio>
        </radioGroup>
        <prompt id="NPCaseNYesPrompt" show="swNPCaseNYes">Escriba ejemplos de las frases nominales marcadas con los casos diferentes aquí:</prompt>
-       <textBox id="NPCaseNPExample" dataItem="caseNPExample" cols="50" show="swNPCaseNYes"/>
+       <textBox id="NPCaseNPExample" dataItem="caseNPExample" cols="80" show="swNPCaseNYes"/>
        <br/>
        <br/>
        <radioGroup id="NPCaseWordTable" show="swNPCaseNYes">
@@ -37,7 +37,7 @@
           <checkbox id="NPCaseWordBefore"  dataItem="caseWordBefore">Antes de la frase nominal</checkbox>
           <checkbox id="NPCaseWordAfter"  dataItem="caseWordAfter">Después de la frase nominal</checkbox>
           <checkbox id="NPCaseWordBoth"  dataItem="caseWordBoth">En ambos lados en la misma frase nominal</checkbox>
-          <checkbox id="NPCaseWordOther"  dataItem="caseWordOther">En mi lengua, los indicadores de caso pueden presentarse:  <textBox  id="NPCaseWordOtherContent" dataItem="caseWordOther" rows="2"/></checkbox>
+          <checkbox id="NPCaseWordOther"  dataItem="caseWordOther">En mi lengua, los indicadores de caso pueden presentarse:  <textBox  id="NPCaseWordOtherContent" dataItem="caseWordOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <prompt id="NPCaseWordNoCheckPrompt" show="swNPCaseWordYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los indicadoees de caso con respecto al resto de la frase nominal, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra en la frase nominal’.</prompt>
 
@@ -47,7 +47,7 @@
           <checkbox id="NPCaseAttachesEnclitic" dataItem="caseAttachesEnclitic">Al final de la palabra final en la frase nominal como enclíticos</checkbox>
           <checkbox id="NPCaseAttachesPrefix" dataItem="caseAttachesPrefix">Como prefijos que se unen al sustantivo principal</checkbox>
           <checkbox id="NPCaseAttachesSuffix" dataItem="caseAttachesSuffix">Como sufijos que se unen al sustantivo principa</checkbox>
-          <checkbox id="NPCaseAttachesOther" dataItem="caseAttachesOther">En mi lengua, los indicadores de caso se unen: <textBox  id="NPCaseAttachesOtherContent" dataItem="caseAttachesOther" rows="2"/></checkbox>
+           <checkbox id="NPCaseAttachesOther" dataItem="caseAttachesOther">En mi lengua, los indicadores de caso se unen: <textBox  id="NPCaseAttachesOtherContent" dataItem="caseAttachesOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <prompt id="NPCaseAttachesNoCheckPrompt" show="swNPCaseAttachesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se unen los indicadores de caso que no son palabras independientes en la frase nominal, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
        
@@ -76,42 +76,42 @@
        
        <prompt  id="NPCaseTable" show="swNPCaseNYes">Para todos los campos siguientes, <span id="NPCaseNYesAndWordNoSpan" show="swNPCaseNYesAndWordNoOrSome">escriba el indicador de caso que es un afijo o clítico con un guíon o signo igual en el lado que se une.  Si</span><span id="NPCaseNYesAndWordYesSpan" show="swNPCaseNYesAndWordYes">si</span> existe más que un indicador para un caso particular, escriba cado uno en una linea separada. Si su lengua no utiliza un caso particular, simplemente deja ese campo vacio.</prompt>
        <prompt id="NPCaseNominativePrompt" show="swNPCaseNomOrSplitAndNYes">Escriba el indicador de caso su lengua utiliza para caso nominativo para los sujetos-agentes:</prompt>
-       <textBox id="NPNom" dataItem="nominative" rows="3" show="swNPCaseNomOrSplitAndNYes"/>
+       <textBox id="NPNom" dataItem="nominative" rows="2" show="swNPCaseNomOrSplitAndNYes"/>
        <br/>
        <prompt id="NPCaseAccusativePrompt" show="swNPCaseNomOrSplitAndNYes">Escriba el indicador de caso su lengua utiliza para caso acusativo para los objetos directos y otros usos:</prompt>
-       <textBox id="NPAcc" dataItem="accusative" rows="3" show="swNPCaseNomOrSplitAndNYes"/>
+       <textBox id="NPAcc" dataItem="accusative" rows="2" show="swNPCaseNomOrSplitAndNYes"/>
        <br/>
        <prompt id="NPCaseErgativePrompt" show="swNPCaseErgAndNYes">Escriba el indicador de caso su lengua utiliza para caso ergativo para los sujetos-agentes de verbos transitivos:</prompt>
        <prompt id="NPCaseSplitErgativePrompt" show="swNPCaseSplitAndNYes">Escriba el indicador de caso su lengua utiliza para caso ergativo para los sujetos-agentes de verbos transitivos en las partes de su lengua que utilizan ergatividad escindida:</prompt>
-       <textBox id="NPErg" dataItem="ergative" rows="3" show="swNPCaseErgOrSplitAndNYes"/>
+       <textBox id="NPErg" dataItem="ergative" rows="2" show="swNPCaseErgOrSplitAndNYes"/>
        <br/>
        <prompt id="NPCaseAbsolutivePrompt" show="swNPCaseErgAndNYes">Escriba el indicador de caso su lengua utiliza para caso ergativo para los sujeto-agentess de verbos intransitivos y los objetos directos de verbos transitivos:</prompt>
        <prompt id="NPCaseSplitAbsolutivePrompt" show="swNPCaseSplitAndNYes">Escriba el indicador de caso su lengua utiliza para caso ergativo para los sujetos-agentes de verbos intransitivos y los objetos directos de verbos transitivos en las partes de su lengua que utilizan ergatividad escindida:</prompt>
-       <textBox id="NPAbs" dataItem="absolutive" rows="3" show="swNPCaseErgOrSplitAndNYes"/>
+       <textBox id="NPAbs" dataItem="absolutive" rows="2" show="swNPCaseErgOrSplitAndNYes"/>
        <br/>
        <prompt id="NPCaseGenitivePrompt" show="swNPCaseNomOrSplitOrErgPossGenAndNYes">Esctiba el indicador de caso su lengua utiliza para el caso genitivo para posesivos:</prompt>
-       <textBox id="NPGen" dataItem="genitive" rows="3" show="swNPCaseNomOrSplitOrErgPossGenAndNYes"/>
+       <textBox id="NPGen" dataItem="genitive" rows="2" show="swNPCaseNomOrSplitOrErgPossGenAndNYes"/>
        <br/>     
        <prompt id="NPCaseDativePrompt" show="swNPCaseNYes">Escriba el indicador de caso su lengua utiliza para caso dativo para los objetos indirectos y possiblemente los sujetos-experimentadores:</prompt>
-       <textBox id="NPDat" dataItem="dative" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPDat" dataItem="dative" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseAblativePrompt" show="swNPCaseNYes">Escriba el indicador de caso su lengua utiliza para caso ablativo para expresar fuentes o origen:</prompt>
-       <textBox id="NPAbl" dataItem="ablative" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPAbl" dataItem="ablative" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseInstrumentalPrompt" show="swNPCaseNYes">Escriba el indicador de caso su lengua utiliza para caso instrumento para expresar medios o instrumentos:</prompt>
-       <textBox id="NPIns" dataItem="instrumental" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPIns" dataItem="instrumental" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseLocativePrompt" show="swNPCaseNYes">Escriba el indicador de caso su lengua utiliza para caso locativo para expresar lugares:</prompt>
-       <textBox id="NPLoc" dataItem="locative" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPLoc" dataItem="locative" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseVocativePrompt" show="swNPCaseNYes">Escriba el indicador de caso su lengua utiliza para caso vocativo para expresar discursos directos:</prompt>
-       <textBox id="NPVoc" dataItem="vocative" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPVoc" dataItem="vocative" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseObliquePrompt" show="swNPCaseNYes">Escriba el indicador de caso su lengua utiliza para caso oblicuo para expresar relaciones gramaticales de menor importancia en general:</prompt>
-       <textBox id="NPObl" dataItem="oblique" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPObl" dataItem="oblique" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseOtherPrompt" show="swNPCaseNYes">Escriba cualquier otro indicador de caso específico que su lengua utiliza para expresar una relación gramatical de menor importancia:</prompt>
-       <textBox id="NPOther" dataItem="otherCase" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPOther" dataItem="otherCase" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <instruction id="NPCaseWordEitherRestrictedInstruction" show="swNPCaseWordEitherRestricted">In the lexicon, mark those case markers which can only occur initially with the feature <feature>DP-initial</feature> and those which can only occur finally with the feature <feature>DP-final</feature>.  Do not enter either feature on any markers which can occur on either side.</instruction>
        
@@ -296,6 +296,8 @@
       <and/>
       <whenCheckbox button="NPCaseAttachesProclitic"/>
       <or/>
+      <not/><whenValue element="typology" attr="case" value="none"/>
+      <and/>
       <whenRadio button="NPCaseNYes"/>
       <and/>
       <whenRadio button="NPCaseWordSome"/>
@@ -311,6 +313,8 @@
       <and/>
       <whenCheckbox button="NPCaseAttachesEnclitic"/>
       <or/>
+      <not/><whenValue element="typology" attr="case" value="none"/>
+      <and/>
       <whenRadio button="NPCaseNYes"/>
       <and/>
       <whenRadio button="NPCaseWordSome"/>
@@ -326,18 +330,24 @@
       <and/>
       <whenCheckbox button="NPCaseAttachesPrefix"/>
       <or/>
+      <not/><whenValue element="typology" attr="case" value="none"/>
+      <and/>
       <whenRadio button="NPCaseNYes"/>
       <and/>
       <whenRadio button="NPCaseWordSome"/>
       <and/>
       <whenCheckbox button="NPCaseAttachesPrefix"/>
       <or/>
+      <not/><whenValue element="typology" attr="case" value="none"/>
+      <and/>
       <whenRadio button="NPCaseNYes"/>
       <and/>
       <whenRadio button="NPCaseWordNo"/>
       <and/>
       <whenCheckbox button="NPCaseAttachesSuffix"/>
       <or/>
+      <not/><whenValue element="typology" attr="case" value="none"/>
+      <and/>
       <whenRadio button="NPCaseNYes"/>
       <and/>
       <whenRadio button="NPCaseWordSome"/>
@@ -390,4 +400,4 @@
    </showWhen>
    &TechnicalTerms; 
    
-</page>
+   </page>

@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="Classifiers" count="3/3">
+<page id="Classifiers" count="1.3">
     <title level="2">Overall Typology Questions - Noun Classes and Classifiers</title>
     <introduction>Some languages have a system of noun classes that marks nouns by their shape, position, or other characteristics.  In many of these languages, the class marking becomes an agreement system that requires concord throughout the nominal phrase and even with the verb.  Therefore, <technicalTermRef term="ttQuantifiers"/>, <technicalTermRef term="ttArticles"/>, <technicalTermRef term="ttDemonstratives"/>, adjectives, and verbs may need to be marked with the appropriate noun class marker.
        <br/><br/>
@@ -445,16 +445,92 @@
        <textBox id="OTClassifierSpecificOtherExample" dataItem="classifierOtherExample" show="swOTClassifierSpecific" rows="2"/>
        <br/><br/>
        <prompt id="OTClassifierAgrPrompt" show="swOTClassifierAgr">Now key some example sentences showing the concord agreement within the nominal phrases and on the verb here:</prompt>
-       <textBox id="OTClassifierAgrExample" dataItem="classifierAgrExample" cols="50" show="swOTClassifierAgr"/>
+       <textBox id="OTClassifierAgrExample" dataItem="classifierAgrExample" cols="80" rows="5" show="swOTClassifierAgr"/>
        <prompt id="OTClassifierSpecificPrompt" show="swOTClassifierSpecific">Now key some example nominal phrases illustrating some of the different classifiers used with numerals or demonstratives and nouns here:</prompt>
-       <textBox id="OTClassifierSpecificExample" dataItem="classifierSpecificExample" rows="5" show="swOTClassifierSpecific"/>      
+       <textBox id="OTClassifierSpecificExample" dataItem="classifierSpecificExample" cols="80" rows="5" show="swOTClassifierSpecific"/>      
        <prompt id="OTClassifierTypePrompt" show="swOTClassifierType">Now key some example nouns illustrating the different type markers here:</prompt>
-       <textBox id="OTClassifierTypeExample" dataItem="classifierTypeExample" rows="5" show="swOTClassifierType"/>      
+       <textBox id="OTClassifierTypeExample" dataItem="classifierTypeExample" cols="80" rows="5" show="swOTClassifierType"/>      
        <br/>
-       <instruction id="OTClassifierAgrNumInstruction" show="swOTClassifierAgrNum">In the lexicon, enter the feature <feature>singular</feature> on all the singular classifiers and the feature <feature>plural</feature> on all the plural classifiers.  Do not enter a number feature on any classifiers which can go with either singular or plural or mass nouns.  Also enter a feature of the form <feature>class_##</feature>,  replacing the ## with a number between 1 and 25, on each classifier as appropriate.</instruction>
-       <instruction id="OTClassifierAgrTypeNumAgrYesInstruction" show="swOTClassifierAgrTypeNumAgrYes">In the lexicon, enter the feature <feature>singular</feature> on all the singular classifiers and the feature <feature>plural</feature> on all the plural classifiers.  Also enter one of the features <feature>class_animal</feature>, <feature>class_insect</feature>, <feature>class_liquid</feature>, <feature>class_round</feature>, <feature>class_cylinder</feature>, <feature>class_sphere</feature>, <feature>class_tree</feature>, <feature>class_wood</feature> or <feature>class_other</feature> on each classifier as appropriate.</instruction>     
-       <instruction id="OTClassifierTypeNumAgrNoInstruction" show="swOTClassifierTypeOrNumAgrNo">In the lexicon, enter one of the features <feature>class_animal</feature>, <feature>class_insect</feature>, <feature>class_liquid</feature>, <feature>class_round</feature>, <feature>class_cylinder</feature>, <feature>class_sphere</feature>, <feature>class_tree</feature>, <feature>class_wood</feature> or <feature>class_other</feature> on each classifier as appropriate.</instruction>
-       <instruction id="OTClassifierSpecificInstruction" show="swOTClassifierSpecific">In the lexicon, enter one of the features <feature>class_human</feature>, <feature>class_animal</feature>, <feature>class_bird</feature>, <feature>class_boat</feature>, <feature>class_clothing</feature>, <feature>class_tree</feature>, <feature>class_thin</feature>, <feature>class_wavy</feature>, <feature>class_flat</feature>, <feature>class_cylindrical</feature>, <feature>class_mechanical</feature>, <feature>class_generic</feature> or <feature>class_other</feature> on each classifier as appropriate.</instruction>
+       <instruction id="OTClassifierAgrNumInstruction" show="swOTClassifierAgrNum">In the lexicon, enter the feature <feature>singular</feature> on all the singular class markers and the feature <feature>plural</feature> on all the plural class markers.  Do not enter a number feature on any class markers which can go with either singular or plural or mass nouns.  Also enter a feature of the form <feature>class_##</feature>,  replacing the ## with a number between 1 and 25, on each class marker that goes on nouns or other modifiers in the nominal phrase as appropriate.
+       <br/><br/>For the same or other class markers that go on verbs, add the following features as appropriate:<br/><br/>
+         <span id="NoCaseSpan2" show="swOTCaseNone">
+        For the class markers for subjects, use the features <feature>singular_subject</feature> or <feature>plural_subject</feature>, along with <feature>class_##_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>singular_object</feature> or <feature>plural_object</feature>, along with <feature>class__##_object, replacing the ## with a number between 1 and 25 as instructed above.</feature>  
+       </span>
+       <span id="NominativeCaseSpan2" show="swOTCaseNominative">
+        For the class markers for subjects, use the features <feature>singular_subject</feature> or <feature>plural_subject</feature>, along with <feature>class_##_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>singular_object</feature> or <feature>plural_object</feature>, along with <feature>class__##_object, replacing the ## with a number between 1 and 25 as instructed above.</feature>  
+       </span>
+       <span id="ErgativeCaseSpan2" show="swOTCaseErgative">
+        For the class markers for ergative arguments, use the features <feature>singular_ergative</feature> or <feature>plural_ergative</feature>, along with <feature>class_##_ergative</feature>.  
+       <br/><br/>
+       For the class markers for absolutive arguments, use the features <feature>singular_absolutive</feature> or <feature>plural_absolutive</feature>, along with <feature>class_##_absolutive</feature>, replacing the ## with a number between 1 and 25 as instructed above.   
+       </span>
+       <span id="SplitCaseSpan2" show="swOTCaseSplit">
+        For the class markers for subjects, use the features <feature>singular_subject</feature> or <feature>plural_subject</feature>, along with <feature>class_##_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>singular_object</feature> or <feature>plural_object</feature>, along with <feature>class__##_object, replacing the ## with a number between 1 and 25 as instructed above.</feature>  
+       <br/><br/>
+       Within the split case system, for the class markers for ergative arguments, use the features <feature>singular_ergative</feature> or <feature>plural_ergative</feature>, along with <feature>class_##_ergative</feature>.  
+       <br/><br/>
+       For the class markers for absolutive arguments, use the features <feature>singular_absolutive</feature> or <feature>plural_absolutive</feature>, along with <feature>class_##_absolutive</feature>, replacing the ## with a number between 1 and 25 as instructed above.   
+       </span></instruction>     
+       <instruction id="OTClassifierAgrTypeNumAgrYesInstruction" show="swOTClassifierAgrTypeNumAgrYes">In the lexicon, enter the feature <feature>singular</feature> on all the singular class markers and the feature <feature>plural</feature> on all the plural class markers.  Also enter one of the features <feature>class_animal</feature>, <feature>class_insect</feature>, <feature>class_liquid</feature>, <feature>class_round</feature>, <feature>class_cylindrical</feature>, <feature>class_spherical</feature>, <feature>class_tree</feature>, <feature>class_wood</feature> or <feature>class_other</feature> on each class marker that goes on nouns or other modifiers in the nominal phrase as appropriate.
+       <br/><br/>For the same or other class markers that go on verbs, add the following features as appropriate:<br/><br/>
+       <span id="NoCaseSpan" show="swOTCaseNone">
+        For the class markers for subjects, use the features <feature>singular_subject</feature> or <feature>plural_subject</feature>, along with <feature>class_animal_subject</feature>, <feature>class_insect_subject</feature>, <feature>class_liquid_subject</feature>, <feature>class_round_subject</feature>, <feature>class_cylindrical_subject</feature>, <feature>class_spherical_subject</feature>, <feature>class_tree_subject</feature>, <feature>class_wood_subject</feature> or <feature>class_other_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>singular_object</feature> or <feature>plural_object</feature>, along with <feature>class_animal_object</feature>, <feature>class_insect_object</feature>, <feature>class_liquid_object</feature>, <feature>class_round_object</feature>, <feature>class_cylindrical_object</feature>, <feature>class_spherical_object</feature>, <feature>class_tree_object</feature>, <feature>class_wood_object</feature> or <feature>class_other_object</feature>.  
+       </span>
+       <span id="NominativeCaseSpan" show="swOTCaseNominative">
+        For the class markers for subjects, use the features <feature>singular_subject</feature> or <feature>plural_subject</feature>, along with <feature>class_animal_subject</feature>, <feature>class_insect_subject</feature>, <feature>class_liquid_subject</feature>, <feature>class_round_subject</feature>, <feature>class_cylindrical_subject</feature>, <feature>class_spherical_subject</feature>, <feature>class_tree_subject</feature>, <feature>class_wood_subject</feature> or <feature>class_other_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>singular_object</feature> or <feature>plural_object</feature>, along with <feature>class_animal_object</feature>, <feature>class_insect_object</feature>, <feature>class_liquid_object</feature>, <feature>class_round_object</feature>, <feature>class_cylindrical_object</feature>, <feature>class_spherical_object</feature>, <feature>class_tree_object</feature>, <feature>class_wood_object</feature> or <feature>class_other_object</feature>.  
+       </span>
+       <span id="ErgativeCaseSpan" show="swOTCaseErgative">
+        For the class markers for ergative arguments, use the features <feature>singular_ergative</feature> or <feature>plural_ergative</feature>, along with <feature>class_animal_ergative</feature>, <feature>class_insect_ergative</feature>, <feature>class_liquid_ergative</feature>, <feature>class_round_ergative</feature>, <feature>class_cylindrical_ergative</feature>, <feature>class_spherical_ergative</feature>, <feature>class_tree_ergative</feature>, <feature>class_wood_ergative</feature> or <feature>class_other_ergative</feature>.  
+       <br/><br/>
+       For the class markers for absolutive arguments, use the features <feature>singular_absolutive</feature> or <feature>plural_absolutive</feature>, along with <feature>class_animal_absolutive</feature>, <feature>class_insect_absolutive</feature>, <feature>class_liquid_absolutive</feature>, <feature>class_round_absolutive</feature>, <feature>class_cylindrical_absolutive</feature>, <feature>class_spherical_absolutive</feature>, <feature>class_tree_absolutive</feature>, <feature>class_wood_absolutive</feature> or <feature>class_other_absolutive</feature>.   
+       </span>
+       <span id="SplitCaseSpan" show="swOTCaseSplit">
+        For the class markers for subjects, use the features <feature>singular_subject</feature> or <feature>plural_subject</feature>, along with <feature>class_animal_subject</feature>, <feature>class_insect_subject</feature>, <feature>class_liquid_subject</feature>, <feature>class_round_subject</feature>, <feature>class_cylindrical_subject</feature>, <feature>class_spherical_subject</feature>, <feature>class_tree_subject</feature>, <feature>class_wood_subject</feature> or <feature>class_other_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>singular_object</feature> or <feature>plural_object</feature>, along with <feature>class_animal_object</feature>, <feature>class_insect_object</feature>, <feature>class_liquid_object</feature>, <feature>class_round_object</feature>, <feature>class_cylindrical_object</feature>, <feature>class_spherical_object</feature>, <feature>class_tree_object</feature>, <feature>class_wood_object</feature> or <feature>class_other_object</feature>.  
+       <br/><br/>
+       Within the split case system, for the class markers for ergative arguments, use the features <feature>singular_ergative</feature> or <feature>plural_ergative</feature>, along with <feature>class_animal_ergative</feature>, <feature>class_insect_ergative</feature>, <feature>class_liquid_ergative</feature>, <feature>class_round_ergative</feature>, <feature>class_cylindrical_ergative</feature>, <feature>class_spherical_ergative</feature>, <feature>class_tree_ergative</feature>, <feature>class_wood_ergative</feature> or <feature>class_other_ergative</feature>.  
+       <br/><br/>
+       For the class markers for absolutive arguments, use the features <feature>singular_absolutive</feature> or <feature>plural_absolutive</feature>, along with <feature>class_animal_absolutive</feature>, <feature>class_insect_absolutive</feature>, <feature>class_liquid_absolutive</feature>, <feature>class_round_absolutive</feature>, <feature>class_cylindrical_absolutive</feature>, <feature>class_spherical_absolutive</feature>, <feature>class_tree_absolutive</feature>, <feature>class_wood_absolutive</feature> or <feature>class_other_absolutive</feature>.   
+       </span></instruction>     
+       <instruction id="OTClassifierAgrTypeNumAgrNoInstruction" show="swOTClassifierAgrTypeNumAgrNo">In the lexicon, enter one of the features <feature>class_animal</feature>, <feature>class_insect</feature>, <feature>class_liquid</feature>, <feature>class_round</feature>, <feature>class_cylindrical</feature>, <feature>class_spherical</feature>, <feature>class_tree</feature>, <feature>class_wood</feature> or <feature>class_other</feature> on each class marker that goes on nouns or other modifiers in the nominal phrase as appropriate.
+              <br/><br/>For the same or other class markers that go on verbs, add the following features as appropriate:<br/><br/>
+       <span id="NoCaseSpan1" show="swOTCaseNone">
+        For the class markers for subjects, use the features <feature>class_animal_subject</feature>, <feature>class_insect_subject</feature>, <feature>class_liquid_subject</feature>, <feature>class_round_subject</feature>, <feature>class_cylindrical_subject</feature>, <feature>class_spherical_subject</feature>, <feature>class_tree_subject</feature>, <feature>class_wood_subject</feature> or <feature>class_other_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>class_animal_object</feature>, <feature>class_insect_object</feature>, <feature>class_liquid_object</feature>, <feature>class_round_object</feature>, <feature>class_cylindrical_object</feature>, <feature>class_spherical_object</feature>, <feature>class_tree_object</feature>, <feature>class_wood_object</feature> or <feature>class_other_object</feature>.  
+       </span>
+       <span id="NominativeCaseSpan1" show="swOTCaseNominative">
+        For the class markers for subjects, use the features along with <feature>class_animal_subject</feature>, <feature>class_insect_subject</feature>, <feature>class_liquid_subject</feature>, <feature>class_round_subject</feature>, <feature>class_cylindrical_subject</feature>, <feature>class_spherical_subject</feature>, <feature>class_tree_subject</feature>, <feature>class_wood_subject</feature> or <feature>class_other_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>class_animal_object</feature>, <feature>class_insect_object</feature>, <feature>class_liquid_object</feature>, <feature>class_round_object</feature>, <feature>class_cylindrical_object</feature>, <feature>class_spherical_object</feature>, <feature>class_tree_object</feature>, <feature>class_wood_object</feature> or <feature>class_other_object</feature>.  
+       </span>
+       <span id="ErgativeCaseSpan1" show="swOTCaseErgative">
+        For the class markers for ergative arguments, use the features <feature>class_animal_ergative</feature>, <feature>class_insect_ergative</feature>, <feature>class_liquid_ergative</feature>, <feature>class_round_ergative</feature>, <feature>class_cylindrical_ergative</feature>, <feature>class_spherical_ergative</feature>, <feature>class_tree_ergative</feature>, <feature>class_wood_ergative</feature> or <feature>class_other_ergative</feature>.  
+       <br/><br/>
+       For the class markers for absolutive arguments, use the features <feature>class_animal_absolutive</feature>, <feature>class_insect_absolutive</feature>, <feature>class_liquid_absolutive</feature>, <feature>class_round_absolutive</feature>, <feature>class_cylindrical_absolutive</feature>, <feature>class_spherical_absolutive</feature>, <feature>class_tree_absolutive</feature>, <feature>class_wood_absolutive</feature> or <feature>class_other_absolutive</feature>.   
+       </span>
+       <span id="SplitCaseSpan1" show="swOTCaseSplit">
+        For the class markers for subjects, use the features <feature>class_animal_subject</feature>, <feature>class_insect_subject</feature>, <feature>class_liquid_subject</feature>, <feature>class_round_subject</feature>, <feature>class_cylindrical_subject</feature>, <feature>class_spherical_subject</feature>, <feature>class_tree_subject</feature>, <feature>class_wood_subject</feature> or <feature>class_other_subject</feature>.  
+       <br/><br/>
+       For the class markers for objects, use the features <feature>class_animal_object</feature>, <feature>class_insect_object</feature>, <feature>class_liquid_object</feature>, <feature>class_round_object</feature>, <feature>class_cylindrical_object</feature>, <feature>class_spherical_object</feature>, <feature>class_tree_object</feature>, <feature>class_wood_object</feature> or <feature>class_other_object</feature>.  
+       <br/><br/>
+       Within the split case system, for the class markers for ergative arguments, use the features <feature>class_animal_ergative</feature>, <feature>class_insect_ergative</feature>, <feature>class_liquid_ergative</feature>, <feature>class_round_ergative</feature>, <feature>class_cylindrical_ergative</feature>, <feature>class_spherical_ergative</feature>, <feature>class_tree_ergative</feature>, <feature>class_wood_ergative</feature> or <feature>class_other_ergative</feature>.  
+       <br/><br/>
+       For the class markers for absolutive arguments, use the features <feature>class_animal_absolutive</feature>, <feature>class_insect_absolutive</feature>, <feature>class_liquid_absolutive</feature>, <feature>class_round_absolutive</feature>, <feature>class_cylindrical_absolutive</feature>, <feature>class_spherical_absolutive</feature>, <feature>class_tree_absolutive</feature>, <feature>class_wood_absolutive</feature> or <feature>class_other_absolutive</feature>.   
+       </span></instruction>     
+       <instruction id="OTClassifierTypeInstruction" show="swOTClassifierType">In the lexicon, enter one of the features <feature>class_animal</feature>, <feature>class_insect</feature>, <feature>class_liquid</feature>, <feature>class_round</feature>, <feature>class_cylindrical</feature>, <feature>class_spherical</feature>, <feature>class_tree</feature>, <feature>class_wood</feature> or <feature>class_other</feature> on each classifier as appropriate.</instruction>
+       <instruction id="OTClassifierSpecificInstruction" show="swOTClassifierSpecific">In the lexicon, if these classifiers do not have the category <category>Class</category>, then add the feature <feature>makeClass</feature> to the lexical entry to change the category for the syntax. Also add one of the features <feature>class_human</feature>, <feature>class_animal</feature>, <feature>class_bird</feature>, <feature>class_boat</feature>, <feature>class_clothing</feature>, <feature>class_tree</feature>, <feature>class_thin</feature>, <feature>class_wavy</feature>, <feature>class_flat</feature>, <feature>class_cylindrical</feature>, <feature>class_mechanical</feature>, <feature>class_generic</feature> or <feature>class_other</feature> on each classifier as appropriate.</instruction>
        <br/>
         <buttons>
             <button id="ClassifiersBack" value="Back" goto="Case.xml"/>
@@ -498,6 +574,13 @@
       <and/>
       <whenRadio button="OTClassifierAgr"/>
    </showWhen>
+   <showWhen id="swOTClassifierAgrTypeNumAgrNo">
+      <whenRadio button="OTClassifierAgr"/>
+      <and/>
+      <whenRadio button="OTClassifierAgrType"/>
+      <and/>
+      <whenRadio button="OTClassifierAgrTypeNumAgrNo"/>
+   </showWhen>
    <showWhen id="swOTClassifierTypeOrNumAgrNo">
       <whenRadio button="OTClassifierType"/>
       <or/>
@@ -506,6 +589,18 @@
       <whenRadio button="OTClassifierAgrType"/>
       <and/>
       <whenRadio button="OTClassifierAgrTypeNumAgrNo"/>
+   </showWhen>
+   <showWhen id="swOTCaseNone">
+      <whenValue element="typology" attr="case" value="none"/>
+   </showWhen>
+   <showWhen id="swOTCaseNominative">
+      <whenValue element="typology" attr="case" value="nominative"/>
+   </showWhen>
+   <showWhen id="swOTCaseErgative">
+      <whenValue element="typology" attr="case" value="ergative"/>
+   </showWhen>
+   <showWhen id="swOTCaseSplit">
+      <whenValue element="typology" attr="case" value="split"/>
    </showWhen>
    &TechnicalTerms; 
    

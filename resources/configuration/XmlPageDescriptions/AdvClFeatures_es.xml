@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvClFeatures" count="2/3">
+<page id="AdvClFeatures" count="13.2">
    <title level="2">Las cláusulas adverbiales - Ejemplos y características</title>
    <introduction>Los ejemplos en español de adverbios de tiempo con los complementos usados en oraciones completas que se dan en la página anterior se repiten aquí:</introduction>
    <EnglishExample>
@@ -16,7 +16,7 @@
    </EnglishExample>
    <form section="advcl">
       <prompt>Escriba ejemplos similares de oraciones completas (pero simples) con cláusulas adverbiales de tiempo en su lengua aquí:</prompt>
-        <textBox id="AdvlClTemporalExample" dataItem="tempSentExample" cols="50"/>
+        <textBox id="AdvlClTemporalExample" dataItem="tempSentExample" cols="80"/>
         <br/>
         <radioGroup>
             <groupName dataItem="advOrNPPos" default="unknown" position="yesHeadDiff">RAdvOrNPPos</groupName>
@@ -26,15 +26,15 @@
             <radio id="AdvClAdvOrNPPosEither" dataValue="either">De cualquier lado</radio>
         </radioGroup>
         <br/>
-        <instruction id="AdvClTemporalInstruction">In the lexicon, add the following features to the adverb entry, in addition to the feature <feature>temporal</feature>.  Note that the first two features can be added to the same entry, or either or both can be added to the third or fourth sets of features.
-<ul>
-                <li>If the adverb may have another adverb as its complement, add the feature <feature>takes_Adv</feature>.</li>
-                <li>If the adverb may have a nominal phrase complement, add the feature <feature>takes_DP</feature>.</li>
-                <li>If the adverb may have an IP complement, add the features <feature>sentential embedded_finite</feature>.</li>
-                <li>If the adverb requires a complementizer to be present in its sentential complement (CP), add the features <feature>sentential embedded_finite embedded_CP</feature>.</li>
-            </ul>
-        </instruction>
-        <br/>
+      <instruction id="AdvClTemporalInstruction">In the lexicon, add the following features to the adverb entry, in addition to the feature <feature>temporal</feature>.  Note that the first two features can be added to the same entry, and either or both can be added to the other sets of features.
+         <ul>
+            <li>If the adverb may have another adverb as its complement, add the feature <feature>takes_Adv</feature>.</li>
+            <li>If the adverb may have a nominal phrase complement, add the feature <feature>takes_DP</feature>.</li>
+            <li>If the adverb may have an IP complement, add the features <feature>sentential_finite_IP</feature>.</li>
+            <li id="CompYesOption" show="swCompYes">If the adverb requires a complementizer to be present in its sentential complement (CP), add the feature <feature>sentential_finite_CP</feature> instead.</li>
+         </ul>
+      </instruction>
+      <br/>
       <introduction>Ahora se analizan las frases adverbiales o las cláusulas que expresan razón o propósito.  Pueden consistir en adverbios independientes, por ejemplo <example>por lo tanto</example> y <example>pues</example>, y también en los que toman varios tipos de cláusulas de complemento.  (Los ejemplos como <example>por esta razón</example> y <example>en propósito</example> son frases adposicionales que se traten en <section number="8">Las frases adposicionales</section>.)
          <br/><br/>Algunos ejemplos en español de los adverbios que expresan razón o propósito que tienen complementos clausales son:
         </introduction>
@@ -51,17 +51,18 @@
          </introduction>
         <br/>
       <prompt>Los ejemplos que usted escribió en <section number="3">Las frases adverbiales</section> se muestran abajo. Usted puede agregar ejemplos adicionales en oraciones completas (pero simples) también. <span id="CompNoSpan" show="swCompNo">  Puesto que no hay un complementador para las cláusulas de complemento en su lengua, todos los ejemplos deben tener oraciones como complementos.</span></prompt>
-        <textBox id="AdvPReasonExample" section="advp" dataItem="reasonExample" cols="50"/>
+        <textBox id="AdvPReasonExample" section="advp" dataItem="reasonExample" cols="80"/>
         <br/>
         <br/>
-        <instruction id="AdvClReasonInstruction">In the lexicon, add the following features to the adverb entry, in addition to the feature <feature>reason</feature>.
-<ul>
-                <li>If the adverb may have a finite IP complement, add the features <feature>sentential embedded_finite</feature>.</li>
-                <li>If the adverb requires a complementizer to be present in its finite sentential complement (CP), add the features <feature>sentential embedded_finite embedded_CP</feature>.</li>
-                <li>If the adverb requires either a nonfinite IP with a pro-dropped subject or a nonfinite CP complement, add the features <feature>sentential embedded_-finite embedded_IPpro-dropOrCP</feature>.</li>
-            </ul>
-        </instruction>
-        <br/>
+      <instruction id="AdvClReasonInstruction">In the lexicon, add the following features to the adverb entry, in addition to the feature <feature>reason</feature>.
+         <ul>
+            <li>If the adverb may have a finite IP complement, add the feature <feature>sentential_finite_IP</feature>.</li>
+            <li id="CompYesOptionReason" show="swCompYes">If the adverb requires a complementizer to be present in its finite sentential complement (CP), add the feature <feature>sentential_finite_CP</feature>.</li>
+            <li id="CompYesOptionReason1" show="swCompYes">If the adverb requires either a nonfinite IP with a pro-dropped subject or a nonfinite CP complement (like <example>in order</example> above), add the feature <feature>sentential_-finite</feature>.</li>
+         </ul>
+         Those that are phrases, like <example>in order</example>, need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLA Studio</tool>.
+      </instruction>
+      <br/>
         <buttons>
             <button id="AdvClFeaturesBack" value="Back" goto="AdvClMain.xml"/>
             <button id="AdvClFeaturesNext" value="Next" goto="AdvClTesting.xml" gotoNoGrammar="Contents_es.htm"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QWh" count="4/9">
+<page id="QWh" count="11.4">
     <title level="2">Las preguntas - Las frases interrogativas</title>
    <introduction>Las preguntas de respuesta abierta se diferencian de las de respuesta sí/no en que aquellas contienen una palabra o una frase interrogativa, conocida como <example>wh-phrases ‘frases-wh' </example> en inglés porque casi todos comienzan con las letras <example>wh</example> 
       (<example>who(m) ‘quién'</example>, <example>what ‘qué'</example>, <example>why ‘por qué'</example>, <example>where ‘dónde'</example>, <example>when ‘cuándo'</example>, <example>how ‘cómo'</example>, <example>how many ‘cúantos'</example>, <example>which ‘cuál'</example>, <example>whose ‘de quién'</example>).  En algunas lenguas, algunos o todos estos interrogativos se unen con otra palabra.</introduction>

@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPAgrFeatures" count="2/2">
+<page id="IPAgrFeatures" count="9.2.2">
    <title level="2">Phrases Simples – Caractéristiques de l’accord</title>
    <introduction>Les caractéristiques de l’accord pour les verbes et les auxiliaires nous informent précisément sur le sujet et peut-être l’objet de la phrase. Ces caractéristiques comprennent la personne, le nombre, le genre, l’animéité et la classe. Les langues diffèrent très sensiblement quant_au_nombre de caractéristiques marqués aux verbes ou aux auxiliaires.</introduction>
    <form section="ip">

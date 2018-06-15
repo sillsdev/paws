@@ -4,7 +4,7 @@
 	<section1 id="sPron">
 		<secTitle>Pronoms</secTitle>
 		<p>
-			<content>Les pronoms se présentent dans une variété de sortes, y compris les pronoms personnels, possessifs, réflexifs, inverses, démonstratifs et indéfinis.  (Les pronoms interrogatifs sont traités dans la </content><sectionRef sec="sQuesContent"/><content>.)</content>
+			<content>Les pronoms se présentent dans une variété de sortes, y compris les pronoms personnels, possessifs, réflexifs, réciproques, démonstratifs et indéfinis.  (Les pronoms interrogatifs sont traités dans la </content><sectionRef sec="sQuesContent"/><content>.)</content>
 		</p>		
 		<p show="swClassifierYesPronNo"><content>Bien qu’il y ait un système d’accords des classificateurs dans </content><langName/><content>, les pronoms ne sont pas marqués par des classificateurs.</content></p>
 
@@ -3756,32 +3756,32 @@
 			</example>
 		</section2>
 		<section2 id="sPronRecip">
-			<secTitle>Inverses</secTitle>
+			<secTitle>Réciproques</secTitle>
 			<p contentType="ctPracticalIntro">
-				<content>Les inverses sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels. </content>
+				<content>Las réciproques sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels. </content>
 			</p>
 		   <p contentType="ctComparativeIntro">
-		   	<content>Les inverses sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels.  On peut les former de la même façon que les réflexifs, ou ils peuvent être distincts.  Par exemple, en anglais, les formes inverses sont des syntagmes quantificateurs spéciaux: </content>
+		   	<content>Las réciproques sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels.  On peut les former de la même façon que les réflexifs, ou ils peuvent être distincts.  Par exemple, en anglais, las réciproques sont des syntagmes quantificateurs spéciaux: </content>
 		      <langData>each other</langData>
 		      <content> et </content>
 		      <langData>one another</langData>
-		   	<content>; en français: </content><langData>l’un l’autre</langData><content>.  Mais les inverses en français sont généralement marqués avec </content><langData>se</langData><content>.  Certaines langues utilise seulement un affixe verbal pour indiquer une action inverse de la part du sujet pluriel, d’autres ont des pronoms distincts, d’autres utilisent un syntagme nominal possédé, et d’autres encore ne marquent pas du tout l’action inverse.</content>
+		   	<content>; en français: </content><langData>l’un l’autre</langData><content>.  Mais las réciproques en français sont généralement marqués avec </content><langData>se</langData><content>.  Certaines langues utilisent seulement un affixe verbal pour indiquer une action réciproque de la part du sujet pluriel, d’autres ont des pronoms distincts, d’autres utilisent un syntagme nominal possédé, et d’autres encore ne marquent pas du tout l’action réciproque.</content>
 		   </p>
 		   <p>
 				<content>En </content>
 				<langName/>
 				<content/>
 				<case element="pron" attr="recip">
-					<caseText value="no"> il n’ y a aucune sorte d’inverses.</caseText>
-					<caseText value="yesVerbal"> on utilise un affixe verbal pour indiquer une action inverse.</caseText>
-					<caseText value="yes"> il y a des inverses, indiqués ici:</caseText>
+					<caseText value="no"> il n’ y a aucune sorte d’réciproques.</caseText>
+					<caseText value="yesVerbal"> on utilise un affixe verbal pour indiquer une action réciproque.</caseText>
+					<caseText value="yes"> il y a des réciproques, indiqués ici:</caseText>
 				</case>
 		      <content/>
 		   </p>
 		   <example show="swPronRecipVerbal">
 		      <table border="1">
 		         <headerRow>
-		         	<headerCol>Affixe inverse</headerCol>
+		         	<headerCol>Affixe réciproque</headerCol>
 		            <headerCol>Glose</headerCol>
 		         </headerRow>			
 		         <row>
@@ -3791,7 +3791,7 @@
 		      </table>
 		   </example>
 		   <p show="swPronRecipVerbal">
-		   	<content>Des exemples d’inverses dans des phrases montrant l’affixe inverse sur le verbe pour indiquer une action inverse par le sujet sont:</content>
+		   	<content>Des exemples d’réciproques dans des phrases montrant l’affixe réciproque sur le verbe pour indiquer une action réciproque par le sujet sont:</content>
 		   </p>
 		   <example show="swPronRecipVerbal">
 		      <interlinear exampleLoc="pron/recipVerbSentExample"/>
@@ -3799,10 +3799,10 @@
 		   
 		   <example show="swPronRecipYes">
 		      <table border="1">
-		      	<caption><content>Pronoms ou syntagmes inverses</content></caption>
+		      	<caption><content>Pronoms ou syntagmes réciproques</content></caption>
 		         <headerRow>
 		            <headerCol>Personne</headerCol>
-		            <headerCol>Inverses</headerCol>
+		         	<headerCol>Réciproques</headerCol>
 		            <headerCol>Glose</headerCol>
 		         </headerRow>	
 		         <row show="swPronExclNo">
@@ -3834,18 +3834,18 @@
 		   </example>
 		   <p show="swPronRecipYesAndDistinct">
 		      <content></content>
-		   	<text show="swPronRecipDistinctOnly"><content>Ces pronoms inverses sont des mots distincts, autonomes, qui ne sont liés aux autres pronoms.</content></text>
-		   	<text show="swPronRecipDistinctAnd"><content>Certains de ces pronoms inverses sont des mots distincts, autonomes, qui ne sont pas liés aux autres pronoms.</content></text>
+		   	<text show="swPronRecipDistinctOnly"><content>Ces pronoms réciproques sont des mots distincts, autonomes, qui ne sont liés aux autres pronoms.</content></text>
+		   	<text show="swPronRecipDistinctAnd"><content>Certains de ces pronoms réciproques sont des mots distincts, autonomes, qui ne sont pas liés aux autres pronoms.</content></text>
 		   </p>
 		   <p show="swPronRecipYesAndAffix">
-		   	<text show="swPronRecipAffixOnly"><content>Ces pronoms inverses sont formés d’un autre pronom en attachant un affixe inverse.</content></text>
-		   	<text show="swPronRecipAffixAnd"><content>Certains de ces pronoms inverses sont formés d’un autre pronom en attachant un affixe inverse.</content></text>
-		   	<content>  Les affixes inverses sont:</content>
+		   	<text show="swPronRecipAffixOnly"><content>Ces pronoms réciproques sont formés d’un autre pronom en attachant un affixe réciproque.</content></text>
+		   	<text show="swPronRecipAffixAnd"><content>Certains de ces pronoms réciproques sont formés d’un autre pronom en attachant un affixe réciproque.</content></text>
+		   	<content>  Les affixes réciproques sont:</content>
 		   </p>
 		   <example show="swPronRecipYesAndAffix">
 		      <table border="1">
 		         <headerRow>
-		         	<headerCol>Affixes inverses</headerCol>
+		         	<headerCol>Affixes réciproques</headerCol>
 		            <headerCol>Glose</headerCol>
 		         </headerRow>			
 		         <row>
@@ -3855,8 +3855,8 @@
 		      </table>	         
 		   </example>
 		   <p show="swPronRecipYesAndNounPoss">
-		   	<text show="swPronRecipNounPossOnly"><content>Ces inverses sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</content></text>
-		   	<text show="swPronRecipNounPossAnd"><content>Certains de ces inverses sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</content></text>
+		   	<text show="swPronRecipNounPossOnly"><content>Ces réciproques sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</content></text>
+		   	<text show="swPronRecipNounPossAnd"><content>Certains de ces réciproques sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</content></text>
 		   	<content>  Le substantif spécial qui est possédé par les pronoms possesseur est:</content>
 		   </p>
 		   <example show="swPronRecipYesAndNounPoss">
@@ -3872,14 +3872,14 @@
 		      </table>	         
 		   </example>
 		   <p show="swPronRecipYesAndQP">
-		   	<text show="swPronRecipQPOnly"><content>Ces inverses sont formés de syntagmes nominaux quantifiés spéciaux.</content></text>
-		   	<text show="swPronRecipQPAnd"><content>Certains de ces inverses sont formés de syntagmes nominaux quantifiés spéciaux.</content></text>
+		   	<text show="swPronRecipQPOnly"><content>Ces réciproques sont formés de syntagmes nominaux quantifiés spéciaux.</content></text>
+		   	<text show="swPronRecipQPAnd"><content>Certains de ces réciproques sont formés de syntagmes nominaux quantifiés spéciaux.</content></text>
 		   	<content>  Les quantificateurs ou syntagmes spéciaux sont:</content>
 		   </p>
 		   <example show="swPronRecipYesAndQP">
 		      <table border="1">
 		         <headerRow>
-		         	<headerCol>Quantificateurs spéciaux pour inverses</headerCol>
+		         	<headerCol>Quantificateurs spéciaux pour réciproques</headerCol>
 		            <headerCol>Glose</headerCol>
 		         </headerRow>			
 		         <row>
@@ -3890,11 +3890,11 @@
 		   </example>
 		   
 		   <p show="swPronRecipYesAndRecipOther">
-		   	<text show="swPronRecipOtherOnly"><content>Ces inverses sont formés en ___</content><contentCheckBoxOther contentLoc="pron/recipOther"/> <content>.</content></text>
-		   	<text show="swPronRecipOtherAnd"><content>Certains de ces inverses sont formés en ___</content><contentCheckBoxOther contentLoc="pron/recipOther"/> <content>.</content></text>
+		   	<text show="swPronRecipOtherOnly"><content>Ces réciproques sont formés en ___</content><contentCheckBoxOther contentLoc="pron/recipOther"/> <content>.</content></text>
+		   	<text show="swPronRecipOtherAnd"><content>Certains de ces réciproques sont formés en ___</content><contentCheckBoxOther contentLoc="pron/recipOther"/> <content>.</content></text>
 		   </p>
 		   <p show="swPronRecipYes">
-		   	<content>Des exemples des inverses dans des phrases sont:</content>
+		   	<content>Des exemples das réciproques dans des phrases sont:</content>
 			</p>
 			<example show="swPronRecipYes">
 				<interlinear exampleLoc="pron/recipSentExample"/>
@@ -6109,7 +6109,7 @@
 	   </example>
 		<p show="swOTClassifiersSpecific"><content>Dans la plupart des langues qui emploient des classificateurs, le classificateur peut se présenter sans substantif, pourvu que les caractéristiques du classificateur ou le contexte rendent claire la référence.  
 			En </content><langName/><content>, </content><case element="pron" attr="classifierNoN">
-				<caseText value="yes">les classificateurs peuvent se présenter sans substantif dans ces situations.  Des exemples de syntagmes nominaux où le classificateur sert sans usubstantif sont: </caseText>
+				<caseText value="yes">les classificateurs peuvent se présenter sans substantif dans ces situations.  Des exemples de syntagmes nominaux ou phases où le classificateur sert sans usubstantif sont: </caseText>
 				<caseText value="no">un substantif est toujours obligatoire.</caseText>
 		</case>
 		</p>

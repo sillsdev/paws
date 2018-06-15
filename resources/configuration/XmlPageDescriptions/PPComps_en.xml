@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PPComps" count="2/3" countOutputGrammar="2/5">
+<page id="PPComps" count="8.2">
     <title level="2">Adpositional Phrases - Nominal Complements</title>
     <introduction>The main use of prepositions or postpositions is for expressing location.  Therefore, we will cover locative adpositions and PPs first.  Then, for those languages which do not mark case on nouns or nominal phrases, the adpositions used to express each minor case relation will be exemplified. 
     <br/><br/>
@@ -30,9 +30,9 @@
        <textBox id="PPLocativePostExample" dataItem="locativePostExample" rows="6" show="swPPPostOrBoth"/>
        <instruction id="PPLocativePrepInstruction" show="swPPBoth">In the lexicon, add the feature <feature>PP-initial</feature> to each of the prepositions and the feature <feature>PP-final</feature> to each of the postpositions.  If any can appear either before or after the complement, do not add either feature to that entry.</instruction>
        <prompt id="PPLocativePrepPPPrompt" show="swPPPrepOrBoth">Now key some examples of the <span id="PPBodyPartYesSpan2" show="swPPBodyPartYes">regular </span>prepositions within locative PPs here:</prompt>
-       <textBox id="PPLocativePrepPPExample" dataItem="locativePrepPPExample" rows="6" show="swPPPrepOrBoth"/>
+       <textBox id="PPLocativePrepPPExample" dataItem="locativePrepPPExample" rows="6" cols="80" show="swPPPrepOrBoth"/>
        <prompt id="PPLocativePostPPPrompt" show="swPPPostOrBoth">Now key some examples of the <span id="PPBodyPartYesSpan3" show="swPPBodyPartYes">regular </span>postpositions within locative PPs here:</prompt>
-       <textBox id="PPLocativePostPPExample" dataItem="locativePostPPExample" rows="6" show="swPPPostOrBoth"/>
+       <textBox id="PPLocativePostPPExample" dataItem="locativePostPPExample" rows="6" cols="80" show="swPPPostOrBoth"/>
  <br/><br/>
        <prompt id="PPBodyPartPrepPrompt" show="swPPPrepOrBothAndBodyPartYes">Key the body part prepositions your language uses here<span id="PPCliticSomeSpan2" show="swPPCliticBoth"> with an equal sign after the clitic forms</span>:</prompt>
        <textBox id="PPBodyPartPrepExample" dataItem="bodyPartPrepExample" rows="6" show="swPPPrepOrBothAndBodyPartYes"/>
@@ -40,9 +40,9 @@
        <textBox id="PPBodyPartPostExample" dataItem="bodyPartPostExample" rows="6" show="swPPPostOrBothAndBodyPartYes"/>
        <instruction id="PPBodyPartPrepInstruction" show="swPPBodyPartYes">In the lexicon, you will need to make two entries for each body part, the noun entry with the category <category>N</category> and a second entry with the category <category>P</category>.  <span id="PPBodyPartPrepBothSpan" show="swPPBoth">In addition, add the feature <feature>PP-initial</feature> to each of the body part prepositions and the feature <feature>PP-final</feature> to each of the body part postpositions.  If any can appear either before or after the complement, do not add either feature to that entry.</span></instruction>
        <prompt id="PPBodyPartPrepPPPrompt" show="swPPPrepOrBothAndBodyPartYes">Now key some examples of the body part prepositions within locative PPs here:</prompt>
-       <textBox id="PPBodyPartPrepPPExample" dataItem="bodyPartPrepPPExample" rows="6" show="swPPPrepOrBothAndBodyPartYes"/>
+       <textBox id="PPBodyPartPrepPPExample" dataItem="bodyPartPrepPPExample" rows="6" cols="80" show="swPPPrepOrBothAndBodyPartYes"/>
        <prompt id="PPBodyPartPostPPPrompt" show="swPPPostOrBothAndBodyPartYes">Now key some examples of the body part postpositions within locative PPs here:</prompt>
-       <textBox id="PPBodyPartPostPPExample" dataItem="bodyPartPostPPExample" rows="6" show="swPPPostOrBothAndBodyPartYes"/>
+       <textBox id="PPBodyPartPostPPExample" dataItem="bodyPartPostPPExample" rows="6" cols="80" show="swPPPostOrBothAndBodyPartYes"/>
        <br/><br/>
        <introduction id="PPCaseIntroduction" show="swNPCaseNNo">Since your language does not mark case on nouns or nominal phrases, the minor case-type relationships should be detailed by the <span id="PPBodyPartPrepSpan10" show="swPPPrep">prepositions</span><span id="PPBodyPartPostSpan10" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan10" show="swPPBoth">prepositions and postpositions</span>.  </introduction>
        <prompt  id="PPCaseTable" show="swNPCaseNNo">For each of the following text boxes, enter the <span id="PPBodyPartPrepSpan11" show="swPPPrep">prepositions</span><span id="PPBodyPartPostSpan11" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan11" show="swPPBoth">prepositions and/or postpositions</span> that express that type of case relationship in your language.  <span id="PPCiticSpan" show="swPPClitic">Add an equal sign on the appropriate side of each clitic form to indicate which side it attaches on.</span>  If there is more than one marker for a particular case, enter each on a separate line.  If your language does not distinguish a particular case relation, simply leave that text box empty.</prompt>

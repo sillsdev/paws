@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="QPPartitive" count="5/7">
+<page id="QPPartitive" count="2.5">
 	<title level="2">Quantifiers and QP - Partitives</title>
 	<introduction>All of the quantifiers, including numbers, can normally occur in <technicalTermRef term="ttPartitive"/> constructions.  These constructions are used to signify that one is talking about just a part of a larger group.  Examples include:
 	</introduction>
@@ -19,7 +19,7 @@
    </introduction>
 	<form section="qp">
 	   <prompt><br/>Key how your language would express similar kinds of partitive examples with quantifiers here:</prompt>
-	   <textBox id="QPPartitiveQExample" dataItem="partitiveQExample"/>
+		<textBox id="QPPartitiveQExample" dataItem="partitiveQExample" cols="80"/>
 <br/><br/>
 	   <radioGroup>
 	      <groupName dataItem="partitive" default="no" >RQPPartitive</groupName>
@@ -29,7 +29,7 @@
 	      <radio id="QPPartitiveOther" dataValue="other">No, my language uses some other means than either a prepositional or postpositional phrase or a relative clause to express similar meanings</radio>
 	   </radioGroup>
 		<prompt id="QPPartitiveOtherPrompt" show="swQPPartitiveOther">The construction my language uses to express the group or item being discussed in this kind of partitive construction is:</prompt>
-		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="50" rows="2" show="swQPPartitiveOther"/>
+		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther"/>
 		
 	   <radioGroup id="QPPartitivePPPosTable" show="swQPPartitiveYes">
 	      <groupName dataItem="partitivePPPos" default="unknown" position="yesHeadDiff">RQPPartitivePPPos</groupName>

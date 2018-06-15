@@ -3,10 +3,10 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronNP" count="7/9">
+<page id="PronNP" count="7.7">
 	<title level="2">Los pronombres  - Como frases nominales</title>
 
-   <introduction>Los pronombres de cualquir tipo comúnmente se presentan solos en lugar de una frase nominal completa, pero a veces acompañados porque pueden ser modificados por una cláusula relativa.  En algunas lenguas los pronombres puenden ser modificados por una frase <technicalTermRef term="ttPartitive">partitiva</technicalTermRef> y en otras lenguas los pronombres se pueden modificar por los <technicalTermRef term="ttDeterminers">determinantes</technicalTermRef> y los cuantificadores o palabras de grado de ámbito amplio. Algunos ejemplos en español son los siguientes: </introduction>
+   <introduction>Los pronombres de cualquir tipo comúnmente se presentan solos en lugar de una frase nominal completa, pero a veces acompañados porque pueden ser modificados por una cláusula relativa.  En algunas lenguas los pronombres puenden ser modificados por una frase <technicalTermRef term="ttPartitive">partitiva</technicalTermRef> y en otras lenguas los pronombres se pueden modificar por los <technicalTermRef term="ttDeterminers">determinantes</technicalTermRef> y los cuantificadores o palabras de grado de ámbito amplio. Algunos ejemplos en español de este tipo final son los siguientes: </introduction>
 		<EnglishExample>
 			<exItem label="1.">solamente él.</exItem>
 			<exItem label="2.">apenas esos.</exItem>
@@ -24,11 +24,11 @@
          <radio id="PronModAll" dataValue="all">Sí, los pronombres pueden ser modificados por todos los mismos modificadores que sustantivos pueden, incluyendo los adjetivos y posesivos</radio>
       </radioGroup>   
       <prompt id="PronModMinimalExamplePrompt" show="swPronModDetOrAll">Escriba ejemplos de los pronombres modificados por algunos o todos los elementos permitidos en su lengua aquí:</prompt>
-      <textBox id="PronNPStandAloneExample" dataItem="standAloneNPExample" show="swPronModDetOrAll"/>
+      <textBox id="PronNPStandAloneExample" dataItem="standAloneNPExample" show="swPronModDetOrAll" cols="80"/>
       <prompt id="PronModSentExamplePrompt" show="swPronModNotNo">Ahora utiliza algunos de los ejemplos arriba como el sujeto u objeto directo de una oración aquí:</prompt>
-      <textBox id="PronModSentExample" dataItem="pronSentExample" show="swPronModDetOrAll"/>
+      <textBox id="PronModSentExample" dataItem="pronSentExample" show="swPronModDetOrAll" cols="80"/>
       <br/><br/>
-      <introduction>Además, los pronombres también pueden ser modificados por una frase partitiva (u otra frase adposicional), como en </introduction>
+      <introduction>Algunos ejemplos de pronombres modificados por una frase partitiva (u otra frase adposicional) son: </introduction>
       <EnglishExample>
          <exItem label="3.">ésos de esta escuela.</exItem>
          <exItem label="4.">solamente ustedes adentro allí.</exItem>
@@ -38,7 +38,7 @@
       <br/>
       <prompt id="PronNPPartitiveModNo" show="swPronModNoOrRel">Se supone que esto no es posible en su lengua, ya que usted dijo anteriormente.  Si no es correcto,  por favor cambia su respuesta arriba.</prompt>
       <prompt id="PronNPPartitiveMod" show="swPronModNotNoOrRel">Escriba sus ejemplos similares aquí:</prompt>
-      <textBox id="PronNPPartitiveExample" dataItem="partitiveExample" show="swPronModNotNoOrRel"/>
+      <textBox id="PronNPPartitiveExample" dataItem="partitiveExample" show="swPronModNotNoOrRel" cols="80"/>
       <br/>
       <radioGroup id="PronNPPartitiveTable" show="swPronModNotNoOrRel">
          <groupName dataItem="partitivePos" default="unknown" position="yesHeadDiff">RPronNPPartitive</groupName>
@@ -49,7 +49,7 @@
       </radioGroup>
       
       <br/><br/>
-		<introduction>Finalmente, un pronombre normalmente puede ser modificado por una cláusula relativa, como en:</introduction>
+		<introduction>Algunos ejemplos de un pronombre modificado por una cláusula relativa son:</introduction>
 		<EnglishExample>
 			<exItem label="6.">ustedes que vayan con nosotros.</exItem>
 			<exItem label="7.">nosotros que creemos.</exItem>
@@ -57,13 +57,14 @@
 		<br/>
       <prompt id="PronNPRelClModNo" show="swPronModNo">Se supone que esto no es posible en su lengua, ya que usted dijo anteriormente que los pronombres solo presentarse por sí mismos.  Si no es correcto,  por favor cambia su respuesta arriba.</prompt>
       <prompt id="PronNPRelClMod" show="swPronModNotNo">Escriba sus ejemplos con las cláusulas relativas, cuando toda la frase nominal se presenta como el sujeto u objeto de una oración simple, aquí:</prompt>
-      <textBox id="PronNPRelCl" dataItem="pronRelClExample" show="swPronModNotNo"/>
+      <textBox id="PronNPRelCl" dataItem="pronRelClExample" show="swPronModNotNo" cols="80"/>
 		<br/>
       <instruction id="PronDistributionNPInstruction" show="swNotPracticalAndPronModDet">In the tree structure given at the beginning of <section number="5">Nominal Phrases</section>, we will assume for your language that pronouns can fill the NP position, because they can be modified by degree words, demonstratives, articles, relative clauses and PPs, but not by possessors or adjectives.</instruction>
-      <instruction id="PronDistributionNPPartInstruction" show="swNotPracticalAndPronModPart">In the tree structure given at the beginning of <section number="5">Nominal Phrases</section>, we will assume for your language that pronouns can fill the NP position, because they can be modified by relative clauses and PPs.</instruction>
+      <instruction id="PronDistributionDBarPartInstruction" show="swNotPracticalAndPronModPart">In the tree structure given at the beginning of <section number="5">Nominal Phrases</section>, we will assume for your language that pronouns can fill the D' position, because they can be modified by relative clauses and PPs.</instruction>
       <instruction id="PronDistributionNInstruction" show="swNotPracticalAndPronModAll">In the tree structure given at the beginning of <section number="5">Simple and Possessed Nominal Phrases</section>, we will assume for your language that pronouns can fill the N position, because they can be modified by all the same categories as nouns can.</instruction>
-      <instruction id="PronDistributionDPInstruction" show="swNotPracticalAndPronModNoOrRel">In the tree structure given at the beginning of <section number="5">Simple and Possessed Nominal Phrases</section>, we will assume for your language that pronouns can fill the DP position, because they must stand alone in the place of a whole nominal phrase, or possibly be modified by a relative clause.</instruction>  
- 
+      <instruction id="PronDistributionDBarInstruction" show="swNotPracticalAndPronModRel">In the tree structure given at the beginning of <section number="5">Simple and Possessed Nominal Phrases</section>, we will assume for your language that pronouns can fill the D' position, because they either stand alone in the place of a whole nominal phrase, or may possibly be modified by a relative clause.</instruction>  
+      <instruction id="PronDistributionDPInstruction" show="swNotPracticalAndPronModNo">In the tree structure given at the beginning of <section number="5">Simple and Possessed Nominal Phrases</section>, we will assume for your language that pronouns can fill the DP position, because they must stand alone in the place of a whole nominal phrase.</instruction>  
+      
       <introduction id="PronNPClassifierIntro2" show="swOTClassifiersSpecific">En la mayoría de las lenguas que se utilizan clasificadores, el clasificador puede presentarse sin un sustantivo, mientras que la referencia está claro de las características del clasificador o el contexto. </introduction>
       <radioGroup id="PronNPClassifierNoNTable" show="swOTClassifiersSpecific">
          <groupName dataItem="classifierNoN" default="no">RPronNPClassifierNoN</groupName>
@@ -71,8 +72,10 @@
          <radio id="PronClassifierNoNYes" dataValue="yes">Sí</radio>
          <radio id="PronClassifierNoNNo" dataValue="no">No, siempre es necesario un sustantivo</radio>
       </radioGroup>   
-      <prompt id="PronNPClassifierNoNExamplePrompt" show="swOTClassifiersSpecificAndClassifierNoNYes">Escriba algunos ejemplos de frases nominales con un clasificador pero sin un sustantivo:</prompt>
-      <textBox id="PronNPClassifierNoNExample" dataItem="classifierNoNExample" show="swOTClassifiersSpecificAndClassifierNoNYes"/>
+      <prompt id="PronNPClassifierNoNExamplePrompt" show="swOTClassifiersSpecificAndClassifierNoNYes">Escriba algunos ejemplos de frases nominales (o oraciones) con un clasificador pero sin un sustantivo:</prompt>
+      <textBox id="PronNPClassifierNoNExample" dataItem="classifierNoNExample" show="swOTClassifiersSpecificAndClassifierNoNYes" cols="80"/>
+      <br/><br/>
+      <instruction id="PronClassifierNoNYesInstruction" show="swOTClassifiersSpecificAndClassifierNoNYes">Note that the rule allowing classifiers to stand alone without a noun may significantly increase ambiguity in your PC-Patr grammar.  Consider commenting off the N'=Class rule if your language only allows this rarely.</instruction>
       <br/><br/>
       <buttons>
 			<button id="PronNPBack" value="Back" goto="PronIndefinite.xml"/>
@@ -117,11 +120,7 @@
       <and/>
       <whenRadio button="PronModPart"/>
    </showWhen>
-   <showWhen id="swNotPracticalAndPronModNoOrRel">
-      <whenValue  element="paws" attr="outputGrammar" value="True"/>
-      <and/>
-      <whenRadio button="PronModNo"/>
-      <or/>
+   <showWhen id="swNotPracticalAndPronModRel">
       <whenValue  element="paws" attr="outputGrammar" value="True"/>
       <and/>
       <whenRadio button="PronModRel"/>

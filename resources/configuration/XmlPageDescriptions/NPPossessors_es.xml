@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPPossessors" count="1/2">
+<page id="NPPossessors" count="5.4.1">
 	<title level="2">Las frases nominales - Los posesivos </title>
 	<introduction>  
 	   El siguiente tipo de modificador de considerar es el <technicalTermRef term="ttPossessors">posesivo</technicalTermRef>.  La posesión se puede expresar normalmente con un pronombre, un sustantivo simple, un nombre propio o con una frase nominal completa.  El español permite solamente pronombres en la posición del posesivo antes del sustantivo,  
@@ -16,21 +16,21 @@
 	   <br/>
 	   <prompt>
 	      Escriba algunos ejemplos de frases nominales con posesivos simples aquí.  Incluye tanto pronombres como frases nominales como posesivos en los ejemplos.</prompt>
-	   <textBox id="NPPossExample" dataItem="possessorExample" cols="50"/>
+	   <textBox id="NPPossExample" dataItem="possessorExample" cols="80"/>
 	   <br/>
 	   <prompt>
 	   	Escriba algunos ejemplos de frases nominales poseídas con frases adposicionales como el posesivo aquí, como en <example>este libro de Juan'</example>, si se permite:</prompt>
-	   <textBox id="NPPossPPExample" dataItem="ppExample"/>
+	   <textBox id="NPPossPPExample" dataItem="ppExample" cols="80"/>
 	   <br/>
 	   <prompt>Observe que los posesivos también pueden ser subordinados uno en otro, como en <example>the boy's sister's dog ‘el perro de la hermana del muchacho'</example>.  Esto se permite en español dentro de la frase preposicional después del sustantivo.</prompt>
 	   <br/>
 	   <prompt>
 	      Escriba algunos ejemplos de frases nominales poseídas con otro posesivo subordinado en el posesivo aquí:</prompt>
-	   <textBox id="NPPossEmbeddedExample" dataItem="embeddedExample"/>
+	   <textBox id="NPPossEmbeddedExample" dataItem="embeddedExample" cols="80"/>
 		<br/>
 		<prompt>
 		   Escriba algunos ejemplos de oraciones completas con cláusulas relativas en el posesivo aquí:</prompt>
-		<textBox id="NPPossRelClExample" dataItem="relClExample"/>
+		<textBox id="NPPossRelClExample" dataItem="relClExample" cols="80"/>
 		<br/>
 		<br/>
 	   <radioGroup>
@@ -96,7 +96,7 @@
 	      <checkbox id="NPPossMarkedYesWordBefore" dataItem="possWordBefore">Antes de la frase</checkbox>
 	      <checkbox id="NPPossMarkedYesWordAfter" dataItem="possWordAfter">Después de la frase</checkbox>
 	      <checkbox id="NPPossMarkedYesWordBoth" dataItem="possWordBoth">En ambos lados</checkbox>
-	      <checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">En mi lengua, el indicador posesivo se presenta: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" rows="2"/></checkbox>
+	   	<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">En mi lengua, el indicador posesivo se presenta: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="NPPossMarkedYesWordAndNoCheckPrompt" show="swPossMarkedYesWordAndNoCheck">ADVERTENCIA: Usted dijo anteriormente que las frases posesivas se marcan con una palabra posesiva, pero no ha marcado ninguna de las opciones en cuanto a dónde se presenta. Por favor marque una o más opciones según corresponda, o cambia la respuesta anterior a un diverso tipo de marcador o a ‘No, no hay indicador especial’.</prompt>
 	   
@@ -129,20 +129,14 @@
 	   
 	   <introduction id="NPPossCooccurIntroduction" show="swNPArtAndOrDem">También necesitamos saber si los posesivos y los artículos o los demonstrativos pueden presentarse en la misma frase nominal.   En español y muchas otras lenguas, los posesivos y los artículos o los demonstrativos no se presentan en la misma frase nominal, a menos que expresen el posesivo en una frase preposicional. Por ejemplo,  <example>*esos [sus] libros</example> no es gramatical; por el contrario se dice <example>esos libros [de él]</example> para expresar el mismo pensamiento. Algunas lenguas permiten que los posesivos y los artículos o los demonstrativos se presentan en la misma frase, así que el primer ejemplo antedicho sea gramatical.</introduction>
 	   <br/>
-	   <radioGroup id="NPPossCooccurTable" show="swNPArtAndOrDem">
+		<radioGroup id="NPPossCooccurTable" show="swNPArtAndOrDem">
 	      <groupName dataItem="possCooccur" default="yes"/>
-	      <prompt>¿Pueden presentarse los posesivos <span id="NPPronPossOnlySpan" show="swNPPossNPNo">pronominales </span>con <span id="NPArtOnlyCooccurSpan" show="swNPArtAndDemArt">los artículos</span>
+			<prompt>¿Pueden presentarse los posesivos <span id="NPPronPossSpan" show="swNPPossYesOrYesOnly">pronominales y los que son frases nominales </span><span id="NPPronPossOnlySpan" show="swNPPossNPNo">pronominales </span>con <span id="NPArtOnlyCooccurSpan" show="swNPArtAndDemArt">los artículos</span>
 	         <span id="NPDemOnlyCooccurSpan" show="swNPArtAndDemDem">los demostrativos</span>
 	         <span id="NPArtAndDemCooccurSpan" show="swNPArtAndDemBoth">los artículos y demostrativos</span> en su lengua?</prompt>
-	      <radio id="NPPossCooccurYes" dataValue="yes">Sí, pueden presentarse en la misma oración</radio>
-	      <radio id="NPPossCooccurSome" dataValue="some">Algunos de los posesivos <span id="NPPronPossOnlySpan1" show="swNPPossNPNo">pronominales </span>pueden presentarse con  <span id="NPArtOnlyCooccurSpan1" show="swNPArtAndDemArt">los artículos</span>
-	         <span id="NPDemOnlyCooccurSpan1" show="swNPArtAndDemDem">los demostrativos</span>
-	         <span id="NPArtAndDemCooccurSpan1" show="swNPArtAndDemBoth">los artículos y demostrativos</span> pero algunos no pueden</radio>
+			<radio id="NPPossCooccurYes" dataValue="yes">Sí, pueden presentarse en la misma oración (frase nominal)</radio>
 	      <radio id="NPPossCooccurNo" dataValue="no">No, nunca se presentan en la misma frase nominal</radio>
 	   </radioGroup>
-	   <instruction id="NPPossCooccurSomeInstruction" show="swNPArtAndOrDemAndNPPossCooccurSome">In the lexicon, add the feature <feature>poss_cooccur</feature> to the <span id="NPArtOnlyCooccurSpan2" show="swNPArtAndDemArt">articles</span>
-	      <span id="NPDemOnlyCooccurSpan2" show="swNPArtAndDemDem">demonstratives</span>
-	      <span id="NPArtAndDemCooccurSpan2" show="swNPArtAndDemBoth">articles and demonstratives</span> which may co-occur with possessors so that they will be restricted to the proper phrase structure rules.</instruction>
 	   <introduction id="NPPossNounCaseChangeIntroduction" show="swNPCaseYes">En algunas lenguas, en una frase nominal poseída, el sustantivo principal y cualquier modificador concuerda con el caso del posesivo. Otras lenguas marcan al posesivo con su propio caso, es decir el genitivo, mientras que el sustantivo principal se marca con el caso dependiendo de su posición relativa al verbo: nominativo o acusativo, ergativo o absolutivo dependiendo del sistema de caso. </introduction>
 	   <br/>
 	   <radioGroup id="NPPossNounCaseChange" show="swNPCaseYes">
@@ -518,14 +512,6 @@
 	   <and/><not/>
 	   <whenRadio button="NPPossNPNone"/>
 	</showWhen>
-   <showWhen id="swNPArtAndOrDemAndNPPossCooccurSome">
-      <not/>
-      <whenValue element="np" attr="artAndDem" value="no"/>
-      <and/>
-      <whenRadio button="NPPossCooccurSome"/>
-      <and/><not/>
-      <whenRadio button="NPPossNPNone"/>
-   </showWhen>
    <showWhen id="swNPCaseErg">
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>

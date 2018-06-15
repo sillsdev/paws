@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd"[
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPTrans" count="1/1">
+<page id="IPTrans" count="9.7.1">
  <title level="2">Phrases Simples – Transitifs et Ditransitifs</title>
  <introduction>Voici quelques exemples de phrases <technicalTermRef term="ttTransitive">transitifs</technicalTermRef> en français:</introduction>
     <EnglishExample>
@@ -15,28 +15,28 @@
  <introduction>Remarquez que les exemples 1-2 ont un sujet-<technicalTermRef term="ttAgent">agent</technicalTermRef> alors que les exemples 3-4 ont un sujet-<technicalTermRef term="ttExperiencer">expérienceur</technicalTermRef>.</introduction>
    <form section="ip">
     <prompt><br/>Les exemples que vous avez entrés dans la <section number="1.">Questions Générales de Typologie – Système de Cas</section> de phrases transitives avec un sujet-agent sont montrés ici. La première boite contient des exemples dont les sujets sont des syntagmes nominaux et la deuxième contient des sujets pronominaux.</prompt>
-        <textBox id="IPExamplesExample"  section="typology" dataItem="example" cols="50"/>
-      <textBox id="IPExamplesPnExample"  section="typology" dataItem="pnExample" cols="50"/>
+        <textBox id="IPExamplesExample" section="typology" dataItem="example" cols="80"/>
+      <textBox id="IPExamplesPnExample" section="typology" dataItem="pnExample" cols="80"/>
     <prompt><br/>Les exemples que vous avez entrés dans la <section number="1.">Questions Générales de Typologie – Système de Cas</section> de phrases avec un verbe transitif avec un sujet-expérienceur sont montrés ici.  La première boite contient des exemples dont les sujets sont des syntagmes nominaux et la deuxième contient des sujets pronominaux.</prompt>
-       <textBox id="IPExperiencerExample"  section="typology" dataItem="experiencerExample" cols="50"/>
-      <textBox id="IPExperiencerPnExample"  section="typology" dataItem="experiencerPnExample" cols="50"/>
+       <textBox id="IPExperiencerExample" section="typology" dataItem="experiencerExample" cols="80"/>
+      <textBox id="IPExperiencerPnExample" section="typology" dataItem="experiencerPnExample" cols="80"/>
       <instruction id="IPTransExpInstruction" show="swExpNotNo">Since Experiencer subjects are distinct from Agent subjects in your language, add the feature <feature>experiencer</feature> to the verbs which have an Experiencer subject.</instruction>
        <instruction id="IPTransInstructionFeature">If a verb is transitive and its object must always be present, add the feature <feature>transitive</feature> to its lexical entry.  Do not mark a verb like <example>eat</example> which may or may not have an overt object.</instruction>
        <br/><br/>
-    <introduction>Les verbes <technicalTermRef term="ttDitransitive">ditransitifs</technicalTermRef> peuvent avoir le second objet exprimé comme un syntagme prépositionnel ou comme un syntagme nominal. Certaines langues, comme l’anglais mais pas de français permettent les deux par un mouvement au <technicalTermRef term="ttDative" >datif</technicalTermRef> comme dans l’exemple 8.  Certains exemples d’intransitifs sont:</introduction>
+      <introduction>Les verbes <technicalTermRef term="ttDitransitive">ditransitifs</technicalTermRef> peuvent avoir le deuxieme objet exprimé comme un syntagme prépositionnel ou comme un syntagme nominal. Certaines langues, comme l’anglais mais pas de français permettent les deux par un mouvement au <technicalTermRef term="ttDative">datif</technicalTermRef> comme dans l’exemple 8.  Certains exemples d’intransitifs sont:</introduction>
         <EnglishExample>
-         <exItem label="5.">La fille a apporté le hibillement à sa maman.</exItem>
+           <exItem label="5.">La fille a apporté l’habit à sa maman.</exItem>
          <exItem label="6.">L’homme a vendu sa voiture pour deux mille euros.</exItem>
          <exItem label="7.">The girl gave the gift to her mother.  « La fille a donné le cadeau à sa mère. »</exItem>
          <exItem label="8.">The girl gave her mother the gift.  « La fille a donné le cadeau à sa mère. »</exItem>
         </EnglishExample>
     <prompt><br/>Entrez vos exemples ici:</prompt>
-        <textBox id="IPExamplesDiExamples" dataItem="diExample" cols="50"/>
+        <textBox id="IPExamplesDiExamples" dataItem="diExample" cols="80"/>
        <br/><br/>
        <radioGroup>
             <groupName dataItem="diCat" default="pp">RIPTransDiCat</groupName>
-        <prompt><br/>Dans quelle catégorie syntaxique se trouve le second objet dans une phrase ditransitive de votre langue?</prompt>
-        <radio id="IPTransDiCatPP" dataValue="pp">Un syntagme <span id="IPDiCatPrepPSpan" show="swPPPosPrep">prépositionnel</span><span id="IPDiCatPostPSpan" show="swPPPosPost">postpositionnel</span><span id="IPDiCatPPBothSpan" show="swPPPosBoth">prépositionnel ou postpositionnel</span> suelement</radio>
+          <prompt><br/>Dans quelle catégorie syntaxique se trouve le deuxieme objet dans une phrase ditransitive de votre langue?</prompt>
+        <radio id="IPTransDiCatPP" dataValue="pp">Un syntagme <span id="IPDiCatPrepPSpan" show="swPPPosPrep">prépositionnel</span><span id="IPDiCatPostPSpan" show="swPPPosPost">postpositionnel</span><span id="IPDiCatPPBothSpan" show="swPPPosBoth">prépositionnel ou postpositionnel</span> seulement</radio>
         <radio id="IPTransDiCatDP" dataValue="dp">Un syntagme nominal seulement</radio>
         <radio id="IPTransDiCatBoth" dataValue="both">Ou bien un syntagme nominal ou bien un syntagme <span id="IPDiCatPrepPSpan1" show="swPPPosPrep">prépositionnel</span><span id="IPDiCatPostPSpan1" show="swPPPosPost">postpositionnel</span><span id="IPDiCatPPBothSpan1" show="swPPPosBoth">prépositionnel ou postpositionnel</span></radio>
 <radioGroup id="IPTransDiOrderTable" show="swIPTransDiCatNotPP">
@@ -46,8 +46,9 @@
  <radio id="IPTransDiOrderIO" dataValue="indirect">L’objet indirect est près du verbe</radio>
 </radioGroup>
         </radioGroup>
-        <instruction id="IPTransDiInstructionDitrans">Any verbs which require the second object to always be present should be marked with the feature <feature>ditransitive</feature>.  Those which allow the second object, but it is optional, can be marked <feature>transitive</feature>.</instruction>
-       <br/><br/>
+      <instruction id="IPTransDiInstructionDitrans">Any verbs which require the second object to always be present should be marked with the feature <feature>ditransitive</feature>.  Those which allow the second object, but it is optional, need to be marked <feature>ditransitive.opt</feature>.
+         <span id="IPTransDitransPP" show="swIPTransDiCatPP"><br/><br/>Add the feature <feature>dative</feature> to all the prepositions which are used to mark the indirect object.</span></instruction>
+      <br/><br/>
        <buttons>
             <button id="IPTransBack" value="Back" goto="IPContents_fr.htm"/>
             <button id="IPTransNext" value="Next" goto="IPContents_fr.htm"/>
@@ -57,8 +58,13 @@
       <not/> <whenValue element="typology" attr="caseExperiencer" value="no"/>
    </showWhen>
    <showWhen id="swIPTransDiCatNotPP">
-    <not/><whenRadio button="IPTransDiCatPP"></whenRadio>
+    <not/><whenRadio button="IPTransDiCatPP"/>
 </showWhen>
+   <showWhen id="swIPTransDiCatPP">
+      <whenRadio button="IPTransDiCatPP"/>
+      <or/>
+      <whenRadio button="IPTransDiCatBoth"/>
+   </showWhen>
    <showWhen id="swPPPosPrep">
       <whenValue element="pp" attr="pPos" value="before"/>
    </showWhen>

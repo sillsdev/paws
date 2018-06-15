@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PPComps" count="2/5">
+<page id="PPComps" count="8.2">
    <title level="2">Syntagmes Adpositionnels – Compléments Nominaux</title>
    <introduction>L’utilisation principale de prépositions ou de postpositions est pour exprimer un lieu. Nous allons donc couvrir les adpositions et les syntagmes adpositionaux en premier lieu. Puis, pour ces langues qui ne marquent le cas sur les noms ou sur les syntagmes nominaux, les adpositions utilisées pour exprimer chaque relation de cas mineur seront illustrées.  
     <br/><br/>
-      Les prépositions de lieu en français incluent: <example>dans, sus, sur</example> et <example>par</example>.  Celles-ci peuvent être utilisées dans des syntagmes adpositionels comme par exemple <example>dans la boîte</example>, <example>sous le pont</example> et <example>sur le mur</example>.
+      Les prépositions de lieu en français incluent: <example>dans, sous, sur</example> et <example>par</example>.  Celles-ci peuvent être utilisées dans des syntagmes adpositionels comme par exemple <example>dans la boîte</example>, <example>sous le pont</example> et <example>sur le mur</example>.
     <br/><br/>
       Certaines langues utilisent les mots pour les parties du corps pour exprimer ces mêmes significations.</introduction>
     <form section="pp">
@@ -29,10 +29,10 @@
        <prompt id="PPLocativePostPrompt" show="swPPPostOrBoth">Entrez ici les postpositions <span id="PPBodyPartYesSpan1" show="swPPBodyPartYes">régulières </span>qu’utilise votre langue dans des syntagmes adpositionels de lieu<span id="PPCliticSomeSpan1" show="swPPCliticBoth"> avec un signe d’égalité devant les formes clitiques</span>:</prompt>
        <textBox id="PPLocativePostExample" dataItem="locativePostExample" rows="6" show="swPPPostOrBoth"/>
        <instruction id="PPLocativePrepInstruction" show="swPPBoth">In the lexicon, add the feature <feature>PP-initial</feature> to each of the prepositions and the feature <feature>PP-final</feature> to each of the postpositions.  If any can appear either before or after the complement, do not add either feature to that entry.</instruction>
-       <prompt id="PPLocativePrepPPPrompt" show="swPPPrepOrBoth">Maintenant entrez ici quelques exemples de prépositions <span id="PPBodyPartYesSpan2" show="swPPBodyPartYes">régulières </span>dans ded syntagmes adpositionels de lieu:</prompt>
-       <textBox id="PPLocativePrepPPExample" dataItem="locativePrepPPExample" rows="6" show="swPPPrepOrBoth"/>
+       <prompt id="PPLocativePrepPPPrompt" show="swPPPrepOrBoth">Maintenant entrez ici quelques exemples de prépositions <span id="PPBodyPartYesSpan2" show="swPPBodyPartYes">régulières </span>dans des syntagmes adpositionels de lieu:</prompt>
+       <textBox id="PPLocativePrepPPExample" dataItem="locativePrepPPExample" rows="6" cols="80" show="swPPPrepOrBoth"/>
        <prompt id="PPLocativePostPPPrompt" show="swPPPostOrBoth">Maintenant entrez ici quelques exemples de postpositions <span id="PPBodyPartYesSpan3" show="swPPBodyPartYes">régulières </span>dans des syntagmes adpositionels de lieu:</prompt>
-       <textBox id="PPLocativePostPPExample" dataItem="locativePostPPExample" rows="6" show="swPPPostOrBoth"/>
+       <textBox id="PPLocativePostPPExample" dataItem="locativePostPPExample" rows="6" cols="80" show="swPPPostOrBoth"/>
  <br/><br/>
        <prompt id="PPBodyPartPrepPrompt" show="swPPPrepOrBothAndBodyPartYes">Entrez ici les prépositions pour les parties du corps qu’utilise votre langue<span id="PPCliticSomeSpan2" show="swPPCliticBoth"> avec un signe d’égalité après les formes clitiques</span>:</prompt>
        <textBox id="PPBodyPartPrepExample" dataItem="bodyPartPrepExample" rows="6" show="swPPPrepOrBothAndBodyPartYes"/>
@@ -40,9 +40,9 @@
        <textBox id="PPBodyPartPostExample" dataItem="bodyPartPostExample" rows="6" show="swPPPostOrBothAndBodyPartYes"/>
        <instruction id="PPBodyPartPrepInstruction" show="swPPBodyPartYes">In the lexicon, you will need to make two entries for each body part, the noun entry with the category <category>N</category> and a second entry with the category <category>P</category>.  <span id="PPBodyPartPrepBothSpan" show="swPPBoth">In addition, add the feature <feature>PP-initial</feature> to each of the body part prepositions and the feature <feature>PP-final</feature> to each of the body part postpositions.  If any can appear either before or after the complement, do not add either feature to that entry.</span></instruction>
        <prompt id="PPBodyPartPrepPPPrompt" show="swPPPrepOrBothAndBodyPartYes">Maintenant entrez ici quelques exemples de prepositions pour les parties du corps dans des syntagmes adpositionels de lieu:</prompt>
-       <textBox id="PPBodyPartPrepPPExample" dataItem="bodyPartPrepPPExample" rows="6" show="swPPPrepOrBothAndBodyPartYes"/>
-       <prompt id="PPBodyPartPostPPPrompt" show="swPPPostOrBothAndBodyPartYes">Maintenant  entrez ici quelques exemples de postpositions? pour les parties du corps dans des syntagmes adpositionels de lieu:</prompt>
-       <textBox id="PPBodyPartPostPPExample" dataItem="bodyPartPostPPExample" rows="6" show="swPPPostOrBothAndBodyPartYes"/>
+       <textBox id="PPBodyPartPrepPPExample" dataItem="bodyPartPrepPPExample" rows="6" cols="80" show="swPPPrepOrBothAndBodyPartYes"/>
+       <prompt id="PPBodyPartPostPPPrompt" show="swPPPostOrBothAndBodyPartYes">Maintenant entrez ici quelques exemples de postpositions pour les parties du corps dans des syntagmes adpositionels de lieu:</prompt>
+       <textBox id="PPBodyPartPostPPExample" dataItem="bodyPartPostPPExample" rows="6" cols="80" show="swPPPostOrBothAndBodyPartYes"/>
        <br/><br/>
        <introduction id="PPCaseIntroduction" show="swNPCaseNNo">Puisque votre langue ne marque pas le cas sur les noms ou les syntagmes nominaux, les relations de cas mineurs devraient être détaillées par les <span id="PPBodyPartPrepSpan10" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan10" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan10" show="swPPBoth">prépositions et postpositions</span>.  </introduction>
        <prompt  id="PPCaseTable" show="swNPCaseNNo">Pour chacun des zones de texte suivantes, entrez les <span id="PPBodyPartPrepSpan11" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan11" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan11" show="swPPBoth">prépositions et/ou postpositions</span> qui expriment ce type de relation de cas dans votre langue.  <span id="PPCiticSpan" show="swPPClitic">Ajoutez un signe d’égalité sur le côté approprié de chaque forme clitique pour indiquer de quel côté cela se rattache la forme clitique.  </span>S’il y a plus qu’un marqueur pour un cas particulier, entrez chacun sur une ligne séparée.  Si votre langue ne distingue pas une relation de cas particulier, laissez simplement vide cette zone de texte.</prompt>

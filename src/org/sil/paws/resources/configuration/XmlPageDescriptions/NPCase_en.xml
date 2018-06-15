@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPCase" count="2/2">
+<page id="NPCase" count="5.2.2">
     <title level="2">Nominal Phrases - Case</title>
     <introduction>As discussed in <section number="1.">Overall Typology Questions - Case System</section>, languages may have no <technicalTermRef term="ttCase"/> system, or they may follow a <technicalTermRef term="ttNominative"/>-<technicalTermRef term="ttAccusative"/> system, an <technicalTermRef term="ttErgative"/>-<technicalTermRef term="ttAbsolutive"/> system, or have split ergativity, which involves both case systems under certain grammatical conditions.<br/><br/>
        Some languages mark case on nouns or nominal phrases as well as pronouns, while others only show case in the pronouns, if they mark case at all. </introduction>
@@ -21,7 +21,7 @@
           <radio id="NPCaseDefaultNom" dataValue="nominative">Yes, nominative case is completely unmarked, but the others are overt (some null <technicalTermRef term="ttAllomorph">allomorphs</technicalTermRef> are OK)</radio>
        </radioGroup>
        <prompt id="NPCaseNYesPrompt" show="swNPCaseNYes">Key examples of nominal phrases marked with various cases here:</prompt>
-       <textBox id="NPCaseNPExample" dataItem="caseNPExample" cols="50" show="swNPCaseNYes"/>
+       <textBox id="NPCaseNPExample" dataItem="caseNPExample" cols="80" show="swNPCaseNYes"/>
        <br/>
        <br/>
        <radioGroup id="NPCaseWordTable" show="swNPCaseNYes">
@@ -36,7 +36,7 @@
           <checkbox id="NPCaseWordBefore"  dataItem="caseWordBefore">Before it</checkbox>
           <checkbox id="NPCaseWordAfter"  dataItem="caseWordAfter">After it</checkbox>
           <checkbox id="NPCaseWordBoth"  dataItem="caseWordBoth">On both sides at the same time</checkbox>
-          <checkbox id="NPCaseWordOther"  dataItem="caseWordOther">In my language, they may occur in the following position: <textBox  id="NPCaseWordOtherContent" dataItem="caseWordOther" rows="2"/></checkbox>
+          <checkbox id="NPCaseWordOther"  dataItem="caseWordOther">In my language, they may occur in the following position: <textBox  id="NPCaseWordOtherContent" dataItem="caseWordOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <prompt id="NPCaseWordNoCheckPrompt" show="swNPCaseWordYesOrSomeAndNoCheck">WARNING: You need to check at least one box to describe where these case markers occur with respect to the rest of the nominal phrase in your language, or change the answer above to "No, they all attach to another word in the nominal phrase".</prompt>
        <checkboxGroup id="NPCaseAttachesPosTable" show="swNPCaseNYesAndWordNoOrSome">
@@ -45,7 +45,7 @@
           <checkbox id="NPCaseAttachesEnclitic" dataItem="caseAttachesEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the nominal phrase</checkbox>
           <checkbox id="NPCaseAttachesPrefix" dataItem="caseAttachesPrefix">As a prefix which attaches to the head noun of the nominal phrase</checkbox>
           <checkbox id="NPCaseAttachesSuffix" dataItem="caseAttachesSuffix">As a suffix which attaches to the head noun of the nominal phrase</checkbox>
-          <checkbox id="NPCaseAttachesOther" dataItem="caseAttachesOther">In my language, these case markers may attach as follows: <textBox  id="NPCaseAttachesOtherContent" dataItem="caseAttachesOther" rows="2"/></checkbox>
+          <checkbox id="NPCaseAttachesOther" dataItem="caseAttachesOther">In my language, these case markers may attach as follows: <textBox  id="NPCaseAttachesOtherContent" dataItem="caseAttachesOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <prompt id="NPCaseAttachesNoCheckPrompt" show="swNPCaseAttachesAndNoCheck">WARNING: You need to check at least one box to describe how these case markers attach in your language, or change the answer above to "Yes, they are all independent words".</prompt>
        
@@ -76,42 +76,42 @@
 <br/><br/>
        <prompt  id="NPCaseTable" show="swNPCaseNYes">For all of the following text boxes, <span id="NPCaseNYesAndWordNoSpan" show="swNPCaseNYesAndWordNoOrSome">enter the case markers which are affixes or clitics with a hyphen or equal sign on the appropriate side to indicate which side it attaches on.  If</span><span id="NPCaseNYesAndWordYesSpan" show="swNPCaseNYesAndWordYes">if</span> there is more than one marker for a particular case, enter each on a separate line.  If your language does not use a particular case, simply leave that text box empty.</prompt>
        <prompt id="NPCaseNominativePrompt" show="swNPCaseNomOrSplitAndNYes">Key the case marker your language uses for nominative case to express the subject (at least  for Agents):</prompt>
-       <textBox id="NPNom" dataItem="nominative" rows="3" show="swNPCaseNomOrSplitAndNYes"/>
+       <textBox id="NPNom" dataItem="nominative" rows="2" show="swNPCaseNomOrSplitAndNYes"/>
        <br/>
        <prompt id="NPCaseAccusativePrompt" show="swNPCaseNomOrSplitAndNYes">Key the case marker your language uses for accusative case to express the direct object and other uses:</prompt>
-       <textBox id="NPAcc" dataItem="accusative" rows="3" show="swNPCaseNomOrSplitAndNYes"/>
+       <textBox id="NPAcc" dataItem="accusative" rows="2" show="swNPCaseNomOrSplitAndNYes"/>
        <br/>
        <prompt id="NPCaseErgativePrompt" show="swNPCaseErgAndNYes">Key the case marker your language uses for ergative case to express the subject of transitive verbs (at least for Agents):</prompt>
        <prompt id="NPCaseSplitErgativePrompt" show="swNPCaseSplitAndNYes">Key the case marker your language uses for ergative case to express the subject of transitive verbs (at least for Agents) in the parts of your language that display split ergativity:</prompt>
-       <textBox id="NPErg" dataItem="ergative" rows="3" show="swNPCaseErgOrSplitAndNYes"/>
+       <textBox id="NPErg" dataItem="ergative" rows="2" show="swNPCaseErgOrSplitAndNYes"/>
        <br/>
        <prompt id="NPCaseAbsolutivePrompt" show="swNPCaseErgAndNYes">Key the case marker your language uses for absolutive case to express the subject of intransitive verbs (at least  for Agents) and the direct object of transitive verbs:</prompt>
        <prompt id="NPCaseSplitAbsolutivePrompt" show="swNPCaseSplitAndNYes">Key the case marker your language uses for absolutive case to express the subject of intransitive verbs (at least  for Agents) and the direct object of transitive verbs in the parts of your language that display split ergativity:</prompt>
-       <textBox id="NPAbs" dataItem="absolutive" rows="3" show="swNPCaseErgOrSplitAndNYes"/>
+       <textBox id="NPAbs" dataItem="absolutive" rows="2" show="swNPCaseErgOrSplitAndNYes"/>
        <br/>
        <prompt id="NPCaseGenitivePrompt" show="swNPCaseNomOrSplitOrErgPossGenAndNYes">Key the case marker your language uses for genitive case to express possession:</prompt>
-       <textBox id="NPGen" dataItem="genitive" rows="3" show="swNPCaseNomOrSplitOrErgPossGenAndNYes"/>
+       <textBox id="NPGen" dataItem="genitive" rows="2" show="swNPCaseNomOrSplitOrErgPossGenAndNYes"/>
        <br/>     
        <prompt id="NPCaseDativePrompt" show="swNPCaseNYes">Key the case marker your language uses for dative case to express the indirect object and possibly the subject of verbs with Experiencer subjects:</prompt>
-       <textBox id="NPDat" dataItem="dative" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPDat" dataItem="dative" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseAblativePrompt" show="swNPCaseNYes">Key the case marker your language uses for ablative case to express source or origin:</prompt>
-       <textBox id="NPAbl" dataItem="ablative" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPAbl" dataItem="ablative" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseInstrumentalPrompt" show="swNPCaseNYes">Key the case marker your language uses for instrumental case to express the instrument, means or agency:</prompt>
-       <textBox id="NPIns" dataItem="instrumental" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPIns" dataItem="instrumental" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseLocativePrompt" show="swNPCaseNYes">Key the case marker your language uses for locative case to express the location:</prompt>
-       <textBox id="NPLoc" dataItem="locative" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPLoc" dataItem="locative" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseVocativePrompt" show="swNPCaseNYes">Key the case marker your language uses for vocative case to express a direct address:</prompt>
-       <textBox id="NPVoc" dataItem="vocative" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPVoc" dataItem="vocative" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseObliquePrompt" show="swNPCaseNYes">Key the case marker your language uses for oblique case to express a general minor grammatical relation:</prompt>
-       <textBox id="NPObl" dataItem="oblique" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPObl" dataItem="oblique" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <prompt id="NPCaseOtherPrompt" show="swNPCaseNYes">Key any other specific case markers your language uses to express a minor grammatical relation:</prompt>
-       <textBox id="NPOther" dataItem="otherCase" rows="3" show="swNPCaseNYes"/>
+       <textBox id="NPOther" dataItem="otherCase" rows="2" show="swNPCaseNYes"/>
        <br/>     
        <instruction id="NPCaseWordEitherRestrictedInstruction" show="swNPCaseWordEitherRestricted">In the lexicon, mark those case markers which can only occur initially with the feature <feature>DP-initial</feature> and those which can only occur finally with the feature <feature>DP-final</feature>.  Do not enter either feature on any markers which can occur on either side.</instruction>
        

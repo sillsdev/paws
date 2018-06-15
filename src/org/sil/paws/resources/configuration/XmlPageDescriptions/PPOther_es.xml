@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PPOther" count="3/5">
+<page id="PPOther" count="8.3">
 	<title level="2">Las frases adposicionales - Los otros complementos</title>
    <introduction> Además, algunas preposiciones o posposiciones pueden colocarse solas sin un complemento por razón de movimiento de una partícula, por ejemplo en las oraciones  <example>Come [in] ‘Viene [adentro]'</example> y <example>John turned the light [on/off] ‘Juan apaga la luz [conectada/desconectada]'</example>.  
       También, algunas lenguas permiten preposiciones o posposiciones dejar aisladas en preguntas cuando el complemento desplaza hacia la izquierda, como en <example>Whom did you give the book [to _]? ‘¿Quién usted dio el libro [al _ ]?'</example> (No se permite en español.)
@@ -15,10 +15,14 @@
 			<radio id="PPAloneNo" dataValue="no">No</radio>
 			<radio id="PPAloneYes" dataValue="yes">Sí</radio>
 		</radioGroup>
+		<instruction id="PPParticleInstruction1" show="swPPTypeNotCliticOnly">Rules for particle constructions will be included in your PC-Patr grammar.  You need to add the feature <feature>particle</feature> to all the <span id="PPPrepSpanO1a" show="swPPPosPrep">prepositions</span>
+			<span id="PPPostSpanO1a" show="swPPPosPost">postpositions</span>
+			<span id="PPBothSpanO1a" show="swPPPosBoth">prepositions and postpositions</span> which can act as particles, such as those meaning <example>up, down, in, out, on, off, over, around, back</example>, 
+			and add the feature <feature>takes_P</feature> to all the verbs that can take a particle, such as those meaning <example>come, go, turn, move, pick</example>, to activate the rules.</instruction>
 	   <prompt id="PPAloneYesPrompt" show="swPPAloneYes">Escriba algunos ejemplos de oraciones completas simples con las <span id="PPPrepSpanO1" show="swPPPosPrep">preposiciones</span>
 			<span id="PPPostSpanO1" show="swPPPosPost">posposiciones</span>
 			<span id="PPBothSpanO1" show="swPPPosBoth">adposiciones</span> que pueden colocarse solas en su lengua aquí:</prompt>
-		<textBox id="PPCompAloneExample" dataItem="aloneExample" show="swPPAloneYes"/>
+		<textBox id="PPCompAloneExample" dataItem="aloneExample" show="swPPAloneYes" cols="80"/>
 		<br/>
 		<br/>
 		<prompt id="PPCliticOnlyAloneInstruction" show="swPPTypeCliticAloneYes">ADVERTENCIA: Puesto que en su lengua hay solamente <span id="PPPrepSpanO3" show="swPPPosPrep">preposiciones</span>
@@ -35,7 +39,7 @@
 			<radio id="PPLocativeYes" dataValue="yes">Sí</radio>
 		</radioGroup>
 		<prompt id="PPLocativeYesPrompt" show="swPPLocativeYes">Escriba algunos ejemplos de frases adposicionales con adverbios de lugar como complementos aquí:</prompt>
-		<textBox id="PPCompLocExample" dataItem="locExample" show="swPPLocativeYes"/>
+		<textBox id="PPCompLocExample" dataItem="locExample" show="swPPLocativeYes" cols="80"/>
 		<br/>
 		<br/>
 		<instruction id="PPCliticOnlyLocativeInstruction" show="swPPTypeCliticLocativeYes">Since your language has only clitic <span id="PPPrepSpanO6" show="swPPPosPrep">prepositions,</span>
@@ -55,7 +59,7 @@
 		<prompt id="PPCompPPYesPrompt" show="swPPCompPPYes">Escriba algunos ejemplos de las frases adposicionales de lugar que son complementos de <span id="PPPrepSpanO8" show="swPPPosPrep">preposiciones</span>
 			<span id="PPPostSpanO8" show="swPPPosPost">posposiciones</span>
 			<span id="PPBothSpanO8" show="swPPPosBoth">adposiciones</span>de lugar aquí:</prompt>
-		<textBox id="PPCompPPExample" dataItem="compPPExample" show="swPPCompPPYes"/>
+		<textBox id="PPCompPPExample" dataItem="compPPExample" show="swPPCompPPYes" cols="80"/>
 		<br/>
 		<br/>
 		<instruction id="PPCompPPYesInstruction" show="swPPCompPPYesExceptClitic">The rule allowing the PP complements is restricted to only locative stand alone prepositions or postpositions.  Therefore, in the lexicon, you need to add the feature <feature>locative</feature> to all the <span id="PPPrepSpanO12" show="swPPPosPrep">prepositions</span>
@@ -84,7 +88,7 @@
 	   <prompt id="PPTempCompYesPrompt" show="swPPTempCompYes">Escriba algunos ejemplos de oraciones completas simples con las frases <span id="PPPrepSpanO13a" show="swPPPosPrep">preposicionales</span>
 	      <span id="PPPostSpanO13a" show="swPPPosPost">posposicionales</span>
 	      <span id="PPBothSpanO13a" show="swPPPosBoth">adposicionales</span> de tiempo aquí:</prompt>
-	   <textBox id="PPTempCompExample" dataItem="tempExample" show="swPPTempCompYes"/>
+	   <textBox id="PPTempCompExample" dataItem="tempExample" show="swPPTempCompYes" cols="80"/>
 	   <br/>
 	   <br/>
 	   
@@ -97,48 +101,54 @@
 	      <button id="PPOtherNext" value="Next" goto="PPCatMap.xml" gotoNoGrammar="Contents_es.htm"/>
 	   </buttons>
 	</form>
-   <showWhen id="swPPCompPPYesExceptClitic">
-      <whenRadio button="PPCompPPYes"/>
-      <and/>
-      <not/>
-      <whenValue element="pp" attr="pType" value="clitic"/>
-   </showWhen>
-   
-   <showWhen id="swPPCompPPYes">
-      <whenRadio button="PPCompPPYes"/>
-   </showWhen>
-   <showWhen id="swPPPosPrep">
-      <whenValue element="pp" attr="pPos" value="before"/>
-   </showWhen>
-   <showWhen id="swPPPosPost">
-      <whenValue element="pp" attr="pPos" value="after"/>
-   </showWhen>
+<showWhen id="swPPCompPPYesExceptClitic">
+		<whenRadio button="PPCompPPYes"/>
+		<and/>
+		<not/>
+		<whenValue element="pp" attr="pType" value="clitic"/>
+	</showWhen>
+
+	<showWhen id="swPPCompPPYes">
+		<whenRadio button="PPCompPPYes"/>
+	</showWhen>
+	<showWhen id="swPPPosPrep">
+		<whenValue element="pp" attr="pPos" value="before"/>
+	</showWhen>
+	<showWhen id="swPPPosPost">
+		<whenValue element="pp" attr="pPos" value="after"/>
+	</showWhen>
    <showWhen id="swPPPosBoth">
       <whenValue element="pp" attr="pPos" value="both"/>
       <or/>
       <whenValue element="pp" attr="pPos" value="unknown"/>
    </showWhen>
-   <showWhen id="swPPAloneYes">
-      <whenRadio button="PPAloneYes"/>
-   </showWhen>
-   <showWhen id="swPPTypeCliticAloneYes">
-      <whenValue element="pp" attr="pType" value="clitic"/>
-      <and/>
-      <whenRadio button="PPAloneYes"/>
-   </showWhen>
-   <showWhen id="swPPLocativeYes">
-      <whenRadio button="PPLocativeYes"/>
-   </showWhen>
-   <showWhen id="swPPTypeCliticLocativeYes">
-      <whenValue element="pp" attr="pType" value="clitic"/>
-      <and/>
-      <whenRadio button="PPLocativeYes"/>
-   </showWhen>
-   <showWhen id="swPPTypeCliticCompPPYes">
-      <whenValue element="pp" attr="pType" value="clitic"/>
-      <and/>
-      <whenRadio button="PPCompPPYes"/>
-   </showWhen>
+	<showWhen id="swPPTypeNotCliticOnly">
+		<not/><whenValue element="pp" attr="pType" value="clitic"/>
+	</showWhen>
+	<showWhen id="swPPTypeCliticOnly">
+		<whenValue element="pp" attr="pType" value="clitic"/>
+	</showWhen>
+	<showWhen id="swPPAloneYes">
+		<whenRadio button="PPAloneYes"/>
+	</showWhen>
+	<showWhen id="swPPTypeCliticAloneYes">
+		<whenValue element="pp" attr="pType" value="clitic"/>
+		<and/>
+		<whenRadio button="PPAloneYes"/>
+	</showWhen>
+	<showWhen id="swPPLocativeYes">
+		<whenRadio button="PPLocativeYes"/>
+	</showWhen>
+	<showWhen id="swPPTypeCliticLocativeYes">
+		<whenValue element="pp" attr="pType" value="clitic"/>
+		<and/>
+		<whenRadio button="PPLocativeYes"/>
+	</showWhen>
+	<showWhen id="swPPTypeCliticCompPPYes">
+		<whenValue element="pp" attr="pType" value="clitic"/>
+		<and/>
+		<whenRadio button="PPCompPPYes"/>
+	</showWhen>
    <showWhen id="swPPTempCompYes">
       <whenRadio button="PPTempCompYes"/>
    </showWhen>

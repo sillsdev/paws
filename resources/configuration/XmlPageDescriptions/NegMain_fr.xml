@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NegMain" count="1/4">
+<page id="NegMain" count="14.1">
    <title>Constructions Négatives</title>
    <introduction>Toutes les langues peuvent exprimer la <technicalTermRef term="ttNegation">négation</technicalTermRef>, qui s’exprime par moyen des:
 <ul>
@@ -49,34 +49,34 @@
           <checkbox id="NegNPDegreeNegEnclitic" dataItem="npDegreeNegEnclitic">Comme enclitique qui s’attache à la fin du mot qui termine le syntagme nominal</checkbox>
           <checkbox id="NegNPDegreeNegPrefix" dataItem="npDegreeNegPrefix">Comme préfixe qui s’attache au nom principal du syntagme nominal</checkbox>
           <checkbox id="NegNPDegreeNegSuffix" dataItem="npDegreeNegSuffix">Comme suffixe qui s’attache au nom principal du syntagme nominal</checkbox>
-          <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">Dans ma langue ces éléments peuvent s’attacher comme suit: <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="2"/></checkbox>
+          <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">Dans ma langue ces éléments peuvent s’attacher comme suit: <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="1" cols="70"/></checkbox>
           </checkboxGroup>	
        <prompt id="NegNPDegreeAttachesNoCheckPrompt" show="swNegNPDegreeNoAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire comment ces éléments s’attachent dans votre langue; ou bien changez votre réponse ci-dessus comme suit: « Oui, ce sont tous des mots indépendents ».</prompt>
        <br/>
        <prompt id="NegDegreeNegNPCliticPrompt" show="swNegNPDegreeNegNoOrSomeClitic">Entrez ici des exemples tels que (1,5 ou 6) ci-dessus de clitiques négatifs inclus dans des syntagmes nominaux entiers (sans éléments de degré positif ni quantificateur):</prompt>
-       <textBox id="NegNPNegCliticExample" dataItem="negCliticExample" cols="50" show="swNegNPDegreeNegNoOrSomeClitic"/>
+       <textBox id="NegNPNegCliticExample" dataItem="negCliticExample" cols="80" show="swNegNPDegreeNegNoOrSomeClitic"/>
        <instruction id="NegNPDegreeNegProcliticInstruction" show="swNegNPDegreeNegNoOrSomeProclitic">In the lexicon, mark the negative proclitic(s) with the feature <feature>negative_prefix</feature>. 
        </instruction>
        <instruction id="NegNPDegreeNegEncliticInstruction" show="swNegNPDegreeNegNoOrSomeEnclitic">In the lexicon, mark the negative enclitic(s) with the feature <feature>negative_suffix</feature>.
        </instruction>
        <prompt id="NegDegreeNegNPAffixPrompt" show="swNegNPDegreeNegNoOrSomeAffix">Entrez ici des exemples tels que (1,5 ou 6) ci-dessus d’ affixes négatifs inclus dans des syntagmes nominaux entiers (sans éléments de degré positif ni quantificateur):</prompt>
-       <textBox id="NegNPNegAffixExample" dataItem="negAffixExample" cols="50" show="swNegNPDegreeNegNoOrSomeAffix"/>
+       <textBox id="NegNPNegAffixExample" dataItem="negAffixExample" cols="80" show="swNegNPDegreeNegNoOrSomeAffix"/>
        <instruction id="NegNPDegreeNegPrefixInstruction" show="swNegNPDegreeNegNoOrSomePrefix">In the lexicon, mark the negative prefix(es) with the feature <feature>negative</feature>. 
        </instruction>
        <instruction id="NegNPDegreeNegSuffixInstruction" show="swNegNPDegreeNegNoOrSomeSuffix">In the lexicon, mark the negative suffix(es) with the feature <feature>negative</feature>. 
        </instruction>
        <prompt id="NegDegreeNegNPOtherPrompt" show="swNegNPDegreeNegNoOrSomeOther">Entrez ici des exemples tels que (1,5 ou 6) ci-dessus des éléments négatifs attachés comme permis dans votre langue, inclus dans des syntagmes nominaux entiers (sans éléments de degré positif ni quantificateur):</prompt>
-       <textBox id="NegNPNegOtherExample" dataItem="negOtherExample" cols="50" show="swNegNPDegreeNegNoOrSomeOther"/>
+       <textBox id="NegNPNegOtherExample" dataItem="negOtherExample" cols="80" show="swNegNPDegreeNegNoOrSomeOther"/>
        
        <prompt id="NegDegreeNegNPPrompt" show="swNegNPDegreeNegYesOrSome">Entez ici des exemples tels que (1,5 ou 6) ci-dessus des mots négatifs pour « pas » ou « nul », inclus dans des syntagmes nominaux entiers (sans éléments de degré positif ni quantificateur):</prompt>
-       <textBox id="NegNPNegExample" dataItem="negExample" cols="50" show="swNegNPDegreeNegYesOrSome"/>
+       <textBox id="NegNPNegExample" dataItem="negExample" cols="80" show="swNegNPDegreeNegYesOrSome"/>
        <br/><br/>
        <checkboxGroup id="NegNPDegreeNegYesTable" show="swNegNPDegreeNegYesOrSome">
           <prompt>Considérez les données dans la boîte ci-dessus. Dans quelle position se trouvent les éléments négatifs (c’est à dire les mots indépendents) par rapport au reste du syntagme nominal? Cochez toutes les options permises pour votre langue.</prompt>
           <checkbox id="NegNPDegreeNegWordBefore" dataItem="npDegreeNegWordBefore">Avant</checkbox>
           <checkbox id="NegNPDegreeNegWordAfter"  dataItem="npDegreeNegWordAfter">Après</checkbox>
           <checkbox id="NegNPDegreeNegWordBoth"  dataItem="npDegreeNegWordBoth">Des deux côtés en même temps</checkbox>
-          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">Dans ma langue ces éléments peuvent se mettre comme suit: <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="2"/></checkbox>
+          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">Dans ma langue ces éléments peuvent se mettre comme suit: <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70"/></checkbox>
        </checkboxGroup>	
        <prompt id="NegNPDegreeWordNoCheckPrompt" show="swNegNPDegreeYesAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire la position de ces éléments négatifs dans votre langue; ou bien changez votre réponse comme suit: « Non, ils s’attachent à un autre mot du syntagme nominal ».</prompt>
        <instruction id="NegNPDegreeNegYesInstruction" show="swNegNPDegreeNegYesOrSome">In the lexicon, mark the words meaning   « not »  and  « no »  with the features <feature>makeNeg modifies_DP</feature>. </instruction>
@@ -89,7 +89,7 @@
           <radio id="NegNPDegreeNegCooccurNo" dataValue="no">Non</radio>
        </radioGroup>
        <prompt id="NegNPDegreeNegCooccurPrompt" show="swNegNPDegreeNegNotNoneAndNegCooccurYes">Entrez ici vos exemples de ces éléments négatifs dans les syntagmes nominaux entiers qui comportent les éléments de degré positif ou les quantificateurs de large portée:</prompt>
-       <textBox id="NegNPNegCooccurExample" dataItem="negCooccurExample" cols="50" show="swNegNPDegreeNegNotNoneAndNegCooccurYes"/>
+       <textBox id="NegNPNegCooccurExample" dataItem="negCooccurExample" cols="80" show="swNegNPDegreeNegNotNoneAndNegCooccurYes"/>
        <br/><br/>
        <introduction>Il faut aussi considérer ces syntagmes nominaux négatifs dans les phrases completes, en commençant par des exemples où le syntagme négatif est le sujet, comme suit:
        </introduction>
@@ -99,7 +99,7 @@
        </EnglishExample>
        <br/><br/>
        <prompt id="NegNPDegreeSentencePrompt" show="swNegNPDegreeNegNotNone">Prenez au moins un exemple des syntagmes nominaux dans la boîte ci-dessus; utilisez-le comme sujet d’une phrase complète, comme dans les exemples (7-8).</prompt>
-       <textBox id="NegNPDegreeNegSubjExample" dataItem="npDegreeSubjExample" rows="4" cols="50" show="swNegNPDegreeNegNotNone"/>
+       <textBox id="NegNPDegreeNegSubjExample" dataItem="npDegreeSubjExample" cols="80" show="swNegNPDegreeNegNotNone"/>
        <br/>
         <br/>
        <introduction>Il existe aussi des pronoms indéfinis utilisés pour exprimer un négatif, comme <example>personne...ne</example>, <example>rien...ne</example>, <example>aucun...ne</example>.  Ces expressions comprennent un négatif et un nom générique ou un numéro. Quelquefois ces indéfinis ont deux mots.</introduction>
@@ -131,7 +131,7 @@
        </EnglishExample>
   <br/><br/>     
        <prompt id="NegPronounSentPrompt">Choisissez un exemple de <span id="NegPronounSentSpan" show="swNegPronIndefYes">pronoms indéfinis négatifs</span><span id="NegPronounSentSpan2" show="swNegPronIndefSome">pronoms ou syntagmes nominaux négatifs</span><span id="NegNPSentSpan" show="swNegPronIndefNo">syntagmes nominaux négatifs</span>; utilisez-le comme le sujet d’une phrase complète (voir exemples 9-10 ci-dessus).</prompt>
-        <textBox id="NegPronIndefSubjExample" dataItem="negIndefSubjExample" rows="4" cols="50"/>
+        <textBox id="NegPronIndefSubjExample" dataItem="negIndefSubjExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup id="NegSubjVerbRequiredTable" show="swNegVerbalYes">

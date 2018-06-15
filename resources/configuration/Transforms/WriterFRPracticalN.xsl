@@ -37,7 +37,7 @@
 <xsl:text>L’accord entre au moins certains modificateurs et le mot principal peuvent être requis en le nombre, l’animéité, le genre, la classe ou autres éléments.</xsl:text>
 </p>
 		   <p contentType="ctComparativeIntro">
-<xsl:text>Beaucoup de langues demandent un accord entre au moins certains modificateurs et le nom principal.  En plus de un accord numérique cet accord peut aussi inclure l’animéité, le genre, la classe ou autres éléments.</xsl:text>
+<xsl:text>Beaucoup de langues demandent un accord entre au moins certains modificateurs et le nom principal.  En plus d’un accord en nombre cet accord peut aussi inclure l’animéité, le genre, la classe ou autres éléments.</xsl:text>
 </p>
 			<p>
 <xsl:text>En </xsl:text>

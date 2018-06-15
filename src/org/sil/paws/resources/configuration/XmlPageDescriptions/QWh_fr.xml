@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QWh" count="4/9">
+<page id="QWh" count="11.4">
     <title level="2">Questions – Syntagmes Interrogatifs</title>
-    <introduction>Les questions de contenu diffèrent des questions oui/non en ce sens qu’elles contiennent  un mot ou un syntagme interrogatif, tel <example>que</example>, <example>qu’</example>, <example>qui</example>, <example>pourquoi</example>, <example>où</example>, <example>quand</example>, <example>comment</example> et <example>combien</example>.  Dans quelques langues, certains ou tous ces interrogatifs sont attachés à un autre mot.</introduction>
+    <introduction>Les questions de contenu diffèrent des questions oui/non en ce sens qu’elles contiennent  un mot ou un syntagme interrogatif, tel <example>qui</example>, <example>quoi</example>, <example>pourquoi</example>, <example>où</example>, <example>quand</example>, <example>comment</example> et <example>combien</example>.  Dans quelques langues, certains ou tous ces interrogatifs sont attachés à un autre mot.</introduction>
     <form section="q">
-        <prompt>Pour chacune des zones de texte suivants, si votre langue exprime l’interrogatif par le moyen d’un affixe ou clitique, entrez-le dans le zone de texte avec un trait d’union ou un signe d’égalité avant ou après pour indiquer si c’est un préfixe ou un proclitique, ou un suffixe ou un enclitique.  Chaque interrogatif devrait être entré sur une ligne individuelle.</prompt>
+        <prompt>Pour chacune des zones de texte suivants, si votre langue exprime l’interrogatif par le moyen d’un affixe ou clitique, entrez-le dans la zone de texte avec un trait d’union ou un signe d’égalité avant ou après pour indiquer si c’est un préfixe ou un proclitique, ou un suffixe ou un enclitique.  Chaque interrogatif devrait être entré sur une ligne individuelle.</prompt>
         <prompt>Entrez ici la manière dont votre langue exprime « qui »:</prompt>
         <textBox id="QWho" dataItem="who" rows="3"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « que / qu’ »:</prompt>
+        <prompt>Entrez ici la manière dont votre langue exprime « quoi »:</prompt>
         <textBox id="QWhat" dataItem="what" rows="3"/>
         <br/>
         <prompt>Entrez ici la manière dont votre langue exprime « pourquoi »:</prompt>
@@ -36,7 +36,7 @@
         <prompt>Entrez ici tout autre interrogatif utilisé par votre langue:</prompt>
         <textBox id="QOther" dataItem="other" rows="3"/>
         <br/>
-        <introduction>Parmi les exemples de mots interrogatifs ci-dessus, la plupart se trouvent seuls comme pronoms ou adverbes, mais <example>comment</example> peut être soit un adverbe de manière par lui-même soit un mot de degré qui modifie un adjectif comme dans en anglais <example>how big  « combien grand / de quelle taille »</example>; <example>what  « que /quel »</example> peut être soit un pronom par lui-même soit un démonstratif modifiant un nom, comme dans <example>what books  « quels livres »</example>; <example>quel/ quels</example> ne se trouve jamais seul mais modifie toujours un nom comme un démonstratif, tel que <example>quel garçon</example>; <example>combien</example> est un quantificateur comme dans <example>combien d’enfants</example> ou <example>combien d’argent</example>; et <example>whose  « de qui »</example> peut soit se trouver seul comme pronom possessif ou il peut remplir la position de possession dans une syntagme nominal comme dans <example>whose toys  « de qui sont ces jouets / ces jouets sont à qui »</example>.</introduction>
+        <introduction>Parmi les exemples de mots interrogatifs ci-dessus, la plupart se trouvent seuls comme pronoms ou adverbes, mais <example>comment</example> peut être soit un adverbe de manière par lui-même soit un mot de degré qui modifie un adjectif comme en anglais <example>how big  « combien grand / de quelle taille »</example>; <example>what  « quoi »</example> peut être soit un pronom par lui-même soit un démonstratif modifiant un nom, comme dans <example>what books  « quels livres »</example>; <example>quel/ quels</example> ne se trouve jamais seul mais modifie toujours un nom comme un démonstratif, tel que <example>quel garçon</example>; <example>combien</example> est un quantificateur comme dans <example>combien d’enfants</example> ou <example>combien d’argent</example>; et <example>whose  « de qui »</example> peut soit se trouver seul comme pronom possessif ou il peut remplir la position de possession dans un syntagme nominal comme dans <example>whose toys  « de qui sont ces jouets / ces jouets sont à qui »</example>.</introduction>
         <instruction id="QContInstruction">In the lexicon, mark all of the interrogative words or affixes with the feature <feature>wh</feature>.  Also, add the feature <feature>makeQ</feature> to the word meaning  ‘how many / how much’ so that it will be treated as a quantifier.
 <br/>
             <br/>

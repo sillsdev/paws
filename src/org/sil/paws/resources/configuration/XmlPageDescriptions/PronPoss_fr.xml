@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronPoss" count="2/9">
+<page id="PronPoss" count="7.2">
     <title level="2">Pronoms – Possessifs</title>
    <introduction>Beaucoup de langues ont aussi des pronoms possessifs qui peuvent se présenter seuls, tels que <example>le tien</example>, <example>le mien</example>, <example>le leur</example> ou <example>la sienne</example> en français.  Les <technicalTermRef term="ttPossessives">possessifs</technicalTermRef> sont distincts des pronoms qui peuvent se présenter dans la position d’un possesseur et qui possèdent directement un substantif, tels que <example>ton</example>, <example>mon</example>, <example>leur</example> ou <example>sa</example>, qu’on a traités à la page précédente.<br/><br/>
       Dans certaines langues les pronoms ne sont pas écrits comme un seul mot.</introduction>
@@ -16,35 +16,35 @@
         </radioGroup>
        
        <prompt id="PronPossYesFirstSgPrompt" show="swPronPossYes">
-          Entrez dans le zone de texte les pronoms possessifs de la première personne<span id="PronNumberSpan" show="swPronNumberYes"> du singulier</span>, avec chaque pronom sur une ligne distincte.<br/>
+          Entrez dans la zone de texte les pronoms possessifs de la première personne<span id="PronNumberSpan" show="swPronNumberYes"> du singulier</span>, avec chaque pronom sur une ligne distincte.<br/>
        </prompt>
        <textBox id="PronPossFirstSgExample" dataItem="possFirstSgExample"  rows="2" show="swPronPossYes"/>
        <prompt id="PronPossYesFirstPlPrompt" show="swPronPossYesAndPronNumberYesExclNo">
-          Entrez dans le zone de texte les pronoms possessifs de la première personne du pluriel, avec chaque pronom sur une ligne distincte. <br/>
+          Entrez dans la zone de texte les pronoms possessifs de la première personne du pluriel, avec chaque pronom sur une ligne distincte. <br/>
        </prompt>
        <textBox id="PronPossFirstPlExample" dataItem="possFirstPlExample"  rows="2" show="swPronPossYesAndPronNumberYesExclNo"/>
        <prompt id="PronPossFirstExclPrompt" show="swPronPossYesAndPronExclYes">
-          Entrez dans le zone de texte les pronoms possessifs de la première personne exclusive<span id="PronNumberPlSpan" show="swPronNumberYes"> du pluriel</span>, avec chaque pronom sur une ligne distincte. <br/>
+          Entrez dans la zone de texte les pronoms possessifs de la première personne exclusive<span id="PronNumberPlSpan" show="swPronNumberYes"> du pluriel</span>, avec chaque pronom sur une ligne distincte. <br/>
        </prompt>
        <textBox id="PronPossFirstExclExample" dataItem="possFirstExclExample"  rows="2" show="swPronPossYesAndPronExclYes"/>
        <prompt id="PronPossFirstInclPrompt" show="swPronPossYesAndPronExclYes">
-          Entrez dans le zone de texte les pronoms possessifs de la première personne inclusive<span id="PronNumberPlSpan1" show="swPronNumberYes"> du pluriel</span>, avec chaque pronom sur une ligne distincte.<br/>
+          Entrez dans la zone de texte les pronoms possessifs de la première personne inclusive<span id="PronNumberPlSpan1" show="swPronNumberYes"> du pluriel</span>, avec chaque pronom sur une ligne distincte.<br/>
        </prompt>
        <textBox id="PronPossFirstInclExample" dataItem="possFirstInclExample"  rows="2" show="swPronPossYesAndPronExclYes"/>
        <prompt id="PronPossYesSecondSgPrompt" show="swPronPossYes">
-          Entrez dans le zone de texte les pronoms possessifs de la deuxième personne <span id="PronNumberSpan1" show="swPronNumberYes"> du singulier</span>, avec chaque pronom sur une ligne distincte.<br/>
+          Entrez dans la zone de texte les pronoms possessifs de la deuxième personne <span id="PronNumberSpan1" show="swPronNumberYes"> du singulier</span>, avec chaque pronom sur une ligne distincte.<br/>
        </prompt>
        <textBox id="PronPossSecondSgExample" dataItem="possSecondSgExample"  rows="2" show="swPronPossYes"/>
        <prompt id="PronPossYesSecondPlPrompt" show="swPronPossYesAndPronNumberYes">
-          Entrez dans le zone de texte les pronoms possessifs de la deuxième personne du pluriel, avec chaque pronom sur une ligne distincte.<br/>
+          Entrez dans la zone de texte les pronoms possessifs de la deuxième personne du pluriel, avec chaque pronom sur une ligne distincte.<br/>
        </prompt>
        <textBox id="PronPossSecondPlExample" dataItem="possSecondPlExample"  rows="2" show="swPronPossYesAndPronNumberYes"/>
        <prompt id="PronPossYesThirdSgPrompt" show="swPronPossYes">
-          Entrez dans le zone de texte les pronoms possessifs de la troisième personne<span id="PronNumberSpan2" show="swPronNumberYes"> du singulier</span>, avec chaque pronom sur une ligne distincte.<br/>
+          Entrez dans la zone de texte les pronoms possessifs de la troisième personne<span id="PronNumberSpan2" show="swPronNumberYes"> du singulier</span>, avec chaque pronom sur une ligne distincte.<br/>
        </prompt>
        <textBox id="PronPossThirdSgExample" dataItem="possThirdSgExample"  rows="2" show="swPronPossYes"/>
        <prompt id="PronPossYesThirdPlPrompt" show="swPronPossYesAndPronNumberYes">
-          Entrez dans le zone de texte les pronoms possessifs de la troisième personne du pluriel, avec chaque pronom sur une ligne distincte.<br/>
+          Entrez dans la zone de texte les pronoms possessifs de la troisième personne du pluriel, avec chaque pronom sur une ligne distincte.<br/>
        </prompt>
        <textBox id="PronPossThirdPlExample" dataItem="possThirdPlExample"  rows="2" show="swPronPossYesAndPronNumberYes"/>    
  <br/><br/>     
@@ -55,7 +55,7 @@
           <checkbox id="PronPossAffixYes" dataItem="possAffixPron">Un affixe est utilisé (ou plusieurs) pour changer un autre pronom en un pronom possessif</checkbox>
           <checkbox id="PronPossAffixYesWord" dataItem="possAffixWord">Un affixe est utilisé (ou plusieurs) pour changer un autre mot (qui n’est pas un pronom) en un pronom possessif</checkbox>
           <checkbox id="PronPossAffixNoPhrase" dataItem="possPhrase">Les pronoms possesseur sont utilisés pour posséder un mot spécial (qui n’est pas un pronom) et il devient un syntagme possessif qui a le même sens et usage qu’un pronom possessif qui se présente seul</checkbox>
-          <checkbox id="PronPossAffixOther" dataItem="possOther">Ma langue forme un pronom possessif comme suit:<textBox  id="PronPossAffixOtherContent" dataItem="possOther" rows="2"/></checkbox>
+          <checkbox id="PronPossAffixOther" dataItem="possOther">Ma langue forme un pronom possessif comme suit:<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronPossAffixNoCheckPrompt" show="swPronPossYesNoCheck">AVERTISSEMENT: Vous avez dit ci-dessus que votre langue a des pronoms possessifs, mais vous n’avez marqué aucune des options pour dire comment ils sont formés.  Veuillez marquer une (ou plus) des options convenables, à moins que vous n’ayez pas de pronoms possessifs ; dans ce cas il ne vous aurait fallu entrer aucune forme dans les zones de texte, et vous devez changer votre réponse ci-dessus à « Non ».</prompt>

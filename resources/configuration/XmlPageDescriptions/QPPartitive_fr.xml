@@ -3,14 +3,14 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="QPPartitive" count="5/7">
+<page id="QPPartitive" count="2.5">
 	<title level="2">Quantificateurs et Syntagmes de Quantité – Partitifs</title>
 	<introduction>Tous les quantificateurs y compris les nombres peuvent normalement se trouver dans des constructions <technicalTermRef term="ttPartitive">partitives</technicalTermRef>.  Ces constructions sont employées pour indiquer qu’on parle d’une partie d’un groupe plus grand.  Des exemples:
 	</introduction>
    <EnglishExample>
    	<exItem label="1.">quelques-uns des enfants</exItem>
    	<exItem label="2.">plusieurs des filles plus âgées</exItem>
-   	<exItem label="3.">beaucoup des femmes</exItem>
+   	<exItem label="3.">beaucoup de ces femmes</exItem>
    	<exItem label="4.">seulement dix des garçons</exItem>
    </EnglishExample>
 	<introduction>Comme les exemples le montrent, les constructions partitives de cette sorte ont normalement un syntagme prépositionnel ou postpositionnel, qui indique le groupe ou la chose complet discuté.  Notez que dans tous ces exemples, le substantif dans le syntagme partitif peut être modifié par une proposition relative.<br/><br/>
@@ -18,7 +18,7 @@
    </introduction>
 	<form section="qp">
 		<prompt><br/>Entrez ici la manière dont votre langue exprimerait des exemples comparables de partitifs avec quantificateurs:</prompt>
-	   <textBox id="QPPartitiveQExample" dataItem="partitiveQExample"/>
+		<textBox id="QPPartitiveQExample" dataItem="partitiveQExample" cols="80"/>
 <br/><br/>
 	   <radioGroup>
 	      <groupName dataItem="partitive" default="no" >RQPPartitive</groupName>
@@ -28,7 +28,7 @@
 	   	<radio id="QPPartitiveOther" dataValue="other">Non, ma langue utilise d’autres moyens que des syntagmes prépositionnels ou postpositionnels ou des propositions relatives pour exprimer des idées comparables</radio>
 	   </radioGroup>
 		<prompt id="QPPartitiveOtherPrompt" show="swQPPartitiveOther">La construction que ma langue utilise pour indiquer le groupe ou la chose discuté dans cette sorte de construction partitive est:</prompt>
-		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="50" rows="2" show="swQPPartitiveOther"/>
+		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther"/>
 		
 	   <radioGroup id="QPPartitivePPPosTable" show="swQPPartitiveYes">
 	      <groupName dataItem="partitivePPPos" default="unknown" position="yesHeadDiff">RQPPartitivePPPos</groupName>

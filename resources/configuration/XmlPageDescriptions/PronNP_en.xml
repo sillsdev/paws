@@ -3,9 +3,9 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronNP" count="7/9">
+<page id="PronNP" count="7.7">
 	<title level="2">Pronouns - As a Nominal Phrase</title>
-   <introduction>Pronouns of all types normally stand alone in the place of an entire nominal phrase, but they can also be modified by a relative clause. In some languages pronouns may be modified by <technicalTermRef term="ttPartitive"/> phrases, and other languages allow pronouns to also be modified by <technicalTermRef term="ttDeterminers"/> and wide scope quantifiers and degree words. English examples of this type include the following:</introduction>
+   <introduction>Pronouns of all types normally stand alone in the place of an entire nominal phrase, but they can usually also be modified by a relative clause. In some languages pronouns may be modified by <technicalTermRef term="ttPartitive"/> phrases, and other languages allow pronouns to also be modified by <technicalTermRef term="ttDeterminers"/> and wide scope quantifiers and degree words. English examples of this last type include the following:</introduction>
 		<EnglishExample>
 			<exItem label="1.">just we three</exItem>
 			<exItem label="2.">only he</exItem>
@@ -24,11 +24,11 @@
      <radio id="PronModAll" dataValue="all">Yes, these elements can be modified by all the same modifiers as nouns can, including adjectives and possessors</radio>
       </radioGroup>   
       <prompt id="PronModMinimalExamplePrompt" show="swPronModDetOrAll">Key examples from your language of pronouns modified by some or all of the allowed elements here:</prompt>
-		<textBox id="PronNPStandAloneExample" dataItem="standAloneNPExample" show="swPronModDetOrAll"/>
+		<textBox id="PronNPStandAloneExample" dataItem="standAloneNPExample" show="swPronModDetOrAll" cols="80"/>
       <prompt id="PronModSentExamplePrompt" show="swPronModDetOrAll">Now take several of the examples you keyed in the textbox above and use them as the subject or object of a sentence here:</prompt>
-      <textBox id="PronModSentExample" dataItem="pronSentExample" show="swPronModDetOrAll"/>
+      <textBox id="PronModSentExample" dataItem="pronSentExample" show="swPronModDetOrAll" cols="80"/>
       <br/><br/>
-      <introduction>In addition, pronouns can usually be modified by a partitive phrase (or other PP), as in:</introduction>
+      <introduction>Some English examples of pronouns modified by a partitive phrase (or other PP) are:</introduction>
       <EnglishExample>
          <exItem label="4.">you in there</exItem>
          <exItem label="5.">we of this state</exItem>
@@ -37,7 +37,7 @@
       <br/>
       <prompt id="PronNPPartitiveModNo" show="swPronModNoOrRel">We assume this is not possible in your language, based on your answer above.  If this is incorrect, please change your answer above.</prompt>
       <prompt id="PronNPPartitiveMod" show="swPronModNotNoOrRel">Key your examples here:</prompt>
-      <textBox id="PronNPPartitiveExample" dataItem="partitiveExample" show="swPronModNotNoOrRel"/>
+      <textBox id="PronNPPartitiveExample" dataItem="partitiveExample" show="swPronModNotNoOrRel" cols="80"/>
       <br/>
       <radioGroup id="PronNPPartitiveTable" show="swPronModNotNoOrRel">
          <groupName dataItem="partitivePos" default="unknown" position="yesHeadDiff">RPronNPPartitive</groupName>
@@ -47,7 +47,7 @@
          <radio id="PronNPPartEither" dataValue="either">On either side</radio>
       </radioGroup>
       <br/><br/>
-      <introduction>Finally, it is usually possible to have a pronoun modified by a relative clause, as in:</introduction>
+      <introduction>Some English examples with a pronoun modified by a relative clause are:</introduction>
 		<EnglishExample>
 			<exItem label="7.">you who are going with us</exItem>
 		   <exItem label="8.">everyone who wants to come</exItem>
@@ -56,13 +56,14 @@
 		<br/>
       <prompt id="PronNPRelModNo" show="swPronModNo">We assume this is not possible in your language, based on your answer above.  If this is incorrect, please change your answer above.</prompt>
       <prompt id="PronNPRelClMod" show="swPronModNotNo">Key your examples with relative clauses, placing these nominal phrases as the subject or object of a simple sentence, here:</prompt>
-		<textBox id="PronNPRelCl" dataItem="pronRelClExample" show="swPronModNotNo"/>
+		<textBox id="PronNPRelCl" dataItem="pronRelClExample" show="swPronModNotNo" cols="80"/>
 		<br/>
       <instruction id="PronDistributionNPInstruction" show="swNotPracticalAndPronModDet">In the tree structure given at the beginning of <section number="5">Nominal Phrases</section>, we will assume for your language that pronouns can fill the NP position, because they can be modified by degree words, demonstratives, articles, relative clauses and PPs, but not by possessors or adjectives.</instruction>
-      <instruction id="PronDistributionNPPartInstruction" show="swNotPracticalAndPronModPart">In the tree structure given at the beginning of <section number="5">Nominal Phrases</section>, we will assume for your language that pronouns can fill the NP position, because they can be modified by relative clauses and PPs.</instruction>
+      <instruction id="PronDistributionDBarPartInstruction" show="swNotPracticalAndPronModPart">In the tree structure given at the beginning of <section number="5">Nominal Phrases</section>, we will assume for your language that pronouns can fill the D' position, because they can be modified by relative clauses and PPs.</instruction>
       <instruction id="PronDistributionNInstruction" show="swNotPracticalAndPronModAll">In the tree structure given at the beginning of <section number="5">Simple and Possessed Nominal Phrases</section>, we will assume for your language that pronouns can fill the N position, because they can be modified by all the same categories as nouns can.</instruction>
-      <instruction id="PronDistributionDPInstruction" show="swNotPracticalAndPronModNoOrRel">In the tree structure given at the beginning of <section number="5">Simple and Possessed Nominal Phrases</section>, we will assume for your language that pronouns can fill the DP position, because they must stand alone in the place of a whole nominal phrase, or possibly be modified by a relative clause.</instruction>  
-
+      <instruction id="PronDistributionDBarInstruction" show="swNotPracticalAndPronModRel">In the tree structure given at the beginning of <section number="5">Simple and Possessed Nominal Phrases</section>, we will assume for your language that pronouns can fill the D' position, because they either stand alone in the place of a whole nominal phrase, or may possibly be modified by a relative clause.</instruction>  
+      <instruction id="PronDistributionDPInstruction" show="swNotPracticalAndPronModNo">In the tree structure given at the beginning of <section number="5">Simple and Possessed Nominal Phrases</section>, we will assume for your language that pronouns can fill the DP position, because they must stand alone in the place of a whole nominal phrase.</instruction>  
+      
       <introduction id="PronNPClassifierIntro2" show="swOTClassifiersSpecific">In most languages that use classifiers, the classifier may occur without a noun, as long as the features of the classifier or the context make the reference clear.</introduction>
       <radioGroup id="PronNPClassifierNoNTable" show="swOTClassifiersSpecific">
          <groupName dataItem="classifierNoN" default="no">RPronNPClassifierNoN</groupName>
@@ -70,9 +71,10 @@
          <radio id="PronClassifierNoNYes" dataValue="yes">Yes</radio>
          <radio id="PronClassifierNoNNo" dataValue="no">No, a noun is always required</radio>
       </radioGroup>   
-      <prompt id="PronNPClassifierNoNExamplePrompt" show="swOTClassifiersSpecificAndClassifierNoNYes">Key examples from your language of classifiers in a nominal phrase without a noun:</prompt>
-      <textBox id="PronNPClassifierNoNExample" dataItem="classifierNoNExample" show="swOTClassifiersSpecificAndClassifierNoNYes"/>
-      
+      <prompt id="PronNPClassifierNoNExamplePrompt" show="swOTClassifiersSpecificAndClassifierNoNYes">Key examples from your language of classifiers in a nominal phrase (or sentence) without a noun:</prompt>
+      <textBox id="PronNPClassifierNoNExample" dataItem="classifierNoNExample" show="swOTClassifiersSpecificAndClassifierNoNYes" cols="80"/>
+      <br/><br/>
+      <instruction id="PronClassifierNoNYesInstruction" show="swOTClassifiersSpecificAndClassifierNoNYes">Note that the rule allowing classifiers to stand alone without a noun may significantly increase ambiguity in your PC-Patr grammar.  Consider commenting off the N'=Class rule if your language only allows this rarely.</instruction>
       <br/><br/>
 		<buttons>
 			<button id="PronNPBack" value="Back" goto="PronIndefinite.xml"/>
@@ -117,11 +119,7 @@
       <and/>
       <whenRadio button="PronModPart"/>
    </showWhen>
-   <showWhen id="swNotPracticalAndPronModNoOrRel">
-      <whenValue  element="paws" attr="outputGrammar" value="True"/>
-      <and/>
-      <whenRadio button="PronModNo"/>
-      <or/>
+    <showWhen id="swNotPracticalAndPronModRel">
       <whenValue  element="paws" attr="outputGrammar" value="True"/>
       <and/>
       <whenRadio button="PronModRel"/>

@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvPManner" count="3/6">
+<page id="AdvPManner" count="3.3">
    <title level="2">Adverbes et Syntagmes Adverbiaux – Adverbes de manière</title>
    <introduction>Les adverbes de manière modifient le verbe directement; ils se terminent d’habitude en <example>-ment</example> en français.  Il semble qu’ils n’aient pas des équivalents des autres types de syntagmes, sauf peut-être de certains comparatifs, tels que <example>aussi vite qu’il le pouvait</example>.  (On traitera des comparatifs à la <section number="9.5">Phrases Simples – Comparatifs</section>.)  En français on peut modifier les adverbes de manière en mettant <example>très</example>
 et <example>si</example>, comme suit:
@@ -37,21 +37,21 @@ et <example>si</example>, comme suit:
           <checkbox id="AdvPMannerWordDegreeWord" dataItem="mannerWordDegreeWord">Les mots de degré peuvent modifier l’adverbe de manière</checkbox>
           <checkbox id="AdvPMannerWordDegreeAttaches" dataItem="mannerWordDegreeAttaches">Il y a un affixe ou un clitique qui s’attache à l’adverbe de manière pour l’intensifier </checkbox>
           <checkbox id="AdvPMannerWordDegreeRedup" dataItem="mannerWordDegreeRedup">On utilise le redoublement pour intensifier le sens de l’adverbe de manière</checkbox>
-          <checkbox id="AdvPMannerWordDegreeOther" dataItem="mannerWordDegreeOther">Pour intensifier le sens de l’adverbe de manière ma langue fait ainsi:<textBox  id="AdvPMannerWordDegreeOtherContent" dataItem="mannerWordDegreeOther" rows="2"/></checkbox>
+          <checkbox id="AdvPMannerWordDegreeOther" dataItem="mannerWordDegreeOther">Pour intensifier le sens de l’adverbe de manière ma langue fait ainsi:<textBox  id="AdvPMannerWordDegreeOtherContent" dataItem="mannerWordDegreeOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        </radioGroup>
        <prompt id="AdvPMannerWordDegreeNoCheckPrompt" show="swAdvPMannerTypeWordDegreeYesNoCheck">AVERTISSEMENT: Vous avez dit en-dessus que les adverbes de manière peuvent être modifiés ou intensifiés, mais vous n’avez coché aucune des options.  Cochez une option ou plusieurs, ou bien changez votre réponse ci-dessus en « Non, les adverbes de manière ne sont ni modifiés ni intensifiés ».</prompt>
        <prompt id="AdvPMannerWordDegreePrompt" show="swAdvPMannerTypeWordAndYesDegree">Entrez ici les mots de degré qui peuvent modifier les adverbes de manière:</prompt>
    <textBox id="AdvPMannerDegreeExample" dataItem="mannerDegreeExample" rows="3" show="swAdvPMannerTypeWordAndYesDegree"/>       
        <prompt id="AdvPMannerWordDegreePhrasePrompt" show="swAdvPMannerTypeWordAndYesDegree">Maintenant entrez ici des exemples où les adverbes de manière sont modifiés par des mots de degré:</prompt>
-   <textBox id="AdvPMannerDegreePhraseExample" dataItem="mannerDegreePhraseExample" rows="5" show="swAdvPMannerTypeWordAndYesDegree"/> 
+       <textBox id="AdvPMannerDegreePhraseExample" dataItem="mannerDegreePhraseExample" cols="80" rows="5" show="swAdvPMannerTypeWordAndYesDegree"/> 
        <br/><br/>
        <checkboxGroup id="AdvPMannerlDegreeWordTable" show="swAdvPMannerTypeWordAndYesDegree">
           <prompt>Dans les exemples que vous venez de citer où se mettent les modificateurs par rapport à l’adverbe de manière? Cochez toutes les options valables pour votre langue.</prompt>
           <checkbox id="AdvPMannerDegreeWordBefore" checked="yes" dataItem="mannerDegreeWordBefore">Avant l’adverbe de manière</checkbox>
           <checkbox id="AdvPMannerDegreeWordAfter" checked="yes" dataItem="mannerDegreeWordAfter">Après l’adverbe de manière</checkbox>
           <checkbox id="AdvPMannerDegreeWordBoth" checked="yes" dataItem="mannerDegreeWordBoth">Des deux côtés en même temps</checkbox>
-          <checkbox id="AdvPMannerDegreeWordOther" checked="yes" dataItem="mannerDegreeWordOther">Dans ma langue les mots de degré peuvent se mettre comme suit: <textBox  id="AdvPMannerDegreeWordOtherContent" dataItem="mannerDegreeWordOther" rows="2"/></checkbox>
+          <checkbox id="AdvPMannerDegreeWordOther" checked="yes" dataItem="mannerDegreeWordOther">Dans ma langue les mots de degré peuvent se mettre comme suit: <textBox  id="AdvPMannerDegreeWordOtherContent" dataItem="mannerDegreeWordOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>	
        <prompt id="AdvPMannerDegreeWordNoCheckPrompt" show="swAdvPMannerDegreeWordAndNoCheck">AVERTISSEMENT: Vous devez cocher une case pour décrire la position de ces mots dans votre langue, ou bien changez la réponse ci-dessus et mentionnez un autre type de modificateur.</prompt>
        <instruction  id="AdvPMannerDegreeYesInstruction" show="swAdvPMannerTypeWordAndYesDegree">In the lexicon, key the features <feature>makeDeg modifies_manner</feature> on the degree words to change the category and allow it to modify manner adverbs.  Simply add the <feature>modifies_manner</feature> feature if this same degree word can modify temporal and/or locative adverbs and you already marked it with those features.</instruction>
@@ -64,7 +64,7 @@ et <example>si</example>, comme suit:
        <prompt id="AdvPMannerWordDegreeRedupPrompt" show="swAdvPMannerTypeWordRedup">Entrez ici des exemples des adverbes de manière avec <technicalTermRef term="ttReduplication">redoublement</technicalTermRef> comme moyen d’intensification:</prompt>
    <textBox id="AdvPMannerDegreeRedupExample" dataItem="mannerDegreeRedupExample" rows="5" show="swAdvPMannerTypeWordRedup"/> 
        <prompt id="AdvPMannerWordDegreeOtherPrompt" show="swAdvPMannerTypeWordAndOther">Entrez ici des exemples des adverbes de manière qui montrent d’autres moyens de les intensifier:</prompt>
-       <textBox id="AdvPMannerDegreeOtherExample" dataItem="mannerDegreeOtherExample" rows="5" show="swAdvPMannerTypeWordAndOther"/> 
+       <textBox id="AdvPMannerDegreeOtherExample" dataItem="mannerDegreeOtherExample" cols="80" rows="5" show="swAdvPMannerTypeWordAndOther"/> 
 
     <radioGroup id="AdvPMannerAffixDegree" show="swAdvPMannerTypeAffix">
         <groupName dataItem="mannerAffixDegree" default="no">RAdvPMannerAffixDegree</groupName>
@@ -76,7 +76,7 @@ et <example>si</example>, comme suit:
           <checkbox id="AdvPMannerAffixDegreeYesBefore" dataItem="mannerAffixDegreeYesBefore">Un affixe modificateur peut paraître avant l’adverbe de manière</checkbox>
           <checkbox id="AdvPMannerAffixDegreeYesAfter" dataItem="mannerAffixDegreeYesAfter">Un affixe modificateur peut paraître après l’adverbe de manière</checkbox>
           <checkbox id="AdvPMannerAffixDegreeRedup" dataItem="mannerAffixDegreeRedup">On utilise le redoublement pour intensifier le sens des affixes d’adverbes de manière</checkbox>
-          <checkbox id="AdvPMannerAffixDegreeOther" dataItem="mannerAffixDegreeOther">Dans ma langue on intensifie le sens des affixes de manière de façon suivante:<textBox  id="AdvPMannerAffixDegreeOtherContent" dataItem="mannerAffixDegreeOther" rows="2"/></checkbox>
+          <checkbox id="AdvPMannerAffixDegreeOther" dataItem="mannerAffixDegreeOther">Dans ma langue on intensifie le sens des affixes de manière de façon suivante:<textBox  id="AdvPMannerAffixDegreeOtherContent" dataItem="mannerAffixDegreeOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
     </radioGroup>
        <prompt id="AdvPMannerAffixDegreeNoCheckPrompt" show="swAdvPMannerTypeAffixDegreeYesNoCheck">AVERTISSEMENT: Vous avez dit dessus que les affixes adverbiaux de manière peuvent être modifiés ou intensifiés, mais vous n’avez coché aucune option.  Cochez une option ou plusieurs comme il convient, ou bien changez votre réponse en « Non, les affixes adverbiaux de manière ne sont ni modifiés ni intensifiés ».</prompt>
@@ -88,7 +88,7 @@ et <example>si</example>, comme suit:
        <prompt id="AdvPMannerAffixDegreeRedupPrompt" show="swAdvPMannerTypeAffixRedup">Entrez ici des exemples des affixes adverbiaux de manière qui s’attachent au verbe avec <technicalTermRef term="ttReduplication">redoblement</technicalTermRef> comme moyen d’intensification:</prompt>
         <textBox id="AdvPMannerAffixDegreeRedupExample" dataItem="mannerAffixDegreeRedupExample" rows="5" show="swAdvPMannerTypeAffixRedup"/>
        <prompt id="AdvPMannerAffixDegreeOtherPrompt" show="swAdvPMannerTypeAffixAndOther">Entrez ici des exemples des affixes adverbiaux de manière qui montrent les autres moyens de les intensifier:</prompt>
-       <textBox id="AdvPMannerAffixDegreeOtherExample" dataItem="mannerAffixDegreeOtherExample" rows="5" show="swAdvPMannerTypeAffixAndOther"/> 
+       <textBox id="AdvPMannerAffixDegreeOtherExample" dataItem="mannerAffixDegreeOtherExample" cols="80" rows="5" show="swAdvPMannerTypeAffixAndOther"/> 
        <br/><br/>      
         <buttons>
             <button id="AdvPMannerExamplesBack" value="Back" goto="AdvPLocative.xml"/>

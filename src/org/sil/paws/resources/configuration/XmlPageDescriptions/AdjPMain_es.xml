@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="AdjPMain" count="1/3">
+<page id="AdjPMain" count="4.1">
    <title>Las frases adjetivales</title>
    <introduction>En muchas gramáticas, los números, cuantificadores, artículos y demonstratives se consideran los adjetivos, pero pueden presentarse en posiciones diversas de los adjetivos calificativos, así que cada uno tiene una categoría sintáctica distinta.   
       Esta sección solo se considera los adjetivos calificativos que expresan tamaño, color, edad, textura, forma, o calidad. Una característica de adjetivos calificativos en muchas lenguas es que se permite más de una frase adjetival modificar a un sustantivo y en general el orden de los adjetivos puede cambiar (con un cambio pequeño en el significado debido a los cambios en <technicalTermRef term="ttScope">ámbito o alcance</technicalTermRef> de cada adjetivo). Por ejemplo, 
@@ -50,7 +50,7 @@
 	      <checkbox id="AdjPModifiersManner" checked="yes" dataItem="modifiersManner">Con adverbios de modo o frases adverbiales</checkbox>
 	      <checkbox id="AdjPModifiersAttaches" dataItem="modifiersAttaches">Hay afijos o clíticos que se unen al adjetivo para intensificarlo</checkbox>
 	      <checkbox id="AdjPModifiersRedup" dataItem="modifiersRedup">Utiliza reduplicación para intensificar el significado del adjetivo</checkbox>
-	      <checkbox id="AdjPModifiersOther" dataItem="modifiersOther">En mi lengua, los adjetivos se pueden modificar por: <textBox  id="AdjPModifiersOtherContent" dataItem="modifiersOther" rows="2"/></checkbox>
+	      <checkbox id="AdjPModifiersOther" dataItem="modifiersOther">En mi lengua, los adjetivos se pueden modificar por: <textBox  id="AdjPModifiersOtherContent" dataItem="modifiersOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>	
 	   <prompt id="AdjPModifiersYesNoCheckPrompt" show="swAdjPModifiersYesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cuáles modificadores pueden modificar o intensificar a los adjetivos en su lengua, o cambia la respuesta de arriba a “No, los adjetivos no se modifican ni intensifican”.</prompt>
 	   <br/>
@@ -65,28 +65,28 @@
 	   <prompt id="AdjPModifiersYesPrompt" show="swAdjPModifiersYesDegree">Escriba las palabras de grado que pueden modificar a los adjetivos aquí:</prompt>
 	   <textBox id="AdjPModifiersDegreeExample" dataItem="adjectiveDegreeExample" show="swAdjPModifiersYesDegree"/>
 	   <prompt id="AdjPModifiersDegreePhrasePrompt" show="swAdjPModifiersYesDegree">Ahora escriba ejemplos de adjetivos con una palabra de grado que los modifica aquí:</prompt>
-	   <textBox id="AdjPModifiersDegreePhraseExample" dataItem="adjectiveDegreePhraseExample" show="swAdjPModifiersYesDegree"/>   
+	   <textBox id="AdjPModifiersDegreePhraseExample" dataItem="adjectiveDegreePhraseExample" show="swAdjPModifiersYesDegree" cols="80"/>   
 	   <br/><br/>
 	   <checkboxGroup id="AdjPModifiersYesDegreeTable" show="swAdjPModifiersYesDegree">
 	      <prompt>De acuerdo con los ejemplos, ¿Dónde se presentan las palabras de grado con respecto al adjetivo? Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="AdjPDegreeBefore" checked="yes" dataItem="degreeBefore">Antes del adjetivo</checkbox>
 	      <checkbox id="AdjPDegreeAfter" checked="yes" dataItem="degreeAfter">Después del adjetivo</checkbox>
 	      <checkbox id="AdjPDegreeBoth" checked="yes" dataItem="degreeBoth">En ambos lados en la misma oración</checkbox>
-	      <checkbox id="AdjPDegreeOther" checked="yes" dataItem="degreeOther">En mi lengua, estas palabras de grado pueden presentarse: <textBox  id="AdjPDegreeOtherContent" dataItem="degreeOther" rows="2"/></checkbox>
+	      <checkbox id="AdjPDegreeOther" checked="yes" dataItem="degreeOther">En mi lengua, estas palabras de grado pueden presentarse: <textBox  id="AdjPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>	
 	   <prompt id="AdjPModifiersYesDegreeNoCheckPrompt" show="swAdjPModifiersYesDegreeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estas palabras de grado en su lengua, o cambia su respuesta de arriba a un tipo diferente de modificador.</prompt>
 	   <instruction id="AdjPModifiersYesDegreeInstruction" show="swAdjPModifiersYesDegree">In the lexicon, mark the degree words with the feature <feature>makeDeg modifies_Adj</feature>.    (If any of these degree words are the same as those which can modify an entire nominal phrase or a quantifier or an adverb, you can simply add the additional feature <feature>modifies_Adj</feature> to the same lexical entry.)</instruction>
 	   <instruction id="AdjPDegreeEitherRestrictedInstruction" show="swAdjPDegreeEitherRestricted">In the lexicon, mark those degree words which can only occur before the adjective with the feature <feature>AdjP-initial</feature> and those which can only occur after the adjective with the feature <feature>AdjP-final</feature>.  Do not enter either feature on any degree words which can occur on either side.</instruction>      
 	   
 	   <prompt id="AdjPModifiersMannerPhrasePrompt" show="swAdjPModifiersYesManner">Escriba ejemplos de adjetivos con un adverbio de modo o frase adverbial que los modifica aquí:</prompt>
-	   <textBox id="AdjPModifiersMannerPhraseExample" dataItem="adjectiveMannerPhraseExample" show="swAdjPModifiersYesManner"/>    
+	   <textBox id="AdjPModifiersMannerPhraseExample" dataItem="adjectiveMannerPhraseExample" show="swAdjPModifiersYesManner" cols="80"/>    
 	   <br/><br/>
 	   <checkboxGroup id="AdjPModifiersYesMannerTable" show="swAdjPModifiersYesManner">
 	      <prompt>De acuerdo con los ejemplos, ¿Dónde se presentan los adverbios de modo o frases adverbiales con respecto al adjetivo? Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="AdjPMannerBefore" checked="yes" dataItem="mannerBefore">Antes del adjetivo</checkbox>
 	      <checkbox id="AdjPMannerAfter" checked="yes" dataItem="mannerAfter">Después del adjetivo</checkbox>
 	      <checkbox id="AdjPMannerBoth" checked="yes" dataItem="mannerBoth">En ambos lados en la misma oración</checkbox>
-	      <checkbox id="AdjPMannerOther" checked="yes" dataItem="mannerOther">En mi lengua, estos adverbios de modo o frases adverbiales pueden presentarse: <textBox  id="AdjPMannerOtherContent" dataItem="mannerOther" rows="2"/></checkbox>
+	      <checkbox id="AdjPMannerOther" checked="yes" dataItem="mannerOther">En mi lengua, estos adverbios de modo o frases adverbiales pueden presentarse: <textBox  id="AdjPMannerOtherContent" dataItem="mannerOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>	
 	   <prompt id="AdjPModifiersYesMannerNoCheckPrompt" show="swAdjPModifiersYesMannerAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos adverbios de modo o frases adverbiales en su lengua, o cambia su respuesta de arriba a un tipo diferente de modificador.</prompt>
 	   <instruction id="AdjPModifiersYesMannerInstruction" show="swAdjPModifiersYesManner">
@@ -100,7 +100,7 @@
 	   <prompt id="AdjPModifiersDegreeRedup" show="swAdjPModifiersNoRedup">Escriba ejemplos de adjetivos calificativos con reduplicación aquí:</prompt>
 	   <textBox id="AdjPModifiersDegreeRedupExample" dataItem="adjectiveDegreeRedupExample" show="swAdjPModifiersNoRedup"/>   
 	   <prompt id="AdjPModifiersOtherPrompt" show="swAdjPModifiersOther">Escriba ejemplos de adjetivos calificativos modificados o intensificados como se permiten en su lengua aquí:</prompt>
-	   <textBox id="AdjPModifiersOtherExample" dataItem="adjectiveDegreeOtherExample" show="swAdjPModifiersOther"/>              
+	   <textBox id="AdjPModifiersOtherExample" dataItem="adjectiveDegreeOtherExample" show="swAdjPModifiersOther" cols="80"/>              
 	   <br/><br/>
 	   <buttons>
 	      <button id="AdjPMainBack" value="Back" goto="Contents_es.htm"/>

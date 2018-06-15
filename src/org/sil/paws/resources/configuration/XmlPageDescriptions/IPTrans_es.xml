@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPTrans" count="1/1">
+<page id="IPTrans" count="9.7.1">
     <title level="2">Las oraciones básicas - Las oraciones transitivas y ditransitivas</title>
    <introduction>Algunos ejemplos de las oraciones <technicalTermRef term="ttTransitive">transitivas</technicalTermRef> en español son:</introduction>
     <EnglishExample>
@@ -15,11 +15,11 @@
    <introduction>Observe que los ejemplos 1-2 tienen un sujeto-<technicalTermRef term="ttAgent"/>, mientras que los ejemplos 3-4 tienen un sujeto-<technicalTermRef term="ttExperiencer"/>.</introduction>
    <form section="ip">
       <prompt><br/>Los ejemplos que usted escribió en <section number="1.">La tipología - Sistema de caso</section> de oraciones transitivas que tienen un sujeto-agente se muestran aquí.  El primer campo incluye ejemplos con frases nominales o nombres como sujetos y el segundo campo tiene sujetos pronominales.</prompt>
-       <textBox id="IPExamplesExample"  section="typology" dataItem="example" cols="50"/>
-        <textBox id="IPExamplesPnExample"  section="typology" dataItem="pnExample" cols="50"/>
+       <textBox id="IPExamplesExample"  section="typology" dataItem="example" cols="80"/>
+        <textBox id="IPExamplesPnExample"  section="typology" dataItem="pnExample" cols="80"/>
       <prompt><br/>Los ejemplos que usted escribió en <section number="1.">La tipología - Sistema de caso</section> de oraciones transitivas con sujetos-experimentadores se muestran aquí.  El primer campo incluye ejemplos con frases nominales o nombres como sujetos y el segundo campo tiene sujetos pronominales.</prompt>
-       <textBox id="IPExperiencerExample"  section="typology" dataItem="experiencerExample" cols="50"/>
-       <textBox id="IPExperiencerPnExample"  section="typology" dataItem="experiencerPnExample" cols="50"/>      
+       <textBox id="IPExperiencerExample"  section="typology" dataItem="experiencerExample" cols="80"/>
+       <textBox id="IPExperiencerPnExample"  section="typology" dataItem="experiencerPnExample" cols="80"/>      
        <instruction id="IPTransExpInstruction" show="swExpNotNo">Since Experiencer subjects are distinct from Agent subjects in your language, add the feature <feature>experiencer</feature> to the verbs which have an Experiencer subject.</instruction>
        <instruction id="IPTransInstructionFeature">If a verb is transitive and its object must always be present, add the feature <feature>transitive</feature> to its lexical entry.  Do not mark a verb like <example>eat</example> which may or may not have an overt object.</instruction>
        <br/><br/>
@@ -32,7 +32,7 @@
             <exItem label="8.">La muchacha dio a su madre el regalo.</exItem>
         </EnglishExample>
       <prompt><br/>Escriba sus ejemplos de oraciones ditransitivasaquí:</prompt>
-        <textBox id="IPExamplesDiExamples" dataItem="diExample" cols="50"/>
+        <textBox id="IPExamplesDiExamples" dataItem="diExample" cols="80"/>
        <br/><br/>
         <radioGroup>
             <groupName dataItem="diCat" default="pp">RIPTransDiCat</groupName>
@@ -47,8 +47,9 @@
     <radio id="IPTransDiOrderIO" dataValue="indirect">El objeto indirecto</radio>
 </radioGroup>
         </radioGroup>
-        <instruction id="IPTransDiInstructionDitrans">Any verbs which require the second object to always be present should be marked with the feature <feature>ditransitive</feature>.  Those which allow the second object, but it is optional, can be marked <feature>transitive</feature>.</instruction>
-<br/><br/>
+    <instruction id="IPTransDiInstructionDitrans">Any verbs which require the second object to always be present should be marked with the feature <feature>ditransitive</feature>.  Those which allow the second object, but it is optional, need to be marked <feature>ditransitive.opt</feature>.
+     <span id="IPTransDitransPP" show="swIPTransDiCatPP"><br/><br/>Add the feature <feature>dative</feature> to all the prepositions which are used to mark the indirect object.</span></instruction>
+    <br/><br/>
        <buttons>
             <button id="IPTransBack" value="Back" goto="IPContents_es.htm"/>
             <button id="IPTransNext" value="Next" goto="IPContents_es.htm"/>
@@ -60,7 +61,12 @@
    <showWhen id="swIPTransDiCatNotPP">
       <not/><whenRadio button="IPTransDiCatPP"></whenRadio>
    </showWhen>
-   <showWhen id="swPPPosPrep">
+ <showWhen id="swIPTransDiCatPP">
+  <whenRadio button="IPTransDiCatPP"></whenRadio>
+  <or/>
+  <whenRadio button="IPTransDiCatBoth"/>
+ </showWhen>
+ <showWhen id="swPPPosPrep">
       <whenValue element="pp" attr="pPos" value="before"/>
    </showWhen>
    <showWhen id="swPPPosPost">

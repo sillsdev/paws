@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronMain" count="1/9">
+<page id="PronMain" count="7.1">
     <title>Pronouns</title>
    <introduction>Pronouns come in various types, including personal pronouns, <technicalTermRef term="ttPossessives"/>, <technicalTermRef term="ttReflexives"/>, <technicalTermRef term="ttReciprocals"/>, demonstrative pronouns, and <technicalTermRef term="ttIndefinite">indefinites</technicalTermRef>.  (<technicalTermRef term="ttInterrogative">Interrogative</technicalTermRef> pronouns will be covered in section <section number="11.">Questions - Interrogative Phrases</section>.)  These pronouns normally stand alone in the place of a nominal phrase, but they can also be modified by a relative clause and in some languages may be modified by a <technicalTermRef term="ttPartitive"/> phrase and <technicalTermRef term="ttDeterminers"/> and quantifiers.  Some languages have both independent and dependent pronoun sets.  Each of these types and issues will be looked at in turn.
  </introduction>
@@ -653,7 +653,7 @@ Key the independent first person <span id="PronNumberSpan" show="swPronNumberYes
           <checkbox id="PronDependentEnclitic" dataItem="dependentTypeEnclitic">As an enclitic which attaches to the end of whatever word ends the verb phrase or nominal phrase</checkbox>
           <checkbox id="PronDependentPrefix" dataItem="dependentTypePrefix">As a prefix which attaches to the verb or noun</checkbox>
           <checkbox id="PronDependentSuffix" dataItem="dependentTypeSuffix">As a suffix which attaches to the verb or noun</checkbox>
-          <checkbox id="PronDependentOther" dataItem="dependentTypeOther">In my language, these elements may attach as follows: <textBox  id="PronDependentContent" dataItem="dependentTypeOther" rows="2"/></checkbox>
+          <checkbox id="PronDependentOther" dataItem="dependentTypeOther">In my language, these elements may attach as follows: <textBox  id="PronDependentContent" dataItem="dependentTypeOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <prompt id="PronDependentNoCheckPrompt" show="swPronDependentYesandNoCheck">WARNING: You need to check at least one box to describe how these dependent pronouns attach in your language, or change the answer above to ‘No, only independent pronouns’.</prompt>
        <br/>

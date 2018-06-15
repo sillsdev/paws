@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPAdjP" count="1/1">
+<page id="NPAdjP" count="5.6.1">
 	<title level="2">Syntagmes Nominaux – Modificateurs de Syntagmes Adjectivaux</title>
 	<introduction>Les syntagmes adjectivaux viennent ensuite, déjà discutés dans la <section number="4">Adjectifs et Syntagmes Adjectivaux</section>.  Les adjectifs se trouvent près du nom. Quelques exemples de syntagmes nominaux incluant des syntagmes adjectivaux en anglais sont:</introduction>
 	<EnglishExample>
@@ -16,7 +16,7 @@
 	<introduction>Comme tous les exemples en anglais le montrent, plus qu’un syntagme adjectival est en général permis avant le nom. <span id="NPAdjPRecurringIntro" show="swNotPractical"> Cela sera traité dans l’analyseur syntactique par une règle récursive.</span>  En français normalement l’adjectif se trouve après le nom, avec quelques exceptions précises; où deux ou plusieurs adjectifs accompagnent un nom, on peut se trouve avant et l’autre(s) après.</introduction>
 	<form section="np">
 		<prompt>Entrez ici des exemples de syntagmes nominaux pareils avec des modificateurs adjectivaux dans votre langue:</prompt>
-		<textBox id="NPAdjpExample" dataItem="adjpExample"/>
+		<textBox id="NPAdjpExample" dataItem="adjpExample" cols="80"/>
 		<br/>
 		<br/>
 		<checkboxGroup>
@@ -24,7 +24,7 @@
 			<checkbox id="NPAdjPPosBefore" dataItem="adjBefore">Avant le nom</checkbox>
 			<checkbox id="NPAdjPPosAfter" dataItem="adjAfter">Après le nom</checkbox>
 			<checkbox id="NPAdjPPosBoth" dataItem="adjBoth">Des deux côtés dans le même syntagme nominal</checkbox>
-			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">Dans ma langue l’adjectif peut se trouver comme suit par rapport au nom: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" rows="2"/></checkbox>
+			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">Dans ma langue l’adjectif peut se trouver comme suit par rapport au nom: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1"/></checkbox>
 		</checkboxGroup>
 		<prompt id="NPAdjPPosNoCheckPrompt" show="swNPAdjPPosNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les syntagmes adjectivaux par rapport au nom dans votre langue.</prompt>
 	   <instruction id="NPAdjPPosEitherSideRestrictedInstruction" show="swNPAdjPPosEitherSideRestricted">In the lexicon, mark those adjectives which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>. Do not enter either feature on any adjective which can occur on either side.</instruction>
@@ -43,7 +43,7 @@
 			<checkbox id="NPAdjClassifierSpecificPosAfterNBeforeAdj"  dataItem="classifierSpecificAdjPosAfterNBeforeAdj">Après le nom mais avant l’adjectif</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosPrefixAdj"  dataItem="classifierSpecificAdjPosPrefixAdj">Comme préfixe sur l’adjectif</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosSuffixAdj"  dataItem="classifierSpecificAdjPosSuffixAdj">Comme suffixe sur l’adjectif</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">Dans ma langue les classificateurs peuvent se trouver dans la position suivante: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" rows="2"/></checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">Dans ma langue les classificateurs peuvent se trouver dans la position suivante: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1"/></checkbox>
 		</checkboxGroup>
 		<prompt id="NPAdjClassifierSpecificPosNoCheckPrompt" show="swNPAdjClassifierPresentYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport  aux adjectifs et au nom dans votre langue, ou changez à « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal ».</prompt>
 		
@@ -82,11 +82,11 @@
 			<exItem label="7.">mon enfant [pleurant]</exItem>
 			<exItem label="8.">les livres [aimés par des millions]</exItem>
 		</EnglishExample>
-		<introduction>Certaines langues ne utilisent pasun participe pour exprimer de semblables significations, mais utilisent à la place une syntagme relatif.
+		<introduction>Certaines langues ne utilisent pasun participe pour exprimer de semblables significations, mais utilisent à la place un syntagme relatif.
 			Par exemple, en français: <example>le soleil qui brille</example> et <example>l’enfant qui pleure</example>.
 		</introduction>
 		<prompt><br/>Entrez ici comment votre langue exprimerait des exemples pareils comme (6-8):</prompt>
-		<textBox id="NPAdjPPartExample" dataItem="partExample"/>
+		<textBox id="NPAdjPPartExample" dataItem="partExample" cols="80"/>
 	   <radioGroup>
 	      <groupName dataItem="adjpPart" default="no" >RNPAdjPPart</groupName>
 	   	<prompt>Est-ce que votre langue permet à des participes ou à des syntagmes avec participiaux d’agir comme des adjectifs modifiant un nom?</prompt>

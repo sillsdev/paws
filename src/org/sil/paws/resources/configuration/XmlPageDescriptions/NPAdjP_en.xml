@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPAdjP" count="1/1">
+<page id="NPAdjP" count="5.6.1">
 	<title level="2">Nominal Phrases - Adjective Phrase Modifiers</title>
 	<introduction>Adjective phrases (AdjP) come next, discussed earlier in <section number="4">Adjectives and AdjP</section>.  Adjectives occur close to the noun.  Some examples of nominal phrases including adjective phrases in English are:</introduction>
 	<EnglishExample>
@@ -16,7 +16,7 @@
 	<introduction>As the English examples show, more than one adjective phrase is usually allowed before the noun.<span id="NPAdjPRecurringIntro" show="swNotPractical">  This will be handled in the syntactic parser by a recursive rule.</span></introduction>
 	<form section="np">
 		<prompt>Key examples of similar nominal phrases with adjective modifiers in your language here:</prompt>
-		<textBox id="NPAdjpExample" dataItem="adjpExample"/>
+		<textBox id="NPAdjpExample" dataItem="adjpExample" cols="80"/>
 		<br/>
 		<br/>
 		<checkboxGroup>
@@ -24,7 +24,7 @@
 			<checkbox id="NPAdjPPosBefore" dataItem="adjBefore">Before it</checkbox>
 		   <checkbox id="NPAdjPPosAfter" dataItem="adjAfter">After it</checkbox>
 		   <checkbox id="NPAdjPPosBoth" dataItem="adjBoth">On both sides in the same nominal phrase</checkbox>
-		   <checkbox id="NPAdjPPosOther" dataItem="adjPosOther">In my language, the adjective may occur as follows with respect to the noun: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" rows="2"/></checkbox>
+			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">In my language, the adjective may occur as follows with respect to the noun: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1"/></checkbox>
 		</checkboxGroup>
 	   <prompt id="NPAdjPPosNoCheckPrompt" show="swNPAdjPPosNoCheck">WARNING: You need to check at least one box to describe where the adjective phrases occur with respect the noun in your language.</prompt>
 	   <instruction id="NPAdjPPosEitherSideRestrictedInstruction" show="swNPAdjPPosEitherSideRestricted">In the lexicon, mark those adjectives which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>. Do not enter either feature on any adjective which can occur on either side.</instruction>
@@ -43,7 +43,7 @@
 			<checkbox id="NPAdjClassifierSpecificPosAfterNBeforeAdj"  dataItem="classifierSpecificAdjPosAfterNBeforeAdj">After the noun but before the adjective</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosPrefixAdj"  dataItem="classifierSpecificAdjPosPrefixAdj">As a prefix on the adjective</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosSuffixAdj"  dataItem="classifierSpecificAdjPosSuffixAdj">As a suffix on the adjective</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" rows="2"/></checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1"/></checkbox>
 		</checkboxGroup>
 		<prompt id="NPAdjClassifierSpecificPosNoCheckPrompt" show="swNPAdjClassifierPresentYesOrSomeAndNoCheck">WARNING: You need to check at least one box to describe where the classifiers occur with respect to the adjectives and the noun in your language, or change your answer above to “No, a classifier is never used in this type of nominal phrase”.</prompt>
 		
@@ -84,7 +84,7 @@
 		</EnglishExample>
 	   <introduction>Some languages may not use a participle to express similar meanings, but instead use a relative clause.</introduction>
 		<prompt><br/>Key how your language would express similar kinds of examples here:</prompt>
-		<textBox id="NPAdjPPartExample" dataItem="partExample"/>
+		<textBox id="NPAdjPPartExample" dataItem="partExample" cols="80"/>
 	   <radioGroup>
 	      <groupName dataItem="adjpPart" default="no" >RNPAdjPPart</groupName>
 	      <prompt>Does your language allow participles or participle phrases to act as adjectives modifying a noun?</prompt>

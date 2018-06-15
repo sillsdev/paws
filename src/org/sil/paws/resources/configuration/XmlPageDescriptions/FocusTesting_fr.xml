@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="FocusTesting" count="2/2">
+<page id="FocusTesting" count="16.2">
 	<title level="2">Focus and Topic Constructions - Testing</title>
 	<form section="focus">
 		<instruction>
@@ -20,7 +20,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="FocusTestingBack" value="Back" goto="FocusMain.xml"/>
-			<button id="FocusTestingNext" value="Next" goto="Contents_fr.htm"/>
+			<button id="FocusTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

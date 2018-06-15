@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPAux" count="1/2">
+<page id="IPAux" count="9.3.1">
     <title level="2">Phrases Simples – Auxiliaires</title>
     <introduction>Certaines langues ont des éléments auxiliaires qui sont des mots indépendants; d’autres peuvent prendre plus d’un seul élément auxiliaire avant le verbe principal. On donne des exemples en français pour les phrases transitives à un seul syntagme.</introduction>
     <EnglishExample>
@@ -12,7 +12,7 @@
     </EnglishExample>
     <form section="ip">
         <prompt>Pensez à d’autres exemples pareils de votre langue, et entrez-les ici:</prompt>
-        <textBox id="IPAuxExample" dataItem="auxExample" cols="50"/>
+        <textBox id="IPAuxExample" dataItem="auxExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup>
@@ -50,12 +50,14 @@
         <prompt id="IPAuxiliaryExamplePrompt" show="swAuxYes">Entrez ici les mot auxiliaires utilisés dans votre langue:</prompt>
         <textBox id="IPAuxiliaryExample" dataItem="auxiliaryExample" rows="5" show="swAuxYes"/>       
         <br/><br/>
+<instruction id="IPAuxYesCatMap" show="swAuxYes">The category of these auliliaries will be dealt with using the Category Mapper at the end of this section.</instruction>
+        <br/><br/>
         <introduction>Le mot non-fini <example>to</example> utilisé en anglais dans les propositions subordonnées fonctionne comme un auxiliaire, puisqu’il prend la même position et qu’il peut se mettre avant d’autres auxiliaires. Par exemple:</introduction>
         <EnglishExample>
             <exItem label="1.">The boy would like to have eaten the banana. (Le garçon aurait aimé avoir mangé la banane)</exItem>
             </EnglishExample>
         <prompt>Pensez à des phrases en votre langue qui ont des verbes non-finis ou bien dans le proposition principal ou bien dans le proposition subordonnée; entrez-les ici:</prompt>
-        <textBox id="IPAuxNonfiniteExample" dataItem="auxNonfiniteExample" cols="50"/>
+        <textBox id="IPAuxNonfiniteExample" dataItem="auxNonfiniteExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup>
@@ -104,7 +106,7 @@
             <radio id="IPAuxOtherYes" dataValue="yes">Oui</radio>
         </radioGroup>
         <prompt id="IPAuxOtherPrompt" show="swAuxOtherYes">Entrez ici des exemples de phrases qui comprennent ces autres types d’auxiliaires dans votre langue:</prompt>
-           <textBox id="IPAuxOtherExample" dataItem="auxOtherExample" cols="50" show="swAuxOtherYes"/>
+           <textBox id="IPAuxOtherExample" dataItem="auxOtherExample" cols="80" show="swAuxOtherYes"/>
            
            <radioGroup id="IPAuxOtherOrderTable" show="swIPAuxOrderVSOorOSVandAuxOtherYes">
                 <groupName dataItem="auxOtherOrder" default="no">RIPAuxOtherOrder</groupName>

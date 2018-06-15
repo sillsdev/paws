@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPPossessors" count="1/2">
+<page id="NPPossessors" count="5.4.1">
 	<title level="2">Nominal Phrases - Possessors</title>
 	<introduction>  
 	The next type of modifier to consider is <technicalTermRef term="ttPossessors"/>.  Possession can normally be expressed by a pronoun or by a nominal phrase which may consist of a proper name, a simple noun, or a fully modified noun.  However, Spanish only allows pronouns in the possessor position before the noun, with all noun and full nominal phrase possessors expressed in a prepositional phrase with <example>de</example> after the noun.<br/>
@@ -18,20 +18,20 @@
 	   <br/>
 	   <prompt>
             Key some examples of possessed nominal phrases with simple possessors here, including both pronominal and nominal phrase possessors:</prompt>
-		<textBox id="NPPossExample" dataItem="possessorExample" cols="50"/>
+		<textBox id="NPPossExample" dataItem="possessorExample" cols="80"/>
 	   <br/>
 	   <prompt>
 	   	Key some examples of possessed nominal prases with adpositional phrases as the possessor here, as in <example>that book of John's</example>, if allowed:</prompt>
-	   <textBox id="NPPossPPExample" dataItem="ppExample" cols="50"/>
+	   <textBox id="NPPossPPExample" dataItem="ppExample" cols="80"/>
 	   <br/>
 	   <prompt>Note also that possessors can be embedded in one another, as in <example>the boy’s sister’s dog</example>.  This is allowed in Spanish within the prepositional phrase after the noun.<br/><br/>
 	      Key some examples of possessed nominal phrases with embedded possessors here:</prompt>
-	   <textBox id="NPPossEmbeddedExample" dataItem="embeddedExample" cols="50"/>
+	   <textBox id="NPPossEmbeddedExample" dataItem="embeddedExample" cols="80"/>
 
 		<br/>
 		<prompt>
             Key some examples of possessed nominal phrases with relative clauses within the possessor here, included in simple full sentences:</prompt>
-		<textBox id="NPPossRelClExample" dataItem="relClExample" cols="50"/>
+		<textBox id="NPPossRelClExample" dataItem="relClExample" cols="80"/>
 	   <br/><br/>
 	   <radioGroup>
 	      <groupName dataItem="possNP" default="yes">RNPPossNP</groupName>
@@ -98,7 +98,7 @@
 				   <checkbox id="NPPossMarkedYesWordBefore" dataItem="possWordBefore">Before the possessor</checkbox>
 				   <checkbox id="NPPossMarkedYesWordAfter" dataItem="possWordAfter">After the possessor</checkbox>
 				   <checkbox id="NPPossMarkedYesWordBoth" dataItem="possWordBoth">On both sides of the possessor</checkbox>
-				   <checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">In my language, the possessive marker word may occur as follows: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" rows="2"/></checkbox>
+					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">In my language, the possessive marker word may occur as follows: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1"/></checkbox>
 				</checkboxGroup>
 	   <prompt id="NPPossMarkedYesWordAndNoCheckPrompt" show="swPossMarkedYesWordAndNoCheck">WARNING: You said above that possessors are marked with a possessive word, but you did not check any of the options as to where it occurs.  Please either check one or more options here as appropriate, or change the answer above to a different type pf marker or "No, there is no special marking".</prompt>
 	   

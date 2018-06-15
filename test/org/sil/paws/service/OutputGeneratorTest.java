@@ -91,7 +91,7 @@ public class OutputGeneratorTest {
 			assertNotNull(result);
 			Path resultPath = result.toPath();
 			assertEquals(true, Files.exists(resultPath));
-			assertEquals(142500, Files.size(resultPath));
+			assertEquals(222479, Files.size(resultPath));
 			Files.delete(resultPath);
 		} catch (Exception e1) {
 			e1.printStackTrace();

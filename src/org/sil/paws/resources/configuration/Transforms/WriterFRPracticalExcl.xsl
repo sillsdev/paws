@@ -358,7 +358,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>que</langData>
-<xsl:text> en français. suivis d’une syntagme adjectival et généralement ponctuée d’un point d’exclamation. Des exemples en français incluent: </xsl:text>
+<xsl:text> en français. suivis d’un syntagme adjectival et généralement ponctuée d’un point d’exclamation. Des exemples en français incluent: </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -375,7 +375,7 @@
 </xsl:attribute>Combien c’est merveilleux que ta famille puisse venir!</langData>
 </p>
    <p contentType="ctPracticalIntro">
-<xsl:text>Les exclamations consistent typiquement en un mot particulier suivis d’une syntagme adjectival et généralement ponctuée d’un point d’exclamation.</xsl:text>
+<xsl:text>Les exclamations consistent typiquement en un mot particulier suivis d’un syntagme adjectival et généralement ponctuée d’un point d’exclamation.</xsl:text>
 </p>  
    <xsl:if test="normalize-space(//excl/@exclM)='no'">
 <p>

@@ -3,15 +3,15 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="Case" count="2/3">
+<page id="Case" count="1.2">
    <title level="2">Questions Générales de Typologie – Système de Cas</title>
    <introduction>Nous devons maintenant déterminer pour votre langue le système de <technicalTermRef term="ttCase">cas</technicalTermRef> qu’elle emploie, si elle en emploie un. Pour commencer nous allons examiner des exemples où les noms et les pronoms figurent dans les positions de sujet et d’objet (nous traiterons les <technicalTermRef term="ttPossessors">possesseurs</technicalTermRef> plus tard).</introduction>
     <form section="typology">   
        <prompt>A la page précédente vous avez saisi les exemples suivants de phrases <technicalTermRef term="ttTransitive">transitifs</technicalTermRef> simples dans votre langue. Si vous  n’avez utilisé que des noms propres dans les positions de sujet et d’objet veuillez saisir des exemples supplémentaires utilisant des syntagmes nominaux simples. Veuillez n’entrez que des phrases qui ont un <technicalTermRef term="ttAgent">agent</technicalTermRef> comme sujet et qui ne montrent pas de changement de <technicalTermRef term="ttVoice">voix</technicalTermRef>.</prompt>
-        <textBox id="OTExample" dataItem="example" cols="50"/>
+        <textBox id="OTExample" dataItem="example" cols="80"/>
        <prompt>Regardez les exemples dans la boîte ci-dessus. Notez s’il existe des marqueurs avec les noms qui pourraient indiquer s’il s’agit d’un sujet ou d’un objet. (Les notes que vous faites en examinant les différents types d’exemples requis vous aideront à répondre aux questions qui suivent.<br/><br/>
           Maintenant entrez de pareils exemples de phrases transitives simples qui ont un sujet-agent; cette fois utilisez des pronoms dans les positions de sujet et d’objet. Essayez d’inclure des exemples avec les pronoms qui correspondent à « je, nous, vous, il, ils » dans la position du sujet, et les pronoms qui correspondent à « me, nous, vous, le, les » dans la position de l’objet.</prompt>
-        <textBox id="OTPnExample" dataItem="pnExample" cols="50"/>       
+        <textBox id="OTPnExample" dataItem="pnExample" cols="80"/>       
        <prompt>Regardez les exemples dans la boîte ci-dessus. Notez s’il y a une différence entre les pronoms sujets et les pronoms objets.
             </prompt>
        <br/>
@@ -19,24 +19,24 @@
           Dans quelques langues la distinction se fait voir seulement à la première personne du singulier (je). Exemples de ce genre de verbe transitif à sujet-expérienceur sont: paraître, voir, avoir peur, se trouver, vouloir et aimer.</introduction>     
        <br/><br/>  
        <prompt>Entrez ici des exemples de phrases à verbe transitif ayant un sujet-expérienceur, avec un syntagme nominal dans les positions du sujet et de l’objet:</prompt>
-       <textBox id="OTExperiencerExample" dataItem="experiencerExample" cols="50"/>
+       <textBox id="OTExperiencerExample" dataItem="experiencerExample" cols="80"/>
        <prompt>Regardez les exemples dans la boîte ci-dessus. Notez si les noms portent un marqueur qui indique s’il s’agit du sujet ou de l’objet. Si oui, est-ce que le marqueur est le même pour les sujets-expérienceurs que pour les sujets-agents? Par contre il se peut que le marqueur est le même pour les objets dans les exemples avec les sujets-agents ci-dessus; ou bien le marqueur pourrait être distinct.  <br/><br/>
           Maintenant entrez de pareils exemples de phrases transitives simples à sujet-expérienceur; cette fois utilisez des pronoms dans les positions de sujet et d’objet. Là encore, essayez d’inclure des exemples où les pronoms qui correspondent à « je, nous, vous, il, ils » se trouvent à la position du sujet, et les pronoms correspondants à « me, nous, vous, le, les » à la position de l’objet.</prompt>
-       <textBox id="OTExperiencerPnExample" dataItem="experiencerPnExample" cols="50"/>       
+       <textBox id="OTExperiencerPnExample" dataItem="experiencerPnExample" cols="80"/>       
        <prompt>Regardez les exemples dans la boîte ci-dessus. Encore une fois, notez si la série de pronoms sujets est différente de la série de pronoms objets. Ensuite, comparez les pronoms utilisés pour les sujets-expérienceurs avec les pronoms utilisés pour les sujets-agents ci-dessus; sont-ils différents? Si oui, est-ce que les pronoms utilisés pour les sujets-expérienceurs sont les même que les pronoms objets dans les exemples de sujet-agent  ci-dessus? Ou bien, s’agit-il d’une série distincte?</prompt>
            <br/>
        <prompt>Ensuite, nous allons examiner des données pareilles liées aux intransitifs. Entrez quelques exemples de phrases simples <technicalTermRef term="ttIntransitive">intransitifs</technicalTermRef>, où le syntagme nominal agent simple prend la position du sujet:</prompt>
-        <textBox id="OTIntExample" dataItem="intExample" cols="50"/>
+        <textBox id="OTIntExample" dataItem="intExample" cols="80"/>
        <prompt>Regardez les exemples dans la boîte ci-dessus. Notez si le nom porte un marqueur qui indique son rôle de sujet. Si oui – dans les exemples ci-dessus avec un sujet-agent –  est-ce que le marqueur est le même que celui du sujet ou de l’objet?<br/><br/>
           Maintenant entrez de pareils exemples de phrases intransitives simples à sujet-agent; cette fois, utilisez des pronoms dans la position du sujet. Essayez d’inclure des exemples avec les pronoms qui correspondent à « je, nous, vous, il, ils » à la position du sujet.</prompt>
-        <textBox id="OTIntPnExample" dataItem="pnIntExample" cols="50"/>
+        <textBox id="OTIntPnExample" dataItem="pnIntExample" cols="80"/>
        <prompt>Regardez les exemples dans la boîte ci-dessus. Vérifiez si le pronom est le même que celui de la série utilisé pour le sujet ou l’objet (ou les deux) dans les exemples transitifs avec des pronoms et un sujet-agent ci-dessus.</prompt>
        <br/>
        <prompt>Maintenant il faut identifier des différences avec les sujets-expérienceurs. Parmi les verbes intransitifs à sujet-expérienceur on compte: « rire », « pleurer » « être triste », « avoir peur » et « être fâché ». (les trois derniers sont des constructions copulatives munies d’un prédicat adjectival; dans certaines langues il s’agit plutôt de verbes). Entrez ici quelques exemples de phrases avec des verbes intransitifs qui ont un sujet-expérienceur, avec un syntagme nominal simple dans la position du sujet:</prompt>
-       <textBox id="OTExperiencerIntExample" dataItem="experiencerIntExample" cols="50"/>
+       <textBox id="OTExperiencerIntExample" dataItem="experiencerIntExample" cols="80"/>
        <prompt>Regardez les exemples dans la boîte ci-dessus. Notez si les noms portent un marqueur qui indique leur identité de sujet. Si oui, est-ce que le marqueur est le même pour les sujets-expérienceurs que pour les sujets-agents? Il se peut au contraire que le marqueur est le même que celui des objets dans les exemples transitifs avec sujets-agents ci-dessus, ou bien un marqueur distinct. <br/><br/>
           Maintenant, entrez quelques exemples pareils de phrases simples intransitives qui ont un sujet-expérienceur; cette fois utilisez des pronoms à la position du sujet. Essayez d’inclure des exemples qui ont les pronoms correspondants à « je, nous, vous, il, ils » dans la position sujet.</prompt>
-       <textBox id="OTExperiencerPnIntExample" dataItem="experiencerPnIntExample" cols="50"/>       
+       <textBox id="OTExperiencerPnIntExample" dataItem="experiencerPnIntExample" cols="80"/>       
        <prompt>Regardez les exemples dans la boîte ci-dessus. Comparez les pronoms qui correspondent au sujet-expérienceur avec ceux qu’on a utilisés en-dessus pour le sujet-agent. Sont-ils les mêmes  ou différents?  S’ils sont différents,  est-ce que les pronoms pour les sujets-expérienceurs correspondent aux pronoms objets dans les exemples transitifs au sujet-agent, ou s’agit-il d’une série distincte?</prompt>
  <br/>
        <introduction>Retenez ce que vous avez appris de ces exemples; veuillez lire les renseignements suivants sur les systèmes casuels – cela vous aidera à répondre aux questions sur le système casuel dans votre langue. </introduction>       
@@ -65,7 +65,7 @@
            <radio id="NPCaseSplit" checked="yes" dataValue="split">Ergativité dédoublée: d’habitude la langue utilise un système nominatif-accusatif, mais sous certaines conditions grammaticales la langue utilise le système ergatif-absolutif</radio>
         </radioGroup>
        <prompt id="NPCaseSplitPrompt" show="swNPCaseSplit">Le système casuel ergatif-absolutif s’emploie quand:</prompt>
-       <textBox id="NPCaseSplitConditions" dataItem="splitConditions" cols="50" rows="2" show="swNPCaseSplit"/>
+       <textBox id="NPCaseSplitConditions" dataItem="splitConditions" cols="70" rows="1" show="swNPCaseSplit"/>
  <br/><br/>
        <radioGroup id="NPCaseExperiencerTable" show="swNPCaseNotNone">
           <groupName dataItem="caseExperiencer" default="no">RNPCaseExperiencer</groupName>

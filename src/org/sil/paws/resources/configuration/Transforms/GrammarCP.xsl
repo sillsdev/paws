@@ -6,64 +6,81 @@
 <xsl:text>
 rule {CP option conj - conjoined CPs}
 CP = (InitConj) CP_1 Conj CP_2
-	&lt;CP head&gt; = &lt;CP_2 head&gt;
-	&lt;Conj head type conjoins_IP&gt; = +
-	&lt;CP conjoined&gt; = +
-	&lt;CP_1 conjoined&gt; = -	|limit recursion
-	&lt;CP head type prefix&gt; &lt;= &lt;CP_1 head type prefix&gt;
-	&lt;CP option&gt; = conj
+          &lt;CP head&gt; = &lt;CP_2 head&gt;
+          &lt;Conj head type conjoins_IP&gt; = +
+          &lt;Conj head type comparative&gt; = -
+          &lt;Conj head type compareAdj&gt; = -
+          &lt;Conj head type compareN&gt; = -
+          &lt;CP_1 head type verbheaded&gt; = +
+          &lt;CP_2 head type verbheaded&gt; = +
+          &lt;CP conjoined&gt; = +
+          &lt;CP_1 conjoined&gt; = -  |limit recursion
+          &lt;CP head type prefix&gt; &lt;= &lt;CP_1 head type prefix&gt;
+          &lt;CP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = conj
 </xsl:text>
 </xsl:if>
    
       
    
-   <xsl:if test="normalize-space(//coord/@conjWord)!='yes' and normalize-space(//coord/proclitic/@checked)='yes'">
+<xsl:if test="normalize-space(//coord/@conjWord)!='yes' and normalize-space(//coord/proclitic/@checked)='yes'">
 <xsl:text>
-      rule {CP option conjPrefix - conjoined CPs}
-      CP = CP_1  CP_2
-      &lt;CP head&gt; = &lt;CP_2 head&gt;
-      &lt;CP conjoined&gt; = +
-      &lt;CP_1 conjoined&gt; = -	|limit recursion
-      &lt;CP_2 head type prefix conj&gt; = +
-      &lt;CP head type prefix&gt; &lt;= &lt;CP_1 head type prefix&gt;
-      &lt;CP option&gt; = conjPrefix
-   </xsl:text>
+rule {CP option conjPrefix - conjoined CPs}
+CP = CP_1  CP_2
+          &lt;CP head&gt; = &lt;CP_2 head&gt;
+          &lt;CP conjoined&gt; = +
+          &lt;CP_1 conjoined&gt; = -  |limit recursion
+          &lt;CP_2 head type prefix conj&gt; = +
+          &lt;CP head type prefix&gt; &lt;= &lt;CP_1 head type prefix&gt;
+          &lt;CP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = conjPrefix
+</xsl:text>
 </xsl:if>
    
       
       
       
    
-   <xsl:if test="normalize-space(//coord/@conjWord)!='yes' and normalize-space(//coord/enclitic/@checked)='yes'">
+<xsl:if test="normalize-space(//coord/@conjWord)!='yes' and normalize-space(//coord/enclitic/@checked)='yes'">
 <xsl:text>
-      rule {CP option conjSuffix - conjoined CPs}
-      CP = CP_1  CP_2
-      &lt;CP head&gt; = &lt;CP_2 head&gt;
-      &lt;CP conjoined&gt; = +
-      &lt;CP_1 conjoined&gt; = -	|limit recursion
-      &lt;CP_1 head type suffix conj&gt; = +
-      &lt;CP head type prefix&gt; &lt;= &lt;CP_1 head type prefix&gt;
-      &lt;CP option&gt; = conjSuffix
-   </xsl:text>
+rule {CP option conjSuffix - conjoined CPs}
+CP = CP_1  CP_2
+          &lt;CP head&gt; = &lt;CP_2 head&gt;
+          &lt;CP conjoined&gt; = +
+          &lt;CP_1 conjoined&gt; = -  |limit recursion
+          &lt;CP_1 head type suffix conj&gt; = +
+          &lt;CP head type prefix&gt; &lt;= &lt;CP_1 head type prefix&gt;
+          &lt;CP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = conjSuffix
+</xsl:text>
 </xsl:if>
    
       
       
       
    
-   <xsl:if test="normalize-space(//coord/@conjWord)!='yes' and normalize-space(//coord/attachesOther/@checked)='yes' or normalize-space(//coord/@noConj)='yes'">
+<xsl:if test="normalize-space(//coord/@conjWord)!='yes' and normalize-space(//coord/attachesOther/@checked)='yes' or normalize-space(//coord/@noConj)='yes'">
 <xsl:text>
-      rule {CP option conjNone - conjoined CPs}
-      CP = CP_1  CP_2
-      &lt;CP head&gt; = &lt;CP_2 head&gt;
-      &lt;CP conjoined&gt; = +
-      &lt;CP_1 conjoined&gt; = -	|limit recursion
-      &lt;CP_2 head type prefix conj&gt; = -
-      &lt;CP_1 head type suffix conj&gt; = -
-      &lt;CP_1 head type comma&gt; = -
-      &lt;CP head type prefix&gt; &lt;= &lt;CP_1 head type prefix&gt;
-      &lt;CP option&gt; = conjNone
-   </xsl:text>
+rule {CP option conjNone - conjoined CPs}
+CP = CP_1  CP_2
+          &lt;CP head&gt; = &lt;CP_2 head&gt;
+          &lt;CP conjoined&gt; = +
+          &lt;CP_1 conjoined&gt; = -  |limit recursion
+          &lt;CP_2 head type prefix conj&gt; = -
+          &lt;CP_1 head type suffix conj&gt; = -
+          &lt;CP_1 head type comma&gt; = -
+          &lt;CP head type prefix&gt; &lt;= &lt;CP_1 head type prefix&gt;
+          &lt;CP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = conjNone
+</xsl:text>
 </xsl:if>
    
       
@@ -72,17 +89,17 @@ CP = (InitConj) CP_1 Conj CP_2
        
        
    
-   
-    <xsl:if test="normalize-space(//q/@mainYN)!='no' and normalize-space(//q/@mainYNWord)!='no' or normalize-space(//q/@mainCont)!='no' and normalize-space(//q/@mainContWord)!='no'">
+    
+<xsl:if test="normalize-space(//q/@mainYN)!='no' and normalize-space(//q/@mainYNWord)!='no' or normalize-space(//q/@mainCont)!='no' and normalize-space(//q/@mainContWord)!='no'">
 <xsl:text>
 rule {CP option 1 - no fronting, root}
 CP = C'
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root &gt; = +
-	&lt;C' head type vacuous&gt; = -		
-	&lt;C' head type relative&gt; = -
-	&lt;C' head fronted&gt; = none
-	&lt;CP option&gt; = 1
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root &gt; = +
+          &lt;C' head type vacuous&gt; = -    
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = none
+          &lt;CP option&gt; = 1
 </xsl:text>
 </xsl:if>
     
@@ -94,153 +111,196 @@ CP = C'
         
         
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='no'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOAfterWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 2a - DP specifier initial, wh, root}
 CP = DP C'
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root&gt; = +
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head fronted&gt; = &lt;DP&gt;
-	&lt;DP head type wh&gt; = +
-	&lt;DP head type suffix poss&gt; = -         | only in possessor position
-	&lt;DP head type prefix poss&gt; = -
-	&lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
-	&lt;DP head type suffix copular&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;CP option&gt; = 2a
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type YNQ&gt; = -
+          &lt;C' head type suffix YNQ&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = &lt;DP&gt;
+          &lt;DP head type wh&gt; = +
+          &lt;DP head type suffix poss&gt; = -         | only in possessor position
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
+          &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;CP option&gt; = 2a
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
+        
+        
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='no'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOAfterWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 2b - PP specifier initial, wh, root}
 CP = PP C'
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root&gt; = +
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head fronted&gt; = &lt;PP&gt;
-	&lt;PP head type wh&gt; = +
-	&lt;PP head type suffix poss&gt; = -         | only in possessor position
-	&lt;PP head type prefix poss&gt; = -
-	&lt;PP head type comma&gt; = -
-	&lt;CP option&gt; = 2b
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type YNQ&gt; = -
+          &lt;C' head type suffix YNQ&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = &lt;PP&gt;
+          &lt;PP head type wh&gt; = +
+          &lt;PP head type suffix poss&gt; = -         | only in possessor position
+          &lt;PP head type prefix poss&gt; = -
+          &lt;PP head type comma&gt; = -
+          &lt;CP option&gt; = 2b
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
+        
+        
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='no'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOAfterWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 2c - AdvP specifier initial, wh, root}
 CP = AdvP C'
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root&gt; = +
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head fronted&gt; = &lt;AdvP&gt;
-	&lt;AdvP head type wh&gt; = +
-	&lt;AdvP head type comma&gt; = -
-	&lt;CP option&gt; = 2c
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type YNQ&gt; = -
+          &lt;C' head type suffix YNQ&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = &lt;AdvP&gt;
+          &lt;AdvP head type wh&gt; = +
+          &lt;AdvP head type comma&gt; = -
+          &lt;CP option&gt; = 2c
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
+        
+        
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='yes'">
+<xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 2d - C, DP specifier initial, wh, root}
 CP = C DP IP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type root&gt; = +
-	&lt;IP head type question&gt; = +
-	&lt;C head type question&gt; = +
-	&lt;C head type wh&gt; = +
-	&lt;C head type CP-specifier-initial&gt; = + 
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;DP&gt;
-	&lt;DP head type wh&gt; = +
-	&lt;DP head type suffix poss&gt; = -         | only in possessor position
-	&lt;DP head type prefix poss&gt; = -
-	&lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
-	&lt;DP head type suffix copular&gt; = -
-	&lt;C head type comma&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;CP option&gt; = 2d
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;IP head type root&gt; = +
+          &lt;IP head type question&gt; = +
+          &lt;C head type question&gt; = +
+          &lt;C head type wh&gt; = +
+          &lt;C head type CP-specifier-initial&gt; = + 
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type YNQ&gt; = -
+          &lt;IP head type suffix YNQ&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head fronted&gt; = &lt;DP&gt;
+          &lt;DP head type wh&gt; = +
+          &lt;DP head type suffix poss&gt; = -         | only in possessor position
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
+          &lt;DP head type suffix copular&gt; = -
+          &lt;C head type comma&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;CP option&gt; = 2d
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='yes'">
+<xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 2e - C, PP specifier initial, wh, root}
 CP = C PP IP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type root&gt; = +
-	&lt;IP head type question&gt; = +
-	&lt;C head type question&gt; = +
-	&lt;C head type wh&gt; = +
-	&lt;C head type CP-specifier-initial&gt; = + 
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;PP&gt;
-	&lt;PP head type wh&gt; = +
-	&lt;PP head type suffix poss&gt; = -         | only in possessor position
-	&lt;PP head type prefix poss&gt; = -
-	&lt;C head type comma&gt; = -
-	&lt;PP head type comma&gt; = -
-	&lt;CP option&gt; = 2e
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;IP head type root&gt; = +
+          &lt;IP head type question&gt; = +
+          &lt;C head type question&gt; = +
+          &lt;C head type wh&gt; = +
+          &lt;C head type CP-specifier-initial&gt; = + 
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type YNQ&gt; = -
+          &lt;IP head type suffix YNQ&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head fronted&gt; = &lt;PP&gt;
+          &lt;PP head type wh&gt; = +
+          &lt;PP head type suffix poss&gt; = -         | only in possessor position
+          &lt;PP head type prefix poss&gt; = -
+          &lt;C head type comma&gt; = -
+          &lt;PP head type comma&gt; = -
+          &lt;CP option&gt; = 2e
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='yes'">
+<xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/mainContVSOBeforeWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 2f - C, AdvP specifier initial, wh, root}
 CP = C AdvP IP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type root&gt; = +
-	&lt;IP head type question&gt; = +
-	&lt;C head type question&gt; = +
-	&lt;C head type wh&gt; = +
-	&lt;C head type CP-specifier-initial&gt; = + 
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;AdvP&gt;
-	&lt;AdvP head type wh&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;AdvP head type comma&gt; = -
-	&lt;CP option&gt; = 2f
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;IP head type root&gt; = +
+          &lt;IP head type question&gt; = +
+          &lt;C head type question&gt; = +
+          &lt;C head type wh&gt; = +
+          &lt;C head type CP-specifier-initial&gt; = + 
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type YNQ&gt; = -
+          &lt;IP head type suffix YNQ&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head fronted&gt; = &lt;AdvP&gt;
+          &lt;AdvP head type wh&gt; = +
+          &lt;AdvP head type existential&gt; = -
+          &lt;C head type comma&gt; = -
+          &lt;AdvP head type comma&gt; = -
+          &lt;CP option&gt; = 2f
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
     
-    <xsl:if test="normalize-space(//q/@embYN)!='no' and normalize-space(//q/@embYNWord)!='no' or normalize-space(//q/@embCont)!='no' and normalize-space(//q/@embContWord)!='no' or normalize-space(//comp/@comp)='yes' or normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' or normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' or normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='no' and normalize-space(//relcl/@relWord)!='no'">
+<xsl:if test="normalize-space(//q/@embYN)!='no' and normalize-space(//q/@embYNWord)!='no' or normalize-space(//q/@embCont)!='no' and normalize-space(//q/@embContWord)!='no' or normalize-space(//comp/@comp)='yes' or normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' or normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' or normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='no' and normalize-space(//relcl/@relWord)!='no'">
 <xsl:text>
 rule {CP option 3 - no fronting, non-root}
 CP = C'
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root &gt; = -
-	&lt;C' head type vacuous&gt; = -		| to avoid empty CP
-	&lt;C' head fronted cat&gt; = none
-	&lt;CP option&gt; = 3
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root &gt; = -
+          &lt;C' head type vacuous&gt; = -    | to avoid empty CP
+         {&lt;C' head fronted&gt; = none
+         /&lt;C' head fronted cat&gt; = DP
+          &lt;CP head type relative&gt; = +
+         }
+          &lt;CP option&gt; = 3
 </xsl:text>
 </xsl:if>
     
@@ -268,23 +328,58 @@ CP = C'
         
         
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='no'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOAfterWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 4a - DP specifier initial, wh, non-root}
 CP = DP C' 
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C' head type wh&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head fronted&gt; = &lt;DP&gt;
-	&lt;DP head type wh&gt; = +
-	&lt;DP head type suffix poss&gt; = -         | only in possessor position
-	&lt;DP head type prefix poss&gt; = -
-	&lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
-	&lt;DP head type suffix copular&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;CP option&gt; = 4a
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type YNQ&gt; = -
+          &lt;C' head type suffix YNQ&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = &lt;DP&gt;
+          &lt;DP head type wh&gt; = +
+          &lt;DP head type suffix poss&gt; = -         | only in possessor position
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
+          &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;CP option&gt; = 4a
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//pron/pronIndefTypeQNone/@checked)!='no' or normalize-space(//pron/pronIndefTypeIntNone/@checked)!='no'">
+<xsl:text>
+rule {CP option 4aIndef - DP indefinite initial, non-root}
+CP = DP C'
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head fronted&gt; = &lt;DP&gt;
+          &lt;C' head type question&gt; = -
+          &lt;C' head type YNQ&gt; = -
+          &lt;C' head type suffix YNQ&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;DP head type definite&gt; = -
+          &lt;DP head type pronoun&gt; = +
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type suffix poss&gt; = -         | only in possessor position
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
+          &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;CP head type definite&gt; &lt;= -
+          &lt;CP option&gt; = 4aIndef
 </xsl:text>
 </xsl:if>
     
@@ -292,179 +387,223 @@ CP = DP C'
         
         
     
-    <xsl:if test="normalize-space(//relcl/relTypeCPWh/@checked)='yes'">
+<xsl:if test="normalize-space(//relcl/relTypeCPWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 4arel - DP specifier initial, wh, relative clause}
 CP = DP C'
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type relative&gt; = +
-	&lt;C' head type wh&gt; = +
-	&lt;C' head fronted&gt; = &lt;DP&gt;
-	&lt;DP head type wh&gt; = +
-	&lt;DP head type relative&gt; = +
-	&lt;DP head type suffix poss&gt; = -         | only in possessor position
-	&lt;DP head type prefix poss&gt; = -
-	&lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
-	&lt;DP head type suffix copular&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;CP option&gt; = 4arel
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head fronted&gt; = &lt;DP&gt;
+          &lt;C head type question&gt; = -
+          &lt;DP head type wh&gt; = +
+          &lt;DP head type suffix poss&gt; = -         | only in possessor position
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
+          &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;CP head type relative&gt; &lt;= +
+          &lt;CP head type wh&gt; &lt;= +
+          &lt;CP option&gt; = 4arel
 </xsl:text>
 </xsl:if>
     
         
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='no'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOAfterWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 4b - PP specifier initial, wh, non-root}
 CP = PP C'
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C' head fronted&gt; = &lt;PP&gt;
-	&lt;C' head type relative&gt; = -
-	&lt;PP head type wh&gt; = +
-	&lt;PP head type suffix poss&gt; = -         | only in possessor position
-	&lt;PP head type prefix poss&gt; = -
-	&lt;PP head type comma&gt; = -
-	&lt;CP option&gt; = 4b
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head fronted&gt; = &lt;PP&gt;
+          &lt;C' head type YNQ&gt; = -
+          &lt;C' head type suffix YNQ&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;PP head type wh&gt; = +
+          &lt;PP head type suffix poss&gt; = -         | only in possessor position
+          &lt;PP head type prefix poss&gt; = -
+          &lt;PP head type comma&gt; = -
+          &lt;CP option&gt; = 4b
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
+        
+        
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='no'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOAfterWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 4c - AdvP specifier initial, wh, non-root}
 CP = AdvP C'
-	&lt;CP head&gt; = &lt;C' head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head fronted&gt; = &lt;AdvP&gt;
-	&lt;AdvP head type wh&gt; = +
-	&lt;AdvP head type comma&gt; = -
-	&lt;CP option&gt; = 4c
+          &lt;CP head&gt; = &lt;C' head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type YNQ&gt; = -
+          &lt;C' head type suffix YNQ&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = &lt;AdvP&gt;
+          &lt;AdvP head type wh&gt; = +
+          &lt;AdvP head type comma&gt; = -
+          &lt;CP option&gt; = 4c
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
+        
+        
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='yes'">
+<xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 4d - C, DP specifier initial, wh, non-root}
 CP = C DP IP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type root&gt; = -
-	&lt;IP head type question&gt; = +
-	&lt;C head type question&gt; = +
-	&lt;C head type wh&gt; = +
-	&lt;C head type CP-specifier-initial&gt; = + 
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;DP&gt;
-	&lt;DP head type wh&gt; = +
-	&lt;DP head type suffix poss&gt; = -         | only in possessor position
-	&lt;DP head type prefix poss&gt; = -
-	&lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
-	&lt;DP head type suffix copular&gt; = -
-	&lt;C head type comma&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;CP option&gt; = 4d
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;IP head type root&gt; = -
+          &lt;IP head type question&gt; = +
+          &lt;C head type question&gt; = +
+          &lt;C head type wh&gt; = +
+          &lt;C head type CP-specifier-initial&gt; = + 
+          &lt;IP head type YNQ&gt; = -
+          &lt;IP head type suffix YNQ&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head fronted&gt; = &lt;DP&gt;
+          &lt;DP head type wh&gt; = +
+          &lt;DP head type suffix poss&gt; = -         | only in possessor position
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type prefix copular&gt; = -      | only in no V/Aux copulars
+          &lt;DP head type suffix copular&gt; = -
+          &lt;C head type comma&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;CP option&gt; = 4d
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='yes'">
+<xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 4e - C, PP specifier initial, wh, non-root}
 CP = C PP IP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type root&gt; = -
-	&lt;IP head type question&gt; = +
-	&lt;C head type question&gt; = +
-	&lt;C head type wh&gt; = +
-	&lt;C head type CP-specifier-initial&gt; = + 
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;PP&gt;
-	&lt;PP head type wh&gt; = +
-	&lt;PP head type suffix poss&gt; = -         | only in possessor position
-	&lt;PP head type prefix poss&gt; = -
-	&lt;C head type comma&gt; = -
-	&lt;PP head type comma&gt; = -
-	&lt;CP option&gt; = 4e
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;IP head type root&gt; = -
+          &lt;IP head type question&gt; = +
+          &lt;C head type question&gt; = +
+          &lt;C head type wh&gt; = +
+          &lt;C head type CP-specifier-initial&gt; = + 
+          &lt;IP head type YNQ&gt; = -
+          &lt;IP head type suffix YNQ&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head fronted&gt; = &lt;PP&gt;
+          &lt;PP head type wh&gt; = +
+          &lt;PP head type suffix poss&gt; = -         | only in possessor position
+          &lt;PP head type prefix poss&gt; = -
+          &lt;C head type comma&gt; = -
+          &lt;PP head type comma&gt; = -
+          &lt;CP option&gt; = 4e
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='yes'">
+<xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//q/embContVSOBeforeWh/@checked)='yes'">
 <xsl:text>
 rule {CP option 4f - C, AdvP specifier initial, wh, non-root}
 CP = C AdvP IP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type root&gt; = -
-	&lt;IP head type question&gt; = +
-	&lt;C head type question&gt; = +
-	&lt;C head type wh&gt; = +
-	&lt;C head type CP-specifier-initial&gt; = + 
-	&lt;IP head type relative&gt; = -
-	&lt;C' head fronted&gt; = &lt;AdvP&gt;
-	&lt;AdvP head type wh&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;AdvP head type comma&gt; = -
-	&lt;CP option&gt; = 4f
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;IP head type root&gt; = -
+          &lt;IP head type question&gt; = +
+          &lt;C head type question&gt; = +
+          &lt;C head type wh&gt; = +
+          &lt;C head type CP-specifier-initial&gt; = + 
+          &lt;IP head type YNQ&gt; = -
+          &lt;IP head type suffix YNQ&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;C head fronted&gt; = &lt;AdvP&gt;
+          &lt;AdvP head type wh&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;AdvP head type comma&gt; = -
+          &lt;CP option&gt; = 4f
 </xsl:text>
 </xsl:if>
     
         
         
         
+        
+        
     
-    <xsl:if test="normalize-space(//neg/@negFront)='yes' or normalize-space(//neg/@negFront)='optional'">
+    
+<xsl:if test="normalize-space(//neg/@type)='concord' and normalize-space(//neg/@negFront)='yes' or normalize-space(//neg/@type)='concord' and normalize-space(//neg/@negFront)='optional'">
 <xsl:text>
 rule {CP option Neg - DP or AdvP specifier initial, negative, fronted}
 CP = {DP / AdvP} IP 
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type question&gt; = -
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;DP&gt;
-	&lt;IP head fronted&gt; = &lt;AdvP&gt;
-	&lt;DP head infl polarity&gt; =  negative
-	&lt;AdvP head infl polarity&gt; =  negative
-	&lt;IP head infl polarity&gt; &lt;= &lt;DP head infl polarity&gt;
-	&lt;IP head infl polarity&gt; &lt;= &lt;AdvP head infl polarity&gt;
-	&lt;AdvP head type comma&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;CP option&gt; = Neg
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;IP head type question&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head fronted&gt; = &lt;DP&gt;
+          &lt;IP head fronted&gt; = &lt;AdvP&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;DP head infl polarity&gt; =  negative
+          &lt;AdvP head infl polarity&gt; =  negative
+          &lt;AdvP head type existential&gt; =  -
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;CP head infl polarity&gt; &lt;= negative
+          &lt;AdvP head type comma&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;CP option&gt; = Neg
 </xsl:text>
 </xsl:if>
     
+        
+        
+        
+        
         
         
         
     
 
-    <xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='before'">
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='before'">
 <xsl:text>
-rule {CP option FocusInit - FocusP initial}
+rule {CP option FocusInitSubj - FocusP initial for subjects}
 CP = FocusP IP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type question&gt; = -
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;FocusP&gt;
-	&lt;IP head type pro-drop&gt; = -
-	&lt;FocusP head type comma&gt; = -
-	&lt;FocusP head&gt; == [type:[focusmarked:-]] -&gt; ~[case:nominative]  | subject in place, not focused, unless focusmarked
-	&lt;CP option&gt; = FocusInit
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;CP head type root&gt; = +
+          &lt;IP head type question&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type subject_focused&gt; = +
+          &lt;IP head type pro-drop&gt; = -
+          &lt;FocusP head type comma&gt; = -
+          &lt;FocusP head type focusmarked&gt; = +  | subject in place, not focused, unless focusmarked
+          &lt;IP head object&gt; == ~[cat:FocusP] 
+          &lt;IP head indirectobject&gt; == ~[cat:FocusP] 
+          &lt;CP option&gt; = FocusInitSubj
 </xsl:text>
 </xsl:if>
     
@@ -472,28 +611,51 @@ CP = FocusP IP
         
         
     
-    <xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='before' and normalize-space(//ip/proDrop/@checked)='yes' or normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='before' and normalize-space(//ip/proDropClitic/@checked)='yes'">
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='before'">
+<xsl:text>
+rule {CP option FocusInit - FocusP initial, non-subjects}
+CP = FocusP IP
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;CP head type root&gt; = +
+          &lt;IP head type question&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type subject_focused&gt; = -
+          &lt;IP head fronted&gt; = &lt;FocusP&gt;
+          &lt;IP head type pro-drop&gt; = -
+          &lt;FocusP head type comma&gt; = -
+          &lt;CP option&gt; = FocusInit
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+    
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='before' and normalize-space(//ip/proDrop/@checked)='yes' or normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='before' and normalize-space(//ip/proDropClitic/@checked)='yes'">
 <xsl:text>
 rule {CP option FocusInitPro - FocusP initial, with pro-drop}
 CP = FocusP IP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type question&gt; = -
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;FocusP&gt;
-	&lt;IP head type pro-drop&gt; = +
-	&lt;FocusP head type comma&gt; = -
-	&lt;FocusP head&gt; == ~[case:nominative]  | subject pro-dropped, not focused
-	&lt;CP head&gt; == [fronted:[head:[agr:[person:first]]]] -&gt; ~[subject:[head:[agr:[person:first]]]]
-	&lt;CP head&gt; == [fronted:[head:[agr:[person:second]]]] -&gt; ~[subject:[head:[agr:[person:second]]]]
-	&lt;CP option&gt; = FocusInitPro
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;CP head type root&gt; = +
+          &lt;IP head type question&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head fronted&gt; = &lt;FocusP&gt;
+          &lt;IP head type pro-drop&gt; = +
+          &lt;FocusP head type comma&gt; = -
+          &lt;FocusP head&gt; == ~[case:nominative]  | subject pro-dropped, not focused
+          &lt;CP head&gt; == [fronted:[head:[agr:[person:first]]]] -&gt; ~[subject:[head:[agr:[person:first]]]]
+          &lt;CP head&gt; == [fronted:[head:[agr:[person:second]]]] -&gt; ~[subject:[head:[agr:[person:second]]]]
+         &lt;CP option&gt; = FocusInitPro
 </xsl:text>
 </xsl:if>
     
         
         
         
-	
-	
+  
+  
         
         
         
@@ -501,19 +663,23 @@ CP = FocusP IP
         
         
     
-    <xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='after'">
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='after'">
 <xsl:text>
-rule {CP option FocusFin - FocusP final}
+rule {CP option FocusFinSubj - FocusP final for subjects}
 CP = IP FocusP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type question&gt; = -
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;FocusP&gt;
-	&lt;IP head type pro-drop&gt; = -
-	&lt;IP head type comma&gt; = -
-	&lt;CP head type comma&gt; &lt;= &lt;FocusP head type comma&gt;
-	&lt;FocusP head&gt; == [type:[focusmarked:-]] -&gt; ~[case:nominative]  | subject in place, not focused, unless focusmarked
-	&lt;CP option&gt; = FocusFin
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;CP head type root&gt; = +
+          &lt;IP head type question&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type subject_focused&gt; = +
+          &lt;IP head type pro-drop&gt; = -
+          &lt;IP head type comma&gt; = -
+          &lt;CP head type comma&gt; &lt;= &lt;FocusP head type comma&gt;
+          &lt;FocusP head type focusmarked&gt; = +  | subject in place, not focused, unless focusmarked
+          &lt;IP head object&gt; == ~[cat:FocusP] 
+          &lt;IP head indirectobject&gt; == ~[cat:FocusP] 
+          &lt;CP option&gt; = FocusFinSubj
 </xsl:text>
 </xsl:if>
     
@@ -521,20 +687,44 @@ CP = IP FocusP
         
         
     
-    <xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='after' and normalize-space(//ip/proDrop/@checked)='yes' or normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='after' and normalize-space(//ip/proDropClitic/@checked)='yes'">
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='after'">
+<xsl:text>
+rule {CP option FocusFin - FocusP final, non-subjects}
+CP = IP FocusP
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;CP head type root&gt; = +
+          &lt;IP head type question&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head type subject_focused&gt; = -
+          &lt;IP head fronted&gt; = &lt;FocusP&gt;
+          &lt;IP head type pro-drop&gt; = -
+          &lt;IP head type comma&gt; = -
+          &lt;CP head type comma&gt; &lt;= &lt;FocusP head type comma&gt;
+          &lt;CP option&gt; = FocusFin
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+    
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='after' and normalize-space(//ip/proDrop/@checked)='yes' or normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusPos)='after' and normalize-space(//ip/proDropClitic/@checked)='yes'">
 <xsl:text>
 rule {CP option FocusFinPro - FocusP final, with pro-drop}
 CP =  IP FocusP
-	&lt;CP head&gt; = &lt;IP head&gt;
-	&lt;IP head type question&gt; = -
-	&lt;IP head type relative&gt; = -
-	&lt;IP head fronted&gt; = &lt;FocusP&gt;
-	&lt;IP head type pro-drop&gt; = +
-	&lt;IP head type comma&gt; = -
-	&lt;CP head type comma&gt; &lt;= &lt;FocusP head type comma&gt;
-	&lt;CP head&gt; == [fronted:[head:[agr:[person:first]]]] -&gt; ~[subject:[head:[agr:[person:first]]]]
-	&lt;CP head&gt; == [fronted:[head:[agr:[person:second]]]] -&gt; ~[subject:[head:[agr:[person:second]]]]
-	&lt;CP option&gt; = FocusFinPro
+          &lt;CP head&gt; = &lt;IP head&gt;
+          &lt;CP head type root&gt; = +
+          &lt;IP head type question&gt; = -
+          &lt;IP head type relative&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;IP head fronted&gt; = &lt;FocusP&gt;
+          &lt;IP head type pro-drop&gt; = +
+          &lt;IP head type comma&gt; = -
+          &lt;CP head type comma&gt; &lt;= &lt;FocusP head type comma&gt;
+          &lt;CP head&gt; == [fronted:[head:[agr:[person:first]]]] -&gt; ~[subject:[head:[agr:[person:first]]]]
+          &lt;CP head&gt; == [fronted:[head:[agr:[person:second]]]] -&gt; ~[subject:[head:[agr:[person:second]]]]
+          &lt;CP option&gt; = FocusFinPro
 </xsl:text>
 </xsl:if>
     
@@ -552,15 +742,1126 @@ CP =  IP FocusP
     
 
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@mainCont)='no' or normalize-space(//q/@contFront)='before' and normalize-space(//q/@mainCont)!='no' and normalize-space(//q/@mainContRequired)='no'">
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
+<xsl:text>
+rule {CP option 6a - Conditional word before, Conseq word before}
+CP = Cond IP_1 Conseq IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head infl mood&gt; = conditional
+          &lt;Cond head type comma&gt; = -
+          &lt;Conseq head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6a
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
+<xsl:text>
+rule {CP option 6aF - Conditional word before, Conseq word after}
+CP = Cond IP_1 IP_2 Conseq
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head infl mood&gt; = conditional
+          &lt;Cond head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6aF
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
+<xsl:text>
+rule {CP option 6aNoConseq - Conditional word before, no Conseq word}
+CP = Cond IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head infl mood&gt; = conditional
+          &lt;Cond head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6aNoConseq
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
+<xsl:text>
+rule {CP option 6b - Conditional word after, Conseq word before}
+CP = IP_1 Cond Conseq IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head infl mood&gt; = conditional
+          &lt;Cond head type comma&gt; = +
+          &lt;Conseq head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6b
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
+<xsl:text>
+rule {CP option 6bF - Conditional word after, Conseq word after}
+CP = IP_1 Cond IP_2 Conseq
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head infl mood&gt; = conditional
+          &lt;Cond head type comma&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6bF
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
+<xsl:text>
+rule {CP option 6bNoConseq - Conditional word after, no Conseq word}
+CP = IP_1 Cond IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head infl mood&gt; = conditional
+          &lt;Cond head type comma&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6bNoConseq
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
+<xsl:text>
+rule {CP option 6c - Conditional word both sides, Conseq word before}
+CP = Cond_1 IP_1 Cond_2 Conseq IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond_1 head infl mood&gt; = conditional
+          &lt;Cond_2 head infl mood&gt; = conditional
+          &lt;Cond_1 head type comma&gt; = -
+          &lt;Cond_2 head type comma&gt; = +
+          &lt;Conseq head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6c
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
+<xsl:text>
+rule {CP option 6cF - Conditional word both sides, Conseq word after}
+CP = Cond_1 IP_1 Cond_2  IP_2 Conseq
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond_1 head infl mood&gt; = conditional
+          &lt;Cond_2 head infl mood&gt; = conditional
+          &lt;Cond_1 head type comma&gt; = -
+          &lt;Cond_2 head type comma&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6cF
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
+<xsl:text>
+rule {CP option 6cNoConseq - Conditional word both sides, no Conseq word}
+CP = Cond_1 IP_1 Cond_2 IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond_1 head infl mood&gt; = conditional
+          &lt;Cond_2 head infl mood&gt; = conditional
+          &lt;Cond_1 head type comma&gt; = -
+          &lt;Cond_2 head type comma&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6cNoConseq
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+ 
+<xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
+<xsl:text>
+rule {CP option 6d - Conditional proclitic, Conseq word before}
+CP = IP_1 Conseq IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_1 head infl mood&gt; = conditional
+          &lt;IP_1 head type prefix conditional&gt; = +
+          &lt;Conseq head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6d
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
+<xsl:text>
+rule {CP option 6dF - Conditional proclitic, Conseq word after}
+CP = IP_1 IP_2 Conseq
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_1 head infl mood&gt; = conditional
+          &lt;IP_1 head type prefix conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6dF
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
+<xsl:text>
+rule {CP option 6dNoConseq - Conditional proclitic, no Conseq word}
+CP = IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_1 head infl mood&gt; = conditional
+          &lt;IP_1 head type prefix conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6dNoConseq
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
+<xsl:text>
+rule {CP option 6e - Conditional enclitic, Conseq word before}
+CP = IP_1 Conseq IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_1 head infl mood&gt; = conditional
+          &lt;IP_1 head type suffix conditional&gt; = +
+          &lt;Conseq head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6e
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
+<xsl:text>
+rule {CP option 6eF - Conditional enclitic, Conseq word after}
+CP = IP_1 IP_2 Conseq
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_1 head infl mood&gt; = conditional
+          &lt;IP_1 head type suffix conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6eF
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
+<xsl:text>
+rule {CP option 6eNoConseq - Conditional enclitic, no Conseq word}
+CP = IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_1 head infl mood&gt; = conditional
+          &lt;IP_1 head type suffix conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6eNoConseq
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBefore/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBefore/@checked)='yes'">
+<xsl:text>
+rule {CP option 6f - Consequence first, Conditional word before}
+CP = IP_1 Cond IP_2
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head infl mood&gt; = conditional
+          &lt;Cond head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6f
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordAfter/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordAfter/@checked)='yes'">
+<xsl:text>
+rule {CP option 6g - Consequence first, Conditional word after}
+CP = IP_1 IP_2 Cond
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head infl mood&gt; = conditional
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6g
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBoth/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBoth/@checked)='yes'">
+<xsl:text>
+rule {CP option 6h - Consequence first, Conditional word both sides}
+CP = IP_1 Cond_1 IP_2 Cond_2 
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond_1 head infl mood&gt; = conditional
+          &lt;Cond_2 head infl mood&gt; = conditional
+          &lt;Cond_1 head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6h
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+
+<xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionProclitic/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionProclitic/@checked)='yes'">
+<xsl:text>
+rule {CP option 6i - Consequence first, Conditional proclitic}
+CP = IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_2 head infl mood&gt; = conditional
+          &lt;IP_2 head type prefix conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6i
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionEnclitic/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionEnclitic/@checked)='yes'">
+<xsl:text>
+rule {CP option 6j - Consequence first, Conditional enclitic}
+CP = IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_2 head infl mood&gt; = conditional
+          &lt;IP_2 head type suffix conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 6j
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+ 
+    
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordBefore/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordBefore/@checked)='yes'">
+<xsl:text>
+rule {CP option 7a - subjunctive conditional word before}
+CP = Cond IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head type subjunctive_conditional&gt; = +
+          &lt;Cond head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7a
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordAfter/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordAfter/@checked)='yes'">
+<xsl:text>
+rule {CP option 7b - Subjunctive conditional word after}
+CP = IP_1 Cond IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head type subjunctive_conditional&gt; = +
+          &lt;Cond head type comma&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7b
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordBoth/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordBoth/@checked)='yes'">
+<xsl:text>
+rule {CP option 7c - subjunctive conditional word both sides}
+CP = Cond_1 IP_1 Cond_2 IP_2
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;Cond_1 head type subjunctive_conditional&gt; = +
+          &lt;Cond_2 head type subjunctive_conditional&gt; = +
+          &lt;Cond_1 head type comma&gt; = -
+          &lt;Cond_2 head type comma&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7c
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+ 
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='no' and normalize-space(//ip/subjunctiveCondProclitic/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondProclitic/@checked)='yes'">
+<xsl:text>
+rule {CP option 7d - subjunctive conditional proclitic}
+CP = IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_1 head infl mood&gt; = subjunctive
+          &lt;IP_1 head type prefix subjunctive_conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7d
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='no' and normalize-space(//ip/subjunctiveCondEnclitic/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondEnclitic/@checked)='yes'">
+<xsl:text>
+rule {CP option 7e - subjunctive conditional enclitic}
+CP = IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_1 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_1 head infl mood&gt; = subjunctive
+          &lt;IP_1 head type suffix subjunctive_conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7e
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordBefore/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordBefore/@checked)='yes'">
+<xsl:text>
+rule {CP option 7f - Consequnece first, subjunctive conditional word before}
+CP = IP_1 Cond IP_2
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;Cond head type subjunctive_conditional&gt; = +
+          &lt;Cond head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7f
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordAfter/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordAfter/@checked)='yes'">
+<xsl:text>
+rule {CP option 7g - Consequence first, subjunctive conditional word after}
+CP = IP_1 IP_2 Cond
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond head type subjunctive_conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7g
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+    
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordBoth/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordBoth/@checked)='yes'">
+<xsl:text>
+rule {CP option 7h - Consequence first, subjunctive conditional word both sides}
+CP = IP_1 Cond_1 IP_2 Cond_2 
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;Cond_1 head type subjunctive_conditional&gt; = +
+          &lt;Cond_2 head type subjunctive_conditional&gt; = +
+          &lt;Cond_1 head type comma&gt; = -
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7h
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='no' and normalize-space(//ip/subjunctiveCondProclitic/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondProclitic/@checked)='yes'">
+<xsl:text>
+rule {CP option 7i - Consequence first, subjunctive conditional proclitic}
+CP = IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_2 head infl mood&gt; = subjunctive
+          &lt;IP_2 head type prefix subjunctive_conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7i
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='no' and normalize-space(//ip/subjunctiveCondEnclitic/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondEnclitic/@checked)='yes'">
+<xsl:text>
+rule {CP option 7j - Consequence first, subjunctive conditional enclitic}
+CP = IP_1 IP_2
+          &lt;CP head&gt; = &lt;IP_2 head&gt;
+          &lt;CP head type relative&gt; = -
+          &lt;IP_1 head type relative&gt; = -
+          &lt;IP_2 head infl mood&gt; = subjunctive
+          &lt;IP_2 head type suffix subjunctive_conditional&gt; = +
+          &lt;IP_1 head type auxiliary-C'&gt; = -       
+          &lt;IP_2 head type auxiliary-C'&gt; = -       
+          &lt;IP_1 head fronted&gt; = none    
+          &lt;IP_1 head type question&gt; = -    
+          &lt;IP_2 head fronted&gt; = none    
+          &lt;IP_2 head type question&gt; = -    
+          &lt;IP_1 head type verbheaded&gt; = +       
+          &lt;IP_2 head type verbheaded&gt; = +       
+          &lt;IP_1 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_2 head infl&gt; == ~[mood:imperative]  
+          &lt;IP_1 head&gt; == [type:[auxiliary_required:+]] -&gt; ~[type:[auxiliary-C':-
+                                                                  auxiliary-I':-
+                                                                  auxiliary-VP:-]]
+          &lt;CP option&gt; = 7j
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+ 
+
+    
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@mainCont)='no' or normalize-space(//q/@contFront)='before' and normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)!='no' and normalize-space(//q/@mainContRequired)!='yes'">
 <xsl:text>
 rule {CBar option 1a - head vacuous, root, no aux fronting}
 C' = IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type vacuous&gt; = +		| to avoid empty CP
-	&lt;C' option&gt; = 1a
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type vacuous&gt; = +    | to avoid empty CP
+          &lt;C' option&gt; = 1a
 </xsl:text>
 </xsl:if>
     
@@ -573,17 +1874,21 @@ C' = IP
         
         
         
+        
+        
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxRequired)='no'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxRequired)!='yes'">
 <xsl:text>
-rule {CBar option 1b - head vacuous, root, with possible aux fronting}
+rule {CBar option 1b - head vacuous, root, with optional aux fronting}
 C' = IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type vacuous&gt; = +		| to avoid empty CP
-	&lt;IP head type auxiliary&gt; = -		| if aux present, must front
-	&lt;C' option&gt; = 1b
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type vacuous&gt; = +    | to avoid empty CP
+          &lt;IP head type auxiliary-I'&gt; = -    | if aux present, must front
+          &lt;IP head type auxiliary-VP&gt; = -    | if aux present, must front
+          &lt;C' option&gt; = 1b
 </xsl:text>
 </xsl:if>
     
@@ -593,20 +1898,45 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)!='no' and normalize-space(//q/mainContWordBefore/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)!='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/mainContVSOAfterWh/@checked)='yes' or normalize-space(//q/@mainYN)='yes' and normalize-space(//q/@mainYNWord)!='no' and normalize-space(//q/mainYNWordBefore/@checked)='yes'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxRequired)='yes'">
+<xsl:text>
+rule {CBar option 1bQ - head vacuous, root, with no aux fronting for non-questions, required for questions}
+C' = IP
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type vacuous&gt; = +    | to avoid empty CP
+          &lt;IP head type auxiliary-I'&gt; = -    | if aux present, must front
+          &lt;IP head type auxiliary-VP&gt; = -    | if aux present, must front
+          &lt;C' option&gt; = 1bQ
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+    
+
+<xsl:if test="normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)!='no' and normalize-space(//q/mainContWordBefore/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)!='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/mainContVSOAfterWh/@checked)='yes' or normalize-space(//q/@mainYN)='yes' and normalize-space(//q/@mainYNWord)!='no' and normalize-space(//q/mainYNWordBefore/@checked)='yes'">
 <xsl:text>
 rule {CBar option 1c - head-initial, question, root}
 C' = C IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = +
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = +
-	&lt;C' head type root&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C head type CP-initial&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;C' option&gt; = 1c
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C head type root&gt; = +
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = +
+          &lt;C' head type root&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C head type CP-initial&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;C head type prefix&gt;
+          &lt;C' option&gt; = 1c
 </xsl:text>
 </xsl:if>
     
@@ -632,42 +1962,143 @@ C' = C IP
         
         
     
-    <xsl:if test="normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxPos)='before' or normalize-space(//q/@mainYN)='noAux' and normalize-space(//q/@mainYNAuxPos)='before'">
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxPos)='before' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainYN)='noAux' and normalize-space(//q/@mainYNAuxPos)='before'">
 <xsl:text>
-rule {CBar option 1d - Aux initial, question, root}
+rule {CBar option 1d - positive Aux initial, question, root}
 C' = Aux IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = +
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;Aux head type comma&gt; = -
-	&lt;C' option&gt; = 1d
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;Aux head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;Aux head type prefix&gt;
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 1d
 </xsl:text>
 </xsl:if>
+    
+    
     
         
         
         
         
+    
+    
         
         
         
+    
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxPos)='before' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxWord/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainYN)='noAux' and normalize-space(//q/@mainYNAuxPos)='before' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxWord/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no'">
+<xsl:text>
+rule {CBar option 1dNeg - negative Aux initial with no other Aux required, question, root}
+C' = Aux IP
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;Aux head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;Aux head type prefix&gt;
+          &lt;Aux head type prefix negative&gt; = -          | neg clitics use other rule
+          &lt;Aux head type suffix negative&gt; = -
+          &lt;Aux head infl polarity&gt; =  negative
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;C' head infl polarity&gt; &lt;= negative
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 1dNeg
+</xsl:text>
+</xsl:if>
+    
+    
+    
+        
+        
+        
+        
+    
+    
+    
+    
+    
+        
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxPos)='before' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxAffix/@checked)='yes' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainYN)='noAux' and normalize-space(//q/@mainYNAuxPos)='before' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxAffix/@checked)='yes'">
+<xsl:text>
+rule {CBar option 1dNegCL - positive Aux with Neg clitic initial, question, root}
+C' = Aux IP
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;Aux head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;Aux head type prefix&gt;
+          {&lt;Aux head type prefix negative&gt; = +
+          /&lt;Aux head type suffix negative&gt; = +
+          }
+          &lt;Aux head infl polarity&gt; =  negative
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;C' head infl polarity&gt; &lt;= negative
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 1dNegCL
+</xsl:text>
+</xsl:if>
+    
+    
+    
+        
+        
+        
+        
+    
+    
+    
+        
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
     
     <xsl:if test="normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)!='no' and normalize-space(//q/mainContWordAfter/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)!='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/mainContVSOEnd/@checked)='yes' or normalize-space(//q/@mainYN)='yes' and normalize-space(//q/@mainYNWord)!='no' and normalize-space(//q/mainYNWordAfter/@checked)='yes'">
 <xsl:text>
 rule {CBar option 1e - head-final, question, root}
 C' = IP C
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = +
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = +
-	&lt;C' head type root&gt; = +
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C head type CP-final&gt; = +
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;C head type comma&gt;
-	&lt;C' option&gt; = 1e
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C head type root&gt; = +
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = +
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C head type CP-final&gt; = +
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;C head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;C head type suffix&gt;
+          &lt;C' option&gt; = 1e
 </xsl:text>
 </xsl:if>
     
@@ -693,48 +2124,157 @@ C' = IP C
         
         
     
-    <xsl:if test="normalize-space(//q/@mainYN)='noAux' and normalize-space(//q/@mainYNAuxPos)='after' or normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxPos)='after'">
+
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxPos)='after' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainYN)='noAux' and normalize-space(//q/@mainYNAuxPos)='after'">
 <xsl:text>
-rule {CBar option 1f - Aux final, question, root}
+rule {CBar option 1f - positive Aux final, question, root}
 C' = IP Aux
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = +
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;Aux head type comma&gt;
-	&lt;C' option&gt; = 1f
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;Aux head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;Aux head type suffix&gt;
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 1f
 </xsl:text>
 </xsl:if>
     
-        
-        
-        
+    
+    
         
         
         
         
     
+    
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxPos)='after' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxWord/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainYN)='noAux' and normalize-space(//q/@mainYNAuxPos)='after' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxWord/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no'">
+<xsl:text>
+rule {CBar option 1fNeg - negative Aux final with no other Aux required, question, root}
+C' = IP Aux
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;Aux head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;Aux head type suffix&gt;
+          &lt;Aux head type prefix negative&gt; = -          | neg clitics use other rule
+          &lt;Aux head type suffix negative&gt; = -
+          &lt;Aux head infl polarity&gt; =  negative
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;C' head infl polarity&gt; &lt;= negative
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 1fNeg
+</xsl:text>
+</xsl:if>
+    
+    
+    
+        
+        
+        
+        
+    
+    
+    
+    
+    
+        
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainCont)='noAux' and normalize-space(//q/@mainContAuxPos)='after' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxAffix/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@mainYN)='noAux' and normalize-space(//q/@mainYNAuxPos)='after' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxAffix/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no'">
+<xsl:text>
+rule {CBar option 1fNegCL - positive Aux with Neg clitic final with no other Aux required, question, root}
+C' = IP Aux
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;Aux head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;Aux head type suffix&gt;
+          {&lt;Aux head type prefix negative&gt; = +
+          /&lt;Aux head type suffix negative&gt; = +
+          }
+          &lt;Aux head infl polarity&gt; =  negative
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;C' head infl polarity&gt; &lt;= negative
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 1fNegCL
+</xsl:text>
+</xsl:if>
+    
+    
+    
+        
+        
+        
+        
+    
+    
+    
+    
+    
+        
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+
     <xsl:if test="normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)!='no' and normalize-space(//q/mainContWordBoth/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@mainYN)='yes' and normalize-space(//q/@mainYNWord)!='no' and normalize-space(//q/mainYNwordBoth/@checked)='yes'">
 <xsl:text>
 rule {CBar option 1g - head both sides, question, root}
 C' = C IP C_1
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = +
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = +
-	&lt;C_1 head type root&gt; = +
-	&lt;C_1 head type relative&gt; = -
-	&lt;C_1 head type question&gt; = +
-	&lt;C' head type root&gt; = +
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C head type CP-initial&gt; = +
-	&lt;C_1 head type CP-final&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;C_1 head type comma&gt;
-	&lt;C' option&gt; = 1g
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C head type root&gt; = +
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = +
+          &lt;C_1 head type root&gt; = +
+          &lt;C_1 head type relative&gt; = -
+          &lt;C_1 head type question&gt; = +
+          &lt;C' head type root&gt; = +
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C head type CP-initial&gt; = +
+          &lt;C_1 head type CP-final&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;C_1 head type comma&gt;
+          &lt;C' head type prefix&gt; &lt;= &lt;C head type prefix&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;C_1 head type suffix&gt;
+          &lt;C' option&gt; = 1g
 </xsl:text>
 </xsl:if>
     
@@ -752,14 +2292,16 @@ C' = C IP C_1
         
         
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@embCont)='no' or normalize-space(//q/@contFront)='before' and normalize-space(//q/@embCont)!='no' and normalize-space(//q/@embContRequired)='no' or normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='yes'">
+   
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@embCont)='no' or normalize-space(//q/@contFront)='before' and normalize-space(//q/@embCont)!='no' and normalize-space(//q/@embContRequired)='no' or normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='yes'">
 <xsl:text>
 rule {CBar option 2a - head vacuous, non-root, no aux fronting}
 C' = IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type vacuous&gt; = +		| to avoid empty CP
-	&lt;C' option&gt; = 2a
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type root&gt; = -
+          &lt;C' head type vacuous&gt; = +    | to avoid empty CP
+          &lt;C' option&gt; = 2a
 </xsl:text>
 </xsl:if>
     
@@ -777,16 +2319,18 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxRequired)='no'">
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxRequired)!='yes'">
 <xsl:text>
-rule {CBar option 2b - head vacuous, non-root, with possible aux fronting}
+rule {CBar option 2b - head vacuous, non-root, with optional aux fronting}
 C' = IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type vacuous&gt; = +		| to avoid empty CP
-	&lt;IP head type auxiliary&gt; = -		| if aux present, must front
-	&lt;C' option&gt; = 2b
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type vacuous&gt; = +    | to avoid empty CP
+          &lt;IP head type auxiliary-I'&gt; = -    | if aux present, must front
+          &lt;IP head type auxiliary-VP&gt; = -    | if aux present, must front
+          &lt;C' option&gt; = 2b
 </xsl:text>
 </xsl:if>
     
@@ -796,20 +2340,45 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//q/embContWordBefore/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/embContVSOAfterWh/@checked)='yes' or normalize-space(//q/@embYN)='yes' and normalize-space(//q/@embYNWord)!='no' and normalize-space(//q/embYNWordBefore/@checked)='yes'">
+    
+<xsl:if test="normalize-space(//q/@contFront)='before' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxRequired)='yes'">
+<xsl:text>
+rule {CBar option 2bQ - head vacuous, non-root, with no aux fronting for non-questions, required for questions}
+C' = IP
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type root&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type vacuous&gt; = +    | to avoid empty CP
+          &lt;IP head type auxiliary-I'&gt; = -    | if aux present, must front
+          &lt;IP head type auxiliary-VP&gt; = -    | if aux present, must front
+          &lt;C' option&gt; = 2bQ
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//q/embContWordBefore/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/embContVSOAfterWh/@checked)='yes' or normalize-space(//q/@embYN)='yes' and normalize-space(//q/@embYNWord)!='no' and normalize-space(//q/embYNWordBefore/@checked)='yes'">
 <xsl:text>
 rule {CBar option 2c - head-initial, question, non-root}
 C' = C IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = -
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = +
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C head type CP-initial&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;C' option&gt; = 2c
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C head type root&gt; = -
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = +
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C head type CP-initial&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;C head type prefix&gt;
+          &lt;C' option&gt; = 2c
 </xsl:text>
 </xsl:if>
     
@@ -835,42 +2404,148 @@ C' = C IP
         
         
     
-    <xsl:if test="normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxPos)='before' or normalize-space(//q/@embYN)='noAux' and normalize-space(//q/@embYNAuxPos)='before'">
+    
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxPos)='before' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embYN)='noAux' and normalize-space(//q/@embYNAuxPos)='before'">
 <xsl:text>
-rule {CBar option 2d - Aux initial, question, non-root}
+rule {CBar option 2d - positive Aux initial, question, non-root}
 C' = Aux IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;Aux head type comma&gt; = -
-	&lt;C' option&gt; = 2d
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;Aux head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;Aux head type prefix&gt;
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 2d
 </xsl:text>
 </xsl:if>
     
-        
-        
-        
+    
+    
         
         
         
         
     
-    <xsl:if test="normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//q/embContWordAfter/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/embContVSONoEnd/@checked)='yes' or normalize-space(//q/@embYN)='yes' and normalize-space(//q/@embYNWord)!='no' and normalize-space(//q/embYNAfter/@checked)='yes'">
+    
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxPos)='before' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxWord/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embYN)='noAux' and normalize-space(//q/@embYNAuxPos)='before' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxWord/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no'">
+<xsl:text>
+rule {CBar option 2dNeg - negative Aux initial with no other Aux required, question, non-root}
+C' = Aux IP
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;Aux head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;Aux head type prefix&gt;
+          &lt;Aux head type prefix negative&gt; = -          | neg clitics use other rule
+          &lt;Aux head type suffix negative&gt; = -
+          &lt;Aux head infl polarity&gt; =  negative
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;C' head infl polarity&gt; &lt;= negative
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 2dNeg
+</xsl:text>
+</xsl:if>
+    
+    
+    
+        
+        
+        
+        
+    
+    
+    
+    
+    
+        
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxPos)='before' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxAffix/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embYN)='noAux' and normalize-space(//q/@embYNAuxPos)='before' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxAffix/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no'">
+<xsl:text>
+rule {CBar option 2dNegCL - positive Aux with Neg clitic initial with no other Aux required, question, non-root}
+C' = Aux IP
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;Aux head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;Aux head type prefix&gt;
+          {&lt;Aux head type prefix negative&gt; = +
+          /&lt;Aux head type suffix negative&gt; = +
+          }
+          &lt;Aux head infl polarity&gt; =  negative
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;C' head infl polarity&gt; &lt;= negative
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 2dNegCL
+</xsl:text>
+</xsl:if>
+    
+    
+    
+        
+        
+        
+        
+    
+    
+    
+    
+    
+        
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+
+<xsl:if test="normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//q/embContWordAfter/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/embContVSONoEnd/@checked)='yes' or normalize-space(//q/@embYN)='yes' and normalize-space(//q/@embYNWord)!='no' and normalize-space(//q/embYNAfter/@checked)='yes'">
 <xsl:text>
 rule {CBar option 2e - head-final, question, non-root}
 C' = IP C
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = -
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = +
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C head type CP-final&gt; = +
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;C head type comma&gt;
-	&lt;C' option&gt; = 2e
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C head type root&gt; = -
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = +
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C head type CP-final&gt; = +
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;C head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;C head type suffix&gt;
+          &lt;C' option&gt; = 2e
 </xsl:text>
 </xsl:if>
     
@@ -896,48 +2571,156 @@ C' = IP C
         
         
     
-    <xsl:if test="normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxPos)='after' or normalize-space(//q/@embYN)='noAux' and normalize-space(//q/@embYNAuxPos)='after'">
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxPos)='after' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embYN)='noAux' and normalize-space(//q/@embYNAuxPos)='after'">
 <xsl:text>
-rule {CBar option 2f - Aux final, question, non-root}
+rule {CBar option 2f - positive Aux final, question, non-root}
 C' = IP Aux
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;Aux head type comma&gt;
-	&lt;C' option&gt; = 2f
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;Aux head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;Aux head type suffix&gt;
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 2f
 </xsl:text>
 </xsl:if>
     
-        
-        
-        
+    
+    
         
         
         
         
     
+    
+        
+        
+        
+    
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxPos)='after' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxWord/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embYN)='noAux' and normalize-space(//q/@embYNAuxPos)='after' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxWord/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no'">
+<xsl:text>
+rule {CBar option 2fNeg - negative Aux final with no other Aux required, question, non-root}
+C' = IP Aux
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;Aux head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;Aux head type suffix&gt;
+          &lt;Aux head type prefix negative&gt; = -          | neg clitics use other rule
+          &lt;Aux head type suffix negative&gt; = -
+          &lt;Aux head infl polarity&gt; =  negative
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;C' head infl polarity&gt; &lt;= negative
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 2fNeg
+</xsl:text>
+</xsl:if>
+    
+    
+    
+        
+        
+        
+        
+    
+    
+    
+    
+    
+        
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+
+<xsl:if test="normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embCont)='noAux' and normalize-space(//q/@embContAuxPos)='after' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxAffix/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no' or normalize-space(//ip/@aux)='yes' and normalize-space(//q/@embYN)='noAux' and normalize-space(//q/@embYNAuxPos)='after' and normalize-space(//neg/@negVerbal)='yes' and normalize-space(//neg/negAuxAffix/@checked)='yes' and normalize-space(//neg/@negAuxRequiresAux)='no'">
+<xsl:text>
+rule {CBar option 2fNegCL - positive Aux with Neg clitic final with no other Aux required, question, non-root}
+C' = IP Aux
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;Aux head subject head agr&gt; = &lt;IP head subject head agr&gt;
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;Aux head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;Aux head type suffix&gt;
+          {&lt;Aux head type prefix negative&gt; = +
+          /&lt;Aux head type suffix negative&gt; = +
+          }
+          &lt;Aux head infl polarity&gt; =  negative
+          &lt;IP head infl polarity&gt; &lt;= negative
+          &lt;C' head infl polarity&gt; &lt;= negative
+          &lt;IP head type auxiliary-C'&gt; &lt;= +
+          &lt;C' head type auxiliary-C'&gt; &lt;= +
+          &lt;C' option&gt; = 2fNegCL
+</xsl:text>
+</xsl:if>
+    
+    
+    
+        
+        
+        
+        
+    
+    
+    
+    
+    
+        
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+
     <xsl:if test="normalize-space(//q/@embCont)='yes' and normalize-space(//q/@embContWord)!='no' and normalize-space(//q/embContWordBoth/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' or normalize-space(//q/@embYN)='yes' and normalize-space(//q/@embYNWord)!='no' and normalize-space(//q/embYNWordBoth/@checked)='yes'">
 <xsl:text>
 rule {CBar option 2g - head both sides, question, non-root}
 C' = C IP C_1
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = -
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = +
-	&lt;C_1 head type root&gt; = -
-	&lt;C_1 head type relative&gt; = -
-	&lt;C_1 head type question&gt; = +
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C head type CP-initial&gt; = +
-	&lt;C_1 head type CP-final&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;C_1 head type comma&gt;
-	&lt;C' option&gt; = 2g
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C head type root&gt; = -
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = +
+          &lt;C_1 head type root&gt; = -
+          &lt;C_1 head type relative&gt; = -
+          &lt;C_1 head type question&gt; = +
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C head type CP-initial&gt; = +
+          &lt;C_1 head type CP-final&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;C_1 head type comma&gt;
+          &lt;C' head type prefix&gt; &lt;= &lt;C head type prefix&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;C_1 head type suffix&gt;
+          &lt;C' option&gt; = 2g
 </xsl:text>
 </xsl:if>
     
@@ -955,20 +2738,23 @@ C' = C IP C_1
         
         
     
-    <xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='no' and normalize-space(//comp/compBefore/@checked)='yes'">
+<xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='no' and normalize-space(//comp/compBefore/@checked)='yes'">
 <xsl:text>
 rule {CBar option 2j - head-initial, non-question, non-root}
 C' = C IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = -
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = -
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = -
-	&lt;C head type CP-initial&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;C' option&gt; = 2j
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C head type root&gt; = -
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = -
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = none 
+          &lt;C head type CP-initial&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;C head type prefix&gt;
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' option&gt; = 2j
 </xsl:text>
 </xsl:if>
     
@@ -978,21 +2764,24 @@ C' = C IP
         
         
     
-    <xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='no' and normalize-space(//comp/compWordAfter/@checked)='yes'">
+<xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='no' and normalize-space(//comp/compWordAfter/@checked)='yes'">
 <xsl:text>
 rule {CBar option 2k - head-final, non-question, non-root}
 C' = IP C
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = -
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = -
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = -
-	&lt;C head type CP-final&gt; = +
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;C head type comma&gt;
-	&lt;C' option&gt; = 2k
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C head type root&gt; = -
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = -
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = none 
+          &lt;C head type CP-final&gt; = +
+          &lt;IP head type comma&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;C head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;C head type suffix&gt;
+          &lt;C' option&gt; = 2k
 </xsl:text>
 </xsl:if>
     
@@ -1002,26 +2791,30 @@ C' = IP C
         
         
     
-    <xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='no' and normalize-space(//comp/compWordBoth/@checked)='yes'">
+<xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='no' and normalize-space(//comp/compWordBoth/@checked)='yes'">
 <xsl:text>
 rule {CBar option 2l - head both sides, non-question, non-root}
 C' = C IP C_1
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C head type root&gt; = -
-	&lt;C head type relative&gt; = -
-	&lt;C head type question&gt; = -
-	&lt;C_1 head type root&gt; = -
-	&lt;C_1 head type relative&gt; = -
-	&lt;C_1 head type question&gt; = -
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = -
-	&lt;C head type CP-initial&gt; = +
-	&lt;C_1 head type CP-final&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;C_1 head type comma&gt;
-	&lt;C' option&gt; = 2l
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C head type root&gt; = -
+          &lt;C head type relative&gt; = -
+          &lt;C head type question&gt; = -
+          &lt;C_1 head type root&gt; = -
+          &lt;C_1 head type relative&gt; = -
+          &lt;C_1 head type question&gt; = -
+          &lt;C' head type root&gt; = - 
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head fronted&gt; = none 
+          &lt;C head type CP-initial&gt; = +
+          &lt;C_1 head type CP-final&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;IP head type comma&gt; = -
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;C_1 head type comma&gt;
+          &lt;C' head type prefix&gt; &lt;= &lt;C head type prefix&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;C_1 head type suffix&gt;
+          &lt;C' option&gt; = 2l
 </xsl:text>
 </xsl:if>
     
@@ -1031,19 +2824,19 @@ C' = C IP C_1
         
         
     
-    <xsl:if test="normalize-space(//q/@mainYNWord)!='yes' and normalize-space(//q/mainYNProclitic/@checked)='yes' or normalize-space(//q/@mainYNWord)!='yes' and normalize-space(//q/mainYNPrefix/@checked)='yes'">
+  
+<xsl:if test="normalize-space(//q/@mainYNWord)!='yes' and normalize-space(//q/mainYNProclitic/@checked)='yes' or normalize-space(//q/@mainYNWord)!='yes' and normalize-space(//q/mainYNPrefix/@checked)='yes'">
 <xsl:text>
 rule {C' option 3a - YNQ_prefix, IP complement, root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type prefix YNQ&gt; = +
-         /&lt;IP head type YNQ&gt; = +
-	}
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = +
-	&lt;C' option&gt; = 3a
-    </xsl:text>
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type prefix YNQ&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 3a
+</xsl:text>
 </xsl:if>
     
         
@@ -1054,18 +2847,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@mainYNWord)!='yes' and normalize-space(//q/mainYNEnclitic/@checked)='yes' or normalize-space(//q/@mainYNWord)!='yes' and normalize-space(//q/mainYNSuffix/@checked)='yes'">
+<xsl:if test="normalize-space(//q/@mainYNWord)!='yes' and normalize-space(//q/mainYNEnclitic/@checked)='yes' or normalize-space(//q/@mainYNWord)!='yes' and normalize-space(//q/mainYNSuffix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 3b - YNQ_suffix, IP complement, root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type suffix YNQ&gt; = +
-       /&lt;IP head type YNQ&gt; = +
-	}
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = +
-	&lt;C' option&gt; = 3b
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type suffix YNQ&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 3b
 </xsl:text>
 </xsl:if>
     
@@ -1077,18 +2869,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@embYNWord)!='yes' and normalize-space(//q/embYNProclitic/@checked)='yes' or normalize-space(//q/@embYNWord)!='yes' and normalize-space(//q/embYNPrefix/@checked)='yes'">
+<xsl:if test="normalize-space(//q/@embYNWord)!='yes' and normalize-space(//q/embYNProclitic/@checked)='yes' or normalize-space(//q/@embYNWord)!='yes' and normalize-space(//q/embYNPrefix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 3c - YNQ_prefix, IP complement, non-root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type prefix YNQ&gt; = +
-         /&lt;IP head type YNQ&gt; = +
-	}
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = -
-	&lt;C' option&gt; = 3c
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type prefix YNQ&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = -
+          &lt;C' option&gt; = 3c
 </xsl:text>
 </xsl:if>
     
@@ -1100,18 +2891,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@embYNWord)!='yes' and normalize-space(//q/embYNEnclitic/@checked)='yes' or normalize-space(//q/@embYNWord)!='yes' and normalize-space(//q/embYNSuffix/@checked)='yes'">
+<xsl:if test="normalize-space(//q/@embYNWord)!='yes' and normalize-space(//q/embYNEnclitic/@checked)='yes' or normalize-space(//q/@embYNWord)!='yes' and normalize-space(//q/embYNSuffix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 3d - YNQ_suffix, IP complement, non-root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type suffix YNQ&gt; = +
-       /&lt;IP head type YNQ&gt; = +
-	}
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = +
-	&lt;C' option&gt; = 3d
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type suffix YNQ&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 3d
 </xsl:text>
 </xsl:if>
     
@@ -1123,18 +2913,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@mainContWord)!='yes' and normalize-space(//q/mainContProclitic/@checked)='yes' or normalize-space(//q/@mainContWord)!='yes' and normalize-space(//q/mainContPrefix/@checked)='yes'">
+<xsl:if test="normalize-space(//q/@mainContWord)!='yes' and normalize-space(//q/mainContProclitic/@checked)='yes' or normalize-space(//q/@mainContWord)!='yes' and normalize-space(//q/mainContPrefix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 4a - whQ_prefix, IP complement, root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type prefix whQ&gt; = +
-         /&lt;IP head type whQ&gt; = +
-	}
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = +
-	&lt;C' option&gt; = 4a
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type prefix whQ&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 4a
 </xsl:text>
 </xsl:if>
     
@@ -1146,18 +2935,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@mainContWord)!='yes' and normalize-space(//q/mainContEnclitic/@checked)='yes' or normalize-space(//q/@mainContWord)!='yes' and normalize-space(//q/mainContSuffix/@checked)='yes'">
+<xsl:if test="normalize-space(//q/@mainContWord)!='yes' and normalize-space(//q/mainContEnclitic/@checked)='yes' or normalize-space(//q/@mainContWord)!='yes' and normalize-space(//q/mainContSuffix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 4b - whQ_suffix, IP complement, root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type suffix whQ&gt; = +
-       /&lt;IP head type whQ&gt; = +
-	}
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = +
-	&lt;C' option&gt; = 4b
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type suffix whQ&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 4b
 </xsl:text>
 </xsl:if>
     
@@ -1169,18 +2957,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@embContWord)!='yes' and normalize-space(//q/embContProclitic/@checked)='yes' or normalize-space(//q/@embContWord)!='yes' and normalize-space(//q/embContPrefix/@checked)='yes'">
+<xsl:if test="normalize-space(//q/@embContWord)!='yes' and normalize-space(//q/embContProclitic/@checked)='yes' or normalize-space(//q/@embContWord)!='yes' and normalize-space(//q/embContPrefix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 4c - whQ_prefix, IP complement, non-root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type prefix whQ&gt; = +
-         /&lt;IP head type whQ&gt; = +
-	}
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = -
-	&lt;C' option&gt; = 4c
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type prefix whQ&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = -
+          &lt;C' option&gt; = 4c
 </xsl:text>
 </xsl:if>
     
@@ -1192,18 +2979,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//q/@embContWord)!='yes' and normalize-space(//q/embContEnclitic/@checked)='yes' or normalize-space(//q/@embContWord)!='yes' and normalize-space(//q/embContSuffix/@checked)='yes'">
+<xsl:if test="normalize-space(//q/@embContWord)!='yes' and normalize-space(//q/embContEnclitic/@checked)='yes' or normalize-space(//q/@embContWord)!='yes' and normalize-space(//q/embContSuffix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 4d - whQ_suffix, IP complement, non-root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type suffix whQ&gt; = +
-       /&lt;IP head type whQ&gt; = +
-	}
-	&lt;C' head type question&gt; = +
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = +
-	&lt;C' option&gt; = 4d
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type suffix whQ&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = +
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 4d
 </xsl:text>
 </xsl:if>
     
@@ -1215,18 +3001,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='yes' and normalize-space(//comp/compProclitic/@cchecked)='yes' or normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='yes' and normalize-space(//comp/compPrefix/@checked)='yes'">
+<xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='yes' and normalize-space(//comp/compProclitic/@checked)='yes' or normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='yes' and normalize-space(//comp/compPrefix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 4e - comp_prefix, IP complement, non-root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type prefix comp&gt; = +
-         /&lt;IP head type comp&gt; = +
-	}
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = -
-	&lt;C' option&gt; = 4e
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type prefix comp&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = -
+          &lt;C' option&gt; = 4e
 </xsl:text>
 </xsl:if>
     
@@ -1242,18 +3027,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='yes' and normalize-space(//comp/compEnclitic/@checked)='yes' or normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='yes' and normalize-space(//comp/compSuffix/@checked)='yes'">
+<xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='yes' and normalize-space(//comp/compEnclitic/@checked)='yes' or normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compWord)!='yes' and normalize-space(//comp/compSuffix/@checked)='yes'">
 <xsl:text>
 rule {CBar option 4f - comp_suffix, IP complement, non-root}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-        {&lt;IP head type suffix comp&gt; = +
-       /&lt;IP head type comp&gt; = +
-	}
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = -
-	&lt;C' head type root&gt; = +
-	&lt;C' option&gt; = 4f
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type suffix comp&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = -
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 4f
 </xsl:text>
 </xsl:if>
     
@@ -1270,20 +3054,25 @@ C' = IP
         
     
     
-    <xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBefore/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBefore/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBefore/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='no'">
+<xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBefore/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBefore/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBefore/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='no'">
 <xsl:text>
 rule {CBar option 5a - head-initial, relative clause}
 C' = C IP
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = +
-	&lt;C head type root&gt; = -
-	&lt;C head type question&gt; = -
-	&lt;C head type relative&gt; = +
-	&lt;C head type CP-initial&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;C' option&gt; = 5a
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = +
+          &lt;C head type root&gt; = -
+          &lt;C head type question&gt; = -
+          &lt;C head type relative&gt; = +
+          &lt;C head type CP-initial&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;C' head type prefix&gt; &lt;= &lt;C head type prefix&gt;
+          &lt;IP head type auxiliary-C'&gt; = -  
+          &lt;C' head type wh&gt; &lt;= -           
+          &lt;C' head fronted&gt; == ~[cat:FocusP]  
+          &lt;IP head infl&gt; == ~[mood:imperative]
+          &lt;C' option&gt; = 5a
 </xsl:text>
 </xsl:if>
     
@@ -1313,21 +3102,26 @@ C' = C IP
         
         
     
-    <xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordAfter/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordAfter/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordAfter/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='no'">
+<xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordAfter/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordAfter/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordAfter/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='no'">
 <xsl:text>
 rule {CBar option 5b - head-final, relative clause}
 C' = IP C
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = +
-	&lt;C head type root&gt; = -
-	&lt;C head type question&gt; = -
-	&lt;C head type relative&gt; = +
-	&lt;C head type CP-final&gt; = +
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;C head type comma&gt;
-	&lt;C' option&gt; = 5b
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = +
+          &lt;C head type root&gt; = -
+          &lt;C head type question&gt; = -
+          &lt;C head type relative&gt; = +
+          &lt;C head type CP-final&gt; = +
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;C head type comma&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;C head type suffix&gt;
+          &lt;IP head type auxiliary-C'&gt; = -  
+          &lt;C' head type wh&gt; &lt;= -           
+          &lt;C' head fronted&gt; == ~[cat:FocusP]  
+          &lt;IP head infl&gt; == ~[mood:imperative]
+          &lt;C' option&gt; = 5b
 </xsl:text>
 </xsl:if>
     
@@ -1357,26 +3151,32 @@ C' = IP C
         
         
     
-    <xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBoth/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBoth/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBoth/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='no'">
+<xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBoth/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBoth/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='no' and normalize-space(//relcl/relWordBoth/@checked)='yes' and normalize-space(//relcl/@whAndComp)!='no'">
 <xsl:text>
 rule {CBar option 5c - head both sides, relative clause}
 C' = C IP C_1
-	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;C' head type root&gt; = -
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = +
-	&lt;C head type root&gt; = -
-	&lt;C head type question&gt; = -
-	&lt;C head type relative&gt; = +
-	&lt;C_1 head type root&gt; = -
-	&lt;C_1 head type question&gt; = -
-	&lt;C_1 head type relative&gt; = +
-	&lt;C head type CP-initial&gt; = +
-	&lt;C_1 head type CP-final&gt; = +
-	&lt;C head type comma&gt; = -
-	&lt;IP head type comma&gt; = -
-	&lt;C' head type comma&gt; &lt;= &lt;C_1 head type comma&gt;
-	&lt;C' option&gt; = 5c
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;C' head type root&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = +
+          &lt;C head type root&gt; = -
+          &lt;C head type question&gt; = -
+          &lt;C head type relative&gt; = +
+          &lt;C_1 head type root&gt; = -
+          &lt;C_1 head type question&gt; = -
+          &lt;C_1 head type relative&gt; = +
+          &lt;C head type CP-initial&gt; = +
+          &lt;C_1 head type CP-final&gt; = +
+          &lt;C head type comma&gt; = -
+          &lt;IP head type comma&gt; = -
+          &lt;C' head type comma&gt; &lt;= &lt;C_1 head type comma&gt;
+          &lt;C' head type prefix&gt; &lt;= &lt;C head type prefix&gt;
+          &lt;C' head type suffix&gt; &lt;= &lt;C_1 head type suffix&gt;
+          &lt;IP head type auxiliary-C'&gt; = -  
+          &lt;C' head type wh&gt; &lt;= -           
+          &lt;C' head fronted&gt; == ~[cat:FocusP]  
+          &lt;IP head infl&gt; == ~[mood:imperative]
+          &lt;C' option&gt; = 5c
 </xsl:text>
 </xsl:if>
     
@@ -1406,16 +3206,17 @@ C' = C IP C_1
         
         
     
-    <xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='before' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='before' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='before' and normalize-space(//relcl/@whAndComp)!='no' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeIPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='before'">
+<xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='before' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='before' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='before' and normalize-space(//relcl/@whAndComp)!='no' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeIPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='before'">
 <xsl:text>
 rule {CBar option 5d - relative_prefix, IP complement}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;IP head type prefix relative&gt; = +
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = +
-	&lt;C' head type root&gt; = -
-	&lt;C' option&gt; = 5d
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type prefix relative&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = +
+          &lt;C' head type root&gt; = -
+          &lt;C' option&gt; = 5d
 </xsl:text>
 </xsl:if>
     
@@ -1453,16 +3254,17 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='after' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='after' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='after' and normalize-space(//relcl/@whAndComp)!='no' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeIPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='after'">
+<xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='after' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='after' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='after' and normalize-space(//relcl/@whAndComp)!='no' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeIPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='after'">
 <xsl:text>
 rule {CBar option 5e - relative_suffix, IP complement}
 C' = IP
-     	&lt;C' head&gt; = &lt;IP head&gt;
-	&lt;IP head type suffix relative&gt; = +
-	&lt;C' head type question&gt; = -
-	&lt;C' head type relative&gt; = +
-	&lt;C' head type root&gt; = +
-	&lt;C' option&gt; = 5e
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type suffix relative&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = +
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 5e
 </xsl:text>
 </xsl:if>
     
@@ -1500,18 +3302,19 @@ C' = IP
         
         
     
-    <xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='both' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='both' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='both' and normalize-space(//relcl/@whAndComp)!='no' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeIPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='both'">
+<xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='both' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='both' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='both' and normalize-space(//relcl/@whAndComp)!='no' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/relTypeIPRel/@checked)='yes' and normalize-space(//relcl/@relWord)!='yes' and normalize-space(//relcl/@relCliticPos)='both'">
 <xsl:text>
-        rule {CBar option 5f - relative_prefix and relative_suffix, IP complement}
-        C' = IP
-        &lt;C' head&gt; = &lt;IP head&gt;
-        &lt;IP head type prefix relative&gt; = +
-        &lt;IP head type suffix relative&gt; = +
-        &lt;C' head type question&gt; = -
-        &lt;C' head type relative&gt; = +
-        &lt;C' head type root&gt; = +
-        &lt;C' option&gt; = 5f
-    </xsl:text>
+rule {CBar option 5f - relative_prefix and relative_suffix, IP complement}
+C' = IP
+          &lt;C' head&gt; = &lt;IP head&gt;
+          &lt;IP head type prefix relative&gt; = +
+          &lt;IP head type suffix relative&gt; = +
+          &lt;IP head type auxiliary-C'&gt; = -
+          &lt;C' head type question&gt; = -
+          &lt;C' head type relative&gt; = +
+          &lt;C' head type root&gt; = +
+          &lt;C' option&gt; = 5f
+</xsl:text>
 </xsl:if>
     
         
@@ -1550,747 +3353,18 @@ C' = IP
     
     
     
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
-<xsl:text>
-        rule {CP option 6a - Conditional word before, Conseq word before}
-        CP = Cond IP_1 Conseq IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond head infl mood&gt; = conditional
-        &lt;Cond head type comma&gt; = -
-        &lt;Conseq head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6a
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
-<xsl:text>
-        rule {CP option 6aF - Conditional word before, Conseq word after}
-        CP = Cond IP_1 IP_2 Conseq
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond head infl mood&gt; = conditional
-        &lt;Cond head type comma&gt; = -
-        &lt;IP_2 head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6aF
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBefore/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
-<xsl:text>
-        rule {CP option 6aNoConseq - Conditional word before, no Conseq word}
-        CP = Cond IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond head infl mood&gt; = conditional
-        &lt;Cond head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6aNoConseq
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
-<xsl:text>
-        rule {CP option 6b - Conditional word after, Conseq word before}
-        CP = IP_1 Cond Conseq IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond head infl mood&gt; = conditional
-        &lt;Cond head type comma&gt; = +
-        &lt;Conseq head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = -
-        &lt;CP option&gt; = 6b
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
-<xsl:text>
-        rule {CP option 6bF - Conditional word after, Conseq word after}
-        CP = IP_1 Cond IP_2 Conseq
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond head infl mood&gt; = conditional
-        &lt;Cond head type comma&gt; = +
-        &lt;IP_2 head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = -
-        &lt;CP option&gt; = 6bF
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordAfter/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
-<xsl:text>
-        rule {CP option 6bNoConseq - Conditional word after, no Conseq word}
-        CP = IP_1 Cond IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond head infl mood&gt; = conditional
-        &lt;Cond head type comma&gt; = +
-        &lt;IP_1 head type comma&gt; = -
-        &lt;CP option&gt; = 6bNoConseq
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
-<xsl:text>
-        rule {CP option 6c - Conditional word both sides, Conseq word before}
-        CP = Cond_1 IP_1 Cond_2 Conseq IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond_1 head infl mood&gt; = conditional
-        &lt;Cond_2 head infl mood&gt; = conditional
-        &lt;Cond_1 head type comma&gt; = -
-        &lt;Cond_2 head type comma&gt; = +
-        &lt;Conseq head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = -
-        &lt;CP option&gt; = 6c
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
-<xsl:text>
-        rule {CP option 6cF - Conditional word both sides, Conseq word after}
-        CP = Cond_1 IP_1 Cond_2  IP_2 Conseq
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond_1 head infl mood&gt; = conditional
-        &lt;Cond_2 head infl mood&gt; = conditional
-        &lt;Cond_1 head type comma&gt; = -
-        &lt;Cond_2 head type comma&gt; = +
-        &lt;IP_2 head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = -
-        &lt;CP option&gt; = 6cF
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBoth/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
-<xsl:text>
-        rule {CP option 6cNoConseq - Conditional word both sides, no Conseq word}
-        CP = Cond_1 IP_1 Cond_2 IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond_1 head infl mood&gt; = conditional
-        &lt;Cond_2 head infl mood&gt; = conditional
-        &lt;Cond_1 head type comma&gt; = -
-        &lt;Cond_2 head type comma&gt; = +
-        &lt;IP_1 head type comma&gt; = -
-        &lt;CP option&gt; = 6cNoConseq
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
- 
-    <xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
-<xsl:text>
-        rule {CP option 6d - Conditional proclitic, Conseq word before}
-        CP = IP_1 Conseq IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;IP_1 head infl mood&gt; = conditional
-        &lt;IP_1 head type prefix conditional&gt; = +
-        &lt;Conseq head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6d
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
-<xsl:text>
-        rule {CP option 6dF - Conditional proclitic, Conseq word after}
-        CP = IP_1 IP_2 Conseq
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;IP_1 head infl mood&gt; = conditional
-        &lt;IP_1 head type prefix conditional&gt; = +
-        &lt;IP_2 head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6dF
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionProclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
-<xsl:text>
-        rule {CP option 6dNoConseq - Conditional proclitic, no Conseq word}
-        CP = IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;IP_1 head infl mood&gt; = conditional
-        &lt;IP_1 head type prefix conditional&gt; = +
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6dNoConseq
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='before'">
-<xsl:text>
-        rule {CP option 6e - Conditional enclitic, Conseq word before}
-        CP = IP_1 Conseq IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;IP_1 head infl mood&gt; = conditional
-        &lt;IP_1 head type suffix conditional&gt; = +
-        &lt;Conseq head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6e
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='no' and normalize-space(//ip/@consequencePos)='after'">
-<xsl:text>
-        rule {CP option 6eF - Conditional enclitic, Conseq word after}
-        CP = IP_1 IP_2 Conseq
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;IP_1 head infl mood&gt; = conditional
-        &lt;IP_1 head type suffix conditional&gt; = +
-        &lt;IP_2 head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6eF
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionEnclitic/@checked)='yes' and normalize-space(//ip/@consequence)!='yes'">
-<xsl:text>
-        rule {CP option 6eNoConseq - Conditional enclitic, no Conseq word}
-        CP = IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;IP_1 head infl mood&gt; = conditional
-        &lt;IP_1 head type suffix conditional&gt; = +
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 6eNoConseq
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBefore/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBefore/@checked)='yes'">
-<xsl:text>
-        rule {CP option 6f - Consequnece first, Conditional word before}
-        CP = IP_1 Cond IP_2
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;Cond head infl mood&gt; = conditional
-        &lt;Cond head type comma&gt; = -
-        &lt;CP option&gt; = 6f
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordAfter/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordAfter/@checked)='yes'">
-<xsl:text>
-        rule {CP option 6g - Consequence first, Conditional word after}
-        CP = IP_1 IP_2 Cond
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;Cond head infl mood&gt; = conditional
-        &lt;IP_2 head type comma&gt; = -
-        &lt;CP option&gt; = 6g
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='yes' and normalize-space(//ip/conditionWordBoth/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionWordBoth/@checked)='yes'">
-<xsl:text>
-        rule {CP option 6h - Consequence first, Conditional word both sides}
-        CP = IP_1 Cond_1 IP_2 Cond_2 
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;Cond_1 head infl mood&gt; = conditional
-        &lt;Cond_2 head infl mood&gt; = conditional
-        &lt;Cond_1 head type comma&gt; = -
-        &lt;IP_2 head type comma&gt; = 1
-        &lt;CP option&gt; = 6h
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-
-    <xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionProclitic/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionProclitic/@checked)='yes'">
-<xsl:text>
-        rule {CP option 6i - Consequence first, Conditional proclitic}
-        CP = IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;IP_2 head infl mood&gt; = conditional
-        &lt;IP_2 head type prefix conditional&gt; = +
-        &lt;CP option&gt; = 6i
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@conditionWord)='no' and normalize-space(//ip/conditionEnclitic/@checked)='yes' or normalize-space(//ip/@conditionWord)='some' and normalize-space(//ip/conditionEnclitic/@checked)='yes'">
-<xsl:text>
-        rule {CP option 6j - Consequence first, Conditional enclitic}
-        CP = IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;IP_2 head infl mood&gt; = conditional
-        &lt;IP_2 head type suffix conditional&gt; = +
-        &lt;CP option&gt; = 6j
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
- 
-    
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordBefore/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordBefore/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7a - subjunctive conditional word before}
-        CP = Cond IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond head type subjunctive_conditional&gt; = +
-        &lt;Cond head type comma&gt; = -
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 7a
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordAfter/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordAfter/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7b - Subjunctive conditional word after}
-        CP = IP_1 Cond IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond head type subjunctive_conditional&gt; = +
-        &lt;Cond head type comma&gt; = +
-        &lt;IP_1 head type comma&gt; = -
-        &lt;CP option&gt; = 7b
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordBoth/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordBoth/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7c - subjunctive conditional word both sides}
-        CP = Cond_1 IP_1 Cond_2 IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;Cond_1 head type subjunctive_conditional&gt; = +
-        &lt;Cond_2 head type subjunctive_conditional&gt; = +
-        &lt;Cond_1 head type comma&gt; = -
-        &lt;Cond_2 head type comma&gt; = +
-        &lt;IP_1 head type comma&gt; = -
-        &lt;CP option&gt; = 7c
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
- 
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='no' and normalize-space(//ip/subjunctiveCondProclitic/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondProclitic/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7d - subjunctive conditional proclitic}
-        CP = IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;IP_1 head infl mood&gt; = subjunctive
-        &lt;IP_1 head type prefix subjunctive_conditional&gt; = +
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 7d
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='no' and normalize-space(//ip/subjunctiveCondEnclitic/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondEnclitic/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7e - subjunctive conditional enclitic}
-        CP = IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_1 head&gt;
-        &lt;IP_1 head infl mood&gt; = subjunctive
-        &lt;IP_1 head type suffix subjunctive_conditional&gt; = +
-        &lt;IP_1 head type comma&gt; = +
-        &lt;CP option&gt; = 7e
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordBefore/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordBefore/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7f - Consequnece first, subjunctive conditional word before}
-        CP = IP_1 Cond IP_2
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;Cond head type subjunctive_conditional&gt; = +
-        &lt;Cond head type comma&gt; = -
-        &lt;CP option&gt; = 7f
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordAfter/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordAfter/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7g - Consequence first, subjunctive conditional word after}
-        CP = IP_1 IP_2 Cond
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;Cond head type subjunctive_conditional&gt; = +
-        &lt;IP_2 head type comma&gt; = -
-        &lt;CP option&gt; = 7g
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='yes' and normalize-space(//ip/subjunctiveCondWordBoth/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondWordBoth/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7h - Consequence first, subjunctive conditional word both sides}
-        CP = IP_1 Cond_1 IP_2 Cond_2 
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;Cond_1 head type subjunctive_conditional&gt; = +
-        &lt;Cond_2 head type subjunctive_conditional&gt; = +
-        &lt;Cond_1 head type comma&gt; = -
-        &lt;IP_2 head type comma&gt; = 1
-        &lt;CP option&gt; = 7h
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='no' and normalize-space(//ip/subjunctiveCondProclitic/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondProclitic/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7i - Consequence first, subjunctive conditional proclitic}
-        CP = IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;IP_2 head infl mood&gt; = subjunctive
-        &lt;IP_2 head type prefix subjunctive_conditional&gt; = +
-        &lt;CP option&gt; = 7i
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
-    <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='no' and normalize-space(//ip/subjunctiveCondEnclitic/@checked)='yes' or normalize-space(//ip/@subjunctiveCondWord)='some' and normalize-space(//ip/subjunctiveCondEnclitic/@checked)='yes'">
-<xsl:text>
-        rule {CP option 7j - Consequence first, subjunctive conditional enclitic}
-        CP = IP_1 IP_2
-        &lt;CP head&gt; = &lt;IP_2 head&gt;
-        &lt;IP_2 head infl mood&gt; = subjunctive
-        &lt;IP_2 head type suffix subjunctive_conditional&gt; = +
-        &lt;CP option&gt; = 7j
-    </xsl:text>
-</xsl:if>
-    
-        
-        
-        
-        
-        
-        
-        
-    
- 
-    
-<xsl:if test="normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)!='yesWord' or normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)='yesWord' and normalize-space(//focus/@topicMarkerRequired)='no'">
+<xsl:if test="normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)='no' or normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)='yesWord' and normalize-space(//focus/@topicMarkerRequired)='no'">
 <xsl:text>
 rule {TopicP option nomarker}
 TopicP = DP
-     	&lt;TopicP head&gt; = &lt;DP head&gt;
-	&lt;DP head type topic&gt; = +
-	&lt;DP head type focus&gt; = -
-	&lt;DP head type wh&gt; = -
-	&lt;DP head type temporal&gt; = -
-	&lt;TopicP head type topic-marked&gt; = -
-	&lt;TopicP option&gt; = nomarker
+          &lt;TopicP head&gt; = &lt;DP head&gt;
+          &lt;DP head type focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;TopicP head type topic-marked&gt; = -
+          &lt;TopicP option&gt; = nomarker
 </xsl:text>
 </xsl:if>
 
@@ -2304,18 +3378,115 @@ TopicP = DP
 
 
 
+<xsl:if test="normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)='yesAffix'">
+<xsl:text>
+rule {TopicP option affix}
+TopicP = DP
+          &lt;TopicP head&gt; = &lt;DP head&gt;
+          &lt;DP head type topic&gt; = +
+          &lt;DP head type focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;DP head type prefix topic&gt; = -
+          &lt;DP head type suffix topic&gt; = -
+          &lt;TopicP head type topic-marked&gt; &lt;= +
+          &lt;TopicP option&gt; = affix
+</xsl:text>
+</xsl:if>
+
+    
+
+
+
+<xsl:if test="normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)='yesClitic'">
+<xsl:text>
+rule {TopicP option proclitic}
+TopicP = DP
+          &lt;TopicP head&gt; = &lt;DP head&gt;
+          &lt;DP head type topic&gt; = +
+          &lt;DP head type focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;DP head type prefix topic&gt; = +
+          &lt;DP head type suffix topic&gt; = -
+          &lt;TopicP head type topic-marked&gt; &lt;= &lt;DP head type prefix topic&gt;
+          &lt;TopicP option&gt; = proclitic
+</xsl:text>
+</xsl:if>
+
+    
+
+
+
+<xsl:if test="normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)='yesClitic'">
+<xsl:text>
+rule {TopicP option enclitic}
+TopicP = DP
+          &lt;TopicP head&gt; = &lt;DP head&gt;
+          &lt;DP head type topic&gt; = +
+          &lt;DP head type focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;DP head type prefix topic&gt; = -
+          &lt;DP head type suffix topic&gt; = +
+          &lt;TopicP head type topic-marked&gt; &lt;= &lt;DP head type suffix topic&gt;
+          &lt;TopicP option&gt; = enclitic
+</xsl:text>
+</xsl:if>
+
+    
+
+
+
+<xsl:if test="normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)!='yesWord' or normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)='yesWord' and normalize-space(//focus/@topicMarkerRequired)='no'">
+<xsl:text>
+rule {TopicP option vocative}
+TopicP = DP
+          &lt;TopicP head&gt; = &lt;DP head&gt;
+          &lt;DP head type topic&gt; = -
+          &lt;DP head type focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type proper&gt; = +
+          &lt;DP head type temporal&gt; = -
+          &lt;TopicP head type topic-marked&gt; = -
+|         &lt;TopicP head type comma&gt; = +            | activate this constraint if you make comma a word-formation character
+          &lt;TopicP option&gt; = vocative
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
 <xsl:if test="normalize-space(//focus/@topic)='yes' and normalize-space(//focus/@topicMarker)='yesWord' and normalize-space(//focus/topicMarkerBefore/@checked)='yes'">
 <xsl:text>
 rule {TopicP option markerinit}
 TopicP = TopicM DP
-     	&lt;TopicP head&gt; = &lt;DP head&gt;
-	&lt;TopicM head type topic-initial&gt; = +
-	&lt;DP head type focus&gt; = -
-	&lt;DP head type wh&gt; = -
-	&lt;DP head type temporal&gt; = -
-	&lt;TopicP head type topic-marked&gt; = +
-	&lt;TopicM head type comma&gt; = -
-	&lt;TopicP option&gt; = markerinit
+          &lt;TopicP head&gt; = &lt;DP head&gt;
+          &lt;TopicM head type topic-initial&gt; = +
+          &lt;DP head type focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;TopicP head type topic-marked&gt; = +
+          &lt;TopicM head type comma&gt; = -
+          &lt;TopicP option&gt; = markerinit
 </xsl:text>
 </xsl:if>
 
@@ -2329,15 +3500,17 @@ TopicP = TopicM DP
 <xsl:text>
 rule {TopicP option markerfin}
 TopicP = DP TopicM
-     	&lt;TopicP head&gt; = &lt;DP head&gt;
-	&lt;TopicM head type topic-final&gt; = +
-	&lt;DP head type focus&gt; = -
-	&lt;DP head type wh&gt; = -
-	&lt;DP head type temporal&gt; = -
-	&lt;TopicP head type topic-marked&gt; = +
-	&lt;DP head type comma&gt; = -
-	&lt;TopicP head type comma&gt; &lt;= &lt;TopicM head type comma&gt;
-	&lt;TopicP option&gt; = markerfin
+          &lt;TopicP head&gt; = &lt;DP head&gt;
+          &lt;TopicM head type topic-final&gt; = +
+          &lt;DP head type focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;TopicP head type topic-marked&gt; = +
+          &lt;DP head type comma&gt; = -
+          &lt;TopicP head type comma&gt; &lt;= &lt;TopicM head type comma&gt;
+          &lt;TopicP option&gt; = markerfin
 </xsl:text>
 </xsl:if>
 
@@ -2351,17 +3524,19 @@ TopicP = DP TopicM
 <xsl:text>
 rule {TopicP option markerboth}
 TopicP = TopicM_1 DP TopicM_2
-     	&lt;TopicP head&gt; = &lt;DP head&gt;
-	&lt;TopicM_1 head type topic-initial&gt; = +
-	&lt;TopicM_2 head type topic-final&gt; = +
-	&lt;DP head type focus&gt; = -
-	&lt;DP head type wh&gt; = -
-	&lt;DP head type temporal&gt; = -
-	&lt;TopicP head type topic-marked&gt; = +
-	&lt;TopicM_1 head type comma&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;TopicP head type comma&gt; &lt;= &lt;TopicM_2 head type comma&gt;
-	&lt;TopicP option&gt; = markerboth
+          &lt;TopicP head&gt; = &lt;DP head&gt;
+          &lt;TopicM_1 head type topic-initial&gt; = +
+          &lt;TopicM_2 head type topic-final&gt; = +
+          &lt;DP head type focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;TopicP head type topic-marked&gt; = +
+          &lt;TopicM_1 head type comma&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;TopicP head type comma&gt; &lt;= &lt;TopicM_2 head type comma&gt;
+          &lt;TopicP option&gt; = markerboth
 </xsl:text>
 </xsl:if>
 
@@ -2372,17 +3547,30 @@ TopicP = TopicM_1 DP TopicM_2
 
 
 
-<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusMarker)!='yesWord' or normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusMarker)='yesWord' and normalize-space(//focus/@focusMarkerRequired)='no'">
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusMarker)='no' or normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusMarker)='yesWord' and normalize-space(//focus/@focusMarkerRequired)='no'">
 <xsl:text>
 rule {FocusP option nomarker}
 FocusP = DP
-     	&lt;FocusP head&gt; = &lt;DP head&gt;
-	&lt;DP head type focus&gt; = +
-	&lt;DP head type topic&gt; = -
-	&lt;DP head type wh&gt; = -
-	&lt;DP head type temporal&gt; = -
-	&lt;FocusP head type focusmarked&gt; &lt;= -
-	&lt;FocusP option&gt; = nomarker
+          &lt;FocusP head&gt; = &lt;DP head&gt;
+          &lt;DP head type topic&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;DP head type prefix topic&gt; = -
+          &lt;DP head type suffix topic&gt; = -
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type suffix poss&gt; = -
+          &lt;DP head type prefix YNQ&gt; = -
+          &lt;DP head type suffix YNQ&gt; = -
+          &lt;DP head type prefix whQ&gt; = -
+          &lt;DP head type suffix whQ&gt; = -
+          &lt;DP head type prefix conj&gt; = -
+          &lt;DP head type suffix conj&gt; = -
+          &lt;DP head type prefix relative&gt; = -
+          &lt;DP head type suffix relative&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;FocusP head type focusmarked&gt; &lt;= -
+          &lt;FocusP option&gt; = nomarker
 </xsl:text>
 </xsl:if>
 
@@ -2396,20 +3584,113 @@ FocusP = DP
 
 
 
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusMarker)='yesAffix'">
+<xsl:text>
+rule {FocusP option affix}
+FocusP = DP
+          &lt;FocusP head&gt; = &lt;DP head&gt;
+          &lt;DP head type focusmarked&gt; = +
+          &lt;DP head type topic&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;DP head type prefix topic&gt; = -
+          &lt;DP head type suffix topic&gt; = -
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type suffix poss&gt; = -
+          &lt;DP head type prefix YNQ&gt; = -
+          &lt;DP head type suffix YNQ&gt; = -
+          &lt;DP head type prefix whQ&gt; = -
+          &lt;DP head type suffix whQ&gt; = -
+          &lt;DP head type prefix conj&gt; = -
+          &lt;DP head type suffix conj&gt; = -
+          &lt;DP head type prefix relative&gt; = -
+          &lt;DP head type suffix relative&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;FocusP option&gt; = affix
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+    
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusMarker)='yesClitic'">
+<xsl:text>
+rule {FocusP option proclitic}
+FocusP = DP
+          &lt;FocusP head&gt; = &lt;DP head&gt;
+          &lt;DP head type topic&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;DP head type prefix topic&gt; = -
+          &lt;DP head type suffix topic&gt; = -
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type suffix poss&gt; = -
+          &lt;DP head type prefix YNQ&gt; = -
+          &lt;DP head type suffix YNQ&gt; = -
+          &lt;DP head type prefix whQ&gt; = -
+          &lt;DP head type suffix whQ&gt; = -
+          &lt;DP head type prefix conj&gt; = -
+          &lt;DP head type suffix conj&gt; = -
+          &lt;DP head type prefix relative&gt; = -
+          &lt;DP head type suffix relative&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = +
+          &lt;FocusP head type focusmarked&gt; &lt;= &lt;DP head type prefix focusmarked&gt;
+          &lt;FocusP option&gt; = proclitic
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+    
+<xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusMarker)='yesClitic'">
+<xsl:text>
+rule {FocusP option enclitic}
+FocusP = DP
+          &lt;FocusP head&gt; = &lt;DP head&gt;
+          &lt;DP head type topic&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;DP head type prefix topic&gt; = -
+          &lt;DP head type suffix topic&gt; = -
+          &lt;DP head type prefix poss&gt; = -
+          &lt;DP head type suffix poss&gt; = -
+          &lt;DP head type prefix YNQ&gt; = -
+          &lt;DP head type suffix YNQ&gt; = -
+          &lt;DP head type prefix whQ&gt; = -
+          &lt;DP head type suffix whQ&gt; = -
+          &lt;DP head type prefix conj&gt; = -
+          &lt;DP head type suffix conj&gt; = -
+          &lt;DP head type prefix relative&gt; = -
+          &lt;DP head type suffix relative&gt; = -
+          &lt;DP head type prefix focusmarked&gt; = -
+          &lt;DP head type suffix focusmarked&gt; = +
+          &lt;FocusP head type focusmarked&gt; &lt;= &lt;DP head type suffix focusmarked&gt;
+          &lt;FocusP option&gt; = enclitic
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+    
+    
 <xsl:if test="normalize-space(//focus/@focus)='yes' and normalize-space(//focus/@focusMarker)='yesWord' and normalize-space(//focus/focusMarkerBefore/@checked)='yes'">
 <xsl:text>
 rule {FocusP option markerinit}
 FocusP = FocusM DP
-     	&lt;FocusP head&gt; = &lt;DP head&gt;
-	&lt;FocusM head type focus-initial&gt; = +
-	&lt;DP head type focus&gt; = +
-	&lt;DP head type topic&gt; = -
-	&lt;DP head type wh&gt; = -
-	&lt;DP head type temporal&gt; = -
-	&lt;FocusP head type focusmarked&gt; &lt;= +
-	&lt;FocusM head type comma&gt; = -
-	&lt;FocusP head case&gt; &lt;= &lt;FocusM head case&gt;
-	&lt;FocusP option&gt; = markerinit
+          &lt;FocusP head&gt; = &lt;DP head&gt;
+          &lt;FocusM head type focus-initial&gt; = +
+          &lt;DP head type topic&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;FocusP head type focusmarked&gt; &lt;= +
+          &lt;FocusM head type comma&gt; = -
+          &lt;FocusP head case&gt; &lt;= &lt;FocusM head case&gt;
+          &lt;FocusP option&gt; = markerinit
 </xsl:text>
 </xsl:if>
 
@@ -2423,16 +3704,15 @@ FocusP = FocusM DP
 <xsl:text>
 rule {FocusP option markerfin}
 FocusP = DP FocusM
-     	&lt;FocusP head&gt; = &lt;DP head&gt;
-	&lt;FocusM head type focus-final&gt; = +
-	&lt;DP head type focus&gt; = +
-	&lt;DP head type topic&gt; = -
-	&lt;DP head type wh&gt; = -
-	&lt;DP head type temporal&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;FocusP head type comma&gt; &lt;= &lt;FocusM head type comma&gt;
-	&lt;FocusP head type focusmarked&gt; &lt;= +
-	&lt;FocusP option&gt; = markerfin
+          &lt;FocusP head&gt; = &lt;DP head&gt;
+          &lt;FocusM head type focus-final&gt; = +
+          &lt;DP head type topic&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;FocusP head type comma&gt; &lt;= &lt;FocusM head type comma&gt;
+          &lt;FocusP head type focusmarked&gt; &lt;= +
+          &lt;FocusP option&gt; = markerfin
 </xsl:text>
 </xsl:if>
 
@@ -2446,18 +3726,17 @@ FocusP = DP FocusM
 <xsl:text>
 rule {FocusP option markerboth}
 FocusP = FocusM_1 DP FocusM_2
-     	&lt;FocusP head&gt; = &lt;DP head&gt;
-	&lt;FocusM_1 head type focus-initial&gt; = +
-	&lt;FocusM_2 head type focus-final&gt; = +
-	&lt;DP head type focus&gt; = +
-	&lt;DP head type topic&gt; = -
-	&lt;DP head type wh&gt; = -
-	&lt;DP head type temporal&gt; = -
-	&lt;FocusM_1 head type comma&gt; = -
-	&lt;DP head type comma&gt; = -
-	&lt;FocusP head type comma&gt; &lt;= &lt;FocusM_2 head type comma&gt;
-	&lt;FocusP head type focusmarked&gt; &lt;= +
-	&lt;FocusP option&gt; = markerboth
+          &lt;FocusP head&gt; = &lt;DP head&gt;
+          &lt;FocusM_1 head type focus-initial&gt; = +
+          &lt;FocusM_2 head type focus-final&gt; = +
+          &lt;DP head type topic&gt; = -
+          &lt;DP head type wh&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;FocusM_1 head type comma&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;FocusP head type comma&gt; &lt;= &lt;FocusM_2 head type comma&gt;
+          &lt;FocusP head type focusmarked&gt; &lt;= +
+          &lt;FocusP option&gt; = markerboth
 </xsl:text>
 </xsl:if>
 

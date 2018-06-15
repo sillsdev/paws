@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronNP" count="7/9">
+<page id="PronNP" count="7.7">
    <title level="2">Pronoms – Comme Syntagme Nominal</title>
    <introduction>Normalement les pronoms de toutes sortes se présentent seuls remplaçant un syntagme nominal entier, mais ils peuvent aussi être modifiés par une proposition relative.  Dans certaines langues les pronoms peuvent être modifiés par un syntagme <technicalTermRef term="ttPartitive">partitif</technicalTermRef>, et d’autres langues permettent la modification de pronoms par des <technicalTermRef term="ttDeterminers">déterminants</technicalTermRef> et par des quantificateurs de portée large et par des mots de degré.  Des exemples français comprennent ceux qui suivent:</introduction>
 		<EnglishExample>
@@ -24,9 +24,9 @@
          <radio id="PronModAll" dataValue="all">Oui, ces éléments peuvent être modifiés par tous les mêmes modificateurs qui modifient les substantifs, y compris les adjectifs et les possesseurs</radio>
       </radioGroup>   
       <prompt id="PronModMinimalExamplePrompt" show="swPronModDetOrAll">Entrez ici des exemples de votre langue de pronoms modifiés par quelques-uns ou par tous les éléments permis:</prompt>
-		<textBox id="PronNPStandAloneExample" dataItem="standAloneNPExample" show="swPronModDetOrAll"/>
+		<textBox id="PronNPStandAloneExample" dataItem="standAloneNPExample" show="swPronModDetOrAll" cols="80"/>
       <prompt id="PronModSentExamplePrompt" show="swPronModDetOrAll">Maintenant prenez plusieurs des exemples que vous avez entrés ci-dessus et employez-les ici comme le sujet ou comme l’objet d’une phrase:</prompt>
-      <textBox id="PronModSentExample" dataItem="pronSentExample" show="swPronModDetOrAll"/>
+      <textBox id="PronModSentExample" dataItem="pronSentExample" show="swPronModDetOrAll" cols="80"/>
       <br/><br/>
       <introduction>Quelques exemples en français des pronoms modifiés par des syntagmes partitifs (ou autre syntagme prépositionnel) sont:</introduction>
       <EnglishExample>
@@ -37,7 +37,7 @@
       <br/>
       <prompt id="PronNPPartitiveModNo" show="swPronModNoOrRel">Nous présumons que ceci n’est pas possible dans votre langue, basé sur votre réponse ci-dessus.  Si cela est incorrect, veuillez changez votre réponse ci-dessus.</prompt>
       <prompt id="PronNPPartitiveMod" show="swPronModNotNoOrRel">Entrez ici vos exemples:</prompt>
-      <textBox id="PronNPPartitiveExample" dataItem="partitiveExample" show="swPronModNotNoOrRel"/>
+      <textBox id="PronNPPartitiveExample" dataItem="partitiveExample" show="swPronModNotNoOrRel" cols="80"/>
       <br/>
       <radioGroup id="PronNPPartitiveTable" show="swPronModNotNoOrRel">
          <groupName dataItem="partitivePos" default="unknown" position="yesHeadDiff">RPronNPPartitive</groupName>
@@ -56,7 +56,7 @@
 		<br/>
       <prompt id="PronNPRelModNo" show="swPronModNo">Nous présumons que cela n’est pas possible dans votre langue, basé sur votre réponse ci-dessus.  Si cela n’est pas correct, veuillez changez votre réponse ci-dessus.</prompt>
       <prompt id="PronNPRelClMod" show="swPronModNotNo">Entrez ici vos exemples de propositions relatives, plaçant ces syntagmes nominaux comme le sujet ou l’objet d’une phrase simple:</prompt>
-		<textBox id="PronNPRelCl" dataItem="pronRelClExample" show="swPronModNotNo"/>
+		<textBox id="PronNPRelCl" dataItem="pronRelClExample" show="swPronModNotNo" cols="80"/>
 		<br/>
       <instruction id="PronDistributionNPInstruction" show="swNotPracticalAndPronModDet">In the tree structure given at the beginning of <section number="5">Nominal Phrases</section>, we will assume for your language that pronouns can fill the NP position, because they can be modified by degree words, demonstratives, articles, relative clauses and PPs, but not by possessors or adjectives.</instruction>
       <instruction id="PronDistributionDBarPartInstruction" show="swNotPracticalAndPronModPart">In the tree structure given at the beginning of <section number="5">Nominal Phrases</section>, we will assume for your language that pronouns can fill the D’ position, because they can be modified by relative clauses and PPs.</instruction>
@@ -71,9 +71,10 @@
          <radio id="PronClassifierNoNYes" dataValue="yes">Oui</radio>
          <radio id="PronClassifierNoNNo" dataValue="no">Non, il faut toujours un substantif</radio>
       </radioGroup>   
-      <prompt id="PronNPClassifierNoNExamplePrompt" show="swOTClassifiersSpecificAndClassifierNoNYes">Entrez des exemples de votre langue de classificateurs dans un syntagme nominal sans un substantif:</prompt>
-      <textBox id="PronNPClassifierNoNExample" dataItem="classifierNoNExample" show="swOTClassifiersSpecificAndClassifierNoNYes"/>
-      
+      <prompt id="PronNPClassifierNoNExamplePrompt" show="swOTClassifiersSpecificAndClassifierNoNYes">Entrez des exemples de votre langue de classificateurs dans un syntagme nominal (ou une phrase) sans un substantif:</prompt>
+      <textBox id="PronNPClassifierNoNExample" dataItem="classifierNoNExample" show="swOTClassifiersSpecificAndClassifierNoNYes" cols="80"/>     
+      <br/><br/>
+      <instruction id="PronClassifierNoNYesInstruction" show="swOTClassifiersSpecificAndClassifierNoNYes">Note that the rule allowing classifiers to stand alone without a noun may significantly increase ambiguity in your PC-Patr grammar.  Consider commenting off the N'=Class rule if your language only allows this rarely.</instruction>
       <br/><br/>
 		<buttons>
 			<button id="PronNPBack" value="Back" goto="PronIndefinite.xml"/>

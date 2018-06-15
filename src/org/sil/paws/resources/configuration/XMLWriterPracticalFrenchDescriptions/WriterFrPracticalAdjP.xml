@@ -554,9 +554,9 @@
               <content>, qui ne se trouvent pas avec d’autres modificateurs exceptés des adjectifs, et des quantificateurs comme de portée plus restreinte tels que </content>
               <langData>beaucoup</langData>
               <content>, </content> 
-              <langData>plusiers</langData>
+              <langData>plusieurs</langData>
               <content>, </content> 
-              <langData>nombreaux</langData>
+              <langData>nombreux</langData>
               <content> ou </content>
               <langData>peu de</langData><content>.  Chaque type sera considéré l’un après l’autre et ensuite les constructions partitives seront traitées.
              </content>
@@ -739,7 +739,7 @@
                      <row>
                         <col exampleLoc="qp/any"/>
                         <col>
-                           <gloss><content>quelconque</content></gloss>
+                           <gloss><content>quelquonque</content></gloss>
                         </col>
                      </row>
                      <row>
@@ -826,14 +826,14 @@
                  <content>D’autres quantificateurs comme </content>
                     <langData>beaucoup</langData>
                     <content>, </content>
-                    <langData>plusiers</langData>
+                    <langData>plusieurs</langData>
                  <content>, </content>
-                 <langData>nombreaux</langData>
+                 <langData>nombreux</langData>
                  <content> et </content>
                     <langData>peu de</langData>
                  <content> se trouvent dans une position différente dans le syntagme nominal montrant leur portée plus réduite.   
                  En anglais c’est après un article, démonstratif ou possessif et avant un adjectif  et nom, comme par exemple </content>
-                 <langData>a few sad children  (peu de enfants tristes)</langData><content> ou </content>
+                 <langData>a few sad children  (peu d’enfants tristes)</langData><content> ou </content>
                  <langData>Sue’s many black dogs  (les nombreux chiens noirs de Suzanne)</langData>
                     <content>.
                        De plus, ces quantificateurs peuvent normalement être modifiés par des mots de degré comme </content>
@@ -854,7 +854,7 @@
                  <content> ou </content>
                  <langData>tant d’ordures</langData>
                  <content> ou </content>
-                 <langData>très peu de enfants</langData><content>.</content>
+                 <langData>très peu d’enfants</langData><content>.</content>
               </p>
                  <p show="swQPQuantifierClassifierYes">
                     <content>En </content>
@@ -875,11 +875,11 @@
                        </headerRow>
                        <row>
                           <col exampleLoc="qp/many"/>
-                          <col ><gloss><content>beaucoup, plusiers, nombreaux (many)</content></gloss></col>
+                          <col ><gloss><content>beaucoup, plusieurs, nombreux (many)</content></gloss></col>
                        </row>
                        <row>
                           <col exampleLoc="qp/much"/>
-                          <col ><gloss><content>beaucoup, plusiers, nombreaux (much)</content></gloss></col>
+                          <col ><gloss><content>beaucoup, plusieurs, nombreux (much)</content></gloss></col>
                        </row>
                        <row>
                           <col exampleLoc="qp/few"/>
@@ -983,7 +983,7 @@
            <p contentType="ctComparativeIntro"><content>Tous les quantificateurs y compris les nombres peuvent normalement se trouver dans des constructions partitives, qui sont utilisées pour signifier qu’on ne parle que d’une partie d’un groupe.  Des exemples incluent: </content>
               <langData>quelques-uns des enfants</langData><content>, </content>
               <langData>plusieurs des filles plus agées</langData><content>, </content>
-              <langData>beaucoup des femmes</langData><content> et </content>
+              <langData>beaucoup de ces femmes</langData><content> et </content>
               <langData>dix des garçons seulement</langData><content>.  Comme les exemples le montrent les constructions partitives de cette sorte ont normalement un syntagme prepositionel ou postpositionnel qui modifie le quantificateur, qui indique le groupe ou entité discuté.  Certaines langues peuvent utiliser une proposition relative pour exprimer le groupe de la construction partitive au lieu d’un syntagme adpositionnel.
               </content>
            </p>

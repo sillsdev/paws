@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPPassive" count="1/3">
+<page id="IPPassive" count="9.8.1">
 	<title level="2">Phrases Simples – Passifs</title>
 	<introduction>La plupart des langues ont des phrases au <technicalTermRef term="ttPassive">pasif</technicalTermRef>, là où le <technicalTermRef term="ttTheme">thème</technicalTermRef> ou le <technicalTermRef term="ttPatient">patient</technicalTermRef> prend la position du sujet. Dans certaines langues <technicalTermRef term="ttAgent">l’agent</technicalTermRef> peut être facultatif; par contre, dans d’autres l’agent n’est pas permis. Si l’agent est exprimé il peut prendre la forme d’un syntagme prépositionnel ou postpositionnel (comme l’anglais se sert de la préposition <example>by</example> ou en français <example>par</example>) ou bien d’un syntagme nominal, selon la langue. En plus, pour les passifs un auxiliaire particulier peut être nécessaire (une forme du verbe <example>be</example> en anglais, <example>être</example> en français). Voici des exemples en anglais et français, y compris ceux qui montrent une action à auxiliaires multiples):</introduction>
 	<EnglishExample>
@@ -23,7 +23,7 @@
 		<prompt id="IPPassiveYesPrompt" show="swIPPassiveYesAndFeaturesNo">AVERTISSEMENT: A la <section number="9.2">Phrases Simples – La flexion</section> vous n’avez pas coché le passif comme caractéristique de votre langue. Ceci n’est pas conforme avec votre réponse ici. Si votre langue possède le mode passif revenez à la <section number="9.2">Phrases Simples – La flexion</section> et cochez le passif.</prompt>
 	   
 		<prompt id="IPPassiveExamplePrompt" show="swPassiveYes"><br/>Entrez ici des exemples de phrases passives dans votre langue:</prompt>
-		   <textBox id="IPPassiveExample" dataItem="passiveExample" cols="50" show="swPassiveYes"/>	   
+		   <textBox id="IPPassiveExample" dataItem="passiveExample" cols="80" show="swPassiveYes"/>	   
 			<radioGroup id="IPPassiveAgentTable" show="swPassiveYes">
 				<groupName dataItem="passiveAgent" default="no">RIPPassiveAgent</groupName>
 				<prompt><br/>Considérez les exemples que vous avez donnés; est-ce que un syntagme agent est possible?</prompt>

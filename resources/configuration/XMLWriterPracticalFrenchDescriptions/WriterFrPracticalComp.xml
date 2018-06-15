@@ -156,7 +156,7 @@
                 </example>
                 <p contentType="ctComparativeIntro">
                    <content>Des verbes qui prennent ou un complément fini, avec ou sans un  complétiviseur, ou un complément non-fini sans un  complétiviseur comprennent les exemples suivants: </content>
-                   <langData>I expect that Joe will come to the party</langData><gloss><content>  « Je m’attends que Jacques va venir à la soirée »</content></gloss>
+                   <langData>I expect that Joe will come to the party</langData><gloss><content>  « Je m’attends à ce que Jacques va venir à la soirée »</content></gloss>
                     <content> et </content>
                    <langData>I expect Joe to come to the party</langData><gloss><content>  « Je m’attends à Jacques à venir à la soirée »</content></gloss>
                    <content>.  Des exemples de ce type en </content>
@@ -253,7 +253,7 @@
              <content>, </content>           
              <langData>I know (that) he likes me</langData><gloss><content>  « Je sais qu’il m’aime »</content></gloss>
              <content>, </content>           
-             <langData>I expect that Joe will come to the party</langData><gloss><content>  « Je m’attends que Jacques va venir à la soirée »</content></gloss>
+             <langData>I expect that Joe will come to the party</langData><gloss><content>  « Je m’attends à ce que Jacques va venir à la soirée »</content></gloss>
              <content>, </content>           
              <langData>I expect Joe to come to the party</langData><gloss><content>  « Je m’attends à Jacques à venir à la soirée »</content></gloss>
              <content>, </content>           
@@ -334,7 +334,7 @@
           </example>
           <p contentType="ctComparativeIntro">
              <content>Des verbes qui prennent soit un complément phrastique fini ou non-fini incluent les exemples suivants: </content>
-             <langData>I expect Joe will come to the party</langData><gloss><content>  « Je m’attends que Jacques va venir à la soirée »</content></gloss>
+             <langData>I expect Joe will come to the party</langData><gloss><content>  « Je m’attends à ce que Jacques va venir à la soirée »</content></gloss>
              <content> et </content>
              <langData>I expect Joe to come to the party</langData><gloss><content>  « Je m’attends à Jacques à venir à la soirée »</content></gloss>
              <content>.  Des exemples de ce type en </content>
@@ -417,7 +417,7 @@
              <content>, </content>           
              <langData>I know he likes me</langData><gloss><content>  « Je sais qu’il m’aime »</content></gloss>
              <content>, </content>           
-             <langData>I expect Joe will come to the party</langData><gloss><content>  « Je m’attends que Jacques va venir à la soirée »</content></gloss>
+             <langData>I expect Joe will come to the party</langData><gloss><content>  « Je m’attends à ce que Jacques va venir à la soirée »</content></gloss>
              <content>, </content>           
              <langData>I expect Joe to come to the party</langData><gloss><content>  « Je m’attends à Jacques à venir à la soirée »</content></gloss>
              <content>, </content>           

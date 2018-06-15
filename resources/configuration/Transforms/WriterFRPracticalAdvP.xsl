@@ -727,7 +727,7 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>pendant une longtemps</langData>
+</xsl:attribute>pendant longtemps</langData>
 <xsl:text>, </xsl:text>
 <langData>
 <xsl:attribute name="lang">

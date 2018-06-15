@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPCausative" count="2/3">
+<page id="IPCausative" count="9.8.2">
    <title level="2">Las oraciones básicas - Causativas, aplicativas y antipasivas</title>
    <introduction>Las oraciones causativas agregan un <technicalTermRef term="ttArgument"/> adicional a la oración. Algunas lenguas tienen oraciones <technicalTermRef term="ttCausative">causativas</technicalTermRef> de una sola cláusula, en que el verbo se marca con un afijo que presenta el argumento adicional. Ese es el tipo de construcción que se cubre aquí. <br/><br/>Inglés y español tienen solamente causativas sintácticas que consistan en dos cláusulas, por ejemplo:</introduction>
 	<EnglishExample>
@@ -16,23 +16,27 @@
 	      <prompt><br/>¿Cómo se expresan causativas en su lengua? Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="IPCausativeAffix" dataItem="causativeAffix">Hay un afijo verbal para causativo que presenta un argumento adicional</checkbox>
 	      <checkbox id="IPCausativeMake" dataItem="causativeMake">Las oraciones causativas consisten en dos cláusulas con un verbo principal que significa “hacer” o “causar”</checkbox>
-	      <checkbox id="IPCausativeOther" dataItem="causativeOther">En mi lengua las causativas se expresan en esta otra manera::<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" rows="2"/></checkbox>
+	      <checkbox id="IPCausativeOther" dataItem="causativeOther">En mi lengua las causativas se expresan en esta otra manera::<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" cols="70"  rows="1"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="IPCausativeNoCheckPrompt" show="swIPCausativeNoCheck">ADVERTENCIA: Usted necesita sellecione al menos una opción para describir cómo se forman las causativas en su lengua. </prompt>
 	   <prompt id="IPCausativeAffixAndFeaturesNoPrompt" show="swIPCausativeAffixAndFeaturesNo">ADVERTENCIA: En <section number="9.2"> Las oraciones básicas - La flexión verbal</section> no seleccionó el accidente gramatical de voz causativa para su lengua. Esto es inconsistente con su respuesta que existe un afijo verbal para causativo aquí. Si su lengua tiene uno o más afijos causativos, vuelva a <section number="9.2"> Las oraciones básicas - La flexión verbal</section> y seleccione el accidente gramatical de voz causativa.</prompt>
 	   <prompt id="IPCausativeAffixPrompt" show="swIPCausativeAffix"><br/>Escriba los afijos causativos en su lengua con una indicación del guión en el lado que se unen al verbo (con cada uno en una línea separada) aquí:  </prompt>
 	   <textBox id="IPCausativeAffixExample" dataItem="causativeAffixExample" rows="3" show="swIPCausativeAffix"/>		
+
+	   <instruction id="IPCausativeAffixInstruction" show="swIPCausativeAffix">Mark the causative affixes with the feature <feature>causative</feature> in the lexicon, if you have not already done so. </instruction>
+
 	   <prompt id="IPCausativeAffixExamplesPrompt" show="swIPCausativeAffix"><br/>Escriba ejemplos de las oraciones causativas utilizando un afijo causativo en el verbo aquí: </prompt>
-	   <textBox id="IPCausativeExample" dataItem="causativeExample" cols="50" show="swIPCausativeAffix"/>
+	   <textBox id="IPCausativeExample" dataItem="causativeExample" cols="80" show="swIPCausativeAffix"/>
 	   
 	   <prompt id="IPCausativeMakeExamplesPrompt" show="swIPCausativeMake"><br/>Escriba ejemplos de las oraciones causativas de dos cláusulas con un verbo principal que significa “hacer” o “causar” aquí:</prompt>
-	   <textBox id="IPCausativeMakeExample" dataItem="causativeMakeExample" cols="50" show="swIPCausativeMake"/>
+	   <textBox id="IPCausativeMakeExample" dataItem="causativeMakeExample" cols="80" show="swIPCausativeMake"/>
 	   <prompt id="IPCausativeMakePrompt" show="swIPCausativeMake">Este tipo de ejemplo se detallan más en <section number="10.">Cláusulas de complemento</section>.</prompt>
-	   <prompt id="IPCausativeOtherExamplesPrompt" show="swIPCausativeOther"><br/>Escriba ejemplos del otro tipo de oración causativa que su lengua utiliza aquí:</prompt>
-	   <textBox id="IPCausativeOtherExample" dataItem="causativeOtherExample" cols="50" show="swIPCausativeOther"/>
-	   
-	   <instruction id="IPCausativeInstruction">Mark inherently causative verbs <span id="IPCausativeAffixSpan" show="swIPCausativeAffix">and causative affixes </span>with the feature <feature>causative</feature> in the lexicon, if you have not already done so.
+	   <instruction id="IPCausativeInstruction" show="swIPCausativeMake">Mark inherently causative verbs with the feature <feature>causative_syntax</feature> in the lexicon.
 	   </instruction>
+
+	   <prompt id="IPCausativeOtherExamplesPrompt" show="swIPCausativeOther"><br/>Escriba ejemplos del otro tipo de oración causativa que su lengua utiliza aquí:</prompt>
+	   <textBox id="IPCausativeOtherExample" dataItem="causativeOtherExample" cols="80" show="swIPCausativeOther"/>
+	   
 	   <br/>
 	   <introduction>Algunas lenguas tienen una construcción adicional aplicativa.  La <technicalTermRef term="ttApplicative" capitalize="yes">aplicativa</technicalTermRef> es una <technicalTermRef term="ttVoice"/> del verbo que promueve un argumento oblicua del verbo al argumento de objeto e indica la relación gramatical del oblicuo en el significado del verbo. Se convierte un verbo intransitivo a un transitivo y un verbo transitivo se convierte en ditransitivo cuando se añade el afijo aplicativo. Esto está en contraste con expresar estos argumentos con adposiciones.
 	      <br/><br/>
@@ -47,7 +51,7 @@
 	   <prompt id="IPApplicativeNoPrompt" show="swIPApplicativeNoAndFeaturesYes">ADVERTENCIA: En <section number="9.2"> Las oraciones básicas - La flexión verbal</section> usted seleccionó el accidente gramatical de voz aplicativa para su lengua. Esto es inconsistente con su respuesta aquí. Por favor cambia su respuesta aquí a ‘Sí’ o vuelva a <section number="9.2"> Las oraciones básicas - La flexión verbal</section> y desactive el accidente gramatical de voz aplicativa.</prompt>
 	   <prompt id="IPApplicativeYesPrompt" show="swIPApplicativeYesAndFeaturesNo">ADVERTENCIA: En <section number="9.2"> Las oraciones básicas - La flexión verbal</section> no seleccionó el accidente gramatical de voz aplicativa para su lengua. Esto es inconsistente con su respuesta aquí. Si su lengua tiene aplicativas, vuelva a <section number="9.2"> Las oraciones básicas - La flexión verbal</section> y seleccione el accidente gramatical de voz aplicativa y escriba los morfemas aplicativos allí.</prompt>
 	   <prompt id="IPApplicativePrompt" show="swIPApplicativeYes">Escriba algunos ejemplos de oraciones aplicativas en su lengua aquí:</prompt>
-	   <textBox id="IPApplicativeExample" dataItem="applicativeExample" cols="50" show="swIPApplicativeYes"/>
+	   <textBox id="IPApplicativeExample" dataItem="applicativeExample" cols="80" show="swIPApplicativeYes"/>
 	   
 	   <br/>
 	   <introduction>En vez de convertir el objeto en sujeto como lo hace en voz pasiva, la <technicalTermRef term="ttAntipassive">antipasiva</technicalTermRef> es una <technicalTermRef term="ttVoice"/> del verbo que suprime el objeto de verbos transitivos. Las oraciones antipasivas se encuentran principalmente en las lenguas con un sistema de <technicalTermRef term="ttCase">caso </technicalTermRef> <technicalTermRef term="ttErgative"/>-<technicalTermRef term="ttAbsolutive"/>, en que el sujeto cambia de caso ergativo al caso absolutivo cuando el objeto se suprime. 
@@ -64,20 +68,20 @@
 	   <prompt id="IPAntipassiveNoPrompt" show="swIPAntipassiveNoAndFeaturesYes">ADVERTENCIA: En <section number="9.2"> Las oraciones básicas - La flexión verbal</section> usted seleccionó el accidente gramatical de voz antipasiva para su lengua. Esto es inconsistente con su respuesta aquí. Por favor cambia su respuesta aquí a ‘Sí’ o vuelva a <section number="9.2"> Las oraciones básicas - La flexión verbal</section> y desactive el accidente gramatical de voz antipasiva.</prompt>
 	   <prompt id="IPAntipassiveYesPrompt" show="swIPAntipassiveYesAndFeaturesNo">ADVERTENCIA: En <section number="9.2"> Las oraciones básicas - La flexión verbal</section> no seleccionó el accidente gramatical de voz antipasiva para su lengua. Esto es inconsistente con su respuesta aquí. Si su lengua tiene antipasivas, vuelva a <section number="9.2"> Las oraciones básicas - La flexión verbal</section> y seleccione el accidente gramatical de voz antipasiva.</prompt>
 	   <prompt id="IPAntipassivePrompt" show="swIPAntipassiveYes">Escriba algunos ejemplos de oraciones antipasivas en su lengua aquí, incluyendo el objeto o paciente opcional en algunos si es posible en su lengua:</prompt>
-	   <textBox id="IPAntipassiveExample" dataItem="antipassiveExample" cols="50" show="swIPAntipassiveYes"/>
+	   <textBox id="IPAntipassiveExample" dataItem="antipassiveExample" cols="80" show="swIPAntipassiveYes"/>
 
 	   <checkboxGroup id="IPAntipassiveFormation" show="swIPAntipassiveYes">
 	      <prompt><br/>¿Cómo se forman las antipasivas en su lengua? Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="IPAntipassiveErg"  dataItem="antipassiveErg" show="swCaseErgOrSplit">El sujeto de un verbo transitivo cambia al caso absolutivo cuando se suprime el objeto</checkbox>
 	      <checkbox id="IPAntipassiveAgr" dataItem="antipassiveAgr">El afijo de concordancia con el objeto en el verbo se suprime para indicar una oración antipasiva</checkbox>
 	      <checkbox id="IPAntipassiveAffix" dataItem="antipassiveAffix">Hay un afijo para voz antipasiva que se une con un verbo transitivo para indicar el cambio en relaciones gramaticales</checkbox>
-	      <checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">En mi lengua, las antipasivas pueden expresarse: <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" rows="2"/></checkbox>
+	      <checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">En mi lengua, las antipasivas pueden expresarse: <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" cols="70"  rows="1"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="IPAntipassiveNoCheckPrompt" show="swIPAntipassiveYesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se forman las antipasivas en su lengua, o cambia su respuesta de arriba a ‘No’.  En este caso, no debe ser ningún ejemplo de antipasivas en el campo de arriba.tampoco.</prompt>
 	   
 	   <prompt id="IPAntipassiveAffixPrompt" show="swIPAntipassiveYesAffix">Escriba los afijos antipasivos en su lengua con una indicación del guión en el lado que se une con el verbo, con cada uno en una linea separada, aquí: </prompt>
 	   <textBox id="IPAntipassiveAffixExample" dataItem="antipassiveAffixExample" rows="3" show="swIPAntipassiveYesAffix"/>		
-	   <instruction id="IPAntipassiveInstruction" show="swIPAntipassiveYesAffix">Mark the antipassive affixes with the feature <feature>antipasstive</feature> in the lexicon, if you have not already done so.
+	   <instruction id="IPAntipassiveInstruction" show="swIPAntipassiveYesAffix">Mark the antipassive affixes with the feature <feature>antipassive</feature> in the lexicon, if you have not already done so.
 	   </instruction>	   
 	   <br/><br/>
 	   <buttons>

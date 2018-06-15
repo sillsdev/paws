@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="CompPosition" count="3/4">
+<page id="CompPosition" count="10.3">
    <title level="2">Propositions Complétives – Position du complétiviseur</title>
     <form section="comp">
         <radioGroup>
@@ -33,31 +33,31 @@
           <checkbox id="CompAttachesEnclitic" dataItem="compEnclitic">Comme enclitique qui s’attache à la fin du mot qui termine la proposition complétive</checkbox>
           <checkbox id="CompAttachesPrefix" dataItem="compPrefix">Comme préfixe qui s’attache au verbe dans la proposition complétive</checkbox>
           <checkbox id="CompAttachesSuffix" dataItem="compSuffix">Comme suffixe qui s’attache au verbe dans la proposition complétive</checkbox>
-          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">Dans ma langue ces éléments peuvent s’attacher comme suit: <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" rows="2"/></checkbox>
+          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">Dans ma langue ces éléments peuvent s’attacher comme suit: <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" rows="1" cols="70"/></checkbox>
        </checkboxGroup>
        <prompt id="CompAttachesNoCheckPrompt" show="swCompWordNoOrSomeandNoCheck">AVERTISSEMENT: Il faut cochez au moins une case pour décrire comment ces complétiviseurs clitiques s’attachent dans votre langue ou changez la réponse ci-dessus en « Oui, ce sont des mots indépendants ».</prompt>
        
        <prompt id="CompCliticPrompt" show="swCompWordNoOrSomeAndClitic">Entrez ici les compétiviseurs clitiques avec un signe d’égalité pour indiquer de quel côté ils s’attachent:</prompt>  
-       <textBox id="CompCliticExample" dataItem="compCliticExample" cols="50" show="swCompWordNoOrSomeAndClitic"/>
+       <textBox id="CompCliticExample" dataItem="compCliticExample" show="swCompWordNoOrSomeAndClitic" rows="3"/>
        <instruction id="CompProcliticInstruction" show="swCompWordNoOrSomeAndProclitic">In the lexicon, add the feature <feature>comp_prefix</feature> to the proclitics.</instruction>
        <instruction id="CompEncliticInstruction" show="swCompWordNoOrSomeAndEnclitic">In the lexicon, add the feature <feature>comp_suffix</feature> to the enclitics.</instruction>
        
        <prompt id="CompAffixPrompt" show="swCompWordNoOrSomeAndAffix">Entrez ici les compétiviseurs qui sont des affixes verbaux avec un trait d’union pour indiquer de quel côté ils s’attachent:</prompt>  
-       <textBox id="CompAffixExample" dataItem="compAffixExample" cols="50" show="swCompWordNoOrSomeAndAffix"/>
+       <textBox id="CompAffixExample" dataItem="compAffixExample" show="swCompWordNoOrSomeAndAffix" rows="3"/>
        <instruction id="CompAffixInstruction" show="swCompWordNoOrSomeAndAffix">In the lexicon, add the feature <feature>comp</feature> to these verbal affixes.</instruction>
        
        <prompt id="CompAtachesOtherPrompt" show="swCompWordNoOrSomeAndOther">Entrez ici les compétiviseurs qui s’attachent d’autre manière permise dans votre langue, avec un signe d’égalité ou trait d’union pour indiquer de quel côté ils s’attachent:</prompt>  
-       <textBox id="CompAttachesOtherExample" dataItem="compAttachesOtherExample" cols="50" show="swCompWordNoOrSomeAndOther"/>   
+       <textBox id="CompAttachesOtherExample" dataItem="compAttachesOtherExample" show="swCompWordNoOrSomeAndOther" rows="3"/>   
        
        <prompt id="CompWordYesPrompt" show="swCompWordYesOrSome">Entrez ici les complétiviseurs qui sont écrits comme mots indépendants:</prompt>
-       <textBox id="CompWordYesExample" dataItem="compExample" cols="50" show="swCompWordYesOrSome"/>
+       <textBox id="CompWordYesExample" dataItem="compExample" show="swCompWordYesOrSome" rows="3"/>
        <br/><br/>		
        <checkboxGroup id="CompWordPos" show="swCompWordYesOrSome">
           <prompt>En regardant les données de la case ci-dessus, où ces complétiviseurs écrits comme mots indépendants se placent-ils par rapport au reste de la proposition complétive? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
           <checkbox id="CompWordPosBefore"  dataItem="compBefore">Avant</checkbox>
           <checkbox id="CompWordPosAfter"  dataItem="compAfter">Après</checkbox>
           <checkbox id="CompWordPosBoth"  dataItem="compBoth">Des deux côtés dans la même proposition</checkbox>
-          <checkbox id="CompWordPosOther"  dataItem="compOther">Dans ma langue, ils peuvent se trouver dans la position suivante: <textBox  id="CompWordPosOtherContent" dataItem="compOther" rows="2"/></checkbox>
+          <checkbox id="CompWordPosOther"  dataItem="compOther">Dans ma langue, ils peuvent se trouver dans la position suivante: <textBox  id="CompWordPosOtherContent" dataItem="compOther" rows="1" cols="70"/></checkbox>
        </checkboxGroup>
        <prompt id="CompWordNoCheckPrompt" show="swCompWordYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où ces complétiviseurs se placent par rapport au reste de la proposition dépendant dans votre langue ou changez la réponse en « Non, ils s’attachent tous à un autre mot. »</prompt>
        

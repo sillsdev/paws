@@ -859,7 +859,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                           <xsl:text>que (qu’)</xsl:text>
+                           <xsl:text>quoi</xsl:text>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -873,7 +873,7 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                           <xsl:text>que (qu’)</xsl:text>
+                           <xsl:text>quoi</xsl:text>
                         </td>
 </tr>
 </xsl:otherwise>

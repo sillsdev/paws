@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPPossessorAgreement" count="2/2">
+<page id="NPPossessorAgreement" count="5.4.2">
     <title level="2">Las frases nominales - La concordancia del posesivo</title>
     <introduction>La concordancia del posesivo se manifiesta comúnmente de dos formas básicas:
 <ul>
@@ -21,7 +21,7 @@
         </radioGroup>
        <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Escriba los afijos que se utilizan para marcar sustantivos de posesión alienable cuando tienen un poseedor en el campo (cada uno en una línea separada si tiene más de uno). Utilice un guión después de los caracteres alfabéticos para indicar un prefijo, un guión antes para indicar un sufijo, y guiones en ambos lados para indicar un infijo.<br/><br/>
           Tenga en cuenta que estos afijos no deben ser iguales a los que concuerdan con o expresan al poseedor, examinado a continuación.</prompt>
-        <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="3" cols="20" show="swNPPossAlienableYes"/>
+        <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes"/>
         <br/>
         <instruction id="NPPossAlienableYesInstruction" show="swNPPossAlienableYes">Key the feature <feature>possessed</feature> on the affix(es) that marks the alienably possessed nouns when they have a possessor.  Also, key the feature <feature>possessed</feature> on all inalienably possessed nouns so that a possessor will be required.</instruction>
         <radioGroup id="NPPossAgrTable">
@@ -112,7 +112,7 @@
           <radio id="NPPossAbsolutiveYes" dataValue="yes">Sí</radio>
        </radioGroup>
        <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Escriba los afijos que se presentan en sustantivos en estas situaciones aquí (con cada uno en linea separada). Utilice un guión después de los caracteres alfabéticos para indicar un prefijo, un guión antes de indicar un sufijo y guiones en ambos lados para indicar un infijo.</prompt>
-       <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="3" cols="20" show="swNPPossAbsolutiveYes"/>
+       <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes"/>
        <br/><br/>
        <buttons>
           <button id="NPPossAgrBack" value="Back" goto="NPPossessors.xml"/>

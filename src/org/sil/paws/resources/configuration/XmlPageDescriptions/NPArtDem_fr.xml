@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPArtDem" count="1/2">
+<page id="NPArtDem" count="5.3.1">
    <title level="2">Syntagmes Nominaux – Articles et Démonstratifs: Exemples et cas</title>
    <introduction>Considérez maintenant les articles et les démonstratifs. En français les articles sont <example>un, une, des, le, la, les</example> et les démonstratifs comprennent <example>ce, cette, ces</example>.  Voici quelques exemples simples:</introduction>
     <EnglishExample>
@@ -55,164 +55,136 @@
           <radio id="NPArtAndDemClassifierAgrNo" dataValue="no">Non, ces éléments ne sont pas marqués pour la classe</radio>
           <radio id="NPArtAndDemClassifierAgrYes" dataValue="yes">Oui, ces éléments sont marqués pour la classe comme une partie du système d’accord concordant</radio>
        </radioGroup>
-       <prompt id="NPArtAndDemClassifierAgrPrompt" show="swOTClassifierAgrAndArtAndDemNotNoAndClassifierYes">o	Puisque vous avez déjà détaillé les formes du marqueur de classe et du nom vous n’avez qu’à entrer ici les racines pour chacun des <span id="NPArtAndDemArtSpan1" show="swNPArtAndDemArt">articles</span><span id="NPArtAndDemDemSpan1" show="swNPArtAndDemDem">démonstratifs</span><span id="NPArtAndDemBothSpan1" show="swNPArtAndDemBoth">articles  et démonstratifs</span>.  Cependant incluez les classificateurs quand vous donnez des exemples de syntagmes nominaux complets ci-dessous.</prompt>
+       <prompt id="NPArtAndDemClassifierAgrPrompt" show="swOTClassifierAgrAndArtAndDemNotNoAndClassifierYes">Puisque vous avez déjà détaillé les formes du marqueur de classe et du nom vous n’avez qu’à entrer ici les racines pour chacun des <span id="NPArtAndDemArtSpan1" show="swNPArtAndDemArt">articles</span><span id="NPArtAndDemDemSpan1" show="swNPArtAndDemDem">démonstratifs</span><span id="NPArtAndDemBothSpan1" show="swNPArtAndDemBoth">articles  et démonstratifs</span>.  Cependant incluez les classificateurs quand vous donnez des exemples de syntagmes nominaux complets ci-dessous.</prompt>
        <br/>
        <prompt id="NPArtCaseNone" show="swNPArtCaseNoOrNone">Puisque votre langue ne distingue pas le cas dans les articles, vous ne devriez avoir qu’un simple groupe d’articles qui peuvent être utilisés dans n’importe quelle position dans le phrase.</prompt>
        
        <prompt id="NPArtCaseNoPrompt" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue <span id="SingularSpan" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseNoExample" dataItem="articleExample" rows="4" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseNoExample" dataItem="articleExample" rows="2" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseNo" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseNoExample" dataItem="articlePlExample" rows="3" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseNoExample" dataItem="articlePlExample" rows="2" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseNoPrompt" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue <span id="SingularSpan1" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseNoExample" dataItem="articleIndefExample" rows="4" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseNoExample" dataItem="articleIndefExample" rows="2" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseNo" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseNoExample" dataItem="articleIndefPlExample" rows="3" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseNoExample" dataItem="articleIndefPlExample" rows="2" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes"/>
        
        <prompt id="NPArtCaseNom" show="swNPArtCaseNom">Puisque votre langue a un système de cas nominatif-accusatif, vous devriez avoir des groupes distincts d’articles qui peuvent être utilisés dans les sujets et les objets et les possessifs.</prompt>
 
           <prompt id="NPArtCaseNomNumberNo" show="swNPArtCaseNomAndDefOnlyNotIndef">
              Entrez les articles définis qui peuvent apparaître dans les sujets qu’utilise votre langue <span id="SingularSpan4" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseNomExample" dataItem="articleNomExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseNomExample" dataItem="articleNomExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseNom" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qui peuvent apparaître dans les sujets qu’utilise votre langue pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseNomExample" dataItem="articlePlNomExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseNomExample" dataItem="articlePlNomExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseNomNumberNo" show="swNPArtCaseNomAndDefOnlyNotYes">
           Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets <span id="SingularSpan5" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-          <textBox id="NPArtIndefCaseNomExample" dataItem="articleIndefNomExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+          <textBox id="NPArtIndefCaseNomExample" dataItem="articleIndefNomExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseNom" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseNomExample" dataItem="articleIndefPlNomExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseNomExample" dataItem="articleIndefPlNomExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseAcc" show="swNPArtCaseNomAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les objets directs <span id="SingularSpan6" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseAccExample" dataItem="articleAccExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseAccExample" dataItem="articleAccExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseAcc" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les objets directs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseAccExample" dataItem="articlePlAccExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseAccExample" dataItem="articlePlAccExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseAcc" show="swNPArtCaseNomAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les objets directs <span id="SingularSpan7" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseAccExample" dataItem="articleIndefAccExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseAccExample" dataItem="articleIndefAccExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseAcc" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les objets directs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseAccExample" dataItem="articleIndefPlAccExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseAccExample" dataItem="articleIndefPlAccExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseGen" show="swNPArtCaseNomAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les possessifs <span id="SingularSpan8" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseGenExample" dataItem="articleGenExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseGenExample" dataItem="articleGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseGen" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les possessifs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseGenExample" dataItem="articlePlGenExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseGenExample" dataItem="articlePlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseGen" show="swNPArtCaseNomAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les possessifs <span id="SingularSpan9" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseGenExample" dataItem="articleIndefGenExample" rows="3" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseGenExample" dataItem="articleIndefGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseGen" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les possessifs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseGenExample" dataItem="articleIndefPlGenExample" rows="3" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
-       <instruction id="NPArtCaseNomInstruction" show="swNPArtCaseNom">
-          <br/>In the lexicon:
-          <ul>
-             <li>Add the feature <feature>nominative</feature> to all the articles that occur in subjects.</li>
-             <li>Add the feature <feature>accusative</feature> to all the articles that occur in objects.</li>
-             <li>Add the feature <feature>genitive</feature> to all the articles that occur in possessors.</li>
-             <li>If a particular article can show up in any position, do not add any feature.</li>
-          </ul>
-       </instruction>
-       
+       <textBox id="NPArtIndefPlCaseGenExample" dataItem="articleIndefPlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+      
        <prompt id="NPArtCaseErg" show="swNPArtCaseErg">Puisque votre langue a un système de cas ergatif-absolutif, vous devriez avoir des groupes d’articles distincts qui peuvent être utilisés comme sujets de verbes transitifs : par contraste avec des sujets de verbes intransitifs et d’objets de verbes transitifs et par contraste avec les possessifs.</prompt>
        <prompt id="NPArtCaseErgNumberNo" show="swNPArtCaseErgAndDefOnlyNotIndef">
           Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes transitifs <span id="SingularSpan10" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseErgExample" dataItem="articleErgExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseErgExample" dataItem="articleErgExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseErg" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">
           Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes transitifs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseErgExample" dataItem="articlePlErgExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseErgExample" dataItem="articlePlErgExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseErgNumberNo" show="swNPArtCaseErgAndDefOnlyNotYes">
           Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes transitifs <span id="SingularSpan11" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseErgExample" dataItem="articleIndefErgExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseErgExample" dataItem="articleIndefErgExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseErg" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">
           Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes transitifs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseErgExample" dataItem="articleIndefPlErgExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseErgExample" dataItem="articleIndefPlErgExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseAbs" show="swNPArtCaseErgAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes intransitifs ou les objets directs de verbes transitifs <span id="SingularSpan12" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseAbsExample" dataItem="articleAbsExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseAbsExample" dataItem="articleAbsExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseAbs" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes intransitifs ou les objets directs de verbes transitifs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseAbsExample" dataItem="articlePlAbsExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseAbsExample" dataItem="articlePlAbsExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseAbs" show="swNPArtCaseErgAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes intransitifs ou les objets directs de verbes transitifs <span id="SingularSpan13" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseAbsExample" dataItem="articleIndefAbsExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseAbsExample" dataItem="articleIndefAbsExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseAbs" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes intransitifs ou les objets directs de verbes transitifs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseAbsExample" dataItem="articleIndefPlAbsExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseAbsExample" dataItem="articleIndefPlAbsExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseErgGen" show="swNPArtCaseErgAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les possessifs <span id="SingularSpan14" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseErgGenExample" dataItem="articleErgGenExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseErgGenExample" dataItem="articleErgGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseErgGen" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les possessifs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseErgGenExample" dataItem="articleErgPlGenExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseErgGenExample" dataItem="articleErgPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseErgGen" show="swNPArtCaseErgAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les possessifs <span id="SingularSpan15" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseErgGenExample" dataItem="articleErgIndefGenExample" rows="3" show="swNPArtCaseErgAndDefOnlyNotYes"/>      
+       <textBox id="NPArtIndefCaseErgGenExample" dataItem="articleErgIndefGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>      
        <prompt id="NPArtIndefPlCaseErgGen" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les possessifs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseErgGenExample" dataItem="articleErgIndefPlGenExample" rows="3" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
-       <instruction id="NPArtCaseErgInstruction" show="swNPArtCaseErg">
-          <br/>In the lexicon:
-          <ul>
-             <li>Add the feature <feature>ergative</feature> to all the articles that occur in subjects of transitive verbs.</li>
-             <li>Add the feature <feature>absolutive</feature> to all the articles that occur in objects of transitive verbs and in subjects of intransitive verbs.</li>
-             <li>Add the feature <feature>genitive</feature> to all the articles that occur in possessors.</li>
-             <li>If a particular article can show up in any position, do not add any feature.</li>
-          </ul>
-       </instruction>
-       
+       <textBox id="NPArtIndefPlCaseErgGenExample" dataItem="articleErgIndefPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+      
        <prompt id="NPArtCaseSplitNom" show="swNPArtCaseSplit">Puisque votre langue a un système de cas dédoublé, vous devriez avoir des groupes distincts d’articles qui sont normalement utilisés dans des sujets et des objets et des possessifs et aussi dans d’autres groupes spéciaux qui sont utilisés dans les cas ergatifs dédoublés.</prompt> 
        <prompt id="NPArtCaseSplitNomAndNumberNo" show="swNPArtCaseSplitAndDefOnlyNotIndef">
           Entrez les articles définis qu’utilise votre langue et qui apparaissent normalement dans les sujets <span id="SingularSpan16" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseSplitNomExample" dataItem="articleSplitNomExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitNomExample" dataItem="articleSplitNomExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitNom" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">
           Entrez les articles définis qu’utilise votre langue et qui apparaissent normalement dans les sujets pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseSplitNomExample" dataItem="articleSplitPlNomExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitNomExample" dataItem="articleSplitPlNomExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitNom" show="swNPArtCaseSplitAndDefOnlyNotYes">
           Entrez les articles indéfinis qu’utilise votre langue et qui apparaissent normalement dans les sujets <span id="SingularSpan17" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseSplitNomExample" dataItem="articleSplitIndefNomExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitNomExample" dataItem="articleSplitIndefNomExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseSplitNom" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">
           Entrez les articles indéfinis qu’utilise votre langue et qui apparaissent normalement dans les sujets pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitNomExample" dataItem="articleSplitIndefPlNomExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitNomExample" dataItem="articleSplitIndefPlNomExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseSplitAcc" show="swNPArtCaseSplitAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui apparaissent normalement dans les objets directs <span id="SingularSpan18" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseSplitAccExample" dataItem="articleSplitAccExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitAccExample" dataItem="articleSplitAccExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitAcc" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui apparaissent normalement dans les objets directs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseSplitAccExample" dataItem="articleSplitPlAccExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitAccExample" dataItem="articleSplitPlAccExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitAcc" show="swNPArtCaseSplitAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui apparaissent normalement dans les objets directs <span id="SingularSpan19" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseSplitAccExample" dataItem="articleSplitIndefAccExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitAccExample" dataItem="articleSplitIndefAccExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseSplitAcc" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui apparaissent normalement dans les objets directs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitAccExample" dataItem="articleSplitIndefPlAccExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitAccExample" dataItem="articleSplitIndefPlAccExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseSplitGen" show="swNPArtCaseSplitAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui apparaissent normalement dans les possesseurs <span id="SingularSpan20" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseSplitGenExample" dataItem="articleSplitGenExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitGenExample" dataItem="articleSplitGenExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitGen" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui apparaissent normalement dans les possesseurs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseSplitGenExample" dataItem="articleSplitPlGenExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitGenExample" dataItem="articleSplitPlGenExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitGen" show="swNPArtCaseSplitAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui apparaissent normalement dans les possesseurs <span id="SingularSpan21" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseSplitGenExample" dataItem="articleSplitIndefGenExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>     
+       <textBox id="NPArtIndefCaseSplitGenExample" dataItem="articleSplitIndefGenExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>     
        <prompt id="NPArtIndefPlCaseSplitGen" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui apparaissent normalement dans les possesseurs pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitGenExample" dataItem="articleSplitIndefPlGenExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitGenExample" dataItem="articleSplitIndefPlGenExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        
        <prompt id="NPArtCaseSplitErg" show="swNPArtCaseSplitAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée <span id="SingularSpan22" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseSplitErgExample" dataItem="articleSplitErgExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitErgExample" dataItem="articleSplitErgExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitErg" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseSplitErgExample" dataItem="articleSplitPlErgExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitErgExample" dataItem="articleSplitPlErgExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitErg" show="swNPArtCaseSplitAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée <span id="SingularSpan23" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseSplitErgExample" dataItem="articleSplitIndefErgExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitErgExample" dataItem="articleSplitIndefErgExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseSplitErg" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitErgExample" dataItem="articleSplitIndefPlErgExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitErgExample" dataItem="articleSplitIndefPlErgExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        <prompt id="NPArtCaseSplitAbs" show="swNPArtCaseSplitAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes intransitifs ou d’objets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée <span id="SingularSpan24" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtCaseSplitAbsExample" dataItem="articleSplitAbsExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitAbsExample" dataItem="articleSplitAbsExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlCaseSplitAbs" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes intransitifs ou d’objets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlCaseSplitAbsExample" dataItem="articleSplitPlAbsExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitAbsExample" dataItem="articleSplitPlAbsExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefCaseSplitAbs" show="swNPArtCaseSplitAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes intransitifs ou d’objets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée <span id="SingularSpan25" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefCaseSplitAbsExample" dataItem="articleSplitIndefAbsExample" rows="3" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitAbsExample" dataItem="articleSplitIndefAbsExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseSplitAbs" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans les sujets de verbes intransitifs ou d’objets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitAbsExample" dataItem="articleSplitIndefPlAbsExample" rows="3" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitAbsExample" dataItem="articleSplitIndefPlAbsExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
        
-       <instruction id="NPArtCaseSplitInstruction" show="swNPArtCaseSplit">
-          <br/>In the lexicon:
-          <ul>
-             <li>Add the feature <feature>nominative</feature> to all the articles that occur in subjects.</li>
-             <li>Add the feature <feature>accusative</feature> to all the articles that occur in objects.</li>
-             <li>Add the feature <feature>genitive</feature> to all the articles that occur in possessors.</li>
-             <li>For the split ergativity cases, add the feature <feature>ergative</feature> to all the articles that can only occur in subjects of transitive verbs and add the feature <feature>absolutive</feature> to all the articles that can only occur in subjects of intransitive verbs and objects of transitive verbs.  Note that if there is some overlap between the sets for nominative-accusative versus ergative-absolutive, you will probably need to have two entries in your lexicon for those articles, each marked with the appropriate case feature.</li>
-             <li>If a particular article can show up in any position, do not add any feature.</li>
-          </ul>
-       </instruction>  
-       <prompt id="NPArtDativeSet" show="swNPCaseNotNoneAndArtCaseArt">
+    <prompt id="NPArtDativeSet" show="swNPCaseNotNoneAndArtCaseArt">
           <br/>Il se peut que vous ayez un groupe supplémentaire d’articles dans le cas datif.  
        </prompt>
        <prompt id="NPArtDative" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans <span id="ExperiencerSpan" show="swExperiencerYesDat">les sujets expérimenteur ou </span>d’objets indirects <span id="SingularSpan26" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
        <textBox id="NPArtDativeExample" dataItem="articleDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotIndef"/>
        <prompt id="NPArtPlDative" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef">Entrez les articles définis qu’utilise votre langue et qui peuvent apparaître dans <span id="ExperiencerSpan2" show="swExperiencerYesDat">les sujets expérimenteur ou </span>d’objets indirects pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtPlDativeExample" dataItem="articlePlDatExample" rows="3" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlDativeExample" dataItem="articlePlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef"/>
        <prompt id="NPArtIndefDative" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans <span id="ExperiencerSpan1" show="swExperiencerYesDat">les sujets expérimenteur ou </span>d’objets indirects <span id="SingularSpan27" show="swArtPlYes">pour s’accorder avec les noms au singulier </span>dans la zone de texte, chacun sur une ligne séparée:</prompt> 
        <textBox id="NPArtIndefDativeExample" dataItem="articleIndefDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlDative" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes">Entrez les articles indéfinis qu’utilise votre langue et qui peuvent apparaître dans <span id="ExperiencerSpan3" show="swExperiencerYesDat">les sujets expérimenteur ou </span>d’objets indirects pour s’accorder aux noms au pluriel dans la zone de texte, chacun sur une ligne séparée:</prompt> 
-       <textBox id="NPArtIndefPlDativeExample" dataItem="articleIndefPlDatExample" rows="3" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlDativeExample" dataItem="articleIndefPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes"/>
        <instruction id="NPArtCaseDativeInstruction" show="swNPCaseNotNoneAndArtCaseArt">
           <br/>In the lexicon, add the feature <feature>dative</feature> to all the articles that occur in indirect objects or Experiencer subjects.</instruction>
        
@@ -370,7 +342,7 @@
        <textBox id="NPDemDistalPlCaseSplitErgExample" dataItem="demSplitDistalPlErgExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
        <prompt id="NPDemDistalCaseSplitAbs" show="swNPDemCaseSplit">Entrez les démonstarifs qui peuvent apparaître dans les sujets de verbes intransitifs ou objets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée pour s’accorder aux noms <span id="SingularSpan63" show="swDemPlYes">au singulier </span>qui sont le plus loin de celui qui parle mais non visible (formes éloignées) dans la zone de texte, chacun sur une ligne séparée:</prompt> 
        <textBox id="NPDemDistalCaseSplitAbsExample" dataItem="demSplitDistalAbsExample" rows="2" show="swNPDemCaseSplit"/>
-       <prompt id="NPDemDistalPlCaseSplitAbs" show="swNPDemCaseSplitAndNumberYes">Entrez les démonstarifs qui peuvent apparaître dans les sujets de verbes intransitifs ou objets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée pour s’accorder aux noms plural  qui sont le plus loin de celui qui parle mais non visible (formes éloignées) dans la zone de texte, chacun sur une ligne séparée:</prompt> 
+       <prompt id="NPDemDistalPlCaseSplitAbs" show="swNPDemCaseSplitAndNumberYes">Entrez les démonstarifs qui peuvent apparaître dans les sujets de verbes intransitifs ou objets de verbes transitifs dans des cas spéciaux d’érgativité dédoublée pour s’accorder aux noms pluriel qui sont le plus loin de celui qui parle mais non visible (formes éloignées) dans la zone de texte, chacun sur une ligne séparée:</prompt> 
        <textBox id="NPDemDistalPlCaseSplitAbsExample" dataItem="demSplitDistalPlAbsExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
        
         <instruction id="NPArtCaseNomAccInstruction2" show="swNPCaseNom">Since your language has a nominative-accusative case system, in the lexicon:
@@ -418,6 +390,11 @@
                     <span id="NPArtAndDemCaseSplitSpan" show="swNPArtAndDemBoth">article or demonstrative</span> can show up in any position, do not add any feature.</li>
             </ul>
         </instruction>
+       <instruction id="NPArtAndOrDemNumberSpan" show="swNPArtAndOrDemNumberYes">Add the feature <feature>singular</feature> to each of the <span id="NPArtOnlyNumberSpan" show="swNPArtAndDemArt">articles</span>
+          <span id="NPDemOnlyNumberSpan" show="swNPArtAndDemDem">demonstratives</span>
+          <span id="NPArtAndDemNumberSpan" show="swNPArtAndDemBoth">articles and demonstratives</span> that are used only with singular items and the feature <feature>plural</feature> to each of the <span id="NPArtOnlyNumberSpan1" show="swNPArtAndDemArt">articles</span>
+          <span id="NPDemOnlyNumberSpan1" show="swNPArtAndDemDem">demonstratives</span>
+          <span id="NPArtAndDemNumberSpan1" show="swNPArtAndDemBoth">articles and demonstratives</span> that are used only with plural items.  Do not add any number feature to any that are used with singular or plural items.</instruction>
        <prompt id="NPDemDativeSet" show="swNPCaseNotNoneAndArtCaseDem">
           <br/>Il se peut que vous ayez un groupe supplémentaire de démonstratifs dans le cas datif. 
        </prompt>
@@ -460,7 +437,18 @@
         <not/>
         <whenRadio button="NPArtAndDemNo"/>
         </showWhen>
-        <showWhen id="swNPArtAndOrDemAndCaseYes">
+   <showWhen id="swNPArtAndOrDemNumberYes">
+      <not/>
+      <whenRadio button="NPArtAndDemNo"/>
+      <and/>
+      <whenRadio button="NPArtPlYes"/>
+      <or/>
+      <not/>
+      <whenRadio button="NPArtAndDemNo"/>
+      <and/>
+      <whenRadio button="NPDemPlYes"/>
+   </showWhen> 
+   <showWhen id="swNPArtAndOrDemAndCaseYes">
             <not/>
             <whenRadio button="NPArtAndDemNo"/>
             <and/>

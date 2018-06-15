@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="FocusMain" count="1/2">
+<page id="FocusMain" count="16.1">
     <title>Constructions de Focus et de Thème</title>
     <introduction>Cette section traite deux sortes de constructions qui attirent l’attention à un élément particulier.  Nous considérerons d’abord les thèmes puisqu’ils ont une portée plus étendue et se trouvent, par conséquent, en dehors des constructions de focus.<br/><br/>
         Le premier exemple  montre qu’une seule phrase peut avoir un syntagme de thème en même temps qu’un syntagme de focus.  Dans ce cas-ci, le thème <example>Guillaume</example> est introduit par le marqueur de thème <example>quant à</example> et le syntagme de focus <example>football</example>, qui ayant été déplacé de sa position normale après le verbe, suit le syntagme de thème.
@@ -25,7 +25,7 @@
     <radio id="TopicYes" dataValue="yes">Oui</radio>
 </radioGroup>
         <prompt id="TopicYesInstruction" show="swTopicYes">Entrez ici des exemples de constructions de thème dans votre langue:</prompt>
-        <textBox id="Topic" show="swTopicYes" dataItem="topicExample" rows="5"/>
+        <textBox id="Topic" show="swTopicYes" dataItem="topicExample" cols="80"/>
 <br/>
 <radioGroup id="TopicPosTable" show="swTopicYes">
     <groupName dataItem="topicPos" default="unknown" position="yesHead">RTopicPos</groupName>
@@ -48,7 +48,7 @@
    <checkbox id="TopicMarkerPosBefore" dataItem="topicMarkerBefore">Avant</checkbox>
            <checkbox id="TopicMarkerPosAfter" dataItem="topicMarkerAfter">Après</checkbox>
            <checkbox id="TopicMarkerPosBoth" dataItem="topicMarkerBoth">Des deux côtés du même syntagme de thème</checkbox>
-           <checkbox id="TopicMarkerPosOther" dataItem="topicMarkerOther">Dans ma langue, le marqueur de thème peut se présenter dans cette autre position: <textBox  id="TopicMarkerOtherContent" dataItem="topicMarkerOther" rows="2"/></checkbox>
+           <checkbox id="TopicMarkerPosOther" dataItem="topicMarkerOther">Dans ma langue, le marqueur de thème peut se présenter dans cette autre position: <textBox  id="TopicMarkerOtherContent" dataItem="topicMarkerOther" rows="1" cols="70"/></checkbox>
 </checkboxGroup>
         <prompt id="TopicMarkerPosNoCheckPrompt" show="swTopicMarkerYesWordAndNoCheck">AVERTISSEMENT: Vous n’avez marqué aucune boîte pour décrire où le marqueur de thème peut se présenter par rapport au syntagme de thème dans votre langue.  Veuillez marquer une ou plusieurs boîtes, ou changez votre réponse à  « Non, le thème n’est marqué que par sa position » ci-dessus.  Dans ce cas il ne vous faudrait pas d’exemples de marqueurs de thème dans la boîte non plus. </prompt>
        
@@ -87,7 +87,7 @@
     <radio id="FocusYes" dataValue="yes">Oui</radio>
 </radioGroup>
         <prompt id="FocusYesInstruction" show="swFocusYes">Entrez ici des exemples de constructions de focus dans votre langue:</prompt>
-        <textBox id="Focus" show="swFocusYes" dataItem="focusExample" rows="5"/>
+        <textBox id="Focus" show="swFocusYes" dataItem="focusExample" cols="80"/>
 <br/>
 <radioGroup id="FocusPosTable" show="swFocusYes">
     <groupName dataItem="focusPos" default="unknown" position="yesHead">RFocusPos</groupName>
@@ -110,7 +110,7 @@
           <checkbox id="FocusMarkerPosBefore" dataItem="focusMarkerBefore">Avant</checkbox>
            <checkbox id="FocusMarkerPosAfter" dataItem="focusMarkerAfter">Après</checkbox>
            <checkbox id="FocusMarkerPosBoth" dataItem="focusMarkerBoth">Des deux côtés du même syntagme de focus</checkbox>
-           <checkbox id="FocusMarkerPosOther" dataItem="focusMarkerOther">Dans ma langue, le marqueur de focus peut se présenter dans cette autre position: <textBox  id="FocusMarkerOtherContent" dataItem="focusMarkerOther" rows="2"/></checkbox>
+           <checkbox id="FocusMarkerPosOther" dataItem="focusMarkerOther">Dans ma langue, le marqueur de focus peut se présenter dans cette autre position: <textBox  id="FocusMarkerOtherContent" dataItem="focusMarkerOther" rows="1" cols="70"/></checkbox>
        </checkboxGroup>
         <prompt id="FocusMarkerPosNoCheckPrompt" show="swFocusMarkerYesWordAndNoCheck">AVERTISSEMENT: Vous n’avez coché aucune boîte pour décrire où le marqueur de focus peut se présenter par rapport au syntagme de focus dans votre langue.  Veuillez cocher une ou plusieurs boîtes, ou changez votre réponse à « Non, le syntagme de focus n’est marqué que par sa position » ci-dessus.  Dans ce cas il ne vous faudrait pas d’exemples de marqueurs de focus dans la boîte non plus.</prompt>
        

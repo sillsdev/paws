@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PPTesting" count="5/5">
+<page id="PPTesting" count="8.5">
 	<title level="2">Adpositional Phrases - Testing</title>
 	<form section="pp">
 		<instruction>To test what you have done so far, save your work now.  This will generate the test file and grammar rules file created to this point.
@@ -18,7 +18,7 @@ results and note any changes you need to make, most likely by adding features to
 		<br/>
 		<buttons>
 			<button id="PPTestingBack" value="Back" goto="PPCatMap.xml"/>
-			<button id="PPTestingNext" value="Next" goto="Contents_fr.htm"/>
+			<button id="PPTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

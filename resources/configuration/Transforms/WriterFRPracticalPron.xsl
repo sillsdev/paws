@@ -4,7 +4,7 @@
 	<section1 id="sPron">
 		<secTitle>Pronoms</secTitle>
 		<p>
-<xsl:text>Les pronoms se présentent dans une variété de sortes, y compris les pronoms personnels, possessifs, réflexifs, inverses, démonstratifs et indéfinis.  (Les pronoms interrogatifs sont traités dans la </xsl:text>
+<xsl:text>Les pronoms se présentent dans une variété de sortes, y compris les pronoms personnels, possessifs, réflexifs, réciproques, démonstratifs et indéfinis.  (Les pronoms interrogatifs sont traités dans la </xsl:text>
 <sectionRef sec="sQuesContent" />
 <xsl:text>.)</xsl:text>
 </p>		
@@ -28717,12 +28717,12 @@
 </xsl:if>
 		</section2>
 		<section2 id="sPronRecip">
-			<secTitle>Inverses</secTitle>
+			<secTitle>Réciproques</secTitle>
 			<p contentType="ctPracticalIntro">
-<xsl:text>Les inverses sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels. </xsl:text>
+<xsl:text>Las réciproques sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels. </xsl:text>
 </p>
 		   <p contentType="ctComparativeIntro">
-<xsl:text>Les inverses sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels.  On peut les former de la même façon que les réflexifs, ou ils peuvent être distincts.  Par exemple, en anglais, les formes inverses sont des syntagmes quantificateurs spéciaux: </xsl:text>
+<xsl:text>Las réciproques sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels.  On peut les former de la même façon que les réflexifs, ou ils peuvent être distincts.  Par exemple, en anglais, las réciproques sont des syntagmes quantificateurs spéciaux: </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -28737,12 +28737,12 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>l’un l’autre</langData>
-<xsl:text>.  Mais les inverses en français sont généralement marqués avec </xsl:text>
+<xsl:text>.  Mais las réciproques en français sont généralement marqués avec </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>se</langData>
-<xsl:text>.  Certaines langues utilise seulement un affixe verbal pour indiquer une action inverse de la part du sujet pluriel, d’autres ont des pronoms distincts, d’autres utilisent un syntagme nominal possédé, et d’autres encore ne marquent pas du tout l’action inverse.</xsl:text>
+<xsl:text>.  Certaines langues utilisent seulement un affixe verbal pour indiquer une action réciproque de la part du sujet pluriel, d’autres ont des pronoms distincts, d’autres utilisent un syntagme nominal possédé, et d’autres encore ne marquent pas du tout l’action réciproque.</xsl:text>
 </p>
 		   <p>
 <xsl:text>En </xsl:text>
@@ -28756,9 +28756,9 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-					<xsl:when test="//pron/@recip='no'"> il n’ y a aucune sorte d’inverses.</xsl:when>
-					<xsl:when test="//pron/@recip='yesVerbal'"> on utilise un affixe verbal pour indiquer une action inverse.</xsl:when>
-					<xsl:when test="//pron/@recip='yes'"> il y a des inverses, indiqués ici:</xsl:when>
+					<xsl:when test="//pron/@recip='no'"> il n’ y a aucune sorte d’réciproques.</xsl:when>
+					<xsl:when test="//pron/@recip='yesVerbal'"> on utilise un affixe verbal pour indiquer une action réciproque.</xsl:when>
+					<xsl:when test="//pron/@recip='yes'"> il y a des réciproques, indiqués ici:</xsl:when>
 				</xsl:choose>
 <xsl:text></xsl:text>
 </p>
@@ -28766,7 +28766,7 @@
 <example num="xPron.PronRecip.10">
 <table border="1">
 		         <tr>
-		         	<th>Affixe inverse</th>
+		         	<th>Affixe réciproque</th>
 		            <th>Glose</th>
 		         </tr>			
 		         <xsl:variable name="sExampleValue0.0">
@@ -28822,7 +28822,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yesVerbal'">
 <p>
-<xsl:text>Des exemples d’inverses dans des phrases montrant l’affixe inverse sur le verbe pour indiquer une action inverse par le sujet sont:</xsl:text>
+<xsl:text>Des exemples d’réciproques dans des phrases montrant l’affixe réciproque sur le verbe pour indiquer une action réciproque par le sujet sont:</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yesVerbal'">
@@ -28870,11 +28870,11 @@
 <example num="xPron.PronRecip.16">
 <table border="1">
 		      	<caption>
-<xsl:text>Pronoms ou syntagmes inverses</xsl:text>
+<xsl:text>Pronoms ou syntagmes réciproques</xsl:text>
 </caption>
 		         <tr>
 		            <th>Personne</th>
-		            <th>Inverses</th>
+		         	<th>Réciproques</th>
 		            <th>Glose</th>
 		         </tr>	
 		         <xsl:if test="normalize-space(//pron/@pronounExcl)='no'">
@@ -29165,29 +29165,29 @@
 <p>
 <xsl:text></xsl:text>
 <xsl:if test="normalize-space(//pron/recipDistinct/@checked)='yes' and normalize-space(//pron/recipAffix/@checked)='no' and normalize-space(//pron/recipNounPoss/@checked)='no' and normalize-space(//pron/recipQP/@checked)='no' and normalize-space(//pron/recipOther/@checked)='no'">
-<xsl:text>Ces pronoms inverses sont des mots distincts, autonomes, qui ne sont liés aux autres pronoms.</xsl:text>
+<xsl:text>Ces pronoms réciproques sont des mots distincts, autonomes, qui ne sont liés aux autres pronoms.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/recipDistinct/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes' or normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes' or normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes'">
-<xsl:text>Certains de ces pronoms inverses sont des mots distincts, autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
+<xsl:text>Certains de ces pronoms réciproques sont des mots distincts, autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
 </xsl:if>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipAffix/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/recipDistinct/@checked)='no' and normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipNounPoss/@checked)='no' and normalize-space(//pron/recipQP/@checked)='no' and normalize-space(//pron/recipOther/@checked)='no'">
-<xsl:text>Ces pronoms inverses sont formés d’un autre pronom en attachant un affixe inverse.</xsl:text>
+<xsl:text>Ces pronoms réciproques sont formés d’un autre pronom en attachant un affixe réciproque.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes' or normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipAffix/@checked)='yes' or normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipAffix/@checked)='yes'">
-<xsl:text>Certains de ces pronoms inverses sont formés d’un autre pronom en attachant un affixe inverse.</xsl:text>
+<xsl:text>Certains de ces pronoms réciproques sont formés d’un autre pronom en attachant un affixe réciproque.</xsl:text>
 </xsl:if>
-<xsl:text>  Les affixes inverses sont:</xsl:text>
+<xsl:text>  Les affixes réciproques sont:</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipAffix/@checked)='yes'">
 <example num="xPron.PronRecip.22">
 <table border="1">
 		         <tr>
-		         	<th>Affixes inverses</th>
+		         	<th>Affixes réciproques</th>
 		            <th>Glose</th>
 		         </tr>			
 		         <xsl:variable name="sExampleValue0.0">
@@ -29244,10 +29244,10 @@
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipNounPoss/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/recipDistinct/@checked)='no' and normalize-space(//pron/recipAffix/@checked)='no' and normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipQP/@checked)='no' and normalize-space(//pron/recipOther/@checked)='no'">
-<xsl:text>Ces inverses sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</xsl:text>
+<xsl:text>Ces réciproques sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/recipnounPoss/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipNounPoss/@checked)='yes' or normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes' or normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipNounPoss/@checked)='yes'">
-<xsl:text>Certains de ces inverses sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</xsl:text>
+<xsl:text>Certains de ces réciproques sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</xsl:text>
 </xsl:if>
 <xsl:text>  Le substantif spécial qui est possédé par les pronoms possesseur est:</xsl:text>
 </p>
@@ -29313,10 +29313,10 @@
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipQP/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/recipDistinct/@checked)='no' and normalize-space(//pron/recipAffix/@checked)='no' and normalize-space(//pron/recipNounPoss/@checked)='no' and normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='no'">
-<xsl:text>Ces inverses sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
+<xsl:text>Ces réciproques sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipQP/@checked)='yes' or normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipQP/@checked)='yes' or normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes'">
-<xsl:text>Certains de ces inverses sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
+<xsl:text>Certains de ces réciproques sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
 </xsl:if>
 <xsl:text>  Les quantificateurs ou syntagmes spéciaux sont:</xsl:text>
 </p>
@@ -29325,7 +29325,7 @@
 <example num="xPron.PronRecip.30">
 <table border="1">
 		         <tr>
-		         	<th>Quantificateurs spéciaux pour inverses</th>
+		         	<th>Quantificateurs spéciaux pour réciproques</th>
 		            <th>Glose</th>
 		         </tr>			
 		         <xsl:variable name="sExampleValue0.0">
@@ -29383,18 +29383,18 @@
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipOther/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/recipDistinct/@checked)='no' and normalize-space(//pron/recipAffix/@checked)='no' and normalize-space(//pron/recipNounPoss/@checked)='no' and normalize-space(//pron/recipQP/@checked)='no' and normalize-space(//pron/recipOther/@checked)='yes'">
-<xsl:text>Ces inverses sont formés en ___</xsl:text>
+<xsl:text>Ces réciproques sont formés en ___</xsl:text>
 <xsl:value-of select="//pron/recipOther" /> <xsl:text>.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/recipDistinct/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes'">
-<xsl:text>Certains de ces inverses sont formés en ___</xsl:text>
+<xsl:text>Certains de ces réciproques sont formés en ___</xsl:text>
 <xsl:value-of select="//pron/recipOther" /> <xsl:text>.</xsl:text>
 </xsl:if>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yes'">
 <p>
-<xsl:text>Des exemples des inverses dans des phrases sont:</xsl:text>
+<xsl:text>Des exemples das réciproques dans des phrases sont:</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//pron/@recip)='yes'">
@@ -46397,7 +46397,7 @@
 </xsl:choose>
 <xsl:text>, </xsl:text>
 <xsl:choose>
-				<xsl:when test="//pron/@classifierNoN='yes'">les classificateurs peuvent se présenter sans substantif dans ces situations.  Des exemples de syntagmes nominaux où le classificateur sert sans usubstantif sont: </xsl:when>
+				<xsl:when test="//pron/@classifierNoN='yes'">les classificateurs peuvent se présenter sans substantif dans ces situations.  Des exemples de syntagmes nominaux ou phases où le classificateur sert sans usubstantif sont: </xsl:when>
 				<xsl:when test="//pron/@classifierNoN='no'">un substantif est toujours obligatoire.</xsl:when>
 		</xsl:choose>
 </p>

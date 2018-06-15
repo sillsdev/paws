@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QTesting" count="9/9">
+<page id="QTesting" count="11.9">
 	<title level="2">Questions - Testing</title>
 	<form section="q">
 		<instruction>To test what you have done so far, save your work now.  This will generate the test file and grammar rules file created to this point.
@@ -18,7 +18,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="QTestingBack" value="Back" goto="QCatMap.xml"/>
-			<button id="QTestingNext" value="Next" goto="Contents_es.htm"/>
+			<button id="QTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

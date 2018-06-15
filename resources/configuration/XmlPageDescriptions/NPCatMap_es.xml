@@ -2,9 +2,19 @@
 <!-- edited with XML Spy v3.5 (http://www.xmlspy.com) by Andy Black (SIL International) -->
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="NPCatMap" count="1/1">
+<page id="NPCatMap" count="5.8.1">
 	<title level="2">Nominal Phrases - Category Mapper</title>
 	<form section="np">
+		<instruction id="NPClassifierCategoryInstruction" show="swOTClassifierSpecificAndNPDemOrBothAndDemClassifierWord">You need to make sure the classifiers which are written as independent words in your lexicon will be mapped to the syntactic category <category>Class</category>.  Choose one of the following options, depending on your situation:
+			<ul>
+				<li>If you already have these classifier words marked with the category <category>Class</category> in your lexicon, nothing 
+					more needs to be done.</li>
+				<li>If the classifier words are mixed in with another category in the lexicon, you either need to give them the category <category>Class</category> in your morphological parser, or add the feature <feature>makeClass</feature> to each appropriate entry in the lexicon so the category will be changed for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)</li>
+				<li>If you have these classifier words marked in your lexicon with a distinct category all their own, but it is different from <category>Class</category>, enter that category below so PAWS can map your morphological category to <category>Class</category>. <br/>
+					<catMap id="NPClassifierCategory" dataItem="classifierCategory">Class</catMap>
+				</li>
+			</ul>
+		</instruction>
 		<instruction id="NPArtCategoryInstruction" show="swNPArt">You need to make sure the articles in your lexicon will be mapped to the syntactic category <category>Art</category>.  Choose one of the following options, depending on your situation:
 <ul>
 				<li>If you already have articles marked with the category <category>Art</category> in your lexicon, nothing 
@@ -38,8 +48,8 @@
 <br/>
 		<br/>
 		<buttons>
-			<button id="NPCatMapBack" value="Back" goto="NPContents_es.htm"/>
-			<button id="NPCatMapNext" value="Next" goto="NPContents_es.htm"/>
+			<button id="NPCatMapBack" value="Back" goto="NPContents_en.htm"/>
+			<button id="NPCatMapNext" value="Next" goto="NPContents_en.htm"/>
 		</buttons>
 	</form>
 	<showWhen id="swNPArt">
@@ -52,5 +62,73 @@
 		<or/>
 		<whenValue element="np" attr="artAndDem" value="both"/>
 	</showWhen>
+	
+	<showWhen id="swOTClassifierSpecificAndNPDemOrBothAndDemClassifierWord">
+		<whenValue element="typology" attr="classifier" value="yesSpecific"/>
+		<and/>
+		<openParen/><openParen/>
+		<whenValue element="np" attr="artAndDem" value="demonstrative"/>
+		<and/><not/>
+		<whenValue element="np" attr="classifierPresentDem" value="no"/>
+		<and/>
+		<openParen/>
+		<whenValue element="np/classifierSpecificDemPosBeforeBoth" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificDemPosAfterBoth" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificDemPosAfterDemBeforeN" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificDemPosAfterNBeforeDem" attr="checked" value="yes"/>
+		<closeParen/><closeParen/>
+		<or/>
+		<openParen/>
+		<whenValue element="np" attr="artAndDem" value="both"/>
+		<and/><not/>
+		<whenValue element="np" attr="classifierPresentDemBoth" value="no"/>
+		<and/>
+		<openParen/>
+		<whenValue element="np/classifierSpecificDemBothPosBeforeBoth" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificDemBothPosAfterBoth" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificDemBothPosAfterDemBeforeN" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificDemBothPosAfterNBeforeDem" attr="checked" value="yes"/>
+		<closeParen/>
+		<closeParen/>
+		<or/>
+		<openParen/>
+		<not/>
+		<whenValue element="np" attr="classifierPresentQ" value="no"/>
+		<and/>
+		<openParen/>
+		<whenValue element="np/classifierSpecificQPosBeforeBoth" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificQPosAfterBoth" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificQPosAfterQBeforeN" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificQPosAfterNBeforeQ" attr="checked" value="yes"/>
+		<closeParen/>
+		<closeParen/>
+		<or/>
+		<openParen/>
+		<not/>
+		<whenValue element="np" attr="classifierPresentAdj" value="no"/>
+		<and/>
+		<openParen/>
+		<whenValue element="np/classifierSpecificAdjPosBeforeBoth" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificAdjPosAfterBoth" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificAdjPosAfterAdjBeforeN" attr="checked" value="yes"/>
+		<or/>
+		<whenValue element="np/classifierSpecificAdjPosAfterNBeforeAdj" attr="checked" value="yes"/>
+		<closeParen/>
+		<closeParen/>
+		
+		<closeParen/>
+	</showWhen>
+	
 </page>
 

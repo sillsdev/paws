@@ -6779,7 +6779,7 @@ id="sPronNP"
    </example>
    <p show="swOTClassifiersSpecific"><content>En la mayoría de las lenguas que se utilizan clasificadores, el clasificador puede presentarse sin un sustantivo, mientras que la referencia está claro de las características del clasificador o el contexto.
       En el </content><langName/><content>, </content><case element="pron" attr="classifierNoN">
-         <caseText value="yes">los clasificadores pueden presentarse sin un sustantivo en estas situaciones. Algunos ejemplos de frases nominales donde un clasificador sirve sin un sustantivo son: </caseText>
+         <caseText value="yes">los clasificadores pueden presentarse sin un sustantivo en estas situaciones. Algunos ejemplos de frases nominales u oraciones donde un clasificador sirve sin un sustantivo son: </caseText>
          <caseText value="no">siempre se require un sustantivo.</caseText>
       </case>
    </p>

@@ -3,12 +3,12 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPVoice" count="3/3">
+<page id="IPVoice" count="9.8.3">
    <title level="2">Las oraciones básicas - Otros indicadores de voz</title>
    <introduction>Algunas lenguas, como Tagalog y otras lenguas del Austronesio, poseen afijos en el verbo que ayuden a definir las relaciones de las frases nominales en la oración.  Este es algo semejante a <technicalTermRef term="ttVoice"/> pasiva para dar énfasis a alguna de sus frases nominales. 
-      Los afijos verbales indican cuál frase nominal es la prominente y pueden implicar un cambio en el orden de las palabras y/o la marca de <technicalTermRef term="ttCase"/>. <br/><br/> Algunos ejemplos de Tagalog (Kroeger, Paul. 1993. Phrase structure and grammatical relations in Tagalog. Stanford, California: CSLI) que muestran un cambio en caso (pero no el orden de las palabras), en que el indicador de la voz refleja la relación grammatical del argumento nominativo son:
+      Los afijos verbales indican cuál frase nominal es la prominente y pueden implicar un cambio en el orden de las palabras y/o la marca de <technicalTermRef term="ttCase"/>. <br/><br/> Algunos ejemplos de Tagalog (Kroeger, Paul. 1993. Phrase structure and grammatical relations in Tagalog. Stanford, California: CSLI) que muestran un cambio en caso (pero no el orden de las palabras), en que el indicador de la voz refleja la relación grammatical del <technicalTermRef term="ttArgument">argumento</technicalTermRef>&#x20; <technicalTermRef term="ttNominative">nominativo</technicalTermRef> son:
 		</introduction>
-	<table>
+	<table class="EnglishExample">
 		<tr>
 			<td>1.</td><td>Voz de actor:</td>	<td>B&lt;um&gt;ili</td><td>ang</td><td>lalake</td><td>ng</td><td>isda</td><td>sa</td><td>tindahan.</td>
 		</tr>
@@ -49,7 +49,7 @@
 	   <prompt id="IPVoiceYesPrompt" show="swIPVoiceYesAndFeaturesNo">ADVERTENCIA: En <section number="9.2">Las oraciones básicas - La flexión verbal</section> usted no seleccionó ningún accidente gramatical de voz de este tipo especial para su lengua. Esto es inconsistente con su respuesta aquí  Si su lengua tiene indicadores de voz de este tipo especial, 
 	      vuelva a <section number="9.2">Las oraciones básicas - La flexión verbal</section> y seleccione los accidentes gramaticales de voz de este tipo especial y escriba las morfemas antes de regresando aquí.</prompt>
 	   <prompt id="IPVoicePrompt" show="swIPVoiceYes">Escriba ejemplos de oraciones que muestran los indicadores de voz de este tipo especial aquí.  Sugeremos que usted escriba un sistema de oraciones similares que difieren solamente en los indicadores de voz, como en los ejemplos arriba.</prompt>
-	   <textBox id="IPVoiceExample" dataItem="voiceExample" cols="50" show="swIPVoiceYes"/>
+	   <textBox id="IPVoiceExample" dataItem="voiceExample" cols="80" show="swIPVoiceYes"/>
 <br></br>	
 		<radioGroup id="IPVoiceCase" show="swIPVoiceYes">
 			<groupName dataItem="voiceCase" default="no">RIPVoiceCase</groupName>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QEmbYN" count="3/9">
+<page id="QEmbYN" count="11.3">
    <title level="2">Las preguntas - Las preguntas de respuesta sí/no como cláusula subordinada</title>
    <introduction>En las preguntas de respuesta sí/no como cláusula subordinada en español, un indicador o complementador de la pregunta (<example>si</example>) se presenta antes de la pregunta subordinada, que es el mismo de una oración declarativa en otras maneras.  Otras lenguas pueden tener otras maneras de indicar esta tipo de pregunta. Algunos ejemplos en español de las preguntas de respuesta sí/no como cláusulas subordinadas son:</introduction>
    <EnglishExample>
@@ -11,11 +11,11 @@
    </EnglishExample>
    <form section="q">
       <prompt>Escriba ejemplos similares de las preguntas de respuesta sí/no como cláusula subordinada en su lengua aquí:</prompt>
-        <textBox id="QEmbYNExample" dataItem="embYNExample" cols="50"/>
+        <textBox id="QEmbYNExample" dataItem="embYNExample" cols="80"/>
         <br/>
-      <instruction id="QEmbYNInstruction">Only certain verbs can take a question complement. In the lexicon, mark the verbs from your examples and any others that come to mind with the features <feature>sentential embedded_question</feature> if they can only take an embedded question complement (like ‘wonder'), but use the features <feature>sentential embedded_question_allowed</feature> if they can take an embedded question as well as a non-question complement (like ‘know').
-        </instruction>
-        <radioGroup>
+      <instruction id="QEmbYNInstruction">Only certain verbs can take a question complement. In the lexicon, mark the verbs from your examples and any others that come to mind with the features <feature>sentential_question sentential_CP</feature> if they can only take an embedded question complement (like <example>wonder</example>), but for a verb that can take an embedded question as well as some other complements (like <example>know</example> and <example>ask</example>), they only need to features as added in <section number="10.">Complement Clauses</section>.  If you want to include examples with <example>learn</example>, which were not covered here or in <section number="10.">Complement Clauses</section>, add the feature <feature>sentential_-finiteIPpro-drop_or_transitive_or_question</feature> (without any additional <feature>transitive</feature> feature) to its lexical entry.
+      </instruction>
+      <radioGroup>
             <groupName dataItem="embYN" default="no">RQEmbYN</groupName>
            <prompt>Para las preguntas de respuesta sí/no como cláusula subordinada, ¿Hay uno o más indicadores o complementadores de pregunta (incluya los afijos o clíticos en la contestación de esta pregunta)?</prompt>
             <radio id="QEmbYNYes" dataValue="yes">Sí, como <example>si</example> en español</radio>
@@ -37,7 +37,7 @@
          <checkbox id="QEmbYNCliticEnclitic" dataItem="embYNEnclitic">Como un enclítico que se une al final de culaquiera palabra que termina la pregunta de respuesta sí/no subordinada</checkbox>
          <checkbox id="QEmbYNCliticPrefix" dataItem="embYNPrefix">Como un prefijo que se une al verbo en la pregunta de respuesta sí/no subordinada</checkbox>
          <checkbox id="QEmbYNCliticSuffix" dataItem="embYNSuffix">Como un sufijo que se une al verbo en la pregunta de respuesta sí/no subordinada</checkbox>
-         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="2"/></checkbox>
+         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNCliticPosNoCheckPrompt" show="swQEmbYNWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos indicadores o complementadores de pregunta de respuesta sí/no subordinada se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       <prompt id="QEmbYNCliticsExamplesPrompt" show="swQEmbYNCliticProcliticOrEnclitic"><br/>Escriba los indicadores o complementadores de pregunta de respuesta sí/no subordinada que son clíticos con un signo igual para indicar en qué lado se unen aquí:</prompt>
@@ -57,7 +57,7 @@
          <checkbox id="QEmbYNPosBefore"  dataItem="embYNWordBefore">Antes de la pregunta</checkbox>
          <checkbox id="QEmbYNPosAfter"  dataItem="embYNWordAfter">Después de la pregunta</checkbox>
          <checkbox id="QEmbYNPosBoth"  dataItem="embYNWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">En mi lengua, el indicador o complementador de pregunta de respuesta sí/no puede presentarse:   <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="2"/></checkbox>
+         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">En mi lengua, el indicador o complementador de pregunta de respuesta sí/no puede presentarse:   <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNPosNoCheckPrompt" show="swQEmbYNWordYesOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta de respuesta sí/no que se escriben como palabras independientes con respecto al resto de la pregunta de respuesta sí/no subordinada en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       

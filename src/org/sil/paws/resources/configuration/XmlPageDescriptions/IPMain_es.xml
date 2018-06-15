@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="IPMain" count="1/1">
+<page id="IPMain" count="9.1.1">
     <title level="2">Las oraciones básicas</title>
    <introduction id="IPMainIntroNotPractical" show="swNotPractical">In this section, we want to handle copular, intransitive, transitive and ditransitive sentences in their basic word order (i.e. not changed by focus, topic, interrogative, or negation constructions).  Inflection and agreement features on verbs, cases when a subject may be missing, auxiliaries, and sentences with passive and other voice changes are also covered.
       <br/>

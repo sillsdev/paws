@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="IPMain" count="1/1">
+<page id="IPMain" count="9.1.1">
     <title level="2">Phrases Simples</title>
    <introduction id="IPMainIntroNotPractical" show="swNotPractical">In this section, we want to handle copular, intransitive, transitive and ditransitive sentences in their basic word order (i.e. not changed by focus, topic, interrogative, or negation constructions).  Inflection and agreement features on verbs, cases when a subject may be missing, auxiliaries, and sentences with passive and other voice changes are also covered.
       <br/>
@@ -22,7 +22,7 @@ The basic issues to be dealt with are presented here for your consideration and 
     <introduction id="IPMainIntroPractical" show="swPractical">Cette section traite les phrases copulatives, intransitives, transitives et ditransitives; chaque phrase selon son ordre fondamental (c’est à dire sans changement dû au focus, thème, ou constructions interrogatives ou négatives).
         <br/>
         <br/>
-        La flexion et caractéristiques d’accord par verbes, phrases à sujet nul, auxiliaires, impératifs, subjonctifs, conditionnelles, et phrases avec passif et autres changements de voix aussi se traite.
+        La flexion et caractéristiques d’accord par verbes, phrases à sujet nul, auxiliaires, impératifs, subjonctifs, conditionnelles, et phrases avec passif et autres changements de voix aussi se traitent.
     </introduction>
     <form section="ip" transparent="yes">
         <br/>

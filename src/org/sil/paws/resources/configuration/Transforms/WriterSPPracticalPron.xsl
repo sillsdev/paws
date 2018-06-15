@@ -46343,7 +46343,7 @@
 </xsl:choose>
 <xsl:text>, </xsl:text>
 <xsl:choose>
-         <xsl:when test="//pron/@classifierNoN='yes'">los clasificadores pueden presentarse sin un sustantivo en estas situaciones. Algunos ejemplos de frases nominales donde un clasificador sirve sin un sustantivo son: </xsl:when>
+         <xsl:when test="//pron/@classifierNoN='yes'">los clasificadores pueden presentarse sin un sustantivo en estas situaciones. Algunos ejemplos de frases nominales u oraciones donde un clasificador sirve sin un sustantivo son: </xsl:when>
          <xsl:when test="//pron/@classifierNoN='no'">siempre se require un sustantivo.</xsl:when>
       </xsl:choose>
 </p>

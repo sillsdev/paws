@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvClTesting" count="3/3">
+<page id="AdvClTesting" count="13.3">
 	<title level="2">Adverbial Clauses - Testing</title>
 	<form section="advcl">
 		<instruction>

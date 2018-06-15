@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QEmbCont" count="7/9">
+<page id="QEmbCont" count="11.7">
    <title level="2">Questions – Les questions de contenu comme proposition subordonnée</title>
    <introduction>En français et en anglais, dans les questions de contenu subordonnées, il faut mettre le syntagme interrogatif en tête de la proposition subordonnée. Cependant, à la différence des questions de contenu dans des propositions principales, on évite la mise en tête de l’auxiliaire. Voici des exemples en français de questions à contenu subordonnées: :</introduction>
 		<EnglishExample>
@@ -12,11 +12,11 @@
 		</EnglishExample>
    <form section="q">
       <prompt><br/>Entrez ici des exemples pareils dans votre langue, que la mise en tête ou le déplacement de l’auxiliaire soit requis ou non:</prompt>
-		<textBox id="QEmbContentExample" dataItem="embContentExample" cols="50"/>
+		<textBox id="QEmbContentExample" dataItem="embContentExample" cols="80"/>
 		<br/>
-      <instruction id="QEmbContInstruction">If any of the main verbs used in these examples are different from the verbs used in the examples of embedded Yes/No questions, you need to add the appropriate features in the lexicon.  Use the features <feature>sentential embedded_question</feature> if they can only take an embedded question complement (like ‘wonder’), but use the features <feature>sentential embedded_question_allowed</feature> if they can take an embedded question as well as a non-question complement (like ‘know’).</instruction>
-
-     <radioGroup>
+      <instruction id="QEmbContInstruction">If any of the main verbs used in these examples are different from the verbs used in the examples of embedded Yes/No questions, you need to add the appropriate features in the lexicon.  Use the features <feature>sentential_question sentential_CP</feature> if they can only take an embedded question complement (like <example>wonder</example>), but for a verb that can take an embedded question as well as some other complements (like <example>know</example> and <example>ask</example>),
+         they only need to features as added in <section number="10.">Complement Clauses</section>.  If you want to include examples with <example>learn</example>, which were not covered here or in <section number="10.">Complement Clauses</section>, add the feature <feature>sentential_-finiteIPpro-drop_or_transitive_or_question</feature> (without any additional <feature>transitive</feature> feature) to its lexical entry.</instruction>
+      <radioGroup>
          <groupName dataItem="embCont" default="no">RQEmbCont</groupName>
         <prompt><br/>Pour les questions de contenu comme proposition subordonnée, est-ce que votre langue utilise un marqueur ou complétiviseur ou plusieurs? (Mentionnez les affixes ou les clitiques dans votre réponse.)</prompt>
          <radio id="QEmbContYes" dataValue="yes">Oui</radio>
@@ -42,7 +42,7 @@
          <checkbox id="QEmbContBetweenEnclitic" dataItem="embContBetweenEnclitic" show="swQContFrontYes">Comme enclitique qui se rattache à la fin du dernier mot du syntagme interrogatif en tête, avant le reste de la question subordonnée</checkbox>
          <checkbox id="QEmbContCliticPrefix" dataItem="embContPrefix">Comme préfixe qui s’attache au verbe de la proposition subordonnée</checkbox>
          <checkbox id="QEmbContCliticSuffix" dataItem="embContSuffix">Comme suffixe qui s’attache au verbe de la proposition subordonnée</checkbox>
-         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">Dans ma langue, ces éléments peuvent s’attacher comme suit:<textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">Dans ma langue, ces éléments peuvent s’attacher comme suit:<textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContCliticPosNoCheckPrompt" show="swQEmbContWordNoOrSomeandNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire comment ces marqueurs interrogatifs dans la proposition subordonnée s’attachent dans votre langue, ou bien changez la réponse ci-dessus en « Oui ».</prompt>
       
@@ -63,7 +63,7 @@
          <checkbox id="QEmbContPosBefore"  dataItem="embContWordBefore">Avant le reste de la question</checkbox>
          <checkbox id="QEmbContPosAfter"  dataItem="embContWordAfter">Après le reste de la question</checkbox>
          <checkbox id="QEmbContPosBoth"  dataItem="embContWordBoth">Des deux côtés à la fois</checkbox>
-         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">Dans ma langue les marqueurs peuvent se mettre dans la position qui suit:<textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">Dans ma langue les marqueurs peuvent se mettre dans la position qui suit:<textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContPosNoCheckPrompt" show="swQEmbContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire pour votre langue la position de ces marqueurs interrogatifs dans la proposition subordonnée, ou bien changez la réponse ci-dessus en « Non, ils s’attachent à un autre mot ».</prompt>
       <instruction id="QEmbContWordYesInstruction" show="swQEmbContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
@@ -74,7 +74,7 @@
          <checkbox id="QEmbContVSOAfterWh" dataItem="embContVSOAfterWh">Directement après le syntagme interrogatif en tête</checkbox>
          <checkbox id="QEmbContVSOBeforeWh" dataItem="embContVSOBeforeWh">Au début de la question subordonnée, avant le syntagme interrogatif en tête</checkbox>
          <checkbox id="QEmbContVSOEnd" dataItem="embContVSOEnd">A la fin de la question subordonnée</checkbox>
-         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">Dans ma langue ils peuvent se mettre comme suit: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">Dans ma langue ils peuvent se mettre comme suit: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire pour votre langue la position de ces marqueurs interrogatifs dans la proposition subordonnée, ou bien changez la réponse ci-dessus en « Non, ils s’attachent à un autre mot ».</prompt>
       
@@ -88,7 +88,7 @@
          <radio id="QEmbContRequiredNo" dataValue="no">Non, un marqueur interrogatif est toujours facultatif</radio>
          <radio id="QEmbContRequiredSpecial" dataValue="special">Non, un marqueur interrogatif n’est pas utilisé dans les circonstances qui suivent:</radio>
       </radioGroup>
-      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="50" rows="2" show="swQEmbContRequiredSpecial"/>
+      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial"/>
       
       <radioGroup id="QEmbContAuxPosTable" show="swQEmbContNoAux">
          <groupName dataItem="embContAuxPos" default="unknown" position="yesHead">RQEmbContAuxPos</groupName>

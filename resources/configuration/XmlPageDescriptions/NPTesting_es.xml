@@ -2,7 +2,7 @@
 <!-- edited with XML Spy v3.5 (http://www.xmlspy.com) by Andy Black (SIL International) -->
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="NPTesting" count="1/1">
+<page id="NPTesting" count="5.9.1">
 	<title level="2">Nominal Phrases - Testing</title>
 	<form section="np">
 		<instruction>To test what you have done so far, save your work now.  This will generate the test file and grammar rules file created to this point.
@@ -20,8 +20,8 @@ Please check off this section now in ‘Contents’ and then proceed to
 	<br/>
 		<br/>
 		<buttons>
-			<button id="NPTestingBack" value="Back" goto="NPContents_es.htm"/>
-			<button id="NPTestingNext" value="Next" goto="NPContents_es.htm"/>
+			<button id="NPTestingBack" value="Back" goto="NPContents_en.htm"/>
+			<button id="NPTestingNext" value="Next" goto="NPContents_en.htm"/>
 		</buttons>
 	</form>
 </page>

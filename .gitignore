@@ -36,7 +36,9 @@ build/externalLibs
 build/project
 resources/images
 testdata
+*.*~
 *.orig
 *.bak
 *.xso
 *.properties~
+bin/

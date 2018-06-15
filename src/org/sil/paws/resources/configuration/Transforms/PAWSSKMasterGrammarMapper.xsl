@@ -28,7 +28,7 @@ Main template
 | **********************************************************************
 |
 |PC-PATR Grammar file for PAWS Starter Kit
-| C Black    July 2012
+| C Black    June 2018
 |
 |------------------------------------------------------------------------------
 |-Phrase structure rules

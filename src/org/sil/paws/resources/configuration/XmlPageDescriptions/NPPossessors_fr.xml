@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPPossessors" count="1/2">
+<page id="NPPossessors" count="5.4.1">
 	<title level="2">Syntagmes Nominaux – Possesseurs</title>
 	<introduction>  
 		Maintenant il faut considérer les <technicalTermRef term="ttPossessors">possesseurs</technicalTermRef>.  La possession peut être normalement exprimée par un pronom ou par un syntagme nominal qui peut consister d’un nom propre, d’un simple nom ou d’un nom complètement modifié.  Cependant le français permet seulement les pronoms dans la position possesseur avant le nom, avec tous les noms et les syntagmes nominaux possesseur entiers exprimés dans un syntagme prépositionnel avec <example>de</example> après le nom.<br/>
@@ -17,20 +17,20 @@
 	   <br/>
 	   <prompt>
 	   	Entrez ici quelques exemples de syntagmes nominaux de possession avec de simple possesseurs, incluant les possesseurs de syntagmes pronominaux et nominaux:</prompt>
-		<textBox id="NPPossExample" dataItem="possessorExample" cols="50"/>
+		<textBox id="NPPossExample" dataItem="possessorExample" cols="80"/>
 	   <br/>
 	   <prompt>
 	   	Entrez ici quelques exemples de syntagmes nominaux de possession avec des syntagmes adpositionaux comme possesseur comme dans <example>that book of John’s  « ce livre de Jean »</example>, si permis en votre langue:</prompt>
-	   <textBox id="NPPossPPExample" dataItem="ppExample" cols="50"/>
+	   <textBox id="NPPossPPExample" dataItem="ppExample" cols="80"/>
 	   <br/>
 		<prompt>Remarquez aussi que les possesseurs peuvent être juxtaposés les uns aux autres comme dans <example>the boy’s sister’s dog  « le chien de la soeur du garçon »</example>.  Cela est admis en français dans le syntagme nominal prépositionnel après le nom.<br/><br/>
 			Entrez ici des exemples de syntagmes nominaux de possession avec des possesseurs juxtaposés:</prompt>
-	   <textBox id="NPPossEmbeddedExample" dataItem="embeddedExample" cols="50"/>
+	   <textBox id="NPPossEmbeddedExample" dataItem="embeddedExample" cols="80"/>
 
 		<br/>
 		<prompt>
 			Entrez ici quelques exemples de syntagmes nominaux de possession avec des propositions relatives dans le possesseur, inclus dans de simples phrases complètes:</prompt>
-		<textBox id="NPPossRelClExample" dataItem="relClExample" cols="50"/>
+		<textBox id="NPPossRelClExample" dataItem="relClExample" cols="80"/>
 	   <br/><br/>
 	   <radioGroup>
 	      <groupName dataItem="possNP" default="yes">RNPPossNP</groupName>
@@ -98,7 +98,7 @@
 					<checkbox id="NPPossMarkedYesWordBefore" dataItem="possWordBefore">Avant le possesseur</checkbox>
 					<checkbox id="NPPossMarkedYesWordAfter" dataItem="possWordAfter">Après le possesseur</checkbox>
 					<checkbox id="NPPossMarkedYesWordBoth" dataItem="possWordBoth">Des deux côtés du possesseur</checkbox>
-					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">Dans ma langue, le mot de marque possessive peut se trouver comme suit: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" rows="2"/></checkbox>
+					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">Dans ma langue, le mot de marque possessive peut se trouver comme suit: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1"/></checkbox>
 				</checkboxGroup>
 		<prompt id="NPPossMarkedYesWordAndNoCheckPrompt" show="swPossMarkedYesWordAndNoCheck">AVERTISSEMENT: Vous avez dit ci-dessus que les possesseurs sont marqués avec un mot possessif mais vous n’avez pas coché toutes les options où cela se passe. Entrez donc ici une ou plusieurs options  appropriées, ou changez la réponse ci-dessus pour un différent type de marqueur ou « Non, il n’y a pas de marqueur spécial ».</prompt>
 	   

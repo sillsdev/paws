@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="CoordMain" count="1/4">
+<page id="CoordMain" count="15.1">
    <title>Las construcciones coordinadas</title>
    <introduction>sta sección empieza con las construcciones coordinadas básicas en que una conjunción se presenta entre dos oraciones. Estas incluyen la coordinación a nivel de la oración, la frase verbal, la frase nominal, la frase <span id="CoordPrepSpan" show="swPPPosPrep">preposicional</span><span id="CoordPostSpan" show="swPPPosPost">posposicional</span><span id="CoordPBothSpan" show="swPPPosBoth">adposicional</span> y la frase adjetival.  
       Luego, para el nivel de la frase nominal solamente, se describen los elementos consecutivos como en una lista y las aposiciones. 
@@ -63,7 +63,7 @@
 	      <prompt><br/>¿Dónde se unen los clíticos o afijos dentro de la construcción coordinada?  Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">Al principio de la segunda oración enlazada como un proclítico</checkbox>
 	      <checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">Al final de la primera oración enlazada como un enclítico</checkbox>
-	      <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">En mi lengua, las conjunciones pueden unirse: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="2"/></checkbox>
+	      <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">En mi lengua, las conjunciones pueden unirse: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde las conjunciones se unen en su lengua, o cambia la respuesta de arriba a “Sí, todas son palabras independientes”.</prompt>
 	   
@@ -84,6 +84,7 @@
 	      <radio id="CoordNoConjNo" dataValue="no">No, cuando solamente dos elementos se unen, una de las conjunciones debe presentarse</radio>
 	      <radio id="CoordNoConjYes" dataValue="yes">Sí, dos elementos pueden ser coordinadas sin ninguna conjunción entre ellas</radio>
 	   </radioGroup>  
+   	<instruction id="CoordNoConjYesInstruction" show="swCoordNoConjYes">Note that this answer will add a lot of ambiguity in your PC-Patr output.  Consider commenting off some of the coordination rules in your PC-Patr grammar file to reduce the ambiguity as needed.</instruction>
 	   <br/>
 	   <br/>
 	   <introduction>En general, la coordinación está entre categorías similares. Para la coordinación a nivel de la oración, esto significa que dos oraciones declarativas pueden ser coordinadas, como en ejemplos 1-2, o dos preguntas, como en ejemplo 3. Cuando la conjunción significa ‘pero', una de las oraciones enlazadas debe ser negativa, como en ejemplo 4.  Algunos ejemplos en español de la coordinación a nivel de la oración son:</introduction>
@@ -94,10 +95,10 @@
 		   <exItem label="4.">Juan fue a la oficina esta mañana pero él no volvió.</exItem>
 		</EnglishExample>
 		<prompt>Escriba ejemplos de la coordinación a nivel de la oración en su lengua aquí:</prompt>
-		<textBox id="CoordSent" dataItem="sentExample" rows="5"/>
+		<textBox id="CoordSent" dataItem="sentExample" cols="80"/>
 		<br/>
 		<prompt>Ahora escriba ejemplos de la coordinación a nivel de la oración que expresa una secuencia de eventos, como en <example>María fue al mercado y luego se prepara para la fiesta</example> aquí:</prompt>
-		<textBox id="CoordSeqSent" dataItem="sentSeqExample" rows="5"/>
+		<textBox id="CoordSeqSent" dataItem="sentSeqExample" cols="80"/>
 		<br/>
 		<introduction>La coordinación de la frase verbal implica dos frases verbales completas que compartan un solo sujeto. Se ejemplifica en las siguientes oraciones en español:</introduction>
 		<EnglishExample>
@@ -106,7 +107,7 @@
 		   <exItem label="7.">Susana ni irá a la fiesta ni enviará a su hermana.</exItem>
 		</EnglishExample>
 		<prompt>Escriba ejemplos de la coordinación a nivel de la frase verbal en su lengua aquí:</prompt>
-		<textBox id="CoordVP" dataItem="vpExample" rows="5"/>
+		<textBox id="CoordVP" dataItem="vpExample" cols="80"/>
 		<br/>
 	   <introduction>Las frases nominales coordinadas generalmente pueden presentarse como sujetos, objetos directos, objetos indirectos y objetos de <span id="CoordPrepSpan1" show="swPPPosPrep">preposiciones</span><span id="CoordPostSpan1" show="swPPPosPost">posposiciones</span><span id="CoordPBothSpan1" show="swPPPosBoth">adposiciones</span> como cualquier frase nominal. La coordinación de la frase nominal se ejemplifica en las siguientes oraciones en español:</introduction>
 		<EnglishExample>
@@ -117,7 +118,7 @@
 			<exItem label="12.">Vendré a la boda y/o la recepción.</exItem>
 		</EnglishExample>
 		<prompt>Escriba ejemplos de la coordinación a nivel de la frase nominal en su lengua aquí:</prompt>
-		<textBox id="CoordDP" dataItem="dpExample" rows="5"/>
+		<textBox id="CoordDP" dataItem="dpExample" cols="80"/>
 		<br/>
 	   <introduction>Usualmente también es posible para las frases <span id="CoordPrepSpan2" show="swPPPosPrep">preposicionales</span><span id="CoordPostSpan2" show="swPPPosPost">posposicionales</span><span id="CoordPBothSpan2" show="swPPPosBoth">adposicionales</span> coordinadas presentarse en todas las posiciones en que cualquier frase <span id="CoordPrepSpan3" show="swPPPosPrep">preposicional</span><span id="CoordPostSpan3" show="swPPPosPost">posposicional</span><span id="CoordPBothSpan3" show="swPPPosBoth">adposicional</span> puede presentarse.  Algunos ejemplos en español de la coordinación de la frase preposicional son:</introduction>
 		<EnglishExample>
@@ -126,7 +127,7 @@
 			<exItem label="15.">Vendré o a la boda o a la recepción.</exItem>
 		</EnglishExample>
 	   <prompt>Escriba ejemplos de la coordinación a nivel de la frase <span id="CoordPrepSpan4" show="swPPPosPrep">preposicional</span><span id="CoordPostSpan4" show="swPPPosPost">posposicional</span><span id="CoordPBothSpan4" show="swPPPosBoth">adposicional</span> en su lengua aquí:</prompt>
-		<textBox id="CoordPP" dataItem="coordppExample" rows="5"/>
+		<textBox id="CoordPP" dataItem="coordppExample" cols="80"/>
 		<br/>
 	   <introduction>Finalmente, los adjetivos o frases adjetivales usualmente pueden ser coordinadas, cuando modifican a un sustantivo, por ejemplo en 16-18, y también cuando actúan como el adjetivo predicativo en una oración copulativo, como en ejemplos 19-20. La coordinación de la frase adjetival se ejemplifica en las siguientes oraciones en español:</introduction>
 		<EnglishExample>
@@ -137,7 +138,7 @@
 		   <exItem label="20.">Este material siente muy liso y sedoso.</exItem>
 		</EnglishExample>
 		<prompt>Escriba ejemplos de la coordinación a nivel de la frase adjetival en su lengua aquí:</prompt>
-		<textBox id="CoordAdj" dataItem="adjExample" rows="5"/>
+		<textBox id="CoordAdj" dataItem="adjExample" cols="80"/>
 		<br/>
 		<br/>
 		<buttons>
@@ -155,6 +156,9 @@
       <whenValue element="pp" attr="pPos" value="both"/>
    <or/>
       <whenValue element="pp" attr="pPos" value="unknown"/>
+   </showWhen>
+   <showWhen id="swCoordNoConjYes">
+      <whenRadio button="CoordNoConjYes"/>
    </showWhen>
    <showWhen id="swCoordWordNotNo">
       <not/><whenRadio button="CoordConjWordNo"/>

@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPCausative" count="2/3">
+<page id="IPCausative" count="9.8.2">
 	<title level="2">Basic Sentences - Causatives, Applicatives and Antipassives</title>
 	<introduction>Causatives add an additional <technicalTermRef term="ttArgument"/> to the sentence.  Some languages have single-clause <technicalTermRef term="ttCausative"/> sentences, where the verb is marked with an affix that introduces the additional argument.  That is the type of construction we want to cover here.<br/><br></br>
 	English and Spanish only have syntactic causatives which consist of two clauses, such as:</introduction>
@@ -17,26 +17,27 @@
 			<prompt><br/>How does your language express causatives?  Check all options that are correct for your language</prompt>
 		   <checkbox id="IPCausativeAffix" dataItem="causativeAffix">There is a verbal affix for causative that introduces an additional argument</checkbox>
 		   <checkbox id="IPCausativeMake" dataItem="causativeMake">Causative sentences consist of two clauses with a main verb meaning “make” or “cause”</checkbox>
-		   <checkbox id="IPCausativeOther" dataItem="causativeOther">My language expresses causatives in this other way:<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" rows="2"/></checkbox>
+			<checkbox id="IPCausativeOther" dataItem="causativeOther">My language expresses causatives in this other way:<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" cols="70"  rows="1"/></checkbox>
 		</checkboxGroup>
 	   <prompt id="IPCausativeNoCheckPrompt" show="swIPCausativeNoCheck">WARNING: You did not check any boxes to describe how causatives are formed in your language.  Please check at least one option.</prompt>
 	   <prompt id="IPCausativeAffixAndFeaturesNoPrompt" show="swIPCausativeAffixAndFeaturesNo">WARNING: In <section number="9.2">Basic Sentences - Inflection Features</section> you did not check the causative feature as occurring in your language.  This is inconsistent with your answer that there is a verbal affix for causative here.  If your language has one or more causative affixes, 
 	      return to <section number="9.2">Basic Sentences - Inflection Features</section> and check the causative feature.</prompt>
 	   <prompt id="IPCausativeAffixPrompt" show="swIPCausativeAffix"><br/>Key the causative affix(es) in your language with a hyphen to indicate which side they attach to the verb on, with each on a separate line, here: </prompt>
 	   <textBox id="IPCausativeAffixExample" dataItem="causativeAffixExample" rows="3" show="swIPCausativeAffix"/>		
+		
+	   <instruction id="IPCausativeAffixInstruction" show="swIPCausativeAffix">Mark the causative affixes with the feature <feature>causative</feature> in the lexicon, if you have not already done so. </instruction>
 
 	   <prompt id="IPCausativeAffixExamplesPrompt" show="swIPCausativeAffix"><br/>Key examples of single-clause causative sentences in your language here:</prompt>
-	   <textBox id="IPCausativeExample" dataItem="causativeExample" cols="50" show="swIPCausativeAffix"/>
+	   <textBox id="IPCausativeExample" dataItem="causativeExample" cols="80" show="swIPCausativeAffix"/>
 
 	   <prompt id="IPCausativeMakeExamplesPrompt" show="swIPCausativeMake"><br/>Key examples of two-clause causative sentences in your language here:</prompt>
-	   <textBox id="IPCausativeMakeExample" dataItem="causativeMakeExample" cols="50" show="swIPCausativeMake"/>
+	   <textBox id="IPCausativeMakeExample" dataItem="causativeMakeExample" cols="80" show="swIPCausativeMake"/>
 	   <prompt id="IPCausativeMakePrompt" show="swIPCausativeMake">These examples will be discussed more in <section number="10.">Complement Clauses</section>.</prompt>
-	   <prompt id="IPCausativeOtherExamplesPrompt" show="swIPCausativeOther"><br/>Key examples of the other type of causative sentences in your language here:</prompt>
-	   <textBox id="IPCausativeOtherExample" dataItem="causativeOtherExample" cols="50" show="swIPCausativeOther"/>
-	   
-	   <instruction id="IPCausativeInstruction">Mark inherently causative verbs <span id="IPCausativeAffixSpan" show="swIPCausativeAffix">and causative affixes </span>with the feature <feature>causative</feature> in the lexicon, if you have not already done so.
+	   <instruction id="IPCausativeInstruction" show="swIPCausativeMake">Mark inherently causative verbs with the feature <feature>causative_syntax</feature> in the lexicon.
 	   </instruction>
-
+	   <prompt id="IPCausativeOtherExamplesPrompt" show="swIPCausativeOther"><br/>Key examples of the other type of causative sentences in your language here:</prompt>
+	   <textBox id="IPCausativeOtherExample" dataItem="causativeOtherExample" cols="80" show="swIPCausativeOther"/>
+	   
 		<br/>
 		<introduction>Some languages have an additional applicative construction.  <technicalTermRef term="ttApplicative" capitalize="yes"/> is a verb <technicalTermRef term="ttVoice"/> that promotes an oblique argument of the verb to the object argument, and indicates the oblique role within the meaning of the verb.  An intransitive verb becomes transitive and a transitive verb becomes ditransitive when the applicative affix is added.  This is in contrast to expressing these arguments with adpositions.
 			<br/><br/>
@@ -53,7 +54,7 @@
 		<prompt id="IPApplicativeYesPrompt" show="swIPApplicativeYesAndFeaturesNo">WARNING: In <section number="9.2">Basic Sentences - Inflection Features</section> you did not check the appliactive feature as occurring in your language.  This is inconsistent with your answer here.  If your language has applicatives, 
 			return to <section number="9.2">Basic Sentences - Inflection Features</section> and check the applicative feature and key the applicative morphemes there.</prompt>
 		<prompt id="IPApplicativePrompt" show="swIPApplicativeYes">Key examples of applicative sentences in your language here:</prompt>
-		<textBox id="IPApplicativeExample" dataItem="applicativeExample" cols="50" show="swIPApplicativeYes"/>
+		<textBox id="IPApplicativeExample" dataItem="applicativeExample" cols="80" show="swIPApplicativeYes"/>
 		
 	   <br/>
 	   <introduction><technicalTermRef term="ttAntipassive" capitalize="yes"/> is a verb <technicalTermRef term="ttVoice"/> that deletes the object of transitive verbs.  Antipassives are found most often in languages with an <technicalTermRef term="ttErgative"/>-<technicalTermRef term="ttAbsolutive"/> <technicalTermRef term="ttCase"> case</technicalTermRef> system, where the deletion of the object changes the subject from ergative case to absolutive case. 
@@ -71,13 +72,13 @@
 	   <prompt id="IPAntipassiveYesPrompt" show="swIPAntipassiveYesAndFeaturesNo">WARNING: In <section number="9.2">Basic Sentences - Inflection Features</section> you did not check the antipassive feature as occurring in your language.  This is inconsistent with your answer here.  If your language has antipassives, 
 	      return to <section number="9.2">Basic Sentences - Inflection Features</section> and check the antipassive feature.</prompt>
 	   <prompt id="IPAntipassivePrompt" show="swIPAntipassiveYes">Key examples of antipassive sentences in your language here, including the optional object or Patient in some if your language allows it:</prompt>
-	   <textBox id="IPAntipassiveExample" dataItem="antipassiveExample" cols="50" show="swIPAntipassiveYes"/>
+	   <textBox id="IPAntipassiveExample" dataItem="antipassiveExample" cols="80" show="swIPAntipassiveYes"/>
 	   <checkboxGroup id="IPAntipassiveFormation" show="swIPAntipassiveYes">
 	      <prompt><br/>How are antipassives formed in your language?  Check all options that are correct for your language</prompt>
 <checkbox id="IPAntipassiveErg"  dataItem="antipassiveErg" show="swCaseErgOrSplit">The subject of a transitive verb changes to absolutive case when the object is deleted</checkbox>
 	      <checkbox id="IPAntipassiveAgr" dataItem="antipassiveAgr">The object agreement affix on the verb is deleted to signal an antipassive</checkbox>
 	      <checkbox id="IPAntipassiveAffix" dataItem="antipassiveAffix">There is a verbal affix for antipassive that signals the change in grammatical roles</checkbox>
-	      <checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">In my language, the antipassive may be expressed as follows: <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" rows="2"/></checkbox>
+	   	<checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">In my language, the antipassive may be expressed as follows: <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" cols="70"  rows="1"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="IPAntipassiveNoCheckPrompt" show="swIPAntipassiveYesAndNoCheck">WARNING: You did not check any boxes to describe how anitpassives are formed in your language.  Please check one or more boxes, or change your answer above to ‘No’, in which case you should not have any examples in the box above either.</prompt>
 	   

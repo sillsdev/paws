@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NegMain" count="1/4">
+<page id="NegMain" count="14.1">
     <title>Negative Constructions</title>
     <introduction>All languages have the ability to express <technicalTermRef term="ttNegation"/>.  This is usually achieved through the use of:
 <ul>
@@ -51,34 +51,34 @@ The final page then deals with any co-occurrence restrictions between the variou
           <checkbox id="NegNPDegreeNegEnclitic" dataItem="npDegreeNegEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the nominal phrase</checkbox>
           <checkbox id="NegNPDegreeNegPrefix" dataItem="npDegreeNegPrefix">As a prefix which attaches to the head noun of the nominal phrase</checkbox>
           <checkbox id="NegNPDegreeNegSuffix" dataItem="npDegreeNegSuffix">As a suffix which attaches to the head noun of the nominal phrase</checkbox>
-          <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">In my language, these elements may attach as follows: <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="2"/></checkbox>
+          <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">In my language, these elements may attach as follows: <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="1" cols="70"/></checkbox>
           </checkboxGroup>	
        <prompt id="NegNPDegreeAttachesNoCheckPrompt" show="swNegNPDegreeNoAndNoCheck">WARNING: You need to check at least one box to describe how these negative elements attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
        <br/>
        <prompt id="NegDegreeNegNPCliticPrompt" show="swNegNPDegreeNegNoOrSomeClitic">Key examples such as (1, 5 or 6) above of the negative clitics included in full nominal phrases (without the positive degree or quantifier elements) here:</prompt>
-       <textBox id="NegNPNegCliticExample" dataItem="negCliticExample" cols="50" show="swNegNPDegreeNegNoOrSomeClitic"/>
+       <textBox id="NegNPNegCliticExample" dataItem="negCliticExample" cols="80" show="swNegNPDegreeNegNoOrSomeClitic"/>
        <instruction id="NegNPDegreeNegProcliticInstruction" show="swNegNPDegreeNegNoOrSomeProclitic">In the lexicon, mark the negative proclitic(s) with the feature <feature>negative_prefix</feature>. 
        </instruction>
        <instruction id="NegNPDegreeNegEncliticInstruction" show="swNegNPDegreeNegNoOrSomeEnclitic">In the lexicon, mark the negative enclitic(s) with the feature <feature>negative_suffix</feature>.
        </instruction>
        <prompt id="NegDegreeNegNPAffixPrompt" show="swNegNPDegreeNegNoOrSomeAffix">Key examples such as (1, 5 or 6) above of the negative affixes included in full nominal phrases (without the positive degree or quantifier elements) here:</prompt>
-       <textBox id="NegNPNegAffixExample" dataItem="negAffixExample" cols="50" show="swNegNPDegreeNegNoOrSomeAffix"/>
+       <textBox id="NegNPNegAffixExample" dataItem="negAffixExample" cols="80" show="swNegNPDegreeNegNoOrSomeAffix"/>
        <instruction id="NegNPDegreeNegPrefixInstruction" show="swNegNPDegreeNegNoOrSomePrefix">In the lexicon, mark the negative prefix(es) with the feature <feature>negative</feature>. 
        </instruction>
        <instruction id="NegNPDegreeNegSuffixInstruction" show="swNegNPDegreeNegNoOrSomeSuffix">In the lexicon, mark the negative suffix(es) with the feature <feature>negative</feature>. 
        </instruction>
        <prompt id="NegDegreeNegNPOtherPrompt" show="swNegNPDegreeNegNoOrSomeOther">Key examples such as (1, 5 or 6) above of the negative elements attached as allowed in your language in full nominal phrases (without the positive degree or quantifier elements) here:</prompt>
-       <textBox id="NegNPNegOtherExample" dataItem="negOtherExample" cols="50" show="swNegNPDegreeNegNoOrSomeOther"/>
+       <textBox id="NegNPNegOtherExample" dataItem="negOtherExample" cols="80" show="swNegNPDegreeNegNoOrSomeOther"/>
        
        <prompt id="NegDegreeNegNPPrompt" show="swNegNPDegreeNegYesOrSome">Key examples such as (1, 5 or 6) above of the negative words meaning ‘not’ or 'no' included in full nominal phrases (without the positive degree or quantifier elements) here:</prompt>
-       <textBox id="NegNPNegExample" dataItem="negExample" cols="50" show="swNegNPDegreeNegYesOrSome"/>
+       <textBox id="NegNPNegExample" dataItem="negExample" cols="80" show="swNegNPDegreeNegYesOrSome"/>
        <br/><br/>
        <checkboxGroup id="NegNPDegreeNegYesTable" show="swNegNPDegreeNegYesOrSome">
           <prompt>Looking at the data in the box above, where do the negative elements which are written as independent words occur with respect to the rest of the nominal phrase? Check all options that are correct for your language</prompt>
           <checkbox id="NegNPDegreeNegWordBefore" dataItem="npDegreeNegWordBefore">Before it</checkbox>
           <checkbox id="NegNPDegreeNegWordAfter"  dataItem="npDegreeNegWordAfter">After it</checkbox>
           <checkbox id="NegNPDegreeNegWordBoth"  dataItem="npDegreeNegWordBoth">On both sides at the same time</checkbox>
-          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">In my language, these elements may occur as follows: <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="2"/></checkbox>
+          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">In my language, these elements may occur as follows: <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70"/></checkbox>
        </checkboxGroup>	
        <prompt id="NegNPDegreeWordNoCheckPrompt" show="swNegNPDegreeYesAndNoCheck">WARNING: You need to check at least one box to describe where these negative elements occur in your language, or change the answer above to ‘No, they all attach to another word in the nominal phrase’.</prompt>
        <instruction id="NegNPDegreeNegYesInstruction" show="swNegNPDegreeNegYesOrSome">In the lexicon, mark the words meaning ‘not’  and ‘no’  with the features <feature>makeNeg modifies_DP</feature>. </instruction>
@@ -91,7 +91,7 @@ The final page then deals with any co-occurrence restrictions between the variou
           <radio id="NegNPDegreeNegCooccurNo" dataValue="no">No</radio>
        </radioGroup>
        <prompt id="NegNPDegreeNegCooccurPrompt" show="swNegNPDegreeNegNotNoneAndNegCooccurYes">Key your examples of the negative elements in full nominal phrases including the positive degree elements or wide scope quantifiers here:</prompt>
-       <textBox id="NegNPNegCooccurExample" dataItem="negCooccurExample" cols="50" show="swNegNPDegreeNegNotNoneAndNegCooccurYes"/>
+       <textBox id="NegNPNegCooccurExample" dataItem="negCooccurExample" cols="80" show="swNegNPDegreeNegNotNoneAndNegCooccurYes"/>
        <br/><br/>
        <introduction>We also need to consider these negative nominal phrases in complete sentences, beginning with cases where the negated phrase is the subject, such as:
        </introduction>
@@ -101,7 +101,7 @@ The final page then deals with any co-occurrence restrictions between the variou
        </EnglishExample>
        <br/><br/>
        <prompt id="NegNPDegreeSentencePrompt" show="swNegNPDegreeNegNotNone">Take at least one of the nominal phrase examples in the above box(es) and use it as the subject of a full sentence, as in examples (7-8) above.</prompt>
-       <textBox id="NegNPDegreeNegSubjExample" dataItem="npDegreeSubjExample" rows="4" cols="50" show="swNegNPDegreeNegNotNone"/>
+       <textBox id="NegNPDegreeNegSubjExample" dataItem="npDegreeSubjExample" cols="80" show="swNegNPDegreeNegNotNone"/>
        <br/>
         <br/>
        <introduction>There are also negative versions of the indefinite pronouns, such as <example>nobody</example>, <example>nothing</example>, <example>none</example>.  Note that these are formed from a negative and a generic noun or number.  Sometimes these negative indefinites are not merged into a single word, as in <example>no  one</example>.</introduction>
@@ -133,7 +133,7 @@ The final page then deals with any co-occurrence restrictions between the variou
        </EnglishExample>
   <br/><br/>     
        <prompt id="NegPronounSentPrompt">Take at least one of the examples of negative indefinite <span id="NegPronounSentSpan" show="swNegPronIndefYes">pronouns</span><span id="NegPronounSentSpan2" show="swNegPronIndefSome">pronouns or nominal phrases</span><span id="NegNPSentSpan" show="swNegPronIndefNo">nominal phrases</span> above and use it as the subject of a full sentence as in examples (9-10) above.</prompt>
-        <textBox id="NegPronIndefSubjExample" dataItem="negIndefSubjExample" rows="4" cols="50"/>
+        <textBox id="NegPronIndefSubjExample" dataItem="negIndefSubjExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup id="NegSubjVerbRequiredTable" show="swNegVerbalYes">

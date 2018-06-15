@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QMainCont" count="6/9">
+<page id="QMainCont" count="11.6">
     <title level="2">Las preguntas - Las preguntas de respuesta abierta como cláusula principal</title>
    <introduction>En las preguntas de respuesta abierta como cláusula principal en español, se requiere el desplazamiento hacia la izquierda de una frase interrogativa.  Algunas lenguas, como inglés, requieren el desplazamiento de un auxiliar también cuando algo más que el tema está en cuestión.  Algunos ejemplos de las preguntas de respuesta abierta como cláusula principal son:</introduction>
    <EnglishExample>
@@ -14,7 +14,7 @@
         </EnglishExample>
    <form section="q">
       <prompt>Escriba ejemplos similares en su lengua, independientemente si se requiere el desplazamiento de una frase interrogativa, aquí:</prompt>
-        <textBox id="QContExample" dataItem="contentExample" cols="50"/>
+        <textBox id="QContExample" dataItem="contentExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup>
@@ -37,7 +37,7 @@
       <radioGroup id="QMainContWordTable" show="swQMainContYes">
          <groupName dataItem="mainContWord" default="yes">RQMainContWord</groupName>
          <prompt><br/>¿Se escriben todos los indicadores o complementadores de pregunta como una palabra independiente?</prompt>
-         <radio id="QMainContWordYes" dataValue="yes">Sí</radio>
+         <radio id="QMainContWordYes" dataValue="yes">Sí, todos son palabras independientes</radio>
          <radio id="QMainContWordSome" dataValue="some">Algunos se escriben como una palabra independiente pero otros se unen a otra palabra</radio>
          <radio id="QMainContWordNo" dataValue="no">No, todos se unen a otra palabra</radio>
       </radioGroup>
@@ -50,7 +50,7 @@
          <checkbox id="QMainContBetweenEnclitic" dataItem="mainContBetweenEnclitic" show="swQContFrontYes">Como un enclítico que se une al final de la palabra que termina la frase interrogativa despazada, antes del resto de la pregunta</checkbox>
          <checkbox id="QMainContCliticPrefix" dataItem="mainContPrefix">Como un prefijo que se une al verbo en la pregunta</checkbox>
          <checkbox id="QMainContCliticSuffix" dataItem="mainContSuffix">Como un sufijo que se une al verbo en la pregunta</checkbox>
-         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="2"/></checkbox>
+         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContCliticPosNoCheckPrompt" show="swQMainContWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos indicadores o complementadores de pregunta se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       
@@ -71,7 +71,7 @@
          <checkbox id="QMainContPosBefore"  dataItem="mainContWordBefore">Antes de la pregunta</checkbox>
          <checkbox id="QMainContPosAfter"  dataItem="mainContWordAfter">Después de la pregunta</checkbox>
          <checkbox id="QMainContPosBoth"  dataItem="mainContWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="2"/></checkbox>
+         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
          <prompt id="QMainContPosNoCheckPrompt" show="swQMainContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta que se escriben como palabras independientes con respecto al resto de la pregunta en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       <instruction id="QMainContWordYesInstruction" show="swQMainContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
@@ -82,7 +82,7 @@
          <checkbox id="QMainContVSOAfterWh" dataItem="mainContVSOAfterWh">Inmediatamente después de una frase interrogativa desplazada</checkbox>
          <checkbox id="QMainContVSOBeforeWh" dataItem="mainContVSOBeforeWh">Al inicio de la pregunta, antes de una frase interrogativa desplazada</checkbox>
          <checkbox id="QMainContVSOEnd" dataItem="mainContVSOEnd">Al final de la pregunta</checkbox>
-         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="2"/></checkbox>
+         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
          <prompt id="QMainContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta que se escriben como palabras independientes con respecto de la frase interrogativa desplazada y al resto de la pregunta en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       
@@ -96,7 +96,7 @@
          <radio id="QMainContRequiredNo" dataValue="no">No, un indicador o complementador de pregunta siempre es opcional</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">No, no se utiliza un indicador o complementador de pregunta bajo las siguientes circunstancias:</radio>
       </radioGroup>
-      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="50" rows="2" show="swQMainContRequiredSpecial"/>
+      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial"/>
       
       <radioGroup id="QMainContAuxPosTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxPos" default="unknown" position="yesHead">RQMainContAuxPos</groupName>

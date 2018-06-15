@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="OverallTypology" count="1/3">
+<page id="OverallTypology" count="1.1">
     <title>La tipología</title>
    <introduction>Las respuestas dadas a estas preguntas se utilizan para fijar los datos predeterminados para las preguntas sobre la estructura de frase. Si en cualquier momento, usted no sabe la respuesta a una pregunta particular, usted puede aceptar el valor predeterminado del orden básico de la oración de su lengua.  Después,<span id="TypologyNotPractical" show="swNotPractical"> pruebe las estructuras de frase con sus datos y vaya detrás y</span> cambia sus respuestas según sea necesario.<br/><br/>
       Observe que la gramática también puede contener algunas declaraciones basadas en las respuestas predeterminadas hasta que usted las cambie, pero las declaraciones sobre la posición de elementos específicos en la estructura de frase tienen un _____ para indicar que la información no se ha incorporada todavía. Por lo tanto, los comentarios introductorios en la descripción de la gramática pueden ser incompletos o incorrectos para su lengua hasta que usted haya terminado las secciones posteriores.
@@ -14,8 +14,8 @@
         <exItem label="2.">[El perro]<sub>S</sub> [enterró]<sub>V</sub> [un hueso]<sub>O</sub>.</exItem>
     </EnglishExample>
     <form section="typology">
-        <prompt>Escriba ejemplos aquí:</prompt>
-        <textBox id="OTExample" dataItem="example" cols="50"/>
+        <prompt>Escriba ejemplos aquí:  (No escriba corchetes o subíndices como hay en los ejemplos - estos son para su información solamente.)</prompt>
+        <textBox id="OTExample" dataItem="example" cols="80"/>
         <radioGroup>
             <groupName dataItem="wordOrder" default="SVO">RTypology</groupName>
            <prompt>De acuerdo con estas oraciones, ¿cuál es el orden básico de palabras en las oraciones en su lengua?</prompt>

@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPPossessorAgreement" count="2/2">
+<page id="NPPossessorAgreement" count="5.4.2">
     <title level="2">Syntagmes Nominaux – Accord Possessif</title>
     <introduction>L’accord possessif vient normalement sous deux formes de base: 
 <ul>
@@ -21,7 +21,7 @@
         </radioGroup>
         <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Entrez dans la case l’affixe ou affixes utilisé(s) pour marquer les noms possédés aliénables quand ils ont un possesseur (chacun sur une ligne séparée s’il y en a plus qu’un). Utilisez un trait d’union après les caractères alphabétiques pour indiquer un préfixe, un trait d’union avant pour indiquer un suffixe et des traits d’union sur les deux côtés pour indiquer un infixe.<br/><br/>
             Veuillez remarquer que ces affixes ne devraient pas être les mêmes que ceux  avec accord ou qui expriment le possesseur, comme discuté ci-dessous.</prompt>
-        <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="3" cols="20" show="swNPPossAlienableYes"/>
+        <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes"/>
         <br/>
         <instruction id="NPPossAlienableYesInstruction" show="swNPPossAlienableYes">Key the feature <feature>possessed</feature> on the affix(es) that marks the alienably possessed nouns when they have a possessor.  Also, key the feature <feature>possessed</feature> on all inalienably possessed nouns so that a possessor will be required.</instruction>
         <radioGroup id="NPPossAgrTable">
@@ -114,7 +114,7 @@
           <radio id="NPPossAbsolutiveYes" dataValue="yes">Oui</radio>
        </radioGroup>
         <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Entrez dans chaque case l’affixe ou les affixes qui sont utilisés pour marquer les noms dans ces situations (chacun sur une ligne séparée s’il y en a plus qu’un) Utilisez un trait d’union après les caractères alphabétiques pour indiquer un préfixe, un trait d’union avant pour indiquer un suffixe, et un trait d’union sur les deux côtés pour indiquer un infixe.</prompt>
-       <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="3" cols="20" show="swNPPossAbsolutiveYes"/>
+       <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes"/>
        <br/><br/>
         <buttons>
             <button id="NPPossAgrBack" value="Back" goto="NPPossessors.xml"/>

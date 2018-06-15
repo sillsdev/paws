@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPAgrFeatures" count="2/2">
+<page id="IPAgrFeatures" count="9.2.2">
     <title level="2">Basic Sentences - Agreement Features</title>
    <introduction>Agreement features for verbs and auxiliaries provide us with specific information about the subject and possibly the object of the sentence.  These features include person, number, gender, animacy and class.  Languages differ greatly in how many features are marked on verbs or auxliairies.</introduction>
    <form section="ip">

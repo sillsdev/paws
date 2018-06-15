@@ -2,7 +2,7 @@
 <!-- edited with XML Spy v3.5 (http://www.xmlspy.com) by Andy Black (SIL International) -->
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="NegTesting" count="4/4">
+<page id="NegTesting" count="14.4">
 	<title level="2">Negative Constructions - Testing</title>
 	<form section="neg">
 		<instruction>
@@ -21,7 +21,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="NegTestingBack" value="Back" goto="NegType.xml"/>
-			<button id="NegTestingNext" value="Next" goto="Contents_fr.htm"/>
+			<button id="NegTestingNext" value="Next" goto="Contents_en.htm"/>
 		</buttons>
 	</form>
 </page>

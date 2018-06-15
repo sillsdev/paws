@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="IPComparative" count="2/3">
+<page id="IPComparative" count="9.5.2">
    <title level="2">Las oraciones básicas - Comparativas y superlativas</title>
    <introduction>Las oraciones comparativas son un subclase de oraciones copulativas. Consideraremos dos tipos que clasifiquen dos entidades (objetos o personas) como igual, después las comparativas en que una entidad (objeto o persona) se considera mejor que la otra, entonces las superlativas. Todos estos tipos normalmente pueden utilizar un verbo copulativo o un verbo de percepción.
       <br></br><br/>
@@ -14,7 +14,7 @@
    </EnglishExample>
    <form section="ip">
       <prompt>Escriba ejemplos similares en su lengua aquí:</prompt>
-      <textBox id="IPComparativeSameExample" dataItem="sameExample" cols="50"/>   
+      <textBox id="IPComparativeSameExample" dataItem="sameExample" cols="80"/>   
       <br/><br/>
       <radioGroup>
          <groupName dataItem="same" default="yes">RIPCopComparativeSame</groupName>
@@ -48,7 +48,7 @@
       </EnglishExample>
       <br/><br/>       
       <prompt>Escriba ejemplos similares en su lengua aquí:</prompt>
-      <textBox id="IPComparativeAsExample" dataItem="asExample" cols="50"/>   
+      <textBox id="IPComparativeAsExample" dataItem="asExample" cols="80"/>   
       <br/><br/>
       <radioGroup>
          <groupName dataItem="as" default="yes">RIPCopComparativeAs</groupName>
@@ -81,7 +81,7 @@
          <exItem label="11.">John seems less certain of his answers than Sue. ‘Juan parece menos seguro de sus respuestas que Susana.'</exItem>
       </EnglishExample>
       <prompt>Escriba ejemplos similares en su lengua aquí:</prompt>
-      <textBox id="IPExamplesComparativeExample" dataItem="comparativeExample" cols="50"/>   
+      <textBox id="IPExamplesComparativeExample" dataItem="comparativeExample" cols="80"/>   
       <br/><br/>
       <radioGroup>
          <groupName dataItem="comparative" default="yes">RIPCopComparative</groupName>
@@ -102,7 +102,7 @@
       </radioGroup>
       <prompt id="IPCopComparativeAffix" show="swIPCopComparativeAdjYesOrBoth">Escriba los afijos comparativos utilizados en adjetivos aquí (con una indicación del guión en el lado que se une): </prompt>     
       <textBox id="IPExamplesComparativeAffixExample" dataItem="comparativeAffixExample" rows="3" show="swIPCopComparativeAdjYesOrBoth"/>       
-      <instruction id="IPCopComparativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>comparative_prefix</feature> or the feature <feature>comparative_suffix</feature> on the appropriate lexical entries.</instruction>
+      <instruction id="IPCopComparativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>comparative</feature> on the lexical entries for these affixes.</instruction>
       <br/>
       <prompt id="IPCopComparativeDegBoth" show="swIPCopComparativeAdjDeg">Escriba las palabras de grado comparativas utilizadas con adjetivos predicativos y nominales predicativos aquí, incluyendo estos que significan ‘más’, ‘mucho’, ‘menos’ y ‘peor’:</prompt>          
       <prompt id="IPCopComparativeDeg" show="swIPCopComparativeAdjYes">Escriba las palabras de grado comparativas utilizadas con nominales predicativos aquí, incluyendo estos que significan ‘más’, ‘menos’ y ‘peor’:</prompt>     
@@ -119,7 +119,7 @@
       </EnglishExample>
       <introduction>Algunas lenguas no permiten que ninguna parte de la segunda oración sea omitida, más bien aparecen dos oraciones completas, las cuales van a ser comparadas. También, algunas lenguas que no tienen una palabra comparativa independiente que significa ‘than (que)'  en las construcciones comparativas más cortas, simplemente tendrá las dos partes de la oración seguida una de la otra en esta construcción.</introduction>
       <prompt><br/>Escriba ejemplos de oraciones comparativas en su lengua aquí:</prompt>
-         <textBox id="CoordComparativeSentExample" dataItem="comparativeSentExample" cols="50"/>
+         <textBox id="CoordComparativeSentExample" dataItem="comparativeSentExample" cols="80"/>
          <br/>
          <br/>
          <radioGroup>
@@ -139,11 +139,11 @@
          <exItem label="21.">John seems the least certain of his answers of all my students. ‘Juan parece el menos seguro de sus respuestas de todos mis estudiantes.'</exItem>
       </EnglishExample>
       <prompt>Escriba ejemplos similares en su lengua aquí:</prompt>
-      <textBox id="IPExamplesSuperlativeExample" dataItem="superlativeExample" cols="50"/>     
+      <textBox id="IPExamplesSuperlativeExample" dataItem="superlativeExample" cols="80"/>     
       <br/>
       <prompt id="IPCopSuperlativeAffix" show="swIPCopComparativeAdjYesOrBoth">Escriba los afijos superlativos usados en adjetivos aquí (con una indicación del guión en el lado que se une):</prompt>     
       <textBox id="IPExamplesSuperlativeAffixExample" dataItem="superlativeAffixExample" rows="3" show="swIPCopComparativeAdjYesOrBoth"/>     
-      <instruction id="IPCopSuperlativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>superlative_prefix</feature> or the feature <feature>superlative_suffix</feature> on the appropriate lexical entries.</instruction>
+      <instruction id="IPCopSuperlativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>superlative</feature> on the lexical entries for these affixes.</instruction>
       <br/>
       <prompt id="IPCopSuperlativeDegBoth" show="swIPCopComparativeAdjDeg">Escriba las palabras de grado superlativas utilizadas con adjetivos predicativos y nominales predicativos aquí, incluyendo estos que significan ‘el más’, ‘el mayor’, ‘el menos’ y ‘el peor’:</prompt>     
       <prompt id="IPCopSuperlativeDeg" show="swIPCopComparativeAdjYes">Escriba las palabras de grado superlativas utilizadas con nominales predicativos aquí, incluyendo estos que significan ‘el mayor’ and ‘el peor’:</prompt>

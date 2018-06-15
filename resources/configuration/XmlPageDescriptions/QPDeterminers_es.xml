@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="QPDeterminers" count="2/7">
+<page id="QPDeterminers" count="2.2">
    <title level="2">Las frases cuantificadoras - Los cuantificadores que no se presentan con determinantes</title>
    <introduction>El segundo sistema incluye cuantificadores como <example>alguno</example> y <example>cada</example>, que no permiten ningún otro <technicalTermRef term="ttDeterminers">determinante</technicalTermRef> como <technicalTermRef term="ttArticles">artículos</technicalTermRef>, <technicalTermRef term="ttDemonstratives">demostrativos</technicalTermRef> o <technicalTermRef term="ttPossessors">posesivos</technicalTermRef> en la frase nominal. 
 	   <br/><br/>
@@ -48,7 +48,7 @@
 	   <br/>
 	   <br/>
 	   <prompt id="QPDeterminerTypeWordPrompt" show="swQPDeterminerTypeYesOrSome"><br/>Escriba ejemplos de frases nominales con las palabras independientes que significan ‘alguno’, ‘cualquier’ o 'cada'  aquí, con cada uno en una línea separada:</prompt>
-	   <textBox id="QPDeterminerExample" dataItem="determinerExample" show="swQPDeterminerTypeYesOrSome"  cols="50" />
+	   <textBox id="QPDeterminerExample" dataItem="determinerExample" show="swQPDeterminerTypeYesOrSome"  cols="80" />
 	   <radioGroup id="DeterminerWord" show="swQPDeterminerTypeYesOrSome">
 	      <groupName dataItem="determiner" default="yes">RDeterminer</groupName>
 	      <prompt><br/>De acuerdo con los ejemplos, ¿funcionan los cuantificadores con significados como ‘alguno’, ‘cualquier’ o 'cada’ que se escriben como palabras independientes como el único determinante en la frase nominal?</prompt>    
@@ -62,7 +62,7 @@
 	      <checkbox id="QPDeterminerPosBefore"  dataItem="determinerPosBefore">Antes</checkbox>
 	      <checkbox id="QPDeterminerPosAfter"  dataItem="determinerPosAfter">Después</checkbox>
 	      <checkbox id="QPDeterminerPosBoth"  dataItem="determinerPosBoth">En ambos lados en la misma oración</checkbox>
-	      <checkbox id="QPDeterminerPosOther"  dataItem="determinerPosOther">En mi lengua, pueden presentarse: <textBox  id="QPDeterminerPosOtherContent" dataItem="determinerPosOther" rows="2"/></checkbox>
+	      <checkbox id="QPDeterminerPosOther"  dataItem="determinerPosOther">En mi lengua, pueden presentarse: <textBox  id="QPDeterminerPosOtherContent" dataItem="determinerPosOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDeterminerWordNoCheckPrompt" show="swQPDeterminerYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos cuantificadores con respecto al resto de la frase nominal en su lengua, o cambia la respuesta anterior a “No, todos se unen a otra palabra en la frase nominal”.</prompt>
 	   <instruction id="QPDeterminerYesInstruction" show="swQPDeterminerTypeYesOrSomeAndDeterminerYesOrSome">In the lexicon, mark this type of quantifier determiner that is written as an independent word with the feature <feature>determiner</feature>.  If it does not already have the category <category>Q</category>, add the feature <feature>makeQ</feature> to change the category for the syntax.  If a particular quantifier determiner can only go with plural nouns or if it marks plural itself (such as <example>some</example>), add the feature <feature>plural</feature> to that entry.  If a particular quantifier determiner can only go with singular nouns (such as <example>every</example> in English), add the feature <feature>singular</feature> to that entry.  Do not add either feature to a quantifier determiner which can go with either singular or plural nouns. </instruction>
@@ -78,20 +78,20 @@
 	      <checkbox id="QPDeterminerEnclitic" dataItem="determinerTypeEnclitic">Como un enclítico que se une al final de culaquiera palabra que termina la frase nominal</checkbox>
 	      <checkbox id="QPDeterminerPrefix" dataItem="determinerTypePrefix">Como un prefijo que se une al sustantivo principal en la frase nominal</checkbox>
 	      <checkbox id="QPDeterminerSuffix" dataItem="determinerTypeSuffix">Como un sufijo que se une al sustantivo principal en la frase nominal</checkbox>
-	      <checkbox id="QPDeterminerOther" dataItem="determinerTypeOther">En mi lengua, estos elementos se unen:  <textBox  id="QPDeterminerTypeOtherContent" dataItem="determinerTypeOther" rows="2"/></checkbox>
+	      <checkbox id="QPDeterminerOther" dataItem="determinerTypeOther">En mi lengua, estos elementos se unen:  <textBox  id="QPDeterminerTypeOtherContent" dataItem="determinerTypeOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDeterminerAttachesNoCheckPrompt" show="swQPDeterminerTypeNoAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos cuantificadores se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
 	   
 	   <prompt id="QPDeterminerCliticPrompt" show="swQPDeterminerNoOrSomeAndClitic"><br/>Ahora escriba ejemplos de frases nominales completas con los clíticos que significan ‘algo’, ‘cualquier’ o ‘cada’  aquí:</prompt>  
-	   <textBox id="QPDeterminerCliticExample" dataItem="determinerCliticExample" cols="50" show="swQPDeterminerNoOrSomeAndClitic"/>
+	   <textBox id="QPDeterminerCliticExample" dataItem="determinerCliticExample" cols="80" show="swQPDeterminerNoOrSomeAndClitic"/>
 	   <instruction id="QPDeterminerProcliticInstruction" show="swQPDeterminerNoOrSomeAndProclitic">In the lexicon, mark the proclitics meaning <example>some</example> with the features <feature>plural quantifier_prefix</feature> and the proclitics meaning <example>every</example> with the features <feature>singular quantifier_prefix</feature>.
 	   </instruction>
 	   <instruction id="QPDeterminerEncliticInstruction" show="swQPDeterminerNoOrSomeAndEnclitic">In the lexicon, mark the enclitics meaning <example>some</example> with the features <feature>plural quantifier_suffix</feature> and the enclitics meaning <example>every</example> with the features <feature>singular quantifier_suffix</feature>.</instruction>
 	   <prompt id="QPDeterminerAffixPrompt" show="swQPDeterminerNoOrSomeAndAffix"><br/>Ahora escriba ejemplos de frases nominales completas con los afijos que significan ‘algo’, ‘cualquier’ o ‘cada’  aquí:</prompt>  
-	   <textBox id="QPDeterminerAffixExample" dataItem="determinerAffixExample" cols="50" show="swQPDeterminerNoOrSomeAndAffix"/>
+	   <textBox id="QPDeterminerAffixExample" dataItem="determinerAffixExample" cols="80" show="swQPDeterminerNoOrSomeAndAffix"/>
 	   <instruction id="QPDeterminerAffixInstruction" show="swQPDeterminerNoOrSomeAndAffix">In the lexicon, mark the affixes meaning <example>some</example> with the feature <feature>plural</feature>.</instruction>
 	   <prompt id="QPDeterminerOtherPrompt" show="swQPDeterminerNoOrSomeAndOther"><br/>Ahora escriba ejemplos de frases nominales completas con los elementos que significan ‘algo’, ‘cualquier’ o ‘cada’  como se permiten en su lengua aquí:</prompt>  
-	   <textBox id="QPDeterminerOtherExample" dataItem="determinerOtherExample" cols="50" show="swQPDeterminerNoOrSomeAndOther"/>  		
+	   <textBox id="QPDeterminerOtherExample" dataItem="determinerOtherExample" cols="80" show="swQPDeterminerNoOrSomeAndOther"/>  		
 	   <br/>
 		<br/>
 	   <buttons>

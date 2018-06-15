@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvClMain" count="1/3">
+<page id="AdvClMain" count="13.1">
     <title>Adverbial Clauses</title>
     <introduction>This section considers the <technicalTermRef term="ttComplements"/> of temporal and reason adverbs.  Temporal adverbs with complements are used here to illustrate the constructions, then both types will be dealt with for your language on the next page. 
     <br/><br/>English examples of temporal adverbs with complements used in full sentences include: </introduction>

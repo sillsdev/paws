@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QMain" count="1/9">
+<page id="QMain" count="11.1">
     <title>Las preguntas</title>
     <introduction id="QMainIntroNotPractical" show="swNotPractical">This section considers the main clause and embedded clause varieties of Yes/No questions and content questions.  We will begin with Yes/No questions.
 <br/>

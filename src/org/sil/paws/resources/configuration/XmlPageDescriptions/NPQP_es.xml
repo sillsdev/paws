@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="NPQP" count="1/1">
+<page id="NPQP" count="5.5.1">
     <title level="2">Las frases nominales - Las frases cuantificadoras como modificadores</title>
     <introduction id="NPQPIntroNotPractical" show="swNotPractical">Next to be added to the nominal phrase as we work our way down the tree are quantifier phrases (QP), discussed earlier in <section number="2">Las frases cuantificadoras</section>.  This means we will be able to parse nominal phrases such as these in English:</introduction>
     <introduction id="NPQPIntroPractical" show="swPractical">Siguiente en la frase nominal son las frases cuantificadoras, discutidas anteriormente en  <section number="2">Las frases cuantificadoras</section>. Con las cuantificadores dentro de la frase nominal podemos analizar frases nominales como estas en español:</introduction>    <EnglishExample>
@@ -12,14 +12,14 @@
     </EnglishExample>
     <form section="np">
         <prompt>Escriba ejemplos similares en su lengua aquí:</prompt>
-        <textBox id="NPQPExample" dataItem="qpExample"/>
+        <textBox id="NPQPExample" dataItem="qpExample" cols="80"/>
         <br/>
        <checkboxGroup>
           <prompt>De acuerdo con los ejemplos, ¿dónde se presentan las frases cuantificadoras (incluyendo los números cardinales) con respecto al sustantivo?  Seleccione todas las opciones que son correctas en su lengua</prompt>
           <checkbox id="NPQPPosBefore" dataItem="qpPosBefore">Antes del sustantivo</checkbox>
           <checkbox id="NPQPPosAfter" dataItem="qpPosAfter">Después del sustantivo</checkbox>
           <checkbox id="NPQPPosBoth" dataItem="qpPosBoth">En ambos lados en la misma frase nominal</checkbox>
-          <checkbox id="NPQPPosOther" dataItem="qpPosOther">En mi lengua, las frases cuantificadoras pueden presentarse: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" rows="2"/></checkbox>
+          <checkbox id="NPQPPosOther" dataItem="qpPosOther">En mi lengua, las frases cuantificadoras pueden presentarse: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <prompt id="NPQPPosNoCheckPrompt" show="swNPQPNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las frases cuantificadoras con respecto al sustantivo en su lengua.</prompt>
        <radioGroup id="NPQPPosEitherorBothRestrictedTable" show="swNPQPPosEitherorBothRestricted">
@@ -44,7 +44,7 @@
           <checkbox id="NPQClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificQPosAfterNBeforeQ">Después del sustantivo pero antes del cuantificador</checkbox>
           <checkbox id="NPQClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificQPosPrefixQ">Como un prefijo en el cuantificador</checkbox>
           <checkbox id="NPQClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificQPosSuffixQ">Como un sufijo en el cuantificador</checkbox>
-          <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" rows="2"/></checkbox>
+          <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <prompt id="NPQClassifierSpecificPosNoCheckPrompt" show="swNPQClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto a estos cuantificadores y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
        

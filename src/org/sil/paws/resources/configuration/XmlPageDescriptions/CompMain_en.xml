@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="CompMain" count="1/4">
+<page id="CompMain" count="10.1">
     <title>Complement Clauses</title>
     <introduction>This section considers various types of embedded clauses which are <technicalTermRef term="ttComplements"/> of main verbs or of adjectives which are functioning as <technicalTermRef term="ttPredicates"/>, such as the following examples from English. </introduction>
     <EnglishExample>

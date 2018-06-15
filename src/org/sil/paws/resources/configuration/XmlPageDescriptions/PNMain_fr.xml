@@ -3,12 +3,12 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PNMain" count="1/3">
+<page id="PNMain" count="6.1">
 	<title>Noms Propres</title>
 	<introduction>Les noms propres constituent une classe spéciale de substantifs ou de syntagmes nominaux.  En français, certains nom propres peuvent se présenter seuls, comme <example>Susanne</example> ou <example>Russie</example>.  D’autres sont comme les substantifs composés, tels que <example>George Washington</example>.  Les noms propres peuvent aussi contenir des articles et/ou des <technicalTermRef term="ttAdpositionalPhrases">syntagmes adpositionnels</technicalTermRef> comme <example>les Etats-Unis d’Amérique</example>.  Bien des langues exigent un article devant un nom.  Les appositifs se présentent, parfois avec un possesseur, comme <example>mon fils, David</example> mais on les traitera plus tard dans la <section number="15.">Constructions Coordonées</section>. En plus, les noms propres peuvent être modifiés par des adjectifs et des propositions relatives, comme dans <example>la belle France</example> ou <example>la Susanne Leblanc que je connais</example>.</introduction>
 	<form section="prop">
 		<prompt>Entrez ici vos exemples de noms propres, simples ou composés, ou ceux qui comprennent des articles, des démonstratifs, des adjectifs, et/ou des possesseurs (si cela est permis):</prompt>
-		<textBox id="PNExample" dataItem="example"/>
+		<textBox id="PNExample" dataItem="example" cols="80"/>
 <br/><br/>
 	   <radioGroup id="PNClassifiersTable" show="swOTClassifierAgr">
 	      <groupName dataItem="pnClassifier" default="no">RPNClassifiers</groupName>
@@ -26,14 +26,16 @@
 	   	<radio id="PNDeterminerNo" dataValue="no">Non, comme en français, ces éléments sont permis, mais pas obligatoires</radio>
 	   	<radio id="PNDeterminerYes" dataValue="yes">Oui, tout nom propre doit contenir au moins un de ces éléments</radio>
 	</radioGroup>
+		<br/><br/>
+		<instruction id="PNDeterminerInstruction" show="swPNDeterminerNotNo">Note that the PC-Patr grammar output will treat proper names the same as nouns, so proper names will be allowed to have the same modifiers as nouns do in your language. </instruction>
 	   <br/>
 		<br/>
 		<prompt>Entrez ici vos exemples de noms propres avec syntagmes adpositionnels:</prompt>
-		<textBox id="PNPPExample" dataItem="ppExample"/>
+		<textBox id="PNPPExample" dataItem="ppExample" cols="80"/>
 		<br/>
 		<br/>
 		<prompt>Entrez ici vos exemples de noms propres modifiés par des propositions relatives, compris dans des phrases simples mais complètes:</prompt>
-		<textBox id="PNRelClExample" dataItem="relClExample"/>
+		<textBox id="PNRelClExample" dataItem="relClExample" cols="80"/>
 		<br/>
 		<br/>
 		<buttons>
@@ -60,6 +62,9 @@
       <or/>
       <whenValue element="np" attr="artAndDem" value="both"/>
    </showWhen>
+	<showWhen id="swPNDeterminerNotNo">
+		<not/><whenRadio button="PNDeterminerNo"/>
+	</showWhen>
    &TechnicalTerms; 
    
 </page>

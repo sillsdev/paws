@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronReciprocal" count="4/9">
+<page id="PronReciprocal" count="7.4">
     <title level="2">Los pronombres - Los recíprocos</title>
    <introduction>Los <technicalTermRef term="ttReciprocals">recíprocos</technicalTermRef> son similares a los reflexivos, salvo que se presentan solamente con sujetos plurales. Pueden formarse de la misma manera que los reflexivos, o pueden ser distintos. Por ejemplo, en español, las formas recíprocas son frases: <example>el uno al otro</example> y <example>uno a otro</example>.  Algunas lenguas utilizan solamente un afijo verbal para indicar la acción recíproca del sujeto plural, otros tienen pronombres independientes, otros utilizan una frase nominal poseída o una frase nominal cuantificada (como en español), y algunos no indican la acción recíproca en absoluto.</introduction>
     <form section="pron">
@@ -19,7 +19,7 @@
        <textBox id="PronRecipVerbAffixExample" dataItem="recipVerbAffixExample" show="swPronRecipVerbal" rows="2"/>
        <prompt id="PronRecipVerbSentExamples" show="swPronRecipVerbal">
           <br/>Ahora escriba algunos ejemplos de oraciones simples con el afijo recíproco en el verbo para indicar acción recíproca por el sujeto:</prompt>
-       <textBox id="PronRecipVerbSentExample" dataItem="recipVerbSentExample" show="swPronRecipVerbal"/>  
+       <textBox id="PronRecipVerbSentExample" dataItem="recipVerbSentExample" show="swPronRecipVerbal" cols="80"/>  
        
        <prompt id="PronRecipFirstExamples" show="swPronRecipYesAndPronExclNo">
           <br/>Escriba los pronombres o frases nominales utilizadas como recíprocos para referirse a sujetos de la primera persona plural aquí:
@@ -44,7 +44,7 @@
        <prompt id="PronRecipSentExamples" show="swPronRecipYes">
           <br/>Ahora escriba algunos ejemplos en oraciones simples aquí:
        </prompt>
-       <textBox id="PronRecipSentExample" dataItem="recipSentExample" show="swPronRecipYes"/>
+       <textBox id="PronRecipSentExample" dataItem="recipSentExample" show="swPronRecipYes" cols="80"/>
        
        <checkboxGroup id="PronRecipYesTable" show="swPronRecipYes">
           <prompt>
@@ -53,7 +53,7 @@
           <checkbox id="PronRecipAffixYes" dataItem="recipAffix">Uno o más afijos se unen para hacer otro pronombre en un recíproco</checkbox>
              <checkbox id="PronRecipAffixNoNoun" dataItem="recipNounPoss">Se utiliza un cierto sustantivo especial con un pronombre como el posesivo</checkbox>
              <checkbox id="PronRecipAffixNoQP" dataItem="recipQP">Se utiliza unas frases nominales cuantificadas especiales</checkbox>
-             <checkbox id="PronRecipAffixOther" dataItem="recipOther">En mi lengua, los recíprocos son construidos con:<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" rows="2"/></checkbox>
+          <checkbox id="PronRecipAffixOther" dataItem="recipOther">En mi lengua, los recíprocos son construidos con:<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronRecipAffixNoCheckPrompt" show="swPronRecipYesNoCheck">ADVERTENCIA: Usted dijo anteriormente que su lengua tiene pronombres recíprocos, pero no ha marcado ninguna de las opciones para decir cómo se forman. Por favor, seleccione una o más opciones según corresponda, a menos que su lengua no tiene ningún recíproco, en cuyo caso no debe tener ninguna forma en los campos y debe cambia la respuesta anterior a ‘No’ o ‘Sí, un afijo verbal indica la acción recíproca’.</prompt>

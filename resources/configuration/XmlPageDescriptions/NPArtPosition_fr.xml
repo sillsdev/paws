@@ -3,12 +3,12 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="NPArtPosition" count="2/2">
+<page id="NPArtPosition" count="5.3.2">
     <title level="2">Syntagmes Nominaux – Articles et Démonstratifs: Signes de position et d’accord</title>
     <form section="np">
         <prompt id="NPArtAndDemInstruction" show="swNPArtAndDem"><span id="NPArtandDemTreespan" show="swNotPractical"><br/>Nous sommes maintenant prêts à construire la prochaine partie de l’arbre de structure du syntagme.  
         </span>Entrez ici des exemples de syntagmes nominaux avec <span id="NPArtandDemSpan" show="swNPArtAndDemBoth">articles et démonstratifs</span><span id="NPArtSpan" show="swNPArtAndDemArt">articles</span><span id="NPDemSpan" show="swNPArtAndDemDem">démonstratifs</span>:</prompt>
-        <textBox id="NPArtPosExample" show="swNPArtAndDem" dataItem="example"/>
+        <textBox id="NPArtPosExample" show="swNPArtAndDem" dataItem="example" cols="80"/>
         <prompt id="NPArtAndDemNoInstruction" show="swNPArtAndDemNo">Puisque votre langue n’a pas d’articles ou de démonstratifs exprimés comme mots indépendants, nous n’avons pas besoin de déterminer pour eux une position syntactique.</prompt>
 <instruction id="NPArtAndDemNoInstruction2" show="swNPArtAndDemNo">You will be instructed to add the agreement features to nouns and their affixes when we deal with agreement again in the section on possessors.</instruction>
       
@@ -17,7 +17,7 @@
            <checkbox id="NPArtAndDemArtPosBefore" dataItem="artOnlyBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemArtPosAfter" dataItem="artOnlyAfter">Après</checkbox>
            <checkbox id="NPArtAndDemArtPosBoth" dataItem="artOnlyBoth">Des deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemArtPosOther" dataItem="artOnlyOther">Dans ma langue, les articles peuvent se trouver comme suit: <textBox  id="NPArtAndDemArtPosOtherContent" dataItem="artOnlyOther" rows="2"/></checkbox>
+           <checkbox id="NPArtAndDemArtPosOther" dataItem="artOnlyOther">Dans ma langue, les articles peuvent se trouver comme suit: <textBox  id="NPArtAndDemArtPosOtherContent" dataItem="artOnlyOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
         <prompt id="NPArtAndDemArtPosNoCheckPrompt" show="swNPArtAndDemArtAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les articles par rapport au nom dans votre langue ou changez la réponse sur la page précédente sur une qui n’inclut pas des articles qui sont écrits comme mots indépendants.</prompt>
        <radioGroup id="NPArtAndDemArtRequiredTable" show="swNPArtAndDemArt">
@@ -33,7 +33,7 @@
            <checkbox id="NPArtAndDemDemPosBefore" dataItem="demOnlyBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemDemPosAfter" dataItem="demOnlyAfter">Après</checkbox>
            <checkbox id="NPArtAndDemDemPosBoth" dataItem="demOnlyBoth">Des deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemDemPosOther" dataItem="demOnlyOther">Dans ma langue, les démonstratifs peuvent se trouver comme suit: <textBox  id="NPArtAndDemDemPosOtherContent" dataItem="demOnlyOther" rows="2"/></checkbox>
+           <checkbox id="NPArtAndDemDemPosOther" dataItem="demOnlyOther">Dans ma langue, les démonstratifs peuvent se trouver comme suit: <textBox  id="NPArtAndDemDemPosOtherContent" dataItem="demOnlyOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
         <prompt id="NPArtAndDemDemPosNoCheckPrompt" show="swNPArtAndDemDemAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les démonstratifs par rapport au nom dans votre langue, ou changez la réponse sur la page précédente  sur une qui n’inclut pas des démonstratifs qui sont écrits comme des mots indépendants.</prompt>
        <radioGroup id="NPArtAndDemDemRequiredTable" show="swNPArtAndDemDem">
@@ -59,7 +59,7 @@
             <checkbox id="NPDemClassifierSpecificPosAfterNBeforeDem"  dataItem="classifierSpecificDemPosAfterNBeforeDem">Après le nom mais avant le démonstratif</checkbox>
             <checkbox id="NPDemClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemPosPrefixDem">Comme préfixe sur le démonstratif</checkbox>
             <checkbox id="NPDemClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemPosSuffixDem">Comme suffixe sur le démonstratif</checkbox>
-            <checkbox id="NPDemClassifierSpecificPosOther"  dataItem="classifierSpecificDemPosOther">Dans ma langue, les classificateurs peuvent se trouver comme suit: <textBox  id="NPClassifierSpecificDemPosOtherContent" dataItem="classifierSpecificDemPosOther" rows="2"/></checkbox>
+            <checkbox id="NPDemClassifierSpecificPosOther"  dataItem="classifierSpecificDemPosOther">Dans ma langue, les classificateurs peuvent se trouver comme suit: <textBox  id="NPClassifierSpecificDemPosOtherContent" dataItem="classifierSpecificDemPosOther" cols="70" rows="1"/></checkbox>
         </checkboxGroup>
         <prompt id="NPDemClassifierSpecificPosNoCheckPrompt" show="swNPDemClassifierPresentYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport au démonstratif et au nom dans votre langue, ou changez votre réponse ci-dessus en « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal ».</prompt>
         
@@ -75,7 +75,7 @@
            <checkbox id="NPArtAndDemBothCooccurNoPosBefore" dataItem="demOrArtPosBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemBothCooccurNoPosAfter" dataItem="demOrArtPosAfter">Après</checkbox>
            <checkbox id="NPArtAndDemBothCooccurNoPosBoth" dataItem="demOrArtPosBoth">Sur les deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurNoPosOther" dataItem="demOrArtPosOther">Dans ma langue, le démonstratif ou l’article peut se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurNoPosOtherContent" dataItem="demOrArtPosOther" rows="2"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurNoPosOther" dataItem="demOrArtPosOther">Dans ma langue, le démonstratif ou l’article peut se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurNoPosOtherContent" dataItem="demOrArtPosOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
         <prompt id="NPArtAndDemBothCooccurNoPosNoCheckPrompt" show="swNPArtAndDemBothCooccurNoAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les articles et démonstratifs par rapport au nom dans votre langue.</prompt>
  
@@ -85,7 +85,7 @@
            <checkbox id="NPArtAndDemBothCooccurYesDemPosBefore" dataItem="demAndArtDemBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemBothCooccurYesDemPosAfter" dataItem="demAndArtDemAfter">Après</checkbox>
            <checkbox id="NPArtAndDemBothCooccurYesDemPosBoth" dataItem="demAndArtDemBoth">Sur les deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesDemPosOther" dataItem="demAndArtDemOther">Dans ma langue, les démonstratifs peuvent se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurYesDemPosOtherContent" dataItem="demAndArtDemOther" rows="2"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesDemPosOther" dataItem="demAndArtDemOther">Dans ma langue, les démonstratifs peuvent se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurYesDemPosOtherContent" dataItem="demAndArtDemOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
         <prompt id="NPArtAndDemBothCooccurYesDemPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndDemPosNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les démonstratifs par rapport au nom dans votre langue.</prompt>
        
@@ -94,7 +94,7 @@
            <checkbox id="NPArtAndDemBothCooccurYesArtPosBefore" dataItem="demAndArtArtBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemBothCooccurYesArtPosAfter" dataItem="demAndArtArtAfter">Après</checkbox>
            <checkbox id="NPArtAndDemBothCooccurYesArtPosBoth" dataItem="demAndArtArtBoth">Sur les deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesArtPosOther" dataItem="demAndArtArtOther">Dans ma langue, les articles peuvent se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurYesArtPosOtherContent" dataItem="demAndArtArtOther" rows="2"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesArtPosOther" dataItem="demAndArtArtOther">Dans ma langue, les articles peuvent se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurYesArtPosOtherContent" dataItem="demAndArtArtOther" cols="70" rows="1"/></checkbox>
        </checkboxGroup>
         <prompt id="NPArtAndDemBothCooccurYesArtPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndArtPosNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les articles par rapport au nom dans votre langue.</prompt>
        <instruction id="NPArtDemEitherSideRestrictedInstruction" show="swNPArtDemEitherSideRestricted">In the lexicon, mark those which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any articles or demonstratives which can occur on either side.</instruction>
@@ -138,7 +138,7 @@
             <checkbox id="NPDemBothClassifierSpecificPosAfterNBeforeDem"  dataItem="classifierSpecificDemBothPosAfterNBeforeDem">Après le nom mais avant le démonstratif</checkbox>
             <checkbox id="NPDemBothClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemBothPosPrefixDem">Comme préfixe sur le démonstratif</checkbox>
             <checkbox id="NPDemBothClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemBothPosSuffixDem">Comme suffixe sur le démonstratif</checkbox>
-            <checkbox id="NPDemBothClassifierSpecificPosOther"  dataItem="classifierSpecificDemBothPosOther">Dans ma langue, les classificateurs peuvent se trouver dans la position suivante: <textBox  id="NPClassifierSpecificDemBothPosOtherContent" dataItem="classifierSpecificDemBothPosOther" rows="2"/></checkbox>
+            <checkbox id="NPDemBothClassifierSpecificPosOther"  dataItem="classifierSpecificDemBothPosOther">Dans ma langue, les classificateurs peuvent se trouver dans la position suivante: <textBox  id="NPClassifierSpecificDemBothPosOtherContent" dataItem="classifierSpecificDemBothPosOther" cols="70" rows="1"/></checkbox>
         </checkboxGroup>
         <prompt id="NPDemBothClassifierSpecificPosNoCheckPrompt" show="swNPDemBothClassifierPresentYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport au démonstratif et au nom dans votre langue, ou changez votre réponse ci-dessus en « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal. ».</prompt>
         

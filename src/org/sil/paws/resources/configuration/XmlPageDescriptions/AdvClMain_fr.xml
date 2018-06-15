@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="AdvClMain" count="1/3">
+<page id="AdvClMain" count="13.1">
     <title>Propositions Adverbiales</title>
     <introduction>Cette section examine les <technicalTermRef term="ttComplements">compléments</technicalTermRef> d’adverbes de temps et de raison.  Des adverbes temporels avec des compléments sont utilisés ici pour illustrer les constructions, et les deux types seront traitées pour votre langue sur la page suivante. 
         <br/><br/>Des exemples en français d’adverbes temporels avec compléments utilisés dans des phrases complètes: </introduction>
@@ -38,7 +38,7 @@ The structure with an CP complement (example 4) is:
     <form section="advcl">
         <br/>
         <buttons>
-            <button id="AdvClMainBack" value="Back" goto="Contents_fr.htm"/>
+            <button id="AdvClMainBack" value="Back" goto="Contents_fr_fr.htm"/>
             <button id="AdvClMainNext" value="Next" goto="AdvClFeatures.xml"/>
         </buttons>
     </form>

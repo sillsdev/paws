@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QEmbCont" count="7/9">
+<page id="QEmbCont" count="11.7">
 	<title level="2">La preguntas - Las preguntas de respuesta abierta como cláusula subordinada</title>
    <introduction>En las preguntas de respuesta abierta como cláusula subordinada en español, se requiere el desplazamiento hacia la izquierda de una frase interrogativa.  Algunos ejemplos de las preguntas de respuesta abierta como cláusula subordinada son:</introduction>
    <EnglishExample>
@@ -11,10 +11,10 @@
 		</EnglishExample>
    <form section="q">
       <prompt>Escriba ejemplos similares en su lengua, independientemente si se requiere el desplazamiento de una frase interrogativa, aquí:</prompt>
-		<textBox id="QEmbContentExample" dataItem="embContentExample" cols="50"/>
+		<textBox id="QEmbContentExample" dataItem="embContentExample" cols="80"/>
 		<br/>
-      <instruction id="QEmbContInstruction">If any of the main verbs used in these examples are different from the verbs used in the examples of embedded Yes/No questions, you need to add the appropriate features in the lexicon.  Use the features <feature>sentential embedded_question</feature> if they can only take an embedded question complement (like ‘wonder’), but use the features <feature>sentential embedded_question_allowed</feature> if they can take an embedded question as well as a non-question complement (like ‘know’).</instruction>
-      
+      <instruction id="QEmbContInstruction">If any of the main verbs used in these examples are different from the verbs used in the examples of embedded Yes/No questions, you need to add the appropriate features in the lexicon.  Use the features <feature>sentential_question sentential_CP</feature> if they can only take an embedded question complement (like <example>wonder</example>), but for a verb that can take an embedded question as well as some other complements (like <example>know</example> and <example>ask</example>),
+         they only need to features as added in <section number="10.">Complement Clauses</section>.  If you want to include examples with <example>learn</example>, which were not covered here or in <section number="10.">Complement Clauses</section>, add the feature <feature>sentential_-finiteIPpro-drop_or_transitive_or_question</feature> (without any additional <feature>transitive</feature> feature) to its lexical entry.</instruction>
       <radioGroup>
 			<groupName dataItem="embCont" default="no">RQEmbCont</groupName>
 			<prompt>En preguntas de respuesta abierta como cláusula subordinada, ¿hay una o más indicadores o complementadores de pregunta que pueden presentarse además de las frases interrogativas (incluya los afijos o clíticos en la contestación de esta pregunta)?</prompt>
@@ -28,7 +28,7 @@
       <radioGroup id="QEmbContWordTable" show="swQEmbContYes">
          <groupName dataItem="embContWord" default="yes">RQEmbContWord</groupName>
          <prompt><br/>¿Se escriben todos los indicadores o complementadores de pregunta como una palabra independiente?</prompt>
-         <radio id="QEmbContWordYes" dataValue="yes">Sí</radio>
+         <radio id="QEmbContWordYes" dataValue="yes">Sí, todos son palabras independientes</radio>
          <radio id="QEmbContWordSome" dataValue="some">Algunos se escriben como una palabra independiente pero otros se unen a otra palabra</radio>
          <radio id="QEmbContWordNo" dataValue="no">No, todos se unen a otra palabra</radio>
       </radioGroup>
@@ -41,7 +41,7 @@
          <checkbox id="QEmbContBetweenEnclitic" dataItem="embContBetweenEnclitic" show="swQContFrontYes">Como un enclítico que se une al final de la palabra que termina la frase interrogativa despazada, antes del resto de la pregunta subordinada</checkbox>
          <checkbox id="QEmbContCliticPrefix" dataItem="embContPrefix">Como un prefijo que se une al verbo en la pregunta subordinada</checkbox>
          <checkbox id="QEmbContCliticSuffix" dataItem="embContSuffix">Como un sufijo que se une al verbo en la pregunta subordinada</checkbox>
-         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContCliticPosNoCheckPrompt" show="swQEmbContWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos indicadores o complementadores de pregunta subordinada se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       
@@ -62,7 +62,7 @@
          <checkbox id="QEmbContPosBefore"  dataItem="embContWordBefore">Antes de la pregunta subordinada</checkbox>
          <checkbox id="QEmbContPosAfter"  dataItem="embContWordAfter">Después de la pregunta subordinada</checkbox>
          <checkbox id="QEmbContPosBoth"  dataItem="embContWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">En mi lengua, el indicador o complementador de pregunta puede presentarse:  <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">En mi lengua, el indicador o complementador de pregunta puede presentarse:  <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
          <prompt id="QEmbContPosNoCheckPrompt" show="swQEmbContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta que se escriben como palabras independientes con respecto al resto de la pregunta subordinada en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       <instruction id="QEmbContWordYesInstruction" show="swQEmbContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
@@ -73,7 +73,7 @@
          <checkbox id="QEmbContVSOAfterWh" dataItem="embContVSOAfterWh">Inmediatamente después de una frase interrogativa desplazada</checkbox>
          <checkbox id="QEmbContVSOBeforeWh" dataItem="embContVSOBeforeWh">Al inicio de la pregunta subordinada, antes de una frase interrogativa desplazada</checkbox>
          <checkbox id="QEmbContVSOEnd" dataItem="embContVSOEnd">Al final de la pregunta subordinada</checkbox>
-         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="2"/></checkbox>
+         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70"/></checkbox>
       </checkboxGroup>
          <prompt id="QEmbContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta que se escriben como palabras independientes con respecto de la frase interrogativa desplazada y al resto de la pregunta subordinada en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       
@@ -87,7 +87,7 @@
          <radio id="QEmbContRequiredNo" dataValue="no">No, un indicador o complementizador de la pregunta siempre es opcional</radio>
          <radio id="QEmbContRequiredSpecial" dataValue="special">No, no se utiliza un indicador o complementador de pregunta bajo las siguientes circunstancias:</radio>
       </radioGroup>
-      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="50" rows="2" show="swQEmbContRequiredSpecial"/>
+      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial"/>
       
       <radioGroup id="QEmbContAuxPosTable" show="swQEmbContNoAux">
          <groupName dataItem="embContAuxPos" default="unknown" position="yesHead">RQEmbContAuxPos</groupName>

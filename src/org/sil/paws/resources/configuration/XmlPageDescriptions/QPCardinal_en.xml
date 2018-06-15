@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="QPCardinal" count="4/7">
+<page id="QPCardinal" count="2.4">
 	<title level="2">Quantifiers and QP - Numbers</title>
 	<introduction>Now consider numbers.  They cannot be modified by the
 degree words like the quantifiers can, though they occur in the same
@@ -134,7 +134,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	   <br/>
 		<prompt>Key some examples of nominal phrases containing different cardinal numbers with a noun here:  
 			<span id="ClassifiersSpecificSpan2" show="swOTClassifierSpecific"> (Please try to give examples with different types of nouns to illustrate some of the different classifiers used in your language.)</span></prompt>
-		<textBox id="QPCardinalExample" dataItem="cardinalExample"/>
+		<textBox id="QPCardinalExample" dataItem="cardinalExample" cols="80"/>
 		<br/>
 		<br/>
 		
@@ -184,7 +184,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 		   <checkbox id="QPOrdinalAffix" checked="yes" dataItem="ordinalAffix">An affix is added to the cardinal number</checkbox>
 		   <checkbox id="QPOrdinalIndependent" checked="yes" dataItem="ordinalIndependent">Some or all of the ordinal numbers are distinct words</checkbox>
 		   <checkbox id="QPOrdinalWord" checked="yes" dataItem="ordinalWord">Another word is added to the cardinal number</checkbox>
-		   <checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">In my language, ordinal numbers are formed as follows: <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" rows="2"/></checkbox>
+	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">In my language, ordinal numbers are formed as follows: <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" cols="70" rows="1"/></checkbox>
 		</checkboxGroup>
 	   <prompt id="QPOrdinalFormNoCheckPrompt" show="swQPOrdinalFormNoCheck">WARNING: You need to check at least one box to describe how the ordinal numbers are formed in your language.</prompt>  
 	   
@@ -199,17 +199,17 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	      <checkbox id="QPOrdinalWordBefore" dataItem="ordinalWordBefore">Before the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalWordAfter" dataItem="ordinalWordAfter">After the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalWordBoth" dataItem="ordinalWordBoth">On both sides of the cardinal number</checkbox>
-	      <checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">In my language, the ordinal word occurs as follows: <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" rows="2"/></checkbox>
+	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">In my language, the ordinal word occurs as follows: <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>		
 	   <prompt id="QPOrdinalWordPosNoCheckPrompt" show="swQPOrdinalWordPosNoCheck">WARNING: You need to check at least one box to describe where the ordinal word occurs with respect to the cardinal number to form the ordinal number in your language, or change your answer above to say that the the ordinal numbers are formed in another way.</prompt>  
 		<br/>
 		<br/>
 		<prompt>Key your examples of nominal phrases containing ordinal numbers with a noun, such as ‘the third book’ or ‘the second boat’, here:</prompt>
-	   <textBox id="QPOrdinalExample" dataItem="ordinalExample"/>
+		<textBox id="QPOrdinalExample" dataItem="ordinalExample" cols="80"/>
 	   <br/>
 	   <br/>
 		<prompt>Key your examples of nominal phrases containing ordinal numbers modifying a cardinal number with a noun, such as ‘the first ten children’, if allowed here:</prompt>
-	   <textBox id="QPOrdinalCardinalExample" dataItem="ordinalCardinalExample"/>
+		<textBox id="QPOrdinalCardinalExample" dataItem="ordinalCardinalExample" cols="80"/>
 	   <br/>
 	   <br/>
 	   <prompt>Key how your language expresses ‘next’ here:</prompt>
@@ -221,7 +221,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	   <br/>
 	   <br/>
 		<prompt>Key your examples of nominal phrases containing ‘next’ or ‘last’ with a noun, such as ‘the next street’ here.  Also include some examples of ‘next’ or ‘last’ with a cardinal number and a noun, such as ‘the last five boxes’, if allowed.</prompt>
-	   <textBox id="QPNextLastNPExample" dataItem="nextlastNPExample"/>
+		<textBox id="QPNextLastNPExample" dataItem="nextlastNPExample" cols="80"/>
 	   <br/>
 	   <br/>
 	   <checkboxGroup>
@@ -229,7 +229,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	      <checkbox id="QPOrdinalBefore" checked="yes" dataItem="ordinalBefore">Before the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalAfter" checked="yes" dataItem="ordinalAfter">After the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalBoth" checked="yes" dataItem="ordinalBoth">On both sides of the cardinal number at the same time</checkbox>
-	      <checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">In my language, these elements occur as follows with respect to the cardinal number: <textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" rows="2"/></checkbox>
+	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">In my language, these elements occur as follows with respect to the cardinal number: <textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" cols="70" rows="1"/></checkbox>
 	   </checkboxGroup>		
 		<prompt id="QPOrdinalNumNoCheckPrompt" show="swQPOrdinalNumNoCheck">WARNING: You need to check at least one box to describe where the ordinal numbers and the words for ‘next’ and ‘last’ occur with respect to the cardinal number, unless your language does not allow either ordinal numbers or the words for ‘next’ or ‘last’ to occur with a cardinal number.  In that case, select  ‘Nowhere’ below.</prompt>  
 		<checkboxGroup id="QPOrdinalNumNowhereTable" show="swQPOrdinalNumNoCheck">
@@ -238,10 +238,10 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 		</checkboxGroup>
 		
 		<instruction id="QPOrdinalInstruction">
-			<span id="QPOrdinalWordInstruction" show="swQPOrdinalWord">In the lexicon, mark the ordinal word with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span>
-			<span id="QPOrdinalAffixInstruction" show="swQPOrdinalAffix">In the lexicon, mark the affix with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span>
-			<span id="QPOrdinalIndependentInstruction" show="swQPOrdinalIndependent">In the lexicon, mark each ordinal word with the feature <feature>ordinal</feature>. Also, mark the words meaning <example>next</example> and <example>last</example> with this feature.</span>
-			<span id="QPOrdinalBothInstruction" show="swQPOrdinalBoth">In the lexicon, mark the appropriate affix and each independent ordinal word with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span>
+			<span id="QPOrdinalWordInstruction" show="swQPOrdinalWord">In the lexicon, mark the ordinal word with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span><br/>
+			<span id="QPOrdinalAffixInstruction" show="swQPOrdinalAffix">In the lexicon, mark the affix with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span><br/>
+			<span id="QPOrdinalIndependentInstruction" show="swQPOrdinalIndependent">In the lexicon, mark each ordinal word with the feature <feature>ordinal</feature>. Also, mark the words meaning <example>next</example> and <example>last</example> with this feature.</span><br/>
+			<span id="QPOrdinalBothInstruction" show="swQPOrdinalBoth">In the lexicon, mark the appropriate affix and each independent ordinal word with the feature <feature>ordinal</feature>.  Also, mark the words or affixes meaning <example>next</example> and <example>last</example> with this feature.</span><br/>
 			<span id="QPOrdinalEitherRestrictedInstruction" show="swQPOrdinalEitherRestricted">Those which can only occur before the cardinal number also need to have the feature <feature>QP-initial</feature>
 and those which can only occur after the cardinal number also need the
 feature <feature>QP-final</feature>.  Do not enter either
@@ -252,7 +252,7 @@ either side.</span>
 written as independent words, such as <example>one hundred thirty three</example>.  In many languages, conjunctions are either required or allowed in the compounds.  The position of the conjunction is usually on the same side of the number as the smallest numbers are. For example, in English number compounds the conjunction appears towards the end of the compound, either before the last number (the ones digit) or the last two numbers in the compound (the tens and ones digits), as in <example>four thousand and three</example> or <example>six thousand one hundred and thirty three</example>. 
 </introduction>
 		<prompt>Key any examples of compound numbers here:</prompt>
-		<textBox id="QPCardinalCompoundExample" dataItem="cardinalCompoundExample" cols="50"/>
+		<textBox id="QPCardinalCompoundExample" dataItem="cardinalCompoundExample" cols="80"/>
 		<radioGroup>
 			<groupName dataItem="cardinalHead" default="final">RCardinalHead</groupName>
 		   <prompt>Based on these examples, where do  the numbers zero through nine and any conjunctions occur in the compound numbers?</prompt>

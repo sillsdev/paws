@@ -1092,10 +1092,10 @@
 		<section2 id="sNPPoss">
 			<secTitle>Possesseurs</secTitle>
 		   <p contentType="ctPracticalIntro">
-<xsl:text>La possession peut s’exprimer normalement par un pronom ou par une syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.</xsl:text>
+<xsl:text>La possession peut s’exprimer normalement par un pronom ou par un syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.</xsl:text>
 </p>
 		   <p contentType="ctComparativeIntro">
-<xsl:text>La possession peut s’exprimer normalement par un pronom ou par une syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.  
+<xsl:text>La possession peut s’exprimer normalement par un pronom ou par un syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.  
 		   		Cependant le français permet seulement les pronoms dans la position possesseur qu’avant le nom, avec tous les possesseurs nominaux et possesseurs de syntagmes nominaux entiers exprimés dans un syntagme prépositionnelle avec </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -1190,7 +1190,7 @@
 		   	<xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
 		   	<xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
 		   	</xsl:choose>.  </xsl:when>
-		   	<xsl:when test="//np/@possNP='none'">ni les syntagmes nominaux ni les pronoms ne peuvent posséder un nom directement; la possession est exprimée seulement dans une syntagme <xsl:choose>
+		   	<xsl:when test="//np/@possNP='none'">ni les syntagmes nominaux ni les pronoms ne peuvent posséder un nom directement; la possession est exprimée seulement dans un syntagme <xsl:choose>
 		      	<xsl:when test="//pp/@pPos='before'">prepositionnel</xsl:when>
 		      	<xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
 		      	<xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>

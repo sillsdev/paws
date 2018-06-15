@@ -158,7 +158,7 @@
 	      </example>
 	      
 	   	<p contentType="ctComparativeIntro"><content>Contrairement aux verbes copulatifs, les verbes de perception permettent d’habitude seulement un syntagme adjectival qui suit, sauf dans les constructions superlatives où un syntagme nominal suit un verbe de perception, comme dans la prochaine section. Voici quelques exemples en français de verbes de perception: </content>
-	   		<langData>La fille a l’aire joli</langData><content>, </content><langData>Elle semble sympathique</langData><content> et </content><langData>l’eau paraît trouble</langData><content>.</content></p>
+	   		<langData>La fille a l’air joli</langData><content>, </content><langData>Elle semble sympathique</langData><content> et </content><langData>l’eau paraît trouble</langData><content>.</content></p>
 		  <p>
 		  	<content>Voici quelques exemples en </content>
 			 <langName/>
@@ -683,7 +683,7 @@
 	   <section2 id="sIPConditional">
 	      <secTitle>Conditionnels</secTitle>
 	      
-	   	<p contentType="ctComparativeIntro"><content>Les conditionnels ont deux parties: une condition et une conséquence. La condition est présentée par un mot de condition, par exemple </content><langData>si</langData><content>, </content><langData>quand</langData><content> ou </content><langData>après</langData><content>, et se sépare avec un virgule. La conséquence peut être marquée par un mot qui signifie </content> <langData>alors</langData><content> dans des examples où la comparaison vient en tête. Des exemples en français: </content>
+	   	<p contentType="ctComparativeIntro"><content>Les conditionnels ont deux parties: une condition et une conséquence. La condition est présentée par un mot de condition, par exemple </content><langData>si</langData><content>, </content><langData>quand</langData><content> ou </content><langData>après</langData><content>, et se sépare avec une virgule. La conséquence peut être marquée par un mot qui signifie </content> <langData>alors</langData><content> dans des examples où la comparaison vient en tête. Des exemples en français: </content>
 	   		<langData>Si tu épargnes assez d’argent, alors tu pourras acheter cela</langData><content>, </content>
 	   		<langData>Après que tu auras nettoyé ta chambre, alors tu pourras jouer</langData><content> et </content>
 	   		<langData>Quand tu auras mangé tes legumes, je te donnerai le dessert</langData><content>.  
@@ -799,8 +799,8 @@
 	   		<langData>I would fix the problem if I were in charge</langData><gloss><content> « Je résoudrais le problème si j’étais le responsable »</content></gloss><content> et </content>
 	   		<langData>I would like to be a soccer player if I were a man</langData><gloss><content> « J’aimerais être joueur de foot si j’étais homme »</content></gloss><content>.</content>
 	         </p>
-	   	<p contentType="ctComparativeIntro"><content>Dans beaucoup de langues - comme français - les subjonctifs s’emploient le plus souvent dans les propositions subordonnées, après les verbe principaux comme </content><langData>exiger</langData><content>, </content><langData>douter</langData><content>, </content><langData>vouloir</langData><content>, </content><langData>craindre</langData><content> et </content><langData>souhaiter</langData><content> avec the complémentiseur </content><langData>que</langData><content>.  Les exemples de les propositions subordonnées seront traits plus tard à la section </content><sectionRef sec="sComp"/><content>. </content></p>
-	   	<p contentType="ctPracticalIntro"><content>On emploie le mode du subjonctif pour exprimer les notions qui sont spéculatives, qu’on supppose, doute, craint, ou désire. Elles ne constituent pas la réalité du moment. Les subjonctifs peuvent ressembler aux conditionnels, sauf à la première personne.  Dans beaucoup de langues les subjonctifs s’emploient le plus souvent dans les propositions subordonnées.  Les exemples de les propositions subordonnées seront traits plus tard à la section </content><sectionRef sec="sComp"/><content>. </content></p>
+	   	<p contentType="ctComparativeIntro"><content>Dans beaucoup de langues - comme français - les subjonctifs s’emploient le plus souvent dans les propositions subordonnées, après les verbe principaux comme </content><langData>exiger</langData><content>, </content><langData>douter</langData><content>, </content><langData>vouloir</langData><content>, </content><langData>craindre</langData><content> et </content><langData>souhaiter</langData><content> avec le complémentiseur </content><langData>que</langData><content>.  Les exemples des propositions subordonnées seront traités plus tard à la section </content><sectionRef sec="sComp"/><content>. </content></p>
+	   	<p contentType="ctPracticalIntro"><content>On emploie le mode du subjonctif pour exprimer les notions qui sont spéculatives, qu’on supppose, doute, craint, ou désire. Elles ne constituent pas la réalité du moment. Les subjonctifs peuvent ressembler aux conditionnels, sauf à la première personne.  Dans beaucoup de langues les subjonctifs s’emploient le plus souvent dans les propositions subordonnées.  Les exemples des propositions subordonnées seront traités plus tard à la section </content><sectionRef sec="sComp"/><content>. </content></p>
 	   	<p><content>Voici quelques exemples en </content><langName/><content> de subjonctifs dans des propositions principales:</content></p>
 	      <example><interlinear exampleLoc="ip/subjunctiveExample"/></example>
 

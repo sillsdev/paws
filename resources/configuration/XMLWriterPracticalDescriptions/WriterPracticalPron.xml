@@ -6103,7 +6103,7 @@
 	   </example>
 		<p show="swOTClassifiersSpecific"><content>In most languages that use classifiers, the classifier may occur without a noun, as long as the features of the classifier or the context make the reference clear.
 		In </content><langName/><content>, </content><case element="pron" attr="classifierNoN">
-			<caseText value="yes">classifiers may occur without a noun in these situations.  Some examples of nominal phrases where a classifier serves without a noun are:</caseText>
+			<caseText value="yes">classifiers may occur without a noun in these situations.  Some examples of nominal phrases or sentences where a classifier serves without a noun are:</caseText>
 			<caseText value="no">a noun is always required.</caseText>
 		</case>
 		</p>

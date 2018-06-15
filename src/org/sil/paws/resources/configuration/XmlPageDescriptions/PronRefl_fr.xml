@@ -3,10 +3,10 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronRefl" count="3/9">
+<page id="PronRefl" count="7.3">
    <title level="2">Pronoms – Réfléchis</title>
    <introduction>Les <technicalTermRef term="ttReflexives">réfléchis</technicalTermRef> réfléchis sont une autre sorte de pronom qui existe en la plupart des langues.  Ils se présentent normalement dans la position de l’objet d’une phrase transitive, se référant au sujet.  Les réfléchis se présentent seulement dans le même cas que les objets directs et s’accordent normalement avec le sujet quant à la personne, au genre, et au nombre.  Des exemples en français sont: <example>me</example>, <example>te</example>, <example>se</example>, <example>nous</example> et <example>vous</example>.   
-      <br/><br/>Il y a une variété considérable dans la façon dont les réfléchis sont formés.  Certaines langues ont une classe de formes de pronoms complètement à part pour les réfléchis.  D’autres langues utilisent un syntagme qui comprend un substantif (généralement avec le sens de l’anglais <example>self  « même »</example>) qui est possédé par le pronom qui se réfère au sujet. Certaines langues utilisent un syntagme nominal quantifié spécial comme « l’un l’autre » en français pour les <technicalTermRef term="ttReciprocals">inverses</technicalTermRef>.  Certaines langues ont un affixe verbal pour indiquer une action réféchie, et certaines langues ne distinguent pas du tout les constructions réfléchies.</introduction>
+      <br/><br/>Il y a une variété considérable dans la façon dont les réfléchis sont formés.  Certaines langues ont une classe de formes de pronoms complètement à part pour les réfléchis.  D’autres langues utilisent un syntagme qui comprend un substantif (généralement avec le sens de l’anglais <example>self  « même »</example>) qui est possédé par le pronom qui se réfère au sujet. Certaines langues utilisent un syntagme nominal quantifié spécial comme « l’un l’autre » en français pour las <technicalTermRef term="ttReciprocals">réciproques</technicalTermRef>.  Certaines langues ont un affixe verbal pour indiquer une action réféchie, et certaines langues ne distinguent pas du tout les constructions réfléchies.</introduction>
     <form section="pron">
         <radioGroup>
             <groupName dataItem="refl" default="no">RPronRefl</groupName>
@@ -29,10 +29,10 @@
           <br/>Entrez ici les réfléchis de la première personne du pluriel qui peuvent occuper la position de l’objet:</prompt>
        <textBox id="PronReflFirstPlExample" dataItem="reflFirstPlExample" show="swPronReflYesAndPronNumberYesExclNo" rows="2"/>
        <prompt id="PronReflFirstExclExamples" show="swPronReflYesAndPronExclYes">
-          <br/>Entrez ici les réfléchis de la première personne exclusive <span id="PronNumberPlSpan" show="swPronNumberYes">plural </span>qui peuvent occuper la position de l’objet:</prompt>
+          <br/>Entrez ici les réfléchis de la première personne exclusive <span id="PronNumberPlSpan" show="swPronNumberYes">pluriel </span>qui peuvent occuper la position de l’objet:</prompt>
        <textBox id="PronReflFirstExclExample" dataItem="reflFirstExclExample" show="swPronReflYesAndPronExclYes" rows="2"/>
        <prompt id="PronReflFirstInclExamples" show="swPronReflYesAndPronExclYes">
-          <br/>Entrez ici les réfléchis de la première personne inclusive <span id="PronNumberPlSpan1" show="swPronNumberYes">plural </span>qui peuvent occuper la position de l’objet:</prompt>
+          <br/>Entrez ici les réfléchis de la première personne inclusive <span id="PronNumberPlSpan1" show="swPronNumberYes">pluriel </span>qui peuvent occuper la position de l’objet:</prompt>
        <textBox id="PronReflFirstInclExample" dataItem="reflFirstInclExample" show="swPronReflYesAndPronExclYes" rows="2"/>
        <prompt id="PronReflSecondSgExamples" show="swPronReflYes">
           <br/>Entrez ici les réfléchis de la deuxième personne <span id="PronNumberSpan1" show="swPronNumberYes">du singulier </span>qui peuvent occuper la position de l’objet:</prompt>
@@ -48,7 +48,7 @@
        <textBox id="PronReflThirdPlExample" dataItem="reflThirdPlExample" show="swPronReflYesAndPronNumberYes" rows="2"/>
        <prompt id="PronReflSentExamples" show="swPronReflYes">
           <br/>Entrez ici plusieurs exemples avec de différents exemples des réfléchis que vous avez entrés ci-dessus dans la position de l’objet dans des phrases simples<span id="PronReflSentExamplesSpan" show="swNotPractical"> pour qu’on puisse vérifier plus tard l’accord entre le réfléchi et le sujet</span>:</prompt>
-        <textBox id="PronReflSentExample" dataItem="reflSentExample" show="swPronReflYes"/>
+        <textBox id="PronReflSentExample" dataItem="reflSentExample" show="swPronReflYes" cols="80"/>
         <checkboxGroup id="PronReflYesTable" show="swPronReflYes">
             <prompt>
                <br/>Comment sont formés dans votre langue les réfléchis qui occupent la position de l’objet ?  Marquez toutes les options qui sont correctes dans votre langue.</prompt>
@@ -56,7 +56,7 @@
            <checkbox id="PronReflAffixYes" dataItem="reflAffix">Un ou plusieurs affixes sont choisis pour former un autre pronom réfléchi</checkbox>
            <checkbox id="PronReflAffixNoNoun" dataItem="reflNounPoss">Un certain substantif est utilisé avec un pronom comme possesseur</checkbox>
            <checkbox id="PronReflAffixNoQP" dataItem="reflQP">Des syntagmes nominaux quantifiés sont utilisés</checkbox>
-           <checkbox id="PronReflAffixOther" dataItem="reflOther">Ma langue forme le réfléchi comme suit:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" rows="2"/></checkbox>
+           <checkbox id="PronReflAffixOther" dataItem="reflOther">Ma langue forme le réfléchi comme suit:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1"/></checkbox>
         </checkboxGroup>
        <br/><br/>
        <prompt id="PronReflAffixNoCheckPrompt" show="swPronReflYesNoCheck">AVERTISSEMENT: Vous avez dit ci-dessus que votre langue a des réfléchis, mais vous n’avez marqué aucune option pour dire comment ils sont formés.  Veuillez marquer une ou plusieurs options correctes, à moins que vous n’ayez pas de réfléchis.  Dans ce cas, il ne vous aurait pas fallu ajouter des formes dans les zones de texte, et devez changer la réponse à « Non » ou à « Oui, un affixe verbal indique l’action réfléchie ».</prompt>

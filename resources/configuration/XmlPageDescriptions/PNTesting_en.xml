@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PNTesting" count="3/3">
+<page id="PNTesting" count="6.3">
 	<title level="2">Proper Names - Testing</title>
 	<form section="prop">
 		<instruction>To test what you have done so far, save your work now.  This will generate the test file and grammar rules file created to this point.

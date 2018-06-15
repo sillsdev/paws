@@ -126,7 +126,7 @@
                <xsl:when test="//pp/@pPos='before'">prépositions seulement.  </xsl:when>
                 <xsl:when test="//pp/@pPos='after'">postpositions seulement.  </xsl:when>
                <xsl:when test="//pp/@pPos='both'">prépositions et des postpositions.  </xsl:when>
-                <xsl:when test="//pp/@pPos='unknown'">_____-positions suelement.  </xsl:when>
+                <xsl:when test="//pp/@pPos='unknown'">_____-positions seulement.  </xsl:when>
             </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>

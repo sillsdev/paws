@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="QMain" count="1/9">
+<page id="QMain" count="11.1">
     <title>Questions</title>
     <introduction id="QMainIntroNotPractical" show="swNotPractical">This section considers the main clause and embedded clause varieties of Yes/No questions and content questions.  We will begin with Yes/No questions.
 <br/>
@@ -19,7 +19,7 @@ As discussed in <section number="10">Complement Clauses</section>, X-bar theory 
     <introduction id="QMainIntroPractical" show="swPractical">Cette section traite les variétés les plus importants de proposition principale et de proposition subordonnée des questions oui/non et des questions de contenu  Nous allons commencer avec les questions oui/non.
         <br/>
         <br/>
-        En anglais, la proposition principale des questions oui/non est formée en plaçant un verbe auxiliaire devant le sujet.  En français les questions oui/non se forment ou par l’inversion du verbe et du sujet ou par l’addition de <example>est-ce que/qu’</example> au début de la phrase. D’autres langues utilisent un marqueur de question oui/non ou un complétiviseur spécial au lieu de l’auxiliaire au début de la phrase.  C’est le cas des questions subordonnées oui/non en anglais et en français: aucun auxiliaire o verbe précédent n’est autorisé mais <example>si</example> remplit la position complétiviseur.<br/>
+        En anglais, la proposition principale des questions oui/non est formée en plaçant un verbe auxiliaire devant le sujet.  En français les questions oui/non se forment ou par l’inversion du verbe et du sujet ou par l’addition de <example>est-ce que/qu’</example> au début de la phrase. D’autres langues utilisent un marqueur de question oui/non ou un complétiviseur spécial au lieu de l’auxiliaire au début de la phrase.  C’est le cas des questions subordonnées oui/non en anglais et en français: aucun auxiliaire ou verbe précédent n’est autorisé mais <example>si</example> remplit la position complétiviseur.<br/>
         <br/><br/>Comme une langue peut agir différemment dans les questions oui/non dans la proposition principale par rapport aux propositions subordonnées, chaque type sera discuté à son tour.
     </introduction>
     <form section="q" transparent="yes">
