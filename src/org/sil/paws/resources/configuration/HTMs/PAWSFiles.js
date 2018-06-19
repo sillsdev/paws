@@ -314,10 +314,10 @@ function SetOutput(item) {
 	Refresh();
 }
 function ButtonBack() {
-	window.navigate("LanguagePropertiesNewMode");
+	pawsApp.load("LanguagePropertiesNewMode");
 }
 
 function ButtonNext() {
 	saveData();
-	window.navigate("Contents.htm");
+	pawsApp.load("Contents_en.htm");
 }

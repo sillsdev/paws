@@ -52,7 +52,7 @@ function ButtonLangPropFont() {
 }
 function ButtonNext() {
 	saveData();
-	window.navigate("LanguageFilesNewMode");
+	pawsApp.load("LanguageFilesNewMode");
 }
 function Refresh() {
 	var valArray = new Array();

@@ -11,7 +11,7 @@
         // variables used throughout functions below
         var attr;
         
-        function Initialize() {
+        function Initialize(locale) {
         LangPropLangNameEn.value =  pawsApp.getAnswerValue("//language/langNames/langName[@lang='en']");
         LangPropLangNameEs.value =  pawsApp.getAnswerValue("//language/langNames/langName[@lang='es']");
         LangPropLangNameFr.value =  pawsApp.getAnswerValue("//language/langNames/langName[@lang='fr']");
@@ -56,17 +56,17 @@
         function ButtonLangPropFont() {
         saveData();
         pawsApp.changeFontInfo();
-        Initialize();
+        Initialize("");
         }
         function ButtonNext() {
         saveData();
-        window.navigate("LanguageFilesNewMode");
+        pawsApp.load("LanguageFilesNewMode");
         }
         function Refresh() {
         var valArray = new Array();
         }
     </script></head>
-<body onload="Initialize()">
+<body>
     <h2>Las propiedades de la lengua</h2>
 <div class="introduction">
    <p>Se utiliza PAWS para una lengua particular.  Es necesario tener informacióon acerca de esa lengua.  Por favor, escriba la información perteniente abajo.</p>

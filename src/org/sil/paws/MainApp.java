@@ -237,10 +237,17 @@ public class MainApp extends Application {
 			if (controller.getLanguage() == null) {
 				// The user canceled creating a new project
 				fSucceeded = false;
+			} else {
+				// need to show language page then files page
+				controller.initMapper();
+				controller.initCSS();
+				controller.loadLanguagePropertiesPageInNewMode();
+
 			}
 		} else if (result.get() == buttonOpenExistingLanguage) {
 			controller.doFileOpen(true);
 			controller.setLanguage(language);
+			controller.showLanguageLastPage();
 		} else {
 			// ... user chose CANCEL or closed the dialog
 			System.exit(0);

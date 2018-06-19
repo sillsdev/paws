@@ -9,7 +9,7 @@
     <script type="text/javascript">
 // PAWSFiles.js
 
-function Initialize() {
+function Initialize(locale) {
 	var sAnswer;
 	var sTemp;
 	var index;
@@ -27,7 +27,7 @@ function Initialize() {
 	}
 
 /*	sTemp = FileLocWriter.value = pawsApp.getAnswerValue("//language/writerFile");
-	if (sTemp == "") {
+	if (sTemp == null) {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + ".xml";
@@ -37,7 +37,7 @@ function Initialize() {
 	}
 */
 	sTemp = FileLocWriterPractical.value = pawsApp.getAnswerValue("//language/writerPracticalFile");
-	if (sTemp == "") {
+	if (sTemp == null) {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPractical.xml";
@@ -47,7 +47,7 @@ function Initialize() {
 	}
 
 	sTemp = FileLocWriterPracticalSpanish.value = pawsApp.getAnswerValue("//language/writerPracticalSpanishFile");
-	if (sTemp == "") {
+	if (sTemp == null) {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPracticalSpanish.xml";
@@ -57,7 +57,7 @@ function Initialize() {
 	}
 
 	sTemp = FileLocWriterPracticalFrench.value = pawsApp.getAnswerValue("//language/writerPracticalFrenchFile");
-	if (sTemp == "") {
+	if (sTemp == null) {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPracticalFrench.xml";
@@ -67,7 +67,7 @@ function Initialize() {
 	}
 
 	sTemp = FileLocExampleFiles.value = pawsApp.getAnswerValue("//language/exampleFilesPath");
-	if (sTemp == "") {
+	if (sTemp == null) {
 		index = sAnswer.lastIndexOf("\\");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index);
@@ -307,15 +307,15 @@ function SetOutput(item) {
 	Refresh();
 }
 function ButtonBack() {
-	window.navigate("LanguagePropertiesNewMode");
+	pawsApp.load("LanguagePropertiesNewMode");
 }
 
 function ButtonNext() {
 	saveData();
-	window.navigate("Contents_es.htm");
+	pawsApp.load("Contents_es.htm");
 }
 </script></head>
-<body onload="Initialize()">
+<body>
     <h2>Información acerca de los archivos para las respuestas y resultados</h2>
 <div class="introduction">
    <p>El programa PAWS puede crear algunos archivos. <ol style="margin-top: .025in">

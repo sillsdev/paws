@@ -23,6 +23,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.TreeMap;
+import java.util.stream.Stream;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -291,6 +292,7 @@ public class RootLayoutController implements Initializable {
 					// javascript onload() function.
 					JSObject win = (JSObject) webEngine.executeScript("window");
 					win.setMember("pawsApp", new WebPageInteractor(language, webEngine, rlc));
+					System.out.println("locale code='" + getCurrentLocaleCode() + "'");
 					webEngine.executeScript("Initialize('" + getCurrentLocaleCode() + "')");
 					updatePageLabels();
 				} else if (newState == State.FAILED) {
@@ -300,6 +302,10 @@ public class RootLayoutController implements Initializable {
 						transformAndLoadPage(sUrl);
 					} else if (sUrl.endsWith("LeftOffAt")) {
 						handleBack();
+					} else if (sUrl.endsWith("LanguagePropertiesNewMode")) {
+						loadLanguagePropertiesPageInNewMode();
+					} else if (sUrl.endsWith("LanguageFilesNewMode")) {
+						loadLanguageFilesPageInNewMode();
 					} else {
 						Throwable e = webEngine.getLoadWorker().getException();
 						if (e != null) {
@@ -309,6 +315,7 @@ public class RootLayoutController implements Initializable {
 					}
 				}
 			}
+
 		});
 
 		initMenuItemsForLocalization();
@@ -329,6 +336,41 @@ public class RootLayoutController implements Initializable {
 				browser.requestFocus();
 			}
 		});
+	}
+
+	public void loadLanguagePropertiesPageInNewMode() {
+		try {
+			String sPath = sConfigurationDirectory + "HTMs" + File.separator + "LanguageProperties" + getCurrentLocaleCode() + ".htm";
+			String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
+			System.out.println("Before:");
+			System.out.print(sPage);
+			sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
+			sPage = sPage.replace(".style.display = \"none\";", ".style.display = \"temp\";");
+			sPage = sPage.replace(".style.display = \"\";", ".style.display = \"none\";");
+			sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
+			System.out.println("\n\nAfter:");
+			System.out.print(sPage);
+			webEngine.loadContent(sPage);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	protected void loadLanguageFilesPageInNewMode() {
+		try {
+			String sPath = sConfigurationDirectory + "HTMs" + File.separator + "PAWSFiles" + getCurrentLocaleCode() + ".htm";
+			String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
+			sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
+	        sPage = sPage.replace("ShowBackNextButtons.style.display = \"none\";", "ShowBackNextButtons.style.display = \"temp\";");
+			sPage = sPage.replace("ShowBackNextButtons.style.display = \"\";", "ShowBackNextButtons.style.display = \"none\";");
+			sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
+			System.out.print(sPage);
+			webEngine.loadContent(sPage);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private void createContextMenu() {
@@ -408,7 +450,7 @@ public class RootLayoutController implements Initializable {
 		menuHelpAbout.textProperty().bind(RESOURCE_FACTORY.getStringBinding("menu.about"));
 	}
 
-	private void initMapper() {
+	public void initMapper() {
 		try {
 			htmlMapperStylesheet = sConfigurationDirectory + "Transforms" + File.separator
 					+ "PAWSSKHtmlMapper.xsl";
@@ -422,10 +464,9 @@ public class RootLayoutController implements Initializable {
 		}
 	}
 
-	private void initCSS() {
+	public void initCSS() {
 		try {
-			String cssStylesheet = sConfigurationDirectory + "Styles" + File.separator
-					+ "PAWSStarterKitMaster.css";
+			String cssStylesheet = getCSSLocation();
 			File css = new File(cssStylesheet);
 			if (!css.exists()) {
 				throw new IOException(css.getPath());
@@ -436,6 +477,12 @@ public class RootLayoutController implements Initializable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	private String getCSSLocation() {
+		String cssStylesheet = sConfigurationDirectory + "Styles" + File.separator
+				+ "PAWSStarterKitMaster.css";
+		return cssStylesheet;
 	}
 
 	private String getCurrentLocaleCode() {
@@ -709,6 +756,13 @@ public class RootLayoutController implements Initializable {
 				mainApp.loadLanguageData(fileCreated);
 				language = mainApp.getBackEndProvider().getLanguage();
 				OutputGenerator.getInstance(language);
+
+				sPAWSWorkingDirectory = getWorkingPageOutputDirectory();
+				initMapper();
+				initCSS();
+				language.setValue("//language/answerFile", fileCreated.getAbsolutePath());
+				language.setValue("//language/grammarFile", "nothing yet");
+				loadLanguagePropertiesPageInNewMode();
 				handleRefresh();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -1114,7 +1168,7 @@ public class RootLayoutController implements Initializable {
 		try {
 			if (StringUtilities.isNullOrEmpty(lastPage)) {
 				// load contents page
-				webEngine.load(sProgramLocation + kHTMsFolder + "Contents.htm");
+				webEngine.load(sProgramLocation + kHTMsFolder + "Contents_en.htm");
 			} else if (Files.exists(Paths.get(lastPage))) {
 				// load the language-specific page
 				URL url = new File(lastPage).toURI().toURL();
