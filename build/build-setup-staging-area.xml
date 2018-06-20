@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build-setup-staging-area" basedir="." xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<target name="setup-staging-area">
+		<delete dir="doc" />
+		<delete dir="externalLibs" />
+		<delete dir="project" />
+		<delete dir="projectRefs" />
+
+		<mkdir dir="externalLibs" />
+		<copy todir="externalLibs">
+			<fileset dir="../silutilities">
+				<filename name="silutilities-1.0.0.jar"/>
+			</fileset>
+			<fileset dir="../ControlsFX">
+				<include name="controlsfx-8.40.12.jar" />
+				<include name="controlsfx-8.40.12license.txt" />
+			</fileset>
+			<fileset dir="../saxon">
+				<filename name="saxon9he.jar"/>
+				<filename name="notices/CERN.txt"/>
+				<filename name="notices/JAMESCLARK.txt"/>
+				<filename name="notices/LICENSE.txt"/>
+				<filename name="notices/THAI.txt"/>
+				<filename name="notices/UNICODE.txt"/>
+			</fileset>
+			<fileset dir="${java.home}/bin">
+				<include name="java.exe"/>
+			</fileset>
+		</copy>
+
+		<mkdir dir="project" />
+		<copy todir="project">
+			<fileset dir="..">
+				<include name="src/**" />
+			</fileset>
+		</copy>
+
+		<mkdir dir="projectRefs" />
+	</target>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SyllableParser" default="do-deploy" basedir="." xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<import file="${basedir}/build-do-deploy.xml" as="nested"/>
+	<import file="${basedir}/build-init-fx-tasks.xml" as="nested"/>
+	<import file="${basedir}/build-setup-staging-area.xml" as="nested"/>
+	<import file="${basedir}/build-do-compile.xml" as="nested"/>
+	<import file="${basedir}/build-windows-iss-file.xml" as="nested"/>
+
+	<property name="nativeBundles" value="exe"/>
+	<property name="processorType" value="-32bit"/>
+	<property name="mainFileName" value="LingTree"/>
+	<property name="ISSarchitecture" value=""/>
+
+	<target name="do-deploy" depends="nested.do-deploy"/>
+</project>

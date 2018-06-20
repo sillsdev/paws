@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build-do-deploy" basedir="." xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<import file="${basedir}/build-init-fx-tasks.xml" as="nested"/>
+	<import file="${basedir}/build-setup-staging-area.xml" as="nested"/>
+	<import file="${basedir}/build-do-compile.xml" as="nested"/>
+
+	<property name="appName" value="PAWS"/>
+	<property name="version" value="1.0.0"/>
+
+	<target name="do-deploy" depends="nested.setup-staging-area, nested.do-compile, nested.init-fx-tasks">
+		<antcall target="build-windows-iss-file"/>
+
+		<delete file="dist" />
+		<delete file="deploy" />
+
+		<mkdir dir="dist" />
+		<mkdir dir="dist/libs" />
+		<copy todir="dist/libs">
+			<fileset dir="externalLibs">
+				<include name="*" />
+			</fileset>
+		</copy>
+
+		<mkdir dir="dist/resources" />
+	    <copy todir="dist/resources">
+	      <fileset dir="../src/org/sil/paws/resources">
+	        <include name="**" />
+	      </fileset>
+	    </copy>
+
+		<fx:resources id="appRes">
+			<fx:fileset dir="dist" includes="paws.jar" />
+			<fx:fileset dir="dist" includes="doc/**" />
+			<fx:fileset dir="dist" includes="libs/*" />
+			<fx:fileset dir="dist" includes="resources/**" />
+		</fx:resources>
+
+		<fx:application
+			id="fxApplication"
+			name="${appName}"
+			mainClass="org.sil.paws.MainApp"
+			version="${version}" />
+
+		<mkdir dir="build/classes/META-INF" />
+
+
+
+		<fx:jar destfile="dist/paws.jar">
+			<fx:application refid="fxApplication" />
+			<fileset dir="build/classes">
+			</fileset>
+			<fx:resources refid="appRes" />
+
+			<manifest>
+				<attribute name="Implementation-Vendor" value="sil.org" />
+				<attribute name="Implementation-Title" value="${appName}" />
+				<attribute name="Implementation-Version" value="${version}" />
+				<attribute name="JavaFX-Feature-Proxy" value="None" />
+			</manifest>
+		</fx:jar>
+
+
+		<mkdir dir="deploy" />
+		<echo message="Passing nativeBundles as:${nativeBundles}"/>
+			<!-- Need to use ${basedir} because somehow the ant task is calculating the directory differently -->
+		<fx:deploy
+			embedJNLP="false"
+			extension="false"
+			includeDT="false"
+			offlineAllowed="true"
+			outdir="${basedir}/deploy"
+			outfile="PAWS"
+			nativeBundles="${nativeBundles}"
+			verbose="false"
+			updatemode="background">
+
+			<fx:platform basedir="${java.home}">
+				<fx:jvmarg value="-Xmx1024m" />
+			</fx:platform>
+			<fx:info
+				category="Education"
+				title="PAWS"
+				vendor="SIL International"
+				license="LGPL"
+				copyright="© 2002-2018 SIL International"
+				description="Parser and Writer for Syntax (PAWS) is an analysis and tutorial program for authors of syntax.">
+				<fx:association extension="tre" mimetype="text/x-paws" description="PAWS file"/>
+			</fx:info>
+
+			<fx:application refId="fxApplication" />
+			<fx:resources refid="appRes" />
+			<fx:preferences shortcut="true" menu="true" install="true" />
+
+		</fx:deploy>
+
+		<echo message="Renaming from '${basedir}/deploy/bundles/${mainFileName}-${version}.${nativeBundles}' to '${basedir}/deploy/bundles/${mainFileName}${processorType}-${version}.${nativeBundles}'"/>
+		<!-- Note: at least on Windows 10, we have to overtly delete the target file or the move operation fails if it already exists. -->
+		<delete file="${basedir}/deploy/bundles/${mainFileName}${processorType}-${version}.${nativeBundles}"/>
+		<move file="${basedir}/deploy/bundles/${mainFileName}-${version}.${nativeBundles}" toFile="${basedir}/deploy/bundles/${mainFileName}${processorType}-${version}.${nativeBundles}"/>
+
+		</target>
+</project>

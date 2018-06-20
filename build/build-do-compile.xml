@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build-do-compile" basedir="." xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<target name='do-compile'>
+		<delete dir="build" />
+		<mkdir dir="build/src" />
+		<mkdir dir="build/libs" />
+		<mkdir dir="build/classes" />
+
+		<!-- Copy project-libs references -->
+		<copy todir="build/libs">
+			<fileset dir="externalLibs">
+				<include name="controlsfx-8.40.12.jar" />
+				<include name="controlsfx-8.40.12license.txt" />
+				<include name="silutilities-1.0.0.jar"/>
+				<include name="saxon9he.jar"/>
+				<include name="notices/CERN.txt"/>
+				<include name="notices/JAMESCLARK.txt"/>
+				<include name="notices/LICENSE.txt"/>
+				<include name="notices/THAI.txt"/>
+				<include name="notices/UNICODE.txt"/>
+				<include name="${java.home}/bin/java.exe"/>
+			</fileset>
+		</copy>
+
+		<!-- Copy project references -->
+
+		<!-- Copy project sources itself -->
+		<copy todir="build/src">
+			<fileset dir="project/src">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+
+		<javac includeantruntime="false" source="1.8" target="1.8" srcdir="build/src" destdir="build/classes" encoding="UTF-8">
+			<classpath>
+				<fileset dir="build/libs">
+					<include name="*" />
+				</fileset>
+			</classpath>
+		</javac>
+
+		<!-- Copy over none Java-Files -->
+		<copy todir="build/classes">
+			<fileset dir="project/src">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+
+
+	</target>
+</project>
