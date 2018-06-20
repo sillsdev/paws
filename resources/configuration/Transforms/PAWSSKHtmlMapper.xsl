@@ -752,7 +752,7 @@ Refresh();
 	<xsl:template match="//featureItem">
 		<td valign="top">
 			<input type="checkbox">
-				<xsl:attribute name="name">
+				<xsl:attribute name="id">
 					<xsl:value-of select="@name"/>
 				</xsl:attribute>
 				<xsl:attribute name="value">

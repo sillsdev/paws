@@ -51,7 +51,7 @@ public class ApplicationPreferences {
 	}
 
 	public boolean getShowStatusBar() {
-		return prefs.getBoolean(SHOW_STATUS_BAR, false);
+		return prefs.getBoolean(SHOW_STATUS_BAR, true);
 	}
 
 	public void setShowStatusBar(boolean fShowStatusBar) {
