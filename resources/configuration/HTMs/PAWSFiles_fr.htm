@@ -17,7 +17,7 @@ function Initialize(locale) {
 	sAnswer = FileLocAnswer.value = pawsApp.getAnswerValue("//language/answerFile");
 
 	sTemp = FileLocGrammar.value = pawsApp.getAnswerValue("//language/grammarFile");
-	if (sTemp == null) {
+	if (sTemp == null || sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + ".grm";
@@ -27,7 +27,7 @@ function Initialize(locale) {
 	}
 
 /*	sTemp = FileLocWriter.value = pawsApp.getAnswerValue("//language/writerFile");
-	if (sTemp == null) {
+	if (sTemp == null || sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + ".xml";
@@ -37,7 +37,7 @@ function Initialize(locale) {
 	}
 */
 	sTemp = FileLocWriterPractical.value = pawsApp.getAnswerValue("//language/writerPracticalFile");
-	if (sTemp == null) {
+	if (sTemp == null || sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPractical.xml";
@@ -47,7 +47,7 @@ function Initialize(locale) {
 	}
 
 	sTemp = FileLocWriterPracticalSpanish.value = pawsApp.getAnswerValue("//language/writerPracticalSpanishFile");
-	if (sTemp == null) {
+	if (sTemp == null || sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPracticalSpanish.xml";
@@ -57,7 +57,7 @@ function Initialize(locale) {
 	}
 
 	sTemp = FileLocWriterPracticalFrench.value = pawsApp.getAnswerValue("//language/writerPracticalFrenchFile");
-	if (sTemp == null) {
+	if (sTemp == null || sTemp == "") {
 		index = sAnswer.lastIndexOf(".paw");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index) + "WriterPracticalFrench.xml";
@@ -67,7 +67,7 @@ function Initialize(locale) {
 	}
 
 	sTemp = FileLocExampleFiles.value = pawsApp.getAnswerValue("//language/exampleFilesPath");
-	if (sTemp == null) {
+	if (sTemp == null || sTemp == "") {
 		index = sAnswer.lastIndexOf("\\");
 		if (index > - 1) {
 			sTemp = sAnswer.substr(0, index);
@@ -312,7 +312,7 @@ function ButtonBack() {
 
 function ButtonNext() {
 	saveData();
-	pawsApp.load("Contents_fr.htm");
+	pawsApp.load("Contents.htm");
 }
 </script></head>
 <body>

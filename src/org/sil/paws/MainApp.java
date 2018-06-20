@@ -221,7 +221,7 @@ public class MainApp extends Application {
 		stage.getIcons().add(getNewMainIconImage());
 
 		ButtonType buttonCreateNewLanguage = new ButtonType(
-				bundle.getString("label.createnewlanguage"));
+				bundle.getString("label.createnewlanguage"), ButtonData.OK_DONE);
 		ButtonType buttonOpenExistingLanguage = new ButtonType(
 				bundle.getString("label.openexistinglanguage"));
 		ButtonType buttonCancel = new ButtonType(bundle.getString("label.cancel"),

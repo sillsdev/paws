@@ -276,5 +276,6 @@ public class WebPageInteractor {
 		sBoolean = sStyle.contains(kItalic) ? ksTrue : ksFalse;
 		language.setValue(ksItalic, sBoolean);
 		controller.handleSaveLanguage();
+		controller.initCSS();
 	}
 }

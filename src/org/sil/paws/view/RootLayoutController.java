@@ -342,14 +342,10 @@ public class RootLayoutController implements Initializable {
 		try {
 			String sPath = sConfigurationDirectory + "HTMs" + File.separator + "LanguageProperties" + getCurrentLocaleCode() + ".htm";
 			String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
-			System.out.println("Before:");
-			System.out.print(sPage);
 			sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
 			sPage = sPage.replace(".style.display = \"none\";", ".style.display = \"temp\";");
 			sPage = sPage.replace(".style.display = \"\";", ".style.display = \"none\";");
 			sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
-			System.out.println("\n\nAfter:");
-			System.out.print(sPage);
 			webEngine.loadContent(sPage);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -365,7 +361,8 @@ public class RootLayoutController implements Initializable {
 	        sPage = sPage.replace("ShowBackNextButtons.style.display = \"none\";", "ShowBackNextButtons.style.display = \"temp\";");
 			sPage = sPage.replace("ShowBackNextButtons.style.display = \"\";", "ShowBackNextButtons.style.display = \"none\";");
 			sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
-			System.out.print(sPage);
+			sPage = sPage.replace("pawsApp.load(\"Contents.htm\");", "pawsApp.load(\"file:///" +
+					sConfigurationDirectory.replace("\\",  "\\\\") + "HTMs/Contents" + getCurrentLocaleCode() + ".htm\");");
 			webEngine.loadContent(sPage);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -761,7 +758,6 @@ public class RootLayoutController implements Initializable {
 				initMapper();
 				initCSS();
 				language.setValue("//language/answerFile", fileCreated.getAbsolutePath());
-				language.setValue("//language/grammarFile", "nothing yet");
 				loadLanguagePropertiesPageInNewMode();
 				handleRefresh();
 			} catch (IOException e) {
