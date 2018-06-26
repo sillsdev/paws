@@ -5686,9 +5686,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatFirstErgative">
 		<whenValue element="ip/ipAgrFeatFirstErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatFirstErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatFirstAbsolutive">
 		<whenValue element="ip/ipAgrFeatFirstAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatFirstAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatFirstExclusiveSubject">
 		<whenValue element="ip/ipAgrFeatFirstExclusiveSubject" attr="checked" value="yes"/>
@@ -5698,9 +5710,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatFirstExclusiveErgative">
 		<whenValue element="ip/ipAgrFeatFirstExclusiveErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatFirstExclusiveErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatFirstExclusiveAbsolutive">
 		<whenValue element="ip/ipAgrFeatFirstExclusiveAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatFirstExculsiveAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatFirstInclusiveSubject">
 		<whenValue element="ip/ipAgrFeatFirstInclusiveSubject" attr="checked" value="yes"/>
@@ -5710,9 +5734,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatFirstInclusiveErgative">
 		<whenValue element="ip/ipAgrFeatFirstInclusiveErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatFirstInclusiveErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatFirstInclusiveAbsolutive">
 		<whenValue element="ip/ipAgrFeatFirstInclusiveAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatFirstInclusiveAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatSecondSubject">
 		<whenValue element="ip/ipAgrFeatSecondSubject" attr="checked" value="yes"/>
@@ -5722,9 +5758,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatSecondErgative">
 		<whenValue element="ip/ipAgrFeatSecondErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatSecondErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatSecondAbsolutive">
 		<whenValue element="ip/ipAgrFeatSecondAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatSecondAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatThirdSubject">
 		<whenValue element="ip/ipAgrFeatThirdSubject" attr="checked" value="yes"/>
@@ -5734,9 +5782,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatThirdErgative">
 		<whenValue element="ip/ipAgrFeatThirdErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatThirdErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatThirdAbsolutive">
 		<whenValue element="ip/ipAgrFeatThirdAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatThirdAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatSingularSubject">
 		<whenValue element="ip/ipAgrFeatSingularSubject" attr="checked" value="yes"/>
@@ -5746,9 +5806,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatSingularErgative">
 		<whenValue element="ip/ipAgrFeatSingularErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatSingularErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatSingularAbsolutive">
 		<whenValue element="ip/ipAgrFeatSingularAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatSingularAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatDualSubject">
 		<whenValue element="ip/ipAgrFeatDualSubject" attr="checked" value="yes"/>
@@ -5758,9 +5830,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatDualErgative">
 		<whenValue element="ip/ipAgrFeatDualErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatDualErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatDualAbsolutive">
 		<whenValue element="ip/ipAgrFeatDualAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatDualAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatPluralSubject">
 		<whenValue element="ip/ipAgrFeatPluralSubject" attr="checked" value="yes"/>
@@ -5770,9 +5854,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatPluralErgative">
 		<whenValue element="ip/ipAgrFeatPluralErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatPluralErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatPluralAbsolutive">
 		<whenValue element="ip/ipAgrFeatPluralAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatPluralAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatMasculineSubject">
 		<whenValue element="ip/ipAgrFeatMasculineSubject" attr="checked" value="yes"/>
@@ -5782,9 +5878,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatMasculineErgative">
 		<whenValue element="ip/ipAgrFeatMasculineErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatMasculineErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatMasculineAbsolutive">
 		<whenValue element="ip/ipAgrFeatMasculineAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatMasculineAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatFeminineSubject">
 		<whenValue element="ip/ipAgrFeatFeminineSubject" attr="checked" value="yes"/>
@@ -5794,9 +5902,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatFeminineErgative">
 		<whenValue element="ip/ipAgrFeatFeminineErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatFeminineErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatFeminineAbsolutive">
 		<whenValue element="ip/ipAgrFeatFeminineAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatFeminineAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatNeuterSubject">
 		<whenValue element="ip/ipAgrFeatNeuterSubject" attr="checked" value="yes"/>
@@ -5806,9 +5926,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatNeuterErgative">
 		<whenValue element="ip/ipAgrFeatNeuterErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatNeuterErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatNeuterAbsolutive">
 		<whenValue element="ip/ipAgrFeatNeuterAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatNeuterAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatAnimateSubject">
 		<whenValue element="ip/ipAgrFeatAnimateSubject" attr="checked" value="yes"/>
@@ -5818,9 +5950,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatAnimateErgative">
 		<whenValue element="ip/ipAgrFeatAnimateErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatAnimateErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatAnimateAbsolutive">
 		<whenValue element="ip/ipAgrFeatAnimateAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatAnimateAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatMinusAnimateSubject">
 		<whenValue element="ip/ipAgrFeatMinusAnimateSubject" attr="checked" value="yes"/>
@@ -5830,9 +5974,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatMinusAnimateErgative">
 		<whenValue element="ip/ipAgrFeatMinusAnimateErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatMinusAnimateErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatMinusAnimateAbsolutive">
 		<whenValue element="ip/ipAgrFeatMinusAnimateAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatMinusAnimateAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatHumanSubject">
 		<whenValue element="ip/ipAgrFeatHumanSubject" attr="checked" value="yes"/>
@@ -5842,9 +5998,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatHumanErgative">
 		<whenValue element="ip/ipAgrFeatHumanErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatHumanErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatHumanAbsolutive">
 		<whenValue element="ip/ipAgrFeatHumanAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatHumanAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatMinusHumanSubject">
 		<whenValue element="ip/ipAgrFeatMinusHumanSubject" attr="checked" value="yes"/>
@@ -5854,9 +6022,21 @@
 	</showWhen>
 	<showWhen id="swIPAgrFeatMinusHumanErgative">
 		<whenValue element="ip/ipAgrFeatMinusHumanErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatMinusHumanErgative" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
 	<showWhen id="swIPAgrFeatMinusHumanAbsolutive">
 		<whenValue element="ip/ipAgrFeatMinusHumanAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="ergative"/>
+		<or/>
+		<whenValue element="ip/ipAgrFeatMinusHumanAbsolutive" attr="checked" value="yes"/>
+		<and/>
+		<whenValue element="typology" attr="case" value="split"/>
 	</showWhen>
    
    <showWhen id="swProDropYes">

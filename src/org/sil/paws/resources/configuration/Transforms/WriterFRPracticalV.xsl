@@ -3143,7 +3143,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatFirstErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue2.2">
 <xsl:value-of select="translate(string(//ip/firstErgativePerson),'.','')" />
 </xsl:variable>
@@ -3193,7 +3193,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatFirstAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue3.2">
 <xsl:value-of select="translate(string(//ip/firstAbsolutivePerson),'.','')" />
 </xsl:variable>
@@ -3343,7 +3343,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstExclusiveErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstExclusiveErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatFirstExclusiveErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue6.2">
 <xsl:value-of select="translate(string(//ip/firstExclusiveErgativePerson),'.','')" />
 </xsl:variable>
@@ -3393,7 +3393,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstExclusiveAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstExclusiveAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatFirstExculsiveAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue7.2">
 <xsl:value-of select="translate(string(//ip/firstExclusiveAbsolutivePerson),'.','')" />
 </xsl:variable>
@@ -3543,7 +3543,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstInclusiveErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstInclusiveErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatFirstInclusiveErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue10.2">
 <xsl:value-of select="translate(string(//ip/firstInclusiveErgativePerson),'.','')" />
 </xsl:variable>
@@ -3593,7 +3593,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstInclusiveAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstInclusiveAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatFirstInclusiveAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue11.2">
 <xsl:value-of select="translate(string(//ip/firstInclusiveAbsolutivePerson),'.','')" />
 </xsl:variable>
@@ -3743,7 +3743,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatSecondErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatSecondErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatSecondErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue14.2">
 <xsl:value-of select="translate(string(//ip/secondErgativePerson),'.','')" />
 </xsl:variable>
@@ -3793,7 +3793,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatSecondAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatSecondAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatSecondAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue15.2">
 <xsl:value-of select="translate(string(//ip/secondAbsolutivePerson),'.','')" />
 </xsl:variable>
@@ -3943,7 +3943,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatThirdErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatThirdErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatThirdErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue18.2">
 <xsl:value-of select="translate(string(//ip/thirdErgativePerson),'.','')" />
 </xsl:variable>
@@ -3993,7 +3993,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatThirdAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatThirdAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatThirdAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue19.2">
 <xsl:value-of select="translate(string(//ip/thirdAbsolutivePerson),'.','')" />
 </xsl:variable>
@@ -4143,7 +4143,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatSingularErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatSingularErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatSingularErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue22.2">
 <xsl:value-of select="translate(string(//ip/singularErgativeNumber),'.','')" />
 </xsl:variable>
@@ -4193,7 +4193,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatSingularAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatSingularAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatSingularAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue23.2">
 <xsl:value-of select="translate(string(//ip/singularAbsolutiveNumber),'.','')" />
 </xsl:variable>
@@ -4343,7 +4343,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatDualErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatDualErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatDualErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue26.2">
 <xsl:value-of select="translate(string(//ip/dualErgativeNumber),'.','')" />
 </xsl:variable>
@@ -4393,7 +4393,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatDualAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatDualAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatDualAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue27.2">
 <xsl:value-of select="translate(string(//ip/dualAbsolutiveNumber),'.','')" />
 </xsl:variable>
@@ -4543,7 +4543,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatPluralErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatPluralErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatPluralErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue30.2">
 <xsl:value-of select="translate(string(//ip/pluralErgativeNumber),'.','')" />
 </xsl:variable>
@@ -4593,7 +4593,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatPluralAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatPluralAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatPluralAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue31.2">
 <xsl:value-of select="translate(string(//ip/pluralAbsolutiveNumber),'.','')" />
 </xsl:variable>
@@ -4743,7 +4743,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatMasculineErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatMasculineErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatMasculineErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue34.2">
 <xsl:value-of select="translate(string(//ip/masculineErgativeGender),'.','')" />
 </xsl:variable>
@@ -4793,7 +4793,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatMasculineAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatMasculineAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatMasculineAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue35.2">
 <xsl:value-of select="translate(string(//ip/masculineErgativeGender),'.','')" />
 </xsl:variable>
@@ -4943,7 +4943,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatFeminineErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatFeminineErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatFeminineErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue38.2">
 <xsl:value-of select="translate(string(//ip/feminineErgativeGender),'.','')" />
 </xsl:variable>
@@ -4993,7 +4993,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatFeminineAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatFeminineAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatFeminineAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue39.2">
 <xsl:value-of select="translate(string(//ip/feminineAbsolutiveGender),'.','')" />
 </xsl:variable>
@@ -5143,7 +5143,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatNeuterErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatNeuterErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatNeuterErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue42.2">
 <xsl:value-of select="translate(string(//ip/neuterErgativeGender),'.','')" />
 </xsl:variable>
@@ -5193,7 +5193,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatNeuterAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatNeuterAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatNeuterAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue43.2">
 <xsl:value-of select="translate(string(//ip/neuterAbsolutiveGender),'.','')" />
 </xsl:variable>
@@ -5343,7 +5343,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatAnimateErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatAnimateErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatAnimateErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue46.2">
 <xsl:value-of select="translate(string(//ip/animateErgativeAnimacy),'.','')" />
 </xsl:variable>
@@ -5393,7 +5393,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatAnimateAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatAnimateAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatAnimateAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue47.2">
 <xsl:value-of select="translate(string(//ip/animateAbsolutiveAnimacy),'.','')" />
 </xsl:variable>
@@ -5543,7 +5543,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatMinusAnimateErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatMinusAnimateErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatMinusAnimateErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue50.2">
 <xsl:value-of select="translate(string(//ip/inanimateErgativeAnimacy),'.','')" />
 </xsl:variable>
@@ -5593,7 +5593,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatMinusAnimateAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatMinusAnimateAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatMinusAnimateAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue51.2">
 <xsl:value-of select="translate(string(//ip/inanimateAbsolutiveAnimacy),'.','')" />
 </xsl:variable>
@@ -5743,7 +5743,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatHumanErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatHumanErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatHumanErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue54.2">
 <xsl:value-of select="translate(string(//ip/humanErgativeAnimacy),'.','')" />
 </xsl:variable>
@@ -5793,7 +5793,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatHumanAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatHumanAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatHumanAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue55.2">
 <xsl:value-of select="translate(string(//ip/humanAbsolutiveAnimacy),'.','')" />
 </xsl:variable>
@@ -5943,7 +5943,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatMinusHumanErgative/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatMinusHumanErgative/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatMinusHumanErgative/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue58.2">
 <xsl:value-of select="translate(string(//ip/nonhumanErgativeAnimacy),'.','')" />
 </xsl:variable>
@@ -5993,7 +5993,7 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:if test="normalize-space(//ip/ipAgrFeatMinusHumanAbsolutive/@checked)='yes'">
+					<xsl:if test="normalize-space(//ip/ipAgrFeatMinusHumanAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='ergative' or normalize-space(//ip/ipAgrFeatMinusHumanAbsolutive/@checked)='yes' and normalize-space(//typology/@case)='split'">
 <xsl:variable name="sExampleValue59.2">
 <xsl:value-of select="translate(string(//ip/nonhumanAbsolutiveAnimacy),'.','')" />
 </xsl:variable>
@@ -26673,8 +26673,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26685,8 +26697,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26697,8 +26721,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26709,8 +26745,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26721,8 +26769,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26733,8 +26793,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26745,8 +26817,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26757,8 +26841,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26769,8 +26865,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26781,8 +26889,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26793,8 +26913,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26805,8 +26937,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26817,8 +26961,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26829,8 +26985,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
 	
@@ -26841,8 +27009,20 @@
 	
 	
 		
+		
+		
+		
+		
+		
+		
 	
 	
+		
+		
+		
+		
+		
+		
 		
 	
    
