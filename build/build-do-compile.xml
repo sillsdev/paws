@@ -18,7 +18,7 @@
 				<include name="notices/LICENSE.txt"/>
 				<include name="notices/THAI.txt"/>
 				<include name="notices/UNICODE.txt"/>
-				<include name="${java.home}/bin/java.exe"/>
+			<!--	<include name="${java.home}/bin/java.exe"/> -->
 			</fileset>
 		</copy>
 

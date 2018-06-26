@@ -75,7 +75,7 @@
 			updatemode="background">
 
 			<fx:platform basedir="${java.home}">
-				<fx:jvmarg value="-Xmx1024m" />
+				<!-- <fx:jvmarg value="-Xmx1024m" /> -->
 			</fx:platform>
 			<fx:info
 				category="Education"

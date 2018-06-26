@@ -23,9 +23,9 @@
 				<filename name="notices/THAI.txt"/>
 				<filename name="notices/UNICODE.txt"/>
 			</fileset>
-			<fileset dir="${java.home}/bin">
+<!--			<fileset dir="${java.home}/bin">
 				<include name="java.exe"/>
-			</fileset>
+			</fileset> -->
 		</copy>
 
 		<mkdir dir="project" />
