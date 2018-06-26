@@ -292,7 +292,6 @@ public class RootLayoutController implements Initializable {
 					// javascript onload() function.
 					JSObject win = (JSObject) webEngine.executeScript("window");
 					win.setMember("pawsApp", new WebPageInteractor(language, webEngine, rlc));
-					System.out.println("locale code='" + getCurrentLocaleCode() + "'");
 					webEngine.executeScript("Initialize('" + getCurrentLocaleCode() + "')");
 					updatePageLabels();
 				} else if (newState == State.FAILED) {
