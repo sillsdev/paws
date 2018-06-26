@@ -50,7 +50,7 @@
         <prompt id="IPAuxiliaryExamplePrompt" show="swAuxYes">Entrez ici les mot auxiliaires utilisés dans votre langue:</prompt>
         <textBox id="IPAuxiliaryExample" dataItem="auxiliaryExample" rows="5" show="swAuxYes"/>       
         <br/><br/>
-<instruction id="IPAuxYesCatMap" show="swAuxYes">The category of these auliliaries will be dealt with using the Category Mapper at the end of this section.</instruction>
+<instruction id="IPAuxYesCatMap" show="swAuxYes">The category of these auxiliaries will be dealt with using the Category Mapper at the end of this section.</instruction>
         <br/><br/>
         <introduction>Le mot non-fini <example>to</example> utilisé en anglais dans les propositions subordonnées fonctionne comme un auxiliaire, puisqu’il prend la même position et qu’il peut se mettre avant d’autres auxiliaires. Par exemple:</introduction>
         <EnglishExample>
