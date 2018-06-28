@@ -20,7 +20,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="FocusTestingBack" value="Back" goto="FocusMain.xml"/>
-			<button id="FocusTestingNext" value="Next" goto="Contents_en.htm"/>
+			<button id="FocusTestingNext" value="Next" goto="Contents_es.htm"/>
 		</buttons>
 	</form>
 </page>

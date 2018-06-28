@@ -19,7 +19,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="RelClTestingBack" value="Back" goto="RelClMain.xml"/>
-			<button id="RelClTestingNext" value="Next" goto="Contents_en.htm"/>
+			<button id="RelClTestingNext" value="Next" goto="Contents_fr.htm"/>
 		</buttons>
 	</form>
 </page>

@@ -20,7 +20,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="QPTestingBack" value="Back" goto="QPCatMap.xml"/>
-			<button id="QPTestingNext" value="Next" goto="Contents_en.htm"/>
+			<button id="QPTestingNext" value="Next" goto="Contents_fr.htm"/>
 		</buttons>
 	</form>
 </page>

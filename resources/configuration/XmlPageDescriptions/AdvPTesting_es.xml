@@ -21,7 +21,7 @@ Please check off this section now in ‘Contents’ and then proceed to
 		<br/>
 		<buttons>
 			<button id="AdvPTestingBack" value="Back" goto="AdvPCatMap.xml"/>
-			<button id="AdvPTestingNext" value="Next" goto="Contents_en.htm"/>
+			<button id="AdvPTestingNext" value="Next" goto="Contents_es.htm"/>
 		</buttons>
 	</form>
 </page>
