@@ -286,14 +286,24 @@ public class RootLayoutController implements Initializable {
 				if (newState == State.SUCCEEDED) {
 					System.out.println("succeeded: url='" + webEngine.getLocation() + "'");
 					changeStatusOfBackForwardItems();
-					// TODO: is there a way to associate the Java code with the
-					// javascript code *before* the page is loaded?
-					// We are working around it by sleeping for 10ms in the
-					// javascript onload() function.
-					JSObject win = (JSObject) webEngine.executeScript("window");
-					win.setMember("pawsApp", new WebPageInteractor(language, webEngine, rlc));
-					webEngine.executeScript("Initialize('" + getCurrentLocaleCode() + "')");
-					updatePageLabels();
+
+					Platform.runLater(new Runnable() {
+						@Override
+						public void run() {
+							// TODO: is there a way to associate the Java code with the
+							// javascript code *before* the page is loaded?
+							// We are working around it by sleeping for 10ms in the
+							// javascript onload() function.
+							JSObject win = (JSObject) webEngine.executeScript("window");
+							win.setMember("pawsApp", new WebPageInteractor(language, webEngine, rlc));
+							webEngine.executeScript("Initialize('" + getCurrentLocaleCode() + "')");
+							updatePageLabels();
+//							Timeline timeline = new Timeline(new KeyFrame(Duration.millis(500), event -> {
+//								handleRefresh();
+//							}));
+//							timeline.play();
+						}
+					});
 				} else if (newState == State.FAILED) {
 					String sUrl = webEngine.getLocation();
 					System.out.println("failed: url='" + sUrl + "'");
