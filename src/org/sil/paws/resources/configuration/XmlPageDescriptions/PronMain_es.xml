@@ -5,7 +5,7 @@
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="PronMain" count="7.1">
     <title>Los pronombres</title>
-   <introduction>Hay pronombres de varios tipos: personales, <technicalTermRef term="ttPossessors">posesivos</technicalTermRef>, <technicalTermRef term="ttReflexives">reflexivos</technicalTermRef>,<technicalTermRef term="ttReciprocals">recíprocos</technicalTermRef>, demostrativos e <technicalTermRef term="ttIndefinite">indefinidos</technicalTermRef>.  (Los pronombres <technicalTermRef term="ttInterrogative">interrogativos</technicalTermRef> se presentan en la sección <section number="11.">Las preguntas - Las frases interrogativas</section>.)
+   <introduction>Hay pronombres de varios tipos: personales, <technicalTermRef term="ttPossessors">posesivos</technicalTermRef>, <technicalTermRef term="ttReflexives">reflexivos</technicalTermRef>, <technicalTermRef term="ttReciprocals">recíprocos</technicalTermRef>, demostrativos e <technicalTermRef term="ttIndefinite">indefinidos</technicalTermRef>.  (Los pronombres <technicalTermRef term="ttInterrogative">interrogativos</technicalTermRef> se presentan en la sección <section number="11.">Las preguntas - Las frases interrogativas</section>.)
       Estos pronombres por lo regular se colocan solamente en lugar de una frase nominal completa, pero pueden también ser modificados por una cláusula relativa y en algunas lenguas pueden ser modificados por una frase <technicalTermRef term="ttPartitive">partitiva</technicalTermRef> y por los <technicalTermRef term="ttDeterminers">determinantes</technicalTermRef> y cuantificadores.  Algunas lenguas tienen sistemas independientes y dependientes del pronombre. 
       </introduction>
     <form section="pron">

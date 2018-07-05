@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="IPMain" count="9.1.1">
     <title level="2">Las oraciones básicas</title>
-   <introduction id="IPMainIntroNotPractical" show="swNotPractical">In this section, we want to handle copular, intransitive, transitive and ditransitive sentences in their basic word order (i.e. not changed by focus, topic, interrogative, or negation constructions).  Inflection and agreement features on verbs, cases when a subject may be missing, auxiliaries, and sentences with passive and other voice changes are also covered.
+   <instruction id="IPMainIntroNotPractical" show="swNotPractical">In this section, we want to handle copular, intransitive, transitive and ditransitive sentences in their basic word order (i.e. not changed by focus, topic, interrogative, or negation constructions).  Inflection and agreement features on verbs, cases when a subject may be missing, auxiliaries, and sentences with passive and other voice changes are also covered.
       <br/>
       <br/>
       The data is in surface form, so the grammar must model surface structure, not the underlying structure before any derivational movement.<br/>
@@ -18,7 +18,7 @@
       <br/>
       <br/>
       The basic issues to be dealt with are presented here for your consideration and gathering of appropriate data, then the questions relevant to the basic word order of your language (as determined in section <section number="1">La tipología</section>) will deal with the details of setting up the phrase structure rules and lexical features and constraints.
-</introduction>
+</instruction>
    <introduction id="IPMainIntroPractical" show="swPractical">En esta sección, se consideran las oraciones copulativas, intransitivas, transitivas y ditransitivas en su orden de las palabras básico (es decir no cambiado por el foco, el tópico, el interrogativo o las construcciones de la negación).
         <br/>
         <br/>

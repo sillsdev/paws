@@ -28,7 +28,7 @@
       <exItem label="13.">Sue said, “I will come to your house tomorrow.” ‘Susana dijo, “Vendré a su casa mañana”.'</exItem>
       <exItem label="14."> Sue said (to me) that she would come here tomorrow. ‘Susana me dijo (a mí) que ella vendría aquí mañana.'</exItem>
    </EnglishExample>  
-   <introduction id="CompIntroNotPractical" show="swNotPractical">The examples illustrate that the main verb selects one or more particular types of complement clauses which can occur gramatically.  For example, <example>try</example> cannot have a complement clause beginning with <example>that</example> and the subject of the embedded clause must be coreferent to the main clause subject and pro-dropped.  Further, <example>believe, insist</example> and <example>persuade</example> cannot have a complement clause beginning with <example>for</example> and none of the verbs above can have an embedded question complement.
+   <instruction id="CompIntroNotPractical" show="swNotPractical">The examples illustrate that the main verb selects one or more particular types of complement clauses which can occur gramatically.  For example, <example>try</example> cannot have a complement clause beginning with <example>that</example> and the subject of the embedded clause must be coreferent to the main clause subject and pro-dropped.  Further, <example>believe, insist</example> and <example>persuade</example> cannot have a complement clause beginning with <example>for</example> and none of the verbs above can have an embedded question complement.
       <br/>
       <br/>
       A second point the examples illustrate is that the presence of a particular complementizer determines the finiteness of the embedded verb which follows it.  This evidence of subcategorization by the main verb for the complementizer and by the complementizer for the embedded verb form leads to the conclusion that the complementizer is the head of the embedded clause.  Therefore, within X-Bar Theory, embedded clauses which have complementizers are CPs, which sit on top of the IP.
@@ -50,7 +50,7 @@
       a tree for example 10 would be vey similar to the tree above for example 1 with <example>believe</example>, except for the adjective complement and the dummy <example>it</example> in the main clause subject position.
       <br/>    <br/>
       <help href="Help/Cbgbtext.doc#ClausalComplements">Click here for more information about the CP phrase structure of embedded clauses.</help>
-   </introduction>
+   </instruction>
    <introduction id="CompIntroPractical" show="swPractical">Los ejemplos ilustran que el verbo principal selecciona uno o más tipos particulares de cláusulas de complemento que puedan presentarse gramaticalmente.  Por ejemplo, <example>try ‘intentar'</example> no puede tener un a cláusula de complemento que empieza con <example>that ‘que'</example> y el sujeto de la cláusula subordinada debe ser coreferente al sujeto de la cláusula principal y sea faltado.  
       Además, <example>believe ‘creer'</example>, <example>insist ‘insistir'</example> y <example>persuade ‘persuadir'</example> no pueden tener un a cláusula de complemento que empieza con <example>for ‘para'</example> y ningún verbo antedicho puede tener un complemento interrogativo. </introduction>
     <form section="comp" transparent="yes">

@@ -45,8 +45,8 @@
             <exItem label="4.">Las tropas lanzaron las granadas en el enemigo [para escaparse].</exItem>
             <exItem label="5.">Las tropas lanzaron las granadas en el enemigo [en orden que los presos se escapen].</exItem>
         </EnglishExample>
-      <introduction id="AdvClReasonIntroNotPractical" show="swNotPractical">In the examples above, <example>because</example> and <example>since</example> take only <technicalTermRef term="ttFinite"/> IP complements and <example>so</example> takes a finite CP complement.  In contrast, <example>in order</example> takes either a <technicalTermRef term="ttNonfinite"/> IP with a subject which is not expressed or a nonfinite CP complement.   Este es el mismo sistema de complementos como se muestra para <example>gustar</example> y <example>odiar</example> en  <section number="10">Las cláusulas de complemento</section>.
-      </introduction>
+      <instruction id="AdvClReasonIntroNotPractical" show="swNotPractical">In the examples above, <example>because</example> and <example>since</example> take only <technicalTermRef term="ttFinite"/> IP complements and <example>so</example> takes a finite CP complement.  In contrast, <example>in order</example> takes either a <technicalTermRef term="ttNonfinite"/> IP with a subject which is not expressed or a nonfinite CP complement.   Este es el mismo sistema de complementos como se muestra para <example>gustar</example> y <example>odiar</example> en  <section number="10">Las cláusulas de complemento</section>.
+      </instruction>
        <introduction id="AdvClReasonIntroPractical" show="swPractical">En los ejemplos anteriores, <example>porque</example> puede tener una oración <technicalTermRef term="ttFinite">finita</technicalTermRef> como complemento, pero <example>puesto</example> y <example>de modo</example> tienen cláusulas finitas con un complementador como complementos. En cambio, <example>para</example> o <example>en orden</example> tienen una oración o cláusula <technicalTermRef term="ttNonfinite">no finita</technicalTermRef>.  
          </introduction>
         <br/>

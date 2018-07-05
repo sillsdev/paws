@@ -3,13 +3,13 @@
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="RelClMain" count="12.1">
    <title>Propositions Relatives</title>
-   <introduction id="RelClIntroNotPractical" show="swNotPractical">Les propositions relatives qualifient normalement un nom principal et elles ont une de ces quatre structures:
+   <instruction id="RelClIntroNotPractical" show="swNotPractical">Les propositions relatives qualifient normalement un nom principal et elles ont une de ces quatre structures:
 <ul>
    <li>comme en anglais, pareil à une proposition complétive (CP) avec un complémentiseur signifiant <example>that  « que »</example>, comme dans <example>the man that came to the party late  « l’homme qui est venu en retard à la soirée »</example>;</li>
    <li>comme en anglais, pareil à une question de contenu (CP) avec <example> who  « qui »</example> ou <example> which  « quel »</example> au commencement, comme dans <example>the man who came to the party late  « l’homme qui est venu en retard à la soirée »</example>;</li>
    <li>comme en français, pareil à une proposition complétive (CP) mais ayant un marqueur relatif spécial dans la position du complémentiseur: <example>qui</example> pour les sujets et <example>que</example> pour les objets directs, comme dans <example>l’homme qui est dans le magasin</example> et <example>le livre que je veux lire</example> (ou pour quelques langues peut-être avec deux marqueurs qui se trouvent des deux côtés de la proposition relative);</li>
    <li>(ou pour quelques langues autres que le français et l’anglais) comme une phrase normale (IP) avec un marqueur relatif attaché au verbe.</li>
-</ul> </introduction>
+</ul> </instruction>
    <introduction id="RelClIntroPractical" show="swPractical">Les propositions relatives qualifient normalement un nom principal et elles ont une de ces quatre structures:
         <ul>
            <li>comme en anglais, pareil à une proposition complétive avec un complémentiseur signifiant <example>that  « que »</example>, comme dans <example>the man that came to the party late  « l’homme qui est venu en retard à la soirée »</example>;</li>

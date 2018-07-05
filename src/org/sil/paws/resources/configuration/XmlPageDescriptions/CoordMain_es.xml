@@ -5,7 +5,7 @@
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="CoordMain" count="15.1">
    <title>Las construcciones coordinadas</title>
-   <introduction>sta sección empieza con las construcciones coordinadas básicas en que una conjunción se presenta entre dos oraciones. Estas incluyen la coordinación a nivel de la oración, la frase verbal, la frase nominal, la frase <span id="CoordPrepSpan" show="swPPPosPrep">preposicional</span><span id="CoordPostSpan" show="swPPPosPost">posposicional</span><span id="CoordPBothSpan" show="swPPPosBoth">adposicional</span> y la frase adjetival.  
+   <introduction>Esta sección empieza con las construcciones coordinadas básicas en que una conjunción se presenta entre dos oraciones. Estas incluyen la coordinación a nivel de la oración, la frase verbal, la frase nominal, la frase <span id="CoordPrepSpan" show="swPPPosPrep">preposicional</span><span id="CoordPostSpan" show="swPPPosPost">posposicional</span><span id="CoordPBothSpan" show="swPPPosBoth">adposicional</span> y la frase adjetival.  
       Luego, para el nivel de la frase nominal solamente, se describen los elementos consecutivos como en una lista y las aposiciones. 
 	   Tipos más complejos de construcciones coordinadas, por ejemplo partes que faltan de una de las oraciones enlazadas y otros niveles posibles de coordinación, se necesitan tratar de luego.  
 		</introduction>

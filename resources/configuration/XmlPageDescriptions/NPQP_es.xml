@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="NPQP" count="5.5.1">
     <title level="2">Las frases nominales - Las frases cuantificadoras como modificadores</title>
-    <introduction id="NPQPIntroNotPractical" show="swNotPractical">Next to be added to the nominal phrase as we work our way down the tree are quantifier phrases (QP), discussed earlier in <section number="2">Las frases cuantificadoras</section>.  This means we will be able to parse nominal phrases such as these in English:</introduction>
+    <instruction id="NPQPIntroNotPractical" show="swNotPractical">Next to be added to the nominal phrase as we work our way down the tree are quantifier phrases (QP), discussed earlier in <section number="2">Las frases cuantificadoras</section>.  This means we will be able to parse nominal phrases such as these in English:</instruction>
     <introduction id="NPQPIntroPractical" show="swPractical">Siguiente en la frase nominal son las frases cuantificadoras, discutidas anteriormente en  <section number="2">Las frases cuantificadoras</section>. Con las cuantificadores dentro de la frase nominal podemos analizar frases nominales como estas en español:</introduction>    <EnglishExample>
         <exItem label="1.">esos muy pocos libros.</exItem>
         <exItem label="2.">los muchos perros del muchacho.</exItem>

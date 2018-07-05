@@ -157,7 +157,7 @@
        <instruction  id="AdvPTemporalIndefTypeIntPhraseInstruction" show="swAdvPTemporalIndefTypeIntPhrase">In the lexicon, key the features <feature>makeAdv temporal wh</feature> on the temporal interrogative words.  Key the feature <feature>makeIndef</feature> on the indefinite word.</instruction>
        <instruction id="AdvPTemporalIndefTypeIntEitherRestrictedInstruction" show="swAdvPTemporalIndefTypeIntEitherRestricted">In the lexicon, mark those temporal interrogative words which can only occur before the indefinite word with the feature <feature>AdvP-initial</feature> and those which can only occur after the indefinite word with the feature <feature>AdvP-final</feature>.  Do not enter either feature on any temporal interrogative words which can occur on either side.</instruction>           
        
-       <prompt id="AdvPTemporalIndefTypeIntOtherPrompt" show="swAdvPTemporalIndefTypeIntOther">Escriba ejemplos de la otra manera que se sxpresan estos adverbios de tiempo indefinidos que incluyen una palabra interrogativa de tiempo aquí:</prompt>
+       <prompt id="AdvPTemporalIndefTypeIntOtherPrompt" show="swAdvPTemporalIndefTypeIntOther">Escriba ejemplos de la otra manera que se expresan estos adverbios de tiempo indefinidos que incluyen una palabra interrogativa de tiempo aquí:</prompt>
        <textBox id="AdvPTemporalIndefTypeIntOtherExample" dataItem="temporalIndefTypeIntOtherExample" show="swAdvPTemporalIndefTypeIntOther" cols="80" rows="3"/>
         
        <br/>

@@ -4,9 +4,9 @@
 <page id="Final" count="18.1">
    <title>Verificación final</title>
    <introduction>
-      Usted ha llegado al final del programa Patas. Como una verificación final de su trabajo antes de salir del programa por última vez y comenzar a trabajar con el <span id="NorPracticalSpan1" show="swNotPractical"> archivo para PC-Patr gramática y el</span> archivo para la gramática escritor, mensajes de advertencia se muestran a continuación que se deben tratar. Estos mensajes decirle que usted no ha respondido a una pregunta o que las respuestas que dió a dos preguntas diferentes son incompatibles. Recuerda que si su lengua no parece tener una construcción particular, usted debe comprobar a la opción ‘otra’ y así que se puede decir lo que hace en su lengua.
+      Usted ha llegado al final del programa PAWS. Como una verificación final de su trabajo antes de salir del programa por última vez y comenzar a trabajar con el <span id="NorPracticalSpan1" show="swNotPractical"> archivo para PC-Patr gramática y el</span> archivo para la gramática escritor, mensajes de advertencia se muestran a continuación que se deben tratar. Estos mensajes decirle que usted no ha respondido a una pregunta o que las respuestas que dió a dos preguntas diferentes son incompatibles. Recuerda que si su lengua no parece tener una construcción particular, usted debe comprobar a la opción ‘otra’ y así que se puede decir lo que hace en su lengua.
       <br/> <br/>Por cada mensaje que se muestra, vaya a la página listada y hace las correcciones apropiadas y vuelva luego aquí. Ese mensaje ya no debería aparecer.
-      <br/> <br/>Si no corrige estos problemas, el <span id="NotPracticalSpan2" show="swNotPractical"> archivo de reglas para PC-Patr gramática y el</span> archivo para la gramática escritor no estará correcto para su lengua. Está mucho más fácil corregir estos problemas dentro del programa Patas, así que por favor no siga avanzando hasta que no haya ningún mensaje ADVERTENCIA mostrando debajo de este campo.
+      <br/> <br/>Si no corrige estos problemas, el <span id="NotPracticalSpan2" show="swNotPractical"> archivo de reglas para PC-Patr gramática y el</span> archivo para la gramática escritor no estará correcto para su lengua. Está mucho más fácil corregir estos problemas dentro del programa PAWS, así que por favor no siga avanzando hasta que no haya ningún mensaje ADVERTENCIA mostrando debajo de este campo.
      <br/> <br/>Tenga en cuenta que si usted ha tratado los mensajes de advertencia en cada página antes, no veremos ninguno aquí ahora. Solo aquellos que fue omitidos se muestran.   </introduction>
 <form section="final" transparent="no">
    <prompt id="QPNPDegreeWordNoCheckPrompt" show="swQPNPDegreeYesandNoCheck">De <section number="2.">Las frases cuantificadoras</section>, en la primera página, ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos cuantificadores o palabras de grado con respecto al resto de la frase nominal en su lengua, o cambia la respuesta anterior a “No, todos se unen a otra palabra en la frase nominal”.</prompt>
@@ -508,11 +508,11 @@
          </tr>
       </table>
    
- <introduction>Ahora usted ha completado el programa Patas. 
+ <introduction>Ahora usted ha completado el programa PAWS. 
       Puede ver los boradores de la gramática si haga doble clic en los archivos de _es.htm.<br></br> <br/>
       Por favor, guarde las versiones .xml con un nombre diferente antes de usted comience a corregirlas. Para un editor de XML agradable para la gramática, personalmente preferimos XMLMind XML Editor que hace revisar e imprimir una versión en pdf mucho más fácil,. Usted puede obtener más información en  <a href="http://www.xlingpaper.org/">http://www.xlingpaper.org/</a>.
-      <br/> <br/>Usted ahora ha terminado el programa de PATAS. <br></br>
-      Ahora puede salir el programa por su tiempo final. ¡ Felicidades!
+      <br/> <br/>Usted ahora ha terminado el programa de PAWS. <br></br>
+      Ahora puede salir el programa por su tiempo final. ¡Felicidades!
  </introduction>
  <br/>      
        <br/>

@@ -15,7 +15,7 @@
         <exItem label="5.">Le chien a suivi Suzanne partout  [depuis qu’elle est revenue de l’université].</exItem>
         <exItem label="6.">[Quand elle est revenue de l’université], le chien a suivi Suzanne partout.</exItem>
     </EnglishExample>
-    <introduction id="AdvClIntroNotPractical" show="swNotPractical">These examples show that particular temporal adverbs subcategorize for certain types of <technicalTermRef term="ttComplements"/>.  In example 1 <example>since</example> is followed by another temporal adverb, in example 2 by a temporal nominal phrase, and in example 3 it has a sentential complement.  Examples 5 and 6 show that <example>when</example> also takes a sentential complement, whereas <example>now</example> in example 4 has a CP complement.
+    <instruction id="AdvClIntroNotPractical" show="swNotPractical">These examples show that particular temporal adverbs subcategorize for certain types of <technicalTermRef term="ttComplements"/>.  In example 1 <example>since</example> is followed by another temporal adverb, in example 2 by a temporal nominal phrase, and in example 3 it has a sentential complement.  Examples 5 and 6 show that <example>when</example> also takes a sentential complement, whereas <example>now</example> in example 4 has a CP complement.
 <br/>
         <br/>
 All of these adverbial clauses (or phrases) act the same as simple temporal adverbs, so they will be temporal AdvPs with the appropriate type of complement.  Note also that adverbs of this type normally may occur either sentence-initial or sentence-final.  The tree structures for the first four examples are given here, beginning with the adverb complement (example 1):
@@ -27,9 +27,9 @@ The structure with a nominal phrase complement (example 2) is:
 The structure with an IP complement (example 3) is:
         <tree img="TreeDescriptions/PawsAdvClIP.png"/>
         <br/>
-The structure with an CP complement (example 4) is:
+The structure with a CP complement (example 4) is:
         <tree img="TreeDescriptions/PawsAdvClCP.png"/>
-    </introduction>
+    </instruction>
     <introduction id="AdvClIntroPractical" show="swPractical">Ces exemples montrent que certains adverbes temporels sont suivis de certains types de <technicalTermRef term="ttComplements">compléments</technicalTermRef>.  Dans le premier exemple <example>depuis</example> est suivi d’un autre adverbe temporel, dans le deuxième exemple il est suivi d’un syntagme nominal temporel, et dans les exemples 3 et 5, il est suivi d’un complément qui est une clause avec un complémenteur.  Le exemple 5 montre que <example>quand</example> prend un complément sententiel fini, alors que <example>maintenant</example> dans le 4e exemple a un complément qui est une clause avec un complémenteur.
         <br/>
         <br/>

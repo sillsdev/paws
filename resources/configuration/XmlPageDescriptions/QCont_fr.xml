@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="QCont" count="11.5">
     <title level="2">Questions – La structure du syntagme dans les questions de contenu</title>
-    <introduction id="QContIntroNotPractical" show="swNotPractical">Depending on the basic word order of your language, content questions may be formed with or without fronting an interrogative phrase.  Head-final languages (SOV, OVS, and OSV) usually do not have movement of an interrogative phrase in content questions, while head-initial languages (SVO, VOS, and VSO) usually require fronting of an interrogative phrase.<br/>
+    <instruction id="QContIntroNotPractical" show="swNotPractical">Depending on the basic word order of your language, content questions may be formed with or without fronting an interrogative phrase.  Head-final languages (SOV, OVS, and OSV) usually do not have movement of an interrogative phrase in content questions, while head-initial languages (SVO, VOS, and VSO) usually require fronting of an interrogative phrase.<br/>
         <br/>In languages like English, the interrogative word or phrase must be fronted.  In the trees, this fronting will be to the specifier of CP.  Sample trees for main clause and embedded content questions in English are shown here:
 <tree img="TreeDescriptions/PawsMainContentQues.png"/>
         <br/>
@@ -16,7 +16,7 @@ In languages without fronting for interrogatives, the phrase structure of a cont
 <br/>
 <br/>
 Many SOV languages optionally allow movement of an interrogative phrase to the position immediately before the verb, which will be within the VP in the tree structures used here.
-        </introduction>
+        </instruction>
     <introduction id="QContIntroPractical" show="swPractical">Selon l’ordre syntaxique fondamental des phrases, les questions de contenu peuvent se former avec ou sans syntagme interrogatif en tête. Les langues à tête finale (SOV, OVS, et OSV) n’ont pas de mouvement du syntagme interrogatif dans les questions de contenu; dans les langues à tête initiale (SVO, VOS, et VSO) le syntagme interrogatif est habituellement en position initiale. <br/>
         <br/>Pour les langues comme le français et l’anglais le syntagme interrogatif vient en tête.
         <br/>

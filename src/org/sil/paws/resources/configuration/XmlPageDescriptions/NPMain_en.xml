@@ -12,7 +12,7 @@ It may be difficult to understand the need for the change in English, because ar
     </introduction>  
     <introduction>We begin with the modifiers which have the greatest scope and then present the modifiers with more limited scope, moving inward closer to the noun.</introduction>
     
-    <form section="np" transparent="yes">
+    <form section="np">
         <prompt><br/>The top level of the nominal phrase (initial or final) is occupied by those wide scope quantifiers and degree words that modify the whole nominal phrase, such as <example>all</example>, <example>almost</example>, <example>just</example>, and <example>only</example>, that were discussed and marked on the first page of <section number="2">Quantifiers and QP</section>.</prompt>
         <prompt id="NPClassifierNotSpecificPrompt" show="swOTClassifierNotSpecific"><br/> Nothing more needs to be done with those modifiers.</prompt>
         <prompt id="NPClassifierSpecificPrompt" show="swOTClassifierSpecificAndQPNPDegreeYesOrSome"><br/>The examples of full nominal phrases including the independent words meaning ‘all’, ‘almost’, ‘only’ or ‘just’ that you entered are:

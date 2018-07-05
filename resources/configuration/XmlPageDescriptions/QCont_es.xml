@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="QCont" count="11.5">
     <title level="2">Las preguntas - La estructura de preguntas de respuesta abierta</title>
-    <introduction id="QContIntroNotPractical" show="swNotPractical">Depending on the basic word order of your language, content questions may be formed with or without fronting an interrogative phrase.  Head-final languages (SOV, OVS, and OSV) usually do not have movement of an interrogative phrase in content questions, while head-initial languages (SVO, VOS, and VSO) usually require fronting of an interrogative phrase.<br/>
+    <instruction id="QContIntroNotPractical" show="swNotPractical">Depending on the basic word order of your language, content questions may be formed with or without fronting an interrogative phrase.  Head-final languages (SOV, OVS, and OSV) usually do not have movement of an interrogative phrase in content questions, while head-initial languages (SVO, VOS, and VSO) usually require fronting of an interrogative phrase.<br/>
         <br/>In languages like English, the interrogative word or phrase must be fronted.  In the trees, this fronting will be to the specifier of CP.  Sample trees for main clause and embedded content questions in English are shown here:
 <tree img="TreeDescriptions/PawsMainContentQues.png"/>
         <br/>
@@ -16,7 +16,7 @@ In languages without fronting for interrogatives, the phrase structure of a cont
 <br/>
 <br/>
 Many SOV languages optionally allow movement of an interrogative phrase to the position immediately before the verb, which will be within the VP in the tree structures used here.
-        </introduction>
+        </instruction>
     <introduction id="QContIntroPractical" show="swPractical">Dependiendo del orden de las palabras básico de la lengua, las preguntas de respuesta abierta pueden ser formadas con o sin el desplazamiento hacia la izquierda de una frase interrogativa.  
         Las lenguas con núcleo final (SOV, OVS, y OSV) no tienen generalmente el desplazamiento de una frase interrogativa en preguntas, mientras que las lenguas con núcleo inicial (SVO, VOS, y VSO) generalmente requieren el desplazamiento hacia la izquierda de una frase interrogativa.<br/>
         <br/>En lenguas como inglés y español, la palabra o la frase interrogativa debe ser desplazado.

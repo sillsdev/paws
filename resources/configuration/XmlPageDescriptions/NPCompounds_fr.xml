@@ -71,7 +71,7 @@
 		<prompt id="NPCompRelClPrompt" show="swNPPPCompNo">La structure et la position des propositions relatives seront traitées dans la <section number="12">Propositions Relatives</section>.</prompt>
 		<br/>
 		<br/>
-		<introduction>Un autre cas qui peut paraître comme un nom et un complément peut en fait être un <technicalTermRef term="ttGerund">gérondif</technicalTermRef> ou un syntagme au gérondif. Le syntagme entier occupe une position d’ argument normal tels que sujet, objet, objet indirect ou l’objet d’une préposition. Des exemples en anglais de syntagmes entiers avec le syntagme au gérondif entre corchets incluent::
+		<introduction>Un autre cas qui peut paraître comme un nom et un complément peut en fait être un <technicalTermRef term="ttGerund">gérondif</technicalTermRef> ou un syntagme au gérondif. Le syntagme entier occupe une position d’ argument normal tels que sujet, objet, objet indirect ou l’objet d’une préposition. Des exemples en anglais de syntagmes entiers avec le syntagme au gérondif entre corchets incluent:
 </introduction> 
 	<EnglishExample>
 		<exItem label="6.">[Studying grammar] is challenging.  « [Etudier la grammaire] est difficile. »</exItem>

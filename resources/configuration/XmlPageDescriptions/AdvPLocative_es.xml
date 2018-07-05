@@ -5,7 +5,7 @@
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="AdvPLocative" count="3.2">
    <title level="2">Frases adverbiales - Los adverbios de lugar</title>
-   <introduction>Los adverbios de lugar son las siguientes palabras en español: <example>aquí</example>, <example>allí</example> y <example>allá</example>.  Estos adverbios de lugar se pueden relacionar con los <technicalTermRef term="ttDemonstratives"/>
+   <introduction>Los adverbios de lugar son las siguientes palabras en español: <example>aquí</example>, <example>allí</example> y <example>allá</example>.  Estos adverbios de lugar se pueden relacionar con los <technicalTermRef term="ttDemonstratives">demostrativos</technicalTermRef>.
       <br/>
         <br/>
         El lugar también se puede expresar con una frase preposicional, por ejemplo: <example>en las montañas</example>, <example>hasta San José</example> y <example>a través del río</example>.  Muchas lenguas permiten solo una frase nominal, la cual consiste en un nombre propio o una descripción del lugar.

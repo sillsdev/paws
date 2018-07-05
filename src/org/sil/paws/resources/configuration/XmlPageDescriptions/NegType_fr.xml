@@ -5,7 +5,7 @@
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="NegType" count="14.3">
    <title level="2">Constructions Négatives – Type de système de négation</title>
-    <introduction id="NegTypeIntroNotPractical" show="swNotPractical">Languages fall into two major classifications with respect to negation: Polarity Changing languages versus Negative Concord languages, exemplified by standard English and Spanish or Black English, respectively.  <br/>
+    <instruction id="NegTypeIntroNotPractical" show="swNotPractical">Languages fall into two major classifications with respect to negation: Polarity Changing languages versus Negative Concord languages, exemplified by standard English and Spanish or Black English, respectively.  <br/>
         <br/>
             Polarity Changing languages normally allow only a single negative element in the sentence for negation to be expressed (though technically any odd number of negatives expresses negative <technicalTermRef term="ttPolarity"/>) because the presence of two 
             (or any even number of) negative elements changes the polarity back to positive. 
@@ -28,7 +28,7 @@ In Negative Concord languages, any number of negative elements expresses negativ
 <br/>
         <br/>
         <help href="../Help/Cbgbtext.doc#cCommand">(Click here to see more on c-command.)</help>
-    </introduction>
+    </instruction>
    <introduction id="NegTypeIntroPractical" show="swPractical">Quant à la négation les langues se groupent selon deux classifications majeures: les langues qui changent de polarité, et les langues à concordance négative, une différence exemplifiée par l’anglais contre le français.  <br/>
                 <br/>
       Les langues qui changent de polarité admettent d’habitude un seul élément négatif dans la phrase pour exprimer la négation (du point de vue technique n’importe quel nombre impair de négatifs exprime la polarité négative), parce que la présence de deux élements (ou un nombre pair d’éléments) change la polarité et la remet au positif. 
