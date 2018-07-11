@@ -58,7 +58,7 @@ public class ControllerUtilities {
 		Image icon = new Image(sStandardIconURL);
 		if (icon.getHeight() == 0) {
 			// normal location failed; try this one
-			String sSourcePath = sStandardIconURL.substring(0, 5) + "src/org/sil/lingtree/"
+			String sSourcePath = sStandardIconURL.substring(0, 5) + "src/org/sil/paws/"
 					+ sStandardIconURL.substring(5);
 			icon = new Image(sSourcePath);
 		}
