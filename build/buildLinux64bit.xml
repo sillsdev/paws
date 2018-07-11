@@ -7,7 +7,7 @@
 
 	<property name="nativeBundles" value="deb"/>
 	<property name="processorType" value="-64bit"/>
-	<property name="mainFileName" value="lingtree"/>
+	<property name="mainFileName" value="PAWS"/>
 
 	<target name="do-deploy" depends="nested.do-deploy"/>
 </project>
