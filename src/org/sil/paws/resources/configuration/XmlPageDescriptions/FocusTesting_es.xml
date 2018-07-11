@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="FocusTesting" count="16.2">
 	<title level="2">Focus and Topic Constructions - Testing</title>

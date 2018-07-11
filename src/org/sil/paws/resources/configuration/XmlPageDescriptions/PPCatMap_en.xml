@@ -1,5 +1,5 @@
 
-<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="PPCatMap" count="8.4">
 	<title level="2">Adpositional Phrases - Category Mapper</title>
