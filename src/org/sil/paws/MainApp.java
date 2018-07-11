@@ -27,6 +27,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Dialog;
 import javafx.scene.control.Label;
@@ -211,15 +212,6 @@ public class MainApp extends Application {
 		alert.setTitle(bundle.getString("program.name"));
 		alert.setHeaderText(bundle.getString("file.initiallynotfound"));
 		alert.setContentText(bundle.getString("file.chooseanoption"));
-		alert.setResizable(true);
-		// Following comes from
-		// https://stackoverflow.com/questions/28937392/javafx-alerts-and-their-size
-		// It's an attempt to get the buttons' text to show completely
-		alert.getDialogPane().getChildren().stream().filter(node -> node instanceof Label)
-				.forEach(node -> ((Label) node).setMinHeight(Region.USE_PREF_SIZE));
-		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-		stage.getIcons().add(getNewMainIconImage());
-
 		ButtonType buttonCreateNewLanguage = new ButtonType(
 				bundle.getString("label.createnewlanguage"), ButtonData.OK_DONE);
 		ButtonType buttonOpenExistingLanguage = new ButtonType(
@@ -229,6 +221,13 @@ public class MainApp extends Application {
 
 		alert.getButtonTypes().setAll(buttonCreateNewLanguage, buttonOpenExistingLanguage,
 				buttonCancel);
+
+		alert.setResizable(true);
+		((Button)alert.getDialogPane().lookupButton(buttonCreateNewLanguage)).setPrefWidth(250);
+		((Button)alert.getDialogPane().lookupButton(buttonOpenExistingLanguage)).setPrefWidth(250);
+		((Button)alert.getDialogPane().lookupButton(buttonCancel)).setPrefWidth(Region.USE_PREF_SIZE);
+		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+		stage.getIcons().add(getNewMainIconImage());
 
 		boolean fSucceeded = true;
 		Optional<ButtonType> result = alert.showAndWait();
