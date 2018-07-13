@@ -242,6 +242,7 @@ public class RootLayoutController implements Initializable {
 	ResourceBundle bundle;
 	String sDescription;
 	ApplicationPreferences applicationPreferences;
+	WebPageInteractor webPageInteractor;
 	boolean fIsDirty;
 	private static final String kHTMsFolder = "/resources/configuration/HTMs/";
 	private String sProgramLocation;
@@ -280,7 +281,7 @@ public class RootLayoutController implements Initializable {
 
 		webEngine = browser.getEngine();
 		webEngine.setOnAlert(event -> showAlert(event.getData()));
-		RootLayoutController rlc = this;
+		webPageInteractor = new WebPageInteractor(language, webEngine, this);
 		webEngine.getLoadWorker().stateProperty().addListener(new ChangeListener<State>() {
 			public void changed(ObservableValue ov, State oldState, State newState) {
 				if (newState == State.SUCCEEDED) {
@@ -295,7 +296,7 @@ public class RootLayoutController implements Initializable {
 							// We are working around it by sleeping for 10ms in the
 							// javascript onload() function.
 							JSObject win = (JSObject) webEngine.executeScript("window");
-							win.setMember("pawsApp", new WebPageInteractor(language, webEngine, rlc));
+							win.setMember("pawsApp", webPageInteractor);
 							webEngine.executeScript("Initialize('" + getCurrentLocaleCode() + "')");
 							updatePageLabels();
 //							Timeline timeline = new Timeline(new KeyFrame(Duration.millis(500), event -> {
@@ -348,35 +349,53 @@ public class RootLayoutController implements Initializable {
 	}
 
 	public void loadLanguagePropertiesPageInNewMode() {
-		try {
-			String sPath = sConfigurationDirectory + "HTMs" + File.separator + "LanguageProperties" + getCurrentLocaleCode() + ".htm";
-			String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
-			sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
-			sPage = sPage.replace(".style.display = \"none\";", ".style.display = \"temp\";");
-			sPage = sPage.replace(".style.display = \"\";", ".style.display = \"none\";");
-			sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
-			webEngine.loadContent(sPage);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					try {
+					String sPath = sConfigurationDirectory + "HTMs" + File.separator + "LanguageProperties" + getCurrentLocaleCode() + ".htm";
+					String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
+					sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
+					sPage = sPage.replace(".style.display = \"none\";", ".style.display = \"temp\";");
+					sPage = sPage.replace(".style.display = \"\";", ".style.display = \"none\";");
+					sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
+					webEngine.loadContent(sPage);
+					} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+//					System.out.println("loadLanguagePropertiesPageInNewMode: loading=" + sProgramLocation + kHTMsFolder + "LanguagePropertiesNew"
+//					+ getCurrentLocaleCode() + ".htm");
+//					webEngine.load(sProgramLocation.replace("\\", "/") + kHTMsFolder + "LanguagePropertiesNew"
+//							+ getCurrentLocaleCode() + ".htm");
+				}
+			});
 	}
 
 	protected void loadLanguageFilesPageInNewMode() {
-		try {
-			String sPath = sConfigurationDirectory + "HTMs" + File.separator + "PAWSFiles" + getCurrentLocaleCode() + ".htm";
-			String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
-			sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
-	        sPage = sPage.replace("ShowBackNextButtons.style.display = \"none\";", "ShowBackNextButtons.style.display = \"temp\";");
-			sPage = sPage.replace("ShowBackNextButtons.style.display = \"\";", "ShowBackNextButtons.style.display = \"none\";");
-			sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
-			sPage = sPage.replace("pawsApp.load(\"Contents.htm\");", "pawsApp.load(\"file:///" +
-					sConfigurationDirectory.replace("\\",  "\\\\") + "HTMs/Contents" + getCurrentLocaleCode() + ".htm\");");
-			webEngine.loadContent(sPage);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Platform.runLater(new Runnable() {
+			@Override
+			public void run() {
+				try {
+				String sPath = sConfigurationDirectory + "HTMs" + File.separator + "PAWSFiles" + getCurrentLocaleCode() + ".htm";
+				String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
+				sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
+		        sPage = sPage.replace("ShowBackNextButtons.style.display = \"none\";", "ShowBackNextButtons.style.display = \"temp\";");
+				sPage = sPage.replace("ShowBackNextButtons.style.display = \"\";", "ShowBackNextButtons.style.display = \"none\";");
+				sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
+				sPage = sPage.replace("pawsApp.load(\"Contents.htm\");", "pawsApp.load(\"file:///" +
+						sConfigurationDirectory.replace("\\",  "\\\\") + "HTMs/Contents" + getCurrentLocaleCode() + ".htm\");");
+				webEngine.loadContent(sPage);
+				} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+//				System.out.println("loadLanguageFilesPageInNewMode: loading=" + sProgramLocation + kHTMsFolder + "PAWSFilesNew" + getCurrentLocaleCode()
+//				+ ".htm");
+//			webEngine.load(sProgramLocation + kHTMsFolder + "PAWSFilesNew" + getCurrentLocaleCode()
+//					+ ".htm");
+			}
+		});
 	}
 
 	private void createContextMenu() {
@@ -729,6 +748,7 @@ public class RootLayoutController implements Initializable {
 		this.applicationPreferences = mainApp.getApplicationPreferences();
 		menuItemShowStatusBar.setSelected(applicationPreferences.getShowStatusBar());
 		handleMenuShowStatusBar();
+		webPageInteractor.setMainApp(mainApp);
 	}
 
 	public void setLocale(Locale currentLocale) {
@@ -761,6 +781,7 @@ public class RootLayoutController implements Initializable {
 						StandardCopyOption.REPLACE_EXISTING);
 				mainApp.loadLanguageData(fileCreated);
 				language = mainApp.getBackEndProvider().getLanguage();
+				this.webPageInteractor.setLanguage(language);
 				OutputGenerator.getInstance(language);
 
 				sPAWSWorkingDirectory = getWorkingPageOutputDirectory();
@@ -1207,6 +1228,7 @@ public class RootLayoutController implements Initializable {
 
 	public void setLanguage(Language language) {
 		this.language = language;
+		webPageInteractor.setLanguage(language);
 	}
 
 	public ResourceBundle getBundle() {

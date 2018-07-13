@@ -58,8 +58,6 @@ public class WebPageInteractor {
 		this.engine = engine;
 		this.controller = controller;
 		this.bundle = controller.getBundle();
-		this.mainApp = controller.getMainApp();
-		this.prefs = mainApp.getApplicationPreferences();
 		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
 				bundle.getLocale()));
 	}
@@ -120,7 +118,6 @@ public class WebPageInteractor {
 	}
 
 	protected void showFileToUser(String sFileToShow) {
-		System.out.println("show file='" + sFileToShow + "'");
 		MainApp mainApp = controller.getMainApp();
 		if (!mainApp.getOperatingSystem().equals("Mac OS X")) {
 			HostServicesDelegate hostServices = HostServicesFactory.getInstance(mainApp);
@@ -277,5 +274,14 @@ public class WebPageInteractor {
 		language.setValue(ksItalic, sBoolean);
 		controller.handleSaveLanguage();
 		controller.initCSS();
+	}
+
+	public void setLanguage(Language language) {
+		this.language = language;
+	}
+
+	public void setMainApp(MainApp mainApp) {
+		this.mainApp = mainApp;
+		this.prefs = mainApp.getApplicationPreferences();
 	}
 }
