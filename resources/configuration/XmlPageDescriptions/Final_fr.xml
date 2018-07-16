@@ -507,8 +507,8 @@
       </table>
       
       
-      <introduction>Vous avez complété le logiciel de PAWS.  Vous pouvez voir les ébauches en cliquant deux fois sur les fichiers_fr.htm.  <br></br><br/>
-    Veuillez enregistrer les versions .xml sous un nom de fichier différent avant de commencer à éditer.  Pour un bon éditeur XML pour la sortie grammaticale, nous préférons XMLMind XML Editor.  Il rend la rédaction et l’impression beaucoup plus simple, puisqu’il y a des additions spéciales pour manier les particularités supplémentaires de XLingPaper, qu’utilise le scripteur de grammaire.  Vous trouverez plus d’information à <a href="http://www.xlingpaper.org/">http://www.xlingpaper.org/</a>.
+      <introduction>Vous avez complété le logiciel de PAWS.  S'il vous plaît, Générer Fichiers.  Vous pouvez voir les ébauches en cliquant deux fois sur les fichiers_fr.htm.  <br></br><br/>
+         Veuillez enregistrer les versions .xml sous un nom de fichier différent avant de commencer à éditer.  Pour un bon éditeur XML pour la sortie grammaticale, nous préférons XMLMind XML Editor.  Il rend la rédaction et l’impression beaucoup plus simple, puisqu’il y a des additions spéciales pour manier les particularités supplémentaires de XLingPaper, qu’utilise le scripteur de grammaire.  Vous trouverez plus d’information à <a href="https://software.sil.org/xlingpaper/">https://software.sil.org/xlingpaper/</a>.
   <br/><br/>
     Maintenant vous pouvez quitter PAWS pour la dernière fois.  Félicitations!
 </introduction>

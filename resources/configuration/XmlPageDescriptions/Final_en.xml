@@ -518,8 +518,8 @@
       </table>
       
       
- <introduction>You have now completed the PAWS Starter Kit.  You may view the grammar drafts by double clicking on the _en.htm files.  <br></br><br/>
-       Please save the .xml versions under a different file name before you begin editing.  For a nice XML editor for the grammar writeup, we personally prefer the XMLMind XML Editor  It makes editing and printing a pdf version much easier, since special addons are available to handle all the extra features of XLingPaper, which the grammar writeup is using.  You can find out more information at <a href="http://www.xlingpaper.org/">http://www.xlingpaper.org/</a>.
+ <introduction>You have now completed the PAWS Starter Kit.  Please use Generate Files. You may then view the grammar drafts by double clicking on the _en.htm files.  <br></br><br/>
+    Please save the .xml versions under a different file name before you begin editing.  For a nice XML editor for the grammar writeup, we personally prefer the XMLMind XML Editor  It makes editing and printing a pdf version much easier, since special addons are available to handle all the extra features of XLingPaper, which the grammar writeup is using.  You can find out more information at <a href="https://software.sil.org/xlingpaper/">https://software.sil.org/xlingpaper/</a>.
   <br/><br/>
       You may now exit PAWS for your final time.  Congratulations!
 </introduction>
