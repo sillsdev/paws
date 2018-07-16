@@ -35,7 +35,7 @@ build/doc
 build/externalLibs
 build/project
 resources/images
-testdata
+/testdata
 *.*~
 *.orig
 *.bak
