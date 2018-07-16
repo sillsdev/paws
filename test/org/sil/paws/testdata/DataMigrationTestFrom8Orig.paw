@@ -1,0 +1,1535 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<paws dbversion="8" outputGrammar="False" outputWriter="False" outputWriterPractical="False" outputWriterPracticalSpanish="True">
+  <leftOffAt>C:/Users/Leo/AppData/Local/SIL International/Cabhab/paws/ztp/HTMs/AdvPMain.htm</leftOffAt>
+  <language>
+    <langNames>
+        <langName lang="es">zapoteco de Loxicha</langName>
+    </langNames>
+    <langAbbr>ztp</langAbbr>
+    <font bold="False" italic="False" under="False" strike="False" rtl="False">
+      <fontName>Charis SIL AmArea</fontName>
+      <fontSize>12</fontSize>
+      <fontColor>0</fontColor>
+    </font>
+    <textSFM>\t</textSFM>
+    <answerFile>C:\Users\Leo\Documents\Mis PATAS\ZapotecoDeLoxicha.paw</answerFile>
+    <grammarFile>C:\Users\Leo\Documents\Mis PATAS\ZapotecoDeLoxicha.grm</grammarFile>
+    <writerFile>C:\Users\Leo\Documents\Mis PATAS\ZapotecoDeLoxicha.xml</writerFile>
+    <writerPracticalFile>C:\Users\Leo\Documents\Mis PATAS\ZapotecoDeLoxichaWriterPractical.xml</writerPracticalFile>
+    <writerPracticalSpanishFile>C:\Users\Leo\Documents\Mis PATAS\ZapotecoDeLoxichaWriterPracticalSpanish.xml</writerPracticalSpanishFile>
+    <exampleFilesPath>C:\Users\Leo\Documents\Mis PATAS</exampleFilesPath>
+  </language>
+  <typology checkedOff="yes" wordOrder="VSO" case="none" caseExperiencer="no" classifier="yesType" classifierNum="number" class1agr="irrelevant" class2agr="irrelevant" class3agr="irrelevant" class4agr="irrelevant" class5agr="irrelevant" class6agr="irrelevant" class7agr="irrelevant" class8agr="irrelevant" class9agr="irrelevant" class10agr="irrelevant" class11agr="irrelevant" class12agr="irrelevant" class13agr="irrelevant" class14agr="irrelevant" class15agr="irrelevant" class16agr="irrelevant" class17agr="irrelevant" class18agr="irrelevant" class19agr="irrelevant" class20agr="irrelevant" class21agr="irrelevant" class22agr="irrelevant" class23agr="irrelevant" class24agr="irrelevant" class25agr="irrelevant" classifierTypeNumAgr="no">
+    <example>Mda mbak ngid.
+Nchu' ngon nit.
+Mtho Che way.
+Mda mbak nagat ngid.
+Nchu' ngon pcha' nit.
+Mtho Che mchunch way.</example>
+    <pnExample>Mda ma' ngid.
+Nchu' or nit.
+Mtho xa' way.
+Mda ma' ma'.
+Ncha ma' jwan'.
+Mtho xa' ma'.
+
+</pnExample>
+    <experiencerExample>Mbwi' mza' yen' thi mzib.
+Nzyeb mbak lox ndlya mdi'. (Dos verbos)
+Mzyal Chuch Mbraz thi tmi.
+Ndyen mbal gox gu nit ko'b.(Dos verbos)
+Mbin mbak mek mbrez thi bur. (Dos verbos)</experiencerExample>
+    <experiencerPnExample>Mbwi' or thi ma'.
+Nzyeb ma' ndyes jwan'.
+Mzyal xa' thi jwan'.
+Ndyen men gu men jwan'.
+Mbin ma' mbrez thi ma'.
+</experiencerPnExample>
+    <intExample>Nguj mbak gox.
+Ngol bdo ngon.
+Mbyan' mbol Mbyal.
+Nchat mbed yen'.
+Nkwin' nzed ladra guch.
+</intExample>
+    <pnIntExample>Nguj ma' gox.
+Ngol ngud.
+Mbyan' xa'.
+Nchat or.
+Nkwin' ma'.</pnIntExample>
+    <experiencerIntExample>Nxi Pey Satyow.
+Nchon' bich nagat.
+Nzyeb mbak lud.
+Nayi' mxi's ro.
+</experiencerIntExample>
+    <experiencerPnIntExample>Nxi xa'.
+Nchon' ma'.
+Nzyeb ma'.
+Nayi' or.</experiencerPnIntExample>
+    <class1Example>
+    </class1Example>
+    <class2Example>
+    </class2Example>
+    <class3Example>
+    </class3Example>
+    <class4Example>
+    </class4Example>
+    <class5Example>
+    </class5Example>
+    <class6Example>
+    </class6Example>
+    <class7Example>
+    </class7Example>
+    <class8Example>
+    </class8Example>
+    <class9Example>
+    </class9Example>
+    <class10Example>
+    </class10Example>
+    <class11Example>
+    </class11Example>
+    <class12Example>
+    </class12Example>
+    <class13Example>
+    </class13Example>
+    <class14Example>
+    </class14Example>
+    <class15Example>
+    </class15Example>
+    <class16Example>
+    </class16Example>
+    <class17Example>
+    </class17Example>
+    <class18Example>
+    </class18Example>
+    <class19Example>
+    </class19Example>
+    <class20Example>
+    </class20Example>
+    <class21Example>
+    </class21Example>
+    <class22Example>
+    </class22Example>
+    <class23Example>
+    </class23Example>
+    <class24Example>
+    </class24Example>
+    <class25Example>
+    </class25Example>
+    <classAnimalSgExample>
+    </classAnimalSgExample>
+    <classAnimalPlExample>
+    </classAnimalPlExample>
+    <classInsectSgExample>
+    </classInsectSgExample>
+    <classInsectPlExample>
+    </classInsectPlExample>
+    <classLiquidSgExample>
+    </classLiquidSgExample>
+    <classLiquidPlExample>
+    </classLiquidPlExample>
+    <classRoundSgExample>
+    </classRoundSgExample>
+    <classRoundPlExample>
+    </classRoundPlExample>
+    <classCylinderSgExample>
+    </classCylinderSgExample>
+    <classCylinderPlExample>
+    </classCylinderPlExample>
+    <classSphereSgExample>
+    </classSphereSgExample>
+    <classSpherePlExample>
+    </classSpherePlExample>
+    <classTreeSgExample>
+    </classTreeSgExample>
+    <classTreePlExample>
+    </classTreePlExample>
+    <classWoodSgExample>
+    </classWoodSgExample>
+    <classWoodPlExample>
+    </classWoodPlExample>
+    <classOtherSgExample>
+    </classOtherSgExample>
+    <classOtherPlExample>
+    </classOtherPlExample>
+    <classAnimalExample>m-
+n-     </classAnimalExample>
+    <classInsectExample>
+    </classInsectExample>
+    <classLiquidExample>nit-</classLiquidExample>
+    <classRoundExample>
+    </classRoundExample>
+    <classCylinderExample>
+    </classCylinderExample>
+    <classSphereExample>ngud-</classSphereExample>
+    <classTreeExample>ya-</classTreeExample>
+    <classWoodExample>ya-</classWoodExample>
+    <classOtherExample>lus-
+lat-
+yal-
+yo-
+ </classOtherExample>
+    <classifierAgrExample>
+    </classifierAgrExample>
+    <classifierTypeExample>mbak. 
+mber.
+ngid.
+ngon.
+nitnal.
+nitye.
+ngudyex.
+ngudlo.
+yabit.
+yatren.
+yaga.
+yala.
+lusyej.
+lusyap.
+latyabdo.
+latyalathab.
+yalwen.
+yalti.
+yothi'.
+yobe'b.
+yodo'.
+yolow.
+</classifierTypeExample>
+  </typology>
+  <qp checkedOff="yes" npDegreeClassifier="no" npDegree="yes" npDegreeType="suffix" npDegreePos="before" npDegreeEither="unrestricted" npDegreeNeg="yes" npDegreeNegType="affix" npDegreeNegPos="both" npDegreeNegEither="unrestricted" npDegreeNegCooccur="yes" npDegreeNegNPPos="before" determiner="yes" determinerClassifier="no" determinerPos="before" determinerEither="unrestricted" determinerNeg="yes" determinerNegPos="before" determinerNegEither="unrestricted" quantifierClassifier="no" degree="yes" degreeClassifier="no" degreePos="before" degreeEither="unrestricted" numberClassifier="no" ordinalFormation="both" ordinalWordPos="unknown" ordinalPos="before" ordinalEither="unrestricted" cardinalHead="after">
+    <all>re.
+reta.
+-ta.
+</all>
+    <almost>tudla.
+tudka.</almost>
+    <only>ben'ta.
+plata.
+Thib nya.</only>
+    <not>nared.
+naben'ta.
+nakta ben'ta.</not>
+    <example>reta or bix.
+ben'ta or bix.
+tudla or bix. 
+Thib nya ma' re' mbyan'.</example>
+    <negExample>nared or bix.
+naben'ta xa bay.
+nakta ben'ta luy.
+¿Cho na-xa' ranch-ta jwan' na?
+¿Cho na-men-ta jwan' na?
+¿Cho na-pan-ta jwan' na?
+</negExample>
+    <negCooccurExample>nared or bix.
+nared go' nambi nak.
+nabenta na', che'la re xa'.
+</negCooccurExample>
+    <determinerExample>Plata.
+Thiba.
+Pla.</determinerExample>
+    <determinerNPExample>Thiba or bix mbli gan mte'd.
+Plata or bix mbli gan mte'd.
+Tya nzi pla xa'.
+Nde ti pla men.</determinerNPExample>
+    <determinerNegExample>Nek thib.
+Nek lud.
+Ngenta xa'. (no hay)
+Ngen kwan liy. (no pasa nada, no importa)</determinerNegExample>
+    <determinerNegNPExample>nek thib or bix.
+Nek lud nzob.
+Nambakta.</determinerNegNPExample>
+    <quantifierExample>re.
+Reta.
+retos tir.
+Bro.
+brotos.
+brotos tir.
+Lud.
+Lud tos.
+Lud tos tir.
+</quantifierExample>
+    <degreeWordExample />
+    <degreeExample>Re or bix.
+Reta men.
+Mbak tos tir.
+Bro or bix.
+Bro tos men.
+Brotos tir men.
+Lud yej.
+Lud tos yej.
+Lud tos tir yej.</degreeExample>
+    <cardinalNumbers1to10>thib.
+chop.
+son.
+thap.
+gay'.
+xop.
+gaz.
+xon. 
+ye'.
+si'.</cardinalNumbers1to10>
+    <cardinalNumbers11to20>si' thib.
+tib sen.
+sin.
+si'da.
+sin'.
+sin' thib.
+sin' chop.
+sin' son.
+sin' thap. 
+tib gal.</cardinalNumbers11to20>
+    <cardinalNumbers30to100>galb tsi'.
+cho'.
+cho' tsi'.
+son gal.
+son gal nzo si'.
+tap gal.
+tap gal nzo si'.
+thib ayo'.</cardinalNumbers30to100>
+    <ordinalNumbers>ner.
+mbrop / rop. (los dos)
+mbyon / yon. (los tres)
+thap.
+gay'.
+xop.
+gaz.
+xon.
+ye'.
+si'. (Se usa la palabra "xisa" para después)</ordinalNumbers>
+    <ordinalExample>Wiz ner mzin thi mbak.
+Ner xa' mbro'.
+Wiz mbrop mzin ta gay' xa'.
+Mbrop gob ngwa xa'.
+Wiz mbyon mzin son ma'. 
+Mbyon yo mdoxkwa' xa'. 
+Thib gal mbak mzin ner.
+Ner thi xa' mbro'.
+Lulka yej las jwan' re'.
+Xis mblake rer.
+Tidib mbak mzin xiska.
+Xiska ngote tidib or.
+Nerla gay' or kwe nche', nde tidib gay' or kwe ba, nde lulka tidib gay' or kwe ba.
+Gay' or nzi ner kwe nche', nde tidib gay' or kwe ba, nde tidibgay' or lulka kwe ba.</ordinalExample>
+    <cardinalCompoundExample>Thib ayo' nzo son gal nzo gay'.
+Xop ayo' nzo thap gal nzo si'.
+</cardinalCompoundExample>
+    <cardinalNumberCategory />
+    <conjunctionCategory />
+  </qp>
+  <advp checkedOff="yes" temporalDegree="attaches" negTemporalType="word" negTemporalWordPos="before" locativeClassifier="no" advLocDem="affix" locativeDegree="yesBefore" negLocativeType="adverb" mannerType="word" mannerDegree="yesAfter" mannerAffixDegree="no">
+    <temporalExample>se.
+sera'.
+zyasa. 
+zyara.
+zyaga.
+naya.
+ndora.
+sen' lo.
+xata.
+nera.
+thibla.
+tata.
+napa / naba.
+til'. (sustantivo de tiempo)
+bzye.
+yal' ro.
+nakalra.
+pola.
+
+</temporalExample>
+    <temporalDegreeExample>-ga.
+-ra.
+-sa.</temporalDegreeExample>
+    <temporalDegreeAffixExample>-sa.
+-ra.
+-ga.
+</temporalDegreeAffixExample>
+    <temporalDegreeRedupExample>
+    </temporalDegreeRedupExample>
+    <temporalPhraseAffixExample>til' tos.
+bzye tos.
+awista.</temporalPhraseAffixExample>
+    <temporalPhraseExample>
+    </temporalPhraseExample>
+    <negTemporalAdverbWordExample>
+    </negTemporalAdverbWordExample>
+    <negTemporalAdverbWordsExample>
+    </negTemporalAdverbWordsExample>
+    <negTemporalAdverbAffixExample>
+    </negTemporalAdverbAffixExample>
+    <negTemporalAdverbExample>
+    </negTemporalAdverbExample>
+    <negTemporalExample>tera'.
+nara'.
+nek lud na'litra nay. (adjetivo + verbo negativo)</negTemporalExample>
+    <negTemporalAffixExample>
+    </negTemporalAffixExample>
+    <negTemporalVerbExample>
+    </negTemporalVerbExample>
+    <locativeExample>nche'.
+ba.
+tya.
+baxa.
+tij.
+la.
+gap.
+ten'.
+plo'.
+gax.
+</locativeExample>
+    <locativeDegreeExample>tir.
+tos.</locativeDegreeExample>
+    <locativeDegreeAffixExample>
+    </locativeDegreeAffixExample>
+    <locativeDegreeRedupExample />
+    <locativePhraseAffixExample>
+    </locativePhraseAffixExample>
+    <locativePhraseExample>tij tos.
+gax tir.
+nche' tir.
+ba tir.
+la tos.
+gap tos.
+tya tir.
+tij tij.
+gax gax.</locativePhraseExample>
+    <negLocativeAdverbWordExample>
+    </negLocativeAdverbWordExample>
+    <negLocativeAdverbWordsExample>
+    </negLocativeAdverbWordsExample>
+    <negLocativeAdverbAffixExample>na-tey.
+na-dey.</negLocativeAdverbAffixExample>
+    <negLocativeAdverbExample>natijtey.
+nagaxtey.
+natyadey.
+nabadey.
+nanche'dey.</negLocativeAdverbExample>
+    <negLocativeExample>Na'ngenta xa' nche'.
+Na'ngad xa' gap.
+na'nzod xa' la.
+natijtey.
+nagaxtey.
+
+Na'ngad xa' tya.
+Na'</negLocativeExample>
+    <negLocativeAffixExample>
+    </negLocativeAffixExample>
+    <negLocativeVerbExample>
+    </negLocativeVerbExample>
+    <mannerExample>naxol.
+tsow.
+jwin.
+narax.
+nakap.
+naweja.
+naxax.
+naban.
+
+-r-, tar la yej, na'watra na, na'witra na, na'gatra na.
+ndyata.</mannerExample>
+    <mannerDegreeAffixExample>
+    </mannerDegreeAffixExample>
+    <mannerDegreeExample>tos.
+tir.
+tin.
+tsow' tsow'.
+naban naban.</mannerDegreeExample>
+    <mannerAffixDegreeExample>
+    </mannerAffixDegreeExample>
+    <mannerPhraseAffixExample>
+    </mannerPhraseAffixExample>
+    <mannerDegreePhraseExample>nawe tos.
+jwin tos.
+narax tos.
+tsow' tos.
+naxax tos.
+naxax tir.
+tsow' tir.
+naxoltos tir.
+nakap tin.</mannerDegreePhraseExample>
+    <mannerAffixDegreePhraseExample>
+    </mannerAffixDegreePhraseExample>
+    <mannerDegreeRedupExample>
+    </mannerDegreeRedupExample>
+    <mannerAffixDegreeRedupExample>
+    </mannerAffixDegreeRedupExample>
+    <reasonExample>jwan' nasa.
+tak.
+xata.
+tanye.
+tez.
+ta mod.
+taxa.
+Tanye nayi' xa' lon, che'la mbike' gax na. preguntar a la maestra.
+Tanye na'tat la di's le'n nda.
+Taxa nya xa' mzyal' na.
+</reasonExample>
+    <reasonPPExample>tak jwan' nasa.
+tak tez.</reasonPPExample>
+    <reasonSentExample>Mzyeb xa' jwan' nasa mxon' xa.
+Teja tez ta naka. 
+Tak, jwan' nasa nayi' xa'.
+Tez nzyeb la nayatla.</reasonSentExample>
+    <adverbCategory />
+  </advp>
+  <adjp checkedOff="yes" adjectiveClassifier="no" modifiers="yesManner" adjectiveDegreeClassifier="no" degreePos="before" degreeEither="unrestricted" mannerPos="before" mannerEither="unrestricted">
+    <example>naro.
+naren.
+lud.
+nagu's.
+naxub.
+nagat.
+nakap.
+gox.
+kub.
+yen'.
+nala.
+naruz.
+</example>
+    <adjectiveDegreeExample>naro tos.
+lud tos.
+nakap tos.
+nala tir.
+yen' tir.
+naruz tos.
+</adjectiveDegreeExample>
+    <adjectiveDegreeAffixExample>
+    </adjectiveDegreeAffixExample>
+    <adjectiveDegreeRedupExample>
+    </adjectiveDegreeRedupExample>
+    <adjectivePhraseAffixExample>
+    </adjectivePhraseAffixExample>
+    <adjectivePhraseExample>jwinka naroy.
+jwinka luda.
+nakap tos naruza.
+nathos naxena.
+</adjectivePhraseExample>
+    <adjectiveCategory />
+  </adjp>
+  <np checkedOff="yes" agreeNumber="no" agreeOther="no" caseN="no" caseDefault="no" caseWord="yes" caseWordPos="unknown" caseWordEither="unrestricted" caseCliticPos="before" possCaseErg="genitive" artAndDem="both" artDefOnly="no" artPl="no" demPl="no" artDemClassifier="no" artCase="no" artPos="before" artEither="unrestricted" artRequired="no" artBothRequiredPos="before" demPos="before" demEither="unrestricted" demRequired="no" demBothRequiredPos="before" artBothCooccur="different" demOrArtPos="before" demOrArtEither="unrestricted" demOrArtRequired="no" demOrArtBothRequiredPos="before" demAndArtDemPos="after" demAndArtDemEither="unrestricted" demAndArtDemRequired="no" demAndArtDemBothRequiredPos="before" demAndArtArtPos="before" demAndArtArtEither="unrestricted" demAndArtArtRequired="no" demAndArtArtBothRequiredPos="before" possMarked="no" possCliticWord="no" possCliticAffix="suffix" possCliticRequired="no" possCliticPossPos="before" possNounPos="after" possCooccur="no" possNounCaseChange="no" possAlienable="no" possAgr="no" qpPos="before" qpEither="unrestricted" qpEitherRestrictedNumPos="before" qpAgree="no" adjpPos="after" adjpEither="unrestricted" adjpCaseChange="no" adjpCaseAffix="no" adjpAgree="yes" comp="yes" compHead="left" compHeadMorpheme="left" ppPos="after">
+    <agreeNumberExample>
+    </agreeNumberExample>
+    <agreeAnimacyExample>
+    </agreeAnimacyExample>
+    <agreeClassExample>
+    </agreeClassExample>
+    <agreeGenderExample>
+    </agreeGenderExample>
+    <nominative>
+    </nominative>
+    <accusative>
+    </accusative>
+    <ergative>
+    </ergative>
+    <absolutive>
+    </absolutive>
+    <genitive>
+    </genitive>
+    <dative>
+    </dative>
+    <ablative>
+    </ablative>
+    <instrumental>
+    </instrumental>
+    <locative>
+    </locative>
+    <vocative>
+    </vocative>
+    <oblique>
+    </oblique>
+    <otherCase>
+    </otherCase>
+    <articleExample>thi.
+le'.</articleExample>
+    <demonstrativeExample>re'.
+ba.
+na. (solo objetos.)
+ya.</demonstrativeExample>
+    <articleSgExample>
+    </articleSgExample>
+    <demonstrativeSgExample>
+    </demonstrativeSgExample>
+    <articlePlExample>
+    </articlePlExample>
+    <demonstrativePlExample>
+    </demonstrativePlExample>
+    <example>Thi ma nda ba.
+Le' libr ba.
+Mza' re'.
+Jwan' na.
+Xa' ya.</example>
+    <possessorExample>yalyid na.
+yek or lud.
+liz la.
+tan' mbyo.
+
+xna' mbyo ta ngolo mdodi's nona.</possessorExample>
+    <embeddedExample>Mbak bel mza' ba.
+Xkud xna' or bixa.
+Xke's xin' xa' goxa. </embeddedExample>
+    <ppExample>Di-n David.
+Di chen' David.
+
+
+</ppExample>
+    <relClExample>Xna' or lud jwan' ta ndo yija nguj.
+Nguj xna' or lud ta ndo yija.
+Or lud ta ndo yija nguj xnan'.</relClExample>
+    <possAlienableAffixExample>xned go'.
+xud mza'.
+Xab na.
+Xo'b xa'.
+Xit ná'.</possAlienableAffixExample>
+    <qpExample>Lud tos libr jwan' na.
+Na'r tos mbak mbyo ba.
+Ben'ta re thib ayo' ner mbyo bay.</qpExample>
+    <adjpExample>Ben'ta plata libr gox nde ndo yoy.
+Reta mbak sij ba nayi'.
+Re thap or got pcha nde nol yis yek na'.
+</adjpExample>
+    <partExample>Per na'watla xlye ndo lo ya. (ndo lo ya, funciona como participio.)
+Ndo yon' or lud ngwar skwel. 
+Or lud jwan' ndo yon nda skwel. (cláusula relativa funciona como participio)
+Mbak ta nayi' ba nguj.</partExample>
+    <compExample>Yet yo.
+Yet nyel.
+Ya' yets.
+Ya yin'.
+La kwel.
+Ya ptya ngin.
+Lis yi'b yolow yez. (ejemplo de pocesión)</compExample>
+    <compPPExample>Nde mblux Dios gaz yez ro lo xyon Canaán. (Hechos 13:19)</compPPExample>
+    <compPPPossessorExample>Di chen' David.
+Yodo' chen' Dios.
+Kwent chen' thi mbak.</compPPPossessorExample>
+    <partHeadExample>Gon men.
+Wa men.</partHeadExample>
+    <partHeadSentExample>Gon men nak thi romed jwin tos.
+Wa men nak thi yalwen lo men.</partHeadSentExample>
+    <articleCategory />
+    <demonstrativeCategory />
+    <nounCategory />
+    <npContents1 checkedOff="yes" />
+    <npContents2 checkedOff="yes" />
+    <npContents3 checkedOff="yes" />
+    <npContents4 checkedOff="yes" />
+    <npContents5 checkedOff="yes" />
+    <npContents6 checkedOff="yes" />
+    <npContents7 checkedOff="yes" />
+    <npContents8 checkedOff="no" />
+    <npContents9 checkedOff="no" />
+    <npPossAgrPossFirst checked="no" />
+    <npPossAgrPossExclusive checked="no" />
+    <npPossAgrPossInclusive checked="no" />
+    <npPossAgrPossSecond checked="no" />
+    <npPossAgrPossThird checked="no" />
+    <npPossAgrPossSingular checked="no" />
+    <npPossAgrPossPlural checked="no" />
+    <npPossAgrPossDual checked="no" />
+    <npPossAgrPossMasculine checked="no" />
+    <npPossAgrPossFeminine checked="no" />
+    <npPossAgrPossNeuter checked="no" />
+    <npPossAgrPossAnimate checked="no" />
+    <npPossAgrPossInanimate checked="no" />
+    <npPossAgrPossHuman checked="no" />
+    <npPossAgrPossNonHuman checked="no" />
+    <npPossAgrPossClassClassNumber checked="no" />
+  </np>
+  <prop checkedOff="yes" pnClassifier="no" pnDeterminer="no">
+    <example>Yaxen'.
+Yezdo'.
+Yitin.
+Kelobe.
+Chuch.
+Rop San José.
+Xin' na David.
+David ba.
+</example>
+    <ppExample>Lo xyon Galilea.
+Lo David.
+</ppExample>
+    <relClExample>David, ta nayi' tosa, mbij thi men.
+Susan, jwan' pcha' ba, mbyub na'ya'.</relClExample>
+    <propAnimate1Category />
+    <propAnimate2Category />
+    <propInanimateCategory />
+  </prop>
+  <pron checkedOff="yes" pronounClassifier="no" dependentPron="yes" dependentPos="after" pronDepClassifier="no" poss="yes" possAffix="no" refl="yesVerbal" reflAffix="yes" recip="no" recipAffix="yes" demCase="no" indef="no" negIndef="no" pronMod="det" partitivePos="after">
+    <personalFirstNoCaseExample>na.
+ná'.
+na'.
+</personalFirstNoCaseExample>
+    <personalSecondNoCaseExample>lu. (más directo)
+la.
+go'.
+</personalSecondNoCaseExample>
+    <personalThirdNoCaseExample>xa'.
+or.
+jwan'.
+ma'.</personalThirdNoCaseExample>
+    <personalFirstNomSubjectExample>
+    </personalFirstNomSubjectExample>
+    <personalSecondNomSubjectExample>
+    </personalSecondNomSubjectExample>
+    <personalThirdNomSubjectExample>
+    </personalThirdNomSubjectExample>
+    <personalFirstNomObjectExample>
+    </personalFirstNomObjectExample>
+    <personalSecondNomObjectExample>
+    </personalSecondNomObjectExample>
+    <personalThirdNomObjectExample>
+    </personalThirdNomObjectExample>
+    <personalFirstNomPossessorExample>
+    </personalFirstNomPossessorExample>
+    <personalSecondNomPossessorExample>
+    </personalSecondNomPossessorExample>
+    <personalThirdNomPossessorExample>
+    </personalThirdNomPossessorExample>
+    <personalFirstNomDativeExample>
+    </personalFirstNomDativeExample>
+    <personalSecondNomDativeExample>
+    </personalSecondNomDativeExample>
+    <personalThirdNomDativeExample>
+    </personalThirdNomDativeExample>
+    <personalFirstErgSubjectTransExample>
+    </personalFirstErgSubjectTransExample>
+    <personalSecondErgSubjectTransExample>
+    </personalSecondErgSubjectTransExample>
+    <personalThirdErgSubjectTransExample>
+    </personalThirdErgSubjectTransExample>
+    <personalFirstErgSubjectIntransExample>
+    </personalFirstErgSubjectIntransExample>
+    <personalSecondErgSubjectIntransExample>
+    </personalSecondErgSubjectIntransExample>
+    <personalThirdErgSubjectIntransExample>
+    </personalThirdErgSubjectIntransExample>
+    <personalFirstErgPossessorExample>
+    </personalFirstErgPossessorExample>
+    <personalSecondErgPossessorExample>
+    </personalSecondErgPossessorExample>
+    <personalThirdErgPossessorExample>
+    </personalThirdErgPossessorExample>
+    <personalFirstErgDativeExample>
+    </personalFirstErgDativeExample>
+    <personalSecondErgDativeExample>
+    </personalSecondErgDativeExample>
+    <personalThirdErgDativeExample>
+    </personalThirdErgDativeExample>
+    <personalFirstSplitSubjectExample>
+    </personalFirstSplitSubjectExample>
+    <personalSecondSplitSubjectExample>
+    </personalSecondSplitSubjectExample>
+    <personalThirdSplitSubjectExample>
+    </personalThirdSplitSubjectExample>
+    <personalFirstSplitObjectExample>
+    </personalFirstSplitObjectExample>
+    <personalSecondSplitObjectExample>
+    </personalSecondSplitObjectExample>
+    <personalThirdSplitObjectExample>
+    </personalThirdSplitObjectExample>
+    <personaFirstlSplitPossessorExample />
+    <personalSecondSplitPossessorExample>
+    </personalSecondSplitPossessorExample>
+    <personalThirdSplitPossessorExample>
+    </personalThirdSplitPossessorExample>
+    <personaFirstlSplitDativeExample />
+    <personalSecondSplitDativeExample>
+    </personalSecondSplitDativeExample>
+    <personalThirdSplitDativeExample>
+    </personalThirdSplitDativeExample>
+    <personalFirstSplitErgExample>
+    </personalFirstSplitErgExample>
+    <personalSecondSplitErgExample>
+    </personalSecondSplitErgExample>
+    <personalThirdSplitErgExample>
+    </personalThirdSplitErgExample>
+    <personalFirstSplitAbsExample>
+    </personalFirstSplitAbsExample>
+    <personalSecondSplitAbsExample>
+    </personalSecondSplitAbsExample>
+    <personalThirdSplitAbsExample>
+    </personalThirdSplitAbsExample>
+    <personalDependentFirstNoCaseExample>-n.
+-n'.
+</personalDependentFirstNoCaseExample>
+    <personalDependentSecondNoCaseExample>-a.
+
+</personalDependentSecondNoCaseExample>
+    <personalDependentThirdNoCaseExample>-r.
+-x.
+-y. </personalDependentThirdNoCaseExample>
+    <personalDependentFirstNomSubjectExample>
+    </personalDependentFirstNomSubjectExample>
+    <personalDependentSecondNomSubjectExample>
+    </personalDependentSecondNomSubjectExample>
+    <personalDependentThirdNomSubjectExample>
+    </personalDependentThirdNomSubjectExample>
+    <personalDependentFirstNomObjectExample>
+    </personalDependentFirstNomObjectExample>
+    <personalDependentSecondNomObjectExample>
+    </personalDependentSecondNomObjectExample>
+    <personalDependentThirdNomObjectExample>
+    </personalDependentThirdNomObjectExample>
+    <personalDependentFirstNomPossessorExample>
+    </personalDependentFirstNomPossessorExample>
+    <personalDependentSecondNomPossessorExample>
+    </personalDependentSecondNomPossessorExample>
+    <personalDependentThirdNomPossessorExample>
+    </personalDependentThirdNomPossessorExample>
+    <personalDependentFirstNomDativeExample>
+    </personalDependentFirstNomDativeExample>
+    <personalDependentSecondNomDativeExample>
+    </personalDependentSecondNomDativeExample>
+    <personalDependentThirdNomDativeExample>
+    </personalDependentThirdNomDativeExample>
+    <personalDependentFirstErgSubjectTransExample>
+    </personalDependentFirstErgSubjectTransExample>
+    <personalDependentSecondErgSubjectTransExample>
+    </personalDependentSecondErgSubjectTransExample>
+    <personalDependentThirdErgSubjectTransExample>
+    </personalDependentThirdErgSubjectTransExample>
+    <personalDependentFirstErgSubjectIntransExample>
+    </personalDependentFirstErgSubjectIntransExample>
+    <personalDependentSecondErgSubjectIntransExample>
+    </personalDependentSecondErgSubjectIntransExample>
+    <personalDependentThirdErgSubjectIntransExample>
+    </personalDependentThirdErgSubjectIntransExample>
+    <personalDependentFirstErgPossessorExample>
+    </personalDependentFirstErgPossessorExample>
+    <personalDependentSecondErgPossessorExample>
+    </personalDependentSecondErgPossessorExample>
+    <personalDependentThirdErgPossessorExample>
+    </personalDependentThirdErgPossessorExample>
+    <personalDependentFirstErgDativeExample>
+    </personalDependentFirstErgDativeExample>
+    <personalDependentSecondErgDativeExample>
+    </personalDependentSecondErgDativeExample>
+    <personalDependentThirdErgDativeExample>
+    </personalDependentThirdErgDativeExample>
+    <personalDependentFirstSplitSubjectExample>
+    </personalDependentFirstSplitSubjectExample>
+    <personalDependentSecondSplitSubjectExample>
+    </personalDependentSecondSplitSubjectExample>
+    <personalDependentThirdSplitSubjectExample>
+    </personalDependentThirdSplitSubjectExample>
+    <personalDependentFirstSplitObjectExample>
+    </personalDependentFirstSplitObjectExample>
+    <personalDependentSecondSplitObjectExample>
+    </personalDependentSecondSplitObjectExample>
+    <personalDependentThirdSplitObjectExample>
+    </personalDependentThirdSplitObjectExample>
+    <personalDependentFirstlSplitPossessorExample />
+    <personalDependentSecondSplitPossessorExample>
+    </personalDependentSecondSplitPossessorExample>
+    <personalDependentThirdSplitPossessorExample>
+    </personalDependentThirdSplitPossessorExample>
+    <personalDependentFirstlSplitDativeExample />
+    <personalDependentSecondSplitDativeExample>
+    </personalDependentSecondSplitDativeExample>
+    <personalDependentThirdSplitdativeExample />
+    <personalDependentFirstSplitErgExample>
+    </personalDependentFirstSplitErgExample>
+    <personalDependentSecondSplitErgExample>
+    </personalDependentSecondSplitErgExample>
+    <personalDependentThirdSplitErgExample>
+    </personalDependentThirdSplitErgExample>
+    <personalDependentFirstSplitAbsExample>
+    </personalDependentFirstSplitAbsExample>
+    <personalDependentSecondSplitAbsExample>
+    </personalDependentSecondSplitAbsExample>
+    <personalDependentThirdSplitAbsExample>
+    </personalDependentThirdSplitAbsExample>
+    <possExample>Re ma' jwan' ndye len' na' izyo.</possExample>
+    <reflExample>le' mzin na.
+mzyo'n.
+mzyo'a.
+mzyo'r.
+le' na sa mbrengan do'.</reflExample>
+    <reflSentExample>
+    </reflSentExample>
+    <recipExample>
+    </recipExample>
+    <recipSentExample>
+    </recipSentExample>
+    <demProximalExample>
+    </demProximalExample>
+    <demMedialExample>
+    </demMedialExample>
+    <demDistalExample>
+    </demDistalExample>
+    <demProximalNomExample>
+    </demProximalNomExample>
+    <demMedialNomExample>
+    </demMedialNomExample>
+    <demDistalNomExample>
+    </demDistalNomExample>
+    <demProximalAccExample>
+    </demProximalAccExample>
+    <demMedialAccExample>
+    </demMedialAccExample>
+    <demDistalAccExample>
+    </demDistalAccExample>
+    <demProximalErgExample>
+    </demProximalErgExample>
+    <demMedialErgExample>
+    </demMedialErgExample>
+    <demDistalErgExample>
+    </demDistalErgExample>
+    <demProximalAbsExample>
+    </demProximalAbsExample>
+    <demMedialAbsExample>
+    </demMedialAbsExample>
+    <demDistalAbsExample>
+    </demDistalAbsExample>
+    <indefExample>
+    </indefExample>
+    <negIndefExample>
+    </negIndefExample>
+    <indefNPExample>re xa'.
+reta xa'.
+plata xa'.
+pla xa'.
+thi xa'.
+thi jwan'.</indefNPExample>
+    <negIndefNPExample>ngen choy.
+ngen kwana.
+Nanad.
+Nago'd.
+Nama'd.
+Naxa'd.
+Naorta.
+Nalud.
+Naná'd.
+Nana'd.
+Najwan'ta.</negIndefNPExample>
+    <standAloneNPExample>Ben'ta gay' or bix mbli gan mbla.
+Thita xa' mbli gan mbri'd.
+Reta or bix ba ndya.
+Ben'ta bata or bix ndya.
+</standAloneNPExample>
+    <pronSentExample>Ben'ta gay' or bix mbli gan mbla.
+Thita xa' mbli gan mbri'd.
+Reta or bix ba ndya.
+Ben'ta bata or bix ndya.</pronSentExample>
+    <pronRelClExample>Reta xa' ta nzi ba ya kon ná'.
+Ben'ta rop xa' ta mbwin' na ya.
+Ná' jwan' ta nli lazo'n Diosa.</pronRelClExample>
+    <partitiveExample>Ben'ta plata go ba.
+Ben' ta xa' ta nzi len' na.
+Plata or bix ta nzi nabil lay.</partitiveExample>
+    <pronounCategory />
+    <pronAgrFeatFirst checked="yes" />
+    <pronAgrFeatFirstExclusive checked="yes" />
+    <pronAgrFeatFirstInclusive checked="yes" />
+    <pronAgrFeatSecond checked="yes" />
+    <pronAgrFeatThird checked="yes" />
+    <pronAgrFeatSingular checked="yes" />
+    <pronAgrFeatDual checked="no" />
+    <pronAgrFeatPlural checked="yes" />
+    <pronAgrFeatMasculine checked="no" />
+    <pronAgrFeatFeminine checked="no" />
+    <pronAgrFeatNeuter checked="yes" />
+    <pronAgrFeatAnimate checked="yes" />
+    <pronAgrFeatMinusAnimate checked="yes" />
+    <pronAgrFeatHuman checked="yes" />
+    <pronAgrFeatMinusHuman checked="no" />
+    <pronAgrFeatClassNumber checked="no" />
+  </pron>
+  <pp checkedOff="yes" modifiers="yes" modifierType="locative" degreePos="before" degreeRestricted="unrestricted" ordinalPos="before" ordinalRestricted="unrestricted" mannerPos="before" mannerRestricted="unrestricted" locativePos="before" locativeRestricted="unrestricted" pPos="before" ppClassifier="no" pType="word" attaches="edge" alone="yes" locative="yes" ppComp="yes" tempComp="no">
+    <example>gax xan' ya.
+tyonke go' tij xis ne'y. (Josué 3:4)
+nerla tij ndanke xa' xis xa' ya.
+mdonke xa' thi xis men.</example>
+    <ppExample>lo wan.
+yek yo.
+xis xud na.
+xisa mdonke ti pla bark. (Mc 4:36)
+nyebe' xa' lo re ma nzo len' nitto'. (Gen. 1:26)</ppExample>
+    <aloneExample>¿Cho lo xa' ta'a libr?
+¿Cho lo ta'a libr?
+Ngen cho lo tej ley. (Luc. 5:14)
+Ngen cho lo gab go' jwan' ngok. (Luc 8:56)
+¿Cho xa' ta'a libr lon'?
+Nerla xa' ndyobtsa' axta lo. (Mat. 23:6)
+</aloneExample>
+    <locExample>Gax xan' ya.
+Tyonke go' tij xis ne'y. (Josué 3:4)
+Mdob xa' axta lo len' yodo'.
+Ba, len' chokwida nzo ngud.</locExample>
+    <compPPExample>Seguir investigando.
+Gon men nak thi romed jwin tos.
+Wa men nak thi yalwen lo men.</compPPExample>
+    <tempExample>
+    </tempExample>
+    <pCategory />
+  </pp>
+  <ip checkedOff="yes" proDrop="yesClitic" proDropObject="no" aux="yes" auxRequired="no" auxMany="no" auxOrder="yes" negAux="no" negAuxAffix="yes" negVAffix="yes" negAuxRequiresAux="no" auxNonfinite="no" auxNonfiniteRequired="no" auxNonfiniteOrder="yes" auxOther="no" auxOtherOrder="yes" copular="yesOptional" copularAffix="no" same="yes" compareN="yes" as="yes" compareAdj="no" comparative="yes" comparativeAdj="no" existVerb="yesOnly" diCat="pp" diOrder="direct" passive="no" passiveAgent="no" passiveAux="no" passiveAgentCat="pp" causative="no" antipassive="no" voice="no" voiceCase="no">
+    <proDropExample>nax. (se ocupa solo como respuesta)
+ndo yij.
+ndob ya.</proDropExample>
+    <impExample>¡Ptach ya'a!
+¡Mna!
+¡Pke sin'!
+¡Go che!
+¡Pken ka!
+¡Naban ka Bliy!
+¡Naxax ka god!
+
+</impExample>
+    <cliticPnExample>ngyon.
+ngwi'n.
+nchaa.
+ngyo mbyo.
+ngwi' mza'.</cliticPnExample>
+    <auxExample>Ndoyal nke' mbyoy cho xa'.
+Ndoyal ngwa mdin chan' na, tez ga'gotsa't nay.
+Tolo mdobte ndoya'r re men.
+Bere mdobte ndola yi ti dib gob.</auxExample>
+    <auxiliaryExample>ndoyal.
+nzo ryes. (prestado)
+tolo.
+bere.</auxiliaryExample>
+    <negAuxExample>
+    </negAuxExample>
+    <negAuxAffixExample>na'toyalta.
+Na'nyed.</negAuxAffixExample>
+    <negVerbExample>na'ngata.
+nangentey.
+nanzodey.
+na'toyaltay.
+na'wad.
+na'kijta.
+</negVerbExample>
+    <auxNonfiniteExample>nchola's wa. (La potencial trabaja o sirve como el infintivo.)
+nchola's kij.
+</auxNonfiniteExample>
+    <auxiliaryNonfiniteExample>
+    </auxiliaryNonfiniteExample>
+    <auxOtherExample>Ngwa todi's no xa' Isaac.
+Ngwa la xa' thabol.
+Ngwa nabdi's xa' lo Dios. (Gen. 25:22)
+Ngwa xi' xa' xin' xa'.
+Le'n ndob ya rsye'. </auxOtherExample>
+    <auxiliaryOtherExample>
+    </auxiliaryOtherExample>
+    <copularExample>Nabil nzo lazo' xa'.
+Nayi' nzo lazo' men.
+Nawe tos nak Xa' nyebe'. (Sal. 41:13)
+Nayis ndyak Chan.
+Nayis Chan.
+Nayi' mbak.
+Naro or.
+Nalat mza'.</copularExample>
+    <perceptionExample>Nawe nya mza'.
+Nakap nya ned.
+Nabew nya nit. Nit bew nit ba.</perceptionExample>
+    <sameExample>Thita kolor nya ngid la kon ngid na.
+Xaxa nya ngid la nya ngid na.
+Xapa or lud la ba or na.
+Xaja nak or la nak or na.</sameExample>
+    <sameWordExample>thita.
+xaxa.
+xata.
+taxa.
+xapa. (se refiere a tamaño)
+xaja. (se refiera más a forma de ser)</sameWordExample>
+    <sameAffixExample>
+    </sameAffixExample>
+    <compareNExample>kon.
+ba.
+nak.</compareNExample>
+    <asExample>Xaja naro xud Juan naro Juan.
+Xaja naxol or la naxol or na.
+Xaja nayi' mbe's nayi' mbak.</asExample>
+    <asWordExample>xaja.</asWordExample>
+    <compareAdjExample>
+    </compareAdjExample>
+    <comparativeExample>Gap xa ndab yek Juan lo xud Juan.
+Tyak men gap xa ndab yek Juan lo xud Juan.
+Tyak men naxol xa or lud la ba lo or na.
+Tyak men nayi' xa' mbak ke lo mbe's.
+Ndlo' mas gap ndab yek David ke lo xud David.
+Mas naro xa' xud na ke lo xud la.
+Naro xa David ke lo xud David.
+Nawe xa' nya Mart ke lo Mary.</comparativeExample>
+    <comparativeWordExample>ke.
+lo.
+</comparativeWordExample>
+    <comparativeAffixExample>
+    </comparativeAffixExample>
+    <comparativeDegExample>mas.
+xa.</comparativeDegExample>
+    <superlativeExample>Ya re' (jwan') mas naro lo rey.
+Mbak nagata mas nayi' lo re mbak.
+Jose mas naxol lo re or bix.
+</superlativeExample>
+    <superlativeAffixExample>
+    </superlativeAffixExample>
+    <superlativeDegExample>mas.
+lo.
+jwan'. (enfatiza el grado superlativo)</superlativeDegExample>
+    <existExample>Nzo'b thi libr lo mes.
+Nzi chop xa' bi' le.
+Thi mbed nax lo kam.
+Le' yet ndonke' lad ye'r di.
+Ngenga ngidtin len' yabdo.
+Ndoli xa' xis ke.
+Ndo thi men lo le.
+Nge yap lo lus.
+Ngenta jwan' wa men.</existExample>
+    <existVerbExample>nzo.
+nzi.
+ndo.
+nge.
+ndoli.
+ndonke.
+ndob.
+nzo'b.
+nzib.
+nax.
+ngenga.
+</existVerbExample>
+    <existWordExample>
+    </existWordExample>
+    <motionExample>Ngwat mza' lo le.
+Mdya'b ngon len' wan.
+Mbak nda wan.
+Xna'n ndya yi'.
+Re or bix nde mbro' yez.</motionExample>
+    <diExample>Mza' mxi' lar ka xna' mza'.
+Juan mblo nzob lo ngid.
+Juan mcho' ya nchol ka xna'sap xa'.
+Cel mtho pchux lo re xa' nzo gax.</diExample>
+    <passiveExample>Mchix yet.
+</passiveExample>
+    <auxCategory />
+    <passiveAgentPExample>
+    </passiveAgentPExample>
+    <passiveAuxExample>
+    </passiveAuxExample>
+    <causativeExample>
+    </causativeExample>
+    <causativeAffixExample>
+    </causativeAffixExample>
+    <antipassiveExample>
+    </antipassiveExample>
+    <antipassiveAffixExample>
+    </antipassiveAffixExample>
+    <voiceExample>
+    </voiceExample>
+    <actorVoiceExample>
+    </actorVoiceExample>
+    <objectVoiceExample>
+    </objectVoiceExample>
+    <dativeVoiceExample>
+    </dativeVoiceExample>
+    <goalVoiceExample>
+    </goalVoiceExample>
+    <instrumentalVoiceExample />
+    <locativeVoiceExample>
+    </locativeVoiceExample>
+    <verbCategory />
+    <ipContents1 checkedOff="yes" />
+    <ipContents2 checkedOff="yes" />
+    <ipContents3 checkedOff="yes" />
+    <ipContents4 checkedOff="yes" />
+    <ipContents5 checkedOff="yes" />
+    <ipContents6 checkedOff="yes" />
+    <ipContents7 checkedOff="yes" />
+    <ipContents8 checkedOff="yes" />
+    <ipContents9 checkedOff="no" />
+    <ipContents10 checkedOff="no" />
+    <ipAgrFeatFirstSubject checked="yes" />
+    <ipAgrFeatFirstObject checked="no" />
+    <ipAgrFeatFirstErgative checked="no" />
+    <ipAgrFeatFirstAbsolutive checked="no" />
+    <ipAgrFeatFirstExclusiveSubject checked="yes" />
+    <ipAgrFeatFirstExclusiveObject checked="no" />
+    <ipAgrFeatFirstExclusiveErgative checked="no" />
+    <ipAgrFeatFirstExclusiveAbsolutive checked="no" />
+    <ipAgrFeatFirstInclusiveSubject checked="yes" />
+    <ipAgrFeatFirstInclusiveObject checked="no" />
+    <ipAgrFeatFirstInclusiveErgative checked="no" />
+    <ipAgrFeatFirstInclusiveAbsolutive checked="no" />
+    <ipAgrFeatSecondSubject checked="yes" />
+    <ipAgrFeatSecondObject checked="no" />
+    <ipAgrFeatSecondErgative checked="no" />
+    <ipAgrFeatSecondAbsolutive checked="no" />
+    <ipAgrFeatThirdSubject checked="yes" />
+    <ipAgrFeatThirdObject checked="no" />
+    <ipAgrFeatThirdErgative checked="no" />
+    <ipAgrFeatThirdAbsolutive checked="no" />
+    <ipAgrFeatSingularSubject checked="yes" />
+    <ipAgrFeatSingularObject checked="no" />
+    <ipAgrFeatSingularErgative checked="no" />
+    <ipAgrFeatSingularAbsolutive checked="no" />
+    <ipAgrFeatDualSubject checked="no" />
+    <ipAgrFeatDualObject checked="no" />
+    <ipAgrFeatDualErgative checked="no" />
+    <ipAgrFeatDualAbsolutive checked="no" />
+    <ipAgrFeatPluralSubject checked="yes" />
+    <ipAgrFeatPluralObject checked="no" />
+    <ipAgrFeatPluralErgative checked="no" />
+    <ipAgrFeatPluralAbsolutive checked="no" />
+    <ipAgrFeatMasculineSubject checked="no" />
+    <ipAgrFeatMasculineObject checked="no" />
+    <ipAgrFeatMasculineErgative checked="no" />
+    <ipAgrFeatMasculineAbsolutive checked="no" />
+    <ipAgrFeatFeminineSubject checked="no" />
+    <ipAgrFeatFeminineObject checked="no" />
+    <ipAgrFeatFeminineErgative checked="no" />
+    <ipAgrFeatFeminineAbsolutive checked="no" />
+    <ipAgrFeatNeuterSubject checked="no" />
+    <ipAgrFeatNeuterObject checked="no" />
+    <ipAgrFeatNeuterErgative checked="no" />
+    <ipAgrFeatNeuterAbsolutive checked="no" />
+    <ipAgrFeatAnimateSubject checked="yes" />
+    <ipAgrFeatAnimateObject checked="yes" />
+    <ipAgrFeatAnimateErgative checked="no" />
+    <ipAgrFeatAnimateAbsolutive checked="no" />
+    <ipAgrFeatMinusAnimateSubject checked="no" />
+    <ipAgrFeatMinusAnimateObject checked="no" />
+    <ipAgrFeatMinusAnimateErgative checked="no" />
+    <ipAgrFeatMinusAnimateAbsolutive checked="no" />
+    <ipAgrFeatHumanSubject checked="no" />
+    <ipAgrFeatHumanObject checked="no" />
+    <ipAgrFeatHumanErgative checked="no" />
+    <ipAgrFeatHumanAbsolutive checked="no" />
+    <ipAgrFeatMinusHumanSubject checked="no" />
+    <ipAgrFeatMinusHumanObject checked="no" />
+    <ipAgrFeatMinusHumanErgative checked="no" />
+    <ipAgrFeatMinusHumanAbsolutive checked="no" />
+    <ipAgrFeatClassClassNumberSubject checked="no" />
+    <ipAgrFeatClassClassNumberObject checked="no" />
+    <ipAgrFeatClassClassNumberErgative checked="no" />
+    <ipAgrFeatClassClassNumberAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeAnimalSubject checked="no" />
+    <ipAgrFeatClassClassTypeInsectSubject checked="no" />
+    <ipAgrFeatClassClassTypeLiquidSubject checked="no" />
+    <ipAgrFeatClassClassTypeRoundSubject checked="no" />
+    <ipAgrFeatClassClassTypeCylinderSubject checked="no" />
+    <ipAgrFeatClassClassTypeSphericalSubject checked="no" />
+    <ipAgrFeatClassClassTypeTreeSubject checked="no" />
+    <ipAgrFeatClassClassTypeWoodSubject checked="no" />
+    <ipAgrFeatClassClassTypeOtherSubject checked="no" />
+    <ipAgrFeatClassClassTypeAnimalObject checked="no" />
+    <ipAgrFeatClassClassTypeInsectObject checked="no" />
+    <ipAgrFeatClassClassTypeLiquidObject checked="no" />
+    <ipAgrFeatClassClassTypeRoundObject checked="no" />
+    <ipAgrFeatClassClassTypeCylinderObject checked="no" />
+    <ipAgrFeatClassClassTypeSphericalObject checked="no" />
+    <ipAgrFeatClassClassTypeTreeObject checked="no" />
+    <ipAgrFeatClassClassTypeWoodObject checked="no" />
+    <ipAgrFeatClassClassTypeOtherObject checked="no" />
+    <ipAgrFeatClassClassTypeAnimalErgative checked="no" />
+    <ipAgrFeatClassClassTypeInsectErgative checked="no" />
+    <ipAgrFeatClassClassTypeLiquidErgative checked="no" />
+    <ipAgrFeatClassClassTypeRoundErgative checked="no" />
+    <ipAgrFeatClassClassTypeCylinderErgative checked="no" />
+    <ipAgrFeatClassClassTypeSphericalErgative checked="no" />
+    <ipAgrFeatClassClassTypeTreeErgative checked="no" />
+    <ipAgrFeatClassClassTypeWoodErgative checked="no" />
+    <ipAgrFeatClassClassTypeOtherErgative checked="no" />
+    <ipAgrFeatClassClassTypeAnimalAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeInsectAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeLiquidAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeRoundAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeCylinderAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeSphericalAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeTreeAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeWoodAbsolutive checked="no" />
+    <ipAgrFeatClassClassTypeOtherAbsolutive checked="no" />
+    <ipInflFeatPresent checked="no" />
+    <ipInflFeatPast checked="no" />
+    <ipInflFeatFuture checked="yes" />
+    <ipInflFeatContemplative checked="no" />
+    <ipInflFeatContrafactual checked="no" />
+    <ipInflFeatCompletive checked="yes" />
+    <ipInflFeatContinuative checked="no" />
+    <ipInflFeatHabitual checked="yes" />
+    <ipInflFeatImperfective checked="no" />
+    <ipInflFeatIncompletive checked="no" />
+    <ipInflFeatPerfect checked="no" />
+    <ipInflFeatPerfective checked="no" />
+    <ipInflFeatPotential checked="yes" />
+    <ipInflFeatProgressive checked="yes" />
+    <ipInflFeatStative checked="yes" />
+    <ipInflFeatUnreal checked="yes" />
+    <ipInflFeatDeclarative checked="yes" />
+    <ipInflFeatImperative checked="yes" />
+    <ipInflFeatInterrogative checked="yes" />
+    <ipInflFeatIrrealis checked="yes" />
+    <ipInflFeatRealis checked="yes" />
+    <ipInflFeatAntipassive checked="no" />
+    <ipInflFeatCausative checked="yes" />
+    <ipInflFeatFinite checked="no" />
+    <ipInflFeatMinusFinite checked="no" />
+    <ipInflFeatPassive checked="no" />
+    <ipInflFeatGerund checked="yes" />
+    <ipInflFeatParticiple checked="yes" />
+    <ipInflFeatActorVoice checked="no" />
+    <ipInflFeatDativeVoice checked="no" />
+    <ipInflFeatGoalVoice checked="no" />
+    <ipInflFeatInstrumentalVoice checked="no" />
+    <ipInflFeatLocativeVoice checked="no" />
+    <ipInflFeatObjectVoice checked="no" />
+  </ip>
+  <comp checkedOff="yes" comp="no" compWord="yes" compCliticPos="before" compCliticAttaches="edge" compPos="before" compEitherRestricted="unrestricted">
+    <finiteExample>Wen nak xa' ba ndyak na.
+Mnen na nayi' xnan'.</finiteExample>
+    <finiteOrNonfiniteExample>
+    </finiteOrNonfiniteExample>
+    <DPCPExample>
+    </DPCPExample>
+    <nonfiniteExample>
+    </nonfiniteExample>
+    <nonfiniteProDropExample>
+    </nonfiniteProDropExample>
+    <nonfiniteCPOrProDropExample>
+    </nonfiniteCPOrProDropExample>
+    <raisingExample>
+    </raisingExample>
+    <causeExample>
+    </causeExample>
+    <quotationExample>
+    </quotationExample>
+    <otherExample>Nzyeb mbak lox ndlya mdi'. (Dos verbos temer) 
+Ndyen mbal gox gu nit ko'b.(Dos verbos quiere)
+Mbin mbak mek mbrez thi bur. (Dos verbos escucha)</otherExample>
+  </comp>
+  <q checkedOff="yes" mainYN="yes" mainYNWord="yes" mainYNCliticPos="before" mainYNCliticAttaches="edge" mainYNPos="before" mainYNEitherRestricted="unrestricted" mainYNAuxPos="before" embYN="yes" embYNWord="yes" embYNCliticPos="before" embYNCliticAttaches="edge" embYNPos="before" embYNEitherRestricted="unrestricted" embYNAuxPos="before" whDemPos="before" whArtPos="before" whDegAdjPos="before" whDegQPos="before" contFront="before" mainCont="no" mainContWord="no" mainContCliticPos="before" mainContCliticAttaches="edge" mainContPos="before" mainContEitherRestricted="unrestricted" mainContVSOBeforeWh="no" mainContVSOBeforeWhNoEndRestricted="unrestricted" mainContRequired="no" mainContAuxPos="before" mainContAuxRequired="no" embCont="yes" embContWord="yes" embContCliticPos="before" embContCliticAttaches="edge" embContPos="before" embContEitherRestricted="unrestricted" embContVSOBeforeWh="some" embContVSOBeforeWhNoEndRestricted="unrestricted" embContRequired="no" embContAuxPos="before" embContAuxRequired="no">
+    <example>¿Cho ndaa lo xbi'?
+¿Cho mxi' xa' jwan' wa ma'?
+¿Cho mxi' Chan jwan' tala's Chan lo xna' Chan?
+¿Cho maestr jwan' na?
+
+Las respuestas de abajo no son las indicadas para nuestro zapoteco: Cho + orden de oración normal indica pregunta si, no.
+investigar cha.
+
+</example>
+    <embYNExample>Nyen' lin la te xa'.
+Cha mnea la na'yeta xa'.  ?
+Mne ney tez le'a ryo'te.
+Ndlin xgab, nyen' mzin xa'.
+Nda' xgaba yek na tez na'ngwad xa'.
+Tez lipa nak la xin' Dios,  pke' brink nche'ya. ?</embYNExample>
+    <contentExample>¿Xa nya mbyo nke'y cho mbak?
+¿Cho xa' mke'y cho mbak?
+¿Cho taja mke'y cho mbak?
+¿Cho cho mke' mbyoy?
+¿Cho kwan mke' mbyoy chon'?
+¿Poa yed xa'?
+¿Ma xa' gox?</contentExample>
+    <embContentExample>Na mne cho mke'y cho mbak.
+Ndlin xgab, poa ye'd xa'.
+Nyabdi's na nyen' cho kwan nchola's mbyo.</embContentExample>
+    <who>cho-y.
+Cho.</who>
+    <what>kwan.</what>
+    <why>cho kwan.</why>
+    <where>plo.
+pa.
+ploja.
+ma.</where>
+    <when>pol.
+poa.</when>
+    <how>xa-mod.
+xa.</how>
+    <howMany>plopa.
+plal.
+plaa.
+pla.</howMany>
+    <which>xa nya-y.</which>
+    <whose>cho-chan'.
+cho nak chan'.</whose>
+    <other>cho.
+cha.
+</other>
+    <whPronCategory />
+  </q>
+  <relcl checkedOff="yes" exist="yes" clausePos="after" type="CP" compCP="no" whAndComp="no" relWord="yes" relCliticPos="before" relCompSame="no" relCompPos="before" relCompEitherRestricted="unrestricted" headless="no">
+    <example>jwan' mda.
+jwan' mzin.
+jwan' nzi.
+Mbi' jwan' mzin nda wis yolow.
+Le' men jwan' nchon xki's na.
+Xa' jwan' ta nayi' ya.
+</example>
+    <sentExample>Mary mbyed no jwan' mda ná' na wiz. (sin nucleo)
+Le' men jwan' nchon xki's na na'luxta.
+Mbi' jwan' mzin nda wis yolow ngwa lis yi'b.
+Xa' jwan' ta nayi' ya ngwa yad yo'.
+
+preguntar a la maestra acerca de los tipos.
+
+</sentExample>
+    <headlessExample>
+    </headlessExample>
+  </relcl>
+  <advcl checkedOff="yes" advOrNPPos="after">
+    <tempSentExample>Xata zya axta naya nabil nzo lazo' Juan.
+Xata mdobte sman, nzo Juan yo.
+Nawe ndob Juan lo ta mbere xa'.
+Sen' lo ngotu xa', reta ten' nda xa' ndanke mbak xis xa'.
+Sen lo mne mbri'd xa' lo nitto' mzin xa' ten' nak lo xyon Genezaret. Mc 6:53
+</tempSentExample>
+  </advcl>
+  <neg checkedOff="yes" subjVerbRequired="no" advVerbRequired="no" auxVerbRequired="no" type="concord" polarityItems="yes" objVerbRequired="other" negFront="no">
+    <degreeSubjExample>nared or bix.
+naben'ta xa bay.
+nakta ben'ta luy.
+
+</degreeSubjExample>
+    <determinerSubjExample>Nek thib or bix na'ngad lo xbi'.
+Nek lud nzob na'ngenta.
+Nek thib xa' na'nzinta lo yalwa.
+Nambakta mbli jwan' na.
+
+</determinerSubjExample>
+    <pronounSubjExample>Ngen cho nak yo.
+Ngen kwan nak lo xbi'.
+Nanad mbliy.
+</pronounSubjExample>
+    <advTemporalExample>Tera' sin xa'.
+Nara' aka.
+Neklud na'aktey.</advTemporalExample>
+    <advLocativeExample>Nached nzo xa'.
+Natyad nax ma'.</advLocativeExample>
+    <auxExample>
+    </auxExample>
+    <auxAffixExample>Na'toyalta wa xa'. (Mc 7:3)
+Na'toyalta tyoxkwa'y.
+Na'nyed tye xa'.</auxAffixExample>
+    <verbAffixExample>Na'ngata xa' yal' la.
+Na'kijta or lud naya,
+Na'wad ngon nzob.
+Na'ngaknayi'tra nitto'. (Jonas 1:15)
+Na'toyalta wa xa' yej.</verbAffixExample>
+    <npiPronounExample>
+    </npiPronounExample>
+    <npiDeterminerExample>
+    </npiDeterminerExample>
+    <npiTemporalExample>
+    </npiTemporalExample>
+    <npiLocativeExample>
+    </npiLocativeExample>
+    <objectExample>Ngen cho lo ta ney.
+Ngen cho mbwi' Juan.
+Nekthib xa' na'ngwi'd Juan.
+
+</objectExample>
+    <indirectObjectExample>Ngen cho lo nda' Mary jwan'.
+Nek thib mbak na'ndad Juan jwan' ngwa.</indirectObjectExample>
+    <subjectObjectExample>Ngen cho ngwi' jwan'.
+Ngen cho ngwa neklud jwan'.</subjectObjectExample>
+  </neg>
+  <coord checkedOff="yes" conjWord="yes" conjPos="before" noConj="yes" gap="yes">
+    <and>nde.
+na.</and>
+    <or>o</or>
+    <but>per.
+le'.
+tenye.
+che'la.
+</but>
+    <andOr>
+    </andOr>
+    <with>kon.
+-no.</with>
+    <other>sa.
+zyasa.
+ta.
+tak.
+tes.
+tiska.
+jwan' nasa.
+noga.
+taga.
+taxa.
+laja.</other>
+    <either>one.
+oneja.</either>
+    <neither>nek.
+ne'.</neither>
+    <nor>neka.
+nek.
+ne'.
+</nor>
+    <sentExample>Xna'n mbya yez nde naya ngolo mzin xa'.
+One cho tal na one cho xin' na tel' na.
+¿Cho sin' nchap la nde cho le yez la? Jon. 1:8
+Nde re mbi' ya mchal xa' se're xa' bark ro yux per na'ndlid xa' gan tak le' nitto' masra' nayi'.
+</sentExample>
+    <vpExample>Yer ngwa kwan' mbak nde xaga ma' ngosal.
+Esaú mbere ndya ngwa god. (Gen. 27:30)
+Le' Pey mka's nde nchab: ... Mc. 14:68 
+Na'akta wa ná' ngud, nek gal na'y.
+Taa than per na'yalthata na.
+</vpExample>
+    <dpExample>Xna'n nda ka ta' nde kon nzob.
+Nakin' ya ná' kon re or bix ná', re or bi' nde re or got.
+Mark kon Juan ngwa thij.
+Ne' Mark ne' Juan ngathijta.
+(los sustantivos no se pueden unir con pero)</dpExample>
+    <coordppExample>Yer mke' karrel dib ned nde dib ro yo'.
+One cho yodo' o lis la zyal' na'. 
+(No encontramos frases preposicionales unidas con per)</coordppExample>
+    <adjExample>Xin' na ngeno ti mbak nagat nzo nakis.
+Juan ncha las ti lar nane o nakis
+Ned ba nakap tos nya nde ned lud tosa.
+Mbed ba nachar nde nagus or nde nawe tos nyar.
+</adjExample>
+    <listExample>Pedra, Juana, Cira nde Leo.
+Pedra, Juana, Cira o Leowa.
+Pedr kon Juana o Cir kon Leowa.
+Ti bicha, chop mbaka nde ti ngida per nanod machina.
+ 
+</listExample>
+    <appositiveExample>Juan, xa' ta nok lar nane ba, nak maestr.
+Mbyo lud, ta chin yekna ba, nak xin' na.
+</appositiveExample>
+    <comparativeSentExample>Gap xa ndab yek Juan lo xud Juan.
+Tyak men gap xa ndab yek Juan lo xud Juan.
+Tyak men naxol xa or lud la ba lo or na.
+Tyak men nayi' xa' mbak ke lo mbe's.
+Ndlo' mas gap ndab yek David ke lo xud David.
+Mas naro xa' xud na ke lo xud la.
+Naro xa David ke lo xud David.
+Nawe xa' nya Mart ke lo Mary.</comparativeSentExample>
+    <conjunctionCategory />
+  </coord>
+  <focus checkedOff="yes" topic="yes" topicPos="before" topicMarker="yesWord" topicMarkerPos="before" topicMarkerRequired="no" topicMarkerEither="no" focus="no" focusPos="before" focusMarker="no" focusMarkerPos="before" focusMarkerRequired="no" focusMarkerEither="no">
+    <topicExample>Xna'n, ngoti'n.
+Or bi' ndyen na kij non.
+Gon, jwan mas jwin nke Pey.</topicExample>
+    <topicMarkerExample>le'.
+</topicMarkerExample>
+    <focusExample>
+    </focusExample>
+    <focusMarkerExample>
+    </focusMarkerExample>
+  </focus>
+  <excl checkedOff="no" exclM="no" exclMPos="before" exclMEither="no">
+    <greetExample>Chan go'.
+Dyux na.
+Dyux tad.
+Dyux xin.
+Nda sal' na'.
+Ndyan.
+Ndya ná'.
+Ndyan'.</greetExample>
+    <intjExample>¡Bxon'!
+¡Bike!
+¡Wi, wi'!
+¡Tsow, tsow!</intjExample>
+    <yesExample>mbay.
+aa'.
+
+</yesExample>
+    <noExample>a'a'.
+ngen.¡</noExample>
+    <exclExample>¡Wen tos nde go'!
+¡Jwin tosa!
+¡Tli gan na!</exclExample>
+    <exclMExample>
+    </exclMExample>
+  </excl>
+</paws>
