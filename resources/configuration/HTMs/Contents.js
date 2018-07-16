@@ -45,7 +45,7 @@ function displayStatus(idOfItem, strElem) {
 	attr = pawsApp.getAnswerValue("//" + strElem + "/@checkedOff");
 	sImg = "&nbsp;&nbsp;<img src='";
 	if (attr == "no") {
-		sImg = sImg + "UnCheckedOff.gi'>";
+		sImg = sImg + "UnCheckedOff.gif'>";
 	} else {
 		sImg = sImg + "CheckedOff.gif'>";
 	}
