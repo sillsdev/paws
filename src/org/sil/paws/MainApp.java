@@ -35,6 +35,7 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
@@ -69,6 +70,9 @@ public class MainApp extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
+			Alert startupAlert = createStartupAlert();
+			startupAlert.show();
+
 			applicationPreferences = new ApplicationPreferences(this);
 			locale = new Locale(applicationPreferences.getLastLocaleLanguage());
 			language = new Language();
@@ -78,10 +82,23 @@ public class MainApp extends Application {
 			this.primaryStage.getIcons().add(getNewMainIconImage());
 			restoreWindowSettings();
 
-			initRootLayout();
+			initRootLayout(startupAlert);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	// This dialog is a kind of splash screen that tells the user to wait
+	// until the main app is loaded
+	private Alert createStartupAlert() {
+		Alert startupAlert = new Alert(AlertType.INFORMATION);
+		startupAlert.setTitle("PAWS");
+		startupAlert.setHeaderText("PAWS Starter Kit");
+		startupAlert.setContentText("Please wait;\nFavor de esperar;\nS'il vous plaît, attendez");
+		startupAlert.setGraphic(new ImageView(this.getClass().getResource("resources/images/SILLogo.png").toString()));
+		Stage stage = (Stage) startupAlert.getDialogPane().getScene().getWindow();
+		stage.getIcons().add(getNewMainIconImage());
+		return startupAlert;
 	}
 
 	public static void main(String[] args) {
@@ -92,7 +109,7 @@ public class MainApp extends Application {
 	/**
 	 * Initializes the root layout.
 	 */
-	public void initRootLayout() {
+	public void initRootLayout(Alert startupAlert) {
 		try {
 			// Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
@@ -126,6 +143,7 @@ public class MainApp extends Application {
 				controller.setLanguage(language);
 				controller.showLanguageLastPage();
 			} else {
+				closeStartupAlert(startupAlert);
 				boolean fSucceeded = askUserForNewOrToOpenExistingFile(bundle, controller);
 				if (!fSucceeded) {
 					System.exit(0);
@@ -135,11 +153,18 @@ public class MainApp extends Application {
 			// updateStatusBarNumberOfItems("");
 
 			primaryStage.show();
+			closeStartupAlert(startupAlert);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
 			System.out.println("non-IO Exception caught!");
 			e.printStackTrace();
+		}
+	}
+
+	private void closeStartupAlert(Alert startupAlert) {
+		if (startupAlert.isShowing()) {
+			startupAlert.close();
 		}
 	}
 
