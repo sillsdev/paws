@@ -799,7 +799,7 @@ public class RootLayoutController implements Initializable {
 		}
 	}
 
-	protected String tryToGetDefaultDirectoryPath() {
+	public String tryToGetDefaultDirectoryPath() {
 		String sDirectoryPath = System.getProperty("user.home") + File.separator;
 		File dir = new File(sDirectoryPath);
 		if (dir.exists()) {

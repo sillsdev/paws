@@ -263,6 +263,8 @@ public class MainApp extends Application {
 				fSucceeded = false;
 			}
 		} else if (result.get() == buttonOpenExistingLanguage) {
+			String defaultDirectory = controller.tryToGetDefaultDirectoryPath();
+			applicationPreferences.setLastOpenedDirectoryPath(defaultDirectory);
 			controller.doFileOpen(true);
 			controller.setLanguage(language);
 			controller.showLanguageLastPage();
