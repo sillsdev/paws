@@ -94,7 +94,7 @@ public class MainApp extends Application {
 		Alert startupAlert = new Alert(AlertType.INFORMATION);
 		startupAlert.setTitle("PAWS");
 		startupAlert.setHeaderText("PAWS Starter Kit");
-		startupAlert.setContentText("Please wait;\nFavor de esperar;\nS'il vous plaît, attendez");
+		startupAlert.setContentText("Please wait;\nFavor de esperar;\nS'il vous plaÃ®t, attendez");
 		startupAlert.setGraphic(new ImageView(this.getClass().getResource("resources/images/SILLogo.png").toString()));
 		Stage stage = (Stage) startupAlert.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(getNewMainIconImage());
