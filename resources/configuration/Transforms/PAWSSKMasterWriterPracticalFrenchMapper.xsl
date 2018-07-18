@@ -70,25 +70,25 @@
 		Include other templates
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	-->
-	<xsl:include href="WriterFrPracticalIntroAndTypology.xsl"/>
-	<xsl:include href="WriterFrPracticalN.xsl"/>
-	<xsl:include href="WriterFrPracticalV.xsl"/>
-	<xsl:include href="WriterFrPracticalAdvP.xsl"/>
-	<xsl:include href="WriterFrPracticalAdjP.xsl"/>
-	<xsl:include href="WriterFrPracticalNP.xsl"/>
-	<xsl:include href="WriterFrPracticalProp.xsl"/>
-	<xsl:include href="WriterFrPracticalPron.xsl"/>
-	<xsl:include href="WriterFrPracticalPP.xsl"/>
-	<xsl:include href="WriterFrPracticalIP.xsl"/>
-	<xsl:include href="WriterFrPracticalComp.xsl"/>
-	<xsl:include href="WriterFrPracticalQues.xsl"/>
-	<xsl:include href="WriterFrPracticalRelCl.xsl"/>
-	<xsl:include href="WriterFrPracticalAdvCl.xsl"/>
-	<xsl:include href="WriterFrPracticalNeg.xsl"/>
-	<xsl:include href="WriterFrPracticalCoord.xsl"/>
-	<xsl:include href="WriterFrPracticalFocus.xsl"/>
-	<xsl:include href="WriterFrPracticalExcl.xsl"/>
-	<xsl:include href="WriterFrPracticalAppdx.xsl"/>
+	<xsl:include href="WriterFRPracticalIntroAndTypology.xsl"/>
+	<xsl:include href="WriterFRPracticalN.xsl"/>
+	<xsl:include href="WriterFRPracticalV.xsl"/>
+	<xsl:include href="WriterFRPracticalAdvP.xsl"/>
+	<xsl:include href="WriterFRPracticalAdjP.xsl"/>
+	<xsl:include href="WriterFRPracticalNP.xsl"/>
+	<xsl:include href="WriterFRPracticalProp.xsl"/>
+	<xsl:include href="WriterFRPracticalPron.xsl"/>
+	<xsl:include href="WriterFRPracticalPP.xsl"/>
+	<xsl:include href="WriterFRPracticalIP.xsl"/>
+	<xsl:include href="WriterFRPracticalComp.xsl"/>
+	<xsl:include href="WriterFRPracticalQues.xsl"/>
+	<xsl:include href="WriterFRPracticalRelCl.xsl"/>
+	<xsl:include href="WriterFRPracticalAdvCl.xsl"/>
+	<xsl:include href="WriterFRPracticalNeg.xsl"/>
+	<xsl:include href="WriterFRPracticalCoord.xsl"/>
+	<xsl:include href="WriterFRPracticalFocus.xsl"/>
+	<xsl:include href="WriterFRPracticalExcl.xsl"/>
+	<xsl:include href="WriterFRPracticalAppdx.xsl"/>
 	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 		DoInterlinearGlossLines
