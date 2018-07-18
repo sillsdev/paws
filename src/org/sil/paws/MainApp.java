@@ -21,10 +21,12 @@ import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.view.RootLayoutController;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -54,6 +56,7 @@ public class MainApp extends Application {
 	static String[] userArgs;
 	private XMLBackEndProvider xmlBackEndProvider;
 	private Language language;
+	private Alert startupAlert;
 
 	public Stage getPrimaryStage() {
 		return primaryStage;
@@ -69,20 +72,24 @@ public class MainApp extends Application {
 
 	@Override
 	public void start(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+		this.primaryStage.setTitle(kApplicationTitle);
+		this.primaryStage.getIcons().add(getNewMainIconImage());
 		try {
-			Alert startupAlert = createStartupAlert();
-			startupAlert.show();
+			Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					createSplashScreen();
 
-			applicationPreferences = new ApplicationPreferences(this);
-			locale = new Locale(applicationPreferences.getLastLocaleLanguage());
-			language = new Language();
-			xmlBackEndProvider = new XMLBackEndProvider(language, locale);
-			this.primaryStage = primaryStage;
-			this.primaryStage.setTitle(kApplicationTitle);
-			this.primaryStage.getIcons().add(getNewMainIconImage());
-			restoreWindowSettings();
+					applicationPreferences = new ApplicationPreferences(this);
+					locale = new Locale(applicationPreferences.getLastLocaleLanguage());
+					language = new Language();
+					xmlBackEndProvider = new XMLBackEndProvider(language, locale);
+					restoreWindowSettings();
 
-			initRootLayout(startupAlert);
+					initRootLayout();
+				}
+			});
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -90,15 +97,17 @@ public class MainApp extends Application {
 
 	// This dialog is a kind of splash screen that tells the user to wait
 	// until the main app is loaded
-	private Alert createStartupAlert() {
-		Alert startupAlert = new Alert(AlertType.INFORMATION);
+	private void createSplashScreen() {
+		startupAlert = new Alert(AlertType.INFORMATION);
 		startupAlert.setTitle("PAWS");
 		startupAlert.setHeaderText("PAWS Starter Kit");
-		startupAlert.setContentText("Please wait;\nFavor de esperar;\nS'il vous plaît, attendez");
-		startupAlert.setGraphic(new ImageView(this.getClass().getResource("resources/images/SILLogo.png").toString()));
+		// following does not show in installed version
+//		startupAlert.setContentText("Please wait;\nFavor de esperar;\nS'il vous plaît, attendez");
+//		startupAlert.setGraphic(new ImageView(this.getClass().getResource("resources/images/SILLogo.png").toString()));
 		Stage stage = (Stage) startupAlert.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(getNewMainIconImage());
-		return startupAlert;
+		stage.initStyle(StageStyle.UNIFIED);
+		stage.show();
 	}
 
 	public static void main(String[] args) {
@@ -109,7 +118,7 @@ public class MainApp extends Application {
 	/**
 	 * Initializes the root layout.
 	 */
-	public void initRootLayout(Alert startupAlert) {
+	public void initRootLayout() {
 		try {
 			// Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
@@ -143,7 +152,7 @@ public class MainApp extends Application {
 				controller.setLanguage(language);
 				controller.showLanguageLastPage();
 			} else {
-				closeStartupAlert(startupAlert);
+				closeStartupAlert();
 				boolean fSucceeded = askUserForNewOrToOpenExistingFile(bundle, controller);
 				if (!fSucceeded) {
 					System.exit(0);
@@ -153,7 +162,7 @@ public class MainApp extends Application {
 			// updateStatusBarNumberOfItems("");
 
 			primaryStage.show();
-			closeStartupAlert(startupAlert);
+			closeStartupAlert();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
@@ -162,7 +171,7 @@ public class MainApp extends Application {
 		}
 	}
 
-	private void closeStartupAlert(Alert startupAlert) {
+	private void closeStartupAlert() {
 		if (startupAlert.isShowing()) {
 			startupAlert.close();
 		}
