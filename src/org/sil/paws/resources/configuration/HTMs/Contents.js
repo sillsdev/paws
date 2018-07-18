@@ -45,9 +45,9 @@ function displayStatus(idOfItem, strElem) {
 	attr = pawsApp.getAnswerValue("//" + strElem + "/@checkedOff");
 	sImg = "&nbsp;&nbsp;<img src='";
 	if (attr == "no") {
-		sImg = sImg + "UnCheckedOff.GIF'>";
+		sImg = sImg + "UnCheckedOff.gif'>";
 	} else {
-		sImg = sImg + "CheckedOff.GIF'>";
+		sImg = sImg + "CheckedOff.gif'>";
 	}
 	idOfItem.innerHTML = sImg;
 }
@@ -150,10 +150,10 @@ function StatusClicked(idOfItem, strElem) {
 	attr = pawsApp.getAnswerValue(xpath);
 	sImg = "&nbsp;&nbsp;<img src='";
 	if (attr == "no") {
-		sImg = sImg + "CheckedOff.GIF'>";
+		sImg = sImg + "CheckedOff.gif'>";
 		sTemp = "yes";
 	} else {
-		sImg = sImg + "UnCheckedOff.GIF'>";
+		sImg = sImg + "UnCheckedOff.gif'>";
 		sTemp = "no";
 	}
 	pawsApp.setAnswerValue(xpath, sTemp);
