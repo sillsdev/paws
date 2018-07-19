@@ -16,12 +16,12 @@
 				<include name="controlsfx-8.40.12license.txt" />
 			</fileset>
 			<fileset dir="../saxon">
-				<filename name="saxon9he.jar"/>
-				<filename name="notices/CERN.txt"/>
-				<filename name="notices/JAMESCLARK.txt"/>
-				<filename name="notices/LICENSE.txt"/>
-				<filename name="notices/THAI.txt"/>
-				<filename name="notices/UNICODE.txt"/>
+				<include name="saxon9he.jar"/>
+				<include name="saxonCERN.txt"/>
+				<include name="saxonJAMESCLARK.txt"/>
+				<include name="saxonLICENSE.txt"/>
+				<include name="saxonTHAI.txt"/>
+				<include name="saxonUNICODE.txt"/>
 			</fileset>
 <!--			<fileset dir="${java.home}/bin">
 				<include name="java.exe"/>
