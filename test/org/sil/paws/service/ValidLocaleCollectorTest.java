@@ -41,9 +41,9 @@ public class ValidLocaleCollectorTest {
 
 	@Test
 	public void collectLocalesTest() {
-		checkALocale("en", "English", "French (français)", "Spanish (español)");
-		checkALocale("es", "inglés (English)", "francés (français)", "español");
-		checkALocale("fr", "anglais (English)", "français", "espagnol (español)");
+		checkALocale("en", "English", "French (franÃ§ais)", "Spanish (espaÃ±ol)");
+		checkALocale("es", "inglÃ©s (English)", "francÃ©s (franÃ§ais)", "espaÃ±ol");
+		checkALocale("fr", "anglais (English)", "franÃ§ais", "espagnol (espaÃ±ol)");
 	}
 	
 	private void checkALocale(String sLocale, String contains1, String contains2, String contains3) {
