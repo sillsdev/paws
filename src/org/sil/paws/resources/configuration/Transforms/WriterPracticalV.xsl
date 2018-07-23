@@ -1590,7 +1590,8 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:variable name="sExampleValue31.2">
+					<xsl:if test="normalize-space(//ip/ipInflFeatWitness/@checked)='yes'">
+<xsl:variable name="sExampleValue31.2">
 <xsl:value-of select="translate(string(//ip/witnessEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength31.2" select="string-length(normalize-space($sExampleValue31.2))" />
@@ -1638,7 +1639,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue32.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatNonwitness/@checked)='yes'">
+<xsl:variable name="sExampleValue32.2">
 <xsl:value-of select="translate(string(//ip/nonwitnessEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength32.2" select="string-length(normalize-space($sExampleValue32.2))" />
@@ -1686,7 +1689,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue33.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatFirsthand/@checked)='yes'">
+<xsl:variable name="sExampleValue33.2">
 <xsl:value-of select="translate(string(//ip/firsthandEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength33.2" select="string-length(normalize-space($sExampleValue33.2))" />
@@ -1734,7 +1739,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue34.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatSecondhand/@checked)='yes'">
+<xsl:variable name="sExampleValue34.2">
 <xsl:value-of select="translate(string(//ip/secondhandEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength34.2" select="string-length(normalize-space($sExampleValue34.2))" />
@@ -1782,7 +1789,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue35.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatThirdhand/@checked)='yes'">
+<xsl:variable name="sExampleValue35.2">
 <xsl:value-of select="translate(string(//ip/thirdhandEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength35.2" select="string-length(normalize-space($sExampleValue35.2))" />
@@ -1830,7 +1839,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue36.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatVisual/@checked)='yes'">
+<xsl:variable name="sExampleValue36.2">
 <xsl:value-of select="translate(string(//ip/visualEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength36.2" select="string-length(normalize-space($sExampleValue36.2))" />
@@ -1878,7 +1889,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue37.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatAuditory/@checked)='yes'">
+<xsl:variable name="sExampleValue37.2">
 <xsl:value-of select="translate(string(//ip/auditoryEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength37.2" select="string-length(normalize-space($sExampleValue37.2))" />
@@ -1926,7 +1939,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue38.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatOlfactory/@checked)='yes'">
+<xsl:variable name="sExampleValue38.2">
 <xsl:value-of select="translate(string(//ip/olfactoryEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength38.2" select="string-length(normalize-space($sExampleValue38.2))" />
@@ -1974,7 +1989,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue39.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatInferential/@checked)='yes'">
+<xsl:variable name="sExampleValue39.2">
 <xsl:value-of select="translate(string(//ip/inferentialEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength39.2" select="string-length(normalize-space($sExampleValue39.2))" />
@@ -2022,7 +2039,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue40.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatReportative/@checked)='yes'">
+<xsl:variable name="sExampleValue40.2">
 <xsl:value-of select="translate(string(//ip/reportativeEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength40.2" select="string-length(normalize-space($sExampleValue40.2))" />
@@ -2070,7 +2089,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue41.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatHearsay/@checked)='yes'">
+<xsl:variable name="sExampleValue41.2">
 <xsl:value-of select="translate(string(//ip/hearsayEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength41.2" select="string-length(normalize-space($sExampleValue41.2))" />
@@ -2118,7 +2139,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue42.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatQuotative/@checked)='yes'">
+<xsl:variable name="sExampleValue42.2">
 <xsl:value-of select="translate(string(//ip/quotativeEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength42.2" select="string-length(normalize-space($sExampleValue42.2))" />
@@ -2166,7 +2189,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue43.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatAssumed/@checked)='yes'">
+<xsl:variable name="sExampleValue43.2">
 <xsl:value-of select="translate(string(//ip/assumedEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength43.2" select="string-length(normalize-space($sExampleValue43.2))" />
@@ -2214,7 +2239,9 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
-					<xsl:variable name="sExampleValue44.2">
+</xsl:if>
+					<xsl:if test="normalize-space(//ip/ipInflFeatOtherEvident/@checked)='yes'">
+<xsl:variable name="sExampleValue44.2">
 <xsl:value-of select="translate(string(//ip/otherEvident),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength44.2" select="string-length(normalize-space($sExampleValue44.2))" />
@@ -2262,6 +2289,7 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
+</xsl:if>
 					
 					<xsl:if test="normalize-space(//ip/ipInflFeatFinite/@checked)='yes'">
 <xsl:variable name="sExampleValue45.2">
@@ -2963,7 +2991,8 @@
 </xsl:otherwise>
 </xsl:choose>
 </xsl:if>
-					<xsl:variable name="sExampleValue59.2">
+					<xsl:if test="normalize-space(//ip/ipInflFeatOtherVoice/@checked)='yes'">
+<xsl:variable name="sExampleValue59.2">
 <xsl:value-of select="translate(string(//ip/otherVoice),'.','')" />
 </xsl:variable>
 <xsl:variable name="iExampleLength59.2" select="string-length(normalize-space($sExampleValue59.2))" />
@@ -3011,6 +3040,7 @@
 </tr>
 </xsl:otherwise>
 </xsl:choose>
+</xsl:if>
 				</table>
 </example>
 		</section2>

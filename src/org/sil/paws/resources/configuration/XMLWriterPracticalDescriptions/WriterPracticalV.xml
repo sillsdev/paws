@@ -302,72 +302,72 @@
 						</col>
 						<col exampleLoc="ip/otherMood"/>			
 					</row>
-					<row class="swIPInflFeatWitness">
+					<row show="swIPInflFeatWitness">
 						<col><content>evidentiality</content></col>
 						<col><content>witness</content></col>
 						<col exampleLoc="ip/witnessEvident"/>
 					</row>
-					<row class="swIPInflFeatNonwitness">
+					<row show="swIPInflFeatNonwitness">
 						<col><content>evidentiality</content></col>
 						<col><content>nonwitness</content></col>
 						<col exampleLoc="ip/nonwitnessEvident"/>
 					</row>
-					<row class="swIPInflFeatFirsthand">
+					<row show="swIPInflFeatFirsthand">
 						<col><content>evidentiality</content></col>
 						<col><content>firsthand</content></col>
 						<col exampleLoc="ip/firsthandEvident"/>
 					</row>
-					<row class="swIPInflFeatSecondhand">
+					<row show="swIPInflFeatSecondhand">
 						<col><content>evidentiality</content></col>
 						<col><content>secondhand</content></col>
 						<col exampleLoc="ip/secondhandEvident"/>
 					</row>
-					<row class="swIPInflFeatThirdhand">
+					<row show="swIPInflFeatThirdhand">
 						<col><content>evidentiality</content></col>
 						<col><content>thirdhand</content></col>
 						<col exampleLoc="ip/thirdhandEvident"/>
 					</row>
-					<row class="swIPInflFeatVisual">
+					<row show="swIPInflFeatVisual">
 						<col><content>evidentiality</content></col>
 						<col><content>visual</content></col>
 						<col exampleLoc="ip/visualEvident"/>
 					</row>
-					<row class="swIPInflFeatAuditory">
+					<row show="swIPInflFeatAuditory">
 						<col><content>evidentiality</content></col>
 						<col><content>auditory</content></col>
 						<col exampleLoc="ip/auditoryEvident"/>
 					</row>
-					<row class="swIPInflFeatOlfactory">
+					<row show="swIPInflFeatOlfactory">
 						<col><content>evidentiality</content></col>
 						<col><content>olfactory</content></col>
 						<col exampleLoc="ip/olfactoryEvident"/>
 					</row>
-					<row class="swIPInflFeatInferential">
+					<row show="swIPInflFeatInferential">
 						<col><content>evidentiality</content></col>
 						<col><content>inferential</content></col>
 						<col exampleLoc="ip/inferentialEvident"/>
 					</row>
-					<row class="swIPInflFeatReportative">
+					<row show="swIPInflFeatReportative">
 						<col><content>evidentiality</content></col>
 						<col><content>reportative</content></col>
 						<col exampleLoc="ip/reportativeEvident"/>
 					</row>
-					<row class="swIPInflFeatHearsay">
+					<row show="swIPInflFeatHearsay">
 						<col><content>evidentiality</content></col>
 						<col><content>hearsay</content></col>
 						<col exampleLoc="ip/hearsayEvident"/>
 					</row>
-					<row class="swIPInflFeatQuotative">
+					<row show="swIPInflFeatQuotative">
 						<col><content>evidentiality</content></col>
 						<col><content>quotative</content></col>
 						<col exampleLoc="ip/quotativeEvident"/>
 					</row>
-					<row class="swIPInflFeatAssumed">
+					<row show="swIPInflFeatAssumed">
 						<col><content>evidentiality</content></col>
 						<col><content>assumed</content></col>
 						<col exampleLoc="ip/assumedEvident"/>
 					</row>
-					<row class="swIPInflFeatOtherEvident">
+					<row show="swIPInflFeatOtherEvident">
 						<col><content>evidentiality</content></col>
 						<col><content>ENTER GLOSS</content></col>
 						<col exampleLoc="ip/otherEvident"/>
@@ -499,7 +499,7 @@
 				      </col>
 				      <col exampleLoc="ip/objectVoice"/>			
 				   </row>
-					<row class="swIPInflFeatOtherVoice">
+					<row show="swIPInflFeatOtherVoice">
 						<col><content>voice</content></col>
 						<col><content>ENTER GLOSS</content></col>
 						<col exampleLoc="ip/otherVoice"/>

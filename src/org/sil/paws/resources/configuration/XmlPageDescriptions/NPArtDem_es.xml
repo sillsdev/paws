@@ -98,7 +98,6 @@
        <textBox id="NPArtIndefCaseGenExample" dataItem="articleIndefGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseGen" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
        <textBox id="NPArtIndefPlCaseGenExample" dataItem="articleIndefPlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
-       <instruction id="NPArtCaseNomInstruction" show="swNPArtCaseNom">
  
           <prompt id="NPArtCaseErg" show="swNPArtCaseErg">Puesto que su lengua tiene un sistema de caso ergativo-absolutivo, se deben tener sistemas de artículos distintos para modificar a los sujetos de verbos transitivos, a los sujetos de verbos intransitivos y los objetos de verbos transitivos y a los posesivos.</prompt>
        <prompt id="NPArtCaseErgNumberNo" show="swNPArtCaseErgAndDefOnlyNotIndef">
@@ -129,7 +128,6 @@
        <textBox id="NPArtIndefCaseErgGenExample" dataItem="articleErgIndefGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
        <prompt id="NPArtIndefPlCaseErgGen" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
        <textBox id="NPArtIndefPlCaseErgGenExample" dataItem="articleErgIndefPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
-       <instruction id="NPArtCaseErgInstruction" show="swNPArtCaseErg">
        
        <prompt id="NPArtCaseSplitNom" show="swNPArtCaseSplit">Puesto que su lengua tiene un sistema de caso de ergatividad escindida, se deben tener sistemas de artículos distintos para modificar a los sujetos, a los objetos y a los posesivos siguiendo el sistema nominativo-acusativo, más algunos sistemas especiales que se utilizan en casos de ergatividad escindida.</prompt>
        <prompt id="NPArtCaseSplitNomAndNumberNo" show="swNPArtCaseSplitAndDefOnlyNotIndef">
