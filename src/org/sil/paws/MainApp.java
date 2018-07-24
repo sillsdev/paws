@@ -126,7 +126,7 @@ public class MainApp extends Application {
 			ResourceBundle bundle = ResourceBundle.getBundle(Constants.RESOURCE_LOCATION, locale);
 			loader.setResources(bundle);
 			rootLayout = (BorderPane) loader.load();
-			if (getOperatingSystem().equals("Mac OS X")) {
+			if (getOperatingSystem().equals(Constants.MAC_OS_X)) {
 				adjustMenusForMacOSX();
 			}
 

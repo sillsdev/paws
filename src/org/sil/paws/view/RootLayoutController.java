@@ -1038,6 +1038,12 @@ public class RootLayoutController implements Initializable {
 				mainApp.setLocale(selectedLocale);
 				RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
 						selectedLocale));
+				if (mainApp.getOperatingSystem().equals(Constants.MAC_OS_X)) {
+					VBox vbox = (VBox) mainPane.getChildren().get(0);
+					MenuBar menuBar = (MenuBar) vbox.getChildren().get(0);
+					menuBar.useSystemMenuBarProperty().set(false);
+					menuBar.useSystemMenuBarProperty().set(true);
+				}
 				// TODO: figure out if XML or HTM and adjust accordingly
 				String currentWebPage = webEngine.getLocation();
 				if (currentWebPage.contains(kHTMsFolder)) {
