@@ -170,10 +170,12 @@ function Refresh() {
 	}
 	if (OutputGrammar.checked) {
 		InstructionsAddFeatures.style.display = "";
+		InstructionsSaveResultsWriterOnly.style.display = "none";
 		InstructionsSaveResultsParser.style.display = "";
 		InstructionsMakeChanges.style.display = "";
 	} else {
 		InstructionsAddFeatures.style.display = "none";
+		InstructionsSaveResultsWriterOnly.style.display = "";
 		InstructionsSaveResultsParser.style.display = "none";
 		InstructionsMakeChanges.style.display = "none";
 	}
