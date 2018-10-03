@@ -7,30 +7,44 @@
    </head>
    <body>
 <h1>Using the PAWS-generated PC-PATR grammar file in CARLAStudio</h1>
-<div class="introduction">
-
-
-				<p>Note that to use the PAWS-generated PC-PATR grammar file within a CARLAStudio setup, do the following while
-	 running CARLAStudio,
-		</p>
-
-				<ul>
-				  <ol>
-					  <li>go to Language Model / Language / Analysis Sequence...</li>
-					  <li>Click on the AMPLE process.</li>
-					  <li>Click on the "Insert After..." button.</li>
-					  <li>Select the PC-PATR DLL process and click OK.</li>
-					  <li>Double click on the PC-PATR Diambiguate processor and use the Browse button to navigate to the PAWS-generated grammar file.  Click on OK.</li>
-					  <li>Leave all other options as they are.</li>
-					  <li>Click on OK.</li>
-				  </ol>
-		</ul>
-				  <p>The next time you process a file, it should invoke PC-PATR.
-				  </p>
-
-</div>
-<div align="center">
-	<A href="Contents_es.htm" class="return">Return to Contents</A>
+   	<div class="introduction">
+   		
+   		
+   		<p>To use the PAWS-generated PC-PATR grammar file with a CARLAStudio setup, do the following:
+   		</p>
+   		
+   		<ul>
+   			<li>Initial set-up</li>
+   			<ol>
+   				<li>While running CARLAStudio, go to Language Model / Language / Analysis Sequence...</li>
+   				<li>Click on the AMPLE process.</li>
+   				<li>Click on the "Insert After..." button.</li>
+   				<li>Select the PC-PATR DLL process and click OK.</li>
+   				<li>Double click on the PC-PATR Diambiguate processor and use the Browse button to navigate to the PAWS-generated grammar file.  Click on OK.</li>
+   				<li>Leave all other options as they are.</li>
+   				<li>Click on OK.</li>
+   			</ol>
+   			<li>Adding feature names</li>
+   			<ol>
+   				<li>Note that both feature names and category names are sensitive to capitalization and are limited to a single word for each.</li>  
+   				<li>A space indicates a separate feature name.</li> 
+   				<li>Therefore, whenever you are instructed to add a feature to a lexical entry, 
+   					simply list the feature name (with a space between it and any other features) in the feature field (normally \f).</li>  
+   				<li>You also need to be sure CARLAStudio knows about the feature field by keying an f (or the marker you are using) in the box by *features (one of the Optional Markers) in all the Analysis SFM Markers sections under the Dictionary tab in the Language Model.</li>
+   			</ol>
+   			<li>Processing texts:</li>
+   			<ol>
+   				<li>Load the text you want to process and process it.</li>
+   				<li>Check the log for the results.</li>
+   				<li>Note any changes you need to make, most likely by adding features to particular entries in the lexicon.</li>
+   				<li>If any words fail to be parsed by your morphological parser, then the syntactic parser cannot parse any phrases or sentences those words are included in, so you need to fix the problem with the morphlogical parser first.</li>
+   				<li>You may also find you need to change your answers on the previous pages of PAWS about the order of elements in the phrase structure rules.   Or you may need to use the Category Mapper on the previous page to correct differences between your categories and those used by PAWS.  Make the changes as needed.  If you have changed anything on the pages within PAWS, you will need to return to this page and then save the files again.  Rerun the parsers and check the results again.</li>
+   			</ol>
+   		</ul>
+   		
+   	</div>
+   	<div align="center">
+	<A href="Contents_es.htm" class="return">Vuelva al Contenido</A>
 </div>
    </body>
 </html>

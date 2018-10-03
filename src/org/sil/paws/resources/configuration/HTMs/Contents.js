@@ -169,11 +169,13 @@ function Refresh() {
 		OutputWriterPractical.checked = true;
 	}
 	if (OutputGrammar.checked) {
+		SettingUpAParser.style.display = "";
 		InstructionsAddFeatures.style.display = "";
 		InstructionsSaveResultsWriterOnly.style.display = "none";
 		InstructionsSaveResultsParser.style.display = "";
 		InstructionsMakeChanges.style.display = "";
 	} else {
+		SettingUpAParser.style.display = "none";
 		InstructionsAddFeatures.style.display = "none";
 		InstructionsSaveResultsWriterOnly.style.display = "";
 		InstructionsSaveResultsParser.style.display = "none";

@@ -447,7 +447,13 @@ Refresh();
 					<xsl:value-of select="@target"/>
 				</xsl:attribute>
 			</xsl:if>
-			<xsl:apply-templates/>
+			<xsl:if test="@onclick">
+				<xsl:attribute name="onclick">
+					<xsl:value-of select="substring-before(@onclick,'Q')"/>
+					<xsl:value-of select="$prmInstallPath"/>
+					<xsl:value-of select="substring-after(@onclick,'Q')"/>
+				</xsl:attribute>
+			</xsl:if><xsl:apply-templates/>
 		</a>
 	</xsl:template>
 	<!--
