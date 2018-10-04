@@ -44,7 +44,10 @@
       <br/>
       <prompt id="IPVerbIdiomExamplesPrompt">Next we want to consider the cases of a verb and another word or words that go together as a unit to express a notion that is not just the same as the combined meaning of the two independent words.  These are commonly called idioms.  Key examples of two or more word idioms from your language here:</prompt>
       <textBox id="IPVerbIdiomExample" dataItem="idiomExample" cols="80"/>
-      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon using <tool>Join Compound</tool>.</instruction>
+      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon.
+         In <tool>FLEx</tool> interlinear, you can link the words together.
+         For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+      </instruction>
        <br/><br/>
         <buttons>
             <button id="IPCompoundsBack" value="Back" goto="IPAux.xml"/>

@@ -20,7 +20,11 @@
 <prompt>Key similar examples of greetings in your language here:</prompt>
         <textBox id="ExclGreet" dataItem="greetExample" cols="80"/>
         <br/>
-<instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
+<instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  
+    Those that are phrases need to be entered in the lexicon as units.
+    In <tool>FLEx</tool> interlinear, you can link the words together.
+    For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+    <br/><br/>Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
 <br/>
 <introduction>Interjections typically consist of a particular word or phrase that is used alone, usually with an exclamation point following it.  Though many of the words in interjections are not used in any other situation, regular adjectives are also used in this way.  Some examples of interjections in English are:
 </introduction>
@@ -41,7 +45,11 @@
 <prompt>Key the word(s) which can stand alone and mean ‘no’, such as ‘no’ and ‘naw’ and ‘nope’ in English, here:</prompt>
         <textBox id="ExclNo" dataItem="noExample" rows="3"/>
         <br/>
-<instruction id="ExclYesNoInstruction">All of these words or phrases meaning ‘yes’ and ‘no’ and the interjections need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
+<instruction id="ExclYesNoInstruction">All of these words or phrases meaning ‘yes’ and ‘no’ and the interjections need to be entries in your lexicon.  
+    Those that are phrases need to be entered in the lexicon as units.
+    In <tool>FLEx</tool> interlinear, you can link the words together.
+    For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+    <br/><br/>Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
 <br/>
 <introduction>Exclamations typically consist of a particular word, such as <example>how</example> in English, followed by an adjective phrase and usually punctuated with an exclamation point.  English examples include:</introduction>
     <EnglishExample>

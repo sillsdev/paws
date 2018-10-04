@@ -18,8 +18,12 @@
         <prompt>Entrez ici des exemples similaires de salutations dans votre langue:</prompt>
         <textBox id="ExclGreet" dataItem="greetExample" cols="80"/>
         <br/>
-<instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
-<br/>
+        <instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  
+            Those that are phrases need to be entered in the lexicon as units.
+            In <tool>FLEx</tool> interlinear, you can link the words together.
+            For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+            <br/><br/>Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
+        <br/>
         <introduction>Les interjections consistent typiquement de mots ou locutions particuliers qui sont utilisés seuls, suivis d’habitude d’un point d’exclamation. Bien que beaucoup de mots dans des interjections ne sont pas utilisés ailleurs, les adjectifs réguliers sont utilisés de cette façon. Quelques exemples d’interjections en français sont:
 </introduction>
     <EnglishExample>
@@ -38,8 +42,12 @@
         <prompt>Entrez ici les mots qui peuvent rester seuls et signifier  « Non »:</prompt>
         <textBox id="ExclNo" dataItem="noExample" rows="3"/>
         <br/>
-        <instruction id="ExclYesNoInstruction">All of these words or phrases meaning  ‘yes’ and  ‘no’ and the interjections need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
-<br/>
+        <instruction id="ExclYesNoInstruction">All of these words or phrases meaning ‘yes’ and ‘no’ and the interjections need to be entries in your lexicon.  
+            Those that are phrases need to be entered in the lexicon as units.
+            In <tool>FLEx</tool> interlinear, you can link the words together.
+            For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+            <br/><br/>Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
+        <br/>
         <introduction>Les exclamations consistent typiquement en un mot particulier comme <example>comment</example>, <example>combien</example> ou <example>que</example> en français. suivis d’un syntagme adjectival et généralement ponctuée d’un point d’exclamation. Des exemples en français incluent:</introduction>
     <EnglishExample>
         <exItem label="12.">Comme tu es grand!</exItem>

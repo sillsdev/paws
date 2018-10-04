@@ -81,9 +81,17 @@
    </checkboxGroup>
 		<prompt id="QPNPDegreeWordNoCheckPrompt" show="swQPNPDegreeYesandNoCheck">AVERTISSEMENT: Il faut marquer au moins une boîte pour décrire où se présentent ces mots de degré ou ces quantificateurs par rapport au reste du syntagme nominal dans votre langue, ou changez la réponse ci-dessus à « Non, ils s’attachent tous à un autre mot dans le syntagme nominal ».</prompt>
 	   
-		<instruction id="QPNPDegreeYesInstruction" show="swQPNPDegreeYesOrSome">In the lexicon, mark the words meaning <example>almost</example>, <example>nearly</example>, <example>only</example>, and <example>just</example> with the features <feature>makeDeg modifies_NP</feature>.  Note that this is two separate features with a space between them.  The first will change their syntactic category to <category>Deg</category>
-			and the second adds the feature to distinguish them as the type that modifies NPs.  For the wrods meaning <example>almost</example> and <example>nearly</example> that can modify the quantifier meaning <example>all</example>, 
-			also add the feature <feature>modifies_Q</feature>. If your language has a phrase meaning <example>almost</example>, such as <example>not quite</example> or <example>just about</example>, you need to make a single entry for these phrases with an underscore (_) between them and run the Join Compound program before AMPLE.  These entries need the same features as a single word entry with a similar meaning would have.<br/>
+		<instruction id="QPNPDegreeYesInstruction" show="swQPNPDegreeYesOrSome">In the lexicon, mark the words meaning <example>almost</example>, <example>nearly</example>, <example>only</example>, and <example>just</example> with the features <feature>makeDeg modifies_NP</feature>.  
+			Note that these are two separate features.  
+			The first will change their syntactic category to <category>Deg</category>
+			and the second adds the feature to distinguish them as the type that modifies NPs.  
+			For the words meaning <example>almost</example> and <example>nearly</example> that can modify the quantifier meaning <example>all</example>, 
+			also add the feature <feature>modifies_Q</feature>. 
+			<br/><br/>If your language has a phrase meaning <example>almost</example>, such as <example>not quite</example> or <example>just about</example>, you need to make a single entry for these phrases.
+			These entries need the same features as a single word entry with a similar meaning would have.
+			In <tool>FLEx</tool> interlinear, you can link the words together.
+			For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+			<br/>
 			<br/>
 			Also, mark the word or words meaning <example>all</example> with the features
 			<feature>plural modifies_NP</feature>.  Add the feature <feature>makeQ</feature> as well if they do not already have the category <category>Q</category>.</instruction>

@@ -44,8 +44,11 @@
       <br/>
       <prompt id="IPVerbIdiomExamplesPrompt">Maintenant nous considérons les phénomènes d’un verbe et d’un ou plusieurs autres mots qui vont ensemble et qui expriment une notion qui n’est pas la même que le sens individuel des mots. Souvent on appelle ces ensembles des idiomes. Entrez ici des exemples dans votre langue de deux idiomes ou même plus:</prompt>
       <textBox id="IPVerbIdiomExample" dataItem="idiomExample" cols="80"/>
-      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon using <tool>Join Compound</tool>.</instruction>
-       <br/><br/>
+      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon.
+         In <tool>FLEx</tool> interlinear, you can link the words together.
+         For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+      </instruction>
+      <br/><br/>
         <buttons>
             <button id="IPCompoundsBack" value="Back" goto="IPAux.xml"/>
             <button id="IPCompoundsNext" value="Next" goto="IPContents_fr.htm"/>

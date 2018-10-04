@@ -44,8 +44,11 @@
       <br/>
       <prompt id="IPVerbIdiomExamplesPrompt">Ahora se consideren expresiones idiomáticas que consisten en un verbo y otra palabra que juntos, como una unidad, expresan una idea que no es la misma que el significado cuando se combinan los de las dos palabras independientes. Se llaman modismos.  Escriba algunos ejemplos de modismos en su lengua aquí:</prompt>
       <textBox id="IPVerbIdiomExample" dataItem="idiomExample" cols="80"/>
-      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon using <tool>Join Compound</tool>.</instruction>
-       <br/><br/>
+      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon.
+         In <tool>FLEx</tool> interlinear, you can link the words together.
+         For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+      </instruction>
+      <br/><br/>
         <buttons>
             <button id="IPCompoundsBack" value="Back" goto="IPAux.xml"/>
             <button id="IPCompoundsNext" value="Next" goto="IPContents_es.htm"/>

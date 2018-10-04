@@ -17,7 +17,10 @@
         <textBox id="AdvPReasonSentExample" dataItem="reasonSentExample" rows="5" cols="80"/> 
         <br/>
         <instruction id="AdvPReasonInstruction">In the lexicon, key the feature <feature>reason</feature> on
-all adverbs that express reason or purpose, and also on the nouns like <example>reason</example> and <example>purpose</example>.  Any multi-word forms, like <example>in order</example> are best handled as a single entry using <tool>Join Compound</tool>.
+all adverbs that express reason or purpose, and also on the nouns like <example>reason</example> and <example>purpose</example>.  
+            Any multi-word forms, like <example>in order</example> are best handled as a single entry.
+            In <tool>FLEx</tool> interlinear, you can link the words together.
+            For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
         </instruction>
         <br/><br/>
         <buttons>

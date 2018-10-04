@@ -21,8 +21,12 @@
 <prompt>Escriba ejemplos similares de saludos en su lengua aquí:</prompt>
        <textBox id="ExclGreet" dataItem="greetExample" cols="80"/>
         <br/>
-<instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
-<br/>
+       <instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  
+          Those that are phrases need to be entered in the lexicon as units.
+          In <tool>FLEx</tool> interlinear, you can link the words together.
+          For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+          <br/><br/>Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
+       <br/>
        <introduction>Las interjecciones consisten típicamente en una palabra o una frase específica que se utilizan sola para expresar emociones, generalmente con signos de exclamación. Muchas de las palabras en interjecciones no se utilizan en ningún otro contexto. Sin embargo, los adjetivos regulares también se utilizan de esta manera.  Algunos ejemplos de interjecciones en español son:
 </introduction>
     <EnglishExample>
@@ -41,8 +45,12 @@
        <prompt> Escriba las palabras independientes que significan “no”, por ejemplo ‘no' y ‘naw' y ‘nope' en inglés, aquí:</prompt>
         <textBox id="ExclNo" dataItem="noExample" rows="3"/>
         <br/>
-       <instruction id="ExclYesNoInstruction">All of these words or phrases meaning ‘yes' and ‘no' and the interjections need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
-<br/>
+       <instruction id="ExclYesNoInstruction">All of these words or phrases meaning ‘yes’ and ‘no’ and the interjections need to be entries in your lexicon.  
+          Those that are phrases need to be entered in the lexicon as units.
+          In <tool>FLEx</tool> interlinear, you can link the words together.
+          For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+          <br/><br/>Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
+       <br/>
        <introduction>Las exclamaciones consisten típicamente en una palabra específica, como <example>qué</example> o <example>cómo</example> en español, seguida de una frase adjetival y puntuada generalmente con signos de exclamación.  Algunos ejemplos en español son:</introduction>
     <EnglishExample>
         <exItem label="15.">¡Qué tremendo para usted!</exItem>

@@ -28,7 +28,11 @@
       <textBox id="CoordAppositiveExample" dataItem="appositiveExample" cols="80"/>
       <br/>
       <br/>
-      <instruction id="CoordListCommaInstruction">Note that the comma is important in both of these constructions and may be useful in disambiguating list or appositive constructions from other types.  You can choose to make the comma (,) a word-formation character in <tool>CarlaStudio</tool>. Then make it a suffix or enclitic that can go on any word category and give it the feature <feature>comma</feature>.  The PC-Patr grammar constraints to disambiguate via commas are already provided, but you will need to activate them by removing the comment character in the DP rule <ruleInfo>option conjListAppos</ruleInfo>.  See a similar instruction for topics.</instruction><br/>
+      <instruction id="CoordListCommaInstruction">Note that the comma is important in both of these constructions and may be useful in disambiguating list or appositive constructions from other types.  
+         You can choose to make the comma (,) a word-formation character in <tool>FLEx</tool> or <tool>CarlaStudio</tool>. 
+         Then make it a suffix or enclitic that can go on any word category and give it the feature <feature>comma</feature>.  
+         The PC-Patr grammar constraints to disambiguate via commas are already provided, but you will need to activate them by removing the comment character in the DP rule <ruleInfo>option conjListAppos</ruleInfo>.  
+         See a similar instruction for topics.</instruction><br/>
 		<br/>
 		<buttons>
 			<button id="CoordDPBack" value="Back" goto="CoordMain.xml"/>

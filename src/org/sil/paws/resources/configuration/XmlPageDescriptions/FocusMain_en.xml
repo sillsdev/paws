@@ -60,7 +60,11 @@
 </radioGroup>
 
 <instruction id="TopicMarkerEitherInstruction" show="swTopicMarkerYesWordEitherSide">In the lexicon, add the feature <feature>topic-initial</feature> to the topic markers which can only appear before the topic itself.  Add the feature <feature>topic-final</feature> to the topic markers which can only appear after the topic itself.  Do not add either feature to topic markers which can appear on either side of the topic. </instruction>
-<instruction id="TopicMarkerYesWordInstruction2" show="swTopicMarkerYesWord">In the lexicon, add the feature <feature>makeTopicM</feature> to each topic marker to change the category for the syntax.  (If the word can also be used in other ways, make a separate entry for each use.)  If  the marker is a phrase, such as ‘as for’ or ‘speaking of’ in English, you will need to key them as a single entry with an underscore between the words and use the <tool>Join Compound</tool> program within <tool>CARLA Studio</tool>.</instruction>
+<instruction id="TopicMarkerYesWordInstruction2" show="swTopicMarkerYesWord">In the lexicon, add the feature <feature>makeTopicM</feature> to each topic marker to change the category for the syntax.  (If the word can also be used in other ways, make a separate entry for each use.)  
+    If  the marker is a phrase, such as ‘as for’ or ‘speaking of’ in English, you will need to key them as a unit.
+    In <tool>FLEx</tool> interlinear, you can link the words together.
+    For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+</instruction>
        <prompt id="TopicMarkerYesCliticInstruction" show="swTopicMarkerYesClitic"><br/>Key the topic marker clitic(s) your language uses in the following box, with an equal sign to show which side it attaches to the topic phrase on.</prompt>
        <textBox id="TopicMarkerClitic" show="swTopicMarkerYesClitic" dataItem="topicMarkerCliticExample" rows="4"/>
        <instruction id="TopicMarkerYesCliticInstruction2" show="swTopicMarkerYesClitic">In the lexicon, add the feature <feature>topic_prefix</feature> to each topic marker proclitic and the feature <feature>topic_suffix</feature> to each topic marker enclitic.</instruction>
@@ -71,7 +75,8 @@
  <instruction id="TopicMarkerYesAffixInstruction2" show="swTopicMarkerYesAffix">In the lexicon, add the feature <feature>topic</feature> to each topic marker affix.</instruction>
 <br/>
        <br/>
-       <instruction id="TopicCommaInstruction" show="swTopicYes">Note that the comma is important in topic constructions and may be useful in disambiguating topics from other types of constructions.  As mentioned in <section number="15">Coordination Constructions - Lists and Appositives</section>, you can choose to make the comma (,) a word-formation character in <tool>CarlaStudio</tool>. Then make it a suffix or enclitic that can go on any word category and give it the feature <feature>comma</feature>.  The PC-Patr grammar constraints to disambiguate via commas are already provided, but you will need to activate them by removing the comment character in the S rule(s) including a TopicP.</instruction>
+       <instruction id="TopicCommaInstruction" show="swTopicYes">Note that the comma is important in topic constructions and may be useful in disambiguating topics from other types of constructions.  
+           As mentioned in <section number="15">Coordination Constructions - Lists and Appositives</section>, you can choose to make the comma (,) a word-formation character in <tool>FLEx</tool> or <tool>CARLAStudio</tool>. Then make it a suffix or enclitic that can go on any word category and give it the feature <feature>comma</feature>.  The PC-Patr grammar constraints to disambiguate via commas are already provided, but you will need to activate them by removing the comment character in the S rule(s) including a TopicP.</instruction>
        <br/>
        <introduction>In contrast, while <technicalTermRef term="ttFocus"/> constructions also have an element fronted which may be set off by punctuation, the phrase in focus is moved from its normal position in the sentence, leaving a gap.  Certain markers, such as ‘only’ in English, may be used to mark the focused phrase.  Focus constructions are not used frequently in SVO languages, since the subject is usually in focus and is already first in the normal order.  Other word orders, such as VSO languages, may make extensive use of focus constructions.  English examples of focus constructions include:
        </introduction>
@@ -121,7 +126,11 @@
     <radio id="FocusMarkerRequiredYes" dataValue="yes">Yes, a focus marker is required in every focused phrase</radio>
 </radioGroup>
 <instruction id="FocusMarkerEitherInstruction" show="swFocusMarkerYesWordEitherSide">In the lexicon, add the feature <feature>focus-initial</feature> to the focus markers which can only appear before the focused phrase or word itself.  Add the feature <feature>focus-final</feature> to the focus markers which can only appear after the focused phrase or word  itself.  Do not add either feature to focus markers which can appear on either side of the focused phrase or word. </instruction>
-<instruction id="FocusMarkerYesWordInstruction2" show="swFocusMarkerYesWord">In the lexicon, add the feature <feature>makeFocusM</feature> to each focus marker to change the category for the syntax. (If the word can also be used in other ways, make a separate entry for each use.)  If  the marker is a phrase, you will need to key them as a single entry with an underscore between the words and use the <tool>Join Compound</tool> program within <tool>CARLA Studio</tool>.</instruction>
+<instruction id="FocusMarkerYesWordInstruction2" show="swFocusMarkerYesWord">In the lexicon, add the feature <feature>makeFocusM</feature> to each focus marker to change the category for the syntax. (If the word can also be used in other ways, make a separate entry for each use.)  
+    If  the marker is a phrase, you will need to key them as a unit.
+    In <tool>FLEx</tool> interlinear, you can link the words together.
+    For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+</instruction>
 
        <prompt id="FocusMarkerYesCliticInstruction" show="swFocusMarkerYesClitic"><br/>Key the focus marker clitic(s) your language uses in the following box, with an equal sign to show which side it attaches to the focused phrase on.</prompt>
        <textBox id="FocusMarkerClitic" show="swFocusMarkerYesClitic" dataItem="focusMarkerCliticExample" rows="4"/>

@@ -60,7 +60,8 @@
    <li id="CompYesOptionReason" show="swCompYes">If the adverb requires a complementizer to be present in its finite sentential complement (CP), add the feature <feature>sentential_finite_CP</feature>.</li>
                 <li id="CompYesOptionReason1" show="swCompYes">If the adverb requires either a nonfinite IP with a pro-dropped subject or a nonfinite CP complement (like <example>in order</example> above), add the feature <feature>sentential_-finite</feature>.</li>
 </ul>
-           Those that are phrases, like <example>in order</example>, need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLA Studio</tool>.
+            Those that are phrases, like <example>in order</example>, need to be entered in the lexicon as units.  In <tool>FLEx</tool> interlinear, you can link the words together.
+            For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
         </instruction>
         <br/>
         <buttons>
