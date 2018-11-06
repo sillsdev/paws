@@ -89,7 +89,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘eighteen’ here:</prompt>
-	   <textBox id="QPCardinalNumbers18" dataItem="cardinalNumbers19" rows="2"/>
+	   <textBox id="QPCardinalNumbers18" dataItem="cardinalNumbers18" rows="2"/>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘nineteen’ here:</prompt>

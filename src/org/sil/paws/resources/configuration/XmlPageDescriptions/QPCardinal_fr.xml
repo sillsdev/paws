@@ -87,7 +87,7 @@
 	   <br/>
 	   <br/>
 		<prompt>Entrez ici le nombre cardinal avec le sens « dix-huit »:</prompt>
-	   <textBox id="QPCardinalNumbers18" dataItem="cardinalNumbers19" rows="2"/>
+	   <textBox id="QPCardinalNumbers18" dataItem="cardinalNumbers18" rows="2"/>
 	   <br/>
 	   <br/>
 		<prompt>Entrez ici le nombre cardinal avec le sens « dix-neuf »:</prompt>
