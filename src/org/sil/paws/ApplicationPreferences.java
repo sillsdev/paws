@@ -10,7 +10,7 @@ import org.sil.utility.*;
 
 import javafx.stage.Stage;
 
-public class ApplicationPreferences {
+public class ApplicationPreferences extends ApplicationPreferencesUtilities {
 
 	static final String LAST_OPENED_FILE_PATH = "lastOpenedFilePath";
 	static final String LAST_OPENED_DIRECTORY_PATH = "lastOpenedDirectoryPath";

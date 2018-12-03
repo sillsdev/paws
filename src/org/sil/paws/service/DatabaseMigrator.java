@@ -27,7 +27,7 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.sil.paws.Constants;
 import org.sil.utility.HandleExceptionMessage;
-import org.sil.utility.XsltParameter;
+import org.sil.utility.xml.XsltParameter;
 import org.w3c.dom.Document;
 
 /**

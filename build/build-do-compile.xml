@@ -11,7 +11,7 @@
 			<fileset dir="externalLibs">
 				<include name="controlsfx-8.40.12.jar" />
 				<include name="controlsfx-8.40.12license.txt" />
-				<include name="silutilities-1.0.0.jar"/>
+				<include name="libjavadev-1.0.0.jar"/>
 				<include name="saxon9he.jar"/>
 				<include name="notices/CERN.txt"/>
 				<include name="notices/JAMESCLARK.txt"/>

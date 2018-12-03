@@ -10,11 +10,12 @@ package org.sil.paws;
  *
  */
 public class Constants {
-	public static final String VERSION_NUMBER = "1.1.1";
+	public static final String VERSION_NUMBER = "1.1.2";
 	public static final String CURRENT_DATABASE_VERSION = "11";
 	public static final long OUTPUT_TRANSFORM_COUNT = 17;
 
 	public static final String RESOURCE_LOCATION = "org.sil.paws.resources.paws";
+	public static final String RESOURCE_SOURCE_LOCATION = "src/org/sil/paws/";
 	public static final String MAC_OS_X = "Mac OS X";
 
 	public static final String PAWS_DATA_FILE_EXTENSION = "paw";

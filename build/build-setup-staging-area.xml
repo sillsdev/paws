@@ -8,8 +8,8 @@
 
 		<mkdir dir="externalLibs" />
 		<copy todir="externalLibs">
-			<fileset dir="../silutilities">
-				<filename name="silutilities-1.0.0.jar"/>
+			<fileset dir="../LibJavaDev">
+				<filename name="libjavadev-1.0.0.jar"/>
 			</fileset>
 			<fileset dir="../ControlsFX">
 				<include name="controlsfx-8.40.12.jar" />

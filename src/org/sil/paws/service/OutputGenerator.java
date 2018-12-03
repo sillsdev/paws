@@ -6,11 +6,8 @@
 
 package org.sil.paws.service;
 
-import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -21,12 +18,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
-import java.util.Properties;
-import java.util.stream.Stream;
-
-import javafx.application.Platform;
-import javafx.fxml.FXMLLoader;
-import javafx.stage.Stage;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -40,15 +31,11 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 import org.sil.paws.Constants;
-import org.sil.paws.MainApp;
 import org.sil.paws.model.Language;
-import org.sil.paws.view.ControllerUtilities;
 import org.sil.utility.DateTimeNormalizer;
-import org.sil.utility.XsltParameter;
+import org.sil.utility.xml.XsltParameter;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
-
-import javafx.concurrent.Task;
 
 /**
  * @author Andy Black Singleton pattern

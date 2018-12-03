@@ -5,13 +5,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.paint.Color;
 import javafx.scene.web.WebEngine;
-import javafx.scene.web.WebView;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import org.controlsfx.dialog.FontSelectorDialogWithColor;
-import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.Constants;
 import org.sil.paws.MainApp;
@@ -19,6 +16,7 @@ import org.sil.paws.model.FontInfo;
 import org.sil.paws.model.Language;
 import org.sil.paws.view.RootLayoutController;
 import org.sil.utility.StringUtilities;
+import org.sil.utility.view.ObservableResourceFactory;
 
 import com.sun.deploy.uitoolkit.impl.fx.HostServicesFactory;
 import com.sun.javafx.application.HostServicesDelegate;
@@ -26,7 +24,6 @@ import com.sun.javafx.application.HostServicesDelegate;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.*;
 import java.util.Locale;
 import java.util.ResourceBundle;
 

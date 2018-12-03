@@ -6,9 +6,6 @@ package org.sil.paws;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Locale;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -17,34 +14,28 @@ import org.sil.paws.backendprovider.XMLBackEndProvider;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.model.Language;
 import org.sil.paws.service.DatabaseMigrator;
-import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.view.RootLayoutController;
+import org.sil.utility.MainAppUtilities;
+import org.sil.utility.view.ControllerUtilities;
 
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
-import javafx.scene.control.Dialog;
-import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
-public class MainApp extends Application {
+public class MainApp extends Application implements MainAppUtilities {
 	private static final String kApplicationIconResource = "file:resources/images/PAWS128x128.png";
 	private Stage primaryStage;
 	private BorderPane rootLayout;
@@ -102,8 +93,9 @@ public class MainApp extends Application {
 		startupAlert.setTitle("PAWS");
 		startupAlert.setHeaderText("PAWS Starter Kit");
 		// following does not show in installed version
-//		startupAlert.setContentText("Please wait;\nFavor de esperar;\nS'il vous plaît, attendez");
-//		startupAlert.setGraphic(new ImageView(this.getClass().getResource("resources/images/SILLogo.png").toString()));
+		// startupAlert.setContentText("Please wait;\nFavor de esperar;\nS'il vous plaît, attendez");
+		// startupAlert.setGraphic(new
+		// ImageView(this.getClass().getResource("resources/images/SILLogo.png").toString()));
 		Stage stage = (Stage) startupAlert.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(getNewMainIconImage());
 		stage.initStyle(StageStyle.UNIFIED);
@@ -178,16 +170,23 @@ public class MainApp extends Application {
 	}
 
 	public void loadLanguageData(File file) {
-		 DatabaseMigrator migrator = new DatabaseMigrator(file);
-		 String version = migrator.getVersion();
-		 if (!version.equals(Constants.CURRENT_DATABASE_VERSION)) {
-			 migrator.doMigration();
-		 }
+		DatabaseMigrator migrator = new DatabaseMigrator(file);
+		String version = migrator.getVersion();
+		if (!version.equals(Constants.CURRENT_DATABASE_VERSION)) {
+			migrator.doMigration();
+		}
 		xmlBackEndProvider.loadLanguageDataFromFile(file);
 		language = xmlBackEndProvider.getLanguage();
 		applicationPreferences.setLastOpenedFilePath(file);
 		applicationPreferences.setLastOpenedDirectoryPath(file.getParent());
 		updateStageTitle(file);
+	}
+
+	/**
+	 * Needed by MainAppUtitlities
+	 */
+	public void saveFile(File file) {
+		saveLanguageFile(file);
 	}
 
 	public void saveLanguageFile(File file) {
@@ -232,7 +231,8 @@ public class MainApp extends Application {
 	 * @return the mainIconImage
 	 */
 	public Image getNewMainIconImage() {
-		Image img = ControllerUtilities.getIconImageFromURL(kApplicationIconResource);
+		Image img = ControllerUtilities.getIconImageFromURL(kApplicationIconResource,
+				Constants.RESOURCE_SOURCE_LOCATION);
 		return img;
 	}
 
@@ -257,9 +257,10 @@ public class MainApp extends Application {
 				buttonCancel);
 
 		alert.setResizable(true);
-		((Button)alert.getDialogPane().lookupButton(buttonCreateNewLanguage)).setPrefWidth(250);
-		((Button)alert.getDialogPane().lookupButton(buttonOpenExistingLanguage)).setPrefWidth(250);
-		((Button)alert.getDialogPane().lookupButton(buttonCancel)).setPrefWidth(Region.USE_PREF_SIZE);
+		((Button) alert.getDialogPane().lookupButton(buttonCreateNewLanguage)).setPrefWidth(250);
+		((Button) alert.getDialogPane().lookupButton(buttonOpenExistingLanguage)).setPrefWidth(250);
+		((Button) alert.getDialogPane().lookupButton(buttonCancel))
+				.setPrefWidth(Region.USE_PREF_SIZE);
 		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(getNewMainIconImage());
 
@@ -293,7 +294,7 @@ public class MainApp extends Application {
 			controller.askAboutSaving();
 		}
 	}
-	
+
 	public Locale getLocale() {
 		return locale;
 	}

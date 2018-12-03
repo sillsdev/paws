@@ -9,7 +9,6 @@ package org.sil.paws.service;
 import static org.junit.Assert.*;
 
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -123,8 +122,8 @@ public class OutputGeneratorTest {
 			assertEquals(true, Files.exists(xmlResultPath));
 			Path htmResultPath = Paths.get(sTestDir + "TestDataWriterPractical.htm");
 			assertEquals(true, Files.exists(htmResultPath));
-			assertEquals(616394, Files.size(xmlResultPath));
-			assertEquals(1392051, Files.size(htmResultPath));
+			assertEquals(612277, Files.size(xmlResultPath));
+			assertEquals(1382054, Files.size(htmResultPath));
 			Files.delete(xmlResultPath);
 			Files.delete(htmResultPath);
 		} catch (Exception e1) {

@@ -9,12 +9,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.nio.file.attribute.FileAttribute;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,8 +20,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import java.util.ResourceBundle;
-import java.util.TreeMap;
-import java.util.stream.Stream;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -32,14 +28,9 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathExpression;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -47,10 +38,8 @@ import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.concurrent.Worker.State;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
@@ -77,7 +66,6 @@ import javafx.scene.text.Font;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebView;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import netscape.javascript.JSObject;
@@ -87,19 +75,17 @@ import org.sil.paws.model.FontInfo;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.Constants;
 import org.sil.paws.model.Language;
-import org.sil.paws.service.ObservableResourceFactory;
 import org.sil.paws.service.OutputGenerator;
 import org.sil.paws.service.ValidLocaleCollector;
 import org.sil.paws.service.WebPageInteractor;
-import org.sil.paws.view.ControllerUtilities;
 import org.sil.paws.MainApp;
 import org.sil.utility.HandleExceptionMessage;
 import org.sil.utility.StringUtilities;
-import org.sil.utility.XsltParameter;
+import org.sil.utility.view.ControllerUtilities;
+import org.sil.utility.view.ObservableResourceFactory;
+import org.sil.utility.xml.XsltParameter;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
-
-import sun.util.BuddhistCalendar;
 
 public class RootLayoutController implements Initializable {
 
@@ -291,18 +277,21 @@ public class RootLayoutController implements Initializable {
 					Platform.runLater(new Runnable() {
 						@Override
 						public void run() {
-							// TODO: is there a way to associate the Java code with the
+							// TODO: is there a way to associate the Java code
+							// with the
 							// javascript code *before* the page is loaded?
-							// We are working around it by sleeping for 10ms in the
+							// We are working around it by sleeping for 10ms in
+							// the
 							// javascript onload() function.
 							JSObject win = (JSObject) webEngine.executeScript("window");
 							win.setMember("pawsApp", webPageInteractor);
 							webEngine.executeScript("Initialize('" + getCurrentLocaleCode() + "')");
 							updatePageLabels();
-//							Timeline timeline = new Timeline(new KeyFrame(Duration.millis(500), event -> {
-//								handleRefresh();
-//							}));
-//							timeline.play();
+							// Timeline timeline = new Timeline(new
+							// KeyFrame(Duration.millis(500), event -> {
+							// handleRefresh();
+							// }));
+							// timeline.play();
 						}
 					});
 				} else if (newState == State.FAILED) {
@@ -349,27 +338,33 @@ public class RootLayoutController implements Initializable {
 	}
 
 	public void loadLanguagePropertiesPageInNewMode() {
-			Platform.runLater(new Runnable() {
-				@Override
-				public void run() {
-					try {
-					String sPath = sConfigurationDirectory + "HTMs" + File.separator + "LanguageProperties" + getCurrentLocaleCode() + ".htm";
-					String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
-					sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
-					sPage = sPage.replace(".style.display = \"none\";", ".style.display = \"temp\";");
+		Platform.runLater(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					String sPath = sConfigurationDirectory + "HTMs" + File.separator
+							+ "LanguageProperties" + getCurrentLocaleCode() + ".htm";
+					String sPage = new String(Files.readAllBytes(Paths.get(sPath)),
+							StandardCharsets.UTF_8);
+					sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..",
+							"<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
+					sPage = sPage.replace(".style.display = \"none\";",
+							".style.display = \"temp\";");
 					sPage = sPage.replace(".style.display = \"\";", ".style.display = \"none\";");
 					sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
 					webEngine.loadContent(sPage);
-					} catch (IOException e) {
+				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-//					System.out.println("loadLanguagePropertiesPageInNewMode: loading=" + sProgramLocation + kHTMsFolder + "LanguagePropertiesNew"
-//					+ getCurrentLocaleCode() + ".htm");
-//					webEngine.load(sProgramLocation.replace("\\", "/") + kHTMsFolder + "LanguagePropertiesNew"
-//							+ getCurrentLocaleCode() + ".htm");
-				}
-			});
+				// System.out.println("loadLanguagePropertiesPageInNewMode: loading="
+				// + sProgramLocation + kHTMsFolder + "LanguagePropertiesNew"
+				// + getCurrentLocaleCode() + ".htm");
+				// webEngine.load(sProgramLocation.replace("\\", "/") +
+				// kHTMsFolder + "LanguagePropertiesNew"
+				// + getCurrentLocaleCode() + ".htm");
+			}
+		});
 	}
 
 	protected void loadLanguageFilesPageInNewMode() {
@@ -377,23 +372,34 @@ public class RootLayoutController implements Initializable {
 			@Override
 			public void run() {
 				try {
-				String sPath = sConfigurationDirectory + "HTMs" + File.separator + "PAWSFiles" + getCurrentLocaleCode() + ".htm";
-				String sPage = new String(Files.readAllBytes(Paths.get(sPath)), StandardCharsets.UTF_8);
-				sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..", "<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
-		        sPage = sPage.replace("ShowBackNextButtons.style.display = \"none\";", "ShowBackNextButtons.style.display = \"temp\";");
-				sPage = sPage.replace("ShowBackNextButtons.style.display = \"\";", "ShowBackNextButtons.style.display = \"none\";");
-				sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
-				sPage = sPage.replace("pawsApp.load(\"Contents.htm\");", "pawsApp.load(\"file:///" +
-						sConfigurationDirectory.replace("\\",  "\\\\") + "HTMs/Contents" + getCurrentLocaleCode() + ".htm\");");
-				webEngine.loadContent(sPage);
+					String sPath = sConfigurationDirectory + "HTMs" + File.separator + "PAWSFiles"
+							+ getCurrentLocaleCode() + ".htm";
+					String sPage = new String(Files.readAllBytes(Paths.get(sPath)),
+							StandardCharsets.UTF_8);
+					sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..",
+							"<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
+					sPage = sPage.replace("ShowBackNextButtons.style.display = \"none\";",
+							"ShowBackNextButtons.style.display = \"temp\";");
+					sPage = sPage.replace("ShowBackNextButtons.style.display = \"\";",
+							"ShowBackNextButtons.style.display = \"none\";");
+					sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
+					sPage = sPage.replace(
+							"pawsApp.load(\"Contents.htm\");",
+							"pawsApp.load(\"file:///"
+									+ sConfigurationDirectory.replace("\\", "\\\\")
+									+ "HTMs/Contents" + getCurrentLocaleCode() + ".htm\");");
+					webEngine.loadContent(sPage);
 				} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-//				System.out.println("loadLanguageFilesPageInNewMode: loading=" + sProgramLocation + kHTMsFolder + "PAWSFilesNew" + getCurrentLocaleCode()
-//				+ ".htm");
-//			webEngine.load(sProgramLocation + kHTMsFolder + "PAWSFilesNew" + getCurrentLocaleCode()
-//					+ ".htm");
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				// System.out.println("loadLanguageFilesPageInNewMode: loading="
+				// + sProgramLocation + kHTMsFolder + "PAWSFilesNew" +
+				// getCurrentLocaleCode()
+				// + ".htm");
+				// webEngine.load(sProgramLocation + kHTMsFolder +
+				// "PAWSFilesNew" + getCurrentLocaleCode()
+				// + ".htm");
 			}
 		});
 	}
@@ -691,38 +697,45 @@ public class RootLayoutController implements Initializable {
 
 	protected void initToolbarButtons(ResourceBundle bundle) {
 		tooltipToolbarFileNew = ControllerUtilities.createToolbarButtonWithImage("newAction.png",
-				buttonToolbarFileNew, tooltipToolbarFileNew, bundle.getString("tooltip.new"));
+				buttonToolbarFileNew, tooltipToolbarFileNew, bundle.getString("tooltip.new"),
+				Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarFileNew.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.new"));
 		tooltipToolbarFileOpen = ControllerUtilities.createToolbarButtonWithImage("openAction.png",
-				buttonToolbarFileOpen, tooltipToolbarFileOpen, bundle.getString("tooltip.open"));
+				buttonToolbarFileOpen, tooltipToolbarFileOpen, bundle.getString("tooltip.open"),
+				Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarFileOpen.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.open"));
 		tooltipToolbarGenerateFiles = ControllerUtilities.createToolbarButtonWithImage(
 				"saveAction.png", buttonToolbarGenerateFiles, tooltipToolbarGenerateFiles,
-				bundle.getString("tooltip.save"));
+				bundle.getString("tooltip.save"), Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarGenerateFiles.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.save"));
 		tooltipToolbarEditCut = ControllerUtilities.createToolbarButtonWithImage("cutAction.png",
-				buttonToolbarEditCut, tooltipToolbarEditCut, bundle.getString("tooltip.cut"));
+				buttonToolbarEditCut, tooltipToolbarEditCut, bundle.getString("tooltip.cut"),
+				Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarEditCut.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.cut"));
 		tooltipToolbarEditCopy = ControllerUtilities.createToolbarButtonWithImage("copyAction.png",
-				buttonToolbarEditCopy, tooltipToolbarEditCopy, bundle.getString("tooltip.copy"));
+				buttonToolbarEditCopy, tooltipToolbarEditCopy, bundle.getString("tooltip.copy"),
+				Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarEditCopy.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.copy"));
 		tooltipToolbarEditPaste = ControllerUtilities.createToolbarButtonWithImage(
 				"pasteAction.png", buttonToolbarEditPaste, tooltipToolbarEditPaste,
-				bundle.getString("tooltip.paste"));
+				bundle.getString("tooltip.paste"), Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarEditPaste.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.paste"));
 		tooltipToolbarBack = ControllerUtilities.createToolbarButtonWithImage("back.png",
-				buttonToolbarBack, tooltipToolbarBack, bundle.getString("tooltip.back"));
+				buttonToolbarBack, tooltipToolbarBack, bundle.getString("tooltip.back"),
+				Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarBack.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.back"));
 		tooltipToolbarForward = ControllerUtilities.createToolbarButtonWithImage("forward.png",
-				buttonToolbarForward, tooltipToolbarForward, bundle.getString("tooltip.forward"));
+				buttonToolbarForward, tooltipToolbarForward, bundle.getString("tooltip.forward"),
+				Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarForward.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.forward"));
 		tooltipToolbarRefresh = ControllerUtilities.createToolbarButtonWithImage("refresh.png",
-				buttonToolbarRefresh, tooltipToolbarRefresh, bundle.getString("tooltip.refresh"));
+				buttonToolbarRefresh, tooltipToolbarRefresh, bundle.getString("tooltip.refresh"),
+				Constants.RESOURCE_SOURCE_LOCATION);
 		tooltipToolbarRefresh.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.refresh"));
 	}
@@ -772,7 +785,9 @@ public class RootLayoutController implements Initializable {
 		}
 		applicationPreferences.setLastOpenedDirectoryPath(sDirectoryPath);
 		File fileCreated = ControllerUtilities.doFileSaveAs(mainApp, currentLocale, false,
-				pawsFilterDescription, RESOURCE_FACTORY.getStringBinding("file.new").get());
+				pawsFilterDescription, RESOURCE_FACTORY.getStringBinding("file.new").get(),
+				Constants.PAWS_DATA_FILE_EXTENSION, Constants.PAWS_DATA_FILE_EXTENSIONS,
+				Constants.RESOURCE_LOCATION);
 		if (fileCreated != null) {
 			try {
 				String masterPAWS = sConfigurationDirectory + File.separator + "Data"
@@ -1142,8 +1157,8 @@ public class RootLayoutController implements Initializable {
 		alert.setTitle(sAboutHeader);
 		alert.setHeaderText(null);
 		alert.setContentText(sAboutContent);
-		Image silLogo = ControllerUtilities
-				.getIconImageFromURL("file:resources/images/SILLogo.png");
+		Image silLogo = ControllerUtilities.getIconImageFromURL(
+				"file:resources/images/SILLogo.png", Constants.RESOURCE_SOURCE_LOCATION);
 		alert.setGraphic(new ImageView(silLogo));
 		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(mainApp.getNewMainIconImage());

@@ -90,7 +90,7 @@ public class JavaFXThreadingRule implements TestRule {
 
         protected void setupJavaFX() throws InterruptedException {
             
-            long timeMillis = System.currentTimeMillis();
+            //long timeMillis = System.currentTimeMillis();
             
             final CountDownLatch latch = new CountDownLatch(1);
             

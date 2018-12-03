@@ -7,16 +7,11 @@
 package org.sil.paws.backendprovider;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -24,11 +19,9 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.sil.paws.Constants;
 import org.sil.paws.model.Language;
-import org.sil.paws.service.ObservableResourceFactory;
 import org.sil.utility.HandleExceptionMessage;
+import org.sil.utility.view.ObservableResourceFactory;
 import org.w3c.dom.Document;
-import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
 
 /**
  * @author Andy Black
