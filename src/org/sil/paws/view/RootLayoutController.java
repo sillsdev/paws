@@ -76,7 +76,6 @@ import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.Constants;
 import org.sil.paws.model.Language;
 import org.sil.paws.service.OutputGenerator;
-import org.sil.paws.service.ValidLocaleCollector;
 import org.sil.paws.service.WebPageInteractor;
 import org.sil.paws.MainApp;
 import org.sil.utility.HandleExceptionMessage;
@@ -1036,9 +1035,8 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	private void handleChangeInterfaceLanguage() {
-		ValidLocaleCollector collector = new ValidLocaleCollector(currentLocale);
-		collector.collectValidLocales();
-		Map<String, ResourceBundle> validLocales = collector.getValidLocales();
+		Map<String, ResourceBundle> validLocales = ControllerUtilities.getValidLocales(
+				currentLocale, Constants.RESOURCE_LOCATION);
 		ChoiceDialog<String> dialog = new ChoiceDialog<>(
 				currentLocale.getDisplayLanguage(currentLocale), validLocales.keySet());
 		dialog.setTitle(RESOURCE_FACTORY.getStringBinding("dialog.changeinterfacelanguage").get());
@@ -1053,12 +1051,7 @@ public class RootLayoutController implements Initializable {
 				mainApp.setLocale(selectedLocale);
 				RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
 						selectedLocale));
-				if (mainApp.getOperatingSystem().equals(Constants.MAC_OS_X)) {
-					VBox vbox = (VBox) mainPane.getChildren().get(0);
-					MenuBar menuBar = (MenuBar) vbox.getChildren().get(0);
-					menuBar.useSystemMenuBarProperty().set(false);
-					menuBar.useSystemMenuBarProperty().set(true);
-				}
+				ControllerUtilities.adjustMenusIfNeeded(mainApp.getOperatingSystem(), mainPane);
 				// TODO: figure out if XML or HTM and adjust accordingly
 				String currentWebPage = webEngine.getLocation();
 				if (currentWebPage.contains(kHTMsFolder)) {

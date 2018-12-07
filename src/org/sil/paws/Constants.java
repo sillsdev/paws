@@ -16,7 +16,6 @@ public class Constants {
 
 	public static final String RESOURCE_LOCATION = "org.sil.paws.resources.paws";
 	public static final String RESOURCE_SOURCE_LOCATION = "src/org/sil/paws/";
-	public static final String MAC_OS_X = "Mac OS X";
 
 	public static final String PAWS_DATA_FILE_EXTENSION = "paw";
 	public static final String PAWS_DATA_FILE_EXTENSIONS = "*."

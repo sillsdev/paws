@@ -118,9 +118,7 @@ public class MainApp extends Application implements MainAppUtilities {
 			ResourceBundle bundle = ResourceBundle.getBundle(Constants.RESOURCE_LOCATION, locale);
 			loader.setResources(bundle);
 			rootLayout = (BorderPane) loader.load();
-			if (getOperatingSystem().equals(Constants.MAC_OS_X)) {
-				adjustMenusForMacOSX();
-			}
+			ControllerUtilities.adjustMenusIfNeeded(sOperatingSystem, rootLayout);
 
 			// Show the scene containing the root layout.
 			Scene scene = new Scene(rootLayout);
