@@ -8,8 +8,8 @@
 		To test what you have done so far, save your work now.  This will generate the test file and grammar rules file created to this point.
 			<p>
 				Process the text file <file id="AdvClTestingFile" section="advcl">xxxAdvClTest.txt</file> per the instructions on the 
-				<a onclick="pawsApp.launchWebPage('Q/HTMs/FLExSetupBrowser.htm')" href="">FLEx setup</a> page or the
-				<a onclick="pawsApp.launchWebPage('Q/HTMs/CarlaStudioSetupBrowser.htm')" href="">CARLAStudio setup</a> page, depending on which you are using.</p>
+				<a onclick="pawsApp.launchWebPage('Q/HTMs/FLExSetup_en.htm')" href="">FLEx setup</a> page or the
+				<a onclick="pawsApp.launchWebPage('Q/HTMs/CarlaStudioSetup_en.htm')" href="">CARLAStudio setup</a> page, depending on which you are using.</p>
 
 			<p>If any words fail to be parsed by your morphological parser, then the syntactic parser cannot parse any phrases or sentences those words are included in, 
 				so you need to fix the problem with the morphlogical parser first.</p>
