@@ -307,8 +307,11 @@ public class RootLayoutController implements Initializable {
 					} else {
 						Throwable e = webEngine.getLoadWorker().getException();
 						if (e != null) {
-							// System.out.println("Page load failed!");
+							System.out.println("Page load failed!");
 							e.printStackTrace();
+							reportFileNotFound(sUrl);
+							// give up and use main contents page
+							loadContentsPageInNewMode();
 						}
 					}
 				}
@@ -332,6 +335,37 @@ public class RootLayoutController implements Initializable {
 			@Override
 			public void run() {
 				browser.requestFocus();
+			}
+		});
+	}
+
+	protected void reportFileNotFound(String sUrl) {
+		Object[] args = { sUrl };
+		MessageFormat msgFormatter = new MessageFormat("", currentLocale);
+		msgFormatter.applyPattern(RESOURCE_FACTORY.getStringBinding("file.filenotfound").get());
+		String sFileNotFound = msgFormatter.format(args);
+
+		Alert alert = new Alert(AlertType.ERROR, "", ButtonType.CANCEL, ButtonType.OK);
+		alert.setTitle(MainApp.kApplicationTitle);
+		alert.setContentText(sFileNotFound);
+		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+		stage.getIcons().add(mainApp.getNewMainIconImage());
+		Optional<ButtonType> result = alert.showAndWait();
+		if (result.get() == ButtonType.CANCEL) {
+			System.exit(1);
+		}
+	}
+
+	public void loadContentsPageInNewMode() {
+		Platform.runLater(new Runnable() {
+			@Override
+			public void run() {
+				String sPath = sConfigurationDirectory + "HTMs" + File.separator + "Contents"
+						+ getCurrentLocaleCode() + ".htm";
+				File contentsFile = new File(sPath);
+				String sPageToLoad = Constants.FILE_PROTOCOL + contentsFile.toURI().getPath();
+				webEngine.load(sPageToLoad);
+				//webEngine.loadContent(sPage);
 			}
 		});
 	}

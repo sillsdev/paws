@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2016-2018 SIL International
+ * Copyright (c) 2016-2020 SIL International
  * This software is licensed under the LGPL, version 2.1 or later
  * (http://www.gnu.org/licenses/lgpl-2.1.html)
  */
@@ -10,7 +10,7 @@ package org.sil.paws;
  *
  */
 public class Constants {
-	public static final String VERSION_NUMBER = "1.1.4";
+	public static final String VERSION_NUMBER = "1.1.5";
 	public static final String CURRENT_DATABASE_VERSION = "11";
 	public static final long OUTPUT_TRANSFORM_COUNT = 17;
 
