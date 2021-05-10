@@ -292,6 +292,7 @@ if(<xsl:value-of select="../@id"/>.checked) {
    }
    
 </xsl:for-each>
+saveData();
 }
 function CheckBox(checkbox)
 {
@@ -757,7 +758,7 @@ Refresh();
 	-->
 	<xsl:template match="//featureItem">
 		<td valign="top">
-			<input type="checkbox">
+			<input type="checkbox" onfocusout="saveData()">
 				<xsl:attribute name="id">
 					<xsl:value-of select="@name"/>
 				</xsl:attribute>
@@ -1299,12 +1300,13 @@ technicalTermRef
 		</ul>
 	</xsl:template>
 	<!--
-		DoButtonedTextArea
+		CreateTextBox
 	-->
 	<xsl:template name="CreateTextBox">
 		<xsl:param name="sMarginLeft" select="'0.5in'"/>
 		<xsl:element name="textarea">
 			<xsl:attribute name="class">vernacular</xsl:attribute>
+			<xsl:attribute name="onfocusout">saveData()</xsl:attribute>
 			<xsl:if test="string-length($sMarginLeft)&gt;0">
 			<xsl:attribute name="style">
 				<xsl:text>margin-left: </xsl:text>
@@ -1354,7 +1356,8 @@ technicalTermRef
 	&#xa;
 <xsl:element name="textarea">
 			<xsl:attribute name="style">margin-left: 0.5in</xsl:attribute>
-			<xsl:attribute name="wrap">off</xsl:attribute>
+	        <xsl:attribute name="onfocusout">saveData()</xsl:attribute>
+	        <xsl:attribute name="wrap">off</xsl:attribute>
 			<xsl:attribute name="rows">1</xsl:attribute>
 			<xsl:attribute name="cols">
 				<xsl:value-of select="$sCol"/>
