@@ -482,7 +482,7 @@
           </example>     
           <p show="swAdvPMannerTypeWordOrBothDegreeYesWord"><content>Voici des exemples d’adverbes de manière modifiés par des mots de degré:</content></p>          
           <example show="swAdvPMannerTypeWordOrBothDegreeYesWord">
-             <interlinear exampleLoc="advp/mannerPhraseExample"/>
+             <interlinear exampleLoc="advp/mannerDegreePhraseExample"/>
           </example>            
           
           <p show="swAdvPMannerTypeWordOrBothDegreeYesAttaches">

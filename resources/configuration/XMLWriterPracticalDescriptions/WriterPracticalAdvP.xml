@@ -488,7 +488,7 @@ phrase or just a nominal phrase, consisting of a proper name or a description of
           </example>     
           <p show="swAdvPMannerTypeWordOrBothDegreeYesWord"><content>Examples of manner adverbs with degree words modifying them are:</content></p>          
           <example show="swAdvPMannerTypeWordOrBothDegreeYesWord">
-             <interlinear exampleLoc="advp/mannerPhraseExample"/>
+             <interlinear exampleLoc="advp/mannerDegreePhraseExample"/>
           </example>            
           
           <p show="swAdvPMannerTypeWordOrBothDegreeYesAttaches">

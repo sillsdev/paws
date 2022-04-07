@@ -1864,17 +1864,17 @@
           <xsl:if test="normalize-space(//advp/@mannerType)='word' and normalize-space(//advp/@mannerDegree)='yes' and normalize-space(//advp/mannerWordDegreeWord/@checked)='yes' or normalize-space(//advp/@mannerType)='both' and normalize-space(//advp/@mannerDegree)='yes' and normalize-space(//advp/mannerWordDegreeWord/@checked)='yes'">
 <example num="xAdvP.AdvPManner.32">
 <xsl:variable name="sExampleValue">
-<xsl:value-of select="//advp/mannerPhraseExample" />
+<xsl:value-of select="//advp/mannerDegreePhraseExample" />
 </xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//advp/mannerPhraseExample))" />
+<xsl:variable name="iExampleLength" select="string-length(normalize-space(//advp/mannerDegreePhraseExample))" />
 <xsl:choose>
 <xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
 <xsl:call-template name="OutputInterlinearExamples">
 <xsl:with-param name="sExamples">
-<xsl:value-of select="//advp/mannerPhraseExample" />
+<xsl:value-of select="//advp/mannerDegreePhraseExample" />
 </xsl:with-param>
 <xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//advp/mannerPhraseExample))" />
+<xsl:value-of select="string-length(normalize-space(//advp/mannerDegreePhraseExample))" />
 </xsl:with-param>
 <xsl:with-param name="sExNumber">xAdvP.AdvPManner.32</xsl:with-param>
 <xsl:with-param name="sLetterList">
