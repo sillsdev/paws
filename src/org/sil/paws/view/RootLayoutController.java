@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2018 SIL International
+ * Copyright (c) 2018-2022 SIL International
  * This software is licensed under the LGPL, version 2.1 or later
  * (http://www.gnu.org/licenses/lgpl-2.1.html)
  */
@@ -622,6 +622,10 @@ public class RootLayoutController implements Initializable {
 		params.add(new XsltParameter("prmMorphemes", RESOURCE_FACTORY.getStringBinding(
 				"webpage.morphemes").get()));
 		params.add(new XsltParameter("prmOutputGrammar", language.getValue("/paws/@outputGrammar")));
+		params.add(new XsltParameter("prmVernacular", RESOURCE_FACTORY.getStringBinding(
+				"webpage.vernacular").get()));
+		params.add(new XsltParameter("prmFree", RESOURCE_FACTORY.getStringBinding(
+				"webpage.free").get()));
 		transformer.clearParameters();
 		for (XsltParameter param : params) {
 			transformer.setParameter(param.name, param.value);

@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2018 SIL International
+// Copyright (c) 2016-2022 SIL International
 // This software is licensed under the LGPL, version 2.1 or later
 // (http://www.gnu.org/licenses/lgpl-2.1.html)
 /**
@@ -52,6 +52,11 @@ public class DatabaseMigratorTest {
 		Files.copy(Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_8_ORIG),
 				Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_8),
 				StandardCopyOption.REPLACE_EXISTING);
+		// prime the pump by making sure version From11 is correct
+		// because doMigration changes the content of the version From4 file
+		Files.copy(Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_11_ORIG),
+				Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_11),
+				StandardCopyOption.REPLACE_EXISTING);
 	}
 
 	/**
@@ -67,7 +72,10 @@ public class DatabaseMigratorTest {
 		Files.copy(Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_8_ORIG),
 				Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_8),
 				StandardCopyOption.REPLACE_EXISTING);
-
+		// restore version from 11 back to its initial state
+		Files.copy(Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_11_ORIG),
+				Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_11),
+				StandardCopyOption.REPLACE_EXISTING);
 	}
 
 	@Test
@@ -114,5 +122,36 @@ public class DatabaseMigratorTest {
 		assertEquals("no", language.getValue("/paws/typology/@noCaseExperiencer"));
 		assertEquals("no", language.getValue("/paws/adjp/modifiersDegree/@checked"));
 		assertEquals("no", language.getValue("/paws/final/@checkedOff"));
+	}
+
+	@Test
+	public void testMigratorFrom11() {
+		databaseFile = new File(Constants.UNIT_TEST_DATA_FILE_VERSION_11);
+		migrator = new DatabaseMigrator(databaseFile);
+		String version = migrator.getVersion();
+		assertEquals("11", version);
+		migrator.doMigration();
+		version = migrator.getVersion();
+		assertEquals(Constants.CURRENT_DATABASE_VERSION, version);
+		Locale locale = new Locale("en");
+		language = new Language();
+		XMLBackEndProvider xmlBackEndProvider = new XMLBackEndProvider(language, locale);
+		xmlBackEndProvider.loadLanguageDataFromFile(databaseFile);
+		language = xmlBackEndProvider.getLanguage();
+		assertEquals(Constants.CURRENT_DATABASE_VERSION, language.getValue("/paws/@dbversion"));
+		
+
+		assertEquals("Kiyoꞌ Per nits.", language.getValue("/paws/typology/example/interlinearEntry[1]/vernacularLine"));
+		assertEquals("Pedro está tomando agua.", language.getValue("/paws/typology/example/interlinearEntry[1]/freeLine"));
+		assertEquals("Kiyoꞌl miyiꞌ libr.", language.getValue("/paws/typology/example/interlinearEntry[2]/vernacularLine"));
+		assertEquals("El hombre está leyendo el libro.", language.getValue("/paws/typology/example/interlinearEntry[2]/freeLine"));
+		assertEquals("Kito miyiꞌ lar.", language.getValue("/paws/typology/example/interlinearEntry[3]/vernacularLine"));
+		assertEquals("El hombre está vendiend ropa.", language.getValue("/paws/typology/example/interlinearEntry[3]/freeLine"));
+		assertEquals("Kichoꞌ Che ya.", language.getValue("/paws/typology/example/interlinearEntry[4]/vernacularLine"));
+		assertEquals("José está cortando el árbol.", language.getValue("/paws/typology/example/interlinearEntry[4]/freeLine"));
+		assertEquals("Ndin Juan Lip.", language.getValue("/paws/typology/example/interlinearEntry[5]/vernacularLine"));
+		assertEquals("Juan pegó a Felipe.", language.getValue("/paws/typology/example/interlinearEntry[5]/freeLine"));
+		assertEquals("Ndao miyiꞌ bido.", language.getValue("/paws/typology/example/interlinearEntry[6]/vernacularLine"));
+		assertEquals("El hombre comió el plátano.", language.getValue("/paws/typology/example/interlinearEntry[6]/freeLine"));
 	}
 }

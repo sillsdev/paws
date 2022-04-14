@@ -186,6 +186,13 @@ SPAN.term {
   border-bottom: groove;
   border-left: groove;
 }
+.interlinearTable textarea {
+width: 100%;
+}
+.interlinearTable {
+border: 1px solid black;
+margin-left:0.5in;
+}
 .return {
 font-size:larger;
 margin-top: .25in;

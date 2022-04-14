@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2016-2020 SIL International
+ * Copyright (c) 2016-2022 SIL International
  * This software is licensed under the LGPL, version 2.1 or later
  * (http://www.gnu.org/licenses/lgpl-2.1.html)
  */
@@ -10,8 +10,8 @@ package org.sil.paws;
  *
  */
 public class Constants {
-	public static final String VERSION_NUMBER = "1.1.7";
-	public static final String CURRENT_DATABASE_VERSION = "11";
+	public static final String VERSION_NUMBER = "1.2.0";
+	public static final String CURRENT_DATABASE_VERSION = "12";
 	public static final long OUTPUT_TRANSFORM_COUNT = 17;
 
 	public static final String RESOURCE_LOCATION = "org.sil.paws.resources.paws";
@@ -47,5 +47,7 @@ public class Constants {
 	public static final String UNIT_TEST_DATA_FILE_VERSION_8To9a = "test/org/sil/paws/testdata/DataMigrationTestFrom8To9a.paw";
 	public static final String UNIT_TEST_DATA_FILE_VERSION_8To9b = "test/org/sil/paws/testdata/DataMigrationTestFrom8To9b.paw";
 	public static final String UNIT_TEST_DATA_FILE_VERSION_8To10 = "test/org/sil/paws/testdata/DataMigrationTestFrom8To10.paw";
+	public static final String UNIT_TEST_DATA_FILE_VERSION_11 = "test/org/sil/paws/testdata/DataMigrationTestFrom11.paw";
+	public static final String UNIT_TEST_DATA_FILE_VERSION_11_ORIG = "test/org/sil/paws/testdata/DataMigrationTestFrom11Orig.paw";
 	public static final String UNIT_TEST_DATA_FILE_VERSION_2 = "test/org/sil/paws/testdata/TestDataVersion2.paw";
 }

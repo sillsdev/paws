@@ -32,9 +32,14 @@ Preamble
 	<xsl:param name="prmExplanation" select="'Explanation'"/>
 	<xsl:param name="prmMorphemes" select="'Morphemes'"/>
 	<xsl:param name="prmOutputGrammar" select="'False'"/>
+	<xsl:param name="prmVernacular" select="'Language:'"/>
+	<xsl:param name="prmFree" select="'Free:'"/>
 	<xsl:variable name="Section">
 		<xsl:value-of select="//form/@section"/>
 	</xsl:variable>
+	<xsl:variable name="sLastVisible" select="'LastVisible'"/>
+	<xsl:variable name="maxInterlinear" select="'9'"/>
+	<xsl:variable name="minInterlinearToShow" select="'3'"/>
 	<xsl:key name="TechnicalTerms" match="technicalTerm" use="@id"/>
 	<!--
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -79,6 +84,21 @@ BODY {
 		</html>
 	</xsl:template>
 	<!--
+		GetPathForInterlinearEntry
+	-->
+	<xsl:template name="GetPathForInterlinearEntry">
+		<xsl:choose>
+			<xsl:when test="@section">
+				<xsl:value-of select="@section"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$Section"/>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:text>/</xsl:text>
+		<xsl:value-of select="./@dataItem"/>
+	</xsl:template>
+	<!--
   - - - - - - - -
   JScript
   - - - - - - - -
@@ -95,6 +115,55 @@ var SpecPosInitial = 1;
 var SpecPosInternal = 2;
 var SpecPosFinal = 3;
 var SpecPosUnknown = 4;
+<xsl:for-each select="//textBox[contains(@dataItem,'Example') or @dataItem='example']">
+	<xsl:text>var </xsl:text>
+	<xsl:value-of select="@id"/>
+	<xsl:value-of select="$sLastVisible"/>
+	<xsl:text>= 3;
+</xsl:text>
+</xsl:for-each>
+<xsl:for-each select="//textBox[contains(@dataItem,'Example') or @dataItem='example']">
+	<xsl:text>function InsertClicked</xsl:text>
+	<xsl:value-of select="@id"/>
+	<xsl:text>()
+{
+	</xsl:text>
+	<xsl:value-of select="@id"/>
+	<xsl:value-of select="$sLastVisible"/>
+	<xsl:text>= Math.min(10,</xsl:text>
+	<xsl:value-of select="@id"/>
+	<xsl:value-of select="$sLastVisible"/>
+	<xsl:text>+1);
+		switch (</xsl:text>
+	<xsl:value-of select="@id"/>
+	<xsl:value-of select="$sLastVisible"/>
+	<xsl:text>)
+	{
+</xsl:text>
+	<xsl:call-template name="CreateInterlinearDisplayCase">
+		<xsl:with-param name="iCount" select="$minInterlinearToShow+1"/>
+	</xsl:call-template>
+	<xsl:text>
+	}
+	</xsl:text>
+	<xsl:text>if (</xsl:text>
+	<xsl:value-of select="@id"/>
+	<xsl:value-of select="$sLastVisible"/>
+	<xsl:text> &gt; </xsl:text>
+	<xsl:value-of select="$maxInterlinear"/>
+	<xsl:text>)
+	</xsl:text>
+	<xsl:value-of select="@id"/>
+	<xsl:text>InsertAction.style.display = "none";
+		else
+	</xsl:text>
+	<xsl:value-of select="@id"/>
+	<xsl:text>InsertAction.style.display = "";
+	</xsl:text>
+	<xsl:text>
+}
+</xsl:text>
+</xsl:for-each>
 
 function Initialize(locale)
 {
@@ -292,6 +361,7 @@ if(<xsl:value-of select="../@id"/>.checked) {
    }
    
 </xsl:for-each>
+
 saveData();
 }
 function CheckBox(checkbox)
@@ -311,7 +381,14 @@ pawsApp.showTermDefinition(msg);
   textBox element load
   - - - - - - - -
   -->
-	<xsl:template match="//textBox | //catMap" mode="load">
+	<xsl:template match="//textBox[contains(@dataItem,'Example') or @dataItem='example']" mode="load">
+		<xsl:call-template name="CreateInterlinearEntryLoadJScript">
+			<xsl:with-param name="sPath">
+				<xsl:call-template name="GetPathForInterlinearEntry"/>
+			</xsl:with-param>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="//textBox[not(contains(@dataItem,'Example')) and @dataItem!='example'] | //catMap" mode="load">
 		<xsl:value-of select="@id"/>.value = <xsl:text>pawsApp.getAnswerValue("//</xsl:text>
 		<xsl:choose>
 			<xsl:when test="@section">
@@ -323,13 +400,20 @@ pawsApp.showTermDefinition(msg);
 		</xsl:choose>
 		<xsl:text>/</xsl:text>
 		<xsl:value-of select="./@dataItem"/>");
-</xsl:template>
+	</xsl:template>
 	<!--
   - - - - - - - -
   textBox element save
   - - - - - - - -
-  -->
-	<xsl:template match="//textBox | //catMap" mode="save">
+	-->
+	<xsl:template match="//textBox[contains(@dataItem,'Example') or @dataItem='example']" mode="save">
+		<xsl:call-template name="CreateInterlinearEntrySaveJScript">
+			<xsl:with-param name="sPath">
+				<xsl:call-template name="GetPathForInterlinearEntry"/>
+			</xsl:with-param>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="//textBox[not(contains(@dataItem,'Example')) and @dataItem!='example'] | //catMap" mode="save">
 		<xsl:text>pawsApp.setAnswerValue("//</xsl:text>
 		<xsl:choose>
 			<xsl:when test="@section">
@@ -341,7 +425,7 @@ pawsApp.showTermDefinition(msg);
 		</xsl:choose>
 		<xsl:text>/</xsl:text>
 		<xsl:value-of select="./@dataItem"/>", <xsl:value-of select="@id"/>.value);
-</xsl:template>
+	</xsl:template>
 	<!--
   - - - - - - - -
   featureItem load
@@ -1132,15 +1216,20 @@ Refresh();
 		</td>
 	</xsl:template>
 	<xsl:template match="//textBox[not(parent::featureRow)]">
+		<xsl:variable name="sHabby" select="@dataItem"/>
 		<xsl:choose>
+			<xsl:when test="@dataItem[contains(.,'Example') or .='example']">
+				<xsl:call-template name="CreateInterlinearEntry"/>
+			</xsl:when>
 			<xsl:when test="parent::checkbox">
 				<br/><br/>
+				<xsl:call-template name="CreateTextBox"/>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:text>&#xa;</xsl:text>
+				<xsl:call-template name="CreateTextBox"/>
 			</xsl:otherwise>
 		</xsl:choose>
-		<xsl:call-template name="CreateTextBox"/>
 	</xsl:template>
 	<!--
    title
@@ -1300,6 +1389,275 @@ technicalTermRef
 		</ul>
 	</xsl:template>
 	<!--
+		CreateInterlinearDisplayCase
+	-->
+	<xsl:template name="CreateInterlinearDisplayCase">
+		<xsl:param name="iCount"/>
+		<xsl:text>case </xsl:text>
+		<xsl:value-of select="$iCount"/>
+		<xsl:text>:
+		</xsl:text>
+		<xsl:value-of select="@id"/>
+		<xsl:value-of select="$iCount"/>
+		<xsl:text>.style.display = "";
+		break;
+		</xsl:text>
+		<xsl:if test="$iCount &lt;= $maxInterlinear">
+			<xsl:call-template name="CreateInterlinearDisplayCase">
+				<xsl:with-param name="iCount" select="$iCount+1"/>
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:template>
+	<!--
+		CreateInterlinearEntry
+	-->
+	<xsl:template name="CreateInterlinearEntry">
+		<table id="{@id}">
+				<xsl:call-template name="CreateInterlinearSubTable"/>
+			<tr id="{@id}InsertAction">
+				<td onclick="InsertClicked{@id}()">
+					<img  style="margin-left: 0.5in" src="{$prmInstallPath}/Styles/insertAction.png" alt="Insert Acton icon"/>
+				</td>
+			</tr>
+		</table>
+	</xsl:template>
+	<!--
+		CreateInterlinearEntryLoadJScript
+	-->
+	<xsl:template name="CreateInterlinearEntryLoadJScript">
+		<xsl:param name="sPath"/>
+		<xsl:param name="iCount" select="1"/>
+		<xsl:if test="$iCount &gt; $minInterlinearToShow">
+			<xsl:text>sTemp = pawsApp.getAnswerValue("//</xsl:text>
+			<xsl:value-of select="$sPath"/>
+			<xsl:text>/interlinearEntry[</xsl:text>
+			<xsl:value-of select="$iCount"/>
+			<xsl:text>]/vernacularLine");
+				if ((sTemp.length > 0))
+				{
+			</xsl:text>
+			<xsl:value-of select="@id"/>
+			<xsl:value-of select="$sLastVisible"/>
+			<xsl:text> = </xsl:text>
+			<xsl:value-of select="$iCount"/>
+			<xsl:text>;
+</xsl:text>
+			<xsl:value-of select="@id"/>
+			<xsl:value-of select="$iCount"/>
+			<xsl:text>.style.display = "";
+				}
+				else
+				{
+			</xsl:text>
+			<xsl:value-of select="@id"/>
+			<xsl:value-of select="$iCount"/>
+			<xsl:text>.style.display = "none";
+				}
+			</xsl:text>
+</xsl:if>
+		<xsl:call-template name="CreateInterlinearLineLoadJScript">
+			<xsl:with-param name="iCount" select="$iCount"/>
+			<xsl:with-param name="sPath" select="$sPath"/>
+			<xsl:with-param name="sType" select="'vernacular'"/>
+		</xsl:call-template>
+		<xsl:call-template name="CreateInterlinearLineLoadJScript">
+			<xsl:with-param name="iCount" select="$iCount"/>
+			<xsl:with-param name="sPath" select="$sPath"/>
+			<xsl:with-param name="sType" select="'free'"/>
+		</xsl:call-template>
+		<xsl:if test="$iCount &lt;= $maxInterlinear">
+			<xsl:call-template name="CreateInterlinearEntryLoadJScript">
+				<xsl:with-param name="sPath" select="$sPath"/>
+				<xsl:with-param name="iCount" select="$iCount+1"/>
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:template>
+	<!--
+		CreateInterlinearLineLoadJScript
+	-->
+	<xsl:template name="CreateInterlinearLineLoadJScript">
+		<xsl:param name="iCount"/>
+		<xsl:param name="sPath"/>
+		<xsl:param name="sType"/>
+		<xsl:value-of select="@id"/>
+		<xsl:choose>
+			<xsl:when test="$sType='vernacular'">
+				<xsl:text>v</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>f</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:value-of select="$iCount"/>
+		<xsl:text>.value = pawsApp.getAnswerValue("//</xsl:text>
+		<xsl:value-of select="$sPath"/>
+		<xsl:text>/interlinearEntry[</xsl:text>
+		<xsl:value-of select="$iCount"/>
+		<xsl:text>]/</xsl:text>
+		<xsl:choose>
+			<xsl:when test="$sType='vernacular'">
+				<xsl:text>vernacular</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>free</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:text>Line");
+</xsl:text>
+	</xsl:template>
+	<!--
+		CreateInterlinearEntrySaveJScript
+	-->
+	<xsl:template name="CreateInterlinearEntrySaveJScript">
+		<xsl:param name="sPath"/>
+		<xsl:param name="iCount" select="1"/>
+		<xsl:call-template name="CreateInterlinearLineSaveJScript">
+			<xsl:with-param name="iCount" select="$iCount"/>
+			<xsl:with-param name="sPath" select="$sPath"/>
+			<xsl:with-param name="sType" select="'vernacular'"/>
+		</xsl:call-template>
+		<xsl:call-template name="CreateInterlinearLineSaveJScript">
+			<xsl:with-param name="iCount" select="$iCount"/>
+			<xsl:with-param name="sPath" select="$sPath"/>
+			<xsl:with-param name="sType" select="'free'"/>
+		</xsl:call-template>
+		<xsl:if test="$iCount &lt;= $maxInterlinear">
+			<xsl:call-template name="CreateInterlinearEntrySaveJScript">
+				<xsl:with-param name="sPath" select="$sPath"/>
+				<xsl:with-param name="iCount" select="$iCount+1"/>
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:template>
+	<!--
+		CreateInterlinearLineSaveJScript
+	-->
+	<xsl:template name="CreateInterlinearLineSaveJScript">
+		<xsl:param name="iCount"/>
+		<xsl:param name="sPath"/>
+		<xsl:param name="sType"/>
+		<xsl:text>pawsApp.setAnswerValue("//</xsl:text>
+		<xsl:value-of select="$sPath"/>
+		<xsl:text>/interlinearEntry[</xsl:text>
+		<xsl:value-of select="$iCount"/>
+		<xsl:text>]/</xsl:text>
+		<xsl:choose>
+			<xsl:when test="$sType='vernacular'">
+				<xsl:text>vernacular</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>free</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:text>Line", </xsl:text>
+		<xsl:value-of select="@id"/>
+		<xsl:choose>
+			<xsl:when test="$sType='vernacular'">
+				<xsl:text>v</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>f</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:value-of select="$iCount"/>
+		<xsl:text>.value);
+</xsl:text>
+	</xsl:template>
+	<!--
+		CreateInterlinearSubTable
+	-->
+	<xsl:template name="CreateInterlinearSubTable">
+		<xsl:param name="iCount" select="1"/>
+		<tr id="{@id}{$iCount}">
+			<td>
+				<table class="interlinearTable">
+					<tr>
+						<td>
+							<xsl:value-of select="$prmVernacular"/>
+						</td>
+						<td>
+							<xsl:call-template name="CreateInterlinearLine">
+								<xsl:with-param name="type" select="'vernacular'"/>
+								<xsl:with-param name="iCount" select="$iCount"/>
+							</xsl:call-template>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<xsl:value-of select="$prmFree"/>
+						</td>
+						<td>
+							<xsl:call-template name="CreateInterlinearLine">
+								<xsl:with-param name="type" select="'free'"/>
+								<xsl:with-param name="iCount" select="$iCount"/>
+							</xsl:call-template>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<xsl:if test="$iCount &lt;= $maxInterlinear">
+			<xsl:call-template name="CreateInterlinearSubTable">
+				<xsl:with-param name="iCount" select="$iCount+1"/>
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:template>
+	<!--
+		CreateInterlinearID
+	-->
+	<xsl:template name="CreateInterlinearID">
+		<xsl:param name="type" select="'vernacular'"/>
+		<xsl:param name="iCount"/>
+		<xsl:value-of select="@id"/>
+		<xsl:choose>
+			<xsl:when test="$type='vernacular'">
+				<xsl:text>v</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>f</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:value-of select="$iCount"/>
+	</xsl:template>
+	<!--
+		CreateInterlinearLine
+	-->
+	<xsl:template name="CreateInterlinearLine">
+		<xsl:param name="type" select="'vernacular'"/>
+		<xsl:param name="iCount"/>
+		<textarea rows="1" contenteditable="true">
+			<xsl:attribute name="class">
+				<xsl:value-of select="$type"/>
+			</xsl:attribute>
+			<xsl:attribute name="onfocusout">saveData()</xsl:attribute>
+			<xsl:if test="$prmRtlScript='True'">
+				<xsl:attribute name="style">direction: rtl</xsl:attribute>
+			</xsl:if>
+			<xsl:attribute name="wrap">off</xsl:attribute>
+			<xsl:attribute name="cols">
+				<xsl:choose>
+					<xsl:when test="@cols">
+						<xsl:value-of select="@cols"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>40</xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:attribute>
+			<xsl:attribute name="id">
+				<xsl:call-template name="CreateInterlinearID">
+					<xsl:with-param name="type" select="$type"/>
+					<xsl:with-param name="iCount" select="$iCount"/>
+				</xsl:call-template>
+			</xsl:attribute>
+			<xsl:attribute name="name">
+				<xsl:call-template name="CreateInterlinearID">
+					<xsl:with-param name="type" select="$type"/>
+					<xsl:with-param name="iCount" select="$iCount"/>
+				</xsl:call-template>
+			</xsl:attribute>
+		</textarea>
+	</xsl:template>
+	<!--
 		CreateTextBox
 	-->
 	<xsl:template name="CreateTextBox">
@@ -1308,10 +1666,10 @@ technicalTermRef
 			<xsl:attribute name="class">vernacular</xsl:attribute>
 			<xsl:attribute name="onfocusout">saveData()</xsl:attribute>
 			<xsl:if test="string-length($sMarginLeft)&gt;0">
-			<xsl:attribute name="style">
-				<xsl:text>margin-left: </xsl:text>
-			<xsl:value-of select="$sMarginLeft"/>
-			</xsl:attribute>
+				<xsl:attribute name="style">
+					<xsl:text>margin-left: </xsl:text>
+					<xsl:value-of select="$sMarginLeft"/>
+				</xsl:attribute>
 			</xsl:if>
 			<xsl:if test="$prmRtlScript='True'">
 				<xsl:attribute name="style">direction: rtl</xsl:attribute>

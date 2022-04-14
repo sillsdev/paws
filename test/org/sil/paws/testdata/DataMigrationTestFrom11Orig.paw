@@ -1,0 +1,3892 @@
+<?xml version="1.0" encoding="UTF-8"?><paws dbversion="11" outputGrammar="False" outputWriter="False" outputWriterPractical="True" outputWriterPracticalFrench="False" outputWriterPracticalSpanish="True">
+  <leftOffAt>C:\Users\Cheri Black\AppData\Roaming\paws\zca\AdvPManner.htm</leftOffAt>
+  <language>
+    <langNames>
+      <langName lang="en">Coatecas Altas Zapotec</langName>
+      <langName lang="es">zapoteco de Coatecas Altas</langName><langName lang="fr"/>
+    </langNames>
+    <langAbbr>zca</langAbbr>
+    <font bold="False" italic="False" rtl="False" strike="False" under="False">
+      <fontName>Charis SIL AmArea</fontName>
+      <fontSize>12</fontSize>
+      <fontColor>0</fontColor>
+    </font>
+    <textSFM>\t</textSFM>
+    <answerFile>C:\Users\Cheri Black\Documents\Mexico\GrammarWritingWorkshop\Benton\CoatecasAltas.paw</answerFile>
+    <grammarFile>C:\Cheri\pcpatr\starterkit\PAWS\AnswerSets\Ayautla\TestNew.grm</grammarFile>
+    <writerFile>C:\Users\Mary\Documents\My PAWS\v.xml</writerFile>
+    <writerPracticalFile>C:\Users\Cheri Black\Documents\Mexico\GrammarWritingWorkshop\Benton\TestNewWriterPractical.xml</writerPracticalFile>
+    <writerPracticalSpanishFile>C:\Users\Cheri Black\Documents\Mexico\GrammarWritingWorkshop\Benton\TestNewWriterPracticalSpanish.xml</writerPracticalSpanishFile><writerPracticalFrenchFile>C:\Users\Cheri Black\Documents\Mexico\GrammarWritingWorkshop\Benton\TestNewWriterPracticalFrench.xml</writerPracticalFrenchFile>
+    <exampleFilesPath>C:\Cheri\pcpatr\starterkit\PAWS\AnswerSets\Ayautla</exampleFilesPath>
+  </language>
+  <typology case="none" caseExperiencer="yesObj" checkedOff="yes" class10agr="irrelevant" class11agr="irrelevant" class12agr="irrelevant" class13agr="irrelevant" class14agr="irrelevant" class15agr="irrelevant" class16agr="irrelevant" class17agr="irrelevant" class18agr="irrelevant" class19agr="irrelevant" class1agr="irrelevant" class20agr="irrelevant" class21agr="irrelevant" class22agr="irrelevant" class23agr="irrelevant" class24agr="irrelevant" class25agr="irrelevant" class2agr="irrelevant" class3agr="irrelevant" class4agr="irrelevant" class5agr="irrelevant" class6agr="irrelevant" class7agr="irrelevant" class8agr="irrelevant" class9agr="irrelevant" classifier="no" classifierNum="number" classifierTypeNumAgr="no" noCaseExperiencer="yes" wordOrder="VSO">
+    <example>Kiyoꞌ Per nits. (Pedro está tomando agua.) 
+Kiyoꞌl miyiꞌ libr. (El hombre está leyendo el libro.)
+Kito miyiꞌ lar. (El hombre está vendiend ropa.)
+Kichoꞌ Che ya. (José está cortando el árbol.)
+Ndin Juan Lip. (Juan pegó a Felipe.)
+Ndao miyiꞌ bido. (El hombre comió el plátano.)
+ 
+
+</example>
+    <pnExample>Kiyo xaꞌi.  (Está tomando bebida alcoholica.)
+Ndin xaꞌ xaꞌ.  (El pegó a él o a ella).
+Michoꞌ noi.   (Cortamos esa cosa.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pnExample>
+    <experiencerExample>Mikë tu mbëze yaꞌn. (Me picó un insecto volador en la mano.)
+Gal Lip tu yoꞌ. (Felipe le va a tocar una casa.)
+Zhëꞌl Juan kun Per. (Se encontrará Juan con Pedro.) 
+</experiencerExample>
+    <experiencerPnExample>Zhëꞌl go da. (Me van a encontrar.) 
+Zhëꞌl da go. (Les voy a encontrar.)
+Wixle. (Tu codiciarás esa cosa.) 
+
+ </experiencerPnExample>
+    <intExample>Kiyao men. (PicDicp.27)  (Está comiendo la gente.) 
+Kitsëꞌd mbwin. (PicDicp.28) (El joven está estudiando.) 
+Kitib unaꞌ. (PcDicp.28) (La mujer está cosiendo (ropa)).
+</intExample>
+    <pnIntExample>Nzha̱o̱wa̱.  (Yo como (diario).)
+Nikizël.  (Tú andas (diario).)
+Niyit no. (Nosotros jugamos (exclusivo).)
+</pnIntExample>
+    <experiencerIntExample>Yazha miyiꞌ. (PicDicp.30) (El hombre se va a cansar.)
+Xiz mëꞌd. (El niño temblará.)  
+Yak mëꞌd. (El niño sanará.)
+</experiencerIntExample>
+    <experiencerPnIntExample>Yazha da.  (Me voy a cansar.) 
+Xiz xaꞌ. (El temblará.) 
+Yachin be. (Nosotros nos caeremos (exclusivo)
+Lats go.  (Ellos van a enflacar/ adelgarzar.
+</experiencerPnIntExample>
+    <splitConditions>
+    </splitConditions>
+    <class1Example>
+    </class1Example>
+    <class2Example>
+    </class2Example>
+    <class3Example>
+    </class3Example>
+    <class4Example>
+    </class4Example>
+    <class5Example>
+    </class5Example>
+    <class6Example>
+    </class6Example>
+    <class7Example>
+    </class7Example>
+    <class8Example>
+    </class8Example>
+    <class9Example>
+    </class9Example>
+    <class10Example>
+    </class10Example>
+    <class11Example>
+    </class11Example>
+    <class12Example>
+    </class12Example>
+    <class13Example>
+    </class13Example>
+    <class14Example>
+    </class14Example>
+    <class15Example>
+    </class15Example>
+    <class16Example>
+    </class16Example>
+    <class17Example>
+    </class17Example>
+    <class18Example>
+    </class18Example>
+    <class19Example>
+    </class19Example>
+    <class20Example>
+    </class20Example>
+    <class21Example>
+    </class21Example>
+    <class22Example>
+    </class22Example>
+    <class23Example>
+    </class23Example>
+    <class24Example>
+    </class24Example>
+    <class25Example>
+    </class25Example>
+    <classAnimalSgExample>
+    </classAnimalSgExample>
+    <classAnimalPlExample>
+    </classAnimalPlExample>
+    <classInsectSgExample>
+    </classInsectSgExample>
+    <classInsectPlExample>
+    </classInsectPlExample>
+    <classLiquidSgExample>
+    </classLiquidSgExample>
+    <classLiquidPlExample>
+    </classLiquidPlExample>
+    <classRoundSgExample>
+    </classRoundSgExample>
+    <classRoundPlExample>
+    </classRoundPlExample>
+    <classCylinderSgExample>
+    </classCylinderSgExample>
+    <classCylinderPlExample>
+    </classCylinderPlExample>
+    <classSphereSgExample>
+    </classSphereSgExample>
+    <classSpherePlExample>
+    </classSpherePlExample>
+    <classTreeSgExample>
+    </classTreeSgExample>
+    <classTreePlExample>
+    </classTreePlExample>
+    <classWoodSgExample>
+    </classWoodSgExample>
+    <classWoodPlExample>
+    </classWoodPlExample>
+    <classOtherSgExample>
+    </classOtherSgExample>
+    <classOtherPlExample>
+    </classOtherPlExample>
+    <classAnimalExample>
+    </classAnimalExample>
+    <classInsectExample>
+    </classInsectExample>
+    <classLiquidExample>
+    </classLiquidExample>
+    <classRoundExample>
+    </classRoundExample>
+    <classCylinderExample>
+    </classCylinderExample>
+    <classSphereExample>
+    </classSphereExample>
+    <classTreeExample>
+    </classTreeExample>
+    <classWoodExample>
+    </classWoodExample>
+    <classOtherExample>
+    </classOtherExample>
+    <classifierHumanExample>
+    </classifierHumanExample>
+    <classifierAnimalExample>
+    </classifierAnimalExample>
+    <classifierBirdExample>
+    </classifierBirdExample>
+    <classifierBoatExample>
+    </classifierBoatExample>
+    <classifierClothingExample>
+    </classifierClothingExample>
+    <classifierTreeExample>
+    </classifierTreeExample>
+    <classifierLongThinExample>
+    </classifierLongThinExample>
+    <classifierLongWavyExample>
+    </classifierLongWavyExample>
+    <classifierFlatExample>
+    </classifierFlatExample>
+    <classifierCylindricalExample>
+    </classifierCylindricalExample>
+    <classifierMechanicalExample>
+    </classifierMechanicalExample>
+    <classifierGenericExample>
+    </classifierGenericExample>
+    <classifierOtherExample>
+    </classifierOtherExample>
+    <classifierAgrExample>
+    </classifierAgrExample>
+    <classifierSpecificExample>
+    </classifierSpecificExample>
+    <classifierTypeExample>
+    </classifierTypeExample>
+  </typology>
+  <qp cardinalHead="final" checkedOff="yes" degree="yes" degreeClassifier="no" determiner="noAll" determinerClassifier="no" determinerType="yes" npDegree="some" npDegreeClassifier="no" numberClassifier="no" partitive="other" partitivePPPos="after" quantifierClassifier="no">
+    <npDegreeTypeProclitic checked="no">
+    </npDegreeTypeProclitic>
+    <npDegreeTypeEnclitic checked="no">
+    </npDegreeTypeEnclitic>
+    <npDegreeTypePrefix checked="no">
+    </npDegreeTypePrefix>
+    <npDegreeTypeSuffix checked="no">
+    </npDegreeTypeSuffix>
+    <npDegreeTypeOther checked="yes">attaches in 2nd position to first word in nominal phrase</npDegreeTypeOther>
+    <npDegreePosBefore checked="yes">
+    </npDegreePosBefore>
+    <npDegreePosAfter checked="no">
+    </npDegreePosAfter>
+    <npDegreePosBoth checked="no">
+    </npDegreePosBoth>
+    <npDegreePosOther checked="no">
+    </npDegreePosOther>
+    <determinerPosBefore checked="yes">
+    </determinerPosBefore>
+    <determinerPosAfter checked="no">
+    </determinerPosAfter>
+    <determinerPosBoth checked="no">
+    </determinerPosBoth>
+    <determinerPosOther checked="no">
+    </determinerPosOther>
+    <determinerTypeProclitic checked="no">
+    </determinerTypeProclitic>
+    <determinerTypeEnclitic checked="no">
+    </determinerTypeEnclitic>
+    <determinerTypePrefix checked="no">
+    </determinerTypePrefix>
+    <determinerTypeSuffix checked="no">
+    </determinerTypeSuffix>
+    <determinerTypeOther checked="no">
+    </determinerTypeOther>
+    <degreeBefore checked="yes">
+    </degreeBefore>
+    <degreeAfter checked="no">
+    </degreeAfter>
+    <degreeBoth checked="no">
+    </degreeBoth>
+    <degreeOther checked="no">
+    </degreeOther>
+    <degreeTypePrefix checked="no">
+    </degreeTypePrefix>
+    <degreeTypeSuffix checked="no">
+    </degreeTypeSuffix>
+    <degreeTypeOther checked="no">
+    </degreeTypeOther>
+    <ordinalAffix checked="no">
+    </ordinalAffix>
+    <ordinalIndependent checked="no">
+    </ordinalIndependent>
+    <ordinalWord checked="yes">
+    </ordinalWord>
+    <ordinalOther checked="no">
+    </ordinalOther>
+    <ordinalWordBefore checked="yes">
+    </ordinalWordBefore>
+    <ordinalWordAfter checked="no">
+    </ordinalWordAfter>
+    <ordinalWordBoth checked="no">
+    </ordinalWordBoth>
+    <ordinalWordOther checked="no">
+    </ordinalWordOther>
+    <ordinalBefore checked="yes">
+    </ordinalBefore>
+    <ordinalAfter checked="no">
+    </ordinalAfter>
+    <ordinalBoth checked="no">
+    </ordinalBoth>
+    <ordinalNumOther checked="no">
+    </ordinalNumOther>
+    <ordinalNumNowhere checked="no"/>
+    <all>rë
+zarë
+dub
+</all>
+    <almost>casi</almost>
+    <only>nab        solo
+nabtsa     solamente
+-tsa         -solamente (adj o adv) a result)
+laore    (apenas - barely, hardly)
+
+</only>
+    <npDegreeCliticExample>
+    </npDegreeCliticExample>
+    <npDegreeAffixExample>
+    </npDegreeAffixExample>
+    <npDegreeOtherExample>gaiꞌtsa mëꞌd        (solamente cinco niños)
+nabtsa rop mëꞌd natsin (solamente dos niños listos...)
+mëꞌdtsa reꞌ  (solamente este niño)</npDegreeOtherExample>
+    <example>Rë mëꞌd             (todos niño: todos los niños)
+Dub gaiꞌ mëꞌd     (todos los cincos niños)
+Casi gaiꞌ mëꞌd     (casi cinco niños)
+laore mëꞌd re    (apenas este niño...)</example>
+    <some>pla    alguno
+</some>
+    <any>wane      (cualquier)</any>
+    <every>tugaꞌ   cada
+kad    cada</every>
+    <determinerExample>Pla rë xaꞌ miyiꞌ zeꞌ nzha Lolaꞌ (Algunos de aquellos hombres van a Oaxaca.)
+Tugaꞌ rë xlë baꞌ yuchaoꞌ leꞌn bols. (Cada una de esa fruta se va a guadar en la bolsa.
+Kad tu rë ma baꞌ, biꞌt go. (Cada uno de esos animales, matanlos.
+Wane ploi, na ya.  ( Cualquier lugar que sea, yo voy).
+tugaꞌ xlë  (cada fruta)</determinerExample>
+    <determinerCliticExample>
+    </determinerCliticExample>
+    <determinerAffixExample>
+    </determinerAffixExample>
+    <determinerOtherExample>
+    </determinerOtherExample>
+    <many>dox (mucho)
+nayax  (mucho)  
+ziyen  (muchos) 
+</many>
+    <much>dox 
+tu bëd</much>
+    <few>cheꞌp
+</few>
+    <otherQ>
+    </otherQ>
+    <degreeWordExample>dox
+</degreeWordExample>
+    <degreeExample>dox nayax
+dox cheꞌp
+</degreeExample>
+    <degreeAttachesExample>
+    </degreeAttachesExample>
+    <degreeAttachesNPExample>
+    </degreeAttachesNPExample>
+    <cardinalNumbers1>tube
+</cardinalNumbers1>
+    <cardinalNumbers2>chope</cardinalNumbers2>
+    <cardinalNumbers3>chone</cardinalNumbers3>
+    <cardinalNumbers4>tape</cardinalNumbers4>
+    <cardinalNumbers5>gaiꞌye</cardinalNumbers5>
+    <cardinalNumbers6>xoꞌpe</cardinalNumbers6>
+    <cardinalNumbers7>gazhe</cardinalNumbers7>
+    <cardinalNumbers8>xone</cardinalNumbers8>
+    <cardinalNumbers9>yeꞌi</cardinalNumbers9>
+    <cardinalNumbers10>chiꞌ</cardinalNumbers10>
+    <cardinalNumbers11>chiꞌbitube
+</cardinalNumbers11>
+    <cardinalNumbers12>tu dusene</cardinalNumbers12>
+    <cardinalNumbers13>chine</cardinalNumbers13>
+    <cardinalNumbers14>chidai</cardinalNumbers14>
+    <cardinalNumbers15>chiꞌne</cardinalNumbers15>
+    <cardinalNumbers16>chiꞌnbitube</cardinalNumbers16>
+    <cardinalNumbers17>chiꞌnbichope</cardinalNumbers17>
+    <cardinalNumbers18>chiꞌnbichone</cardinalNumbers18>
+    <cardinalNumbers19>chiꞌbitape</cardinalNumbers19>
+    <cardinalNumbers20>gale</cardinalNumbers20>
+    <cardinalNumbers30>galebichiꞌ
+
+</cardinalNumbers30>
+    <cardinalNumbers40>choꞌi</cardinalNumbers40>
+    <cardinalNumbers50>choꞌibichiꞌ</cardinalNumbers50>
+    <cardinalNumbers60>chongale</cardinalNumbers60>
+    <cardinalNumbers70>chongal nzhochiꞌ</cardinalNumbers70>
+    <cardinalNumbers80>tapgale</cardinalNumbers80>
+    <cardinalNumbers90>tapgal nzhochiꞌ</cardinalNumbers90>
+    <cardinalNumbers100>tu gayoꞌi</cardinalNumbers100>
+    <cardinalExample>
+    </cardinalExample>
+    <ordinalNumbers1>kwaꞌn galo
+mion galo (el tercero es el primero)
+millon galo nak kwa'n mion (el million primero es el tercero)
+</ordinalNumbers1>
+    <ordinalNumbers2>kwaꞌn rop 
+kwaꞌrop
+kwaꞌn rop nak kwaꞌn mion (el segundo es el tercero) </ordinalNumbers2>
+    <ordinalNumbers3>kwaꞌn mion
+kwaꞌn mion nak kwaꞌn galo (el tercero es el primero)</ordinalNumbers3>
+    <ordinalNumbers4>kwaꞌn midap</ordinalNumbers4>
+    <ordinalNumbers5>Se usa español para los demás</ordinalNumbers5>
+    <ordinalNumbers6>
+    </ordinalNumbers6>
+    <ordinalNumbers7>
+    </ordinalNumbers7>
+    <ordinalNumbers8>
+    </ordinalNumbers8>
+    <ordinalNumbers9>
+    </ordinalNumbers9>
+    <ordinalNumbers10>
+    </ordinalNumbers10>
+    <ordinalAffixExample>
+    </ordinalAffixExample>
+    <ordinalWordExample>K'wan</ordinalWordExample>
+    <ordinalExample>xin galo xaꞌ  (su primer hijo)
+chib midap ( el cuarto chivo) 
+mëꞌd rop da ( mi segundo hijo)
+kwaꞌn nzhin leꞌn zurk mion baꞌ, gwakaꞌ. (esa cosa que está en el tercer zurco, traigamelo.) </ordinalExample>
+    <ordinalCardinalExample>alolaka gal bixiꞌ yiꞌd (los primeros 20 muchachos vengan)
+yet mirop kwaꞌn nzhin xid monton chiꞌ (la primeros dos calabaza que está en el monton de diez. </ordinalCardinalExample>
+    <nextExample>nzëꞌ  (viene, "siguiente wi tiempo, weather, time)
+nzha (con cosas, va, el que viene, el siguiente, proximo, next)</nextExample>
+    <lastExample>lult </lastExample>
+    <nextlastNPExample>zagaꞌi libr kwaꞌn nzha reꞌ nagat tseꞌd be. (Todos Estos 5 libros  siguientes, nos falta de estudiarlos.)
+mbëoꞌ nzëꞌ baꞌ (el siguiente ēl mes que viene)
+zhë gaꞌi yiꞌd xaꞌ goꞌl (el dia cinco va a venir el musico)
+lꞌin nzë' lëꞌda ya ( el año que viene,me voy)
+sman nzëꞌ reꞌ gal lani (esta semana que viene llegará/ tocará la fiesta) 
+lult zhë milox liꞌn ( el último día del año)
+lult men dao ( la última person que comió)
+</nextlastNPExample>
+    <cardinalCompoundExample>chongal nzho chiꞌybitube.  (71)
+tapgal nzho chiꞌne    (95)
+tu gayoꞌ nzho galbichiꞌ bi chope  (132) 
+ni tube (0)
+</cardinalCompoundExample>
+    <partitiveQExample>tu rë unaꞌ  ( algunas de los mujeres)
+pla raꞌ rë unaꞌ yeꞌn unaꞌ arola   (varias de las muchachas que son mayores...) 
+nayax rë xaꞌ miyiꞌ (muchos de los hombres...)
+nayax rë kwaꞌn nzhao met (mucho [alimento] que come nosotros (la gente)
+nabtsa chiꞌ rë mbwin gwa. (Solamente los diez chamacos fueron.
+</partitiveQExample>
+    <partitiveConstruction>Quant rë group</partitiveConstruction>
+    <partitiveOf>
+    </partitiveOf>
+    <cardinalNumberCategory>
+    </cardinalNumberCategory>
+    <conjunctionCategory>
+    </conjunctionCategory>
+  </qp>
+  <advp checkedOff="yes" locativeClassifier="no" locativeDegree="yes" locativeDem="locativeAffix" mannerAffixDegree="no" mannerDegree="yes" mannerType="both" temporalDegree="no">
+    <temporalDegreeWord checked="no">
+    </temporalDegreeWord>
+    <temporalDegreeAttaches checked="no">
+    </temporalDegreeAttaches>
+    <temporalDegreeRedup checked="no">
+    </temporalDegreeRedup>
+    <temporalDegreeOther checked="no">
+    </temporalDegreeOther>
+    <temporalDegreeWordBefore checked="no">
+    </temporalDegreeWordBefore>
+    <temporalDegreeWordAfter checked="no">
+    </temporalDegreeWordAfter>
+    <temporalDegreeWordBoth checked="no">
+    </temporalDegreeWordBoth>
+    <temporalDegreeWordOther checked="no">
+    </temporalDegreeWordOther>
+    <temporalIndefQWord checked="no">
+    </temporalIndefQWord>
+    <temporalIndefQPhrase checked="yes">
+    </temporalIndefQPhrase>
+    <temporalIndefQOther checked="no">
+    </temporalIndefQOther>
+    <temporalIndefTypeQNone checked="no"/>
+    <temporalIndefTypeQPQBefore checked="yes">
+    </temporalIndefTypeQPQBefore>
+    <temporalIndefTypeQPQAfter checked="no">
+    </temporalIndefTypeQPQAfter>
+    <temporalIndefTypeQPQBoth checked="no">
+    </temporalIndefTypeQPQBoth>
+    <temporalIndefTypeQPQOther checked="no">
+    </temporalIndefTypeQPQOther>
+    <temporalIndefIntWord checked="no">
+    </temporalIndefIntWord>
+    <temporalIndefIntPhrase checked="yes">
+    </temporalIndefIntPhrase>
+    <temporalIndefIntOther checked="yes">wanei (cualquiera) cho (indefinido quien)  y una expresión de tiempo</temporalIndefIntOther>
+    <temporalIndefTypeIntNone checked="no"/>
+    <temporalIndefTypeIntBefore checked="yes">
+    </temporalIndefTypeIntBefore>
+    <temporalIndefTypeIntAfter checked="no">
+    </temporalIndefTypeIntAfter>
+    <temporalIndefTypeIntBoth checked="no">
+    </temporalIndefTypeIntBoth>
+    <temporalIndefTypeIntOther checked="no">
+    </temporalIndefTypeIntOther>
+    <locativeDegreeWord checked="yes">
+    </locativeDegreeWord>
+    <locativeDegreeAttaches checked="yes">
+    </locativeDegreeAttaches>
+    <locativeDegreeRedup checked="no">
+    </locativeDegreeRedup>
+    <locativeDegreeOther checked="no">
+    </locativeDegreeOther>
+    <locativeDegreeWordBefore checked="yes">
+    </locativeDegreeWordBefore>
+    <locativeDegreeWordAfter checked="yes">
+    </locativeDegreeWordAfter>
+    <locativeDegreeWordBoth checked="no">
+    </locativeDegreeWordBoth>
+    <locativeDegreeWordOther checked="no">
+    </locativeDegreeWordOther>
+    <locativeIndefQWord checked="no">
+    </locativeIndefQWord>
+    <locativeIndefQPhrase checked="yes">
+    </locativeIndefQPhrase>
+    <locativeIndefQOther checked="no">
+    </locativeIndefQOther>
+    <locativeIndefTypeQNone checked="no"/>
+    <locativeIndefTypeQPQBefore checked="yes">
+    </locativeIndefTypeQPQBefore>
+    <locativeIndefTypeQPQAfter checked="no">
+    </locativeIndefTypeQPQAfter>
+    <locativeIndefTypeQPQBoth checked="no">
+    </locativeIndefTypeQPQBoth>
+    <locativeIndefTypeQPQOther checked="no">
+    </locativeIndefTypeQPQOther>
+    <locativeIndefIntWord checked="no">
+    </locativeIndefIntWord>
+    <locativeIndefIntPhrase checked="no">
+    </locativeIndefIntPhrase>
+    <locativeIndefIntOther checked="yes">wanei plo  (dondequiera)</locativeIndefIntOther>
+    <locativeIndefTypeIntNone checked="no"/>
+    <locativeIndefTypeIntBefore checked="no">
+    </locativeIndefTypeIntBefore>
+    <locativeIndefTypeIntAfter checked="yes">
+    </locativeIndefTypeIntAfter>
+    <locativeIndefTypeIntBoth checked="no">
+    </locativeIndefTypeIntBoth>
+    <locativeIndefTypeIntOther checked="no">
+    </locativeIndefTypeIntOther>
+    <mannerWordDegreeWord checked="yes">
+    </mannerWordDegreeWord>
+    <mannerWordDegreeAttaches checked="yes">
+    </mannerWordDegreeAttaches>
+    <mannerWordDegreeRedup checked="no">
+    </mannerWordDegreeRedup>
+    <mannerWordDegreeOther checked="no">
+    </mannerWordDegreeOther>
+    <mannerDegreeWordBefore checked="yes">
+    </mannerDegreeWordBefore>
+    <mannerDegreeWordAfter checked="yes">
+    </mannerDegreeWordAfter>
+    <mannerDegreeWordBoth checked="no">
+    </mannerDegreeWordBoth>
+    <mannerDegreeWordOther checked="yes">Unos adverbios de grado puede estar antes del adverbio o después como "dox" y cheꞌp, pero "laka" occure soalamente después de un adverbio</mannerDegreeWordOther>
+    <mannerAffixDegreeYesBefore checked="no">
+    </mannerAffixDegreeYesBefore>
+    <mannerAffixDegreeYesAfter checked="no">
+    </mannerAffixDegreeYesAfter>
+    <mannerAffixDegreeRedup checked="no">
+    </mannerAffixDegreeRedup>
+    <mannerAffixDegreeOther checked="no">
+    </mannerAffixDegreeOther>
+    <temporalExample>tu tiemp
+napaꞌ
+naltaꞌ
+nal reꞌ
+nal
+guzhë
+nguzhe
+nalzhë
+naꞌg
+yëꞌ
+orzeꞌ
+galo
+mer
+or
+la 
+or mer la
+siempr
+dubtaꞌ
+disde
+</temporalExample>
+    <temporalDegreeExample>
+    </temporalDegreeExample>
+    <temporalPhraseExample>
+    </temporalPhraseExample>
+    <temporalDegreeAffixExample>
+    </temporalDegreeAffixExample>
+    <temporalPhraseAffixExample>
+    </temporalPhraseAffixExample>
+    <temporalDegreeRedupExample>
+    </temporalDegreeRedupExample>
+    <temporalDegreeOtherExample>
+    </temporalDegreeOtherExample>
+    <temporalNounExample>yëꞌl
+liꞌn
+zhë
+naꞌg
+yëꞌ
+guzhe
+garzil
+gor
+tiemp</temporalNounExample>
+    <temporalNounModifierExample>naꞌg guzhe (ayer por la tarde)
+naꞌg garziꞌl (ayer por la mañana)
+gor naꞌg  (la hora de ayer)
+gor zhë   (la hora del día)</temporalNounModifierExample>
+    <temporalIndefTypeQWordExample>
+    </temporalIndefTypeQWordExample>
+    <temporalIndefTypeQPhraseExample>Chi nzho tu gor gak lëꞌ tu kwaꞌn. (Si se puedes hacer algo en un tiemp.)
+Kad wëlt ñan ba nitseꞌda.  (Cada vez que voy allí, aprendo.) </temporalIndefTypeQPhraseExample>
+    <temporalIndefTypeQOtherExample>Chi nzho tu gor gak lëꞌ tu kwaꞌn. (Si se puedes hacer algo en un tiemp.)
+Kad wëlt ñan ba nitseꞌda.  (Cada vez que voy allí, aprendo.) </temporalIndefTypeQOtherExample>
+    <temporalIndefTypeIntWordExample>
+    </temporalIndefTypeIntWordExample>
+    <temporalIndefTypeIntPhraseExample>Kwalesquier zhë nzhaklal dao. (Cualquiera día que quieres, come.)</temporalIndefTypeIntPhraseExample>
+    <temporalIndefTypeIntOtherExample>Chi wane cho gor gaknulda. (Si cualquier hora puedes ayudarme.)
+</temporalIndefTypeIntOtherExample>
+    <locativeExample>reꞌ        (aquí)
+lareꞌ   (aquí, enfático)
+baꞌ     (allí)
+labaꞌ (allí, enfático)
+zeꞌ  (allá) 
+</locativeExample>
+    <locativeDemOther>
+    </locativeDemOther>
+    <locativeDegreeExample>cheꞌp   (un poco)
+mer      (exacto, verdad)
+gaꞌ       (correctamente o exactamente)
+nabstaꞌ  (solamente)
+lëꞌtsa  (exactamente)</locativeDegreeExample>
+    <locativePhraseExample>lëꞌtsa baꞌ   (allí mero (exactamente allí)
+nabtsaꞌ reꞌ  (solamente aquí)
+mer zeꞌ   (allá mero)
+cheꞌp baꞌ   (allí un poco)
+reꞌ gaꞌ    (exactamente/ correctamente /nada mas aquí)
+zeꞌ ga    (exactamente/ correctamente/ nada más allá)
+cheꞌp lareꞌ ( un poquito aquí (enfasis)
+</locativePhraseExample>
+    <locativeDegreeAffixExample>la-</locativeDegreeAffixExample>
+    <locativePhraseAffixExample>lareꞌ</locativePhraseAffixExample>
+    <locativeDegreeRedupExample>
+    </locativeDegreeRedupExample>
+    <locativeOtherExample>
+    </locativeOtherExample>
+    <locativeIndefTypeQWordExample>
+    </locativeIndefTypeQWordExample>
+    <locativeIndefTypeQPhraseExample>tu rë plo
+rë plo
+tu rë lugar
+rë lugar
+</locativeIndefTypeQPhraseExample>
+    <locativeIndefTypeQOtherExample>
+    </locativeIndefTypeQOtherExample>
+    <locativeIndefTypeIntWordExample>
+    </locativeIndefTypeIntWordExample>
+    <locativeIndefTypeIntPhraseExample>wanei plo
+</locativeIndefTypeIntPhraseExample>
+    <locativeIndefTypeIntOtherExample>Zak yal wanei plo nzhaklal (Puedes ir dondequiera que tu deseas.)
+Zak yal wanei tu rë plo nhaklal (alugnas partes </locativeIndefTypeIntOtherExample>
+    <mannerExample>nix     (sabrosomente)
+xe   (calladomente)
+nazhe'b   (demasiado)  
+nazheꞌb wen
+nayen       (rápidamente)
+chulazh    (lentemente chaolazh)
+nen          (despaciomente)
+wen          (bien, bueno)
+paꞌ           (ciertamente)
+raꞌ           (todavía)             
+tsa          (solamente)
+ka           (ciertamente, de cierto, verdaderamente)
+-raꞌ           (todovía)
+-tsa        (solamente)
+-ka         (ciertamente</mannerExample>
+    <mannerDegreeExample>laka      (lit: ya ciertamente; free trans:muy cierto)
+dox
+cheꞌp</mannerDegreeExample>
+    <mannerDegreePhraseExample>nayen laka   rápidamente (no dificultó rapidamente)enfaticamente)
+dox wen   (muy bien/ bueno) 
+cheꞌp nazheꞌbe (un poco espantoso)
+dox nayen   (muy rápido)
+  </mannerDegreePhraseExample>
+    <mannerDegreeAffixExample>-tsa          (solamente)
+-ka    (ciertamente, de cierto, verdadamente)
+-paꞌ
+-raꞌ
+          </mannerDegreeAffixExample>
+    <mannerPhraseAffixExample>wenka
+wentsa
+wenpaꞌ
+wenraꞌ
+nayenraꞌ
+nayenka
+nayenpaꞌ
+</mannerPhraseAffixExample>
+    <mannerDegreeRedupExample>
+    </mannerDegreeRedupExample>
+    <mannerDegreeOtherExample>
+    </mannerDegreeOtherExample>
+    <mannerAffixDegreeExample>
+    </mannerAffixDegreeExample>
+    <mannerAffixDegreePhraseExample>
+    </mannerAffixDegreePhraseExample>
+    <mannerAffixDegreeRedupExample>
+    </mannerAffixDegreeRedupExample>
+    <mannerAffixDegreeOtherExample>
+    </mannerAffixDegreeOtherExample>
+    <reasonExample>kuzeꞌ
+seꞌ
+saꞌ
+porke
+
+</reasonExample>
+    <reasonPPExample>par
+por kureꞌ
+
+</reasonPPExample>
+    <reasonSentExample>Kuzeꞌ nixeꞌn no yinaꞌ par nzhao no nzhob.  (Por eso, sembramos milpa, para comer maíz.) 
+Par nayo nguid bitsaoꞌ roꞌ.   (Para que no entra la gallina, cierra la puerta.)
+Seꞌ midiꞌzh no lo bixaꞌ, por nakap bixaꞌ. (De esta manera hablamos a ellos porque son malos.) 
+Miyiꞌ nileꞌ zhiꞌn bid, porke nagakt leꞌ unaꞌi. (El hombre hace trabajo pesado porque la mujer no puede hacerlo.)
+Por kureꞌ, mitseꞌd no yech. (Por esta cosa, fuimos a la escuela.)
+Saꞌ mileꞌ bixaꞌ kun no.   (Así, nos trató ellos.) 
+Par nayitlo rë ma dan, kuzeꞌ nila yiu par ño kwaꞌn nzhao bineꞌ.  (Para que no desaparezcan los animales del campo, por eso llueve para que haiga de comer los pobres animales.)
+</reasonSentExample>
+    <adverbCategory>
+    </adverbCategory>
+  </advp>
+  <adjp adjectiveClassifier="no" adjectiveDegreeClassifier="no" checkedOff="yes" modifiers="yes">
+    <modifiersDegree checked="yes">
+    </modifiersDegree>
+    <modifiersManner checked="no">
+    </modifiersManner>
+    <modifiersAttaches checked="no">
+    </modifiersAttaches>
+    <modifiersRedup checked="no">
+    </modifiersRedup>
+    <modifiersOther checked="no">
+    </modifiersOther>
+    <degreeBefore checked="yes">
+    </degreeBefore>
+    <degreeAfter checked="yes">
+    </degreeAfter>
+    <degreeBoth checked="no">
+    </degreeBoth>
+    <degreeOther checked="no">
+    </degreeOther>
+    <mannerBefore checked="yes">
+    </mannerBefore>
+    <mannerAfter checked="no">
+    </mannerAfter>
+    <mannerBoth checked="no">
+    </mannerBoth>
+    <mannerOther checked="no">
+    </mannerOther>
+    <example>ro
+win 
+naxne
+nazhiꞌ
+nax
+nach 
+naꞌch
+nix
+nakap
+bizh
+noꞌl
+mex
+nachaꞌ
+chul
+</example>
+    <adjectiveDegreeExample>dox   (muy)
+cheꞌp  (poco)
+laka   (muy cierta)
+</adjectiveDegreeExample>
+    <adjectiveDegreePhraseExample>dox kwaro (muy grande)
+dox win      (muy pequeño)
+dox nachaꞌ   (muy gordo)
+dox nix          (muy sabroso)
+dox nakap    (muy malo, muy feo) 
+kwaꞌn yeꞌn  (cosa pequeña y planta tierna)
+naxne laka    (claramente rojo)
+nix laka</adjectiveDegreePhraseExample>
+    <adjectiveMannerPhraseExample>
+    </adjectiveMannerPhraseExample>
+    <adjectiveDegreeAffixExample>
+    </adjectiveDegreeAffixExample>
+    <adjectiveDegreeAffixPhraseExample>
+    </adjectiveDegreeAffixPhraseExample>
+    <adjectiveDegreeRedupExample>
+    </adjectiveDegreeRedupExample>
+    <adjectiveDegreeOtherExample>
+    </adjectiveDegreeOtherExample>
+    <adjectiveCategory>
+    </adjectiveCategory>
+  </adjp>
+  <np adjPPart="no" adjpCaseAffix="no" adjpCaseChange="no" agreeNumber="no" artAndDem="demonstrative" artBothCooccur="different" artCase="no" artDefOnly="no" artDemClassifier="no" artPl="no" artRequired="no" caseDefault="no" caseN="no" caseWord="yes" checkedOff="yes" classifierPresent="no" classifierPresentAdj="no" classifierPresentDem="no" classifierPresentDemBoth="no" classifierPresentQ="no" comp="yes" compHead="left" compHeadMorpheme="left" demAndArtArtRequired="no" demAndArtDemRequired="no" demOrArtRequired="no" demPl="no" demRequired="no" partNP="other" possAbsolutive="no" possAgr="no" possAlienable="yes" possCaseErg="genitive" possCooccur="yes" possMarked="yesWord" possNP="yesOnly" possNounCaseChange="no" possNounPos="after" possPPPos="after" possPronPos="after" possWordRequired="no" ppComp="no" ppPos="after" qpEitherRestrictedNumPos="before">
+    <classifierSpecificPosBeforeBoth checked="no"/>
+    <classifierSpecificPosAfterBoth checked="no"/>
+    <classifierSpecificPosAfterQBeforeN checked="no"/>
+    <classifierSpecificPosAfterNBeforeQ checked="no"/>
+    <classifierSpecificPosPrefixQ checked="no"/>
+    <classifierSpecificPosSuffixQ checked="no"/>
+    <classifierSpecificPosOther checked="no">
+    </classifierSpecificPosOther>
+    <agreeClass checked="no">
+    </agreeClass>
+    <agreeClassifier checked="no"/>
+    <agreeGender checked="no">
+    </agreeGender>
+    <agreeAnimacy checked="no">
+    </agreeAnimacy>
+    <agreeOtherFeat checked="no">
+    </agreeOtherFeat>
+    <agreeOtherNone checked="yes"/>
+    <caseWordBefore checked="no">
+    </caseWordBefore>
+    <caseWordAfter checked="no">
+    </caseWordAfter>
+    <caseWordBoth checked="no">
+    </caseWordBoth>
+    <caseWordOther checked="no">
+    </caseWordOther>
+    <caseAttachesProclitic checked="yes">
+    </caseAttachesProclitic>
+    <caseAttachesEnclitic checked="no">
+    </caseAttachesEnclitic>
+    <caseAttachesPrefix checked="no">
+    </caseAttachesPrefix>
+    <caseAttachesSuffix checked="no">
+    </caseAttachesSuffix>
+    <caseAttachesOther checked="no">
+    </caseAttachesOther>
+    <artOnlyBefore checked="yes">
+    </artOnlyBefore>
+    <artOnlyAfter checked="no">
+    </artOnlyAfter>
+    <artOnlyBoth checked="no">
+    </artOnlyBoth>
+    <artOnlyOther checked="no">
+    </artOnlyOther>
+    <demOnlyBefore checked="no">
+    </demOnlyBefore>
+    <demOnlyAfter checked="yes">
+    </demOnlyAfter>
+    <demOnlyBoth checked="no">
+    </demOnlyBoth>
+    <demOnlyOther checked="no">
+    </demOnlyOther>
+    <demOrArtPosBefore checked="yes">
+    </demOrArtPosBefore>
+    <demOrArtPosAfter checked="no">
+    </demOrArtPosAfter>
+    <demOrArtPosBoth checked="no">
+    </demOrArtPosBoth>
+    <demOrArtPosOther checked="no">
+    </demOrArtPosOther>
+    <demAndArtDemBefore checked="no">
+    </demAndArtDemBefore>
+    <demAndArtDemAfter checked="yes">
+    </demAndArtDemAfter>
+    <demAndArtDemBoth checked="no">
+    </demAndArtDemBoth>
+    <demAndArtDemOther checked="no">
+    </demAndArtDemOther>
+    <demAndArtArtBefore checked="yes">
+    </demAndArtArtBefore>
+    <demAndArtArtAfter checked="no">
+    </demAndArtArtAfter>
+    <demAndArtArtBoth checked="no">
+    </demAndArtArtBoth>
+    <demAndArtArtOther checked="no">
+    </demAndArtArtOther>
+    <classifierSpecificDemPosBeforeBoth checked="no"/>
+    <classifierSpecificDemPosAfterBoth checked="no"/>
+    <classifierSpecificDemPosAfterDemBeforeN checked="no"/>
+    <classifierSpecificDemPosAfterNBeforeDem checked="no"/>
+    <classifierSpecificDemPosPrefixDem checked="no"/>
+    <classifierSpecificDemPosSuffixDem checked="no"/>
+    <classifierSpecificDemPosOther checked="no">
+    </classifierSpecificDemPosOther>
+    <classifierSpecificDemBothPosBeforeBoth checked="no"/>
+    <classifierSpecificDemBothPosAfterBoth checked="no"/>
+    <classifierSpecificDemBothPosAfterDemBeforeN checked="no"/>
+    <classifierSpecificDemBothPosAfterNBeforeDem checked="no"/>
+    <classifierSpecificDemBothPosPrefixDem checked="no"/>
+    <classifierSpecificDemBothPosSuffixDem checked="no"/>
+    <classifierSpecificDemBothPosOther checked="no">
+    </classifierSpecificDemBothPosOther>
+    <possWordBefore checked="yes">
+    </possWordBefore>
+    <possWordAfter checked="no">
+    </possWordAfter>
+    <possWordBoth checked="no">
+    </possWordBoth>
+    <possWordOther checked="no">
+    </possWordOther>
+    <qpPosBefore checked="yes">
+    </qpPosBefore>
+    <qpPosAfter checked="yes">
+    </qpPosAfter>
+    <qpPosBoth checked="yes">
+    </qpPosBoth>
+    <qpPosOther checked="no">
+    </qpPosOther>
+    <classifierSpecificQPosBeforeBoth checked="no"/>
+    <classifierSpecificQPosAfterBoth checked="no"/>
+    <classifierSpecificQPosAfterQBeforeN checked="no"/>
+    <classifierSpecificQPosAfterNBeforeQ checked="no"/>
+    <classifierSpecificQPosPrefixQ checked="no"/>
+    <classifierSpecificQPosSuffixQ checked="no"/>
+    <classifierSpecificQPosOther checked="no">
+    </classifierSpecificQPosOther>
+    <adjBefore checked="no">
+    </adjBefore>
+    <adjAfter checked="yes">
+    </adjAfter>
+    <adjBoth checked="no">
+    </adjBoth>
+    <adjPosOther checked="no">
+    </adjPosOther>
+    <classifierSpecificAdjPosBeforeBoth checked="no"/>
+    <classifierSpecificAdjPosAfterBoth checked="no"/>
+    <classifierSpecificAdjPosAfterAdjBeforeN checked="no"/>
+    <classifierSpecificAdjPosAfterNBeforeAdj checked="no"/>
+    <classifierSpecificAdjPosPrefixAdj checked="no"/>
+    <classifierSpecificAdjPosSuffixAdj checked="no"/>
+    <classifierSpecificAdjPosOther checked="no">
+    </classifierSpecificAdjPosOther>
+    <agreeNumberExample>tu libr kub  (un libro nuevo)
+tu lar kub (una ropa nueva)
+pla libr kub (algunos libros nuevo)
+pla lar kub (algunas ropas nuevas)</agreeNumberExample>
+    <agreeClassExample>
+    </agreeClassExample>
+    <agreeClassifierExample>
+    </agreeClassifierExample>
+    <agreeGenderExample>
+    </agreeGenderExample>
+    <agreeAnimacyExample>
+    </agreeAnimacyExample>
+    <agreeOtherExample>
+    </agreeOtherExample>
+    <caseNPExample>
+    </caseNPExample>
+    <nominative>
+    </nominative>
+    <accusative>
+    </accusative>
+    <ergative>
+    </ergative>
+    <absolutive>
+    </absolutive>
+    <genitive>
+    </genitive>
+    <dative>
+    </dative>
+    <ablative>
+    </ablative>
+    <instrumental>
+    </instrumental>
+    <locative>
+    </locative>
+    <vocative>
+    </vocative>
+    <oblique>
+    </oblique>
+    <otherCase>
+    </otherCase>
+    <articleExample>
+    </articleExample>
+    <articlePlExample>
+    </articlePlExample>
+    <articleIndefExample>
+    </articleIndefExample>
+    <articleIndefPlExample>
+    </articleIndefPlExample>
+    <articleNomExample>
+    </articleNomExample>
+    <articlePlNomExample>
+    </articlePlNomExample>
+    <articleIndefNomExample>
+    </articleIndefNomExample>
+    <articleIndefPlNomExample>
+    </articleIndefPlNomExample>
+    <articleAccExample>
+    </articleAccExample>
+    <articlePlAccExample>
+    </articlePlAccExample>
+    <articleIndefAccExample>
+    </articleIndefAccExample>
+    <articleIndefPlAccExample>
+    </articleIndefPlAccExample>
+    <articleGenExample>
+    </articleGenExample>
+    <articlePlGenExample>
+    </articlePlGenExample>
+    <articleIndefGenExample>
+    </articleIndefGenExample>
+    <articleIndefPlGenExample>
+    </articleIndefPlGenExample>
+    <articleErgExample>
+    </articleErgExample>
+    <articlePlErgExample>
+    </articlePlErgExample>
+    <articleIndefErgExample>
+    </articleIndefErgExample>
+    <articleIndefPlErgExample>
+    </articleIndefPlErgExample>
+    <articleAbsExample>
+    </articleAbsExample>
+    <articlePlAbsExample>
+    </articlePlAbsExample>
+    <articleIndefAbsExample>
+    </articleIndefAbsExample>
+    <articleIndefPlAbsExample>
+    </articleIndefPlAbsExample>
+    <articleDatExample>
+    </articleDatExample>
+    <articlePlDatExample>
+    </articlePlDatExample>
+    <articleIndefDatExample>
+    </articleIndefDatExample>
+    <articleIndefPlDatExample>
+    </articleIndefPlDatExample>
+    <demProximalExample>reꞌ
+</demProximalExample>
+    <demMedialExample>baꞌ</demMedialExample>
+    <demDistalExample>zeꞌ</demDistalExample>
+    <demProximalPlExample>
+    </demProximalPlExample>
+    <demMedialPlExample>
+    </demMedialPlExample>
+    <demDistalPlExample>
+    </demDistalPlExample>
+    <demProximalNomExample>
+    </demProximalNomExample>
+    <demMedialNomExample>
+    </demMedialNomExample>
+    <demDistalNomExample>
+    </demDistalNomExample>
+    <demProximalPlNomExample>
+    </demProximalPlNomExample>
+    <demMedialPlNomExample>
+    </demMedialPlNomExample>
+    <demDistalPlNomExample>
+    </demDistalPlNomExample>
+    <demProximalAccExample>
+    </demProximalAccExample>
+    <demMedialAccExample>
+    </demMedialAccExample>
+    <demDistalAccExample>
+    </demDistalAccExample>
+    <demProximalPlAccExample>
+    </demProximalPlAccExample>
+    <demMedialPlAccExample>
+    </demMedialPlAccExample>
+    <demDistalPlAccExample>
+    </demDistalPlAccExample>
+    <demProximalGenExample>
+    </demProximalGenExample>
+    <demMedialGenExample>
+    </demMedialGenExample>
+    <demDistalGenExample>
+    </demDistalGenExample>
+    <demProximalPlGenExample>
+    </demProximalPlGenExample>
+    <demMedialPlGenExample>
+    </demMedialPlGenExample>
+    <demDistalPlGenExample>
+    </demDistalPlGenExample>
+    <demProximalErgExample>
+    </demProximalErgExample>
+    <demMedialErgExample>
+    </demMedialErgExample>
+    <demDistalErgExample>
+    </demDistalErgExample>
+    <demProximalPlErgExample>
+    </demProximalPlErgExample>
+    <demMedialPlErgExample>
+    </demMedialPlErgExample>
+    <demDistalPlErgExample>
+    </demDistalPlErgExample>
+    <demProximalAbsExample>
+    </demProximalAbsExample>
+    <demMedialAbsExample>
+    </demMedialAbsExample>
+    <demDistalAbsExample>
+    </demDistalAbsExample>
+    <demProximalPlAbsExample>
+    </demProximalPlAbsExample>
+    <demMedialPlAbsExample>
+    </demMedialPlAbsExample>
+    <demDistalPlAbsExample>
+    </demDistalPlAbsExample>
+    <demProximalDatExample>
+    </demProximalDatExample>
+    <demMedialDatExample>
+    </demMedialDatExample>
+    <demDistalDatExample>
+    </demDistalDatExample>
+    <demProximalPlDatExample>
+    </demProximalPlDatExample>
+    <demMedialPlDatExample>
+    </demMedialPlDatExample>
+    <demDistalPlDatExample>
+    </demDistalPlDatExample>
+    <example>yoꞌ reꞌ   (esta casa (que está cerca)
+yo  baꞌ  (esa casa (que está un poco lejos)
+yoꞌ zeꞌ  (aquella casa (está distante, sin verlo) 
+</example>
+    <possessorExample>xlar xaꞌ     (x-lar xaꞌ - pos.ropa, 3persg ella/ él)
+lar cheꞌn xaꞌ  (rope de él/ ella)
+mbëk da       (perro 1psg, mi perro)
+xpëk xaꞌ      (poss.perro 3psg, el perro de el)
+mbëk cheꞌn xaꞌ   (perro pos.(de) 3psg (el))
+xmëꞌdal (tu.niño)  (pos.niño.2psg tú, tu niño)
+lo xaꞌ       cara 3ps, su cara/ cara de él)
+xab bixaꞌ   (ropa (inalienable) 3 perpl, ellos(as), ropa de ellos)
+xtimil           (tu.dinero)
+xkiyarden  (posx-&amp;enfasis -ki- cocina 1psg mi cocina (enfasis)) 
+xkiya  (mi planta/árbol (enfasis)</possessorExample>
+    <embeddedExample>xpëk bizan mbwin ( el perro de la hermana del muchacho)
+xtimi miyiꞌ cheꞌn guitarr (el dinero del hombre que tiene una guitarra)
+xta tu rë milizh Per (este petate es de un  familiar de Pedro)
+xik xich xuz Pol  (el brazo del tio de papá de Apolonio)
+lëꞌ mbëk cheꞌn bizan mbwin (el perro de la hermana del muchacho)
+yeꞌ cheꞌn unaꞌ zë xtu yezh plo dox zit (la mujer
+dimi cheꞌn miyiꞌ cheꞌn guitarr (el dinero del hombre que tiene una guitarra
+yoꞌ cheꞌn miyiꞌ cheꞌn Pau (casa poss hombre pos Paula la casa del hombre que es (esposo) de Paula)
+xaꞌ cheꞌn ki (personas de la electricidad (los trabajadores del gobierno (comisionadores) de la electricidad)
+una' cheꞌn xlë (mujer de la fruta (ella que vende fruta) </embeddedExample>
+    <ppExample>
+    </ppExample>
+    <relClExample>Lëꞌ yët cheꞌn unaꞌ kwaꞌn nak cheꞌn miyiꞌ nayiꞌ (la tortilla de la mujer  que es la espose del hombre malo/ enojado.)
+Mbëk cheꞌn men xaꞌ nito nzhob. (el perro del la persona que vende maíz)
+Mëꞌdoꞌ cheꞌn unaꞌ xaꞌ nakska xnaꞌ zi xchon mëꞌd. (el bebé que pertenece a la mamá que tiene otros tres niños) 
+Lizh Ndres xaꞌ ze stu lazh men. ( La casa de Andrés, el que viene del otro pueblo lejos)
+xpichuꞌx unaꞌ xaꞌ nak cheꞌn yiꞌn cun yët (el tomate de la mujer (dueña) que tiene el chile y la tortilla)</relClExample>
+    <possMarkerAffix>
+    </possMarkerAffix>
+    <possMarkerClitic>
+    </possMarkerClitic>
+    <possMarkerWord>cheꞌn </possMarkerWord>
+    <possAlienableAffixExample>x-</possAlienableAffixExample>
+    <possAbsolutiveAffixExample>
+    </possAbsolutiveAffixExample>
+    <qpExample>nabtsa pla libr baꞌ  (solamente unos de esos libros)
+rë chib nayax cheꞌn mbwin baꞌ (los muchos chivos de ese muchacho
+nabtsa tu gayoꞌ mbwin galo  (solamente los cien primeros de esos muchachos)
+gal bi tub mëꞌd (21 niños)
+miyiꞌ galo nak miyiꞌ lult ndao (hombre primero es el hombre ultimo comió </qpExample>
+    <adjpExample>nabtsa pla libr beꞌd gox
+rë mbëk nayax no nagats cheꞌn rë mëꞌd 
+mer tu gayoꞌ mëꞌd dox natsin baꞌ
+</adjpExample>
+    <partExample>
+    </partExample>
+    <compBodyPartExample>bikwen yaꞌ   (dedo de la mano)
+xaniꞌ  (fondo de pie)
+wes yek  (hueso de la cabeza (skull)
+yich zalo (cabello del ojo)
+yich roꞌ  (cabello de la barba/barba)
+tich yen (espalda del pescueso)
+tich yaꞌ  (espalda de la mano)
+lo yaꞌ
+
+bikweꞌn niꞌ
+lo niꞌ
+tich niꞌ
+</compBodyPartExample>
+    <compKinshipExample> xuz xtita (bisabuelo)
+xmiyi bixitsa (el esposo de mi cuñada)
+xnaꞌ xuza (mamá de mi papá)
+xuz xnaꞌn  (el papá de mi mamá)
+wech xuza  (el hermano de mi papá) </compKinshipExample>
+    <compFoodExample>yin naxne  (chile rojo)
+zaꞌ naguzh (frijol blanco)
+pan zed  (pan concha)
+yetyëg (calabaza de bule) 
+yetyich (calabaza de espina)
+yeꞌmaestr (flor de maestra)
+yinya  (chile de árbol)
+
+</compFoodExample>
+    <compMaterialExample>yoꞌ bitsoꞌ   (casa de adobe)
+yoꞌ yaxtil   (casa de carrizo)
+ya yer  (árbol de pino/ ocote)
+ke youꞌ (piedra del río)
+
+</compMaterialExample>
+    <compExample>nagolxnazhaꞌp  (suegra anciana del hombre)
+xuzyeꞌunaꞌ     (suegra/ o de la mujer)
+mun guin  (mono de cera)
+dadgol    (señor anciano (de respeto, no habla directamente, menciona a otro)
+doꞌyil      (mecate+hilo = hilo)
+mbëz nzhob  (insecto que come maiz) 
+
+</compExample>
+    <compPPExample>tu yëts bitsiꞌn win kwaꞌn bol kwaꞌn nizob par nil  (una olla pequeña de barra que es redondo que es para nixtamal)
+tu kabes ro cheꞌn yarad kwaꞌn dox xchë nidi par kë men rëi lo yuo (una cabeza grande del arado de la yunta que dura mucho tiempo para rayar la tierra)</compPPExample>
+    <partHeadExample>yalnaban    (la vida) 
+yalgoꞌn      (la cultivación)
+yalwin      (escasez de comida/hambruna
+yalnawin  (la tristeza)
+yalyizh    (la enfermedad)
+yalne      (dolor, tener dolor)
+yalnak   (comportarse, being a certain way)</partHeadExample>
+    <partHeadSentExample>Naxot go nits,  lëꞌi nak yalnaban. (No tire el agua, porque es la vida.
+Chul yalgoꞌn xchë nixeke nzhao met. (Bonito es la cosecha porque dura mucho para comer nosotros todos.
+Yalnazhiꞌ ni leꞌ niban met chul (El amor nos hace vivir bonito) 
+Por yalnayi met zëꞌ yalyizh (Por el enojo que hacemos viene la enfermedad)
+
+* cannot have object - abstract noun</partHeadSentExample>
+    <articleCategory>
+    </articleCategory>
+    <demonstrativeCategory>
+    </demonstrativeCategory>
+    <nounCategory>
+    </nounCategory>
+    <articleErgGenExample>
+    </articleErgGenExample>
+    <articleErgPlGenExample>
+    </articleErgPlGenExample>
+    <articleErgIndefGenExample>
+    </articleErgIndefGenExample>
+    <articleErgIndefPlGenExample>
+    </articleErgIndefPlGenExample>
+    <articleSplitNomExample>
+    </articleSplitNomExample>
+    <articleSplitPlNomExample>
+    </articleSplitPlNomExample>
+    <articleSplitIndefNomExample>
+    </articleSplitIndefNomExample>
+    <articleSplitIndefPlNomExample>
+    </articleSplitIndefPlNomExample>
+    <articleSplitAccExample>
+    </articleSplitAccExample>
+    <articleSplitPlAccExample>
+    </articleSplitPlAccExample>
+    <articleSplitIndefAccExample>
+    </articleSplitIndefAccExample>
+    <articleSplitIndefPlAccExample>
+    </articleSplitIndefPlAccExample>
+    <articleSplitGenExample>
+    </articleSplitGenExample>
+    <articleSplitPlGenExample>
+    </articleSplitPlGenExample>
+    <articleSplitIndefGenExample>
+    </articleSplitIndefGenExample>
+    <articleSplitIndefPlGenExample>
+    </articleSplitIndefPlGenExample>
+    <articleSplitErgExample>
+    </articleSplitErgExample>
+    <articleSplitPlErgExample>
+    </articleSplitPlErgExample>
+    <articleSplitIndefErgExample>
+    </articleSplitIndefErgExample>
+    <articleSplitIndefPlErgExample>
+    </articleSplitIndefPlErgExample>
+    <articleSplitAbsExample>
+    </articleSplitAbsExample>
+    <articleSplitPlAbsExample>
+    </articleSplitPlAbsExample>
+    <articleSplitIndefAbsExample>
+    </articleSplitIndefAbsExample>
+    <articleSplitIndefPlAbsExample>
+    </articleSplitIndefPlAbsExample>
+    <demErgProximalGenExample>
+    </demErgProximalGenExample>
+    <demErgMedialGenExample>
+    </demErgMedialGenExample>
+    <demErgDistalGenExample>
+    </demErgDistalGenExample>
+    <demErgProximalPlGenExample>
+    </demErgProximalPlGenExample>
+    <demErgMedialPlGenExample>
+    </demErgMedialPlGenExample>
+    <demErgDistalPlGenExample>
+    </demErgDistalPlGenExample>
+    <demSplitProximalNomExample>
+    </demSplitProximalNomExample>
+    <demSplitMedialNomExample>
+    </demSplitMedialNomExample>
+    <demSplitDistalNomExample>
+    </demSplitDistalNomExample>
+    <demSplitProximalPlNomExample>
+    </demSplitProximalPlNomExample>
+    <demSplitMedialPlNomExample>
+    </demSplitMedialPlNomExample>
+    <demSplitDistalPlNomExample>
+    </demSplitDistalPlNomExample>
+    <demSplitProximalAccExample>
+    </demSplitProximalAccExample>
+    <demSplitMedialAccExample>
+    </demSplitMedialAccExample>
+    <demSplitDistalAccExample>
+    </demSplitDistalAccExample>
+    <demSplitProximalPlAccExample>
+    </demSplitProximalPlAccExample>
+    <demSplitMedialPlAccExample>
+    </demSplitMedialPlAccExample>
+    <demSplitDistalPlAccExample>
+    </demSplitDistalPlAccExample>
+    <demSplitProximalGenExample>
+    </demSplitProximalGenExample>
+    <demSplitMedialGenExample>
+    </demSplitMedialGenExample>
+    <demSplitDistalGenExample>
+    </demSplitDistalGenExample>
+    <demSplitProximalPlGenExample>
+    </demSplitProximalPlGenExample>
+    <demSplitMedialPlGenExample>
+    </demSplitMedialPlGenExample>
+    <demSplitDistalPlGenExample>
+    </demSplitDistalPlGenExample>
+    <demSplitProximalErgExample>
+    </demSplitProximalErgExample>
+    <demSplitMedialErgExample>
+    </demSplitMedialErgExample>
+    <demSplitDistalErgExample>
+    </demSplitDistalErgExample>
+    <demSplitProximalPlErgExample>
+    </demSplitProximalPlErgExample>
+    <demSplitMedialPlErgExample>
+    </demSplitMedialPlErgExample>
+    <demSplitDistalPlErgExample>
+    </demSplitDistalPlErgExample>
+    <demSplitProximalAbsExample>
+    </demSplitProximalAbsExample>
+    <demSplitMedialAbsExample>
+    </demSplitMedialAbsExample>
+    <demSplitDistalAbsExample>
+    </demSplitDistalAbsExample>
+    <demSplitProximalPlAbsExample>
+    </demSplitProximalPlAbsExample>
+    <demSplitMedialPlAbsExample>
+    </demSplitMedialPlAbsExample>
+    <demSplitDistalPlAbsExample>
+    </demSplitDistalPlAbsExample>
+    <npContents1 checkedOff="yes">
+    </npContents1>
+    <npContents2 checkedOff="yes">
+    </npContents2>
+    <npContents3 checkedOff="yes">
+    </npContents3>
+    <npContents4 checkedOff="yes">
+    </npContents4>
+    <npContents5 checkedOff="yes">
+    </npContents5>
+    <npContents6 checkedOff="yes">
+    </npContents6>
+    <npContents7 checkedOff="yes">
+    </npContents7>
+    <npContents8 checkedOff="no">
+    </npContents8>
+    <npContents9 checkedOff="no">
+    </npContents9>
+    <npPossAgrPossFirst checked="no">
+    </npPossAgrPossFirst>
+    <npPossAgrPossExclusive checked="no">
+    </npPossAgrPossExclusive>
+    <npPossAgrPossInclusive checked="no">
+    </npPossAgrPossInclusive>
+    <npPossAgrPossSecond checked="no">
+    </npPossAgrPossSecond>
+    <npPossAgrPossThird checked="no">
+    </npPossAgrPossThird>
+    <npPossAgrPossSingular checked="no">
+    </npPossAgrPossSingular>
+    <npPossAgrPossPlural checked="no">
+    </npPossAgrPossPlural>
+    <npPossAgrPossDual checked="no">
+    </npPossAgrPossDual>
+    <npPossAgrPossMasculine checked="no">
+    </npPossAgrPossMasculine>
+    <npPossAgrPossFeminine checked="no">
+    </npPossAgrPossFeminine>
+    <npPossAgrPossNeuter checked="no">
+    </npPossAgrPossNeuter>
+    <npPossAgrPossAnimate checked="no">
+    </npPossAgrPossAnimate>
+    <npPossAgrPossInanimate checked="no">
+    </npPossAgrPossInanimate>
+    <npPossAgrPossHuman checked="no">
+    </npPossAgrPossHuman>
+    <npPossAgrPossNonHuman checked="no">
+    </npPossAgrPossNonHuman>
+  </np>
+  <prop checkedOff="yes" pnClassifier="no" pnDeterminer="none">
+    <example>Che    (José)
+Jwan Chib  (Juan chivo (apodo, porke compra muchos chivos)
+Che Santiao  (José Santiago)
+Marigan  (María Ana)
+MariRamir  (María Ramirez)
+Che bad  (José barbón, apodo)
+Che noꞌl (José alto)</example>
+    <ppExample>no existe</ppExample>
+    <relClExample>Jwan xaꞌ kitsëꞌd musk par goꞌl  (Juan el que está aprendiendo la música para tocar.) 
+Per Birax saꞌ lëꞌ xaꞌ porke nileꞌ xaꞌ kwaꞌn ro yarde (Pedro el quiere ser mujer porque le gusta estar en a cocina.)
+Pau nikë yët, par zaꞌ xaꞌ gao men (Paula haciendo tortillas para dar de comida a la gente)
+</relClExample>
+    <propAnimate1Category>
+    </propAnimate1Category>
+    <propAnimate2Category>
+    </propAnimate2Category>
+    <propInanimateCategory>
+    </propInanimateCategory>
+  </prop>
+  <pron checkedOff="yes" classifierNoN="no" demAdjSame="no" demCase="no" demNumber="no" dependentPron="yes" partitivePos="after" poss="no" pronDepClassifier="no" pronMod="det" pronounClassifier="no" pronounExcl="yes" pronounNumber="yes" recip="yes" refl="yes">
+    <dependentTypeProclitic checked="no"/>
+    <dependentTypeEnclitic checked="yes"/>
+    <dependentTypePrefix checked="no"/>
+    <dependentTypeSuffix checked="no"/>
+    <dependentTypeOther checked="no">
+    </dependentTypeOther>
+    <possDistinct checked="yes"/>
+    <possAffixPron checked="no"/>
+    <possAffixWord checked="no"/>
+    <possPhrase checked="no"/>
+    <possOther checked="no">
+    </possOther>
+    <reflDistinct checked="no"/>
+    <reflAffix checked="no"/>
+    <reflNounPoss checked="yes"/>
+    <reflQP checked="no"/>
+    <reflOther checked="no">
+    </reflOther>
+    <recipDistinct checked="no"/>
+    <recipAffix checked="no"/>
+    <recipNounPoss checked="yes"/>
+    <recipQP checked="no"/>
+    <recipOther checked="no">
+    </recipOther>
+    <indefQWord checked="no"/>
+    <indefQPhrase checked="yes"/>
+    <indefQOther checked="no">
+    </indefQOther>
+    <pronIndefTypeQNone checked="no"/>
+    <indefTypeQPQBefore checked="yes"/>
+    <indefTypeQPQAfter checked="no"/>
+    <indefTypeQPQBoth checked="no"/>
+    <indefTypeQPQOther checked="no">
+    </indefTypeQPQOther>
+    <indefIntWord checked="no"/>
+    <indefIntPhrase checked="yes"/>
+    <indefIntOther checked="no">
+    </indefIntOther>
+    <pronIndefTypeIntNone checked="no"/>
+    <indefTypeIntBefore checked="yes"/>
+    <indefTypeIntAfter checked="yes"/>
+    <indefTypeIntBoth checked="no"/>
+    <indefTypeIntOther checked="no">
+    </indefTypeIntOther>
+    <personalFirstSgNoCaseExample>na
+
+
+
+    </personalFirstSgNoCaseExample>
+    <personalFirstPlNoCaseExample>
+    </personalFirstPlNoCaseExample>
+    <personalFirstExclNoCaseExample>lëꞌ no</personalFirstExclNoCaseExample>
+    <personalFirstInclNoCaseExample>lëꞌ be</personalFirstInclNoCaseExample>
+    <personalSecondSgNoCaseExample>lu
+lëꞌ go
+    </personalSecondSgNoCaseExample>
+    <personalSecondPlNoCaseExample>lëꞌ go</personalSecondPlNoCaseExample>
+    <personalThirdSgNoCaseExample>lëꞌ me   (persona de respeto)
+lëꞌ Me   (referiendo a Dios)
+lëꞌ xaꞌ    (persona común)   
+lëꞌ mbe  (entre hombres
+lëꞌ mizhaꞌ  (entre mujeres
+lëꞌ neꞌ  (lástima, desprecio, de ama entre esposos)
+lëꞌ ma  (animal)
+lëꞌi      (cosa</personalThirdSgNoCaseExample>
+    <personalThirdPlNoCaseExample>lëꞌ bime
+lëꞌ bixaꞌ
+lëꞌ bimbe
+lëꞌ bimizhaꞌ
+lëꞌ bineꞌ
+lëꞌ bima  (animales)
+lëꞌ rëꞌi  (objetos inanimados)
+rëꞌi     (objetos inanimados_</personalThirdPlNoCaseExample>
+    <personalFirstSgNoneDativeExample>lëꞌ da
+    </personalFirstSgNoneDativeExample>
+    <personalFirstPlNoneDativeExample>
+    </personalFirstPlNoneDativeExample>
+    <personalFirstExclNoneDativeExample>no hay cambio de pronombres de sujeto - agente</personalFirstExclNoneDativeExample>
+    <personalFirstInclNoneDativeExample>
+    </personalFirstInclNoneDativeExample>
+    <personalSecondSgNoneDativeExample>
+    </personalSecondSgNoneDativeExample>
+    <personalSecondPlNoneDativeExample>
+    </personalSecondPlNoneDativeExample>
+    <personalThirdSgNoneDativeExample>
+    </personalThirdSgNoneDativeExample>
+    <personalThirdPlNoneDativeExample>
+    </personalThirdPlNoneDativeExample>
+    <personalFirstSgNomSubjectExample>na
+lëꞌ da
+Lëꞌ be
+Lëꞌ no</personalFirstSgNomSubjectExample>
+    <personalFirstPlNomSubjectExample>
+    </personalFirstPlNomSubjectExample>
+    <personalFirstExclNomSubjectExample>
+    </personalFirstExclNomSubjectExample>
+    <personalFirstInclNomSubjectExample>
+    </personalFirstInclNomSubjectExample>
+    <personalSecondSgNomSubjectExample>lu
+lëꞌ go
+</personalSecondSgNomSubjectExample>
+    <personalSecondPlNomSubjectExample>
+    </personalSecondPlNomSubjectExample>
+    <personalThirdSgNomSubjectExample>lëꞌ me
+lëꞌ xaꞌ
+lëꞌ mbe
+lëꞌ zhaꞌ
+lëꞌ neꞌ
+lëꞌ ma
+lëꞌi
+lëꞌ bime
+lëꞌ bixaꞌ
+lëꞌ bimbe
+lëꞌ bizhaꞌ
+lëꞌ bineꞌ
+lëꞌ bima
+lëꞌi rë</personalThirdSgNomSubjectExample>
+    <personalThirdPlNomSubjectExample>
+    </personalThirdPlNomSubjectExample>
+    <personalFirstSgNomObjectExample>
+    </personalFirstSgNomObjectExample>
+    <personalFirstPlNomObjectExample>
+    </personalFirstPlNomObjectExample>
+    <personalFirstExclNomObjectExample>
+    </personalFirstExclNomObjectExample>
+    <personalFirstInclNomObjectExample>
+    </personalFirstInclNomObjectExample>
+    <personalSecondSgNomObjectExample>
+    </personalSecondSgNomObjectExample>
+    <personalSecondPlNomObjectExample>
+    </personalSecondPlNomObjectExample>
+    <personalThirdSgNomObjectExample>
+    </personalThirdSgNomObjectExample>
+    <personalThirdPlNomObjectExample>
+    </personalThirdPlNomObjectExample>
+    <personalFirstSgNomPossessorExample>
+    </personalFirstSgNomPossessorExample>
+    <personalFirstPlNomPossessorExample>
+    </personalFirstPlNomPossessorExample>
+    <personalFirstExclNomPossessorExample>
+    </personalFirstExclNomPossessorExample>
+    <personalFirstInclNomPossessorExample>
+    </personalFirstInclNomPossessorExample>
+    <personalSecondSgNomPossessorExample>
+    </personalSecondSgNomPossessorExample>
+    <personalSecondPlNomPossessorExample>
+    </personalSecondPlNomPossessorExample>
+    <personalThirdSgNomPossessorExample>me
+xaꞌ
+mbe
+zhaꞌ
+xaꞌ
+neꞌ
+ma
+-i
+-e
+rëꞌi
+</personalThirdSgNomPossessorExample>
+    <personalThirdPlNomPossessorExample>
+    </personalThirdPlNomPossessorExample>
+    <personalFirstSgNomDativeExample>
+    </personalFirstSgNomDativeExample>
+    <personalFirstPlNomDativeExample>
+    </personalFirstPlNomDativeExample>
+    <personalFirstExclNomDativeExample>
+    </personalFirstExclNomDativeExample>
+    <personalFirstInclNomDativeExample>
+    </personalFirstInclNomDativeExample>
+    <personalSecondSgNomDativeExample>
+    </personalSecondSgNomDativeExample>
+    <personalSecondPlNomDativeExample>
+    </personalSecondPlNomDativeExample>
+    <personalThirdSgNomDativeExample>
+    </personalThirdSgNomDativeExample>
+    <personalThirdPlNomDativeExample>
+    </personalThirdPlNomDativeExample>
+    <personalFirstSgErgSubjectTransExample>
+    </personalFirstSgErgSubjectTransExample>
+    <personalFirstPlErgSubjectTransExample>
+    </personalFirstPlErgSubjectTransExample>
+    <personalFirstExclErgSubjectTransExample>
+    </personalFirstExclErgSubjectTransExample>
+    <personalFirstInclErgSubjectTransExample>
+    </personalFirstInclErgSubjectTransExample>
+    <personalSecondSgErgSubjectTransExample>
+    </personalSecondSgErgSubjectTransExample>
+    <personalSecondPlErgSubjectTransExample>
+    </personalSecondPlErgSubjectTransExample>
+    <personalThirdSgErgSubjectTransExample>
+    </personalThirdSgErgSubjectTransExample>
+    <personalThirdPlErgSubjectTransExample>
+    </personalThirdPlErgSubjectTransExample>
+    <personalFirstSgErgSubjectIntransExample>
+    </personalFirstSgErgSubjectIntransExample>
+    <personalFirstPlErgSubjectIntransExample>
+    </personalFirstPlErgSubjectIntransExample>
+    <personalFirstExclErgSubjectIntransExample>
+    </personalFirstExclErgSubjectIntransExample>
+    <personalFirstInclErgSubjectIntransExample>
+    </personalFirstInclErgSubjectIntransExample>
+    <personalSecondSgErgSubjectIntransExample>
+    </personalSecondSgErgSubjectIntransExample>
+    <personalSecondPlErgSubjectIntransExample>
+    </personalSecondPlErgSubjectIntransExample>
+    <personalThirdSgErgSubjectIntransExample>
+    </personalThirdSgErgSubjectIntransExample>
+    <personalThirdPlErgSubjectIntransExample>
+    </personalThirdPlErgSubjectIntransExample>
+    <personalFirstSgErgPossessorExample>
+    </personalFirstSgErgPossessorExample>
+    <personalFirstPlErgPossessorExample>
+    </personalFirstPlErgPossessorExample>
+    <personalFirstExclErgPossessorExample>
+    </personalFirstExclErgPossessorExample>
+    <personalFirstInclErgPossessorExample>
+    </personalFirstInclErgPossessorExample>
+    <personalSecondSgErgPossessorExample>
+    </personalSecondSgErgPossessorExample>
+    <personalSecondPlErgPossessorExample>
+    </personalSecondPlErgPossessorExample>
+    <personalThirdSgErgPossessorExample>
+    </personalThirdSgErgPossessorExample>
+    <personalThirdPlErgPossessorExample>
+    </personalThirdPlErgPossessorExample>
+    <personalFirstSgErgDativeExample>
+    </personalFirstSgErgDativeExample>
+    <personalFirstPlErgDativeExample>
+    </personalFirstPlErgDativeExample>
+    <personalFirstExclErgDativeExample>
+    </personalFirstExclErgDativeExample>
+    <personalFirstInclErgDativeExample>
+    </personalFirstInclErgDativeExample>
+    <personalSecondSgErgDativeExample>
+    </personalSecondSgErgDativeExample>
+    <personalSecondPlErgDativeExample>
+    </personalSecondPlErgDativeExample>
+    <personalThirdSgErgDativeExample>
+    </personalThirdSgErgDativeExample>
+    <personalThirdPlErgDativeExample>
+    </personalThirdPlErgDativeExample>
+    <personalFirstSgSplitSubjectExample>
+    </personalFirstSgSplitSubjectExample>
+    <personalFirstPlSplitSubjectExample>
+    </personalFirstPlSplitSubjectExample>
+    <personalFirstExclSplitSubjectExample>
+    </personalFirstExclSplitSubjectExample>
+    <personalFirstInclSplitSubjectExample>
+    </personalFirstInclSplitSubjectExample>
+    <personalSecondSgSplitSubjectExample>
+    </personalSecondSgSplitSubjectExample>
+    <personalSecondPlSplitSubjectExample>
+    </personalSecondPlSplitSubjectExample>
+    <personalThirdSgSplitSubjectExample>
+    </personalThirdSgSplitSubjectExample>
+    <personalThirdPlSplitSubjectExample>
+    </personalThirdPlSplitSubjectExample>
+    <personalFirstSgSplitObjectExample>
+    </personalFirstSgSplitObjectExample>
+    <personalFirstPlSplitObjectExample>
+    </personalFirstPlSplitObjectExample>
+    <personalFirstExclSplitObjectExample>
+    </personalFirstExclSplitObjectExample>
+    <personalFirstInclSplitObjectExample>
+    </personalFirstInclSplitObjectExample>
+    <personalSecondSgSplitObjectExample>
+    </personalSecondSgSplitObjectExample>
+    <personalSecondPlSplitObjectExample>
+    </personalSecondPlSplitObjectExample>
+    <personalThirdSgSplitObjectExample>
+    </personalThirdSgSplitObjectExample>
+    <personalThirdPlSplitObjectExample>
+    </personalThirdPlSplitObjectExample>
+    <personalFirstSgSplitPossessorExample>
+    </personalFirstSgSplitPossessorExample>
+    <personalFirstPlSplitPossessorExample>
+    </personalFirstPlSplitPossessorExample>
+    <personalFirstExclSplitPossessorExample>
+    </personalFirstExclSplitPossessorExample>
+    <personalFirstInclSplitPossessorExample>
+    </personalFirstInclSplitPossessorExample>
+    <personalSecondSgSplitPossessorExample>
+    </personalSecondSgSplitPossessorExample>
+    <personalSecondPlSplitPossessorExample>
+    </personalSecondPlSplitPossessorExample>
+    <personalThirdSgSplitPossessorExample>
+    </personalThirdSgSplitPossessorExample>
+    <personalThirdPlSplitPossessorExample>
+    </personalThirdPlSplitPossessorExample>
+    <personalFirstSgSplitDativeExample>
+    </personalFirstSgSplitDativeExample>
+    <personalFirstPlSplitDativeExample>
+    </personalFirstPlSplitDativeExample>
+    <personalFirstExclSplitDativeExample>
+    </personalFirstExclSplitDativeExample>
+    <personalFirstInclSplitDativeExample>
+    </personalFirstInclSplitDativeExample>
+    <personalSecondSgSplitDativeExample>
+    </personalSecondSgSplitDativeExample>
+    <personalSecondPlSplitDativeExample>
+    </personalSecondPlSplitDativeExample>
+    <personalThirdSgSplitDativeExample>
+    </personalThirdSgSplitDativeExample>
+    <personalThirdPlSplitDativeExample>
+    </personalThirdPlSplitDativeExample>
+    <personalFirstSgSplitErgExample>
+    </personalFirstSgSplitErgExample>
+    <personalFirstPlSplitErgExample>
+    </personalFirstPlSplitErgExample>
+    <personalFirstExclSplitErgExample>
+    </personalFirstExclSplitErgExample>
+    <personalFirstInclSplitErgExample>
+    </personalFirstInclSplitErgExample>
+    <personalSecondSgSplitErgExample>
+    </personalSecondSgSplitErgExample>
+    <personalSecondPlSplitErgExample>
+    </personalSecondPlSplitErgExample>
+    <personalThirdSgSplitErgExample>
+    </personalThirdSgSplitErgExample>
+    <personalThirdPlSplitErgExample>
+    </personalThirdPlSplitErgExample>
+    <personalFirstSgSplitAbsExample>
+    </personalFirstSgSplitAbsExample>
+    <personalFirstPlSplitAbsExample>
+    </personalFirstPlSplitAbsExample>
+    <personalFirstExclSplitAbsExample>
+    </personalFirstExclSplitAbsExample>
+    <personalFirstInclSplitAbsExample>
+    </personalFirstInclSplitAbsExample>
+    <personalSecondSgSplitAbsExample>
+    </personalSecondSgSplitAbsExample>
+    <personalSecondPlSplitAbsExample>
+    </personalSecondPlSplitAbsExample>
+    <personalThirdSgSplitAbsExample>
+    </personalThirdSgSplitAbsExample>
+    <personalThirdPlSplitAbsExample>
+    </personalThirdPlSplitAbsExample>
+    <personalDependentFirstSgNoCaseExample>-a
+-n
+
+    </personalDependentFirstSgNoCaseExample>
+    <personalDependentFirstPlNoCaseExample>
+    </personalDependentFirstPlNoCaseExample>
+    <personalDependentFirstExclNoCaseExample>-al
+-l
+-go</personalDependentFirstExclNoCaseExample>
+    <personalDependentFirstInclNoCaseExample>-be</personalDependentFirstInclNoCaseExample>
+    <personalDependentSecondSgNoCaseExample>-(a)l
+    </personalDependentSecondSgNoCaseExample>
+    <personalDependentSecondPlNoCaseExample>-go</personalDependentSecondPlNoCaseExample>
+    <personalDependentThirdSgNoCaseExample>-Me
+-me
+-xaꞌ
+-mbe
+-mizhaꞌ
+-neꞌ
+-ma
+-i
+-e
+    </personalDependentThirdSgNoCaseExample>
+    <personalDependentThirdPlNoCaseExample>-bime
+-bixaꞌ
+-bimbe
+-bimizhaꞌ
+-bineꞌ
+-bima
+-rëi
+    </personalDependentThirdPlNoCaseExample>
+    <personalDependentFirstSgNoneDativeExample>da
+    </personalDependentFirstSgNoneDativeExample>
+    <personalDependentFirstPlNoneDativeExample>
+    </personalDependentFirstPlNoneDativeExample>
+    <personalDependentFirstExclNoneDativeExample>
+    </personalDependentFirstExclNoneDativeExample>
+    <personalDependentFirstInclNoneDativeExample>
+    </personalDependentFirstInclNoneDativeExample>
+    <personalDependentSecondSgNoneDativeExample>
+    </personalDependentSecondSgNoneDativeExample>
+    <personalDependentSecondPlNoneDativeExample>
+    </personalDependentSecondPlNoneDativeExample>
+    <personalDependentThirdSgNoneDativeExample>
+    </personalDependentThirdSgNoneDativeExample>
+    <personalDependentThirdPlNoneDativeExample>
+    </personalDependentThirdPlNoneDativeExample>
+    <personalDependentFirstSgNomSubjectExample>-a
+-n
+be
+no</personalDependentFirstSgNomSubjectExample>
+    <personalDependentFirstPlNomSubjectExample>
+    </personalDependentFirstPlNomSubjectExample>
+    <personalDependentFirstExclNomSubjectExample>
+    </personalDependentFirstExclNomSubjectExample>
+    <personalDependentFirstInclNomSubjectExample>
+    </personalDependentFirstInclNomSubjectExample>
+    <personalDependentSecondSgNomSubjectExample>-(a)l
+go</personalDependentSecondSgNomSubjectExample>
+    <personalDependentSecondPlNomSubjectExample>
+    </personalDependentSecondPlNomSubjectExample>
+    <personalDependentThirdSgNomSubjectExample>me
+xaꞌ
+mbe
+zhaꞌ
+neꞌ
+ma
+-i
+-e
+bime
+bixaꞌ
+bimbe
+bizhaꞌ
+bineꞌ
+bima
+rëi
+</personalDependentThirdSgNomSubjectExample>
+    <personalDependentThirdPlNomSubjectExample>
+    </personalDependentThirdPlNomSubjectExample>
+    <personalDependentFirstSgNomObjectExample>da
+yuba?
+be
+no</personalDependentFirstSgNomObjectExample>
+    <personalDependentFirstPlNomObjectExample>
+    </personalDependentFirstPlNomObjectExample>
+    <personalDependentFirstExclNomObjectExample>
+    </personalDependentFirstExclNomObjectExample>
+    <personalDependentFirstInclNomObjectExample>
+    </personalDependentFirstInclNomObjectExample>
+    <personalDependentSecondSgNomObjectExample>go
+yubal
+</personalDependentSecondSgNomObjectExample>
+    <personalDependentSecondPlNomObjectExample>
+    </personalDependentSecondPlNomObjectExample>
+    <personalDependentThirdSgNomObjectExample>me
+xaꞌ
+mbe
+zhaꞌ
+neꞌ
+ma
+-i
+-e
+bime
+bixaꞌ
+bimbe
+bizhaꞌ
+bineꞌ
+bima
+rëi
+</personalDependentThirdSgNomObjectExample>
+    <personalDependentThirdPlNomObjectExample>
+    </personalDependentThirdPlNomObjectExample>
+    <personalDependentFirstSgNomPossessorExample>be (pl.inc.)
+no (pl.excl)</personalDependentFirstSgNomPossessorExample>
+    <personalDependentFirstPlNomPossessorExample>
+    </personalDependentFirstPlNomPossessorExample>
+    <personalDependentFirstExclNomPossessorExample>
+    </personalDependentFirstExclNomPossessorExample>
+    <personalDependentFirstInclNomPossessorExample>
+    </personalDependentFirstInclNomPossessorExample>
+    <personalDependentSecondSgNomPossessorExample>-(a)l
+go (2res)</personalDependentSecondSgNomPossessorExample>
+    <personalDependentSecondPlNomPossessorExample>
+    </personalDependentSecondPlNomPossessorExample>
+    <personalDependentThirdSgNomPossessorExample>me
+xaꞌ
+mbe
+zhaꞌ
+neꞌ
+ma
+-i
+-e
+bime
+bixaꞌ
+bimbe
+bizhaꞌ
+bineꞌ
+bima
+rëi
+</personalDependentThirdSgNomPossessorExample>
+    <personalDependentThirdPlNomPossessorExample>
+    </personalDependentThirdPlNomPossessorExample>
+    <personalDependentFirstSgNomDativeExample>
+    </personalDependentFirstSgNomDativeExample>
+    <personalDependentFirstPlNomDativeExample>
+    </personalDependentFirstPlNomDativeExample>
+    <personalDependentFirstExclNomDativeExample>
+    </personalDependentFirstExclNomDativeExample>
+    <personalDependentFirstInclNomDativeExample>
+    </personalDependentFirstInclNomDativeExample>
+    <personalDependentSecondSgNomDativeExample>
+    </personalDependentSecondSgNomDativeExample>
+    <personalDependentSecondPlNomDativeExample>
+    </personalDependentSecondPlNomDativeExample>
+    <personalDependentThirdSgNomDativeExample>
+    </personalDependentThirdSgNomDativeExample>
+    <personalDependentThirdPlNomDativeExample>
+    </personalDependentThirdPlNomDativeExample>
+    <personalDependentFirstSgErgSubjectTransExample>
+    </personalDependentFirstSgErgSubjectTransExample>
+    <personalDependentFirstPlErgSubjectTransExample>
+    </personalDependentFirstPlErgSubjectTransExample>
+    <personalDependentFirstExclErgSubjectTransExample>
+    </personalDependentFirstExclErgSubjectTransExample>
+    <personalDependentFirstInclErgSubjectTransExample>
+    </personalDependentFirstInclErgSubjectTransExample>
+    <personalDependentSecondSgErgSubjectTransExample>
+    </personalDependentSecondSgErgSubjectTransExample>
+    <personalDependentSecondPlErgSubjectTransExample>
+    </personalDependentSecondPlErgSubjectTransExample>
+    <personalDependentThirdSgErgSubjectTransExample>
+    </personalDependentThirdSgErgSubjectTransExample>
+    <personalDependentThirdPlErgSubjectTransExample>
+    </personalDependentThirdPlErgSubjectTransExample>
+    <personalDependentFirstSgErgSubjectIntransExample>
+    </personalDependentFirstSgErgSubjectIntransExample>
+    <personalDependentFirstPlErgSubjectIntransExample>
+    </personalDependentFirstPlErgSubjectIntransExample>
+    <personalDependentFirstExclErgSubjectIntransExample>
+    </personalDependentFirstExclErgSubjectIntransExample>
+    <personalDependentFirstInclErgSubjectIntransExample>
+    </personalDependentFirstInclErgSubjectIntransExample>
+    <personalDependentSecondSgErgSubjectIntransExample>
+    </personalDependentSecondSgErgSubjectIntransExample>
+    <personalDependentSecondPlErgSubjectIntransExample>
+    </personalDependentSecondPlErgSubjectIntransExample>
+    <personalDependentThirdSgErgSubjectIntransExample>
+    </personalDependentThirdSgErgSubjectIntransExample>
+    <personalDependentThirdPlErgSubjectIntransExample>
+    </personalDependentThirdPlErgSubjectIntransExample>
+    <personalDependentFirstSgErgPossessorExample>
+    </personalDependentFirstSgErgPossessorExample>
+    <personalDependentFirstPlErgPossessorExample>
+    </personalDependentFirstPlErgPossessorExample>
+    <personalDependentFirstExclErgPossessorExample>
+    </personalDependentFirstExclErgPossessorExample>
+    <personalDependentFirstInclErgPossessorExample>
+    </personalDependentFirstInclErgPossessorExample>
+    <personalDependentSecondSgErgPossessorExample>
+    </personalDependentSecondSgErgPossessorExample>
+    <personalDependentSecondPlErgPossessorExample>
+    </personalDependentSecondPlErgPossessorExample>
+    <personalDependentThirdSgErgPossessorExample>
+    </personalDependentThirdSgErgPossessorExample>
+    <personalDependentThirdPlErgPossessorExample>
+    </personalDependentThirdPlErgPossessorExample>
+    <personalDependentFirstSgErgDativeExample>
+    </personalDependentFirstSgErgDativeExample>
+    <personalDependentFirstPlErgDativeExample>
+    </personalDependentFirstPlErgDativeExample>
+    <personalDependentFirstExclErgDativeExample>
+    </personalDependentFirstExclErgDativeExample>
+    <personalDependentFirstInclErgDativeExample>
+    </personalDependentFirstInclErgDativeExample>
+    <personalDependentSecondSgErgDativeExample>
+    </personalDependentSecondSgErgDativeExample>
+    <personalDependentSecondPlErgDativeExample>
+    </personalDependentSecondPlErgDativeExample>
+    <personalDependentThirdSgErgDativeExample>
+    </personalDependentThirdSgErgDativeExample>
+    <personalDependentThirdPlErgDativeExample>
+    </personalDependentThirdPlErgDativeExample>
+    <personalDependentFirstSgSplitSubjectExample>
+    </personalDependentFirstSgSplitSubjectExample>
+    <personalDependentFirstPlSplitSubjectExample>
+    </personalDependentFirstPlSplitSubjectExample>
+    <personalDependentFirstExclSplitSubjectExample>
+    </personalDependentFirstExclSplitSubjectExample>
+    <personalDependentFirstInclSplitSubjectExample>
+    </personalDependentFirstInclSplitSubjectExample>
+    <personalDependentSecondSgSplitSubjectExample>
+    </personalDependentSecondSgSplitSubjectExample>
+    <personalDependentSecondPlSplitSubjectExample>
+    </personalDependentSecondPlSplitSubjectExample>
+    <personalDependentThirdSgSplitSubjectExample>
+    </personalDependentThirdSgSplitSubjectExample>
+    <personalDependentThirdPlSplitSubjectExample>
+    </personalDependentThirdPlSplitSubjectExample>
+    <personalDependentFirstSgSplitObjectExample>
+    </personalDependentFirstSgSplitObjectExample>
+    <personalDependentFirstPlSplitObjectExample>
+    </personalDependentFirstPlSplitObjectExample>
+    <personalDependentFirstExclSplitObjectExample>
+    </personalDependentFirstExclSplitObjectExample>
+    <personalDependentFirstInclSplitObjectExample>
+    </personalDependentFirstInclSplitObjectExample>
+    <personalDependentSecondSgSplitObjectExample>
+    </personalDependentSecondSgSplitObjectExample>
+    <personalDependentSecondPlSplitObjectExample>
+    </personalDependentSecondPlSplitObjectExample>
+    <personalDependentThirdSgSplitObjectExample>
+    </personalDependentThirdSgSplitObjectExample>
+    <personalDependentThirdPlSplitObjectExample>
+    </personalDependentThirdPlSplitObjectExample>
+    <personalDependentFirstSgSplitPossessorExample>
+    </personalDependentFirstSgSplitPossessorExample>
+    <personalDependentFirstPlSplitPossessorExample>
+    </personalDependentFirstPlSplitPossessorExample>
+    <personalDependentFirstExclSplitPossessorExample>
+    </personalDependentFirstExclSplitPossessorExample>
+    <personalDependentFirstInclSplitPossessorExample>
+    </personalDependentFirstInclSplitPossessorExample>
+    <personalDependentSecondSgSplitPossessorExample>
+    </personalDependentSecondSgSplitPossessorExample>
+    <personalDependentSecondPlSplitPossessorExample>
+    </personalDependentSecondPlSplitPossessorExample>
+    <personalDependentThirdSgSplitPossessorExample>
+    </personalDependentThirdSgSplitPossessorExample>
+    <personalDependentThirdPlSplitPossessorExample>
+    </personalDependentThirdPlSplitPossessorExample>
+    <personalDependentFirstSgSplitDativeExample>
+    </personalDependentFirstSgSplitDativeExample>
+    <personalDependentFirstPlSplitDativeExample>
+    </personalDependentFirstPlSplitDativeExample>
+    <personalDependentFirstExclSplitDativeExample>
+    </personalDependentFirstExclSplitDativeExample>
+    <personalDependentFirstInclSplitDativeExample>
+    </personalDependentFirstInclSplitDativeExample>
+    <personalDependentSecondSgSplitDativeExample>
+    </personalDependentSecondSgSplitDativeExample>
+    <personalDependentSecondPlSplitDativeExample>
+    </personalDependentSecondPlSplitDativeExample>
+    <personalDependentThirdSgSplitDativeExample>
+    </personalDependentThirdSgSplitDativeExample>
+    <personalDependentThirdPlSplitDativeExample>
+    </personalDependentThirdPlSplitDativeExample>
+    <personalDependentFirstSgSplitErgExample>
+    </personalDependentFirstSgSplitErgExample>
+    <personalDependentFirstPlSplitErgExample>
+    </personalDependentFirstPlSplitErgExample>
+    <personalDependentFirstExclSplitErgExample>
+    </personalDependentFirstExclSplitErgExample>
+    <personalDependentFirstInclSplitErgExample>
+    </personalDependentFirstInclSplitErgExample>
+    <personalDependentSecondSgSplitErgExample>
+    </personalDependentSecondSgSplitErgExample>
+    <personalDependentSecondPlSplitErgExample>
+    </personalDependentSecondPlSplitErgExample>
+    <personalDependentThirdSgSplitErgExample>
+    </personalDependentThirdSgSplitErgExample>
+    <personalDependentThirdPlSplitErgExample>
+    </personalDependentThirdPlSplitErgExample>
+    <personalDependentFirstSgSplitAbsExample>
+    </personalDependentFirstSgSplitAbsExample>
+    <personalDependentFirstPlSplitAbsExample>
+    </personalDependentFirstPlSplitAbsExample>
+    <personalDependentFirstExclSplitAbsExample>
+    </personalDependentFirstExclSplitAbsExample>
+    <personalDependentFirstInclSplitAbsExample>
+    </personalDependentFirstInclSplitAbsExample>
+    <personalDependentSecondSgSplitAbsExample>
+    </personalDependentSecondSgSplitAbsExample>
+    <personalDependentSecondPlSplitAbsExample>
+    </personalDependentSecondPlSplitAbsExample>
+    <personalDependentThirdSgSplitAbsExample>
+    </personalDependentThirdSgSplitAbsExample>
+    <personalDependentThirdPlSplitAbsExample>
+    </personalDependentThirdPlSplitAbsExample>
+    <possFirstSgExample>
+    </possFirstSgExample>
+    <possFirstPlExample>
+    </possFirstPlExample>
+    <possFirstExclExample>
+    </possFirstExclExample>
+    <possFirstInclExample>
+    </possFirstInclExample>
+    <possSecondSgExample>
+    </possSecondSgExample>
+    <possSecondPlExample>
+    </possSecondPlExample>
+    <possThirdSgExample>
+    </possThirdSgExample>
+    <possThirdPlExample>
+    </possThirdPlExample>
+    <pronPossAffixExample>
+    </pronPossAffixExample>
+    <pronPossAffixWordExample>
+    </pronPossAffixWordExample>
+    <pronPossAffixWordAffixesExample>
+    </pronPossAffixWordAffixesExample>
+    <pronPossPhraseWordExample>
+    </pronPossPhraseWordExample>
+    <reflVerbAffixExample>
+    </reflVerbAffixExample>
+    <reflVerbSentExample>
+    </reflVerbSentExample>
+    <reflFirstSgExample>yuba</reflFirstSgExample>
+    <reflFirstPlExample>
+    </reflFirstPlExample>
+    <reflFirstExclExample>yub be</reflFirstExclExample>
+    <reflFirstInclExample>yub no</reflFirstInclExample>
+    <reflSecondSgExample>yubal
+yub go</reflSecondSgExample>
+    <reflSecondPlExample>yub go</reflSecondPlExample>
+    <reflThirdSgExample>yub Me
+yub me
+yub xaꞌ
+yub mbe
+yub mizhaꞌ
+yub neꞌ
+yub ma
+yube ( -e  (cosa inanimado)</reflThirdSgExample>
+    <reflThirdPlExample>yub bime
+yub bixaꞌ
+yub bimbe
+yub bimizhaꞌ
+yub bineꞌ
+yub bima
+no hay plural para cosa inaminado reflexivo</reflThirdPlExample>
+    <reflSentExample>Ngule yub xaꞌ xaꞌ.
+Yuba mizuxkwaꞌ yoꞌ da. (yo construí me propia casa.)
+Une yub xaꞌ xaꞌ lo spej (el mismo se vio en el espejo)</reflSentExample>
+    <pronReflAffixExample>yub </pronReflAffixExample>
+    <pronReflNounPossExample>yub</pronReflNounPossExample>
+    <pronReflQExample>
+    </pronReflQExample>
+    <recipVerbAffixExample>
+    </recipVerbAffixExample>
+    <recipVerbSentExample>
+    </recipVerbSentExample>
+    <recipFirstPlExample>wech</recipFirstPlExample>
+    <recipFirstExclExample>wech no
+bël no</recipFirstExclExample>
+    <recipFirstInclExample>wech be  (entre hombres, hermanos, nosotros incl)
+bël be  (entre mujeres, hermans, nosotros incl)
+guchin be</recipFirstInclExample>
+    <recipSecondExample>wech go
+bël go
+guchin go</recipSecondExample>
+    <recipThirdExample>wech bixaꞌ
+bël bixaꞌ
+guchin bixaꞌ  (grupo mixto hombres/mujeres)
+</recipThirdExample>
+    <pronRecipAffixExample>
+    </pronRecipAffixExample>
+    <pronRecipNounPossExample>wech
+bël</pronRecipNounPossExample>
+    <pronRecipQExample>
+    </pronRecipQExample>
+    <recipSentExample>nzhab bixaꞌ lo wech bixaꞌ: (Mt.21:38Theysaid.among.themselves)
+mbaino yiꞌ bixaꞌ ne bixaꞌ wech bixaꞌ. (Mt.24:10and.also.they.will.hate.each.other.(they.will.be.angry.they.will.see.each.other)
+Nzhab xuz mëꞌd lo bimëꞌd: "Bixizhi go wech go" (the children's father said: "Love one another.") 
+kiwi' be lo wech be (They looked at each other)
+</recipSentExample>
+    <demProximalExample>kureꞌ</demProximalExample>
+    <demMedialExample>kubaꞌ</demMedialExample>
+    <demDistalExample>kuzeꞌ</demDistalExample>
+    <demProximalPlExample>
+    </demProximalPlExample>
+    <demMedialPlExample>
+    </demMedialPlExample>
+    <demDistalPlExample>
+    </demDistalPlExample>
+    <demProximalNomExample>
+    </demProximalNomExample>
+    <demMedialNomExample>
+    </demMedialNomExample>
+    <demDistalNomExample>
+    </demDistalNomExample>
+    <demProximalPlNomExample>
+    </demProximalPlNomExample>
+    <demMedialPlNomExample>
+    </demMedialPlNomExample>
+    <demDistalPlNomExample>
+    </demDistalPlNomExample>
+    <demProximalAccExample>
+    </demProximalAccExample>
+    <demMedialAccExample>
+    </demMedialAccExample>
+    <demDistalAccExample>
+    </demDistalAccExample>
+    <demProximalPlAccExample>
+    </demProximalPlAccExample>
+    <demMedialPlAccExample>
+    </demMedialPlAccExample>
+    <demDistalPlAccExample>
+    </demDistalPlAccExample>
+    <demProximalGenExample>
+    </demProximalGenExample>
+    <demMedialGenExample>
+    </demMedialGenExample>
+    <demDistalGenExample>
+    </demDistalGenExample>
+    <demProximalPlGenExample>
+    </demProximalPlGenExample>
+    <demMedialPlGenExample>
+    </demMedialPlGenExample>
+    <demDistalPlGenExample>
+    </demDistalPlGenExample>
+    <demProximalErgExample>
+    </demProximalErgExample>
+    <demMedialErgExample>
+    </demMedialErgExample>
+    <demDistalErgExample>
+    </demDistalErgExample>
+    <demProximalPlErgExample>
+    </demProximalPlErgExample>
+    <demMedialPlErgExample>
+    </demMedialPlErgExample>
+    <demDistalPlErgExample>
+    </demDistalPlErgExample>
+    <demProximalAbsExample>
+    </demProximalAbsExample>
+    <demMedialAbsExample>
+    </demMedialAbsExample>
+    <demDistalAbsExample>
+    </demDistalAbsExample>
+    <demProximalPlAbsExample>
+    </demProximalPlAbsExample>
+    <demMedialPlAbsExample>
+    </demMedialPlAbsExample>
+    <demDistalPlAbsExample>
+    </demDistalPlAbsExample>
+    <demProximalDatExample>
+    </demProximalDatExample>
+    <demMedialDatExample>
+    </demMedialDatExample>
+    <demDistalDatExample>
+    </demDistalDatExample>
+    <demProximalPlDatExample>
+    </demProximalPlDatExample>
+    <demMedialPlDatExample>
+    </demMedialPlDatExample>
+    <demDistalPlDatExample>
+    </demDistalPlDatExample>
+    <indefTypeQWordExample>
+    </indefTypeQWordExample>
+    <indefTypeQPhraseExample>tu kwaꞌn (something)
+tu men  (a persona) 
+tu ma (un animal) 
+
+</indefTypeQPhraseExample>
+    <indefTypeQOtherExample>
+    </indefTypeQOtherExample>
+    <indefTypeIntWordExample>
+    </indefTypeIntWordExample>
+    <indefTypeIntPhraseExample>cho la (cho.applies.to.people.&amp;things.whatever + noun=anything/everything, whoever +noun=anyone.everyone
+wanei choi (quienquiera - cho.+people.+things+nounphrase+prepositionalphrase=whatever)
+wanei kwan (whatever what and rest of phrase)
+pla rë go baꞌ  (unos cuantos de Uds.) 
+</indefTypeIntPhraseExample>
+    <indefTypeIntOtherExample>
+    </indefTypeIntOtherExample>
+    <standAloneNPExample>dub xaꞌ ne (todo su cuerpo duele)
+nabal  (solo tú)
+choptsaꞌ kureꞌ  (solamente estas dos cosas)
+cheꞌp ma (otros pocos de animales)
+xaꞌ kureꞌ  (este cosa es diferente (xaꞌ = diferente from something else)
+laore zublo kubaꞌ      (apenas va empezar esa cosa)
+xplatsa ngubizh jwalt  (falta unos dias)</standAloneNPExample>
+    <pronSentExample>Or ngwachin xaꞌ lo yaꞌ dub xaꞌ ne. (Cuando se cayó del árbol, todos su cuerpo le duele.) 
+Nabal gwa naweiꞌtal mëꞌd. (Vete solo, no llevas el niño.) 
+Choptsaꞌ kureꞌ ngwazhël da lo ya. (Sola estas dos cosas encontré en el árbol. 
+
+</pronSentExample>
+    <pronRelClExample>tu miyi kwaꞌn michaoꞌ tu yoꞌ kwaꞌn nak xaoꞌ kun bitsoꞌ. (un hombre que construyó una casa que está hecho de adobe; porke dox ño laxtoꞌ xaꞌ yoꞌ bitsoꞌ. (un hombre que construyó una casa que está hecho de adobe, porque le gusta mucho las casas de adobe. 
+Tu miyi kwaꞌn michaoꞌ tu yoꞌ, orzeꞌ nguio laxtoꞌ xaꞌi. (Un hombre que construyó una casa y le gustó. 
+Tu miyiꞌ michaoꞌ tu mes kwaꞌn dox chul. (Un hombre hizo una mesa que está muy bonita.) </pronRelClExample>
+    <partitiveExample>nabtsaꞌ be nzë yezh baꞌ (solamente nosotros (incl) venimos de ese pueblo)
+nabtsaꞌ no nzë yezh baꞌ (solamente nosotros (excl) venimos de ese pueblo)
+pla më'd baꞌ nzë xkwel baꞌ (unos de esos niños viene de esa escuela)</partitiveExample>
+    <classifierNoNExample>
+    </classifierNoNExample>
+    <pronounCategory>
+    </pronounCategory>
+    <demProximalErgGenExample>
+    </demProximalErgGenExample>
+    <demMedialErgGenExample>
+    </demMedialErgGenExample>
+    <demDistalErgGenExample>
+    </demDistalErgGenExample>
+    <demProximalErgPlGenExample>
+    </demProximalErgPlGenExample>
+    <demMedialErgPlGenExample>
+    </demMedialErgPlGenExample>
+    <demDistalErgPlGenExample>
+    </demDistalErgPlGenExample>
+    <demProximalSplitNomExample>
+    </demProximalSplitNomExample>
+    <demMedialSplitNomExample>
+    </demMedialSplitNomExample>
+    <demDistalSplitNomExample>
+    </demDistalSplitNomExample>
+    <demProximalSplitPlNomExample>
+    </demProximalSplitPlNomExample>
+    <demMedialSplitPlNomExample>
+    </demMedialSplitPlNomExample>
+    <demDistalSplitPlNomExample>
+    </demDistalSplitPlNomExample>
+    <demProximalSplitAccExample>
+    </demProximalSplitAccExample>
+    <demMedialSplitAccExample>
+    </demMedialSplitAccExample>
+    <demDistalSplitAccExample>
+    </demDistalSplitAccExample>
+    <demProximalSplitPlAccExample>
+    </demProximalSplitPlAccExample>
+    <demMedialSplitPlAccExample>
+    </demMedialSplitPlAccExample>
+    <demDistalSplitPlAccExample>
+    </demDistalSplitPlAccExample>
+    <demProximalSplitGenExample>
+    </demProximalSplitGenExample>
+    <demMedialSplitGenExample>
+    </demMedialSplitGenExample>
+    <demDistalSplitGenExample>
+    </demDistalSplitGenExample>
+    <demProximalSplitPlGenExample>
+    </demProximalSplitPlGenExample>
+    <demMedialSplitPlGenExample>
+    </demMedialSplitPlGenExample>
+    <demDistalSplitPlGenExample>
+    </demDistalSplitPlGenExample>
+    <demProximalSplitErgExample>
+    </demProximalSplitErgExample>
+    <demMedialSplitErgExample>
+    </demMedialSplitErgExample>
+    <demDistalSplitErgExample>
+    </demDistalSplitErgExample>
+    <demProximalSplitPlErgExample>
+    </demProximalSplitPlErgExample>
+    <demMedialSplitPlErgExample>
+    </demMedialSplitPlErgExample>
+    <demDistalSplitPlErgExample>
+    </demDistalSplitPlErgExample>
+    <demProximalSplitAbsExample>
+    </demProximalSplitAbsExample>
+    <demMedialSplitAbsExample>
+    </demMedialSplitAbsExample>
+    <demDistalSplitAbsExample>
+    </demDistalSplitAbsExample>
+    <demProximalSplitPlAbsExample>
+    </demProximalSplitPlAbsExample>
+    <demMedialSplitPlAbsExample>
+    </demMedialSplitPlAbsExample>
+    <demDistalSplitPlAbsExample>
+    </demDistalSplitPlAbsExample>
+  </pron>
+  <pp alone="no" attaches="edge" bodyPart="yes" checkedOff="yes" locative="yes" modifiers="yes" pPos="before" pType="word" ppClassifier="no" ppComp="no" tempComp="yes">
+    <ppModifierDegree checked="no">
+    </ppModifierDegree>
+    <ppModifierOrdinal checked="no">
+    </ppModifierOrdinal>
+    <ppModifierManner checked="no">
+    </ppModifierManner>
+    <ppModifierLocative checked="yes">
+    </ppModifierLocative>
+    <ppModifierOther checked="no">
+    </ppModifierOther>
+    <ppDegreePosBefore checked="yes">
+    </ppDegreePosBefore>
+    <ppDegreePosAfter checked="no">
+    </ppDegreePosAfter>
+    <ppDegreePosBoth checked="no">
+    </ppDegreePosBoth>
+    <ppDegreePosOther checked="no">
+    </ppDegreePosOther>
+    <ppOrdinalPosBefore checked="yes">
+    </ppOrdinalPosBefore>
+    <ppOrdinalPosAfter checked="no">
+    </ppOrdinalPosAfter>
+    <ppOrdinalPosBoth checked="no">
+    </ppOrdinalPosBoth>
+    <ppOrdinalPosOther checked="no">
+    </ppOrdinalPosOther>
+    <ppMannerPosBefore checked="yes">
+    </ppMannerPosBefore>
+    <ppMannerPosAfter checked="yes">
+    </ppMannerPosAfter>
+    <ppMannerPosBoth checked="no">
+    </ppMannerPosBoth>
+    <ppMannerPosOther checked="no">
+    </ppMannerPosOther>
+    <ppLocativePosBefore checked="yes">
+    </ppLocativePosBefore>
+    <ppLocativePosAfter checked="yes">
+    </ppLocativePosAfter>
+    <ppLocativePosBoth checked="no">
+    </ppLocativePosBoth>
+    <ppLocativePosOther checked="no">
+    </ppLocativePosOther>
+    <ppExample>xan ya (at.foot.of.the.tree)
+roꞌ youꞌ (a la orilla del río)
+leꞌn yoꞌ (adentro de la casa) 
+yek yoꞌ (afuera arriba de la casa the.top.of.the.house [el techo])
+</ppExample>
+    <degree>nayax ra  (many of all)</degree>
+    <degreeWithPP>nayax ra miyin baꞌ ya nkë alya (muchos de esos pájaros ya están arriba en el árbol)</degreeWithPP>
+    <ordinal>
+    </ordinal>
+    <ordinalWithPP>
+    </ordinalWithPP>
+    <manner>
+    </manner>
+    <mannerWithPP>
+    </mannerWithPP>
+    <locative>alyët  ( abajo)
+gax   (cerca)
+alya   (arriba) 
+laka  (la mera at the very edge...</locative>
+    <locativeWithPP>yek yuoꞌ  (abajo de un terreno)
+lo ya alyët  (abajo de un árbol) 
+xan mes alyët (abajo de la mesa) 
+gax lo libr (cerca del libro)
+yek yuoꞌ alya  (el río arriba) 
+roꞌ laka mes naxe (a la mera orilla de la mesa está (acostado))
+ </locativeWithPP>
+    <otherMod>
+    </otherMod>
+    <otherModWithPP>
+    </otherModWithPP>
+    <locativePrepExample>
+    </locativePrepExample>
+    <locativePostExample>
+    </locativePostExample>
+    <locativePrepPPExample>
+    </locativePrepPPExample>
+    <locativePostPPExample>
+    </locativePostPPExample>
+    <bodyPartPrepExample>xan
+roꞌ
+leꞌn
+taꞌ
+tich
+yek
+lo</bodyPartPrepExample>
+    <bodyPartPostExample>
+    </bodyPartPostExample>
+    <bodyPartPrepPPExample>lo luwe (enfrente (cara) de la casa (patio) 
+roꞌ yoꞌ (en la puerta (boca) de la casa)
+tich yoꞌ (atrás de la casa)
+taꞌ yoꞌ (al lado de la casa)
+</bodyPartPrepPPExample>
+    <bodyPartPostPPExample>
+    </bodyPartPostPPExample>
+    <genitiveP>
+    </genitiveP>
+    <dativeP>lo</dativeP>
+    <ablativeP>plo nilen nits (donde nace el agua) </ablativeP>
+    <instrumentalP>kun
+</instrumentalP>
+    <vocativeP>
+    </vocativeP>
+    <obliqueP>
+    </obliqueP>
+    <aloneExample>
+    </aloneExample>
+    <locExample>guded lareꞌ, wech (come.in.here.brother)
+rë mëꞌd labaꞌ bi mëꞌd (todos los niños, vayan para allá) 
+</locExample>
+    <compPPExample>
+    </compPPExample>
+    <tempExample>Antis di ya mëꞌd skwel, galolaka gaosiꞌl mëꞌd (Antes de que el niño vaya a la escuela, necesita almorzar.)
+Dispwes di ñaꞌz ngubizh, zë nakao. (Después de que se mete el sol, viene la oscuridad (noche).) 
+Antis di kwëz yiu, bichizhë go bald chi go roꞌ yoꞌ. (Antes de que la lluvia se pare, llena sus cubetas en las corrientes de la casa.)
+Dispwes di ñeꞌd Juan lizh Juan, miloꞌb Juan leꞌn ñuꞌ.  (Después de que Juan regresó a su casa, barrío adentro de su casa.) 
+
+haxta  (hasta, until)</tempExample>
+    <pCategory>
+    </pCategory>
+  </pp>
+  <ip antipassive="no" applicative="no" as="no" aux="no" auxMany="no" auxNonfinite="none" auxNonfiniteOrder="yes" auxNonfiniteRequired="no" auxOrder="yes" auxOther="yes" auxOtherOrder="yes" auxRequired="no" bodypartCompound="yes" checkedOff="yes" comparative="yes" comparativeAdj="no" compareAdj="yes" compareN="yes" conditionWord="yes" consequence="optional" consequencePos="before" copular="optional" copularAffix="no" diCat="pp" diOrder="direct" gap="yes" heartCompound="yes" impPolite="no" passive="no" passiveAgent="yes" passiveAgentCat="dp" passiveAux="no" proDropObject="no" same="yes" subjunctiveCondWord="yes" voice="no" voiceCase="no">
+    <proDropYes checked="no">
+    </proDropYes>
+    <proDropClitic checked="yes">
+    </proDropClitic>
+    <proDropImp checked="yes">
+    </proDropImp>
+    <proDropOther checked="no">
+    </proDropOther>
+    <proDropNone checked="no">
+    </proDropNone>
+    <conditionProclitic checked="no">
+    </conditionProclitic>
+    <conditionEnclitic checked="no">
+    </conditionEnclitic>
+    <conditionPrefix checked="no">
+    </conditionPrefix>
+    <conditionSuffix checked="no">
+    </conditionSuffix>
+    <conditionOther checked="no">
+    </conditionOther>
+    <conditionWordBefore checked="yes">
+    </conditionWordBefore>
+    <conditionWordAfter checked="no">
+    </conditionWordAfter>
+    <conditionWordBoth checked="no">
+    </conditionWordBoth>
+    <conditionWordOther checked="no">
+    </conditionWordOther>
+    <subjunctiveCondProclitic checked="no">
+    </subjunctiveCondProclitic>
+    <subjunctiveCondEnclitic checked="no">
+    </subjunctiveCondEnclitic>
+    <subjunctiveCondPrefix checked="no">
+    </subjunctiveCondPrefix>
+    <subjunctiveCondSuffix checked="no">
+    </subjunctiveCondSuffix>
+    <subjunctiveCondOther checked="no">
+    </subjunctiveCondOther>
+    <subjunctiveCondWordBefore checked="yes">
+    </subjunctiveCondWordBefore>
+    <subjunctiveCondWordAfter checked="no">
+    </subjunctiveCondWordAfter>
+    <subjunctiveCondWordBoth checked="no">
+    </subjunctiveCondWordBoth>
+    <subjunctiveCondWordOther checked="no">
+    </subjunctiveCondWordOther>
+    <existWord checked="no">
+    </existWord>
+    <existVerb checked="no">
+    </existVerb>
+    <existPosition checked="yes">
+    </existPosition>
+    <existOther checked="no">
+    </existOther>
+    <existNone checked="no">
+    </existNone>
+    <causativeAffix checked="yes">
+    </causativeAffix>
+    <causativeMake checked="yes">
+    </causativeMake>
+    <causativeOther checked="yes">unnacusatives use a causative to add an agent</causativeOther>
+    <antipassiveErg checked="no">
+    </antipassiveErg>
+    <antipassiveAgr checked="no">
+    </antipassiveAgr>
+    <antipassiveAffix checked="no">
+    </antipassiveAffix>
+    <antipassiveOther checked="no">
+    </antipassiveOther>
+    <presentTense>
+    </presentTense>
+    <pastTense>
+    </pastTense>
+    <futureTense>zi-
+zi-
+z-
+</futureTense>
+    <nonPastTense>
+    </nonPastTense>
+    <nonFutureTense>
+    </nonFutureTense>
+    <otherTense>
+    </otherTense>
+    <completiveAspect>ngu-, ngw-, ng-
+mi-, m-
+mb-, ngu-, ngo-, un-
+</completiveAspect>
+    <contemplativeAspect>
+    </contemplativeAspect>
+    <continuativeAspect>
+    </continuativeAspect>
+    <contrafactualAspect>
+    </contrafactualAspect>
+    <habitualAspect>ni-, ñ-
+ni-, ñ-
+nzh-
+</habitualAspect>
+    <imperfectAspect>
+    </imperfectAspect>
+    <imperfectiveAspect>
+    </imperfectiveAspect>
+    <incompletiveAspect>
+    </incompletiveAspect>
+    <perfectAspect>
+    </perfectAspect>
+    <perfectiveAspect>
+    </perfectiveAspect>
+    <potentialAspect>Ø-
+Ø-
+Ø-</potentialAspect>
+    <progressiveAspect>ki-
+ki-
+ki-, kiy-
+</progressiveAspect>
+    <purposiveAspect>
+    </purposiveAspect>
+    <stativeAspect>n-
+nzh-
+ñ-</stativeAspect>
+    <unrealAspect>nga-
+nga-
+ng-</unrealAspect>
+    <otherAspect>
+    </otherAspect>
+    <declarativeMood>
+    </declarativeMood>
+    <indicativeMood>
+    </indicativeMood>
+    <realisMood>
+    </realisMood>
+    <imperativeMood>bi-
+gu-
+Ø-</imperativeMood>
+    <interrogativeMood>zi-, z-
+zi,- z-
+zi-, z-
+</interrogativeMood>
+    <conditionalMood>
+    </conditionalMood>
+    <subjunctiveMood>
+    </subjunctiveMood>
+    <irrealisMood>nga-
+nga-
+nga-, ng-</irrealisMood>
+    <otherMood>
+    </otherMood>
+    <witnessEvident>
+    </witnessEvident>
+    <nonwitnessEvident>
+    </nonwitnessEvident>
+    <firsthandEvident>
+    </firsthandEvident>
+    <secondhandEvident>
+    </secondhandEvident>
+    <thirdhandEvident>
+    </thirdhandEvident>
+    <visualEvident>
+    </visualEvident>
+    <auditoryEvident>
+    </auditoryEvident>
+    <olfactoryEvident>
+    </olfactoryEvident>
+    <inferentialEvident>
+    </inferentialEvident>
+    <reportativeEvident>
+    </reportativeEvident>
+    <hearsayEvident>
+    </hearsayEvident>
+    <quotativeEvident>
+    </quotativeEvident>
+    <assumedEvident>
+    </assumedEvident>
+    <otherEvident>
+    </otherEvident>
+    <finiteOther>
+    </finiteOther>
+    <nonfiniteOther>
+    </nonfiniteOther>
+    <gerundOther>yal-</gerundOther>
+    <participleOther>the potential form of a verb that allows this</participleOther>
+    <antipassiveVoice>
+    </antipassiveVoice>
+    <applicativeVoice>
+    </applicativeVoice>
+    <causativeVoice>-Ø- (before consonants), -g- (before vowels)
+tsi- (before consonants) tsi- (before vowel &amp; y- roots)
+-o-, -u-
+mi-    </causativeVoice>
+    <passiveVoice>
+    </passiveVoice>
+    <actorVoice>
+    </actorVoice>
+    <dativeVoice>
+    </dativeVoice>
+    <goalVoice>
+    </goalVoice>
+    <instrumentalVoice>
+    </instrumentalVoice>
+    <locativeVoice>
+    </locativeVoice>
+    <objectVoice>
+    </objectVoice>
+    <otherVoice>
+    </otherVoice>
+    <firstSubjectPerson>na, -n, -a</firstSubjectPerson>
+    <firstObjectPerson>da</firstObjectPerson>
+    <firstErgativePerson>
+    </firstErgativePerson>
+    <firstAbsolutivePerson>
+    </firstAbsolutivePerson>
+    <firstExclusiveSubjectPerson>no, met (muy general)</firstExclusiveSubjectPerson>
+    <firstExclusiveObjectPerson>no, met (muy general)</firstExclusiveObjectPerson>
+    <firstExclusiveErgativePerson>
+    </firstExclusiveErgativePerson>
+    <firstExclusiveAbsolutivePerson>
+    </firstExclusiveAbsolutivePerson>
+    <firstInclusiveSubjectPerson>be</firstInclusiveSubjectPerson>
+    <firstInclusiveObjectPerson>be</firstInclusiveObjectPerson>
+    <firstInclusiveErgativePerson>
+    </firstInclusiveErgativePerson>
+    <firstInclusiveAbsolutivePerson>
+    </firstInclusiveAbsolutivePerson>
+    <secondSubjectPerson> lu, -l, -al, go (tú de respeto, Ud.)  (go tambien sirve para Ustedes)</secondSubjectPerson>
+    <secondObjectPerson> lu, -l, -al, go (tú de respeto, Ud.)  (go tambien sirve para Ustedes)</secondObjectPerson>
+    <secondErgativePerson>
+    </secondErgativePerson>
+    <secondAbsolutivePerson>
+    </secondAbsolutivePerson>
+    <thirdSubjectPerson>xaꞌ, mbe, mizhaꞌ, Me, me, neꞌ, ma, -i, -e</thirdSubjectPerson>
+    <thirdObjectPerson>xaꞌ, mbe, mizhaꞌ, Me, me, neꞌ, ma, -i, -e</thirdObjectPerson>
+    <thirdErgativePerson>
+    </thirdErgativePerson>
+    <thirdAbsolutivePerson>
+    </thirdAbsolutivePerson>
+    <singularSubjectNumber>na, lëꞌda, lu, go, xaꞌ, mbe, mizha, neꞌ, me, Me, ma, -i, -e </singularSubjectNumber>
+    <singularObjectNumber>da, lu, go, xaꞌ, mbe, mizhaꞌ, neꞌ, me, Me, ma, -i, -e </singularObjectNumber>
+    <singularErgativeNumber>
+    </singularErgativeNumber>
+    <singularAbsolutiveNumber>
+    </singularAbsolutiveNumber>
+    <dualSubjectNumber>
+    </dualSubjectNumber>
+    <dualObjectNumber>
+    </dualObjectNumber>
+    <dualErgativeNumber>
+    </dualErgativeNumber>
+    <dualAbsolutiveNumber>
+    </dualAbsolutiveNumber>
+    <pluralSubjectNumber>go (ustedes) bixaꞌ, bimbe, bimizhaꞌ, bineꞌ, bime, bima, rëi</pluralSubjectNumber>
+    <pluralObjectNumber>go (ustedes) bixaꞌ, bimbe, bimizhaꞌ, bineꞌ, bime, bima rëi, </pluralObjectNumber>
+    <pluralErgativeNumber>
+    </pluralErgativeNumber>
+    <pluralAbsolutiveNumber>
+    </pluralAbsolutiveNumber>
+    <masculineSubjectGender>mbe</masculineSubjectGender>
+    <masculineObjectGender>mbe</masculineObjectGender>
+    <masculineErgativeGender>
+    </masculineErgativeGender>
+    <masculineAbsolutiveGender>
+    </masculineAbsolutiveGender>
+    <feminineSubjectGender>mizhaꞌ</feminineSubjectGender>
+    <feminineObjectGender>mizhaꞌ</feminineObjectGender>
+    <feminineErgativeGender>
+    </feminineErgativeGender>
+    <feminineAbsolutiveGender>
+    </feminineAbsolutiveGender>
+    <neuterSubjectGender>
+    </neuterSubjectGender>
+    <neuterObjectGender>
+    </neuterObjectGender>
+    <neuterErgativeGender>
+    </neuterErgativeGender>
+    <neuterAbsolutiveGender>
+    </neuterAbsolutiveGender>
+    <animateSubjectAnimacy>xaꞌ, mbe, mizhaꞌ, neꞌ, me, Me, ma</animateSubjectAnimacy>
+    <animateObjectAnimacy>xaꞌ, mbe, mizhaꞌ, neꞌ, me, Me, ma</animateObjectAnimacy>
+    <animateErgativeAnimacy>
+    </animateErgativeAnimacy>
+    <animateAbsolutiveAnimacy>
+    </animateAbsolutiveAnimacy>
+    <inanimateSubjectAnimacy>-e, -i</inanimateSubjectAnimacy>
+    <inanimateObjectAnimacy>-e, -i</inanimateObjectAnimacy>
+    <inanimateErgativeAnimacy>
+    </inanimateErgativeAnimacy>
+    <inanimateAbsolutiveAnimacy>
+    </inanimateAbsolutiveAnimacy>
+    <humanSubjectAnimacy>na, lëꞌda, lu, go, no, be, xaꞌ, mbe, mizha, neꞌ, me</humanSubjectAnimacy>
+    <humanObjectAnimacy>da, na, lu, go, no, be, xaꞌ, mbe, mizha, neꞌ, me</humanObjectAnimacy>
+    <humanErgativeAnimacy>
+    </humanErgativeAnimacy>
+    <humanAbsolutiveAnimacy>
+    </humanAbsolutiveAnimacy>
+    <nonhumanSubjectAnimacy>ma, -e, -i, Me</nonhumanSubjectAnimacy>
+    <nonhumanObjectAnimacy>ma, -e, -i, Me</nonhumanObjectAnimacy>
+    <nonhumanErgativeAnimacy>
+    </nonhumanErgativeAnimacy>
+    <nonhumanAbsolutiveAnimacy>
+    </nonhumanAbsolutiveAnimacy>
+    <proDropExample>In.discourse.there.is.pro-drop.how.do.we.show.this.here?
+guded (pass.in(Come.in.you.sg.absentpro.drop)
+</proDropExample>
+    <cliticPnExample>Kicha̱o̱wa̱ tu yoꞌ.  (Estoy construyendo una casa.)
+Miliyakal xaꞌ baꞌ. (Tu sanaste a esa persona.
+Nizaꞌi xkal yek yoꞌ kun la cheꞌne. (Da sombra en el techo de la casa con sus hojas.)</cliticPnExample>
+    <proDropOtherExample>
+    </proDropOtherExample>
+    <impExample>bileꞌi  (Do.it., hagalo)
+bileꞌ goi. (You(pl.do.it haganlo)
+guded (Pass(come.in pase) 
+dëꞌ reꞌ (Ven aca)
+biꞌy kureꞌ lo xaꞌ baꞌ (lleva esta cosa a aquel.)
+bixaꞌl roꞌ pwert  (abre la puerta)</impExample>
+    <impPoliteExample>
+    </impPoliteExample>
+    <conditionalExample>Chi lëꞌl yagoꞌ zaꞌ, leꞌl kit ka.  (Si vas a piscar frijol, entonces puede jugar.)
+Haxta or yëꞌdal di skwel, yal baxtor. (Hasta cuando que regreses de escuela, tienes que ir a pastorear.)
+Chi lëꞌl gax këꞌ yët nal, orzeꞌ lëꞌl diskans yëꞌ.  (Si de una vez vas a hacer bastante tortillas hoy,  entonces descansará  mañana porque.)
+Dispwes di zëꞌtal xabal, yal Wixa kun xuxal. (Depues de lavar tu ropa, vas a ir a Ejutla con tu papá.) </conditionalExample>
+    <conditionCliticExample>
+    </conditionCliticExample>
+    <conditionAffixExample>
+    </conditionAffixExample>
+    <conditionOtherExample>
+    </conditionOtherExample>
+    <conditionWordExample>chi
+or
+dispwes di
+
+</conditionWordExample>
+    <subjunctiveExample>Chi gak na nzo or ngok kubaꞌ, na ngazoxkwaꞌi (Si yo estuviera cuando sucedió tal cosa, yo lo iba a arreglar.)
+Chi gake na nzo or ngwachin xaꞌ, lëꞌda ngak nu xaꞌ (si yo hubiera estado cuando el se cayó, yo lo hubiera ayudado.)
+Ojla gak wen Benjamin lwegaꞌ (Ojala que Benjamin se mejora luego)
+Pas le yiu la yëꞌ (Tal vez va a lloverá mañana.) </subjunctiveExample>
+    <subjunctiveCondCliticExample>
+    </subjunctiveCondCliticExample>
+    <subjunctiveCondAffixExample>
+    </subjunctiveCondAffixExample>
+    <subjunctiveCondOtherExample>
+    </subjunctiveCondOtherExample>
+    <subjunctiveCondWordExample>chi
+pas
+oj
+</subjunctiveCondWordExample>
+    <auxExample>Nzobyao xa    (Él está sentado comiendo.)
+nzhinyao xaꞌ  (Están agrupados comiendo.)  
+
+</auxExample>
+    <auxiliaryExample>Pas
+oj
+</auxiliaryExample>
+    <auxNonfiniteExample>
+    </auxNonfiniteExample>
+    <auxiliaryNonfiniteExample>
+    </auxiliaryNonfiniteExample>
+    <auxOtherExample>nzhatao (go.to.eat)
+nzhatsiyal (go.to.console)
+Ngwatiꞌl xaꞌ ya cheꞌn xaꞌ (El fue a regar su planta.) 
+Nzhachit xaꞌ pelot (El va a jugar pelota.)
+(It appears motion verbs are always part of the word, not independent words)</auxOtherExample>
+    <auxiliaryOtherExample>nzha-
+ngwa-
+ya-
+nzob-
+nzhin-</auxiliaryOtherExample>
+    <heartCompoundExample>nizak laxtoꞌ   (está contento)
+niwin laxtoꞌ (está triste)
+miaꞌl laxtoꞌ (se olvidó)
+nidub laxtó (está respirando con ansia)
+nikë laxtoꞌ  (está extrañando)
+nichaꞌ laxtoꞌ (está soñando)
+
+</heartCompoundExample>
+    <bodypartCompoundExample>ngwalo (terminó - va.cara)
+nguzublo (comenzó  se.sentó.cara)
+zobnzha (oye/poner atenciónóbedecer  sentar.oido) 
+zobyek (entendimiento sentar.cabeza)
+bizobnzhai (escuche estas palabras: 
+nzoblo (discernimiento/buen juico sentar.cara )
+nibezhxiꞌ (roncando llamar.nariz)
+nikiꞌxian (irritar (echar.fondo)
+nikeroꞌ (blanquillo casi se quebra con pico: echar.boca)
+nzholniꞌ (bailar  canta.los. pies)
+xoꞌbxits (poner.centro.del.cabeza  (nadar)
+ </bodypartCompoundExample>
+    <verbNCompoundExample>ngwanilyuo  (amaneció, lit. se.hizo.aclaridad.del.mundo)
+yagolp  (va.el.golpe, va a golpear a alguien)
+ñaꞌzbël  (entrar.a.brillar  lit. hundirse.flama)</verbNCompoundExample>
+    <verbNCompoundSentExample>Dox nazhiꞌ xaꞌ xmëꞌd xaꞌ nikë laxtoꞌ xaꞌ mëꞌd (Mucho ama a su hijo, lo extraña/lo recuerda)
+Por dox nzhaꞌ choꞌ xaꞌ, kuzeꞌ nibezhixiꞌ xaꞌ (Por mucho dormir, por eso, arronca.)  
+Rë mëꞌd skwel or nzhal lani nzhulniꞌ mëꞌd. (Todos los niños de la escuela cuando hay fiesta, se ponen a bailar.) 
+Tu ngubizh dox chul ngwanilyuo (Amaneció un día muy bonita.)
+Por dox nayiꞌ tu mbwin lëꞌ ne yagolp. (Por mucho enojo, el muchacho se va a golpear.)
+Dox kub camión cheꞌn xaꞌ ñaꞌzbële. (Muy nuevo su carro, está brillando.</verbNCompoundSentExample>
+    <verbOtherCompoundExample>gakno  (va. a. ayudar lit:  podrá.con)
+gakne  (va a estar enfermo  podrá.dolor)
+këbëo ( descomponer/ está mohoso  lit. pega.moho)
+kubchi (quitarse lit. jalar.quitar)
+kuꞌchaoꞌ (guardar  lit.meter.prepara) </verbOtherCompoundExample>
+    <verbOtherCompoundSentExample>Por dox nikë zhiꞌn vid, lëꞌ xaꞌ gakne. (Por mucho el trabaja duro, el se va a enfermar.
+Dox par zhë raꞌ nzho xlë baꞌ lëꞌi këbëo (Mucho tiempo está esa fruta, se va descomponer/se va mohoso</verbOtherCompoundSentExample>
+    <idiomExample>modismos</idiomExample>
+    <copularExample>chul unꞌa yeꞌn  (la muchachita es bonita)
+wen mizhaꞌ (ella es amable)
+natsin xaꞌ  (el es listo)
+nzhakne Juan (Juana está enferma - doesn't fit)
+bizana nzho spital (mi hermana está en el hospital)</copularExample>
+    <copularVerb>
+    </copularVerb>
+    <copularAffix>
+    </copularAffix>
+    <perceptionExample>chul niluꞌ unaꞌ yeꞌn (la muchachita se ve bonita)
+chul niluꞌ rë yeꞌ (las flores se ve bonita)
+niluꞌ nadoꞌ laxtoꞌ men baꞌ. (Parece que es una persona humilde lit.be.humble.in.heart)
+nix niluꞌ gao met kubaꞌ (se ve muy sabroso esa comida -sabroso.se.ve.P.comer.PronGeneral 3 persg esa.cosa)
+
+</perceptionExample>
+    <sameExample>Tutsa niluꞌ bai cheꞌn Juan kun vestid cheꞌn xaꞌ (El rebozo de Juana tiene el mismo color que su vestido.
+Tutsa niluꞌ kulandr kun yeꞌ SantaMariꞌ. (Se ve lo mismo cilantro con la flor Santa María. ) 
+Tutsa nak Jwan kun Che.  (Juan tiene el mismo carácter que José)
+Tutsa niluꞌ mes kun yaxil (La mesa tiene el mismo color que la silla (color es implicito)</sameExample>
+    <sameWordExample>tutsa niluꞌ  (mismo.parece)
+tutsa nak  (mismo.es.igual)
+</sameWordExample>
+    <sameAffixExample>
+    </sameAffixExample>
+    <compareNExample>kun</compareNExample>
+    <asExample>noꞌl Lip nela Per gaꞌ (Filipe.alto como Pedro)
+nachaꞌ Jwan nela tu cuch gaꞌ (Juan es gordo como un marano)
+natsin Per nela Pab gaꞌ (Peter is as smart as Paul)
+nix nidaoꞌ naranj nela mandarin gaꞌ (Naranja es sabrosa como la mandarina) </asExample>
+    <compareAdjExample>nela ... gaꞌ
+</compareAdjExample>
+    <asWordExample>
+    </asWordExample>
+    <comparativeExample>Más chul niluꞌ San lo Lus. (Susan.is.prettier.than.Lucia.) 
+Más nayen nikë Per zhiꞌn lo Tin. (Peter.is.faster.working.than.Faustino.)
+Más noꞌl Pab lo San. (Pablo.is.taller.than.Susana.) 
+Weꞌtsaꞌ nayen nikë Per zhiꞌn lo Chik. (Un poquito le gana Pedro de rápidez de trabajo a Francisco.)
+Weꞌtsaꞌ nen nikë Pau yët lo Jul. (Un poquito más despacio hace Paula tortilla a Julia.) 
+Dox nen nikë Pau yët lo Jul. (Es muy despacio hace Paula tortilla a Julia.)
+Dox goꞌx camión cheꞌn Per par lo coch cheꞌn Lip (Muy viejo el camión de Pedro al coche de Felipe)</comparativeExample>
+    <comparativeWordExample>lo
+</comparativeWordExample>
+    <comparativeAffixExample>
+    </comparativeAffixExample>
+    <comparativeDegExample>más ADJ... lo (más... a otra persona o cosa)
+weꞌtsaꞌ... lo (menos ADJ... a otra persona - un.poquito.le.gana de Sustantivo)
+dox ADJ....lo (mucho ADJ.... a otra persona o cosa)
+</comparativeDegExample>
+    <comparativeSentExample>Más chul niluꞌ Paula lo Mart. (Paula.is.prettier.than.Martha)
+Más nayen nikëꞌ karre San lo Margarit. (Susan.runs.faster.than.Margaret)
+Más noꞌl Dabi lo Yel. (David.is.mas alto que Miguel)</comparativeSentExample>
+    <superlativeExample>más noꞌl Dabi lo rë men plon nzo xaꞌ (Dabi es mas grande/ alto de toda la gente donde el esta.)
+más nayen nikëꞌ Per karre lo más rë men (Pedro corre más rápido que a toda la gente)
+más chul niluꞌ Chik lo más rë unaꞌ. (Mas bonita se ve Fransiska de las de mas mujeres.)
+Lëꞌ Ganj más nakap lo rë mëꞌd skwel plo nzho Ganj. (Angel es más malo de todos los niños de la escuela donde Angel esta.) </superlativeExample>
+    <superlativeAffixExample>
+    </superlativeAffixExample>
+    <superlativeDegExample>más ... más
+</superlativeDegExample>
+    <existExample>Nkë men baꞌ yek lizh Juan. (Subió esa gente en el techo de la casa de Juan)
+Nzob xaꞌ	 lo tu yaxil. (Está sentado en una silla.)
+Nzë'b to miyin lo yibeꞌ (Está colgado (volando) un pájaro en el cielo.)
+???Nëꞌd to mbëk di dan. (Vino un perro en el campo.) </existExample>
+    <existWordExample>
+    </existWordExample>
+    <existVerbExample>
+    </existVerbExample>
+    <existPositionExample>nzha (is.going.away.from.base)
+nkë (is.in.an.elevated.position)
+nzëꞌb (is.hanging)
+nzë (is.coming.toward.nonbase)
+nzob (is.sitting.or.seated)
+nzhiꞌb (is.grouped.above.plural:trees/stars)
+nzo (is.standing)
+nzhin (is.grouped(plural)
+nzho (is.inside)
+nzhoꞌb (on.top.of(inanimate.or.dead)
+???ña (is.going.home(to.base)
+???ñëꞌd (is.coming.back.again(base?nonbase?)
+
+
+</existPositionExample>
+    <existOtherExample>
+    </existOtherExample>
+    <motionExample>Nzha xnaꞌn tiend. (Mi mamá se fue a la tienda.) 
+Nzë maestr da skwel. (Mi maestro vino a la escuela.)
+Nzhakaꞌ xaꞌ yët. (Se fue a traer tortilla.)
+Nzhasiꞌ xaꞌ bichu'x. (Se fue a comprar tomate.)</motionExample>
+    <diExample>Mito miyiꞌ zeꞌ yuo cheꞌn xaꞌ por tu gayoꞌ pes. (Ese hombre vendió su terreno por cien pesos)
+Mizaꞌ xaꞌ xkix lo Dios por kwaꞌn ndao xaꞌ. (Le agradeció a Dios por lo que comió.) 
+Mizaꞌ unaꞌ tu regal nkaꞌ xnaꞌ unaꞌ. (La mujer le dio un regalo a su mamá.)</diExample>
+    <passiveExample>Ngulëꞌ yëts. (Se quebró la olla.) 
+Ngulëꞌ yëts mileꞌ mëꞌd. (Se quebró la olla por el niño)
+Lëꞌ mëꞌd mileꞌ ngulëꞌ yëts. ((Por causa del niño) El niño hizo que quebró la olla.)
+Lëꞌ mëꞌd ngulëꞌ yëts. (El niño se quebró la olla.)</passiveExample>
+    <passiveAgentPExample>por
+</passiveAgentPExample>
+    <passiveAuxExample>
+    </passiveAuxExample>
+    <causativeAffixExample>g/Ø-
+tsi-
+</causativeAffixExample>
+    <causativeExample>Nzhazh men or nila yiu. (Se moja la gente cuando llueve.)
+Nigazh xaꞌ da kun tu manguer. (Con una manguera me moja.)
+Mial laxtoꞌ xaꞌ. (Se consoló.)
+Mitsiyal xaꞌ laxtoꞌn. (Ella me consoló.) 
+Nzhao xmëꞌda yët. (Mi hijo come tortilla.)
+Niga̱o̱wa̱ xmëꞌda. (Yo lo doy comida a mi hijo.) </causativeExample>
+    <causativeMakeExample>Nilen nzhao xmëꞌda or nilaꞌn mëꞌd. (Hago que mi hijo coma a la hora que tiene hambre.) 
+Mileꞌ xmëꞌda ngwchin da. (Mi hijo causó que me cayera.)
+Lëꞌ giu mileꞌ ngozh da. (La lluvia me causó que me mojara.
+Lëꞌ ya milaꞌ nguzoba xkal. (El árbol hizo que me senté en la sombra.)
+Lëꞌ camión mileꞌ mizhiꞌna lwegaꞌ. (El carro hizo que llegué rápido.)
+
+</causativeMakeExample>
+    <causativeOtherExample>Ngulëꞌ yëts. (Se quebró la olla.) 
+Ngulëꞌ yëts mileꞌ mëꞌd. (Se quebró la olla por el niño)
+Lëꞌ mëꞌd mileꞌ ngulëꞌ yëts. ((Por causa del niño) El niño hizo que quebró la olla.)
+Lëꞌ mëꞌd ngulëꞌ yëts. (El niño se quebró la olla.)</causativeOtherExample>
+    <applicativeExample>
+    </applicativeExample>
+    <antipassiveExample>
+    </antipassiveExample>
+    <antipassiveAffixExample>
+    </antipassiveAffixExample>
+    <voiceExample>
+    </voiceExample>
+    <auxCategory>
+    </auxCategory>
+    <verbCategory>
+    </verbCategory>
+    <ipContents1 checkedOff="yes">
+    </ipContents1>
+    <ipContents2 checkedOff="yes">
+    </ipContents2>
+    <ipContents3 checkedOff="yes">
+    </ipContents3>
+    <ipContents4 checkedOff="yes">
+    </ipContents4>
+    <ipContents5 checkedOff="yes">
+    </ipContents5>
+    <ipContents6 checkedOff="yes">
+    </ipContents6>
+    <ipContents7 checkedOff="yes">
+    </ipContents7>
+    <ipContents8 checkedOff="yes">
+    </ipContents8>
+    <ipContents9 checkedOff="no">
+    </ipContents9>
+    <ipContents10 checkedOff="no">
+    </ipContents10>
+    <ipAgrFeatFirstSubject checked="yes">
+    </ipAgrFeatFirstSubject>
+    <ipAgrFeatFirstObject checked="yes">
+    </ipAgrFeatFirstObject>
+    <ipAgrFeatFirstErgative checked="no">
+    </ipAgrFeatFirstErgative>
+    <ipAgrFeatFirstAbsolutive checked="no">
+    </ipAgrFeatFirstAbsolutive>
+    <ipAgrFeatFirstExclusiveSubject checked="yes">
+    </ipAgrFeatFirstExclusiveSubject>
+    <ipAgrFeatFirstExclusiveObject checked="yes">
+    </ipAgrFeatFirstExclusiveObject>
+    <ipAgrFeatFirstExclusiveErgative checked="no">
+    </ipAgrFeatFirstExclusiveErgative>
+    <ipAgrFeatFirstExclusiveAbsolutive checked="no">
+    </ipAgrFeatFirstExclusiveAbsolutive>
+    <ipAgrFeatFirstInclusiveSubject checked="yes">
+    </ipAgrFeatFirstInclusiveSubject>
+    <ipAgrFeatFirstInclusiveObject checked="yes">
+    </ipAgrFeatFirstInclusiveObject>
+    <ipAgrFeatFirstInclusiveErgative checked="no">
+    </ipAgrFeatFirstInclusiveErgative>
+    <ipAgrFeatFirstInclusiveAbsolutive checked="no">
+    </ipAgrFeatFirstInclusiveAbsolutive>
+    <ipAgrFeatSecondSubject checked="yes">
+    </ipAgrFeatSecondSubject>
+    <ipAgrFeatSecondObject checked="yes">
+    </ipAgrFeatSecondObject>
+    <ipAgrFeatSecondErgative checked="no">
+    </ipAgrFeatSecondErgative>
+    <ipAgrFeatSecondAbsolutive checked="no">
+    </ipAgrFeatSecondAbsolutive>
+    <ipAgrFeatThirdSubject checked="yes">
+    </ipAgrFeatThirdSubject>
+    <ipAgrFeatThirdObject checked="yes">
+    </ipAgrFeatThirdObject>
+    <ipAgrFeatThirdErgative checked="no">
+    </ipAgrFeatThirdErgative>
+    <ipAgrFeatThirdAbsolutive checked="no">
+    </ipAgrFeatThirdAbsolutive>
+    <ipAgrFeatSingularSubject checked="yes">
+    </ipAgrFeatSingularSubject>
+    <ipAgrFeatSingularObject checked="yes">
+    </ipAgrFeatSingularObject>
+    <ipAgrFeatSingularErgative checked="no">
+    </ipAgrFeatSingularErgative>
+    <ipAgrFeatSingularAbsolutive checked="no">
+    </ipAgrFeatSingularAbsolutive>
+    <ipAgrFeatDualSubject checked="no">
+    </ipAgrFeatDualSubject>
+    <ipAgrFeatDualObject checked="no">
+    </ipAgrFeatDualObject>
+    <ipAgrFeatDualErgative checked="no">
+    </ipAgrFeatDualErgative>
+    <ipAgrFeatDualAbsolutive checked="no">
+    </ipAgrFeatDualAbsolutive>
+    <ipAgrFeatPluralSubject checked="no">
+    </ipAgrFeatPluralSubject>
+    <ipAgrFeatPluralObject checked="no">
+    </ipAgrFeatPluralObject>
+    <ipAgrFeatPluralErgative checked="no">
+    </ipAgrFeatPluralErgative>
+    <ipAgrFeatPluralAbsolutive checked="no">
+    </ipAgrFeatPluralAbsolutive>
+    <ipAgrFeatMasculineSubject checked="yes">
+    </ipAgrFeatMasculineSubject>
+    <ipAgrFeatMasculineObject checked="yes">
+    </ipAgrFeatMasculineObject>
+    <ipAgrFeatMasculineErgative checked="no">
+    </ipAgrFeatMasculineErgative>
+    <ipAgrFeatMasculineAbsolutive checked="no">
+    </ipAgrFeatMasculineAbsolutive>
+    <ipAgrFeatFeminineSubject checked="yes">
+    </ipAgrFeatFeminineSubject>
+    <ipAgrFeatFeminineObject checked="yes">
+    </ipAgrFeatFeminineObject>
+    <ipAgrFeatFeminineErgative checked="no">
+    </ipAgrFeatFeminineErgative>
+    <ipAgrFeatFeminineAbsolutive checked="no">
+    </ipAgrFeatFeminineAbsolutive>
+    <ipAgrFeatNeuterSubject checked="no">
+    </ipAgrFeatNeuterSubject>
+    <ipAgrFeatNeuterObject checked="no">
+    </ipAgrFeatNeuterObject>
+    <ipAgrFeatNeuterErgative checked="no">
+    </ipAgrFeatNeuterErgative>
+    <ipAgrFeatNeuterAbsolutive checked="no">
+    </ipAgrFeatNeuterAbsolutive>
+    <ipAgrFeatAnimateSubject checked="yes">
+    </ipAgrFeatAnimateSubject>
+    <ipAgrFeatAnimateObject checked="yes">
+    </ipAgrFeatAnimateObject>
+    <ipAgrFeatAnimateErgative checked="no">
+    </ipAgrFeatAnimateErgative>
+    <ipAgrFeatAnimateAbsolutive checked="no">
+    </ipAgrFeatAnimateAbsolutive>
+    <ipAgrFeatMinusAnimateSubject checked="yes">
+    </ipAgrFeatMinusAnimateSubject>
+    <ipAgrFeatMinusAnimateObject checked="yes">
+    </ipAgrFeatMinusAnimateObject>
+    <ipAgrFeatMinusAnimateErgative checked="no">
+    </ipAgrFeatMinusAnimateErgative>
+    <ipAgrFeatMinusAnimateAbsolutive checked="no">
+    </ipAgrFeatMinusAnimateAbsolutive>
+    <ipAgrFeatHumanSubject checked="yes">
+    </ipAgrFeatHumanSubject>
+    <ipAgrFeatHumanObject checked="yes">
+    </ipAgrFeatHumanObject>
+    <ipAgrFeatHumanErgative checked="no">
+    </ipAgrFeatHumanErgative>
+    <ipAgrFeatHumanAbsolutive checked="no">
+    </ipAgrFeatHumanAbsolutive>
+    <ipAgrFeatMinusHumanSubject checked="yes">
+    </ipAgrFeatMinusHumanSubject>
+    <ipAgrFeatMinusHumanObject checked="yes">
+    </ipAgrFeatMinusHumanObject>
+    <ipAgrFeatMinusHumanErgative checked="no">
+    </ipAgrFeatMinusHumanErgative>
+    <ipAgrFeatMinusHumanAbsolutive checked="no">
+    </ipAgrFeatMinusHumanAbsolutive>
+    <ipInflFeatPresent checked="no">
+    </ipInflFeatPresent>
+    <ipInflFeatPast checked="no">
+    </ipInflFeatPast>
+    <ipInflFeatFuture checked="no">
+    </ipInflFeatFuture>
+    <ipInflFeatNonPast>
+    </ipInflFeatNonPast>
+    <ipInflFeatNonFuture>
+    </ipInflFeatNonFuture>
+    <ipInflFeatOtherTense checked="no"/>
+    <ipInflFeatCompletive checked="yes">
+    </ipInflFeatCompletive>
+    <ipInflFeatContemplative checked="no">
+    </ipInflFeatContemplative>
+    <ipInflFeatContinuative checked="no">
+    </ipInflFeatContinuative>
+    <ipInflFeatContrafactual checked="no">
+    </ipInflFeatContrafactual>
+    <ipInflFeatHabitual checked="yes">
+    </ipInflFeatHabitual>
+    <ipInflFeatImperfect>
+    </ipInflFeatImperfect>
+    <ipInflFeatImperfective checked="no">
+    </ipInflFeatImperfective>
+    <ipInflFeatIncompletive checked="no">
+    </ipInflFeatIncompletive>
+    <ipInflFeatPerfect checked="no">
+    </ipInflFeatPerfect>
+    <ipInflFeatPerfective checked="no">
+    </ipInflFeatPerfective>
+    <ipInflFeatPotential checked="yes">
+    </ipInflFeatPotential>
+    <ipInflFeatProgressive checked="yes">
+    </ipInflFeatProgressive>
+    <ipInflFeatPurposive checked="no"/>
+    <ipInflFeatStative checked="yes">
+    </ipInflFeatStative>
+    <ipInflFeatUnreal checked="yes">
+    </ipInflFeatUnreal>
+    <ipInflFeatOtherAspect checked="no"/>
+    <ipInflFeatDeclarative checked="no">
+    </ipInflFeatDeclarative>
+    <ipInflFeatIndicative>
+    </ipInflFeatIndicative>
+    <ipInflFeatRealis checked="no">
+    </ipInflFeatRealis>
+    <ipInflFeatImperative checked="yes">
+    </ipInflFeatImperative>
+    <ipInflFeatInterrogative checked="yes">
+    </ipInflFeatInterrogative>
+    <ipInflFeatConditional>
+    </ipInflFeatConditional>
+    <ipInflFeatSubjunctive>
+    </ipInflFeatSubjunctive>
+    <ipInflFeatIrrealis checked="yes">
+    </ipInflFeatIrrealis>
+    <ipInflFeatOtherMood checked="no"/>
+    <ipInflFeatAntipassive checked="no">
+    </ipInflFeatAntipassive>
+    <ipInflFeatApplicative checked="no"/>
+    <ipInflFeatCausative checked="yes">
+    </ipInflFeatCausative>
+    <ipInflFeatFinite checked="no">
+    </ipInflFeatFinite>
+    <ipInflFeatMinusFinite checked="no">
+    </ipInflFeatMinusFinite>
+    <ipInflFeatGerund checked="yes">
+    </ipInflFeatGerund>
+    <ipInflFeatPassive checked="no">
+    </ipInflFeatPassive>
+    <ipInflFeatParticiple checked="yes">
+    </ipInflFeatParticiple>
+    <ipInflFeatWitness checked="no"/>
+    <ipInflFeatNonwitness checked="no"/>
+    <ipInflFeatFirsthand checked="no"/>
+    <ipInflFeatSecondhand checked="no"/>
+    <ipInflFeatThirdhand checked="no"/>
+    <ipInflFeatVisual checked="no"/>
+    <ipInflFeatAuditory checked="no"/>
+    <ipInflFeatOlfactory checked="no"/>
+    <ipInflFeatInferential checked="no"/>
+    <ipInflFeatReportative checked="no"/>
+    <ipInflFeatHearsay checked="no"/>
+    <ipInflFeatQuotative checked="no"/>
+    <ipInflFeatAssumed checked="no"/>
+    <ipInflFeatOtherEvident checked="no"/>
+    <ipInflFeatActorVoice checked="no">
+    </ipInflFeatActorVoice>
+    <ipInflFeatDativeVoice checked="no">
+    </ipInflFeatDativeVoice>
+    <ipInflFeatGoalVoice checked="no">
+    </ipInflFeatGoalVoice>
+    <ipInflFeatInstrumentalVoice checked="no">
+    </ipInflFeatInstrumentalVoice>
+    <ipInflFeatLocativeVoice checked="no">
+    </ipInflFeatLocativeVoice>
+    <ipInflFeatObjectVoice checked="no">
+    </ipInflFeatObjectVoice>
+    <ipInflFeatOtherVoice checked="no"/>
+  </ip>
+  <comp checkedOff="yes" comp="yes" compNonfinite="no" compTypeOther="no" compWord="yes">
+    <compProclitic checked="yes">
+    </compProclitic>
+    <compEnclitic checked="no">
+    </compEnclitic>
+    <compPrefix checked="no">
+    </compPrefix>
+    <compSuffix checked="no">
+    </compSuffix>
+    <compAttachesOther checked="no">
+    </compAttachesOther>
+    <compBefore checked="yes">
+    </compBefore>
+    <compAfter checked="no">
+    </compAfter>
+    <compBoth checked="no">
+    </compBoth>
+    <compOther checked="no">
+    </compOther>
+    <finiteExample>copNanen ñolaxtoꞌ xaꞌ da (Yo sé que esa persona le gusta a mi.)
+Nanen ngwagan xaꞌ. (Yo sé que ella se equivocó.) 
+Ngwanu laxtoꞌn lëꞌ xaꞌ niyiꞌ. (Lo presentí que ella está enojada.)
+Mizi da tu xaꞌ miliwaꞌn karti da. (Sentí que alguien robó mi cartilla.)  </finiteExample>
+    <finiteOrNonfiniteExample>Nizi da lëꞌ xaꞌ yiꞌd lo lani. (Siento que él va a venir en la fiesta.)
+Kimbëz Juan cho gor zhin wech xaꞌ lo lani. (Juan está esperando la hora que llega su hermano en la fiesta.)
+Orzeꞌ kimbëz bixaꞌ zhire ska xaꞌ zeꞌi. (Entonces ellos esperando que esa persona devolverá la cosa.)</finiteOrNonfiniteExample>
+    <DPCPExample>niluꞌ Pab widiꞌzh cheꞌn Dios lo rë men par la Pab yek bixaꞌ yila bixaꞌi, (Lk.18:4Paul.teaches.the.word.of.God.to.the.people.in.order.that.Paul.convinces/persuade.them.to.believe.it)
+niluꞌ no widiꞌzh cheꞌn Dios lo rë men par yila bixaꞌi. (2Co.5:11we(excl.)teach.the.word.of God.in.order.that.persuade.them.it.)
+No chi tu men kiꞌl go par weiꞌ go tu kwaꞌn neꞌ tu kilómetro garol, (Mt.5:41and.if.a.person.obligates.you.to.carry.something.heavy.a.kilometer.and.a.half...)</DPCPExample>
+    <nonfiniteExample>nzheklan yan lani lizhal. (I.want.to.come.to.the.party.at.your.house)
+nzhaklan nzha Che lo lani. (I.want.Joe.to.go.to.the.party)</nonfiniteExample>
+    <nonfiniteProDropExample>milëꞌ Che jwers nga xaꞌ lo lani (Joe.do.effort.would.have.gone.to.partyJoe.tried.tocome.to.the.party(meanshedidn'tgo)
+Milën dox jwers ngazhëla más ejemp (I.tried.hard.find.more.examples)
+</nonfiniteProDropExample>
+    <nonfiniteCPOrProDropExample>Nayoꞌt laxtoꞌ Che ya San lo lani (Joe.hates.go.Susan.to.party.Joe.wouldn't.like.Sue.to.be.at.the.party.)
+Gat ñot laxtoꞌ Che nzhoꞌl niꞌ xaꞌ (neg.hate.not.like.Joe.sing.feet.Joe.hates.todance)
+Nzhaklan más men lëꞌ xigab wen por na. (I.want.more.people.to.think.well.of.me)
+</nonfiniteCPOrProDropExample>
+    <raisingExample>Niluꞌ ño laxtoꞌ Juan yët. (appear.hab.enter.heart(like)John.tortilla.)
+Pas yiꞌd ka Juan. (Maybe.John.really.will.come)
+Niluꞌ nalara yiu yëꞌ. (it.appears.negfallmore.rain.tomorrow)
+</raisingExample>
+    <causeExample>Mileꞌ xnaꞌn mitsumben kwart da. (Made.my.mother.I.clean.room.my/My.mother.made,me.clean.my.room)
+Mileꞌ kikwaꞌn xaꞌ mod naroꞌt wen rë kwaꞌn nileꞌ no. (made.seek.he.means.neg.come.out.neg./all.that.do.we./He.is.seeking.a.way.that.all.that.we.do.won't.turn.out.well.)
+Lëꞌ unaꞌ ka mileꞌ milëꞌ no. (That.woman.caused.us.to.break.up.not.be.friends)
+  </causeExample>
+    <quotationExample>Nzhab Sanꞌ: "Yëꞌ yala Latyezh." (Susana.said: "Tomorrow.I'm.coming.to.town(Coatecas.Altas)"
+Ne San lon: "Yala lizhal." ((ne used between 1st&amp;2nd sg.referents:Susan.said.to.me: "I.will.come.to.your.house.)
+ngwa bixaꞌ mont kwaꞌn ñaꞌn lazh men Galilea, plo nzhab Jesús ya bixaꞌ. (Mt.28:16They.went.to.the.mountain.located.in.theland.of.theGalileans, where Jesus told them togo.)
+</quotationExample>
+    <otherRestrictions>
+    </otherRestrictions>
+    <otherExample>
+    </otherExample>
+    <compCliticExample>
+    </compCliticExample>
+    <compAffixExample>
+    </compAffixExample>
+    <compOtherExample>
+    </compOtherExample>
+    <compExample>kwaꞌn
+xaꞌ
+par</compExample>
+  </comp>
+  <q checkedOff="yes" contFront="before" embCont="no" embContAuxPos="before" embContAuxRequired="no" embContRequired="yes" embContWord="yes" embYN="yes" embYNAuxPos="before" embYNWord="yes" mainCont="no" mainContAuxPos="before" mainContAuxRequired="no" mainContRequired="yes" mainContWord="yes" mainYN="yes" mainYNAuxPos="before" mainYNWord="yes" whArtPos="before" whDegAdjPos="before" whDegQPos="before" whDemPos="before">
+    <mainYNProclitic checked="yes">
+    </mainYNProclitic>
+    <mainYNEnclitic checked="no">
+    </mainYNEnclitic>
+    <mainYNPrefix checked="no">
+    </mainYNPrefix>
+    <mainYNSuffix checked="no">
+    </mainYNSuffix>
+    <mainYNCliticOther checked="no">
+    </mainYNCliticOther>
+    <mainYNWordBefore checked="yes">
+    </mainYNWordBefore>
+    <mainYNWordAfter checked="no">
+    </mainYNWordAfter>
+    <mainYNWordBoth checked="no">
+    </mainYNWordBoth>
+    <mainYNWordOther checked="no">
+    </mainYNWordOther>
+    <embYNProclitic checked="yes">
+    </embYNProclitic>
+    <embYNEnclitic checked="no">
+    </embYNEnclitic>
+    <embYNPrefix checked="no">
+    </embYNPrefix>
+    <embYNSuffix checked="no">
+    </embYNSuffix>
+    <embYNCliticOther checked="no">
+    </embYNCliticOther>
+    <embYNWordBefore checked="yes">
+    </embYNWordBefore>
+    <embYNWordAfter checked="no">
+    </embYNWordAfter>
+    <embYNWordBoth checked="no">
+    </embYNWordBoth>
+    <embYNWordOther checked="no">
+    </embYNWordOther>
+    <mainContProclitic checked="yes">
+    </mainContProclitic>
+    <mainContBetweenProclitic checked="no">
+    </mainContBetweenProclitic>
+    <mainContEnclitic checked="no">
+    </mainContEnclitic>
+    <mainContBetweenEnclitic checked="no">
+    </mainContBetweenEnclitic>
+    <mainContPrefix checked="no">
+    </mainContPrefix>
+    <mainContSuffix checked="no">
+    </mainContSuffix>
+    <mainContCliticOther checked="no">
+    </mainContCliticOther>
+    <mainContWordBefore checked="yes">
+    </mainContWordBefore>
+    <mainContWordAfter checked="no">
+    </mainContWordAfter>
+    <mainContWordBoth checked="no">
+    </mainContWordBoth>
+    <mainContWordOther checked="no">
+    </mainContWordOther>
+    <mainContVSOAfterWh checked="no">
+    </mainContVSOAfterWh>
+    <mainContVSOBeforeWh checked="yes">
+    </mainContVSOBeforeWh>
+    <mainContVSOEnd checked="no">
+    </mainContVSOEnd>
+    <mainContVSOOther checked="no">
+    </mainContVSOOther>
+    <embContProclitic checked="yes">
+    </embContProclitic>
+    <embContBetweenProclitic checked="no">
+    </embContBetweenProclitic>
+    <embContEnclitic checked="no">
+    </embContEnclitic>
+    <embContBetweenEnclitic checked="no">
+    </embContBetweenEnclitic>
+    <embContPrefix checked="no">
+    </embContPrefix>
+    <embContSuffix checked="no">
+    </embContSuffix>
+    <embContCliticOther checked="no">
+    </embContCliticOther>
+    <embContWordBefore checked="yes">
+    </embContWordBefore>
+    <embContWordAfter checked="no">
+    </embContWordAfter>
+    <embContWordBoth checked="no">
+    </embContWordBoth>
+    <embContWordOther checked="no">
+    </embContWordOther>
+    <embContVSOAfterWh checked="no">
+    </embContVSOAfterWh>
+    <embContVSOBeforeWh checked="yes">
+    </embContVSOBeforeWh>
+    <embContVSOEnd checked="no">
+    </embContVSOEnd>
+    <embContVSOOther checked="no">
+    </embContVSOOther>
+    <example>¿Chi nzë xaꞌ tiend? (Ella viene en la tienda?) 
+¿Chi zi la yiu nalse?  (Va a llover ahora?)
+¿Chi za go Wiza nal?  (Va usted a Ejutla ahora/ hoy?) 
+ 
+</example>
+    <mainYNCliticExample>
+    </mainYNCliticExample>
+    <mainYNAffixExample>
+    </mainYNAffixExample>
+    <mainYNWordExample>Chi
+</mainYNWordExample>
+    <embYNExample>Wiꞌ be chi ziyiꞌd unaꞌ. (Vamos a ver si ella vendrá.)
+</embYNExample>
+    <embYNCliticExample>
+    </embYNCliticExample>
+    <embYNAffixExample>
+    </embYNAffixExample>
+    <embYNWordExample>chi
+</embYNWordExample>
+    <who>¿Cho? (gente.cosas)
+
+</who>
+    <what>¿Kwan? (acciones.cosas)</what>
+    <why>¿Chon?</why>
+    <where>¿Plo (cosas, lugar, localidad)
+¿Ma? (gente, animales)
+
+</where>
+    <when>¿Pok</when>
+    <how>¿Xmod?</how>
+    <howMany>¿Pla?  (how.many)
+¿Plak? (how.much)
+</howMany>
+    <which>¿Cho?</which>
+    <whose>¿Cho cheꞌn...?</whose>
+    <other>
+    </other>
+    <contentExample>¿Cho mëꞌd ndao yët da? (Cual.niño.comió.mi tortilla?) 
+¿Cho xaꞌ ndao yët da? (Quien comió mi tortilla?)
+¿Chon nangao bixaꞌ yët da? (Porqué no pudieron comer ellos mi tortilla.) 
+¿Kwan ndao miyiꞌ? (¿Qué comió el hombre?)
+¿Pok yiꞌd xaꞌ? (¿Cuándo vendrá el/ ella?)
+¿Plo nzo xaꞌ wen baꞌ? (?Dónde está la persona buena?) 
+</contentExample>
+    <mainContCliticExample>
+    </mainContCliticExample>
+    <mainContAffixExample>
+    </mainContAffixExample>
+    <mainContWordExample>cho
+kwan
+plak
+plo
+</mainContWordExample>
+    <mainContSpecialConditions>
+    </mainContSpecialConditions>
+    <embContentExample>Wiꞌ be kwan liꞌ be kun lëꞌ bixaꞌ. (Vamos a ver que vamos hacer con ellas(os). 
+Naneta chon nileꞌ xaꞌ saꞌ. (No entiendo porque el hace/comoporta así.)
+Naneta cho gwa kun lëꞌ xaꞌ. (No sé quien fue con él.) 
+Miaꞌlaxtoꞌn plo ngwa xaꞌ. (Se me olvidó donde se fue.)
+Lu nane xmod nake. (Tu sabes cómo es.)
+Lëꞌ xaꞌ midiꞌzh pok yëꞌd xaꞌ. (El habló cuando va a venir.) </embContentExample>
+    <embContCliticExample>
+    </embContCliticExample>
+    <embContAffixExample>
+    </embContAffixExample>
+    <embContWordExample>kwan
+chon
+cho
+plo
+xmod
+pok
+</embContWordExample>
+    <embContSpecialConditions>
+    </embContSpecialConditions>
+    <whPronCategory>
+    </whPronCategory>
+  </q>
+  <relcl checkedOff="yes" clausePos="after" exist="yes" headless="yes" relCliticPos="before" relWord="yes" whAndComp="no">
+    <relTypeCPComp checked="yes">
+    </relTypeCPComp>
+    <relTypeCPWh checked="no">
+    </relTypeCPWh>
+    <relTypeCPRel checked="no">
+    </relTypeCPRel>
+    <relTypeIPRel checked="no">
+    </relTypeIPRel>
+    <relTypeIP checked="no">
+    </relTypeIP>
+    <relTypeOther checked="no">
+    </relTypeOther>
+    <relWordBefore checked="yes">
+    </relWordBefore>
+    <relWordAfter checked="no">
+    </relWordAfter>
+    <relWordBoth checked="no">
+    </relWordBoth>
+    <relWordOther checked="no">
+    </relWordOther>
+    <example>Tu unaꞌ xaꞌ kike yët lo zhil. (Una mujer que está haciendo una tortilla en el comal.)
+Tu mëꞌd kwaꞌn niyent kwan nzhon. (Un niño que no entiende nada.) 
+Tu nez ro kwaꞌn dox naxen. (Un camino grande que es muy amplio.)
+Tu men xaꞌ dox natsin par nidiꞌzh. (Una persona que es muy lista para hablar.) 
+Rë unaꞌ latyezh xaꞌ nzhak nu gobier dox jwals nixeꞌn bixaꞌ xmëꞌd bixaꞌ.  (Todas las mujeres de Coatecas que el gobierno les apoya con dinero muy facil mantienen a sus hijos.)</example>
+    <sentExample>Nayax men nidiꞌzh nzhab xaꞌ nzho tu unaꞌ xaꞌ kikë yët lo zhil dox nayen. (Mucha gente habla diciendo que hay una mujer que hace tortilla muy rápido en el comal.)
+Leꞌn yezh baꞌ nzho tu mëꞌd kwaꞌn niyent kwan nzhon or nidiꞌzh xna mëꞌd lo mëꞌd. (En ese pueblo vive un niño que no entiende nada cuando su mamá le habla.) 
+Taꞌ tu yiꞌ plo dox nzhiꞌb ya nided tu nez ro kwaꞌn dox naxen. (En un cerro donde hay muchos árboles pasa un camino grande que es muy amplio.)
+Leꞌn tu yadoꞌ plo nibin nayax men nzho tu men xaꞌ dox natsin par nidiꞌzh. (En la iglesia donde se reune mucha gente hay una persona que es muy lista para hablar.) 
+</sentExample>
+    <relCliticExample>
+    </relCliticExample>
+    <relWordExample>xaꞌ
+kwaꞌn
+</relWordExample>
+    <relAffixExample>
+    </relAffixExample>
+    <headlessExample>Xaꞌ nileꞌ mandad lo yuo reꞌ lë Juan. (El que manda este terreno se llama Juan.)
+Lo mes baꞌ nibiꞌb kwaꞌn gao men. (Esa mesa se pone lo que come la gente).
+Kwaꞌn nzhao mizin nzhin xan yoꞌ. (Lo que come el ratón está en la esquina de la casa.) (implicitamente entendible que es veneno porque nadie pone comida en una esquina de la casa para los ratones.) </headlessExample>
+  </relcl>
+  <advcl advOrNPPos="after" checkedOff="yes">
+    <tempSentExample>Chi tiemp, dox vid niban men por niyent ki. (Hace tiempo, la gente vivía muy triste por falta de la luz (electricidad).
+Or ñaniluyuo, zilitaꞌ nikëꞌ unaꞌ yët kun yaꞌ unaꞌ latyezh.  (Cuando almanece, diariamente mujeres hacen tortilla con la mano en Coatecas.)
+Mbeoꞌ bi yiu nzho tu kwaꞌn gao men orzeꞌ. (Tiempo de lluvia la gente tiene mucho que comer.)
+Rë unaꞌ nzhal xin ñal xaꞌt bixaꞌ saꞌ nzhak wen bixaꞌ lwegaꞌ. (Las mujeres después de dar la luz es necesario sobarse para recupere rápido.) </tempSentExample>
+  </advcl>
+  <neg advVerbRequired="no" auxVerbRequired="yes" checkedOff="yes" negAuxRequiresAux="no" negFront="yes" negFrontTwo="no" negIndef="some" negTwoAllowed="yes" negVerbal="yes" npDegreeNeg="yes" npDegreeNegCooccur="yes" objVerbRequired="other" polarityItems="no" subjVerbRequired="no" type="concord">
+    <npDegreeNegProclitic checked="yes">
+    </npDegreeNegProclitic>
+    <npDegreeNegEnclitic checked="no">
+    </npDegreeNegEnclitic>
+    <npDegreeNegPrefix checked="no">
+    </npDegreeNegPrefix>
+    <npDegreeNegSuffix checked="no">
+    </npDegreeNegSuffix>
+    <npDegreeNegOther checked="no">
+    </npDegreeNegOther>
+    <npDegreeNegWordBefore checked="yes">
+    </npDegreeNegWordBefore>
+    <npDegreeNegWordAfter checked="no">
+    </npDegreeNegWordAfter>
+    <npDegreeNegWordBoth checked="no">
+    </npDegreeNegWordBoth>
+    <npDegreeNegWordOther checked="no">
+    </npDegreeNegWordOther>
+    <negTemporalTypeWord checked="yes">
+    </negTemporalTypeWord>
+    <negTemporalTypeAdverb checked="no">
+    </negTemporalTypeAdverb>
+    <negTemporalTypeAdverbWord checked="no">
+    </negTemporalTypeAdverbWord>
+    <negTemporalTypeAffix checked="no">
+    </negTemporalTypeAffix>
+    <negTemporalTypeVerb checked="no">
+    </negTemporalTypeVerb>
+    <negTemporalTypeOther checked="no">
+    </negTemporalTypeOther>
+    <negTemporalAdverbWordBefore checked="yes">
+    </negTemporalAdverbWordBefore>
+    <negTemporalAdverbWordAfter checked="no">
+    </negTemporalAdverbWordAfter>
+    <negTemporalAdverbWordBoth checked="no">
+    </negTemporalAdverbWordBoth>
+    <negTemporalAdverbWordOther checked="no">
+    </negTemporalAdverbWordOther>
+    <negLocativeTypeWord checked="no">
+    </negLocativeTypeWord>
+    <negLocativeTypeAdverb checked="no">
+    </negLocativeTypeAdverb>
+    <negLocativeTypeAdverbWord checked="yes">
+    </negLocativeTypeAdverbWord>
+    <negLocativeTypeAffix checked="no">
+    </negLocativeTypeAffix>
+    <negLocativeTypeVerb checked="no">
+    </negLocativeTypeVerb>
+    <negLocativeTypeOther checked="no">
+    </negLocativeTypeOther>
+    <negLocativeAdverbWordBefore checked="yes">
+    </negLocativeAdverbWordBefore>
+    <negLocativeAdverbWordAfter checked="no">
+    </negLocativeAdverbWordAfter>
+    <negLocativeAdverbWordBoth checked="no">
+    </negLocativeAdverbWordBoth>
+    <negLocativeAdverbWordOther checked="no">
+    </negLocativeAdverbWordOther>
+    <negAuxWord checked="yes">
+    </negAuxWord>
+    <negAuxAffix checked="no">
+    </negAuxAffix>
+    <negVAffix checked="yes">
+    </negVAffix>
+    <negVerbalOther checked="no">
+    </negVerbalOther>
+    <not>gat lëꞌt
+tlëꞌt (contraction.of.gat.lëꞌt,often.used)
+yent ni tu
+
+
+</not>
+    <negCliticExample>
+    </negCliticExample>
+    <negAffixExample>
+    </negAffixExample>
+    <negOtherExample>
+    </negOtherExample>
+    <negExample>gat lëꞌt mëꞌd reꞌ
+gat lëꞌt gaiꞌ mëꞌd reꞌ
+gat lëꞌt nabtsa mëꞌd reꞌ
+gat lëꞌt nabtsa mëꞌd cheꞌn San
+gat lëꞌt ma baꞌ ma da. (Ese animal no es mio.)
+Yent ni tu mbëk. (No hay ningún perro.)
+</negExample>
+    <negCooccurExample>Gat lëꞌt za gaiꞌ mëꞌd. (No todos los cinco niños)
+Gat lëꞌt nab yon xmëꞌd San. (No solamente los tres niños de Susana)
+Gat lëꞌt nab rë tsa mëꞌd baꞌ. (No todos esos niños son.)</negCooccurExample>
+    <npDegreeSubjExample>Gat lëꞌt nab rë mëꞌd mizhin lo lani. (No solo los niños llegaron a la fiesta.)
+Ni xtu rë mëꞌd skwel nagakt raꞌ yazob bixaꞌ lë bixaꞌ. (Ya ningún niño de la escuela se puede escribirse.)</npDegreeSubjExample>
+    <negIndefExample>Yente (Nada)</negIndefExample>
+    <negIndefNPExample>Yent cho (Nadie)
+Ni tube (Ninguno)
+
+</negIndefNPExample>
+    <negIndefSubjExample>Yent cho ngwatao lizh xaꞌ. (Nadie fue a comer a su casa.)
+Yent cho lo gab xaꞌi. (No hay nadie para explicarlo.)
+Yent ni tu ma cheꞌn go. (No hay ningún animal de usted.) </negIndefSubjExample>
+    <negTemporalExample>laltaꞌ (nunca)
+laltaꞌ gat (nunca no habido algo)
+laltaꞌ nagat (nunca no habido algo)
+nagat (todavía no)
+nayot (nunca, jamás)
+jamas  (nunca para siempre)
+</negTemporalExample>
+    <negTemporalAdverbAffixExample>
+    </negTemporalAdverbAffixExample>
+    <negTemporalAdverbExample>
+    </negTemporalAdverbExample>
+    <negTemporalAdverbWordExample>
+    </negTemporalAdverbWordExample>
+    <negTemporalAdverbWordsExample>
+    </negTemporalAdverbWordsExample>
+    <negTemporalAffixExample>
+    </negTemporalAffixExample>
+    <negTemporalAffixVerbExample>
+    </negTemporalAffixVerbExample>
+    <negTemporalVerbExample>
+    </negTemporalVerbExample>
+    <negTemporalOtherExample>
+    </negTemporalOtherExample>
+    <advTemporalExample>Laltaꞌ nagat ya mbe lo lani. (Nunca ha ido el hombre a la fiesta.)
+Nayot gak kubaꞌ lizh unaꞌ.  (Nunca vas a suceder esta cosa en la casa de la mujer.)
+Jamás nayot chëꞌl rop unaꞌ, nzhab xaꞌ. (Nunca para siempre van a hacer amigas las dos mujeres, dijeron.) </advTemporalExample>
+    <negLocativeExample>
+    </negLocativeExample>
+    <negLocativeAdverbAffixExample>
+    </negLocativeAdverbAffixExample>
+    <negLocativeAdverbExample>
+    </negLocativeAdverbExample>
+    <negLocativeAdverbWordExample>yent
+yent ni tu
+</negLocativeAdverbWordExample>
+    <negLocativeAdverbWordsExample>yent plo
+yent ni tu plo
+yenta plo</negLocativeAdverbWordsExample>
+    <negLocativeAffixExample>
+    </negLocativeAffixExample>
+    <negLocativeAffixVerbExample>
+    </negLocativeAffixVerbExample>
+    <negLocativeVerbExample>
+    </negLocativeVerbExample>
+    <negLocativeOtherExample>
+    </negLocativeOtherExample>
+    <advLocativeExample>Yent ni tu plo gazhël xaꞌ kwan nikwaꞌn xaꞌ. (No encontró ningún lugar lo que el buscaba.)
+Yent plo tsaꞌp xaꞌ or nzo yiu nazheꞌb. (Cuando llueve recio ningún lugar hay para protegerse del agua.)
+Per yenta plo ngwa xaꞌ naꞌg guzhe. (Pedro no fue ningún lugar ayer en la tarde. </advLocativeExample>
+    <negAuxExample>gat (no; con el aspecto habitual e imperfecto/progresivo)
+nagat (todavía no)
+
+</negAuxExample>
+    <negAuxAffixExample>
+    </negAuxAffixExample>
+    <negVerbExample>-t  (no)
+na- (no; en el aspecto potencial e irrealis)
+</negVerbExample>
+    <negVerbalOtherExample>
+    </negVerbalOtherExample>
+    <auxExample>Nagat ya xaꞌ yachoꞌ xaꞌ yix cheꞌn xaꞌ. (Todavía ha ido a cortar su zacate.)
+Gat nikëꞌt xaꞌ zhiꞌn nela xmod ñal. (No trabaja él como se debe de hacer.
+Nagakt leꞌ Juan kwaꞌn nileꞌ más men. (Juan no puede hacer las cosas que hacen los demás personas.)
+Nangaroꞌt kwaꞌn milen xigab len. (No salió tal como pensaba.) </auxExample>
+    <auxAffixExample>
+    </auxAffixExample>
+    <verbAffixExample>(Una excepción a la regla de que no se permite a un auxiliar negativo sinoque el verbo también es negativo; no se aplica la regla en cláuselas adverbiales o dependientes.)
+Xëꞌl Me rë ganj cheꞌn Me par nayachinal lo ke. (Él enviará sus ángeles para que no caigas en las piedras.)
+Nin lo go, chi lëꞌ go naleꞌ gan leꞌ go rë kwaꞌn nzobniꞌ lo ly cheꞌn Muisés lo rë men fariseo, mbaino lo rë men niluꞌ ley reꞌ, orzeꞌ nayot go plo nileꞌ Dios mandad. (Les digo a ustedes, si ustedes no </verbAffixExample>
+    <negVerbalOtherSentExample>
+    </negVerbalOtherSentExample>
+    <npiPronounExample>
+    </npiPronounExample>
+    <npiDeterminerExample>
+    </npiDeterminerExample>
+    <npiTemporalExample>
+    </npiTemporalExample>
+    <npiLocativeExample>
+    </npiLocativeExample>
+    <objectExample>Yent cho une Juan. (No hay nadie quien vio Juan. (literalmente))
+Lëꞌ maestr nangazaꞌt ni tu kalifikasion wen kaꞌ rë më'd. (El maestro no les dio ninguna calificación buena para los niños.)
+Nagaot go ni tu kwaꞌn nzhin baꞌ. (No comen ninguna cosa que está allí.) 
+</objectExample>
+    <indirectObjectExample>Yent tu kwaꞌn wen ngazan ngakaꞌ bixaꞌ. (Ninguna cosa buena pude darles a ellos.)
+Gat lëꞌt lon nzëꞌb xaꞌ dimi nayax. (No es conmigo debía el dinero grande.)
+Gat lëꞌt lo Per nguzi xaꞌ burr yeꞌn. (No fue con Pedro compró un burrito (Lit.)
+Yent cho lo mixeꞌl Mari yeꞌ. ( A nadie le mandó María flores.)
+</indirectObjectExample>
+    <subjectObjectExample>Yent kwan ngane ni tu bixaꞌ. (Nada vio ninguna de ellos.)
+Ni tu libr yent cho nganeꞌi kan. (Ningún libro nadie me dio. Lit./ Nadie me dio ningun libro.)
+Yent cho men ngaziꞌ ni tu libr lon. (Ninguna persona compró ningún libro de mi.)</subjectObjectExample>
+  </neg>
+  <coord checkedOff="yes" conjWord="yes" noConj="yes">
+    <proclitic checked="yes">
+    </proclitic>
+    <enclitic checked="no">
+    </enclitic>
+    <attachesOther checked="no">
+    </attachesOther>
+    <and>no
+mbaino
+no nu
+nu</and>
+    <andThen>orzeꞌ (then,and)</andThen>
+    <or>o</or>
+    <but>per
+no per
+sino
+sino ke</but>
+    <andOr>no existe
+</andOr>
+    <with>kun</with>
+    <other>lëꞌla (en vez de, sino que)
+lëꞌ chi (de repente)
+maska (termino de una serie, en vez de, solo)
+</other>
+    <either>o</either>
+    <eitherOr>o</eitherOr>
+    <neither>ni...ni
+no ni</neither>
+    <nor>ni
+no ni</nor>
+    <sentExample>Per nzha Wiza kun Max, no laore ñëd laka xaꞌ. (Pedro fue a Ejutla con Tomás, y él acaba de regresar.
+¿Chi zan dan yakana yaze, o neka yan lo yuo da yazan wëlt? (¿Si voy al campo juntar leña, o mejor voy a mi terreno a dar vuelta (implicito: checarlo como está)?(la conjunción "o" solamente usa en preguntas.)
+¿Chi ngwasiꞌl ma xnaꞌl no chi nzho ka xaꞌ? (¿Fuiste a ver a tu mamá, y la encontraste?)
+Rë justis nzhin la par zhin bixaꞌ junt, no per ni tu men nangazhint. (Toda la autoridad están lista para la reunión, y pero ninguna gente llegó para hacerla.)
+Ngwalan xmëꞌda skwel, orzeꞌ xchë ngulëza midiꞌzha kun maestr. (Fui a llevar mi niño a la escuela, y me quedé un buen rato platicando con el maestro.)
+Ngwalan tu regal kaꞌ xnaꞌn, maska xaꞌ ngazaklaxtoꞌ lëꞌla nzhoꞌn xaꞌ. (Fui a regalarle algo a mi mamá, en vez de que sea contenta sino que lloró por él (el regalo).
+Nayax men ngurezh xaꞌ lani, no ni kwaꞌn gao men yent. (Mucha gente llamó (invitó) a la fiesta, y nisiquiera tenía comida suficiente para la gente.)
+Liꞌn kwaꞌn gat nila yiu wen, ni nits niyen go men, no ni yalgoꞌn gat nizaꞌt, mbaino ni nits go ma niyent dan. (El año que no llueve bien, ni agua hay para la gente, ni la cosecha se da y ni en el campo hay agua para los animales.)  </sentExample>
+    <sentSeqExample>
+    </sentSeqExample>
+    <vpExample>Nguloꞌ Yerm karre no tira mileꞌ xaꞌ gan tu kwaꞌn.  (Guillermo corrió la carrerra y logró de ganar un premio.)
+Yal lani kwaꞌn nzho baꞌ, o neka bëlal xëꞌlal. (Vas a la fiesta que hay allí, o está bien que envies a tu hermana.)
+¿Chi za San lanise?, o paste ¿bël xaꞌ xëꞌl xaꞌ. (¿Irá Susana a esa fiesta?, o ¿a su hermana enviará tal vez?)
+Ni naya Juan lani, no per ni bël unaꞌ naxëlt unaꞌ. (Juan ni va a ir a la fiesta, ni a su hermana enviará a la fiesta.)</vpExample>
+    <dpExample>Niyit Lip basketbol no nu futbol. (Felipe juega basketbol y también el futból. 
+Wecha mbaino da lëꞌno ya zhiꞌn. (Mi hermano y yo vamos al trabajo.)
+Ni na mbaino ni wecha, yent cho ya zhiꞌn nal. (Ni you ni mi hermano, nadie va a trabajar hoy/ ahora.)
+Lëꞌda ya yadoꞌ per lwegaꞌ yala. (Voy a ir a la iglesia, pero luego regresaré.) 
+Lëꞌda këꞌ yët mbaino zane gao men. (Voy a hacer tortilla y le voy a darle para que la gente come.)
+¿Chi zizëta xaba se o nabtsa gaza? (Si yo lavo ropa o nada más me bañe.) 
+</dpExample>
+    <coordppExample>Nded Yerm tsaoꞌ rë ya mbaino nded xaꞌ lo pwent. (Guillermo pasó en medio de los árboles y cruzó el puente.
+Lëꞌ xaꞌ yatao lizh xumbal xaꞌ kun xgaꞌn xaꞌ per nagot xaꞌi. (El va a ir a comer a la casa de su compadre con su hijo, pero no va ir a tomar (implicio: bebida alcoholico).
+Nax mbëk xid ma. (El perro esta dormido en medio de los animales.)
+Nikë tu reloj dox tsak taꞌ yoꞌ. (Está pegado un reloj valioso lado casa(en la pared)En la pared está colgado un valioso reloj.)
+Nayax men nzhin leꞌn yoꞌ ro. (Hay mucha gente en la casa grande.)
+  </coordppExample>
+    <adjExample>Mbëk cheꞌn xgaꞌna naguzh mbaino lox. (El perro de mi hijo es blanco y peludo.)
+Lëꞌ bëla nzhakla tu nao asul no naxne. (Mi hermana quiere una falda azul y roja.)
+Lëꞌ bëla nzhakla tu nao asul o tu kwa' naxne. (Mi hermana quiere una falda azul o una roja.)
+</adjExample>
+    <listExample>Juan, no Yerm, mbaino San no Mariꞌ
+Juan, no Yerm, no San o Mariꞌ
+Juan mbaino Yerm, o San no Mariꞌ
+Tu bich, chop mbëk, no tu nguid, per yent tu machin</listExample>
+    <appositiveExample>wecha Per (mi hermano, Pedro)
+XBinit Juar, nab gaka xaꞌ reꞌ ngok tu xaꞌ Lola, xaꞌ ngok president dub Ziyit, mbaino men diꞌzhzë xaꞌ. (Don Benito Juárez, el único oaxaqueño que fue el presidente de todo México, y hablaba zapoteco)</appositiveExample>
+    <conjunctionCategory>
+    </conjunctionCategory>
+  </coord>
+  <focus checkedOff="yes" focus="yes" focusMarker="yesWord" focusMarkerRequired="no" focusPos="before" topic="yes" topicMarker="yesWord" topicMarkerRequired="no" topicPos="before">
+    <topicMarkerBefore checked="yes">
+    </topicMarkerBefore>
+    <topicMarkerAfter checked="no">
+    </topicMarkerAfter>
+    <topicMarkerBoth checked="no">
+    </topicMarkerBoth>
+    <topicMarkerOther checked="no">
+    </topicMarkerOther>
+    <focusMarkerBefore checked="yes">
+    </focusMarkerBefore>
+    <focusMarkerAfter checked="no">
+    </focusMarkerAfter>
+    <focusMarkerBoth checked="no">
+    </focusMarkerBoth>
+    <focusMarkerOther checked="no">
+    </focusMarkerOther>
+    <topicExample>Xid rë unaꞌ nzho lat yezh, Toñ más ño laxtoꞌn (Dentro de las mujeres que hay en Coatecas Altas, Antonia me gusta más.)
+Nela tu kwaꞌn or gaꞌ tsak yiꞌ ro cheꞌn men latiezh di tanta ya nziꞌb loy par rë men. (Como el oro vale, el cerro grande de la gente de Coatecas por tantos árboles que está en el para la gente.
+</topicExample>
+    <topicMarkerExample>Nela
+Xid</topicMarkerExample>
+    <topicMarkerCliticExample>
+    </topicMarkerCliticExample>
+    <topicMarkerAffixExample>
+    </topicMarkerAffixExample>
+    <focusExample>Futbol nzhak Yerm niyit Yerm (Futbol sabe Guillermo jugar)
+Lëꞌ mbwin baꞌ undin Per (Ese chamaco le pegó a Pedro)
+Nab mbwin baꞌ undin Juan (Solo ese chamaco le pegó Juan)
+Di tanta ya nzhiꞌb lo yiꞌ ro cheꞌn men latiezh nake nela tu kwaꞌn or gaꞌ. (De tantos árboles que están el cerro grande de la gente de Coatecas es como el oro valioso. (Por tantos árboles que están en el cerro grande de la gente de Coatecas es valioso como el oro.
+(orden normal: Nak yiꞌ ro cheꞌn men latiezh nela tu kwaꞌn or gaꞌ di tanta ya nzhiꞌb loy.) (El cerro grande de la gente de Coatecas Altas es como el oro valioso por tantos árboles que está en el.)
+Lëꞌ yiu nilen tu bëd yix nayëꞌ dan par ño kwaꞌn gao rë ma dan nez par nayitlo bineꞌ. (La lluvia hace que brota toda clase de hierbas verde en el campo para que haiga de comer los animales en el campo y para que no desaprezcan los pobres animales.)
+Lëꞌ jwan kiyit kanik. (Juan está jugando canicas. Normal orden en Z.: Está jugando Jwan canicas.) 
+Kanik kiyit Juan. ((Con) canicas está jugando Jwan.)
+</focusExample>
+    <focusMarkerExample>Lëꞌ
+</focusMarkerExample>
+    <focusMarkerCliticExample>Lëꞌ=</focusMarkerCliticExample>
+    <focusMarkerAffixExample>
+    </focusMarkerAffixExample>
+  </focus>
+  <excl checkedOff="no" exclM="yes">
+    <exclMBefore checked="yes">
+    </exclMBefore>
+    <exclMAfter checked="no">
+    </exclMAfter>
+    <exclMBoth checked="no">
+    </exclMBoth>
+    <exclMOther checked="no">
+    </exclMOther>
+    <greetExample>chan go (un saludo más formal, de mayor edad; de respeto pron.respecto)
+chao̱n (un saludo informal; una contracción de chan go, y gente dice eso más de chan go)
+chan go Dad (saludo formal/respeto de un hombre a su suegro o todos que tienen cargo en el municipio)
+chao̱n Dad (más informal; una contracción de chan go)
+ma go (saludo más común, menos formal, hola.2pl)
+mao (todavía más informal; una contracción)
+mal (saludo más común entre amigos de mismo edad 2p.common)
+mao (contraction.of.ma.go,very.common.use)
+mao, nax Mari (hola.respecto Mary)
+mao nax Toñ (nax usa con nombre de alguien)
+Mao, ¿chin nzho ka go? (saludo en la casa cuando llegue a casa cara a cara)
+Mao, ¿chi wenka go? ( saludo, como está?, en el teléfono o en una carta)
+chan mëꞌd (hola niño (pasando en la calle),.children..Hasta yëꞌ (until.tomorrow/used.as.leave.taking)
+tux mal (en la calle saluda a su comadre entre mujeres)
+tux mbal (en la calle sluda a su compadre entre hombres)
+tux mal, chin nzhoka go? (en la casa, saluda a su comadre entre mujeres)
+tux liyol (en la calle entre los consuegros (hombre o mujer, no hay diferencia)
+tux liyol, chin nzhoka go? (en la casa entre los consuegros)
+Baꞌ zhëꞌl be (General: Nos vemos. Adios, cuando despiden en la calle, la casa, al fin sin fecha de ver de nuevo a la persona)
+yëꞌ zhëꞌl be (Hasta mañana, nos vemos) 
+Napa zhëꞌl be (Mas tarde, nos vemos)
+haxta yëꞌ (prestada de español, hasta mañana, no usa mucho)
+Nalta zhëꞌl be (en un ratito nos vemos, tiempo cortito) 
+Nal zhëꞌl be (mas común, en un rato nos vemos)
+xtu ratsa zhëꞌl be (en un ratito nos vemos (menos de una hora)
+Haxta naltaꞌ (check with other speakers)
+Haxta napaꞌ (check with other speakers)
+
+</greetExample>
+    <intjExample>¡ay! zheꞌb nei (expressión de dolor)
+¡ay! tatu chula (expressión de admiración de algo bonito o buen hecho)
+¡ay! tatu nazheb nakal (expressión de una mala actitud hablando directamente a alguien que tiene mal actitud/ acción.) 
+¡aaaay! (recuerdo de gratitud, cara sonriente)
+¡aaaay! (recurdo de tristeza, cara triste)
+¡ne!, mëꞌd  (¡Cuidado!, niño)
+¡ne!, nomás (Cuidado, no más a un adulto en la familia)
+¡neo! nomás (Cuidado, no mas (con respeto a un adulto)
+</intjExample>
+    <yesExample>mbai (sí, de acuerdo sin pensar, algo más formal o de respeto de hacer algo responde la persona de menos edad o menos posición que pregunta la persona de mas edad o de más posicion respetos (cabildo))
+mbaix (sí, de acuerdo después que pensarlo, y decidió hacerlo este trato al fin -x, insistencia/ o pensar mucho, aunque no quiere hacerlo)
+wenox (de acuerdo, entre persona del mismo edad or entre amigos, entre mujeres, hablando con intimida)
+yoꞌ (si es de acuerdo, mbai formal, yoꞌ informal entre la familia, hable de "ti" en español, yes.informal.agreement.to.do.something)
+ajaꞌ (affirmative.to.yes/no.question)
+</yesExample>
+    <noExample>aꞌa (contestación negativa, no.)
+</noExample>
+    <exclExample>¡ay tatu chule ... (es tan bonito, o tan chulo, precioso  como una cosa, animales nombrada, un flor, un camión, un pájaro, ropa, etc.)
+ay tatu nazhon yeꞌ (es tan glorioso la flor (o otra cosa!
+¡wa! (a poco!, increible, sorprendiente)
+¡taxa!  (No me digas!, no puede ser)
+¡jeꞌntaꞌ! (Quien sabe, no se sabe)
+
+</exclExample>
+    <exclMExample>¡ay tatu </exclMExample>
+  </excl>
+  <final checkedOff="no">
+  </final>
+  <final checkedOff="no">
+  </final>
+  <final checkedOff="no">
+  </final>
+</paws>

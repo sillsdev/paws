@@ -83,7 +83,7 @@ classifierHumanExample, classifierAnimalExample, classifierBirdExample, classifi
     class25agr (sg | pl | irrelevant) "irrelevant"
     classifierTypeNumAgr (no | yes) "no"
     >
-<!ELEMENT pnExample (#PCDATA)>
+<!ELEMENT pnExample (interlinearEntry+)>
 <!ELEMENT experiencerExample (#PCDATA)>
 <!ELEMENT experiencerPnExample (#PCDATA)>
 <!ELEMENT intExample (#PCDATA)>
@@ -332,6 +332,9 @@ all, almost, only, npDegreeCliticExample, npDegreeAffixExample, npDegreeOtherExa
   checked (yes | no ) "no"
 >
 
+<!ELEMENT interlinearEntry (vernacularLine, freeLine) >
+<!ELEMENT vernacularLine (#PCDATA) >
+<!ELEMENT freeLine (#PCDATA) >
 <!ELEMENT all (#PCDATA)>
 <!ELEMENT almost (#PCDATA)>
 <!ELEMENT only (#PCDATA)>
