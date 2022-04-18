@@ -6,6 +6,7 @@
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes"/>
+	<xsl:include href="PAWSSKCommon.xsl"/>
 	<!--
 ================================================================
 Convert XML Page description to HTML and JScript code
@@ -38,7 +39,6 @@ Preamble
 		<xsl:value-of select="//form/@section"/>
 	</xsl:variable>
 	<xsl:variable name="sLastVisible" select="'LastVisible'"/>
-	<xsl:variable name="maxInterlinear" select="'9'"/>
 	<xsl:variable name="minInterlinearToShow" select="'3'"/>
 	<xsl:key name="TechnicalTerms" match="technicalTerm" use="@id"/>
 	<!--
@@ -115,14 +115,14 @@ var SpecPosInitial = 1;
 var SpecPosInternal = 2;
 var SpecPosFinal = 3;
 var SpecPosUnknown = 4;
-<xsl:for-each select="//textBox[contains(@dataItem,'Example') or @dataItem='example']">
+<xsl:for-each select="//textBox[contains(@dataItem,'Example') or @dataItem='example'][@kind!='table']">
 	<xsl:text>var </xsl:text>
 	<xsl:value-of select="@id"/>
 	<xsl:value-of select="$sLastVisible"/>
 	<xsl:text>= 3;
 </xsl:text>
 </xsl:for-each>
-<xsl:for-each select="//textBox[contains(@dataItem,'Example') or @dataItem='example']">
+			<xsl:for-each select="//textBox[contains(@dataItem,'Example') or @dataItem='example'][@kind!='table']">
 	<xsl:text>function InsertClicked</xsl:text>
 	<xsl:value-of select="@id"/>
 	<xsl:text>()
@@ -381,14 +381,14 @@ pawsApp.showTermDefinition(msg);
   textBox element load
   - - - - - - - -
   -->
-	<xsl:template match="//textBox[contains(@dataItem,'Example') or @dataItem='example']" mode="load">
+	<xsl:template match="//textBox[contains(@dataItem,'Example') or @dataItem='example'][@kind!='table']" mode="load">
 		<xsl:call-template name="CreateInterlinearEntryLoadJScript">
 			<xsl:with-param name="sPath">
 				<xsl:call-template name="GetPathForInterlinearEntry"/>
 			</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
-	<xsl:template match="//textBox[not(contains(@dataItem,'Example')) and @dataItem!='example'] | //catMap" mode="load">
+	<xsl:template match="//textBox[not(contains(@dataItem,'Example')) and @dataItem!='example' or @kind='table'] | //catMap" mode="load">
 		<xsl:value-of select="@id"/>.value = <xsl:text>pawsApp.getAnswerValue("//</xsl:text>
 		<xsl:choose>
 			<xsl:when test="@section">
@@ -406,14 +406,14 @@ pawsApp.showTermDefinition(msg);
   textBox element save
   - - - - - - - -
 	-->
-	<xsl:template match="//textBox[contains(@dataItem,'Example') or @dataItem='example']" mode="save">
+	<xsl:template match="//textBox[contains(@dataItem,'Example') or @dataItem='example'][@kind!='table']" mode="save">
 		<xsl:call-template name="CreateInterlinearEntrySaveJScript">
 			<xsl:with-param name="sPath">
 				<xsl:call-template name="GetPathForInterlinearEntry"/>
 			</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
-	<xsl:template match="//textBox[not(contains(@dataItem,'Example')) and @dataItem!='example'] | //catMap" mode="save">
+	<xsl:template match="//textBox[not(contains(@dataItem,'Example')) and @dataItem!='example' or @kind='table'] | //catMap" mode="save">
 		<xsl:text>pawsApp.setAnswerValue("//</xsl:text>
 		<xsl:choose>
 			<xsl:when test="@section">
@@ -1216,9 +1216,8 @@ Refresh();
 		</td>
 	</xsl:template>
 	<xsl:template match="//textBox[not(parent::featureRow)]">
-		<xsl:variable name="sHabby" select="@dataItem"/>
 		<xsl:choose>
-			<xsl:when test="@dataItem[contains(.,'Example') or .='example']">
+			<xsl:when test="@dataItem[contains(.,'Example') or .='example'] and @kind!='table'">
 				<xsl:call-template name="CreateInterlinearEntry"/>
 			</xsl:when>
 			<xsl:when test="parent::checkbox">

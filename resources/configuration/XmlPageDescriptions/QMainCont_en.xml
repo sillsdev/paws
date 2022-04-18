@@ -50,28 +50,28 @@
          <checkbox id="QMainContBetweenEnclitic" dataItem="mainContBetweenEnclitic" show="swQContFrontYes">As an enclitic which attaches to the end of the last word in the fronted interrogative phrase, before the rest of the question</checkbox>
          <checkbox id="QMainContCliticPrefix" dataItem="mainContPrefix">As a prefix which attaches to the verb</checkbox>
          <checkbox id="QMainContCliticSuffix" dataItem="mainContSuffix">As a suffix which attaches to the verb</checkbox>
-         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">In my language, these elements may attach as follows: <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">In my language, these elements may attach as follows: <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContCliticPosNoCheckPrompt" show="swQMainContWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these question markers attach in your language, or change the answer above to ‘Yes’.</prompt>
       
       <prompt id="QMainContCliticsExamplesPrompt" show="swQMainContCliticProcliticOrEnclitic"><br/>Key the clitics which are used to mark questions here, with an equal sign to indicate which side it attaches to the question on:</prompt>    
-      <textBox id="QMainContCliticExamples" dataItem="mainContCliticExample" show="swQMainContCliticProcliticOrEnclitic" rows="3"/>    
+      <textBox id="QMainContCliticExamples" dataItem="mainContCliticExample" show="swQMainContCliticProcliticOrEnclitic" rows="3" kind="table"/>    
       <instruction id="QMainContProcliticInstruction" show="swQMainContCliticProclitic">In the lexicon, add the feature <feature>whQ_prefix</feature> to these proclitics.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       <instruction id="QMainContEncliticInstruction" show="swQMainContCliticEnclitic">In the lexicon, add the feature <feature>whQ_suffix</feature> to these enclitics.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QMainContAffixExamplesPrompt" show="swQMainContCliticPrefixOrSuffix"><br/>Key the affixes which are used to mark questions here, with a hyphen to indicate which side it attaches to the verb on:</prompt>    
-      <textBox id="QMainContAffixExamples" dataItem="mainContAffixExample" show="swQMainContCliticPrefixOrSuffix" rows="3"/>    
+      <textBox id="QMainContAffixExamples" dataItem="mainContAffixExample" show="swQMainContCliticPrefixOrSuffix" rows="3" kind="table"/>    
       <instruction id="QMainContAffixInstruction" show="swQMainContCliticPrefixOrSuffix">In the lexicon, add the feature <feature>whQ</feature> to these verbal affixes.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QMainContWordExamplesPrompt" show="swQMainContWordYesOrSome"><br/>Key the words which are used to mark questions here:</prompt>    
-      <textBox id="QMainContWordExamples" dataItem="mainContWordExample" show="swQMainContWordYesOrSome" rows="3"/>    
+      <textBox id="QMainContWordExamples" dataItem="mainContWordExample" show="swQMainContWordYesOrSome" rows="3" kind="table"/>    
       
       <checkboxGroup id="QMainContPosTable" show="swQMainContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSO">
          <prompt><br/>Where do the question markers which are written as independent words occur with respect to the rest of the question? Check all options that are correct for your language</prompt>
          <checkbox id="QMainContPosBefore"  dataItem="mainContWordBefore">Before it</checkbox>
          <checkbox id="QMainContPosAfter"  dataItem="mainContWordAfter">After it</checkbox>
          <checkbox id="QMainContPosBoth"  dataItem="mainContWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">In my language, they may occur in the following position: <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">In my language, they may occur in the following position: <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContPosNoCheckPrompt" show="swQMainContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">WARNING: You need to check at least one box to describe where these question markers occur with respect to the rest of the question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       <instruction id="QMainContWordYesInstruction" show="swQMainContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
@@ -82,7 +82,7 @@
          <checkbox id="QMainContVSOAfterWh" dataItem="mainContVSOAfterWh">Immediately after the fronted interrogative phrase</checkbox>
          <checkbox id="QMainContVSOBeforeWh" dataItem="mainContVSOBeforeWh">At the beginning of the question, before the fronted interrogative phrase</checkbox>
          <checkbox id="QMainContVSOEnd" dataItem="mainContVSOEnd">At the end of the question</checkbox>
-         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">In my language, they may occur in the following position: <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">In my language, they may occur in the following position: <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">WARNING: You need to check at least one box to describe where these question markers occur with respect to the interrogative phrase and the rest of the question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       
@@ -96,7 +96,7 @@
          <radio id="QMainContRequiredNo" dataValue="no">No, a question marker is always optional</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">No, a question marker is not used under the following circumstances:</radio>
       </radioGroup>
-      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial"/>
+      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="table"/>
       
       <radioGroup id="QMainContAuxPosTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxPos" default="unknown" position="yesHead">RQMainContAuxPos</groupName>

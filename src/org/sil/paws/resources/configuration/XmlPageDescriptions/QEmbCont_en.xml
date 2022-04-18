@@ -48,23 +48,23 @@
       <prompt id="QEmbContCliticPosNoCheckPrompt" show="swQEmbContWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these embedded clause question markers attach in your language, or change the answer above to ‘Yes’.</prompt>
       
       <prompt id="QEmbContCliticsExamplesPrompt" show="swQEmbContCliticProcliticOrEnclitic"><br/>Key the clitics which are used to mark embedded clause questions here, with an equal sign to indicate which side it attaches to the embedded question on:</prompt>    
-      <textBox id="QEmbContCliticExamples" dataItem="embContCliticExample" show="swQEmbContCliticProcliticOrEnclitic" rows="3"/>    
+      <textBox id="QEmbContCliticExamples" dataItem="embContCliticExample" show="swQEmbContCliticProcliticOrEnclitic" rows="3" kind="table"/>
       <instruction id="QEmbContProcliticInstruction" show="swQEmbContCliticProclitic">In the lexicon, add the feature <feature>whQ_prefix</feature> to these proclitics.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
       <instruction id="QEmbContEncliticInstruction" show="swQEmbContCliticEnclitic">In the lexicon, add the feature <feature>whQ_suffix</feature> to these enclitics.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QEmbContAffixExamplesPrompt" show="swQEmbContCliticPrefixOrSuffix"><br/>Key the affixes which are used to mark embedded clause questions here, with a hyphen to indicate which side it attaches to the verb on:</prompt>    
-      <textBox id="QEmbContAffixExamples" dataItem="embContAffixExample" show="swQEmbContCliticPrefixOrSuffix" rows="3"/>    
+      <textBox id="QEmbContAffixExamples" dataItem="embContAffixExample" show="swQEmbContCliticPrefixOrSuffix" rows="3" kind="table"/>
       <instruction id="QEmbContAffixInstruction" show="swQEmbContCliticPrefixOrSuffix">In the lexicon, add the feature <feature>whQ</feature> to these verbal affixes.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QEmbContWordExamplesPrompt" show="swQEmbContWordYesOrSome"><br/>Key the words which are used to mark embedded clause questions here:</prompt>    
-      <textBox id="QEmbContWordExamples" dataItem="embContWordExample" show="swQEmbContWordYesOrSome" rows="3"/>    
+      <textBox id="QEmbContWordExamples" dataItem="embContWordExample" show="swQEmbContWordYesOrSome" rows="3" kind="table"/>    
       
       <checkboxGroup id="QEmbContPosTable" show="swQEmbContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSO">
          <prompt><br/>Where do the embedded clause question markers which are written as independent words occur with respect to the rest of the embedded question? Check all options that are correct for your language</prompt>
          <checkbox id="QEmbContPosBefore"  dataItem="embContWordBefore">Before it</checkbox>
          <checkbox id="QEmbContPosAfter"  dataItem="embContWordAfter">After it</checkbox>
          <checkbox id="QEmbContPosBoth"  dataItem="embContWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">In my language, they may occur in the following position: <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">In my language, they may occur in the following position: <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContPosNoCheckPrompt" show="swQEmbContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">WARNING: You need to check at least one box to describe where these embedded clause question markers occur with respect to the rest of the embedded question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       <instruction id="QEmbContWordYesInstruction" show="swQEmbContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>

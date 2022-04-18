@@ -3,7 +3,7 @@
 BODY {
   font-family: sans-serif;
   color: navy;
-  font-size: smaller;
+/* font-size: smaller; */
   background-image: url(p12c08.gif);
 }
 
@@ -146,7 +146,7 @@ PRE {
 
 .featureChart {
  color:#663300;
- /*font-size: smaller;*/
+ font-size: smaller;
 }
 
 .reviewer {
@@ -185,6 +185,13 @@ SPAN.term {
   border-right: groove;
   border-bottom: groove;
   border-left: groove;
+}
+.interlinearTable textarea {
+width: 100%;
+}
+.interlinearTable {
+border: 1px solid black;
+margin-left:0.5in;
 }
 .return {
 font-size:larger;

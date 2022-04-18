@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
-<?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../Data/PAWSSKHtmlMapper.xsl"?>
 <page id="QMainYN" count="11.2">
     <title level="2">Questions - Main Clause Yes/No Questions</title>
    <introduction>In English, main clause Yes/No questions are formed by moving an auxiliary verb in front of the subject.  Other languages use a Yes/No question marker or special complementizer instead of the fronted auxiliary. (English does this in embedded Yes/No questions.) English examples of main clause Yes/No questions are:</introduction> 
@@ -11,7 +11,7 @@
         </EnglishExample>
    <form section="q">
       <prompt><br/>Key similar examples of main clause Yes/No questions in your language here:</prompt>
-        <textBox id="QExample" dataItem="example" cols="80"/>
+        <textBox id="QExample" dataItem="example" cols="80" kind="interlinear"/>
         <br/>
         <br/>
         <radioGroup>
@@ -37,27 +37,27 @@
          <checkbox id="QMainYNCliticEnclitic" dataItem="mainYNEnclitic">As an enclitic which attaches to the end of the last word in the Yes/No question</checkbox>
          <checkbox id="QMainYNCliticPrefix" dataItem="mainYNPrefix">As a prefix which attaches to the verb</checkbox>
          <checkbox id="QMainYNCliticSuffix" dataItem="mainYNSuffix">As a suffix which attaches to the verb</checkbox>
-         <checkbox id="QMainYNCliticOther" dataItem="mainYNCliticOther">In my language, these elements may attach as follows: <textBox  id="QMainYNCliticOtherContent" dataItem="mainYNCliticOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QMainYNCliticOther" dataItem="mainYNCliticOther">In my language, these elements may attach as follows: <textBox  id="QMainYNCliticOtherContent" dataItem="mainYNCliticOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainYNCliticPosNoCheckPrompt" show="swQMainYNWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these Yes/No question markers attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
       <prompt id="QMainYNCliticsExamplesPrompt" show="swQMainYNCliticProcliticOrEnclitic"><br/>Key the clitics which are used to mark Yes/No questions here, with an equal sign to indicate which side it attaches to the Yes/No question on:</prompt>    
-      <textBox id="QMainYNCliticExamples" dataItem="mainYNCliticExample" show="swQMainYNCliticProcliticOrEnclitic" rows="3"/>    
+      <textBox id="QMainYNCliticExamples" dataItem="mainYNCliticExample" show="swQMainYNCliticProcliticOrEnclitic" rows="3" kind="table"/>    
       <instruction id="QMainYNProcliticInstruction" show="swQMainYNCliticProclitic">In the lexicon, add the feature <feature>YNQ_prefix</feature> to these proclitics.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       <instruction id="QMainYNEncliticInstruction" show="swQMainYNCliticEnclitic">In the lexicon, add the feature <feature>YNQ_suffix</feature> to these enclitics.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QMainYNAffixExamplesPrompt" show="swQMainYNCliticPrefixOrSuffix"><br/>Key the affixes which are used to mark Yes/No questions here, with a hyphen to indicate which side it attaches to the verb on:</prompt>    
-      <textBox id="QMainYNAffixExamples" dataItem="mainYNAffixExample" show="swQMainYNCliticPrefixOrSuffix" rows="3"/>    
+      <textBox id="QMainYNAffixExamples" dataItem="mainYNAffixExample" show="swQMainYNCliticPrefixOrSuffix" rows="3" kind="table"/>
       <instruction id="QMainYNAffixInstruction" show="swQMainYNCliticPrefixOrSuffix">In the lexicon, add the feature <feature>YNQ</feature> to these verbal affixes.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
 
       <prompt id="QMainYNWordExamplesPrompt" show="swQMainYNWordYesOrSome"><br/>Key the words which are used to mark Yes/No questions here:</prompt>    
-      <textBox id="QMainYNWordExamples" dataItem="mainYNWordExample" show="swQMainYNWordYesOrSome" rows="3"/>    
+      <textBox id="QMainYNWordExamples" dataItem="mainYNWordExample" show="swQMainYNWordYesOrSome" rows="3" kind="table"/>
 
       <checkboxGroup id="QMainYNPosTable" show="swQMainYNWordYesOrSome">
          <prompt><br/>Where do the Yes/No question markers which are written as independent words occur with respect to the rest of the question? Check all options that are correct for your language</prompt>
          <checkbox id="QMainYNPosBefore"  dataItem="mainYNWordBefore">Before it</checkbox>
          <checkbox id="QMainYNPosAfter"  dataItem="mainYNWordAfter">After it</checkbox>
          <checkbox id="QMainYNPosBoth"  dataItem="mainYNWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QMainYNPosOther"  dataItem="mainYNWordOther">In my language, they may occur in the following position: <textBox  id="QMainYNPosOtherContent" dataItem="mainYNWordOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QMainYNPosOther"  dataItem="mainYNWordOther">In my language, they may occur in the following position: <textBox  id="QMainYNPosOtherContent" dataItem="mainYNWordOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainYNPosNoCheckPrompt" show="swQMainYNWordYesOrSomeandNoCheck">WARNING: You need to check at least one box to describe where these Yes/No question markers occur with respect to the rest of the question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
            
