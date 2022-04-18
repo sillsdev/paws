@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -13,15 +13,15 @@
 		<prompt><br/>Key one or more examples with noun modifiers or compound nouns written as independent words, plus some written as a single word, in the appropriate boxes.  If you write all noun compounds as single words, key some of those examples in the boxes.
 		<br/><br/>
 		Compounds for body parts:</prompt>
-		<textBox id="NPCompBodyPartExample" dataItem="compBodyPartExample"/>
+		<textBox id="NPCompBodyPartExample" dataItem="compBodyPartExample" kind="table"/>
 	   <prompt><br/>Compounds for kinship terms:</prompt>
-	   <textBox id="NPCompKinshipExample" dataItem="compKinshipExample"/>
+	   <textBox id="NPCompKinshipExample" dataItem="compKinshipExample" kind="table"/>
 	   <prompt><br/>Compounds for foods:</prompt>
-	   <textBox id="NPCompFoodExample" dataItem="compFoodExample"/>
+	   <textBox id="NPCompFoodExample" dataItem="compFoodExample" kind="table"/>
 	   <prompt><br/>Compounds for the material something was made from:</prompt>
-	   <textBox id="NPCompMaterialExample" dataItem="compMaterialExample"/>
+	   <textBox id="NPCompMaterialExample" dataItem="compMaterialExample" kind="table"/>
 	   <prompt><br/>Other noun compounds:</prompt>
-	   <textBox id="NPCompExample" dataItem="compExample"/>
+	   <textBox id="NPCompExample" dataItem="compExample" kind="table"/>
 	   
 		<radioGroup>
 			<groupName dataItem="comp" default="no">RNPCompounds</groupName>

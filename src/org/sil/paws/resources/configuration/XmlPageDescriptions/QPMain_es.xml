@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -49,15 +49,15 @@ o <example>pocos</example>, y</li>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “todos”, con cada palabra en una línea separada.  (Si “todos” es un afijo o un <technicalTermRef term="ttClitic"/> que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPAllExample" dataItem="all" rows="3"/>
+      <textBox id="QPAllExample" dataItem="all" rows="3" kind="table"/>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “casi”, con cada palabra en una línea separada.  (Si “casi” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPAlmostExample" dataItem="almost" rows="3"/>
+      <textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"/>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “solamente” o “apenas”, con cada palabra en una línea separada.  (Si uno es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPOnlyExample" dataItem="only" rows="3"/>
+      <textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"/>
       <br/>
       <br/>
       <radioGroup>
@@ -77,21 +77,13 @@ o <example>pocos</example>, y</li>
          <checkbox id="QPNPDegreePosBefore"  dataItem="npDegreePosBefore">Antes</checkbox>
          <checkbox id="QPNPDegreePosAfter"  dataItem="npDegreePosAfter">Después</checkbox>
          <checkbox id="QPNPDegreePosBoth"  dataItem="npDegreePosBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">En mi lengua, pueden presentarse <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1"/></checkbox>
+         <checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">En mi lengua, pueden presentarse <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QPNPDegreeWordNoCheckPrompt" show="swQPNPDegreeYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos cuantificadores o palabras de grado con respecto al resto de la frase nominal en su lengua, o cambia la respuesta anterior a “No, todos se unen a otra palabra en la frase nominal”.</prompt>
       
-      <instruction id="QPNPDegreeYesInstruction" show="swQPNPDegreeYesOrSome">In the lexicon, mark the words meaning <example>almost</example>, <example>nearly</example>, <example>only</example>, and <example>just</example> with the features <feature>makeDeg modifies_NP</feature>.  
-         Note that these are two separate features.  
-         The first will change their syntactic category to <category>Deg</category>
-         and the second adds the feature to distinguish them as the type that modifies NPs.  
-         For the words meaning <example>almost</example> and <example>nearly</example> that can modify the quantifier meaning <example>all</example>, 
-         also add the feature <feature>modifies_Q</feature>. 
-         <br/><br/>If your language has a phrase meaning <example>almost</example>, such as <example>not quite</example> or <example>just about</example>, you need to make a single entry for these phrases.
-         These entries need the same features as a single word entry with a similar meaning would have.
-         In <tool>FLEx</tool> interlinear, you can link the words together.
-         For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
-         <br/>
+      <instruction id="QPNPDegreeYesInstruction" show="swQPNPDegreeYesOrSome">In the lexicon, mark the words meaning <example>almost</example>, <example>nearly</example>, <example>only</example>, and <example>just</example> with the features <feature>makeDeg modifies_NP</feature>.  Note that this is two separate features with a space between them.  The first will change their syntactic category to <category>Deg</category>
+         and the second adds the feature to distinguish them as the type that modifies NPs.  For the wrods meaning <example>almost</example> and <example>nearly</example> that can modify the quantifier meaning <example>all</example>, 
+         also add the feature <feature>modifies_Q</feature>. If your language has a phrase meaning <example>almost</example>, such as <example>not quite</example> or <example>just about</example>, you need to make a single entry for these phrases with an underscore (_) between them and run the Join Compound program before AMPLE.  These entries need the same features as a single word entry with a similar meaning would have.<br/>
          <br/>
          Also, mark the word or words meaning <example>all</example> with the features
          <feature>plural modifies_NP</feature>.  Add the feature <feature>makeQ</feature> as well if they do not already have the category <category>Q</category>.</instruction>
@@ -103,7 +95,7 @@ o <example>pocos</example>, y</li>
          <checkbox id="QPNPDegreeEnclitic" dataItem="npDegreeTypeEnclitic">Como enclíticos que se unen al final de cualquier palabra con que termina la frase nominal</checkbox>
          <checkbox id="QPNPDegreePrefix" dataItem="npDegreeTypePrefix">Como prefijos que se unen al sustantivo principal de la frase nominal</checkbox>
          <checkbox id="QPNPDegreeSuffix" dataItem="npDegreeTypeSuffix">Como sufijos que se unen al sustantivo principal de la frase nominal</checkbox>
-         <checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">En mi lengua, estos elementos se unen: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1"/></checkbox>
+         <checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">En mi lengua, estos elementos se unen: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QPNPDegreeAttachesNoCheckPrompt" show="swQPNPDegreeNoandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos cuantificadores o palabras de grado se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       

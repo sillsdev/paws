@@ -880,7 +880,7 @@ DoExample
 			<xsl:attribute name="num">
 				<xsl:value-of select="$sNum"/>
 			</xsl:attribute>
-			<xsl:call-template name="DoInterlinear">
+			<xsl:call-template name="DoInterlinearEntries">
 				<xsl:with-param name="sExNum">
 					<xsl:value-of select="$sNum"/>
 				</xsl:with-param>
@@ -1026,6 +1026,44 @@ DoInterlinear
 							</xsl:attribute>
 						</xsl:element>
 					</listInterlinear>
+				</xsl:element>
+			</xsl:element>
+		</xsl:for-each>
+	</xsl:template>
+	<!--
+		DoInterlinearEntries
+	-->
+	<xsl:template name="DoInterlinearEntries">
+		<xsl:param name="sExNum"/>
+		<xsl:for-each select="interlinear">
+			<xsl:element name="xsl:call-template">
+				<xsl:attribute name="name">
+					<xsl:text>OutputInterlinearEntries</xsl:text>
+				</xsl:attribute>
+				<xsl:element name="xsl:with-param">
+					<xsl:attribute name="name">
+						<xsl:text>sExamples</xsl:text>
+					</xsl:attribute>
+					<xsl:attribute name="select">
+						<xsl:text>//</xsl:text>
+						<xsl:value-of select="@exampleLoc"/>
+					</xsl:attribute>
+				</xsl:element>
+				<xsl:element name="xsl:with-param">
+					<xsl:attribute name="name">
+						<xsl:text>sExNumber</xsl:text>
+					</xsl:attribute>
+					<xsl:value-of select="$sExNum"/>
+				</xsl:element>
+				<xsl:element name="xsl:with-param">
+					<xsl:attribute name="name">
+						<xsl:text>sLetterList</xsl:text>
+					</xsl:attribute>
+					<xsl:element name="xsl:value-of">
+						<xsl:attribute name="select">
+							<xsl:text>$sMasterLetterList</xsl:text>
+						</xsl:attribute>
+					</xsl:element>
 				</xsl:element>
 			</xsl:element>
 		</xsl:for-each>

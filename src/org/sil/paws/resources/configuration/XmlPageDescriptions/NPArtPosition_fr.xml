@@ -1,146 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="NPArtPosition" count="5.3.2">
-    <title level="2">Syntagmes Nominaux – Articles et Démonstratifs: Signes de position et d’accord</title>
+    <title level="2">Syntagmes nominaux – Articles et Démonstratifs: Caractéristiques de position et d’accord</title>
     <form section="np">
-        <prompt id="NPArtAndDemInstruction" show="swNPArtAndDem"><span id="NPArtandDemTreespan" show="swNotPractical"><br/>Nous sommes maintenant prêts à construire la prochaine partie de l’arbre de structure du syntagme.  
-        </span>Entrez ici des exemples de syntagmes nominaux avec <span id="NPArtandDemSpan" show="swNPArtAndDemBoth">articles et démonstratifs</span><span id="NPArtSpan" show="swNPArtAndDemArt">articles</span><span id="NPDemSpan" show="swNPArtAndDemDem">démonstratifs</span>:</prompt>
+        <prompt id="NPArtAndDemInstruction" show="swNPArtAndDem"><span id="NPArtandDemTreespan" show="swNotPractical"><br/>Nous sommes maintenant prêts à construire la prochaine partie de l'arbre syntagmatique.  
+        </span>Saisissez quelques exemples de syntagmes nominaux avec <span id="NPArtandDemSpan" show="swNPArtAndDemBoth">des articles et des démonstratifs</span><span id="NPArtSpan" show="swNPArtAndDemArt">des articles</span><span id="NPDemSpan" show="swNPArtAndDemDem">des démonstratifs</span> :</prompt>
         <textBox id="NPArtPosExample" show="swNPArtAndDem" dataItem="example" cols="80"/>
-        <prompt id="NPArtAndDemNoInstruction" show="swNPArtAndDemNo">Puisque votre langue n’a pas d’articles ou de démonstratifs exprimés comme mots indépendants, nous n’avons pas besoin de déterminer pour eux une position syntactique.</prompt>
+        <prompt id="NPArtAndDemNoInstruction" show="swNPArtAndDemNo">Puisque votre langue n’a pas d’articles ou de démonstratifs exprimés comme mots indépendants, nous n’avons pas besoin de déterminer leur position syntactique.</prompt>
 <instruction id="NPArtAndDemNoInstruction2" show="swNPArtAndDemNo">You will be instructed to add the agreement features to nouns and their affixes when we deal with agreement again in the section on possessors.</instruction>
       
        <checkboxGroup id="NPArtAndDemArtPosTable" show="swNPArtAndDemArt">
-           <prompt><br/>Où est-ce que l’article se trouve par rapport au nom? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+           <prompt><br/>Où l’article se trouve-t-il par rapport au nom? Cochez toutes les options qui sont correctes pour votre langue.</prompt>
            <checkbox id="NPArtAndDemArtPosBefore" dataItem="artOnlyBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemArtPosAfter" dataItem="artOnlyAfter">Après</checkbox>
-           <checkbox id="NPArtAndDemArtPosBoth" dataItem="artOnlyBoth">Des deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemArtPosOther" dataItem="artOnlyOther">Dans ma langue, les articles peuvent se trouver comme suit: <textBox  id="NPArtAndDemArtPosOtherContent" dataItem="artOnlyOther" cols="70" rows="1"/></checkbox>
+           <checkbox id="NPArtAndDemArtPosBoth" dataItem="artOnlyBoth">De part et d’autre du syntagme nominal</checkbox>
+           <checkbox id="NPArtAndDemArtPosOther" dataItem="artOnlyOther">Dans ma langue, les articles se trouvent dans la position suivante : <textBox  id="NPArtAndDemArtPosOtherContent" dataItem="artOnlyOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
-        <prompt id="NPArtAndDemArtPosNoCheckPrompt" show="swNPArtAndDemArtAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les articles par rapport au nom dans votre langue ou changez la réponse sur la page précédente sur une qui n’inclut pas des articles qui sont écrits comme mots indépendants.</prompt>
+        <prompt id="NPArtAndDemArtPosNoCheckPrompt" show="swNPArtAndDemArtAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position des articles par rapport au nom dans votre langue. Sinon, il faut modifier la réponse sur la page précédente et cocher l’une des cases qui n’inclut pas les articles écrits comme mots indépendants.</prompt>
        <radioGroup id="NPArtAndDemArtRequiredTable" show="swNPArtAndDemArt">
           <groupName dataItem="artRequired" default="no">RNPArtAndDemArtRequired</groupName>
-           <prompt><br/>Est-ce qu’un article doit être présent dans chaque syntagme nominal (ne pas tenir compte maintenant des noms possessifs)?</prompt>
-           <radio id="NPArtAndDemArtRequiredNo" dataValue="no">Non, un article est toujours facultatif</radio>
-           <radio id="NPArtAndDemArtRequiredMass" dataValue="mass" show="swNPArtAgreementNumberYes">Non, un article est factultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais il est exigé avec des noms au singulier</radio>
-           <radio id="NPArtAndDemArtRequiredYes" dataValue="yes">Oui, un article est toujours exigé</radio>
+           <prompt><br/>Est-ce qu'un article est obligatoirement présent dans chaque syntagme nominal ? </prompt>
+           <radio id="NPArtAndDemArtRequiredNo" dataValue="no">Non, l’article est toujours facultatif</radio>
+           <radio id="NPArtAndDemArtRequiredMass" dataValue="mass" show="swNPArtAgreementNumberYes">Non, un article est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais il est obligatoire avec des noms au singulier (ne pas tenir compte des noms possessifs pour le moment)</radio>
+           <radio id="NPArtAndDemArtRequiredYes" dataValue="yes">Oui, l’article est toujours obligatoire</radio>
      </radioGroup>          
  
        <checkboxGroup id="NPArtAndDemDemPosTable" show="swNPArtAndDemDem">
-           <prompt><br/>Où le démonstratif se trouve-t-il par rapport au nom? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+           <prompt><br/>Où le démonstratif se trouve-t-il par rapport au nom? Cochez toutes les options qui sont correctes pour votre langue.</prompt>
            <checkbox id="NPArtAndDemDemPosBefore" dataItem="demOnlyBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemDemPosAfter" dataItem="demOnlyAfter">Après</checkbox>
-           <checkbox id="NPArtAndDemDemPosBoth" dataItem="demOnlyBoth">Des deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemDemPosOther" dataItem="demOnlyOther">Dans ma langue, les démonstratifs peuvent se trouver comme suit: <textBox  id="NPArtAndDemDemPosOtherContent" dataItem="demOnlyOther" cols="70" rows="1"/></checkbox>
+           <checkbox id="NPArtAndDemDemPosBoth" dataItem="demOnlyBoth">De part et d’autre du syntagme nominal</checkbox>
+           <checkbox id="NPArtAndDemDemPosOther" dataItem="demOnlyOther">Dans ma langue, les démonstratifs se trouvent dans la position suivante : <textBox  id="NPArtAndDemDemPosOtherContent" dataItem="demOnlyOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
-        <prompt id="NPArtAndDemDemPosNoCheckPrompt" show="swNPArtAndDemDemAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les démonstratifs par rapport au nom dans votre langue, ou changez la réponse sur la page précédente  sur une qui n’inclut pas des démonstratifs qui sont écrits comme des mots indépendants.</prompt>
+        <prompt id="NPArtAndDemDemPosNoCheckPrompt" show="swNPArtAndDemDemAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les démonstratifs par rapport au nom dans votre langue. Sinon, il faut modifier la réponse sur la page précédente et cocher l’une des cases qui n’inclut pas les démonstratifs écrits comme mots indépendants.</prompt>
        <radioGroup id="NPArtAndDemDemRequiredTable" show="swNPArtAndDemDem">
             <groupName dataItem="demRequired" default="no">RNPArtAndDemDemRequired</groupName>
-           <prompt><br/>Un démonstratif est-il exigé dans tous les syntagmes nominaux (ne pas tenir compte maintenant des noms possessifs)?</prompt>
-           <radio id="NPArtAndDemDemRequiredNo" dataValue="no">Non, un démonstratif est toujours facultatif</radio>
-           <radio id="NPArtAndDemDemRequiredMass" dataValue="mass" show="swNPDemAgreementNumberYes">Non, un démonstratif est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais est exigé avec des noms au singulier</radio>
-           <radio id="NPArtAndDemDemRequiredYes" dataValue="yes">Oui, un démonstratif est toujours exigé</radio>
+           <prompt><br/>Le démonstratif est-il obligatoire dans tous les syntagmes nominaux ?</prompt>
+           <radio id="NPArtAndDemDemRequiredNo" dataValue="no">Non, le démonstratif est toujours facultatif</radio>
+           <radio id="NPArtAndDemDemRequiredMass" dataValue="mass" show="swNPDemAgreementNumberYes">Non, le démonstratif est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais il est obligatoire avec des noms au singulier (ne pas tenir compte des noms possessifs pour le moment)</radio>
+           <radio id="NPArtAndDemDemRequiredYes" dataValue="yes">Oui, le démonstratif est toujours obligatoire</radio>
        </radioGroup>
         
         <radioGroup id="NPDemClassifierSpecificTable" show="swOTClassifierSpecificAndNPArtAndDemDem">
             <groupName dataItem="classifierPresentDem" default="no">RNPDemClassifierPresent</groupName>
-            <prompt><br/>En regardant les exemples, est-ce-que les classificateurs sont utilisés avec un démonstratif dans ces syntagmes nominaux?</prompt>
-            <radio id="NPDemClassifierPresentYes"  dataValue="yes">Oui, un classificateur est exigé dans toutes les syntagmes nominaux qui contiennent un démonstratif</radio>
-            <radio id="NPDemClassifierPresentSome" dataValue="some">Un classificateur est présent dans certains syntagmes nominaux qui contiennent un démonstratif, mais n’est pas exigé dans tous</radio>
+            <prompt><br/>En regardant les exemples, est-ce-que les classificateurs sont utilisés avec un démonstratif dans ces syntagmes nominaux ?</prompt>
+            <radio id="NPDemClassifierPresentYes"  dataValue="yes">Oui, le classificateur est obligatoire dans tous les syntagmes nominaux qui contiennent un démonstratif</radio>
+            <radio id="NPDemClassifierPresentSome" dataValue="some">Un classificateur est présent dans certains syntagmes nominaux qui contiennent un démonstratif, mais n’est pas obligatoire dans tous les cas</radio>
             <radio id="NPDemClassifierPresentNo" dataValue="no">Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal</radio>
         </radioGroup>
         <checkboxGroup id="NPDemClassifierSpecificPos" show="swOTClassifierSpecificAndNPArtAndDemDemAndNPDemClassifierPresentYesOrSome">
-            <prompt><br/>En regardant les exemples, où les classificateurs se trouvent-ils par rapport au démonstratif et au nom? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
-            <checkbox id="NPDemClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificDemPosBeforeBoth">Premièrement, avant le démonstratif et le nom</checkbox>
-            <checkbox id="NPDemClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificDemPosAfterBoth">Finalement, après le nom et le démonstratif</checkbox>
+            <prompt><br/>En regardant les exemples, où les classificateurs se trouvent-ils par rapport au démonstratif et au nom ? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+            <checkbox id="NPDemClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificDemPosBeforeBoth">Au début, avant le démonstratif et le nom</checkbox>
+            <checkbox id="NPDemClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificDemPosAfterBoth">A la fin, après le nom et le démonstratif</checkbox>
             <checkbox id="NPDemClassifierSpecificPosAfterDemBeforeN"  dataItem="classifierSpecificDemPosAfterDemBeforeN">Après le démonstratif mais avant le nom</checkbox>
             <checkbox id="NPDemClassifierSpecificPosAfterNBeforeDem"  dataItem="classifierSpecificDemPosAfterNBeforeDem">Après le nom mais avant le démonstratif</checkbox>
-            <checkbox id="NPDemClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemPosPrefixDem">Comme préfixe sur le démonstratif</checkbox>
-            <checkbox id="NPDemClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemPosSuffixDem">Comme suffixe sur le démonstratif</checkbox>
-            <checkbox id="NPDemClassifierSpecificPosOther"  dataItem="classifierSpecificDemPosOther">Dans ma langue, les classificateurs peuvent se trouver comme suit: <textBox  id="NPClassifierSpecificDemPosOtherContent" dataItem="classifierSpecificDemPosOther" cols="70" rows="1"/></checkbox>
+            <checkbox id="NPDemClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemPosPrefixDem">Comme préfixe rattaché au démonstratif</checkbox>
+            <checkbox id="NPDemClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemPosSuffixDem">Comme suffixe rattaché au démonstratif</checkbox>
+            <checkbox id="NPDemClassifierSpecificPosOther"  dataItem="classifierSpecificDemPosOther">Dans ma langue, les classificateurs se trouvent dans la position suivante : <textBox  id="NPClassifierSpecificDemPosOtherContent" dataItem="classifierSpecificDemPosOther" cols="70" rows="1" kind="table"/></checkbox>
         </checkboxGroup>
-        <prompt id="NPDemClassifierSpecificPosNoCheckPrompt" show="swNPDemClassifierPresentYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport au démonstratif et au nom dans votre langue, ou changez votre réponse ci-dessus en « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal ».</prompt>
+        <prompt id="NPDemClassifierSpecificPosNoCheckPrompt" show="swNPDemClassifierPresentYesOrSomeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport au démonstratif et au nom dans votre langue Sinon, il faut modifier la réponse ci-dessus et cocher « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal ».</prompt>
         
        <radioGroup id="NPArtAndDemBothTable" show="swNPArtAndDemBoth">
             <groupName dataItem="artBothCooccur" default="different">RNPArtAndDemBoth</groupName>
-           <prompt><br/>Est-ce que les articles et les démonstratifs se trouvent ensemble dans le même syntagme nominal?</prompt>
+           <prompt><br/>Est-ce que les articles et les démonstratifs peuvent se trouver ensemble dans le même syntagme nominal ?</prompt>
            <radio id="NPArtAndDemBothCooccurNo" dataValue="no">Non, ils se trouvent dans la même position comme en français</radio>
-           <radio id="NPArtAndDemBothCooccurDiff" dataValue="different">Non, mais ils se trouvent dans de différentes positions par rapport au nom</radio>
-           <radio id="NPArtAndDemBothCooccurYes" dataValue="yes">Oui, les deux peuvent être présents dans un simple syntagme nominal</radio>
+           <radio id="NPArtAndDemBothCooccurDiff" dataValue="different">Non, mais ils se trouvent dans des positions différentes par rapport au nom</radio>
+           <radio id="NPArtAndDemBothCooccurYes" dataValue="yes">Oui, les deux peuvent être présents dans un seul syntagme nominal</radio>
        </radioGroup>
        <checkboxGroup id="NPArtAndDemBothCooccurNoPosTable" show="swNPArtAndDemBothCooccurNo">
-           <prompt><br/>Où se trouve le démonstratif ou l’article par rapport au nom?</prompt>
+           <prompt><br/>Où se trouve le démonstratif ou l’article par rapport au nom ?</prompt>
            <checkbox id="NPArtAndDemBothCooccurNoPosBefore" dataItem="demOrArtPosBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemBothCooccurNoPosAfter" dataItem="demOrArtPosAfter">Après</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurNoPosBoth" dataItem="demOrArtPosBoth">Sur les deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurNoPosOther" dataItem="demOrArtPosOther">Dans ma langue, le démonstratif ou l’article peut se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurNoPosOtherContent" dataItem="demOrArtPosOther" cols="70" rows="1"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurNoPosBoth" dataItem="demOrArtPosBoth">De part et d’autre du syntagme nominal</checkbox>
+           <checkbox id="NPArtAndDemBothCooccurNoPosOther" dataItem="demOrArtPosOther">Dans ma langue, le démonstratif ou l'article se trouve dans la position suivante : <textBox  id="NPArtAndDemBothCooccurNoPosOtherContent" dataItem="demOrArtPosOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
-        <prompt id="NPArtAndDemBothCooccurNoPosNoCheckPrompt" show="swNPArtAndDemBothCooccurNoAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les articles et démonstratifs par rapport au nom dans votre langue.</prompt>
+        <prompt id="NPArtAndDemBothCooccurNoPosNoCheckPrompt" show="swNPArtAndDemBothCooccurNoAndNoCheck"> ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les articles et démonstratifs par rapport au nom dans votre langue.</prompt>
  
  
        <checkboxGroup id="NPArtAndDemBothCooccurYesDemPosTable" show="swNPArtAndDemBothCooccurYes">
-           <prompt><br/>Où le démonstratif se trouve-t-il par rapport au nom? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+           <prompt><br/>Où le démonstratif se trouve-t-il par rapport au nom ? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
            <checkbox id="NPArtAndDemBothCooccurYesDemPosBefore" dataItem="demAndArtDemBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemBothCooccurYesDemPosAfter" dataItem="demAndArtDemAfter">Après</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesDemPosBoth" dataItem="demAndArtDemBoth">Sur les deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesDemPosOther" dataItem="demAndArtDemOther">Dans ma langue, les démonstratifs peuvent se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurYesDemPosOtherContent" dataItem="demAndArtDemOther" cols="70" rows="1"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesDemPosBoth" dataItem="demAndArtDemBoth">De part et d’autre du syntagme nominal</checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesDemPosOther" dataItem="demAndArtDemOther">Dans ma langue, les démonstratifs se trouvent dans la position suivante : <textBox  id="NPArtAndDemBothCooccurYesDemPosOtherContent" dataItem="demAndArtDemOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
-        <prompt id="NPArtAndDemBothCooccurYesDemPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndDemPosNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les démonstratifs par rapport au nom dans votre langue.</prompt>
+        <prompt id="NPArtAndDemBothCooccurYesDemPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndDemPosNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les démonstratifs par rapport au nom dans votre langue.</prompt>
        
        <checkboxGroup id="NPArtAndDemBothCooccurYesArtPosTable" show="swNPArtAndDemBothCooccurYes">
-           <prompt><br/>Où l’article se trouve-t-il par rapport au nom? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+           <prompt><br/>Où l’article se trouve-t-il par rapport au nom ? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
            <checkbox id="NPArtAndDemBothCooccurYesArtPosBefore" dataItem="demAndArtArtBefore">Avant</checkbox>
            <checkbox id="NPArtAndDemBothCooccurYesArtPosAfter" dataItem="demAndArtArtAfter">Après</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesArtPosBoth" dataItem="demAndArtArtBoth">Sur les deux côtés dans le même syntagme nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesArtPosOther" dataItem="demAndArtArtOther">Dans ma langue, les articles peuvent se trouver comme suit: <textBox  id="NPArtAndDemBothCooccurYesArtPosOtherContent" dataItem="demAndArtArtOther" cols="70" rows="1"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesArtPosBoth" dataItem="demAndArtArtBoth">De part et d’autre du syntagme nominal</checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesArtPosOther" dataItem="demAndArtArtOther">Dans ma langue, les articles se trouvent dans la position suivante : <textBox  id="NPArtAndDemBothCooccurYesArtPosOtherContent" dataItem="demAndArtArtOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
-        <prompt id="NPArtAndDemBothCooccurYesArtPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndArtPosNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les articles par rapport au nom dans votre langue.</prompt>
+        <prompt id="NPArtAndDemBothCooccurYesArtPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndArtPosNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les articles par rapport au nom dans votre langue.</prompt>
        <instruction id="NPArtDemEitherSideRestrictedInstruction" show="swNPArtDemEitherSideRestricted">In the lexicon, mark those which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any articles or demonstratives which can occur on either side.</instruction>
        <instruction id="NPArtEitherSideRestrictedInstruction" show="swNPArtEitherSideRestricted">In the lexicon, mark those which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any articles which can occur on either side.</instruction>
        <instruction id="NPDemEitherSideRestrictedInstruction" show="swNPDemEitherSideRestricted">In the lexicon, mark those which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any demonstratives which can occur on either side.</instruction>
        <radioGroup id="NPArtAndDemBothCooccurNoRequiredTable" show="swNPArtAndDemBothCooccurNo">
                 <groupName dataItem="demOrArtRequired" default="no">RNPArtAndDemBothCooccurNoRequired</groupName>
-           <prompt><br/>Est-ce qu’un démonstratif ou un article doit être présent dans tous les syntagmes nominaux (ne pas tenir compte des noms possessifs maintenant)?</prompt>
-           <radio id="NPArtAndDemBothCooccurNoRequiredNo" dataValue="no">Non, la présence d’un démonstratif ou d’un article est toujours facultatif</radio>
-           <radio id="NPArtAndDemBothCooccurNoRequiredMass" dataValue="mass" show="swNPArtOrDemAgreementNumberYes">Non, un démonstratif ou un article est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais est exigé avec des noms au singulier</radio>
-           <radio id="NPArtAndDemBothCooccurNoRequiredYes" dataValue="yes">Oui, ou un démonstratif ou un article est toujours exigé</radio>
+           <prompt><br/>Est-ce qu’un démonstratif ou un article est obligatoirement présent dans tous les syntagmes nominaux ?</prompt>
+           <radio id="NPArtAndDemBothCooccurNoRequiredNo" dataValue="no">Non, la présence d’un démonstratif ou d’un article est toujours facultative</radio>
+           <radio id="NPArtAndDemBothCooccurNoRequiredMass" dataValue="mass" show="swNPArtOrDemAgreementNumberYes">Non, un démonstratif ou un article est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais est obligatoire avec des noms au singulier (ne pas tenir compte des noms possessifs pour le moment)</radio>
+           <radio id="NPArtAndDemBothCooccurNoRequiredYes" dataValue="yes">Oui, un démonstratif ou un article est toujours obligatoire</radio>
             </radioGroup>
           
           <radioGroup id="NPArtAndDemBothCooccurYesDemRequiredTable" show="swNPArtAndDemBothCooccurYes">
              <groupName dataItem="demAndArtDemRequired" default="no">RNPArtAndDemBothCooccurYesDemRequired</groupName>
-              <prompt><br/>Est-ce qu’un démonstratif doit être présent dans tous les syntagmes nominaux (ne pas tenir compte des noms possessifs maintenant)?</prompt>
+              <prompt><br/>Un démonstratif est-il obligatoirement présent dans tous les syntagmes nominaux ?</prompt>
               <radio id="NPArtAndDemBothCooccurYesDemRequiredNo" dataValue="no">Non, un démonstratif est toujours facultatif</radio>
-              <radio id="NPArtAndDemBothCooccurYesDemRequiredMass" dataValue="mass" show="swNPDemAgreementNumberYes">Non, un démonstratif est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais est exigé avec des noms au singulier</radio>
-              <radio id="NPArtAndDemBothCooccurYesDemRequiredYes" dataValue="yes">Oui, un démonstratif est toujours exigé</radio>
+              <radio id="NPArtAndDemBothCooccurYesDemRequiredMass" dataValue="mass" show="swNPDemAgreementNumberYes">Non, un démonstratif est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais est obligatoire avec des noms au singulier (ne pas tenir compte des noms possessifs pour le moment)</radio>
+              <radio id="NPArtAndDemBothCooccurYesDemRequiredYes" dataValue="yes">Oui, un démonstratif est toujours obligatoire</radio>
           </radioGroup>
           <radioGroup id="NPArtAndDemBothCooccurYesArtRequiredTable" show="swNPArtAndDemBothCooccurYes">
              <groupName dataItem="demAndArtArtRequired" default="no">RNPArtAndDemBothCooccurYesArtRequired</groupName>
-              <prompt><br/>Est-ce qu’un article doit être présent dans tous les syntagmes nominaux (ne pas tenir compte des noms possessifs maintenant)?</prompt>
+              <prompt><br/>Un article est-il obligatoirement présent dans tous les syntagmes nominaux ?</prompt>
               <radio id="NPArtAndDemBothCooccurYesArtRequiredNo" dataValue="no">Non, un article est toujours facultatif</radio>
-              <radio id="NPArtAndDemBothCooccurYesArtRequiredMass" dataValue="mass" show="swNPArtAgreementNumberYes">Non, un article est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais est exigé avec des noms au singulier</radio>
-              <radio id="NPArtAndDemBothCooccurYesArtRequiredYes" dataValue="yes">Oui, un article est toujours exigé</radio>
+              <radio id="NPArtAndDemBothCooccurYesArtRequiredMass" dataValue="mass" show="swNPArtAgreementNumberYes">Non, un article est facultatif avec des noms au pluriel ou des noms de <technicalTermRef term="ttMass">masse</technicalTermRef> mais est obligatoire avec des noms au singulier (ne pas tenir compte des noms possessifs pour le moment)</radio>
+              <radio id="NPArtAndDemBothCooccurYesArtRequiredYes" dataValue="yes">Oui, un article est toujours obligatoire</radio>
           </radioGroup>
         
         <radioGroup id="NPDemBothClassifierSpecificTable" show="swOTClassifierSpecificAndNPArtAndDemBoth">
             <groupName dataItem="classifierPresentDemBoth" default="no">RNPDemBothClassifierPresent</groupName>
-            <prompt><br/>En regardant les exemples, les classificateurs sont-ils utilisés dans ces syntagmes nominaux avec un démonstratif?</prompt>
-            <radio id="NPDemBothClassifierPresentYes"  dataValue="yes">Oui, un classificateur est exigé dans tous les syntagmes qui contiennent un démonstratif</radio>
-            <radio id="NPDemBothClassifierPresentSome" dataValue="some">Un classificateur est présent dans certains syntagmes nominaux qui contiennent un démonstratif mais n’est pas exigé dans tous</radio>
+            <prompt><br/>En regardant les exemples, les classificateurs sont-ils utilisés dans les syntagmes nominaux avec un démonstratif ?</prompt>
+            <radio id="NPDemBothClassifierPresentYes"  dataValue="yes">Oui, un classificateur est obligatoire dans tous les syntagmes qui contiennent un démonstratif</radio>
+            <radio id="NPDemBothClassifierPresentSome" dataValue="some">Un classificateur est présent dans certains syntagmes nominaux qui contiennent un démonstratif mais n’est pas obligatoire dans chacun</radio>
             <radio id="NPDemBothClassifierPresentNo" dataValue="no">Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal</radio>
         </radioGroup>
         <checkboxGroup id="NPDemBothClassifierSpecificPos" show="swOTClassifierSpecificAndNPArtAndDemBothAndNPDemBothClassifierPresentYesOrSome">
-            <prompt><br/>En regardant les exemples, où les classificateurs se trouvent-ils par rapport au démonstratif et au nom? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
-            <checkbox id="NPDemBothClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificDemBothPosBeforeBoth">Premièrement avant le démonstratif et le nom</checkbox>
-            <checkbox id="NPDemBothClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificDemBothPosAfterBoth">Finalement, après le nom et le démonstratif</checkbox>
+            <prompt><br/>En regardant les exemples, où les classificateurs se trouvent-ils par rapport au démonstratif et au nom ? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+            <checkbox id="NPDemBothClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificDemBothPosBeforeBoth">En première position, avant le démonstratif et le nom</checkbox>
+            <checkbox id="NPDemBothClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificDemBothPosAfterBoth">En dernière position, après le nom et le démonstratif</checkbox>
             <checkbox id="NPDemBothClassifierSpecificPosAfterDemBeforeN"  dataItem="classifierSpecificDemBothPosAfterDemBeforeN">Après le démonstratif mais avant le nom</checkbox>
             <checkbox id="NPDemBothClassifierSpecificPosAfterNBeforeDem"  dataItem="classifierSpecificDemBothPosAfterNBeforeDem">Après le nom mais avant le démonstratif</checkbox>
-            <checkbox id="NPDemBothClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemBothPosPrefixDem">Comme préfixe sur le démonstratif</checkbox>
-            <checkbox id="NPDemBothClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemBothPosSuffixDem">Comme suffixe sur le démonstratif</checkbox>
-            <checkbox id="NPDemBothClassifierSpecificPosOther"  dataItem="classifierSpecificDemBothPosOther">Dans ma langue, les classificateurs peuvent se trouver dans la position suivante: <textBox  id="NPClassifierSpecificDemBothPosOtherContent" dataItem="classifierSpecificDemBothPosOther" cols="70" rows="1"/></checkbox>
+            <checkbox id="NPDemBothClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemBothPosPrefixDem">Comme préfixe rattaché au démonstratif</checkbox>
+            <checkbox id="NPDemBothClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemBothPosSuffixDem">Comme suffixe rattaché au démonstratif</checkbox>
+            <checkbox id="NPDemBothClassifierSpecificPosOther"  dataItem="classifierSpecificDemBothPosOther">Dans ma langue, les classificateurs se trouvent dans la position suivante : <textBox  id="NPClassifierSpecificDemBothPosOtherContent" dataItem="classifierSpecificDemBothPosOther" cols="70" rows="1" kind="table"/></checkbox>
         </checkboxGroup>
-        <prompt id="NPDemBothClassifierSpecificPosNoCheckPrompt" show="swNPDemBothClassifierPresentYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport au démonstratif et au nom dans votre langue, ou changez votre réponse ci-dessus en « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal. ».</prompt>
+        <prompt id="NPDemBothClassifierSpecificPosNoCheckPrompt" show="swNPDemBothClassifierPresentYesOrSomeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position des classificateurs par rapport au démonstratif et au nom dans votre langue. Sinon, il faut modifier la réponse ci-dessus  et cocher « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal. ».</prompt>
         
         <instruction id="NPArtAgreementNumberInstruction" show="swNPArtAgreementNumberYes">
 To handle the number agreement, in the lexicon:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -10,38 +10,38 @@
    <form section="coord" transparent="no">
       <prompt><br/>Key how your language expresses these conjunctions in the following text boxes.  If there is more than one option, enter each form on a separate line.  If the conjunction is a clitic, key an equal sign indicating which side it attaches on.</prompt>
 		<prompt>Key the conjunction(s) your language uses for ‘and’ here:</prompt>
-		<textBox id="CoordAnd" dataItem="and" rows="3"/>
+		<textBox id="CoordAnd" dataItem="and" rows="3" kind="table"/>
 		<br/>
    	<prompt>Key the sequential conjunction(s) your language uses for sentence level coordination meaning ‘and then’ here:</prompt>
-   	<textBox id="CoordSeq" dataItem="andThen" rows="3"/>
+   	<textBox id="CoordSeq" dataItem="andThen" rows="3" kind="table"/>
    	<br/>
    	<prompt>Key the conjunction(s) your language uses for ‘or’ here:</prompt>
-		<textBox id="CoordOr" dataItem="or" rows="3"/>
+		<textBox id="CoordOr" dataItem="or" rows="3" kind="table"/>
 		<br/>
 		<prompt>Key the conunction(s) your language uses for ‘but’ here:</prompt>
-		<textBox id="CoordBut" dataItem="but" rows="3"/>
+		<textBox id="CoordBut" dataItem="but" rows="3" kind="table"/>
 		<br/>
 		<prompt>Key the conjunction(s) your language uses for ‘and/or’ here:</prompt>
-		<textBox id="CoordAndOr" dataItem="andOr" rows="3"/>
+		<textBox id="CoordAndOr" dataItem="andOr" rows="3" kind="table"/>
       <instruction id="CoordAndOrInstruction">Note that a word like ‘and/or’ which is written with a slash (/) in the word, must be entered in your lexicon with a backslash in front of the slash (eg. ‘and\/or’) for <tool>CARLA Studio</tool> to process it correctly.</instruction>
       <br/>
 		<prompt>If your language uses ‘with’ as a nominal phrase conjunction, key that form here:</prompt>
-		<textBox id="CoordWith" dataItem="with" rows="3"/>
+		<textBox id="CoordWith" dataItem="with" rows="3" kind="table"/>
 		<br/>
 		<prompt>Key any additional conjunction(s) your language uses alone between conjuncts here:</prompt>
-		<textBox id="CoordOther" dataItem="other" rows="3"/>
+		<textBox id="CoordOther" dataItem="other" rows="3" kind="table"/>
 		<br/>
 		<prompt>Key the initial conjunction(s) meaning ‘either’ that your language uses for ‘either...or’ constructions here (only the initial part):</prompt>
-		<textBox id="CoordEither" dataItem="either" rows="3"/>
+		<textBox id="CoordEither" dataItem="either" rows="3" kind="table"/>
 		<br/>
       <prompt>Key the medial conjunction(s) that your language uses for ‘either...or’ constructions here (only the second part):</prompt>
-      <textBox id="CoordEitherOr" dataItem="eitherOr" rows="3"/>
+      <textBox id="CoordEitherOr" dataItem="eitherOr" rows="3" kind="table"/>
       <br/>
       <prompt>Key the initial negative conjunction(s) meaning ‘neither’ that your language uses for ‘neither...nor’ constructions here (only the initial part):</prompt>
-		<textBox id="CoordNeither" dataItem="neither" rows="3"/>
+		<textBox id="CoordNeither" dataItem="neither" rows="3" kind="table"/>
 		<br/>
 		<prompt>Key the negative conjunction(s) meaning ‘nor’ that your language uses, either alone or  for ‘neither...nor’ constructions here (only the part meaning ‘nor’):</prompt>
-		<textBox id="CoordNor" dataItem="nor" rows="3"/>
+		<textBox id="CoordNor" dataItem="nor" rows="3" kind="table"/>
 		<br/>
 <radioGroup>
    <groupName dataItem="conjWord" default="yes">RCoordConjWord</groupName>
@@ -60,7 +60,7 @@
          <prompt><br/>How do the conjunctions attach within the coordination construction?  Choose all that apply:</prompt>
          <checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">As a proclitic which attaches to the beginning of the second conjunct</checkbox>
          <checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">As an enclitic which attaches to the end of the first conjunct</checkbox>
-         <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">In my language, the conjunctions may attach in this other way within the coordination construction: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">In my language, the conjunctions may attach in this other way within the coordination construction: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">WARNING: You did not check any boxes to describe how the conjunctions may attach in your language.  Please check one or more boxes as appropriate, or change your answer above to ‘Yes, they are all independent words’.</prompt>
       

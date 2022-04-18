@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -110,7 +110,7 @@
        <br/>        
        <introduction>Finalmente, considere los complementos directos e indirectos de los verbos de habla. Las citas directas, como en ejemplo 22,  pueden consistir de cualquier oración, interjección o saludo. <br/><br/>
           Las citas indirectas como complementos, como en ejemplos 23-25, están más limitadas  En inglés, algunos verbos de hab;a pueden tener un complemento finito, con o sin un complementador, y una frase preposicional opcional para expresar al oyente, como en ejemplo 23.  
-          Otros verbos pueden tener al oyente expresado como el objeto directo más un complemento finito, como en ejemplo 24, o un complemento no finito sin un complementador con el sujeto tácito porque es coreferente con el sujeto de la cláusula principal, como en ejemplo 25:
+          Otros verbos pueden tener al oyente expresado como el objeto directo más un complemento finito, como en ejemplo 24, o un complemento no finito sin un complementador con el sujeto tácito porque es coreferente con el objeto de la cláusula principal, como en ejemplo 25:
        </introduction> 
        <EnglishExample>
           <exItem label="22.">Sue said, “I will come to your house tomorrow.” ‘Susana dijo, “Vendré a su casa mañana”.'</exItem>
@@ -136,7 +136,7 @@
           <radio id="CompTypeOtherNo" dataValue="no">No</radio>
        </radioGroup>
        <prompt id="CompTypeOtherYesRestriction" show="swCompTypeOtherYes" >Escriba este otro tipo de restricción que su lengua tiene aquí:</prompt>
-       <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes"/>
+       <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="table"/>
        <br/><br/>
        
        <prompt id="CompTypeOtherExamplePrompt" show="swCompTypeOtherYes"> Escriba algunos ejemplos de oraciones que incluyen las cláusulas de complemento con este otro tipo de restricción aquí:</prompt>

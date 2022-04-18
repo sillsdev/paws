@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="CompFeatures" count="10.2">
-   <title level="2">Propositions Complétives – Exemples et caractéristiques</title>
-   <introduction>Les différents types de propositions complétives <span id="CompFeatSpanNotPractical" show="swNotPractical">montrées dans les arbres représentent la structure sémantique du verbe de même que la sous-catégorisation syntaxique </span><span id="CompFeatSpanPractical" show="swPractical">permise par un verbe particulier, 
-      qui est déterminé par la <technicalTermRef term="ttSemantics">sémantique</technicalTermRef> ainsi que par la <technicalTermRef term="ttSyntax">syntaxe</technicalTermRef></span>.  Il y a donc un certain degré de similarité à travers les langues dans les types de <technicalTermRef term="ttComplements">compléments</technicalTermRef> 
-      de proposition <span id="CompFeaturesIntroSpan2NotPractical" show="swNotPractical">que les verbes sous catégorisent.</span><span id="CompFeaturesIntroSpan2Practical" show="swPractical">que certains verbes choisissent.</span>  Dans chaque cas présenté ci-dessous, peut-être pourrez-vous penser aussi à des adjectifs qui prennent 
-      ce type de complément lorsqu’ils jouent le rôle de <technicalTermRef term="ttPredicates">prédicats</technicalTermRef>.  Certains adverbes choisissent aussi des compléments similaires pour former des propositions adverbiales, comme on le verra dans la <section number="13.">Propositions Adverbiales</section>.
+   <title level="2">Propositions complétives – Exemples et caractéristiques</title>
+   <introduction>Les différents types de propositions complétives <span id="CompFeatSpanNotPractical" show="swNotPractical">montrées dans les arbres syntagmatiques représentent la structure sémantique du verbe ainsi que la sous-catégorisation syntaxique</span><span id="CompFeatSpanPractical" show="swPractical">permise par un verbe particulier 
+       est déterminée par la <technicalTermRef term="ttSemantics">sémantique</technicalTermRef> tout comme par la <technicalTermRef term="ttSyntax">syntaxe</technicalTermRef></span>.  Il y a donc un certain degré de similarité à travers les langues pour les types de propositions <technicalTermRef term="ttComplements">complétives</technicalTermRef> 
+       <span id="CompFeaturesIntroSpan2NotPractical" show="swNotPractical">que les verbes sous catégorisent.</span><span id="CompFeaturesIntroSpan2Practical" show="swPractical">que certains verbes acceptent.</span>  Pour chacun des cas présentés ci-dessous, peut-être penserez-vous à des adjectifs qui se construisent avec 
+      ce type de complément lorsqu'ils ont la fonction de <technicalTermRef term="ttPredicates">prédicats</technicalTermRef>.  Certains adverbes acceptent ce type de compléments pour former des propositions adverbiales, comme on le verra dans la <section number="13.">Propositions adverbiales</section>.
        <br/><br/>
-      Même si votre langue ne fait pas de distinction dans les types de proposition complétive comme demandé ici, veuillez entrer des exemples dans chaque case en utilisant des verbes dont la signification est aussi proche que possible aux exemples donnés. Cela documentera la façon dont votre langue exprime toute une série de propositions complétives. 
+      Même si votre langue ne fait pas de distinction entre les types de propositions complétives comme ils sont présentés ici, saisissez des exemples dans chaque case en utilisant des verbes dont la signification est aussi proche que possible des exemples donnés. Cela illustrera la façon dont votre langue exprime toute une série de propositions complétives. 
 </introduction>
     <form section="comp">
-       <introduction>Considérez d’abord des verbes qui prennent seulement une proposition complétive <technicalTermRef term="ttFinite">finie</technicalTermRef> avec ou sans un complétiviseur comme:</introduction>
+       <introduction>Considérez d’abord des verbes qui se construisent uniquement avec une proposition complétive <technicalTermRef term="ttFinite">finie</technicalTermRef> avec ou sans conjonction de subordination comme dans les exemples suivants :</introduction>
         <EnglishExample>
-         <exItem label="1.">I believe (that) Jill is my friend.  « Je crois que Jeanne est mon amie. »</exItem>
-         <exItem label="2.">Jill insists (that) she is my friend.  « Jeanne insiste qu’elle est mon amie. »</exItem>
-         <exItem label="3.">I know (that) he likes me.  « Je sais qu’il m’aime. »</exItem>
+         <exItem label="1.">I believe (that) Jill is my friend.  « Je crois que Jeanne est mon amie. »</exItem>
+         <exItem label="2.">Jill insists (that) she is my friend.  « Jeanne insiste qu’elle est mon amie. »</exItem>
+         <exItem label="3.">I know (that) he likes me.  « Je sais qu’il m’aime. »</exItem>
         </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue.:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
         <textBox id="CompFiniteExample" dataItem="finiteExample" cols="80"/>
         <br/>
         <br/>
        <instruction id="CompFiniteInstruction">Add the feature <feature>sentential_finite_or_transitive</feature> to the lexical entries for the main verbs in the examples (and remove any separate <feature>transitive</feature> feature). </instruction>
        <br/>
-       <introduction>Ensuite, considérez des verbes qui prennent soit une proposition complétive finie avec ou sans un complétiviseur soit un complément phrastique <technicalTermRef term="ttNonfinite">non-fini</technicalTermRef> comme:</introduction>
+       <introduction>Ensuite, considérez des verbes qui se construisent soit avec une proposition complétive finie avec ou sans conjonction de subordination soit avec un complément phrastique <technicalTermRef term="ttNonfinite">non-fini</technicalTermRef> comme dans les exemples suivants :</introduction>
         <EnglishExample>
-           <exItem label="4.">I expect that Joe will come to the party.  « Je m’attends à ce que Jacques va venir à la soirée. »</exItem>
-         <exItem label="5.">I expect Joe to come to the party.  « Je m’attends à Jacques à venir à la soirée. »</exItem>
+           <exItem label="4.">I expect that Joe will come to the party.  « J’espère que Jacques viendra à la fête. »</exItem>
+         <exItem label="5.">I expect Joe to come to the party.  « J'espère voir Jacques à la fête. »</exItem>
         </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
         <textBox id="CompFiniteOrNonfiniteExample" dataItem="finiteOrNonfiniteExample" cols="80"/>
         <br/>
         <br/>
        <instruction id="CompSententialEmbeddedInstruction">Add the feature <feature>sentential_CP_or_-finiteIP</feature> to the lexical entries for the main verbs in the examples.</instruction>
        <br/>
-     <introduction>Maintenant considérez des verbes qui prennent un objet direct aussi bien qu’un complément fini ou non-fini comme:</introduction>
+     <introduction>Maintenant considérez des verbes qui se construisent avec un objet direct tout comme une proposition complément finie ou non-finie comme dans les exemples suivants :</introduction>
         <EnglishExample>
-         <exItem label="6.">I will persuade Joe that he should come to the party.  « Je vais persuader Jacques qu’il devrait venir à la soirée. »</exItem>
-         <exItem label="7.">I will persuade Joe to come to the party.  « Je vais persuader Jacques de venir à la soirée. »</exItem>
+         <exItem label="6.">I will persuade Joe that he should come to the party.  « Je vais persuader Jacques qu’il devrait venir à la fête. »</exItem>
+         <exItem label="7.">I will persuade Joe to come to the party.  « Je vais persuader Jacques de venir à la fête. »</exItem>
         </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
         <textBox id="CompDPCPExample" dataItem="DPCPExample" cols="80"/>
         <br/>
         <br/>
         <instruction id="CompSententialObjectInstruction">Add the feature <feature>sentential_with_object</feature> to the lexical entries for the main verbs in the examples.</instruction>
         <br/>
-     <introduction>Certains verbes prennent seulement un complément phrastique non-fini, mais le sujet est <technicalTermRef term="ttOvert">explicite</technicalTermRef> manifest quand il est différent du sujet de la proposition principale tandis qu’il n’est pas exprimé lorsqu’il est coréférent au sujet de la proposition principale comme:</introduction>
+     <introduction>Certains verbes se construisent uniquement avec un complément phrastique non-fini, mais le sujet est <technicalTermRef term="ttOvert">explicite</technicalTermRef> quand il est différent du sujet de la proposition principale alors qu’il n’est pas exprimé lorsqu’il est coréférent du sujet de la proposition principale comme dans les exemples suivants :</introduction>
         <EnglishExample>
-         <exItem label="8.">I want to come to the party.  « Je veux venir à la soirée. »</exItem>
-         <exItem label="9.">I want Joe to come to the party.  « Je veux que Jacques vienne à la soirée. »</exItem>
+         <exItem label="8.">I want to come to the party.  « Je veux venir à la fête. »</exItem>
+         <exItem label="9.">I want Joe to come to the party.  « Je veux que Jacques vienne à la fête. »</exItem>
         </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
         <textBox id="CompNonfiniteExample" dataItem="nonfiniteExample" cols="80"/>
         <br/>
         <br/>
        <instruction id="CompSententialNonFiniteInstruction">Add the feature <feature>sentential_-finiteIP_or_transitive</feature> to the lexical entries for the main verbs in the examples (and remove any separate <feature>transitive</feature> feature).</instruction>
        <br/>
-     <introduction>Certains verbes prennent seulement un complément phrastique non-fini et le sujet doit être coréférent au sujet de la proposition principale et non exprimée comme:</introduction>
+     <introduction>Certains verbes se construisent uniquement avec un complément phrastique non-fini et le sujet doit nécessairement être coréférent du  sujet de la proposition principale et non exprimé comme dans les exemples suivants :</introduction>
         <EnglishExample>
-         <exItem label="10.">Joe tried to come to the party.  « Jacques a essayé de venir à la soirée. »</exItem>
-         <exItem label="11.">I tried to think of more examples.  « J’ai essayé de penser à d’autres exemples. »</exItem>
+         <exItem label="10.">Joe tried to come to the party.  « Jacques a essayé de venir à la fête. »</exItem>
+         <exItem label="11.">I tried to think of more examples.  « J’ai essayé de penser à d’autres exemples. »</exItem>
         </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
         <textBox id="CompNonfiniteProDropExample" dataItem="nonfiniteProDropExample" cols="80"/>
         <br/>
         <br/>
        <instruction id="CompSententialProDropInstruction">Add the feature <feature>sentential_-finiteIPpro-drop_or_transitive</feature> to the lexical entries for the main verbs in the examples (and remove any separate <feature>transitive</feature> feature).</instruction>
        <br/>
-     <introduction>Certains verbes prennent seulement un complément non-fini mais le complétiviseur en anglais <example>for  « pour »</example> est présent lorsque le sujet est manifeste comme:</introduction>
+     <introduction>Certains verbes se construisent uniquement avec un complément non-fini mais la conjonction de subordination <example>for « que »</example> est présente lorsque le sujet enchâssé est explicite comme dans les exemples suivants :</introduction>
         <EnglishExample>
-         <exItem label="12.">Joe would hate for Sue to be at the party.  « Jacques n’aimerait pas que Suzanne soit à la soirée. »</exItem>
-         <exItem label="13.">Joe hates to dance.  « Jacques déteste danser. »</exItem>
-         <exItem label="14.">I would like to be appreciated.  « Je voudrais être apprécié. »</exItem>
+         <exItem label="12.">Joe would hate for Sue to be at the party.  « Jacques ne voudrait pas que Suzanne soit à la fête. »</exItem>
+         <exItem label="13.">Joe hates to dance.  « Jacques déteste danser. »</exItem>
+         <exItem label="14.">I would like to be appreciated.  « Je voudrais être apprécié. »</exItem>
         </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
         <textBox id="CompNonfiniteCPOrProDropExample" dataItem="nonfiniteCPOrProDropExample" cols="80"/>
         <br/>
         <br/>
        <instruction id="CompNonfiniteCPInstruction"> Add the feature <feature>sentential_-finite_or_transitive</feature> to the lexical entries for the main verbs in the examples (and remove any separate <feature>transitive</feature> feature).</instruction>
        <br/>
-       <introduction>Considérez maintenant les verbes « de montée » qui semblent inclure tous les verbes de <technicalTermRef term="ttPerception">perception</technicalTermRef> et tous les verbes <technicalTermRef term="ttCopular">copulatifs</technicalTermRef>.  
-          Ces verbes prennent ou un complément non-fini ou un adjectif qui a un complément fini avec un complétiviseur ou un complément non-fini. Le verbe principal n’a pas son propre sujet, alors la position du sujet est remplie par le sujet du complément non-fini comme dans 15, 17-18 ou par le sujet explétif <example>it  « il »</example> (en anglais, français et en certaines autres langues) ) lorsque la proposition complétive est finie comme dans 16 et 19:</introduction>
+       <introduction>Considérez maintenant les verbes « à montée » qui semblent inclure tous les <technicalTermRef term="ttCopular">copules</technicalTermRef> verbales et toutes les copules verbales exprimant l’apparence.  
+          Ces verbes se construisent soit avec un complément non-fini soit un adjectif qui a un complément fini avec une conjonction de subordination ou un complément non-fini. Le verbe principal n'a pas son propre sujet, la position du sujet est alors remplie par le sujet du complément non-fini comme dans 15, 17-18 ou par le sujet explétif <example>it  « il »</example> (en anglais, français et en certaines autres langues) lorsque la proposition complétive est finie comme dans 16 et 19 :</introduction>
        <EnglishExample>
-        <exItem label="15.">John seemed to like the tortillas.  « Jean semblait aimer les tortillas. »</exItem>
-        <exItem label="16.">It seems likely that Joe will come.  « Il semble probable que Jacques viendra. »</exItem>
-        <exItem label="17.">Joe is likely to come to the party.  « Jacques est probable de venir à la soirée. »</exItem>
-        <exItem label="18.">The weather is certain to change soon.  « Le temps est certain à changer bientôt. »</exItem>
-        <exItem label="19.">It is certain that the weather will change soon.  « Il est certain que le temps va changer bientôt. »</exItem>
+        <exItem label="15.">John seemed to like the tortillas.  « Jean semblait aimer les tortillas. »</exItem>
+        <exItem label="16.">It seems likely that Joe will come.  « Il semble probable que Jacques viendra. »</exItem>
+        <exItem label="17.">Joe is likely to come.  « Jacques est susceptible de venir. »</exItem>
+        <exItem label="18.">The weather is certain to change soon.  « Le temps va certainement bientôt changer. »</exItem>
+        <exItem label="19.">It is certain that the weather will change soon.  « Il est certain que le temps va bientôt changer. »</exItem>
        </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
        <textBox id="CompRaisingExample" dataItem="raisingExample" cols="80"/>
        <br/>
        <br/>
@@ -98,28 +98,28 @@
           Add the feature <feature>sentential_raising_or_copular</feature> to the lexical entries for the main verbs in the examples which are copular verbs, and remove the separate <feature>copular</feature> feature.  
           In the examples with adjectives, it is really the adjective that is acting as the predicate that selects the complement clause.  Therefore, add the feature <feature>sentential_A</feature> to their lexical entries.</instruction> 
        <br/>
-     <introduction>Des phrases composées de deux propositions ont un object qui agit aussi comme le sujet de la proposition complétive. Cette proposition complétive est toujours non-finie mais n’a pas besoin du marqueur non-fini avec certains verbes, 
-        comme dans 20, alors que cela est nécessaire avec d’autres comme dans 21:</introduction>
+     <introduction>Des causatifs composés de deux propositions ont un objet qui fonctionne aussi comme le sujet de la proposition complétive. Cette proposition complétive est toujours non-finie mais n'a pas besoin du marqueur non-fini avec certains verbes (en anglais), comme dans 20, 
+        alors que cela est nécessaire avec d'autres comme dans 21 :</introduction>
        <EnglishExample>
-        <exItem label="20.">My mother made me clean my room.  « Ma mère m’a fait nettoyer ma chambre. »</exItem>
-        <exItem label="21.">The other girl forced us to leave the group.  « L’autre fille nous a forcé de quitter le groupe. »</exItem>
+        <exItem label="20.">My mother made me clean my room.  « Ma mère m'a obligé à nettoyer ma chambre. »</exItem>
+        <exItem label="21.">The other girl caused us to leave the group.  « L’autre fille nous a forcé de quitter le groupe. »</exItem>
        </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
        <textBox id="CompCausativeExample" dataItem="causeExample" cols="80"/>
        <br/>
        <br/>
        <instruction id="CompCausativeInstruction">Add the feature <feature>causative_syntax</feature> to the lexical entries for the main verbs in the examples.</instruction>
        <br/>        
      <introduction>Finalement considérez les compléments directs et indirects des verbes de parole. Les citations directes, comme dans 22 peuvent être n’importe quel fragment ou phrase.  
-      <br/><br/>Les citations indirectes comme dans 23-25 sont plus restreintes. Certains verbes de parole prennent un complément avec ou sans complétiviseur, et une proposition facultative prépositionelle ou postpositionnelle pour exprimer celui qui écoute comme dans 23, 
-        et d’autres demandent que celui qui écoute soit exprimé comme un objet, avec, soit un complément phrastique non-fini ou un complément non-fini phrastique dans lequel le sujet doit se référer au sujet de la proposition principale et non exprimée comme en 24-25:</introduction>     
+      <br/><br/>Les possibilités de citations indirectes comme dans 23-25 sont plus restreintes. Certains verbes de parole se construisent avec un complément avec ou sans conjonction de subordination, et une proposition facultative prépositionelle ou postpositionnelle pour exprimer celui qui écoute comme dans 23, 
+        et d'autres verbes demandent que celui qui écoute soit exprimé comme un objet, avec soit un complément phrastique fini comme dans 24, ou un complément non-fini phrastique dans lequel le sujet doit se référer à l’objet de la proposition principale et ne peut pas être exprimé comme en 25 :</introduction>     
        <EnglishExample>
-        <exItem label="22.">Sue said, « I will come to your house tomorrow. »    « Suzannee a dit: « je viendrai demain chez toi. » »</exItem>
-        <exItem label="23."> Sue said (to me) that she would come here tomorrow.  « Suzanne (m’)a dit qu’elle viendrait ici demain. »</exItem>
-        <exItem label="24.">Sue told me that she would come here tomorrow.  « Suzanne m’a dit qu’elle viendrait ici demain. »</exItem>
-        <exItem label="25.">Sue told me to come here tomorrow.  « Suzanne m’a dit de venir ici demain. »</exItem>
+        <exItem label="22.">Sue said, "I will come to your house tomorrow."    « Suzannee a dit: « je viendrai chez toi demain. »</exItem>
+        <exItem label="23."> Sue said (to me) that she would come here tomorrow.  « Suzanne (a dit / m'a dit) qu’elle viendrait ici demain. »</exItem>
+        <exItem label="24.">Sue told me that she would come here tomorrow.  « Suzanne m’a dit qu’elle viendrait ici demain. »</exItem>
+        <exItem label="25.">Sue told me to come here tomorrow.  « Suzanne m’a dit de venir ici demain. »</exItem>
        </EnglishExample>
-     <prompt>Entrez ici comment des exemples similaires seraient exprimés dans votre langue:</prompt>
+     <prompt>Saisissez ici la façon dont des exemples similaires sont exprimés dans votre langue :</prompt>
        <textBox id="CompQuotationExample" dataItem="quotationExample" cols="80"/>
        <br/>
        <br/>
@@ -129,19 +129,19 @@
        <br/>         
        <br/>
        <prompt>
-          Votre langue peut aussi avoir d’autres limitations sur des propositions subordonnées – par exemple un verbe dépendant doit être dans le mode subjonctif ou dans l’aspect perfectif. </prompt>
+          Votre langue peut aussi avoir d'autres restrictions sur l’emploi des propositions enchâssées - par exemple un verbe enchâssé doit être au mode subjonctif ou à l'aspect perfectif. </prompt>
   <radioGroup id="CompTypeOtherTable">
      <groupName dataItem="compTypeOther" default="no">RCompTypeOther</groupName>
-     <prompt>Votre langue a-t-elle d’autres types de limitations sur les propositions complétives?
+     <prompt>Votre langue a-t-elle d’autres types de restriction pour les propositions complétives ?
      </prompt>
   <radio id="CompTypeOtherYes" dataValue="yes">Oui</radio>
    <radio id="CompTypeOtherNo" dataValue="no">Non, je n’en connais pas d’autres</radio>
   </radioGroup>
-     <prompt id="CompTypeOtherYesRestriction" show="swCompTypeOtherYes" >Entrez ici l’autre type de restriction qu’a votre langue:</prompt>
-       <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes"/>
+     <prompt id="CompTypeOtherYesRestriction" show="swCompTypeOtherYes" >Saisissez ici d'autres types de restriction qu'a votre langue :</prompt>
+       <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="table"/>
        <br/><br/>
        
-       <prompt id="CompTypeOtherExamplePrompt" show="swCompTypeOtherYes">Entrez ici des exemples de phrases qui comprennent des propositions complétives avec cet autre type de limitation:</prompt>
+       <prompt id="CompTypeOtherExamplePrompt" show="swCompTypeOtherYes">Saisissez ici des exemples de phrases qui comprennent des propositions complétives avec ces autres types de restriction :</prompt>
         <textBox id="CompOtherExample" dataItem="otherExample" cols="80" show="swCompTypeOtherYes"/>
         <br/>
         <br/>

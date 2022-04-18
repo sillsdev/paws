@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -62,131 +62,131 @@
        <prompt id="NPArtCaseNone" show="swNPArtCaseNoOrNone">Puesto que su lengua no indica el caso en los artículos, se debe tener solamente un sistema de artículos que pueden utilizarse en cualquier posición en la oración.</prompt>
        
        <prompt id="NPArtCaseNoPrompt" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef">Escriba los artículos definidos que su lengua utiliza <span id="SingularSpan" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseNoExample" dataItem="articleExample" rows="2" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseNoExample" dataItem="articleExample" rows="2" show="swNPArtCaseNoOrNoneAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseNo" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>  
-       <textBox id="NPArtPlCaseNoExample" dataItem="articlePlExample" rows="2" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseNoExample" dataItem="articlePlExample" rows="2" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseNoPrompt" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes">Escriba los artículos indefinidos que su lengua utiliza <span id="SingularSpan1" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseNoExample" dataItem="articleIndefExample" rows="2" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes"/> 
+       <textBox id="NPArtIndefCaseNoExample" dataItem="articleIndefExample" rows="2" show="swNPArtCaseNoOrNoneAndDefOnlyNotYes" kind="table"/> 
       <prompt id="NPArtIndefPlCaseNo" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseNoExample" dataItem="articleIndefPlExample" rows="2" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseNoExample" dataItem="articleIndefPlExample" rows="2" show="swNPArtCaseNoOrNoneAndNumberYesAndDefOnlyNotYes" kind="table"/>
        
        <prompt id="NPArtCaseNom" show="swNPArtCaseNom">Puesto que su lengua tiene un sistema de caso nominativo-acusativo, se deben tener sistemas de artículos distintos para modificar a los sujetos, a los objetos y a los posesivos.</prompt>
        
        <prompt id="NPArtCaseNomNumberNo" show="swNPArtCaseNomAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos aquí, cada uno en una linea separada:</prompt>  
-       <textBox id="NPArtCaseNomExample" dataItem="articleNomExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseNomExample" dataItem="articleNomExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseNom" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseNomExample" dataItem="articlePlNomExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseNomExample" dataItem="articlePlNomExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseNomNumberNo" show="swNPArtCaseNomAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseNomExample" dataItem="articleIndefNomExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseNomExample" dataItem="articleIndefNomExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseNom" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseNomExample" dataItem="articleIndefPlNomExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseNomExample" dataItem="articleIndefPlNomExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtCaseAcc" show="swNPArtCaseNomAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos directos que su lengua utiliza <span id="SingularSpan2" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseAccExample" dataItem="articleAccExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseAccExample" dataItem="articleAccExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseAcc" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos directos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseAccExample" dataItem="articlePlAccExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseAccExample" dataItem="articlePlAccExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseAcc" show="swNPArtCaseNomAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos directos que su lengua utiliza <span id="SingularSpan5" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefCaseAccExample" dataItem="articleIndefAccExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseAccExample" dataItem="articleIndefAccExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseAcc" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos directos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseAccExample" dataItem="articleIndefPlAccExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseAccExample" dataItem="articleIndefPlAccExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtCaseGen" show="swNPArtCaseNomAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan4" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseGenExample" dataItem="articleGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseGenExample" dataItem="articleGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseGen" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseGenExample" dataItem="articlePlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseGenExample" dataItem="articlePlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseGen" show="swNPArtCaseNomAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan3" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefCaseGenExample" dataItem="articleIndefGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseGenExample" dataItem="articleIndefGenExample" rows="2" show="swNPArtCaseNomAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseGen" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseGenExample" dataItem="articleIndefPlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseGenExample" dataItem="articleIndefPlGenExample" rows="2" show="swNPArtCaseNomAndNumberYesAndDefOnlyNotYes" kind="table"/>
  
           <prompt id="NPArtCaseErg" show="swNPArtCaseErg">Puesto que su lengua tiene un sistema de caso ergativo-absolutivo, se deben tener sistemas de artículos distintos para modificar a los sujetos de verbos transitivos, a los sujetos de verbos intransitivos y los objetos de verbos transitivos y a los posesivos.</prompt>
        <prompt id="NPArtCaseErgNumberNo" show="swNPArtCaseErgAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos de verbos transitivos que su lengua utiliza <span id="SingularSpan10" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseErgExample" dataItem="articleErgExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseErgExample" dataItem="articleErgExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseErg" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos de verbos transitivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtPlCaseErgExample" dataItem="articlePlErgExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseErgExample" dataItem="articlePlErgExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseErgNumberNo" show="swNPArtCaseErgAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos transitivos que su lengua utiliza <span id="SingularSpan11" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseErgExample" dataItem="articleIndefErgExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseErgExample" dataItem="articleIndefErgExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseErg" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos transitivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseErgExample" dataItem="articleIndefPlErgExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseErgExample" dataItem="articleIndefPlErgExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtCaseAbs" show="swNPArtCaseErgAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos que su lengua utiliza <span id="SingularSpan12" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseAbsExample" dataItem="articleAbsExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseAbsExample" dataItem="articleAbsExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseAbs" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseAbsExample" dataItem="articlePlAbsExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseAbsExample" dataItem="articlePlAbsExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseAbs" show="swNPArtCaseErgAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos que su lengua utiliza <span id="SingularSpan13" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefCaseAbsExample" dataItem="articleIndefAbsExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseAbsExample" dataItem="articleIndefAbsExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseAbs" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlCaseAbsExample" dataItem="articleIndefPlAbsExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseAbsExample" dataItem="articleIndefPlAbsExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtCaseErgGen" show="swNPArtCaseErgAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan14" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseErgGenExample" dataItem="articleErgGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseErgGenExample" dataItem="articleErgGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseErgGen" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseErgGenExample" dataItem="articleErgPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseErgGenExample" dataItem="articleErgPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseErgGen" show="swNPArtCaseErgAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan15" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefCaseErgGenExample" dataItem="articleErgIndefGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseErgGenExample" dataItem="articleErgIndefGenExample" rows="2" show="swNPArtCaseErgAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseErgGen" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseErgGenExample" dataItem="articleErgIndefPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseErgGenExample" dataItem="articleErgIndefPlGenExample" rows="2" show="swNPArtCaseErgAndNumberYesAndDefOnlyNotYes" kind="table"/>
        
        <prompt id="NPArtCaseSplitNom" show="swNPArtCaseSplit">Puesto que su lengua tiene un sistema de caso de ergatividad escindida, se deben tener sistemas de artículos distintos para modificar a los sujetos, a los objetos y a los posesivos siguiendo el sistema nominativo-acusativo, más algunos sistemas especiales que se utilizan en casos de ergatividad escindida.</prompt>
        <prompt id="NPArtCaseSplitNomAndNumberNo" show="swNPArtCaseSplitAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos que su lengua utiliza <span id="SingularSpan16" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>  
-       <textBox id="NPArtCaseSplitNomExample" dataItem="articleSplitNomExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitNomExample" dataItem="articleSplitNomExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseSplitNom" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">
           Escriba los artículos definidos que pueden presentarse en sujetos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtPlCaseSplitNomExample" dataItem="articleSplitPlNomExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitNomExample" dataItem="articleSplitPlNomExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseSplitNomAndNumberNo" show="swNPArtCaseSplitAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos que su lengua utiliza <span id="SingularSpan17" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitNomExample" dataItem="articleSplitIndefNomExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitNomExample" dataItem="articleSplitIndefNomExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseSplitNom" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">
           Escriba los artículos indefinidos que pueden presentarse en sujetos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitNomExample" dataItem="articleSplitIndefPlNomExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitNomExample" dataItem="articleSplitIndefPlNomExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtCaseSplitAcc" show="swNPArtCaseSplitAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos directos que su lengua utiliza <span id="SingularSpan18" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseSplitAccExample" dataItem="articleSplitAccExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitAccExample" dataItem="articleSplitAccExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseSplitAcc" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos directos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseSplitAccExample" dataItem="articleSplitPlAccExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitAccExample" dataItem="articleSplitPlAccExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseSplitAcc" show="swNPArtCaseSplitAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos directos que su lengua utiliza <span id="SingularSpan19" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitAccExample" dataItem="articleSplitIndefAccExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitAccExample" dataItem="articleSplitIndefAccExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseSplitAcc" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos directos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlCaseSplitAccExample" dataItem="articleSplitIndefPlAccExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitAccExample" dataItem="articleSplitIndefPlAccExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtCaseSplitGen" show="swNPArtCaseSplitAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan20" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtCaseSplitGenExample" dataItem="articleSplitGenExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitGenExample" dataItem="articleSplitGenExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseSplitGen" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseSplitGenExample" dataItem="articleSplitPlGenExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitGenExample" dataItem="articleSplitPlGenExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseSplitGen" show="swNPArtCaseSplitAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza <span id="SingularSpan21" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitGenExample" dataItem="articleSplitIndefGenExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitGenExample" dataItem="articleSplitIndefGenExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseSplitGen" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en posesivos que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlCaseSplitGenExample" dataItem="articleSplitIndefPlGenExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitGenExample" dataItem="articleSplitIndefPlGenExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes" kind="table"/>
        
        <prompt id="NPArtCaseSplitErg" show="swNPArtCaseSplitAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza <span id="SingularSpan22" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseSplitErgExample" dataItem="articleSplitErgExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitErgExample" dataItem="articleSplitErgExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseSplitErg" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlCaseSplitErgExample" dataItem="articleSplitPlErgExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitErgExample" dataItem="articleSplitPlErgExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseSplitErg" show="swNPArtCaseSplitAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza <span id="SingularSpan23" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitErgExample" dataItem="articleSplitIndefErgExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefCaseSplitErgExample" dataItem="articleSplitIndefErgExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlCaseSplitErg" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlCaseSplitErgExample" dataItem="articleSplitIndefPlErgExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitErgExample" dataItem="articleSplitIndefPlErgExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtCaseSplitAbs" show="swNPArtCaseSplitAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza <span id="SingularSpan24" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtCaseSplitAbsExample" dataItem="articleSplitAbsExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef"/>
+       <textBox id="NPArtCaseSplitAbsExample" dataItem="articleSplitAbsExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlCaseSplitAbs" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtPlCaseSplitAbsExample" dataItem="articleSplitPlAbsExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlCaseSplitAbsExample" dataItem="articleSplitPlAbsExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefCaseSplitAbs" show="swNPArtCaseSplitAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza <span id="SingularSpan25" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefCaseSplitAbsExample" dataItem="articleSplitIndefAbsExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes"/>       
+       <textBox id="NPArtIndefCaseSplitAbsExample" dataItem="articleSplitIndefAbsExample" rows="2" show="swNPArtCaseSplitAndDefOnlyNotYes" kind="table"/>       
        <prompt id="NPArtIndefPlCaseSplitAbs" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefPlCaseSplitAbsExample" dataItem="articleSplitIndefPlAbsExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlCaseSplitAbsExample" dataItem="articleSplitIndefPlAbsExample" rows="2" show="swNPArtCaseSplitAndNumberYesAndDefOnlyNotYes" kind="table"/>
        
      <prompt id="NPArtDativeSet" show="swNPCaseNotNoneAndArtCaseArt">
           <br/>También puede tener un sistema adicional de artículos dativos.  
        </prompt>
        <prompt id="NPArtDative" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan" show="swExperiencerYesDat">y sujetos-experimentadores </span>que su lengua utiliza <span id="SingularSpan26" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtDativeExample" dataItem="articleDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotIndef"/>
+       <textBox id="NPArtDativeExample" dataItem="articleDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtPlDative" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef">Escriba los artículos definidos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan2" show="swExperiencerYesDat">y sujetos-experimentadores </span> que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtPlDativeExample" dataItem="articlePlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef"/>
+       <textBox id="NPArtPlDativeExample" dataItem="articlePlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotIndef" kind="table"/>
        <prompt id="NPArtIndefDative" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotYes">Escriba los artículos indefinidos que pueden presentarse en objetos indirectos <span id="ExpereincerSpan1" show="swExperiencerYesDat">y sujetos-experimentadores </span>que su lengua utiliza <span id="SingularSpan27" show="swArtPlYes">para concordar con sustantivos singulares </span>aquí, cada uno en una linea separada:</prompt> 
-       <textBox id="NPArtIndefDativeExample" dataItem="articleIndefDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefDativeExample" dataItem="articleIndefDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDefOnlyNotYes" kind="table"/>
        <prompt id="NPArtIndefPlDative" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes">Escriba los artículos definidos que pueden presentarse en objetos indirectos <span id="ExpereincerSpan3" show="swExperiencerYesDat">y sujetos-experimentadores </span>que su lengua utiliza para concordar con sustantivos plurales aquí, cada uno en una linea separada:</prompt>
-       <textBox id="NPArtIndefPlDativeExample" dataItem="articleIndefPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes"/>
+       <textBox id="NPArtIndefPlDativeExample" dataItem="articleIndefPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndArtPlYesAndDefOnlyNotYes" kind="table"/>
        
        <instruction id="NPArtCaseDativeInstruction" show="swNPCaseNotNoneAndArtCaseArt">
           <br/>In the lexicon, add the feature <feature>dative</feature> to all the articles that occur in indirect objects or Experiencer subjects.</instruction>
@@ -194,158 +194,158 @@
        <prompt id="NPDemProximalCaseNone" show="swNPDemCaseNoOrNone">Puesto que su lengua no indica el caso en los demostrativos, se debe tener solamente un sistema de demostrativos que pueden utilizarse en cualquier posición en la oración.</prompt>
        
        <prompt id="NPDemProximalCaseNo" show="swNPDemCaseNoOrNone">Escriba los demostrativos que se utilizan con sustantivos <span id="SingularSpan50" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemProximalCaseNoExample" dataItem="demProximalExample" rows="2" show="swNPDemCaseNoOrNone"/>
+       <textBox id="NPDemProximalCaseNoExample" dataItem="demProximalExample" rows="2" show="swNPDemCaseNoOrNone" kind="table"/>
        <prompt id="NPDemProximalPlCaseNo" show="swNPDemCaseNoOrNoneAndNumberYes">Escriba los demostrativos que se utilizan con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemProximalPlCaseNoExample" dataItem="demProximalPlExample" rows="2" show="swNPDemCaseNoOrNoneAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseNoExample" dataItem="demProximalPlExample" rows="2" show="swNPDemCaseNoOrNoneAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseNo" show="swNPDemCaseNoOrNone">Escriba los demostrativos que se utilizan con sustantivos <span id="SingularSpan51" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseNoExample" dataItem="demMedialExample" rows="2" show="swNPDemCaseNoOrNone"/>
+       <textBox id="NPDemMedialCaseNoExample" dataItem="demMedialExample" rows="2" show="swNPDemCaseNoOrNone" kind="table"/>
        <prompt id="NPDemMedialPlCaseNo" show="swNPDemCaseNoOrNoneAndNumberYes">Escriba los demostrativos que se utilizan con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseNoExample" dataItem="demMedialPlExample" rows="2" show="swNPDemCaseNoOrNoneAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseNoExample" dataItem="demMedialPlExample" rows="2" show="swNPDemCaseNoOrNoneAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseNo" show="swNPDemCaseNoOrNone">Escriba los demostrativos que se utilizan con sustantivos <span id="SingularSpan52" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseNoExample" dataItem="demDistalExample" rows="2" show="swNPDemCaseNoOrNone"/>
+       <textBox id="NPDemDistalCaseNoExample" dataItem="demDistalExample" rows="2" show="swNPDemCaseNoOrNone" kind="table"/>
        <prompt id="NPDemDistalPlCaseNo" show="swNPDemCaseNoOrNoneAndNumberYes">Escriba los demostrativos que se utilizan con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseNoExample" dataItem="demDistalPlExample" rows="2" show="swNPDemCaseNoOrNoneAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseNoExample" dataItem="demDistalPlExample" rows="2" show="swNPDemCaseNoOrNoneAndNumberYes" kind="table"/>
        
        <prompt id="NPDemProximalCaseNom" show="swNPDemCaseNom">Puesto que su lengua tiene un sistema de caso nominativo-acusativo, se deben tener sistemas distintos de demostrativos para modificar a los sujetos, a los objetos y a los posesivos.<br/><br/>
           Escriba los demostrativos que se utilizan en sujetos <span id="SingularSpan53" show="swDemPlYes">singulares </span>con sustantivos que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>  
-       <textBox id="NPDemProximalCaseNomExample" dataItem="demProximalNomExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemProximalCaseNomExample" dataItem="demProximalNomExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemProximalPlCaseNom" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en sujetos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>  
-       <textBox id="NPDemProximalPlCaseNomExample" dataItem="demProximalPlNomExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseNomExample" dataItem="demProximalPlNomExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        <prompt id="NPDemProximalCaseAcc" show="swNPDemCaseNom">Escriba los demostrativos que se utilizan en objetos directos con sustantivos <span id="SingularSpan54" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseAccExample" dataItem="demProximalAccExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemProximalCaseAccExample" dataItem="demProximalAccExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemProximalPlCaseAcc" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en objetos directos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalPlCaseAccExample" dataItem="demProximalPlAccExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseAccExample" dataItem="demProximalPlAccExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        <prompt id="NPDemProximalCaseGen" show="swNPDemCaseNom">Escriba los demostrativos que se utilizan en posesivos con sustantivos <span id="SingularSpan55" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseGenExample" dataItem="demProximalGenExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemProximalCaseGenExample" dataItem="demProximalGenExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemProximalPlCaseGen" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en posesivos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalPlCaseGenExample" dataItem="demProximalPlGenExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseGenExample" dataItem="demProximalPlGenExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseNom" show="swNPDemCaseNom">Escriba los demostrativos que se utilizan en sujetos con sustantivos <span id="SingularSpan56" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseNomExample" dataItem="demMedialNomExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemMedialCaseNomExample" dataItem="demMedialNomExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemMedialPlCaseNom" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en sujetos con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseNomExample" dataItem="demMedialPlNomExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseNomExample" dataItem="demMedialPlNomExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseAcc" show="swNPDemCaseNom">Escriba los demostrativos que se utilizan en objetos directos con sustantivos <span id="SingularSpan57" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseAccExample" dataItem="demMedialAccExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemMedialCaseAccExample" dataItem="demMedialAccExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemMedialPlCaseAcc" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en objetos directos con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseAccExample" dataItem="demMedialPlAccExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseAccExample" dataItem="demMedialPlAccExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseGen" show="swNPDemCaseNom">Escriba los demostrativos que se utilizan en posesivos con sustantivos <span id="SingularSpan58" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseGenExample" dataItem="demMedialGenExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemMedialCaseGenExample" dataItem="demMedialGenExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemMedialPlCaseGen" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en posesivos con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseGenExample" dataItem="demMedialPlGenExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseGenExample" dataItem="demMedialPlGenExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseNom" show="swNPDemCaseNom">Escriba los demostrativos que se utilizan en sujetos con sustantivos <span id="SingularSpan59" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseNomExample" dataItem="demDistalNomExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemDistalCaseNomExample" dataItem="demDistalNomExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemDistalPlCaseNom" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en sujetos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseNomExample" dataItem="demDistalPlNomExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseNomExample" dataItem="demDistalPlNomExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseAcc" show="swNPDemCaseNom">Escriba los demostrativos que se utilizan en objetos directos con sustantivos <span id="SingularSpan60" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseAccExample" dataItem="demDistalAccExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemDistalCaseAccExample" dataItem="demDistalAccExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemDistalPlCaseAcc" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en objetos directos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseAccExample" dataItem="demDistalPlAccExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseAccExample" dataItem="demDistalPlAccExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseGen" show="swNPDemCaseNom">Escriba los demostrativos que se utilizan en posesivos con sustantivos <span id="SingularSpan61" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseGenExample" dataItem="demDistalGenExample" rows="2" show="swNPDemCaseNom"/>
+       <textBox id="NPDemDistalCaseGenExample" dataItem="demDistalGenExample" rows="2" show="swNPDemCaseNom" kind="table"/>
        <prompt id="NPDemDistalPlCaseGen" show="swNPDemCaseNomAndNumberYes">Escriba los demostrativos que se utilizan en posesivos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseGenExample" dataItem="demDistalPlGenExample" rows="2" show="swNPDemCaseNomAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseGenExample" dataItem="demDistalPlGenExample" rows="2" show="swNPDemCaseNomAndNumberYes" kind="table"/>
        
        <prompt id="NPDemProximalCaseErg" show="swNPDemCaseErg">Puesto que su lengua tiene un sistema de caso ergativo-absolutivo, se deben tener sistemas de demostrativos distintos para modificar a los sujetos de verbos transitivos, a los sujetos de verbos intransitivos y los objetos de verbos transitivos y a los posesivos.<br/><br/>
-          Escriba los demostrativos que se utilizan en sujetos de verbos transitivos con sustantivos que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseErgExample" dataItem="demProximalErgExample" rows="2" show="swNPDemCaseErg"/>
+          Escriba los demostrativos que se utilizan en sujetos de verbos transitivos con sustantivos <span id="SingularSpan62a" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
+       <textBox id="NPDemProximalCaseErgExample" dataItem="demProximalErgExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemProximalPlCaseErg" show="swNPDemCaseErgAndNumberYes">
           Escriba los demostrativos que se utilizan en sujetos de verbos transitivos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemProximalPlCaseErgExample" dataItem="demProximalPlErgExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseErgExample" dataItem="demProximalPlErgExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        <prompt id="NPDemProximalCaseAbs" show="swNPDemCaseErg">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos con sustantivos <span id="SingularSpan62" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseAbsExample" dataItem="demProximalAbsExample" rows="2" show="swNPDemCaseErg"/>
+       <textBox id="NPDemProximalCaseAbsExample" dataItem="demProximalAbsExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemProximalPlCaseAbs" show="swNPDemCaseErgAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalPlCaseAbsExample" dataItem="demProximalPlAbsExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseAbsExample" dataItem="demProximalPlAbsExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        <prompt id="NPDemProximalCaseErgGen" show="swNPDemCaseErg">Escriba los demostrativos que se utilizan en posesivos con sustantivos <span id="SingularSpan63" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseErgGenExample" dataItem="demErgProximalGenExample" rows="2" show="swNPDemCaseErg"/>
+       <textBox id="NPDemProximalCaseErgGenExample" dataItem="demErgProximalGenExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemProximalPlCaseErgGen" show="swNPDemCaseErgAndNumberYes">Escriba los demostrativos que se utilizan en posesivos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalPlCaseErgGenExample" dataItem="demErgProximalPlGenExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseErgGenExample" dataItem="demErgProximalPlGenExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseErg" show="swNPDemCaseErg">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos con sustantivos <span id="SingularSpan64" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseErgExample" dataItem="demMedialErgExample" rows="2" show="swNPDemCaseErg"/>
+       <textBox id="NPDemMedialCaseErgExample" dataItem="demMedialErgExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemMedialPlCaseErg" show="swNPDemCaseErgAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseErgExample" dataItem="demMedialPlErgExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseErgExample" dataItem="demMedialPlErgExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseAbs" show="swNPDemCaseErg">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos con sustantivos <span id="SingularSpan65" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseAbsExample" dataItem="demMedialAbsExample" rows="2" show="swNPDemCaseErg"/>
+       <textBox id="NPDemMedialCaseAbsExample" dataItem="demMedialAbsExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemMedialPlCaseAbs" show="swNPDemCaseErgAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseAbsExample" dataItem="demMedialPlAbsExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseAbsExample" dataItem="demMedialPlAbsExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseErgGen" show="swNPDemCaseErg">Escriba los demostrativos que se utilizan en posesivos con sustantivos <span id="SingularSpan66" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseErgGenExample" dataItem="demErgMedialGenExample" rows="2" show="swNPDemCaseErg"/>
+       <textBox id="NPDemMedialCaseErgGenExample" dataItem="demErgMedialGenExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemMedialPlCaseErgGen" show="swNPDemCaseErgAndNumberYes">Escriba los demostrativos que se utilizan en posesivos con sustantivos plurales que están lejos del hablante  pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseErgGenExample" dataItem="demErgMedialPlGenExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseErgGenExample" dataItem="demErgMedialPlGenExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseErg" show="swNPDemCaseErg">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos con sustantivos <span id="SingularSpan67" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseErgExample" dataItem="demDistalErgExample" rows="2" show="swNPDemCaseErg"/>
+       <textBox id="NPDemDistalCaseErgExample" dataItem="demDistalErgExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemDistalPlCaseErg" show="swNPDemCaseErgAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseErgExample" dataItem="demDistalPlErgExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseErgExample" dataItem="demDistalPlErgExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseAbs" show="swNPDemCaseErg">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos con sustantivos <span id="SingularSpan68" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseAbsExample" dataItem="demDistalAbsExample" rows="2" show="swNPDemCaseErg"/>
+       <textBox id="NPDemDistalCaseAbsExample" dataItem="demDistalAbsExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemDistalPlCaseAbs" show="swNPDemCaseErgAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemDistalPlCaseAbsExample" dataItem="demDistalPlAbsExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseAbsExample" dataItem="demDistalPlAbsExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseErgGen" show="swNPDemCaseErg">Escriba los demostrativos que se utilizan en posesivos con sustantivos <span id="SingularSpan69" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseErgGenExample" dataItem="demErgDistalGenExample" rows="2" show="swNPDemCaseErg"/>
+       <textBox id="NPDemDistalCaseErgGenExample" dataItem="demErgDistalGenExample" rows="2" show="swNPDemCaseErg" kind="table"/>
        <prompt id="NPDemDistalPlCaseErgGen" show="swNPDemCaseErgAndNumberYes">Escriba los demostrativos que se utilizan en posesivos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseErgGenExample" dataItem="demErgDistalPlGenExample" rows="2" show="swNPDemCaseErgAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseErgGenExample" dataItem="demErgDistalPlGenExample" rows="2" show="swNPDemCaseErgAndNumberYes" kind="table"/>
        
        <prompt id="NPDemProximalCaseSplitNom" show="swNPDemCaseSplit">Puesto que su lengua tiene un sistema de caso de ergatividad escindida, se deben tener sistemas de demostrativos distintos para modificar a los sujetos, a los objetos y a los posesivos siguiendo el sistema nominativo-acusativo, más algunos sistemas especiales que se utilizan en casos de ergatividad escindida.<br/><br/>
           Escriba los demostrativos que normalmente se presentan en sujetos con sustantivos <span id="SingularSpan70" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseSplitNomExample" dataItem="demSplitProximalNomExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemProximalCaseSplitNomExample" dataItem="demSplitProximalNomExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemProximalPlCaseSplitNom" show="swNPDemCaseSplitAndNumberYes">
           Escriba los demostrativos que normalmente se presentan en sujetos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemProximalPlCaseSplitNomExample" dataItem="demSplitProximalPlNomExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseSplitNomExample" dataItem="demSplitProximalPlNomExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemProximalCaseSplitAcc" show="swNPDemCaseSplit">Escriba los demostrativos que normalmente se presentan en objetos directos con sustantivos <span id="SingularSpan71" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseSplitAccExample" dataItem="demSplitProximalAccExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemProximalCaseSplitAccExample" dataItem="demSplitProximalAccExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemProximalPlCaseSplitAcc" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que normalmente se presentan en objetos directos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalPlCaseSplitAccExample" dataItem="demSplitProximalPlAccExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseSplitAccExample" dataItem="demSplitProximalPlAccExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemProximalCaseSplitGen" show="swNPDemCaseSplit">Escriba los demostrativos que normalmente se presentan en posesivos con sustantivos <span id="SingularSpan72" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseSplitGenExample" dataItem="demSplitProximalGenExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemProximalCaseSplitGenExample" dataItem="demSplitProximalGenExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemProximalPlCaseSplitGen" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que normalmente se presentan en posesivos con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalPlCaseSplitGenExample" dataItem="demSplitProximalPlGenExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseSplitGenExample" dataItem="demSplitProximalPlGenExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseSplitNom" show="swNPDemCaseSplit">Escriba los demostrativos que normalmente se presentan en sujetos con sustantivos <span id="SingularSpan73" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseSplitNomExample" dataItem="demSplitMedialNomExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemMedialCaseSplitNomExample" dataItem="demSplitMedialNomExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemMedialPlCaseSplitNom" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que normalmente se presentan en sujetos con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseSplitNomExample" dataItem="demSplitMedialPlNomExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseSplitNomExample" dataItem="demSplitMedialPlNomExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseSplitAcc" show="swNPDemCaseSplit">Escriba los demostrativos que normalmente se presentan en objetos directos con sustantivos <span id="SingularSpan74" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseSplitAccExample" dataItem="demSplitMedialAccExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemMedialCaseSplitAccExample" dataItem="demSplitMedialAccExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemMedialPlCaseSplitAcc" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que normalmente se presentan en objetos directos con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseSplitAccExample" dataItem="demSplitMedialPlAccExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseSplitAccExample" dataItem="demSplitMedialPlAccExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseSplitGen" show="swNPDemCaseSplit">Escriba los demostrativos que normalmente se presentan en posesivos con sustantivos <span id="SingularSpan75" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseSplitGenExample" dataItem="demSplitMedialGenExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemMedialCaseSplitGenExample" dataItem="demSplitMedialGenExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemMedialPlCaseSplitGen" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que normalmente se presentan en posesivos con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseSplitGenExample" dataItem="demSplitMedialPlGenExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseSplitGenExample" dataItem="demSplitMedialPlGenExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseSplitNom" show="swNPDemCaseSplit">Escriba los demostrativos que normalmente se presentan en sujetos con sustantivos <span id="SingularSpan76" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseSplitNomExample" dataItem="demSplitDistalNomExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemDistalCaseSplitNomExample" dataItem="demSplitDistalNomExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemDistalPlCaseSplitNom" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que normalmente se presentan en sujetos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseSplitNomExample" dataItem="demSplitDistalPlNomExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseSplitNomExample" dataItem="demSplitDistalPlNomExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseSplitAcc" show="swNPDemCaseSplit">Escriba los demostrativos que normalmente se presentan en objetos directos con sustantivos <span id="SingularSpan77" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseSplitAccExample" dataItem="demSplitDistalAccExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemDistalCaseSplitAccExample" dataItem="demSplitDistalAccExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemDistalPlCaseSplitAcc" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que normalmente se presentan en objetos directos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseSplitAccExample" dataItem="demSplitDistalPlAccExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseSplitAccExample" dataItem="demSplitDistalPlAccExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseSplitGen" show="swNPDemCaseSplit">Escriba los demostrativos que normalmente se presentan en posesivos con sustantivos <span id="SingularSpan78" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseSplitGenExample" dataItem="demSplitDistalGenExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemDistalCaseSplitGenExample" dataItem="demSplitDistalGenExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemDistalPlCaseSplitGen" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que normalmente se presentan en posesivos con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseSplitGenExample" dataItem="demSplitDistalPlGenExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseSplitGenExample" dataItem="demSplitDistalPlGenExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        
        <prompt id="NPDemProximalCaseSplitErg" show="swNPDemCaseSplit">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos en los casos de ergatividad escindida con sustantivos <span id="SingularSpan80" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemProximalCaseSplitErgExample" dataItem="demSplitProximalErgExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemProximalCaseSplitErgExample" dataItem="demSplitProximalErgExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemProximalPlCaseSplitErg" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos en los casos de ergatividad escindida con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemProximalPlCaseSplitErgExample" dataItem="demSplitProximalPlErgExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseSplitErgExample" dataItem="demSplitProximalPlErgExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemProximalCaseSplitAbs" show="swNPDemCaseSplit">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida con sustantivos <span id="SingularSpan81" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalCaseSplitAbsExample" dataItem="demSplitProximalAbsExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemProximalCaseSplitAbsExample" dataItem="demSplitProximalAbsExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemProximalPlCaseSplitAbs" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalPlCaseSplitAbsExample" dataItem="demSplitProximalPlAbsExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemProximalPlCaseSplitAbsExample" dataItem="demSplitProximalPlAbsExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseSplitErg" show="swNPDemCaseSplit">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos en los casos de ergatividad escindida con sustantivos <span id="SingularSpan82" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseSplitErgExample" dataItem="demSplitMedialErgExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemMedialCaseSplitErgExample" dataItem="demSplitMedialErgExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemMedialPlCaseSplitErg" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos en los casos de ergatividad escindida con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemMedialPlCaseSplitErgExample" dataItem="demSplitMedialPlErgExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseSplitErgExample" dataItem="demSplitMedialPlErgExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemMedialCaseSplitAbs" show="swNPDemCaseSplit">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida con sustantivos <span id="SingularSpan83" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialCaseSplitAbsExample" dataItem="demSplitMedialAbsExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemMedialCaseSplitAbsExample" dataItem="demSplitMedialAbsExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemMedialPlCaseSplitAbs" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlCaseSplitAbsExample" dataItem="demSplitMedialPlAbsExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemMedialPlCaseSplitAbsExample" dataItem="demSplitMedialPlAbsExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseSplitErg" show="swNPDemCaseSplit">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos en los casos de ergatividad escindida con sustantivos <span id="SingularSpan84" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseSplitErgExample" dataItem="demSplitDistalErgExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemDistalCaseSplitErgExample" dataItem="demSplitDistalErgExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemDistalPlCaseSplitErg" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos transitivos en los casos de ergatividad escindida con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemDistalPlCaseSplitErgExample" dataItem="demSplitDistalPlErgExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseSplitErgExample" dataItem="demSplitDistalPlErgExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        <prompt id="NPDemDistalCaseSplitAbs" show="swNPDemCaseSplit">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida con sustantivos <span id="SingularSpan85" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalCaseSplitAbsExample" dataItem="demSplitDistalAbsExample" rows="2" show="swNPDemCaseSplit"/>
+       <textBox id="NPDemDistalCaseSplitAbsExample" dataItem="demSplitDistalAbsExample" rows="2" show="swNPDemCaseSplit" kind="table"/>
        <prompt id="NPDemDistalPlCaseSplitAbs" show="swNPDemCaseSplitAndNumberYes">Escriba los demostrativos que se utilizan en sujetos de verbos intransitivos u objetos de verbos transitivos en los casos de ergatividad escindida con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemDistalPlCaseSplitAbsExample" dataItem="demSplitDistalPlAbsExample" rows="2" show="swNPDemCaseSplitAndNumberYes"/>
+       <textBox id="NPDemDistalPlCaseSplitAbsExample" dataItem="demSplitDistalPlAbsExample" rows="2" show="swNPDemCaseSplitAndNumberYes" kind="table"/>
        
         <instruction id="NPArtCaseNomAccInstruction2" show="swNPCaseNom">Since your language has a nominative-accusative case system, in the lexicon:
 <ul>
@@ -401,17 +401,17 @@
           <br/>También puede tener un sistema adicional de demostrativos dativos.   
        </prompt>
        <prompt id="NPDemProximalDative" show="swNPCaseNotNoneAndArtCase">Escriba los demostrativos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan30" show="swExperiencerYesDat">y sujetos-experimentadores </span>que se utilizan con sustantivos <span id="SingularSpan86" show="swDemPlYes">singulares </span>que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalDativeExample" dataItem="demProximalDatExample" rows="2" show="swNPCaseNotNoneAndArtCase"/>
+       <textBox id="NPDemProximalDativeExample" dataItem="demProximalDatExample" rows="2" show="swNPCaseNotNoneAndArtCase" kind="table"/>
        <prompt id="NPDemProximalPlDative" show="swNPCaseNotNoneAndArtCaseAndDemPlYes">Escriba los demostrativos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan33" show="swExperiencerYesDat">y sujetos-experimentadores </span>que se utilizan con sustantivos plurales que están más cercanos del hablante (formas próxima) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemProximalPlDativeExample" dataItem="demProximalPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDemPlYes"/>
+       <textBox id="NPDemProximalPlDativeExample" dataItem="demProximalPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDemPlYes" kind="table"/>
        <prompt id="NPDemMedialDative" show="swNPCaseNotNoneAndArtCase">Escriba los demostrativos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan31" show="swExperiencerYesDat">y sujetos-experimentadores </span>que se utilizan con sustantivos <span id="SingularSpan87" show="swDemPlYes">singulares </span>que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemMedialDativeExample" dataItem="demMedialDatExample" rows="2" show="swNPCaseNotNoneAndArtCase"/>
+       <textBox id="NPDemMedialDativeExample" dataItem="demMedialDatExample" rows="2" show="swNPCaseNotNoneAndArtCase" kind="table"/>
        <prompt id="NPDemMedialPlDative" show="swNPCaseNotNoneAndArtCaseAndDemPlYes">Escriba los demostrativos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan34" show="swExperiencerYesDat">y sujetos-experimentadores </span>que se utilizan con sustantivos plurales que están lejos del hablante pero en vista (forma intermedia) aquí, cada uno en una línea separada:</prompt> 
-       <textBox id="NPDemMedialPlDativeExample" dataItem="demMedialPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDemPlYes"/>
+       <textBox id="NPDemMedialPlDativeExample" dataItem="demMedialPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDemPlYes" kind="table"/>
        <prompt id="NPDemDistalDative" show="swNPCaseNotNoneAndArtCase">Escriba los demostrativos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan32" show="swExperiencerYesDat">y sujetos-experimentadores </span>que se utilizan con sustantivos <span id="SingularSpan88" show="swDemPlYes">singulares </span>que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemDistalDativeExample" dataItem="demDistalDatExample" rows="2" show="swNPCaseNotNoneAndArtCase"/>     
+       <textBox id="NPDemDistalDativeExample" dataItem="demDistalDatExample" rows="2" show="swNPCaseNotNoneAndArtCase" kind="table"/>     
        <prompt id="NPDemDistalPlDative" show="swNPCaseNotNoneAndArtCaseAndDemPlYes">Escriba los demostrativos que pueden presentarse en objetos indirectos <span id="ExperiencerSpan35" show="swExperiencerYesDat">y sujetos-experimentadores </span>que se utilizan con sustantivos plurales que están más alejado del hablante o invisible (formas distante) aquí, cada uno en una línea separada:</prompt>
-       <textBox id="NPDemDistalPlDativeExample" dataItem="demDistalPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDemPlYes"/>
+       <textBox id="NPDemDistalPlDativeExample" dataItem="demDistalPlDatExample" rows="2" show="swNPCaseNotNoneAndArtCaseAndDemPlYes" kind="table"/>
           
        <instruction id="NPDemCaseDativeInstruction" show="swNPCaseNotNoneAndArtCaseDem">
           <br/>In the lexicon, add the feature <feature>dative</feature> to all the demonstratives that occur in indirect objects or Experiencer subjects.</instruction>

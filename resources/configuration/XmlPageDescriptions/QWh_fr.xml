@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="QWh" count="11.4">
-    <title level="2">Questions – Syntagmes Interrogatifs</title>
-    <introduction>Les questions de contenu diffèrent des questions oui/non en ce sens qu’elles contiennent  un mot ou un syntagme interrogatif, tel <example>qui</example>, <example>quoi</example>, <example>pourquoi</example>, <example>où</example>, <example>quand</example>, <example>comment</example> et <example>combien</example>.  Dans quelques langues, certains ou tous ces interrogatifs sont attachés à un autre mot.</introduction>
+    <title level="2">Interrogations – Syntagmes interrogatifs</title>
+    <introduction>Les questions de contenu diffèrent des questions Oui/Non en ce sens qu’elles contiennent un mot ou un syntagme interrogatif, tel <example>que</example>, <example>qu’</example>, <example>qui</example>, <example>pourquoi</example>, <example>où</example>, <example>quand</example>, <example>comment</example> et <example>combien</example>.  Dans quelques langues, certains ou tous ces interrogatifs sont rattachés à un autre mot.</introduction>
     <form section="q">
-        <prompt>Pour chacune des zones de texte suivants, si votre langue exprime l’interrogatif par le moyen d’un affixe ou clitique, entrez-le dans la zone de texte avec un trait d’union ou un signe d’égalité avant ou après pour indiquer si c’est un préfixe ou un proclitique, ou un suffixe ou un enclitique.  Chaque interrogatif devrait être entré sur une ligne individuelle.</prompt>
-        <prompt>Entrez ici la manière dont votre langue exprime « qui »:</prompt>
-        <textBox id="QWho" dataItem="who" rows="3"/>
+        <prompt>Pour chacune des boîtes suivantes, si votre langue exprime l’interrogatif au moyen d’un affixe ou clitique, saisissez-le dans la boîte avec un trait d’union ou un signe d’égalité avant si c'est un préfixe ou un proclitique, ou après si c’est un suffixe ou un enclitique.  Chaque terme devrait être saisi sur une ligne individuelle.</prompt>
+        <prompt>Saisissez ici la manière dont votre langue exprime « qui » :</prompt>
+        <textBox id="QWho" dataItem="who" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « quoi »:</prompt>
-        <textBox id="QWhat" dataItem="what" rows="3"/>
+        <prompt>Saisissez ici la manière dont votre langue exprime « que / qu’  » :</prompt>
+        <textBox id="QWhat" dataItem="what" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « pourquoi »:</prompt>
-        <textBox id="QWhy" dataItem="why" rows="3"/>
+        <prompt>Saisissez ici la manière dont votre langue exprime « pourquoi » :</prompt>
+        <textBox id="QWhy" dataItem="why" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « où »:</prompt>
-        <textBox id="QWhere" dataItem="where" rows="3"/>
+        <prompt>Saisissez ici la manière dont votre langue exprime « où » :</prompt>
+        <textBox id="QWhere" dataItem="where" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « quand »:</prompt>
-        <textBox id="QWhen" dataItem="when" rows="3"/>
+        <prompt>Saisissez ici la manière dont votre langue exprime « quand » :</prompt>
+        <textBox id="QWhen" dataItem="when" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « comment »:</prompt>
-        <textBox id="QHow" dataItem="how" rows="3"/>
+        <prompt>Saisissez ici la manière dont votre langue exprime « comment » :</prompt>
+        <textBox id="QHow" dataItem="how" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « combien »:</prompt>
-        <textBox id="QHowMany" dataItem="howMany" rows="3"/>
+        <prompt>Saisissez ici la manière dont votre langue exprime « combien » :</prompt>
+        <textBox id="QHowMany" dataItem="howMany" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « quel »:</prompt>
-        <textBox id="QWhich" dataItem="which" rows="3"/>
+        <prompt>Saisissez ici la manière dont votre langue exprime « quel / lequel » :</prompt>
+        <textBox id="QWhich" dataItem="which" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici la manière dont votre langue exprime « de qui »:</prompt>
-        <textBox id="QWhose" dataItem="whose" rows="3"/>
+        <prompt>Saisissez ici la manière dont votre langue exprime « de qui » :</prompt>
+        <textBox id="QWhose" dataItem="whose" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici tout autre interrogatif utilisé par votre langue:</prompt>
-        <textBox id="QOther" dataItem="other" rows="3"/>
+        <prompt>Saisissez ici tout autre interrogatif utilisé par votre langue :</prompt>
+        <textBox id="QOther" dataItem="other" rows="3" kind="table"/>
         <br/>
-        <introduction>Parmi les exemples de mots interrogatifs ci-dessus, la plupart se trouvent seuls comme pronoms ou adverbes, mais <example>comment</example> peut être soit un adverbe de manière par lui-même soit un mot de degré qui modifie un adjectif comme en anglais <example>how big  « combien grand / de quelle taille »</example>; <example>what  « quoi »</example> peut être soit un pronom par lui-même soit un démonstratif modifiant un nom, comme dans <example>what books  « quels livres »</example>; <example>quel/ quels</example> ne se trouve jamais seul mais modifie toujours un nom comme un démonstratif, tel que <example>quel garçon</example>; <example>combien</example> est un quantificateur comme dans <example>combien d’enfants</example> ou <example>combien d’argent</example>; et <example>whose  « de qui »</example> peut soit se trouver seul comme pronom possessif ou il peut remplir la position de possession dans un syntagme nominal comme dans <example>whose toys  « de qui sont ces jouets / ces jouets sont à qui »</example>.</introduction>
+        <introduction>Parmi les exemples de mots interrogatifs ci-dessus, la plupart se trouvent seuls comme pronoms ou adverbes, mais certains peuvent aussi modifier un nom et d'autres peuvent aussi modifier un adjectif.</introduction>
         <instruction id="QContInstruction">In the lexicon, mark all of the interrogative words or affixes with the feature <feature>wh</feature>.  Also, add the feature <feature>makeQ</feature> to the word meaning  ‘how many / how much’ so that it will be treated as a quantifier.
 <br/>
             <br/>
@@ -73,31 +73,31 @@
   <br/><br/>
        <radioGroup id="QContWhDemPosTable" show="swDemPosEither">
             <groupName dataItem="whDemPos" default="unknown" position="yesSpec">RQContWhDemPos</groupName>
-           <prompt>Votre langue permet des démonstratifs d’un côté ou de l’autre du nom. Où les mots qui signifient « quel » se trouvent-ils?</prompt>
+           <prompt>Votre langue permet des démonstratifs d’un côté ou de l’autre du nom. Où les mots qui signifient « que », « qu’ » ou « quel » se trouvent-ils ?</prompt>
            <radio id="QContWhDemPosBefore" dataValue="before">Toujours avant le nom même si un autre déterminant se trouve après le nom</radio>
            <radio id="QContWhDemPosAfter" dataValue="after">Toujours après le nom même si un autre déterminant se trouve avant nom</radio>
-           <radio id="QContWhDemPosAgree" dataValue="agree">D’un côté ou de l’autre, mais quand il y a un démonstratif des deux côtés à la fois, ils doivent s’accorder (par exemple ou les deux doivent être des mots interrogatifs ou bien ni l’un ni l’autre)</radio>
+           <radio id="QContWhDemPosAgree" dataValue="agree">D’un côté ou de l’autre, mais quand il y a un démonstratif des deux côtés à la fois, ils doivent s’accorder (par exemple ou les deux doivent être des mots interrogatifs ou ne l’être ni l’un ni l’autre)</radio>
         </radioGroup>
         <radioGroup id="QContWhArtPosTable" show="swArtOnlyPosEither">
             <groupName dataItem="whArtPos" default="unknown" position="yesSpec">RQContWhArtPos</groupName>
-            <prompt>Votre langue permet des articles des deux côtés du nom. Où les mots qui signifient « quel » se trouvent-ils?</prompt>
+            <prompt>Votre langue permet des articles des deux côtés du nom. Où les mots qui signifient « que », « qu’ » ou « quel » se trouvent-ils ?</prompt>
             <radio id="QContWhArtPosBefore" dataValue="before">Toujours avant le nom même si un autre article se trouve après le nom</radio>
             <radio id="QContWhArtPosAfter" dataValue="after">Toujours après le nom même si un autre article se trouve avant le nom</radio>
-            <radio id="QContWhArtPosAgree" dataValue="agree">D’un côté ou de l’autre, mais quand il y a un article des deux côtés à la fois, ils doivent s’accorder (par exemple ou les deux doivent être des mots interrogatifs ou bien ni l’un ni l’autre)</radio>
+            <radio id="QContWhArtPosAgree" dataValue="agree">D’un côté ou de l’autre, mais quand il y a un article des deux côtés à la fois, ils doivent s’accorder (par exemple ou les deux doivent être des mots interrogatifs ou ne l’être ni l’un ni l’autre)</radio>
         </radioGroup>
         <radioGroup id="QContWhDegAdjPosTable" show="swDegAdjPosEither">
             <groupName dataItem="whDegAdjPos" default="unknown" position="yesSpec">RQContWhDegAdjPos</groupName>
-            <prompt>Votre langue permet des mots de degré des deux côtés de l’adjectif. Où le mot qui signifie « comment » (ou tout autre mot interrogatif qui modifie les adjectifs) peut se trouver?</prompt>
+            <prompt>Votre langue permet des mots de degré des deux côtés de l’adjectif. Où le mot qui signifie « comment » (ou tout autre mot interrogatif qui modifie les adjectifs) peut se trouver ?</prompt>
             <radio id="QContWhDegAdjPosBefore" dataValue="before">Toujours avant l’adjectif même si un autre mot de degré se trouve après l’adjectif</radio>
             <radio id="QContWhDegAdjPosAfter" dataValue="after">Toujours après l’adjectif même si un autre mot de degré se trouve avant l’adjectif</radio>
-            <radio id="QContWhDegAdjPosAgree" dataValue="agree">D’un côté ou de l’autre, mais quand il y a un mot de degré des deux côtés à la fois, ils doivent s’accorder (par exemple ou les deux doivent être des mots interrogatifs ou bien ni l’un ni l’autre)</radio>
+            <radio id="QContWhDegAdjPosAgree" dataValue="agree">D’un côté ou de l’autre, mais quand il y a un mot de degré des deux côtés à la fois, ils doivent s’accorder (par exemple ou les deux doivent être des mots interrogatifs ou ne l’être ni l’un ni l’autre)</radio>
         </radioGroup>
         <radioGroup id="QContWhDegQPosTable" show="swDegQPosEither">
             <groupName dataItem="whDegQPos" default="unknown" position="yesSpec">RQContWhDegQPos</groupName>
-            <prompt>Votre langue permet des mots de degré des deux côtés du quantificateur. Où le mot qui signifie « comment » (ou tout autre mot interrogatif qui modifie les quantificateurs) peut se trouver?</prompt>
-            <radio id="QContWhDegQPosBefore" dataValue="before">Toujours avant le quantificateur même si un autre mot de degré se trouve après le quantificateur</radio>
-            <radio id="QContWhDegQPosAfter" dataValue="after">Toujours après le quantificateur même si un autre mot de degré se trouve avant le quantificateur</radio>
-            <radio id="QContWhDegQPosAgree" dataValue="agree">D’un côté ou de l’autre, mais quand il y a un mot de degré des deux côtés à la fois, ils doivent s’accorder (par exemple ou les deux doivent être des mots interrogatifs ou bien ni l’un ni l’autre)</radio>
+            <prompt>Votre langue permet des mots de degré des deux côtés du quantifieur. Où le mot qui signifie « comment » (ou tout autre mot interrogatif qui modifie les quantifieurs) peut se trouver ?</prompt>
+            <radio id="QContWhDegQPosBefore" dataValue="before">Toujours avant le quantifieur même si un autre mot de degré se trouve après le quantifieur</radio>
+            <radio id="QContWhDegQPosAfter" dataValue="after">Toujours après le quantifieur même si un autre mot de degré se trouve avant le quantifieur</radio>
+            <radio id="QContWhDegQPosAgree" dataValue="agree">D’un côté ou de l’autre, mais quand il y a un mot de degré des deux côtés à la fois, ils doivent s’accorder (par exemple ou les deux doivent être des mots interrogatifs ou ne l’être ni l’un ni l’autre)</radio>
         </radioGroup>
         <br/><br/>
         <buttons>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="AdjPMain" count="4.1">
 	<title>Adjectifs et Syntagmes Adjectivaux</title>
-	<introduction>Dans beaucoup de grammaires, les nombres, les quantitatifs, les articles et les démonstratifs sont considérés comme des adjectifs, mais ils peuvent se trouver dans de différentes positions des adjectifs qualitatifs ; ils auront donc chacun des catégories syntactiques distinctes.   Cette section se limite à considérer les adjectifs qualitatifs qui expriment la grandeur, la couleur, l’âge, la texture, la forme ou la qualité.  Une caractéristique de ce type d’adjectif est qu’un nom peut être modifié par plusieurs et en général l’ordre des adjectifs peut changer (avec un léger changement de signification dû aux changements dans la <technicalTermRef term="ttScope">portée</technicalTermRef> de chaque adjectif).  
-		Par exemple en anglais <example>hard dull brass rods (des tiges ternes durs en cuivre jaune)</example> par contraste avec <example>dull hard brass rods</example> par contraste avec <example>brass hard dull rods</example>, et en français <example>un grand livre intéressant vert</example> par contraste avec <example>un grand livre vert intéressant</example>. <span id="AdjPNotPracticalSpan" show="swNotPractical">  Cette caractéristique d’empiler les adjectifs sera traitée dans la <section number="5.6">Syntagmes Nominaux – Modificateurs de Syntagmes Adjectivaux</section> par un règle d’adjonction qui permet la récurrence.  (This characteristic of stacking adjectives will be dealt with in <section number="5.6">Nominal Phrases – Adjective Phrase Modifiers</section> by an adjunction rule which allows recursion.)
+	<introduction>Dans beaucoup de grammaires, les numéraux, les quantifieurs, les articles et les démonstratifs sont considérés comme des adjectifs, mais ils peuvent se placer dans des positions différentes de celles des adjectifs qualificatifs ; ils correspondent donc chacun à des catégories syntaxiques distinctes.  Dans dette section, nous nous limitons à étudier les adjectifs qualificatifs qui expriment la grandeur, la couleur, l'âge, la texture, la forme ou la qualité.  Une caractéristique de ce type d'adjectif est qu’il est possible que plusieurs adjectifs modifient un nom et, en général,  l'ordre des adjectifs n’est pas fixe et peut changer (avec un léger changement de sens dû aux changements dans la <technicalTermRef term="ttScope">portée</technicalTermRef> de chaque adjectif).  
+		Ainsi, <example>un intéressant grand livre vert</example> peut être constrasté avec <example>un grand livre vert intéressant</example>. Il faut remarquer qu’on dira, en français, <example>d’un vert intéressant</example> si <example>intéressant</example> qualifie <example>vert</example>. <span id="AdjPNotPracticalSpan" show="swNotPractical"> (This characteristic of stacking adjectives will be dealt with in <section number="5.6">Nominal Phrases – Adjective Phrase Modifiers</section> by an adjunction rule which allows recursion.)
 	</span><br/><br/>
-		Veuillez noter que cette section traite les adjectifs qui modifient les noms dans un syntagme nominal, par contraste avec des adjectifs qui jouent le rôle de <technicalTermRef term="ttPredicates">prédicats</technicalTermRef>.  Les constructions d’adjectifs prédicats seront traitées dans la <section number="9.5">Phrases Simples – Copulatifs</section>.
+		Il faut noter que cette section traite des adjectifs modifiant les noms dans un syntagme nominal, et non les adjectifs jouant le rôle de <technicalTermRef term="ttPredicates">prédicats</technicalTermRef>.  Les constructions dans lesquelles l’adjectif est le prédicat seront traitées dans la <section number="9.5">Phrases Simples – Copulatifs</section>.
 	</introduction>
-	<introduction>Ici nous devons de nouveau considérer quels types de mots peuvent modifier les adjectifs qualitatifs eux-mêmes. Voici quelques exemples en français:</introduction>
+	<introduction>Ici nous allons de nouveau considérer quels types de mots peuvent modifier les adjectifs qualificatifs eux-mêmes. Voici quelques exemples en français :</introduction>
 	<EnglishExample>
 		<exItem label="1.">
 			<u>très</u> grand</exItem>
@@ -23,82 +23,82 @@
 		<exItem label="5.">
 			<u>très facilement</u> oublié</exItem>
 	</EnglishExample>
-	<introduction>Certaines combinaisons de mots ne marchent pas dues à la <technicalTermRef term="ttSemantics">sémantique</technicalTermRef> ou à d’autres considérations, mais en général il semble que certains mots de degré et adverbes de manière ou syntagmes adverbiaux de manière peuvent modifier les adjectifs.</introduction>
+	<introduction>Certaines combinaisons de mots ne sont pasadmises à cause de la <technicalTermRef term="ttSemantics">sémantique</technicalTermRef> ou d’autres considérations, mais en général il semble que certaind mots de degré et les adverbes ou syntagmemes adverbiaux de manière peuvent modifier les adjectifs.</introduction>
 	<form section="adjp">
 	   <radioGroup id="AdjPClassifierAgrTable" show="swOTClassifierAgr">
 	      <groupName dataItem="adjectiveClassifier" default="no">RAdjPClassifierAgr</groupName>
-	   	<prompt>Vous avez dit que votre langue a des marqueurs de classe nominale avec un accord concordant à travers les syntagmes nominaux. Les adjectifs qualitatifs sont-ils marqués pour la classe?</prompt>
+	   	<prompt>Vous avez dit que votre langue a des marqueurs de classe nominale avec un accord affectant les constituants dusyntagme nominal. Les adjectifs qualificatifs sont-ils marqués pour la classe ?</prompt>
 	   	<radio id="AdjPClassifierAgrNo" dataValue="no">Non, ces éléments ne sont pas marqués pour la classe</radio>
-	   	<radio id="AdjPClassifierAgrYes" dataValue="yes">Oui, ces éléments sont marqués pour la classe comme partie du système de l’accord concordant</radio>
+	   	<radio id="AdjPClassifierAgrYes" dataValue="yes">Oui, ces éléments sont marqués pour la classe, et s’accordent comme tout élément du syntagme nominal</radio>
 	   </radioGroup>
-		<prompt id="AdjPClassifierAgrPrompt" show="swOTClassifierAgrAdjPYes">Puisque vous avez déjà détaillé les formes des marqueurs de classe nominale, vous n’avez qu’à entrer ici les racines pour chacun des adjectifs:</prompt>
+		<prompt id="AdjPClassifierAgrPrompt" show="swOTClassifierAgrAdjPYes">Puisque vous avez déjà détaillé les formes des marqueurs de classe nominale, il vous suffira de saisir les radicaux pour chacun des adjectifs :</prompt>
 <br/>
-		<prompt>Entrez ici des exemples d’adjectifs dans votre langue (sans aucuns modificateurs). Incluez des exemples d’adjectifs qualitatifs qui expriment la couleur, l’âge, la texture, la forme ou la qualité.</prompt>
-		<textBox id="AdjPExamples" dataItem="example" rows="8"/>
+		<prompt>Saisissez des exemples d'adjectifs dans votre langue (sans aucun modificateur). Incluez des exemples d'adjectifs qualificatifs qui expriment la couleur, l'âge, la texture, la forme ou la qualité.</prompt>
+		<textBox id="AdjPExamples" dataItem="example" rows="8" kind="table"/>
 <br/>
 	   <radioGroup>
 	      <groupName dataItem="modifiers" default="no">RAdjPModifiers</groupName>
-	   	<prompt>Votre langue a-t-elle une manière de modifier des adjectifs?</prompt>
+	   	<prompt>Votre langue a-t-elle une manière de modifier les adjectifs ?</prompt>
 	   	<radio id="AdjPModifiersNo" dataValue="no">Non, les adjectifs ne sont ni modifiés ni intensifiés</radio>
-	   	<radio id="AdjPModifiersYes" dataValue="yes">Oui, les adjectifs peuvent être modifiés ou intensifiés des manières suivantes</radio>
+	   	<radio id="AdjPModifiersYes" dataValue="yes">Oui, les adjectifs peuvent être modifiés ou intensifiés des façons suivantes</radio>
 	   </radioGroup>
 	   <checkboxGroup id="AdjPModifiersYesTable"  show="swAdjPModifiersYes">
-	   	<prompt>Cochez toutes les options qui sont correctes dans votre langue</prompt>
+	   	<prompt>Cochez toutes les options qui sont correctes pour votre langue</prompt>
 	   	<checkbox id="AdjPModifiersDegree" checked="yes" dataItem="modifiersDegree">Avec des mots de degré</checkbox>
-	   	<checkbox id="AdjPModifiersManner" checked="yes" dataItem="modifiersManner">Avec des adverbes de manière ou des syntagmes de manière</checkbox>
-	   	<checkbox id="AdjPModifiersAttaches" dataItem="modifiersAttaches">Il y a des affixes ou clitiques qui s’attachent à l’adjectif pour l’intensifier</checkbox>
-	   	<checkbox id="AdjPModifiersRedup" dataItem="modifiersRedup">Le redoublement est utilisé pour intensifier la signification de l’adjectif</checkbox>
-	   	<checkbox id="AdjPModifiersOther" dataItem="modifiersOther">Dans ma langue les adjectifs peuvent être modifiés comme suit: <textBox  id="AdjPModifiersOtherContent" dataItem="modifiersOther" cols="70" rows="1"/></checkbox>
+	   	<checkbox id="AdjPModifiersManner" checked="yes" dataItem="modifiersManner">Avec des adverbes de manière ou des syntagmes exprimant la manière</checkbox>
+	   	<checkbox id="AdjPModifiersAttaches" dataItem="modifiersAttaches">Des affixes ou des clitiques sont rattachés à l'adjectif pour l'intensifier</checkbox>
+	   	<checkbox id="AdjPModifiersRedup" dataItem="modifiersRedup">La réduplication est utilisée pour intensifier la signification de l’adjectif</checkbox>
+	   	<checkbox id="AdjPModifiersOther" dataItem="modifiersOther">Dans ma langue les adjectifs peuvent être modifiés de la façon suivante : <textBox  id="AdjPModifiersOtherContent" dataItem="modifiersOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>	
-		<prompt id="AdjPModifiersYesNoCheckPrompt" show="swAdjPModifiersYesAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire quels modificateurs peuvent modifier ou intensifier les adjectifs dans votre langue, ou changez la réponse ci-dessus en "Non, les adjectifs ne sont ni modifiés ni intensifiés".</prompt>
+		<prompt id="AdjPModifiersYesNoCheckPrompt" show="swAdjPModifiersYesAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire quels modificateurs peuvent modifier ou intensifier les adjectifs dans votre langue, sinon, il faut changer la réponse ci-dessus et indiquer « Non, les adjectifs ne sont ni modifiés ni intensifiés ».</prompt>
 	   <br/>
 	   <radioGroup id="AdjPDegreeClassifierAgrTable" show="swOTClassifierAgrAdjPModifiersYesOrYesManner">
 	      <groupName dataItem="adjectiveDegreeClassifier" default="no">RAdjPDegreeClassifierAgr</groupName>
-	   	<prompt>Les modificateurs des adjectifs qualitatifs, tels que les mots de degré, sont-ils marqués pour la classe?</prompt>
+	   	<prompt>Les modificateurs des adjectifs qualificatifs, tels que les mots de degré, sont-ils marqués pour la classe ?</prompt>
 	   	<radio id="AdjPDegreeClassifierAgrNo" dataValue="no">Non, ces éléments ne sont pas marqués pour la classe</radio>
-	   	<radio id="AdjPDegreeClassifierAgrYes" dataValue="yes">Oui, ces éléments sont marqués pour la classe comme partie du système d’accord concordant</radio>
+	   	<radio id="AdjPDegreeClassifierAgrYes" dataValue="yes">Oui, ces éléments sont marqués pour l’accord de classe comme tout élément du syntagme nominal</radio>
 	   </radioGroup>
-		<prompt id="AdjPDegreeClassifierAgrPrompt" show="swOTClassifierAgrAdjPDegreeYesOrYesManner">Puisque vous avez déjà détaillé les formes des marqueurs de noms de classe il vous suffit d’entrer ici les racines pour chacun des modificateurs.</prompt>
+		<prompt id="AdjPDegreeClassifierAgrPrompt" show="swOTClassifierAgrAdjPDegreeYesOrYesManner">Puisque vous avez déjà détaillé les formes des marqueurs de noms de classe il vous suffit de saisir les radicaux pour chacun des modificateurs.</prompt>
 	   <br/>
-		<prompt id="AdjPModifiersYesPrompt" show="swAdjPModifiersYesDegree">Entrez ici des mots de degré qui peuvent modifier les adjectifs:</prompt>
-	   <textBox id="AdjPModifiersDegreeExample" dataItem="adjectiveDegreeExample" show="swAdjPModifiersYesDegree"/>
-		<prompt id="AdjPModifiersDegreePhrasePrompt" show="swAdjPModifiersYesDegree">Entrez maintenant des exemples d’adjectifs avec des mots de degré qui les modifient:</prompt>
+		<prompt id="AdjPModifiersYesPrompt" show="swAdjPModifiersYesDegree">Saisissez les mots de degré qui peuvent modifier les adjectifs :</prompt>
+	   <textBox id="AdjPModifiersDegreeExample" dataItem="adjectiveDegreeExample" show="swAdjPModifiersYesDegree" kind="table"/>
+		<prompt id="AdjPModifiersDegreePhrasePrompt" show="swAdjPModifiersYesDegree">Saisissez maintenant des exemples d'adjectifs accompagnés des mots de degré les modifiant :</prompt>
 	   <textBox id="AdjPModifiersDegreePhraseExample" dataItem="adjectiveDegreePhraseExample" show="swAdjPModifiersYesDegree" cols="80"/>   
 	   <br/><br/>
 	   <checkboxGroup id="AdjPModifiersYesDegreeTable" show="swAdjPModifiersYesDegree">
-	   	<prompt>En regardant les exemples que vous avez entrés ci-dessus  où les mots de degré se trouvent-ils par rapport à l’adjectif? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+	   	<prompt>En examinant les exemples que vous avez saisis ci-dessus, où les mots de degré se trouvent-ils par rapport à l'adjectif ? Cochez toutes les options valables pour votre langue.</prompt>
 	   	<checkbox id="AdjPDegreeBefore" checked="yes" dataItem="degreeBefore">Avant l’adjectif</checkbox>
 	   	<checkbox id="AdjPDegreeAfter" checked="yes" dataItem="degreeAfter">Après l’adjectif</checkbox>
-	   	<checkbox id="AdjPDegreeBoth" checked="yes" dataItem="degreeBoth">Des deux côtés à la fois</checkbox>
-	   	<checkbox id="AdjPDegreeOther" checked="yes" dataItem="degreeOther">Dans ma langue ces mots de degré peuvent se trouver comme suit: <textBox  id="AdjPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1"/></checkbox>
+	   	<checkbox id="AdjPDegreeBoth" checked="yes" dataItem="degreeBoth">De part et d’autre de l’adjectif</checkbox>
+	   	<checkbox id="AdjPDegreeOther" checked="yes" dataItem="degreeOther">Dans ma langue ces mots de degré se  trouvent dans la position suivante suivante : <textBox  id="AdjPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>	
-		<prompt id="AdjPModifiersYesDegreeNoCheckPrompt" show="swAdjPModifiersYesDegreeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où ces mots de degré se trouvent dans votre langue ou changez la réponse ci-dessus pour un type différent de modificateur.</prompt>
+		<prompt id="AdjPModifiersYesDegreeNoCheckPrompt" show="swAdjPModifiersYesDegreeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où ces mots de degré se trouvent dans votre langue, sinon, il faut changer la réponse ci-dessus et indiquer un type différent de modificateur.</prompt>
 	   <instruction id="AdjPModifiersYesDegreeInstruction" show="swAdjPModifiersYesDegree">In the lexicon, mark the degree words with the feature <feature>makeDeg modifies_Adj</feature>.    (If any of these degree words are the same as those which can modify an entire nominal phrase or a quantifier or an adverb, you can simply add the additional feature <feature>modifies_Adj</feature> to the same lexical entry.)</instruction>
 	   <instruction id="AdjPDegreeEitherRestrictedInstruction" show="swAdjPDegreeEitherRestricted">In the lexicon, mark those degree words which can only occur before the adjective with the feature <feature>AdjP-initial</feature> and those which can only occur after the adjective with the feature <feature>AdjP-final</feature>.  Do not enter either feature on any degree words which can occur on either side.</instruction>      
 	   
-		<prompt id="AdjPModifiersMannerPhrasePrompt" show="swAdjPModifiersYesManner">Entrez ici des exemples d’adjectifs avec des adverbes de manière ou des syntagmes adverbiaux qui les modifient:</prompt>
+		<prompt id="AdjPModifiersMannerPhrasePrompt" show="swAdjPModifiersYesManner">Saisissez des exemples d'adjectifs modifiés par les des adverbes de manière ou des syntagmes adverbiaux  :</prompt>
 	   <textBox id="AdjPModifiersMannerPhraseExample" dataItem="adjectiveMannerPhraseExample" show="swAdjPModifiersYesManner" cols="80"/>    
 	   <br/><br/>
 	   <checkboxGroup id="AdjPModifiersYesMannerTable" show="swAdjPModifiersYesManner">
-	   	<prompt>En regardant les exemples que vous avez entrés ci-dessus  où les adverbes de manière ou les syntagmess se trouvent-ils par rapport à l’adjectif?  Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+	   	<prompt>En regardant les exemples que vous avez entrés ci-dessus  où les adverbes de manière ou les syntagmess se trouvent-ils par rapport à l’adjectif ?  Cochez toutes les options qui sont valables dans votre langue.</prompt>
 	   	<checkbox id="AdjPMannerBefore" checked="yes" dataItem="mannerBefore">Avant l’adjectif</checkbox>
 	   	<checkbox id="AdjPMannerAfter" checked="yes" dataItem="mannerAfter">Après l’adjectif</checkbox>
 	   	<checkbox id="AdjPMannerBoth" checked="yes" dataItem="mannerBoth">Des deux côtés à la fois</checkbox>
-	   	<checkbox id="AdjPMannerOther" checked="yes" dataItem="mannerOther">Dan mas langue ces adverbs de manière peuvent se trouver comme suit: <textBox  id="AdjPMannerOtherContent" dataItem="mannerOther" cols="70" rows="1"/></checkbox>
+	   	<checkbox id="AdjPMannerOther" checked="yes" dataItem="mannerOther">Dan mas langue ces adverbs de manière se  trouvent dans la position suivante : <textBox  id="AdjPMannerOtherContent" dataItem="mannerOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>	
-		<prompt id="AdjPModifiersYesMannerNoCheckPrompt" show="swAdjPModifiersYesMannerAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où ces adverbes de manière ou syntagmes se trouvent dans votre langue, ou changez la réponse ci-dessus pour un type différent de modificateur.</prompt>
+		<prompt id="AdjPModifiersYesMannerNoCheckPrompt" show="swAdjPModifiersYesMannerAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où ces adverbes de manière ou syntagmes se trouvent dans votre langue, sinon il faut changer la réponse ci-dessus et indiquer un type différent de modificateur.</prompt>
 	   <instruction id="AdjPModifiersYesMannerInstruction" show="swAdjPModifiersYesManner">
 The manner adverbs should already be marked with the feature <feature>manner</feature>.  They do not need any additional features to modify adjectives. </instruction>
 	      <instruction id="AdjPMannerEitherRestrictedInstruction" show="swAdjPMannerEitherRestricted">In the lexicon, mark those manner adverbs which can only occur before the adjective with the feature <feature>AdjP-initial</feature> and those which can only occur after the adjective with the feature <feature>AdjP-final</feature>.  Do not enter either feature on any manner adverbs which can occur on either side.
 	   </instruction>
-		<prompt id="AdjPModifiersAttachesPrompt" show="swAdjPModifiersAttaches">Entrez ici vos exemples d’affixes de degré ou clitiques qui peuvent modifier les adjectifs, avec un trait-d’union ou un signe d’égalité pour indiquer de quel côté ils  s’attachent à l’adjectif:</prompt>
-	   <textBox id="AdjPModifiersDegreeAffixExample" dataItem="adjectiveDegreeAffixExample" show="swAdjPModifiersAttaches" rows="3"/>
-		<prompt id="AdjPModifiersDegreeAffixPhrasePrompt" show="swAdjPModifiersAttaches">Entrez ici vos exemples d’affixes de degré ou clitiques, attachés aux adjectifs:</prompt>
-	   <textBox id="AdjPModifiersDegreeAffixPhraseExample" dataItem="adjectiveDegreeAffixPhraseExample" show="swAdjPModifiersAttaches"/>
-		<prompt id="AdjPModifiersDegreeRedup" show="swAdjPModifiersNoRedup">Entrez ici des exemples d’adjectifs qualitatifs avec redoublement qui les modifie ou les intensifie:</prompt>
-	   <textBox id="AdjPModifiersDegreeRedupExample" dataItem="adjectiveDegreeRedupExample" show="swAdjPModifiersNoRedup"/>
-		<prompt id="AdjPModifiersOtherPrompt" show="swAdjPModifiersOther">Entrez ici des exemples d’adjectifs qualitatifs modifiés ou intensifiés comme permis par votre langue:</prompt>
-	   <textBox id="AdjPModifiersOtherExample" dataItem="adjectiveDegreeOtherExample" show="swAdjPModifiersOther" cols="80"/>              
+		<prompt id="AdjPModifiersAttachesPrompt" show="swAdjPModifiersAttaches">Saisissez des exemples d'affixes de degré ou de clitiques pouvant modifier les adjectifs, en notant un trait d'union ou un signe d’égalité du côté duquel ils  se rattachent à l'adjectif :</prompt>
+	   <textBox id="AdjPModifiersDegreeAffixExample" dataItem="adjectiveDegreeAffixExample" show="swAdjPModifiersAttaches" rows="3" kind="table"/>
+		<prompt id="AdjPModifiersDegreeAffixPhrasePrompt" show="swAdjPModifiersAttaches">Saisissez des exemples d'affixes de degré ou de clitiques rattachés aux adjectifs :</prompt>
+	   <textBox id="AdjPModifiersDegreeAffixPhraseExample" dataItem="adjectiveDegreeAffixPhraseExample" show="swAdjPModifiersAttaches" kind="table"/>
+		<prompt id="AdjPModifiersDegreeRedup" show="swAdjPModifiersNoRedup">Saisissez ici des exemples d'adjectifs qualificatifs avec une réduplication qui les modifie ou les intensifie :</prompt>
+	   <textBox id="AdjPModifiersDegreeRedupExample" dataItem="adjectiveDegreeRedupExample" show="swAdjPModifiersNoRedup" kind="table"/>
+		<prompt id="AdjPModifiersOtherPrompt" show="swAdjPModifiersOther">Saisissez ici des exemples d'adjectifs qualificatifs modifiés ou intensifiés de la façon dont cela est attesté dans votre langue :</prompt>
+	   <textBox id="AdjPModifiersOtherExample" dataItem="adjectiveDegreeOtherExample" show="swAdjPModifiersOther" cols="80" kind="table"/>              
 		<br/><br/>
 		<buttons>
 			<button id="AdjPMainBack" value="Back" goto="Contents_fr.htm"/>

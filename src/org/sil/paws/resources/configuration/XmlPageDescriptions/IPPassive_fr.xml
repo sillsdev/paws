@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="IPPassive" count="9.8.1">
-	<title level="2">Phrases Simples – Passifs</title>
-	<introduction>La plupart des langues ont des phrases au <technicalTermRef term="ttPassive">pasif</technicalTermRef>, là où le <technicalTermRef term="ttTheme">thème</technicalTermRef> ou le <technicalTermRef term="ttPatient">patient</technicalTermRef> prend la position du sujet. Dans certaines langues <technicalTermRef term="ttAgent">l’agent</technicalTermRef> peut être facultatif; par contre, dans d’autres l’agent n’est pas permis. Si l’agent est exprimé il peut prendre la forme d’un syntagme prépositionnel ou postpositionnel (comme l’anglais se sert de la préposition <example>by</example> ou en français <example>par</example>) ou bien d’un syntagme nominal, selon la langue. En plus, pour les passifs un auxiliaire particulier peut être nécessaire (une forme du verbe <example>be</example> en anglais, <example>être</example> en français). Voici des exemples en anglais et français, y compris ceux qui montrent une action à auxiliaires multiples):</introduction>
+	<title level="2">Phrases simples – Passives</title>
+	<introduction>Un bon nombre delangues ont des phrases <technicalTermRef term="ttPassive">passives</technicalTermRef>, dans lesquelles le <technicalTermRef term="ttTheme">thème</technicalTermRef> ou le <technicalTermRef term="ttPatient">patient</technicalTermRef> prend la position du sujet. Dans certaines langues <technicalTermRef term="ttAgent">l’agent</technicalTermRef> est facultatif ; par contre, dans d’autres l’agent n’est pas admis. Si l’agent est exprimé il peut prendre la forme d’un syntagme prépositionnel ou postpositionnel (comme l’anglais se sert de la préposition <example>by</example> ou en français <example>par</example>) ou d’un syntagme nominal, selon la langue. Pour former les passifs un auxiliaire particulier peut être employé (une forme du verbe <example>be</example> en anglais, <example>être</example> en français).  Il est possible aussi que le verbe reçoive un affixe ou subisse un autre changement. Voici quelques exemples en anglais et français, y compris ceux qui montrent une forme à auxiliaires multiples) :</introduction>
 	<EnglishExample>
 		<exItem label="1.">The glass was broken.  « Le verre a été cassé. »</exItem>
 		<exItem label="2.">The glass was broken by the child.  « Le verre a été cassé par l’enfant. »</exItem>
-		<exItem label="3.">The thief might have been seen.  « Le voleur a pu être vu. »</exItem>
-		<exItem label="4.">The thief might have been seen by the boy.  « Le voleur a pu être vu par le garçon. »</exItem>
+		<exItem label="3.">The window might have been broken.  « La fenêtre a pu être cassée. »</exItem>
+		<exItem label="4.">The window might have been broken by the boy.  « La fenêtre a pu être cassée par le garçon. »</exItem>
 	</EnglishExample>
 	<form section="ip">
 		<radioGroup>
 			<groupName dataItem="passive" default="yes">RIPPassive</groupName>
-			<prompt><br/>Est-ce que votre langue possède des phrases au passif?</prompt>
+			<prompt><br/>Est-ce que votre langue possède des phrases au passif ?</prompt>
 			<radio id="IPPassiveNo" dataValue="no">Non</radio>
 			<radio id="IPPassiveYes" dataValue="yes">Oui</radio>
 		</radioGroup>  
-		<prompt id="IPPassiveNoPrompt" show="swIPPassiveNoAndFeaturesYes">AVERTISSEMENT: A la <section number="9.2">Phrases Simples – La flexion</section> vous avez coché le passif comme caractéristique de votre langue. Ceci n’est pas conforme avec votre réponse ici. Veuillez changer votre réponse ici pour dire que votre langue possède le mode passif, ou revenez à la <section number="9.2">Phrases Simples – La flexion</section> et décochez le passif.</prompt>
-		<prompt id="IPPassiveYesPrompt" show="swIPPassiveYesAndFeaturesNo">AVERTISSEMENT: A la <section number="9.2">Phrases Simples – La flexion</section> vous n’avez pas coché le passif comme caractéristique de votre langue. Ceci n’est pas conforme avec votre réponse ici. Si votre langue possède le mode passif revenez à la <section number="9.2">Phrases Simples – La flexion</section> et cochez le passif.</prompt>
+		<prompt id="IPPassiveNoPrompt" show="swIPPassiveNoAndFeaturesYes">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous avez coché le passif comme étant une caractéristique de votre langue. Ceci ne correspond pas à votre réponse ici. Changez votre réponse ici pour dire que votre langue possède le mode passif, ou revenez à la <section number="9.2">Phrases simples – La flexion</section> et décochez la case <feature>passif</feature>.</prompt>
+		<prompt id="IPPassiveYesPrompt" show="swIPPassiveYesAndFeaturesNo">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous n’avez pas coché le passif comme caractéristique de votre langue. Ceci ne correspond pas à votre réponse ici. Si votre langue possède le mode passif revenez à la <section number="9.2">Phrases simples – La flexion</section> et cochez la case <feature>passif</feature>.</prompt>
 	   
-		<prompt id="IPPassiveExamplePrompt" show="swPassiveYes"><br/>Entrez ici des exemples de phrases passives dans votre langue:</prompt>
+		<prompt id="IPPassiveExamplePrompt" show="swPassiveYes"><br/>Saisissez ici des exemples de phrases passives dans votre langue :</prompt>
 		   <textBox id="IPPassiveExample" dataItem="passiveExample" cols="80" show="swPassiveYes"/>	   
 			<radioGroup id="IPPassiveAgentTable" show="swPassiveYes">
 				<groupName dataItem="passiveAgent" default="no">RIPPassiveAgent</groupName>
-				<prompt><br/>Considérez les exemples que vous avez donnés; est-ce que un syntagme agent est possible?</prompt>
+				<prompt><br/>Considérez les exemples que vous avez donnés ; est-ce que l’agent peut être exprimé ?</prompt>
 				<radio id="IPPassiveAgentNo" dataValue="no">Non, l’agent ne peut pas être exprimé</radio>
 				<radio id="IPPassiveAgentYes" dataValue="yes">Oui, l’agent peut être exprimé</radio>
 				<radioGroup id="IPPassiveAgentCatTable" show="swPassiveAgentYes">
 					<groupName dataItem="passiveAgentCat" default="dp">RIPPassiveAgentCat</groupName>
-					<prompt>A quelle catégorie syntaxique appartient le syntagme agent?</prompt>
+					<prompt>A quelle catégorie syntaxique appartient le syntagme exprimant l’agent ?</prompt>
 					<radio id="IPPassiveAgentCatPP" dataValue="pp">Un syntagme <span id="IPPrepSpan1" show="swPPPosPrep">prépositionnel</span><span id="PPPostSpan1" show="swPPPosPost">postpositionnel</span><span id="PPBothSpan1" show="swPPPosBoth">prépositionnel ou postpositionnel</span></radio>
 					<radio id="IPPassiveAgentCatDP" dataValue="dp">Un syntagme nominal</radio>
 				</radioGroup>
 			</radioGroup>
 	
-		<prompt id="IPPassiveAgentPPPrompt" show="swPassiveAgentPP"><br/>Entrez ici la <span id="IPPrepSpan2" show="swPPPosPrep">préposition</span><span id="PPPostSpan2" show="swPPPosPost">postposition</span><span id="PPBothSpan2" show="swPPPosBoth">préposition ou postposition</span> particulière qui marque le syntagme agent:</prompt>
-	   <textBox id="IPPassiveAgentPPExample" dataItem="passiveAgentPExample" show="swPassiveAgentPP" rows="3"/>
+		<prompt id="IPPassiveAgentPPPrompt" show="swPassiveAgentPP"><br/>Saisissez la ou les <span id="IPPrepSpan2" show="swPPPosPrep">prépositions</span><span id="PPPostSpan2" show="swPPPosPost">postpositions</span><span id="PPBothSpan2" show="swPPPosBoth">prépositions ou postpositions</span> particulières qui marquent le syntagme agent :</prompt>
+	   <textBox id="IPPassiveAgentPPExample" dataItem="passiveAgentPExample" show="swPassiveAgentPP" rows="3" kind="table"/>
 
 	   
 			<radioGroup id="IPPassiveAuxTable" show="swPassiveYes">
 				<groupName dataItem="passiveAux" default="no">RIPPassiveAux</groupName>
-				<prompt><br/>Dans la construction passive faut-il une forme particulière de l’auxiliaire?</prompt>
+				<prompt><br/>Dans la construction passive utilise-t-on un auxiliaire spécifique ?</prompt>
 				<radio id="IPPassiveAuxNo" dataValue="no">Non</radio>
 				<radio id="IPPassiveAuxYes" dataValue="yes">Oui</radio>
 			</radioGroup>
 	
-		<prompt id="IPPassiveAuxPrompt" show="swPassiveAuxYes"><br/>Entrez la forme particulière de l’auxiliaire qu’il faut avec les passifs:</prompt>
-	   <textBox id="IPPassiveAuxExample" dataItem="passiveAuxExample" show="swPassiveAuxYes" rows="3"/>
+		<prompt id="IPPassiveAuxPrompt" show="swPassiveAuxYes"><br/>Saisissez l’auxiliaire spécifique qui est utilisépour  les passifs :</prompt>
+	   <textBox id="IPPassiveAuxExample" dataItem="passiveAuxExample" show="swPassiveAuxYes" rows="3" kind="table"/>
 	   <br/>
 		<instruction id="IPPassiveInstruction" show="swPassiveYes">Mark inherently passive verbs and any passive affixes with the feature <feature>passive</feature> in the lexicon, if you have not already done so.  The same forms may have the <feature>participle</feature> feature as well, if your language is like English, or you may have distinct forms for passive.  <span id="IPPassiveAgentPPSpan" show="swPassiveAgentPP">Also, mark the <span id="IPPrepSpan" show="swPPPosPrep">preposition</span>
 				<span id="PPPostSpan" show="swPPPosPost">postposition</span>

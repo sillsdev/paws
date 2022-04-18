@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="NPQP" count="5.5.1">
     <title level="2">Las frases nominales - Las frases cuantificadoras como modificadores</title>
@@ -19,7 +19,7 @@
           <checkbox id="NPQPPosBefore" dataItem="qpPosBefore">Antes del sustantivo</checkbox>
           <checkbox id="NPQPPosAfter" dataItem="qpPosAfter">Después del sustantivo</checkbox>
           <checkbox id="NPQPPosBoth" dataItem="qpPosBoth">En ambos lados en la misma frase nominal</checkbox>
-          <checkbox id="NPQPPosOther" dataItem="qpPosOther">En mi lengua, las frases cuantificadoras pueden presentarse: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1"/></checkbox>
+          <checkbox id="NPQPPosOther" dataItem="qpPosOther">En mi lengua, las frases cuantificadoras pueden presentarse: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
        <prompt id="NPQPPosNoCheckPrompt" show="swNPQPNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las frases cuantificadoras con respecto al sustantivo en su lengua.</prompt>
        <radioGroup id="NPQPPosEitherorBothRestrictedTable" show="swNPQPPosEitherorBothRestricted">
@@ -44,7 +44,7 @@
           <checkbox id="NPQClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificQPosAfterNBeforeQ">Después del sustantivo pero antes del cuantificador</checkbox>
           <checkbox id="NPQClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificQPosPrefixQ">Como un prefijo en el cuantificador</checkbox>
           <checkbox id="NPQClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificQPosSuffixQ">Como un sufijo en el cuantificador</checkbox>
-          <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1"/></checkbox>
+          <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
        <prompt id="NPQClassifierSpecificPosNoCheckPrompt" show="swNPQClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto a estos cuantificadores y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
        

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="IPComparative" count="9.5.2">
     <title level="2">Basic Sentences - Comparatives</title>
@@ -24,9 +24,9 @@
           <radio id="IPCopComparativeSameNo" dataValue="no">No, only the presence of the two nominal phrases and the noun with the copular or perception verb signal a comparative of equality of this type</radio>
        </radioGroup>
        <prompt id="IPCopComparativeSameWord" show="swIPCopComparativeSameYes">Key the comparative degree word(s) meaning ‘same’ here:</prompt>     
-       <textBox id="IPExamplesComparativeSameWordExample" dataItem="sameWordExample" rows="3" show="swIPCopComparativeSameYes"/>
+       <textBox id="IPExamplesComparativeSameWordExample" dataItem="sameWordExample" rows="3" show="swIPCopComparativeSameYes" kind="table"/>
        <prompt id="IPCopComparativeSameAffix" show="swIPCopComparativeSameAttaches">Key the comparative degree affix(es) or clitic(s) meaning ‘same’ here, with a hyphen or equal sign to show which side it attaches on:</prompt>     
-       <textBox id="IPExamplesComparativeSameAffixExample" dataItem="sameAffixExample" rows="3" show="swIPCopComparativeSameAttaches"/>   
+       <textBox id="IPExamplesComparativeSameAffixExample" dataItem="sameAffixExample" rows="3" show="swIPCopComparativeSameAttaches" kind="table"/>   
        <instruction id="IPCopComparativeSameWordInstruction" show="swIPCopComparativeSameYes">In the lexicon, key the feature <feature>equalN</feature> on the comparative degree words meaning ‘same’.  Since these words can most likely also be used as regular adjectives, you will need to make a separate lexical entry for this form and give it the category <category>Deg</category>.</instruction>
        <instruction id="IPCopComparativeSameAffixInstruction" show="swIPCopComparativeSameAttaches">In the lexicon, key the feature <feature>equalN</feature> on the comparative degree affixes or clitics meaning ‘same’.</instruction>
        <br/><br/>
@@ -37,7 +37,7 @@
           <radio id="IPCopCompareNNo" dataValue="no">No</radio>
        </radioGroup>
        <prompt id="IPCopCompareNWord" show="swIPCopCompareNYes">Key the comparative conjunction word(s) meaning ‘as’ here:</prompt>     
-       <textBox id="IPExamplesCompareNWordExample" dataItem="compareNExample" rows="3" show="swIPCopCompareNYes"/>
+       <textBox id="IPExamplesCompareNWordExample" dataItem="compareNExample" rows="3" show="swIPCopCompareNYes" kind="table"/>
        <instruction id="IPCopCompareNWordInstruction" show="swIPCopCompareNYes">In the lexicon, key the feature <feature>compareN</feature> on the comparative conjunction words meaning ‘as’ used in this construction.  This entry also needs to have the category <category>Conj</category>, either by entering it directly into the category field or by using the feature <feature>makeConj</feature>.</instruction>
        <br/><br/>       
  <introduction>The second type of comparison of equals uses an adjective for comparison.  This construction uses a formula meaning ‘is as Adjective as’ between the two nominal phrases.  Some English examples are:</introduction>  
@@ -57,7 +57,7 @@
           <radio id="IPCopComparativeAsNo" dataValue="no">No, the meaning ‘as’ is simply implied</radio>
        </radioGroup>
        <prompt id="IPCopComparativeAsWord" show="swIPCopComparativeAsYes">Key the comparative degree word(s) meaning ‘as’ which are used before the adjective here:</prompt>     
-       <textBox id="IPComparativeAsWordExample" dataItem="asWordExample" rows="3" show="swIPCopComparativeAsYes"/>
+       <textBox id="IPComparativeAsWordExample" dataItem="asWordExample" rows="3" show="swIPCopComparativeAsYes" kind="table"/>
        <instruction id="IPCopComparativeAsWordInstruction" show="swIPCopComparativeAsYes">In the lexicon, key the feature <feature>equalAdj</feature> on the comparative degree words meaning ‘as’ which are used before the adjective.  These words also need to have the category <category>Deg</category> and are distinct lexical entries from the comparative conjunctions.</instruction>
        <br/><br/>
        <radioGroup>
@@ -67,7 +67,7 @@
           <radio id="IPCopCompareAdjNo" dataValue="no">No</radio>
        </radioGroup>
        <prompt id="IPCopCompareAdjWord" show="swIPCopCompareAdjYes">Key the comparative conjunction word(s) meaning ‘as’ which are used directly before the second part here:</prompt>     
-       <textBox id="IPExamplesCompareAdjWordExample" dataItem="compareAdjExample" rows="3" show="swIPCopCompareAdjYes"/>
+       <textBox id="IPExamplesCompareAdjWordExample" dataItem="compareAdjExample" rows="3" show="swIPCopCompareAdjYes" kind="table"/>
        <instruction id="IPCopCompareAdjWordInstruction" show="swIPCopCompareAdjYes">In the lexicon, key the feature <feature>compareAdj</feature> on the word(s) meaning ‘as’ used in the second part of this construction.  The entry also needs to have the category <category>Conj</category>.  If this comparative conjunction is the same one used in the previous construction, you may simply add the feature <feature>compareAdj</feature> to that lexical entry.</instruction>
        <br/><br/>
        <introduction>Comparatives where one part is better than the other compare two nominal phrases using a comparative conjunction word meaning ‘than’, and include whatever copula the language uses, or a perception verb, along with degree marking on the predicate adjective or nominal phrase.  The English examples in 7-11 show that the degree marking may either be an independent degree word or an affix on the predicate adjective.
@@ -89,7 +89,7 @@
           <radio id="IPCopComparativeNo" dataValue="no">No, only the presence of the two noun phrases and the degree word with the copular or perception verb signal a comparative</radio>
        </radioGroup>
        <prompt id="IPCopComparativeWord" show="swIPCopComparativeYes">Key the comparative conjunction word(s) meaning ‘than’ here:</prompt>     
-       <textBox id="IPExamplesComparativeWordExample" dataItem="comparativeWordExample" rows="3" show="swIPCopComparativeYes"/>
+       <textBox id="IPExamplesComparativeWordExample" dataItem="comparativeWordExample" rows="3" show="swIPCopComparativeYes" kind="table"/>
        <instruction id="IPCopComparativeWordInstruction" show="swIPCopComparativeYes">In the lexicon, key the feature <feature>comparative</feature> on the words meaning ‘than’.  The lexical entry or entires also needs to have the category <category>Conj</category>, either by entering it directly into the category field or by using the feature <feature>makeConj</feature>.</instruction>
        <br/><br/>
        <radioGroup>
@@ -100,12 +100,12 @@
           <radio id="IPCopComparativeAdjBoth" dataValue="both">Yes, but some predicate adjectives use the affix(es) and some use the independent degree words in comparatives</radio>           
        </radioGroup>
        <prompt id="IPCopComparativeAffix" show="swIPCopComparativeAdjYesOrBoth">Key the comparative affix(es) used on predicate adjectives here (with a hyphen to indicate which side it attaches on):</prompt>     
-       <textBox id="IPExamplesComparativeAffixExample" dataItem="comparativeAffixExample" rows="3" show="swIPCopComparativeAdjYesOrBoth"/>       
+       <textBox id="IPExamplesComparativeAffixExample" dataItem="comparativeAffixExample" rows="3" show="swIPCopComparativeAdjYesOrBoth" kind="table"/>       
        <instruction id="IPCopComparativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>comparative</feature> on the lexical entries for these affixes.</instruction>
        <br/>
        <prompt id="IPCopComparativeDegBoth" show="swIPCopComparativeAdjDeg">Key the comparative degree words used with predicate adjectives and predicate nominals here, including those meaning ‘more’, ‘much’, ‘lots’, ‘less’ and ‘worse’:</prompt>     
        <prompt id="IPCopComparativeDeg" show="swIPCopComparativeAdjYes">Key the comparative degree words used with predicate nominals here, including those meaning ‘more’, ‘less’ and ‘worse’:</prompt>     
-       <textBox id="IPExamplesComparativeDegExample" dataItem="comparativeDegExample" rows="3"/>       
+       <textBox id="IPExamplesComparativeDegExample" dataItem="comparativeDegExample" rows="3" kind="table"/>       
        <instruction id="IPCopComparativeDegInstruction">Key the feature <feature>comparative</feature> on the appropriate degree words in the lexicon. The lexical entry or entires also needs to have the category <category>Deg</category>, either by entering it directly into the category field or by using the feature <feature>makeDeg</feature>.</instruction>
        <br/>
        
@@ -142,12 +142,12 @@
        <textBox id="IPExamplesSuperlativeExample" dataItem="superlativeExample" cols="80"/>     
        <br/>
        <prompt id="IPCopSuperlativeAffix" show="swIPCopComparativeAdjYesOrBoth">Key the superlative affix(es) used on predicate adjectives here (with a hyphen to indicate which side it attaches on):</prompt>     
-       <textBox id="IPExamplesSuperlativeAffixExample" dataItem="superlativeAffixExample" rows="3" show="swIPCopComparativeAdjYesOrBoth"/>     
+       <textBox id="IPExamplesSuperlativeAffixExample" dataItem="superlativeAffixExample" rows="3" show="swIPCopComparativeAdjYesOrBoth" kind="table"/>     
        <instruction id="IPCopSuperlativeAffixInstruction" show="swIPCopComparativeAdjYesOrBoth">Key the feature <feature>superlative</feature> on the lexical entries for these affixes.</instruction>
        <br/>
        <prompt id="IPCopSuperlativeDegBoth" show="swIPCopComparativeAdjDeg">Key the superlative degree words used with predicate adjectives and predicate nominals here, including those meaning ‘most’, ‘best’, ‘least’ and ‘worst’:</prompt>     
        <prompt id="IPCopSuperlativeDeg" show="swIPCopComparativeAdjYes">Key the superlative degree words used with predicate nominals here, including those meaning ‘best’ and ‘worst’:</prompt>     
-       <textBox id="IPExamplesSuperlativeDegExample" dataItem="superlativeDegExample" rows="3"/>       
+       <textBox id="IPExamplesSuperlativeDegExample" dataItem="superlativeDegExample" rows="3" kind="table"/>       
        <instruction id="IPCopSuperlativeDegInstruction">Key the feature <feature>superlative</feature> on the appropriate degree words in the lexicon. The lexical entry or entires also needs to have the category <category>Deg</category>, either by entering it directly into the category field or by using the feature <feature>makeDeg</feature>.</instruction>
        <br/>
        <br/>              

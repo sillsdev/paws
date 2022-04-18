@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:saxon="http://icl.com/saxon" exclude-result-prefixes="ms saxon">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.1" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:saxon="http://icl.com/saxon" exclude-result-prefixes="ms saxon">
 	<!--
 		MSXSL's node-set function needs
 			auto-ns1:msxsl="" xmlns:auto-ns1="urn:schemas-microsoft-com:xslt"
@@ -332,7 +332,8 @@
 			<xsl:call-template name="HandleAnyAbbreviationLanguage"/>
 		</languages>
 		<types>
-			<comment>The following types are provided as pre-set examples. You may well want to create your own types that refer to one or more of these. You do that by typing in the names of the types in the types attribute of your type.</comment>
+			<comment>The following types are provided as pre-set examples. You may well want to create your own types that refer to one or more of these. You do that by typing in the names of the
+				types in the types attribute of your type.</comment>
 			<type font-weight="bold" id="tBold"/>
 			<type font-style="italic" font-weight="bold" id="tBoldItalic"/>
 			<type font-weight="bold" id="tEmphasis"/>
@@ -353,15 +354,15 @@
 			<type id="tComment" font-weight="bold" color="red"/>
 		</types>
 		<contentControl showOnlyChosenItemsInEditor="yes">
-	      <contentTypes>
-	         <contentType id="ctPracticalIntro">Practical Introduction</contentType>
-	         <contentType id="ctComparativeIntro">Comparative Introduction</contentType>
-	      </contentTypes>
-	      <contentControlChoices>
-	         <contentControlChoice exclude="ctComparativeIntro" active="yes">Practical Grammar</contentControlChoice>
-	         <contentControlChoice exclude="ctPracticalIntro" active="no">Comparative Grammar</contentControlChoice>
-	      </contentControlChoices>
-	   </contentControl>
+			<contentTypes>
+				<contentType id="ctPracticalIntro">Practical Introduction</contentType>
+				<contentType id="ctComparativeIntro">Comparative Introduction</contentType>
+			</contentTypes>
+			<contentControlChoices>
+				<contentControlChoice exclude="ctComparativeIntro" active="yes">Practical Grammar</contentControlChoice>
+				<contentControlChoice exclude="ctPracticalIntro" active="no">Comparative Grammar</contentControlChoice>
+			</contentControlChoices>
+		</contentControl>
 	</xsl:template>
 	<xsl:template name="OutputReferencesElement">
 		<xsl:param name="sReferencesLabel"/>
@@ -414,6 +415,75 @@
 	</xsl:template>
 	<xsl:template name="OutputContentsElement">
 		<contents showLevel="3"/>
+	</xsl:template>
+	<!--
+		OutputEnterExampleHereMessage
+	-->
+	<xsl:template name="OutputEnterExampleHereMessage">
+		<xsl:text>ENTER AN EXAMPLE HERE</xsl:text>
+	</xsl:template>
+	<!--
+		OutputInterlinearEntries
+	-->
+	<xsl:template name="OutputInterlinearEntries">
+		<xsl:param name="sExamples"/>
+		<xsl:param name="sExNumber"/>
+		<xsl:param name="sLetterList"/>
+		<xsl:variable name="iNumEntries" select="count(saxon:node-set($sExamples)/interlinearEntry[string-length(vernacularLine) &gt; 0])"/>
+		<xsl:choose>
+			<xsl:when test="$iNumEntries &lt;= 1">
+				<listInterlinear>
+					<xsl:attribute name="letter">
+						<xsl:value-of select="$sExNumber"/>
+						<xsl:value-of select="substring($sLetterList,(position() * 2)-1,1)"/>
+					</xsl:attribute>
+					<lineGroup>
+						<line>
+							<langData>
+								<xsl:attribute name="lang">
+									<xsl:text>lVernacular</xsl:text>
+								</xsl:attribute>
+								<xsl:call-template name="OutputEnterExampleHereMessage"/>
+							</langData>
+						</line>
+						<xsl:call-template name="DoInterlinearGlossLines"/>
+					</lineGroup>
+					<xsl:call-template name="DoFree"/>
+				</listInterlinear>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:for-each select="saxon:node-set($sExamples)/interlinearEntry[string-length(vernacularLine) &gt; 0]">
+					<listInterlinear>
+						<xsl:attribute name="letter">
+							<xsl:value-of select="$sExNumber"/>
+							<xsl:value-of select="substring($sLetterList,(position() * 2)-1,1)"/>
+						</xsl:attribute>
+						<xsl:call-template name="OutputInterlinearEntry"/>
+					</listInterlinear>
+				</xsl:for-each>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<!--
+		OutputInterlinearEntry
+	-->
+	<xsl:template name="OutputInterlinearEntry">
+		<lineGroup>
+			<line>
+				<langData>
+					<xsl:attribute name="lang">
+						<xsl:text>lVernacular</xsl:text>
+					</xsl:attribute>
+					<xsl:value-of select="vernacularLine"/>
+				</langData>
+			</line>
+			<xsl:call-template name="DoInterlinearGlossLines"/>
+		</lineGroup>
+		<free>
+			<gloss lang="lGloss">
+				<xsl:value-of select="freeLine"/>
+			</gloss>
+		</free>
 	</xsl:template>
 	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

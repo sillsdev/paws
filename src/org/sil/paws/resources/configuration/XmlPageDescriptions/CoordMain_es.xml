@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -16,34 +16,34 @@
 		   Se consideran las palabras o cláusulas de introducción, designadas a veces como coordinación, y los ejemplos de cláusulas adverbiales, que son subordinación, en <section number="13">Las cláusulas adverbiales</section>.</introduction>
 	   <prompt>Escriba la manera en que su lengua expresa estas conjunciones en los siguientes campos. Si hay más de una opción, escriba cada palabra en una línea separada. Si la conjunción es un afijo o clítico, escriba un guión o signo igual con la conjunción indicando en qué lado se une.</prompt>
 	   <prompt>Escriba la palabra su lengua utiliza para la conjunción ‘y':</prompt>
-		<textBox id="CoordAnd" dataItem="and" rows="3"/>
+		<textBox id="CoordAnd" dataItem="and" rows="3" kind="table"/>
 		<br/>
 		<prompt>Escriba la palabra su lengua utiliza para la conjunción ‘y luego’entre dos oraciones aquí:</prompt>
-		<textBox id="CoordSeq" dataItem="andThen" rows="3"/>
+		<textBox id="CoordSeq" dataItem="andThen" rows="3" kind="table"/>
 		<br/>
 		<prompt>Escriba la palabra su lengua utiliza para la conjunción ‘o' aquí:</prompt>
-		<textBox id="CoordOr" dataItem="or" rows="3"/>
+		<textBox id="CoordOr" dataItem="or" rows="3" kind="table"/>
 		<br/>
 	   <prompt>Escriba la palabra su lengua utiliza para la conjunción ‘pero' aquí:</prompt>
-		<textBox id="CoordBut" dataItem="but" rows="3"/>
+		<textBox id="CoordBut" dataItem="but" rows="3" kind="table"/>
 		<br/>
 	   <prompt>Escriba la palabra su lengua utiliza para la conjunción ‘y/o' aquí:</prompt>
-		<textBox id="CoordAndOr" dataItem="andOr" rows="3"/>
+		<textBox id="CoordAndOr" dataItem="andOr" rows="3" kind="table"/>
 		<br/>
 	   <prompt>Si su lengua utiliza ‘con' igual que una conjunción entre frases nominales, escriba esa palabra aquí:</prompt>
-		<textBox id="CoordWith" dataItem="with" rows="3"/>
+		<textBox id="CoordWith" dataItem="with" rows="3" kind="table"/>
 		<br/>
 		<prompt>Escriba cualquiera palabra adicional que su lengua utiliza entre las oraciones conjuntivas aquí:</prompt>
-		<textBox id="CoordOther" dataItem="other" rows="3"/>
+		<textBox id="CoordOther" dataItem="other" rows="3" kind="table"/>
 		<br/>
 	   <prompt>Escriba la conjuncion inicial que significa ‘o' que su lengua utiliza para ‘o...o' construcciones aquí:</prompt>
-		<textBox id="CoordEither" dataItem="either" rows="3"/>
+		<textBox id="CoordEither" dataItem="either" rows="3" kind="table"/>
 		<br/>
 	   <prompt>Escriba la conjuncion inicial negativa que significa ‘ni' que su lengua utiliza para ‘ni...ni' construcciones aquí:</prompt>
-		<textBox id="CoordNeither" dataItem="neither" rows="3"/>
+		<textBox id="CoordNeither" dataItem="neither" rows="3" kind="table"/>
 		<br/>
 	   <prompt>Escriba la conjuncion negativa que significa ‘ni' que su lengua utiliza para ‘ni...ni' construcciones aquí ((incluso si una conjunción inicial no se requiere para su lengua):</prompt>
-		<textBox id="CoordNor" dataItem="nor" rows="3"/>
+		<textBox id="CoordNor" dataItem="nor" rows="3" kind="table"/>
 		<br/>
 	   <instruction id="CoordAndOrInstruction">Note that a word like ‘and/or' which is written with a slash (/) in the word, must be entered in your lexicon with a backslash in front of the slash (eg. ‘and\/or') for <tool>CARLA Studio</tool> to process it correctly.</instruction>
 	   <radioGroup>
@@ -63,7 +63,7 @@
 	      <prompt><br/>¿Dónde se unen los clíticos o afijos dentro de la construcción coordinada?  Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">Al principio de la segunda oración enlazada como un proclítico</checkbox>
 	      <checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">Al final de la primera oración enlazada como un enclítico</checkbox>
-	      <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">En mi lengua, las conjunciones pueden unirse: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70"/></checkbox>
+	      <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">En mi lengua, las conjunciones pueden unirse: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde las conjunciones se unen en su lengua, o cambia la respuesta de arriba a “Sí, todas son palabras independientes”.</prompt>
 	   

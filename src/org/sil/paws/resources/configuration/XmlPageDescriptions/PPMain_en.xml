@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -54,13 +54,13 @@
               <checkbox id="PPModifiersOrdinal" dataItem="ppModifierOrdinal">Ordinals</checkbox>
               <checkbox id="PPModifiersManner" dataItem="ppModifierManner">Manner adverbials</checkbox>
               <checkbox id="PPModifiersLocative" dataItem="ppModifierLocative">Locative adverbials</checkbox>
-              <checkbox id="PPModifiersOther" dataItem="ppModifierOther">In my language, these other modifiers may be used: <textBox  id="PPModifiersOtherContent" dataItem="ppModifierOther" cols="70"  rows="1"/></checkbox>
+              <checkbox id="PPModifiersOther" dataItem="ppModifierOther">In my language, these other modifiers may be used: <textBox  id="PPModifiersOtherContent" dataItem="ppModifierOther" cols="70"  rows="1" kind="table"/></checkbox>
            </checkboxGroup>
            </radioGroup>
       <prompt id="PPModifiersNoCheckPrompt" show="swPPModifiersYesandNoCheck">WARNING: You need to check at least one box to describe which modifiers may occur in your language, or change the answer above to ‘No’.</prompt>
  <br/><br/>
       <prompt id="PPModifiersDegreePrompt" show="swPPModifiersYesDegree">Key the degree words which can modify a whole PP here:</prompt>
-      <textBox id="PPDegreeModifiersExample" dataItem="degree" rows="3" show="swPPModifiersYesDegree"/>
+      <textBox id="PPDegreeModifiersExample" dataItem="degree" rows="3" show="swPPModifiersYesDegree" kind="table"/>
       <prompt id="PPModifiersDegreePPPrompt" show="swPPModifiersYesDegree">Now key examples of PPs with the degree words modifying them here:</prompt>
       <textBox id="PPWithDegreeModifiersExample" dataItem="degreeWithPP" rows="3"  cols="80" show="swPPModifiersYesDegree"/>
 
@@ -69,14 +69,14 @@
          <checkbox id="PPDegreePosBefore"  dataItem="ppDegreePosBefore">Before it</checkbox>
          <checkbox id="PPDegreePosAfter"  dataItem="ppDegreePosAfter">After it</checkbox>
          <checkbox id="PPDegreePosBoth"  dataItem="ppDegreePosBoth">On both sides at the same time</checkbox>
-         <checkbox id="PPDegreePosOther"  dataItem="ppDegreePosOther">In my language, they may occur in the following position: <textBox  id="PPDegreePosOtherContent" dataItem="ppDegreePosOther" cols="70"  rows="1"/></checkbox>
+         <checkbox id="PPDegreePosOther"  dataItem="ppDegreePosOther">In my language, they may occur in the following position: <textBox  id="PPDegreePosOtherContent" dataItem="ppDegreePosOther" cols="70"  rows="1" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="PPDegreeWordNoCheckPrompt" show="swPPDegreeYesandNoCheck">WARNING: You need to check at least one box to describe where these degree word modifiers occur with respect to the rest of the PP in your language, or change the answer above to a different type of modifier.  In that case, you should not have any examples of PPs with degree word modifiers in the text box above.</prompt>
       <instruction id="PPModifiersDegreeYesInstruction" show="swPPModifiersYesDegree">In the lexicon, mark the degree words with the features <feature>makeDeg modifies_PP</feature>.    (If any of these degree words are the same as those which can modify another category, you can simply add the additional feature <feature>modifies_PP</feature> to the same lexical entry.)</instruction>
       <instruction id="PPDegreeEitherRestrictedInstruction" show="swPPDegreeEitherorBoth">In the lexicon, mark those degree words which can only occur initially with the feature <feature>PP-initial</feature> and those which can only occur finally with the feature <feature>PP-final</feature>.  Do not enter either feature on any which can occur on either side.</instruction>
       <br/><br/>
       <prompt id="PPModifiersOrdinalPrompt" show="swPPModifiersYesOrdinal">Key the ordinals which can modify a whole PP here:</prompt>
-      <textBox id="PPOrdinalModifiersExample" dataItem="ordinal" rows="3" show="swPPModifiersYesOrdinal"/>
+      <textBox id="PPOrdinalModifiersExample" dataItem="ordinal" rows="3" show="swPPModifiersYesOrdinal" kind="table"/>
       <prompt id="PPModifiersOrdinalPPPrompt" show="swPPModifiersYesOrdinal">Now key examples of PPs with the ordinals modifying them here:</prompt>
       <textBox id="PPWithOrdinalModifiersExample" dataItem="ordinalWithPP" rows="3" cols="80" show="swPPModifiersYesOrdinal"/>
  
@@ -85,14 +85,14 @@
          <checkbox id="PPOrdinalPosBefore"  dataItem="ppOrdinalPosBefore">Before it</checkbox>
          <checkbox id="PPOrdinalPosAfter"  dataItem="ppOrdinalPosAfter">After it</checkbox>
          <checkbox id="PPOrdinalPosBoth"  dataItem="ppOrdinalPosBoth">On both sides at the same time</checkbox>
-         <checkbox id="PPOrdinalPosOther"  dataItem="ppOrdinalPosOther">In my language, they may occur in the following position: <textBox  id="PPOrdinalPosOtherContent" dataItem="ppOrdinalPosOther" cols="70"  rows="1"/></checkbox>
+         <checkbox id="PPOrdinalPosOther"  dataItem="ppOrdinalPosOther">In my language, they may occur in the following position: <textBox  id="PPOrdinalPosOtherContent" dataItem="ppOrdinalPosOther" cols="70"  rows="1" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="PPOrdinalNoCheckPrompt" show="swPPOrdinalYesandNoCheck">WARNING: You need to check at least one box to describe where these ordinal modifiers occur with respect to the rest of the PP in your language, or change the answer above to a different type of modifier.  In that case, you should not have any examples of PPs with ordinal modifiers in the text box above.</prompt>
       <instruction id="PPModifiersOrdinalYesInstruction" show="swPPModifiersYesOrdinal">In the lexicon, mark the ordinals with the feature <feature>modifies_PP</feature>.</instruction>
       <instruction id="PPOrdinalEitherRestrictedInstruction" show="swPPOrdinalEitherorBoth">In the lexicon, mark those ordinals which can only occur initially with the feature <feature>PP-initial</feature> and those which can only occur finally with the feature <feature>PP-final</feature>.  Do not enter either feature on any which can occur on either side.</instruction>
       <br/><br/>
       <prompt id="PPModifiersMannerPrompt" show="swPPModifiersYesManner">Key the manner adverbials which can modify a whole PP here:</prompt>
-      <textBox id="PPMannerModifiersExample" dataItem="manner" rows="3" show="swPPModifiersYesManner"/>
+      <textBox id="PPMannerModifiersExample" dataItem="manner" rows="3" show="swPPModifiersYesManner" kind="table"/>
       <prompt id="PPModifiersMannerPPPrompt" show="swPPModifiersYesManner">Now key examples of PPs with manner adverbials modifying them here:</prompt>
       <textBox id="PPWithMannerModifiersExample" dataItem="mannerWithPP" rows="3" cols="80" show="swPPModifiersYesManner"/>
 
@@ -101,14 +101,14 @@
          <checkbox id="PPMannerPosBefore"  dataItem="ppMannerPosBefore">Before it</checkbox>
          <checkbox id="PPMannerPosAfter"  dataItem="ppMannerPosAfter">After it</checkbox>
          <checkbox id="PPMannerPosBoth"  dataItem="ppMannerPosBoth">On both sides at the same time</checkbox>
-         <checkbox id="PPMannerPosOther"  dataItem="ppMannerPosOther">In my language, they may occur in the following position: <textBox  id="PPMannerPosOtherContent" dataItem="ppMannerPosOther" cols="70"  rows="1"/></checkbox>
+         <checkbox id="PPMannerPosOther"  dataItem="ppMannerPosOther">In my language, they may occur in the following position: <textBox  id="PPMannerPosOtherContent" dataItem="ppMannerPosOther" cols="70"  rows="1" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="PPMannerNoCheckPrompt" show="swPPMannerYesandNoCheck">WARNING: You need to check at least one box to describe where these manner adverbial modifiers occur with respect to the rest of the PP in your language, or change the answer above to a different type of modifier.  In that case, you should not have any examples of PPs with manner adverbial modifiers in the text box above.</prompt>
       <instruction id="PPModifiersMannerYesInstruction" show="swPPModifiersYesManner">In the lexicon, mark the manner adverbials with the feature <feature>modifies_PP</feature>.</instruction>
       <instruction id="PPMannerEitherRestrictedInstruction" show="swPPMannerEitherorBoth">In the lexicon, mark those manner adverbials which can only occur initially with the feature <feature>PP-initial</feature> and those which can only occur finally with the feature <feature>PP-final</feature>.  Do not enter either feature on any which can occur on either side.</instruction>
       <br/><br/>
       <prompt id="PPModifiersLocativePrompt" show="swPPModifiersYesLocative">Key the locative adverbials which can modify a whole PP here:</prompt>
-      <textBox id="PPLocativeModifiersExample" dataItem="locative" rows="3" show="swPPModifiersYesLocative"/>
+      <textBox id="PPLocativeModifiersExample" dataItem="locative" rows="3" show="swPPModifiersYesLocative" kind="table"/>
       <prompt id="PPModifiersLocativePPPrompt" show="swPPModifiersYesLocative">Now key examples of PPs with the locative adverbials modifying them here:</prompt>
       <textBox id="PPWithLocativeModifiersExample" dataItem="locativeWithPP" rows="3" cols="80" show="swPPModifiersYesLocative"/>
 
@@ -117,7 +117,7 @@
          <checkbox id="PPLocativePosBefore"  dataItem="ppLocativePosBefore">Before it</checkbox>
          <checkbox id="PPLocativePosAfter"  dataItem="ppLocativePosAfter">After it</checkbox>
          <checkbox id="PPLocativePosBoth"  dataItem="ppLocativePosBoth">On both sides at the same time</checkbox>
-         <checkbox id="PPLocativePosOther"  dataItem="ppLocativePosOther">In my language, they may occur in the following position: <textBox  id="PPLocativePosOtherContent" dataItem="ppLocativePosOther" cols="70"  rows="1"/></checkbox>
+         <checkbox id="PPLocativePosOther"  dataItem="ppLocativePosOther">In my language, they may occur in the following position: <textBox  id="PPLocativePosOtherContent" dataItem="ppLocativePosOther" cols="70"  rows="1" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="PPLocativeNoCheckPrompt" show="swPPLocativeYesandNoCheck">WARNING: You need to check at least one box to describe where these locative adverbial modifiers occur with respect to the rest of the PP in your language, or change the answer above to a different type of modifier.  In that case, you should not have any examples of PPs with locative adverbial modifiers in the text box above.</prompt>
       <instruction id="PPModifiersLocativeYesInstruction" show="swPPModifiersYesLocative">In the lexicon, mark the locative adverbials with the feature <feature>modifies_PP</feature>.</instruction>
@@ -125,7 +125,7 @@
       
       <br/><br/>
       <prompt id="PPModifiersOtherPrompt" show="swPPModifiersYesOther">Key the other elements which can modify a whole PP in your language here:</prompt>
-      <textBox id="PPOtherModifiersExample" dataItem="otherMod" rows="3" show="swPPModifiersYesOther"/>
+      <textBox id="PPOtherModifiersExample" dataItem="otherMod" rows="3" show="swPPModifiersYesOther" kind="table"/>
       <prompt id="PPModifiersOtherPPPrompt" show="swPPModifiersYesOther">Now key examples of PPs with these other elements modifying them here:</prompt>
       <textBox id="PPWithOtherModifiersExample" dataItem="otherModWithPP" rows="3" cols="80" show="swPPModifiersYesOther"/>
       <br/>

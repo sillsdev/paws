@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="IPConditional" count="9.4.2">
    <title level="2">Las oraciones básicas - Condicionales</title>
@@ -33,29 +33,29 @@
          <checkbox id="IPConditionEnclitic" dataItem="conditionEnclitic">Como enclíticos que se unen an final de la última palabra en la frase condicional</checkbox>
          <checkbox id="IPConditionPrefix" dataItem="conditionPrefix">Como prefijos que se unen al verbo en la frase condicional</checkbox>
          <checkbox id="IPConditionSuffix" dataItem="conditionSuffix">Como sufijos que se unen al verbo en la frase condicional</checkbox>
-         <checkbox id="IPConditionOther" dataItem="conditionOther">En mi lengua, los indicadores de la condición se unen: <textBox  id="IPConditionOtherContent" dataItem="conditionOther" cols="70"  rows="1"/></checkbox>
+         <checkbox id="IPConditionOther" dataItem="conditionOther">En mi lengua, los indicadores de la condición se unen: <textBox  id="IPConditionOtherContent" dataItem="conditionOther" cols="70"  rows="1" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="IPConditionAttachesNoCheckPrompt" show="swIPConditionWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se unen los indicadores de la condición, o cambia su respuesta de arriba a ‘Sí, todas son palabras independientes’ o ‘No, solamente utiliza el modo condicional en el verbo’.</prompt>
       
       <prompt id="IPConditionCliticPrompt" show="swIPConditionNoOrSomeAndClitic">Escriba los clíticos que pueden indicar una frase condicional aquí, con un signo igual para indicar en qué lado se une:</prompt>  
-      <textBox id="IPConditionCliticExample" dataItem="conditionCliticExample" rows="3" show="swIPConditionNoOrSomeAndClitic"/>
+      <textBox id="IPConditionCliticExample" dataItem="conditionCliticExample" rows="3" show="swIPConditionNoOrSomeAndClitic" kind="table"/>
       <instruction id="IPConditionProcliticInstruction" show="swIPConditionNoOrSomeAndProclitic">In the lexicon, add the feature <feature>conditional_prefix</feature> to the proclitics which mark conditional phrases.
       </instruction>
       <instruction id="IPConditionEncliticInstruction" show="swIPConditionNoOrSomeAndEnclitic">In the lexicon, add the feature <feature>conditional_suffix</feature> to the enclitics which mark conditional phrases.</instruction>
       <prompt id="IPConditionAffixPrompt" show="swIPConditionNoOrSomeAndAffix">Escriba los afijos que pueden indicar una frase condicional aquí, con un guión para indicar en qué lado se le une al verbo:</prompt>  
-      <textBox id="IPConditionAffixExample" dataItem="conditionAffixExample" rows="3" show="swIPConditionNoOrSomeAndAffix"/>
+      <textBox id="IPConditionAffixExample" dataItem="conditionAffixExample" rows="3" show="swIPConditionNoOrSomeAndAffix" kind="table"/>
       <instruction id="IPConditionAffixInstruction" show="swIPConditionNoOrSomeAndAffix">In the lexicon, add the feature <feature>conditional</feature> to the affixes which can mark the verb in a conditional phrase.</instruction>
       <prompt id="IPConditionOtherPrompt" show="swIPConditionNoOrSomeAndOther">Escriba ejemplos de los otros elementos que pueden marcar la frase condicional como se permiten su lengua aquí:</prompt>  
-      <textBox id="IPConditionOtherExample" dataItem="conditionOtherExample" rows="3" show="swIPConditionNoOrSomeAndOther"/>   
+      <textBox id="IPConditionOtherExample" dataItem="conditionOtherExample" rows="3" show="swIPConditionNoOrSomeAndOther" kind="table"/>   
       <prompt id="IPConditionYesPrompt" show="swIPConditionWordYesOrSome">Escriba las palabras independientes que pueden indicar la condición aquí:</prompt>
-      <textBox id="IPConditionWordExample" dataItem="conditionWordExample" rows="3" show="swIPConditionWordYesOrSome"/>
+      <textBox id="IPConditionWordExample" dataItem="conditionWordExample" rows="3" show="swIPConditionWordYesOrSome" kind="table"/>
       <br/><br/>		
       <checkboxGroup id="IPConditionPos" show="swIPConditionWordYesOrSome">
          <prompt>De acuerdo con los ejemplos, ¿dónde se presentan los indicadores de la condición que se escriban como palabras independientes con respecto del resto de la frase condicional? Seleccione todas las opciones que son correctas en su lengua</prompt>
          <checkbox id="IPConditionPosBefore"  dataItem="conditionWordBefore">Antes del resto de la frase condicional</checkbox>
          <checkbox id="IPConditionPosAfter"  dataItem="conditionWordAfter">Después del resto de la frase condicional</checkbox>
          <checkbox id="IPConditionPosBoth"  dataItem="conditionWordBoth">En ambos lados de la misma frase condicional</checkbox>
-         <checkbox id="IPConditionPosOther"  dataItem="conditionWordOther">En mi lengua, pueden presentarse: <textBox  id="IPConditionPosOtherContent" dataItem="conditionWordOther" cols="70"  rows="1"/></checkbox>
+         <checkbox id="IPConditionPosOther"  dataItem="conditionWordOther">En mi lengua, pueden presentarse: <textBox  id="IPConditionPosOtherContent" dataItem="conditionWordOther" cols="70"  rows="1" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="IPConditionPosNoCheckPrompt" show="swIPConditionYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los indicadores de la condición con respecto del resto de la frase condicional, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra en la frase condicional’ o ‘No, solamente utiliza el modo condicional en el verbo’.</prompt>
       <instruction id="IPConditionYesInstruction" show="swIPConditionWordYesOrSome">In the lexicon, you will likely need to add a separate entry for each of these words, if they can also be used as adverbs and/or complementizers in embedded questions.  Give this entry the category <category>Cond</category> and the feature <feature>conditional</feature>.</instruction>

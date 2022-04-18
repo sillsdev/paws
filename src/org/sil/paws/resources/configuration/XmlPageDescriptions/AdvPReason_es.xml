@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="AdvPReason" count="3.4">
     <title level="2">Frases adverbiales - Los adverbios que expresan razón o propósito</title>
@@ -10,17 +10,14 @@
 </introduction>
     <form section="advp">
        <prompt>Escriba ejemplos de los adverbios independiente que expresan razón o propósito o están al inicio de una cláusula adverbial que expresa razón o propósito aquí:</prompt>
-        <textBox id="AdvPReasonExample" dataItem="reasonExample"/>
+        <textBox id="AdvPReasonExample" dataItem="reasonExample" kind="table"/>
        <prompt>Escriba ejemplos de frases adposicionales que expresan razón o propósito aquí:</prompt>
-       <textBox id="AdvPReasonPPExample" dataItem="reasonPPExample" rows="3"/>
+       <textBox id="AdvPReasonPPExample" dataItem="reasonPPExample" rows="3" kind="table"/>
        <prompt>Ahora escriba algunos ejemplos de oraciones completas con los adverbios que expresan razón o propósito o de las cláusulas adverbiales o de frases adposicionales que expresan razón o propósito (con una nueva línea después de cada ejemplo) aquí:</prompt>
        <textBox id="AdvPReasonSentExample" dataItem="reasonSentExample" rows="5" cols="80"/> 
        <br/>
        <instruction id="AdvPReasonInstruction">In the lexicon, key the feature <feature>reason</feature> on
-all adverbs that express reason or purpose, and also on the nouns like <example>reason</example> and <example>purpose</example>.  
-          Any multi-word forms, like <example>in order</example> are best handled as a single entry.
-          In <tool>FLEx</tool> interlinear, you can link the words together.
-          For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+all adverbs that express reason or purpose, and also on the nouns like <example>reason</example> and <example>purpose</example>.  Any multi-word forms, like <example>in order</example> are best handled as a single entry using <tool>Join Compound</tool>.
        </instruction>
        <br/><br/>
         <buttons>

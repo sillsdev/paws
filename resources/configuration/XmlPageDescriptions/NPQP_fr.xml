@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="NPQP" count="5.5.1">
-    <title level="2">Syntagmes Nominaux – Modificateurs de Syntagmes de Quantité</title>
-    <introduction id="NPQPIntroNotPractical" show="swNotPractical">Ensuite, au syntagme nominal il faut ajouter les quantificateurs, que nous avons discutés dans la <section number="2">Quantificateurs et Syntagmes de Quantité</section>.  Nous pourrons donc analyser des syntagmes nominaux, comme les suivants:</introduction>
-    <introduction id="NPQPIntroPractical" show="swPractical">Ensuite, au syntagme nominal il faut ajouter les quantificateurs, que nous avons discutés dans la <section number="2">Quantificateurs et Syntagmes de Quantité</section>.  Nous nous intéressons donc à des syntagmes nominaux comme les suivants:</introduction>    <EnglishExample>
+    <title level="2">Syntagmes nominaux – Modificateurs du syntagme de quantification</title>
+
+    <introduction>Ensuite, au syntagme nominal il faut ajouter les quantifieurs, qui ont été discutés dans la <section number="2">Quantifieurs et Syntagmes de quantification</section>.  Nous nous intéressons donc à des syntagmes nominaux comme les suivants :</introduction>
+    <EnglishExample>
         <exItem label="1.">seuls ces quelques livres</exItem>
         <exItem label="2.">les nombreux chiens du garçon</exItem>
         <exItem label="3.">seuls les cent premiers garçons</exItem>
@@ -12,43 +13,43 @@
         <exItem label="5.">vingt et un enfants</exItem>
     </EnglishExample>
     <form section="np">
-        <prompt>Entrez ici des exemples de syntagmes nominaux pareils dans votre langue:</prompt>
+        <prompt>Saisissez ici des exemples de syntagmes nominaux similaires dans votre langue :</prompt>
         <textBox id="NPQPExample" dataItem="qpExample" cols="80"/>
         <br/>
         <checkboxGroup>
-            <prompt>Selon les données que vous avez écrites, cochez la position des quantificateurs (y compris la forme cardinale des numéros) par rapport au nom.  Cochez toutes les possibilités qui existent pour votre langue.</prompt>
+            <prompt>Selon les données que vous avez saisies, cochez la position des quantifieurs (y compris les nombres cardinaux) par rapport au nom.  Cochez toutes les possibilités qui existent pour votre langue.</prompt>
             <checkbox id="NPQPPosBefore" dataItem="qpPosBefore">Avant le nom</checkbox>
             <checkbox id="NPQPPosAfter" dataItem="qpPosAfter">Après le nom</checkbox>
-            <checkbox id="NPQPPosBoth" dataItem="qpPosBoth">Des deux côtés dans le même syntagme nominal</checkbox>
-            <checkbox id="NPQPPosOther" dataItem="qpPosOther">Dans ma langue les quantificateurs peuvent se mettre dans les positions suivantes: <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1"/></checkbox>
+            <checkbox id="NPQPPosBoth" dataItem="qpPosBoth">De part et d’autre dans le même syntagme nominal</checkbox>
+            <checkbox id="NPQPPosOther" dataItem="qpPosOther">Dans ma langue les quantifieurs peuvent se trouver dans les positions suivantes : <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1" kind="table"/></checkbox>
            </checkboxGroup>
-        <prompt id="NPQPPosNoCheckPrompt" show="swNPQPNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire la position des quantificateurs par rapport au nom dans votre langue.</prompt>
+        <prompt id="NPQPPosNoCheckPrompt" show="swNPQPNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position des quantifieurs par rapport au nom dans votre langue.</prompt>
            <radioGroup id="NPQPPosEitherorBothRestrictedTable" show="swNPQPPosEitherorBothRestricted">
                     <groupName dataItem="qpEitherRestrictedNumPos" default="unknown" position="yesSpec">RNPQPPosEitherRestrictedNum</groupName>
-               <prompt>Est-ce que les numéros se mettent seulement dans une position par rapport au nom?</prompt>
-               <radio id="NPQPPosEitherRestrictedNumBefore" dataValue="before">Oui, tous les numéros précèdent le nom</radio>
-               <radio id="NPQPPosEitherRestrictedNumAfter" dataValue="after">Oui, tous les numéros suivent le nom</radio>
+               <prompt>Les nombres se trouvent-ils toujours dans la même position par rapport au nom ?</prompt>
+               <radio id="NPQPPosEitherRestrictedNumBefore" dataValue="before">Oui, tous les nombres précèdent le nom</radio>
+               <radio id="NPQPPosEitherRestrictedNumAfter" dataValue="after">Oui, tous les nombres suivent le nom</radio>
                <radio id="NPQPPosEitherRestrictedNumNo" dataValue="no">Non, certains peuvent se mettrent avant ou après le nom</radio>
            </radioGroup>
         
         <radioGroup id="NPQClassifierSpecificTable" show="swOTClassifierSpecific">
             <groupName dataItem="classifierPresentQ" default="no">RNPQClassifierPresent</groupName>
-            <prompt><br/>Dans les exemples que vous citez, est-ce qu’on utilise les classificateurs quantificateur / numérique dans les syntagmes nominaux de ce genre?</prompt>
+            <prompt><br/>Dans les exemples que vous avez cités, est-ce que les classificateurs sont utilisés avec les quantifieurs  ou les nombres dans les syntagmes nominaux de ce genre ?</prompt>
             <radio id="NPQClassifierPresentYes"  dataValue="yes">Oui, il faut un classificateur dans tous les syntagmes nominaux de ce genre</radio>
             <radio id="NPQClassifierPresentSome" dataValue="some">On trouve un classificateur  dans certains  syntagmes nominaux de ce genre, mais pas dans tous</radio>
             <radio id="NPQClassifierPresentNo" dataValue="no">Non, on n’utilise jamais de classificateurs dans ce genre de syntagme nominal</radio>
         </radioGroup>
         <checkboxGroup id="NPQClassifierSpecificPos" show="swOTClassifierSpecificAndNPQClassifierPresentYesOrSome">
-            <prompt><br/>Dans les exemples que vous citez, quelle position les classificateurs prennent-ils par rapport au quantificateur / numéro et le nom? Cochez toutes les cases qui s’appliquent à votre langue.</prompt>
-            <checkbox id="NPQClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificQPosBeforeBoth">En tête, avant le quantificateur et le nom</checkbox>
-            <checkbox id="NPQClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificQPosAfterBoth">A la fin, après le nom et le quantificateur</checkbox>
-            <checkbox id="NPQClassifierSpecificPosAfterQBeforeN"  dataItem="classifierSpecificQPosAfterQBeforeN">Après le quantificateur mais avant le nom</checkbox>
-            <checkbox id="NPQClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificQPosAfterNBeforeQ">Après le nom mais avant le quantificateur</checkbox>
-            <checkbox id="NPQClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificQPosPrefixQ">Ajouté comme préfixe au quantificateur</checkbox>
-            <checkbox id="NPQClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificQPosSuffixQ">Ajouté comme suffixe au quantificateur</checkbox>
-            <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">Dans ma langue les classificateurs peuvent se mettre dans la position ci-dessous: <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1"/></checkbox>
+            <prompt><br/>Dans les exemples que vous avez cités, quelle est la position que les classificateurs prennent par rapport au quantifieur / nombre et au nom ? Cochez toutes les cases qui s’appliquent à votre langue.</prompt>
+            <checkbox id="NPQClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificQPosBeforeBoth">En tête, avant le quantifieur et le nom</checkbox>
+            <checkbox id="NPQClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificQPosAfterBoth">A la fin, après le nom et le quantifieur</checkbox>
+            <checkbox id="NPQClassifierSpecificPosAfterQBeforeN"  dataItem="classifierSpecificQPosAfterQBeforeN">Après le quantifieur mais avant le nom</checkbox>
+            <checkbox id="NPQClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificQPosAfterNBeforeQ">Après le nom mais avant le quantifieur</checkbox>
+            <checkbox id="NPQClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificQPosPrefixQ">Ajouté comme préfixe au quantifieur</checkbox>
+            <checkbox id="NPQClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificQPosSuffixQ">Ajouté comme suffixe au quantifieur</checkbox>
+            <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">Dans ma langue les classificateurs peuvent se mettre dans la position suivante : <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1" kind="table"/></checkbox>
         </checkboxGroup>
-        <prompt id="NPQClassifierSpecificPosNoCheckPrompt" show="swNPQClassifierPresentYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire la position des classificateurs par rapport aux quantificateurs et au nom dans votre langue; autrement vous devez changer votre réponse pour lire: « Non, on n’utilise jamais de classificateur dans ce genre de syntagme nominal ».</prompt>
+        <prompt id="NPQClassifierSpecificPosNoCheckPrompt" show="swNPQClassifierPresentYesOrSomeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position des classificateurs par rapport aux quantifieurs et au nom dans votre langue ; sinon vous devez modifier votre réponse et cocher : « Non, on n’utilise jamais de classificateur dans ce genre de syntagme nominal ».</prompt>
         
         
         <br/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="NPAdjP" count="5.6.1">
-	<title level="2">Syntagmes Nominaux – Modificateurs de Syntagmes Adjectivaux</title>
-	<introduction>Les syntagmes adjectivaux viennent ensuite, déjà discutés dans la <section number="4">Adjectifs et Syntagmes Adjectivaux</section>.  Les adjectifs se trouvent près du nom. Quelques exemples de syntagmes nominaux incluant des syntagmes adjectivaux en anglais sont:</introduction>
+	<title level="2">Syntagmes nominaux – Modificateurs adjectivaux</title>
+	<introduction>Les syntagmes adjectivaux viennent ensuite, ils ont déjà été discutés dans la <section number="4">Adjectifs et Syntagmes adjectivaux</section>.  Les adjectifs sont placés près du nom. Quelques exemples de syntagmes nominaux incluant des syntagmes adjectivaux en anglais sont :</introduction>
 	<EnglishExample>
 		<exItem label="1.">those very dirty old books  « ces vieux livres très sales »</exItem>
 		<exItem label="2.">the boy’s many black dogs  « les nombreux chiens noirs du garçon »</exItem>
@@ -13,39 +13,39 @@
 		<exItem label="4.">happy little children  « des petits enfants heureux »</exItem>
 		<exItem label="5.">only the first ten very eager young boys  « seulement les dix premiers jeunes garçons très passionés »</exItem>
 	</EnglishExample>
-	<introduction>Comme tous les exemples en anglais le montrent, plus qu’un syntagme adjectival est en général permis avant le nom. <span id="NPAdjPRecurringIntro" show="swNotPractical"> Cela sera traité dans l’analyseur syntactique par une règle récursive.</span>  En français normalement l’adjectif se trouve après le nom, avec quelques exceptions précises; où deux ou plusieurs adjectifs accompagnent un nom, on peut se trouve avant et l’autre(s) après.</introduction>
+	<introduction>Comme les exemples en anglais le montrent, plus d’un syntagme adjectival est permis avant le nom, ce qui n’est généralement pas permis en français. <span id="NPAdjPRecurringIntro" show="swNotPractical"> This will be handled in the syntactic parser by a recursive rule.</span>  </introduction>
 	<form section="np">
-		<prompt>Entrez ici des exemples de syntagmes nominaux pareils avec des modificateurs adjectivaux dans votre langue:</prompt>
+		<prompt>Saisissez ici des exemples de syntagmes nominaux similaires comprenant des modificateurs adjectivaux, dans votre langue :</prompt>
 		<textBox id="NPAdjpExample" dataItem="adjpExample" cols="80"/>
 		<br/>
 		<br/>
 		<checkboxGroup>
-			<prompt>Entrez ici des exemples de syntagmes nominaux pareils avec des modificateurs adjectivaux dans votre langue</prompt>
+			<prompt>Où les modificateurs  adjectivaux se trouvent-ils par rapport au nom ? Cochez toutes les options qui sont correctes dans votre langue</prompt>
 			<checkbox id="NPAdjPPosBefore" dataItem="adjBefore">Avant le nom</checkbox>
 			<checkbox id="NPAdjPPosAfter" dataItem="adjAfter">Après le nom</checkbox>
-			<checkbox id="NPAdjPPosBoth" dataItem="adjBoth">Des deux côtés dans le même syntagme nominal</checkbox>
-			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">Dans ma langue l’adjectif peut se trouver comme suit par rapport au nom: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1"/></checkbox>
+			<checkbox id="NPAdjPPosBoth" dataItem="adjBoth">De part et d’autre du le même syntagme nominal</checkbox>
+			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">Dans ma langue l'adjectif peut se placer dans la position suivante par rapport au nom : <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1" kind="table"/></checkbox>
 		</checkboxGroup>
-		<prompt id="NPAdjPPosNoCheckPrompt" show="swNPAdjPPosNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les syntagmes adjectivaux par rapport au nom dans votre langue.</prompt>
+		<prompt id="NPAdjPPosNoCheckPrompt" show="swNPAdjPPosNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les modificateurs  adjectivaux par rapport au nom dans votre langue.</prompt>
 	   <instruction id="NPAdjPPosEitherSideRestrictedInstruction" show="swNPAdjPPosEitherSideRestricted">In the lexicon, mark those adjectives which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>. Do not enter either feature on any adjective which can occur on either side.</instruction>
 		<radioGroup id="NPAdjClassifierSpecificTable" show="swOTClassifierSpecific">
 			<groupName dataItem="classifierPresentAdj" default="no">RNPAdjClassifierPresent</groupName>
-			<prompt><br/>En regardant les exemples, est-ce que les classificateurs sont utilisés dans ces syntagmes nominaux avec des syntagmes adjectivaux?</prompt>
+			<prompt><br/>En regardant les exemples, est-ce que les classificateurs sont utilisés dans ces syntagmes nominaux avec des modificateurs adjectivaux ?</prompt>
 			<radio id="NPAdjClassifierPresentYes"  dataValue="yes">Oui, un classificateur est exigé dans tous les syntagmes nominaux de ce type</radio>
 			<radio id="NPAdjClassifierPresentSome" dataValue="some">Un classificateur est présent dans certains syntagmes nominaux de ce type, mais n’est pas exigé dans tous</radio>
 			<radio id="NPAdjClassifierPresentNo" dataValue="no">Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal</radio>
 		</radioGroup>
 		<checkboxGroup id="NPAdjClassifierSpecificPos" show="swOTClassifierSpecificAndNPAdjClassifierPresentYesOrSome">
-			<prompt><br/>En regardant ces exemples. où les classificateurs se trouvent-ils par rapport aux adjectifs et au nom? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
-			<checkbox id="NPAdjClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificAdjPosBeforeBoth">Premièrement avant l’adjectif et le nom</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificAdjPosAfterBoth">Finalement après le nom et l’adjectif</checkbox>
+			<prompt><br/>En regardant les exemples, où les classificateurs se trouvent-ils par rapport aux adjectifs et au nom ? Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+			<checkbox id="NPAdjClassifierSpecificPosBeforeBoth"  dataItem="classifierSpecificAdjPosBeforeBoth">En première position, avant l’adjectif et le nom</checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosAfterBoth"  dataItem="classifierSpecificAdjPosAfterBoth">En dernière position, après le nom et l’adjectif</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosAfterAdjBeforeN"  dataItem="classifierSpecificAdjPosAfterAdjBeforeN">Après l’adjectif mais avant le nom</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosAfterNBeforeAdj"  dataItem="classifierSpecificAdjPosAfterNBeforeAdj">Après le nom mais avant l’adjectif</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosPrefixAdj"  dataItem="classifierSpecificAdjPosPrefixAdj">Comme préfixe sur l’adjectif</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosSuffixAdj"  dataItem="classifierSpecificAdjPosSuffixAdj">Comme suffixe sur l’adjectif</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">Dans ma langue les classificateurs peuvent se trouver dans la position suivante: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1"/></checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosPrefixAdj"  dataItem="classifierSpecificAdjPosPrefixAdj">Comme un préfixe sur l’adjectif</checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosSuffixAdj"  dataItem="classifierSpecificAdjPosSuffixAdj">Comme un suffixe sur l’adjectif</checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">Dans ma langue les classificateurs peuvent se trouver dans la position suivante : <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1" kind="table"/></checkbox>
 		</checkboxGroup>
-		<prompt id="NPAdjClassifierSpecificPosNoCheckPrompt" show="swNPAdjClassifierPresentYesOrSomeAndNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport  aux adjectifs et au nom dans votre langue, ou changez à « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal ».</prompt>
+		<prompt id="NPAdjClassifierSpecificPosNoCheckPrompt" show="swNPAdjClassifierPresentYesOrSomeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport  aux adjectifs et au nom dans votre langue.  Sinon, il faut cocher « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal ».</prompt>
 		
 		<br/>
 	   <instruction id="NPAdjPNumberAgreementInstruction" show="swNPNumberAgreement">
@@ -76,59 +76,58 @@
 	   </instruction>
 	   <br/>
 		
-		<introduction>Les <technicalTermRef term="ttParticiple">participes</technicalTermRef> ou syntagmes participiaux peuvent aussi agir comme adjectifs en modifiant un nom. Quelques exemples en français avec le participe ou le syntagme participial entre les crochets incluent:</introduction>
+		<introduction>Les <technicalTermRef term="ttParticiple">participes</technicalTermRef> ou syntagmes participiaux peuvent aussi fonctionner comme de adjectifs modifiant un nom. Quelques exemples de participe ou de syntagme participial en français (entre les crochets)comprennent :</introduction>
 		<EnglishExample>
-			<exItem label="6.">le soleil [brillant]</exItem>
-			<exItem label="7.">mon enfant [pleurant]</exItem>
-			<exItem label="8.">les livres [aimés par des millions]</exItem>
+			<exItem label="6.">le soleil clair, [brillant]</exItem>
+			<exItem label="7.">mon enfant [larmoyant]</exItem>
+			<exItem label="8.">les livres [appréciés par des millions de lecteurs]</exItem>
 		</EnglishExample>
-		<introduction>Certaines langues ne utilisent pasun participe pour exprimer de semblables significations, mais utilisent à la place un syntagme relatif.
-			Par exemple, en français: <example>le soleil qui brille</example> et <example>l’enfant qui pleure</example>.
+		<introduction>Certaines langues utilisent non pas un participe mais une proposition relative pour exprimer ce type de significations.
+			Par exemple, en français: <example>le soleil [qui brille]</example>, <example>l’enfant [qui pleure]</example> et <example>les livres [qui sont appréciés par des millions de lecteurs]</example>.
 		</introduction>
-		<prompt><br/>Entrez ici comment votre langue exprimerait des exemples pareils comme (6-8):</prompt>
+		<prompt><br/>Saisissez ici la façon dont votre langue exprime des exemples similaires comme (6-8) :</prompt>
 		<textBox id="NPAdjPPartExample" dataItem="partExample" cols="80"/>
 	   <radioGroup>
 	      <groupName dataItem="adjpPart" default="no" >RNPAdjPPart</groupName>
-	   	<prompt>Est-ce que votre langue permet à des participes ou à des syntagmes avec participiaux d’agir comme des adjectifs modifiant un nom?</prompt>
+	   	<prompt>Est-ce que votre langue permet que des participes ou des syntagmes participiaux fonctionnent comme des adjectifs modifiant un nom ?</prompt>
 	      <radio id="NPAdjPPartYes" dataValue="yes">Oui</radio>
-	   	<radio id="NPAdjPPartNo" dataValue="no">Non, une proposition relative est utilisée au lieu</radio>
-	   	<radio id="NPAdjPPartOther" dataValue="other">Non, ma langue n’utilise ni un participe ni une proposition relative pour exprimer des significations pareilles, mais a d’autres moyens</radio>
+	   	<radio id="NPAdjPPartNo" dataValue="no">Non, une proposition relative est utilisée à la place</radio>
+	   	<radio id="NPAdjPPartOther" dataValue="other">Non, ma langue n’utilise ni un participe ni une proposition relative pour exprimer ce genre de significations, mais utilise d'autres moyens</radio>
 	   </radioGroup>
-		<prompt id="NPAdjPPartRelClPrompt" show="swNPAdjPPartNo">La structure et la position des propositions relatives seront traitées dans la <section number="12">Propositions Relatives</section>.</prompt>
+		<prompt id="NPAdjPPartRelClPrompt" show="swNPAdjPPartNo">La structure et la position des propositions relatives seront traitées dans la <section number="12">Propositions relatives</section>.</prompt>
 	   
 	   <instruction id="NPAdjPInstruction" show="swNPAdjPPartYes">Note that the head of these participle phrases is categorically a verb, so these are derived adjectivals.  They will remain verbs in our grammar rules, but need to be distinguished as participles so that only the participle forms of verbs may be used as adjectives.  The appropriate features will be added in <section number="9.2">Basic Sentences – Inflection Features</section>
 		</instruction>
 		<br/><br/>
-		<introduction id="NPAdjPNounCaseChangeIntroduction" show="swNPPossNounCaseChangeYes">Les langues qui changent le cas du nom principal quand un possesseur est présent changent aussi le cas des adjectifs qui interviennent pour s’y accorder. Certaines langues de ce type changent aussi le cas du nom prinicipal lorsque seulement un modificateur adjectival est présent même s’il n’y a pas de possesseur.  
+		<introduction id="NPAdjPNounCaseChangeIntroduction" show="swNPPossNounCaseChangeYes">Les langues qui changent le cas du nom principal quand un possesseur est présent changent aussi le cas des adjectifs qui le déterminent pour que ceux-ci s' accordent avec le nom. Certaines langues de ce type changent le cas du nom principal même lorsque qu’il n’y a pas de possesseur mais seulement un modificateur adjectival.  
 <br/>
 			<br/>
-			De plus, certaines langues de ce dernier type ont un affixe explicite qui marque le cas du génitif (ou le cas normal des possesseurs) sur le nom principal pour indiquer qu’il doit y avoir soit un adjectif soit un possesseur dans ce syntagme nominal. Dans cette situation, l’adjectif et/ou le posssesseur seront aussi dans le cas génitif (ou le cas normal des possesseurs) bien que le cas marqué ne sera pas explicite dans les modificateurs les plus élevés du syntagme nominal. </introduction>
+			De plus, certaines langues de ce dernier type marquent le nom principal par un affixe explicite qui indique le cas du génitif (ou le cas normal pour les possesseurs) pour signifier qu'il doit y avoir soit un adjectif soit un possesseur dans ce syntagme nominal. Dans cette situation, l'adjectif et/ou le posssesseur seront aussi au cas génitif (ou au cas normal pour les possesseurs) bien que le marquage de cas ne soit pas explicite pour le modificateur le plus élevé du syntagme nominal. </introduction>
 <br/>
 		<radioGroup id="NPAdjPCaseChangeTable" show="swNPPossNounCaseChangeYes">
 			<groupName dataItem="adjpCaseChange" default="no">RNPAdjPCaseChange</groupName>
-			<prompt>
-				Est-ce que la présence d’un adjectif change le marqueur du cas sur le nom  principal pour s’accorder au cas normal d’un possesseur, avec ou sans la présence d’un possesseur?</prompt>
-			<radio id="NPAdjPCaseChangeNo" dataValue="no">Non, le cas du nom principal change seulement lorsqu’un possesseur est present; cependant dans cette situation un adjectif intervenant peut/doit aussi porter ce cas</radio>
-			<radio id="NPAdjPCaseChangeYes" dataValue="yes">Oui, le cas du nom principal change pour s’accorder au cas normal d’un possesseur  même si seulement un modificateur d’adjectif est présent</radio>
+			<prompt>Est-ce que la présence d'un adjectif modifie le marquage du cas sur le nom  principal pour qu’il corresponde au cas normal d'un possesseur, que le possesseur soit présent ou non ?</prompt>
+			<radio id="NPAdjPCaseChangeNo" dataValue="no">Non, le cas du nom principal change seulement lorsqu’un possesseur est présent; cependant dans cette situation un adjectif intervenant peut/doit aussi porter ce cas</radio>
+			<radio id="NPAdjPCaseChangeYes" dataValue="yes">Oui, le cas du nom principal change pour correspondre au cas normal d'un possesseur  même dans les cas où seul un modificateur adjectival est présent</radio>
 			<radioGroup id="NPAdjPCaseAffixTable" show="swNPAdjPCaseChangeYes">
 				<groupName dataItem="adjpCaseAffix" default="no">RNPAdjPCaseAffix</groupName>
 				<prompt>
 					Y a-t-il un affixe de cas explicite qui marque le cas <span id="NPAdjPCaseAffixGenPrompt" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitPrompt" show="swNPCaseSplitNotGen">ou </span>
 					<span id="NPAdjPCaseAffixErgPrompt" show="swNPPossCaseErg">ergatif </span>
-					<span id="NPAdjPCaseAffixAbsPrompt" show="swNPPossCaseAbs">absolutif </span>(le cas normal des possesseurs) sur le nom principal quand il est présent et qui indique qu’il doit y avoir soit un adjectif soit un possesseur dans ce syntagme nominal?</prompt>
+					<span id="NPAdjPCaseAffixAbsPrompt" show="swNPPossCaseAbs">absolutif </span>(le cas normal pour les possesseurs) sur le nom principal et qui indique qu’un adjectif ou un possesseur se trouvent obligatoirement dans ce syntagme nominal quand il est présent ?</prompt>
 				<radio id="NPAdjPCaseAffixNo" dataValue="no">Non, le marqueur du cas <span id="NPAdjPCaseAffixGenNoSpan" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitNoSpan" show="swNPCaseSplitNotGen">ou </span>
 					<span id="NPAdjPCaseAffixErgNoSpan" show="swNPPossCaseErg">ergatif </span>
-					<span id="NPAdjPCaseAffixAbsNoSpan" show="swNPPossCaseAbs">absolutif </span>n’est pas traité de cette façon distincte</radio>
-				<radio id="NPAdjPCaseAffixYesPrefix" dataValue="yesPrefix">Oui, un préfixe: quand un préfixe explicite <span id="NPAdjPCaseAffixGenYesPrefixSpan" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitYesPrefixSpan" show="swNPCaseSplitNotGen">ou </span>
-					<span id="NPAdjPCaseAffixErgYesPrefixSpan" show="swNPPossCaseErg">ergatif </span>
-					<span id="NPAdjPCaseAffixAbsYesPrefixSpan" show="swNPPossCaseAbs">absolutif </span>est présent sur le nom principal, cela indique qu’un modificateur adjectif et /ou un possesseur doit être présent dans le syntagme.  (Si l’adjectif est marqué avec ce préfixe <span id="NPAdjPCaseAffixGenYesPrefixSpan1" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitYesPrefixSpan1" show="swNPCaseSplitNotGen">ou </span>
+					<span id="NPAdjPCaseAffixAbsNoSpan" show="swNPPossCaseAbs">absolutif </span>n'est pas utilisé de cette façon précise</radio>
+				<radio id="NPAdjPCaseAffixYesPrefix" dataValue="yesPrefix">Oui, un préfixe: quand un préfixe explicite du <span id="NPAdjPCaseAffixGenYesPrefixSpan" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitYesPrefixSpan" show="swNPCaseSplitNotGen">ou </span>
+					<span id="NPAdjPCaseAffixErgYesPrefixSpan" show="swNPPossCaseErg">de l’ergatif </span>
+					<span id="NPAdjPCaseAffixAbsYesPrefixSpan" show="swNPPossCaseAbs">de l’absolutif </span>est présent sur le nom principal, cela indique qu’un modificateur adjectival et /ou un possesseur doit être présent dans le syntagme.  (Si l’adjectif est marqué par ce préfixe <span id="NPAdjPCaseAffixGenYesPrefixSpan1" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitYesPrefixSpan1" show="swNPCaseSplitNotGen">ou </span>
 					<span id="NPAdjPCaseAffixErgYesPrefixSpan1" show="swNPPossCaseErg">ergatif </span>
-					<span id="NPAdjPCaseAffixAbsYesPrefixSpan1" show="swNPPossCaseAbs">absolutif </span>alors un autre adjectif et/ou un possesseur doit aussi être présent.) </radio>
+					<span id="NPAdjPCaseAffixAbsYesPrefixSpan1" show="swNPPossCaseAbs">absolutif </span>un autre adjectif et/ou un possesseur doit aussi être présent.) </radio>
 				<radio id="NPAdjPCaseAffixYesSuffix" dataValue="yesSuffix">Oui, un suffixe: quand un suffixe explicite <span id="NPAdjPCaseAffixGenYesSuffixSpan" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitYesSuffixSpan" show="swNPCaseSplitNotGen">ou </span>
 					<span id="NPAdjPCaseAffixErgYesSuffixSpan" show="swNPPossCaseErg">ergatif </span>
-					<span id="NPAdjPCaseAffixAbsYesSuffixSpan" show="swNPPossCaseAbs">absolutif </span>est présent sur le nom principal, cela indique qu’un modificateur adjectif et/ou un possesseur doit être présent dans le syntagme. (Si l’adjectif est marqué avec ce suffixe <span id="NPAdjPCaseAffixGenYesSuffixSpan1" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitYesSuffixSpan1" show="swNPCaseSplitNotGen">ou </span>
+					<span id="NPAdjPCaseAffixAbsYesSuffixSpan" show="swNPPossCaseAbs">absolutif </span>est présent sur le nom principal, cela indique qu’un modificateur adjectival et/ou un possesseur doit être présent dans le syntagme. (Si l’adjectif est marqué avec ce suffixe <span id="NPAdjPCaseAffixGenYesSuffixSpan1" show="swNPPossCaseGen">génitif </span><span id="NPAdjPCaseAffixSplitYesSuffixSpan1" show="swNPCaseSplitNotGen">ou </span>
 					<span id="NPAdjPCaseAffixErgYesSuffixSpan1" show="swNPPossCaseErg">ergatif </span>
-					<span id="NPAdjPCaseAffixAbsYesSuffixSpan1" show="swNPPossCaseAbs">absolutif </span>alors un autre adjectif et /ou un possesseur doit être présent.) </radio>
+					<span id="NPAdjPCaseAffixAbsYesSuffixSpan1" show="swNPPossCaseAbs">absolutif </span>un autre adjectif et /ou un possesseur doit aussi être présent.) </radio>
 			</radioGroup>
 		</radioGroup>
 	   <br/>	   

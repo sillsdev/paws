@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -17,13 +17,13 @@
 			<prompt><br/>How does your language express causatives?  Check all options that are correct for your language</prompt>
 		   <checkbox id="IPCausativeAffix" dataItem="causativeAffix">There is a verbal affix for causative that introduces an additional argument</checkbox>
 		   <checkbox id="IPCausativeMake" dataItem="causativeMake">Causative sentences consist of two clauses with a main verb meaning “make” or “cause”</checkbox>
-			<checkbox id="IPCausativeOther" dataItem="causativeOther">My language expresses causatives in this other way:<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" cols="70"  rows="1"/></checkbox>
+			<checkbox id="IPCausativeOther" dataItem="causativeOther">My language expresses causatives in this other way:<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" cols="70"  rows="1" kind="table"/></checkbox>
 		</checkboxGroup>
 	   <prompt id="IPCausativeNoCheckPrompt" show="swIPCausativeNoCheck">WARNING: You did not check any boxes to describe how causatives are formed in your language.  Please check at least one option.</prompt>
 	   <prompt id="IPCausativeAffixAndFeaturesNoPrompt" show="swIPCausativeAffixAndFeaturesNo">WARNING: In <section number="9.2">Basic Sentences - Inflection Features</section> you did not check the causative feature as occurring in your language.  This is inconsistent with your answer that there is a verbal affix for causative here.  If your language has one or more causative affixes, 
 	      return to <section number="9.2">Basic Sentences - Inflection Features</section> and check the causative feature.</prompt>
 	   <prompt id="IPCausativeAffixPrompt" show="swIPCausativeAffix"><br/>Key the causative affix(es) in your language with a hyphen to indicate which side they attach to the verb on, with each on a separate line, here: </prompt>
-	   <textBox id="IPCausativeAffixExample" dataItem="causativeAffixExample" rows="3" show="swIPCausativeAffix"/>		
+	   <textBox id="IPCausativeAffixExample" dataItem="causativeAffixExample" rows="3" show="swIPCausativeAffix" kind="table"/>		
 		
 	   <instruction id="IPCausativeAffixInstruction" show="swIPCausativeAffix">Mark the causative affixes with the feature <feature>causative</feature> in the lexicon, if you have not already done so. </instruction>
 
@@ -78,12 +78,12 @@
 <checkbox id="IPAntipassiveErg"  dataItem="antipassiveErg" show="swCaseErgOrSplit">The subject of a transitive verb changes to absolutive case when the object is deleted</checkbox>
 	      <checkbox id="IPAntipassiveAgr" dataItem="antipassiveAgr">The object agreement affix on the verb is deleted to signal an antipassive</checkbox>
 	      <checkbox id="IPAntipassiveAffix" dataItem="antipassiveAffix">There is a verbal affix for antipassive that signals the change in grammatical roles</checkbox>
-	   	<checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">In my language, the antipassive may be expressed as follows: <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" cols="70"  rows="1"/></checkbox>
+	   	<checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">In my language, the antipassive may be expressed as follows: <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" cols="70"  rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="IPAntipassiveNoCheckPrompt" show="swIPAntipassiveYesAndNoCheck">WARNING: You did not check any boxes to describe how anitpassives are formed in your language.  Please check one or more boxes, or change your answer above to ‘No’, in which case you should not have any examples in the box above either.</prompt>
 	   
 	   <prompt id="IPAntipassiveAffixPrompt" show="swIPAntipassiveYesAffix">Key the antipassive affix(es) in your language with a hyphen to indicate which side they attach to the verb on, with each on a separate line, here: </prompt>
-	   <textBox id="IPAntipassiveAffixExample" dataItem="antipassiveAffixExample" rows="3" show="swIPAntipassiveYesAffix"/>		
+	   <textBox id="IPAntipassiveAffixExample" dataItem="antipassiveAffixExample" rows="3" show="swIPAntipassiveYesAffix" kind="table"/>		
 	   <instruction id="IPAntipassiveInstruction" show="swIPAntipassiveYesAffix">Mark the antipassive affixes with the feature <feature>antipassive</feature> in the lexicon, if you have not already done so.
 	   </instruction>	   
 	   <br/><br/>

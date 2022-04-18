@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="IPAux" count="9.3.2">
     <title level="2">Basic Sentences - Verb Compounds</title>
@@ -13,7 +13,7 @@
    <radio id="IPHeartCompoundNo" dataValue="no">No</radio>
 </radioGroup>     
       <prompt id="IPHeartCompoundExamplesPrompt" show="swIPHeartCompoundYes">Key examples of this special type of verb compound from your language here:</prompt>
-      <textBox id="IPHeartCompoundExample" dataItem="heartCompoundExample" show="swIPHeartCompoundYes"/>
+      <textBox id="IPHeartCompoundExample" dataItem="heartCompoundExample" show="swIPHeartCompoundYes" kind="table"/>
         <br/>
         <br/>
       <radioGroup>
@@ -23,11 +23,11 @@
          <radio id="IPBodypartCompoundNo" dataValue="no">No</radio>
       </radioGroup>     
       <prompt id="IPBodypartCompoundExamplesPrompt" show="swIPBodypartCompoundYes">Key examples of this special type of verb compound from your language here:</prompt>
-      <textBox id="IPBodypartCompoundExample" dataItem="bodypartCompoundExample" show="swIPBodypartCompoundYes"/>
+      <textBox id="IPBodypartCompoundExample" dataItem="bodypartCompoundExample" show="swIPBodypartCompoundYes" kind="table"/>
       <br/>
       <br/>
       <prompt id="IPVerbNCompoundExamplesPrompt">Key examples of <span id="IPHeartOrBodypartCompoundYesSpan" show="swIPHeartOrBodypartCompoundYes">any other </span>compounds consisting of a verb and a noun from your language here:</prompt>
-      <textBox id="IPVerbNCompoundExample" dataItem="verbNCompoundExample"/>
+      <textBox id="IPVerbNCompoundExample" dataItem="verbNCompoundExample" kind="table"/>
       <br/>
       <br/>
       <prompt id="IPVerbNCompoundSentExamplesPrompt">Now take some examples from <span id="IPHeartAndBodypartCompoundNoSpan" show="swIPHeartAndBodypartCompoundNo">the box</span><span id="IPHeartOrBodypartCompoundYesSpan2" show="swIPHeartOrBodypartCompoundYes">each box</span> above and use it in a full sentence here:</prompt>
@@ -35,7 +35,7 @@
       <br/>
       <br/>
       <prompt id="IPVerbOtherCompoundExamplesPrompt">Key examples of compounds consisting of a verb and any other word category besides nouns from your language here:</prompt>
-      <textBox id="IPVerbOtherCompoundExample" dataItem="verbOtherCompoundExample"/>
+      <textBox id="IPVerbOtherCompoundExample" dataItem="verbOtherCompoundExample" kind="table"/>
       <br/>
       <br/>
       <prompt id="IPVerbOtherCompoundSentExamplesPrompt">Now take some examples from the box above and use it in a full sentence here:</prompt>
@@ -44,10 +44,7 @@
       <br/>
       <prompt id="IPVerbIdiomExamplesPrompt">Next we want to consider the cases of a verb and another word or words that go together as a unit to express a notion that is not just the same as the combined meaning of the two independent words.  These are commonly called idioms.  Key examples of two or more word idioms from your language here:</prompt>
       <textBox id="IPVerbIdiomExample" dataItem="idiomExample" cols="80"/>
-      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon.
-         In <tool>FLEx</tool> interlinear, you can link the words together.
-         For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
-      </instruction>
+      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon using <tool>Join Compound</tool>.</instruction>
        <br/><br/>
         <buttons>
             <button id="IPCompoundsBack" value="Back" goto="IPAux.xml"/>

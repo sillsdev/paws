@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="QEmbYN" count="11.3">
    <title level="2">Las preguntas - Las preguntas de respuesta sí/no como cláusula subordinada</title>
@@ -37,27 +37,27 @@
          <checkbox id="QEmbYNCliticEnclitic" dataItem="embYNEnclitic">Como un enclítico que se une al final de culaquiera palabra que termina la pregunta de respuesta sí/no subordinada</checkbox>
          <checkbox id="QEmbYNCliticPrefix" dataItem="embYNPrefix">Como un prefijo que se une al verbo en la pregunta de respuesta sí/no subordinada</checkbox>
          <checkbox id="QEmbYNCliticSuffix" dataItem="embYNSuffix">Como un sufijo que se une al verbo en la pregunta de respuesta sí/no subordinada</checkbox>
-         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNCliticPosNoCheckPrompt" show="swQEmbYNWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos indicadores o complementadores de pregunta de respuesta sí/no subordinada se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       <prompt id="QEmbYNCliticsExamplesPrompt" show="swQEmbYNCliticProcliticOrEnclitic"><br/>Escriba los indicadores o complementadores de pregunta de respuesta sí/no subordinada que son clíticos con un signo igual para indicar en qué lado se unen aquí:</prompt>
-      <textBox id="QEmbYNCliticExamples" dataItem="embYNCliticExample" show="swQEmbYNCliticProcliticOrEnclitic" rows="3"/>    
+      <textBox id="QEmbYNCliticExamples" dataItem="embYNCliticExample" show="swQEmbYNCliticProcliticOrEnclitic" rows="3" kind="table"/>    
       <instruction id="QEmbYNProcliticInstruction" show="swQEmbYNCliticProclitic">In the lexicon, add the feature <feature>YNQ_prefix</feature> to these proclitics.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       <instruction id="QEmbYNEncliticInstruction" show="swQEmbYNCliticEnclitic">In the lexicon, add the feature <feature>YNQ_suffix</feature> to these enclitics.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QEmbYNAffixExamplesPrompt" show="swQEmbYNCliticPrefixOrSuffix"><br/>Escriba los indicadores o complementadores de pregunta de respuesta sí/no subordinada que son afijos en el verbo con un guión para indicar en qué lado se unen aquí:</prompt>
-      <textBox id="QEmbYNAffixExamples" dataItem="embYNAffixExample" show="swQEmbYNCliticPrefixOrSuffix" rows="3"/>    
+      <textBox id="QEmbYNAffixExamples" dataItem="embYNAffixExample" show="swQEmbYNCliticPrefixOrSuffix" rows="3" kind="table"/>    
       <instruction id="QEmbYNAffixInstruction" show="swQEmbYNCliticPrefixOrSuffix">In the lexicon, add the feature <feature>YNQ</feature> to these verbal affixes.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QEmbYNWordExamplesPrompt" show="swQEmbYNWordYesOrSome"><br/>Escriba los indicadores o complementadores de pregunta de respuesta sí/no subordinada que son palabras independientes aquí:    </prompt>
-      <textBox id="QEmbYNWordExamples" dataItem="embYNWordExample" show="swQEmbYNWordYesOrSome" rows="3"/>    
+      <textBox id="QEmbYNWordExamples" dataItem="embYNWordExample" show="swQEmbYNWordYesOrSome" rows="3" kind="table"/>    
       
       <checkboxGroup id="QEmbYNPosTable" show="swQEmbYNWordYesOrSome">
          <prompt><br/>¿Dónde se presentan los indicadores o complementadores de pregunta de respuesta sí/no que se ecriben como palabras independientes con respecto al resto de la pregunta de respuesta sí/no subordinada? Seleccione todas las opciones que son correctas en su lengua</prompt>
          <checkbox id="QEmbYNPosBefore"  dataItem="embYNWordBefore">Antes de la pregunta</checkbox>
          <checkbox id="QEmbYNPosAfter"  dataItem="embYNWordAfter">Después de la pregunta</checkbox>
          <checkbox id="QEmbYNPosBoth"  dataItem="embYNWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">En mi lengua, el indicador o complementador de pregunta de respuesta sí/no puede presentarse:   <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">En mi lengua, el indicador o complementador de pregunta de respuesta sí/no puede presentarse:   <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNPosNoCheckPrompt" show="swQEmbYNWordYesOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta de respuesta sí/no que se escriben como palabras independientes con respecto al resto de la pregunta de respuesta sí/no subordinada en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       

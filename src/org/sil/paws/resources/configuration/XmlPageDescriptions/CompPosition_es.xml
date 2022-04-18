@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="CompPosition" count="10.3">
     <title level="2">Las cláusulas de complemento - La posición de complementador</title>
@@ -32,31 +32,31 @@
           <checkbox id="CompAttachesEnclitic" dataItem="compEnclitic">Como un enclítico que se une al final de culaquiera palabra que termina la cláusula subordinada</checkbox>
           <checkbox id="CompAttachesPrefix" dataItem="compPrefix">Como un prefijo que se une al verbo en la cláusula subordinada</checkbox>
           <checkbox id="CompAttachesSuffix" dataItem="compSuffix">Como un sufijo que se une al verbo en la cláusula subordinada</checkbox>
-          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">En mi lengua, estos elementos se unen: <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" cols="70"  rows="1"/></checkbox>
+          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">En mi lengua, estos elementos se unen: <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" cols="70"  rows="1" kind="table"/></checkbox>
        </checkboxGroup>
        <prompt id="CompAttachesNoCheckPrompt" show="swCompWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos complementadores se unen en su lengua, o cambia su respuesta arriba a ‘Sí, todos son palabras independientes’.</prompt>
        
        <prompt id="CompCliticPrompt" show="swCompWordNoOrSomeAndClitic">Escriba los complementadores que son clíticos con un signo igual para indicar en qué lado se unen aquí:</prompt>  
-       <textBox id="CompCliticExample" dataItem="compCliticExample" show="swCompWordNoOrSomeAndClitic" rows="3"/>
+       <textBox id="CompCliticExample" dataItem="compCliticExample" show="swCompWordNoOrSomeAndClitic" rows="3" kind="table"/>
        <instruction id="CompProcliticInstruction" show="swCompWordNoOrSomeAndProclitic">In the lexicon, add the feature <feature>comp_prefix</feature> to the proclitics.</instruction>
        <instruction id="CompEncliticInstruction" show="swCompWordNoOrSomeAndEnclitic">In the lexicon, add the feature <feature>comp_suffix</feature> to the enclitics.</instruction>
        
        <prompt id="CompAffixPrompt" show="swCompWordNoOrSomeAndAffix">Escriba los complementadores que son afijos en el verbo con un guión para indicar en qué lado se unen aquí:</prompt>  
-       <textBox id="CompAffixExample" dataItem="compAffixExample" show="swCompWordNoOrSomeAndAffix" rows="3"/>
+       <textBox id="CompAffixExample" dataItem="compAffixExample" show="swCompWordNoOrSomeAndAffix" rows="3" kind="table"/>
        <instruction id="CompAffixInstruction" show="swCompWordNoOrSomeAndAffix">In the lexicon, add the feature <feature>comp</feature> to these verbal affixes.</instruction>
        
        <prompt id="CompAtachesOtherPrompt" show="swCompWordNoOrSomeAndOther">Escriba los complementadores que se unen como se permiten en su lengua aquí, con un signo igual o un guión para indicar en qué lado se unen:</prompt>  
-       <textBox id="CompAttachesOtherExample" dataItem="compAttachesOtherExample" show="swCompWordNoOrSomeAndOther" rows="3"/>   
+       <textBox id="CompAttachesOtherExample" dataItem="compAttachesOtherExample" show="swCompWordNoOrSomeAndOther" rows="3" kind="table"/>   
  
        <prompt id="CompWordYesPrompt" show="swCompWordYesOrSome">Escriba los complementadores que se escriben como palabras independientes aquí:</prompt>
-       <textBox id="CompWordYesExample" dataItem="compExample" show="swCompWordYesOrSome" rows="3"/>
+       <textBox id="CompWordYesExample" dataItem="compExample" show="swCompWordYesOrSome" rows="3" kind="table"/>
        <br/><br/>		
        <checkboxGroup id="CompWordPos" show="swCompWordYesOrSome">
           <prompt>De acuerdo con los ejemplos, ¿Dónde se presenta el complementador con respecto al resto de la cláusula subordinada? Seleccione todas las opciones que son correctas en su lengua</prompt>
           <checkbox id="CompWordPosBefore"  dataItem="compBefore">Antes de la cláusula</checkbox>
           <checkbox id="CompWordPosAfter"  dataItem="compAfter">Después de la cláusula</checkbox>
           <checkbox id="CompWordPosBoth"  dataItem="compBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="CompWordPosOther"  dataItem="compOther">En mi lengua, el complementador puede presentarse: <textBox  id="CompWordPosOtherContent" dataItem="compOther" cols="70"  rows="1"/></checkbox>
+          <checkbox id="CompWordPosOther"  dataItem="compOther">En mi lengua, el complementador puede presentarse: <textBox  id="CompWordPosOtherContent" dataItem="compOther" cols="70"  rows="1" kind="table"/></checkbox>
        </checkboxGroup>
        <prompt id="CompWordNoCheckPrompt" show="swCompWordYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos complementadores que se escriben como palabras independientes en su lengua, o cambia su respuesta arriba a ‘No, todos se unen a otra palabra’.</prompt>
        

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -23,7 +23,7 @@
 	      <checkbox id="NPAdjPPosBefore" dataItem="adjBefore">Antes del sustantivo</checkbox>
 	      <checkbox id="NPAdjPPosAfter" dataItem="adjAfter">Después del sustantivo</checkbox>
 	      <checkbox id="NPAdjPPosBoth" dataItem="adjBoth">En ambos lados en la misma frase nominal</checkbox>
-	   	<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">En mi lengua, las frases adjetivales pueden presentarse: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1"/></checkbox>
+	   	<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">En mi lengua, las frases adjetivales pueden presentarse: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="NPAdjPPosNoCheckPrompt" show="swNPAdjPPosNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las frases adjetivales con respecto al sustantivo que las modifican.</prompt>
 	   <instruction id="NPAdjPPosEitherSideRestrictedInstruction" show="swNPAdjPPosEitherSideRestricted">In the lexicon, mark those adjectives which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>. Do not enter either feature on any adjective which can occur on either side.</instruction>
@@ -42,7 +42,7 @@
 			<checkbox id="NPAdjClassifierSpecificPosAfterNBeforeAdj"  dataItem="classifierSpecificAdjPosAfterNBeforeAdj">Después del sustantivo pero antes del adjetivo</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosPrefixAdj"  dataItem="classifierSpecificAdjPosPrefixAdj">Como un prefijo en el adjetivo</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosSuffixAdj"  dataItem="classifierSpecificAdjPosSuffixAdj">Como un sufijo en el adjetivo</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1"/></checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1" kind="table"/></checkbox>
 		</checkboxGroup>
 		<prompt id="NPAdjClassifierSpecificPosNoCheckPrompt" show="swNPAdjClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto a los adjetivos y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
 		
@@ -69,8 +69,8 @@
 	   <instruction id="NPQPAgreementClassInstruction" show="swNPAgreementClassYes">
 	      To handle class marking and agreement:
 	      <ul>
-	         <li>It is most likely the case that the same affixes that mark the class number or type on nouns are also used on adjectives.  If this is the case in your language, the appropriate class feature should already have been added to the affixes in <section number="1.">La tipología - Clases de sustantivo y clasificadores</section>, so all the words will automatically come from the morphological parser with the class number or type marked.</li>
-	         <li>Any adjectives which can only appear with a certain class, yet do not have an affix which marks the class, will require marking of the class feature on the particular lexical item in the lexicon.   Mark those elements with the feature <feature>class_##</feature>, where ## is replaced by a number between 1 and 25.  Alternatively, these can be marked with one of the class type features discussed in <section number="1.">La tipología - Clases de sustantivo y clasificadores</section>.</li>
+	         <li>It is most likely the case that the same affixes that mark the class number or type on nouns are also used on adjectives.  If this is the case in your language, the appropriate class feature should already have been added to the affixes in <section number="1.">Overall Typology - Classifiers</section>, so all the words will automatically come from the morphological parser with the class number or type marked.</li>
+	         <li>Any adjectives which can only appear with a certain class, yet do not have an affix which marks the class, will require marking of the class feature on the particular lexical item in the lexicon.   Mark those elements with the feature <feature>class_##</feature>, where ## is replaced by a number between 1 and 25.  Alternatively, these can be marked with one of the class type features discussed in <section number="1.">Overall Typology - Classifiers</section>.</li>
 	      </ul>
 	   </instruction>
 	   <br/>
@@ -130,28 +130,29 @@
 			</radioGroup>
 		</radioGroup>
 
-		<instruction id="NPAdjPCaseAffixYesPrefixInstruction" show="swNPAdjPCaseAffixYesPrefix">In the lexicon, key the feature <span id="NPAdjPCaseAffixGenPrefixSpan" show="swNPPossCaseGen">
-				<feature>genitive_prefix </feature>
-			</span><span id="NPAdjPCaseAffixSplitPrefixSpan" show="swNPCaseSplitNotGen">or </span>
-			<span id="NPAdjPCaseAffixErgPrefixSpan" show="swNPPossCaseErg">
-				<feature>ergative_prefix </feature>
-			</span>
-			<span id="NPAdjPCaseAffixAbsPrefixSpan" show="swNPPossCaseAbs">
-				<feature>absolutive_prefix </feature>
-			</span>on the phrase-delimiting affix which marks <span id="NPAdjPCaseAffixGenPrefixSpan1" show="swNPPossCaseGen">genitive </span><span id="NPAdjPCaseAffixSplitPrefixSpan1" show="swNPCaseSplitNotGen">or </span>
-			<span id="NPAdjPCaseAffixErgPrefixSpan1" show="swNPPossCaseErg">ergative </span>
-			<span id="NPAdjPCaseAffixAbsPrefixSpan1" show="swNPPossCaseAbs">absolutive </span>case.</instruction>
-		<instruction id="NPAdjPCaseAffixYesSuffixInstruction" show="swNPAdjPCaseAffixYesSuffix">In the lexicon, key the feature <span id="NPAdjPCaseAffixGenSuffixSpan" show="swNPPossCaseGen">
-				<feature>genitive_suffix </feature>
-			</span><span id="NPAdjPCaseAffixSplitSuffixSpan" show="swNPCaseSplitNotGen">or </span>
-			<span id="NPAdjPCaseAffixErgSuffixSpan" show="swNPPossCaseErg">
-				<feature>ergative_suffix </feature>
-			</span>
-			<span id="NPAdjPCaseAffixAbsSuffixSpan" show="swNPPossCaseAbs">
-				<feature>absolutive_suffix </feature>
-			</span>on the phrase-delimiting affix which marks <span id="NPAdjPCaseAffixGenSuffixSpan1" show="swNPPossCaseGen">genitive </span><span id="NPAdjPCaseAffixSplitSuffixSpan1" show="swNPCaseSplitNotGen">or </span>
-			<span id="NPAdjPCaseAffixErgSuffixSpan1" show="swNPPossCaseErg">ergative </span>
-			<span id="NPAdjPCaseAffixAbsSuffixSpan1" show="swNPPossCaseAbs">absolutive </span> case.</instruction>
+	   <instruction id="NPAdjPCaseAffixYesPrefixInstruction" show="swNPAdjPCaseAffixYesPrefix">In the lexicon, key the feature <span id="NPAdjPCaseAffixGenPrefixSpan" show="swNPPossCaseGen">
+	      <feature>genitive_prefix </feature>
+	   </span><span id="NPAdjPCaseAffixSplitPrefixSpan" show="swNPCaseSplitNotGen">or </span>
+	      <span id="NPAdjPCaseAffixErgPrefixSpan" show="swNPPossCaseErg">
+	         <feature>ergative_prefix </feature>
+	      </span>
+	      <span id="NPAdjPCaseAffixAbsPrefixSpan" show="swNPPossCaseAbs">
+	         <feature>absolutive_prefix </feature>
+	      </span>on the affix which marks <span id="NPAdjPCaseAffixGenPrefixSpan1" show="swNPPossCaseGen">genitive </span><span id="NPAdjPCaseAffixSplitPrefixSpan1" show="swNPCaseSplitNotGen">or </span>
+	      <span id="NPAdjPCaseAffixErgPrefixSpan1" show="swNPPossCaseErg">ergative </span>
+	      <span id="NPAdjPCaseAffixAbsPrefixSpan1" show="swNPPossCaseAbs">absolutive </span>case on the head noun and on an adjective if another adjective or possessor is present.</instruction>
+	   <instruction id="NPAdjPCaseAffixYesSuffixInstruction" show="swNPAdjPCaseAffixYesSuffix">In the lexicon, key the feature <span id="NPAdjPCaseAffixGenSuffixSpan" show="swNPPossCaseGen">
+	      <feature>genitive_suffix </feature>
+	   </span><span id="NPAdjPCaseAffixSplitSuffixSpan" show="swNPCaseSplitNotGen">or </span>
+	      <span id="NPAdjPCaseAffixErgSuffixSpan" show="swNPPossCaseErg">
+	         <feature>ergative_suffix </feature>
+	      </span>
+	      <span id="NPAdjPCaseAffixAbsSuffixSpan" show="swNPPossCaseAbs">
+	         <feature>absolutive_suffix </feature>
+	      </span>on the affix which marks <span id="NPAdjPCaseAffixGenSuffixSpan1" show="swNPPossCaseGen">genitive </span><span id="NPAdjPCaseAffixSplitSuffixSpan1" show="swNPCaseSplitNotGen">or </span>
+	      <span id="NPAdjPCaseAffixErgSuffixSpan1" show="swNPPossCaseErg">ergative </span>
+	      <span id="NPAdjPCaseAffixAbsSuffixSpan1" show="swNPPossCaseAbs">absolutive </span> case on the head noun and on an adjective if another adjective or possessor is present.</instruction>
+	   
 		<br/>
 		<br/>
 		<buttons>

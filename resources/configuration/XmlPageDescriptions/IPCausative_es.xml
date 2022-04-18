@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -16,12 +16,12 @@
 	      <prompt><br/>¿Cómo se expresan causativas en su lengua? Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="IPCausativeAffix" dataItem="causativeAffix">Hay un afijo verbal para causativo que presenta un argumento adicional</checkbox>
 	      <checkbox id="IPCausativeMake" dataItem="causativeMake">Las oraciones causativas consisten en dos cláusulas con un verbo principal que significa “hacer” o “causar”</checkbox>
-	      <checkbox id="IPCausativeOther" dataItem="causativeOther">En mi lengua las causativas se expresan en esta otra manera::<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" cols="70"  rows="1"/></checkbox>
+	      <checkbox id="IPCausativeOther" dataItem="causativeOther">En mi lengua las causativas se expresan en esta otra manera:<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" cols="70"  rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="IPCausativeNoCheckPrompt" show="swIPCausativeNoCheck">ADVERTENCIA: Usted necesita sellecione al menos una opción para describir cómo se forman las causativas en su lengua. </prompt>
 	   <prompt id="IPCausativeAffixAndFeaturesNoPrompt" show="swIPCausativeAffixAndFeaturesNo">ADVERTENCIA: En <section number="9.2"> Las oraciones básicas - La flexión verbal</section> no seleccionó el accidente gramatical de voz causativa para su lengua. Esto es inconsistente con su respuesta que existe un afijo verbal para causativo aquí. Si su lengua tiene uno o más afijos causativos, vuelva a <section number="9.2"> Las oraciones básicas - La flexión verbal</section> y seleccione el accidente gramatical de voz causativa.</prompt>
 	   <prompt id="IPCausativeAffixPrompt" show="swIPCausativeAffix"><br/>Escriba los afijos causativos en su lengua con una indicación del guión en el lado que se unen al verbo (con cada uno en una línea separada) aquí:  </prompt>
-	   <textBox id="IPCausativeAffixExample" dataItem="causativeAffixExample" rows="3" show="swIPCausativeAffix"/>		
+	   <textBox id="IPCausativeAffixExample" dataItem="causativeAffixExample" rows="3" show="swIPCausativeAffix" kind="table"/>		
 
 	   <instruction id="IPCausativeAffixInstruction" show="swIPCausativeAffix">Mark the causative affixes with the feature <feature>causative</feature> in the lexicon, if you have not already done so. </instruction>
 
@@ -75,12 +75,12 @@
 	      <checkbox id="IPAntipassiveErg"  dataItem="antipassiveErg" show="swCaseErgOrSplit">El sujeto de un verbo transitivo cambia al caso absolutivo cuando se suprime el objeto</checkbox>
 	      <checkbox id="IPAntipassiveAgr" dataItem="antipassiveAgr">El afijo de concordancia con el objeto en el verbo se suprime para indicar una oración antipasiva</checkbox>
 	      <checkbox id="IPAntipassiveAffix" dataItem="antipassiveAffix">Hay un afijo para voz antipasiva que se une con un verbo transitivo para indicar el cambio en relaciones gramaticales</checkbox>
-	      <checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">En mi lengua, las antipasivas pueden expresarse: <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" cols="70"  rows="1"/></checkbox>
+	      <checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">En mi lengua, las antipasivas pueden expresarse: <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" cols="70"  rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="IPAntipassiveNoCheckPrompt" show="swIPAntipassiveYesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se forman las antipasivas en su lengua, o cambia su respuesta de arriba a ‘No’.  En este caso, no debe ser ningún ejemplo de antipasivas en el campo de arriba.tampoco.</prompt>
 	   
 	   <prompt id="IPAntipassiveAffixPrompt" show="swIPAntipassiveYesAffix">Escriba los afijos antipasivos en su lengua con una indicación del guión en el lado que se une con el verbo, con cada uno en una linea separada, aquí: </prompt>
-	   <textBox id="IPAntipassiveAffixExample" dataItem="antipassiveAffixExample" rows="3" show="swIPAntipassiveYesAffix"/>		
+	   <textBox id="IPAntipassiveAffixExample" dataItem="antipassiveAffixExample" rows="3" show="swIPAntipassiveYesAffix" kind="table"/>		
 	   <instruction id="IPAntipassiveInstruction" show="swIPAntipassiveYesAffix">Mark the antipassive affixes with the feature <feature>antipassive</feature> in the lexicon, if you have not already done so.
 	   </instruction>	   
 	   <br/><br/>

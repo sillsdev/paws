@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="IPAux" count="9.3.2">
    <title level="2">Las oraciones básicas - Verbos compuestos</title>
@@ -13,7 +13,7 @@
    <radio id="IPHeartCompoundNo" dataValue="no">No</radio>
 </radioGroup>     
       <prompt id="IPHeartCompoundExamplesPrompt" show="swIPHeartCompoundYes">Escriba algunos ejemplos de este tipo especial de verbo compuesto aquí:</prompt>
-      <textBox id="IPHeartCompoundExample" dataItem="heartCompoundExample" show="swIPHeartCompoundYes"/>
+      <textBox id="IPHeartCompoundExample" dataItem="heartCompoundExample" show="swIPHeartCompoundYes" kind="table"/>
         <br/>
         <br/>
       <radioGroup>
@@ -23,11 +23,11 @@
          <radio id="IPBodypartCompoundNo" dataValue="no">No</radio>
       </radioGroup>     
       <prompt id="IPBodypartCompoundExamplesPrompt" show="swIPBodypartCompoundYes">Escriba algunos ejemplos de este tipo especial de verbo compuesto aquí:</prompt>
-      <textBox id="IPBodypartCompoundExample" dataItem="bodypartCompoundExample" show="swIPBodypartCompoundYes"/>
+      <textBox id="IPBodypartCompoundExample" dataItem="bodypartCompoundExample" show="swIPBodypartCompoundYes" kind="table"/>
       <br/>
       <br/>
       <prompt id="IPVerbNCompoundExamplesPrompt">Escriba algunos ejemplos de <span id="IPHeartOrBodypartCompoundYesSpan" show="swIPHeartOrBodypartCompoundYes">cualquier otros</span> compuestos que consisten de un verbo y un sustantivo aquí:</prompt>
-      <textBox id="IPVerbNCompoundExample" dataItem="verbNCompoundExample"/>
+      <textBox id="IPVerbNCompoundExample" dataItem="verbNCompoundExample" kind="table"/>
       <br/>
       <br/>
       <prompt id="IPVerbNCompoundSentExamplesPrompt">Ahora escriba ejemplos de oraciones completas con los verbos compuestos arriba aquí:</prompt>
@@ -35,7 +35,7 @@
       <br/>
       <br/>
       <prompt id="IPVerbOtherCompoundExamplesPrompt">Escriba algunos ejemplos de compuestos que  consisten de un verbo con una palabra que no es un sustantivo aquí:</prompt>
-      <textBox id="IPVerbOtherCompoundExample" dataItem="verbOtherCompoundExample"/>
+      <textBox id="IPVerbOtherCompoundExample" dataItem="verbOtherCompoundExample" kind="table"/>
       <br/>
       <br/>
       <prompt id="IPVerbOtherCompoundSentExamplesPrompt">Ahora escriba algunos ejemplos de oraciones con estos compuestos que consisten de un verbo con una palabra que no es un sustantivo aquí:</prompt>
@@ -44,11 +44,8 @@
       <br/>
       <prompt id="IPVerbIdiomExamplesPrompt">Ahora se consideren expresiones idiomáticas que consisten en un verbo y otra palabra que juntos, como una unidad, expresan una idea que no es la misma que el significado cuando se combinan los de las dos palabras independientes. Se llaman modismos.  Escriba algunos ejemplos de modismos en su lengua aquí:</prompt>
       <textBox id="IPVerbIdiomExample" dataItem="idiomExample" cols="80"/>
-      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon.
-         In <tool>FLEx</tool> interlinear, you can link the words together.
-         For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
-      </instruction>
-      <br/><br/>
+      <instruction id="IPVerbIdiomInstruction">These multi-word idioms are best handled as a single verb entry in the lexicon using <tool>Join Compound</tool>.</instruction>
+       <br/><br/>
         <buttons>
             <button id="IPCompoundsBack" value="Back" goto="IPAux.xml"/>
             <button id="IPCompoundsNext" value="Next" goto="IPContents_es.htm"/>

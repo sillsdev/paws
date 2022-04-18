@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -8,7 +8,7 @@
 	<introduction>  
 	The next type of modifier to consider is <technicalTermRef term="ttPossessors"/>.  Possession can normally be expressed by a pronoun or by a nominal phrase which may consist of a proper name, a simple noun, or a fully modified noun.  However, Spanish only allows pronouns in the possessor position before the noun, with all noun and full nominal phrase possessors expressed in a prepositional phrase with <example>de</example> after the noun.<br/>
 		<br/>Within the languages which express possessors by nouns or full nominal phrases as well as by pronouns, many also add some kind of marking, such as the <example>’s</example> in English,
-	   to the possessor phrase itself as an indication of possession.  These markings are either affixes on the head noun or phrase-level clitics which attach to one end of the whole phrase.  Sometimes the possessor phrase marker is written as an independent word. The English marking is the second type, because alongside phrases where the <example>’s</example> appears to attach to the head noun, as in <example>the boy’s mother</example>, there are phrases which clearly show that the clitic attaches 
+	   to the posessor phrase itself as an indication of possession.  These markings are either affixes on the head noun or phrase-level clitics which attach to one end of the whole phrase.  Sometimes the possessor phrase marker is written as an independent word. The English marking is the second type, because alongside phrases where the <example>’s</example> appears to attach to the head noun, as in <example>the boy’s mother</example>, there are phrases which clearly show that the clitic attaches 
 		to the end of the whole nominal phrase, such as <example>the boy that I just talked to’s mother</example> or <example>the girl in green’s wonderful speech</example>.  These examples also show that possessors 
 		can include <technicalTermRef term="ttAdpositionalPhrases"/> and relative clauses.  
 	<br/><br/>
@@ -21,7 +21,7 @@
 		<textBox id="NPPossExample" dataItem="possessorExample" cols="80"/>
 	   <br/>
 	   <prompt>
-		Key some examples of possessed nominal phrases with adpositional phrases as the possessor here, as in <example>that book of John's</example>, if allowed:</prompt>
+	   	Key some examples of possessed nominal prases with adpositional phrases as the possessor here, as in <example>that book of John's</example>, if allowed:</prompt>
 	   <textBox id="NPPossPPExample" dataItem="ppExample" cols="80"/>
 	   <br/>
 	   <prompt>Note also that possessors can be embedded in one another, as in <example>the boy’s sister’s dog</example>.  This is allowed in Spanish within the prepositional phrase after the noun.<br/><br/>
@@ -78,15 +78,15 @@
 	   <prompt id="NPPossMarkedYesAffixPrompt" show="swNPPossMarkedYesAffix">
 	      Key the possessive marker affix that marks the noun as a possessor here, with a hyphen to indicate which side it attaches on:
 	   </prompt>
-	   <textBox id="NPPossMarkerAffixExample" dataItem="possMarkerAffix" show="swNPPossMarkedYesAffix" rows="2"/>
+	   <textBox id="NPPossMarkerAffixExample" dataItem="possMarkerAffix" show="swNPPossMarkedYesAffix" rows="2" kind="table"/>
 	   <prompt id="NPPossMarkedYesCliticPrompt" show="swNPPossMarkedYesClitic">
 	      Key the possessive marker clitic that marks the nominal phrase as a possessor here, with an equal sign to indicate which side it attaches on:
 	   </prompt>
-	   <textBox id="NPPossMarkerCliticExample" dataItem="possMarkerClitic" show="swNPPossMarkedYesClitic" rows="2"/>
+	   <textBox id="NPPossMarkerCliticExample" dataItem="possMarkerClitic" show="swNPPossMarkedYesClitic" rows="2" kind="table"/>
 	   <prompt id="NPPossMarkedYesWordPrompt" show="swNPPossMarkedYesWord">
 	      Key the possessive marker word that marks the nominal phrase as a possessor here:
 	   </prompt>
-	   <textBox id="NPPossMarkerWordExample" dataItem="possMarkerWord" show="swNPPossMarkedYesWord" rows="2"/>
+	   <textBox id="NPPossMarkerWordExample" dataItem="possMarkerWord" show="swNPPossMarkedYesWord" rows="2" kind="table"/>
 	   <radioGroup id="NPPossMarkedYesWordRequiredTable" show="swNPPossMarkedYesWord">
 					<groupName default="no" dataItem="possWordRequired">RNPPossMarkedYesWordRequired</groupName>
 					<prompt><br/>Is this possessive marker word required on all possessors (other than pronouns)?</prompt>
@@ -98,7 +98,7 @@
 				   <checkbox id="NPPossMarkedYesWordBefore" dataItem="possWordBefore">Before the possessor</checkbox>
 				   <checkbox id="NPPossMarkedYesWordAfter" dataItem="possWordAfter">After the possessor</checkbox>
 				   <checkbox id="NPPossMarkedYesWordBoth" dataItem="possWordBoth">On both sides of the possessor</checkbox>
-					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">In my language, the possessive marker word may occur as follows: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1"/></checkbox>
+					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">In my language, the possessive marker word may occur as follows: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1" kind="table"/></checkbox>
 				</checkboxGroup>
 	   <prompt id="NPPossMarkedYesWordAndNoCheckPrompt" show="swPossMarkedYesWordAndNoCheck">WARNING: You said above that possessors are marked with a possessive word, but you did not check any of the options as to where it occurs.  Please either check one or more options here as appropriate, or change the answer above to a different type pf marker or "No, there is no special marking".</prompt>
 	   
@@ -132,7 +132,7 @@
 		<introduction id="NPPossCooccurIntroduction" show="swNPArtAndOrDem">We also need to know whether possessors and articles or demonstratives can co-occur in the same nominal phrase.  In English, these elements do not co-occur, unless the possessor is expressed in a prepositional phrase.  For example, we can’t say <example>those [the boy’s] books</example>; instead we use <example>those books [of his]</example> to express the same thought.  Some other languages allow both possessors and articles or demonstratives to occur in the same phrase, so the first example above would be grammatical.</introduction>
 <br/>
 		<radioGroup id="NPPossCooccurTable" show="swNPArtAndOrDem">
-			<groupName dataItem="possCooccur" default="yes">RNPPossCooccurTable</groupName>
+			<groupName dataItem="possCooccur" default="yes"/>
 			<prompt>Can <span id="NPPronPossSpan" show="swNPPossNPYesOrYesOnly">nominal phrase and pronoun </span><span id="NPPronPossOnlySpan" show="swNPPossNPNo">pronoun </span>possessors co-occur with <span id="NPArtOnlyCooccurSpan" show="swNPArtAndDemArt">articles</span>
 				<span id="NPDemOnlyCooccurSpan" show="swNPArtAndDemDem">demonstratives</span>
 				<span id="NPArtAndDemCooccurSpan" show="swNPArtAndDemBoth">articles and demonstratives</span> in your language?</prompt>

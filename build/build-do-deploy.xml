@@ -5,7 +5,7 @@
 	<import file="${basedir}/build-do-compile.xml" as="nested"/>
 
 	<property name="appName" value="PAWS"/>
-	<property name="version" value="1.1.7"/>
+	<property name="version" value="1.2.0"/>
 
 	<target name="do-deploy" depends="nested.setup-staging-area, nested.do-compile, nested.init-fx-tasks">
 		<antcall target="build-windows-iss-file"/>
@@ -82,7 +82,7 @@
 				title="PAWS"
 				vendor="SIL International"
 				license="LGPL"
-				copyright="© 2002-2018 SIL International"
+				copyright="© 2002-2022 SIL International"
 				description="Parser and Writer for Syntax (PAWS) is an analysis and tutorial program for authors of syntax.">
 				<fx:association extension="tre" mimetype="text/x-paws" description="PAWS file"/>
 			</fx:info>

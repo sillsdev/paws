@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -35,7 +35,7 @@ The final page then deals with any co-occurrence restrictions between the variou
  
     <form section="neg">
        <prompt>Key the way your language expresses 'not' or 'no' (when it modifies a nominal rather than a verbal phrase), with each word on a separate line.  (If 'not' or 'no' is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-       <textBox id="NegNotExample" dataItem="not" rows="3"/>
+       <textBox id="NegNotExample" dataItem="not" rows="3" kind="table"/>
        <br/><br/>
        <radioGroup>
           <groupName dataItem="npDegreeNeg" default="yes">RNegNPDegreeNeg</groupName>
@@ -51,7 +51,7 @@ The final page then deals with any co-occurrence restrictions between the variou
           <checkbox id="NegNPDegreeNegEnclitic" dataItem="npDegreeNegEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the nominal phrase</checkbox>
           <checkbox id="NegNPDegreeNegPrefix" dataItem="npDegreeNegPrefix">As a prefix which attaches to the head noun of the nominal phrase</checkbox>
           <checkbox id="NegNPDegreeNegSuffix" dataItem="npDegreeNegSuffix">As a suffix which attaches to the head noun of the nominal phrase</checkbox>
-          <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">In my language, these elements may attach as follows: <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="1" cols="70"/></checkbox>
+          <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">In my language, these elements may attach as follows: <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="1" cols="70" kind="table"/></checkbox>
           </checkboxGroup>	
        <prompt id="NegNPDegreeAttachesNoCheckPrompt" show="swNegNPDegreeNoAndNoCheck">WARNING: You need to check at least one box to describe how these negative elements attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
        <br/>
@@ -78,7 +78,7 @@ The final page then deals with any co-occurrence restrictions between the variou
           <checkbox id="NegNPDegreeNegWordBefore" dataItem="npDegreeNegWordBefore">Before it</checkbox>
           <checkbox id="NegNPDegreeNegWordAfter"  dataItem="npDegreeNegWordAfter">After it</checkbox>
           <checkbox id="NegNPDegreeNegWordBoth"  dataItem="npDegreeNegWordBoth">On both sides at the same time</checkbox>
-          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">In my language, these elements may occur as follows: <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70"/></checkbox>
+          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">In my language, these elements may occur as follows: <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70" kind="table"/></checkbox>
        </checkboxGroup>	
        <prompt id="NegNPDegreeWordNoCheckPrompt" show="swNegNPDegreeYesAndNoCheck">WARNING: You need to check at least one box to describe where these negative elements occur in your language, or change the answer above to ‘No, they all attach to another word in the nominal phrase’.</prompt>
        <instruction id="NegNPDegreeNegYesInstruction" show="swNegNPDegreeNegYesOrSome">In the lexicon, mark the words meaning ‘not’  and ‘no’  with the features <feature>makeNeg modifies_DP</feature>. </instruction>
@@ -116,10 +116,10 @@ The final page then deals with any co-occurrence restrictions between the variou
        </radioGroup>
        <prompt id="NegPronIndefExamples" show="swNegPronIndefYesOrSome">
           Key the negative indefinite pronouns here:</prompt>
-       <textBox id="NegPronIndefExample" dataItem="negIndefExample" show="swNegPronIndefYesOrSome" rows="4"/>
+       <textBox id="NegPronIndefExample" dataItem="negIndefExample" show="swNegPronIndefYesOrSome" rows="4" kind="table"/>
        <prompt id="NegPronIndefNPExamples" show="swNegPronIndefNoOrSome">
           Key the negative indefinite nominal phrases here:</prompt>
-       <textBox id="NegPronIndefNPExample" dataItem="negIndefNPExample" show="swNegPronIndefNoOrSome" rows="4"/>
+       <textBox id="NegPronIndefNPExample" dataItem="negIndefNPExample" show="swNegPronIndefNoOrSome" rows="4" kind="table"/>
        <instruction id="NegPronIndefYesInstruction" show="swNegPronIndefYesOrSome">
           Add the feature <feature>negative</feature> to the negative indefinite pronouns.  We will leave <feature>indefinite</feature> unspecified.</instruction>
        <instruction id="NegPronIndefNPInstruction" show="swNegPronIndefNoOrSome">

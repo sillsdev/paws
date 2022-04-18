@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -18,35 +18,35 @@
         </radioGroup>
        <prompt id="PronReflVerbExamples" show="swPronReflYesVerbal">
           <br/>Escriba el afijo reflexivo que se une con los verbos aquí, con un guión para indicar de qué lado se une al verbo:</prompt>
-       <textBox id="PronReflVerbAffixExample" dataItem="reflVerbAffixExample" show="swPronReflYesVerbal" rows="2"/>
+       <textBox id="PronReflVerbAffixExample" dataItem="reflVerbAffixExample" show="swPronReflYesVerbal" rows="2" kind="table"/>
        <prompt id="PronReflVerbSentExamples" show="swPronReflYesVerbal">
           <br/>Ahora escriba algunos ejemplos de oraciones simples con el afijo reflexico en el verbo para indicar acción reflexiva por el sujeto:</prompt>
        <textBox id="PronReflVerbSentExample" dataItem="reflVerbSentExample" show="swPronReflYesVerbal"/>
        <instruction id="PronReflYesVerbalInstruction" show="swPronReflYesVerbal">In the lexicon, add the feature <feature>reflexive</feature> to the relevant verbal affix(es).</instruction>
        <prompt id="PronReflFirstSgExamples" show="swPronReflYes">
           <br/>Escriba los reflexivos de la primera persona <span id="PronNumberSpan" show="swPronNumberYes">singular </span>que pueden presentarse en la posición del objeto aquí:</prompt>
-       <textBox id="PronReflFirstSgExample" dataItem="reflFirstSgExample" show="swPronReflYes" rows="2"/>
+       <textBox id="PronReflFirstSgExample" dataItem="reflFirstSgExample" show="swPronReflYes" rows="2" kind="table"/>
        <prompt id="PronReflFirstPlExamples" show="swPronReflYesAndPronNumberYesExclNo">
           <br/>Escriba los reflexivos de la primera persona plural que pueden presentarse en la posición del objeto aquí:</prompt>
-       <textBox id="PronReflFirstPlExample" dataItem="reflFirstPlExample" show="swPronReflYesAndPronNumberYesExclNo" rows="2"/>
+       <textBox id="PronReflFirstPlExample" dataItem="reflFirstPlExample" show="swPronReflYesAndPronNumberYesExclNo" rows="2" kind="table"/>
        <prompt id="PronReflFirstExclExamples" show="swPronReflYesAndPronExclYes">
           <br/>Escriba los reflexivos de la primera persona <span id="PronNumberPlSpan" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse en la posición del objeto aquí:</prompt>
-       <textBox id="PronReflFirstExclExample" dataItem="reflFirstExclExample" show="swPronReflYesAndPronExclYes" rows="2"/>
+       <textBox id="PronReflFirstExclExample" dataItem="reflFirstExclExample" show="swPronReflYesAndPronExclYes" rows="2" kind="table"/>
        <prompt id="PronReflFirstInclExamples" show="swPronReflYesAndPronExclYes">
           <br/>Escriba los reflexivos de la primera persona <span id="PronNumberPlSpan1" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse en la posición del objeto aquí:</prompt>
-       <textBox id="PronReflFirstInclExample" dataItem="reflFirstInclExample" show="swPronReflYesAndPronExclYes" rows="2"/>
+       <textBox id="PronReflFirstInclExample" dataItem="reflFirstInclExample" show="swPronReflYesAndPronExclYes" rows="2" kind="table"/>
        <prompt id="PronReflSecondSgExamples" show="swPronReflYes">
           <br/>Escriba los reflexivos de la segunda persona <span id="PronNumberSpan1" show="swPronNumberYes">singular </span>que pueden presentarse en la posición del objeto aquí:</prompt>
-       <textBox id="PronReflSecondSgExample" dataItem="reflSecondSgExample" show="swPronReflYes" rows="2"/>
+       <textBox id="PronReflSecondSgExample" dataItem="reflSecondSgExample" show="swPronReflYes" rows="2" kind="table"/>
        <prompt id="PronReflSecondPlExamples" show="swPronReflYesAndPronNumberYes">
           <br/>Escriba los reflexivos de la segunda persona plural que pueden presentarse en la posición del objeto aquí:</prompt>
-       <textBox id="PronReflSecondPlExample" dataItem="reflSecondPlExample" show="swPronReflYesAndPronNumberYes" rows="2"/>
+       <textBox id="PronReflSecondPlExample" dataItem="reflSecondPlExample" show="swPronReflYesAndPronNumberYes" rows="2" kind="table"/>
        <prompt id="PronReflThirdSgExamples" show="swPronReflYes">
           <br/>Escriba los reflexivos de la tercera persona <span id="PronNumberSpan2" show="swPronNumberYes">singular </span>que pueden presentarse en la posición del objeto aquí:</prompt>
-       <textBox id="PronReflThirdSgExample" dataItem="reflThirdSgExample" show="swPronReflYes" rows="2"/>
+       <textBox id="PronReflThirdSgExample" dataItem="reflThirdSgExample" show="swPronReflYes" rows="2" kind="table"/>
        <prompt id="PronReflThirdPlExamples" show="swPronReflYesAndPronNumberYes">
           <br/>Escriba los reflexivos de la tercera persona plural que pueden presentarse en la posición del objeto aquí:</prompt>
-       <textBox id="PronReflThirdPlExample" dataItem="reflThirdPlExample" show="swPronReflYesAndPronNumberYes" rows="2"/>
+       <textBox id="PronReflThirdPlExample" dataItem="reflThirdPlExample" show="swPronReflYesAndPronNumberYes" rows="2" kind="table"/>
        <prompt id="PronReflSentExamples" show="swPronReflYes">
           <br/>Ahora escriba varios ejemplos con un reflexivo usado como objeto de una oración simple<span id="PronReflSentExamplesSpan" show="swNotPractical"> so that agreement between the reflexive and the subject can be tested later</span>:</prompt>
        <textBox id="PronReflSentExample" dataItem="reflSentExample" show="swPronReflYes" cols="80"/>
@@ -57,7 +57,7 @@
           <checkbox id="PronReflAffixYes" dataItem="reflAffix">Uno o más afijos se eligen entre para hacer otro pronombre en un reflexivo</checkbox>
           <checkbox id="PronReflAffixNoNoun" dataItem="reflNounPoss">Se utiliza un cierto sustantivo especial con un pronombre como el posesivo</checkbox>
           <checkbox id="PronReflAffixNoQP" dataItem="reflQP">Se utiliza unas frases nominales cuantificadas especiales</checkbox>
-          <checkbox id="PronReflAffixOther" dataItem="reflOther">En mi lengua, los reflexivos son construidos con:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1"/></checkbox>
+          <checkbox id="PronReflAffixOther" dataItem="reflOther">En mi lengua, los reflexivos son construidos con:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronReflAffixNoCheckPrompt" show="swPronReflYesNoCheck">ADVERTENCIA: Usted dijo anteriormente que su lengua tiene pronombres reflexivos, pero no ha marcado ninguna de las opciones para decir cómo se forman. Por favor, seleccione una o más opciones según corresponda, a menos que su lengua no tiene ningún reflexivo, en cuyo caso no debe tener ninguna forma en los campos y debe cambia la respuesta anterior a ‘No’ o ‘Sí, un afijo verbal indica la acción reflexiva’.</prompt>
@@ -70,17 +70,17 @@
           </ul>
        </instruction>
        <prompt id="PronReflAffixYesPrompt" show="swPronReflAffixYes"><br/>Escriba los afijos reflexivos que cambian otro pronombre a un pronombre reflexivo aquí, con un guión para indicar de qué lado se une al pronombre:</prompt>
-       <textBox id="PronReflAffixExamples" dataItem="pronReflAffixExample"  rows="2" show="swPronReflAffixYes"/> 
+       <textBox id="PronReflAffixExamples" dataItem="pronReflAffixExample"  rows="2" show="swPronReflAffixYes" kind="table"/> 
        
        <instruction id="PronReflAffixYesInstruction" show="swPronReflAffixYes">In the lexicon, add the feature <feature>reflexive</feature> to the relevant affixes.</instruction>
        <prompt id="PronReflAffixNoNounPrompt" show="swPronReflAffixNoNoun"><br/>Escriba la palabra especial que está poseída por los pronombres posesivos para formar una frase reflexiva o un pronombre reflexivo aquí:
        </prompt>
-       <textBox id="PronReflNounPossExamples" dataItem="pronReflNounPossExample"  rows="2" show="swPronReflAffixNoNoun"/> 
+       <textBox id="PronReflNounPossExamples" dataItem="pronReflNounPossExample"  rows="2" show="swPronReflAffixNoNoun" kind="table"/> 
        
        <instruction id="PronReflAffixNoNounInstruction" show="swPronReflAffixNoNoun">In the lexicon, add the feature <feature>reflexive</feature> to the relevant noun.</instruction>
        <prompt id="PronReflAffixNoQPPrompt" show="swPronReflAffixNoQP"><br/>Escriba el cuantificador especial o la frase nominal cuantificada especial que se utiliza en los reflexivos aquí:
        </prompt>
-       <textBox id="PronReflQPExamples" dataItem="pronReflQExample"  rows="2" show="swPronReflAffixNoQP"/> 
+       <textBox id="PronReflQPExamples" dataItem="pronReflQExample"  rows="2" show="swPronReflAffixNoQP" kind="table"/> 
        <instruction id="PronReflAffixNoQPInstruction" show="swPronReflAffixNoQP">In the lexicon, add the feature <feature>reflexive</feature> to the relevant nouns and quantifiers.</instruction>
        
  <br/>      <br/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -66,13 +66,13 @@
       </radioGroup>
       <prompt id="PolarityItemsYesInstruction" show="swPolarityItemsYes">Escriba ejemplos de los varios elementos especiales de polaridad negativas en los campos apropiados, cada uno en una línea separada.</prompt>
       <prompt id="PronounPolarityItemsPrompt" show="swPolarityItemsYes">Los elementos especiales de polaridad negativas que son pronombres, como ‘anyone' (cualquier persona), ‘anybody' (cualquiera) , ‘anything' (cualquier cosa). Incluya los elementos que significan lo mismo, pero se escriben con más de una palabra.</prompt>
-      <textBox id="PronounPolarityItemsExamples" dataItem="npiPronounExample" rows="3" show="swPolarityItemsYes"/>
+      <textBox id="PronounPolarityItemsExamples" dataItem="npiPronounExample" rows="3" show="swPolarityItemsYes" kind="table"/>
       <prompt id="DeterminerPolarityItemsPrompt" show="swPolarityItemsYes">Los elementos especiales de polaridad negativas que son determinantes, por ejemplo ‘any' (cualquiera):</prompt>
-      <textBox id="DeterminerPolarityItemsExamples" dataItem="npiDeterminerExample" rows="3" show="swPolarityItemsYes"/>
+      <textBox id="DeterminerPolarityItemsExamples" dataItem="npiDeterminerExample" rows="3" show="swPolarityItemsYes" kind="table"/>
       <prompt id="TemporalPolarityItemsPrompt" show="swPolarityItemsYes">Los elementos especiales de polaridad negativas que son adverbios de tiempo, como ‘anytime' (en cualquier momento):</prompt>
-      <textBox id="TemporalPolarityItemsExamples" dataItem="npiTemporalExample" rows="3" show="swPolarityItemsYes"/>
+      <textBox id="TemporalPolarityItemsExamples" dataItem="npiTemporalExample" rows="3" show="swPolarityItemsYes" kind="table"/>
       <prompt id="LocativePolarityItemsPrompt" show="swPolarityItemsYes">Los elementos especiales de polaridad negativas que son adverbios de lugar, como ‘anywhere' (en cualquier lugar):</prompt>
-      <textBox id="LocativePolarityItemsExamples" dataItem="npiLocativeExample" rows="3" show="swPolarityItemsYes"/>
+      <textBox id="LocativePolarityItemsExamples" dataItem="npiLocativeExample" rows="3" show="swPolarityItemsYes" kind="table"/>
       <instruction id="PolarityItemsFeaturesInstruction" show="swPolarityItemsYes">Add the feature <feature>negative-polarity</feature> to all the negative polarity items<span id="NPDegreeNegAffixSpan" show="swNPDegreeNegNoOrSomeAffix">, including the affixes used in the nominal phrase in place of the negative affixes or clitics</span>
          <span id="NPDegreeNegCliticSpan" show="swNPDegreeNegNoOrSomeClitic">, though use instead the feature <feature>negative-polarity_prefix</feature> or <feature>negative-polarity_suffix</feature> for the negative-polarity proclitics and enclitics, respectively, used in the nominal phrase in place of the negative clitics</span>.  Those which are adverbs also need either the feature <feature>temporal</feature> or <feature>locative</feature> as appropriate.  You also need to make sure the categories are correct.  If the pronouns (written as a single word including the negative polarity item) do not already have the category <category>Pron</category>, add the feature <feature>makePron</feature> to change the category for the syntax.  If the adverbs do not already have the category <category>Adv</category>, add the feature <feature>makeAdv</feature> to change the category for the syntax.  <span  id="NegNPDegreeNegYesSpan" show="swNegNPDegreeNegYesOrSome">Add the features <feature>makeNeg modifies_DP</feature> (in addition to the feature <feature>negative-polarity</feature> to the negative polarity words which take the place of the words meaning ‘not’  and ‘no’ that modify a nominal phrase to change their category appropriately.</span>
          <br/>

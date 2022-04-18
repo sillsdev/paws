@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -51,15 +51,15 @@ like <example>only</example> and <example>just</example> (which can also act as 
 	   <prompt id="QPClassifierAgrPrompt" show="swOTClassifierAgrNPDegreeYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the words asked for on this page.  The full nominal phrase examples and sentential examples asked for throughout PAWS should, of course, include the noun class markers.</prompt>	   
 	   <br/>
 		<prompt>Key the way your language expresses “all”, with each word on a separate line.  (If “all” is an affix or a <technicalTermRef term="ttClitic"/> which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-		<textBox id="QPAllExample" dataItem="all" rows="3"/>
+		<textBox id="QPAllExample" dataItem="all" rows="3" kind="table"/>
 		<br/>
 		<br/>
 		<prompt>Key the way your language expresses “almost” or “nearly”, with each word on a separate line.  (If either one is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-		<textBox id="QPAlmostExample" dataItem="almost" rows="3"/>
+		<textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"/>
 		<br/>
 		<br/>
 		<prompt>Key the way your language expresses “only” or “just”.  (If either one is an affix or clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-		<textBox id="QPOnlyExample" dataItem="only" rows="3"/>
+		<textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"/>
 		<br/>
 		<br/>
 		<radioGroup>
@@ -80,21 +80,13 @@ like <example>only</example> and <example>just</example> (which can also act as 
    <checkbox id="QPNPDegreePosBefore"  dataItem="npDegreePosBefore">Before it</checkbox>
    <checkbox id="QPNPDegreePosAfter"  dataItem="npDegreePosAfter">After it</checkbox>
    <checkbox id="QPNPDegreePosBoth"  dataItem="npDegreePosBoth">On both sides at the same time</checkbox>
-	   	<checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">In my language, they may occur in the following position: <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1"/></checkbox>
+	   	<checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">In my language, they may occur in the following position: <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="table"/></checkbox>
    </checkboxGroup>
 	   <prompt id="QPNPDegreeWordNoCheckPrompt" show="swQPNPDegreeYesandNoCheck">WARNING: You need to check at least one box to describe where these degree words or quantifiers occur with respect to the rest of the nominal phrase in your language, or change the answer above to ‘No, they all attach to another word in the nominal phrase’.</prompt>
 	   
-		<instruction id="QPNPDegreeYesInstruction" show="swQPNPDegreeYesOrSome">In the lexicon, mark the words meaning <example>almost</example>, <example>nearly</example>, <example>only</example>, and <example>just</example> with the features <feature>makeDeg modifies_NP</feature>.  
-			Note that these are two separate features.  
-			The first will change their syntactic category to <category>Deg</category>
-			and the second adds the feature to distinguish them as the type that modifies NPs.  
-			For the words meaning <example>almost</example> and <example>nearly</example> that can modify the quantifier meaning <example>all</example>, 
-			also add the feature <feature>modifies_Q</feature>. 
-			<br/><br/>If your language has a phrase meaning <example>almost</example>, such as <example>not quite</example> or <example>just about</example>, you need to make a single entry for these phrases.
-			These entries need the same features as a single word entry with a similar meaning would have.
-			In <tool>FLEx</tool> interlinear, you can link the words together.
-			For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
-			<br/>
+		<instruction id="QPNPDegreeYesInstruction" show="swQPNPDegreeYesOrSome">In the lexicon, mark the words meaning <example>almost</example>, <example>nearly</example>, <example>only</example>, and <example>just</example> with the features <feature>makeDeg modifies_NP</feature>.  Note that this is two separate features with a space between them.  The first will change their syntactic category to <category>Deg</category>
+			and the second adds the feature to distinguish them as the type that modifies NPs.  For the wrods meaning <example>almost</example> and <example>nearly</example> that can modify the quantifier meaning <example>all</example>, 
+			also add the feature <feature>modifies_Q</feature>. If your language has a phrase meaning <example>almost</example>, such as <example>not quite</example> or <example>just about</example>, you need to make a single entry for these phrases with an underscore (_) between them and run the Join Compound program before AMPLE.  These entries need the same features as a single word entry with a similar meaning would have.<br/>
 			<br/>
 			Also, mark the word or words meaning <example>all</example> with the features
 			<feature>plural modifies_NP</feature>.  Add the feature <feature>makeQ</feature> as well if they do not already have the category <category>Q</category>.</instruction>
@@ -106,7 +98,7 @@ like <example>only</example> and <example>just</example> (which can also act as 
 	      <checkbox id="QPNPDegreeEnclitic" dataItem="npDegreeTypeEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the nominal phrase</checkbox>
 	      <checkbox id="QPNPDegreePrefix" dataItem="npDegreeTypePrefix">As a prefix which attaches to the head noun of the nominal phrase</checkbox>
 	      <checkbox id="QPNPDegreeSuffix" dataItem="npDegreeTypeSuffix">As a suffix which attaches to the head noun of the nominal phrase</checkbox>
-	   	<checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1"/></checkbox>
+	   	<checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPNPDegreeAttachesNoCheckPrompt" show="swQPNPDegreeNoandNoCheck">WARNING: You need to check at least one box to describe how these degree elements or quantifiers attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
 	   

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="QWh" count="11.4">
     <title level="2">Questions - Interrogative Phrases</title>
@@ -7,34 +7,34 @@
     <form section="q">
 <prompt>For each of the following text boxes, if your language expresses that interrogative via an affix or clitic, enter it in the box with a hyphen or equal sign on the appropriate side to indicate whether it is a prefix or proclitic or a suffix or enclitic.  Each item should be entered on a separate line.</prompt>
         <prompt>Key the way your language expresses ‘who’ or ‘whom’ here:</prompt>
-        <textBox id="QWho" dataItem="who" rows="3"/>
+        <textBox id="QWho" dataItem="who" rows="3" kind="table"/>
         <br/>
        <prompt>Key the way your language expresses ‘what’ here:</prompt>
-        <textBox id="QWhat" dataItem="what" rows="3"/>
+        <textBox id="QWhat" dataItem="what" rows="3" kind="table"/>
         <br/>
        <prompt>Key the way your language expresses ‘why’ here:</prompt>
-        <textBox id="QWhy" dataItem="why" rows="3"/>
+        <textBox id="QWhy" dataItem="why" rows="3" kind="table"/>
         <br/>
        <prompt>Key the way your language expresses ‘where’ here:</prompt>
-        <textBox id="QWhere" dataItem="where" rows="3"/>
+        <textBox id="QWhere" dataItem="where" rows="3" kind="table"/>
         <br/>
        <prompt>Key the way your language expresses ‘when’ here:</prompt>
-        <textBox id="QWhen" dataItem="when" rows="3"/>
+        <textBox id="QWhen" dataItem="when" rows="3" kind="table"/>
         <br/>
        <prompt>Key the way your language expresses ‘how’ here:</prompt>
-        <textBox id="QHow" dataItem="how" rows="3"/>
+        <textBox id="QHow" dataItem="how" rows="3" kind="table"/>
         <br/>
        <prompt>Key the way your language expresses ‘how many’ or ‘how much’ here:</prompt>
-        <textBox id="QHowMany" dataItem="howMany" rows="3"/>
+        <textBox id="QHowMany" dataItem="howMany" rows="3" kind="table"/>
         <br/>
        <prompt>Key the way your language expresses ‘which’ here:</prompt>
-        <textBox id="QWhich" dataItem="which" rows="3"/>
+        <textBox id="QWhich" dataItem="which" rows="3" kind="table"/>
         <br/>
        <prompt>Key the way your language expresses ‘whose’ here:</prompt>
-        <textBox id="QWhose" dataItem="whose" rows="3"/>
+        <textBox id="QWhose" dataItem="whose" rows="3" kind="table"/>
         <br/>
         <prompt>Key any additional interrogatives your language uses here:</prompt>
-        <textBox id="QOther" dataItem="other" rows="3"/>
+        <textBox id="QOther" dataItem="other" rows="3" kind="table"/>
         <br/>
         <introduction>Of the examples of interrogative words above, most simply stand alone as pronouns or adverbs, but <example>how</example> can either be a manner adverb by itself or a degree word modifying an adjective, as in <example>how big</example>; <example>what</example> can either be a pronoun by itself or a demonstrative modifying a noun, as in <example>what books</example>; <example>which</example> never stands alone but always modifies a noun as a demonstrative, as in <example>which boy</example>; <example>how many / how much</example> is a quantifier, as in <example>how many children</example> or <example>how much money</example>; and <example>whose</example> can be either a stand alone possessive pronoun, or it can fill the possessor position in a nominal phrase, as in <example>whose toys</example>.</introduction>
         <instruction id="QContInstruction">In the lexicon, mark all of the interrogative words or affixes with the feature <feature>wh</feature>.  Also, add the feature <feature>makeQ</feature> to the word meaning ‘how many / how much’ so that it will be treated as a quantifier.

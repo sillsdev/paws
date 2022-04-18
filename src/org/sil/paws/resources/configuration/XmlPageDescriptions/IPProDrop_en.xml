@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -15,7 +15,7 @@ Some languages are not really <i>pro</i>-drop languages, but at least some of th
           <checkbox id="IPProDropYes" dataItem="proDropYes">Pro-drop of the subject is allowed</checkbox>
           <checkbox id="IPProDropClitic" dataItem="proDropClitic">The subject may look like it is missing due to pronominal clitics attached to the verb</checkbox>
           <checkbox id="IPProDropImp" dataItem="proDropImp">The subject may be missing in imperatives</checkbox>
-          <checkbox id="IPProDropOther" dataItem="proDropOther">In my language, the subject may be missing in this other construction: <textBox  id="IPProDropOtherContent" dataItem="proDropOther" cols="70"  rows="1"/></checkbox>
+          <checkbox id="IPProDropOther" dataItem="proDropOther">In my language, the subject may be missing in this other construction: <textBox  id="IPProDropOtherContent" dataItem="proDropOther" cols="70"  rows="1" kind="table"/></checkbox>
        </checkboxGroup>
        <prompt id="IPProDropNoCheckPrompt" show="swIPProDropNoCheck">WARNING: You did not check any boxes to describe when the subject may be missing from its normal position in your language.  If it is truly not ever allowed to be missing, please check the box for ‘None’ below.</prompt>
   <checkboxGroup id="IPProDropNoNoneTable" show="swIPProDropNoCheck">

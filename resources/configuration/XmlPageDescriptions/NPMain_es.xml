@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -36,8 +36,8 @@ It may be difficult to understand the need for the change in English or Spanish,
             <checkbox id="NPClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificPosAfterNBeforeQ">Después del sustantivo pero antes del cuantificador o palabra de grado</checkbox>
             <checkbox id="NPClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificPosPrefixQ">Como un prefijo en el cuantificador o palabra de grado</checkbox>
             <checkbox id="NPClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificPosSuffixQ">Como un sufijo en el cuantificador o palabra de grado</checkbox>
-            <checkbox id="NPClassifierSpecificPosOther"  dataItem="classifierSpecificPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPClassifierSpecificPosOtherContent" dataItem="classifierSpecificPosOther" cols="70" rows="1"/></checkbox>
-        </checkboxGroup>
+            <checkbox id="NPClassifierSpecificPosOther"  dataItem="classifierSpecificPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPClassifierSpecificPosOtherContent" dataItem="classifierSpecificPosOther" cols="70" rows="1" kind="table"/></checkbox>
+        </checkboxGroup> 
         <prompt id="NPClassifierSpecificPosNoCheckPrompt" show="swNPClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto a estos cuantificadores o palabras de grado que se escriben como palabras independientes y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
         
         <br/><br/>

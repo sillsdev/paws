@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="QEmbYN" count="11.3">
     <title level="2">Questions - Embedded Clause Yes/No Questions</title>
@@ -37,27 +37,27 @@
          <checkbox id="QEmbYNCliticEnclitic" dataItem="embYNEnclitic">As an enclitic which attaches to the end of the last word in the embedded Yes/No question</checkbox>
          <checkbox id="QEmbYNCliticPrefix" dataItem="embYNPrefix">As a prefix which attaches to the verb</checkbox>
          <checkbox id="QEmbYNCliticSuffix" dataItem="embYNSuffix">As a suffix which attaches to the verb</checkbox>
-         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNCliticPosNoCheckPrompt" show="swQEmbYNWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these Yes/No question markers attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
       <prompt id="QEmbYNCliticsExamplesPrompt" show="swQEmbYNCliticProcliticOrEnclitic"><br/>Key the clitics which are used to mark embedded Yes/No questions here, with an equal sign to indicate which side it attaches to the Yes/No question on:</prompt>    
-      <textBox id="QEmbYNCliticExamples" dataItem="embYNCliticExample" show="swQEmbYNCliticProcliticOrEnclitic" rows="3"/>    
+      <textBox id="QEmbYNCliticExamples" dataItem="embYNCliticExample" show="swQEmbYNCliticProcliticOrEnclitic" rows="3" kind="table"/>    
       <instruction id="QEmbYNProcliticInstruction" show="swQEmbYNCliticProclitic">In the lexicon, add the feature <feature>YNQ_prefix</feature> to these proclitics.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       <instruction id="QEmbYNEncliticInstruction" show="swQEmbYNCliticEnclitic">In the lexicon, add the feature <feature>YNQ_suffix</feature> to these enclitics.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QEmbYNAffixExamplesPrompt" show="swQEmbYNCliticPrefixOrSuffix"><br/>Key the affixes which are used to mark Yes/No questions here, with a hyphen to indicate which side it attaches to the verb on:</prompt>    
-      <textBox id="QEmbYNAffixExamples" dataItem="embYNAffixExample" show="swQEmbYNCliticPrefixOrSuffix" rows="3"/>    
+      <textBox id="QEmbYNAffixExamples" dataItem="embYNAffixExample" show="swQEmbYNCliticPrefixOrSuffix" rows="3" kind="table"/>    
       <instruction id="QEmbYNAffixInstruction" show="swQEmbYNCliticPrefixOrSuffix">In the lexicon, add the feature <feature>YNQ</feature> to these verbal affixes.   If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QEmbYNWordExamplesPrompt" show="swQEmbYNWordYesOrSome"><br/>Key the words which are used to mark Yes/No questions here:</prompt>    
-      <textBox id="QEmbYNWordExamples" dataItem="embYNWordExample" show="swQEmbYNWordYesOrSome" rows="3"/>    
+      <textBox id="QEmbYNWordExamples" dataItem="embYNWordExample" show="swQEmbYNWordYesOrSome" rows="3" kind="table"/>    
       
       <checkboxGroup id="QEmbYNPosTable" show="swQEmbYNWordYesOrSome">
          <prompt><br/>Where do the Yes/No question markers which are written as independent words occur with respect to the rest of the embedded question? Check all options that are correct for your language</prompt>
          <checkbox id="QEmbYNPosBefore"  dataItem="embYNWordBefore">Before it</checkbox>
          <checkbox id="QEmbYNPosAfter"  dataItem="embYNWordAfter">After it</checkbox>
          <checkbox id="QEmbYNPosBoth"  dataItem="embYNWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">In my language, they may occur in the following position: <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">In my language, they may occur in the following position: <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNPosNoCheckPrompt" show="swQEmbYNWordYesOrSomeandNoCheck">WARNING: You need to check at least one box to describe where these Yes/No question markers occur with respect to the rest of the embedded question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       

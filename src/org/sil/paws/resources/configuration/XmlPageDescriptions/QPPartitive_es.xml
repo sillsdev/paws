@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -29,7 +29,7 @@
 	      <radio id="QPPartitiveOther" dataValue="other">No, mi lengua utiliza otra manera que una frase adposicional o una cláusula relativa para expresar significados similares</radio>
 	   </radioGroup>
 	   <prompt id="QPPartitiveOtherPrompt" show="swQPPartitiveOther">La construcción que mi lengua se usa para expresar el grupo o la cosa en total de la que se habla en este tipo de construcción partitiva es:</prompt>
-	   <textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther"/>
+	   <textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther" kind="table"/>
 	   
 	   <radioGroup id="QPPartitivePPPosTable" show="swQPPartitiveYes">
 	      <groupName dataItem="partitivePPPos" default="unknown" position="yesHeadDiff">RQPPartitivePPPos</groupName>
@@ -40,7 +40,7 @@
 	   </radioGroup>
 	   
 	   <prompt id="QPPartitiveOfPrompt" show="swQPPartitiveYes">Escriba las <technicalTermRef term="ttAdposition">adposiciones</technicalTermRef> que pueden utilizar para decir “de” en estas construcciones partitivas, con cada palabra en una línea separada. </prompt>
-	   <textBox id="QPPartitiveOfExample" dataItem="partitiveOf" rows="3" show="swQPPartitiveYes"/>
+	   <textBox id="QPPartitiveOfExample" dataItem="partitiveOf" rows="3" show="swQPPartitiveYes" kind="table"/>
 	   <br/>
 	   
 	   <prompt id="QPPartitiveRelClPrompt" show="swQPPartitiveNo">La estructura de las cláusulas relativas se presenta en <section number="12">Las cláusulas relativas</section>.</prompt>

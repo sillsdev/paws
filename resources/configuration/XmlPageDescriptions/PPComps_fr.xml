@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="PPComps" count="8.2">
-   <title level="2">Syntagmes Adpositionnels – Compléments Nominaux</title>
-   <introduction>L’utilisation principale de prépositions ou de postpositions est pour exprimer un lieu. Nous allons donc couvrir les adpositions et les syntagmes adpositionaux en premier lieu. Puis, pour ces langues qui ne marquent le cas sur les noms ou sur les syntagmes nominaux, les adpositions utilisées pour exprimer chaque relation de cas mineur seront illustrées.  
+   <title level="2">Syntagmes adpositionnels – Compléments nominaux</title>
+   <introduction>Les prépositions et les postpositions sont principalement utilisées pour exprimer un lieu. Nous traiterons donc les adpositions et les syntagmes adpositionnels en premier lieu. Après cela, , les adpositions utilisées pour exprimer les relations casuelles mineures seront illustrées pour les langues qui ne marquent pas le cas sur les noms ou sur les syntagmes nominaux.  
     <br/><br/>
-      Les prépositions de lieu en français incluent: <example>dans, sous, sur</example> et <example>par</example>.  Celles-ci peuvent être utilisées dans des syntagmes adpositionels comme par exemple <example>dans la boîte</example>, <example>sous le pont</example> et <example>sur le mur</example>.
+      Les prépositions de lieu en français incluent: <example>dans, sous, sur</example> et <example>par</example>.  Celles-ci peuvent être utilisées dans des syntagmes adpositionnels comme par exemple <example>dans la boîte</example>, <example>sous le pont</example> et <example>sur le mur</example>.
     <br/><br/>
-      Certaines langues utilisent les mots pour les parties du corps pour exprimer ces mêmes significations.</introduction>
+      Certaines langues utilisent les noms pour les parties du corps pour exprimer ces mêmes significations.</introduction>
     <form section="pp">
        <radioGroup id="PPClassifierAgrTable" show="swOTClassifierAgr">
           <groupName dataItem="ppClassifier" default="no">RPPClassifierAgr</groupName>
-          <prompt><br/>Vous avez dit que votre langue a des marqueurs de classes de nom avec des accords concordants. Est-ce que les <span id="PPBodyPartPrepSpan7" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan7" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan7" show="swPPBoth">prépositions et postpositions</span> sont marqués pour la classe?</prompt>
+          <prompt><br/>Vous avez dit que votre langue a des marqueurs de classes nominales avec un accord dans le syntagme nominal. Est-ce que les <span id="PPBodyPartPrepSpan7" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan7" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan7" show="swPPBoth">prépositions et postpositions</span> sont marquées pour la classe ?</prompt>
           <radio id="PPClassifierAgrPPNo" dataValue="no">Non, ces éléments en sont pas marqués pour la classe</radio>
-          <radio id="PPClassifierAgrPPYes" dataValue="yes">Oui, ces éléments sont marqués pour la classe comme partie de l’accord concordant dans toute la langue</radio>
+          <radio id="PPClassifierAgrPPYes" dataValue="yes">Oui, ces éléments sont marqués pour la classe, comme tout élément s’accordant en classe dans toute la langue</radio>
        </radioGroup>	   
-       <prompt id="PPClassifierAgrPrompt" show="swPPClassifierAgrPPYes">Puisque vous avez déjà détaillé les formes de marqueur de classe de nom, vous n’avez qu’à entrer les racines de chacun des mots demandés sur cette page.</prompt>	   
+       <prompt id="PPClassifierAgrPrompt" show="swPPClassifierAgrPPYes">Puisque vous avez déjà donné les formes de marqueur de classe de nom en détail, vous n'avez qu'à entrer les radicaux de chacun des mots demandés sur cette page.</prompt>	   
        <br/>
        <br/>
 <radioGroup>
    <groupName dataItem="bodyPart" default="no">RPPBodyPart</groupName>
-   <prompt><br/>Est-ce qu’utilise votre langue des mots pour les parties du corps dans les syntagmes adpositionels de lieu?</prompt>
+   <prompt><br/>Est-ce que votre langue utilise des noms pour les parties du corps dans les syntagmes adpositionnels de lieu ?</prompt>
    <radio id="PPBodyPartNo" dataValue="no">Non</radio>
-   <radio id="PPBodyPartYes" dataValue="yes">Oui, des mots pour les parties du corps sont utilisés comme <span id="PPBodyPartPrepSpan" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan" show="swPPBoth">prépositions et/ou postpositions</span> en plus de quelques <span id="PPBodyPartPrepSpan1" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan1" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan1" show="swPPBoth">prépositions et/ou postpositions</span> régulières</radio>
+   <radio id="PPBodyPartYes" dataValue="yes">Oui, des noms pour les parties du corps sont utilisés comme <span id="PPBodyPartPrepSpan" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan" show="swPPBoth">prépositions et/ou postpositions</span> en plus de quelques <span id="PPBodyPartPrepSpan1" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan1" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan1" show="swPPBoth">prépositions et/ou postpositions</span> habituelles</radio>
 </radioGroup>
-       <prompt id="PPLocativePrepPrompt" show="swPPPrepOrBoth">Entrez ici les prépositions <span id="PPBodyPartYesSpan" show="swPPBodyPartYes">régulières </span>qu’utilise votre langue dans des syntagmes adpositionels de lieu<span id="PPCliticSomeSpan" show="swPPCliticBoth">  avec un signe d’égalité après les formes clitiques</span>:</prompt>
-       <textBox id="PPLocativePrepExample" dataItem="locativePrepExample" rows="6" show="swPPPrepOrBoth"/>
-       <prompt id="PPLocativePostPrompt" show="swPPPostOrBoth">Entrez ici les postpositions <span id="PPBodyPartYesSpan1" show="swPPBodyPartYes">régulières </span>qu’utilise votre langue dans des syntagmes adpositionels de lieu<span id="PPCliticSomeSpan1" show="swPPCliticBoth"> avec un signe d’égalité devant les formes clitiques</span>:</prompt>
-       <textBox id="PPLocativePostExample" dataItem="locativePostExample" rows="6" show="swPPPostOrBoth"/>
+       <prompt id="PPLocativePrepPrompt" show="swPPPrepOrBoth">Saisissez les prépositions <span id="PPBodyPartYesSpan" show="swPPBodyPartYes">habituelles </span>qu’utilise votre langue dans les syntagmes adpositionnels de lieu<span id="PPCliticSomeSpan" show="swPPCliticBoth">, en écrivant un signe d’égalité devant les formes clitiques</span> :</prompt>
+       <textBox id="PPLocativePrepExample" dataItem="locativePrepExample" rows="6" show="swPPPrepOrBoth" kind="table"/>
+       <prompt id="PPLocativePostPrompt" show="swPPPostOrBoth">Saisissez les postpositions <span id="PPBodyPartYesSpan1" show="swPPBodyPartYes">habituelles </span>qu’utilise votre langue dans les syntagmes adpositionnels de lieu<span id="PPCliticSomeSpan1" show="swPPCliticBoth">, en écrivant un signe d’égalité devant les formes clitiques</span> :</prompt>
+       <textBox id="PPLocativePostExample" dataItem="locativePostExample" rows="6" show="swPPPostOrBoth" kind="table"/>
        <instruction id="PPLocativePrepInstruction" show="swPPBoth">In the lexicon, add the feature <feature>PP-initial</feature> to each of the prepositions and the feature <feature>PP-final</feature> to each of the postpositions.  If any can appear either before or after the complement, do not add either feature to that entry.</instruction>
-       <prompt id="PPLocativePrepPPPrompt" show="swPPPrepOrBoth">Maintenant entrez ici quelques exemples de prépositions <span id="PPBodyPartYesSpan2" show="swPPBodyPartYes">régulières </span>dans des syntagmes adpositionels de lieu:</prompt>
+       <prompt id="PPLocativePrepPPPrompt" show="swPPPrepOrBoth">Maintenant saisissez quelques exemples de prépositions <span id="PPBodyPartYesSpan2" show="swPPBodyPartYes">habituelles </span>dans les syntagmes adpositionnels de lieu :</prompt>
        <textBox id="PPLocativePrepPPExample" dataItem="locativePrepPPExample" rows="6" cols="80" show="swPPPrepOrBoth"/>
-       <prompt id="PPLocativePostPPPrompt" show="swPPPostOrBoth">Maintenant entrez ici quelques exemples de postpositions <span id="PPBodyPartYesSpan3" show="swPPBodyPartYes">régulières </span>dans des syntagmes adpositionels de lieu:</prompt>
+       <prompt id="PPLocativePostPPPrompt" show="swPPPostOrBoth">Maintenant saisissez quelques exemples de postpositions <span id="PPBodyPartYesSpan3" show="swPPBodyPartYes">habituelles </span>dans les syntagmes adpositionnels de lieu :</prompt>
        <textBox id="PPLocativePostPPExample" dataItem="locativePostPPExample" rows="6" cols="80" show="swPPPostOrBoth"/>
  <br/><br/>
-       <prompt id="PPBodyPartPrepPrompt" show="swPPPrepOrBothAndBodyPartYes">Entrez ici les prépositions pour les parties du corps qu’utilise votre langue<span id="PPCliticSomeSpan2" show="swPPCliticBoth"> avec un signe d’égalité après les formes clitiques</span>:</prompt>
-       <textBox id="PPBodyPartPrepExample" dataItem="bodyPartPrepExample" rows="6" show="swPPPrepOrBothAndBodyPartYes"/>
-       <prompt id="PPBodyPartPostPrompt" show="swPPPostOrBothAndBodyPartYes">Entrez ici les postpositions pour les parties du corps qu’utilise votre langue<span id="PPCliticSomeSpan3" show="swPPCliticBoth"> avec un signe d’égalité avant les formes clitiques</span>:</prompt>
-       <textBox id="PPBodyPartPostExample" dataItem="bodyPartPostExample" rows="6" show="swPPPostOrBothAndBodyPartYes"/>
+       <prompt id="PPBodyPartPrepPrompt" show="swPPPrepOrBothAndBodyPartYes">Saisissez ici les prépositions-parties du corps qu’utilise votre langue<span id="PPCliticSomeSpan2" show="swPPCliticBoth">, en écrivant un signe d’égalité après les formes clitiques</span> :</prompt>
+       <textBox id="PPBodyPartPrepExample" dataItem="bodyPartPrepExample" rows="6" show="swPPPrepOrBothAndBodyPartYes" kind="table"/>
+       <prompt id="PPBodyPartPostPrompt" show="swPPPostOrBothAndBodyPartYes">Saisissez ici les postpositions-parties du corps qu’utilise votre langue<span id="PPCliticSomeSpan3" show="swPPCliticBoth">, en écrivant un signe d’égalité avant les formes clitiques</span> :</prompt>
+       <textBox id="PPBodyPartPostExample" dataItem="bodyPartPostExample" rows="6" show="swPPPostOrBothAndBodyPartYes" kind="table"/>
        <instruction id="PPBodyPartPrepInstruction" show="swPPBodyPartYes">In the lexicon, you will need to make two entries for each body part, the noun entry with the category <category>N</category> and a second entry with the category <category>P</category>.  <span id="PPBodyPartPrepBothSpan" show="swPPBoth">In addition, add the feature <feature>PP-initial</feature> to each of the body part prepositions and the feature <feature>PP-final</feature> to each of the body part postpositions.  If any can appear either before or after the complement, do not add either feature to that entry.</span></instruction>
-       <prompt id="PPBodyPartPrepPPPrompt" show="swPPPrepOrBothAndBodyPartYes">Maintenant entrez ici quelques exemples de prepositions pour les parties du corps dans des syntagmes adpositionels de lieu:</prompt>
+       <prompt id="PPBodyPartPrepPPPrompt" show="swPPPrepOrBothAndBodyPartYes">Maintenant saisissez quelques exemples de prépositions-parties du corps dans des syntagmes adpositionnels de lieu :</prompt>
        <textBox id="PPBodyPartPrepPPExample" dataItem="bodyPartPrepPPExample" rows="6" cols="80" show="swPPPrepOrBothAndBodyPartYes"/>
-       <prompt id="PPBodyPartPostPPPrompt" show="swPPPostOrBothAndBodyPartYes">Maintenant entrez ici quelques exemples de postpositions pour les parties du corps dans des syntagmes adpositionels de lieu:</prompt>
+       <prompt id="PPBodyPartPostPPPrompt" show="swPPPostOrBothAndBodyPartYes">Maintenant  saisissez ici quelques exemples de postpositions-parties du corps dans des syntagmes adpositionnels de lieu :</prompt>
        <textBox id="PPBodyPartPostPPExample" dataItem="bodyPartPostPPExample" rows="6" cols="80" show="swPPPostOrBothAndBodyPartYes"/>
        <br/><br/>
-       <introduction id="PPCaseIntroduction" show="swNPCaseNNo">Puisque votre langue ne marque pas le cas sur les noms ou les syntagmes nominaux, les relations de cas mineurs devraient être détaillées par les <span id="PPBodyPartPrepSpan10" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan10" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan10" show="swPPBoth">prépositions et postpositions</span>.  </introduction>
-       <prompt  id="PPCaseTable" show="swNPCaseNNo">Pour chacun des zones de texte suivantes, entrez les <span id="PPBodyPartPrepSpan11" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan11" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan11" show="swPPBoth">prépositions et/ou postpositions</span> qui expriment ce type de relation de cas dans votre langue.  <span id="PPCiticSpan" show="swPPClitic">Ajoutez un signe d’égalité sur le côté approprié de chaque forme clitique pour indiquer de quel côté cela se rattache la forme clitique.  </span>S’il y a plus qu’un marqueur pour un cas particulier, entrez chacun sur une ligne séparée.  Si votre langue ne distingue pas une relation de cas particulier, laissez simplement vide cette zone de texte.</prompt>
+       <introduction id="PPCaseIntroduction" show="swNPCaseNNo">Puisque votre langue ne marque pas le cas sur les noms ou les syntagmes nominaux, les relations de type cas mineurs devraient être précisées par les <span id="PPBodyPartPrepSpan10" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan10" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan10" show="swPPBoth">prépositions et postpositions</span>.  </introduction>
+       <prompt  id="PPCaseTable" show="swNPCaseNNo">Dans chacune des boîtes suivantes, saisissez les <span id="PPBodyPartPrepSpan11" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan11" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan11" show="swPPBoth">prépositions et/ou postpositions</span> qui expriment ce type de relation de cas dans votre langue.  <span id="PPCiticSpan" show="swPPClitic">Ajoutez un signe d’égalité à chaque forme clitique pour indiquer de quel côté elle se rattache au constituant.  </span>S’il y a plus qu’un marqueur pour un cas particulier, saisissez chacun sur une ligne séparée.  Si votre langue ne distingue pas une relation de cas particulier, laissez cette boîte simplement vide.</prompt>
        <br/>
-       <prompt id="PPCaseGenitivePrompt" show="swNPCaseNNo">Entrez les <span id="PPBodyPartPrepSpan12" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan12" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan12" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le génitif pour exprimer la possession:</prompt>
-       <textBox id="PPGen" dataItem="genitiveP" rows="3" show="swNPCaseNNo"/>
+       <prompt id="PPCaseGenitivePrompt" show="swNPCaseNNo">Saisissez les <span id="PPBodyPartPrepSpan12" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan12" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan12" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas génitif, pour exprimer la possession :</prompt>
+       <textBox id="PPGen" dataItem="genitiveP" rows="3" show="swNPCaseNNo" kind="table"/>
        <br/>     
-       <prompt id="PPCaseDativePrompt" show="swNPCaseNNo">Entrez les <span id="PPBodyPartPrepSpan13" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan13" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan13" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas datif pour exprimer l’objet indirect:</prompt>
-       <textBox id="PPDat" dataItem="dativeP" rows="3" show="swNPCaseNNo"/>
+       <prompt id="PPCaseDativePrompt" show="swNPCaseNNo">Saisissez les <span id="PPBodyPartPrepSpan13" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan13" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan13" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas datif, pour exprimer l’objet indirect :</prompt>
+       <textBox id="PPDat" dataItem="dativeP" rows="3" show="swNPCaseNNo" kind="table"/>
        <br/>     
-       <prompt id="PPCaseAblativePrompt" show="swNPCaseNNo">Entrez les <span id="PPBodyPartPrepSpan14" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan14" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan14" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas ablatif pour exprimer la source ou l’origine:</prompt>
-       <textBox id="PPAbl" dataItem="ablativeP" rows="3" show="swNPCaseNNo"/>
+       <prompt id="PPCaseAblativePrompt" show="swNPCaseNNo">Saisissez les <span id="PPBodyPartPrepSpan14" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan14" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan14" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas ablatif, pour exprimer la source ou l’origine :</prompt>
+       <textBox id="PPAbl" dataItem="ablativeP" rows="3" show="swNPCaseNNo" kind="table"/>
        <br/>     
-       <prompt id="PPCaseInstrumentalPrompt" show="swNPCaseNNo">Entrez les <span id="PPBodyPartPrepSpan15" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan15" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan15" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas instrumental pour exprimer l’instrument, les moyens ou l’agent:</prompt>
-       <textBox id="PPIns" dataItem="instrumentalP" rows="3" show="swNPCaseNNo"/>
+       <prompt id="PPCaseInstrumentalPrompt" show="swNPCaseNNo">Saisissez les <span id="PPBodyPartPrepSpan15" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan15" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan15" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas instrument, pour exprimer l’instrument, les moyens ou l’agent :</prompt>
+       <textBox id="PPIns" dataItem="instrumentalP" rows="3" show="swNPCaseNNo" kind="table"/>
        <br/>     
-       <prompt id="PPCaseVocativePrompt" show="swNPCaseNNo">Entrez les <span id="PPBodyPartPrepSpan16" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan16" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan16" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas vocatif pour exprimer une adresse directe:</prompt>
-       <textBox id="PPVoc" dataItem="vocativeP" rows="3" show="swNPCaseNNo"/>
+       <prompt id="PPCaseVocativePrompt" show="swNPCaseNNo">Saisissez les <span id="PPBodyPartPrepSpan16" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan16" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan16" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas vocatif, pour exprimer une interpellation directe :</prompt>
+       <textBox id="PPVoc" dataItem="vocativeP" rows="3" show="swNPCaseNNo" kind="table"/>
        <br/>     
-       <prompt id="PPCaseObliquePrompt" show="swNPCaseNNo">Entrez les <span id="PPBodyPartPrepSpan17" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan17" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan17" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas oblique pour exprimer une relation grammaticale mineure générale:</prompt>
-       <textBox id="PPObl" dataItem="obliqueP" rows="3" show="swNPCaseNNo"/>
+       <prompt id="PPCaseObliquePrompt" show="swNPCaseNNo">Saisissez les <span id="PPBodyPartPrepSpan17" show="swPPPrep">prépositions</span><span id="PPBodyPartPostSpan17" show="swPPPost">postpositions</span><span id="PPBodyPartBothSpan17" show="swPPBoth">prépositions et/ou postpositions</span> qu’utilise votre langue pour le cas oblique, pour exprimer une relation grammaticale mineure générale :</prompt>
+       <textBox id="PPObl" dataItem="obliqueP" rows="3" show="swNPCaseNNo" kind="table"/>
        
        <br/><br/>
         <buttons>

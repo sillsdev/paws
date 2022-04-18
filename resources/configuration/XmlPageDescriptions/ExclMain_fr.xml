@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="ExclMain" count="17.1">
     <title>Salutations, Interjections et Exclamations</title>
-    <introduction>Cette section considère les différents types d’expressions communes qui ne sont pas des phrases complètes. Les salutations, interjections et exclamations seront traitées tour à tour.</introduction>
+    <introduction>Cette section considère divers types d’expressions courantes qui ne sont pas des phrases complètes. Les salutations, interjections et exclamations seront traitées tour à tour.</introduction>
     <form section="excl" transparent="no">
-        <introduction>Les salutations consistent typiquement d’un mot ou d’une locution particulière, soit seul soit suivi d’un nom ou d’un syntagme nominal qui décrit la personne ou l’animal salué. Ceux qui sont des phrases ou des questions complètes comme <example>Comment vas-tu?</example> et <example>Comment allez-vous?</example> et <example>Bonne journée!</example> s’analyseront automatiquement et n’auont pas besoin de traitement spécial. Nous intéresserons aux types suivants de salutations:</introduction>
+        <introduction>Les salutations consistent typiquement d’un mot ou d’une locution particulière, soit employé seul soit suivi d’un nom ou d’un syntagme nominal décritvant la personne ou l’animal salué. Les salutations qui sont des phrases ou des questions complètes comme <example>Comment allez-vous ?</example> seront analysées automatiquement et n'auront pas besoin de traitement spécial. Nous nous intéresserons aux types de salutations suivants :</introduction>
     <EnglishExample>
         <exItem label="1.">Salut!</exItem>
         <exItem label="2.">Bonjour!</exItem>
@@ -15,16 +15,12 @@
         <exItem label="6.">Bonsoir.</exItem>
         <exItem label="7.">Bonne nuit, doux enfant.</exItem>
     </EnglishExample>
-        <prompt>Entrez ici des exemples similaires de salutations dans votre langue:</prompt>
+        <prompt>Saisissez ici des exemples de salutations dans votre langue :</prompt>
         <textBox id="ExclGreet" dataItem="greetExample" cols="80"/>
         <br/>
-        <instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  
-            Those that are phrases need to be entered in the lexicon as units.
-            In <tool>FLEx</tool> interlinear, you can link the words together.
-            For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
-            <br/><br/>Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
-        <br/>
-        <introduction>Les interjections consistent typiquement de mots ou locutions particuliers qui sont utilisés seuls, suivis d’habitude d’un point d’exclamation. Bien que beaucoup de mots dans des interjections ne sont pas utilisés ailleurs, les adjectifs réguliers sont utilisés de cette façon. Quelques exemples d’interjections en français sont:
+<instruction id="ExclGreetLexiconInstruction">All of these words or phrases (not including the nominal phrases or names) need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Either give each one the category <category>Greet</category> in the lexicon, or add the feature <feature>makeGreet</feature> to the entry to assure the proper category for the syntax.</instruction>
+<br/>
+        <introduction>Les interjections consistent typiquement de mots ou locutions particuliers qui sont utilisés seuls, généralement suivis d’un point d’exclamation. Bien que beaucoup de mots utilisés dans les interjections ne s e trouvent pas ailleurs, les adjectifs réguliers peuvent être utilisés de cette façon. Voici quelques exemples d’interjections en français :
 </introduction>
     <EnglishExample>
         <exItem label="8.">Aie!</exItem>
@@ -32,48 +28,44 @@
         <exItem label="10.">Sacré bleu!</exItem>
         <exItem label="11.">Oh là là!</exItem>
     </EnglishExample>
-        <prompt>Entrez ici des exemples semblables d’interjections dans votre langue:</prompt>
+        <prompt>Saisissez ici des exemples d’interjections dans votre langue :</prompt>
         <textBox id="ExclIntj" dataItem="intjExample" cols="80"/>
         <br/>
-        <introduction>Des réponses « Oui » et « Non » à des questions seront traitées <span id="ExclYesNoNotPracticalSpan" show="swNotPractical">par la même règle qui permet </span><span id="ExclYesNoPracticalSpan" show="swPractical">comme </span>des interjections.  </introduction>
-        <prompt>Entrez ici les mots qui peuvent rester seuls et signifier  « Oui », comme  « Oui » et  « Ouais » en français:</prompt>
-        <textBox id="ExclYes" dataItem="yesExample" rows="3"/>
+        <introduction>Les réponses « Oui » et « Non » à des questions seront traitées <span id="ExclYesNoNotPracticalSpan" show="swNotPractical">par la règle qui permet </span><span id="ExclYesNoPracticalSpan" show="swPractical">comme </span>des interjections.  </introduction>
+        <prompt>Saisissez ici les mots qui peuvent être employés seuls et qui signifient « Oui », comme  « Oui » et  « Ouais » en français :</prompt>
+        <textBox id="ExclYes" dataItem="yesExample" rows="3" kind="table"/>
         <br/>
-        <prompt>Entrez ici les mots qui peuvent rester seuls et signifier  « Non »:</prompt>
-        <textBox id="ExclNo" dataItem="noExample" rows="3"/>
+        <prompt>Saisissez ici les mots qui peuvent être employés seuls et qui signifient « Non » :</prompt>
+        <textBox id="ExclNo" dataItem="noExample" rows="3" kind="table"/>
         <br/>
-        <instruction id="ExclYesNoInstruction">All of these words or phrases meaning ‘yes’ and ‘no’ and the interjections need to be entries in your lexicon.  
-            Those that are phrases need to be entered in the lexicon as units.
-            In <tool>FLEx</tool> interlinear, you can link the words together.
-            For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
-            <br/><br/>Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
-        <br/>
-        <introduction>Les exclamations consistent typiquement en un mot particulier comme <example>comment</example>, <example>combien</example> ou <example>que</example> en français. suivis d’un syntagme adjectival et généralement ponctuée d’un point d’exclamation. Des exemples en français incluent:</introduction>
+        <instruction id="ExclYesNoInstruction">All of these words or phrases meaning  ‘yes’ and  ‘no’ and the interjections need to be entries in your lexicon.  Those that are phrases need to be entered in the lexicon with underscores between the words so <tool>Join Compound</tool> will parse them as units within <tool>CARLA Studio</tool>.  Any which are not regular adjectives need to either have the category <category>Intj</category> in the lexicon or have the feature <feature>makeIntj</feature> to assure the proper category for the syntax.</instruction>
+<br/>
+        <introduction>Les exclamations consistent typiquement en un mot spécifique, tel que <example>comment</example>, <example>combien</example> ou <example>que</example> en français suivi d’un syntagme adjectival et généralement suivi par d’un point d’exclamation. Voici quelques exemples :</introduction>
     <EnglishExample>
-        <exItem label="12.">Comme tu es grand!</exItem>
-        <exItem label="13.">Que c’est chic!</exItem>
-        <exItem label="14.">Combien c’est merveilleux que ta famille puisse venir!</exItem>
+        <exItem label="12.">How tall you are!  « Comme tu es grand ! »</exItem>
+        <exItem label="13.">How nice! « Que c’est chic ! »</exItem>
+        <exItem label="14.">How wonderful that your family could come! « C’est merveilleux que ta famille puisse venir ! »</exItem>
     </EnglishExample>
-        <prompt>Entrez ici des exemples d’exclamation dans votre langue:</prompt>
+        <prompt>Saisissez ici des exemples d’exclamation dans votre langue :</prompt>
         <textBox id="ExclExcl" dataItem="exclExample" cols="80"/>
         <br/>
 <radioGroup id="ExclMTable">
     <groupName dataItem="exclM" default="no">RExclM</groupName>
-    <prompt>Votre langue a-t-elle un mot ou des mots particuliers qui signalent une exclamation (les rendant différents des simples adjectifs traités dans la section des interjections ci-dessus)?</prompt>
+    <prompt>Votre langue a-t-elle un des mots particuliers qui signalent une exclamation (les rendant différents des simples adjectifs traités dans la section des interjections ci-dessus) ?</prompt>
     <radio id="ExclMNo" dataValue="no">Non</radio>
     <radio id="ExclMYes" dataValue="yes">Oui</radio>
 </radioGroup>
-        <prompt id="ExclMPrompt" show="swExclMYes">Entrez ici les mots particuliers qui signalent une exclamation:</prompt>
-        <textBox id="ExclExclM" dataItem="exclMExample" show="swExclMYes" rows="3"/>
+        <prompt id="ExclMPrompt" show="swExclMYes">Saisissez ici les mots particuliers qui signalent une exclamation :</prompt>
+        <textBox id="ExclExclM" dataItem="exclMExample" show="swExclMYes" rows="3" kind="table"/>
         <br/>
 <checkboxGroup id="ExclMPosTable" show="swExclMYes">
-    <prompt>Où le mot ou les mots particuliers qui signalent une exclamation apparaissent-ils en relation avec le syntagme adjectival?  Marquez toutes les options qui sont correctes pour votre langue.</prompt>
+    <prompt>Où les mots particuliers qui signalent une exclamation apparaissent-ils en relation avec le syntagme adjectival ?  Marquez toutes les options qui sont correctes pour votre langue.</prompt>
    <checkbox id="ExclMPosBefore" dataItem="exclMBefore">Avant</checkbox>
     <checkbox id="ExclMPosAfter" dataItem="exclMAfter">Après</checkbox>
-    <checkbox id="ExclMPosBoth" dataItem="exclMBoth">Des deux côtés à la fois</checkbox>
-    <checkbox id="ExclMPosOther" dataItem="exclMOther" >Dans ma langue les mots qui signalent une exclamation peuvent se présenter dans la position suivante: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70"/></checkbox>
+    <checkbox id="ExclMPosBoth" dataItem="exclMBoth">De part et d’autre</checkbox>
+    <checkbox id="ExclMPosOther" dataItem="exclMOther" >Dans ma langue les mots qui signalent une exclamation sont placés de la façon suivante : <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70" kind="table"/></checkbox>
 </checkboxGroup>
-        <prompt id="ExclMPosNoCheckPrompt" show="swExclMYesandNoCheck">AVERTISSEMENT: Vous devez cocher au moins une case pour décrire où les mots qui marquent une exclamation apparaissent dans votre langue, ou changez la réponse ci-dessus en « Non ». Dans ce cas il ne devrait pas y avoir d’exemples dans la case de texte ci-.dessus.</prompt>       
+        <prompt id="ExclMPosNoCheckPrompt" show="swExclMYesandNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire où les mots qui marquent une exclamation apparaissent dans votre langue, soit changer la réponse ci-dessus en « Non ». Dans ce cas, il ne devrait pas y avoir d’exemples dans la boîte ci-dessus.</prompt>       
 <instruction id="ExclMInstruction" show="swExclMYes">In the lexicon, add the feature <feature>makeExcl</feature> to each word which signals an exclamation to assure the proper category for the syntax.</instruction>
 <instruction id="ExclMEitherRestrictedInstruction" show="swExclMYesAndBoth">In the lexicon, add the feature <feature>excl-initial</feature> to each word which signals an exclamation that only occurs before the adjective phrase and add the feature <feature>excl-final</feature> to each word which signals an exclamation that only occurs after the adjective phrase.  Do not add either feature to any words which may occur either before or after the adjective phrase.</instruction>
         <br/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -24,7 +24,7 @@
 			<checkbox id="NPAdjPPosBefore" dataItem="adjBefore">Before it</checkbox>
 		   <checkbox id="NPAdjPPosAfter" dataItem="adjAfter">After it</checkbox>
 		   <checkbox id="NPAdjPPosBoth" dataItem="adjBoth">On both sides in the same nominal phrase</checkbox>
-			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">In my language, the adjective may occur as follows with respect to the noun: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1"/></checkbox>
+			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">In my language, the adjective may occur as follows with respect to the noun: <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1" kind="table"/></checkbox>
 		</checkboxGroup>
 	   <prompt id="NPAdjPPosNoCheckPrompt" show="swNPAdjPPosNoCheck">WARNING: You need to check at least one box to describe where the adjective phrases occur with respect the noun in your language.</prompt>
 	   <instruction id="NPAdjPPosEitherSideRestrictedInstruction" show="swNPAdjPPosEitherSideRestricted">In the lexicon, mark those adjectives which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>. Do not enter either feature on any adjective which can occur on either side.</instruction>
@@ -43,7 +43,7 @@
 			<checkbox id="NPAdjClassifierSpecificPosAfterNBeforeAdj"  dataItem="classifierSpecificAdjPosAfterNBeforeAdj">After the noun but before the adjective</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosPrefixAdj"  dataItem="classifierSpecificAdjPosPrefixAdj">As a prefix on the adjective</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosSuffixAdj"  dataItem="classifierSpecificAdjPosSuffixAdj">As a suffix on the adjective</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1"/></checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1" kind="table"/></checkbox>
 		</checkboxGroup>
 		<prompt id="NPAdjClassifierSpecificPosNoCheckPrompt" show="swNPAdjClassifierPresentYesOrSomeAndNoCheck">WARNING: You need to check at least one box to describe where the classifiers occur with respect to the adjectives and the noun in your language, or change your answer above to “No, a classifier is never used in this type of nominal phrase”.</prompt>
 		

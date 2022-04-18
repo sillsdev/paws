@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -39,7 +39,7 @@
 				</radioGroup>
 			</radioGroup>
 	   <prompt id="IPPassiveAgentPPPrompt" show="swPassiveAgentPP">Escriba las <span id="IPPrepSpan2" show="swPPPosPrep">preposiciones</span><span id="PPPostSpan2" show="swPPPosPost">posposiciones</span><span id="PPBothSpan2" show="swPPPosBoth">adposiciones</span> especiales que se utilizan para indicar la frase de agente aquí:</prompt>
-	   <textBox id="IPPassiveAgentPPExample" dataItem="passiveAgentPExample" show="swPassiveAgentPP" rows="3"/>
+	   <textBox id="IPPassiveAgentPPExample" dataItem="passiveAgentPExample" show="swPassiveAgentPP" rows="3" kind="table"/>
 	   <br/>
 	   <radioGroup id="IPPassiveAuxTable" show="swPassiveYes">
 				<groupName dataItem="passiveAux" default="no">RIPPassiveAux</groupName>
@@ -50,7 +50,7 @@
 		
 	   <br/>
 	   <prompt id="IPPassiveAuxPrompt" show="swPassiveAuxYes">Escriba el auxiliar específico que se requiere con las oraciones pasivas aquí:</prompt>
-	   <textBox id="IPPassiveAuxExample" dataItem="passiveAuxExample" show="swPassiveAuxYes" rows="3"/>
+	   <textBox id="IPPassiveAuxExample" dataItem="passiveAuxExample" show="swPassiveAuxYes" rows="3" kind="table"/>
 	   <br/>
 	   <instruction id="IPPassiveInstruction" show="swPassiveYes">Mark inherently passive verbs and any passive affixes with the feature <feature>passive</feature> in the lexicon, if you have not already done so.  The same forms may have the <feature>participle</feature> feature as well, if your language is like English, or you may have distinct forms for passive.  <span id="IPPassiveAgentPPSpan" show="swPassiveAgentPP">Also, mark the <span id="IPPrepSpan" show="swPPPosPrep">preposition</span>
 	      <span id="PPPostSpan" show="swPPPosPost">postposition</span>

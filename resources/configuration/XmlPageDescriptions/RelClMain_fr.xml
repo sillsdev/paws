@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="RelClMain" count="12.1">
-   <title>Propositions Relatives</title>
-   <instruction id="RelClIntroNotPractical" show="swNotPractical">Les propositions relatives qualifient normalement un nom principal et elles ont une de ces quatre structures:
+   <title>Propositions relatives</title>
+   <instruction id="RelClIntroNotPractical" show="swNotPractical">Les propositions relatives qualifient normalement un nom antécédent et elles ont l’une des quatre structures suivantes :
 <ul>
-   <li>comme en anglais, pareil à une proposition complétive (CP) avec un complémentiseur signifiant <example>that  « que »</example>, comme dans <example>the man that came to the party late  « l’homme qui est venu en retard à la soirée »</example>;</li>
-   <li>comme en anglais, pareil à une question de contenu (CP) avec <example> who  « qui »</example> ou <example> which  « quel »</example> au commencement, comme dans <example>the man who came to the party late  « l’homme qui est venu en retard à la soirée »</example>;</li>
-   <li>comme en français, pareil à une proposition complétive (CP) mais ayant un marqueur relatif spécial dans la position du complémentiseur: <example>qui</example> pour les sujets et <example>que</example> pour les objets directs, comme dans <example>l’homme qui est dans le magasin</example> et <example>le livre que je veux lire</example> (ou pour quelques langues peut-être avec deux marqueurs qui se trouvent des deux côtés de la proposition relative);</li>
-   <li>(ou pour quelques langues autres que le français et l’anglais) comme une phrase normale (IP) avec un marqueur relatif attaché au verbe.</li>
+   <li>comme une proposition complétive (CP) avec une conjonction de subordination signifiant <example>que</example>, comme dans <example>l’homme que il est venu en retard à la réunion (français adapté)</example> ;</li>
+   <li>comme une question de contenu (CP) avec <example>qui</example> au commencement, comme dans <example>l’homme qui est venu en retard à la réunion</example> ;</li>
+   <li>(pour quelques langues autres que le français et l’anglais) comme une proposition complétive (CP) mais ayant un marqueur relatif spécial dans la position de la conjonction de subordination, ou, éventuellement avec deux marqueurs qui se trouvent des deux côtés de la proposition relative ;</li>
+   <li>(pour quelques langues autres que le français et l’anglais) comme une phrase normale (IP) avec un marqueur relatif attaché au verbe.</li>
 </ul> </instruction>
-   <introduction id="RelClIntroPractical" show="swPractical">Les propositions relatives qualifient normalement un nom principal et elles ont une de ces quatre structures:
+   <introduction id="RelClIntroPractical" show="swPractical">Les propositions relatives qualifient normalement un nom antécédent et elles ont l’une des quatre structures suivantes :
         <ul>
-           <li>comme en anglais, pareil à une proposition complétive avec un complémentiseur signifiant <example>that  « que »</example>, comme dans <example>the man that came to the party late  « l’homme qui est venu en retard à la soirée »</example>;</li>
-           <li>comme en anglais, pareil à une question de contenu avec <example> who  « qui »</example> ou <example> which  « quel »</example> au commencement, comme dans <example>the man who came to the party late  « l’homme qui est venu en retard à la soirée »</example>;</li>
-           <li>comme en français, pareil à une proposition complétive mais ayant un marqueur relatif spécial dans la position du complémentiseur: <example>qui</example> pour les sujets et <example>que</example> pour les objets directs, comme dans <example>l’homme qui est dans le magasin</example> et <example>le livre que je veux lire</example> (ou pour quelques langues peut-être avec deux marqueurs qui se trouvent des deux côtés de la proposition relative);</li>
-           <li>(ou pour quelques langues autres que le français et l’anglais) comme une phrase normale avec un marqueur relatif attaché au verbe.</li>
+           <li>comme une proposition complétive avec une conjonction de subordination signifiant <example>que</example>, comme dans <example>l’homme que il est venu en retard à la réunion (français adapté)</example> ;</li>
+           <li>comme une question de contenu avec <example>qui</example> au commencement, comme dans <example>l’homme qui est venu en retard à la réunion</example> ;</li>
+           <li>(pour quelques langues autres que le français et l’anglais) comme une proposition complétive mais ayant un marqueur relatif spécial dans la position de la conjonction de subordination, ou, éventuellement avec deux marqueurs qui se trouvent des deux côtés de la proposition relative ;</li>
+           <li>(pour quelques langues autres que le français et l’anglais) comme une phrase normale avec un marqueur relatif attaché au verbe.</li>
         </ul>
     </introduction>
     <form section="relcl">
         <radioGroup>
             <groupName dataItem="exist" default="no">RRelClExist</groupName>
-           <prompt><br/>Est-ce que votre langue a des propositions relatives (de n’importe quel type)?</prompt>
+           <prompt><br/>Est-ce que votre langue a des propositions relatives (de n’importe quel type) ?</prompt>
            <radio id="RelClExistYes" dataValue="yes">Oui</radio>
            <radio id="RelClExistNo" dataValue="no">Non, il n’y a pas de propositions relatives</radio>
         </radioGroup>
-       <prompt id="RelClExamplePrompt" show="swRelClExistYes">Entrez ici des exemples de propositions relatives qui modifient un nom principal dans votre langue:</prompt>
+       <prompt id="RelClExamplePrompt" show="swRelClExistYes">Saisissez ici des exemples de propositions relatives qui modifient un nom têtedans votre langue :</prompt>
         <textBox id="RelClExample" show="swRelClExistYes" dataItem="example" cols="80"/>
         <br/>
         <br/>
-       <prompt  id="RelClSentenceExamplePrompt" show="swRelClExistYes">Veuillez insérer chacun des exemples ci-dessus dans des phrases complètes (simples) et entrez-les ici:</prompt>
+       <prompt  id="RelClSentenceExamplePrompt" show="swRelClExistYes">Insérez chacun des exemples donnés ci-dessus dans des phrases complètes (simples) et saisissez-les ici :</prompt>
         <textBox id="RelClSentenceExample" show="swRelClExistYes" dataItem="sentExample" cols="80"/>
         <br/>
         <br/>
         <radioGroup id="RelClClausePosRadioGroup"  show="swRelClExistYes">
             <groupName dataItem="clausePos" default="unknown" position="yesHeadDiff">RRelClClausePos</groupName>
-           <prompt><br/>Où est-ce que la proposition se trouve relativement au nom principal?</prompt>
-           <radio id="RelClClausePosBefore" dataValue="before">Avant le nom principal</radio>
-           <radio id="RelClClausePosAfter" checked="yes" dataValue="after">Après le nom principal</radio>
-           <radio id="RelClClausePosEitherSide" checked="yes" dataValue="either">De n’importe quel côté du nom principal, quelquefois avant et quelquefois après</radio>
+           <prompt><br/>Où la proposition relative se trouve-t-elle par rapport au nom tête ?</prompt>
+           <radio id="RelClClausePosBefore" dataValue="before">Avant le nom tête</radio>
+           <radio id="RelClClausePosAfter" checked="yes" dataValue="after">Après le nom tête</radio>
+           <radio id="RelClClausePosEitherSide" checked="yes" dataValue="either">D’un côté ou de l’autre du nom tête, quelquefois avant et quelquefois après</radio>
         </radioGroup>
         <checkboxGroup id="RelClTypeGroup" show="swRelClExistYes">
-           <prompt><br/>Votre langue, quels types de propositions relatives a-t-elle? Cochez toutes les options permises</prompt>
-           <checkbox id="RelClTypeCPComp" dataItem="relTypeCPComp" show="swCompWordNotNo">Semblable à une proposition complétive commençant par le complémentiseur verbal normal « que »</checkbox>
-           <checkbox id="RelClTypeCPRel" dataItem="relTypeCPRel">Semblable à une proposition complétive qui contient un marqueur relatif spécial d’un côté ou des deux côtés, comme « qui » ou « que »</checkbox>
-           <checkbox id="RelClTypeCPWh" dataItem="relTypeCPWh">Semblable à une question de contenu commençant par « qui » ou « quel »</checkbox>
-           <checkbox id="RelClTypeIPRel" dataItem="relTypeIPRel">Semblable à une phrase normale ayant un marqueur relative attaché au verbe</checkbox>
+           <prompt><br/>Quels types de propositions relatives votre langue a-t-elle ? Cochez toutes les options possibles</prompt>
+           <checkbox id="RelClTypeCPComp" dataItem="relTypeCPComp" show="swCompWordNotNo">Semblable à une proposition complétive commençant par la conjonction de subordination verbale normale « que »</checkbox>
+           <checkbox id="RelClTypeCPRel" dataItem="relTypeCPRel">Semblable à une proposition complétive qui contient un marqueur relatif spécial d’un côté ou des deux côtés, comme « qui »</checkbox>
+           <checkbox id="RelClTypeCPWh" dataItem="relTypeCPWh">Semblable à une question de contenu commençant par « qui » ou « quel / que »</checkbox>
+           <checkbox id="RelClTypeIPRel" dataItem="relTypeIPRel">Semblable à une phrase normale ayant un marqueur relatif attaché au verbe</checkbox>
            <checkbox id="RelClTypeIP" dataItem="relTypeIP">Seulement une phrase normale qui modifie un nom, avec aucun marquage spécial</checkbox>
-           <checkbox id="RelClTypeOther" dataItem="relTypeOther">Dans ma langue les propositions relatives peuvent être formées comme suit: <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70"/></checkbox>
+           <checkbox id="RelClTypeOther" dataItem="relTypeOther">Dans ma langue les propositions relatives peuvent sont formées de la façon suivante : <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70" kind="table"/></checkbox>
         </checkboxGroup>
-       <prompt id="RelClTypeNoCheckPrompt" show="swRelClExistYesAndTypeNoCheck">AVERTISSEMENT: Vous n’avez pas coché aucunes des boîtes pour décrire quels types de propositions relatives sont possibles dans votre langue. Veuillez en cocher un choix ou plusieurs ou changer votre réponse ci-dessus à « Non, il n’y a pas de propositions relatives ».</prompt>
+       <prompt id="RelClTypeNoCheckPrompt" show="swRelClExistYesAndTypeNoCheck">ATTENTION : Vous n’avez coché aucunes des boîtes pour décrire quels types de propositions relatives sont possibles dans votre langue. Cocher une ou plusieurs boîtes ou changez votre réponse ci-dessus en « Non, il n’y a pas de propositions relatives ».</prompt>
        
                 <radioGroup id="RelClTypeCPWhTable" show="swRelClTypeCPWh">
                     <groupName dataItem="whAndComp" default="no">RRelClTypeCPWh</groupName>
-                   <prompt><br/>Dans les propositions relatives commençant par « qu- » et semblables aux questions pleines est-ce qu’un marqueur relatif peut paraître dans la position d’un complémentiseur?</prompt>
-                   <radio id="RelClTypeCPWhAndCompNo" dataValue="no">Non, seulement le mot à « qu- » signifiant « qui » ou « quel » paraît dans ce type de proposition relative</radio>
-                   <radio id="RelClTypeCPWhAndCompYes" dataValue="yes">Oui, le mot à « qu- » signifiant « qui » ou « quel » et le(s) marqueur(s) relatif(s) doivent paraître, tous les deux, dans ce type de proposition relative</radio>
-                   <radio id="RelClTypeCPWhAndCompOptional" dataValue="optional">Oui, un marqueur relatif peut figurer facultativement simultanément avec le mot à « qu- », dénotant « qui » ou « quel » dans ce type de proposition relative</radio>
+                   <prompt><br/>Dans les propositions relatives commençant par « qu- » et semblables aux questions de contenu, est-ce qu’un marqueur relatif peut paraître dans la position d’un conjonction de subordination ?</prompt>
+                   <radio id="RelClTypeCPWhAndCompNo" dataValue="no">Non, seulement le mot « qu- » signifiant « qui » ou « quel » apparaît dans ce type de proposition relative</radio>
+                   <radio id="RelClTypeCPWhAndCompYes" dataValue="yes">Oui, le mot à « qu- » signifiant « qui » ou « quel » et le(s) marqueur(s) relatif(s) doivent apparaître, tous les deux, dans ce type de proposition relative</radio>
+                   <radio id="RelClTypeCPWhAndCompOptional" dataValue="optional">Oui, un marqueur relatif peut figurer facultativement en même temps que le mot à « qu- », signifiant « qui » ou « quel » dans ce type de proposition relative</radio>
                 </radioGroup>
        <instruction id="RelClTypeCPWhInstruction" show="swRelClTypeCPWh">In the lexicon, add the feature <feature>relative</feature> to the « wh »-words which can be used in relative clauses.  If your language has animacy agreement between the head noun and the wh-relative word (like English « who » versus « which »), also add the feature <feature>animate</feature> to the animate forms and add the feature <feature>-animate</feature> to the inanimate forms.</instruction>
        
                 <radioGroup id="RelClTypeCPCompWordTable" show="swRelClTypeCPCompOrRelOrWhNotNo">
                     <groupName dataItem="relWord" default="yes">RRelClTypeCPCompWord</groupName>
-                   <prompt><br/>Est-ce que les marqueurs relatifs sont écrits comme mots indépendants?</prompt>
+                   <prompt><br/>Est-ce que les marqueurs relatifs sont écrits comme des mots indépendants ?</prompt>
                    <radio id="RelClTypeCPCompWordYes" dataValue="yes">Oui, ils sont tous des mots indépendants</radio>
-                   <radio id="RelClTypeCPCompWordSome" dataValue="some">Quelques uns sont écrits comme mots indépendants, mais quelques uns s’attachent à un autre mot au commencement ou à la fin de la proposition relative</radio>
-                   <radio id="RelClTypeCPCompWordNo" dataValue="no">Non, ils sont tous des clitiques qui s’attachent à un autre mot au commencement ou à la fin de la proposition relative</radio>
+                   <radio id="RelClTypeCPCompWordSome" dataValue="some">Quelques-uns sont écrits comme des mots indépendants, mais quelques-uns se rattachent à un autre mot au début ou à la fin de la proposition relative</radio>
+                   <radio id="RelClTypeCPCompWordNo" dataValue="no">Non, ce sont tous des clitiques qui se rattachent à un autre mot au début ou à la fin de la proposition relative</radio>
                 </radioGroup>
        <radioGroup id="RelClTypeCPCompCliticPosTable" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordNoOrSome">
           <groupName dataItem="relCliticPos" default="unknown" position="yesHead">RRelClTypeCPCompCliticPos</groupName>
-          <prompt><br/>Où est-ce que le marqueur relatif clitique s’attache au reste de la proposition relative?</prompt>
-          <radio id="RelClTypeCPCompCliticPosBefore" dataValue="before">Comme proclitique qui s’attache au commencement du premier mot dans la partie phrastique de la proposition relative</radio>
-          <radio id="RelClTypeCPCompCliticPosAfter" dataValue="after">Comme enclitique qui s’attache à la fin du dernier mot de la partie phrastique de la proposition relative</radio>
-          <radio id="RelClTypeCPCompCliticPosBoth" dataValue="both">Un proclitique et un enclitique entourent tous les deux la partie phrastique de la proposition relative</radio>
+          <prompt><br/>Où le marqueur relatif clitique se rattache-t-il au reste de la proposition relative ?</prompt>
+          <radio id="RelClTypeCPCompCliticPosBefore" dataValue="before">Comme un proclitique qui se rattache au début du premier mot dans la partie  qui constitue laphrase dans la proposition relative</radio>
+          <radio id="RelClTypeCPCompCliticPosAfter" dataValue="after">Comme un enclitique qui s’attache à la fin du dernier mot de la partie qui constitue la phrase dans la proposition relative</radio>
+          <radio id="RelClTypeCPCompCliticPosBoth" dataValue="both">Un proclitique et un enclitique entourent tous les deux la partie qui constitue la phrase dans la proposition relative</radio>
        </radioGroup>
        <prompt id="RelClTypeCPCompCliticExamplesPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordNoOrSome">
-          <br/>Entrez ici des clitiques qui sont employés pour marquer les propositions relatives, avec un signe d’égalité pour indiquer de quel côté ils s’attachent: 
+          <br/>Saisissez ici les clitiques employés pour marquer les propositions relatives, en utilisant un signe d’égalité pour indiquer de quel côté ils se rattachent au mot : 
        </prompt>
-       <textBox id="RelClTypeCPCompCliticExamples" dataItem="relCliticExample" rows="3" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordNoOrSome"/>
+       <textBox id="RelClTypeCPCompCliticExamples" dataItem="relCliticExample" rows="3" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordNoOrSome" kind="table"/>
        <instruction id="RelClTypeCPCompCliticPrefixInstruction" show="swRelClTypeCPCompCliticPrefix">In the lexicon, add the feature <feature>relative_prefix</feature> to these clitics.</instruction>
        <instruction id="RelClTypeCPCompCliticSuffixInstruction" show="swRelClTypeCPCompCliticSuffix">In the lexicon, add the feature <feature>relative_suffix</feature> to these clitics. </instruction>
        <instruction id="RelClTypeCPCompCliticBothInstruction" show="swRelClTypeCPCompCliticBoth">In the lexicon, add the feature <feature>relative_prefix</feature> to the proclitics and add <feature>relative_suffix</feature> to the enclitics. </instruction>
        <prompt id="RelClTypeCPCompWordExamplesPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome">
-          <br/>Entrez ici des mots qui sont employés pour marquer les propositions relatives: 
+          <br/>Saisissez ici les mots employés pour marquer les propositions relatives : 
        </prompt>
-       <textBox id="RelClTypeCPCompWordExamples" dataItem="relWordExample" rows="3" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome"/>
+       <textBox id="RelClTypeCPCompWordExamples" dataItem="relWordExample" rows="3" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome" kind="table"/>
        
        <instruction id="RelClTypeCPCompSameInstruction" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome">In the lexicon, the relative markers which are independent words need the features <feature>makeC relative</feature>.  This will assure the category <category>C</category> so they will occur in the complementizer position and allow their appearance only in a relative clause.  Any markers which can occur as the complementizer in a CP which is a complement of a verb, like ‘that’ in English, need to have two separate entries in the lexicon.  Mark the second entry with the feature <feature>makeC</feature> and it will default to not being allowed in relative clauses.  (If the same marker can also be used in questions, a third entry is needed with the features <feature>makeC question</feature>.)</instruction>
  
        <checkboxGroup id="RelClWordPosTable" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome">
-          <prompt><br/>Où est-ce que le marqueur relatif se trouve relativement à la partie phrastique de la proposition relative?  Cochez toutes les options permises</prompt>
-          <checkbox id="RelClWordBefore" checked="yes" dataItem="relWordBefore">Avant la partie phrastique</checkbox>
-          <checkbox id="RelClWordAfter" checked="yes" dataItem="relWordAfter">Après la partie phrastique</checkbox>
+          <prompt><br/>Où le marqueur relatif se trouve-t-il par rapport à la partie qui constitue laphrase dans la proposition relative ?  Cochez toutes les options permises</prompt>
+          <checkbox id="RelClWordBefore" checked="yes" dataItem="relWordBefore">Avant la partie qui constitue la phrase</checkbox>
+          <checkbox id="RelClWordAfter" checked="yes" dataItem="relWordAfter">Après la partie qui constitue la phrase</checkbox>
           <checkbox id="RelClWordBoth" checked="yes" dataItem="relWordBoth">Des deux côtés en même temps</checkbox>
-          <checkbox id="RelClWordOther" dataItem="relWordOther">Dans ma langue le mot relatif peut se trouver comme suit: <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70"/></checkbox>
+          <checkbox id="RelClWordOther" dataItem="relWordOther">Dans ma langue le mot relatif peut se trouver dans la position suivante : <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70" kind="table"/></checkbox>
        </checkboxGroup>
-       <prompt id="RelClWordPosNoCheckPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeAndNoCheck">AVERTISSEMENT: Vous n’avez pas coché aucune des boîtes pour décrire où le marqueur relatif peut se trouver dans votre langue. Veuillez cocher une boîte où plus, comme convenable.</prompt>
+       <prompt id="RelClWordPosNoCheckPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeAndNoCheck">ATTENNTION : Vous n’avez pas coché aucune des boîtes pour décrire où le marqueur relatif peut se placer dans votre langue. cochez une boîte ou plus, selon ce que fait votre langue.</prompt>
        <instruction id="RelClTypeCPCompEitherRestrictedInstruction" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeBoth">In the lexicon, mark those markers which can only occur initially with the feature <feature>CP-initial</feature> and those which can only occur finally with the feature <feature>CP-final</feature>.  Do not enter either feature on any markers which can occur on either side.</instruction>
        
        <prompt id="RelClTypeIPRelExamplesPrompt" show="swRelClTypeIPRel">
-          <br/>Entrez ici des affixes qui s’attachent au verbe pour marquer les propositions relatives avec un trait d’union pour indiquer de quel côté ils s’attachent: 
+          <br/>Saisissez ici des affixes qui se rattachent au verbe pour marquer les propositions relatives, en utilisant un trait d’union pour indiquer de quel côté ils se rattachent : 
        </prompt>
-       <textBox id="RelClTypeIPRelExamples" dataItem="relAffixExample" rows="3" show="swRelClTypeIPRel"/>
+       <textBox id="RelClTypeIPRelExamples" dataItem="relAffixExample" rows="3" show="swRelClTypeIPRel" kind="table"/>
         <instruction id="RelClTypeIPInstruction" show="swRelClTypeIPRel">In the lexicon, add the feature <feature>relative</feature> to each of the affixes that mark relative clauses.</instruction>
 <br/><br/>
 <introduction>
-   Il y a des langues où une des structures mentionnées ci-dessus peut se trouver comme syntagme nominale sans nom principal à modifier, ce qui s’appelle d’habitude les propositions relatives « sans tête ». Par exemple en anglais, la phrase <example>Julie brought [the food that we ate today] « Jeanne a apporté [la nourriture que nous avons mangée aujourd’hui] »</example> a une pleine proposition relative dans la position de l’objet, alors <example>Julie brought [what we ate today] « Jeanne a apporté [ce que nous avons mangé aujourd’hui] »</example> a comme complément d’objet une proposition relative « sans tête ».
+   Certaines langues admettent que l’une des structures mentionnées ci-dessus apparaisse comme un syntagme nominal, mais sans qu’elle modifie un nom tête On parle généralement de propositions relatives « sans tête ». Par exemple en anglais, la phrase <example>Julie brought [the food that we ate today] « Jeanne a apporté [la nourriture que nous avons mangée aujourd’hui] »</example> a une pleine proposition relative dans la position du objet, alors que <example>Julie brought [what we ate today] « Jeanne a apporté [ce que nous avons mangé aujourd’hui] »</example> a comme objet une proposition relative « sans tête ».
    
 </introduction>       
        <radioGroup id="RelClHeadlessTable" show="swRelClExistYes">
             <groupName dataItem="headless" default="no">RRelClHeadless</groupName>
-          <prompt><br/>Est-ce que votre langue permet les propositions relatives sans tête?</prompt>
-          <radio id="RelClHeadlessNo" dataValue="no">Non, il faut y avoir un nom principal</radio>
-          <radio id="RelClHeadlessYes" dataValue="yes">Oui, le nom principal peut manquer</radio>
+          <prompt><br/>Est-ce que votre langue permet les propositions relatives sans tête ?</prompt>
+          <radio id="RelClHeadlessNo" dataValue="no">Non, le nom tête est obligatoire</radio>
+          <radio id="RelClHeadlessYes" dataValue="yes">Oui, le nom nom tête peut manquer</radio>
         </radioGroup>
         <br/>
-       <prompt id="RelClHeadlessYesPrompt" show="swRelClHeadlessYes">Entrez ici de quelques propositions relatives sans tête, comprises dans des phrases pleines (et simples):</prompt>
+       <prompt id="RelClHeadlessYesPrompt" show="swRelClHeadlessYes">Saisissez ici de quelques propositions relatives sans tête, comprises dans des phrases complètes (et simples) :</prompt>
         <textBox id="RelClHeadlessExample" dataItem="headlessExample" cols="80" show="swRelClHeadlessYes"/>
         <br/>
         <br/>

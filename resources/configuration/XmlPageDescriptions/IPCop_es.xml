@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -27,7 +27,7 @@
     <prompt id="IPCopularVerb" show="swIPCopVerbYesOrOptional">
        <br/>Escriba los verbos copulativos, cada uno en linea separada: 
     </prompt>
-    <textBox id="IPCopuparVerbExample" dataItem="copularVerb" show="swIPCopVerbYesOrOptional" rows="3"/>
+    <textBox id="IPCopuparVerbExample" dataItem="copularVerb" show="swIPCopVerbYesOrOptional" rows="3" kind="table"/>
     <radioGroup id="IPCopVerbNoTable" show="swIPCopVerbNoOrOptional">
                 <groupName dataItem="copularAffix" default="no">RIPCopAffix</groupName>
                 <prompt>¿Hay un afijo que se presenta en el predicativo nominal o el predicativo adjetivo en las oraciones copulativas <span  id="IPCopVerbYesOptionalPrompt" show="swIPCopVerbYesOptional">cuando un verbo copulativo no se presenta</span>?</prompt>
@@ -38,7 +38,7 @@
             </radioGroup>
     <prompt id="IPCopularAffix" show="swIPCopAffixNotNo">
        <br/>Escriba los afijos copulativos se presenta en el predicativo nominal o el predicativo adjetivo<span  id="IPCopVerbYesOptionalPrompt2" show="swIPCopVerbYesOptional"> cuando un verbo copulativo no se presenta</span>, con un guión para indicar en qué lado se une, aquí: </prompt>
-    <textBox id="IPCopuparAffixExample" dataItem="copularAffix" show="swIPCopAffixNotNo" rows="3"/>
+    <textBox id="IPCopuparAffixExample" dataItem="copularAffix" show="swIPCopAffixNotNo" rows="3" kind="table"/>
     
     
         <instruction id="IPCopAffixYesEitherInstruction" show="swIPCopAffixYesEither">Add either of the features <feature>copular_prefix</feature> or <feature>copular_suffix</feature> to the appropriate affixes  in the lexicon.</instruction>

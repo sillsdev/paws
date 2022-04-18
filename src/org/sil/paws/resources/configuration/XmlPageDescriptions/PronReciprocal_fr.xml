@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="PronReciprocal" count="7.4">
    <title level="2">Pronoms – Réciproques</title>
-   <introduction>Les <technicalTermRef term="ttReciprocals">réciproques</technicalTermRef> sont comparables aux réfléchis sauf qu’ils se présentent seulement avec des sujets pluriels.  Ils peuvent être formés de la même façon que les réfléchis ou ils peuvent être distincts.  Par exemple, en anglais, las réciproques sont des syntagmes quantificateurs spéciaux: <example>each other</example> et <example>one another</example>; en français:<example>l’un l’autre</example>.  Mais las réciproques en français sont généralement marqués avec <example>se</example>.  Certaines langues utilisent seulement un affixe verbal pour indiquer une action réciproque de la part du sujet pluriel, d’autres ont des pronoms distincts, d’autres utilisent un syntagme nominal possédé, et d’autres encore ne marquent pas du tout l’action réciproque.</introduction>
+   <introduction>Les <technicalTermRef term="ttReciprocals">réciproques</technicalTermRef>  la seule différence est qu’ils se présentent seulement avec des sujets pluriels.  Ils peuvent être formés de la même façon ou d’une autre façon que les réfléchis .  Par exemple, en anglais, les réciproques sont des syntagmes quantifieurs spéciaux : <example>each other</example> et <example>one another</example>; en français:<example>l’un l’autre</example>.  En français les réciproques s’expriment par les pronoms <example>nous</example>, <example>vous</example> ou <example>se</example>, selon la personne ; <example>l’un l’autre</example> peut renforcer le pronom.  Certaines langues utilisent seulement un affixe verbal pour indiquer une action réciproque pour un sujet pluriel, d’autres ont des pronoms distincts, d’autres utilisent un syntagme nominal possédé, et d’autres encore ne marquent pas du tout l’action réciproque.</introduction>
     <form section="pron">
         <radioGroup>
             <groupName dataItem="recip" default="no">RPronRecip</groupName>
-           <prompt>Votre langue a-t-elle das réciproques?</prompt>
+           <prompt>Votre langue a-t-elle des réciproques?</prompt>
             <radio id="PronRecipNo" dataValue="no">Non</radio>
            <radio id="PronRecipYes" dataValue="yes">Oui, un pronom spécial ou un syntagme nominal qui indique une action réciproque occupe la position de l’objet</radio>
            <radio id="PronRecipVerbal" dataValue="yesVerbal">Oui, un affixe verbal indique l’action réciproque</radio>
         </radioGroup>
        <prompt id="PronRecipVerbExamples" show="swPronRecipVerbal">
-          <br/>Entrez ici l’affixe réciproque qui s’attache aux verbes, avec un trait d’union pour indiquer de quel côté il s’attache au verbe:</prompt>
-       <textBox id="PronRecipVerbAffixExample" dataItem="recipVerbAffixExample" show="swPronRecipVerbal" rows="2"/>
+          <br/>Saisissez ici l’affixe réciproque qui se rattache aux verbes, avec un trait d’union pour indiquer de quel côté il est rattaché au verbe :</prompt>
+       <textBox id="PronRecipVerbAffixExample" dataItem="recipVerbAffixExample" show="swPronRecipVerbal" rows="2" kind="table"/>
        <prompt id="PronRecipVerbSentExamples" show="swPronRecipVerbal">
-          <br/>Entrez plusieurs exemples de phrases simples avec un affixe réciproque sur le verbe pour indiquer une action réciproque par le sujet:</prompt>
+          <br/>Saisissez plusieurs exemples de phrases simples avec un affixe réciproque sur le verbe pour indiquer une action réciproque par le sujet :</prompt>
        <textBox id="PronRecipVerbSentExample" dataItem="recipVerbSentExample" show="swPronRecipVerbal" cols="80"/>  
        
        <prompt id="PronRecipFirstExamples" show="swPronRecipYesAndPronExclNo">
-          <br/>Entrez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la première personne du pluriel:
+          <br/> Saisissez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la première personne du pluriel :
         </prompt>
-        <textBox id="PronRecipFirstPlExample" dataItem="recipFirstPlExample" show="swPronRecipYesAndPronExclNo" rows="2"/>
+        <textBox id="PronRecipFirstPlExample" dataItem="recipFirstPlExample" show="swPronRecipYesAndPronExclNo" rows="2" kind="table"/>
        <prompt id="PronRecipFirstExclExamples" show="swPronRecipYesAndPronExclYes">
-          <br/>Entrez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la première personne exclusive du pluriel:
+          <br/> Saisissez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la première personne du pluriel exclusif :
        </prompt>
-       <textBox id="PronRecipFirstExclExample" dataItem="recipFirstExclExample" show="swPronRecipYesAndPronExclYes" rows="2"/>
+       <textBox id="PronRecipFirstExclExample" dataItem="recipFirstExclExample" show="swPronRecipYesAndPronExclYes" rows="2" kind="table"/>
        <prompt id="PronRecipFirstInclExamples" show="swPronRecipYesAndPronExclYes">
-          <br/>Entrez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la première personne inclusive du pluriel:
+          <br/> Saisissez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la première personne du pluriel inclusif :
        </prompt>
-       <textBox id="PronRecipFirstInclExample" dataItem="recipFirstInclExample" show="swPronRecipYesAndPronExclYes" rows="2"/>
+       <textBox id="PronRecipFirstInclExample" dataItem="recipFirstInclExample" show="swPronRecipYesAndPronExclYes" rows="2" kind="table"/>
        <prompt id="PronRecipSecondExamples" show="swPronRecipYes">
-          <br/>Entrez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la deuxième personne du pluriel:
+          <br/> Saisissez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la deuxième personne du pluriel :
        </prompt>
-       <textBox id="PronRecipSecondExample" dataItem="recipSecondExample" show="swPronRecipYes" rows="2"/>
+       <textBox id="PronRecipSecondExample" dataItem="recipSecondExample" show="swPronRecipYes" rows="2" kind="table"/>
        <prompt id="PronRecipThirdExamples" show="swPronRecipYes">
-          <br/>Entrez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la troisième personne du pluriel:
+          <br/> Saisissez ici les pronoms ou les syntagmes nominaux utilisés comme réciproques pour se référer au sujet de la troisième personne du pluriel :
        </prompt>
-       <textBox id="PronRecipThirdExample" dataItem="recipThirdExample" show="swPronRecipYes" rows="2"/>
+       <textBox id="PronRecipThirdExample" dataItem="recipThirdExample" show="swPronRecipYes" rows="2" kind="table"/>
        <prompt id="PronRecipSentExamples" show="swPronRecipYes">
-          <br/>Entrez ici des exemples dans de phrases simples:
+          <br/>Saisissez quelques-uns des exemples dans des phrases simples ici :
         </prompt>
         <textBox id="PronRecipSentExample" dataItem="recipSentExample" show="swPronRecipYes" cols="80"/>
 
        <checkboxGroup id="PronRecipYesTable" show="swPronRecipYes">
           <prompt>
-             <br/>Comment las réciproques qui occupent la position de l’objet sont-ils formés dans votre langue?  Cochez toutes les options qui sont correctes dans votre langue.</prompt>
-          <checkbox id="PronRecipAffixNoWord" dataItem="recipDistinct">Ce sont des mots distincts qui se présentent seuls</checkbox>
-          <checkbox id="PronRecipAffixYes" dataItem="recipAffix">On choisit un affixe (ou plusieurs) pour créer une réciproque à partir d’un autre pronom</checkbox>
-          <checkbox id="PronRecipAffixNoNoun" dataItem="recipNounPoss">On utilise un certain substantif avec un pronom comme possesseur</checkbox>
+             <br/>Comment les réciproques qui occupent la position de l’objet sont-ils formés dans votre langue ?  Cochez toutes les options qui sont correctes dans votre langue.</prompt>
+          <checkbox id="PronRecipAffixNoWord" dataItem="recipDistinct">Ce sont des mots distincts qui peuvent être employés seuls</checkbox>
+          <checkbox id="PronRecipAffixYes" dataItem="recipAffix">On choisit un ou plusieurs affixes pour créer un réciproque à partir d’un autre pronom</checkbox>
+          <checkbox id="PronRecipAffixNoNoun" dataItem="recipNounPoss">On utilise un substantif spécifique avec un pronom comme possesseur</checkbox>
           <checkbox id="PronRecipAffixNoQP" dataItem="recipQP">On utilise des substantifs quantifiés spéciaux</checkbox>
-          <checkbox id="PronRecipAffixOther" dataItem="recipOther">Ma langue forme une réciproque comme suit:<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1"/></checkbox>
+          <checkbox id="PronRecipAffixOther" dataItem="recipOther">Ma langue forme les réciproques de la façon suivante :<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="table"/></checkbox>
        </checkboxGroup>
        <br/><br/>
-       <prompt id="PronRecipAffixNoCheckPrompt" show="swPronRecipYesNoCheck">AVERTISSEMENT:  Vous avez dit ci-dessus que votre langue a das réciproques, mais vous n’avez marqué aucune des options pour dire comment ils sont formés.  Veuillez marquer une ou plus des options , à moins que vous n’ayez pas d’réciproques.  Dans ce cas-là il ne vous fallait pas entrer des formes dans les zones de texte et devez changer la réponse à « Non » ou à « Oui, un affixe verbal indique une action réciproque ».</prompt>
+       <prompt id="PronRecipAffixNoCheckPrompt" show="swPronRecipYesNoCheck">ATTENTION :  Vous avez dit ci-dessus que votre langue a des réciproques, mais vous n’avez coché aucune des options pour dire comment ils sont formés.  Il faut cocher une ou plusieurs options , à moins que vous n’ayez pas deréciproques.  Dans ce cas, il ne faut pas saisir de formes dans les boîtes et il faut changer la réponse et cocher « Non » ou à « Oui, un affixe verbal indique une action réciproque ».</prompt>
        
        <instruction id="PronRecipVerbalInstruction" show="swPronRecipVerbal">In the lexicon, add the feature <feature>reciprocal</feature> to the relevant verbal affix(es).</instruction>
         <instruction id="PronRecipAffixNoWordInstruction" show="swPronRecipAffixNoWord">In the lexicon, mark each reciprocal pronoun with the feature <feature>reciprocal</feature> and also all the relevant
@@ -67,17 +67,17 @@
                 <li>We assume that reciprocals require a plural subject.</li>
             </ul>
         </instruction>
-       <prompt id="PronRecipAffixYesPrompt" show="swPronRecipAffixYes"><br/>Entrez ici les affixes réciproques qui changent un pronom en un pronom réciproque, avec un trait d’union pour indiquer de quel côté il s’attache au pronom:
+       <prompt id="PronRecipAffixYesPrompt" show="swPronRecipAffixYes"><br/>Saisissez ici les affixes réciproques qui changent un pronom en un pronom réciproque, en indiquant par un trait d’union de quel côté il se rattache au pronom :
        </prompt>
-       <textBox id="PronReflAffixExamples" dataItem="pronRecipAffixExample"  rows="2" show="swPronRecipAffixYes"/> 
+       <textBox id="PronReflAffixExamples" dataItem="pronRecipAffixExample"  rows="2" show="swPronRecipAffixYes" kind="table"/> 
        <instruction id="PronRecipAffixYesInstruction" show="swPronRecipAffixYes">In the lexicon, add the feature <feature>reciprocal</feature> to the relevant affix(es).</instruction>
-       <prompt id="PronRecipAffixNoNounPrompt" show="swPronRecipAffixNoNoun"><br/>Entrez ici le substantif spécial qui est possédé par les pronoms possesseur pour former un syntagme réciproque ou un pronom réciproque:
+       <prompt id="PronRecipAffixNoNounPrompt" show="swPronRecipAffixNoNoun"><br/>Saisissez ici le substantif spécial qui est possédé par les pronoms possesseurs pour former un syntagme réciproque ou un pronom réciproque :
        </prompt>
-       <textBox id="PronRecipNounPossExamples" dataItem="pronRecipNounPossExample"  rows="2" show="swPronRecipAffixNoNoun"/> 
+       <textBox id="PronRecipNounPossExamples" dataItem="pronRecipNounPossExample"  rows="2" show="swPronRecipAffixNoNoun" kind="table"/> 
        <instruction id="PronRecipAffixNoNounInstruction" show="swPronRecipAffixNoNoun">In the lexicon, add the feature <feature>reciprocal</feature> to the relevant noun.</instruction>
-       <prompt id="PronRecipAffixNoQPPrompt" show="swPronRecipAffixNoQP"><br/>Entrez ici le quantificateur ou syntagme spécial qu’on utilise dans las réciproques:
+       <prompt id="PronRecipAffixNoQPPrompt" show="swPronRecipAffixNoQP"><br/>Saisissez ici le quantifieur ou syntagme spécial qu’on utilise dans les réciproques :
        </prompt>
-       <textBox id="PronRecipQPExamples" dataItem="pronRecipQExample"  rows="2" show="swPronRecipAffixNoQP"/> 
+       <textBox id="PronRecipQPExamples" dataItem="pronRecipQExample"  rows="2" show="swPronRecipAffixNoQP" kind="table"/> 
        <instruction id="PronRecipAffixNoQPInstruction" show="swPronRecipAffixNoQP">In the lexicon, add the feature <feature>reciprocal</feature> to the relevant nouns and quantifiers.</instruction>
 <br/>       <br/>
         <buttons>

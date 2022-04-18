@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -16,361 +16,361 @@
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatFirstSubject" name="IPFeatAgrFirstSubject">first_subject</featureItem>
                 <featureExplanation>the subject is first person</featureExplanation>
-               <textBox id="TBPersonFirstSubject" dataItem="firstSubjectPerson" rows="1"/>
+               <textBox id="TBPersonFirstSubject" dataItem="firstSubjectPerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatFirstObject" name="IPFeatAgrFirstObject">first_object</featureItem>
                 <featureExplanation>the object is first person</featureExplanation>
-               <textBox id="TBPersonFirstObject" dataItem="firstObjectPerson" rows="1"/>
+               <textBox id="TBPersonFirstObject" dataItem="firstObjectPerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow id="FRFirstErgative" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatFirstErgative" name="IPFeatAgrFirstErgative">first_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is first person</featureExplanation>
-               <textBox id="TBPersonFirstErgative" dataItem="firstErgativePerson" rows="1"/>
+               <textBox id="TBPersonFirstErgative" dataItem="firstErgativePerson" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRFirstAbsolutive" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatFirstAbsolutive" name="IPFeatAgrFirstAbsolutive">first_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is first person</featureExplanation>
-               <textBox id="TBPersonFirstAbsolutive" dataItem="firstAbsolutivePerson" rows="1"/>
+               <textBox id="TBPersonFirstAbsolutive" dataItem="firstAbsolutivePerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatFirstExclusiveSubject" name="IPFeatAgrFirstExclusiveSubject">first_exclusive_subject</featureItem>
                 <featureExplanation>the subject is first person exclusive</featureExplanation>
-               <textBox id="TBPersonFirstExclusiveSubject" dataItem="firstExclusiveSubjectPerson" rows="1"/>
+               <textBox id="TBPersonFirstExclusiveSubject" dataItem="firstExclusiveSubjectPerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatFirstExclusiveObject" name="IPFeatAgrFirstExclusiveObject">first_exclusive_object</featureItem>
                 <featureExplanation>the object is first person exclusive</featureExplanation>
-               <textBox id="TBPersonFirstExclusiveObject" dataItem="firstExclusiveObjectPerson" rows="1"/>
+               <textBox id="TBPersonFirstExclusiveObject" dataItem="firstExclusiveObjectPerson" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRFirstExclusiveErgative" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatFirstExclusiveErgative" name="IPFeatAgrFirstExclusiveErgative">first_exclusive_ergative</featureItem>
                <featureExplanation>the subject of a transitive verb is first person exclusive</featureExplanation>
-              <textBox id="TBPersonFirstExclusiveErgative" dataItem="firstExclusiveErgativePerson" rows="1"/>
+              <textBox id="TBPersonFirstExclusiveErgative" dataItem="firstExclusiveErgativePerson" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRFirstExclusiveAbsolutive" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatFirstExclusiveAbsolutive" name="IPFeatAgrFirstExclusiveAbsolutive">first_exclusive_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is first person exclusive</featureExplanation>
-               <textBox id="TBPersonFirstExclusiveAbsolutive" dataItem="firstExclusiveAbsolutivePerson" rows="1"/>
+               <textBox id="TBPersonFirstExclusiveAbsolutive" dataItem="firstExclusiveAbsolutivePerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatFirstInclusiveSubject" name="IPFeatAgrFirstInclusiveSubject">first_inclusive_subject</featureItem>
                 <featureExplanation>the subject is first person inclusive</featureExplanation>
-               <textBox id="TBPersonFirstInclusiveSubject" dataItem="firstInclusiveSubjectPerson" rows="1"/>
+               <textBox id="TBPersonFirstInclusiveSubject" dataItem="firstInclusiveSubjectPerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatFirstInclusiveObject" name="IPFeatAgrFirstInclusiveObject">first_inclusive_object</featureItem>
                 <featureExplanation>the object is first person inclusive</featureExplanation>
-               <textBox id="TBPersonFirstInclusiveObject" dataItem="firstInclusiveObjectPerson" rows="1"/>
+               <textBox id="TBPersonFirstInclusiveObject" dataItem="firstInclusiveObjectPerson" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRFirstInclusiveErgative" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatFirstInclusiveErgative" name="IPFeatAgrFirstInclusiveErgative">first_inclusive_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is first person inclusive</featureExplanation>
-               <textBox id="TBPersonFirstInclusiveErgative" dataItem="firstInclusiveErgativePerson" rows="1"/>
+               <textBox id="TBPersonFirstInclusiveErgative" dataItem="firstInclusiveErgativePerson" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRFirstInclusiveAbsolutive" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatFirstInclusiveAbsolutive" name="IPFeatAgrFirstInclusiveAbsolutive">first_inclusive_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is first person inclusive</featureExplanation>
-               <textBox id="TBPersonFirstInclusiveAbsolutive" dataItem="firstInclusiveAbsolutivePerson" rows="1"/>
+               <textBox id="TBPersonFirstInclusiveAbsolutive" dataItem="firstInclusiveAbsolutivePerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatSecondSubject" name="IPFeatAgrSecondSubject">second_subject</featureItem>
                 <featureExplanation>the subject is second person</featureExplanation>
-               <textBox id="TBPersonSecondSubject" dataItem="secondSubjectPerson" rows="1"/>
+               <textBox id="TBPersonSecondSubject" dataItem="secondSubjectPerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatSecondObject" name="IPFeatAgrSecondObject">second_object</featureItem>
                 <featureExplanation>the object is second person</featureExplanation>
-               <textBox id="TBPersonSecondObject" dataItem="secondObjectPerson" rows="1"/>
+               <textBox id="TBPersonSecondObject" dataItem="secondObjectPerson" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRSecondErgative" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatSecondErgative" name="IPFeatAgrSecondErgative">second_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is second person</featureExplanation>
-               <textBox id="TBPersonSecondErgative" dataItem="secondErgativePerson" rows="1"/>
+               <textBox id="TBPersonSecondErgative" dataItem="secondErgativePerson" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRSecondAbsolutive" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatSecondAbsolutive" name="IPFeatAgrSecondAbsolutive">second_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is second person</featureExplanation>
-               <textBox id="TBPersonSecondAbsolutive" dataItem="secondAbsolutivePerson" rows="1"/>
+               <textBox id="TBPersonSecondAbsolutive" dataItem="secondAbsolutivePerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatThirdSubject" name="IPFeatAgrThirdSubject">third_subject</featureItem>
                 <featureExplanation>the subject is third person</featureExplanation>
-               <textBox id="TBPersonThirdSubject" dataItem="thirdSubjectPerson" rows="1"/>
+               <textBox id="TBPersonThirdSubject" dataItem="thirdSubjectPerson" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>person</featureType>
                 <featureItem dataValue="ipAgrFeatThirdObject" name="IPFeatAgrThirdObject">third_object</featureItem>
                 <featureExplanation>the object is third person</featureExplanation>
-               <textBox id="TBPersonThirdObject" dataItem="thirdObjectPerson" rows="1"/>
+               <textBox id="TBPersonThirdObject" dataItem="thirdObjectPerson" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRThirdErgative" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatThirdErgative" name="IPFeatAgrThirdErgative">third_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is third person</featureExplanation>
-              <textBox id="TBPersonThirdErgative" dataItem="thirdErgativePerson" rows="1"/>
+              <textBox id="TBPersonThirdErgative" dataItem="thirdErgativePerson" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRThirdAbsolutive" show="swCaseErgOrSplit">
                 <featureType>person</featureType>
               <featureItem dataValue="ipAgrFeatThirdAbsolutive" name="IPFeatAgrThirdAbsolutive">third_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is third person</featureExplanation>
-              <textBox id="TBPersonThirdAbsolutive" dataItem="thirdAbsolutivePerson" rows="1"/>
+              <textBox id="TBPersonThirdAbsolutive" dataItem="thirdAbsolutivePerson" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                 <featureType>number</featureType>
                 <featureItem dataValue="ipAgrFeatSingularSubject" name="IPFeatAgrSingularSubject">singular_subject</featureItem>
                 <featureExplanation>the subject is singular</featureExplanation>
-               <textBox id="TBNumberSingularSubject" dataItem="singularSubjectNumber" rows="1"/>
+               <textBox id="TBNumberSingularSubject" dataItem="singularSubjectNumber" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>number</featureType>
                 <featureItem dataValue="ipAgrFeatSingularObject" name="IPFeatAgrSingularObject">singular_object</featureItem>
                 <featureExplanation>the object is singular</featureExplanation>
-               <textBox id="TBNumberSingularObject" dataItem="singularObjectNumber" rows="1"/>
+               <textBox id="TBNumberSingularObject" dataItem="singularObjectNumber" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRSingularErgative" show="swCaseErgOrSplit">
                 <featureType>number</featureType>
               <featureItem dataValue="ipAgrFeatSingularErgative" name="IPFeatAgrSingularErgative">singular_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is singular</featureExplanation>
-               <textBox id="TBNumberSingularErgative" dataItem="singularErgativeNumber" rows="1"/>
+               <textBox id="TBNumberSingularErgative" dataItem="singularErgativeNumber" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRSingularAbsolutive" show="swCaseErgOrSplit">
                 <featureType>number</featureType>
               <featureItem dataValue="ipAgrFeatSingularAbsolutive" name="IPFeatAgrSingularAbsolutive">singular_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is singular</featureExplanation>
-               <textBox id="TBNumberSingularAbsolutive" dataItem="singularAbsolutiveNumber" rows="1"/>
+               <textBox id="TBNumberSingularAbsolutive" dataItem="singularAbsolutiveNumber" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>number</featureType>
                 <featureItem dataValue="ipAgrFeatDualSubject" name="IPFeatAgrDualSubject">dual_subject</featureItem>
                 <featureExplanation>the subject is dual</featureExplanation>
-               <textBox id="TBNumberDualSubject" dataItem="dualSubjectNumber" rows="1"/>
+               <textBox id="TBNumberDualSubject" dataItem="dualSubjectNumber" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>number</featureType>
                 <featureItem dataValue="ipAgrFeatDualObject" name="IPFeatAgrDualObject">dual_object</featureItem>
                 <featureExplanation>the object is dual</featureExplanation>
-               <textBox id="TBNumberDualObject" dataItem="dualObjectNumber" rows="1"/>
+               <textBox id="TBNumberDualObject" dataItem="dualObjectNumber" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRDualErgative" show="swCaseErgOrSplit">
                 <featureType>number</featureType>
               <featureItem dataValue="ipAgrFeatDualErgative" name="IPFeatAgrDualErgative">dual_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is dual</featureExplanation>
-              <textBox id="TBNumberDualErgative" dataItem="dualErgativeNumber" rows="1"/>
+              <textBox id="TBNumberDualErgative" dataItem="dualErgativeNumber" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRDualAbsolutive" show="swCaseErgOrSplit">
                 <featureType>number</featureType>
               <featureItem dataValue="ipAgrFeatDualAbsolutive" name="IPFeatAgrDualAbsolutive">dual_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is dual</featureExplanation>
-              <textBox id="TBNumberDualAbsolutive" dataItem="dualAbsolutiveNumber" rows="1"/>
+              <textBox id="TBNumberDualAbsolutive" dataItem="dualAbsolutiveNumber" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                 <featureType>number</featureType>
                 <featureItem dataValue="ipAgrFeatPluralSubject" name="IPFeatAgrPluralSubject">plural_subject</featureItem>
                 <featureExplanation>the subject is plural</featureExplanation>
-               <textBox id="TBNumberPluralSubject" dataItem="pluralSubjectNumber" rows="1"/>
+               <textBox id="TBNumberPluralSubject" dataItem="pluralSubjectNumber" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>number</featureType>
                 <featureItem dataValue="ipAgrFeatPluralObject" name="IPFeatAgrPluralObject">plural_object</featureItem>
                 <featureExplanation>the object is plural</featureExplanation>
-               <textBox id="TBNumberPluralObject" dataItem="pluralObjectNumber" rows="1"/>
+               <textBox id="TBNumberPluralObject" dataItem="pluralObjectNumber" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRPluralErgative" show="swCaseErgOrSplit">
                 <featureType>number</featureType>
               <featureItem dataValue="ipAgrFeatPluralErgative" name="IPFeatAgrPluralErgative">plural_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is plural</featureExplanation>
-              <textBox id="TBNumberPluralErgative" dataItem="pluralErgativeNumber" rows="1"/>
+              <textBox id="TBNumberPluralErgative" dataItem="pluralErgativeNumber" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRPluralAbsolutive" show="swCaseErgOrSplit">
                 <featureType>number</featureType>
               <featureItem dataValue="ipAgrFeatPluralAbsolutive" name="IPFeatAgrPluralAbsolutive">plural_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is plural</featureExplanation>
-              <textBox id="TBNumberPluralAbsolutive" dataItem="pluralAbsolutiveNumber" rows="1"/>
+              <textBox id="TBNumberPluralAbsolutive" dataItem="pluralAbsolutiveNumber" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                <featureType>gender</featureType>
                 <featureItem dataValue="ipAgrFeatMasculineSubject" name="IPFeatAgrMasculineSubject">masculine_subject</featureItem>
                 <featureExplanation>the subject is masculine</featureExplanation>
-               <textBox id="TBGenderMasculineSubject" dataItem="masculineSubjectGender" rows="1"/>
+               <textBox id="TBGenderMasculineSubject" dataItem="masculineSubjectGender" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                <featureType>gender</featureType>
                 <featureItem dataValue="ipAgrFeatMasculineObject" name="IPFeatAgrMasculineObject">masculine_object</featureItem>
                 <featureExplanation>the object is masculine</featureExplanation>
-               <textBox id="TBGenderMasculineObject" dataItem="masculineObjectGender" rows="1"/>
+               <textBox id="TBGenderMasculineObject" dataItem="masculineObjectGender" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRMasculineErgative" show="swCaseErgOrSplit">
                <featureType>gender</featureType>
               <featureItem dataValue="ipAgrFeatMasculineErgative" name="IPFeatAgrMasculineErgative">masculine_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is masculine</featureExplanation>
-              <textBox id="TBGenderMasculineErgative" dataItem="masculineErgativeGender" rows="1"/>
+              <textBox id="TBGenderMasculineErgative" dataItem="masculineErgativeGender" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRMasculineAbsolutive" show="swCaseErgOrSplit">
                <featureType>gender</featureType>
               <featureItem dataValue="ipAgrFeatMasculineAbsolutive" name="IPFeatAgrMasculineAbsolutive">masculine_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is masculine</featureExplanation>
-              <textBox id="TBGenderMasculineAbsolutive" dataItem="masculineAbsolutiveGender" rows="1"/>
+              <textBox id="TBGenderMasculineAbsolutive" dataItem="masculineAbsolutiveGender" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                <featureType>gender</featureType>
                 <featureItem dataValue="ipAgrFeatFeminineSubject" name="IPFeatAgrFeminineSubject">feminine_subject</featureItem>
                 <featureExplanation>the subject is feminine</featureExplanation>
-               <textBox id="TBGenderFeminineSubject" dataItem="feminineSubjectGender" rows="1"/>
+               <textBox id="TBGenderFeminineSubject" dataItem="feminineSubjectGender" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                <featureType>gender</featureType>
                 <featureItem dataValue="ipAgrFeatFeminineObject" name="IPFeatAgrFeminineObject">feminine_object</featureItem>
                 <featureExplanation>the object is feminine</featureExplanation>
-               <textBox id="TBGenderFeminineObject" dataItem="feminineObjectGender" rows="1"/>
+               <textBox id="TBGenderFeminineObject" dataItem="feminineObjectGender" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRFeminineErgative" show="swCaseErgOrSplit">
                <featureType>gender</featureType>
               <featureItem dataValue="ipAgrFeatFeminineErgative" name="IPFeatAgrFeminineErgative">feminine_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is feminine</featureExplanation>
-              <textBox id="TBGenderFeminineErgative" dataItem="feminineErgativeGender" rows="1"/>
+              <textBox id="TBGenderFeminineErgative" dataItem="feminineErgativeGender" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRFeminineAbsolutive" show="swCaseErgOrSplit">
                <featureType>gender</featureType>
               <featureItem dataValue="ipAgrFeatFeminineAbsolutive" name="IPFeatAgrFeminineAbsolutive">feminine_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is feminine</featureExplanation>
-              <textBox id="TBGenderFeminineAbsolutive" dataItem="feminineAbsolutiveGender" rows="1"/>
+              <textBox id="TBGenderFeminineAbsolutive" dataItem="feminineAbsolutiveGender" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                <featureType>gender</featureType>
                 <featureItem dataValue="ipAgrFeatNeuterSubject" name="IPFeatAgrNeuterSubject">neuter_subject</featureItem>
                 <featureExplanation>the subject is neuter</featureExplanation>
-               <textBox id="TBGenderNeuterSubject" dataItem="neuterSubjectGender" rows="1"/>
+               <textBox id="TBGenderNeuterSubject" dataItem="neuterSubjectGender" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                <featureType>gender</featureType>
                 <featureItem dataValue="ipAgrFeatNeuterObject" name="IPFeatAgrNeuterObject">neuter_object</featureItem>
                 <featureExplanation>the object is neuter</featureExplanation>
-               <textBox id="TBGenderNeuterObject" dataItem="neuterObjectGender" rows="1"/>
+               <textBox id="TBGenderNeuterObject" dataItem="neuterObjectGender" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRNeuterErgative" show="swCaseErgOrSplit">
                <featureType>gender</featureType>
               <featureItem dataValue="ipAgrFeatNeuterErgative" name="IPFeatAgrNeuterErgative">neuter_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is neuter</featureExplanation>
-              <textBox id="TBGenderNeuterErgative" dataItem="neuterErgativeGender" rows="1"/>
+              <textBox id="TBGenderNeuterErgative" dataItem="neuterErgativeGender" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRNeuterAbsolutive" show="swCaseErgOrSplit">
                <featureType>gender</featureType>
               <featureItem dataValue="ipAgrFeatNeuterAbsolutive" name="IPFeatAgrNeuterAbsolutive">neuter_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is neuter</featureExplanation>
-              <textBox id="TBGenderNeuterAbsolutive" dataItem="neuterAbsolutiveGender" rows="1"/>
+              <textBox id="TBGenderNeuterAbsolutive" dataItem="neuterAbsolutiveGender" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                 <featureType>animacy</featureType>
                 <featureItem dataValue="ipAgrFeatAnimateSubject" name="IPFeatAgrAnimateSubject">animate_subject</featureItem>
                 <featureExplanation>the subject is animate</featureExplanation>
-               <textBox id="TBAnimacyAnimateSubject" dataItem="animateSubjectAnimacy" rows="1"/>
+               <textBox id="TBAnimacyAnimateSubject" dataItem="animateSubjectAnimacy" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>animacy</featureType>
                 <featureItem dataValue="ipAgrFeatAnimateObject" name="IPFeatAgrAnimateObject">animate_object</featureItem>
                 <featureExplanation>the object is animate</featureExplanation>
-               <textBox id="TBAnimacyAnimateObject" dataItem="animateObjectAnimacy" rows="1"/>
+               <textBox id="TBAnimacyAnimateObject" dataItem="animateObjectAnimacy" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRAnimateErgative" show="swCaseErgOrSplit">
                 <featureType>animacy</featureType>
               <featureItem dataValue="ipAgrFeatAnimateErgative" name="IPFeatAgrAnimateErgative">animate_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is animate</featureExplanation>
-              <textBox id="TBAnimacyAnimateErgative" dataItem="animateErgativeAnimacy" rows="1"/>
+              <textBox id="TBAnimacyAnimateErgative" dataItem="animateErgativeAnimacy" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRAnimateAbsolutive" show="swCaseErgOrSplit">
                 <featureType>animacy</featureType>
               <featureItem dataValue="ipAgrFeatAnimateAbsolutive" name="IPFeatAgrAnimateAbsolutive">animate_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is animate</featureExplanation>
-              <textBox id="TBAnimacyAnimateAbsolutive" dataItem="animateAbsolutiveAnimacy" rows="1"/>
+              <textBox id="TBAnimacyAnimateAbsolutive" dataItem="animateAbsolutiveAnimacy" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                 <featureType>animacy</featureType>
                 <featureItem dataValue="ipAgrFeatMinusAnimateSubject" name="IPFeatAgrMinusAnimateSubject">-animate_subject</featureItem>
                 <featureExplanation>the subject is inanimate</featureExplanation>
-               <textBox id="TBAnimacyMinusAnimateSubject" dataItem="inanimateSubjectAnimacy" rows="1"/>
+               <textBox id="TBAnimacyMinusAnimateSubject" dataItem="inanimateSubjectAnimacy" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>animacy</featureType>
                 <featureItem dataValue="ipAgrFeatMinusAnimateObject" name="IPFeatAgrMinusAnimateObject">-animate_object</featureItem>
                 <featureExplanation>the object is inanimate</featureExplanation>
-               <textBox id="TBAnimacyMinusAnimateObject" dataItem="inanimateObjectAnimacy" rows="1"/>
+               <textBox id="TBAnimacyMinusAnimateObject" dataItem="inanimateObjectAnimacy" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRMinusAnimateErgative" show="swCaseErgOrSplit">
                 <featureType>animacy</featureType>
               <featureItem dataValue="ipAgrFeatMinusAnimateErgative" name="IPFeatAgrMinusAnimateErgative">-animate_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is inanimate</featureExplanation>
-              <textBox id="TBAnimacyMinusAnimateErgative" dataItem="inanimateErgativeAnimacy" rows="1"/>
+              <textBox id="TBAnimacyMinusAnimateErgative" dataItem="inanimateErgativeAnimacy" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRMinusAnimateAbsolutive" show="swCaseErgOrSplit">
                 <featureType>animacy</featureType>
               <featureItem dataValue="ipAgrFeatMinusAnimateAbsolutive" name="IPFeatAgrMinusAnimateAbsolutive">-animate_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is inanimate</featureExplanation>
-              <textBox id="TBAnimacyMinusAnimateAbsolutive" dataItem="inanimateAbsolutiveAnimacy" rows="1"/>
+              <textBox id="TBAnimacyMinusAnimateAbsolutive" dataItem="inanimateAbsolutiveAnimacy" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                 <featureType>animacy</featureType>
                 <featureItem dataValue="ipAgrFeatHumanSubject" name="IPFeatAgrHumanSubject">human_subject</featureItem>
                 <featureExplanation>the subject is human</featureExplanation>
-               <textBox id="TBAnimacyHumanSubject" dataItem="humanSubjectAnimacy" rows="1"/>
+               <textBox id="TBAnimacyHumanSubject" dataItem="humanSubjectAnimacy" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>animacy</featureType>
                 <featureItem dataValue="ipAgrFeatHumanObject" name="IPFeatAgrHumanObject">human_object</featureItem>
                 <featureExplanation>the object is human</featureExplanation>
-               <textBox id="TBAnimacyHumanObject" dataItem="humanObjectAnimacy" rows="1"/>
+               <textBox id="TBAnimacyHumanObject" dataItem="humanObjectAnimacy" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRHumanErgative" show="swCaseErgOrSplit">
                 <featureType>animacy</featureType>
               <featureItem dataValue="ipAgrFeatHumanErgative" name="IPFeatAgrHumanErgative">human_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is human</featureExplanation>
-              <textBox id="TBAnimacyHumanErgative" dataItem="humanErgativeAnimacy" rows="1"/>
+              <textBox id="TBAnimacyHumanErgative" dataItem="humanErgativeAnimacy" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRHumanAbsolutive" show="swCaseErgOrSplit">
                 <featureType>animacy</featureType>
               <featureItem dataValue="ipAgrFeatHumanAbsolutive" name="IPFeatAgrHumanAbsolutive">human_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is human</featureExplanation>
-              <textBox id="TBAnimacyHumanAbsolutive" dataItem="humanAbsolutiveAnimacy" rows="1"/>
+              <textBox id="TBAnimacyHumanAbsolutive" dataItem="humanAbsolutiveAnimacy" rows="1" kind="table"/>
            </featureRow>
             <featureRow>
                 <featureType>animacy</featureType>
                 <featureItem dataValue="ipAgrFeatMinusHumanSubject" name="IPFeatAgrMinusHumanSubject">-human_subject</featureItem>
                 <featureExplanation>the subject is nonhuman</featureExplanation>
-               <textBox id="TBAnimacyMinusHumanSubject" dataItem="nonhumanSubjectAnimacy" rows="1"/>
+               <textBox id="TBAnimacyMinusHumanSubject" dataItem="nonhumanSubjectAnimacy" rows="1" kind="table"/>
             </featureRow>
             <featureRow>
                 <featureType>animacy</featureType>
                 <featureItem dataValue="ipAgrFeatMinusHumanObject" name="IPFeatAgrMinusHumanObject">-human_object</featureItem>
                 <featureExplanation>the object is nonhuman</featureExplanation>
-               <textBox id="TBAnimacyMinusHumanObject" dataItem="nonhumanObjectAnimacy" rows="1"/>
+               <textBox id="TBAnimacyMinusHumanObject" dataItem="nonhumanObjectAnimacy" rows="1" kind="table"/>
             </featureRow>
            <featureRow id="FRMinusHumanErgative" show="swCaseErgOrSplit">
                 <featureType>animacy</featureType>
               <featureItem dataValue="ipAgrFeatMinusHumanErgative" name="IPFeatAgrMinusHumanErgative">-human_ergative</featureItem>
                 <featureExplanation>the subject of a transitive verb is nonhuman</featureExplanation>
-              <textBox id="TBAnimacyMinusHumanErgative" dataItem="nonhumanErgativeAnimacy" rows="1"/>
+              <textBox id="TBAnimacyMinusHumanErgative" dataItem="nonhumanErgativeAnimacy" rows="1" kind="table"/>
            </featureRow>
            <featureRow id="FRMinusHumanAbsolutive" show="swCaseErgOrSplit">
                 <featureType>animacy</featureType>
               <featureItem dataValue="ipAgrFeatMinusHumanAbsolutive" name="IPFeatAgrMinusHumanAbsolutive">-human_absolutive</featureItem>
                 <featureExplanation>the subject of an intransitive verb or the object of a transitive verb is nonhuman</featureExplanation>
-              <textBox id="TBAnimacyMinusHumanAbsolutive" dataItem="nonhumanAbsolutiveAnimacy" rows="1"/>
+              <textBox id="TBAnimacyMinusHumanAbsolutive" dataItem="nonhumanAbsolutiveAnimacy" rows="1" kind="table"/>
            </featureRow>
         </featureChart>
       </instruction>

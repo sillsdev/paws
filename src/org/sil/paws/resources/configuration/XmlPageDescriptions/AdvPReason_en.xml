@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="AdvPReason" count="3.4">
     <title level="2">Adverbs and AdvP - Reason or Purpose Adverbs</title>
@@ -11,17 +11,14 @@ prepositional phrase, such as <example>for this reason</example> or <example>on 
 </introduction>
     <form section="advp">
         <prompt>Key your examples of reason or purpose adverbs here, including those which can have a clause following them:</prompt>
-        <textBox id="AdvPReasonExample" dataItem="reasonExample" rows="3"/>
+        <textBox id="AdvPReasonExample" dataItem="reasonExample" rows="3" kind="table"/>
         <prompt>Key your examples of prepositional or postpositional phrases which express reason or purpose here:</prompt>
-        <textBox id="AdvPReasonPPExample" dataItem="reasonPPExample" rows="3"/>
+        <textBox id="AdvPReasonPPExample" dataItem="reasonPPExample" rows="3" kind="table"/>
         <prompt>Now key some examples from each of the boxes above included in full sentences here:</prompt>
         <textBox id="AdvPReasonSentExample" dataItem="reasonSentExample" rows="5" cols="80"/> 
         <br/>
         <instruction id="AdvPReasonInstruction">In the lexicon, key the feature <feature>reason</feature> on
-all adverbs that express reason or purpose, and also on the nouns like <example>reason</example> and <example>purpose</example>.  
-            Any multi-word forms, like <example>in order</example> are best handled as a single entry.
-            In <tool>FLEx</tool> interlinear, you can link the words together.
-            For <tool>CARLAStudio</tool>, use underscores between the words so <tool>Join Compound</tool> will parse them as a single lexical entry within <tool>CARLAStudio</tool>.
+all adverbs that express reason or purpose, and also on the nouns like <example>reason</example> and <example>purpose</example>.  Any multi-word forms, like <example>in order</example> are best handled as a single entry using <tool>Join Compound</tool>.
         </instruction>
         <br/><br/>
         <buttons>

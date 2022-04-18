@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -21,18 +21,18 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	   <prompt id="QPQuantifierClassifierAgrPrompt" show="swOTClassifierAgrAndQuantifierYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the quantifiers here.</prompt>	   
 <br/>
 	   <prompt>Key the way your language expresses “many” (which modifies nouns which can be counted), with each word on a separate line. </prompt>
-	   <textBox id="QPManyExample" dataItem="many" rows="3"/>
+	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"/>
 	   <br/>
 	   <br/>
 	   <prompt>Key the way your language expresses “much” (which only modifies <technicalTermRef term="ttMass"/> nouns), with each word on a separate line.</prompt>
-	   <textBox id="QPMuchExample" dataItem="much" rows="3"/>
+	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"/>
 	   <br/><br/>
 	   <prompt>Key the way your language expresses “few”, with each word on a separate line. </prompt>
-	   <textBox id="QPFewExample" dataItem="few" rows="3"/>
+	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"/>
 	   <br/>
 	   <br/>
 	   <prompt>Key the way your language expresses any other quantifiers of this type, with each word on a separate line.</prompt>
-	   <textBox id="QPOtherQExample" dataItem="otherQ" rows="3"/>
+	   <textBox id="QPOtherQExample" dataItem="otherQ" rows="3" kind="table"/>
 		<instruction id="QPDegreeInstruction">In the lexicon, if this type of quantifier does not already have the category <category>Q</category>, mark them
 			with the feature <feature>makeQ</feature>.  This will change
 			their category to <category>Q</category> for the syntax.  If a particular quantifier can
@@ -58,7 +58,7 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	   
 	   <br/>
 		<prompt id="QPDegreeWordYesExamples" show="swQPDegreeYesOrSome">Key examples of the degree words here, with each on a separate line.  Note that these degree words will most likely not be the same as the ones which can modify an entire nominal phrase dealt with in the first section above.</prompt>
-		<textBox id="QPDegreeWordExample" dataItem="degreeWordExample" show="swQPDegreeYesOrSome"/>
+		<textBox id="QPDegreeWordExample" dataItem="degreeWordExample" show="swQPDegreeYesOrSome" kind="table"/>
 		<prompt id="QPDegreeYesExamples" show="swQPDegreeYesOrSome">Now key examples of the degree words modifying a quantifier within a simple nominal phrase here:</prompt>
 		<textBox id="QPDegreeExample" dataItem="degreeExample" cols="80" show="swQPDegreeYesOrSome"/>
 	   <br/><br/>
@@ -67,7 +67,7 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	      <checkbox id="QPDegreeBefore"  dataItem="degreeBefore">Before the quantifier</checkbox>
 	      <checkbox id="QPDegreeAfter"  dataItem="degreeAfter">After the quantifier</checkbox>
 	      <checkbox id="QPDegreeBoth"  dataItem="degreeBoth">On both sides of the quantifier at the same time</checkbox>
-	   	<checkbox id="QPDegreeOther"  dataItem="degreeOther">In my language, they may occur in the following position: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1"/></checkbox>
+	   	<checkbox id="QPDegreeOther"  dataItem="degreeOther">In my language, they may occur in the following position: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeWordPosNoCheckPrompt" show="swQPDegreeWordPosNoCheck">WARNING: You need to check at least one box to describe where these degree words occur with respect to the quantifier in your language or change your answer above to say that the degree elements are not expressed as independent words.</prompt>  
 	   <instruction id="QPDegreeYesInstruction" show="swQPDegreeYesOrSome">
@@ -76,14 +76,14 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	      feature <feature>QP-final</feature>.  Do not enter either feature <feature>QP-initial</feature> or <feature>QP-final</feature> on any degree words which can occur on either side.</instruction>
 	   <br/><br/>
 	   <prompt id="QPDegreeWordAttachesExamples" show="swQPDegreeAttachesOrSome">Key examples of the degree affixes or clitics here, with a hyphen or equal sign to indicate which side it attaches on an each on a separate line.  Note that these degree elements will most likely not be the same as the ones which can modify an entire nominal phrase dealt with in the first section above.</prompt>
-	   <textBox id="QPDegreeAttachesExample" dataItem="degreeAttachesExample" show="swQPDegreeAttachesOrSome"/>
+	   <textBox id="QPDegreeAttachesExample" dataItem="degreeAttachesExample" show="swQPDegreeAttachesOrSome" kind="table"/>
 	   <prompt id="QPDegreeAttachesExamples" show="swQPDegreeAttachesOrSome">Now key examples of the degree affixes or clitics modifying a quantifier within a simple nominal phrase here:</prompt>
 		<textBox id="QPDegreeAttachesNPExample" dataItem="degreeAttachesNPExample" cols="80" show="swQPDegreeAttachesOrSome"/>
 	   <checkboxGroup id="QPDegreeAttachesPos" show="swQPDegreeAttachesOrSome">
 	      <prompt>Based on the examples in the box above, where do the degree elements (optionally) attach with respect to the quantifier? Check all options that are correct for your language</prompt>
 	      <checkbox id="QPDegreeTypePrefix" dataItem="degreeTypePrefix">As a prefix which attaches to the quantifier</checkbox>
 	      <checkbox id="QPDegreeTypeSuffix" dataItem="degreeTypeSuffix">As a suffix which attaches to the quantifier</checkbox>
-	   	<checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1"/></checkbox>
+	   	<checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeAttachesPosNoCheckPrompt" show="swQPDegreeAttachesPosNoCheck">WARNING: You need to check at least one box to describe where these degree affixes occur with respect to the quantifier in your language or change your answer above to say that the degree elements are all written as independent words.</prompt>  
 <br/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -29,7 +29,7 @@
 	      <radio id="QPPartitiveOther" dataValue="other">No, my language uses some other means than either a prepositional or postpositional phrase or a relative clause to express similar meanings</radio>
 	   </radioGroup>
 		<prompt id="QPPartitiveOtherPrompt" show="swQPPartitiveOther">The construction my language uses to express the group or item being discussed in this kind of partitive construction is:</prompt>
-		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther"/>
+		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther" kind="table"/>
 		
 	   <radioGroup id="QPPartitivePPPosTable" show="swQPPartitiveYes">
 	      <groupName dataItem="partitivePPPos" default="unknown" position="yesHeadDiff">RQPPartitivePPPos</groupName>
@@ -40,7 +40,7 @@
 	   </radioGroup>
 	   
 	   <prompt id="QPPartitiveOfPrompt" show="swQPPartitiveYes">Key the prepositions or postpositions that can be used to mean “of” in these partitive constructions, with each word on a separate line. </prompt>
-	   <textBox id="QPPartitiveOfExample" dataItem="partitiveOf" rows="3" show="swQPPartitiveYes"/>
+	   <textBox id="QPPartitiveOfExample" dataItem="partitiveOf" rows="3" show="swQPPartitiveYes" kind="table"/>
 	   <br/>
 	   
 	   <prompt id="QPPartitiveRelClPrompt" show="swQPPartitiveNo">The structure of relative clauses will be covered in <section number="12">Relative Clauses</section>.</prompt>

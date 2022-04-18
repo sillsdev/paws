@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="NPPossessorAgreement" count="5.4.2">
-    <title level="2">Syntagmes Nominaux – Accord Possessif</title>
-    <introduction>L’accord possessif vient normalement sous deux formes de base: 
+    <title level="2">Syntagmes nominaux – Accord possessif</title>
+    <introduction>L’accord possessif a généralement deux formes de base : 
 <ul>
-    <li>•	Un affixe qui se trouve sur des noms <technicalTermRef term="ttAlienably">alienablement</technicalTermRef> possédés pour indiquer qu’ils sont possédés et donc doivent avoir un possesseur dans le syntagme nominal. Des noms <technicalTermRef term="ttInalienably" capitalize="yes">inaliénablement</technicalTermRef> possédés ne prennent pas de marque, mais doivent toujours avoir un possesseur. Ceux-ci incluent sans y être limités les liens de parenté et les parties du corps.</li>
-    <li>•	Un affixe qui s’accorde au possesseur (ou exprime éventuellement le possesseur lui-même).</li>
+    <li>•	Un affixe utilisé pour les noms possédés <technicalTermRef term="ttAlienably">aliénables</technicalTermRef>, pour indiquer qu’ils sont possédés dépendent par conséquent d’un possesseur dans le syntagme nominal. Les noms <technicalTermRef term="ttInalienably" capitalize="yes">inaliénable</technicalTermRef> ne prennent pas de marqueur, mais mais ont nécessairement un possesseur. Ces derniers incluent les termes de parenté et les parties du corps, mais ne sont pas limités à ces noms.</li>
+    <li>•	Un affixe qui s’accorde avec le possesseur (ou exprime éventuellement le possesseur lui-même).</li>
         </ul>
-        Nous allons traiter chaque type tour à tour.
+        Nous allons traiter chaque type l’un après l’autre.
         </introduction>
     <form section="np">
         <radioGroup>
             <groupName dataItem="possAlienable" default="no">RNPPossAlienable</groupName>
-            <prompt><br/>Votre langue distingue-t-elle morphologiquement entre des noms possédés alienables et inaliénables?</prompt>
+            <prompt><br/>Votre langue distingue-t-elle, sur le plan morphologique, entre des noms possédés alienables et inaliénables ?</prompt>
             <radio id="NPPossAlienableNo" dataValue="no">Non</radio>
             <radio id="NPPossAlienableYes" dataValue="yes">Oui</radio>
         </radioGroup>
-        <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Entrez dans la case l’affixe ou affixes utilisé(s) pour marquer les noms possédés aliénables quand ils ont un possesseur (chacun sur une ligne séparée s’il y en a plus qu’un). Utilisez un trait d’union après les caractères alphabétiques pour indiquer un préfixe, un trait d’union avant pour indiquer un suffixe et des traits d’union sur les deux côtés pour indiquer un infixe.<br/><br/>
-            Veuillez remarquer que ces affixes ne devraient pas être les mêmes que ceux  avec accord ou qui expriment le possesseur, comme discuté ci-dessous.</prompt>
-        <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes"/>
+        <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Entrez dans la case l'affixe ou les affixes utilisé(s) pour marquer les noms possédés aliénables quand ils ont un possesseur (chacun sur une ligne séparée s'il y en a plus d'un). Utilisez un trait d'union après les caractères alphabétiques pour indiquer un préfixe, un trait d'union avant pour indiquer un suffixe et des traits d'union de part et d’autrepour indiquer un infixe.<br/><br/>
+            Ces affixes ne devraient pas être les mêmes que ceux  qui s’accordent avec le possesseur ou qui expriment le possesseur, comme cela a été discuté ci-dessous.</prompt>
+        <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes" kind="table"/>
         <br/>
         <instruction id="NPPossAlienableYesInstruction" show="swNPPossAlienableYes">Key the feature <feature>possessed</feature> on the affix(es) that marks the alienably possessed nouns when they have a possessor.  Also, key the feature <feature>possessed</feature> on all inalienably possessed nouns so that a possessor will be required.</instruction>
         <radioGroup id="NPPossAgrTable">
             <groupName dataItem="possAgr" default="no">RNPPossAgr</groupName>
-            <prompt>Est-ce que les noms marqués avec un affixe sont en accord avec le possesseur (ou éventuellement expriment le possesseur lui-même)? Ces affixes sont supposés être le groupe de pronoms dépendants utilisés pour les possesseurs qui seront entrés dans la <section number="7" >Pronoms</section>.</prompt>
+            <prompt>Est-ce que les noms sont marqués par  un affixe s’accordant avec le possesseur (ou éventuellement exprimant le possesseur lui-même) ? Ces affixes sont considérés comme le groupe de pronoms dépendants utilisés pour les possesseurs qui seront traités dans la <section number="7" >Pronoms</section>.</prompt>
             <radio id="NPPossAgrNo" dataValue="no">Non</radio>
             <radio id="NPPossAgrYes" dataValue="yes">Oui</radio>
         </radioGroup>
@@ -105,16 +105,16 @@
         <instruction id="NPPossNounAgrKeyedInstruction" show="swNPArtAndOrDem">If you followed instructions, any agreement marking on nouns for number, gender, animacy and/or class should have already been done in the section on Articles and Demonstratives.  If not, return there to complete the feature marking in the lexicon, before continuing on.</instruction>
        <br/><br/>
 <introduction>
-    En plus, certaines langues ont un affixe qui se trouve sur les noms quand ils ne sont pas possédés ou pluralisés ou éventuellement quand il n’y a pas de modificateur. Cet affixe est connu comme marqueur absolutif mais il n’est pas en relation avec le cas absolutif  utilisé dans des langues avec un système de cas ergatif-absolutif. 
+    De plus, certaines langues ont un affixe indiquant qu’un nom n’est pas possédé ou pluralisé, ou éventuellement quand il n'y a pas de modificateur. Cet affixe est connu comme marqueur absolutif mais il n'est pas en relation avec le cas absolutif  utilisé dans des langues avec un système de cas ergatif-absolutif. 
 </introduction>
        <radioGroup>
           <groupName dataItem="possAbsolutive" default="no">RNPPossAbsolutive</groupName>
-           <prompt><br/>Votre langue a-t-elle des noms marqués qui ne sont pas possédés ou pluralisés ou éventuellement quand il n’y a pas de modificateurs?</prompt>
+           <prompt><br/>Dans votre langue, y a-t-il une marque pour les noms qui ne sont pas possédés ou pluralisés ou éventuellement quand il n'y a pas de modificateurs ?</prompt>
           <radio id="NPPossAbsolutiveNo" dataValue="no">Non</radio>
           <radio id="NPPossAbsolutiveYes" dataValue="yes">Oui</radio>
        </radioGroup>
-        <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Entrez dans chaque case l’affixe ou les affixes qui sont utilisés pour marquer les noms dans ces situations (chacun sur une ligne séparée s’il y en a plus qu’un) Utilisez un trait d’union après les caractères alphabétiques pour indiquer un préfixe, un trait d’union avant pour indiquer un suffixe, et un trait d’union sur les deux côtés pour indiquer un infixe.</prompt>
-       <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes"/>
+        <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Saisissez l’affixe ou les affixes qui sont utilisés pour marquer les noms dans ces cas (chacun sur une ligne séparée s'il y en a plusieurs) dans la boîte ci-dessous. Utilisez un trait d'union après les caractères alphabétiques pour indiquer un préfixe, un trait d'union avant pour indiquer un suffixe, et un trait d'union de part et d’autrepour indiquer un infixe.</prompt>
+       <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes" kind="table"/>
        <br/><br/>
         <buttons>
             <button id="NPPossAgrBack" value="Back" goto="NPPossessors.xml"/>

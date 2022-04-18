@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -107,7 +107,7 @@
        <br/>        
        <introduction>Finally, consider direct and indirect complements of verbs of speaking.  Direct quotations, such as in 22, can be just about any sentence or fragment.  
           <br/><br/>Indirect quotations, as in 23-25, are more restricted.  Some speech verbs take a finite sentence complement with or without a complementizer, and an optional prepositional or postpositional phrase to express the hearer, as in 23, 
-        and some require the hearer to be expressed as an object plus either a finite sentential complement or a nonfinite sentential complement in which the subject must be coreferent with the main clause subject and not expressed, as in 24-25:</introduction>     
+        and some require the hearer to be expressed as an object plus either a finite sentential complement, as in 24, or a nonfinite sentential complement in which the subject must be coreferent with the main clause object and not expressed, as in 25:</introduction>     
        <EnglishExample>
           <exItem label="22.">Sue said, “I will come to your house tomorrow.”</exItem>
           <exItem label="23."> Sue said (to me) that she would come here tomorrow.</exItem>
@@ -132,7 +132,7 @@
      <radio id="CompTypeOtherNo" dataValue="no">No, I don't know of any others</radio>
   </radioGroup>
        <prompt id="CompTypeOtherYesRestriction" show="swCompTypeOtherYes" >Key the other type of restriction your language has here:</prompt>
-     <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes"/>
+     <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="table"/>
        <br/><br/>
        
 <prompt id="CompTypeOtherExamplePrompt" show="swCompTypeOtherYes">Key examples of sentences including complement clauses with this other type of restriction here:</prompt>

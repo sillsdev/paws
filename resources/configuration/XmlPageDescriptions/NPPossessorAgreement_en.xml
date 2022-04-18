@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -21,7 +21,7 @@ We will deal with each type in turn.
         </radioGroup>
         <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Enter the affix(es) which are used to mark alienably possessed nouns when they have a possessor in the box (each on a separate line if more than one).  Use a hyphen after the alphabetic characters to indicate a prefix, a hyphen before to indicate a suffix, and hyphens on both sides to indicate an infix.<br/><br/>
         Please note that these affixes should not be the same as those that agree with or express the possessor, discussed below.</prompt>
-        <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes"/>
+        <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes" kind="table"/>
         <br/>
         <instruction id="NPPossAlienableYesInstruction" show="swNPPossAlienableYes">Key the feature <feature>possessed</feature> on the affix(es) that marks the alienably possessed nouns when they have a possessor.  Also, key the feature <feature>possessed</feature> on all inalienably possessed nouns so that a possessor will be required.</instruction>
         <radioGroup id="NPPossAgrTable">
@@ -114,7 +114,7 @@ We will deal with each type in turn.
           <radio id="NPPossAbsolutiveYes" dataValue="yes">Yes</radio>
        </radioGroup>
        <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Enter the affix(es) which are used to mark nouns in these situations in the box (each on a separate line if more than one).  Use a hyphen after the alphabetic characters to indicate a prefix, a hyphen before to indicate a suffix, and hyphens on both sides to indicate an infix.</prompt>
-       <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes"/>
+       <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes" kind="table"/>
        <br/><br/>
         <buttons>
             <button id="NPPossAgrBack" value="Back" goto="NPPossessors.xml"/>

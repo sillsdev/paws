@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -26,7 +26,7 @@
        <prompt id="IPCopularVerb" show="swIPCopVerbYesOrOptional">
           <br/>Key the copular verbs in the textbox, each on a separate line: 
        </prompt>
-       <textBox id="IPCopuparVerbExample" dataItem="copularVerb" show="swIPCopVerbYesOrOptional" rows="3"/>
+       <textBox id="IPCopuparVerbExample" dataItem="copularVerb" show="swIPCopVerbYesOrOptional" rows="3" kind="table"/>
        <radioGroup id="IPCopVerbNoTable" show="swIPCopVerbNoOrOptional">
                 <groupName dataItem="copularAffix" default="no">RIPCopAffix</groupName>
                 <prompt>Is there an affix which occurs on the predicate nominal or predicate adjective in copular sentences<span  id="IPCopVerbYesOptionalPrompt" show="swIPCopVerbYesOptional"> when there is no copular verb present</span>?</prompt>
@@ -38,7 +38,7 @@
        <prompt id="IPCopularAffix" show="swIPCopAffixNotNo">
           <br/>Key the copular affixes that may appear on the predicate nominal or predicate adjective<span  id="IPCopVerbYesOptionalPrompt2" show="swIPCopVerbYesOptional"> when there is no copular verb present</span>, with a hyphen indicating which side it attaches on, here: 
        </prompt>
-       <textBox id="IPCopuparAffixExample" dataItem="copularAffix" show="swIPCopAffixNotNo" rows="3"/>
+       <textBox id="IPCopuparAffixExample" dataItem="copularAffix" show="swIPCopAffixNotNo" rows="3" kind="table"/>
        
         <instruction id="IPCopAffixYesEitherInstruction" show="swIPCopAffixYesEither">Add either of the features <feature>copular_prefix</feature> or <feature>copular_suffix</feature> to the appropriate affixes in the lexicon.</instruction>
         <instruction id="IPCopAffixYesPrefixInstruction" show="swIPCopAffixYesPrefix">Add the feature <feature>copular_prefix</feature> to the appropriate prefix(es) in the lexicon.</instruction>

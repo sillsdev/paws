@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="RelClMain" count="12.1">
     <title>Relative Clauses</title>
@@ -48,7 +48,7 @@
            <checkbox id="RelClTypeCPWh" dataItem="relTypeCPWh">Similar to a content question with ‘who’ or ‘which’ fronted</checkbox>
            <checkbox id="RelClTypeIPRel" dataItem="relTypeIPRel">Similar to a regular sentence with a relative marker attached to the verb</checkbox>
            <checkbox id="RelClTypeIP" dataItem="relTypeIP">Just a regular sentence modifying a noun, with no special marking</checkbox>
-           <checkbox id="RelClTypeOther" dataItem="relTypeOther">In my language, relative clauses may be formed as follows: <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70"/></checkbox>
+           <checkbox id="RelClTypeOther" dataItem="relTypeOther">In my language, relative clauses may be formed as follows: <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70" kind="table"/></checkbox>
         </checkboxGroup>
        <prompt id="RelClTypeNoCheckPrompt" show="swRelClExistYesAndTypeNoCheck">WARNING: You did not check any boxes to describe what types of relative clauses are allowed in your language.  Please check one or more options, or change your answer above to  ‘No, there are no relative clauses at all’.</prompt>
        
@@ -78,14 +78,14 @@
        <prompt id="RelClTypeCPCompCliticExamplesPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordNoOrSome">
           <br/>Key the clitics which are used to mark relative clauses here, with an equal sign to indicate which side it attaches on: 
        </prompt>
-       <textBox id="RelClTypeCPCompCliticExamples" dataItem="relCliticExample" rows="3" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordNoOrSome"/>
+       <textBox id="RelClTypeCPCompCliticExamples" dataItem="relCliticExample" rows="3" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordNoOrSome" kind="table"/>
        <instruction id="RelClTypeCPCompCliticPrefixInstruction" show="swRelClTypeCPCompCliticPrefix">In the lexicon, add the feature <feature>relative_prefix</feature> to these clitics.</instruction>
        <instruction id="RelClTypeCPCompCliticSuffixInstruction" show="swRelClTypeCPCompCliticSuffix">In the lexicon, add the feature <feature>relative_suffix</feature> to these clitics. </instruction>
        <instruction id="RelClTypeCPCompCliticBothInstruction" show="swRelClTypeCPCompCliticBoth">In the lexicon, add the feature <feature>relative_prefix</feature> to the proclitics and add <feature>relative_suffix</feature> to the enclitics. </instruction>
        <prompt id="RelClTypeCPCompWordExamplesPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome">
           <br/>Key the independent words which are used to mark relative clauses here: 
        </prompt>
-       <textBox id="RelClTypeCPCompWordExamples" dataItem="relWordExample" rows="3" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome"/>
+       <textBox id="RelClTypeCPCompWordExamples" dataItem="relWordExample" rows="3" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome" kind="table"/>
        
        <instruction id="RelClTypeCPCompSameInstruction" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSome">In the lexicon, the relative markers which are independent words need the features <feature>makeC relative</feature>.  This will assure the category <category>C</category> so they will occur in the complementizer position and allow their appearance only in a relative clause.  Any markers which can occur as the complementizer in a CP which is a complement of a verb, like ‘that’ in English, need to have two separate entries in the lexicon.  Mark the second entry with the feature <feature>makeC</feature> and it will default to not being allowed in relative clauses.  (If the same marker can also be used in questions, a third entry is needed with the features <feature>makeC question</feature>.)</instruction>
  
@@ -94,7 +94,7 @@
           <checkbox id="RelClWordBefore" checked="yes" dataItem="relWordBefore">Before the sentence part</checkbox>
           <checkbox id="RelClWordAfter" checked="yes" dataItem="relWordAfter">After the sentence part</checkbox>
           <checkbox id="RelClWordBoth" checked="yes" dataItem="relWordBoth">On both sides at the same time</checkbox>
-          <checkbox id="RelClWordOther" dataItem="relWordOther">In my language, the relative word may occur as follows: <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70"/></checkbox>
+          <checkbox id="RelClWordOther" dataItem="relWordOther">In my language, the relative word may occur as follows: <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70" kind="table"/></checkbox>
        </checkboxGroup>
        <prompt id="RelClWordPosNoCheckPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeAndNoCheck">WARNING: You did not check any boxes to describe where the relative marker word may occur in your language.  Please check one or more boxes as appropriate.</prompt>
        <instruction id="RelClTypeCPCompEitherRestrictedInstruction" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeBoth">In the lexicon, mark those markers which can only occur initially with the feature <feature>CP-initial</feature> and those which can only occur finally with the feature <feature>CP-final</feature>.  Do not enter either feature on any markers which can occur on either side.</instruction>
@@ -102,7 +102,7 @@
        <prompt id="RelClTypeIPRelExamplesPrompt" show="swRelClTypeIPRel">
           <br/>Key the affixes which attach to the verb to mark relative clauses here, with a hyphen to indicate which side it attaches on: 
        </prompt>
-       <textBox id="RelClTypeIPRelExamples" dataItem="relAffixExample" rows="3" show="swRelClTypeIPRel"/>
+       <textBox id="RelClTypeIPRelExamples" dataItem="relAffixExample" rows="3" show="swRelClTypeIPRel" kind="table"/>
         <instruction id="RelClTypeIPInstruction" show="swRelClTypeIPRel">In the lexicon, add the feature <feature>relative</feature> to each of the affixes that mark relative clauses.</instruction>
 <br/><br/>
 <introduction>

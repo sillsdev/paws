@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -17,18 +17,18 @@
 	   <prompt id="QPQuantifierClassifierAgrPrompt" show="swOTClassifierAgrAndQuantifierYes">Puesto que usted ha detallado ya las formas de los indicadores de clase, usted necesita solamente escribir las raíces para cada uno de los cuantificadores.</prompt>	   
 	   <br/>
 	   <prompt>Escriba cómo se expresa “muchos” (que modifica a sustantivos que se pueden contar), con cada palabra en una línea separada. </prompt>
-	   <textBox id="QPManyExample" dataItem="many" rows="3"/>
+	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"/>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba cómo se expresa “mucho” (que solamente modifica a sustantivos <technicalTermRef term="ttMass">no contables</technicalTermRef>), con cada palabra en una línea separada. </prompt>
-	   <textBox id="QPMuchExample" dataItem="much" rows="3"/>
+	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"/>
 	   <br/><br/>
 	   <prompt>Escriba cómo se expresa “poco”, con cada palabra en una línea separada. </prompt>
-	   <textBox id="QPFewExample" dataItem="few" rows="3"/>
+	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"/>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba ejemplos de cualquier otro cuantificador de este tipo de en su lengua aquí, con cada palabra en una línea separada.</prompt>
-	   <textBox id="QPOtherQExample" dataItem="otherQ" rows="3"/>
+	   <textBox id="QPOtherQExample" dataItem="otherQ" rows="3" kind="table"/>
 	   <instruction id="QPDegreeInstruction">In the lexicon, if this type of quantifier does not already have the category <category>Q</category>, mark them
 	      with the feature <feature>makeQ</feature>.  This will change
 	      their category to <category>Q</category> for the syntax.  If a particular quantifier can
@@ -52,7 +52,7 @@
 	   <prompt id="QPDegreeClassifierAgrPrompt" show="swOTClassifierAgrAndDegreeYesOrSomeAndClassifierYes">Puesto que usted ha detallado ya las formas de los indicadores de clase, usted necesita solamente escribir las raíces para cada una de las palabras de grado.</prompt>	   
 
 	   <prompt id="QPDegreeWordYesExamples" show="swQPDegreeYesOrSome">Escriba ejemplos de las palabras de grado, con cada uno en una línea separada. Tenga en cuenta que estas palabras de grado probablementa no son iguales a los que se pueden modificar a una frase nominal completa que se tratan en la primera sección de arriba.</prompt>
-	   <textBox id="QPDegreeWordExample" dataItem="degreeWordExample" show="swQPDegreeYesOrSome"/>
+	   <textBox id="QPDegreeWordExample" dataItem="degreeWordExample" show="swQPDegreeYesOrSome" kind="table"/>
 	   <prompt id="QPDegreeYesExamples" show="swQPDegreeYesOrSome">Ahora escriba ejemplos de frases nominales simples con las palabras de grado modificando a un cuantificador aquí:</prompt>
 	   <textBox id="QPDegreeExample" dataItem="degreeExample" cols="80" show="swQPDegreeYesOrSome"/>
 	   <br/><br/>
@@ -61,7 +61,7 @@
 	      <checkbox id="QPDegreeBefore"  dataItem="degreeBefore">Antes del cuantificador</checkbox>
 	      <checkbox id="QPDegreeAfter"  dataItem="degreeAfter">Después del cuantificador</checkbox>
 	      <checkbox id="QPDegreeBoth"  dataItem="degreeBoth">En ambos lados en la misma oración</checkbox>
-	      <checkbox id="QPDegreeOther"  dataItem="degreeOther">En mi lengua, pueden presentarse: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1"/></checkbox>
+	      <checkbox id="QPDegreeOther"  dataItem="degreeOther">En mi lengua, pueden presentarse: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeWordPosNoCheckPrompt" show="swQPDegreeWordPosNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las palabras de grado (opcionalmente) con respecto al cuantificador en su lengua, o cambia su respuesta anterior para decir que los elementos de grado no se expresan como palabras independientes.</prompt> 
 	   <instruction id="QPDegreeYesInstruction" show="swQPDegreeYesOrSome">
@@ -70,14 +70,14 @@
 	      feature <feature>QP-final</feature>.  Do not enter either feature <feature>QP-initial</feature> or <feature>QP-final</feature> on any degree words which can occur on either side.</instruction>
 	   <br/><br/>
 	   <prompt id="QPDegreeWordAttachesExamples" show="swQPDegreeAttachesOrSome">Escriba ejemplos de los afijos o clíticos de grado aquí, con un guión o un signo igual para indicar de qué lado se une y cada uno en una línea separada. Tenga en cuenta que estos elementos de grado probablemente no son iguales a los que se pueden modificar a una frase nominal completa que se tratan en la primera sección de arriba.</prompt>
-	   <textBox id="QPDegreeAttachesExample" dataItem="degreeAttachesExample" show="swQPDegreeAttachesOrSome"/>
+	   <textBox id="QPDegreeAttachesExample" dataItem="degreeAttachesExample" show="swQPDegreeAttachesOrSome" kind="table"/>
 	   <prompt id="QPDegreeAttachesExamples" show="swQPDegreeAttachesOrSome">Ahora escriba ejemplos de frases nominales simples con los afijos o clíticos de grado modificando a un cuantificador aquí:</prompt>
 	   <textBox id="QPDegreeAttachesNPExample" dataItem="degreeAttachesNPExample" cols="80" show="swQPDegreeAttachesOrSome"/>
 	   <checkboxGroup id="QPDegreeAttachesPos" show="swQPDegreeAttachesOrSome">
 	      <prompt>De acuerdo con estos ejemplos, ¿dónde se unen los afijos o clíticos de grado con respecto al cuantificador? Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="QPDegreeTypePrefix" dataItem="degreeTypePrefix">Como un prefijo que se une al cuantificador</checkbox>
 	      <checkbox id="QPDegreeTypeSuffix" dataItem="degreeTypeSuffix">Como un sufijo que se une al cuantificador</checkbox>
-	      <checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">En mi lengua, pueden unirse: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1"/></checkbox>
+	      <checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">En mi lengua, pueden unirse: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeAttachesPosNoCheckPrompt" show="swQPDegreeAttachesPosNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se unen los afijos o clíticos de grado con respecto al cuantificador en su lengua, o cambia su respuesta anterior para decir que todos elementos de grado se escriben como palabras independientes.</prompt>
 	     

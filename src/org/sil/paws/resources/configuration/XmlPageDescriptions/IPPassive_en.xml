@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -40,7 +40,7 @@
 			</radioGroup>
 	
 	   <prompt id="IPPassiveAgentPPPrompt" show="swPassiveAgentPP"><br/>Key the special <span id="IPPrepSpan2" show="swPPPosPrep">preposition(s)</span><span id="PPPostSpan2" show="swPPPosPost">postposition(s)</span><span id="PPBothSpan2" show="swPPPosBoth">preposition(s) or postposition(s)</span> that are used to mark the Agent phrase here:</prompt>
-	   <textBox id="IPPassiveAgentPPExample" dataItem="passiveAgentPExample" show="swPassiveAgentPP" rows="3"/>
+	   <textBox id="IPPassiveAgentPPExample" dataItem="passiveAgentPExample" show="swPassiveAgentPP" rows="3" kind="table"/>
 
 	   
 			<radioGroup id="IPPassiveAuxTable" show="swPassiveYes">
@@ -51,7 +51,7 @@
 			</radioGroup>
 	
 	   <prompt id="IPPassiveAuxPrompt" show="swPassiveAuxYes"><br/>Key the particular auxiliary form that is required with passives here:</prompt>
-	   <textBox id="IPPassiveAuxExample" dataItem="passiveAuxExample" show="swPassiveAuxYes" rows="3"/>
+	   <textBox id="IPPassiveAuxExample" dataItem="passiveAuxExample" show="swPassiveAuxYes" rows="3" kind="table"/>
 	   <br/>
 		<instruction id="IPPassiveInstruction" show="swPassiveYes">Mark inherently passive verbs and any passive affixes with the feature <feature>passive</feature> in the lexicon, if you have not already done so.  The same forms may have the <feature>participle</feature> feature as well, if your language is like English, or you may have distinct forms for passive.  <span id="IPPassiveAgentPPSpan" show="swPassiveAgentPP">Also, mark the <span id="IPPrepSpan" show="swPPPosPrep">preposition</span>
 				<span id="PPPostSpan" show="swPPPosPost">postposition</span>

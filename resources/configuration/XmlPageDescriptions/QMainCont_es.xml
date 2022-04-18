@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="QMainCont" count="11.6">
     <title level="2">Las preguntas - Las preguntas de respuesta abierta como cláusula principal</title>
@@ -50,28 +50,28 @@
          <checkbox id="QMainContBetweenEnclitic" dataItem="mainContBetweenEnclitic" show="swQContFrontYes">Como un enclítico que se une al final de la palabra que termina la frase interrogativa despazada, antes del resto de la pregunta</checkbox>
          <checkbox id="QMainContCliticPrefix" dataItem="mainContPrefix">Como un prefijo que se une al verbo en la pregunta</checkbox>
          <checkbox id="QMainContCliticSuffix" dataItem="mainContSuffix">Como un sufijo que se une al verbo en la pregunta</checkbox>
-         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContCliticPosNoCheckPrompt" show="swQMainContWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos indicadores o complementadores de pregunta se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       
       <prompt id="QMainContCliticsExamplesPrompt" show="swQMainContCliticProcliticOrEnclitic"><br/>Escriba los indicadores o complementadores de pregunta que son clíticos con un signo igual para indicar en qué lado se unen aquí:</prompt>
-      <textBox id="QMainContCliticExamples" dataItem="mainContCliticExample" show="swQMainContCliticProcliticOrEnclitic" rows="3"/>    
+      <textBox id="QMainContCliticExamples" dataItem="mainContCliticExample" show="swQMainContCliticProcliticOrEnclitic" rows="3" kind="table"/>    
       <instruction id="QMainContProcliticInstruction" show="swQMainContCliticProclitic">In the lexicon, add the feature <feature>whQ_prefix</feature> to these proclitics.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       <instruction id="QMainContEncliticInstruction" show="swQMainContCliticEnclitic">In the lexicon, add the feature <feature>whQ_suffix</feature> to these enclitics.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QMainContAffixExamplesPrompt" show="swQMainContCliticPrefixOrSuffix"><br/>Escriba los indicadores o complementadores de pregunta que son afijos en el verbo con un guión para indicar en qué lado se unen aquí:</prompt>
-      <textBox id="QMainContAffixExamples" dataItem="mainContAffixExample" show="swQMainContCliticPrefixOrSuffix" rows="3"/>    
+      <textBox id="QMainContAffixExamples" dataItem="mainContAffixExample" show="swQMainContCliticPrefixOrSuffix" rows="3" kind="table"/>    
       <instruction id="QMainContAffixInstruction" show="swQMainContCliticPrefixOrSuffix">In the lexicon, add the feature <feature>whQ</feature> to these verbal affixes.   If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
       
       <prompt id="QMainContWordExamplesPrompt" show="swQMainContWordYesOrSome"><br/>Escriba los indicadores o complementadores de pregunta que son palabras independientes aquí:    </prompt>
-      <textBox id="QMainContWordExamples" dataItem="mainContWordExample" show="swQMainContWordYesOrSome" rows="3"/>    
+      <textBox id="QMainContWordExamples" dataItem="mainContWordExample" show="swQMainContWordYesOrSome" rows="3" kind="table"/>    
       
       <checkboxGroup id="QMainContPosTable" show="swQMainContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSO">
          <prompt><br/>¿Dónde se presentan los indicadores o complementadores de pregunta que se ecriben como palabras independientes con respecto al resto de la pregunta? Seleccione todas las opciones que son correctas en su lengua</prompt>
          <checkbox id="QMainContPosBefore"  dataItem="mainContWordBefore">Antes de la pregunta</checkbox>
          <checkbox id="QMainContPosAfter"  dataItem="mainContWordAfter">Después de la pregunta</checkbox>
          <checkbox id="QMainContPosBoth"  dataItem="mainContWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
          <prompt id="QMainContPosNoCheckPrompt" show="swQMainContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta que se escriben como palabras independientes con respecto al resto de la pregunta en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       <instruction id="QMainContWordYesInstruction" show="swQMainContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
@@ -82,7 +82,7 @@
          <checkbox id="QMainContVSOAfterWh" dataItem="mainContVSOAfterWh">Inmediatamente después de una frase interrogativa desplazada</checkbox>
          <checkbox id="QMainContVSOBeforeWh" dataItem="mainContVSOBeforeWh">Al inicio de la pregunta, antes de una frase interrogativa desplazada</checkbox>
          <checkbox id="QMainContVSOEnd" dataItem="mainContVSOEnd">Al final de la pregunta</checkbox>
-         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70"/></checkbox>
+         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70" kind="table"/></checkbox>
       </checkboxGroup>
          <prompt id="QMainContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta que se escriben como palabras independientes con respecto de la frase interrogativa desplazada y al resto de la pregunta en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       
@@ -96,7 +96,7 @@
          <radio id="QMainContRequiredNo" dataValue="no">No, un indicador o complementador de pregunta siempre es opcional</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">No, no se utiliza un indicador o complementador de pregunta bajo las siguientes circunstancias:</radio>
       </radioGroup>
-      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial"/>
+      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="table"/>
       
       <radioGroup id="QMainContAuxPosTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxPos" default="unknown" position="yesHead">RQMainContAuxPos</groupName>

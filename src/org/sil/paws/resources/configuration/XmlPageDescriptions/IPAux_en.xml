@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="IPAux" count="9.3.1">
     <title level="2">Basic Sentences - Auxiliaries</title>
@@ -48,7 +48,7 @@
         </radioGroup>
         <br/><br/>
         <prompt id="IPAuxiliaryExamplePrompt" show="swAuxYes">Key the auxiliary words used in your language here:</prompt>
-        <textBox id="IPAuxiliaryExample" dataItem="auxiliaryExample" rows="5" show="swAuxYes"/>       
+        <textBox id="IPAuxiliaryExample" dataItem="auxiliaryExample" rows="5" show="swAuxYes" kind="table"/>       
         <br/><br/>
 <instruction id="IPAuxYesCatMap" show="swAuxYes">The category of these auxiliaries will be dealt with using the Category Mapper at the end of this section.</instruction>
         <br/><br/>
@@ -95,7 +95,7 @@
             </radioGroup>       
         <br/><br/>
         <prompt id="IPAuxiliaryNonfiniteExamplePrompt" show="swAuxNonfiniteYes">Key the auxiliary-type words used to mark nonfinite clauses in your language here:</prompt>
-        <textBox id="IPAuxiliaryNonfiniteExample" dataItem="auxiliaryNonfiniteExample" rows="3" show="swAuxNonfiniteYes"/>   
+        <textBox id="IPAuxiliaryNonfiniteExample" dataItem="auxiliaryNonfiniteExample" rows="3" show="swAuxNonfiniteYes" kind="table"/>   
        <instruction id="IPAuxNonfiniteInstruction" show="swAuxNonfiniteYes">Add the feature <feature>-finite</feature> to the entry for the nonfinite marker that is written as an independent word like <example>to</example> in English and make sure that it is included in the category mapping to <category>Aux</category> in the <section number="9.9">Basic Sentences - Category Mapper</section>.  Alternatively, you can add the feature <feature>makeAux</feature> now to be sure.  However, remember that if the word can also be used as another syntactic category (like English <example>to</example> can be both a nonfinite <category>Aux</category> and a preposition <category>P</category>), you need to make a separate lexical entry for each use.</instruction>
        
        <br/><br/>
@@ -128,7 +128,7 @@
  
         <br/><br/>
         <prompt id="IPAuxiliaryOtherExamplePrompt" show="swAuxOtherYes">Key the other types of auxiliary words, such as motion auxiliaries or loan markers, used in your language here:</prompt>
-        <textBox id="IPAuxiliaryOtherExample" dataItem="auxiliaryOtherExample" rows="3" show="swAuxOtherYes"/>   
+        <textBox id="IPAuxiliaryOtherExample" dataItem="auxiliaryOtherExample" rows="3" show="swAuxOtherYes" kind="table"/>   
        <instruction id="IPAuxOtherInstruction" show="swAuxOtherYes">Make sure that these words are included in the category mapping to <category>Aux</category> in the <section number="9.9">Basic Sentences - Category Mapper</section>.  Alternatively, you can add the feature <feature>makeAux</feature> now to be sure.  However, remember that if the word can also be used as another syntactic category (like <example>go</example> could be both a motion <category>Aux</category> and a main verb <category>V</category>), you need to make a separate lexical entry for each use.  Also, add the feature <feature>motion</feature> to the motion auxiliaries.</instruction>
        <br/><br/>
         <buttons>
