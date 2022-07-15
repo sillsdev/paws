@@ -167,10 +167,12 @@ var SpecPosUnknown = 4;
 
 function Initialize(locale)
 {
+pawsApp.useWaitCursor();
 <xsl:apply-templates select="//textBox | //groupName | //catMap | //featureItem | //checkbox | //contentCheckBoxOther" mode="load"/>
 pawsApp.setLeftOffAt("<xsl:value-of select="$prmWorkingPath"/>
 			<xsl:value-of select="//page/@id"/>.htm");
-Refresh()
+Refresh();
+pawsApp.useDefaultCursor();
 }
 function GetSpecifierPos()
 {
@@ -211,7 +213,7 @@ function GetPositionBasedOnSpecifier(sAttr)
 }
 function GetPositionBasedOnHead(sAttr, bSame)
 {
-	var eHeadPo;
+	var eHeadPos;
 	if (sAttr == "unknown")
 	  {
 		// set default

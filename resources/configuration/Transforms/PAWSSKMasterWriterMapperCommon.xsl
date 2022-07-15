@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.1" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:saxon="http://icl.com/saxon" exclude-result-prefixes="ms saxon">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:saxon="http://icl.com/saxon" exclude-result-prefixes="ms saxon">
 	<!--
 		MSXSL's node-set function needs
 			auto-ns1:msxsl="" xmlns:auto-ns1="urn:schemas-microsoft-com:xslt"
@@ -429,7 +429,7 @@
 		<xsl:param name="sExamples"/>
 		<xsl:param name="sExNumber"/>
 		<xsl:param name="sLetterList"/>
-		<xsl:variable name="iNumEntries" select="count(saxon:node-set($sExamples)/interlinearEntry[string-length(vernacularLine) &gt; 0])"/>
+		<xsl:variable name="iNumEntries" select="count($sExamples/interlinearEntry[string-length(vernacularLine) &gt; 0])"/>
 		<xsl:choose>
 			<xsl:when test="$iNumEntries &lt;= 1">
 				<listInterlinear>
@@ -452,8 +452,8 @@
 				</listInterlinear>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:for-each select="saxon:node-set($sExamples)/interlinearEntry[string-length(vernacularLine) &gt; 0]">
-					<listInterlinear>
+				<xsl:for-each select="$sExamples/interlinearEntry[string-length(vernacularLine) &gt; 0]">
+						<listInterlinear>
 						<xsl:attribute name="letter">
 							<xsl:value-of select="$sExNumber"/>
 							<xsl:value-of select="substring($sLetterList,(position() * 2)-1,1)"/>

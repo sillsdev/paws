@@ -56,7 +56,7 @@ public class XMLBackEndProviderTest {
 	public void checkLoadedData() {
 		language = xmlBackEndProvider.getLanguage();
 		assertNotNull(language);
-		assertEquals("11", language.getValue("/paws/@dbversion"));		
+		assertEquals("12", language.getValue("/paws/@dbversion"));
 		assertEquals("Central Mam", language.getValue("/paws/language/langNames/langName[@lang='en']"));
 		assertEquals("Charis SIL AmArea", language.getValue("/paws/language/font/fontName"));
 		assertEquals("VSO", language.getValue("/paws/typology/@wordOrder"));		

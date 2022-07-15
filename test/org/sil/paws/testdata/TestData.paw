@@ -1,6 +1,5 @@
-<?xml version="1.0"?>
-<paws dbversion="11" outputGrammar="False" outputWriter="True" outputWriterPractical="True" outputWriterPracticalSpanish="True" outputWriterPracticalFrench="False">
-  <leftOffAt>Contents.htm</leftOffAt>
+<?xml version="1.0" encoding="UTF-8"?><paws dbversion="12" outputGrammar="False" outputWriter="True" outputWriterPractical="True" outputWriterPracticalFrench="False" outputWriterPracticalSpanish="True">
+  <leftOffAt>Contents_en.htm</leftOffAt>
   <language>
     <langNames>
       <langName lang="en">Central Mam</langName>
@@ -8,7 +7,7 @@
       <langName lang="fr">mam centrale</langName>
     </langNames>
     <langAbbr>mvc</langAbbr>
-    <font bold="False" italic="False" under="False" strike="False" rtl="False">
+    <font bold="False" italic="False" rtl="False" strike="False" under="False">
       <fontName>Charis SIL AmArea</fontName>
       <fontSize>12</fontSize>
       <fontColor>0</fontColor>
@@ -22,37 +21,15 @@
       <writerPracticalFrenchFile>testdata/TestDataWriterPracticalFrench.xml</writerPracticalFrenchFile>
       <exampleFilesPath>testdata</exampleFilesPath>
   </language>
-  <typology checkedOff="yes" wordOrder="VSO" case="ergative" caseExperiencer="no" classifier="no" classifierNum="number" class1agr="irrelevant" class2agr="irrelevant" class3agr="irrelevant" class4agr="irrelevant" class5agr="irrelevant" class6agr="irrelevant" class7agr="irrelevant" class8agr="irrelevant" class9agr="irrelevant" class10agr="irrelevant" class11agr="irrelevant" class12agr="irrelevant" class13agr="irrelevant" class14agr="irrelevant" class15agr="irrelevant" class16agr="irrelevant" class17agr="irrelevant" class18agr="irrelevant" class19agr="irrelevant" class20agr="irrelevant" class21agr="irrelevant" class22agr="irrelevant" class23agr="irrelevant" class24agr="irrelevant" class25agr="irrelevant" classifierTypeNumAgr="no" noCaseExperiencer="no">
-    <example>Ma kubꞌ tbꞌyoꞌn tata txꞌyan.
-I xi twaꞌn nana muqin.
-Kubꞌ tbꞌinchin nana kꞌwil.
-</example>
-    <pnExample>Ma chi kubꞌ tbꞌyoꞌn.
-I xi twaꞌn.
-I kubꞌ tbꞌinchin.
-Ma qo ok tbꞌoꞌn.</pnExample>
-    <experiencerExample>Nbꞌin nana tiꞌj bꞌitz.
-Nkaꞌyin txin tiꞌj neꞌẍ.
-</experiencerExample>
-    <experiencerPnExample>Nbꞌin tiꞌj bꞌitz.
-Nkaꞌyin tiꞌj neꞌẍ.
-</experiencerPnExample>
-    <intExample>Nchi bꞌixin qꞌa.
-Nchi jorin wiẍ.
-Nchi bꞌet tata toj tnam.
-
-</intExample>
-    <pnIntExample>Nbꞌixin.
-Nchi jorin.
-Nqo bꞌet toj tnam.</pnIntExample>
-    <experiencerIntExample>N-oqꞌ neꞌẍ.
-Nqꞌojin nana.
-Nchi tzeꞌn xjal
-</experiencerIntExample>
-    <experiencerPnIntExample>Nchin oqꞌa.
-N-oqꞌa.
-Nqo tzeꞌn.
-</experiencerPnIntExample>
+  <typology case="ergative" caseExperiencer="no" checkedOff="yes" class10agr="irrelevant" class11agr="irrelevant" class12agr="irrelevant" class13agr="irrelevant" class14agr="irrelevant" class15agr="irrelevant" class16agr="irrelevant" class17agr="irrelevant" class18agr="irrelevant" class19agr="irrelevant" class1agr="irrelevant" class20agr="irrelevant" class21agr="irrelevant" class22agr="irrelevant" class23agr="irrelevant" class24agr="irrelevant" class25agr="irrelevant" class2agr="irrelevant" class3agr="irrelevant" class4agr="irrelevant" class5agr="irrelevant" class6agr="irrelevant" class7agr="irrelevant" class8agr="irrelevant" class9agr="irrelevant" classifier="no" classifierNum="number" classifierTypeNumAgr="no" noCaseExperiencer="no" wordOrder="VSO">
+    <example><interlinearEntry><vernacularLine>Ma kubꞌ tbꞌyoꞌn tata txꞌyan.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>I xi twaꞌn nana muqin.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Kubꞌ tbꞌinchin nana kꞌwil.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></example>
+    <pnExample><interlinearEntry><vernacularLine>Ma chi kubꞌ tbꞌyoꞌn.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>I xi twaꞌn.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>I kubꞌ tbꞌinchin.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Ma qo ok tbꞌoꞌn.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></pnExample>
+    <experiencerExample><interlinearEntry><vernacularLine>Nbꞌin nana tiꞌj bꞌitz.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nkaꞌyin txin tiꞌj neꞌẍ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></experiencerExample>
+    <experiencerPnExample><interlinearEntry><vernacularLine>Nbꞌin tiꞌj bꞌitz.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nkaꞌyin tiꞌj neꞌẍ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></experiencerPnExample>
+    <intExample><interlinearEntry><vernacularLine>Nchi bꞌixin qꞌa.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nchi jorin wiẍ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nchi bꞌet tata toj tnam.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></intExample>
+    <pnIntExample><interlinearEntry><vernacularLine>Nbꞌixin.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nchi jorin.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nqo bꞌet toj tnam.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></pnIntExample>
+    <experiencerIntExample><interlinearEntry><vernacularLine>N-oqꞌ neꞌẍ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nqꞌojin nana.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nchi tzeꞌn xjal</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></experiencerIntExample>
+    <experiencerPnIntExample><interlinearEntry><vernacularLine>Nchin oqꞌa.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>N-oqꞌa.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nqo tzeꞌn.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></experiencerPnIntExample>
     <splitConditions>
     </splitConditions>
     <class1Example>
@@ -185,14 +162,12 @@ Nqo tzeꞌn.
     </classifierGenericExample>
     <classifierOtherExample>
     </classifierOtherExample>
-    <classifierAgrExample>
-    </classifierAgrExample>
-    <classifierSpecificExample>
-    </classifierSpecificExample>
+    <classifierAgrExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></classifierAgrExample>
+    <classifierSpecificExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></classifierSpecificExample>
     <classifierTypeExample>
     </classifierTypeExample>
   </typology>
-  <qp checkedOff="yes" npDegreeClassifier="no" npDegree="yes" determinerType="yes" determinerClassifier="no" determiner="some" quantifierClassifier="no" degree="attaches" degreeClassifier="no" numberClassifier="no" cardinalHead="before" partitive="yes" partitivePPPos="after">
+  <qp cardinalHead="before" checkedOff="yes" degree="attaches" degreeClassifier="no" determiner="some" determinerClassifier="no" determinerType="yes" npDegree="yes" npDegreeClassifier="no" numberClassifier="no" partitive="yes" partitivePPPos="after" quantifierClassifier="no">
     <npDegreeTypeProclitic checked="no">
     </npDegreeTypeProclitic>
     <npDegreeTypeEnclitic checked="no">
@@ -275,20 +250,10 @@ jniꞌ</all>
 </almost>
     <only>oꞌkx
 noq</only>
-    <npDegreeCliticExample>
-    </npDegreeCliticExample>
-    <npDegreeAffixExample>
-    </npDegreeAffixExample>
-    <npDegreeOtherExample>
-    </npDegreeOtherExample>
-    <example>Jotx kꞌwal.
-Tkyaqil xjal twutz txꞌotxꞌ.
-Kykyaqil xjal.
-Qkyaqil qeꞌ.
-Chꞌime jwꞌe.
-Oꞌkx nyoljiꞌy.
-Noq junchꞌin.
-Jniꞌ kꞌul.</example>
+    <npDegreeCliticExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></npDegreeCliticExample>
+    <npDegreeAffixExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></npDegreeAffixExample>
+    <npDegreeOtherExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></npDegreeOtherExample>
+    <example><interlinearEntry><vernacularLine>Jotx kꞌwal.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Tkyaqil xjal twutz txꞌotxꞌ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Kykyaqil xjal.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Qkyaqil qeꞌ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Chꞌime jwꞌe.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Oꞌkx nyoljiꞌy.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Noq junchꞌin.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Jniꞌ kꞌul.</vernacularLine><freeLine/></interlinearEntry></example>
     <some>junjun
 </some>
     <any>noq alkye
@@ -299,19 +264,10 @@ junjun
 
 
 </every>
-    <determinerExample>Junjun ichin aj Txolja.
-Noq alkye wakx.
-Aꞌlchaqx kye meẍtz.
-Teyila junjun xjal.
-txin-qe
-wen-qe
-</determinerExample>
-    <determinerCliticExample>
-    </determinerCliticExample>
-    <determinerAffixExample>
-    </determinerAffixExample>
-    <determinerOtherExample>
-    </determinerOtherExample>
+    <determinerExample><interlinearEntry><vernacularLine>Junjun ichin aj Txolja.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Noq alkye wakx.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Aꞌlchaqx kye meẍtz.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Teyila junjun xjal.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>txin-qe</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>wen-qe</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></determinerExample>
+    <determinerCliticExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></determinerCliticExample>
+    <determinerAffixExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></determinerAffixExample>
+    <determinerOtherExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></determinerOtherExample>
     <many>txqan
 nim
 nyor
@@ -325,8 +281,7 @@ chꞌinetzꞌ
 </otherQ>
     <degreeWordExample>
     </degreeWordExample>
-    <degreeExample>
-    </degreeExample>
+    <degreeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></degreeExample>
     <degreeAttachesExample>txqan-x
 nim-x
 nim-xix
@@ -337,14 +292,7 @@ Ilaꞌ-ku
 Ilaꞌ-xix
 
 </degreeAttachesExample>
-    <degreeAttachesNPExample>txqan-x jbꞌal.
-nim-x tkꞌuꞌjbꞌil.
-nim-xix tkꞌuꞌjbꞌil.
-nim-ku xjal.
-nyor sjaninx
-chꞌinetzꞌ-xix tmojbꞌil.
-Ilaꞌ-ku ẍiꞌl.
-Ilaꞌ-xix ja.</degreeAttachesNPExample>
+    <degreeAttachesNPExample><interlinearEntry><vernacularLine>txqan-x jbꞌal.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>nim-x tkꞌuꞌjbꞌil.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>nim-xix tkꞌuꞌjbꞌil.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>nim-ku xjal.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>nyor sjaninx</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>chꞌinetzꞌ-xix tmojbꞌil.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Ilaꞌ-ku ẍiꞌl.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Ilaꞌ-xix ja.</vernacularLine><freeLine/></interlinearEntry></degreeAttachesNPExample>
     <cardinalNumbers1>jun</cardinalNumbers1>
     <cardinalNumbers2>kabꞌa</cardinalNumbers2>
     <cardinalNumbers3>oxe</cardinalNumbers3>
@@ -373,8 +321,7 @@ Ilaꞌ-xix ja.</degreeAttachesNPExample>
     <cardinalNumbers80>kyajkꞌal</cardinalNumbers80>
     <cardinalNumbers90>lajaj toj jweꞌkꞌal</cardinalNumbers90>
     <cardinalNumbers100>jweꞌkꞌal</cardinalNumbers100>
-    <cardinalExample>
-    </cardinalExample>
+    <cardinalExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></cardinalExample>
     <ordinalNumbers1>tnejil</ordinalNumbers1>
     <ordinalNumbers2>tkabꞌ</ordinalNumbers2>
     <ordinalNumbers3>toxin</ordinalNumbers3>
@@ -389,25 +336,13 @@ Ilaꞌ-xix ja.</degreeAttachesNPExample>
     </ordinalAffixExample>
     <ordinalWordExample>
     </ordinalWordExample>
-    <ordinalExample>tnejil kꞌwal.
-tkabꞌ taqꞌin.
-toxin maj.
-toxmajin
-</ordinalExample>
-    <ordinalCardinalExample>jun wiẍ.
-kabꞌa jal.
-oxe ichꞌ.
-lajaj trasin.</ordinalCardinalExample>
+    <ordinalExample><interlinearEntry><vernacularLine>tnejil kꞌwal.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tkabꞌ taqꞌin.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>toxin maj.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>toxmajin</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></ordinalExample>
+    <ordinalCardinalExample><interlinearEntry><vernacularLine>jun wiẍ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>kabꞌa jal.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>oxe ichꞌ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>lajaj trasin.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></ordinalCardinalExample>
     <nextExample>No hay una sola palabra o manera de expresar "siguiente" sino se expresa a travéz de una oración completa.</nextExample>
     <lastExample>tchꞌibꞌil
 oꞌkxjo</lastExample>
-    <nextlastNPExample>a tnejel kyiꞌjjo lajaj.
-a tkabꞌ kyiꞌjjo wajxaq.
-a tjweꞌyin kyiꞌjjo winqen.</nextlastNPExample>
-    <partitiveQExample>kyajechꞌin tiꞌjo qꞌan.
-nimxjo tiꞌj matij kꞌwal.
-Nyaꞌxix ilaꞌ tiꞌjjo netzꞌ.
-Noq junchꞌin tiꞌjjo lajaj.</partitiveQExample>
+    <nextlastNPExample><interlinearEntry><vernacularLine>a tnejel kyiꞌjjo lajaj.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>a tkabꞌ kyiꞌjjo wajxaq.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>a tjweꞌyin kyiꞌjjo winqen.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></nextlastNPExample>
+    <partitiveQExample><interlinearEntry><vernacularLine>kyajechꞌin tiꞌjo qꞌan.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>nimxjo tiꞌj matij kꞌwal.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nyaꞌxix ilaꞌ tiꞌjjo netzꞌ.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Noq junchꞌin tiꞌjjo lajaj.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></partitiveQExample>
     <partitiveConstruction>
     </partitiveConstruction>
     <partitiveOf>tiꞌj
@@ -415,16 +350,13 @@ kyiꞌj
 
 
 </partitiveOf>
-    <cardinalCompoundExample>junlajaj
-kabꞌlajaj 
-junlajaj toj kabꞌkꞌal
-jweꞌkꞌal</cardinalCompoundExample>
+    <cardinalCompoundExample><interlinearEntry><vernacularLine>junlajaj</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>kabꞌlajaj </vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>junlajaj toj kabꞌkꞌal</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>jweꞌkꞌal</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></cardinalCompoundExample>
     <cardinalNumberCategory>
     </cardinalNumberCategory>
     <conjunctionCategory>
     </conjunctionCategory>
   </qp>
-  <advp checkedOff="yes" temporalDegree="yes" locativeClassifier="no" locativeDem="distinct" locativeDegree="yes" mannerType="word" mannerDegree="yes" mannerAffixDegree="no">
+  <advp checkedOff="yes" locativeClassifier="no" locativeDegree="yes" locativeDem="distinct" mannerAffixDegree="no" mannerDegree="yes" mannerType="word" temporalDegree="yes">
     <temporalDegreeWord checked="yes">
     </temporalDegreeWord>
     <temporalDegreeAttaches checked="yes">
@@ -565,12 +497,7 @@ qale</temporalExample>
     <temporalDegreeExample>chꞌintl
 wen
 manyor</temporalDegreeExample>
-    <temporalPhraseExample>yajxe chꞌintl
-txamaꞌy chꞌintl
-yajxe wen
-qnumix wen
-manyor yajx
-manyor qnumix</temporalPhraseExample>
+    <temporalPhraseExample><interlinearEntry><vernacularLine>yajxe chꞌintl</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>txamaꞌy chꞌintl</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>yajxe wen</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>qnumix wen</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>manyor yajx</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>manyor qnumix</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></temporalPhraseExample>
     <temporalDegreeAffixExample>-xix
 -chꞌin</temporalDegreeAffixExample>
     <temporalPhraseAffixExample>nchiꞌjxix
@@ -592,11 +519,7 @@ nchiꞌj
 ambꞌil
 qale
 or</temporalNounExample>
-    <temporalNounModifierExample>nchiꞌj qnumix
-ewe qlixje
-jaꞌlin qale
-txamaꞌy qnikyꞌin
-</temporalNounModifierExample>
+    <temporalNounModifierExample><interlinearEntry><vernacularLine>nchiꞌj qnumix</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ewe qlixje</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>jaꞌlin qale</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>txamaꞌy qnikyꞌin</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></temporalNounModifierExample>
     <temporalIndefTypeQWordExample>
     </temporalIndefTypeQWordExample>
     <temporalIndefTypeQPhraseExample>junjun maj
@@ -629,16 +552,7 @@ kubꞌnix</locativeExample>
     <locativeDegreeExample>chꞌintl
 wen
 manyor</locativeDegreeExample>
-    <locativePhraseExample>elni chꞌintl
-elni wen
-manyor elnix
-kubꞌnix chꞌintl
-kubꞌnix wen
-manyor kubꞌnix
-jawnix chꞌintl
-oknix chꞌintl
-oknix wen
-manyor oknix we</locativePhraseExample>
+    <locativePhraseExample><interlinearEntry><vernacularLine>elni chꞌintl</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>elni wen</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>manyor elnix</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>kubꞌnix chꞌintl</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>kubꞌnix wen</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>manyor kubꞌnix</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>jawnix chꞌintl</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>oknix chꞌintl</vernacularLine><freeLine/></interlinearEntry></locativePhraseExample>
     <locativeDegreeAffixExample>-xix
 -chꞌin</locativeDegreeAffixExample>
     <locativePhraseAffixExample>elnixix
@@ -674,8 +588,7 @@ kuj
 </mannerExample>
     <mannerDegreeExample>
     </mannerDegreeExample>
-    <mannerDegreePhraseExample>
-    </mannerDegreePhraseExample>
+    <mannerDegreePhraseExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></mannerDegreePhraseExample>
     <mannerDegreeAffixExample>-xix
 -chꞌin</mannerDegreeAffixExample>
     <mannerPhraseAffixExample>kujxix
@@ -704,12 +617,11 @@ quꞌn nya bꞌaꞌn
 tuꞌnpetziꞌn mina
 qalaꞌ mikxeꞌ
 qa ikyjo</reasonPPExample>
-    <reasonSentExample>Qa mina s-uꞌjin toj qyol, nyaꞌxix chikꞌle toj tnaꞌla tuꞌn ikyjo. 
-Tuꞌnpetziꞌn kux tzꞌuꞌjin toj qyol, quꞌn qa mina nlay chꞌiy tnabꞌla.</reasonSentExample>
+    <reasonSentExample><interlinearEntry><vernacularLine>Qa mina s-uꞌjin toj qyol, nyaꞌxix chikꞌle toj tnaꞌla tuꞌn ikyjo. </vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Tuꞌnpetziꞌn kux tzꞌuꞌjin toj qyol, quꞌn qa mina nlay chꞌiy tnabꞌla.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></reasonSentExample>
     <adverbCategory>
     </adverbCategory>
   </advp>
-  <adjp checkedOff="yes" adjectiveClassifier="no" modifiers="yes" adjectiveDegreeClassifier="no">
+  <adjp adjectiveClassifier="no" adjectiveDegreeClassifier="no" checkedOff="yes" modifiers="yes">
     <modifiersDegree checked="yes">
     </modifiersDegree>
     <modifiersManner checked="no">
@@ -750,15 +662,8 @@ txꞌam</example>
     <adjectiveDegreeExample>chꞌinetz
 wen
 manyor</adjectiveDegreeExample>
-    <adjectiveDegreePhraseExample>txꞌam chꞌinetzꞌ
-saq chꞌinetzꞌ
-qꞌanaq chꞌinetzꞌ
-txꞌam wen
-saq wen
-manyor txꞌamx
-manyor saqx</adjectiveDegreePhraseExample>
-    <adjectiveMannerPhraseExample>
-    </adjectiveMannerPhraseExample>
+    <adjectiveDegreePhraseExample><interlinearEntry><vernacularLine>txꞌam chꞌinetzꞌ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>saq chꞌinetzꞌ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>qꞌanaq chꞌinetzꞌ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>txꞌam wen</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>saq wen</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>manyor txꞌamx</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>manyor saqx</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></adjectiveDegreePhraseExample>
+    <adjectiveMannerPhraseExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></adjectiveMannerPhraseExample>
     <adjectiveDegreeAffixExample>-xix
 -chꞌin</adjectiveDegreeAffixExample>
     <adjectiveDegreeAffixPhraseExample>txꞌamxix
@@ -774,7 +679,7 @@ qꞌanchꞌin</adjectiveDegreeAffixPhraseExample>
     <adjectiveCategory>
     </adjectiveCategory>
   </adjp>
-  <np checkedOff="no" agreeNumber="no" caseN="no" caseDefault="no" caseWord="yes" possCaseErg="genitive" artAndDem="both" artDefOnly="no" artPl="no" demPl="no" artDemClassifier="no" artCase="yes" artRequired="no" demRequired="no" artBothCooccur="different" demOrArtRequired="no" demAndArtDemRequired="no" demAndArtArtRequired="no" possNP="yes" possPronPos="unknown" possPPPos="unknown" possNounPos="unknown" possMarked="no" possWordRequired="no" possCooccur="yes" possNounCaseChange="no" possAlienable="no" possAgr="no" possAbsolutive="no" qpEitherRestrictedNumPos="unknown" adjpPart="no" adjpCaseChange="no" adjpCaseAffix="no" comp="no" compHead="right" compHeadMorpheme="right" ppComp="no" ppPos="unknown" partNP="no" classifierPresent="no" classifierPresentDem="no" classifierPresentDemBoth="no" classifierPresentQ="no" classifierPresentAdj="no">
+  <np adjpCaseAffix="no" adjpCaseChange="no" adjpPart="no" agreeNumber="no" artAndDem="both" artBothCooccur="different" artCase="yes" artDefOnly="no" artDemClassifier="no" artPl="no" artRequired="no" caseDefault="no" caseN="no" caseWord="yes" checkedOff="no" classifierPresent="no" classifierPresentAdj="no" classifierPresentDem="no" classifierPresentDemBoth="no" classifierPresentQ="no" comp="no" compHead="right" compHeadMorpheme="right" demAndArtArtRequired="no" demAndArtDemRequired="no" demOrArtRequired="no" demPl="no" demRequired="no" partNP="no" possAbsolutive="no" possAgr="no" possAlienable="no" possCaseErg="genitive" possCooccur="yes" possMarked="no" possNP="yes" possNounCaseChange="no" possNounPos="unknown" possPPPos="unknown" possPronPos="unknown" possWordRequired="no" ppComp="no" ppPos="unknown" qpEitherRestrictedNumPos="unknown">
     <classifierSpecificPosBeforeBoth checked="no">
     </classifierSpecificPosBeforeBoth>
     <classifierSpecificPosAfterBoth checked="no">
@@ -939,24 +844,13 @@ qꞌanchꞌin</adjectiveDegreeAffixPhraseExample>
     </classifierSpecificAdjPosSuffixAdj>
     <classifierSpecificAdjPosOther checked="no">
     </classifierSpecificAdjPosOther>
-    <agreeNumberExample>jun chej matij
-oxe chej matij
-txqan chej matij
-nimx chej matij
-
-</agreeNumberExample>
-    <agreeClassExample>
-    </agreeClassExample>
-    <agreeClassifierExample>
-    </agreeClassifierExample>
-    <agreeGenderExample>
-    </agreeGenderExample>
-    <agreeAnimacyExample>
-    </agreeAnimacyExample>
-    <agreeOtherExample>
-    </agreeOtherExample>
-    <caseNPExample>
-    </caseNPExample>
+    <agreeNumberExample><interlinearEntry><vernacularLine>jun chej matij</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>oxe chej matij</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>txqan chej matij</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>nimx chej matij</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></agreeNumberExample>
+    <agreeClassExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></agreeClassExample>
+    <agreeClassifierExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></agreeClassifierExample>
+    <agreeGenderExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></agreeGenderExample>
+    <agreeAnimacyExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></agreeAnimacyExample>
+    <agreeOtherExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></agreeOtherExample>
+    <caseNPExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></caseNPExample>
     <nominative>
     </nominative>
     <accusative>
@@ -1101,16 +995,11 @@ nimx chej matij
     </demMedialPlDatExample>
     <demDistalPlDatExample>
     </demDistalPlDatExample>
-    <example>aye xjal chiꞌn
-</example>
-    <possessorExample>
-    </possessorExample>
-    <embeddedExample>
-    </embeddedExample>
-    <ppExample>
-    </ppExample>
-    <relClExample>
-    </relClExample>
+    <example><interlinearEntry><vernacularLine>aye xjal chiꞌn</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></example>
+    <possessorExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></possessorExample>
+    <embeddedExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></embeddedExample>
+    <ppExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></ppExample>
+    <relClExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></relClExample>
     <possMarkerAffix>
     </possMarkerAffix>
     <possMarkerClitic>
@@ -1121,12 +1010,9 @@ nimx chej matij
     </possAlienableAffixExample>
     <possAbsolutiveAffixExample>
     </possAbsolutiveAffixExample>
-    <qpExample>
-    </qpExample>
-    <adjpExample>
-    </adjpExample>
-    <partExample>
-    </partExample>
+    <qpExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></qpExample>
+    <adjpExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></adjpExample>
+    <partExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></partExample>
     <compBodyPartExample>
     </compBodyPartExample>
     <compKinshipExample>
@@ -1137,12 +1023,9 @@ nimx chej matij
     </compMaterialExample>
     <compExample>
     </compExample>
-    <compPPExample>
-    </compPPExample>
-    <partHeadExample>
-    </partHeadExample>
-    <partHeadSentExample>
-    </partHeadSentExample>
+    <compPPExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></compPPExample>
+    <partHeadExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></partHeadExample>
+    <partHeadSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></partHeadSentExample>
     <articleCategory>
     </articleCategory>
     <demonstrativeCategory>
@@ -1314,24 +1197,9 @@ nimx chej matij
     </npPossAgrPossNonHuman>
   </np>
   <prop checkedOff="no" pnClassifier="no" pnDeterminer="none">
-    <example>Txolja
-Xleꞌn
-Pegr
-Twimuj
-Txe Taꞌl Mich
-Toj qan Sapat
-Tzꞌunin wutz
-Twiquqil
-Txechman
-</example>
-    <ppExample>te Txolja
-tzma Twimuj
-tukꞌa Pegr
-tiꞌbꞌaj Tzꞌunin Wutz
-tiꞌj Mariy</ppExample>
-    <relClExample>Ma chinka Txechmaꞌn, a kytanmin xliꞌq.
-Nimx tnaꞌbꞌl Mariy, a tkꞌwal Pegr.
-Waja tuꞌn nxiꞌy Twiquqil, jaꞌ itzꞌje ntatiꞌy.</relClExample>
+    <example><interlinearEntry><vernacularLine>Txolja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Xleꞌn</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Pegr</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Twimuj</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Txe Taꞌl Mich</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Toj qan Sapat</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Tzꞌunin wutz</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Twiquqil</vernacularLine><freeLine/></interlinearEntry></example>
+    <ppExample><interlinearEntry><vernacularLine>te Txolja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tzma Twimuj</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tukꞌa Pegr</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tiꞌbꞌaj Tzꞌunin Wutz</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tiꞌj Mariy</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></ppExample>
+    <relClExample><interlinearEntry><vernacularLine>Ma chinka Txechmaꞌn, a kytanmin xliꞌq.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Nimx tnaꞌbꞌl Mariy, a tkꞌwal Pegr.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Waja tuꞌn nxiꞌy Twiquqil, jaꞌ itzꞌje ntatiꞌy.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></relClExample>
     <propAnimate1Category>
     </propAnimate1Category>
     <propAnimate2Category>
@@ -1339,7 +1207,7 @@ Waja tuꞌn nxiꞌy Twiquqil, jaꞌ itzꞌje ntatiꞌy.</relClExample>
     <propInanimateCategory>
     </propInanimateCategory>
   </prop>
-  <pron checkedOff="no" pronounClassifier="no" pronounNumber="yes" pronounExcl="no" dependentPron="no" pronDepClassifier="no" poss="no" refl="no" recip="no" demAdjSame="no" demNumber="no" demCase="yes" pronMod="no" partitivePos="unknown" classifierNoN="no">
+  <pron checkedOff="no" classifierNoN="no" demAdjSame="no" demCase="yes" demNumber="no" dependentPron="no" partitivePos="unknown" poss="no" pronDepClassifier="no" pronMod="no" pronounClassifier="no" pronounExcl="no" pronounNumber="yes" recip="no" refl="no">
     <dependentTypeProclitic checked="no">
     </dependentTypeProclitic>
     <dependentTypeEnclitic checked="no">
@@ -1348,8 +1216,7 @@ Waja tuꞌn nxiꞌy Twiquqil, jaꞌ itzꞌje ntatiꞌy.</relClExample>
     </dependentTypePrefix>
     <dependentTypeSuffix checked="no">
     </dependentTypeSuffix>
-    <dependentTypeOther checked="no">
-    </dependentTypeOther>
+    <dependentTypeOther><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></dependentTypeOther>
     <possDistinct checked="no">
     </possDistinct>
     <possAffixPron checked="no">
@@ -1649,8 +1516,7 @@ it
     </personalDependentFirstSgNoneDativeExample>
     <personalDependentFirstPlNoneDativeExample>
     </personalDependentFirstPlNoneDativeExample>
-    <personalDependentFirstExclNoneDativeExample>
-    </personalDependentFirstExclNoneDativeExample>
+    <personalDependentFirstExclNoneDativeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></personalDependentFirstExclNoneDativeExample>
     <personalDependentFirstInclNoneDativeExample>
     </personalDependentFirstInclNoneDativeExample>
     <personalDependentSecondSgNoneDativeExample>
@@ -1911,8 +1777,7 @@ it
     </pronPossPhraseWordExample>
     <reflVerbAffixExample>
     </reflVerbAffixExample>
-    <reflVerbSentExample>
-    </reflVerbSentExample>
+    <reflVerbSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></reflVerbSentExample>
     <reflFirstSgExample>
     </reflFirstSgExample>
     <reflFirstPlExample>
@@ -1929,8 +1794,7 @@ it
     </reflThirdSgExample>
     <reflThirdPlExample>
     </reflThirdPlExample>
-    <reflSentExample>
-    </reflSentExample>
+    <reflSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></reflSentExample>
     <pronReflAffixExample>
     </pronReflAffixExample>
     <pronReflNounPossExample>
@@ -1939,8 +1803,7 @@ it
     </pronReflQExample>
     <recipVerbAffixExample>
     </recipVerbAffixExample>
-    <recipVerbSentExample>
-    </recipVerbSentExample>
+    <recipVerbSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></recipVerbSentExample>
     <recipFirstPlExample>
     </recipFirstPlExample>
     <recipFirstExclExample>
@@ -1957,8 +1820,7 @@ it
     </pronRecipNounPossExample>
     <pronRecipQExample>
     </pronRecipQExample>
-    <recipSentExample>
-    </recipSentExample>
+    <recipSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></recipSentExample>
     <demProximalExample>1</demProximalExample>
     <demMedialExample>2</demMedialExample>
     <demDistalExample>3</demDistalExample>
@@ -2043,16 +1905,11 @@ it
     </indefTypeIntPhraseExample>
     <indefTypeIntOtherExample>
     </indefTypeIntOtherExample>
-    <standAloneNPExample>
-    </standAloneNPExample>
-    <pronSentExample>
-    </pronSentExample>
-    <pronRelClExample>
-    </pronRelClExample>
-    <partitiveExample>
-    </partitiveExample>
-    <classifierNoNExample>
-    </classifierNoNExample>
+    <standAloneNPExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></standAloneNPExample>
+    <pronSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></pronSentExample>
+    <pronRelClExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></pronRelClExample>
+    <partitiveExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></partitiveExample>
+    <classifierNoNExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></classifierNoNExample>
     <pronounCategory>
     </pronounCategory>
     <demProximalErgGenExample>3</demProximalErgGenExample>
@@ -2125,7 +1982,7 @@ it
     <demDistalSplitPlAbsExample>
     </demDistalSplitPlAbsExample>
   </pron>
-  <pp checkedOff="no" pPos="before" pType="word" attaches="edge" modifiers="yes" ppClassifier="no" bodyPart="yes" alone="yes" locative="no" ppComp="no" tempComp="no">
+  <pp alone="yes" attaches="edge" bodyPart="yes" checkedOff="no" locative="no" modifiers="yes" pPos="before" pType="word" ppClassifier="no" ppComp="no" tempComp="no">
     <ppModifierDegree checked="yes">
     </ppModifierDegree>
     <ppModifierOrdinal checked="no">
@@ -2167,19 +2024,7 @@ it
     </ppLocativePosBoth>
     <ppLocativePosOther checked="no">
     </ppLocativePosOther>
-    <ppExample>twiꞌ wutz
-tibꞌaj ja
-toj aꞌ
-ttxlaj bꞌe
-tjaqꞌ tze
-tiꞌjxja pach
-twutz chuj
-ttzi xaq
-ttxaꞌn tnam
-t-xe aꞌ
-tẍkyin ja
-tqulja ja
-t-xol wutz</ppExample>
+    <ppExample><interlinearEntry><vernacularLine>twiꞌ wutz</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tibꞌaj ja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>toj aꞌ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttxlaj bꞌe</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tjaqꞌ tze</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tiꞌjxja pach</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>twutz chuj</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttzi xaq</vernacularLine><freeLine/></interlinearEntry></ppExample>
     <degree>Chꞌime 
 Tzma
 
@@ -2187,37 +2032,26 @@ Tzma
 
 
 </degree>
-    <degreeWithPP>chꞌime tibꞌaj xaq
-tzma tibꞌaj ja
-chꞌime tjaqꞌ tze
-tzma tjaqꞌ meẍ</degreeWithPP>
+    <degreeWithPP><interlinearEntry><vernacularLine>chꞌime tibꞌaj xaq</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tzma tibꞌaj ja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>chꞌime tjaqꞌ tze</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tzma tjaqꞌ meẍ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></degreeWithPP>
     <ordinal>tnejil 
 tkabꞌ
 toxin
 tkyajin
 tjweꞌyin</ordinal>
-    <ordinalWithPP>ttxaꞌn bꞌuꞌẍ
-toxin ttxlaj meẍ
-</ordinalWithPP>
+    <ordinalWithPP><interlinearEntry><vernacularLine>ttxaꞌn bꞌuꞌẍ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>toxin ttxlaj meẍ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></ordinalWithPP>
     <manner>
     </manner>
-    <mannerWithPP>
-    </mannerWithPP>
+    <mannerWithPP><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></mannerWithPP>
     <locative>tzaluꞌn 
 tzachiꞌn
 antza
 axsa
 </locative>
-    <locativeWithPP>axsa tibꞌaj ka
-antza toj kꞌwil
-tzaluꞌn toj ja
-tzachiꞌn ttxlaj meẍ</locativeWithPP>
+    <locativeWithPP><interlinearEntry><vernacularLine>axsa tibꞌaj ka</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>antza toj kꞌwil</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tzaluꞌn toj ja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tzachiꞌn ttxlaj meẍ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></locativeWithPP>
     <otherMod>-xix
 -x
 -chꞌin</otherMod>
-    <otherModWithPP>twiꞌxix
-ttxlajchꞌin
-ttzix</otherModWithPP>
+    <otherModWithPP><interlinearEntry><vernacularLine>twiꞌxix</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttxlajchꞌin</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttzix</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></otherModWithPP>
     <locativePrepExample>twiꞌ
 tibꞌaj
 toj
@@ -2234,21 +2068,8 @@ tqul
 </locativePrepExample>
     <locativePostExample>
     </locativePostExample>
-    <locativePrepPPExample>Twiꞌ ja
-tibꞌaj ja
-toj aꞌ
-ttxlaj bꞌe
-tjaqꞌ tze
-tiꞌjxja pach
-twutz chuj
-ttzi xaq
-ttxaꞌn tnam
-t-xe aꞌ
-tẍkyin ja
-tqulja ja
-t-xol wutz</locativePrepPPExample>
-    <locativePostPPExample>
-    </locativePostPPExample>
+    <locativePrepPPExample><interlinearEntry><vernacularLine>Twiꞌ ja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tibꞌaj ja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>toj aꞌ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttxlaj bꞌe</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tjaqꞌ tze</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tiꞌjxja pach</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>twutz chuj</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttzi xaq</vernacularLine><freeLine/></interlinearEntry></locativePrepPPExample>
+    <locativePostPPExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></locativePostPPExample>
     <bodyPartPrepExample>twiꞌ
 ttxlaj
 twutz
@@ -2258,15 +2079,8 @@ tẍkyin
 tkꞌuꞌj</bodyPartPrepExample>
     <bodyPartPostExample>
     </bodyPartPostExample>
-    <bodyPartPrepPPExample>twiꞌ meẍ
-ttxlaj kꞌwil
-twutz ja
-ttzi tzaj
-ttxaꞌn ja
-tẍkyin ẍoqꞌ
-tkꞌuꞌj xaq</bodyPartPrepPPExample>
-    <bodyPartPostPPExample>
-    </bodyPartPostPPExample>
+    <bodyPartPrepPPExample><interlinearEntry><vernacularLine>twiꞌ meẍ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttxlaj kꞌwil</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>twutz ja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttzi tzaj</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>ttxaꞌn ja</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tẍkyin ẍoqꞌ</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>tkꞌuꞌj xaq</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></bodyPartPrepPPExample>
+    <bodyPartPostPPExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></bodyPartPostPPExample>
     <genitiveP>weꞌy
 tey
 te
@@ -2294,21 +2108,14 @@ tuꞌn
     <obliqueP>tuꞌn
 tiꞌj
 te</obliqueP>
-    <aloneExample>Alkyeꞌ meẍ xkubꞌ tqꞌoꞌn uꞌj tibꞌaj.
-Attaq jun xjal a wajtaqa tuꞌn nyoliꞌn tukꞌa.
-Alkye laq tkuꞌxchibꞌj toj.
-
-</aloneExample>
-    <locExample>
-    </locExample>
-    <compPPExample>
-    </compPPExample>
-    <tempExample>
-    </tempExample>
+    <aloneExample><interlinearEntry><vernacularLine>Alkyeꞌ meẍ xkubꞌ tqꞌoꞌn uꞌj tibꞌaj.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Attaq jun xjal a wajtaqa tuꞌn nyoliꞌn tukꞌa.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine>Alkye laq tkuꞌxchibꞌj toj.</vernacularLine><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></aloneExample>
+    <locExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></locExample>
+    <compPPExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></compPPExample>
+    <tempExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></tempExample>
     <pCategory>
     </pCategory>
   </pp>
-  <ip checkedOff="no" proDropObject="no" impPolite="no" conditionWord="yes" consequence="no" consequencePos="unknown" subjunctiveCondWord="yes" aux="no" auxRequired="no" auxMany="no" auxOrder="yes" auxNonfinite="no" auxNonfiniteRequired="no" auxNonfiniteOrder="yes" auxOther="no" auxOtherOrder="yes" heartCompound="no" bodypartCompound="no" copular="yes" copularAffix="no" same="yes" compareN="yes" as="yes" compareAdj="yes" comparative="yes" comparativeAdj="no" gap="yes" diCat="pp" diOrder="direct" passive="no" passiveAgent="no" passiveAux="no" passiveAgentCat="pp" antipassive="no" voice="no" voiceCase="no" applicative="no">
+  <ip antipassive="no" applicative="no" as="yes" aux="no" auxMany="no" auxNonfinite="no" auxNonfiniteOrder="yes" auxNonfiniteRequired="no" auxOrder="yes" auxOther="no" auxOtherOrder="yes" auxRequired="no" bodypartCompound="no" checkedOff="no" comparative="yes" comparativeAdj="no" compareAdj="yes" compareN="yes" conditionWord="yes" consequence="no" consequencePos="unknown" copular="yes" copularAffix="no" diCat="pp" diOrder="direct" gap="yes" heartCompound="no" impPolite="no" passive="no" passiveAgent="no" passiveAgentCat="pp" passiveAux="no" proDropObject="no" same="yes" subjunctiveCondWord="yes" voice="no" voiceCase="no">
     <proDropYes checked="no">
     </proDropYes>
     <proDropClitic checked="no">
@@ -2617,18 +2424,12 @@ Alkye laq tkuꞌxchibꞌj toj.
     </nonhumanErgativeAnimacy>
     <nonhumanAbsolutiveAnimacy>
     </nonhumanAbsolutiveAnimacy>
-    <proDropExample>
-    </proDropExample>
-    <cliticPnExample>
-    </cliticPnExample>
-    <proDropOtherExample>
-    </proDropOtherExample>
-    <impExample>
-    </impExample>
-    <impPoliteExample>
-    </impPoliteExample>
-    <conditionalExample>
-    </conditionalExample>
+    <proDropExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></proDropExample>
+    <cliticPnExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></cliticPnExample>
+    <proDropOtherExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></proDropOtherExample>
+    <impExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></impExample>
+    <impPoliteExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></impPoliteExample>
+    <conditionalExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></conditionalExample>
     <conditionCliticExample>
     </conditionCliticExample>
     <conditionAffixExample>
@@ -2637,8 +2438,7 @@ Alkye laq tkuꞌxchibꞌj toj.
     </conditionOtherExample>
     <conditionWordExample>
     </conditionWordExample>
-    <subjunctiveExample>
-    </subjunctiveExample>
+    <subjunctiveExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></subjunctiveExample>
     <subjunctiveCondCliticExample>
     </subjunctiveCondCliticExample>
     <subjunctiveCondAffixExample>
@@ -2647,16 +2447,13 @@ Alkye laq tkuꞌxchibꞌj toj.
     </subjunctiveCondOtherExample>
     <subjunctiveCondWordExample>
     </subjunctiveCondWordExample>
-    <auxExample>
-    </auxExample>
+    <auxExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></auxExample>
     <auxiliaryExample>
     </auxiliaryExample>
-    <auxNonfiniteExample>
-    </auxNonfiniteExample>
+    <auxNonfiniteExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></auxNonfiniteExample>
     <auxiliaryNonfiniteExample>
     </auxiliaryNonfiniteExample>
-    <auxOtherExample>
-    </auxOtherExample>
+    <auxOtherExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></auxOtherExample>
     <auxiliaryOtherExample>
     </auxiliaryOtherExample>
     <heartCompoundExample>
@@ -2665,54 +2462,43 @@ Alkye laq tkuꞌxchibꞌj toj.
     </bodypartCompoundExample>
     <verbNCompoundExample>
     </verbNCompoundExample>
-    <verbNCompoundSentExample>
-    </verbNCompoundSentExample>
+    <verbNCompoundSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></verbNCompoundSentExample>
     <verbOtherCompoundExample>
     </verbOtherCompoundExample>
-    <verbOtherCompoundSentExample>
-    </verbOtherCompoundSentExample>
-    <idiomExample>
-    </idiomExample>
-    <copularExample>
-    </copularExample>
+    <verbOtherCompoundSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></verbOtherCompoundSentExample>
+    <idiomExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></idiomExample>
+    <copularExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></copularExample>
     <copularVerb>
     </copularVerb>
     <copularAffix>
     </copularAffix>
-    <perceptionExample>
-    </perceptionExample>
-    <sameExample>
-    </sameExample>
+    <perceptionExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></perceptionExample>
+    <sameExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></sameExample>
     <sameWordExample>
     </sameWordExample>
     <sameAffixExample>
     </sameAffixExample>
     <compareNExample>
     </compareNExample>
-    <asExample>
-    </asExample>
+    <asExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></asExample>
     <asWordExample>
     </asWordExample>
     <compareAdjExample>
     </compareAdjExample>
-    <comparativeExample>
-    </comparativeExample>
+    <comparativeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></comparativeExample>
     <comparativeWordExample>
     </comparativeWordExample>
     <comparativeAffixExample>
     </comparativeAffixExample>
     <comparativeDegExample>
     </comparativeDegExample>
-    <comparativeSentExample>
-    </comparativeSentExample>
-    <superlativeExample>
-    </superlativeExample>
+    <comparativeSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></comparativeSentExample>
+    <superlativeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></superlativeExample>
     <superlativeAffixExample>
     </superlativeAffixExample>
     <superlativeDegExample>
     </superlativeDegExample>
-    <existExample>
-    </existExample>
+    <existExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></existExample>
     <existWordExample>
     </existWordExample>
     <existVerbExample>
@@ -2721,12 +2507,9 @@ Alkye laq tkuꞌxchibꞌj toj.
     </existPositionExample>
     <existOtherExample>
     </existOtherExample>
-    <motionExample>
-    </motionExample>
-    <diExample>
-    </diExample>
-    <passiveExample>
-    </passiveExample>
+    <motionExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></motionExample>
+    <diExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></diExample>
+    <passiveExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></passiveExample>
     <auxCategory>
     </auxCategory>
     <passiveAgentPExample>
@@ -2735,20 +2518,14 @@ Alkye laq tkuꞌxchibꞌj toj.
     </passiveAuxExample>
     <causativeAffixExample>
     </causativeAffixExample>
-    <causativeExample>
-    </causativeExample>
-    <causativeMakeExample>
-    </causativeMakeExample>
-    <causativeOtherExample>
-    </causativeOtherExample>
-    <applicativeExample>
-    </applicativeExample>
-    <antipassiveExample>
-    </antipassiveExample>
+    <causativeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></causativeExample>
+    <causativeMakeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></causativeMakeExample>
+    <causativeOtherExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></causativeOtherExample>
+    <applicativeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></applicativeExample>
+    <antipassiveExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></antipassiveExample>
     <antipassiveAffixExample>
     </antipassiveAffixExample>
-    <voiceExample>
-    </voiceExample>
+    <voiceExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></voiceExample>
     <verbCategory>
     </verbCategory>
     <ipContents1 checkedOff="no">
@@ -3012,7 +2789,7 @@ Alkye laq tkuꞌxchibꞌj toj.
     <ipInflFeatOtherVoice checked="no">
     </ipInflFeatOtherVoice>
   </ip>
-  <comp checkedOff="no" compTypeOther="no" comp="no" compNonfinite="no" compWord="yes">
+  <comp checkedOff="no" comp="no" compNonfinite="no" compTypeOther="no" compWord="yes">
     <compProclitic checked="no">
     </compProclitic>
     <compEnclitic checked="no">
@@ -3031,28 +2808,18 @@ Alkye laq tkuꞌxchibꞌj toj.
     </compBoth>
     <compOther checked="no">
     </compOther>
-    <finiteExample>
-    </finiteExample>
-    <finiteOrNonfiniteExample>
-    </finiteOrNonfiniteExample>
-    <DPCPExample>
-    </DPCPExample>
-    <nonfiniteExample>
-    </nonfiniteExample>
-    <nonfiniteProDropExample>
-    </nonfiniteProDropExample>
-    <nonfiniteCPOrProDropExample>
-    </nonfiniteCPOrProDropExample>
-    <raisingExample>
-    </raisingExample>
-    <causeExample>
-    </causeExample>
-    <quotationExample>
-    </quotationExample>
+    <finiteExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></finiteExample>
+    <finiteOrNonfiniteExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></finiteOrNonfiniteExample>
+    <DPCPExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></DPCPExample>
+    <nonfiniteExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></nonfiniteExample>
+    <nonfiniteProDropExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></nonfiniteProDropExample>
+    <nonfiniteCPOrProDropExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></nonfiniteCPOrProDropExample>
+    <raisingExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></raisingExample>
+    <causeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></causeExample>
+    <quotationExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></quotationExample>
     <otherRestrictions>
     </otherRestrictions>
-    <otherExample>
-    </otherExample>
+    <otherExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></otherExample>
     <compCliticExample>
     </compCliticExample>
     <compAffixExample>
@@ -3062,7 +2829,7 @@ Alkye laq tkuꞌxchibꞌj toj.
     <compExample>
     </compExample>
   </comp>
-  <q checkedOff="no" mainYN="no" mainYNWord="no" mainYNAuxPos="unknown" embYN="no" embYNWord="no" embYNAuxPos="unknown" whDemPos="unknown" whArtPos="unknown" whDegAdjPos="unknown" whDegQPos="unknown" contFront="unknown" mainCont="no" mainContWord="no" mainContRequired="no" mainContAuxPos="unknown" mainContAuxRequired="no" embCont="no" embContWord="no" embContRequired="no" embContAuxPos="unknown" embContAuxRequired="no">
+  <q checkedOff="no" contFront="unknown" embCont="no" embContAuxPos="unknown" embContAuxRequired="no" embContRequired="no" embContWord="no" embYN="no" embYNAuxPos="unknown" embYNWord="no" mainCont="no" mainContAuxPos="unknown" mainContAuxRequired="no" mainContRequired="no" mainContWord="no" mainYN="no" mainYNAuxPos="unknown" mainYNWord="no" whArtPos="unknown" whDegAdjPos="unknown" whDegQPos="unknown" whDemPos="unknown">
     <mainYNProclitic checked="no">
     </mainYNProclitic>
     <mainYNEnclitic checked="no">
@@ -3159,16 +2926,14 @@ Alkye laq tkuꞌxchibꞌj toj.
     </embContVSOEnd>
     <embContVSOOther checked="no">
     </embContVSOOther>
-    <example>
-    </example>
+    <example><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></example>
     <mainYNCliticExample>
     </mainYNCliticExample>
     <mainYNAffixExample>
     </mainYNAffixExample>
     <mainYNWordExample>
     </mainYNWordExample>
-    <embYNExample>
-    </embYNExample>
+    <embYNExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></embYNExample>
     <embYNCliticExample>
     </embYNCliticExample>
     <embYNAffixExample>
@@ -3195,8 +2960,7 @@ Alkye laq tkuꞌxchibꞌj toj.
     </whose>
     <other>
     </other>
-    <contentExample>
-    </contentExample>
+    <contentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></contentExample>
     <mainContCliticExample>
     </mainContCliticExample>
     <mainContAffixExample>
@@ -3205,8 +2969,7 @@ Alkye laq tkuꞌxchibꞌj toj.
     </mainContWordExample>
     <mainContSpecialConditions>
     </mainContSpecialConditions>
-    <embContentExample>
-    </embContentExample>
+    <embContentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></embContentExample>
     <embContCliticExample>
     </embContCliticExample>
     <embContAffixExample>
@@ -3218,7 +2981,7 @@ Alkye laq tkuꞌxchibꞌj toj.
     <whPronCategory>
     </whPronCategory>
   </q>
-  <relcl checkedOff="no" exist="no" clausePos="unknown" whAndComp="no" relWord="yes" relCliticPos="unknown" headless="no">
+  <relcl checkedOff="no" clausePos="unknown" exist="no" headless="no" relCliticPos="unknown" relWord="yes" whAndComp="no">
     <relTypeCPComp checked="no">
     </relTypeCPComp>
     <relTypeCPWh checked="no">
@@ -3239,24 +3002,20 @@ Alkye laq tkuꞌxchibꞌj toj.
     </relWordBoth>
     <relWordOther checked="no">
     </relWordOther>
-    <example>
-    </example>
+    <example><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></example>
     <relCliticExample>
     </relCliticExample>
     <relWordExample>
     </relWordExample>
     <relAffixExample>
     </relAffixExample>
-    <sentExample>
-    </sentExample>
-    <headlessExample>
-    </headlessExample>
+    <sentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></sentExample>
+    <headlessExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></headlessExample>
   </relcl>
-  <advcl checkedOff="no" advOrNPPos="unknown">
-    <tempSentExample>
-    </tempSentExample>
+  <advcl advOrNPPos="unknown" checkedOff="no">
+    <tempSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></tempSentExample>
   </advcl>
-  <neg checkedOff="no" npDegreeNeg="yes" npDegreeNegCooccur="no" negIndef="yes" subjVerbRequired="no" advVerbRequired="no" negVerbal="no" negAuxRequiresAux="no" auxVerbRequired="no" type="changing" polarityItems="no" negFront="no" negTwoAllowed="yes" negFrontTwo="no" objVerbRequired="other">
+  <neg advVerbRequired="no" auxVerbRequired="no" checkedOff="no" negAuxRequiresAux="no" negFront="no" negFrontTwo="no" negIndef="yes" negTwoAllowed="yes" negVerbal="no" npDegreeNeg="yes" npDegreeNegCooccur="no" objVerbRequired="other" polarityItems="no" subjVerbRequired="no" type="changing">
     <npDegreeNegProclitic checked="no">
     </npDegreeNegProclitic>
     <npDegreeNegEnclitic checked="no">
@@ -3325,42 +3084,31 @@ Alkye laq tkuꞌxchibꞌj toj.
     </negVerbalOther>
     <not>
     </not>
-    <negCliticExample>
-    </negCliticExample>
-    <negAffixExample>
-    </negAffixExample>
-    <negOtherExample>
-    </negOtherExample>
-    <negExample>
-    </negExample>
-    <negCooccurExample>
-    </negCooccurExample>
-    <npDegreeSubjExample>
-    </npDegreeSubjExample>
+    <negCliticExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negCliticExample>
+    <negAffixExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negAffixExample>
+    <negOtherExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negOtherExample>
+    <negExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negExample>
+    <negCooccurExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negCooccurExample>
+    <npDegreeSubjExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></npDegreeSubjExample>
     <negIndefExample>
     </negIndefExample>
     <negIndefNPExample>
     </negIndefNPExample>
-    <negIndefSubjExample>
-    </negIndefSubjExample>
+    <negIndefSubjExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negIndefSubjExample>
     <negTemporalExample>
     </negTemporalExample>
     <negTemporalAdverbAffixExample>
     </negTemporalAdverbAffixExample>
     <negTemporalAdverbExample>
     </negTemporalAdverbExample>
-    <negTemporalAdverbWordExample>
-    </negTemporalAdverbWordExample>
-    <negTemporalAdverbWordsExample>
-    </negTemporalAdverbWordsExample>
+    <negTemporalAdverbWordExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negTemporalAdverbWordExample>
+    <negTemporalAdverbWordsExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negTemporalAdverbWordsExample>
     <negTemporalAffixExample>
     </negTemporalAffixExample>
-    <negTemporalVerbExample>
-    </negTemporalVerbExample>
+    <negTemporalVerbExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negTemporalVerbExample>
     <negTemporalOtherExample>
     </negTemporalOtherExample>
-    <advTemporalExample>
-    </advTemporalExample>
+    <advTemporalExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></advTemporalExample>
     <negLocativeExample>
     </negLocativeExample>
     <negLocativeAdverbAffixExample>
@@ -3369,18 +3117,15 @@ Alkye laq tkuꞌxchibꞌj toj.
     </negLocativeAdverbExample>
     <negLocativeAdverbWordExample>
     </negLocativeAdverbWordExample>
-    <negLocativeAdverbWordsExample>
-    </negLocativeAdverbWordsExample>
+    <negLocativeAdverbWordsExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negLocativeAdverbWordsExample>
     <negLocativeAffixExample>
     </negLocativeAffixExample>
     <negLocativeAffixVerbExample>
     </negLocativeAffixVerbExample>
-    <negLocativeVerbExample>
-    </negLocativeVerbExample>
+    <negLocativeVerbExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negLocativeVerbExample>
     <negLocativeOtherExample>
     </negLocativeOtherExample>
-    <advLocativeExample>
-    </advLocativeExample>
+    <advLocativeExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></advLocativeExample>
     <negAuxExample>
     </negAuxExample>
     <negAuxAffixExample>
@@ -3389,14 +3134,10 @@ Alkye laq tkuꞌxchibꞌj toj.
     </negVerbExample>
     <negVerbalOtherExample>
     </negVerbalOtherExample>
-    <auxExample>
-    </auxExample>
-    <auxAffixExample>
-    </auxAffixExample>
-    <verbAffixExample>
-    </verbAffixExample>
-    <negVerbalOtherSentExample>
-    </negVerbalOtherSentExample>
+    <auxExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></auxExample>
+    <auxAffixExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></auxAffixExample>
+    <verbAffixExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></verbAffixExample>
+    <negVerbalOtherSentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></negVerbalOtherSentExample>
     <npiPronounExample>
     </npiPronounExample>
     <npiDeterminerExample>
@@ -3405,12 +3146,9 @@ Alkye laq tkuꞌxchibꞌj toj.
     </npiTemporalExample>
     <npiLocativeExample>
     </npiLocativeExample>
-    <objectExample>
-    </objectExample>
-    <indirectObjectExample>
-    </indirectObjectExample>
-    <subjectObjectExample>
-    </subjectObjectExample>
+    <objectExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></objectExample>
+    <indirectObjectExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></indirectObjectExample>
+    <subjectObjectExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></subjectObjectExample>
   </neg>
   <coord checkedOff="no" conjWord="yes" noConj="no">
     <proclitic checked="no">
@@ -3441,26 +3179,18 @@ Alkye laq tkuꞌxchibꞌj toj.
     </neither>
     <nor>
     </nor>
-    <sentExample>
-    </sentExample>
-    <sentSeqExample>
-    </sentSeqExample>
-    <vpExample>
-    </vpExample>
-    <dpExample>
-    </dpExample>
-    <coordppExample>
-    </coordppExample>
-    <adjExample>
-    </adjExample>
-    <listExample>
-    </listExample>
-    <appositiveExample>
-    </appositiveExample>
+    <sentExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></sentExample>
+    <sentSeqExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></sentSeqExample>
+    <vpExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></vpExample>
+    <dpExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></dpExample>
+    <coordppExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></coordppExample>
+    <adjExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></adjExample>
+    <listExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></listExample>
+    <appositiveExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></appositiveExample>
     <conjunctionCategory>
     </conjunctionCategory>
   </coord>
-  <focus checkedOff="no" topic="no" topicPos="unknown" topicMarker="no" topicMarkerRequired="no" focus="no" focusPos="unknown" focusMarker="no" focusMarkerRequired="no">
+  <focus checkedOff="no" focus="no" focusMarker="no" focusMarkerRequired="no" focusPos="unknown" topic="no" topicMarker="no" topicMarkerRequired="no" topicPos="unknown">
     <topicMarkerBefore checked="no">
     </topicMarkerBefore>
     <topicMarkerAfter checked="no">
@@ -3477,16 +3207,14 @@ Alkye laq tkuꞌxchibꞌj toj.
     </focusMarkerBoth>
     <focusMarkerOther checked="no">
     </focusMarkerOther>
-    <topicExample>
-    </topicExample>
+    <topicExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></topicExample>
     <topicMarkerExample>
     </topicMarkerExample>
     <topicMarkerCliticExample>
     </topicMarkerCliticExample>
     <topicMarkerAffixExample>
     </topicMarkerAffixExample>
-    <focusExample>
-    </focusExample>
+    <focusExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></focusExample>
     <focusMarkerExample>
     </focusMarkerExample>
     <focusMarkerCliticExample>
@@ -3503,16 +3231,13 @@ Alkye laq tkuꞌxchibꞌj toj.
     </exclMBoth>
     <exclMOther checked="no">
     </exclMOther>
-    <greetExample>
-    </greetExample>
-    <intjExample>
-    </intjExample>
+    <greetExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></greetExample>
+    <intjExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></intjExample>
     <yesExample>
     </yesExample>
     <noExample>
     </noExample>
-    <exclExample>
-    </exclExample>
+    <exclExample><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry><interlinearEntry><vernacularLine/><freeLine/></interlinearEntry></exclExample>
     <exclMExample>
     </exclMExample>
   </excl>

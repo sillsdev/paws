@@ -132,7 +132,7 @@
 		<introduction id="NPPossCooccurIntroduction" show="swNPArtAndOrDem">We also need to know whether possessors and articles or demonstratives can co-occur in the same nominal phrase.  In English, these elements do not co-occur, unless the possessor is expressed in a prepositional phrase.  For example, we can’t say <example>those [the boy’s] books</example>; instead we use <example>those books [of his]</example> to express the same thought.  Some other languages allow both possessors and articles or demonstratives to occur in the same phrase, so the first example above would be grammatical.</introduction>
 <br/>
 		<radioGroup id="NPPossCooccurTable" show="swNPArtAndOrDem">
-			<groupName dataItem="possCooccur" default="yes"/>
+			<groupName dataItem="possCooccur" default="yes">RNPPossCooccurTable</groupName>
 			<prompt>Can <span id="NPPronPossSpan" show="swNPPossNPYesOrYesOnly">nominal phrase and pronoun </span><span id="NPPronPossOnlySpan" show="swNPPossNPNo">pronoun </span>possessors co-occur with <span id="NPArtOnlyCooccurSpan" show="swNPArtAndDemArt">articles</span>
 				<span id="NPDemOnlyCooccurSpan" show="swNPArtAndDemDem">demonstratives</span>
 				<span id="NPArtAndDemCooccurSpan" show="swNPArtAndDemBoth">articles and demonstratives</span> in your language?</prompt>

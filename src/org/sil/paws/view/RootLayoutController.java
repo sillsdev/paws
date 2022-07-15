@@ -269,10 +269,10 @@ public class RootLayoutController implements Initializable {
 		webPageInteractor = new WebPageInteractor(language, webEngine, this);
 		webEngine.getLoadWorker().stateProperty().addListener(new ChangeListener<State>() {
 			public void changed(ObservableValue ov, State oldState, State newState) {
+				useWaitCursor();
 				if (newState == State.SUCCEEDED) {
 					System.out.println("succeeded: url='" + webEngine.getLocation() + "'");
 					changeStatusOfBackForwardItems();
-
 					Platform.runLater(new Runnable() {
 						@Override
 						public void run() {
@@ -293,6 +293,7 @@ public class RootLayoutController implements Initializable {
 							// timeline.play();
 						}
 					});
+					useDefaultCursor();
 				} else if (newState == State.FAILED) {
 					String sUrl = webEngine.getLocation();
 					System.out.println("failed: url='" + sUrl + "'");
@@ -314,6 +315,7 @@ public class RootLayoutController implements Initializable {
 							loadContentsPageInNewMode();
 						}
 					}
+					useDefaultCursor();
 				}
 			}
 
@@ -929,9 +931,7 @@ public class RootLayoutController implements Initializable {
 			mainPane.setBottom(statusBar);
 		}
 		progressBarGenerateFiles.setVisible(true);
-		mainPane.cursorProperty().set(Cursor.WAIT);
-		browser.setDisable(true);
-		topVBox.setDisable(true);
+		useWaitCursor();
 		Task<Void> taskGenerateFiles = new Task<Void>() {
 			@Override
 			protected Void call() throws Exception {
@@ -996,9 +996,7 @@ public class RootLayoutController implements Initializable {
 		Thread threadGenerateFiles = new Thread(taskGenerateFiles);
 		threadGenerateFiles.start();
 		taskGenerateFiles.setOnSucceeded(event -> {
-			browser.setDisable(false);
-			topVBox.setDisable(false);
-			mainPane.cursorProperty().set(Cursor.DEFAULT);
+			useDefaultCursor();
 			progressBarGenerateFiles.setVisible(false);
 			if (!menuItemShowStatusBar.isSelected()) {
 				mainPane.setBottom(null);
@@ -1379,4 +1377,15 @@ public class RootLayoutController implements Initializable {
 		return false;
 	}
 
+	public void useDefaultCursor() {
+		browser.setDisable(false);
+		topVBox.setDisable(false);
+		mainPane.cursorProperty().set(Cursor.DEFAULT);
+	}
+
+	public void useWaitCursor() {
+		browser.setDisable(true);
+		topVBox.setDisable(true);
+		mainPane.cursorProperty().set(Cursor.WAIT);
+	}
 }

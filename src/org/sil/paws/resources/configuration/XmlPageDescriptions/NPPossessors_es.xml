@@ -130,7 +130,7 @@
 	   <introduction id="NPPossCooccurIntroduction" show="swNPArtAndOrDem">También necesitamos saber si los posesivos y los artículos o los demonstrativos pueden presentarse en la misma frase nominal.   En español y muchas otras lenguas, los posesivos y los artículos o los demonstrativos no se presentan en la misma frase nominal, a menos que expresen el posesivo en una frase preposicional. Por ejemplo,  <example>*esos [sus] libros</example> no es gramatical; por el contrario se dice <example>esos libros [de él]</example> para expresar el mismo pensamiento. Algunas lenguas permiten que los posesivos y los artículos o los demonstrativos se presentan en la misma frase, así que el primer ejemplo antedicho sea gramatical.</introduction>
 	   <br/>
 		<radioGroup id="NPPossCooccurTable" show="swNPArtAndOrDem">
-	      <groupName dataItem="possCooccur" default="yes"/>
+			<groupName dataItem="possCooccur" default="yes">RNPPossCooccurTable</groupName>
 			<prompt>¿Pueden presentarse los posesivos <span id="NPPronPossSpan" show="swNPPossYesOrYesOnly">pronominales y los que son frases nominales </span><span id="NPPronPossOnlySpan" show="swNPPossNPNo">pronominales </span>con <span id="NPArtOnlyCooccurSpan" show="swNPArtAndDemArt">los artículos</span>
 	         <span id="NPDemOnlyCooccurSpan" show="swNPArtAndDemDem">los demostrativos</span>
 	         <span id="NPArtAndDemCooccurSpan" show="swNPArtAndDemBoth">los artículos y demostrativos</span> en su lengua?</prompt>

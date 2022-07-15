@@ -132,7 +132,7 @@
 		<introduction id="NPPossCooccurIntroduction" show="swNPArtAndOrDem">Nous avons besoin aussi de savoir si les possesseurs et les articles ou démonstratifs peuvent se trouver ensemble dans le même syntagme nominal. En français, ces éléments ne trouvent pas ensemble. En anglais par contre, on les trouve ensemble dans les cas où le possesseur est exprimé  dans un syntagme prépositionnel. Par exemple nous ne pouvons pas dire  <example>*those [the boy’s] books (ces [du garçon] livres-là)</example>; au lieu de cela nous utilisons <example>those books [of his] (ces livres [sont à lui])</example> pour exprimer la même pensée. Certaines autres langues permettent aux possesseurs et aux articles ou démonstratifs de se trouver dans le même syntagme, le premier exemple ci-dessus serait donc grammatical.</introduction>
 <br/>
 		<radioGroup id="NPPossCooccurTable" show="swNPArtAndOrDem">
-			<groupName dataItem="possCooccur" default="yes"/>
+			<groupName dataItem="possCooccur" default="yes">RNPPossCooccurTable</groupName>
 			<prompt>Les <span id="NPPronPossSpan" show="swNPPossNPYesOrYesOnly">syntagmes nominaux et les pronoms </span><span id="NPPronPossOnlySpan" show="swNPPossNPNo">pronoms </span>possessifs peuvent-ils se trouver avec des <span id="NPArtOnlyCooccurSpan" show="swNPArtAndDemArt">articles</span>
 				<span id="NPDemOnlyCooccurSpan" show="swNPArtAndDemDem">démonstratifs</span>
 				<span id="NPArtAndDemCooccurSpan" show="swNPArtAndDemBoth">articles et démonstratifs</span> dans votre langue?</prompt>
