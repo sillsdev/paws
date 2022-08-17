@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="IPAux" count="9.3.2">
    <title level="2">Phrases simples – Composés verbaux</title>
