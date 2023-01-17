@@ -960,10 +960,13 @@ Refresh();
 	-->
 	<xsl:template match="//help">
 		<xsl:element name="a">
-			<xsl:attribute name="href">
+			<xsl:attribute name="onclick">
+				<xsl:text>pawsApp.launchFileAsIs('</xsl:text>
 				<xsl:value-of select="$prmInstallPath"/>
 				<xsl:value-of select="@href"/>
+				<xsl:text>')</xsl:text>
 			</xsl:attribute>
+			<xsl:attribute name="href"/>
 			<xsl:value-of select="."/>
 		</xsl:element>
 	</xsl:template>

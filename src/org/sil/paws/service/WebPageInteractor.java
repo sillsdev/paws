@@ -98,6 +98,10 @@ public class WebPageInteractor {
 		showFileToUser(sUrl.substring(0, i + 1) + sFile);
 	}
 
+	public void launchFileAsIs(String sFile) {
+		showFileToUser(sFile);
+	}
+
 	public void launchWebPage(String sSite) {
 		showFileToUser(sSite);
 	}
