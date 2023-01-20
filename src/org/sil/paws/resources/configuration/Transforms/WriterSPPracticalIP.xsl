@@ -78,42 +78,13 @@
 <xsl:text> son:</xsl:text>
 </p>
 		   <example num="xIP.IPCop.10">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/copularExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/copularExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/copularExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/copularExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/copularExample" />
 <xsl:with-param name="sExNumber">xIP.IPCop.10</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCop.10.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 		   <xsl:if test="normalize-space(//ip/@copular)='yes' or normalize-space(//ip/@copular)='optional'">
 <p>
@@ -507,42 +478,13 @@
 <xsl:text> son:</xsl:text>
 </p>
 		   <example num="xIP.IPCop.36">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/perceptionExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/perceptionExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/perceptionExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/perceptionExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/perceptionExample" />
 <xsl:with-param name="sExNumber">xIP.IPCop.36</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCop.36.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 		   
 		   <p>
@@ -794,42 +736,13 @@
 <xsl:text>Algunos ejemplos de oraciones  con un sustantivo de comparación entre dos entidades iguales son:</xsl:text>
 </p>
 		      <example num="xIP.IPCop.IPComparatives.22">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/sameExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/sameExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/sameExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/sameExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/sameExample" />
 <xsl:with-param name="sExNumber">xIP.IPCop.IPComparatives.22</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCop.IPComparatives.22.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 		      <p contentType="ctPracticalIntro">
 <xsl:text>El segundo tipo de oración comparativa entre iguales utiliza un adjetivo para la comparación. Esta construcción usa una fórmula que significa </xsl:text>
@@ -1007,42 +920,13 @@
 <xsl:text>Algunos ejemplos de oraciones con un adjetivo de comparación entre dos entidades iguales son:</xsl:text>
 </p>
 		      <example num="xIP.IPCop.IPComparatives.38">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/asExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/asExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/asExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/asExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/asExample" />
 <xsl:with-param name="sExNumber">xIP.IPCop.IPComparatives.38</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCop.IPComparatives.38.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>	     
 		      
 		      <p contentType="ctPracticalIntro">
@@ -1316,42 +1200,13 @@
 <xsl:text>Algunos ejemplos de las comparativas en que una entidad se considera mejor que la otra son:</xsl:text>
 </p>
 		      <example num="xIP.IPCop.IPComparatives.64">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/comparativeExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/comparativeExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/comparativeExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/comparativeExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/comparativeExample" />
 <xsl:with-param name="sExNumber">xIP.IPCop.IPComparatives.64</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCop.IPComparatives.64.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>	     
 
 		      <p contentType="ctComparativeIntro">
@@ -1441,42 +1296,13 @@
 <xsl:text>Algunos ejemplos de las construcciones comparativas más completas son:</xsl:text>
 </p>
 		      <example num="xIP.IPCop.IPComparatives.76">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/comparativeSentExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/comparativeSentExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/comparativeSentExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/comparativeSentExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/comparativeSentExample" />
 <xsl:with-param name="sExNumber">xIP.IPCop.IPComparatives.76</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCop.IPComparatives.76.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 		      
 		      <p contentType="ctComparativeIntro">
@@ -1687,42 +1513,13 @@
 <xsl:text>Algunos ejemplos de oraciones superlativas son:</xsl:text>
 </p>
 		      <example num="xIP.IPCop.IPComparatives.96">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/superlativeExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/superlativeExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/superlativeExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/superlativeExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/superlativeExample" />
 <xsl:with-param name="sExNumber">xIP.IPCop.IPComparatives.96</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCop.IPComparatives.96.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>		        
 		   </section3>
 		   
@@ -2110,42 +1907,13 @@
 <xsl:text>Algunos ejemplos de oraciones existenciales son:</xsl:text>
 </p>
 		      <example num="xIP.IPCop.IPExistentials.30">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/existExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/existExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/existExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/existExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/existExample" />
 <xsl:with-param name="sExNumber">xIP.IPCop.IPExistentials.30</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCop.IPExistentials.30.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 		      
 		   </section3> 
@@ -2190,80 +1958,22 @@
 <xsl:text> el sujeto es un pronombre.</xsl:text>
 </p>
 	      <example num="xIntranAgentNP">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/intExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/intExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/intExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/intExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/intExample" />
 <xsl:with-param name="sExNumber">xIntranAgentNP</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIntranAgentNP.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      <example num="xIntranAgentPron">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/pnIntExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/pnIntExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/pnIntExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/pnIntExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/pnIntExample" />
 <xsl:with-param name="sExNumber">xIntranAgentPron</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIntranAgentPron.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      <p>
 <xsl:text>Algunos ejemplos con un sujeto-experimentador se muestran en </xsl:text>
@@ -2277,80 +1987,22 @@
 <xsl:text> el sujeto es un pronombre.</xsl:text>
 </p>
 	      <example num="xIntranExperiencerNP">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/experiencerIntExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/experiencerIntExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/experiencerIntExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/experiencerIntExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/experiencerIntExample" />
 <xsl:with-param name="sExNumber">xIntranExperiencerNP</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIntranExperiencerNP.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      <example num="xIntranExperiencerPron">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/experiencerPnIntExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/experiencerPnIntExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/experiencerPnIntExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/experiencerPnIntExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/experiencerPnIntExample" />
 <xsl:with-param name="sExNumber">xIntranExperiencerPron</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIntranExperiencerPron.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 
 	      <p contentType="ctComparativeIntro">
@@ -2401,42 +2053,13 @@
 <xsl:text> son: </xsl:text>
 </p>
 	      <example num="xIP.IPMotion.26">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/motionExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/motionExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/motionExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/motionExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/motionExample" />
 <xsl:with-param name="sExNumber">xIP.IPMotion.26</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPMotion.26.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	   </section2>
 	   <section2 id="sIPTrans">
@@ -2486,80 +2109,22 @@
 </p>
 	      
 	      <example num="xTranAgentNP">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/example" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/example))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/example" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/example))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/example" />
 <xsl:with-param name="sExNumber">xTranAgentNP</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xTranAgentNP.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      <example num="xTranAgentPron">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/pnExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/pnExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/pnExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/pnExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/pnExample" />
 <xsl:with-param name="sExNumber">xTranAgentPron</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xTranAgentPron.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      <p>
 <xsl:text>Algunos ejemplos de oraciones transitivas con un sujeto-experimentador se muestran en </xsl:text>
@@ -2573,80 +2138,22 @@
 <xsl:text> el sujeto y el objeto directo son pronombres.</xsl:text>
 </p>
 	      <example num="xTranExperiencerNP">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/experiencerExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/experiencerExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/experiencerExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/experiencerExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/experiencerExample" />
 <xsl:with-param name="sExNumber">xTranExperiencerNP</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xTranExperiencerNP.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      <example num="xTranExperiencerPron">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/pnExperiencerExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/pnExperiencerExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/pnExperiencerExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/pnExperiencerExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/pnExperiencerExample" />
 <xsl:with-param name="sExNumber">xTranExperiencerPron</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xTranExperiencerPron.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      
 	      <p contentType="ctComparativeIntro">
@@ -2711,42 +2218,13 @@
 <xsl:text>  Algunos ejemplos de oraciones ditransitivas son:</xsl:text>
 </p>
 			<example num="xIP.IPTrans.24">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/diExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/diExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/diExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/diExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/diExample" />
 <xsl:with-param name="sExNumber">xIP.IPTrans.24</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPTrans.24.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 		</section2>
 
@@ -2772,42 +2250,13 @@
 <xsl:text>  Algunos ejemplos de las oraciones imperativas son:</xsl:text>
 </p>
 	      <example num="xIP.IPImp.6">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/impExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/impExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/impExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/impExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/impExample" />
 <xsl:with-param name="sExNumber">xIP.IPImp.6</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPImp.6.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      <p>
 <xsl:text>El </xsl:text>
@@ -2827,42 +2276,13 @@
 </p>
 	      <xsl:if test="normalize-space(//ip/@impPolite)='yes'">
 <example num="xIP.IPImp.10">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/impPoliteExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/impPoliteExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/impPoliteExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/impPoliteExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/impPoliteExample" />
 <xsl:with-param name="sExNumber">xIP.IPImp.10</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPImp.10.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
 	   </section2>
@@ -2940,42 +2360,13 @@
 <xsl:text> son:</xsl:text>
 </p>
 	      <example num="xIP.IPConditional.10">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/conditionalExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/conditionalExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/conditionalExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/conditionalExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/conditionalExample" />
 <xsl:with-param name="sExNumber">xIP.IPConditional.10</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPConditional.10.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      <xsl:if test="normalize-space(//ip/@conditionWord)='mood'">
 <p>
@@ -3435,42 +2826,13 @@
 <xsl:text> son:</xsl:text>
 </p>
 	      <example num="xIP.IPSubjunctive.12">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/subjunctiveExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/subjunctiveExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/subjunctiveExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/subjunctiveExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/subjunctiveExample" />
 <xsl:with-param name="sExNumber">xIP.IPSubjunctive.12</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPSubjunctive.12.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	      
 	      <xsl:if test="normalize-space(//ip/@subjunctiveCondWord)='mood'">
@@ -3886,42 +3248,13 @@
 </p>
 	      <xsl:if test="normalize-space(//ip/@passive)='yes'">
 <example num="xIP.IPPassive.10">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/passiveExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/passiveExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/passiveExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/passiveExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/passiveExample" />
 <xsl:with-param name="sExNumber">xIP.IPPassive.10</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPPassive.10.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
 	      <xsl:if test="normalize-space(//ip/@passive)='yes'">
@@ -4225,42 +3558,13 @@
 <xsl:text> son:</xsl:text>
 </p>
 	      <example num="xIP.IPAntipassives.18">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/antipassiveExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/antipassiveExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/antipassiveExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/antipassiveExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/antipassiveExample" />
 <xsl:with-param name="sExNumber">xIP.IPAntipassives.18</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPAntipassives.18.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 	   </section2>
 </xsl:if>
@@ -4562,42 +3866,13 @@
 <xsl:text>Algunos ejemplos de oraciones que muestran cambios en voz son:</xsl:text>
 </p>     
 	      <example num="xIP.IPVoice.14">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/voiceExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/voiceExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/voiceExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/voiceExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/voiceExample" />
 <xsl:with-param name="sExNumber">xIP.IPVoice.14</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPVoice.14.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>	      	   
 	   </section2>
 </xsl:if>
@@ -4743,42 +4018,13 @@
 </xsl:if>
 	      <xsl:if test="normalize-space(//ip/causativeAffix/@checked)='yes'">
 <example num="xIP.IPCausatives.16">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/causativeExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/causativeExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/causativeExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/causativeExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/causativeExample" />
 <xsl:with-param name="sExNumber">xIP.IPCausatives.16</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCausatives.16.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
 	      <xsl:if test="normalize-space(//ip/causativeMake/@checked)='yes'">
@@ -4788,42 +4034,13 @@
 </xsl:if>
 	      <xsl:if test="normalize-space(//ip/causativeMake/@checked)='yes'">
 <example num="xIP.IPCausatives.20">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/causativeMakeExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/causativeMakeExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/causativeMakeExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/causativeMakeExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/causativeMakeExample" />
 <xsl:with-param name="sExNumber">xIP.IPCausatives.20</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCausatives.20.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
 	      <xsl:if test="normalize-space(//ip/causativeOther/@checked)='yes'">
@@ -4842,42 +4059,13 @@
 </xsl:if>
 	      <xsl:if test="normalize-space(//ip/causativeOther/@checked)='yes'">
 <example num="xIP.IPCausatives.24">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/causativeOtherExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/causativeOtherExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/causativeOtherExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/causativeOtherExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/causativeOtherExample" />
 <xsl:with-param name="sExNumber">xIP.IPCausatives.24</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPCausatives.24.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
 	   </section2>
@@ -4975,42 +4163,13 @@
 <xsl:text> son:</xsl:text>
 </p>
 			<example num="xIP.IPApplcatives.16">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//ip/applicativeExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//ip/applicativeExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//ip/applicativeExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//ip/applicativeExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//ip/applicativeExample" />
 <xsl:with-param name="sExNumber">xIP.IPApplcatives.16</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xIP.IPApplcatives.16.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 		</section2>
 </xsl:if>

@@ -796,42 +796,13 @@
 <xsl:text>, como se muestra en los siguientes ejemplos:</xsl:text>
 </p>
         <example num="xTypology.6">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/example" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/example))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/example" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/example))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/example" />
 <xsl:with-param name="sExNumber">xTypology.6</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xTypology.6.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
        <xsl:if test="normalize-space(//typology/@wordOrder)='SVO' and normalize-space(//pp/@pPos)='before' or normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//pp/@pPos)='before' or normalize-space(//typology/@wordOrder)='VOS' and normalize-space(//pp/@pPos)='before' or normalize-space(//typology/@wordOrder)='SVO' and normalize-space(//pp/@pPos)='unknown' or normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//pp/@pPos)='unknown' or normalize-space(//typology/@wordOrder)='VOS' and normalize-space(//pp/@pPos)='unknown'">
 <p>
@@ -5117,42 +5088,13 @@
 </xsl:if>
       <xsl:if test="normalize-space(//typology/@classifier)='yesAgr'">
 <example num="xClassifiers.40">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/classifierAgrExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/classifierAgrExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/classifierAgrExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/classifierAgrExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/classifierAgrExample" />
 <xsl:with-param name="sExNumber">xClassifiers.40</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xClassifiers.40.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
       <xsl:if test="normalize-space(//typology/@classifier)='yesSpecific'">
@@ -5162,42 +5104,13 @@
 </xsl:if>
    	<xsl:if test="normalize-space(//typology/@classifier)='yesSpecific'">
 <example num="xClassifiers.44">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//typology/classifierSpecificExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//typology/classifierSpecificExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//typology/classifierSpecificExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//typology/classifierSpecificExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//typology/classifierSpecificExample" />
 <xsl:with-param name="sExNumber">xClassifiers.44</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xClassifiers.44.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
    </section1>

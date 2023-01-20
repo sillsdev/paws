@@ -319,42 +319,13 @@
 </xsl:if>          
      <xsl:if test="normalize-space(//adjp/@modifiers)='yes' and normalize-space(//adjp/modifiersDegree/@checked)='yes'">
 <example num="xAdjP.AdjQual.26">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//adjp/adjectiveDegreePhraseExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//adjp/adjectiveDegreePhraseExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//adjp/adjectiveDegreePhraseExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//adjp/adjectiveDegreePhraseExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//adjp/adjectiveDegreePhraseExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQual.26</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQual.26.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>            
      
@@ -415,42 +386,13 @@
 </xsl:if>          
      <xsl:if test="normalize-space(//adjp/@modifiers)='yes' and normalize-space(//adjp/modifiersManner/@checked)='yes'">
 <example num="xAdjP.AdjQual.30">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//adjp/adjectiveMannerPhraseExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//adjp/adjectiveMannerPhraseExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//adjp/adjectiveMannerPhraseExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//adjp/adjectiveMannerPhraseExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//adjp/adjectiveMannerPhraseExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQual.30</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQual.30.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>            
      
@@ -2008,42 +1950,13 @@
 <xsl:text>Voici quelques exemples de syntagmes nominaux qui contiennent de différents nombres cardinaux avec un nom:</xsl:text>
 </p>
                    <example num="xAdjP.AdjNumbers.QPNumbersCardinal.12">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/cardinalExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/cardinalExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/cardinalExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/cardinalExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/cardinalExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjNumbers.QPNumbersCardinal.12</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjNumbers.QPNumbersCardinal.12.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
                    <p contentType="ctPracticalIntro">
 <xsl:text>pratique Les nombres cardinaux plus grands peuvent être des composés qui peuvent être écrits comme mots indépendants.  Des exemples de nombres composés en </xsl:text>
@@ -2086,42 +1999,13 @@
 <xsl:text> incluent:</xsl:text>
 </p>
                    <example num="xAdjP.AdjNumbers.QPNumbersCardinal.18">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/cardinalCompoundExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/cardinalCompoundExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/cardinalCompoundExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/cardinalCompoundExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/cardinalCompoundExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjNumbers.QPNumbersCardinal.18</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjNumbers.QPNumbersCardinal.18.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
                     <p>
 <xsl:text>Comme vu ci-dessus, la position des unités et les conjonctions, si nécessaires, en </xsl:text>
@@ -2929,42 +2813,13 @@
 <xsl:text>Des exemples de nombres ordinaux modifiant un nom dans un syntagme nominal sont:</xsl:text>
 </p>
                    <example num="xAdjP.AdjNumbers.QPNumbersOrdinal.28">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/ordinalExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/ordinalExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/ordinalExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/ordinalExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/ordinalExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjNumbers.QPNumbersOrdinal.28</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjNumbers.QPNumbersOrdinal.28.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
                    
                    <xsl:if test="normalize-space(//qp/ordinalBefore/@checked)='yes' or normalize-space(//qp/ordinalAfter/@checked)='yes' or normalize-space(//qp/ordinalBoth/@checked)='yes' or normalize-space(//qp/ordinalNumOther/@checked)='yes'">
@@ -3018,42 +2873,13 @@
 </xsl:if>
                    <xsl:if test="normalize-space(//qp/ordinalBefore/@checked)='yes' or normalize-space(//qp/ordinalAfter/@checked)='yes' or normalize-space(//qp/ordinalBoth/@checked)='yes' or normalize-space(//qp/ordinalNumOther/@checked)='yes'">
 <example num="xAdjP.AdjNumbers.QPNumbersOrdinal.32">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/ordinalCardinalExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/ordinalCardinalExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/ordinalCardinalExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/ordinalCardinalExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/ordinalCardinalExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjNumbers.QPNumbersOrdinal.32</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjNumbers.QPNumbersOrdinal.32.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
                    <xsl:if test="normalize-space(//qp/ordinalBefore/@checked)='yes' or normalize-space(//qp/ordinalAfter/@checked)='yes' or normalize-space(//qp/ordinalBoth/@checked)='yes' or normalize-space(//qp/ordinalNumOther/@checked)='yes'">
@@ -3107,42 +2933,13 @@
 </p>
 </xsl:if>
                     <example num="xAdjP.AdjNumbers.QPNumbersOrdinal.38">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/nextlastNPExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/nextlastNPExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/nextlastNPExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/nextlastNPExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/nextlastNPExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjNumbers.QPNumbersOrdinal.38</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjNumbers.QPNumbersOrdinal.38.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
             </section3>
             
@@ -3503,42 +3300,13 @@
 </p>
 </xsl:if>                        
             <example num="xAdjP.AdjQP.QPAll.18">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/example" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/example))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/example" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/example))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/example" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPAll.18</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPAll.18.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>                 
             
             <xsl:if test="normalize-space(//qp/@npDegree)='no' or normalize-space(//qp/@npDegree)='some'">
@@ -3597,42 +3365,13 @@
 </xsl:if>
             <xsl:if test="normalize-space(//qp/@npDegree)='no' and normalize-space(//qp/npDegreeTypeProclitic/@checked)='yes' or normalize-space(//qp/@npDegree)='no' and normalize-space(//qp/npDegreeTypeEnclitic/@checked)='yes' or normalize-space(//qp/@npDegree)='some' and normalize-space(//qp/npDegreeTypeProclitic/@checked)='yes' or normalize-space(//qp/@npDegree)='some' and normalize-space(//qp/npDegreeTypeEnclitic/@checked)='yes'">
 <example num="xAdjP.AdjQP.QPAll.24">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/npDegreeCliticExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/npDegreeCliticExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/npDegreeCliticExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/npDegreeCliticExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/npDegreeCliticExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPAll.24</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPAll.24.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
             <xsl:if test="normalize-space(//qp/@npDegree)='no' and normalize-space(//qp/npDegreeTypePrefix/@checked)='yes' or normalize-space(//qp/@npDegree)='no' and normalize-space(//qp/npDegreeTypeSuffix/@checked)='yes' or normalize-space(//qp/@npDegree)='some' and normalize-space(//qp/npDegreeTypePrefix/@checked)='yes' or normalize-space(//qp/@npDegree)='some' and normalize-space(//qp/npDegreeTypeSuffix/@checked)='yes'">
@@ -3642,42 +3381,13 @@
 </xsl:if>
             <xsl:if test="normalize-space(//qp/@npDegree)='no' and normalize-space(//qp/npDegreeTypePrefix/@checked)='yes' or normalize-space(//qp/@npDegree)='no' and normalize-space(//qp/npDegreeTypeSuffix/@checked)='yes' or normalize-space(//qp/@npDegree)='some' and normalize-space(//qp/npDegreeTypePrefix/@checked)='yes' or normalize-space(//qp/@npDegree)='some' and normalize-space(//qp/npDegreeTypeSuffix/@checked)='yes'">
 <example num="xAdjP.AdjQP.QPAll.28">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/npDegreeAffixExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/npDegreeAffixExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/npDegreeAffixExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/npDegreeAffixExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/npDegreeAffixExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPAll.28</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPAll.28.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
             <xsl:if test="normalize-space(//qp/@npDegree)='no' and normalize-space(//qp/npDegreeTypeOther/@checked)='yes' or normalize-space(//qp/@npDegree)='some' and normalize-space(//qp/npDegreeTypeOther/@checked)='yes'">
@@ -3696,42 +3406,13 @@
 </xsl:if>
             <xsl:if test="normalize-space(//qp/@npDegree)='no' and normalize-space(//qp/npDegreeTypeOther/@checked)='yes' or normalize-space(//qp/@npDegree)='some' and normalize-space(//qp/npDegreeTypeOther/@checked)='yes'">
 <example num="xAdjP.AdjQP.QPAll.32">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/npDegreeOtherExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/npDegreeOtherExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/npDegreeOtherExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/npDegreeOtherExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/npDegreeOtherExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPAll.32</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPAll.32.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>     
          </section3>
@@ -4039,42 +3720,13 @@
 </xsl:if> 
                <xsl:if test="normalize-space(//qp/@determinerType)='yes' or normalize-space(//qp/@determinerType)='some'">
 <example num="xAdjP.AdjQP.QPDeterminers.16">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/determinerExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/determinerExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/determinerExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/determinerExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/determinerExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPDeterminers.16</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPDeterminers.16.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>   
                   <xsl:if test="normalize-space(//qp/@determinerType)='yes' or normalize-space(//qp/@determinerType)='some'">
@@ -4187,42 +3839,13 @@
 </xsl:if>
                <xsl:if test="normalize-space(//qp/@determinerType)='no' and normalize-space(//qp/determinerTypeProclitic/@checked)='yes' or normalize-space(//qp/@determinerType)='no' and normalize-space(//qp/determinerTypeEnclitic/@checked)='yes' or normalize-space(//qp/@determinerType)='some' and normalize-space(//qp/determinerTypeProclitic/@checked)='yes' or normalize-space(//qp/@determinerType)='some' and normalize-space(//qp/determinerTypeEnclitic/@checked)='yes'">
 <example num="xAdjP.AdjQP.QPDeterminers.24">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/determinerCliticExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/determinerCliticExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/determinerCliticExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/determinerCliticExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/determinerCliticExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPDeterminers.24</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPDeterminers.24.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
                <xsl:if test="normalize-space(//qp/@determinerType)='no' and normalize-space(//qp/determinerTypePrefix/@checked)='yes' or normalize-space(//qp/@determinerType)='no' and normalize-space(//qp/determinerTypeSuffix/@checked)='yes' or normalize-space(//qp/@determinerType)='some' and normalize-space(//qp/determinerTypePrefix/@checked)='yes' or normalize-space(//qp/@determinerType)='some' and normalize-space(//qp/determinerTypeSuffix/@checked)='yes'">
@@ -4232,42 +3855,13 @@
 </xsl:if>
                <xsl:if test="normalize-space(//qp/@determinerType)='no' and normalize-space(//qp/determinerTypePrefix/@checked)='yes' or normalize-space(//qp/@determinerType)='no' and normalize-space(//qp/determinerTypeSuffix/@checked)='yes' or normalize-space(//qp/@determinerType)='some' and normalize-space(//qp/determinerTypePrefix/@checked)='yes' or normalize-space(//qp/@determinerType)='some' and normalize-space(//qp/determinerTypeSuffix/@checked)='yes'">
 <example num="xAdjP.AdjQP.QPDeterminers.28">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/determinerAffixExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/determinerAffixExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/determinerAffixExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/determinerAffixExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/determinerAffixExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPDeterminers.28</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPDeterminers.28.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
                <xsl:if test="normalize-space(//qp/@determinerType)='no' and normalize-space(//qp/determinerTypeOther/@checked)='yes' or normalize-space(//qp/@determinerType)='some' and normalize-space(//qp/determinerTypeOther/@checked)='yes'">
@@ -4286,42 +3880,13 @@
 </xsl:if>
                <xsl:if test="normalize-space(//qp/@determinerType)='no' and normalize-space(//qp/determinerTypeOther/@checked)='yes' or normalize-space(//qp/@determinerType)='some' and normalize-space(//qp/determinerTypeOther/@checked)='yes'">
 <example num="xAdjP.AdjQP.QPDeterminers.32">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/determinerOtherExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/determinerOtherExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/determinerOtherExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/determinerOtherExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/determinerOtherExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPDeterminers.32</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPDeterminers.32.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>     
             </section3>
@@ -4801,42 +4366,13 @@
 </xsl:if>
                  <xsl:if test="normalize-space(//qp/@degree)='yes' or normalize-space(//qp/@degree)='some'">
 <example num="xAdjP.AdjQP.QPOtherQuantifiers.26">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/degreeExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/degreeExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/degreeExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/degreeExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/degreeExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPOtherQuantifiers.26</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPOtherQuantifiers.26.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
 
@@ -4957,42 +4493,13 @@
 </xsl:if>
               <xsl:if test="normalize-space(//qp/@degree)='attaches' or normalize-space(//qp/@degree)='some'">
 <example num="xAdjP.AdjQP.QPOtherQuantifiers.36">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/degreeAttachesNPExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/degreeAttachesNPExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/degreeAttachesNPExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/degreeAttachesNPExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/degreeAttachesNPExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPOtherQuantifiers.36</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPOtherQuantifiers.36.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>
               
@@ -5149,42 +4656,13 @@
 <xsl:text> sont:</xsl:text>
 </p>
            <example num="xAdjP.AdjQP.QPPartitive.14">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//qp/partitiveQExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//qp/partitiveQExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//qp/partitiveQExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//qp/partitiveQExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//qp/partitiveQExample" />
 <xsl:with-param name="sExNumber">xAdjP.AdjQP.QPPartitive.14</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdjP.AdjQP.QPPartitive.14.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
            <xsl:if test="normalize-space(//qp/@partitive)='no'">
 <p>

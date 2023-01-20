@@ -79,42 +79,13 @@
 <xsl:text> son: </xsl:text>
 </p>
                <example num="xQues.QuesYN.QuesYNMain.8">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//q/example" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//q/example))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//q/example" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//q/example))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//q/example" />
 <xsl:with-param name="sExNumber">xQues.QuesYN.QuesYNMain.8</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xQues.QuesYN.QuesYNMain.8.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
                <p>
 <xsl:text>De acuerdo con los ejemplos, </xsl:text>
@@ -431,42 +402,13 @@
 <xsl:text> son: </xsl:text>
 </p>
                <example num="xQues.QuesYN.QuesYNEmb.8">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//q/embYNExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//q/embYNExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//q/embYNExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//q/embYNExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//q/embYNExample" />
 <xsl:with-param name="sExNumber">xQues.QuesYN.QuesYNEmb.8</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xQues.QuesYN.QuesYNEmb.8.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
                <p>
 <xsl:text>De acuerdo con los ejemplos, </xsl:text>
@@ -1284,42 +1226,13 @@
 <xsl:text> son: </xsl:text>
 </p>
                <example num="xQues.QuesContent.QuesContentMain.8">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//q/contentExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//q/contentExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//q/contentExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//q/contentExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//q/contentExample" />
 <xsl:with-param name="sExNumber">xQues.QuesContent.QuesContentMain.8</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xQues.QuesContent.QuesContentMain.8.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
                
                 <p>
@@ -1754,42 +1667,13 @@
 <xsl:text> son: </xsl:text>
 </p>
                <example num="xQues.QuesContent.QuesContentEmb.8">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//q/embContentExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//q/embContentExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//q/embContentExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//q/embContentExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//q/embContentExample" />
 <xsl:with-param name="sExNumber">xQues.QuesContent.QuesContentEmb.8</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xQues.QuesContent.QuesContentEmb.8.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
                             
                <p>

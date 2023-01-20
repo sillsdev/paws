@@ -271,42 +271,13 @@
 </xsl:if>          
            <xsl:if test="normalize-space(//advp/@temporalDegree)='yes' and normalize-space(//advp/temporalDegreeWord/@checked)='yes'">
 <example num="xAdvP.AdvPTemporal.20">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//advp/temporalPhraseExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//advp/temporalPhraseExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//advp/temporalPhraseExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//advp/temporalPhraseExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//advp/temporalPhraseExample" />
 <xsl:with-param name="sExNumber">xAdvP.AdvPTemporal.20</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdvP.AdvPTemporal.20.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>            
            
@@ -675,42 +646,13 @@
 <xsl:text>Ces noms temporels peuvent être modifiés, eux aussi, comme dans ces syntagmes nominaux: </xsl:text>
 </p>
            <example num="xAdvP.AdvPTemporal.44">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//advp/temporalNounModifierExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//advp/temporalNounModifierExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//advp/temporalNounModifierExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//advp/temporalNounModifierExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//advp/temporalNounModifierExample" />
 <xsl:with-param name="sExNumber">xAdvP.AdvPTemporal.44</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdvP.AdvPTemporal.44.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
                      
               <p contentType="ctPracticalIntro">
@@ -1077,42 +1019,13 @@
 </xsl:if>          
           <xsl:if test="normalize-space(//advp/@locativeDegree)='yes' and normalize-space(//advp/locativeDegreeWord/@checked)='yes'">
 <example num="xAdvP.AdvPLocative.24">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//advp/locativePhraseExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//advp/locativePhraseExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//advp/locativePhraseExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//advp/locativePhraseExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//advp/locativePhraseExample" />
 <xsl:with-param name="sExNumber">xAdvP.AdvPLocative.24</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdvP.AdvPLocative.24.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>            
           
@@ -1863,42 +1776,13 @@
 </xsl:if>          
           <xsl:if test="normalize-space(//advp/@mannerType)='word' and normalize-space(//advp/@mannerDegree)='yes' and normalize-space(//advp/mannerWordDegreeWord/@checked)='yes' or normalize-space(//advp/@mannerType)='both' and normalize-space(//advp/@mannerDegree)='yes' and normalize-space(//advp/mannerWordDegreeWord/@checked)='yes'">
 <example num="xAdvP.AdvPManner.32">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//advp/mannerDegreePhraseExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//advp/mannerDegreePhraseExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//advp/mannerDegreePhraseExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//advp/mannerDegreePhraseExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//advp/mannerDegreePhraseExample" />
 <xsl:with-param name="sExNumber">xAdvP.AdvPManner.32</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdvP.AdvPManner.32.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
 </xsl:if>            
           
@@ -2758,42 +2642,13 @@
              </xsl:text>
 </p>
           <example num="xAdvP.AdvPReason.20">
-<xsl:variable name="sExampleValue">
-<xsl:value-of select="//advp/reasonSentExample" />
-</xsl:variable>
-<xsl:variable name="iExampleLength" select="string-length(normalize-space(//advp/reasonSentExample))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength != 0 and normalize-space($sExampleValue) != ''">
-<xsl:call-template name="OutputInterlinearExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="//advp/reasonSentExample" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="string-length(normalize-space(//advp/reasonSentExample))" />
-</xsl:with-param>
+<xsl:call-template name="OutputInterlinearEntries">
+<xsl:with-param name="sExamples" select="//advp/reasonSentExample" />
 <xsl:with-param name="sExNumber">xAdvP.AdvPReason.20</xsl:with-param>
 <xsl:with-param name="sLetterList">
 <xsl:value-of select="$sMasterLetterList" />
 </xsl:with-param>
 </xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<listInterlinear>
-<xsl:attribute name="letter">
-<xsl:text>xAdvP.AdvPReason.20.1</xsl:text>
-</xsl:attribute>
-<lineGroup>
-<line>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
-</line>
-<xsl:call-template name="DoWordGloss" />
-<xsl:call-template name="DoMorphemeGloss" />
-</lineGroup>
-<xsl:call-template name="DoFree" />
-</listInterlinear>
-</xsl:otherwise>
-</xsl:choose>
 </example>
           <p contentType="ctPracticalIntro">
 <xsl:text>Voir la section </xsl:text>
