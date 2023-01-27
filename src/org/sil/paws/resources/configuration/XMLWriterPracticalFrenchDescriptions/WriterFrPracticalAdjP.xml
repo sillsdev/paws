@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
     <section1 id="sAdjP">
        <secTitle>Adjectifs</secTitle>
         <p>
-           <content>Cette section considère les adjectifs qualitatifs, les nombres et autres quantificateurs, les articles et les démonstratifs. Les positions permises pour chacun de ces éléments dans le syntagme nominal seront traitées dans la section </content>
+           <content>Les adjectifs qualificatifs, les nombres et autres quantifieurs, les articles et les démonstratifs sont traités dans cette sections. Les positions admises pour chacun de ces éléments dans le syntagme nominal seront vues dans la section </content>
             <sectionRef sec="sNP"/>
             <content>.
 </content>
         </p>
   <section2 id="sAdjQual">
-     <secTitle>Adjectifs qualitatifs</secTitle>
+     <secTitle>Adjectifs qualificatifs</secTitle>
      <p contentType="ctPracticalIntro">
-        <content>Les adjectifs qualitatifs expriment la dimension, la couleur, l’âge, la texture, la forme ou la qualité.  Cette section traite des adjectifs qui modifient les noms, par contraste avec les adjectifs qui agissent comme prédicats, qui seront traités dans la section </content><sectionRef sec="sIPCop"/><content>.</content>
+        <content>Les adjectifs qualificatifs expriment la dimension, la couleur, l’âge, la texture, la forme ou la qualité.  Cette section traite des adjectifs qui modifient les noms, par contraste avec les adjectifs qui fonctionnent comme prédicats et qui seront traités dans la section </content><sectionRef sec="sIPCop"/><content>.</content>
      </p>
      <p contentType="ctComparativeIntro">
-        <content>Les adjectifs qualitatifs expriment la dimension, la couleur, l’âge, la texture, la forme ou la qualité.  Une caractéristique de ce type d’adjectif est qu’un nom peut être modifié par plusieurs et en général l’ordre des adjectifs peut changer (avec un léger changement de signification dû aux changements dans la portée de chaque adjectif).  Par exemple en anglais </content>
-        <langData>hard dull brass rods</langData><gloss><content> (des tiges ternes durs en cuivre jaune)</content></gloss>
+        <content>Les adjectifs qualificatifs expriment la dimension, la couleur, l’âge, la texture, la forme ou la qualité.  L’une caractéristique de ce type d'adjectif est que plus d’un adjectif peut modifier un nom et qu’en général l'ordre des adjectifs peut changer (avec un léger changement dans la signification dû aux modifications de la portée de chaque adjectif).  Par exemple en anglais </content>
+        <langData>hard dull brass rods</langData><gloss><content> (des barres dures en laiton mat)</content></gloss>
         <content> par contraste avec </content>
-        <langData>dull hard brass rods</langData>
+        <langData>dull hard brass rods</langData><gloss><content> (des barres en laiton mat dur)</content></gloss>
         <content> par contraste avec </content>
-        <langData>brass hard dull rods</langData>
+        <langData>brass hard dull rods</langData><gloss><content> (des barres mates en laiton dur)</content></gloss>
         <content>, et en français </content><langData>un grand livre intéressant vert</langData><content> par contraste avec </content><langData>un grand livre vert intéressant</langData><content>.</content>
      </p>
-     <p contentType="ctComparativeIntro"><content> Cette section traite des adjectifs qui modifient les noms, par contraste avec les adjectifs qui agissent comme prédicats.  Les constructions d’adjectifs prédicats seront traités dans la section </content><sectionRef sec="sIPCop"/><content>.</content></p>
+     <p contentType="ctComparativeIntro"><content> Cette section traite des adjectifs qui modifient les noms, par contraste avec les adjectifs qui fonctionnent comme prédicats.  Les constructions à prédicat adjectival seront traités dans la section </content><sectionRef sec="sIPCop"/><content>.</content></p>
      
-     <p show="swAdjPQualitativeClassifierYes"><content>Des exemples en </content><langName/><content> de racines d’adjectifs qualitatifs sont donnés dans le tableau suivant.
-        Chacun peut apparaître avec le classificateur approprié attaché.</content>
+     <p show="swAdjPQualitativeClassifierYes"><content>Des exemples de radicaux d’adjectifs qualificatifs en </content><langName/><content> sont donnés dans le tableau suivant.
+        Chacune peut apparaître avec le classificateur approprié.</content>
      </p>              
-     <p show="swAdjPQualitativeClassifierNo"><content>Des exemples en </content><langName/><content> d’adjectifs qualitatifs sont donnés dans le tableau suivant:</content>
+     <p show="swAdjPQualitativeClassifierNo"><content>Des exemples d’adjectifs qualificatifs en </content><langName/><content> sont donnés dans le tableau suivant.</content>
      </p>              
      <example>
         <table border="1">
            <headerRow>
-              <headerCol>Adjectifs qualitatifs</headerCol>
+              <headerCol>Adjectifs qualificatifs</headerCol>
               <headerCol>Glose</headerCol>
            </headerRow>
            <row>
               <col exampleLoc="adjp/example"/>
-              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
      </example>          
      <p contentType="ctComparativeIntro">
-        <content>Normalement les adjectifs qualitatifs eux-mêmes peuvent être modifiés. Des exemples en français sont :
+        <content>Normalement les adjectifs qualificatifs eux-mêmes peuvent être modifiés. Des exemples en français sont :
         </content>
         <langData>très grand</langData>
         <content>, </content>
@@ -54,12 +54,11 @@
         <langData>très bien construit</langData>
         <content> et </content>
         <langData>très facilement oublié</langData>
-        <content>.  Toutes les combinaisons de mots ne fonctionnent pas à cause de la sémantique et d’autres considérations, mais en général certains mots de degré et des adverbes de manière ou des syntagmes adverbiaux de manière peuvent modifier les adjectifs.  Certaines langues ont un affixe sur l’adjectif pour l’intensifier et d’autres langues redoublent l’adjectif.</content>
+        <content>.  Toutes les combinaisons de mots ne fonctionnent pas à cause de considérations sémantiques ou autres, mais en général certains mots de degré et des adverbes de manière ou des syntagmes adverbiaux de manière peuvent modifier les adjectifs.  Pour marquer l’intensification, certaines langues ont un affixe rattaché à l'adjectif et d'autres langues redoublent l'adjectif.</content>
      </p>
      <p show="swAdjPModifiersNo">
-        <content>En </content>
-        <langName/>
-        <content>, les adjectifs ne sont ni modifiés ni intensifiés.</content>
+        <content>Les adjectifs ne sont ni modifiés ni intensifiés en </content>
+        <langName/><content>.</content>
      </p>
      <p show="swAdjPModifiersYesDegree">
         <content>En </content>
@@ -67,16 +66,16 @@
         <content>, les adjectifs peuvent être modifiés par des mots de degré qui apparaissent </content>
         <text show="swAdjPDegreeBefore"><content>avant</content></text>
         <text show="swAdjPDegreeAfter"><content>après</content></text>
-        <text show="swAdjPDegreeBoth"><content>des deux côtés de</content></text>
+        <text show="swAdjPDegreeBoth"><content>de part et d’autre de</content></text>
         <text show="swAdjPDegreeEither"><content>d’un côté ou l’autre de</content></text>
-        <text show="swAdjPDegreeBeforeOrBoth"><content>avant ou des deux côtés de</content></text>
-        <text show="swAdjPDegreeAfterOrBoth"><content>après ou des deux côtes de</content></text>
-        <text show="swAdjPDegreeEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés de</content></text>
+        <text show="swAdjPDegreeBeforeOrBoth"><content>avant ou de part et d’autre de</content></text>
+        <text show="swAdjPDegreeAfterOrBoth"><content>après ou de part et d’autre de</content></text>
+        <text show="swAdjPDegreeEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre de</content></text>
         <text show="swAdjPDegreeNotOther"><content> l’adjectif.  </content></text>
         <text show="swAdjPDegreeOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="adjp/degreeOther"/><content>.  </content></text>
-        <text show="swAdjPDegreePosAndOther"><content> l’adjectif peut apparaître aussi ___</content><contentCheckBoxOther contentLoc="adjp/degreeOther"/><content>.  </content></text>
-        <text show="swAdjPModifiersYesDegreeAndClassifierYes"><content>Les racines des mots de degré qui peuvent modifier l’adjectif qualitatif en </content><langName/><content> sont montrées ici.  Chacun peut apparaître avec le classificateur approprié attaché.</content></text>
-        <text show="swAdjPModifiersYesDegreeAndClassifierNo"><content>Les mots de degré qui peuvent modifier les adjectifs qualitatifs en </content><langName/><content> sont montrés ici:</content></text></p>
+        <text show="swAdjPDegreePosAndOther"><content> l’adjectif et qui peut aussi apparaître ___</content><contentCheckBoxOther contentLoc="adjp/degreeOther"/><content>.  </content></text>
+        <text show="swAdjPModifiersYesDegreeAndClassifierYes"><content>Les radicaux des mots de degré qui peuvent modifier l’adjectif qualificatif en </content><langName/><content> sont présentées ici.  Chacun peut apparaître avec le classificateur approprié.</content></text>
+        <text show="swAdjPModifiersYesDegreeAndClassifierNo"><content>Les mots de degré qui peuvent modifier les adjectifs qualificatifs en </content><langName/><content> sont présentés ici :</content></text></p>
         <example show="swAdjPModifiersYesDegree">
         <table border="1">
            <headerRow>
@@ -85,11 +84,11 @@
            </headerRow>
            <row>
               <col exampleLoc="adjp/adjectiveDegreeExample"/>
-              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
      </example>     
-     <p show="swAdjPModifiersYesDegree"><content>Des exemples d’adjectifs qualitatifs avec des mots de degré qui les modifient sont:</content></p>          
+     <p show="swAdjPModifiersYesDegree"><content>Des exemples d’adjectifs qualificatifs avec des mots de degré qui les modifient sont :</content></p>          
      <example show="swAdjPModifiersYesDegree">
         <interlinear exampleLoc="adjp/adjectiveDegreePhraseExample"/>
      </example>            
@@ -99,25 +98,25 @@
       <text show="swAdjPModifiersNotDegree"><content>En </content><langName/><content>, les adjectifs peuvent être </content></text><content>modifiés par des adverbes de manière ou des syntagmes adverbiaux de manière qui apparaissent</content>
       <text show="swAdjPMannerBefore"><content>avant</content></text>
       <text show="swAdjPMannerAfter"><content>après</content></text>
-      <text show="swAdjPMannerBoth"><content>des deux côtés de</content></text>
+      <text show="swAdjPMannerBoth"><content>de part et d’autre de </content></text>
       <text show="swAdjPMannerEither"><content>d’un côté ou l’autre de</content></text>
-      <text show="swAdjPMannerBeforeOrBoth"><content>avant ou des deux côtés de</content></text>
-      <text show="swAdjPMannerAfterOrBoth"><content>après ou des deux côtes de</content></text>
-      <text show="swAdjPMannerEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés de</content></text>
+      <text show="swAdjPMannerBeforeOrBoth"><content>avant ou de part et d’autre de </content></text>
+      <text show="swAdjPMannerAfterOrBoth"><content>après ou de part et d’autre de </content></text>
+      <text show="swAdjPMannerEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre de </content></text>
       <text show="swAdjPMannerNotOther"><content> l’adjectif.  </content></text>
          <text show="swAdjPMannerOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="adjp/mannerOther"/><content>.  </content></text>
-      <text show="swAdjPMannerPosAndOther"><content> l’adjectif peut apparaître aussi ___</content><contentCheckBoxOther contentLoc="adjp/mannerOther"/><content>.  </content></text>
-      <content> Des exemples d’adjectifs qualitatifs avec des adverbes de manière qui les modifient sont:</content>
+      <text show="swAdjPMannerPosAndOther"><content> l’adjectif et qui peuvent aussi apparaître ___</content><contentCheckBoxOther contentLoc="adjp/mannerOther"/><content>.  </content></text>
+      <content> Voici quelques exemples d’adjectifs qualificatifs modifés par des adverbes de manière :</content>
    </p>          
      <example show="swAdjPModifiersYesManner">
         <interlinear exampleLoc="adjp/adjectiveMannerPhraseExample"/>
      </example>            
      
      <p show="swAdjPModifiersYesAttaches">
-        <text show="swAdjPModifiersYesDegreeOrManner"><content>Les adjectifs peuvent aussi avoir </content></text>
+        <text show="swAdjPModifiersYesDegreeOrManner"><content>LIl y a peuvent aussi avoir </content></text>
         <text show="swAdjPModifiersNotDegreeOrManner"><content>En </content>
-        <langName/><content>, il y a </content></text>
-        <content>des affixes ou clitiques qui s’attachent à l’adjectif qualitatif pour l’intensifier. Les affixes ou clitiques de degré qui peuvent modifier les adjectifs qualitatifs sont:</content></p>
+        <langName/><content>, </content></text>
+        <content>des affixes ou clitiques peuvent se rattacher à l'adjectif qualificatif pour l'intensifier. Les affixes ou clitiques de degré qui peuvent modifier les adjectifs qualificatifs sont :</content></p>
      <example show="swAdjPModifiersYesAttaches">
         <table border="1">
            <headerRow>
@@ -126,37 +125,37 @@
            </headerRow>
            <row>
               <col exampleLoc="adjp/adjectiveDegreeAffixExample"/>
-              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
      </example>
-     <p show="swAdjPModifiersYesAttaches"><content>Des exemples d’adjectifs qualitatifs avec un affixe ou un clitique de degré attaché sont:</content></p>
+     <p show="swAdjPModifiersYesAttaches"><content>Quelques exemples d’adjectifs qualificatifs avec un affixe ou un clitique de degré sont :</content></p>
      <example show="swAdjPModifiersYesAttaches">
         <table border="1">
            <headerRow>
-              <headerCol>Adjectifs qualitatifs modifiés</headerCol>
+              <headerCol>Adjectifs qualificatifs modifiés</headerCol>
               <headerCol>Glose</headerCol>
            </headerRow>
            <row>
               <col exampleLoc="adjp/adjectivePhraseAffixExample"/>
-              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
      </example>
      
      <p show="swAdjPModifiersYesRedup">
-        <text show="swAdjPModifiersYesDegreeOrMannerOrAttaches"><content>Les adjectifs peuvent aussi utiliser redoublement </content></text>
+        <text show="swAdjPModifiersYesDegreeOrMannerOrAttaches"><content>Les adjectifs peuvent aussi aussi être rédupliqués </content></text>
         <text show="swAdjPModifiersNotDegreeOrMannerOrAttaches"><content>En </content>
-           <langName/><content>, le redoublement est utilisé </content></text><content>pour intensifier la signification de l’adjectif qualitatif.  Des exemples d’adjectifs qualitatifs avec le redoublement qui les modifient ou intensifient sont:</content></p>
+           <langName/><content>, la réduplication est utilisée </content></text><content>pour intensifier la signification de l’adjectif qualificatif.  Voici quelques exemples d’adjectifs qualificatifs modifiés ou intensifiés par la réduplication :</content></p>
      <example show="swAdjPModifiersYesRedup">
         <table border="1">
            <headerRow>
-              <headerCol>Adjectifs qualitatifs redoublés</headerCol>
+              <headerCol>Adjectifs qualificatifs rédupliqués</headerCol>
               <headerCol>Glose</headerCol>
            </headerRow>
            <row>
               <col exampleLoc="adjp/adjectiveDegreeRedupExample"/>
-              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
      </example>
@@ -164,16 +163,16 @@
      <p show="swAdjPModifiersYesOther">
         <text show="swAdjPModifiersYesDegreeOrMannerOrAttachesOrRedup"><content>Les adjectifs peuvent aussi être </content></text>
         <text show="swAdjPModifiersOtherOnly"><content>En </content>
-           <langName/><content>, les adjectifs sont </content></text><content>modifiés ou intensifiés par ___</content><contentCheckBoxOther contentLoc="adjp/modifiersOther"/><content>.  Des exemples d’adjectifs qualitatifs qui sont modifiés ou intensifiés de cette façon sont:</content></p>
+           <langName/><content>, les adjectifs sont </content></text><content>modifiés ou intensifiés par ___</content><contentCheckBoxOther contentLoc="adjp/modifiersOther"/><content>.  Des exemples d’adjectifs qualificatifs qui sont modifiés ou intensifiés de cette façon sont :</content></p>
      <example show="swAdjPModifiersYesOther">
         <table border="1">
            <headerRow>
-              <headerCol>Adjectifs qualitatifs modifiés ou intensifiés</headerCol>
+              <headerCol>Adjectifs qualificatifs modifiés ou intensifiés</headerCol>
               <headerCol>Glose</headerCol>
            </headerRow>
            <row>
               <col exampleLoc="adjp/adjectiveDegreeOtherExample"/>
-              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
      </example>
@@ -182,24 +181,24 @@
             <section2 id="sAdjNumbers">
                 <secTitle>Nombres</secTitle>
                <p contentType="ctPracticalIntro">
-                  <content>Les nombres viennent sous deux formes: les nombres cardinaux pour compter et les nombres ordinaux qui montrent la position. </content>
+                  <content>Les nombres viennent ont deux formes : les nombres cardinaux pour compter et les nombres ordinaux qui indiquent le rang. </content>
                </p>
                <p contentType="ctComparativeIntro">
-                  <content>Les nombres viennent sous deux formes: les nombres cardinaux pour compter et les nombres ordinaux qui montrent la position.  Les nombres ne peuvent pas être modifiés par des mots de degré comme le peuvent les adjectifs qualitatifs bien qu’ils se trouvent habituellement dans la même position que les quantificateurs.  
-                     Les nombres cadinaux peuvent cependant être modifiés par des nombres ordinaux et par </content>
+                  <content>Les nombres viennent ont deux formes : les nombres cardinaux pour compter et les nombres ordinaux qui indiquent le rang.  Contrairement aux adjectifs qualificatifs et quantifieurs, les nombres ne peuvent pas être modifiés par des mots de degré, bien qu'ils se trouvent habituellement dans la même position que les quantifieurs.  
+                     Les nombres cadinaux peuvent cependant être modifiés par des nombres ordinaux ainsi que par </content>
                   <langData>suivant</langData>
                     <content> et </content>
                   <langData>dernier</langData>
                   <content>, comme par exemple </content>
-                  <langData>les premier vingt garçons</langData>
+                  <langData>les vingt premiers garçons</langData>
                     <content> ou
                     </content>
                   <langData>les cent années suivantes</langData>
-                  <content>.  Les nombres ordinaux et </content>
+                  <content>.  Les nombres ordinaux ainsi que </content>
                   <langData>suivant</langData>
                   <content> et </content>
                   <langData>dernier</langData>
-                  <content> peuvent aussi modifier des noms directement comme par exemple </content>
+                  <content> peuvent aussi modifier des noms directement, comme par exemple </content>
                   <langData>la troisième fille</langData>
                     <content> and </content>
                   <langData>le dernier garçon</langData>
@@ -209,10 +208,10 @@
                 <section3 id="sQPNumbersCardinal">
                    <secTitle>Nombres cardinaux</secTitle>
                    <p show="swQPNumberClassifierYes">
-                      <content>Les formes de base des nombres cardinaux sont données dans le tableau suivante. Chacune peut se trouver avec le classificateur approprié attaché.</content>
+                      <content>Les formes de base des nombres cardinaux sont données dans le tableau suivant. Chacune peut se trouver avec le classificateur approprié.</content>
                    </p>
                    <p show="swQPNumberClassifierNo">
-                      <content>Les formes de base des nombres cardinaux sont données dans le tableau suivante:</content>
+                      <content>Les formes de base des nombres cardinaux sont données dans le tableau suivant :</content>
                    </p>
                     <example>
                         <table border="1">
@@ -335,38 +334,38 @@
                         </table>
                     </example>
                    <p>
-                      <content>Voici quelques exemples de syntagmes nominaux qui contiennent de différents nombres cardinaux avec un nom:</content>
+                      <content>Voici quelques exemples de syntagmes nominaux qui contiennent différents nombres cardinaux accompagnés d’un nom :</content>
                    </p>
                    <example>
                       <interlinear exampleLoc="qp/cardinalExample"/>
                    </example>
                    <p contentType="ctPracticalIntro">
-                      <content>pratique Les nombres cardinaux plus grands peuvent être des composés qui peuvent être écrits comme mots indépendants.  Des exemples de nombres composés en </content>
+                      <content>Les nombres cardinaux plus grands peuvent être des mots composés, qui peuvent être écrits comme des mots indépendants.  Voice quelques exemples de nombres composés en </content>
                         <langName/>
-                        <content> incluent:</content>
+                        <content> :</content>
                     </p>
                    <p contentType="ctComparativeIntro">
-                      <content>Les nombres cardinaux plus grands peuvent être des composés qui peuvent être écrits comme mots indépendants, tells que </content>
-                      <langData>cent trente trois</langData>
+                      <content>Les nombres cardinaux plus grands peuvent être des mots composés qui peuvent être écrits comme des mots indépendants, tells que </content>
+                      <langData>cent trente-trois</langData>
                       <content>, </content>
                       <langData>quatre mille troise</langData>
                       <content> ou </content>
-                      <langData>six mille cent trente-et-un</langData>
+                      <langData>six mille cent trente-trois</langData>
                       <content>.  
-                         Des exemples de nombres composés en </content>
+                         Voice quelques exemples de nombres composés en </content>
                       <langName/>
-                      <content> incluent:</content>
+                      <content> :</content>
                    </p>
                    <example>
                         <interlinear exampleLoc="qp/cardinalCompoundExample"/>
                     </example>
                     <p>
-                       <content>Comme vu ci-dessus, la position des unités et les conjonctions, si nécessaires, en </content>
+                       <content>Comme les exemples ci-dessus le mettent en évidence, la position des unités et des conjonctions, le cas échéant, en </content>
                         <langName/>
-                       <content> sont sur la partie </content>
+                       <content> sont </content>
                         <case element="qp" attr="cardinalHead">
-                           <caseText value="initial">première ou initiale </caseText>
-                            <caseText value="final">finale </caseText>
+                           <caseText value="initial">à l’initiale ou dans la partie initiale </caseText>
+                            <caseText value="final">à la finale ou dans la partie finale </caseText>
                         </case>
                        <content>du nombre composé.
                         </content>
@@ -375,10 +374,10 @@
                 <section3 id="sQPNumbersOrdinal">
                    <secTitle>Nombres ordinaux</secTitle>
                    <p show="swQPNumberClassifierYes">
-                      <content>Les formes de base des dix premiers nombres ordinaux et les mots qui signifient </content><langData>suivant</langData><content> et </content><langData>dernier</langData><content> sont donnés dans le tableau suivante.  Chacune peut se trouver avec le classificateur approprié attaché.</content>
+                      <content>Les formes de base des dix premiers nombres ordinaux et les mots qui signifiant </content><langData>suivant</langData><content> et </content><langData>dernier</langData><content> sont donnés dans le tableau suivant.  Chacune peut se trouver avec le classificateur approprié.</content>
                    </p>
                    <p show="swQPNumberClassifierNo">
-                      <content>Les formes de base des dix premiers nombres ordinaux et les mots qui signifient </content><langData>suivant</langData><content> et </content><langData>dernier</langData><content> sont données dans le tableau suivante:</content>
+                      <content>Les formes de base des dix premiers nombres ordinaux et les mots qui signifiant </content><langData>suivant</langData><content> et </content><langData>dernier</langData><content> sont données dans le tableau suivant :</content>
                    </p>
                    
                     <example>
@@ -392,7 +391,7 @@
                               <col exampleLoc="qp/ordinalNumbers1"/>
                            </row>
                            <row>
-                              <col rowspan="1"><content>deuxième</content></col>
+                              <col rowspan="1"><content>deuxième, seconde</content></col>
                               <col exampleLoc="qp/ordinalNumbers2"/>
                            </row>
                            <row>
@@ -400,7 +399,7 @@
                               <col exampleLoc="qp/ordinalNumbers3"/>
                            </row>
                            <row>
-                              <col rowspan="1"><content>quartrième</content></col>
+                              <col rowspan="1"><content>quatrième</content></col>
                               <col exampleLoc="qp/ordinalNumbers4"/>
                            </row>
                            <row>
@@ -440,9 +439,9 @@
                    <p show="swQPOrdinalAffix">
                       <content>En </content>
                       <langName/>
-                      <content></content>
+                      <content>, </content>
                       <text show="swQPOrdinalAffixAnd"><content>certains </content></text>
-                      <text show="swQPOrdinalAffixOnly"><content>les </content></text><content>nombres ordinaux sont formés en ajoutant un affixe au nombre cardinal. L’affixe est:</content>
+                      <text show="swQPOrdinalAffixOnly"><content>les </content></text><content>nombres ordinaux sont formés en ajoutant un affixe au nombre cardinal. Voici les affixes :</content>
                    </p>
         <example show="swQPOrdinalAffix">
            <table border="1"> 
@@ -452,7 +451,7 @@
               </headerRow>
               <row>
                  <col exampleLoc="qp/ordinalAffixExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
            </example>           
@@ -460,21 +459,21 @@
                    <p show="swQPOrdinalWord">
                       <text show="swQPOrdinalNotAffix"><content>En </content>
                       <langName/>
-                      <content> les </content>
+                      <content>, </content>
                          <text show="swQPOrdinalWordAnd"><content>certains </content></text></text>
                       <text show="swQPOrdinalAffix"><content>Certains </content></text><content> nombres ordinaux sont formés en ajoutant un autre mot </content>
                       <text show="swQPOrdinalWordBefore"><content>avant le</content></text>
                       <text show="swQPOrdinalWordAfter"><content>après le</content></text>
-                      <text show="swQPOrdinalWordBoth"><content>des deux côtés du</content></text>
+                      <text show="swQPOrdinalWordBoth"><content>de part et d’autre du</content></text>
                       <text show="swQPOrdinalWordEither"><content>d’un côté ou l’autre du</content></text>
-                      <text show="swQPOrdinalWordBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-                      <text show="swQPOrdinalWordAfterOrBoth"><content>après ou des deux côtés du</content></text>
-                      <text show="swQPOrdinalWordEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+                      <text show="swQPOrdinalWordBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+                      <text show="swQPOrdinalWordAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+                      <text show="swQPOrdinalWordEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
                       <text show="swQPOrdinalWordNotOther"><content> nombre cardinal.  </content></text>
                       <text show="swQPOrdinalWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="qp/ordinalWordOther"/><content>.  </content></text>
-                      <text show="swQPOrdinalWordPosAndOther"><content> nombre cardinal et il peut aussi se trouver ___ </content><contentCheckBoxOther contentLoc="qp/ordinalWordOther"/><content>.  </content></text>
+                      <text show="swQPOrdinalWordPosAndOther"><content> le nombre cardinal et il peut aussi se trouver ___ </content><contentCheckBoxOther contentLoc="qp/ordinalWordOther"/><content>.  </content></text>
                       
-                      <content>Le mot ordinal est:</content>
+                      <content>Voici ce mot ordinal :</content>
                    </p>
                    <example show="swQPOrdinalWord">
                       <table border="1">
@@ -484,27 +483,27 @@
                          </headerRow>
                          <row>
                             <col exampleLoc="qp/ordinalWordExample"/>
-                            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                          </row>
                       </table>
                    </example>           
                    <p show="swQPOrdinalIndependentOnly">
                       <content>En </content>
                       <langName/>
-                      <content> tous les nombres ordinaux sont des mots distinct de nombres cardinaux.  </content>
+                      <content>, tous les nombres ordinaux sont des mots distinct de nombres cardinaux.  </content>
                    </p>
                    <p show="swQPOrdinalIndependentAndOtherOnly">
                       <content>En </content>
                       <langName/>
-                      <content> certains nombres ordinaux sont des mots distincts des nombres cardinaux et certains sont formés par ___ </content><contentCheckBoxOther contentLoc="qp/ordinalOther"/><content>.</content>
+                      <content>, certains nombres ordinaux sont des mots distincts des nombres cardinaux et certains sont formés par ___ </content><contentCheckBoxOther contentLoc="qp/ordinalOther"/><content>.</content>
                    </p>
                    <p show="swQPOrdinalIndependentAndAffixOrWord">
-                      <content>Cependant certains nombres ordinaux sont des mots distincts des nombres cardinaux.  </content>
+                      <content>Cependant, certains nombres ordinaux sont des mots distincts des nombres cardinaux.  </content>
                    </p>
                    <p show="swQPOrdinalIndependentAndAffixOrWordAndOther">
                       <content>Cependant, certains nombres ordinaux sont des mots distincts des nombres cardinaux et certains sont formés par ___ </content><contentCheckBoxOther contentLoc="qp/ordinalOther"/><content>.</content>
                    </p>
-                   <p><content>Des exemples de nombres ordinaux modifiant un nom dans un syntagme nominal sont:</content></p>
+                   <p><content>Voici quelques exemples de nombres ordinaux modifiant un nom dans un syntagme nominal sont :</content></p>
                    <example>
                       <interlinear exampleLoc="qp/ordinalExample"/>
                    </example>
@@ -513,23 +512,23 @@
                       <content>Lorsque des nombres ordinaux ou des mots signifiant </content><langData>suivant</langData><content> ou </content><langData>dermier</langData><content> modifient un nombre cardinal, ils se trouvent </content>
                       <text show="swQPOrdinalBefore"><content>avant le</content></text>
                       <text show="swQPOrdinalAfter"><content>après le</content></text>
-                      <text show="swQPOrdinalBoth"><content>des deux côtés du</content></text>
+                      <text show="swQPOrdinalBoth"><content>de part et d’autre du</content></text>
                       <text show="swQPOrdinalEither"><content>d’un côté ou l’autre du</content></text>
-                      <text show="swQPOrdinalBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-                      <text show="swQPOrdinalAfterOrBoth"><content>après ou des deux côtés du</content></text>
-                      <text show="swQPOrdinalEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
-                      <text show="swQPOrdinalNumNotOther"><content> nombre cardinal.  Voici des exemples de syntagmes nominaux avec des nombres ordinaux qui modifient un nombre cardinal et un nom:</content></text>
-                      <text show="swQPOrdinalNumOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="qp/ordinalNumOther"/><content>.   Voici des exemples de syntagmes nominaux avec des nombres ordinaux qui modifient un nombre cardinal et un nom:</content></text>
-                      <text show="swQPOrdinalPosAndNumOther"><content> nombre cardinal et peut aussi se trouver  ___</content><contentCheckBoxOther contentLoc="qp/ordinalNumOther"/><content>.   Voici des exemples de syntagmes nominaux avec des nombres ordinaux qui modifient un nombre cardinal et un nom:</content></text>
+                      <text show="swQPOrdinalBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+                      <text show="swQPOrdinalAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+                      <text show="swQPOrdinalEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
+                      <text show="swQPOrdinalNumNotOther"><content> nombre cardinal.  Voici quelques exemples de syntagmes nominaux avec des nombres ordinaux modifiant un nombre cardinal et un nom :</content></text>
+                      <text show="swQPOrdinalNumOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="qp/ordinalNumOther"/><content>.   Voici quelques exemples de syntagmes nominaux avec des nombres ordinaux modifiant un nombre cardinal et un nom :</content></text>
+                      <text show="swQPOrdinalPosAndNumOther"><content> le nombre cardinal et peut aussi se trouver  ___</content><contentCheckBoxOther contentLoc="qp/ordinalNumOther"/><content>.   Voici quelques exemples de syntagmes nominaux avec des nombres ordinaux modifiant un nombre cardinal et un nom :</content></text>
                    </p>
                    <example show="swQPOrdinalNumNotNowhere">
                       <interlinear exampleLoc="qp/ordinalCardinalExample"/>
                    </example>
                    <p show="swQPOrdinalNumNotNowhere">
-                      <content>Des exemples de modificateurs qui signifient </content><langData>suivant</langData><content> ou </content><langData>dermier</langData><content> qui modifient un nombre cardinal et un nom ou un nom seulement dans un syntagme nominal incluent:</content>
+                      <content>Voice quelques exemples de modificateurs signifiant </content><langData>suivant</langData><content> ou </content><langData>dermier</langData><content> modifiant un nombre cardinal et un nom ou un nom seulement dans un syntagme nominal :</content>
                    </p>
-                   <p show="swQPOrdinalNumNowhere"><content>Les nombres ordinaux ou les mots qui signifient </content><langData>suivant</langData><content> ou </content><langData>dermier</langData><content> ne modifient pas un nombre cardinal en </content><langName/><content>.  
-                      Des exemples de modificateurs qui signifient </content><langData>suivant</langData><content> ou </content><langData>dermier</langData><content> qui modifient un nom seulement dans un syntagme nominal incluent:</content></p>
+                   <p show="swQPOrdinalNumNowhere"><content>Les nombres ordinaux ou les mots signifiant </content><langData>suivant</langData><content> ou </content><langData>dermier</langData><content> ne modifient pas un nombre cardinal en </content><langName/><content>.  
+                      VOice quelques exemples de modificateurs signifiant </content><langData>suivant</langData><content> ou </content><langData>dermier</langData><content> qui modifient un nom seulement dans un syntagme nominal :</content></p>
                     <example>
                         <interlinear exampleLoc="qp/nextlastNPExample"/>
                     </example>
@@ -538,66 +537,64 @@
         </section2>
         
         <section2 id="sAdjQP">
-           <secTitle>Quantificateurs</secTitle>
+           <secTitle>Quantifieurs</secTitle>
            <p contentType="ctPracticalIntro">
-              <content>Des quantificateurs peuvent apparaître dans différents endroits dans le syntagme nominal basé sur leur portéel. Trois types de quantificateurs seront traités ici, suivis de constructions partitives.</content>
+              <content>Des quantifieurs peuvent apparaître dans différentes positions dans le syntagme nominal, en fonction de leur portée. Trois types de quantifieurs seront traités ici, suivis par les constructions partitives.</content>
            </p>
            <p contentType="ctComparativeIntro">
-              <content>Des quantificateurs peuvent apparaître dans différents endroits dans le syntagme nominal basé sur leur portéel.  La plupart des langues ont trois groupes de quantificateurs en plus des nombres: des quantificateurs  de large portée signifiant que </content>
+              <content>Des quantifieurs peuvent apparaître dans différentes positions dans le syntagme nominal, en fonction de leur portée.  La plupart des langues ont trois ensembles de quantifieurs, en plus des nombres : des quantifieurs à large portée, signifiant </content>
               <langData>tout</langData>
-              <content> modifiera le syntagme nominal en entier, des déterminatifs tels que </content>
+              <content>, et modifiant le syntagme nominal dans son ensemble, des déterminats de quantité tels que </content>
               <langData>quelques</langData>
-              <content>, </content> 
-              <langData>certains</langData>
               <content> ou </content>
               <langData>chaque</langData>
-              <content>, qui ne se trouvent pas avec d’autres modificateurs exceptés des adjectifs, et des quantificateurs comme de portée plus restreinte tels que </content>
-              <langData>beaucoup</langData>
-              <content>, </content> 
-              <langData>plusieurs</langData>
-              <content>, </content> 
+              <content>, qui ne se trouvent pas avec d’autres modificateurs à part les adjectifs, et des quantifieurs à portée plus restreinte tels que </content>
+              <langData>beaucoup de</langData>
+              <content>, </content>
+              <langData>plusiers</langData>
+              <content>, </content>
               <langData>nombreux</langData>
               <content> ou </content>
-              <langData>peu de</langData><content>.  Chaque type sera considéré l’un après l’autre et ensuite les constructions partitives seront traitées.
+              <langData>peu de</langData><content>.  Chaque type sera considéré séparément, puis les constructions partitives seront traitées.
              </content>
          </p>
          <section3 id="sQPAll">
-            <secTitle>Des quantificateurs qui modifient le syntagme nominal entier</secTitle>
+            <secTitle>Des quantifieurs modifiant le syntagme nominal dans son ensemble</secTitle>
             <p contentType="ctPracticalIntro">
-               <content>Les quantificateurs signifiant </content>
+               <content>Les quantifieurs signifiant </content>
                <langData>tout</langData>
-               <content> se trouvent habituellement en première (ou en dernière) position dans le syntagme nominal, dans une position distincte des autres quantificateurs mais au même endroit que certains mots de degré ou marqueurs de focus (voir la section </content>
+               <content> se trouvent habituellement en première (ou en dernière) position dans le syntagme nominal, dans une position distincte des autres quantifieurs, mais dans la même position que certains mots de degré ou marqueurs de focus (voir la section </content>
                <sectionRef sec="sFocus"/>
                <content>).</content>
             </p>
             <p contentType="ctComparativeIntro">
-               <content>Les quantificateurs qui signifient </content>
+               <content>Les quantifieurs signifiant </content>
                <langData>tout</langData>
-               <content> semblent être une catégorie à part.  Ils se trouvent en général en première (ou dernière) position dans un syntagme nominal, dans une position distincte des autres quantificateurs mais au même endroit que des mots de degré tels que </content>
-               <langData>seulement</langData><content> ou </content><langData>seuls</langData><content> et </content><langData>juste</langData>
-               <content>  (qui peuvent fonctionner comme des marqueurs de focus qu’on traitera dans section </content>
+               <content> semblent former une catégorie distincte.  Ils se trouvent en général en première (ou dernière) position dans un syntagme nominal, dans une position distincte des autres quantifieurs mais dans la même position que des mots de degré tels que </content>
+               <langData>seulement</langData><content> et </content><langData>juste</langData>
+               <content> (qui peuvent fonctionner comme des marqueurs de focus, voir la section </content>
                <sectionRef sec="sFocus"/>
                <content>) et les mots de degré comme </content>
                <langData>presque</langData>
-               <content> (qui peut se présenter avec </content>
+               <content> (qui peut apparaître avec </content>
                <langData>tout</langData>
-               <content>).   Des exemples en français sont:</content>
-               <langData>tous les sinq enfants</langData>
+               <content>).   Des exemples en français sont :</content>
+               <langData>tous les cinq enfants</langData>
                <content>, </content>
                <langData>seulement les trois enfants de Suzanne</langData>
                <content>, </content>
-               <langData>presque tous les jeunes enfants de Jean</langData>
+               <langData>presque tous les petits enfants de Jean</langData>
                <content> et </content>
-               <langData>seulement quelques enfants tristes</langData>
+               <langData>juste autant d’enfants</langData>
                <content>.</content>
             </p>
             <p show="swQPNPDegreeClassifierYes">
-               <content>Le tableau suivant montre la façon dont les quantificateurs de grande portée et les éléments de degré qui modifient le syntagme nominal entier sont exprimés en </content><langName/>
-               <content>.  Les formes montrées dans le tableau sont les racines; chacune peut apparaître avec les classificateurs appropriés attachés.</content>
+               <content>Le tableau suivant montre la façon dont les quantifieurs de grande portée et les éléments de degré qui modifient le syntagme nominal dans son ensemble sont exprimés en </content><langName/>
+               <content>.  Les formes présentées dans le tableau sont les radicaux ; chacune peut apparaître avec les classificateurs appropriés.</content>
             </p>
             <p show="swQPNPDegreeClassifierNo">
-               <content>Le tableau suivant montre la façon dont les quantificateurs de grande portée les éléments de degré qui modifient le syntagme nominal sont exprimée en </content><langName/>
-               <content>:</content>
+               <content>Le tableau suivant présente la façon dont les quantifieurs à large portée et les éléments de degré qui modifient le syntagme nominal dans son ensemble sont exprimée en </content><langName/>
+               <content> :</content>
             </p>
             <example>
                <table border="1">
@@ -620,7 +617,7 @@
                   <row>
                      <col exampleLoc="qp/only"/>
                      <col>
-                        <gloss><content>seulement, seuls, juste</content></gloss>
+                        <gloss><content>seulement, juste</content></gloss>
                      </col>
                   </row>
                </table>
@@ -628,23 +625,23 @@
             <p show="swQPNPDegreeYesOrSome">
                <content>En </content>
                <langName/>
-               <text show="swQPNPDegreeYes"><content> ils sont exprimés comme des mots indépendants qui modifient le syntagme nominal entier.  Ils se trouvent </content></text>
+               <text show="swQPNPDegreeYes"><content> ceux-ci sont exprimés comme des mots indépendants qui modifient le syntagme nominal dans son ensemble.  Ils sont attestés </content></text>
                <text show="swQPNPDegreeSome"><content> certains de ceux-ci sont exprimés comme des mots indépendants qui modifient le syntagme nominal entier.  Ils se trouvent </content></text>
                <text show="swQPNPDegreePosBefore"><content>avant le</content></text>
                <text show="swQPNPDegreePosAfter"><content>après le</content></text>
-               <text show="swQPNPDegreePosBoth"><content>des deux côtés du</content></text>
+               <text show="swQPNPDegreePosBoth"><content>de part et d’autre du</content></text>
                <text show="swQPNPDegreePosEither"><content>d’un côté ou l’autre du</content></text>
-               <text show="swQPNPDegreePosBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-               <text show="swQPNPDegreePosAfterOrBoth"><content>après ou des deux côtes du</content></text>
-               <text show="swQPNPDegreePosEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
-               <text show="swQPNPDegreePosNotOther"><content> reste de la syntagme nominal.  </content>
+               <text show="swQPNPDegreePosBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+               <text show="swQPNPDegreePosAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+               <text show="swQPNPDegreePosEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
+               <text show="swQPNPDegreePosNotOther"><content> reste du syntagme nominal.  </content>
                </text>
                <text show="swQPNPDegreePosOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="qp/npDegreePosOther"/><content>.  </content>
                </text>
-               <text show="swQPNPDegreePosAndOther"><content> reste de le syntagme nominal et peuvent aussi se trouver  ___</content><contentCheckBoxOther contentLoc="qp/npDegreePosOther"/><content>.  </content></text>
+               <text show="swQPNPDegreePosAndOther"><content> reste du syntagme nominal et peuvent également se trouver  ___</content><contentCheckBoxOther contentLoc="qp/npDegreePosOther"/><content>.  </content></text>
             </p>
             <p show="swQPNPDegreeYesOrSome">
-               <content>Des exemples de formes de mots indépendants inclus dans des syntagmes nominaux entiers sont:</content>
+               <content>Voici quelques exemples de formes de mots indépendants inclus dans des syntagmes nominaux complets :</content>
             </p>                        
             <example>
                <interlinear exampleLoc="qp/example"/>
@@ -653,33 +650,33 @@
             <p show="swQPNPDegreeNoOrSome">
                <text show="swQPNPDegreeNo"> <content>En </content>
                   <langName/>
-                  <content> ici ceux-ci ne sont pas exprimés comme mots indépendants qui modifient le syntagme nominal entire. Au lieu de cela, ils s’attachent tous</content></text>
-               <text show="swQPNPDegreeSome"><content>D’autres ne sont pas exprimés comme des mots indépendants qui modifient le syntagme nominal entier.  Au lieu de cela, ils s’attachent</content></text>
-               <text show="swQPNPDegreeTypeProclitic"><content> comme proclitique phrasal à l’avant de n’importe quel mot qui commence le syntagme nominal.</content></text>
-               <text show="swQPNPDegreeTypeEnclitic"><content> comme enclitique phrasal à la fin de n’importe quel mot qui termine le syntagme nominal.</content></text>
-               <text show="swQPNPDegreeTypeClitic"><content> comme clitique phrasal soit devant n’importe quel mot qui commence le syntagme nominal ou à la fin de n’importe quel mot qui finit le syntagme nominal.</content></text>
-               <text show="swQPNPDegreeTypePrefix"><content> comme préfixes au nom principal du syntagme nominal.</content></text>
-               <text show="swQPNPDegreeTypeSuffix"><content> comme suffixes au nom principal du syntagme nominal.</content></text>
-               <text show="swQPNPDegreeTypeAffix"><content> comme préfixes ou suffixes au nom principal du syntagme nominal.</content></text>
-               <text show="swQPNPDegreeTypeCliticAffix"><content> comme clitiques au début ou à la fin du syntagme nominal ou comme affixes au nom principal du syntagme nominal.</content></text>
+                  <content> ici ceux-ci ne sont pas exprimés comme des mots indépendants qui modifient le syntagme nominal dans son ensemble. Au lieu de cela, ils se rattachent tous</content></text>
+               <text show="swQPNPDegreeSome"><content>D’autres ne sont pas exprimés comme des mots indépendants qui modifient le syntagme nominal dans son ensemble.  Au lieu de cela, ils se rattachent</content></text>
+               <text show="swQPNPDegreeTypeProclitic"><content> comme des proclitiques suntagmatique au début dumot qui commence le syntagme nominal, quel qu’il soit.</content></text>
+               <text show="swQPNPDegreeTypeEnclitic"><content> comme enclitique de constituant à la fin deu mot qui termine le syntagme nominal, quel qu’il soit.</content></text>
+               <text show="swQPNPDegreeTypeClitic"><content> comme clitique de phrase, soit avant le premier mot du syntagme nominal, soit après le dernier mot du syntagme nominal, quels qu’ils soient.</content></text>
+               <text show="swQPNPDegreeTypePrefix"><content> comme préfixes rattachés au nom noyau du syntagme nominal.</content></text>
+               <text show="swQPNPDegreeTypeSuffix"><content> comme suffixes rattachés au nom noyau du syntagme nominal.</content></text>
+               <text show="swQPNPDegreeTypeAffix"><content> soit comme préfixes ou suffixes rattachés au nom noyau du syntagme nominal.</content></text>
+               <text show="swQPNPDegreeTypeCliticAffix"><content> comme clitiques rattachés soit au début ou à la fin du syntagme nominal ou comme affixes rattachés au nom noyau du syntagme nominal.</content></text>
                <text show="swQPNPDegreeTypeOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="qp/npDegreeTypeOther"/><content>.</content></text>
-               <text show="swQPNPDegreeTypeOtherAnd"><content>  Certains s’attachent aussi ___</content><contentCheckBoxOther contentLoc="qp/npDegreeTypeOther"/>  <content>.</content></text>              
+               <text show="swQPNPDegreeTypeOtherAnd"><content>  Certains se rattachent également ___</content><contentCheckBoxOther contentLoc="qp/npDegreeTypeOther"/>  <content>.</content></text>              
                <content></content>
             </p>   
             <p show="swQPNPDegreeNoOrSomeAndClitic">
-               <content>Voici des exemples de formes clitiques inclues dans des syntagmes nominaux:</content>
+               <content>Voici quelques exemples de formes clitiques inclues dans des syntagmes nominaux complets :</content>
             </p>
             <example show="swQPNPDegreeNoOrSomeAndClitic">
                <interlinear exampleLoc="qp/npDegreeCliticExample"/>
             </example>
             <p show="swQPNPDegreeNoOrSomeAndAffix">
-               <content>Voici des exemples de formes d’affixes inclues dans des syntagmes nominaux:</content>
+               <content>Voici des exemples de formes d’affixes inclues dans des syntagmes nominaux complets :</content>
             </p>
             <example show="swQPNPDegreeNoOrSomeAndAffix">
                <interlinear exampleLoc="qp/npDegreeAffixExample"/>
             </example>
             <p show="swQPNPDegreeNoOrSomeAndOther">
-               <content>Voici des exemples de formes qui s’attachent comme permises en </content><langName/><content> inclues dans des syntagmes nominaux entiers:</content>
+               <content>Voici des exemples de formes qui se rattachent comme cela est attesté en </content><langName/><content> inclues dans des syntagmes nominaux compets :</content>
             </p>
             <example show="swQPNPDegreeNoOrSomeAndOther">
                <interlinear exampleLoc="qp/npDegreeOtherExample"/>
@@ -687,9 +684,9 @@
          </section3>
            
             <section3 id="sQPDeterminers">
-               <secTitle>Les quantificateurs qui ne se trouvent pas avec les déterminatifs</secTitle>
+               <secTitle>Les quantifieurs qui ne se trouvent pas avec les déterminants</secTitle>
                <p contentType="ctPracticalIntro">
-                  <content>Le deuxième groupe comprend des quantificateurs comme </content>
+                  <content>La seconde série comprend des quantifieurs comme </content>
                   <langData>quelques</langData>
                   <content> ou </content>
                   <langData>certains</langData>
@@ -698,30 +695,30 @@
                   <content> qui normalement ne permettent pas d’autres déterminatifs comme des articles, des démonstratifs ou des possesseurs dans le syntagme nominal.</content>
                </p>
                <p contentType="ctComparativeIntro">
-                  <content>Le deuxième groupe comprend des quantificateurs comme </content>
+                  <content>Le seconde ensemble comprend des quantifieurs comme </content>
                   <langData>quelques</langData>
                   <content> ou </content>
                   <langData>certains</langData>
                   <content> ou </content>
                   <langData>chaque</langData>
-                  <content> qui normalement ne permettent pas d’autres démonstratifs comme des articles, des démonstratifs ou des possesseurs dans le syntagme nominal.  Certains exemples de syntagmes nominaux en français qui incluent ces quantificateurs sont:  </content>
+                  <content> qui normalement ne permettent pas d’autres démonstratifs comme des articles, des démonstratifs ou des possesseurs dans le syntagme nominal.  Certains exemples de syntagmes nominaux en français qui incluent ces quantifieurs sont:  </content>
                   <langData>quelques enfants tristes</langData>
                   <content> et </content>
                   <langData>presque chaque petite fille que je vois</langData>
                   <content>.  Des exemples non grammaticaux tels que </content>
                   <langData>* chaque le méchant garçon</langData><content>, ou, en anglais, </content>
                   <langData>* those some boys</langData><gloss><content> (ces quelques garçons)</content></gloss><content> et </content>
-                  <langData> * Sue’s some sad children</langData><gloss><content> (les quelques enfants tristes de Suzannes)</content></gloss><content> illustrent que ces  quantificateurs ne se trouvent pas avec des articles, démonstratifs ou possessifs.  Remarquez qu’un exemple comme </content><langData>some of the children</langData> <gloss><content> (quelques’uns des enfants)</content> </gloss><content> est grammatical en anglais, mais c’est le cas de </content><langData>some</langData><gloss><content>  « quelques »</content></gloss><content> à la tête de le syntagme nominal, avec un
+                  <langData> * Sue’s some sad children</langData><gloss><content> (les quelques enfants tristes de Suzannes)</content></gloss><content> illustrent que ces  quantifieurs ne se trouvent pas avec des articles, démonstratifs ou possessifs.  Remarquez qu’un exemple comme </content><langData>some of the children</langData> <gloss><content> (quelques’uns des enfants)</content> </gloss><content> est grammatical en anglais, mais c’est le cas de </content><langData>some</langData><gloss><content>  « quelques »</content></gloss><content> à la tête de le syntagme nominal, avec un
                      syntagme partitif </content><langData>of the children</langData><gloss><content>  « des enfants »</content></gloss><content> qui la modifient et qui sera traitée dans la section </content><sectionRef   sec="sQPPartitive"/>
                   <content>. </content>
                </p>
   
                <p show="swQPDeterminerClassifierYes">
-                  <content>Le tableau suivant montre la façon dont ces quantificateurs qui agissent comme déterminatif unique sont exprimés en </content><langName/>
+                  <content>Le tableau suivant montre la façon dont ces quantifieurs qui agissent comme déterminatif unique sont exprimés en </content><langName/>
                   <content>.  Les formes montrées dans le tableau sont les racines, chacune d’entre elles peut venir avec le classificateur approprié attaché.</content>
                </p>
                <p show="swQPDeterminerClassifierNo">
-                  <content>Le tableau suivant montre comment ces quantificateurs qui agissent comme déterminant unique sont exprimés en </content><langName/>
+                  <content>Le tableau suivant montre comment ces quantifieurs qui agissent comme déterminant unique sont exprimés en </content><langName/>
                   <content>:</content>
                </p>
                <example>
@@ -762,10 +759,10 @@
                </example>   
                   <p show="swQPDeterminerTypeYesOrSome">
                      <content>Comme les exemples le montrent, </content>
-                     <text show="swQPDeterminerYes"><content>ces quantificateurs ne se trouvent pas avec d’autres déteminants.  Ils se trouvent </content></text>
-                     <text show="swQPDeterminerSome"><content>certains de ces quantificateurs ne se trouvent pas avec d’autres déterminants mais d’autres peuvent se trouver soit comme les quantificateurs de grande portée discutés dans la section précédente soit comme les quantificateurs de portée plus réduite qui seront traités dans la prochaine section.  Ceux qui ne se trouvent pas avec d’autres déterminants se trouvent </content></text>
-                     <text show="swQPDeterminerNoAll"><content>ces quantificateurs peuvent se trouver avec d’autres déterminants; ils sont donc comme les quantificateurs de grande portée discutés dans la section précédente.  </content></text>
-                     <text show="swQPDeterminerNoQ"><content>ces quantificateurs peuvent se trouver avec d’autres déterminants; ils sont donc comme les quantificateurs de portée plus réduite qui seront traités dans la prochaine section.  </content></text>
+                     <text show="swQPDeterminerYes"><content>ces quantifieurs ne se trouvent pas avec d’autres déteminants.  Ils se trouvent </content></text>
+                     <text show="swQPDeterminerSome"><content>certains de ces quantifieurs ne se trouvent pas avec d’autres déterminants mais d’autres peuvent se trouver soit comme les quantifieurs de grande portée discutés dans la section précédente soit comme les quantifieurs de portée plus réduite qui seront traités dans la prochaine section.  Ceux qui ne se trouvent pas avec d’autres déterminants se trouvent </content></text>
+                     <text show="swQPDeterminerNoAll"><content>ces quantifieurs peuvent se trouver avec d’autres déterminants; ils sont donc comme les quantifieurs de grande portée discutés dans la section précédente.  </content></text>
+                     <text show="swQPDeterminerNoQ"><content>ces quantifieurs peuvent se trouver avec d’autres déterminants; ils sont donc comme les quantifieurs de portée plus réduite qui seront traités dans la prochaine section.  </content></text>
  <text show="swQPDeterminerYesOrSome">
     <text show="swQPDeterminerPosBefore"><content>avant le</content></text>
     <text show="swQPDeterminerPosAfter"><content>après le</content></text>
@@ -818,12 +815,12 @@
             </section3>
 
            <section3 id="sQPOtherQuantifiers">
-              <secTitle>Autres quantificateurs et mots de degré</secTitle>
+              <secTitle>Autres quantifieurs et mots de degré</secTitle>
               <p contentType="ctPracticalIntro">
-                 <content>D’autres quantificateurs se trouvent dans le syntagme nominal montrant leur portée plus réduite.   Ces quantificateurs peuvent être normalement modifiés par des mots de degré.</content>
+                 <content>D’autres quantifieurs se trouvent dans le syntagme nominal montrant leur portée plus réduite.   Ces quantifieurs peuvent être normalement modifiés par des mots de degré.</content>
               </p>
               <p contentType="ctComparativeIntro">
-                 <content>D’autres quantificateurs comme </content>
+                 <content>D’autres quantifieurs comme </content>
                     <langData>beaucoup</langData>
                     <content>, </content>
                     <langData>plusieurs</langData>
@@ -836,7 +833,7 @@
                  <langData>a few sad children  (peu d’enfants tristes)</langData><content> ou </content>
                  <langData>Sue’s many black dogs  (les nombreux chiens noirs de Suzanne)</langData>
                     <content>.
-                       De plus, ces quantificateurs peuvent normalement être modifiés par des mots de degré comme </content>
+                       De plus, ces quantifieurs peuvent normalement être modifiés par des mots de degré comme </content>
                  <langData>très</langData>
                     <content> et </content>
                     <langData>tant</langData>
@@ -859,18 +856,18 @@
                  <p show="swQPQuantifierClassifierYes">
                     <content>En </content>
                     <langName/>
-                    <content> on trouve les types de quantificateurs suivants. Les formes montreés dans le tableau sone les racines; chacune peut apparaître avec le classificateur approprié attaché.</content>
+                    <content> on trouve les types de quantifieurs suivants. Les formes montreés dans le tableau sone les racines; chacune peut apparaître avec le classificateur approprié attaché.</content>
                  </p>
                  <p show="swQPQuantifierClassifierNo">
                     <content>En </content>
                     <langName/>
-                    <content> on trouve les types de quantificateurs suivants:</content>
+                    <content> on trouve les types de quantifieurs suivants:</content>
                  </p>
                  
                  <example>
                     <table border="1">
                        <headerRow>
-                          <headerCol>Quantificateurs</headerCol>
+                          <headerCol>quantifieurs</headerCol>
                           <headerCol>Glose</headerCol>
                        </headerRow>
                        <row>
@@ -887,19 +884,19 @@
                        </row>
                        <row>
                           <col exampleLoc="qp/otherQ"/>
-                          <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                          <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                        </row>
                     </table>
                  </example>
                  <p show="swQPDegreeNo">
                     <content>En </content>
                     <langName/>
-                    <content> les quantificateurs ne sont pas modifiés ou intensifiés.</content>
+                    <content> les quantifieurs ne sont pas modifiés ou intensifiés.</content>
                  </p>
                  <p show="swQPDegreeYesOrSome">
                     <content>En </content>
                     <langName/>
-                    <content> il y a </content><text show="swQPDegreeSome"><content>certains </content></text><content>mots de degré qui peuvent modifier les quantificateurs.  Ces mots de degré se trouvent </content>
+                    <content> il y a </content><text show="swQPDegreeSome"><content>certains </content></text><content>mots de degré qui peuvent modifier les quantifieurs.  Ces mots de degré se trouvent </content>
                     <text show="swQPDegreeBefore"><content>avant le</content></text>
                     <text show="swQPDegreeAfter"><content>après le</content></text>
                     <text show="swQPDegreeBoth"><content>des deux côtés du</content></text>
@@ -913,11 +910,11 @@
                     </text>
                     <text show="swQPDegreeAndOther"><content> quantificateur peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="qp/degreeOther"/><content>.  </content></text>
                  </p>
-              <p show="swQPDegreeYesOrSomeAndClassifierYes"><content>Les raciness des mots de degré qui peuvent modifier les quantificateurs en </content>
+              <p show="swQPDegreeYesOrSomeAndClassifierYes"><content>Les raciness des mots de degré qui peuvent modifier les quantifieurs en </content>
                     <langName/>
                  <content> sont montrés ici. Chacun peut apparaître avec le classificateur approprié attaché.</content>
                  </p>
-              <p show="swQPDegreeYesOrSomeAndClassifierNo"><content>Les mots de degré qui peuvent modifier les quantificateurs en </content>
+              <p show="swQPDegreeYesOrSomeAndClassifierNo"><content>Les mots de degré qui peuvent modifier les quantifieurs en </content>
                     <langName/>
                     <content> sont:</content>
                  </p>
@@ -925,12 +922,12 @@
                  <example show="swQPDegreeYesOrSome">
                     <table border="1">
                        <headerRow>
-                          <headerCol>Mots de degré qui modifient des quantificateurs</headerCol>
+                          <headerCol>Mots de degré qui modifient des quantifieurs</headerCol>
                           <headerCol>Glose</headerCol>
                        </headerRow>
                        <row>
                           <col exampleLoc="qp/degreeWordExample"/>
-                          <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                          <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                        </row>
                     </table>
                  </example>
@@ -951,7 +948,7 @@
                  <text show="swQPDegreeTypeOtherAnd"><content>  Certains s’attachent aussi ___</content><contentCheckBoxOther contentLoc="qp/degreeTypeOther"/>  <content>.</content></text>              
                  <content></content>
               </p>   
-              <p show="swQPDegreeAttachesOrSome"><content>Les affixes de degré qui peuvent modifier les quantificateurs en </content>
+              <p show="swQPDegreeAttachesOrSome"><content>Les affixes de degré qui peuvent modifier les quantifieurs en </content>
                  <langName/>
                  <content> sont:</content>
               </p>
@@ -959,12 +956,12 @@
               <example show="swQPDegreeAttachesOrSome">
                  <table border="1">
                     <headerRow>
-                       <headerCol>Affixes de degré qui modifient des quantificateurs</headerCol>
+                       <headerCol>Affixes de degré qui modifient des quantifieurs</headerCol>
                        <headerCol>Glose</headerCol>
                     </headerRow>
                     <row>
                        <col exampleLoc="qp/degreeAttachesExample"/>
-                       <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                       <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                     </row>
                  </table>
               </example>
@@ -977,10 +974,10 @@
            
         <section3 id="sQPPartitive">
            <secTitle>Partitives</secTitle>
-           <p contentType="ctPracticalIntro"><content>Tous les quantificateurs y compris les nombres peuvent normalement se trouver dans des constructions partitives, qui sont utilisées pour signifier qu’on ne parle que d’une partie d’un groupe.  Les constructions partitives ont normalement un syntagme prépositionnel ou postpositionnel qui modifie le quantificateur, qui indique le groupe ou entité  discuté.  Il se peut que certaines langues utilisent une proposition relative pour exprimer le groupe au lieu d’un syntagme adpositionnel.
+           <p contentType="ctPracticalIntro"><content>Tous les quantifieurs y compris les nombres peuvent normalement se trouver dans des constructions partitives, qui sont utilisées pour signifier qu’on ne parle que d’une partie d’un groupe.  Les constructions partitives ont normalement un syntagme prépositionnel ou postpositionnel qui modifie le quantificateur, qui indique le groupe ou entité discuté.  Il se peut que certaines langues utilisent une proposition relative pour exprimer le groupe au lieu d’un syntagme adpositionnel.
               </content>
            </p>
-           <p contentType="ctComparativeIntro"><content>Tous les quantificateurs y compris les nombres peuvent normalement se trouver dans des constructions partitives, qui sont utilisées pour signifier qu’on ne parle que d’une partie d’un groupe.  Des exemples incluent: </content>
+           <p contentType="ctComparativeIntro"><content>Tous les quantifieurs y compris les nombres peuvent normalement se trouver dans des constructions partitives, qui sont utilisées pour signifier qu’on ne parle que d’une partie d’un groupe.  Des exemples incluent: </content>
               <langData>quelques-uns des enfants</langData><content>, </content>
               <langData>plusieurs des filles plus agées</langData><content>, </content>
               <langData>beaucoup de ces femmes</langData><content> et </content>
@@ -1028,7 +1025,7 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="qp/partitiveOf"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>
@@ -1040,7 +1037,7 @@
         </section3>
         </section2>
      <section2 id="sAdjArtDem">
-        <secTitle>Articles et démonstratifs</secTitle>
+        <secTitle>Articles et Démonstratifs</secTitle>
          <p contentType="ctComparativeIntro">
             <content>En français, les articles sont </content>
              <langData>un, une, des</langData>
@@ -1064,7 +1061,7 @@
              <case element="np" attr="artAndDem">
                 <caseText value="no"> il n’y a ni articles ni démonstratifs qui sont réalisés comme mots indépendants.</caseText>
                 <caseText value="article"> il n’y a que des articles qui sont réalisés comme mots indépendants, pas de démonstratifs.</caseText>
-                <caseText value="demonstrative"> il n’y a que les démonstratifs qui sont réalisés comme mote indépendants, pas d’articles.</caseText>
+                <caseText value="demonstrative"> il n’y a que les démonstratifs qui sont réalisés comme mots indépendants, pas d’articles.</caseText>
                 <caseText value="both"> il y a et des articles et des démonstratifs réalisés comme mots indépendants.</caseText>
              </case>
              <content/>
@@ -1076,7 +1073,7 @@
                     <caseText value="both">articles et démonstratifs</caseText>
                  </case>
                 <text show="swNPArtCaseNo">
-                   <content>ne </content>
+                   <content> ne </content>
                 </text>
                 <content> sont </content>
                  <text show="swNPArtCaseNo">
@@ -1097,7 +1094,7 @@
            <content>En </content><langName/><content>, </content>
            <case element="np" attr="artDefOnly">
               <caseText value="no"> les articles définis et indéfinis sont des mots évidents.</caseText>
-              <caseText value="yes"> seul l’article défini est évident; les noms indéfinis ne sont pas marqués.</caseText>
+              <caseText value="yes"> seul l’article défini est évident ; les noms indéfinis ne sont pas marqués.</caseText>
               <caseText value="indef"> seul l’article indéfini est evident; les noms définis ne sont pas marqués.</caseText>
            </case>
            <content>  De plus il y a </content>
@@ -1108,7 +1105,7 @@
         </p>
         
         <p show="swNPArtAndDemArtOrBothCaseNoOrNone">
-           <content>Les articles en </content><langName/><content> sont:</content>
+           <content>Les articles en </content><langName/><content> sont :</content>
         </p>
         <example show="swNPArtAndDemArtOrBothCaseNoOrNoneAndPlNo">
            <table border="1">
@@ -1120,12 +1117,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleIndefExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>		   
@@ -1141,25 +1138,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articlePlExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleIndefExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleIndefPlExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	
@@ -1175,12 +1172,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleIndefNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1196,25 +1193,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singular</content></col>
                  <col exampleLoc="np/articleNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articlePlNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singular</content></col>
                  <col exampleLoc="np/articleIndefNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleIndefPlNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1229,12 +1226,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleIndefAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1250,25 +1247,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articlePlAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleIndefAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleIndefPlAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1283,12 +1280,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleIndefGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1304,25 +1301,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articlePlGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleIndefGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleIndefPlGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1338,12 +1335,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleIndefErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1359,25 +1356,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articlePlErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleIndefErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleIndefPlErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1392,12 +1389,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleIndefAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1413,25 +1410,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articlePlAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleIndefAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleIndefPlAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1446,12 +1443,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleErgGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleErgIndefGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1467,25 +1464,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleErgGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleErgPlGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleErgIndefGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleErgIndefPlGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1501,12 +1498,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleSplitNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleSplitIndefNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1522,25 +1519,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitPlNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitIndefNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitIndefPlNomExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1555,12 +1552,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleSplitAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleSplitIndefAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1576,25 +1573,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitPlAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitIndefAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitIndefPlAccExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1609,12 +1606,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleSplitGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleSplitIndefGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1630,25 +1627,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitPlGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitIndefGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitIndefPlGenExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1664,12 +1661,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleSplitErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleSplitIndefErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1685,25 +1682,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitPlErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitIndefErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitIndefPlErgExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1718,12 +1715,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleSplitAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleSplitIndefAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1739,25 +1736,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitPlAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleSplitIndefAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleSplitIndefPlAbsExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      
@@ -1773,12 +1770,12 @@
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col exampleLoc="np/articleDatExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col exampleLoc="np/articleIndefDatExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      	      
@@ -1794,25 +1791,25 @@
                  <col><content>Défini</content></col>
                  <col><content>Singulier</content></col>
               <col exampleLoc="np/articleDatExample"/>
-              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotIndef">
                  <col><content>Défini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articlePlDatExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/articleIndefDatExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row show="swArtDefOnlyNotYes">
                  <col><content>Indéfini</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/articleIndefPlDatExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>	      	
@@ -2073,17 +2070,17 @@
               <row>
                  <col><content>Proximale</content></col>
                  <col exampleLoc="np/demProximalExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row>
                  <col><content>Médiale</content></col>
                  <col exampleLoc="np/demMedialExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row>
                  <col><content>Distale</content></col>
                  <col exampleLoc="np/demDistalExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>
@@ -2101,37 +2098,37 @@
                  <col><content>Proximale</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/demProximalExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row>
                  <col><content>Proximale</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/demProximalPlExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row>
                  <col><content>Médiale</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/demMedialExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row>
                  <col><content>Médiale</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/demMedialPlExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row>
                  <col><content>Distale</content></col>
                  <col><content>Singulier</content></col>
                  <col exampleLoc="np/demDistalExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
               <row>
                  <col><content>Distale</content></col>
                  <col><content>Pluriel</content></col>
                  <col exampleLoc="np/demDistalPlExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>
@@ -2147,17 +2144,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demProximalNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	               <row>
 	            <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demMedialNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demDistalNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2173,37 +2170,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demProximalNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demProximalPlNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demMedialNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demMedialPlNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demDistalNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demDistalPlExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2219,17 +2216,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demProximalAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demMedialAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demDistalAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2245,37 +2242,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demProximalAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demProximalPlAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demMedialAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demMedialPlAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demDistalAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demDistalPlAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2290,17 +2287,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demProximalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demMedialGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demDistalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2316,37 +2313,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demProximalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demProximalPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demMedialGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demMedialPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demDistalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demDistalPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2362,17 +2359,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demProximalErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demMedialErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demDistalErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2388,37 +2385,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demProximalErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demProximalPlErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demMedialErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demMedialPlErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demDistalErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demDistalPlErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2433,17 +2430,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demProximalAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demMedialAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demDistalAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      	      
@@ -2459,37 +2456,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demProximalAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demProximalPlAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demMedialAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demMedialPlAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demDistalAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demDistalPlAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      	      
@@ -2505,17 +2502,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demErgProximalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demErgMedialGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demErgDistalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      	      
@@ -2531,37 +2528,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demErgProximalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demErgProximalPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demErgMedialGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demErgMedialPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demErgDistalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demErgDistalPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      	       
@@ -2578,17 +2575,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demSplitProximalNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demSplitMedialNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demSplitDistalNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2604,37 +2601,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitProximalNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitProximalPlNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitMedialNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitMedialPlNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitDistalNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitDistalPlNomExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2649,17 +2646,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demSplitProximalAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demSplitMedialAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demSplitDistalAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	   
@@ -2675,37 +2672,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitProximalAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitProximalPlAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitMedialAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitMedialPlAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitDistalAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitDistalPlAccExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	   
@@ -2721,17 +2718,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demSplitProximalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demSplitMedialGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demSplitDistalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	   
@@ -2747,37 +2744,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitProximalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitProximalPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitMedialGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitMedialPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitDistalGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitDistalPlGenExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	   
@@ -2793,17 +2790,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demSplitProximalErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demSplitMedialErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demSplitDistalErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2819,37 +2816,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitProximalErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitProximalPlErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitMedialErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitMedialPlErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitDistalErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitDistalPlErgExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      
@@ -2864,17 +2861,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demSplitProximalAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demSplitMedialAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demSplitDistalAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      	      
@@ -2890,37 +2887,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitProximalAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitProximalPlAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitMedialAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitMedialPlAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demSplitDistalAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demSplitDistalPlAbsExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      	      
@@ -2936,17 +2933,17 @@
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col exampleLoc="np/demProximalDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col exampleLoc="np/demMedialDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col exampleLoc="np/demDistalDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      	      
@@ -2962,37 +2959,37 @@
 	               <col><content>Proximale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demProximalDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Proximale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demProximalPlDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demMedialDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Médiale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demMedialPlDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Singulier</content></col>
 	               <col exampleLoc="np/demDistalDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	            <row>
 	               <col><content>Distale</content></col>
 	               <col><content>Pluriel</content></col>
 	               <col exampleLoc="np/demDistalPlDatExample"/>
-	               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	            </row>
 	         </table>
 	      </example>	      	      

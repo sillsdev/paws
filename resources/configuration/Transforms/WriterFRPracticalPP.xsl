@@ -11,10 +11,10 @@
             </xsl:choose>
             </secTitle>
        <p contentType="ctComparativeIntro">
-<xsl:text>Cette section traite de la structure des syntagmes adpositionnels qui expriment généralement le lieu, l’accompagnement, le but, l’instrument, le receveur ou l’agent pour les langues qui n’ont pas de marque de cas sur les noms ou sur les syntagmes nominaux.  Normalement les langues avec marque de cas ont toujours des syntagmes adpositionnels de lieu et temps.</xsl:text>
+<xsl:text>Cette section traite de la structure des syntagmes adpositionnels qui expriment généralement le lieu, l’accompagnement, le but, l’instrument, le destinataire ou l’agent pour les langues qui n’ont pas de marque de cas sur les noms ou les syntagmes nominaux.  Normalement les langues avec des marques de cas ont toujours des syntagmes adpositionnels locatif et temporel.</xsl:text>
 </p>
        <p contentType="ctComparativeIntro">
-<xsl:text>Les prépositions precedent leurs complements, tandis que les postpositions les suivent.  En français il y a des prépositions comme montré ici dans </xsl:text>
+<xsl:text>Les prépositions précèdent leurs compléments, tandis que les postpositions les suivent.  Le français a des prépositions comme par exemple dans </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -24,11 +24,11 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>devant la porte</langData>
-<xsl:text>.  Les prépositions ou postpositions peuvent être des mots indépendants ou des clitiques qui se rattachent au bord du complément ou à sa tête.</xsl:text>
+<xsl:text>.  Les prépositions ou postpositions peuvent être des mots indépendants ou des clitiques qui se rattachent à la frontière du complément ou à sa tête.</xsl:text>
 </p>
        <xsl:if test="normalize-space(//np/@caseN)='no'">
 <p contentType="ctPracticalIntro">
-<xsl:text>Les syntagmes adpositionnels peuvent exprimer le lieu et le temps de même que des relations grammaticales de l’accompagnement, le but, l’instrument, le receveur, le possesseur ou l’agent puisque le cas n’est pas marqué sur le nom ou syntagme nominal en </xsl:text>
+<xsl:text>Les syntagmes adpositionnels peuvent exprimer le lieu et le temps de même que les relations grammaticales de l’accompagnement, du but, de l’instrument, du destinatiare, du possesseur ou de l’agent, puisque le cas n'est pas marqué sur le nom ou le syntagme nominal en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -42,7 +42,7 @@
 </xsl:if>
        <xsl:if test="normalize-space(//np/@caseN)='yes'">
 <p contentType="ctPracticalIntro">
-<xsl:text>Normalement les syntagmes adpositionnels expriment seulement le lieu et le temps puisque le cas est marqué sur le nom ou sur le syntagme nominal en </xsl:text>
+<xsl:text>Normalement, les syntagmes adpositionnels expriment seulement le lieu et le temps puisque le cas est marqué sur le nom ou sur le syntagme nominal en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -55,7 +55,7 @@
 </p>
 </xsl:if>
        <p>
-<xsl:text>Voici quelques exemples de syntagmes de lieu </xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes locatifs </xsl:text>
 <xsl:choose>
              <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
           <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
@@ -102,14 +102,14 @@
 <xsl:text></xsl:text>
 <xsl:choose>
                <xsl:when test="//pp/@pType='word'">Ce sont tous des mots indépendants.</xsl:when>
-               <xsl:when test="//pp/@pType='clitic'">Ce sont tous des clitiques attachés à un autre mot. </xsl:when>
-               <xsl:when test="//pp/@pType='both'">Certains sont écrits comme mots indépendants mais quelques-uns sont des clitiques attachés à un autre mot.  </xsl:when>
+               <xsl:when test="//pp/@pType='clitic'">Ce sont tous des clitiques rattachés à un autre mot. </xsl:when>
+               <xsl:when test="//pp/@pType='both'">Certains sont écrits comme des mots indépendants mais certains sont des clitiques rattachés à un autre mot.  </xsl:when>
             </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:if test="normalize-space(//pp/@pType)!='word'">
                <xsl:text>Les clitiques se rattachent </xsl:text>
                 <xsl:choose>
-                   <xsl:when test="//pp/@attaches='edge'">au bord</xsl:when>
+                   <xsl:when test="//pp/@attaches='edge'">à la frontière</xsl:when>
                    <xsl:when test="//pp/@attaches='head'">à la tête</xsl:when>
                 </xsl:choose>
                <xsl:text> du complément.  </xsl:text>
@@ -121,7 +121,7 @@
    <xsl:when test="//pp/@pPos='both'">Les prépositions et postpositions</xsl:when>
               <xsl:when test="//pp/@pPos='unknown'">Les adpositions</xsl:when>
 </xsl:choose>
-   <xsl:text> sont marquées avec des classificateurs en </xsl:text>
+   <xsl:text> sont marquées par des classificateurs en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -130,15 +130,15 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comme partie du système d’accord concordant.  Seules les racines sont montrées ici dans les tableaux mais les syntagmes montrent les formes entières marquées avec des classificateurs.</xsl:text> </xsl:if>
+<xsl:text> puisqu’elles s’intègrent dans le système d’accord.  Seules les racines sont montrées dans les tableaux mais les syntagmes illustrent les formes complètes marquées avec des classificateurs.</xsl:text> </xsl:if>
 </p>
        <xsl:if test="normalize-space(//pp/@pPos)='before'">
 <p>
-<xsl:text>Voici des exemples de prépositions </xsl:text>
+<xsl:text>Voici quelques exemples de prépositions </xsl:text>
 <xsl:if test="normalize-space(//pp/@bodyPart)='yes'">
-<xsl:text>régulières </xsl:text>
+<xsl:text>habituelles </xsl:text>
 </xsl:if>
-<xsl:text>utilisées dans des syntagmes de lieu:</xsl:text>
+<xsl:text>utilisées dans des syntagmes locatifs :</xsl:text>
 </p>
 </xsl:if>
         <xsl:if test="normalize-space(//pp/@pPos)='before'">
@@ -173,7 +173,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -185,12 +185,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -201,11 +201,11 @@
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='after'">
 <p>
-<xsl:text>Voici des exemples de postpositions </xsl:text>
+<xsl:text>Voici quelques exemples de postpositions </xsl:text>
 <xsl:if test="normalize-space(//pp/@bodyPart)='yes'">
-<xsl:text>régulières </xsl:text>
+<xsl:text>habituelles </xsl:text>
 </xsl:if>
-<xsl:text>utilisées dans des syntagmes de lieu:</xsl:text>
+<xsl:text>utilisées dans des syntagmes locatifs :</xsl:text>
 </p>
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='after'">
@@ -240,7 +240,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -252,12 +252,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -268,11 +268,11 @@
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='both' or normalize-space(//pp/@pPos)='unknown'">
 <p>
-<xsl:text>Voici des exemples de prépositions et postpositions </xsl:text>
+<xsl:text>Voici quelques exemples de prépositions et postpositions </xsl:text>
 <xsl:if test="normalize-space(//pp/@bodyPart)='yes'">
-<xsl:text>régulières </xsl:text>
+<xsl:text>habituelles </xsl:text>
 </xsl:if>
-<xsl:text>utilisées dans des syntagmes de lieu:</xsl:text>
+<xsl:text>utilisées dans des syntagmes locatifs :</xsl:text>
 </p>
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='both' or normalize-space(//pp/@pPos)='unknown'">
@@ -312,7 +312,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -327,12 +327,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -367,7 +367,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -382,12 +382,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -398,7 +398,7 @@
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='before' or normalize-space(//pp/@pPos)='both'">
 <p>
-<xsl:text>Voici des exemples de syntagmes prépositionnels utilisés dans des syntagmes de lieu:</xsl:text>
+<xsl:text>Voici quelquees exemples de syntagmes prépositionnels locatifs :</xsl:text>
 </p>
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='before' or normalize-space(//pp/@pPos)='both'">
@@ -414,7 +414,7 @@
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='after' or normalize-space(//pp/@pPos)='both'">
 <p>
-<xsl:text>Voici des exemples de syntagmes postpositionnels  utilisée dans des syntagmes de lieu:</xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes postpositionnels locatifs :</xsl:text>
 </p>
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='after' or normalize-space(//pp/@pPos)='both'">
@@ -430,7 +430,7 @@
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@bodyPart)='yes'">
 <p>
-<xsl:text>En </xsl:text>
+<xsl:text>Le </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -439,21 +439,21 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> utilise principalement des mots des parties du corps pour exprimer le lieu dans des syntagmes </xsl:text>
+<xsl:text> utilise principalement des mots des parties du corps pour exprimer le lieu dans les syntagmes </xsl:text>
 <xsl:choose>
           <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
           <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
           <xsl:when test="//pp/@pPos='both'">prépositionnels et postpositionnels</xsl:when>
-          <xsl:when test="//pp/@pPos='unknown'">adpositional</xsl:when>
+          <xsl:when test="//pp/@pPos='unknown'">adpositionels</xsl:when>
 </xsl:choose>
-<xsl:text>.  Voici des exemples des </xsl:text>
+<xsl:text>.  Voici quelques exemples des </xsl:text>
 <xsl:choose>
              <xsl:when test="//pp/@pPos='before'">prépositions</xsl:when>
              <xsl:when test="//pp/@pPos='after'">postpositions</xsl:when>
              <xsl:when test="//pp/@pPos='both'">prépositions et postpositions</xsl:when>
              <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>
 </xsl:choose>
-<xsl:text> des parties du corps:</xsl:text>
+<xsl:text> dérivées de parties du corps :</xsl:text>
 </p>
 </xsl:if>      
        <xsl:if test="normalize-space(//pp/@pPos)='before' and normalize-space(//pp/@bodyPart)='yes'">
@@ -489,13 +489,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -507,18 +507,18 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -560,13 +560,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -578,18 +578,18 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -636,13 +636,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -657,18 +657,18 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -703,13 +703,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -724,18 +724,18 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -746,7 +746,7 @@
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='before' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@bodyPart)='yes'">
 <p>
-<xsl:text>Voici des exemples de syntagmes prépositionnels de lieu qui utilisent des parties du corps:</xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes prépositionnels locatifs qui utilisent des parties du corps :</xsl:text>
 </p>
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='before' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@bodyPart)='yes'">
@@ -762,7 +762,7 @@
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='after' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@bodyPart)='yes'">
 <p>
-<xsl:text>Voici des exemples de syntagmes postpositionnels de lieu qui utilisent des parties du corps:</xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes postpositionnels locatifs qui utilisent des parties du corps :</xsl:text>
 </p>
 </xsl:if>
        <xsl:if test="normalize-space(//pp/@pPos)='after' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@bodyPart)='yes'">
@@ -785,7 +785,7 @@
           <xsl:when test="//pp/@pPos='both'">prépositions et postpositions</xsl:when>
           <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>
 </xsl:choose>
-<xsl:text> qui sont utilisées comme un type de marqueur du cas pour les relations grammaticales mineures sont montrées en </xsl:text>
+<xsl:text> qui sont utilisées comme un type de marqueur du cas pour les relations grammaticales mineures sont présentées en </xsl:text>
 <exampleRef num="xCaseP" equal="no" letterOnly="no" />
 <xsl:text>.</xsl:text>
 </p>
@@ -824,7 +824,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                   <xsl:text>génitif</xsl:text>
+                   <xsl:text>Génitif</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>possesseurs</xsl:text>
@@ -838,10 +838,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                   <xsl:text>génitif</xsl:text>
+                   <xsl:text>Génitif</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>possesseurs</xsl:text>
@@ -872,7 +872,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                   <xsl:text>datif</xsl:text>
+                   <xsl:text>Datif</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>objets indirects</xsl:text>
@@ -886,10 +886,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                   <xsl:text>datif</xsl:text>
+                   <xsl:text>Datif</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>objets indirects</xsl:text>
@@ -920,7 +920,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                   <xsl:text>ablatif</xsl:text>
+                   <xsl:text>Ablatif</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>source ou origine</xsl:text>
@@ -934,10 +934,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                   <xsl:text>ablatif</xsl:text>
+                   <xsl:text>Ablatif</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>source ou origine</xsl:text>
@@ -968,7 +968,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                   <xsl:text>instrumental</xsl:text>
+                   <xsl:text>Instrumental</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>instrument, moyen ou agent</xsl:text>
@@ -982,10 +982,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                   <xsl:text>instrumental</xsl:text>
+                   <xsl:text>Instrumental</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>instrument, moyen ou agent</xsl:text>
@@ -1016,7 +1016,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                   <xsl:text>vocatif</xsl:text>
+                   <xsl:text>Vocatif</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>adresse directe</xsl:text>
@@ -1030,10 +1030,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                   <xsl:text>vocatif</xsl:text>
+                   <xsl:text>Vocatif</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>adresse directe</xsl:text>
@@ -1064,7 +1064,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                   <xsl:text>oblique</xsl:text>
+                   <xsl:text>Oblique</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>relation grammaticale mineure générale</xsl:text>
@@ -1078,10 +1078,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                   <xsl:text>oblique</xsl:text>
+                   <xsl:text>Oblique</xsl:text>
                 </td>
 <td align="left">
                    <xsl:text>relation grammaticale mineure générale</xsl:text>
@@ -1094,28 +1094,28 @@
 </xsl:if>	      
        
                 <p>
-<xsl:text>Tous les exemples ci-dessus ont un nom, un nom  propre ou un syntagme nominal comme complément.  Des modificateurs possibles du syntagme </xsl:text>
+<xsl:text>Tous les exemples ci-dessus ont un nom, un nom propre ou un syntagme nominal comme complément.  Des modificateurs possibles du syntagme </xsl:text>
 <xsl:choose>
                       <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                       <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
                       <xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
                       <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
 </xsl:choose>
-<xsl:text> entire sont considérés ensuite. Puis des exemples d’autres types de compléments permis sont donnés dans la section </xsl:text>
+<xsl:text> entier sont considérés ensuite, puis des exemples d’autres types de compléments permis sont donnés dans la section </xsl:text>
 <sectionRef sec="sPPComps" />
 <xsl:text>.</xsl:text>
 </p>
         <section2 id="sPPModifiers">
            <secTitle>Modificateurs</secTitle>
             <p contentType="ctComparativeIntro">
-<xsl:text>Il y a normalement quelques mots de degré qui peuvent modifier un syntagme </xsl:text>
+<xsl:text>Il y a normalement quelques mots de degré qui peuvent modifier tout un syntagme </xsl:text>
 <xsl:choose>
                    <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                    <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
                    <xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
                    <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
                 </xsl:choose>
-<xsl:text> entier, tels que </xsl:text>
+<xsl:text>, tels </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -1129,13 +1129,13 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>juste après le  coin</langData>
+</xsl:attribute>juste au coin</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>tout au bout de la rue</langData>
-<xsl:text>. Certaines langues ont un groupe d’adverbes de lieu signifiant </xsl:text>
+<xsl:text>. Certaines langues ont un groupe d’adverbes locatifs signifiant </xsl:text>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>« juste ici »</xsl:text>
@@ -1147,27 +1147,27 @@
 </gloss>
 <xsl:text> qui peuvent modifier les syntagmes adpositionnels. Les ordinaux peuvent aussi modifier les syntagmes </xsl:text>
 <xsl:choose>
-                   <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
-                   <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
-                   <xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
-                   <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
+                   <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
+                   <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
+                   <xsl:when test="//pp/@pPos='both'">adpositionnels</xsl:when>
+                   <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
                 </xsl:choose>
 <xsl:text> comme dans </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>[le] suivant dans la queue</langData>
+</xsl:attribute>[le] suivant dans la file</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>[le] premier sorti de la porte</langData>
+</xsl:attribute>[le] premier de la porte</langData>
 <xsl:text>.  En plus, certains adverbes de manière peuvent modifier des syntagmes </xsl:text>
 <xsl:choose>
-                   <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
-                   <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
-                   <xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
-                   <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
+                   <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
+                   <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
+                   <xsl:when test="//pp/@pPos='both'">adpositionnels</xsl:when>
+                   <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
                 </xsl:choose>
 <xsl:text> comme dans </xsl:text>
 <langData>
@@ -1187,17 +1187,17 @@
 <xsl:text>.</xsl:text>
 </p>
            <p contentType="ctPracticalIntro">
-<xsl:text>Généralement, il y a certains mots de degré, ordinaux et adverbes de manière qui peuvent modifier un syntagme </xsl:text>
+<xsl:text>Généralement, il y a certains mots de degré, des ordinaux et des adverbes de manière qui peuvent modifier tout un syntagme </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
               </xsl:choose>
-<xsl:text> entier.</xsl:text>
+<xsl:text>.</xsl:text>
 </p>
             <p>
-<xsl:text>En </xsl:text>
+<xsl:text>Le </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1208,21 +1208,21 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-                   <xsl:when test="//pp/@modifiers='no'"> il n’y a pas de modificateurs qui se trouvent soit avant soit après le syntagme entier.</xsl:when>
-                   <xsl:when test="//pp/@modifiers='yes'"> un syntagme <xsl:choose>
+                   <xsl:when test="//pp/@modifiers='no'"> n’a pas de modificateurs qui se trouvent soit avant soit après le syntagme</xsl:when>
+                   <xsl:when test="//pp/@modifiers='yes'"> admet que les catégories suivantes de mots indépendants modifient le syntagme <xsl:choose>
                       <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                       <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
                       <xsl:when test="//pp/@pPos='both'">prépositionnel ou postpositionnel</xsl:when>
                       <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
-                   </xsl:choose> entier peuvent être modifiés par les catégories suivants de mots indépendants.</xsl:when>
+                   </xsl:choose> dans son ensemble.</xsl:when>
                 </xsl:choose>
 <xsl:if test="normalize-space(//pp/@modifiers)='no'">
 <xsl:text>  Ni les mots de degré ni les ordinaux ni les adverbes ne peuvent modifier les syntagmes </xsl:text>
                     <xsl:choose>
-                       <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
-                       <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
-                       <xsl:when test="//pp/@pPos='both'">prépositionnel ou postpositionnel</xsl:when>
-                       <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
+                       <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
+                       <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
+                       <xsl:when test="//pp/@pPos='both'">prépositionnels ou postpositionnels</xsl:when>
+                       <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
                     </xsl:choose>
                   <xsl:text> comme mots indépendants.</xsl:text> </xsl:if>
 <xsl:text></xsl:text>
@@ -1245,22 +1245,22 @@
 <xsl:text>après le</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppDegreePosBefore/@checked)='no' and normalize-space(//pp/ppDegreePosAfter/@checked)='no' and normalize-space(//pp/ppDegreePosBoth/@checked)='yes'">
-<xsl:text>des deux côtés du</xsl:text>
+<xsl:text>de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppDegreePosBefore/@checked)='yes' and normalize-space(//pp/ppDegreePosAfter/@checked)='yes' and normalize-space(//pp/ppDegreePosBoth/@checked)='no'">
 <xsl:text>d’un côté ou l’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppDegreePosBefore/@checked)='yes' and normalize-space(//pp/ppDegreePosAfter/@checked)='no' and normalize-space(//pp/ppDegreePosBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés du</xsl:text>
+<xsl:text>avant ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppDegreePosBefore/@checked)='no' and normalize-space(//pp/ppDegreePosAfter/@checked)='yes' and normalize-space(//pp/ppDegreePosBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés du</xsl:text>
+<xsl:text>après ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppDegreePosBefore/@checked)='yes' and normalize-space(//pp/ppDegreePosAfter/@checked)='yes' and normalize-space(//pp/ppDegreePosBoth/@checked)='yes'">
-<xsl:text>d’un côté ou l’autre ou des deux côtés du</xsl:text>
+<xsl:text>d’un côté ou l’autre ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppDegreePosOther/@checked)='no'">
-<xsl:text> syntagme entier.  </xsl:text>
+<xsl:text> syntagme dans son ensemble.  </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppDegreePosBefore/@checked)='no' and normalize-space(//pp/ppDegreePosAfter/@checked)='no' and normalize-space(//pp/ppDegreePosBoth/@checked)='no' and normalize-space(//pp/ppDegreePosOther/@checked)='yes'">
 <xsl:text>___</xsl:text>
@@ -1268,18 +1268,18 @@
 <xsl:text>.  </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppDegreePosBefore/@checked)='yes' and normalize-space(//pp/ppDegreePosOther/@checked)='yes' or normalize-space(//pp/ppDegreePosAfter/@checked)='yes' and normalize-space(//pp/ppDegreePosOther/@checked)='yes' or normalize-space(//pp/ppDegreePosBoth/@checked)='yes' and normalize-space(//pp/ppDegreePosOther/@checked)='yes'">
-<xsl:text> syntagme entier et peut se trouver aussi ___</xsl:text>
+<xsl:text> syntagme dans son enseemble et peuvent aussi se trouver ___</xsl:text>
 <xsl:value-of select="//pp/ppDegreePosOther" />
 <xsl:text>.  </xsl:text>
 </xsl:if>
-<xsl:text>Les mots de degré qui peuvent modifier le syntagme </xsl:text>
+<xsl:text>Voici les mots de degré qui peuvent modifier l’ensemble du syntagme </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='both'">prépositionnel ou postpositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
               </xsl:choose>
-<xsl:text> entier en </xsl:text>
+<xsl:text> en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1288,7 +1288,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> sont:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 </xsl:if>
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierDegree/@checked)='yes'">
@@ -1323,7 +1323,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1335,12 +1335,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1351,14 +1351,14 @@
 </xsl:if>     
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierDegree/@checked)='yes'">
 <p>
-<xsl:text>Voici des exemples de syntagmes </xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='both'">prépositionnels ou postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
               </xsl:choose>
-<xsl:text> avec des mots de degré qui les modifient:</xsl:text>
+<xsl:text> avec des mots de degré qui les modifient :</xsl:text>
 </p>
 </xsl:if>          
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierDegree/@checked)='yes'">
@@ -1428,7 +1428,7 @@
                  <xsl:when test="//pp/@pPos='both'">prépositionnel ou postpositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
               </xsl:choose>
-<xsl:text> entier en </xsl:text>
+<xsl:text> dans son ensemble en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1437,7 +1437,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> sont:</xsl:text>
+<xsl:text> sont :</xsl:text>
 </p>
 </xsl:if>
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierOrdinal/@checked)='yes'">
@@ -1472,7 +1472,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1484,12 +1484,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1500,14 +1500,14 @@
 </xsl:if>     
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierOrdinal/@checked)='yes'">
 <p>
-<xsl:text>Voici des exemples de syntagmes </xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='both'">prépositionnels ou postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
               </xsl:choose>
-<xsl:text> avec des mots ordinaux qui les modifient:</xsl:text>
+<xsl:text> avec des mots ordinaux qui les modifient :</xsl:text>
 </p>
 </xsl:if>          
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierOrdinal/@checked)='yes'">
@@ -1535,7 +1535,7 @@
 <xsl:if test="normalize-space(//pp/ppModifierDegree/@checked)='yes' or normalize-space(//pp/ppModifierOrdinal/@checked)='yes'">
 <xsl:text>aussi </xsl:text>
 </xsl:if>
-<xsl:text>par des adverbs de manière qui se trouvent </xsl:text>
+<xsl:text>par des adverbes de manière qui se trouvent </xsl:text>
 <xsl:if test="normalize-space(//pp/ppMannerPosBefore/@checked)='yes' and normalize-space(//pp/ppMannerPosAfter/@checked)='no' and normalize-space(//pp/ppMannerPosBoth/@checked)='no'">
 <xsl:text>avant le</xsl:text>
 </xsl:if>
@@ -1543,19 +1543,19 @@
 <xsl:text>après le</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppMannerPosBefore/@checked)='no' and normalize-space(//pp/ppMannerPosAfter/@checked)='no' and normalize-space(//pp/ppMannerPosBoth/@checked)='yes'">
-<xsl:text>des deux côtés du</xsl:text>
+<xsl:text>de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppMannerPosBefore/@checked)='yes' and normalize-space(//pp/ppMannerPosAfter/@checked)='yes' and normalize-space(//pp/ppMannerPosBoth/@checked)='no'">
 <xsl:text>d’un côté ou l’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppMannerPosBefore/@checked)='yes' and normalize-space(//pp/ppMannerPosAfter/@checked)='no' and normalize-space(//pp/ppMannerPosBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés du</xsl:text>
+<xsl:text>avant ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppMannerPosBefore/@checked)='no' and normalize-space(//pp/ppMannerPosAfter/@checked)='yes' and normalize-space(//pp/ppMannerPosBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés du</xsl:text>
+<xsl:text>après ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppMannerPosBefore/@checked)='yes' and normalize-space(//pp/ppMannerPosAfter/@checked)='yes' and normalize-space(//pp/ppMannerPosBoth/@checked)='yes'">
-<xsl:text>d’un côté ou l’autre ou des deux côtés du</xsl:text>
+<xsl:text>d’un côté ou l’autre ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppMannerPosOther/@checked)='no'">
 <xsl:text> syntagme entier.  </xsl:text>
@@ -1566,7 +1566,7 @@
 <xsl:text>.  </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppMannerPosBefore/@checked)='yes' and normalize-space(//pp/ppMannerPosOther/@checked)='yes' or normalize-space(//pp/ppMannerPosAfter/@checked)='yes' and normalize-space(//pp/ppMannerPosOther/@checked)='yes' or normalize-space(//pp/ppMannerPosBoth/@checked)='yes' and normalize-space(//pp/ppMannerPosOther/@checked)='yes'">
-<xsl:text> syntagme entier et peut se trouver aussi ___</xsl:text>
+<xsl:text> syntagme entier et peuvent aussi se trouver ___</xsl:text>
 <xsl:value-of select="//pp/ppMannerPosOther" />
 <xsl:text>.  </xsl:text>
 </xsl:if>
@@ -1577,7 +1577,7 @@
                  <xsl:when test="//pp/@pPos='both'">prépositionnel ou postpositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
               </xsl:choose>
-<xsl:text> entier en </xsl:text>
+<xsl:text> dans son ensemble en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1586,7 +1586,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> sont:</xsl:text>
+<xsl:text> sont :</xsl:text>
 </p>
 </xsl:if>
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierManner/@checked)='yes'">
@@ -1621,7 +1621,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1633,12 +1633,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1649,14 +1649,14 @@
 </xsl:if>     
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierManner/@checked)='yes'">
 <p>
-<xsl:text>Voici des exemples de syntagmes </xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='both'">prépositionnels ou postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
               </xsl:choose>
-<xsl:text> avec des adverbs de manière qui les modifient:</xsl:text>
+<xsl:text> avec des adverbes de manière qui les modifient :</xsl:text>
 </p>
 </xsl:if>          
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierManner/@checked)='yes'">
@@ -1684,7 +1684,7 @@
 <xsl:if test="normalize-space(//pp/ppModifierDegree/@checked)='yes' or normalize-space(//pp/ppModifierOrdinal/@checked)='yes' or normalize-space(//pp/ppModifierManner/@checked)='yes'">
 <xsl:text>aussi </xsl:text>
 </xsl:if>
-<xsl:text>par des adverbs de lieu qui se trouvent </xsl:text>
+<xsl:text>par des adverbes locatifs qui se trouvent </xsl:text>
 <xsl:if test="normalize-space(//pp/ppLocativePosBefore/@checked)='yes' and normalize-space(//pp/ppLocativePosAfter/@checked)='no' and normalize-space(//pp/ppLocativePosBoth/@checked)='no'">
 <xsl:text>avant le</xsl:text>
 </xsl:if>
@@ -1692,19 +1692,19 @@
 <xsl:text>après le</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppLocativePosBefore/@checked)='no' and normalize-space(//pp/ppLocativePosAfter/@checked)='no' and normalize-space(//pp/ppLocativePosBoth/@checked)='yes'">
-<xsl:text>des deux côtés du</xsl:text>
+<xsl:text>de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppLocativePosBefore/@checked)='yes' and normalize-space(//pp/ppLocativePosAfter/@checked)='yes' and normalize-space(//pp/ppLocativePosBoth/@checked)='no'">
 <xsl:text>d’un côté ou l’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppLocativePosBefore/@checked)='yes' and normalize-space(//pp/ppLocativePosAfter/@checked)='no' and normalize-space(//pp/ppLocativePosBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés du</xsl:text>
+<xsl:text>avant ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppLocativePosBefore/@checked)='no' and normalize-space(//pp/ppLocativePosAfter/@checked)='yes' and normalize-space(//pp/ppLocativePosBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés du</xsl:text>
+<xsl:text>après ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppLocativePosBefore/@checked)='yes' and normalize-space(//pp/ppLocativePosAfter/@checked)='yes' and normalize-space(//pp/ppLocativePosBoth/@checked)='yes'">
-<xsl:text>d’un côté ou l’autre ou des deux côtés du</xsl:text>
+<xsl:text>d’un côté ou l’autre ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppLocativePosOther/@checked)='no'">
 <xsl:text> syntagme entier.  </xsl:text>
@@ -1715,11 +1715,11 @@
 <xsl:text>.  </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pp/ppLocativePosBefore/@checked)='yes' and normalize-space(//pp/ppLocativePosOther/@checked)='yes' or normalize-space(//pp/ppLocativePosAfter/@checked)='yes' and normalize-space(//pp/ppLocativePosOther/@checked)='yes' or normalize-space(//pp/ppLocativePosBoth/@checked)='yes' and normalize-space(//pp/ppLocativePosOther/@checked)='yes'">
-<xsl:text> syntagme entier et peut se trouver aussi ___</xsl:text>
+<xsl:text> syntagme entier et peuvent aussi se trouver ___</xsl:text>
 <xsl:value-of select="//pp/ppLocativePosOther" />
 <xsl:text>.  </xsl:text>
 </xsl:if>
-<xsl:text>Les adverbs de lieu qui peuvent modifier le syntagme </xsl:text>
+<xsl:text>Voici les adverbes locatifs qui peuvent modifier le syntagme </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
@@ -1742,7 +1742,7 @@
 <example num="xPP.PPModifiers.36">
 <table border="1">
                  <tr>
-                    <th>Adverbes de lieu</th>
+                    <th>Adverbes locatifs</th>
                     <th>Glose</th>
                  </tr>
                  <xsl:variable name="sExampleValue0.0">
@@ -1770,7 +1770,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1782,12 +1782,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1798,14 +1798,14 @@
 </xsl:if>     
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierLocative/@checked)='yes'">
 <p>
-<xsl:text>Voici des exemples de syntagmes </xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='both'">prépositionnels ou postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
               </xsl:choose>
-<xsl:text> avec des adverbs de lieu qui les modifient:</xsl:text>
+<xsl:text> avec des adverbes locatifs qui les modifient :</xsl:text>
 </p>
 </xsl:if>          
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierLocative/@checked)='yes'">
@@ -1829,20 +1829,20 @@
                  <xsl:when test="//pp/@pPos='both'">prépositionnels ou postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
               </xsl:choose>
-<xsl:text> peuvent être modifies </xsl:text>
+<xsl:text> peuvent </xsl:text>
 <xsl:if test="normalize-space(//pp/ppModifierDegree/@checked)='yes' or normalize-space(//pp/ppModifierOrdinal/@checked)='yes' or normalize-space(//pp/ppModifierManner/@checked)='yes' or normalize-space(//pp/ppModifierLocative/@checked)='yes'">
 <xsl:text>aussi </xsl:text>
 </xsl:if>
-<xsl:text>par ___</xsl:text>
+<xsl:text> être modifiés par ___</xsl:text>
 <xsl:value-of select="//pp/ppModifierOther" />
-<xsl:text>.  Voici des exemples de ces autres éléments qui peuvent modifier le syntagme </xsl:text>
+<xsl:text>.  Voici quelques exemples de ces autres éléments qui peuvent modifier le syntagme </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='both'">prépositionnel ou postpositionnel</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
               </xsl:choose>
-<xsl:text> entier en </xsl:text>
+<xsl:text> dans son ensemble en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1851,7 +1851,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> sont:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 </xsl:if>
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierOther/@checked)='yes'">
@@ -1886,7 +1886,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1898,12 +1898,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1914,14 +1914,14 @@
 </xsl:if>     
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierOther/@checked)='yes'">
 <p>
-<xsl:text>Voici des exemples de syntagmes </xsl:text>
+<xsl:text>Voici quelques exemples de syntagmes </xsl:text>
 <xsl:choose>
                  <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='both'">prépositionnels ou postpositionnels</xsl:when>
                  <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
               </xsl:choose>
-<xsl:text> avec ces autres éléments qui les modifient:</xsl:text>
+<xsl:text> avec ces autres éléments qui les modifient :</xsl:text>
 </p>
 </xsl:if>          
            <xsl:if test="normalize-space(//pp/@modifiers)='yes' and normalize-space(//pp/ppModifierOther/@checked)='yes'">
@@ -1947,14 +1947,14 @@
                         <xsl:when test="//pp/@pPos='both'">prépositions or postpositions</xsl:when>
                         <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>                  
                     </xsl:choose>
-<xsl:text>  peuvent rester seules sans un complément dû à un mouvement de particule comme dans les phrases en anglais </xsl:text>
+<xsl:text> peuvent fonctionner seules, sans complément à cause d’un mouvement de particule, comme dans les exemples suivants en anglais </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Come [right in]</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Entrez, entrez! (littéralement, entrez [droit dans]) »</xsl:text>
+<xsl:text>  « Entre directement »</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -1963,28 +1963,28 @@
 </xsl:attribute>John turned the light [on/off]</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « Jean a allumé/éteint la lumière" (littéralement, Jean a tourné la lumière [sur / de]) »</xsl:text>
+<xsl:text> « Jean a allumé/éteint la lumière »</xsl:text>
 </gloss>
-<xsl:text>.  Aussi certaines langues permettent des </xsl:text>
+<xsl:text>. (Aucun de ces exemples n’est correct en français.) De même, certaines langues admettent que des </xsl:text>
 <xsl:choose>
                         <xsl:when test="//pp/@pPos='before'">prépositions</xsl:when>
                         <xsl:when test="//pp/@pPos='after'">postpositions</xsl:when>
                         <xsl:when test="//pp/@pPos='both'">prépositions or postpositions</xsl:when>
                         <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>                  
                     </xsl:choose>
-<xsl:text> de rester seules quand leur complément fait partie d’une question,  comme dans </xsl:text>
+<xsl:text> fonctionnent seules quand leur complément fait partie d’une question, comme dans </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Who(m) did you give the book [to _ ]?</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « A qui as-tu donné le livre? (littéralement, Qui as-tu donné le livre [à]?) »</xsl:text>
+<xsl:text> « A qui avez-vous donné le livre ? (littéralement, Qui avez-vous donné le livre [à] ?) »</xsl:text>
 </gloss>
-<xsl:text> en anglais.   Aucun de ces exemples n’est correct en français.</xsl:text>
+<xsl:text> en anglais.   (Aucun de ces exemples n’est correct en français.)</xsl:text>
 </p>
             <p>
-<xsl:text>En </xsl:text>
+<xsl:text>Le </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1995,8 +1995,8 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-                       <xsl:when test="//pp/@alone='no'"> il n’est pas permis aux </xsl:when>
-                       <xsl:when test="//pp/@alone='yes'"> il est permis à certains </xsl:when>
+                       <xsl:when test="//pp/@alone='no'"> n’admet pas que les </xsl:when>
+                       <xsl:when test="//pp/@alone='yes'"> admet que certaines des </xsl:when>
                     </xsl:choose>
 <xsl:text>ses </xsl:text>
 <xsl:if test="normalize-space(//pp/@pPos)='before'">
@@ -2014,9 +2014,9 @@
 <xsl:if test="normalize-space(//pp/@pPos)='both'">
                         <xsl:text>prépositions ou postpositions</xsl:text>
                     </xsl:if>
-<xsl:text> de rester seules sans complément dû au mouvement. </xsl:text>
+<xsl:text> fonctionnent seules sans complément dû au mouvement de particule. </xsl:text>
 <xsl:if test="normalize-space(//pp/@alone)='yes'">
-                       <xsl:text>Voici des exemples dans des phrases complètes:</xsl:text>
+                       <xsl:text>Voici quelques exemples dans des phrases complètes :</xsl:text>
                     </xsl:if>
 <xsl:text></xsl:text>
 </p>
@@ -2033,35 +2033,27 @@
 </xsl:if>
  
             <p contentType="ctComparativeIntro">
-<xsl:text>La plupart des langues permettent des adverbes de lieu comme compléments de </xsl:text>
+<xsl:text>La plupart des langues admettent des adverbes locatifs comme compléments de </xsl:text>
 <xsl:choose>
                         <xsl:when test="//pp/@pPos='before'">prépositions</xsl:when>
                         <xsl:when test="//pp/@pPos='after'">postpositions</xsl:when>
                         <xsl:when test="//pp/@pPos='both'">prépositions ou postpositions</xsl:when>
                         <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>                  
                     </xsl:choose>
-<xsl:text>, par exemple en anglais </xsl:text>
+<xsl:text>, ainsi par exemple </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>over there</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « là-bas »</xsl:text>
-</gloss>
+</xsl:attribute>par ici</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>in here</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « ci-dedans »</xsl:text>
-</gloss>
+</xsl:attribute>par là</langData>
 <xsl:text>.</xsl:text>
 </p>
             <p>
-<xsl:text>En </xsl:text>
+<xsl:text>Le </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -2072,10 +2064,10 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-                       <xsl:when test="//pp/@locative='no'"> il n’est pas permis aux </xsl:when>
-                       <xsl:when test="//pp/@locative='yes'">  il est permis à certains </xsl:when>
+                       <xsl:when test="//pp/@locative='no'"> n’admet </xsl:when>
+                       <xsl:when test="//pp/@locative='yes'"> admet </xsl:when>
                     </xsl:choose>
-<xsl:text> adverbes de lieu comme compléments de </xsl:text>
+<xsl:text> les adverbes locatifs comme compléments de </xsl:text>
 <xsl:if test="normalize-space(//pp/@pPos)='before'">
                         <xsl:text>prépositions.</xsl:text>
                     </xsl:if>
@@ -2093,7 +2085,7 @@
                     </xsl:if>
 <xsl:text></xsl:text>
 <xsl:if test="normalize-space(//pp/@locative)='yes'">
-                       <xsl:text>  Voici des exemples avec des complements adverbiaux de lieu:</xsl:text>
+                       <xsl:text>  Voici quelques exemples avec des complements adverbiaux locatifs :</xsl:text>
                     </xsl:if>
 <xsl:text></xsl:text>
 </p>
@@ -2117,21 +2109,21 @@
                         <xsl:when test="//pp/@pPos='both'">prépositions et postpositions</xsl:when>
                         <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>                  
                     </xsl:choose>
-<xsl:text> de lieu sont un groupe spécial dans ce sens qu’elles peuvent prendre un autre syntagme </xsl:text>
+<xsl:text> locatifs sont un groupe spécial dans ce sens qu’elles peuvent prendre un autre syntagme </xsl:text>
 <xsl:choose>
                        <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                        <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
                        <xsl:when test="//pp/@pPos='both'">prépositionnel ou postpositionnel</xsl:when>
                        <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
                     </xsl:choose>
-<xsl:text> comme complément.  Des exemples en anglais de ce type sont: </xsl:text>
+<xsl:text> comme complément.  Des exemples en anglais de ce type sont : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>up [to the top]</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> (en haut [jusqu’au sommet])</xsl:text>
+<xsl:text> (jusqu’en haut)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -2140,7 +2132,7 @@
 </xsl:attribute>around [behind the shed]</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> (autour [derrière la cabane])</xsl:text>
+<xsl:text> (à l'arrière de la remise)</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -2149,12 +2141,12 @@
 </xsl:attribute>over [by the table]</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  (là-bas [près de la table])</xsl:text>
+<xsl:text>  (là-bas près de la table)</xsl:text>
 </gloss>
 <xsl:text>.  Ceci n’est pas permis en français.</xsl:text>
 </p>
             <p>
-<xsl:text>En </xsl:text>
+<xsl:text>Le </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -2165,8 +2157,8 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-                       <xsl:when test="//pp/@ppComp='no'"> il n’y a pas de </xsl:when>
-                        <xsl:when test="//pp/@ppComp='yes'"> il y a des </xsl:when>
+                       <xsl:when test="//pp/@ppComp='no'"> n’a pas de </xsl:when>
+                        <xsl:when test="//pp/@ppComp='yes'"> a des </xsl:when>
                     </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:if test="normalize-space(//pp/@pPos)='before'">
@@ -2184,16 +2176,16 @@
 <xsl:if test="normalize-space(//pp/@pPos)='both'">
                         <xsl:text>prépositions et postpositions</xsl:text>
                     </xsl:if>
-<xsl:text> de lieu qui prennent un syntagme </xsl:text>
+<xsl:text> locatives qui admettent un syntagme </xsl:text>
 <xsl:choose>
                        <xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
                        <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
                        <xsl:when test="//pp/@pPos='both'">prépositionnel ou postpositionnel</xsl:when>
                        <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
                     </xsl:choose>
-<xsl:text> de lieu comme complément.  </xsl:text>
+<xsl:text> locatifs comme complément.  </xsl:text>
 <xsl:if test="normalize-space(//pp/@ppComp)='yes'">
-                       <xsl:text>Voici des exemples:</xsl:text>
+                       <xsl:text>Voici quelques exemples :</xsl:text>
                     </xsl:if>
 <xsl:text></xsl:text>
 </p>
@@ -2237,7 +2229,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>après cela</langData>
-<xsl:text>.  En anglais ils peuvent aussi être suivi d’un complément gérondif comme dans </xsl:text>
+<xsl:text>.  En anglais, ils peuvent aussi être suivi d’un complément gérondif comme dans </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -2255,10 +2247,10 @@
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>  « après [avoir acheté notre nouvelle maison] »</xsl:text>
 </gloss>
-<xsl:text> puisque les gérondifs sont un type spécial de syntagme nominal.  En français il faudrait un infinitif au lieu d’un gérondif dans  le syntagme équivalent.</xsl:text>
+<xsl:text> puisqu’en anglais les gérondifs sont un type spécial de syntagme nominal.  En français il faudrait un infinitif au lieu d’un gérondif dans le syntagme équivalent.</xsl:text>
 </p>
             <p>
-<xsl:text>En </xsl:text>
+<xsl:text>Le </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -2269,10 +2261,9 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-                       <xsl:when test="//pp/@tempComp='no'"> il y en a pas </xsl:when>
-                       <xsl:when test="//pp/@tempComp='yes'"> il y a </xsl:when>
+                       <xsl:when test="//pp/@tempComp='no'"> n'a pas de </xsl:when>
+                       <xsl:when test="//pp/@tempComp='yes'"> a des </xsl:when>
                     </xsl:choose>
-<xsl:text>des </xsl:text>
 <xsl:if test="normalize-space(//pp/@pPos)='before'">
                         <xsl:text>prépositions</xsl:text>
                     </xsl:if>
@@ -2288,9 +2279,9 @@
 <xsl:if test="normalize-space(//pp/@pPos)='both'">
                         <xsl:text>prépositions ou postpositions</xsl:text>
                     </xsl:if>
-<xsl:text> temporelles qui prennent un syntagme nominal ou un gérundif comme complément.  </xsl:text>
+<xsl:text> temporelles qui admettent un syntagme nominal ou un gérundif comme complément.  </xsl:text>
 <xsl:if test="normalize-space(//pp/@tempComp)='yes'">
-                       <xsl:text>Voici des exemples en phrases completes:</xsl:text>
+                       <xsl:text>Voici quelques exemples dans des phrases completes :</xsl:text>
                     </xsl:if>
 <xsl:text></xsl:text>
 </p>
@@ -2314,7 +2305,7 @@
                   <xsl:when test="//pp/@pPos='both'">prépositions ou postpositions</xsl:when>
                   <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>                  
                </xsl:choose>
-<xsl:text> temporelles peuvent aussi avoir des phrases comme compléments.  Dans cette fonction ce sont des adverbes temporels et la phrase entière est une phrase adverbiale qui modifie habituellement la phrase principale.  De tels exemples seront détaillés dans la section </xsl:text>
+<xsl:text> temporelles peuvent aussi admettre des phrases comme compléments.  Dans cette fonction, ce sont des adverbes temporels et la phrase entière est une proposition adverbiale qui modifie habituellement la proposition principale.  Ce type d’exemples sera traité dans la section </xsl:text>
 <sectionRef sec="sAdvCl" />
 <xsl:text>.</xsl:text>
 </p>
@@ -2328,7 +2319,7 @@
                   <xsl:when test="//pp/@pPos='both'">prépositions ou postpositions</xsl:when>
                   <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>                  
                </xsl:choose>
-<xsl:text> temporelles peuvent aussi avoir des phrases comme compléments, comme par exemple en anglais </xsl:text>
+<xsl:text> temporelles peuvent aussi admettre des phrases comme compléments, comme par exemple en anglais </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -2346,14 +2337,14 @@
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>  « après que [Jean soit rentré] »</xsl:text>
 </gloss>
-<xsl:text>.  (En français l’adverbe est suivi du complémentiseur « que » et une proposition au subjonctif.)  Utilisés ainsi ce sont des adverbes temporels au lieu de </xsl:text>
+<xsl:text>.  (En français l’adverbe est suivi du complémentiseur « que » et une proposition au subjonctif.)  Dans cet emploi, ce sont des adverbes temporels et non des </xsl:text>
 <xsl:choose>
                   <xsl:when test="//pp/@pPos='before'">prépositions</xsl:when>
                   <xsl:when test="//pp/@pPos='after'">postpositions</xsl:when>
                   <xsl:when test="//pp/@pPos='both'">prépositions ou postpositions</xsl:when>
                   <xsl:when test="//pp/@pPos='unknown'">adpositions</xsl:when>                  
                </xsl:choose>
-<xsl:text> et le syntagme entier est une proposition adverbial qui modifie la phrase principale. De tels exemples seront détaillés dans la section </xsl:text>
+<xsl:text> et le syntagme entier est une proposition adverbiale qui modifie la proposition principale. Ce type d’exemples sera traité dans la section </xsl:text>
 <sectionRef sec="sAdvCl" />
 <xsl:text>.</xsl:text>
 </p>

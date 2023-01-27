@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
 	<section1 id="sIntro">
 		<secTitle>Introduction</secTitle>
@@ -13,8 +13,8 @@
 					<content>.</content>
 				</p>
 			</endnote>
-			<content> est une description de la façon dont la plupart des mots et des locutions et des phrases sont formés en </content>
-			<langName/><content>.  Il est visé à un grand public qui comprend des personnes de langue maternelle des enseignants bilingues, des linguistes et tous ceux qui désirent en savoir plus sur </content><langName/><content>.</content>
+			<content> est une description de la façon dont la plupart des mots, des locutions et des phrases sont formés en </content>
+			<langName/><content>.  Elle est destinée à un large public qui comprend des membres de la communauté linguistique des enseignants bilingues, des linguistes et tous ceux qui désirent en savoir plus sur le </content><langName/><content>.</content>
 		</p>
 	   <p contentType="ctComparativeIntro">
 	   	<content>Cette grammaire</content><endnote id="nPAWSci">
@@ -26,41 +26,41 @@
 	            <content>.</content>
 	         </p>
 	      </endnote>
-	   	<content> est une description de la syntaxe et est une partie de la morphologie de  </content>
-	   	<langName/><content>.  Elle fournit des comparaisons avec le français et quelquefois avec d’autres langues de même qu’elle documente une grande partie de la langue.  Il est visé à un grand public qui comprend des personnes de langue maternelle, des enseignants bilingues, des linguistes et tous ceux qui désirent en savoir plus sur </content><langName/><content>.</content>
+	   	<content> est une description de la syntaxe et d’une partie de la morphologie de  </content>
+	   	<langName/><content>.  Elle fournit des comparaisons avec le français et quelquefois avec d’autres langues, tout en documentant une grande partie de la langue.  Elle est destinée à un large public qui comprend des membres de la communauté linguistique, des enseignants bilingues, des linguistes et tous ceux qui désirent en savoir plus sur le </content><langName/><content>.</content>
 	   </p>
 	   <p contentType="ctPracticalIntro">
-	   	<comment> Quand vous aura fini PAWS, ce fichier peut servir d’ébauche pour compléter votre grammaire. Les données ici sont la version de grammaire pratique par défaut qui founit une introduction de base seulement à chaque section et ensuite des renseignements sur votre langue. Nous suggérons que vous utilisiez cette version pour ajouter des gloses dans les tableaux, en complétant les exemples interlinéaires et en éditant les renseignements sur votre langue. Portez une attention spéciale aux lignes qui ont ____ puisque ce sont des endroits où vous avez dit que votre langue agit autrement que les options données dans PAWS, donc le texte s’adaptera exactement sans être édité.</comment>
-	   	<comment>Vous pouvez aussi choisir de voir ou d’imprimer une version comparative de la grammaire en enregistrant  une deuxième copie du fichier sous un nouveau nom et en changeant ensuite le contentControlChoice à la fin du fichier.   </comment>
+	   	<comment> Quand vous aures fini PAWS, ce fichier peut servir d’ébauche pour terminer votre grammaire. Les données ici sont la version par défaut de la grammaire pratique. Elle ne founit qu’une introduction de base pour chaque section puis elle donne des informations sur votre langue. Nous suggérons que vous utilisiez cette version pour ajouter des gloses dans les tableaux, pour compléter les exemples interlinéaires et éditer les informations sur votre langue. Portez une attention spéciale aux lignes qui ont ___________, puisque ce sont des endroits où vous avez dit que votre langue a un comportement différent des options données dans PAWS, donc il est possible que le texte doive être édité quelque peu.</comment>
+	   	<comment>Vous pouvez aussi choisir de voir ou d'imprimer une version comparative de la grammaire en enregistrant une deuxième copie du fichier sous un autre nom et en changeant ensuite le contenu à l’aide de contentControlChoice à la fin du fichier.    </comment>
 		</p>
 	   <p contentType="ctComparativeIntro">
-	   	<comment> Quand vous aura fini PAWS, ce fichier peut servir d’ébauche pour compléter votre grammaire. Puisque vous lisez cette version vous aurez déjà changé le contentControlChoice en grammaire comparative. Pour votre version finale, vous pouvez changer les renseignements sur le français dans chaque section pour se rapporter à la langue nationale de votre région, si vous choisissez de le faire.  </comment>
+	   	<comment> Quand vous aures fini PAWS, ce fichier peut servir d’ébauche pour terminer votre grammaire. Puisque vous lisez cette version, vous aurez déjà modifié le contenu à l’aide de contentControlChoice et choisi la grammaire comparative. Pour votre version finale, vous pouvez changer les renseignements sur le français dans chaque section pour se rapporter à la langue nationale de votre région, si vous choisissez de le faire.  </comment>
 	   </p>
 	   <p>
-	   	<comment>Si vous regardez cette sortie de grammaire avant d’avoir complété chaque page du paquet initiale, certaines informations données peuvent être inexactes parce qu’elles se basent seulement sur des réponses par défaut. Les réponses par défaut relatives à la position des éléments sont montrés ici comme ________ jusqu’à ce que vous ayez complété la page appropriée du PAWS. De plus certaines informations manqueront puisque les réponses aux questions utilisant les cases n’auront pas encore été cochées.  </comment>
+	   	<comment>Si vous exportez cette grammaire avant d'avoir terminé toutes les pages de PAWS, certaines informations peuvent être inexactes parce qu'elles sont basées uniquement sur les réponses par défaut. Les réponses par défaut concernant la position des éléments sont montrées de la façon suivante : ________ jusqu’à ce que vous ayez complété la page correspodante dans PAWS. De plus certaines informations manqueront puisque les réponses aux questions n'auront pas encore été cochées.  </comment>
 		</p>
 		<p>
-			<comment> NE MODIFIEZ PAS CE FICHIER JUSQU’A CE QUE VOUS AYEZ COMPLETE LE PAWS - y compris la Vérification Finale - parce que vos données seront éffacées par le programme PAWS.  Nous suggérons que vous enrégistrez ce fichier sous un autre nom avant de l’éditer. </comment>
+			<comment> NE MODIFIEZ PAS CE FICHIER JUSQU’A CE QUE VOUS AYEZ terminé de remplir toutes les pages de PAWS - sans oublier la Vérification Finale - parce que les corrections faites dans ce fichier seront effacées par le programme PAWS lorsque vous exporterez le fichier la fois suivante.  Nous suggérons que vous enregistriez ce fichier sous un autre nom avant de l’éditer. </comment>
 
-			<comment>Si vous ne l’utilisez pas déjà, nous suggérons d’utiliser l’éditeur XML XMLMind si possible.  Il rend beaucoup plus facile d’imprimer une version pdf puisque des options supplémentaires sont disponibles pour traiter toutes les fonctions supplémentaires de XLing Paper, qu’utilise la sortie de grammaire. Vous trouverez plus de renseignements sur http://www.xlingpaper.org/.</comment>
+			<comment>Si vous ne l’utilisez pas encore, nous vous suggérons d’utiliser l’éditeur XML XMLMind si possible.  Il facile grandement l’impression d’une version pdf puisque des options supplémentaires sont disponibles pour traiter tous les modules complémentaires de XLing Paper, logiciel utilisé pour exporter la grammaire.  Vous trouverez plus d’informations sur http://www.xlingpaper.org/.</comment>
 		</p>
 	   <p>
-	   	<comment>Il y a certains commentaires en rouge comme ceux-ci partout dans la grammaire qui vous donneront des instructions spéciales à respecter.  Eliminez chaque commentaire lorsque vous l’aurez complété afin qu’il ne réapparaisse pas dans la sorite.  Nous les avons fait apparaître exprès dans la sortie comme rappels pour vous et votre consultant de ce qu’il vous faudra encore faire.</comment>
+	   	<comment>Certains commentaires, en rouge comme celui-ci dans la grammaire, vous donneront des instructions spéciales à prendre en compte.  Effacez chaque commentaire lorsque vous l'aurez complété, afin qu'il n’apparaisse pas dans le document final. Ces commentaires apparaissent intentionnellement dans le document exportéet servent de à vous rappeler, à vous et à votre consultant tout ce qui reste à faire encore.</comment>
 		</p>
 		<p>
-			<content>On parle </content>
+			<content>On parle le </content>
 			<langName/>
-			<content> dans ENTRER_LOCATIONS.   Il y a approximativement ENTRER_CHIFFRE
-				personnes qui parlent </content><langName/><content>.  </content>
+			<content> dans SAISIR_LEIU.   Il y a approximativement SAISIR_CHIFFRE
+				personnes qui parlent le </content><langName/><content>.  Le </content>
 			<langName/>
-			<content> est un fait partie de la famille de langues ENTRER_NOM_DE_FAMILLE.</content>
+			<content> est fait partie de la famille des langues SAISIR_NOM_DE_FAMILLE.</content>
 		</p>
 		<section2 id="sOrtho">
 			<secTitle>Orthographe</secTitle>
 			<p>
-				<content>Les symboles orthographiques utilisés pour écrire en </content>
+				<content>Les symboles orthographiques donnés ci-dessous sont utilisés pour écrire les mots autochtones tout comme les mots d’emprunt en </content>
 				<langName/>
-				<content> sont pour les mots natifs et aussi pour les mots empruntés d’autres langues. Dans </content>
+				<content>. Dans </content>
 				<exampleRef num="xAlphabet"/>
 				<content> ces symboles sont présentés dans l’ordre alphabétique.</content>
 			</p>
@@ -73,294 +73,294 @@
 					</headerRow>
 					<row>
 						<col>
-							<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+							<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 						</col>
 						<col>
-							<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+							<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 						</col>
 						<col>
-							<gloss><content>ENTRER_GLOSE</content></gloss>
-						</col>
-					</row>
-					<row>
-						<col>
-							<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-						</col>
-						<col>
-							<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-						</col>
-						<col>
-							<gloss><content>ENTRER_GLOSE</content></gloss>
+							<gloss><content>SAISIR_GLOSE</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col>
-							<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+							<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+						</col>
+						<col>
+							<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+						</col>
+						<col>
+							<gloss><content>SAISIR_GLOSE</content></gloss>
+						</col>
+					</row>
+					<row>
+						<col>
+							<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 						</col>
 								<col>
-									<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+									<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 								</col>
 								<col>
-									<gloss><content>ENTRER_GLOSE</content></gloss>
+									<gloss><content>SAISIR_GLOSE</content></gloss>
 								</col>
 							</row>
 								<row>
 									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 									</col>
 									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 									</col>
 									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
-									</col>
-								</row>
-								<row>
-									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-									</col>
-									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-									</col>
-									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
 									</col>
 								</row>
 								<row>
 									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 									</col>
 									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 									</col>
 									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
-									</col>
-								</row>
-								<row>
-									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-									</col>
-									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-									</col>
-									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
 									</col>
 								</row>
 								<row>
 									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 									</col>
 									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 									</col>
 									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
-									</col>
-								</row>
-								<row>
-									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-									</col>
-									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-									</col>
-									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
 									</col>
 								</row>
 								<row>
 									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 									</col>
 									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 									</col>
 									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
-									</col>
-								</row>
-								<row>
-									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-									</col>
-									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-									</col>
-									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
 									</col>
 								</row>
 								<row>
 									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 									</col>
 									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 									</col>
 									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
-									</col>
-								</row>
-								<row>
-									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-									</col>
-									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-									</col>
-									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
 									</col>
 								</row>
 								<row>
 									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 									</col>
 									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 									</col>
 									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
-									</col>
-								</row>
-								<row>
-									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-									</col>
-									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-									</col>
-									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
 									</col>
 								</row>
 								<row>
 									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 									</col>
 									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 									</col>
 									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
 									</col>
 								</row>
 								<row>
 									<col>
-										<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 									</col>
 									<col>
-										<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 									</col>
 									<col>
-										<gloss><content>ENTRER_GLOSE</content></gloss>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
+									</col>
+								</row>
+								<row>
+									<col>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+									</col>
+									<col>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+									</col>
+									<col>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
+									</col>
+								</row>
+								<row>
+									<col>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+									</col>
+									<col>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+									</col>
+									<col>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
+									</col>
+								</row>
+								<row>
+									<col>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+									</col>
+									<col>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+									</col>
+									<col>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
+									</col>
+								</row>
+								<row>
+									<col>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+									</col>
+									<col>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+									</col>
+									<col>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
+									</col>
+								</row>
+								<row>
+									<col>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+									</col>
+									<col>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+									</col>
+									<col>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
+									</col>
+								</row>
+								<row>
+									<col>
+										<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+									</col>
+									<col>
+										<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+									</col>
+									<col>
+										<gloss><content>SAISIR_GLOSE</content></gloss>
 									</col>
 								</row>
 								<row>
 					<col>
-									<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+									<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 								</col>
 								<col>
-									<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+									<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 								</col>
 								<col>
-									<gloss><content>ENTRER_GLOSE</content></gloss>
-								</col>
-							</row>
-							<row>
-								<col>
-									<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-								</col>
-								<col>
-									<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-								</col>
-								<col>
-									<gloss><content>ENTRER_GLOSE</content></gloss>
+									<gloss><content>SAISIR_GLOSE</content></gloss>
 								</col>
 							</row>
 							<row>
 								<col>
-									<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+									<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 								</col>
 								<col>
-									<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+									<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 								</col>
 								<col>
-									<gloss><content>ENTRER_GLOSE</content></gloss>
-								</col>
-							</row>
-							<row>
-								<col>
-									<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
-								</col>
-								<col>
-									<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
-								</col>
-								<col>
-									<gloss><content>ENTRER_GLOSE</content></gloss>
+									<gloss><content>SAISIR_GLOSE</content></gloss>
 								</col>
 							</row>
 							<row>
 								<col>
-									<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+									<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 								</col>
 								<col>
-									<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+									<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 								</col>
 								<col>
-									<gloss><content>ENTRER_GLOSE</content></gloss>
+									<gloss><content>SAISIR_GLOSE</content></gloss>
+								</col>
+							</row>
+							<row>
+								<col>
+									<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+								</col>
+								<col>
+									<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+								</col>
+								<col>
+									<gloss><content>SAISIR_GLOSE</content></gloss>
+								</col>
+							</row>
+							<row>
+								<col>
+									<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
+								</col>
+								<col>
+									<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
+								</col>
+								<col>
+									<gloss><content>SAISIR_GLOSE</content></gloss>
 								</col>
 							</row>
 					<row>
 						<col>
-							<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+							<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 						</col>
 						<col>
-							<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+							<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 						</col>
 						<col>
-							<gloss><content>ENTRER_GLOSE</content></gloss>
+							<gloss><content>SAISIR_GLOSE</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col>
-							<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+							<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 						</col>
 						<col>
-							<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+							<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 						</col>
 						<col>
-							<gloss><content>ENTRER_GLOSE</content></gloss>
+							<gloss><content>SAISIR_GLOSE</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col>
-							<langData lang="lVernacular">ENTRER_SYMBOLE</langData>
+							<langData lang="lVernacular">SAISIR_SYMBOLE</langData>
 						</col>
 						<col>
-							<langData lang="lVernacular">ENTRER_EXEMPLE</langData>
+							<langData lang="lVernacular">SAISIR_EXEMPLE</langData>
 						</col>
 						<col>
-							<gloss><content>ENTRER_GLOSE</content></gloss>
+							<gloss><content>SAISIR_GLOSE</content></gloss>
 						</col>
 					</row>
 				</table>
 			</example>
 			<p>
-				<content>Regardez l’appendice </content>
+				<content>Voyez l’appendice </content>
 				<appendixRef app="aAppdx"/>
-				<content> pour les listes des consonnes et des voyelles qui comparent l’orthographe pratique avec l’Alphabet phonétique international (API).</content>
+				<content> pour les tableaux des consonnes et des voyelles comparent l’orthographe pratique avec l’Alphabet phonétique international (API).</content>
 			</p>
-			<p><comment>Ajoutez des explications pour tous signes diacritiques ou autres symboles tels que les indicateurs de ton.</comment></p>
+			<p><comment>Ajoutez des explications pour tous signes diacritiques ou autres symboles tels que les marques de ton.</comment></p>
 		</section2>
 		<section2 id="sExamples">
-			<secTitle>Conventions utilisées dans des exemples</secTitle>
+			<secTitle>Conventions utilisées dans les exemples</secTitle>
 			<p>
-				<content>Cette grammaire contient beaucoup de syntagmes et phrases qui fournissent des exemples.  La plupart des exemples sont présentés dans un format interlinéaire consistant en trois ou quatre lignes comme montré sous </content>
+				<content>Cette grammaire contient beaucoup de syntagmes et phrases illustratifs.  La plupart des exemples sont présentés dans un format interlinéaire consistant en trois ou quatre lignes comme cela est montré sous </content>
 				<exampleRef num="xEx"/>
-				<content>:</content>
+				<content> :</content>
 			</p>
 			<example num="xEx">
 				<table>
@@ -380,7 +380,7 @@
 					</row>
 					<row>
 						<col>
-							<content>[gloses littéraux du mot]</content>
+							<content>[gloses littérales du mot]</content>
 						</col>
 						<col>
 							<content>glose</content>
@@ -394,16 +394,16 @@
 					</row>
 					<row>
 						<col>
-							<content>[gloses de morpheme]</content>
+							<content>[gloses de morphème]</content>
 						</col>
 						<col>
-							<content>PRE-racine-SUF</content>
+							<content>PRE-radical-SUF</content>
 						</col>
 						<col>
-							<content>PRE-racine-SUF</content>
+							<content>PRE-radical-SUF</content>
 						</col>
 						<col>
-							<content>PRE-racine-SUF</content>
+							<content>PRE-radical-SUF</content>
 						</col>
 					</row>
 					<row>
@@ -419,35 +419,35 @@
 			<p>
 				<content>Les mots en </content>
 				<langName/>
-				<content> sont donnés sur la première ligne.  La seconde ligne présente une traduction littérale en français, mot pour mot, donnant le glose du mot français qui se rapproche le plus de la signification du mot en </content>
+				<content> sont donnés sur la première ligne.  La seconde ligne présente une traduction littérale en français, mot à mot, donnant la glose du mot français qui se rapproche le plus de la signification du mot en </content>
 				<langName/>
-				<content>.  Si plus qu’un mot en français est nécessaire pour exprimer le signification du mot en </content>
+				<content>.  Si plus d’un mot français est nécessaire pour exprimer la signification du mot en </content>
 				<langName/>
 				<content>, ces mots en français seront séparés par des points.  Chaque fois qu’un ou plusieurs des mots en </content>
 				<langName/>
-				<content> a plus qu’une partie (morphème), la troisième ligne montre les gloses ou abbréviations pour les parties du mot, avec les préfixes, racines et suffixes séparés par des traits d’union.  Cette troisième partie sera probablement la plus utile pour les linguists. La dernière ligne donne la traduction libre pour l’exemple entier.</content>
+				<content> a plus d’une partie (morphème), la troisième ligne montre les gloses ou abbréviations pour chaque parties du mot, les préfixes, radicaux et suffixes seront séparés par des traits d’union.  Cette troisième ligne sera probablement la plus utile pour les linguistes. La dernière ligne donne la traduction libre pour l’exemple dans son ensemble.</content>
 			</p>
 			<p>
-				<comment>Ajoutez ici plus de détails sur toutes les différences entre votre langue et le français. Par exemple, si votre langue ne distingue pas entre le nombre et/ou le genre sur les noms, mais que la langue de glose le fait, vous pouvez choisir d’utiliser seulement les formes au singulier et /ou au masculin pour les gloses</comment>
+				<comment>Ajoutez ici plus de détails sur toutes les différences entre votre langue et le français. Par exemple, si votre langue ne distingue pas entre le nombre et/ou le genre pour les noms, mais que la langue de la glose le fait, vous pouvez choisir d’utiliser uniquement les formes au singulier et/ou au masculin pour les gloses.</comment>
 			</p>
 			<p>
-				<content>Après avoir donné des informations sur la typologie syntactique de la langue, la grammaire commence par décrire les parties du discours et les syntagmes qu’elles gouvernent dans les sections </content>
+				<content>Après quelques informations sur la typologie syntactique de la langue, la grammaire décrit les parties du discours et les syntagmes qu’elles contiennent dans les sections </content>
 				<sectionRef sec="sN"/>
 				<content> - </content>
 				<sectionRef sec="sExcl"/>
-				<content>.  Les phrases simples sont alors couvertes dans la section </content>
+				<content>.  Ensuite, les phrases simples sont sont traitées dans la section </content>
 				<sectionRef sec="sIP"/>
-				<content>. Les constructions qui impliquent des changements dans l’ordre des mots sont présentées dans les sections </content>
+				<content>. Les constructions impliquant des changements dans l’ordre des termes sont présentées dans les sections </content>
 				<sectionRef sec="sFocus"/>
 				<content> - </content>
 				<sectionRef sec="sNeg"/>
 				<content>.  Les constructions de coordination sont traitées dans la section </content>
 				<sectionRef sec="sCoord"/>
-				<content>,  suivies finalement par différents types de propositions dépendantes dans les sections </content>
+				<content>,  suivies finalement par différents types de propositions subordonnées dans les sections </content>
 				<sectionRef sec="sComp"/>
 				<content> - </content>
 				<sectionRef sec="sRelCl"/>
-				<content>.  Des textes sont inclus à la fin pour démontrer comment sont formées des constructions plus grandes telles que les paragraphes, les conversations et les récits narratifs.</content>
+				<content>.  Quelques textes sont inclus à la fin pour illustrer la formation des unités supérieures, telles les paragraphes, les conversations et les récits narratifs.</content>
 			</p>
 		</section2>
 	</section1>
@@ -465,40 +465,40 @@
 				<caseText value="OVS">Objet-Verbe-Sujet</caseText>
 				<caseText value="OSV">Objet-Sujet-Verbe</caseText>
 			</case>
-			<content>, comme montré dans les exemples suivants:</content>
+			<content>, comme les exemples suivants l’illustrent :</content>
 		</p>
 		<example>
 			<interlinear exampleLoc="typology/example"/>
 		</example>
 		<p show="swHeadInitialAndPrep">
-			<content>Conformément à la typologie centrifuge, </content>
+			<content>Conformément à la noyau-typologie initiale, le </content>
 			<langName/>
-			<content>  a des prépositions (section </content>
+			<content> a des prépositions (section </content>
 			<sectionRef sec="sPP"/>
 			<content>).</content>
 		</p>
 		<p show="swHeadInitialAndPost">
-			<content>En contraste avec la typologie centrifuge, </content>
+			<content>En contraste avec la noyau-typologie initiale, le </content>
 			<langName/>
 			<content> a des postpositions (section </content>
 			<sectionRef sec="sPP"/>
 			<content>).</content>
 		</p>
 		<p show="swPrePost">
-			<langName/>
-			<content> a des prepositions et des postpositions (section </content>
+			<comment>Le </comment><langName/>
+			<content> a des prépositions et des postpositions (section </content>
 			<sectionRef sec="sPP"/>
 			<content>).</content>
 		</p>
 		<p show="swHeadFinalAndPost">
-			<content>Conformément à la typologie centripète, </content>
+			<content>Conformément à la noyau-typologie finale, le </content>
 			<langName/>
 			<content>a des postpositions (section </content>
 			<sectionRef sec="sPP"/>
 			<content>).</content>
 		</p>
 		<p show="swHeadFinalAndPre">
-			<content>En contraste avec la typologie centripète, </content>
+			<content>En contraste avec la noyau-typologie finale, le </content>
 			<langName/>
 			<content> a des prépositions (section </content>
 			<sectionRef sec="sPP"/>
@@ -510,10 +510,10 @@
 			   <case element="np" attr="possNounPos">
 				<caseText value="before">avant le</caseText>
 			   	<caseText value="after">après le</caseText>
-			   	<caseText value="either">des deux côtés du</caseText>
+			   	<caseText value="either">d’un côté ou de l’autre du</caseText>
 				<caseText value="unknown"> _______ </caseText>
 			</case>
-		   	<content> nom possédé (section </content>
+		   	<content> nom déterminé dans le syntagme de possession (section </content>
 			<sectionRef sec="sNPPoss"/>
 			   <content>). </content></text>
 		   <text show="swNPPossNPNo">
@@ -521,10 +521,10 @@
 		         <case element="np" attr="possNounPos">
 		         	<caseText value="before">avant le</caseText>
 		         	<caseText value="after">après le</caseText>
-		         	<caseText value="either">des deux côtés du</caseText>
+		         	<caseText value="either">d’un côté ou de l’autre du</caseText>
 		            <caseText value="unknown"> _______ </caseText>
 		         </case>
-		   	<content> nom possédé, mais les possessifs de syntagme nominal se trouvent seulement dans </content>
+		   	<content> nom déterminé dans le syntagme de possession, mais les possessifs constitués d’un syntagme nominal se trouvent seulement dans </content>
 		         <case element="pp" attr="pPos">
 		         	<caseText value="before">un syntagme prépositionel</caseText>
 		         	<caseText value="after">un syntagme postpositionnel</caseText>
@@ -534,10 +534,10 @@
 		         <case element="np" attr="possPPPos">
 		         	<caseText value="before">avant le</caseText>
 		         	<caseText value="after">après le</caseText>
-		         	<caseText value="either">des deux côtés du</caseText>
+		         	<caseText value="either">d’un côté ou de l’autre du</caseText>
 		            <caseText value="unknown"> _______ </caseText>
 		         </case>
-		   	<content> nom possédé (section </content>
+		   	<content> nom déterminé dans le syntagme de possession (section </content>
 		         <sectionRef sec="sNPPoss"/>
 		         <content>). </content></text>
 		   <text show="swNPPossNPNone">
@@ -551,10 +551,10 @@
 		   	<case element="np" attr="possPPPos">
 		   		<caseText value="before">avant le</caseText>
 		   		<caseText value="after">après le</caseText>
-		   		<caseText value="either">des deux côtés du</caseText>
+		   		<caseText value="either">d’un côté ou de l’autre du</caseText>
 		   		<caseText value="unknown"> _______ </caseText>
 		   	</case>
-		   	<content> nom possédé (section </content>
+		   	<content> nom déterminé dans le syntagme de possession (section </content>
 		   	<sectionRef sec="sNPPoss"/>
 		         <content>). </content></text>
 		</p>
@@ -563,16 +563,16 @@
 	   	<text show="swNPAdjPBefore"><content>avant le</content></text>
 	   	<text show="swNPAdjPAfter"><content>après le</content></text>
 	   	<text show="swNPAdjPEither"><content>d’un côté ou de l’autre du</content></text>
-	   	<text show="swNPAdjPBoth"><content>des deux côtés du</content></text>
-	   	<text show="swNPAdjPBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-	   	<text show="swNPAdjPAfterOrBoth"><content>après ou des deux côtés du</content></text>
-	   	<text show="swNPAdjPEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
+	   	<text show="swNPAdjPBoth"><content>de part et d’autre du</content></text>
+	   	<text show="swNPAdjPBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+	   	<text show="swNPAdjPAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+	   	<text show="swNPAdjPEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 	   	<content> nom qu’ils modifient (section </content>
 	      <sectionRef sec="sNPAdjP"/>
 	      <content>).   </content>
 	   </p>
 	   <p show="swNPAdjPOtherOnly"> 
-	   	<content>Les syntagmes adjectivaux se trouvent ___</content><contentCheckBoxOther contentLoc="np/adjPosOther"/>
+	   	<content>Les syntagmes adjectivaux sont traités dans ___</content><contentCheckBoxOther contentLoc="np/adjPosOther"/>
 	      <content> (section </content>
 	      <sectionRef sec="sNPAdjP"/>
 	      <content>).   </content>
@@ -582,17 +582,17 @@
 	   	<text show="swNPAdjPBefore"><content>avant le</content></text>
 	   	<text show="swNPAdjPAfter"><content>après le</content></text>
 	   	<text show="swNPAdjPEither"><content>d’un côté ou de l’autre du</content></text>
-	   	<text show="swNPAdjPBoth"><content>des deux côtés du</content></text>
-	   	<text show="swNPAdjPBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-	   	<text show="swNPAdjPAfterOrBoth"><content>après ou des deux côtés du</content></text>
-	   	<text show="swNPAdjPEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
+	   	<text show="swNPAdjPBoth"><content>de part et d’autre du</content></text>
+	   	<text show="swNPAdjPBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+	   	<text show="swNPAdjPAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+	   	<text show="swNPAdjPEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 	   	<content> nom qu’ils modifient, et peuvent aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/adjPosOther"/><content> (section </content>
 	      <sectionRef sec="sNPAdjP"/>
 	      <content>).   </content>
 	   </p>
 	   <p>
 	      <text show="swRelClExistNo">
-				<langName/>
+				<content>Le </content><langName/>
 	      	<content> n’a aucun type de proposition relative.</content>
 			</text>
 			<text show="swRelClExistYes">
@@ -600,7 +600,7 @@
 				<case element="relcl" attr="clausePos">
 					<caseText value="before">avant le</caseText>
 					<caseText value="after">après le</caseText>
-					<caseText value="either">des deux côtés du</caseText>
+					<caseText value="either">d’un côté ou de l’autre du</caseText>
 					<caseText value="unknown"> _______ </caseText>
 				</case>
 				<content> nom principal (section </content>
@@ -612,12 +612,12 @@
 			<content>En </content>
 			<langName/>
 			<content>, </content>
-			<text show="swProDropYes"><content>un sujet nul (anaphore zéro) est permis dans n’importe quel type de phrase.</content></text>
-			<text show="swProDropClitic"><content>le sujet peut paraître nul dû aux pronoms dépendants (clitiques pronominaux) qui s’attachent au verbe, mais ce n’est pas une vraie langue à sujet nul.</content></text>
-			<text show="swProDropJustImp"><content>un sujet nul (anaphore zéro) n’est pas permis.  Le sujet peut être explicite  à l’exception des impératifs.</content></text>
-			<text show="swProDropNone"><content>un sujet nul (anaphore zéro) n’est pas permis.  Le sujet doit être explicite même dans les impératifs.</content></text>
-			<text show="swProDropOtherOnly"><content> un sujet nul est permis seulement ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content> .</content></text>
-			<text show="swProDropOtherAndImp"><content> un sujet nul est permis ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content> et aussi dans les impératifs.</content></text>
+			<text show="swProDropYes"><content>un sujet nul (pro-drop) est admis dans n’importe quel type de phrase.</content></text>
+			<text show="swProDropClitic"><content>le sujet peut paraître nul en raison des pronoms dépendants (clitiques pronominaux) qui se rattachent au verbe, mais ce n’est pas une vraie langue à sujet nul.</content></text>
+			<text show="swProDropJustImp"><content>un sujet nul (pro-drop) n’est pas admis.  Le sujet doit être explicite sauf dan les impératifs.</content></text>
+			<text show="swProDropNone"><content>un sujet nul (pro-drop) n’est pas admis.  Le sujet doit être explicite même dans les impératifs.</content></text>
+			<text show="swProDropOtherOnly"><content> un sujet nul (pro-drop) est admis uniquement ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content> .</content></text>
+			<text show="swProDropOtherAndImp"><content> un sujet nul (pro-drop) est admis ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content> ainsi que dans les impératifs.</content></text>
 		   <content>  (section </content>
 			<sectionRef sec="sIPProDrop"/>
 			<content>).</content>
@@ -627,18 +627,18 @@
 					<caseText value="no">n’est pas</caseText>
 					<caseText value="yes">est</caseText>
 				</case>
-				<content> premis.</content>
+				<content> admis.</content>
 			</text>
 		</p>
 		<p show="swAuxNone">
 			<content>En </content><langName/>
-			<content>  il n’y a pas d’auxilliaires qui sont écrits comme mots indépendants (section </content>
+			<content>, il n’y a pas d’auxilliaire écrit comme un mot indépendant (section </content>
 			<sectionRef sec="sIPAux"/>
 			<content>).</content>
 		</p>
 		<p show="swAuxNotNone">
 			<content>En </content><langName/>
-			<content> il y a des auxilliares qui sont écrits comme mots indépendants.  Ceux-ci se trouvent </content>
+			<content>, il y a des auxilliares écrits comme mots indépendants.  Ceux-ci se trouvent </content>
 			<case element="typology" attr="wordOrder">
 				<caseText value="SVO">avant</caseText>
 				<caseText value="SOV">après</caseText>
@@ -653,42 +653,42 @@
 		</p>
 		<p>
 			<text show="swQMainYNWordYesAndNotOther">
-				<content>Dans les questions oui/non il y a un marqueur de question ou complémenteur qui se trouve </content>
+				<content>Dans les questions Oui/Non, il y a un marqueur de question ou un complémenteur qui se trouve </content>
 				<text show="swQMainYNWordBefore"><content>avant le</content></text>
 				<text show="swQMainYNWordAfter"><content>après le</content></text>
 				<text show="swQMainYNWordEither"><content>d’un côté ou de l’autre du</content></text>
-				<text show="swQMainYNWordBoth"><content>des deux côtés du</content></text>
-				<text show="swQMainYNWordBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-				<text show="swQMainYNWordAfterOrBoth"><content>après ou des deux côtés du</content></text>
-				<text show="swQMainYNWordEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
+				<text show="swQMainYNWordBoth"><content>de part et d’autre du</content></text>
+				<text show="swQMainYNWordBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+				<text show="swQMainYNWordAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+				<text show="swQMainYNWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 				<content> reste de la question (section </content>
 				<sectionRef sec="sQuesYN"/>
 				<content>).  </content>
 			</text>
 		   <text show="swQMainYNWordYesAndOtherOnly">
-		   	<content>Dans les questions oui/non il y a un marqueur de question ou complémenteur qui se trouve ___</content>
+		   	<content>Dans les questions Oui/Non, il y a un marqueur de question ou un complémenteur qui se trouve ___</content>
 		      <contentCheckBoxOther contentLoc="q/mainYNWordOther"/><content> (section </content>
 		      <sectionRef sec="sQuesYN"/>
 		      <content>).  </content>
 		   </text>
 		   <text show="swQMainYNWordYesAndOther">
-		   	<content>Dans les questions oui/non il y a un marqueur de question ou complémenteur qui se trouve </content>
+		   	<content>Dans les questions Oui/Non, il y a un marqueur de question ou un complémenteur qui se trouve </content>
 		   	<text show="swQMainYNWordBefore"><content>avant le</content></text>
 		   	<text show="swQMainYNWordAfter"><content>après le</content></text>
 		   	<text show="swQMainYNWordEither"><content>d’un côté ou de l’autre du</content></text>
-		   	<text show="swQMainYNWordBoth"><content>des deux côtés du</content></text>
-		   	<text show="swQMainYNWordBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-		   	<text show="swQMainYNWordAfterOrBoth"><content>après ou des deux côtés du</content></text>
-		   	<text show="swQMainYNWordEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
-		   	<content> reste de la question, et  peut se trouver aussi ou au lieu de cela ___</content><contentCheckBoxOther contentLoc="q/mainYNWordOther"/><content> (section </content>
+		   	<text show="swQMainYNWordBoth"><content>de part et d’autre du</content></text>
+		   	<text show="swQMainYNWordBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+		   	<text show="swQMainYNWordAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+		   	<text show="swQMainYNWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
+		   	<content> reste de la question, et peut se trouver aussi ou au lieu de cela ___</content><contentCheckBoxOther contentLoc="q/mainYNWordOther"/><content> (section </content>
 		      <sectionRef sec="sQuesYN"/>
 		      <content>).   </content>
 		   </text>
-			<content>Dans les questions de contenu un syntagme interrogatif </content>
+			<content>Dans les questions d’information, un syntagme interrogatif </content>
 			<case element="q" attr="contFront">
-				<caseText value="no">n’antériorise pas ; reste simplement en place</caseText>
-				<caseText value="after">peut rester en place ou peut changer de position immédiatement avant le verbe</caseText>
-				<caseText value="before">se place au début de la proposition</caseText>
+				<caseText value="no">n’est pas antéposé ; il reste simplement dans la position de l’élément sur lequel on interroge</caseText>
+				<caseText value="after">peut rester dans la position de l’élément sur lequel on interroge ou peut être placé immédiatement avant le verbe</caseText>
+				<caseText value="before">est placé au début de la proposition</caseText>
 				<caseText value="unknown"> _______ </caseText>
 			</case>
 			<content> (section </content>
@@ -700,14 +700,14 @@
 		  <langName/>
 		  <content/>
 		  <case element="typology" attr="case">
-		  	<caseText value="none"> il n’y a  pas de système de cas.  Le même groupe de pronoms peut être utilisé dans n’importe quelle position dans la phrase et il n’y a pas de marqueur sur les noms ou sur n’importe quels modificateurs basés sur leur position dans la phrase.</caseText>
-		  	<caseText value="nominative"> a un système de cas nominatif-accusatif.   Les sujets de verbes transitifs et intransitifs sont marqués de la même façon et utilisent le même groupe de pronoms, mais les objets de verbes transitifs sont marqués différemment.</caseText>
-		  	<caseText value="ergative"> a un système de cas ergatif-absolutif.   Les sujets de verbes intransitifs et les objets de verbes transitifs sont marqués de la même façon et utilisent le même groupe de pronoms, mais les sujets de verbes transitifs sont marqués différemment.</caseText>
-		  	<caseText value="split"> a un système de cas ergativité dédoublée.  La langue suit normalement le système de cas nominatif-accusatif mais le système ergatif-absolutif est utilisé sous certaines conditions grammaticales.</caseText>
+		  	<caseText value="none"> il n’y a pas de système casuel.  Le même ensemble de pronoms est utilisé dans n’importe quelle position dans la phrase et il n’y a pas de marqueur, qui serait déterminé par la position dans la phrase, sur les noms ou les modificateurs.</caseText>
+		  	<caseText value="nominative"> a un système de cas nominatif-accusatif.   Les sujets de verbes transitifs et intransitifs sont marqués de la même façon et on utilise le même ensemble de pronoms, mais les objets des verbes transitifs sont marqués différemment.</caseText>
+		  	<caseText value="ergative"> a un système de cas ergatif-absolutif.   Les sujets de verbes intransitifs et les objets de verbes transitifs sont marqués de la même façon et on utilise le même ensemble de pronoms, mais les sujets de verbes transitifs sont marqués différemment.</caseText>
+		  	<caseText value="split"> a un système de cas ergativité mixte.  Normalment, la langue suit le système de cas nominatif-accusatif mais le système ergatif-absolutif est utilisé sous certaines conditions grammaticales.</caseText>
 		  </case>
 		  <text show="swNPCaseNotNone"><content>  En </content><langName/><content>, </content><case element="np" attr="caseN">
-		  	<caseText value="yes">les noms et éventuellement leurs modificateurs portent le marqueur du cas de même que les pronoms.</caseText>
-		  	<caseText value="no">il n’ y a pas de marqueur de cas sur les noms. Les systèmes pronominaux indiquent les distinctions de cas.</caseText>
+		  	<caseText value="yes">les noms et éventuellement les modificateurs, tout comme les pronoms, portent le marqueur du cas.</caseText>
+		  	<caseText value="no">il n’ y a pas de marqueur de cas sur les noms. Par contre, les systèmes pronominaux indiquent les distinctions de cas.</caseText>
 		  </case></text>
 			 <text show="swNPCaseDefaultNom">
 			 	<content>  Le cas nominatif est le cas par défault (non marqué).</content>
@@ -715,35 +715,34 @@
 	   	<content> (Voir les sections </content><sectionRef sec="sNPCase"/><content> et </content><sectionRef sec="sPron"/><content>.)</content>
 	   </p>
 	   <p><content>En </content><langName/><content/><case element="typology" attr="classifier">
-	   	<caseText value="no"> n’y a pas de système de classe ou classificateur  de nom.</caseText>
-	   	<caseText value="yesAgr"> il y a un système de classe de nom comme détaillé dans la prochaine section.</caseText>
-	   	<caseText value="yesSpecific"> il y a un système de classificateurs de nom somme détaillé dans la prochaine section.</caseText>
-	   	<caseText value="yesType"> il y a un système de classificateurs de nom somme détaillé dans la prochaine section.</caseText>
+	   	<caseText value="no"> il n’y a pas de système de classes nominales ou de classificateur.</caseText>
+	   	<caseText value="yesAgr"> il y a un système de classes nominales présenté dans la prochaine section.</caseText>
+	   	<caseText value="yesSpecific"> il y a un système de classificateurs nominaux présenté dans la prochaine section.</caseText>
+	   	<caseText value="yesType"> il y a un système de classificateurs nominaux présenté dans la prochaine section.</caseText>
 	   </case></p>
 	</section1>
    <section1 id="sClassifiers" show="swClassifiersNotNo">
    	<secTitle>Classes nominales ou classificateurs</secTitle>
       <p contentType="ctPracticalIntro">
-      	<content>Les classes nominales ou les classificateurs marquent les noms par leur forme, leur position ou autres caractéristiques.  Dans un système de classe nominale, le marquage de classe peut devenir un système de concordance qui demande un accord partout dans le syntagme nominal et même avec le verbe.  Au lieu de cela des langues peuvent avoir un système de classificateurs, appelé quelque fois les mots de mesure.   Ces classificateurs sont des mots ou des morphèmes qui accompagnent des noms lorsque le nom est compté ou spécifié et servent à classifier le nom selon le type de son dénoté. Les classificateurs sont en rapport avec le nom compté ou spécifié, mais il n’y a pas d’autre accord dans le syntagme nominal ou la phrase. Dans un type plus simple de système de classificateur les affixes classificateurs dérivés soit d’un nom générique soit d’un pronom apparaissent sur la plupart des noms de types particuliers comme les animaux, les insectes ou les liquides.  Dans ce système plus simple, ces affixes n’apparaîtront que sur les noms et des distinctions similaires peuvent exister sur les pronoms à la troisième personne qui se rapportent à ces types de noms.</content>
-      </p>
+      	<content>Les classes nominales ou les classificateurs marquent les noms en fonction de leur forme, de leur position ou d’autres caractéristiques.  Dans un système de classes nominales, le marquage de classe peut devenir un système d’accord qui exige un accord dans tout le syntagme nominal et même avec le verbe.  Au lieu de cela, des langues peuvent avoir un système de classificateurs, appelé quelquefois les termes de mesure.   Ces classificateurs sont des mots ou des morphèmes qui accompagnent des noms lorsque le nom est dénombré ou spécifié et ils servent à classifier le nom selon le type du référent. Les classificateurs sont en rapport avec le nom dénombré ou spécifié, mais il n’y a pas d’autre accord dans le syntagme nominal ou la phrase. Dans un type plus simple de système de classificateurs, les affixes classificateurs sont dérivés soit d’un nom générique soit d’un pronom et apparaissent sur la plupart des noms de certains types, comme les animaux, les insectes ou les liquides.  Dans ce système plus simple, ces affixes n’apparaîtront que sur les noms et des distinctions similaires peuvent exister pour les pronoms de la troisième personne qui se rapportent à ces types de noms. </content></p>
 	  <p contentType="ctComparativeIntro">
-	  	<content>Certaines langues ont un système de classes nominale qui marquent les noms par leur forme, leur position et d’autres caractéristiques.  Dans beaucoup de ces langues le marqueur de classe devient un système d’accord qui exige un accord partout dans le syntagme nominal et même avec le verbe.  C’est pourquoi les quantificateurs, les articles, les démonstratifs, les adjectifs et les verbes peuvent être marqués avec le marqueur de classe nominale approprié.</content></p>
-   	<p contentType="ctComparativeIntro"><content>Les langues Bantou parlées en Afrique représentent peut-être le système de classe nominale le plus connu.  Ces langues ont jusqu’à 22 classes distinctes qui sont représentées par des nombres.  A peu près la moitié d’entre elles sont pour les noms au singulier seulement et un nombre égal pour les noms au pluriel seulement.  D’autres sont pour les noms de masse de lieu ou les noms abstraits.</content></p>
-   	<p contentType="ctComparativeIntro"><content>Au lieu de cela les langues peuvent avoir un système de classificateurs appelés quelque fois les mots de mesure.  Ces classificateurs sont des mots ou morphèmes qui accompagnent les noms quand le nom est compté ou spécifié et servent à classifier le nom selon le type de son dénoté.  Certaines langues ont plusieurs centaines de classificateurs.  Le classificateur se rapporte au nom qui est compté ou spécifié, mais il n’y a pas d’autre accord dans le syntagme nominal ou dans la phrase.  Ce type de classificateur est une partie importante de plusieurs langues asiatiques orientales.</content></p>
-   	<p contentType="ctComparativeIntro"><content>Il y a aussi un type plus simple de système de classificateur où il y a des affixes classificateurs dérivés d’un nom générique ou d’un pronom qui apparaît sur la plupart des noms utilisés pour les animaux ou insectes, liquides, arbres ou objets faits de bois ou objets ronds.  Dans ce système plus simple il n’y habituellement pas d’accord de classificateur concordant avec le syntagme nominal ou la phrase, alors ces affixes n’apparaissent que sur des noms et peuvent être considérés plus dérivationnels.  Cependant, il peut y avoir des distinctions similaires dans les pronoms à la troisième personne qui se réfèrent à ces types de noms.  Un tel système peut utiliser des types plutôt que des nombres pour identifier les classificateurs.</content>
+	  	<content>Certaines langues ont un système de classes nominales qui marquent les noms par leur forme, leur position et d’autres caractéristiques.  Dans beaucoup de ces langues, le marquage de classes devient un système d’accord qui exige un accord dans tout le syntagme nominal et même avec le verbe.  C’est pourquoi les quantifieurs, les articles, les démonstratifs, les adjectifs et les verbes peuvent être marqués avec le marqueur de classe nominale approprié.</content></p>
+   	<p contentType="ctComparativeIntro"><content>Les langues bantu parlées en Afrique représentent peut-être le système de classe nominale le plus connu.  Ces langues ont jusqu’à 22 classes distinctes, représentées par des numéros.  A peu près la moitié sont utilisées pour les noms au singulier seulement, et un nombre égal pour les noms au pluriel seulement.  D’autres sont utilisées pour les noms de masse ou de lieu ainsi que les noms abstraits.</content></p>
+   	<p contentType="ctComparativeIntro"><content>Au lieu de cela, les langues peuvent avoir un système de classificateurs appelés quelquefois les mots de mesure.  Ces classificateurs sont des mots ou morphèmes qui accompagnent les noms quand le nom est dénombré ou spécifié et servent à classifier le nom selon le type de référent.  Certaines langues ont plusieurs centaines de classificateurs.  Le classificateur se rapporte au nom dénombré ou spécifié, mais il n’y a pas d’autre accord dans le syntagme nominal ou dans la phrase.  Ce type de classificateur est une partie importante de bon nombre langues de l’Asie de l’Est.</content></p>
+   	<p contentType="ctComparativeIntro"><content>Il y a aussi un type plus simple de système de classificateurs dans lequel des affixes classificateurs dérivés soit d’un nom générique ou d’un pronom qui apparaissent sur la plupart des noms se référant aux animaux ou aux insectes, aux liquides, aux arbres ou aux objets faits de bois ou aux objets ronds.  Dans ce système plus simple, il n’y généralement pas d'accord dans le syntagme nominal ou la phrase, ces affixes n'apparaissent donc que sur des noms et peuvent être considérés plutôt dérivationnels.  Cependant, il peut y avoir des distinctions similaires pour les pronoms de troisième personne qui se réfèrent à ces types de noms.  Pour identifier les classificateurs, un tel système peut utiliser des types plutôt que des numéros.</content>
 	 </p>
-   	<p show="swClassifiersYesSpecific"><content>En </content><langName/><content> il y a  un système de classificateur qui distingue les types de noms. Les classificateurs se trouvent avec les noms dans le syntagme nominal lorsqu’ils sont comptés ou spécifiés mais il n’y a pas d’autre accord avec le syntagme nominal ou la phrase.</content></p>
-   	<p show="swClassifiersYesType"><content>En </content><langName/><content> il y a  un système de classificateur plus simple qui distingue les types de noms, il n’y a pas d’accord dans le syntagme nominal ou la phrase.</content></p>
-   	<p show="swClassifiersYesAgr"><content>En </content><langName/><content> iil y a un système de classe nominale avec accord partout dans le syntagme nominal ou la phrase.  En </content><langName/><content>, les classificateurs sont distingués par </content>
+   	<p show="swClassifiersYesSpecific"><content>En </content><langName/><content>, il y a un système de classificateurs qui distinguent les types de noms. Les classificateurs sont relevés dans le syntagme nominal avec les noms lorsqu'ils sont dénombrés ou spécifiés mais il n'y a pas d'autre accord dans le syntagme nominal ou la phrase.</content></p>
+   	<p show="swClassifiersYesType"><content>En </content><langName/><content>, il y a un système de classificateur plus simple qui distingue les types de noms, il n’y a pas d’accord dans le syntagme nominal ou la phrase.</content></p>
+   	<p show="swClassifiersYesAgr"><content>En </content><langName/><content>, il y a un système de classes nominales avec accord dans tout le syntagme nominal et la phrase.  En </content><langName/><content>, les classificateurs sont distingués par </content>
 	  <case element="typology" attr="classifierNum">
-	  	<caseText value="number">des numéros de classe. </caseText>
+	  	<caseText value="number">des numéros. </caseText>
 	  	<caseText value="type">des types.  <case element="typology" attr="classifierTypeNumAgr">
-	  		<caseText value="no">Les classes ne distinguent pas entre le singulier et le pluriel, il n’y a donc pas une seule classe pour chaque type de nom.</caseText>
-	  		<caseText value="yes">Il y a des classes independents  pour le singulier et le pluriel pour chaque type de nom.</caseText>
+	  		<caseText value="no">Les classes ne distinguent pas entre le singulier et le pluriel, il n’y a donc qu’une seule classe pour chaque type de nom.</caseText>
+	  		<caseText value="yes">Il y a des classes indépendentes pour le singulier et pour le pluriel pour chaque type de nom.</caseText>
 		 </case></caseText>
 	  </case>
 	  </p>
-   	<p show="swClassifiersYesTypeOrYesSpecific"><content>Les classificateurs en </content><langName/><content> sont montrés dans le tableau di-dessous:</content></p>
+   	<p show="swClassifiersYesTypeOrYesSpecific"><content>Les classificateurs du </content><langName/><content> sont présentés dans le tableau di-dessous :</content></p>
    	<example show="swClassifiersYesSpecific">
    		<table border="1" >
    			<caption>
@@ -829,7 +828,7 @@
    			</row>
    			<row>
    				<col>
-   					<content>ENTRER GLOSE</content>
+   					<content>SAISIR GLOSE</content>
    				</col>
    				<col exampleLoc="typology/classifierOtherExample"/>
    			</row>
@@ -897,17 +896,17 @@
 			</row>
 			<row>
 			   <col>
-				  <content>ENTRER GLOSE</content>
+				  <content>SAISIR GLOSE</content>
 			   </col>
 			   <col exampleLoc="typology/classOtherExample"/>
 			</row>
 		 </table>
 	  </example>
-   	<p show="swClassifiersYesAgr"><content>Les marqueurs de classe nominale en </content><langName/><content> sont montrés dans le tableau di-dessous:</content></p>
+   	<p show="swClassifiersYesAgr"><content>Les marqueurs de classe nominale en </content><langName/><content> sont présentés dans le tableau di-dessous :</content></p>
    	<example show="swClassifiersYesAgrTypeAndNoNumAgr">
    		<table border="1" >
    			<caption>
-   				<content>Marqueurs de classe nominale par type</content>
+   				<content>Classes nominales par type</content>
    			</caption>
    			<headerRow>
    				<headerCol>
@@ -965,7 +964,7 @@
    			</row>
    			<row>
    				<col>
-   					<content>ENTRER GLOSE</content>
+   					<content>SAISIR GLOSE</content>
    				</col>
    				<col exampleLoc="typology/classOtherExample"/>
    			</row>
@@ -975,11 +974,11 @@
 	  <example show="swClassifiersYesAgrTypeAndYesNumAgr">
 		 <table border="1" >
 			<caption>
-				<content>Marqueurs de classe nominale par type</content>
+				<content>Classes nominales par type</content>
 			</caption>
 			<headerRow>
 			   <headerCol>Type</headerCol>
-				<headerCol>Accord numérique</headerCol>
+				<headerCol>Accord en nombre</headerCol>
 				<headerCol>Marqueurs de classe</headerCol>
 			</headerRow>
 			<row>
@@ -1096,14 +1095,14 @@
 			</row>
 			<row>
 			   <col>
-				  <content>ENTRER GLOSE</content>
+				  <content>SAISIR GLOSE</content>
 			   </col>
 			   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classOtherSgExample"/>
 			</row>
 			<row>
 			   <col>
-				  <content>ENTRER GLOSE</content>
+				  <content>SAISIR GLOSE</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classOtherPlExample"/>
@@ -1118,7 +1117,7 @@
 			<headerRow>
 			   <headerCol>Numéro de classe</headerCol>
 			   <headerCol>Marqueur de classe</headerCol>
-				<headerCol>Accord numérique</headerCol>
+				<headerCol>Accord en nombre</headerCol>
 			</headerRow>
 			<row>
 			   <col>
@@ -1129,7 +1128,7 @@
 				  <case element="typology" attr="class1agr">
 					 <caseText value="sg">singulier</caseText>
 					 <caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1142,7 +1141,7 @@
 				  <case element="typology" attr="class2agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 				  </col>
 			</row>
@@ -1155,7 +1154,7 @@
 				  <case element="typology" attr="class3agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1168,7 +1167,7 @@
 				  <case element="typology" attr="class4agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1181,7 +1180,7 @@
 				  <case element="typology" attr="class5agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1194,7 +1193,7 @@
 				  <case element="typology" attr="class6agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1207,7 +1206,7 @@
 				  <case element="typology" attr="class7agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1220,7 +1219,7 @@
 				  <case element="typology" attr="class8agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1233,7 +1232,7 @@
 				  <case element="typology" attr="class9agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1246,7 +1245,7 @@
 				  <case element="typology" attr="class10agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1259,7 +1258,7 @@
 				  <case element="typology" attr="class11agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1272,7 +1271,7 @@
 				  <case element="typology" attr="class12agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1285,7 +1284,7 @@
 				  <case element="typology" attr="class13agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1298,7 +1297,7 @@
 				  <case element="typology" attr="class14agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1311,7 +1310,7 @@
 				  <case element="typology" attr="class15agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1324,7 +1323,7 @@
 				  <case element="typology" attr="class16agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1337,7 +1336,7 @@
 				  <case element="typology" attr="class17agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1350,7 +1349,7 @@
 				  <case element="typology" attr="class18agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1363,7 +1362,7 @@
 				  <case element="typology" attr="class19agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1376,7 +1375,7 @@
 				  <case element="typology" attr="class20agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1389,7 +1388,7 @@
 				  <case element="typology" attr="class21agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1402,7 +1401,7 @@
 				  <case element="typology" attr="class22agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1415,7 +1414,7 @@
 				  <case element="typology" attr="class23agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1428,7 +1427,7 @@
 				  <case element="typology" attr="class24agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
@@ -1441,14 +1440,14 @@
 				  <case element="typology" attr="class25agr">
 				  	<caseText value="sg">singulier</caseText>
 				  	<caseText value="pl">pluriel</caseText>
-				  	<caseText value="irrelevant">ne s’applique pas</caseText>
+				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
 			</row>
 		 </table>
 	  </example>
 
-   	<p show="swClassifiersYesType"><content>Voici des exemples de noms accompagnés de leurs classificateurs de type:</content></p>
+   	<p show="swClassifiersYesType"><content>Voici quelques exemples de noms accompagnés de leurs classificateurs de type :</content></p>
 	  <example show="swClassifiersYesType">
 	     <table border="1">
 	        <headerRow>
@@ -1457,15 +1456,15 @@
 	        </headerRow>
 	        <row>
 	           <col exampleLoc="typology/classifierTypeExample"/>
-	           <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	           <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	        </row>
 	     </table>
 	  </example>
-   	<p show="swClassifiersYesAgr"><content>Voici des exemples de phrases avec accord de classe nominale dans le syntagme nominal et sur le verbe:</content></p>
+   	<p show="swClassifiersYesAgr"><content>Voici quelques exemples de phrases mettant en évidence l’accord de classe nominale dans le syntagme nominal et dans le verbe :</content></p>
 	  <example show="swClassifiersYesAgr">
 		 <interlinear exampleLoc="typology/classifierAgrExample"/>
 	  </example>
-   	<p show="swClassifiersYesSpecific"><content>Voici des exemples de syntagmes nominaux qui illustrent des classificateurs varies utilisés avec des numéros ou démonstratifs et des noms:</content></p>
+   	<p show="swClassifiersYesSpecific"><content>Voici quelques exemples de syntagmes nominaux illustrant divers classificateurs utilisés avec des numéraux ou des démonstratifs et des noms :</content></p>
    	<example show="swClassifiersYesSpecific">
    		<interlinear exampleLoc="typology/classifierSpecificExample"/>
    	</example>

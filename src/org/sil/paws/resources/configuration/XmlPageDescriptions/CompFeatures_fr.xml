@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="CompFeatures" count="10.2">
-   <title level="2">Propositions complétives – Exemples et caractéristiques</title>
+   <title level="2">Propositions complétives – Exemples et Caractéristiques</title>
    <introduction>Les différents types de propositions complétives <span id="CompFeatSpanNotPractical" show="swNotPractical">montrées dans les arbres syntagmatiques représentent la structure sémantique du verbe ainsi que la sous-catégorisation syntaxique</span><span id="CompFeatSpanPractical" show="swPractical">permise par un verbe particulier 
        est déterminée par la <technicalTermRef term="ttSemantics">sémantique</technicalTermRef> tout comme par la <technicalTermRef term="ttSyntax">syntaxe</technicalTermRef></span>.  Il y a donc un certain degré de similarité à travers les langues pour les types de propositions <technicalTermRef term="ttComplements">complétives</technicalTermRef> 
        <span id="CompFeaturesIntroSpan2NotPractical" show="swNotPractical">que les verbes sous catégorisent.</span><span id="CompFeaturesIntroSpan2Practical" show="swPractical">que certains verbes acceptent.</span>  Pour chacun des cas présentés ci-dessous, peut-être penserez-vous à des adjectifs qui se construisent avec 

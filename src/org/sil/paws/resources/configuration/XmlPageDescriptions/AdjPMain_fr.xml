@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="AdjPMain" count="4.1">
-	<title>Adjectifs et Syntagmes Adjectivaux</title>
+	<title>Adjectifs et Syntagmes adjectivaux</title>
 	<introduction>Dans beaucoup de grammaires, les numéraux, les quantifieurs, les articles et les démonstratifs sont considérés comme des adjectifs, mais ils peuvent se placer dans des positions différentes de celles des adjectifs qualificatifs ; ils correspondent donc chacun à des catégories syntaxiques distinctes.  Dans dette section, nous nous limitons à étudier les adjectifs qualificatifs qui expriment la grandeur, la couleur, l'âge, la texture, la forme ou la qualité.  Une caractéristique de ce type d'adjectif est qu’il est possible que plusieurs adjectifs modifient un nom et, en général,  l'ordre des adjectifs n’est pas fixe et peut changer (avec un léger changement de sens dû aux changements dans la <technicalTermRef term="ttScope">portée</technicalTermRef> de chaque adjectif).  
 		Ainsi, <example>un intéressant grand livre vert</example> peut être constrasté avec <example>un grand livre vert intéressant</example>. Il faut remarquer qu’on dira, en français, <example>d’un vert intéressant</example> si <example>intéressant</example> qualifie <example>vert</example>. <span id="AdjPNotPracticalSpan" show="swNotPractical"> (This characteristic of stacking adjectives will be dealt with in <section number="5.6">Nominal Phrases – Adjective Phrase Modifiers</section> by an adjunction rule which allows recursion.)
 	</span><br/><br/>
-		Il faut noter que cette section traite des adjectifs modifiant les noms dans un syntagme nominal, et non les adjectifs jouant le rôle de <technicalTermRef term="ttPredicates">prédicats</technicalTermRef>.  Les constructions dans lesquelles l’adjectif est le prédicat seront traitées dans la <section number="9.5">Phrases Simples – Copulatifs</section>.
+		Il faut noter que cette section traite des adjectifs modifiant les noms dans un syntagme nominal, et non les adjectifs jouant le rôle de <technicalTermRef term="ttPredicates">prédicats</technicalTermRef>.  Les constructions dans lesquelles l’adjectif est le prédicat seront traitées dans la <section number="9.5">Phrases Simples – Copules</section>.
 	</introduction>
 	<introduction>Ici nous allons de nouveau considérer quels types de mots peuvent modifier les adjectifs qualificatifs eux-mêmes. Voici quelques exemples en français :</introduction>
 	<EnglishExample>

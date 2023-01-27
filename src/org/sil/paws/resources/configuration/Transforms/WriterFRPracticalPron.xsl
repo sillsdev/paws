@@ -4,13 +4,13 @@
 	<section1 id="sPron">
 		<secTitle>Pronoms</secTitle>
 		<p>
-<xsl:text>Les pronoms se présentent dans une variété de sortes, y compris les pronoms personnels, possessifs, réflexifs, réciproques, démonstratifs et indéfinis.  (Les pronoms interrogatifs sont traités dans la </xsl:text>
+<xsl:text>Les pronoms se présentent dans une variété de types, y compris les pronoms personnels, possessifs, réfléchis, réciproques, démonstratifs et indéfinis.  (Les pronoms interrogatifs sont traités dans la </xsl:text>
 <sectionRef sec="sQuesContent" />
 <xsl:text>.)</xsl:text>
 </p>		
 		<xsl:if test="normalize-space(//typology/@classifier)='yesAgr' and normalize-space(//pron/@pronounClassifier)='no'">
 <p>
-<xsl:text>Bien qu’il y ait un système d’accords des classificateurs dans </xsl:text>
+<xsl:text>Bien qu’il y ait un système d’accords des classificateurs en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -19,7 +19,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>, les pronoms ne sont pas marqués par des classificateurs.</xsl:text>
+<xsl:text>, les pronoms ne sont pas marqués par les classificateurs.</xsl:text>
 </p>
 </xsl:if>
 
@@ -27,7 +27,7 @@
 		<section2 id="sPronPersonal">
 			<secTitle>Pronoms personnels</secTitle>
 			<p>
-<xsl:text>Les pronoms personnels indépendants sont des mots qui peuvent se présenter dans toutes les positions des substantifs ou des syntagmes nominaux.  Certains langues ont aussi des formes dépendantes de pronoms personnels qui s’attachent à un autre mot dans la phrase.  Beaucoup de langues avec des pronoms dépendants utilisent seulement les formes indépendantes quand le pronom est accentué ou en focus.</xsl:text>
+<xsl:text>Les pronoms personnels indépendants sont des mots qui peuvent apparaître dans toutes les positions où on peut trouver des substantifs ou des syntagmes nominaux.  Certains langues ont aussi des formes dépendantes de pronoms personnels qui se rattachent à un autre mot dans la phrase.  Beaucoup de langues ayant des pronoms dépendants n’emploient les formes indépendantes que dans les cas où  le pronom est accentué ou mis en emphase.</xsl:text>
 </p>
 			<p>
 <xsl:text>En </xsl:text>
@@ -41,8 +41,8 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-				<xsl:when test="//pron/@dependentPron='no'"> il n’y a pas une classe distincte de pronoms personnels dépendants.</xsl:when>
-				<xsl:when test="//pron/@dependentPron='yes'"> / il y a des pronoms dépendants aussi bien que des pronoms personnels indépendants.  Les deux classes de pronoms personnels seront présentées ici ; on traitera d’abord les formes indépendantes.</xsl:when>
+				<xsl:when test="//pron/@dependentPron='no'"> il n’y a pas de classe distincte de pronoms personnels dépendants.</xsl:when>
+				<xsl:when test="//pron/@dependentPron='yes'"> / il y a des pronoms personnels dépendants aussi bien que des pronoms personnels indépendants.  Les deux classes de pronoms personnels seront présentées ici ; les formes indépendantes seront traitées d’abord.</xsl:when>
 			</xsl:choose>
 <xsl:text></xsl:text>
 </p>
@@ -57,7 +57,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> sont marqués par des classificateurs comme une partie du système d’accords.  Les formes données dans cette section pour les pronoms ne seront peut-être que la racine, ou le classificateur peut être présenté y attaché. </xsl:text>
+<xsl:text> sont marqués par des classificateurs et s’intègrent dans le système d’accords.  Les formes données pour les pronoms dans cette section ne seront peut-être que la racine, ou le classificateur peut leur être rattaché. </xsl:text>
 </p>
 </xsl:if>
 		   
@@ -72,7 +72,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il n’y a pas de distinctions de cas, alors il n’y a qu’une seule classe de pronoms qu’on peut utiliser dans toutes les positions dans la phrase, comme le montre les exemples ici.</xsl:text>
+<xsl:text>, il n’y a pas de distinctions de cas, il n’y a donc qu’une seule classe de pronoms qu’on peut employer dans toutes les positions dans la phrase, comme le montrent les exemples ci-dessous.</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)!='no'">
@@ -86,7 +86,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il n’y a pas de distinctions de cas, alors il y a une seule classe de pronoms qu’on peut utiliser avec les sujets agent et dans toute autre position dans la phrase, comme le montrent les exemples ici.</xsl:text>
+<xsl:text>, il n’y a pas de distinctions de cas, il y a donc une seule classe de pronoms qu’on peut employer avec les sujets agent et dans toute autre position dans la phrase, comme le montrent les exemples ci-dessous.</xsl:text>
 </p>
 </xsl:if>
 		   
@@ -130,7 +130,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -145,12 +145,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -179,14 +179,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -197,16 +197,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -236,14 +236,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -254,16 +254,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -299,7 +299,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -314,12 +314,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -354,7 +354,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -369,12 +369,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -428,7 +428,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -446,12 +446,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -490,7 +490,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -508,12 +508,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -546,14 +546,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -567,16 +567,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -609,14 +609,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -630,16 +630,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -678,7 +678,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -696,12 +696,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -739,7 +739,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -757,12 +757,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -800,7 +800,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -818,12 +818,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -861,7 +861,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -879,12 +879,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -896,14 +896,14 @@
 
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)!='no'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise pour les sujets expérienceur sont:</xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants employés pour les sujets expérient :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)!='no' and normalize-space(//pron/@pronounNumber)='no'">
 <example num="xPron.PronPersonal.20">
 <table border="1">
 		      	<caption>
-<xsl:text>Pronoms personnels indépendants pour les sujets expérienceur</xsl:text>
+<xsl:text>Pronoms personnels indépendants pour les sujets expérient</xsl:text>
 </caption>
 		         <tr>
 		            <th>Personne</th>
@@ -939,7 +939,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -954,12 +954,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -988,14 +988,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1006,16 +1006,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1045,14 +1045,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1063,16 +1063,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1108,7 +1108,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1123,12 +1123,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1163,7 +1163,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1178,12 +1178,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1197,7 +1197,7 @@
 <example num="xPron.PronPersonal.22">
 <table border="1">
 		      	<caption>
-<xsl:text>Pronoms personnels indépendants pour les sujets expérienceur</xsl:text>
+<xsl:text>Pronoms personnels indépendants pour les sujets expérient</xsl:text>
 </caption>
 		         <tr>
 		            <th>Personne</th>
@@ -1237,7 +1237,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1255,12 +1255,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1299,7 +1299,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1317,12 +1317,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1355,14 +1355,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1376,16 +1376,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1418,14 +1418,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1439,16 +1439,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1487,7 +1487,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1505,12 +1505,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1548,7 +1548,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1566,12 +1566,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1609,7 +1609,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1627,12 +1627,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1670,7 +1670,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1688,12 +1688,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1714,21 +1714,21 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un système de cas nominatif-accusatif, il y a donc des classes distinctes de pronoms pour les sujets, les objets, et pour les possesseurs. </xsl:text>
+<xsl:text>, il y a un système de cas nominatif-accusatif, il y a donc des classes distinctes de pronoms pour les sujets, les objets, et les possesseurs. </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//typology/@caseExperiencer='no'">Les sujets agent et les sujets expérienceur utilisent les pronoms nominatifs, tandis que les objets directs utilisent les pronoms accusatifs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les sujets agent utilisent les pronoms nominatifs, tandis que les sujets expérienceur utilisent la même classe de pronoms accusatifs qu’on utilise pour les objets indirects.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">Les sujets agent utilisent les pronoms nominatifs, tandis que les sujets expérienceur utilisent les pronoms datifs qu’on utilise aussi pour les objets indirects.  Les objets directs utilisent les pronoms accusatifs.</xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='no'">Les pronoms nominatifs sont employés pour les sujets agent et les sujets expérient, tandis que les pronoms accusatifs sont employés pour les objets directs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les pronoms nominatifs sont employés pour les sujets agent, tandis que la même classe de pronoms accusatifs employée pour les objets indirects est employée pour les sujets expérient.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">Les pronoms nominatifs sont employés pour les sujets agent, tandis que les pronoms datifs aussi employés pour les objets indirects sont utilisés pour les sujets expérient.  Les pronoms accusatifs sont employés pour les objets directs.</xsl:when>
 				</xsl:choose>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//typology/@case)='nominative'">
 <p>
-<xsl:text>  Les pronoms personnels indépendants qu’on utilise pour </xsl:text>
+<xsl:text>  Voici les pronoms personnels indépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-				<xsl:when test="//typology/@caseExperiencer='no'">les sujets sont: </xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent sont:</xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent sont:</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='no'">les sujets : </xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent :</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent :</xsl:when>
 		   </xsl:choose>
 </p>
 </xsl:if>
@@ -1772,7 +1772,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1787,12 +1787,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1821,14 +1821,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1839,16 +1839,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1878,14 +1878,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1896,16 +1896,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1941,7 +1941,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -1956,12 +1956,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -1996,7 +1996,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2011,12 +2011,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2070,7 +2070,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2088,12 +2088,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2132,7 +2132,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2150,12 +2150,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2188,14 +2188,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2209,16 +2209,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2251,14 +2251,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2272,16 +2272,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2320,7 +2320,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2338,12 +2338,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2381,7 +2381,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2399,12 +2399,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2442,7 +2442,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2460,12 +2460,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2503,7 +2503,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2521,12 +2521,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2537,11 +2537,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-			   	<xsl:when test="//typology/@caseExperiencer='no'">les objets directs sont:</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérienceur sont:</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les objets directs sont:</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='no'">les objets directs :</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérient :</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les objets directs :</xsl:when>
 			   </xsl:choose>
 </p>
 </xsl:if>
@@ -2585,7 +2585,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2600,12 +2600,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2634,14 +2634,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2652,16 +2652,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2691,14 +2691,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2709,16 +2709,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2754,7 +2754,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2769,12 +2769,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2809,7 +2809,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2824,12 +2824,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2883,7 +2883,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2901,12 +2901,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -2945,7 +2945,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -2963,12 +2963,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3001,14 +3001,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3022,16 +3022,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3064,14 +3064,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3085,16 +3085,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3133,7 +3133,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3151,12 +3151,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3194,7 +3194,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3212,12 +3212,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3255,7 +3255,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3273,12 +3273,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3316,7 +3316,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3334,12 +3334,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3350,11 +3350,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise </xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie </xsl:text>
 <xsl:if test="normalize-space(//typology/@caseExperiencer)='yesDat'">
-<xsl:text>pour les sujets expérienceur ou </xsl:text>
+<xsl:text>pour les sujets expérient ou </xsl:text>
 </xsl:if>
-<xsl:text>pour les objets indirects sont:</xsl:text>
+<xsl:text>pour les objets indirects :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='no'">
@@ -3397,7 +3397,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3412,12 +3412,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3446,14 +3446,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3464,16 +3464,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3503,14 +3503,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3521,16 +3521,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3566,7 +3566,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3581,12 +3581,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3621,7 +3621,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3636,12 +3636,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3695,7 +3695,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3713,12 +3713,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3757,7 +3757,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3775,12 +3775,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3813,14 +3813,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3834,16 +3834,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3876,14 +3876,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3897,16 +3897,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -3945,7 +3945,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -3963,12 +3963,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4006,7 +4006,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4024,12 +4024,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4067,7 +4067,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4085,12 +4085,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4128,7 +4128,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4146,12 +4146,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4162,7 +4162,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise pour les possesseurs sont:</xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie pour les possesseurs :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='no'">
@@ -4205,7 +4205,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4220,12 +4220,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4254,14 +4254,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4272,16 +4272,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4311,14 +4311,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4329,16 +4329,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4374,7 +4374,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4389,12 +4389,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4429,7 +4429,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4444,12 +4444,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4503,7 +4503,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4521,12 +4521,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4565,7 +4565,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4583,12 +4583,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4621,14 +4621,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4642,16 +4642,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4684,14 +4684,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4705,16 +4705,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4753,7 +4753,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4771,12 +4771,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4814,7 +4814,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4832,12 +4832,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4875,7 +4875,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4893,12 +4893,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4936,7 +4936,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -4954,12 +4954,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -4971,7 +4971,7 @@
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='ergative'">
 <p>
-<xsl:text>eN </xsl:text>
+<xsl:text>En </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -4980,27 +4980,28 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un système de cas ergatif-absolutif, il y a alors des classes distinctes de pronoms qu’on peut utiliser comme les sujets de verbes transitifs contre les sujets de verbes intransitifs et les objets de verbes transitifs.  </xsl:text>
+<xsl:text>, il y a un système de cas ergatif-absolutif, il y a donc des classes distinctes de pronoms qu’on peut employer comme sujet de verbes transitifs versus sujet de verbes intransitifs et objet de verbes transitifs.  </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//typology/@caseExperiencer='no'">Les sujets agent et les sujets expérienceur de verbes transitifs utilisent les pronoms ergatifs, tandis que les sujets agent et expérienceur de verbes intransitifs et les objets directs de verbes transitifs utilisent les pronoms absolutifs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les agents sujet de verbes transitifs utilisent les pronoms ergatifs, tandis que les sujets expérienceur de verbes transitifs utilisent la même classe de pronoms absolutifs qu’on utilise aussi pour les sujets de verbes intransitifs et pour les objets directs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">Les sujets agent de verbes transitifs utilisent des pronoms ergatifs, tandis que les agents sujet de verbes intransitifs et les objets directs de verbes transitifs utilisent les pronoms absolutifs.  Les sujets expérienceur utilisent les pronoms datifs qu’on utilise aussi pour les objets indirects. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='no'">Les pronoms ergatifs sont employés pour les sujets agent et les sujets expérient de verbes transitifs , tandis que les pronoms absolutifs sont employés pour les sujets agent et expérient de verbes intransitifs et les objets directs de verbes transitifs .  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les pronoms ergatifs sont employés pour les agents sujet de verbes transitifs, tandis que la même classe de pronoms absolutifs employés aussi pour les sujets de verbes intransitifs et pour les objets directs est employée pour les sujets expérient de verbes transitifs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesDat'"> Les pronoms ergatifs sont employés pour les sujets agent de verbes transitifs , tandis que les pronoms absolutifs sont employés pour les agents sujet de verbes intransitifs et les objets directs de verbes transitifs.  Les pronoms datifs qu’on emploie aussi pour les objets indirects sont aussi employés pour les sujets expérient. </xsl:when>
 			   </xsl:choose>
-<xsl:text> Les possesseurs utilisent </xsl:text>
+<xsl:text> Les pronoms </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//np/@possCaseErg='ergative'">les pronoms ergatifs aussi.</xsl:when>
-		   		<xsl:when test="//np/@possCaseErg='absolutive'">les pronoms absolutifs aussi.</xsl:when>
-		   		<xsl:when test="//np/@possCaseErg='genitive'">pronoms génitifs, une classe distincte.</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='ergative'">ergatifs sont aussi employés</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='absolutive'">absolutifs sont aussi employés</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='genitive'">génitifs, une classe distincte, sont employés</xsl:when>
 			   </xsl:choose>
+<xsl:text> pour les possesseurs.</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//typology/@case)='ergative'">
 <p>
-<xsl:text> Les pronoms personnels indépendants qu’on utilise pour </xsl:text>
+<xsl:text> Voici les pronoms personnels indépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-				<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes transitifs sont: </xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent de verbes transitifs sont:</xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes transitifs sont:</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes transitifs : </xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent de verbes transitifs :</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes transitifs :</xsl:when>
 		   </xsl:choose>
 </p>
 </xsl:if>
@@ -5044,7 +5045,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5059,12 +5060,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5093,14 +5094,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5111,16 +5112,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5150,14 +5151,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5168,16 +5169,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5213,7 +5214,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5228,12 +5229,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5268,7 +5269,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5283,12 +5284,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5342,7 +5343,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5360,12 +5361,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5404,7 +5405,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5422,12 +5423,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5460,14 +5461,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5481,16 +5482,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5523,14 +5524,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5544,16 +5545,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5592,7 +5593,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5610,12 +5611,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5653,7 +5654,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5671,12 +5672,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5714,7 +5715,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5732,12 +5733,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5775,7 +5776,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5793,12 +5794,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5809,11 +5810,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-		      	<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes intransitifs ou pour les objets directs de verbes transitifs sont:</xsl:when>
-		      	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérienceur sont:</xsl:when>
-		      	<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes intransitifs ou pour les objets directs de verbes transitifs sont:</xsl:when>
+		      	<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes intransitifs ou pour les objets directs de verbes transitifs :</xsl:when>
+		      	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérient :</xsl:when>
+		      	<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes intransitifs ou pour les objets directs de verbes transitifs :</xsl:when>
 		      </xsl:choose>
 </p>
 </xsl:if>
@@ -5857,7 +5858,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5872,12 +5873,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5906,14 +5907,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5924,16 +5925,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -5963,14 +5964,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -5981,16 +5982,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6026,7 +6027,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6041,12 +6042,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6081,7 +6082,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6096,12 +6097,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6155,7 +6156,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6173,12 +6174,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6217,7 +6218,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6235,12 +6236,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6273,14 +6274,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6294,16 +6295,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6336,14 +6337,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6357,16 +6358,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6405,7 +6406,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6423,12 +6424,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6466,7 +6467,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6484,12 +6485,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6527,7 +6528,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6545,12 +6546,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6588,7 +6589,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6606,12 +6607,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6622,11 +6623,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise </xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie </xsl:text>
 <xsl:if test="normalize-space(//typology/@caseExperiencer)='yesDat'">
-<xsl:text>pour les sujets expérienceur ou </xsl:text>
+<xsl:text>pour les sujets expérient ou </xsl:text>
 </xsl:if>
-<xsl:text>pour les objets indirects sont:</xsl:text>
+<xsl:text>pour les objets indirects :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='no'">
@@ -6669,7 +6670,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6684,12 +6685,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6718,14 +6719,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6736,16 +6737,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6775,14 +6776,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6793,16 +6794,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6838,7 +6839,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6853,12 +6854,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6893,7 +6894,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6908,12 +6909,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -6967,7 +6968,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -6985,12 +6986,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7029,7 +7030,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7047,12 +7048,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7085,14 +7086,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7106,16 +7107,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7148,14 +7149,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7169,16 +7170,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7217,7 +7218,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7235,12 +7236,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7278,7 +7279,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7296,12 +7297,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7339,7 +7340,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7357,12 +7358,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7400,7 +7401,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7418,12 +7419,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7434,7 +7435,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise comme possesseurs sont:</xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie comme possesseurs :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='no'">
@@ -7483,7 +7484,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7498,12 +7499,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7532,14 +7533,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7550,16 +7551,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7589,14 +7590,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7607,16 +7608,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7652,7 +7653,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7667,12 +7668,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7707,7 +7708,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7722,12 +7723,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7787,7 +7788,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7805,12 +7806,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7849,7 +7850,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7867,12 +7868,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7905,14 +7906,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7926,16 +7927,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -7968,14 +7969,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -7989,16 +7990,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8037,7 +8038,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8055,12 +8056,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8098,7 +8099,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8116,12 +8117,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8159,7 +8160,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8177,12 +8178,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8220,7 +8221,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8238,12 +8239,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8264,21 +8265,21 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un système de cas dédoublé, il y a donc des classes distinctes de pronoms qu’on utilise normalement comme sujets, objets, et possesseurs, et des classes spéciales qu’on utilise  dans les cas d’ergativité dédoublée.  Dans les cas nominatifs-accusatifs, </xsl:text>
+<xsl:text>, il y a un système de cas mixte, il y a donc des classes distinctes de pronoms qu’on emploie normalement comme sujets, objets, et possesseurs, et des classes spéciales qu’on emploie dans les cas d’ergativité mixte.  Dans les cas nominatifs-accusatifs, </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//typology/@caseExperiencer='no'">les sujets agent et les sujets expérienceur, utilisent les pronoms nominatifs, tandis que les objets directs utilisent les pronoms accusatifs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les sujets agent utilisent les pronoms nominatifs, tandis que les sujets expérienceur utilisent la même classe de pronoms accusatifs qu’on utilise aussi pour les objets directs.  Il y a une classe de pronoms datifs pour les objets indirects.</xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">Les sujets agent utilisent les pronoms nominatifs, tandis que les sujets expérienceur utilisent les pronoms datifs qu’on utilise aussi pour les objets indirects.  Les object directs utilisent les pronoms accusatifs.</xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='no'">les pronoms nominatifs sont employés pour les sujets agent et les sujets expérient, tandis que les pronoms accusatifs sont employés pour les objets directs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">les pronoms nominatifs sont employés pour les sujets agent, tandis que la même classe de pronoms accusatifs qu’on emploie aussi pour les objets directs est employée pour les sujets expérient.  Il y a une classe de pronoms datifs pour les objets indirects.</xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">les pronoms nominatifs sont employés pour les sujets agent, tandis que les pronoms datifs qu’on utilise aussi pour les objets indirects sont employés pour les sujets expérient.  Les pronoms accusatifs sont employés pour les object directs.</xsl:when>
 			   </xsl:choose>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//typology/@case)='split'">
 <p>
-<xsl:text>  Les pronoms personnels indépendants qu’on utilise pour </xsl:text>
+<xsl:text>  Voici les pronoms personnels indépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-				<xsl:when test="//typology/@caseExperiencer='no'">les sujets sont: </xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent sont:</xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent sont:</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='no'">les sujets : </xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent :</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent :</xsl:when>
 		   </xsl:choose>
 </p>
 </xsl:if>
@@ -8322,7 +8323,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8337,12 +8338,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8371,14 +8372,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8389,16 +8390,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8428,14 +8429,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8446,16 +8447,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8491,7 +8492,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8506,12 +8507,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8546,7 +8547,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8561,12 +8562,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8620,7 +8621,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8638,12 +8639,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8682,7 +8683,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8700,12 +8701,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8738,14 +8739,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8759,16 +8760,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8801,14 +8802,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8822,16 +8823,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8870,7 +8871,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8888,12 +8889,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8931,7 +8932,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -8949,12 +8950,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -8992,7 +8993,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9010,12 +9011,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9053,7 +9054,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9071,12 +9072,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9088,11 +9089,11 @@
 		   
 			<xsl:if test="normalize-space(//typology/@case)='split'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-			   	<xsl:when test="//typology/@caseExperiencer='no'">les objets directs sont:</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérienceur sont:</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les objets directs sont:</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='no'">les objets directs :</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérient :</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les objets directs :</xsl:when>
 			   </xsl:choose>
 </p>
 </xsl:if>
@@ -9137,7 +9138,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9152,12 +9153,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9186,14 +9187,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9204,16 +9205,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9243,14 +9244,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9261,16 +9262,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9306,7 +9307,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9321,12 +9322,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9361,7 +9362,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9376,12 +9377,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9435,7 +9436,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9453,12 +9454,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9497,7 +9498,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9515,12 +9516,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9553,14 +9554,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9574,16 +9575,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9616,14 +9617,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9637,16 +9638,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9685,7 +9686,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9703,12 +9704,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9746,7 +9747,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9764,12 +9765,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9807,7 +9808,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9825,12 +9826,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9868,7 +9869,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9886,12 +9887,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9902,11 +9903,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise </xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie </xsl:text>
 <xsl:if test="normalize-space(//typology/@caseExperiencer)='yesDat'">
-<xsl:text>pour les sujets expérienceur ou </xsl:text>
+<xsl:text>pour les sujets expérient ou </xsl:text>
 </xsl:if>
-<xsl:text>pour les objets indirects sont:</xsl:text>
+<xsl:text>pour les objets indirects :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no'">
@@ -9949,7 +9950,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -9964,12 +9965,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -9998,14 +9999,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10016,16 +10017,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10055,14 +10056,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10073,16 +10074,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10118,7 +10119,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10133,12 +10134,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10173,7 +10174,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10188,12 +10189,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10247,7 +10248,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10265,12 +10266,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10309,7 +10310,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10327,12 +10328,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10365,14 +10366,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10386,16 +10387,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10428,14 +10429,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10449,16 +10450,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10497,7 +10498,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10515,12 +10516,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10558,7 +10559,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10576,12 +10577,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10619,7 +10620,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10637,12 +10638,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10680,7 +10681,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10698,12 +10699,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10714,7 +10715,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise normalement comme possesseurs sont:</xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie normalement comme possesseurs :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no'">
@@ -10757,7 +10758,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10772,12 +10773,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10806,14 +10807,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10824,16 +10825,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10863,14 +10864,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10881,16 +10882,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10926,7 +10927,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10941,12 +10942,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -10981,7 +10982,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -10996,12 +10997,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11055,7 +11056,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11073,12 +11074,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11117,7 +11118,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11135,12 +11136,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11173,14 +11174,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11194,16 +11195,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11236,14 +11237,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11257,16 +11258,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11305,7 +11306,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11323,12 +11324,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11366,7 +11367,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11384,12 +11385,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11427,7 +11428,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11445,12 +11446,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11488,7 +11489,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11506,12 +11507,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11522,13 +11523,13 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels indépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
 		   		<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes transitifs</xsl:when>
 		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent de verbes transitifs</xsl:when>
 		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes transitifs</xsl:when>
 		   	</xsl:choose>
-<xsl:text> dans les cas spéciaux d’ergativité dédoublée sont:</xsl:text>
+<xsl:text> dans les cas spéciaux d’ergativité mixte :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no'">
@@ -11571,7 +11572,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11586,12 +11587,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11620,14 +11621,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11638,16 +11639,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11677,14 +11678,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11695,16 +11696,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11740,7 +11741,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11755,12 +11756,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11795,7 +11796,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11810,12 +11811,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11869,7 +11870,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11887,12 +11888,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11931,7 +11932,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -11949,12 +11950,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -11987,14 +11988,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12008,16 +12009,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12050,14 +12051,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12071,16 +12072,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12119,7 +12120,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12137,12 +12138,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12180,7 +12181,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12198,12 +12199,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12241,7 +12242,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12259,12 +12260,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12302,7 +12303,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12320,12 +12321,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12336,13 +12337,13 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split'">
 <p>
-<xsl:text>Les pronoms personnels indépendants qu’on utilise pour </xsl:text>
+<xsl:text>Les pronoms personnels indépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
 			   	<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes intransitifs ou pour les objets directs de verbes transitifs</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérienceur</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérient</xsl:when>
 			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes intransitifs ou pour les objets directs de verbes transitifs</xsl:when>
 			   </xsl:choose>
-<xsl:text> dans les cas spéciaux d’ergativité dédoublée sont:</xsl:text>
+<xsl:text> dans les cas spéciaux d’ergativité mixte :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no'">
@@ -12385,7 +12386,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12400,12 +12401,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12434,14 +12435,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12452,16 +12453,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12491,14 +12492,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12509,16 +12510,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12554,7 +12555,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12569,12 +12570,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12609,7 +12610,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12624,12 +12625,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12683,7 +12684,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12701,12 +12702,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12745,7 +12746,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12763,12 +12764,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12801,14 +12802,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12822,16 +12823,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12864,14 +12865,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12885,16 +12886,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12933,7 +12934,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -12951,12 +12952,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -12994,7 +12995,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13012,12 +13013,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13055,7 +13056,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13073,12 +13074,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13116,7 +13117,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13134,12 +13135,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13152,20 +13153,20 @@
 		   <xsl:if test="normalize-space(//typology/@case)='split'">
 <p>
 <xsl:choose>
-		     	<xsl:when test="//typology/@caseExperiencer='yesDat'">On utilise les pronoms datifs présentés ci-dessus pour les sujets expérienceur et pour les objets indirects, même dans les cas spéciaux d’ergativité dédoublée. </xsl:when>
+		     	<xsl:when test="//typology/@caseExperiencer='yesDat'">On emploie les pronoms datifs présentés ci-dessus pour les sujets expérient et pour les objets indirects, même dans les cas spéciaux d’ergativité mixte. </xsl:when>
 </xsl:choose>
-<xsl:text> Les possesseurs utlisent </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//np/@possCaseErg='ergative'">les pronoms ergatifs dans les cas spéciaux d’ergativité dédoublée.</xsl:when>
-		   		<xsl:when test="//np/@possCaseErg='absolutive'">les pronoms absolutifs dans les cas spéciaux d’ergativité dédoublée.</xsl:when>
-		   		<xsl:when test="//np/@possCaseErg='genitive'">les pronoms génitifs donnés ci-dessus aussi dans les cas spéciaux d’ergativité dédoublée.</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='ergative'">Les pronoms ergatifs sont</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='absolutive'">Les pronoms absolutifs sont</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='genitive'">Les pronoms génitifs sont aussi</xsl:when>
 		      </xsl:choose>
+<xsl:text> employés pour les possesseurs dans les cas spéciaux d’ergativité mixte.</xsl:text>
 </p>
 </xsl:if>
 
 		   <xsl:if test="normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Nous allons considérer maintenant les pronoms dépendants, en </xsl:text>
+<xsl:text>Nous allons considérer maintenant les pronoms dépendants. En </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -13174,27 +13175,27 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> les pronoms dépendants s’attachent au verbe ou au substantif ou à d’autres mots comme </xsl:text>
+<xsl:text>, les pronoms dépendants se rattachent au verbe ou au substantif ou à d’autres mots comme </xsl:text>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='no' and normalize-space(//pron/dependentTypePrefix/@checked)='no' and normalize-space(//pron/dependentTypeSuffix/@checked)='no'">
-<xsl:text>les proclitiques qui s’attachent au début du mot qui commence le syntagme verbal ou le syntagme nominal.</xsl:text>
+<xsl:text>des proclitiques qui se rattachent au début du premier mot, quel qu’il soit, du syntagme verbal ou du syntagme nominal.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='no' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='no' and normalize-space(//pron/dependentTypeSuffix/@checked)='no'">
-<xsl:text>les enclitiques qui s’attachent à la fin du mot qui termine le syntagme verbal ou le syntagme nominal.</xsl:text>
+<xsl:text>des enclitiques qui se rattachent à la fin du drrnier mot, quel qu’il soit, du syntagme verbal ou du syntagme nominal.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='no' and normalize-space(//pron/dependentTypeSuffix/@checked)='no'">
-<xsl:text>ou bien proclitiques qui s’attachent qui s’attachent au début du mot qui commence le syntagme verbal ou le syntagme nominal ou comme enclitiques qui s’attachent à la fin du mot qui termine le syntagme verbal ou le syntagme nominal.</xsl:text>
+<xsl:text>soit des proclitiques qui se rattachent au début du premier mot, quel qu’il soit, du syntagme verbal ou du syntagme nominal ou comme des enclitiques qui se rattachent à la fin du dernier mot, quel qu’il soit, du syntagme verbal ou du syntagme nominal.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='no' and normalize-space(//pron/dependentTypeEnclitic/@checked)='no' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='no'">
-<xsl:text>les préfixes qui s’attachent au verbe ou au substantif.</xsl:text>
+<xsl:text>des préfixes qui se rattachent au verbe ou au substantif.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='no' and normalize-space(//pron/dependentTypeEnclitic/@checked)='no' and normalize-space(//pron/dependentTypePrefix/@checked)='no' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes'">
-<xsl:text>les suffixes qui s’attachent au verbe ou au substantif.</xsl:text>
+<xsl:text>des suffixes qui se rattachent au verbe ou au substantif.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='no' and normalize-space(//pron/dependentTypeEnclitic/@checked)='no' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes'">
-<xsl:text>either prefixes of suffixes which attach to the verb or noun.</xsl:text>
+<xsl:text>soit des prefixes ou des suffixes qui se rattachment au verbe ou au sustantif.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='no' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='no' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='no' and normalize-space(//pron/dependentTypePrefix/@checked)='no' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='no' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='no' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='no' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='no' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='no' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='no' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='no' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='no' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes'">
-<xsl:text>ou bien les préfixes ou les suffixes qui s’attachent au verbe ou au substantif; ou bien les clitiques qui s’attachent au début ou à la fin du syntagme verbal ou syntagme nominal, ou comme affixes qui s’attachent au verbe ou au substantif.</xsl:text>
+<xsl:text>soit des clitiques qui se rattachent au début  ou à la fin du syntagme verbal ou du syntagme nominal, ou comme des affixes qui se rattachent au verbe ou au substantif.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='no' and normalize-space(//pron/dependentTypeEnclitic/@checked)='no' and normalize-space(//pron/dependentTypePrefix/@checked)='no' and normalize-space(//pron/dependentTypeSuffix/@checked)='no' and normalize-space(//pron/dependentTypeOther/@checked)='yes'">
 <xsl:text>___</xsl:text>
@@ -13202,7 +13203,7 @@
 <xsl:text>.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeOther/@checked)='yes' and normalize-space(//pron/dependentTypeProclitic/@checked)='yes' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeOther/@checked)='yes' and normalize-space(//pron/dependentTypeEnclitic/@checked)='yes' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeOther/@checked)='yes' and normalize-space(//pron/dependentTypePrefix/@checked)='yes' or normalize-space(//pron/@dependentPron)='yes' and normalize-space(//pron/dependentTypeOther/@checked)='yes' and normalize-space(//pron/dependentTypeSuffix/@checked)='yes'">
-<xsl:text>  Certains s’attachent aussi ___</xsl:text>
+<xsl:text>  Certains se rattachent aussi ___</xsl:text>
 <xsl:value-of select="//pron/dependentTypeOther" />  <xsl:text>.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//typology/@classifier)='yesAgr' or normalize-space(//typology/@classifier)='yesType'">
@@ -13217,7 +13218,7 @@
 		         
 			<xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)='no' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Comme on a vu ci-dessus, en </xsl:text>
+<xsl:text>Comme on l’a vu ci-dessus, il n’y a pas de distinctions de cas en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -13226,12 +13227,12 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il n’y a pas de distinctions de cas, il n’y a alors qu’une seule classe de pronoms qu’on peut utiliser dans toute position dans la phrase.</xsl:text>
+<xsl:text>, il n’y a donc qu’une seule classe de pronoms qu’on peut employer dans toutes les positions dans la phrase.</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)!='no' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Comme on a vu ci-dessus, en </xsl:text>
+<xsl:text>Comme on l’a vu ci-dessus, il n’y a pas de distinctions de cas en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -13240,7 +13241,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il n’a pas de distinctions de cas, il n’y a  qu’une seule classe de pronoms qu’on peut utiliser avec les sujets agent et dans toute autre position dans la phrase.</xsl:text>
+<xsl:text>, il n’y a donc qu’une seule classe de pronoms qu’on peut employer avec les sujets agent et dans toute autre position dans la phrase.</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
@@ -13283,7 +13284,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13298,12 +13299,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13332,14 +13333,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13350,16 +13351,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13389,14 +13390,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13407,16 +13408,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13452,7 +13453,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13467,12 +13468,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13507,7 +13508,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13522,12 +13523,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13580,7 +13581,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13598,12 +13599,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13642,7 +13643,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13660,12 +13661,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13698,14 +13699,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13719,16 +13720,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13761,14 +13762,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13782,16 +13783,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13830,7 +13831,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13848,12 +13849,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13891,7 +13892,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13909,12 +13910,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -13952,7 +13953,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -13970,12 +13971,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14013,7 +14014,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14031,12 +14032,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14048,14 +14049,14 @@
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)!='no' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise pour les sujets expérienceur sont:</xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie pour les sujets expérient :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)!='no' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
 <example num="xPron.PronPersonal.128">
 <table border="1">
 		      	<caption>
-<xsl:text>Pronoms personnels dépendants pour les sujets expérienceur</xsl:text>
+<xsl:text>Pronoms personnels dépendants pour les sujets expérient</xsl:text>
 </caption>
 		         <tr>
 		            <th>Personne</th>
@@ -14091,7 +14092,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14106,12 +14107,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14140,14 +14141,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14158,16 +14159,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14197,14 +14198,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14215,16 +14216,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14260,7 +14261,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14275,12 +14276,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14315,7 +14316,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14330,12 +14331,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14348,7 +14349,7 @@
 <example num="xPron.PronPersonal.130">
 <table border="1">
 		      	<caption>
-<xsl:text>Pronoms personnels dépendants pour les sujets expérienceur</xsl:text>
+<xsl:text>Pronoms personnels dépendants pour les sujets expérient</xsl:text>
 </caption>
 		         <tr>
 		            <th>Personne</th>
@@ -14388,7 +14389,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14406,12 +14407,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14450,7 +14451,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14468,12 +14469,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14506,14 +14507,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14527,16 +14528,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14569,14 +14570,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14590,16 +14591,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14638,7 +14639,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14656,12 +14657,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14699,7 +14700,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14717,12 +14718,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14760,7 +14761,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14778,12 +14779,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14821,7 +14822,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14839,12 +14840,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14857,7 +14858,7 @@
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Comme on a vu ci-dessus, en </xsl:text>
+<xsl:text>Comme on l’a vu ci-dessus, il y a un système de cas nominatif-accusatif en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -14866,21 +14867,21 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un système de cas nominatif-accusatif, il y a donc des classes distinctes de pronoms pour les sujets, les objets et les possesseurs.  </xsl:text>
+<xsl:text>, il y a donc des classes distinctes de pronoms pour les sujets, les objets et les possesseurs.  </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//typology/@caseExperiencer='no'">Les sujets agent et les sujets expérienceur utilisent les pronoms nominatifs, tandis que le objets directs utilisent les pronoms accusatifs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les sujets agent utilisent les pronoms nominatifs, tandis que les sujets expérienceur utilisent la même classe de pronoms accusatifs qu’on utilise aussi pour les objets directs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">Les sujets agent utilisent les pronoms nominatifs, tandis que les sujets expérienceur utilisent les pronoms datifs qu’on utilise aussi pour les objets indirects.  Les objets directs utilisent les pronoms accusatifs. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='no'">Les pronoms nominatifs sont employés pour les sujets agent et les sujets expérient, tandis que les pronoms accusatifs sont employés pour les objets directs .  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les pronoms nominatifs sont employés pour les sujets agent, tandis que la même classe de pronoms accusatifs qu’on utilise aussi pour les objets directs est employée pour  les sujets expérient. Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">Les pronoms nominatifs sont employés pour les sujets agent, tandis que les pronoms datifs qu’on emploie aussi pour les objets indirects sont employés pour  les sujets expérient.  Les pronoms accusatifs sont employés pour les objets directs. </xsl:when>
 		      </xsl:choose>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-				<xsl:when test="//typology/@caseExperiencer='no'">les sujets sont: </xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent sont:</xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent sont:</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='no'">les sujets : </xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent :</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent :</xsl:when>
 		   </xsl:choose>
 </p>
 </xsl:if>
@@ -14924,7 +14925,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14939,12 +14940,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -14973,14 +14974,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -14991,16 +14992,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15030,14 +15031,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15048,16 +15049,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15093,7 +15094,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15108,12 +15109,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15148,7 +15149,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15163,12 +15164,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15221,7 +15222,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15239,12 +15240,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15283,7 +15284,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15301,12 +15302,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15339,14 +15340,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15360,16 +15361,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15402,14 +15403,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15423,16 +15424,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15471,7 +15472,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15489,12 +15490,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15532,7 +15533,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15550,12 +15551,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15593,7 +15594,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15611,12 +15612,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15654,7 +15655,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15672,12 +15673,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15688,11 +15689,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-		      	<xsl:when test="//typology/@caseExperiencer='no'">les objets directs sont:</xsl:when>
-		      	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérienceur sont:</xsl:when>
-		      	<xsl:when test="//typology/@caseExperiencer='yesDat'">les objets directs sont:</xsl:when>
+		      	<xsl:when test="//typology/@caseExperiencer='no'">les objets directs :</xsl:when>
+		      	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérient :</xsl:when>
+		      	<xsl:when test="//typology/@caseExperiencer='yesDat'">les objets directs :</xsl:when>
 		      </xsl:choose>
 </p>
 </xsl:if>
@@ -15736,7 +15737,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15751,12 +15752,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15785,14 +15786,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15803,16 +15804,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15842,14 +15843,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15860,16 +15861,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15905,7 +15906,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15920,12 +15921,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -15960,7 +15961,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -15975,12 +15976,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16033,7 +16034,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16051,12 +16052,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16095,7 +16096,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16113,12 +16114,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16151,14 +16152,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16172,16 +16173,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16214,14 +16215,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16235,16 +16236,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16283,7 +16284,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16301,12 +16302,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16344,7 +16345,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16362,12 +16363,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16405,7 +16406,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16423,12 +16424,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16466,7 +16467,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16484,12 +16485,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16500,11 +16501,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie </xsl:text>
 <xsl:if test="normalize-space(//typology/@caseExperiencer)='yesDat'">
-<xsl:text>pour les sujets expérienceur ou </xsl:text>
+<xsl:text>pour les sujets expérient ou </xsl:text>
 </xsl:if>
-<xsl:text>pour les objets indirects sont:</xsl:text>
+<xsl:text>pour les objets indirects :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
@@ -16547,7 +16548,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16562,12 +16563,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16596,14 +16597,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16614,16 +16615,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16653,14 +16654,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16671,16 +16672,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16716,7 +16717,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16731,12 +16732,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16771,7 +16772,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16786,12 +16787,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16844,7 +16845,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16862,12 +16863,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16906,7 +16907,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16924,12 +16925,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -16962,14 +16963,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -16983,16 +16984,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17025,14 +17026,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17046,16 +17047,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17094,7 +17095,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17112,12 +17113,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17155,7 +17156,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17173,12 +17174,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17216,7 +17217,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17234,12 +17235,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17277,7 +17278,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17295,12 +17296,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17311,7 +17312,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise pour les possesseurs sont:</xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie pour les possesseurs :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
@@ -17354,7 +17355,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17369,12 +17370,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17403,14 +17404,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17421,16 +17422,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17460,14 +17461,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17478,16 +17479,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17523,7 +17524,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17538,12 +17539,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17578,7 +17579,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17593,12 +17594,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17651,7 +17652,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17669,12 +17670,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17713,7 +17714,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17731,12 +17732,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17769,14 +17770,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17790,16 +17791,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17832,14 +17833,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17853,16 +17854,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17901,7 +17902,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17919,12 +17920,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -17962,7 +17963,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -17980,12 +17981,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18023,7 +18024,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18041,12 +18042,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18084,7 +18085,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18102,12 +18103,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18119,7 +18120,7 @@
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Comme on a vu ci-dessus, en </xsl:text>
+<xsl:text>Comme on l’a vu ci-dessus, il y a un système de cas ergatif-absolutif en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -18128,27 +18129,27 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un système de cas ergatif-absolutif, il y a donc des classes distinctes de pronoms qu’on peut utiliser comme les sujets de verbes transitifs contre les sujets de verbes intransitifs et les objets de verbes transitifs.  </xsl:text>
+<xsl:text>, il y a donc des classes distinctes de pronoms qu’on peut employer comme sujet de verbes transitifs versus ceux qu’on emploie comme sujet de verbes intransitifs et objet de verbes transitifs.  </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//typology/@caseExperiencer='no'">Les sujets agent et les sujets expérienceur de verbes transitifs utilisent les pronoms ergatifs, tandis que les sujets agent et les sujets expérienceur de verbes intransitifs et les objets directs de verbes transitifs utilisent les pronoms absolutifs.  Il y a une classe de pronoms datifs pour les objets indirects.</xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les sujets agent et les sujets expérienceur de verbes transitifs utilisent les pronoms ergatifs, tandis que les sujets agent et les sujets expérienceur de verbes intransitifs et les objets directs de verbes transitifs utilisent les pronoms absolutifs.  Il y a une classe de pronoms datifs pour les objets indirects.</xsl:when>
-		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">Les sujets agent de verbes transitifs utilisent les pronoms ergatifs, tandis que les sujets agent de verbes intransitifs et les objets directs de verbes transitifs utilisent les pronoms absolutifs.  Les sujets expérienceur utilisent les pronoms datifs qu’on utilise aussi pour les objets indirects.</xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='no'">Les pronoms ergatifs sont employés pour les sujets agent et les sujets expérient de verbes transitifs, tandis que les pronoms absolutifs sont employés pour les sujets agent et les sujets expérient de verbes intransitifs et les objets directs de verbes transitifs.  Il y a une classe de pronoms datifs pour les objets indirects.</xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">Les pronoms ergatifs sont employés pour les sujets agent et les sujets expérient de verbes transitifs, tandis que les pronoms absolutifs sont employés pour les sujets agent et les sujets expérient de verbes intransitifs et les objets directs de verbes transitifs.  Il y a une classe de pronoms datifs pour les objets indirects.</xsl:when>
+		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">Les pronoms ergatifs sont employés pour les sujets agent de verbes transitifs, tandis que les pronoms absolutifs sont employés pour les sujets agent de verbes intransitifs et les objets directs de verbes transitifs.  Les pronoms datifs qu’on emploie aussi pour les objets indirects sont employés pour les sujets expérient.</xsl:when>
 		      </xsl:choose>
-<xsl:text> Les possesseurs utilisent </xsl:text>
+<xsl:text> Les pronoms </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//np/@possCaseErg='ergative'">les pronoms ergatifs aussi.</xsl:when>
-		   		<xsl:when test="//np/@possCaseErg='absolutive'">les pronoms absolutifs aussi.</xsl:when>
-		   		<xsl:when test="//np/@possCaseErg='genitive'">les pronoms génitifs, une classe distincte.</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='ergative'">ergatifs sont aussi employés pour les possesseurs.</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='absolutive'">absolutifs sont aussi employés pour les possesseurs.</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='genitive'">génitifs, une classe distincte, sont employés pour les possesseurs.</xsl:when>
 		      </xsl:choose>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//typology/@case)='ergative'">
 <p>
-<xsl:text> Les pronoms personnels dépendants qu’on utilise pour </xsl:text>
+<xsl:text> Voici les pronoms personnels dépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-				<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes transitifs sont: </xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent de verbes transitifs sont:</xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes transitifs sont:</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes transitifs : </xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent de verbes transitifs :</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes transitifs :</xsl:when>
 		   </xsl:choose>
 </p>
 </xsl:if>
@@ -18192,7 +18193,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18207,12 +18208,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18241,14 +18242,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18259,16 +18260,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18298,14 +18299,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18316,16 +18317,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18361,7 +18362,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18376,12 +18377,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18416,7 +18417,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18431,12 +18432,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18489,7 +18490,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18507,12 +18508,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18551,7 +18552,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18569,12 +18570,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18607,14 +18608,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18628,16 +18629,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18670,14 +18671,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18691,16 +18692,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18739,7 +18740,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18757,12 +18758,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18800,7 +18801,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18818,12 +18819,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18861,7 +18862,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18879,12 +18880,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18922,7 +18923,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -18940,12 +18941,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -18956,11 +18957,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-			   	<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes intransitifs ou pour les objets de verbes transitifs sont:</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérienceur sont:</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes intransitifs ou pour les objets directs de verbes transitifs sont:</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes intransitifs ou pour les objets de verbes transitifs :</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérient :</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes intransitifs ou pour les objets directs de verbes transitifs :</xsl:when>
 			   </xsl:choose>
 </p>
 </xsl:if>
@@ -19004,7 +19005,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19019,12 +19020,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19053,14 +19054,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19071,16 +19072,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19110,14 +19111,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19128,16 +19129,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19173,7 +19174,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19188,12 +19189,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19228,7 +19229,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19243,12 +19244,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19301,7 +19302,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19319,12 +19320,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19363,7 +19364,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19381,12 +19382,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19419,14 +19420,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19440,16 +19441,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19482,14 +19483,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19503,16 +19504,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19551,7 +19552,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19569,12 +19570,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19612,7 +19613,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19630,12 +19631,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19673,7 +19674,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19691,12 +19692,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19734,7 +19735,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19752,12 +19753,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19768,11 +19769,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie </xsl:text>
 <xsl:if test="normalize-space(//typology/@caseExperiencer)='yesDat'">
-<xsl:text>pour les sujets expérienceur ou </xsl:text>
+<xsl:text>pour les sujets expérient ou </xsl:text>
 </xsl:if>
-<xsl:text>pour les objets indirects sont:</xsl:text>
+<xsl:text>pour les objets indirects :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
@@ -19815,7 +19816,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19830,12 +19831,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19864,14 +19865,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19882,16 +19883,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19921,14 +19922,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19939,16 +19940,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -19984,7 +19985,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -19999,12 +20000,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20039,7 +20040,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20054,12 +20055,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20112,7 +20113,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20130,12 +20131,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20174,7 +20175,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20192,12 +20193,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20230,14 +20231,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20251,16 +20252,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20293,14 +20294,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20314,16 +20315,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20362,7 +20363,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20380,12 +20381,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20423,7 +20424,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20441,12 +20442,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20484,7 +20485,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20502,12 +20503,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20545,7 +20546,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20563,12 +20564,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20579,7 +20580,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise comme possesseurs sont:</xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie comme possesseurs :</xsl:text>
 </p>
 </xsl:if>
 
@@ -20629,7 +20630,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20644,12 +20645,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20678,14 +20679,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20696,16 +20697,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20735,14 +20736,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20753,16 +20754,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20798,7 +20799,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20813,12 +20814,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20853,7 +20854,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20868,12 +20869,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20932,7 +20933,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -20950,12 +20951,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -20994,7 +20995,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21012,12 +21013,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21050,14 +21051,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21071,16 +21072,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21113,14 +21114,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21134,16 +21135,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21182,7 +21183,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21200,12 +21201,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21243,7 +21244,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21261,12 +21262,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21304,7 +21305,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21322,12 +21323,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21365,7 +21366,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21383,12 +21384,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21399,7 +21400,7 @@
 </xsl:if>
 				   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Comme on a vu ci-dessus, en </xsl:text>
+<xsl:text>Comme on l’a vu ci-dessus, il y a un système de cas mixte en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -21408,21 +21409,21 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un système de cas dédoublé, il y a donc des classes distinctes de pronoms qu’on utilise normalement comme les sujets, les objets et les possesseurs, et des classes spéciales qu’on utilise dans les cas d’ergativité dédoublée.  Dans les cas nominatifs-accusatifs, </xsl:text>
+<xsl:text>, il y a donc des classes distinctes de pronoms qu’on emploie normalement pour les sujets, les objets et les possesseurs, et des classes spéciales qu’on utilise dans les cas d’ergativité mixte.  Aux cas nominatifs-accusatifs, </xsl:text>
 <xsl:choose>
-				   		<xsl:when test="//typology/@caseExperiencer='no'">les sujets agent et les sujets expérienceur utilisent les pronoms nominatifs, tandis que les objets directs utilisent les pronoms accusatifs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-				   		<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent utilisent les pronoms nominatifs, tandis que les sujets expérienceur utilisent la même classe de pronoms accusatifs qu’on utilise aussi pour les objets directs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
-				   		<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent utilisent les pronoms nominatifs, tandis que les sujets expérienceur utilisent les pronoms datifs qu’on utilise aussi pour les objets indirects.  Les objets directs utilisent les pronoms accusatifs. </xsl:when>
+				   		<xsl:when test="//typology/@caseExperiencer='no'">les pronoms nominatifs sont employés pour les sujets agent et pour les sujets expérient, tandis que les pronoms accusatifs sont employés pour les objets directs.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+				   		<xsl:when test="//typology/@caseExperiencer='yesObj'">les pronoms nominatifs sont employés pour es sujets agent, tandis que la même classe de pronoms accusatifs qu’on utilise aussi pour les objets directs est employée pour les sujets expérient.  Il y a une classe de pronoms datifs pour les objets indirects.  Il y a une classe de pronoms datifs pour les objets indirects. </xsl:when>
+				   		<xsl:when test="//typology/@caseExperiencer='yesDat'">les pronoms nominatifs sont employés pour les sujets agent, tandis que les pronoms datifs qu’on emploie aussi pour les objets indirects sont employés pour les sujets expérient.  Les pronoms accusatifs sont employés pour les objets directs. </xsl:when>
 			   </xsl:choose>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>  Les pronoms personnels dépendants qu’on utilise pour </xsl:text>
+<xsl:text>  Voici les pronoms personnels dépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-				<xsl:when test="//typology/@caseExperiencer='no'">les sujets sont: </xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent sont:</xsl:when>
-				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent sont:</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='no'">les sujets : </xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent :</xsl:when>
+				<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent :</xsl:when>
 		   </xsl:choose>
 </p>
 </xsl:if>
@@ -21466,7 +21467,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21481,12 +21482,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21515,14 +21516,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21533,16 +21534,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21572,14 +21573,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21590,16 +21591,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21635,7 +21636,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21650,12 +21651,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21690,7 +21691,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21705,12 +21706,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21763,7 +21764,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21781,12 +21782,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21825,7 +21826,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21843,12 +21844,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21881,14 +21882,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21902,16 +21903,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -21944,14 +21945,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -21965,16 +21966,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22013,7 +22014,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22031,12 +22032,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22074,7 +22075,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22092,12 +22093,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22135,7 +22136,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22153,12 +22154,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22196,7 +22197,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22214,12 +22215,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22230,11 +22231,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
-			   	<xsl:when test="//typology/@caseExperiencer='no'">les objets directs sont:</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérienceur sont:</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les objets directs sont:</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='no'">les objets directs :</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou pour les sujets expérient :</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les objets directs :</xsl:when>
 			   </xsl:choose>
 </p>
 </xsl:if>
@@ -22278,7 +22279,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22293,12 +22294,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22327,14 +22328,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22345,16 +22346,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22384,14 +22385,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22402,16 +22403,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22447,7 +22448,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22462,12 +22463,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22502,7 +22503,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22517,12 +22518,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22575,7 +22576,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22593,12 +22594,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22637,7 +22638,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22655,12 +22656,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22693,14 +22694,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22714,16 +22715,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22756,14 +22757,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22777,16 +22778,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22825,7 +22826,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22843,12 +22844,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22886,7 +22887,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22904,12 +22905,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -22947,7 +22948,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -22965,12 +22966,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23008,7 +23009,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23026,12 +23027,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23042,11 +23043,11 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie </xsl:text>
 <xsl:if test="normalize-space(//typology/@caseExperiencer)='yesDat'">
-<xsl:text>pour les sujets expérienceur ou </xsl:text>
+<xsl:text>pour les sujets expérient ou </xsl:text>
 </xsl:if>
-<xsl:text>pour les objets indirects sont:</xsl:text>
+<xsl:text>pour les objets indirects :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
@@ -23089,7 +23090,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23104,12 +23105,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23138,14 +23139,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23156,16 +23157,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23195,14 +23196,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23213,16 +23214,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23258,7 +23259,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23273,12 +23274,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23313,7 +23314,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23328,12 +23329,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23386,7 +23387,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23404,12 +23405,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23448,7 +23449,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23466,12 +23467,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23504,14 +23505,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23525,16 +23526,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23567,14 +23568,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23588,16 +23589,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23636,7 +23637,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23654,12 +23655,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23697,7 +23698,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23715,12 +23716,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23758,7 +23759,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23776,12 +23777,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23819,7 +23820,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23837,12 +23838,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23853,7 +23854,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels qu’on utilise normalement comme possesseurs sont:</xsl:text>
+<xsl:text>Voici les pronoms personnels qu’on emploie normalement comme possesseurs :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
@@ -23896,7 +23897,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23911,12 +23912,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -23945,14 +23946,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -23963,16 +23964,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24002,14 +24003,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24020,16 +24021,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24065,7 +24066,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24080,12 +24081,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24120,7 +24121,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24135,12 +24136,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24193,7 +24194,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24211,12 +24212,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24255,7 +24256,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24273,12 +24274,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24311,14 +24312,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24332,16 +24333,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24374,14 +24375,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24395,16 +24396,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24443,7 +24444,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24461,12 +24462,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24504,7 +24505,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24522,12 +24523,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24565,7 +24566,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24583,12 +24584,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24626,7 +24627,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24644,12 +24645,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24660,13 +24661,13 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise pour </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie pour </xsl:text>
 <xsl:choose>
 		   		<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes transitifs </xsl:when>
 		   		<xsl:when test="//typology/@caseExperiencer='yesObj'">les sujets agent de verbes transitifs</xsl:when>
 		   		<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes transitifs</xsl:when>
 		   	</xsl:choose>
-<xsl:text> dans les cas spéciaux d’ergativité dédoublée sont:</xsl:text>
+<xsl:text> dans les cas spéciaux d’ergativité mixte :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
@@ -24709,7 +24710,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24724,12 +24725,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24758,14 +24759,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24776,16 +24777,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24815,14 +24816,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24833,16 +24834,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24878,7 +24879,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24893,12 +24894,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -24933,7 +24934,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -24948,12 +24949,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25006,7 +25007,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25024,12 +25025,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25068,7 +25069,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25086,12 +25087,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25124,14 +25125,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25145,16 +25146,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25187,14 +25188,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25208,16 +25209,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25256,7 +25257,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25274,12 +25275,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25317,7 +25318,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25335,12 +25336,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25378,7 +25379,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25396,12 +25397,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25439,7 +25440,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25457,12 +25458,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25473,13 +25474,13 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Les pronoms personnels dépendants qu’on utilise pour  </xsl:text>
+<xsl:text>Voici les pronoms personnels dépendants qu’on emploie pour  </xsl:text>
 <xsl:choose>
 			   	<xsl:when test="//typology/@caseExperiencer='no'">les sujets de verbes transitifs ou pour les objets directs de verbes transitifs</xsl:when>
-			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou les sujets expérienceur</xsl:when>
+			   	<xsl:when test="//typology/@caseExperiencer='yesObj'">les objets directs ou les sujets expérient</xsl:when>
 			   	<xsl:when test="//typology/@caseExperiencer='yesDat'">les sujets agent de verbes intransitfs ou pour les objets directs de verbes transitifs</xsl:when>
 			   </xsl:choose>
-<xsl:text> dans les cas spéciaux d’ergativité dédoublée sont:</xsl:text>
+<xsl:text> dans les cas spéciaux d’ergativité mixte :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
@@ -25522,7 +25523,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25537,12 +25538,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25571,14 +25572,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25589,16 +25590,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25628,14 +25629,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25646,16 +25647,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25691,7 +25692,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25706,12 +25707,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25746,7 +25747,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25761,12 +25762,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25819,7 +25820,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25837,12 +25838,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25881,7 +25882,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25899,12 +25900,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25937,14 +25938,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25958,16 +25959,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26000,14 +26001,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26021,16 +26022,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26069,7 +26070,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26087,12 +26088,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26130,7 +26131,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26148,12 +26149,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26191,7 +26192,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26209,12 +26210,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26252,7 +26253,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26270,12 +26271,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26287,25 +26288,26 @@
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
 <xsl:choose>
-		      	<xsl:when test="//typology/@caseExperiencer='yesDat'">Les pronoms dépendants datifs donnés ci-dessus sont utilisés pour les sujets expérienceur et pour les objets indirects, même dans les cas spéciaux d’ergativité dédoublée. </xsl:when>
+		      	<xsl:when test="//typology/@caseExperiencer='yesDat'">Les pronoms dépendants datifs donnés ci-dessus sont employés pour les sujets expérient et pour les objets indirects, même dans les cas spéciaux d’ergativité mixte. </xsl:when>
 </xsl:choose>
-<xsl:text> Les possesseurs utilisent </xsl:text>
+<xsl:text> Les pronoms </xsl:text>
 <xsl:choose>
-		   		<xsl:when test="//np/@possCaseErg='ergative'">les pronoms dépendants ergatifs dans les cas spéciaux d’ergativité dédoublée. </xsl:when>
-		   		<xsl:when test="//np/@possCaseErg='absolutive'">les pronoms dépendants absolutifs dans les cas spéciaux d’ergativité dédoublée. </xsl:when>
-		   		<xsl:when test="//np/@possCaseErg='genitive'">les pronoms dépendants génitifs donnés ci-dessus aussi dans les cas spéciaux d’ergativité dédoublée.</xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='ergative'">dépendants ergatifs </xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='absolutive'">dépendants absolutifs </xsl:when>
+		   		<xsl:when test="//np/@possCaseErg='genitive'">dépendants génitifs donnés ci-dessus </xsl:when>
 		      </xsl:choose>
+<xsl:text>sont aussi employés dans les cas spéciaux d’ergativité mixte pour les possesseurs.</xsl:text>
 </p>
 </xsl:if>
 		   
 		   
 			<xsl:if test="normalize-space(//pron/@dependentPron)='yes'">
 <p>
-<xsl:text>Pour des détails supplémentaires concernant la manière dont on peut utiliser les pronoms dépendants, voir sections </xsl:text>
+<xsl:text>Pour des détails supplémentaires concernant la manière dont on peut employer les pronoms dépendants, voir les sections </xsl:text>
 <sectionRef sec="sIPAgr" />
 <xsl:text> et </xsl:text>
 <sectionRef sec="sIPProDrop" />
-<xsl:text> où l’accord verbal et les sujets absent (anaphore zéro) sont traités.</xsl:text>
+<xsl:text> où l’accord verbal et les sujets omis (pro-drop) sont traités.</xsl:text>
 </p>
 </xsl:if>
 
@@ -26313,10 +26315,10 @@
 	   <section2 id="sPronPoss">
 			<secTitle>Pronoms possessifs</secTitle>
 	      <p contentType="ctPracticalIntro">
-<xsl:text>Beaucoup de langues ont aussi des pronoms possessifs qui peuvent se présenter seuls.  Ils sont distincts des pronoms qui peuvent se présenter dans la position du possesseur, qui ont été traités parmi les pronoms personnels ci-dessus.  Dans certaines langues les pronoms ne sont pas écrits comme un seul mot.</xsl:text>
+<xsl:text>Beaucoup de langues ont aussi des pronoms possessifs qui peuvent apparaître seuls.  Ils sont distincts des pronoms qui peuvent apparaître dans la position du possesseur et qui ont été traités parmi les pronoms personnels ci-dessus.  Dans certaines langues les pronoms ne sont pas écrits comme un seul mot.</xsl:text>
 </p>
 	      <p contentType="ctComparativeIntro">
-<xsl:text>Beaucoup de langues ont aussi des pronoms possessifs qui peuvent se présenter seuls, tels que </xsl:text>
+<xsl:text>Beaucoup de langues ont aussi des pronoms possessifs qui peuvent apparaître seuls, tels que </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -26336,7 +26338,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>la sienne</langData>
-<xsl:text> en français.  Ils sont distincts des pronoms qui peuvent se présenter dans la position du possesseur, tels que </xsl:text>
+<xsl:text> en français.  Ils sont distincts des pronoms qui peuvent apparaître dans la position du possesseur, tels que </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -26356,7 +26358,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>sa</langData>
-<xsl:text>, qu’on a traités parmi les pronoms personnels ci-dessus.  Dans certaines langues les pronoms ne sont pas écrits comme un seul mot.</xsl:text>
+<xsl:text>, traités parmi les pronoms personnels ci-dessus.  Dans certaines langues les pronoms ne sont pas écrits comme un seul mot.</xsl:text>
 </p>
 			<p>
 <xsl:text>En </xsl:text>
@@ -26370,8 +26372,8 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-					<xsl:when test="//pron/@poss='no'"> il n’y ’a pas de pronoms possessifs qui se présentent seuls comme un syntagme nominal.</xsl:when>
-					<xsl:when test="//pron/@poss='yes'"> il y a des pronoms possessifs qui se présentent seuls comme un syntagme nominal, comme on les voit ici:</xsl:when>
+					<xsl:when test="//pron/@poss='no'"> il n’y ’a pas de pronoms possessifs qui apparaissent seuls comme un syntagme nominal.</xsl:when>
+					<xsl:when test="//pron/@poss='yes'"> il y a des pronoms possessifs qui apparaissent seuls comme un syntagme nominal, comme on le voit ci-dessous :</xsl:when>
 				</xsl:choose>
 </p>
 	      <xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/@pronounNumber)='no'">
@@ -26414,7 +26416,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26429,12 +26431,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26463,14 +26465,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26481,16 +26483,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26520,14 +26522,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26538,16 +26540,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26583,7 +26585,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26598,12 +26600,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26638,7 +26640,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26653,12 +26655,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26712,7 +26714,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26730,12 +26732,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26774,7 +26776,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26792,12 +26794,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26830,14 +26832,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26851,16 +26853,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26893,14 +26895,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26914,16 +26916,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26962,7 +26964,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26980,12 +26982,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27023,7 +27025,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27041,12 +27043,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27084,7 +27086,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27102,12 +27104,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27145,7 +27147,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27163,12 +27165,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27181,22 +27183,22 @@
 <p>
 <xsl:text></xsl:text>
 <xsl:if test="normalize-space(//pron/possDistinct/@checked)='yes' and normalize-space(//pron/possAffixPron/@checked)='no' and normalize-space(//pron/possAffixWord/@checked)='no' and normalize-space(//pron/possPhrase/@checked)='no' and normalize-space(//pron/possOther/@checked)='no'">
-<xsl:text>Ces pronoms possessifs sont distincts, des mots autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
+<xsl:text>Ces pronoms possessifs sont des mots distincts, autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/possDistinct/@checked)='yes' and normalize-space(//pron/possAffixPron/@checked)='yes' or normalize-space(//pron/possDistinct/@checked)='yes' and normalize-space(//pron/possAffixWord/@checked)='yes' or normalize-space(//pron/possDistinct/@checked)='yes' and normalize-space(//pron/possPhrase/@checked)='yes' or normalize-space(//pron/possDistinct/@checked)='yes' and normalize-space(//pron/possOther/@checked)='yes'">
-<xsl:text>Certains de ces pronoms possessifs sont distincts, des mots autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
+<xsl:text>Certains de ces pronoms possessifs sont des mots distincts, autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
 </xsl:if>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/possAffixPron/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/possDistinct/@checked)='no' and normalize-space(//pron/possAffixPron/@checked)='yes' and normalize-space(//pron/possAffixWord/@checked)='no' and normalize-space(//pron/possPhrase/@checked)='no' and normalize-space(//pron/possOther/@checked)='no'">
-<xsl:text>Ces pronoms possessifs sont formés d’un autre pronom en attachant un affixe possessif.</xsl:text>
+<xsl:text>Ces pronoms possessifs sont formés à partir d’un autre pronom auquel on rattache un affixe possessif.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/possDistinct/@checked)='yes' and normalize-space(//pron/possAffixPron/@checked)='yes' or normalize-space(//pron/possAffixPron/@checked)='yes' and normalize-space(//pron/possAffixWord/@checked)='yes' or normalize-space(//pron/possAffixPron/@checked)='yes' and normalize-space(//pron/possPhrase/@checked)='yes' or normalize-space(//pron/possAffixPron/@checked)='yes' and normalize-space(//pron/possOther/@checked)='yes'">
-<xsl:text>Certains de ces pronoms possessifs sont formés d’un autre pronom en attachant un affixe possessif.</xsl:text>
+<xsl:text>Certains de ces pronoms possessifs sont formés à partir d’un autre pronom auquel on rattache un affixe possessif.</xsl:text>
 </xsl:if>
-<xsl:text>  Les affixes possessifs sont:</xsl:text>
+<xsl:text>  Voici les affixes possessifs :</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/possAffixPron/@checked)='yes'">
@@ -27231,7 +27233,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27243,12 +27245,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27260,12 +27262,12 @@
 	      <xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/possAffixWord/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/possDistinct/@checked)='no' and normalize-space(//pron/possAffixPron/@checked)='no' and normalize-space(//pron/possAffixWord/@checked)='yes' and normalize-space(//pron/possPhrase/@checked)='no' and normalize-space(//pron/possOther/@checked)='no'">
-<xsl:text>Ces pronoms possessifs sont formés d’un autre mot (qui n’est pas un pronom) en attachant un affixe possessif.</xsl:text>
+<xsl:text>Ces pronoms possessifs sont formés d’un autre mot (qui n’est pas un pronom) auquel on rattache un affixe possessif.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/possDistinct/@checked)='yes' and normalize-space(//pron/possAffixWord/@checked)='yes' or normalize-space(//pron/possAffixPron/@checked)='yes' and normalize-space(//pron/possAffixWord/@checked)='yes' or normalize-space(//pron/possAffixWord/@checked)='yes' and normalize-space(//pron/possPhrase/@checked)='yes' or normalize-space(//pron/possAffixWord/@checked)='yes' and normalize-space(//pron/possOther/@checked)='yes'">
-<xsl:text>Certains de ces pronoms possessifs sont formés d’un autre mot (qui n’est pas un pronom) en attachant un affixe possessif.</xsl:text>
+<xsl:text>Certains de ces pronoms possessifs sont formés d’un autre mot (qui n’est pas un pronom) auquel on rattache un affixe possessif.</xsl:text>
 </xsl:if>
-<xsl:text>  Le mot auquel les affixes possessifs s’attachent est:</xsl:text>
+<xsl:text>  Voici le mot auquel les affixes possessifs se rattachent :</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/possAffixWord/@checked)='yes'">
@@ -27300,7 +27302,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27312,12 +27314,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27328,7 +27330,7 @@
 </xsl:if>
 	   	<xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/possAffixWord/@checked)='yes'">
 <p>
-<xsl:text>Les affixes possessifs sont:</xsl:text>
+<xsl:text>Voici les affixes possessifs :</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/possAffixWord/@checked)='yes'">
@@ -27363,7 +27365,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27375,12 +27377,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27392,12 +27394,12 @@
 	      <xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/possPhrase/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/possDistinct/@checked)='no' and normalize-space(//pron/possAffixPron/@checked)='no' and normalize-space(//pron/possAffixWord/@checked)='no' and normalize-space(//pron/possPhrase/@checked)='yes' and normalize-space(//pron/possOther/@checked)='no'">
-<xsl:text>Ces pronoms possessifs sont formés en utilisant les pronoms possesseur pour posséder un mot spécial (qui n’est pas un pronom) et il devient un syntagme possessif qui a le même sens et usage qu’un pronom possessif autonome.</xsl:text>
+<xsl:text>Ces pronoms possessifs sont formés en utilisant les pronoms possesseur employés pour posséder un mot spécial (qui n’est pas un pronom) et cela devient un syntagme possessif qui a les mêmes sens et usage qu’un pronom possessif autonome.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/possDistinct/@checked)='yes' and normalize-space(//pron/possPhrase/@checked)='yes' or normalize-space(//pron/possAffixPron/@checked)='yes' and normalize-space(//pron/possPhrase/@checked)='yes' or normalize-space(//pron/possAffixWord/@checked)='yes' and normalize-space(//pron/possPhrase/@checked)='yes' or normalize-space(//pron/possPhrase/@checked)='yes' and normalize-space(//pron/possOther/@checked)='yes'">
-<xsl:text>Certains de ces pronoms possessifs sont formés en utilisant les pronoms possesseur pour posséder un mot spécial (qui n’est pas un pronom) et il devient un syntagme possessif qui a le même sens et usage qu’un pronom possessif autonome.</xsl:text>
+<xsl:text>Certains de ces pronoms possessifs sont formés en utilisant les pronoms possesseur employés pour posséder un mot spécial (qui n’est pas un pronom) et cela devient un syntagme possessif qui a les mêmes sens et usage qu’un pronom possessif autonome.</xsl:text>
 </xsl:if>
-<xsl:text>  Le mot spécial qui est possédé par le pronom possesseur est:</xsl:text>
+<xsl:text>  Voici le mot spécial qui est possédé par le pronom possesseur :</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//pron/@poss)='yes' and normalize-space(//pron/possPhrase/@checked)='yes'">
@@ -27432,7 +27434,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27444,12 +27446,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27473,12 +27475,12 @@
 </xsl:if>
 	   </section2>
 		<section2 id="sPronRefl">
-			<secTitle>Réflexifs</secTitle>
+			<secTitle>Réfléchis</secTitle>
 			<p contentType="ctPracticalIntro">
-<xsl:text>Les réflexifs ne se présentent que dans le même cas que les objets directs et doivent s’accorder normalement avec le sujet pour la personne, le genre, et le nombre.</xsl:text>
+<xsl:text>Les réfléchis n’apparaissent qu’au même cas que les objets directs et doivent normalement s’accorder pour la personne, le genre, et le nombre avec le sujet.</xsl:text>
 </p>
 		   <p contentType="ctComparativeIntro">
-<xsl:text>Les réflexifs sont une autre sorte de pronoms qu’ont la plupart des langues.  Ils ne se présentent que dans le même cas que les objets directs et doivent s’accorder normalement avec le sujet pour la personne, le genre et le nombre.  Des exemples en français sont: </xsl:text>
+<xsl:text>Les réfléchis sont un autre type de pronoms qu’on trouve dans la plupart des langues.  Ils n’apparaissent qu’au même cas que les objets directs et doivent normalement s’accorder pour la personne, le genre et le nombre avec le sujet.  Des exemples en français sont : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -27503,16 +27505,16 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>vous</langData>
-<xsl:text>.    Certaines langues ont une classe complètement distincte de formes de pronoms pour les réflexifs, d’autres se servent d’un syntagme qui consiste en un substantif (généralement avec le sens de l’anglais </xsl:text>
+<xsl:text>.    Certaines langues ont une classe complètement distincte de formes de pronoms pour les réfléchis, d’autres emploient un syntagme qui consiste en un substantif (généralement avec le sens de l’anglais </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>self</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « même »</xsl:text>
+<xsl:text> « soi-même »</xsl:text>
 </gloss>
-<xsl:text>) qui est possédé par le pronom qui se réfère au sujet, certaines langues ont un affixe verbal qui indique l’action réflexive, et certaines langues ne distinguent pas les constructions réflexives du tout.</xsl:text>
+<xsl:text>) qui est possédé par le pronom qui se réfère au sujet, , d’autres langues ont un affixe verbal qui indique l’action réfléchie, et d’autres langues enfin ne distinguent pas du tout les constructions réfléchies.</xsl:text>
 </p>
 		   <p>
 <xsl:text>En </xsl:text>
@@ -27526,9 +27528,9 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-					<xsl:when test="//pron/@refl='no'"> il n’y a aucune sorte de réflexifs.</xsl:when>
-					<xsl:when test="//pron/@refl='yesVerbal'"> il y a  un affixe verbal pour indiquer une action réflexive.  L’affixe réflexif est:</xsl:when>
-					<xsl:when test="//pron/@refl='yes'"> il y a  des réflexifs indiqués ici:</xsl:when>
+					<xsl:when test="//pron/@refl='no'"> il n’y a aucun type de réfléchis.</xsl:when>
+					<xsl:when test="//pron/@refl='yesVerbal'"> il y a un affixe verbal pour indiquer une action réfléchie.  L’affixe réfléchi est :</xsl:when>
+					<xsl:when test="//pron/@refl='yes'"> il y a des réfléchis indiqués ci-dessous :</xsl:when>
 				</xsl:choose>
 <xsl:text></xsl:text>
 </p>
@@ -27536,7 +27538,7 @@
 <example num="xPron.PronRefl.10">
 <table border="1">
 		         <tr>
-		         	<th>Affixe réflexif</th>
+		         	<th>Affixe réfléchi</th>
 		            <th>Glose</th>
 		         </tr>			
 		         <xsl:variable name="sExampleValue0.0">
@@ -27564,7 +27566,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27576,12 +27578,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27594,11 +27596,11 @@
 <example num="xPron.PronRefl.12">
 <table border="1">
 		      	<caption>
-<xsl:text>Pronoms ou syntagmes réflexifs</xsl:text>
+<xsl:text>Pronoms ou syntagmes réfléchis</xsl:text>
 </caption>
 		         <tr>
 		            <th>Personne</th>
-		         	<th>Pronoms réflexifs</th>
+		         	<th>Pronoms réfléchis</th>
 		            <th>Glose</th>
 		         </tr>	
 		         <xsl:variable name="sExampleValue0.1">
@@ -27630,7 +27632,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27645,12 +27647,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27679,14 +27681,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27697,16 +27699,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première exclusive</xsl:text>
+<xsl:text>Première exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27736,14 +27738,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27754,16 +27756,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
-<xsl:text>Première inclusive</xsl:text>
+<xsl:text>Première inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27799,7 +27801,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27814,12 +27816,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27854,7 +27856,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27869,12 +27871,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27888,12 +27890,12 @@
 <example num="xPron.PronRefl.14">
 <table border="1">
 		      	<caption>
-<xsl:text>Pronoms ou syntagmes réflexifs</xsl:text>
+<xsl:text>Pronoms ou syntagmes réfléchis</xsl:text>
 </caption>
 		         <tr>
 		            <th>Personne</th>
 		            <th>Nombre</th>
-		         	<th>Pronoms réflexifs</th>
+		         	<th>Pronoms réfléchis</th>
 		            <th>Glose</th>
 		         </tr>	
 		         <xsl:variable name="sExampleValue0.2">
@@ -27928,7 +27930,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -27946,12 +27948,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -27990,7 +27992,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28008,12 +28010,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28046,14 +28048,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28067,16 +28069,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Exclusive</xsl:text>
+<xsl:text>Exclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28109,14 +28111,14 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28130,16 +28132,16 @@
 <xsl:text>Première</xsl:text>
 </td>
 <td align="left">
-<xsl:text>Inclusive</xsl:text>
+<xsl:text>Inclusif</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28178,7 +28180,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28196,12 +28198,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28239,7 +28241,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28257,12 +28259,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28300,7 +28302,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28318,12 +28320,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28361,7 +28363,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28379,12 +28381,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28398,29 +28400,29 @@
 <p>
 <xsl:text></xsl:text>
 <xsl:if test="normalize-space(//pron/reflDistinct/@checked)='yes' and normalize-space(//pron/reflAffix/@checked)='no' and normalize-space(//pron/reflNounPoss/@checked)='no' and normalize-space(//pron/reflQP/@checked)='no' and normalize-space(//pron/reflOther/@checked)='no'">
-<xsl:text>Ces pronoms réflexifs sont des mots distincts, autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
+<xsl:text>Ces pronoms réfléchis sont des mots distincts, autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/reflDistinct/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='yes' or normalize-space(//pron/reflAffix/@checked)='yes' and normalize-space(//pron/reflDistinct/@checked)='yes' or normalize-space(//pron/reflNounPoss/@checked)='yes' and normalize-space(//pron/reflDistinct/@checked)='yes' or normalize-space(//pron/reflQP/@checked)='yes' and normalize-space(//pron/reflDistinct/@checked)='yes'">
-<xsl:text>Certains de ces pronoms réflexifs sont des mots, distincts, autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
+<xsl:text>Certains de ces pronoms réfléchis sont des mots, distincts, autonomes, qui ne sont pas liés aux autres pronoms.</xsl:text>
 </xsl:if>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@refl)='yes' and normalize-space(//pron/reflAffix/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/reflDistinct/@checked)='no' and normalize-space(//pron/reflAffix/@checked)='yes' and normalize-space(//pron/reflNounPoss/@checked)='no' and normalize-space(//pron/reflQP/@checked)='no' and normalize-space(//pron/reflOther/@checked)='no'">
-<xsl:text>Ces pronoms réflexifs sont formés d’un autre pronom en attachant un affixe réflexif.</xsl:text>
+<xsl:text>Ces pronoms réfléchis sont formés à partir d’un autre pronom auquel un affixe réfléchi est rattaché.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/reflAffix/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='yes' or normalize-space(//pron/reflAffix/@checked)='yes' and normalize-space(//pron/reflDistinct/@checked)='yes' or normalize-space(//pron/reflNounPoss/@checked)='yes' and normalize-space(//pron/reflAffix/@checked)='yes' or normalize-space(//pron/reflQP/@checked)='yes' and normalize-space(//pron/reflAffix/@checked)='yes'">
-<xsl:text>Certains de ces pronoms sont formés d’un autre pronom en attachant un affixe réflexif.</xsl:text>
+<xsl:text>Certains de ces pronoms sont formés à partir d ’un autre pronom auquel on rattache un affixe réfléchi.</xsl:text>
 </xsl:if>
-<xsl:text>  Les affixes réflexifs sont:</xsl:text>
+<xsl:text>  Les affixes réfléchis sont les suivants :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@refl)='yes' and normalize-space(//pron/reflAffix/@checked)='yes'">
 <example num="xPron.PronRefl.20">
 <table border="1">
 		         <tr>
-		         	<th>Affixes réflexifs</th>
+		         	<th>Affixes réfléchis</th>
 		            <th>Glose</th>
 		         </tr>			
 		         <xsl:variable name="sExampleValue0.0">
@@ -28448,7 +28450,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28460,12 +28462,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28477,12 +28479,12 @@
 		   <xsl:if test="normalize-space(//pron/@refl)='yes' and normalize-space(//pron/reflNounPoss/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/reflDistinct/@checked)='no' and normalize-space(//pron/reflAffix/@checked)='no' and normalize-space(//pron/reflNounPoss/@checked)='yes' and normalize-space(//pron/reflQP/@checked)='no' and normalize-space(//pron/reflOther/@checked)='no'">
-<xsl:text>Ces réflexifs sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</xsl:text>
+<xsl:text>Ces réfléchis sont formés d’un substantif donné qui est possédé par les pronoms possesseur.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/reflnounPoss/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='yes' or normalize-space(//pron/reflAffix/@checked)='yes' and normalize-space(//pron/reflNounPoss/@checked)='yes' or normalize-space(//pron/reflNounPoss/@checked)='yes' and normalize-space(//pron/reflDistinct/@checked)='yes' or normalize-space(//pron/reflQP/@checked)='yes' and normalize-space(//pron/reflNounPoss/@checked)='yes'">
-<xsl:text>Certains de ces réflexifs sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</xsl:text>
+<xsl:text>Certains de ces réfléchis sont formés d’un certain substantif donné qui est possédé par les pronoms possesseur.</xsl:text>
 </xsl:if>
-<xsl:text>  Le substantif spécial qui est possédé par les pronoms possesseur est:</xsl:text>
+<xsl:text>  Le substantif spécial qui est possédé par les pronoms possesseur est le suivant :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@refl)='yes' and normalize-space(//pron/reflNounPoss/@checked)='yes'">
@@ -28517,7 +28519,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28529,12 +28531,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28546,19 +28548,19 @@
 		   <xsl:if test="normalize-space(//pron/@refl)='yes' and normalize-space(//pron/reflQP/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/reflDistinct/@checked)='no' and normalize-space(//pron/reflAffix/@checked)='no' and normalize-space(//pron/reflNounPoss/@checked)='no' and normalize-space(//pron/reflQP/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='no'">
-<xsl:text>Ces réflexifs sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
+<xsl:text>Ces réfléchis sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/reflQP/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='yes' or normalize-space(//pron/reflAffix/@checked)='yes' and normalize-space(//pron/reflQP/@checked)='yes' or normalize-space(//pron/reflNounPoss/@checked)='yes' and normalize-space(//pron/reflQP/@checked)='yes' or normalize-space(//pron/reflQP/@checked)='yes' and normalize-space(//pron/reflDistinct/@checked)='yes'">
-<xsl:text>Certains de ces réflexifs sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
+<xsl:text>Certains de ces réfléchis sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
 </xsl:if>
-<xsl:text>  Les quantificateurs ou les syntagmes sont:</xsl:text>
+<xsl:text>  Voici les quantificateurs ou les syntagmes :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@refl)='yes' and normalize-space(//pron/reflQP/@checked)='yes'">
 <example num="xPron.PronRefl.28">
 <table border="1">
 		         <tr>
-		         	<th>Quantificateurs spéciaux</th>
+		         	<th>Quantifieurs spéciaux</th>
 		            <th>Glose</th>
 		         </tr>			
 		         <xsl:variable name="sExampleValue0.0">
@@ -28586,7 +28588,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28598,12 +28600,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28616,18 +28618,18 @@
 		   <xsl:if test="normalize-space(//pron/@refl)='yes' and normalize-space(//pron/reflOther/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/reflDistinct/@checked)='no' and normalize-space(//pron/reflAffix/@checked)='no' and normalize-space(//pron/reflNounPoss/@checked)='no' and normalize-space(//pron/reflQP/@checked)='no' and normalize-space(//pron/reflOther/@checked)='yes'">
-<xsl:text>Ces réflexifs sont formés en ___</xsl:text>
+<xsl:text>Ces réfléchis sont formés en ___</xsl:text>
 <xsl:value-of select="//pron/reflOther" /> <xsl:text>.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/reflDistinct/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='yes' or normalize-space(//pron/reflAffix/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='yes' or normalize-space(//pron/reflNounPoss/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='yes' or normalize-space(//pron/reflQP/@checked)='yes' and normalize-space(//pron/reflOther/@checked)='yes'">
-<xsl:text>Certains de ces réflexifs sont formés en ___</xsl:text>
+<xsl:text>Certains de ces réfléchis sont formés en ___</xsl:text>
 <xsl:value-of select="//pron/reflOther" /> <xsl:text>.</xsl:text>
 </xsl:if>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@refl)='yesVerbal'">
 <p>
-<xsl:text>Des exemples de réflexifs dans des phrases,  montrant l’affixe réflexif sur le verbe pour indiquer l’action réflexive par le sujet sont:</xsl:text>
+<xsl:text>Voici quelques exemples de réfléchis dans des phrases, montrant l’affixe réfléchi sur le verbe pour indiquer l’action réfléchie par le sujet :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@refl)='yesVerbal'">
@@ -28643,7 +28645,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@refl)='yes'">
 <p>
-<xsl:text>Des exemples avec un réflexif dans la position de l’objet d’une phrase simple sont:</xsl:text>
+<xsl:text>Voici quelques exemples avec un réfléchi dans la position de l’objet d’une phrase simple :</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//pron/@refl)='yes'">
@@ -28661,10 +28663,10 @@
 		<section2 id="sPronRecip">
 			<secTitle>Réciproques</secTitle>
 			<p contentType="ctPracticalIntro">
-<xsl:text>Las réciproques sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels. </xsl:text>
+<xsl:text>Las réciproques sont semblables aux réfléchis, à la différence qu’ils n’apparaissent qu’avec des sujets pluriels. </xsl:text>
 </p>
 		   <p contentType="ctComparativeIntro">
-<xsl:text>Las réciproques sont semblables aux réflexifs sauf qu’ils ne se présentent qu’avec des sujets pluriels.  On peut les former de la même façon que les réflexifs, ou ils peuvent être distincts.  Par exemple, en anglais, las réciproques sont des syntagmes quantificateurs spéciaux: </xsl:text>
+<xsl:text>Las réciproques sont semblables aux réfléchis, à la différence qu’ils n’apparaissent qu’avec des sujets pluriels.  On peut les former de la même façon que les réfléchis, ou ils peuvent être distincts.  Par exemple, en anglais, les formes réciproques sont toujours des syntagmes : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -28674,17 +28676,17 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>one another</langData>
-<xsl:text>; en français: </xsl:text>
+<xsl:text> ; en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>l’un l’autre</langData>
-<xsl:text>.  Mais las réciproques en français sont généralement marqués avec </xsl:text>
+<xsl:text>, bien que les réciproques en français soient généralement marqués par </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>se</langData>
-<xsl:text>.  Certaines langues utilisent seulement un affixe verbal pour indiquer une action réciproque de la part du sujet pluriel, d’autres ont des pronoms distincts, d’autres utilisent un syntagme nominal possédé, et d’autres encore ne marquent pas du tout l’action réciproque.</xsl:text>
+<xsl:text>.  Certaines langues n’utilisent qu’un affixe verbal pour indiquer l’action réciproque d’un sujet pluriel, d’autres ont des pronoms distincts, d’autres encore utilisent un syntagme nominal possédé ou un syntagme nominal quantifié, et d’autres enfin ne marquent pas du tout l’action réciproque.</xsl:text>
 </p>
 		   <p>
 <xsl:text>En </xsl:text>
@@ -28698,9 +28700,9 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-					<xsl:when test="//pron/@recip='no'"> il n’ y a aucune sorte d’réciproques.</xsl:when>
+					<xsl:when test="//pron/@recip='no'"> il n’ y a aucune sorte de réciproques.</xsl:when>
 					<xsl:when test="//pron/@recip='yesVerbal'"> on utilise un affixe verbal pour indiquer une action réciproque.</xsl:when>
-					<xsl:when test="//pron/@recip='yes'"> il y a des réciproques, indiqués ici:</xsl:when>
+					<xsl:when test="//pron/@recip='yes'"> il y a des réciproques, indiqués ci-dessous :</xsl:when>
 				</xsl:choose>
 <xsl:text></xsl:text>
 </p>
@@ -28736,7 +28738,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28748,12 +28750,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28764,7 +28766,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yesVerbal'">
 <p>
-<xsl:text>Des exemples d’réciproques dans des phrases montrant l’affixe réciproque sur le verbe pour indiquer une action réciproque par le sujet sont:</xsl:text>
+<xsl:text>Voici quelques exemples de réciproques dans des phrases montrant l’affixe réciproque sur le verbe pour indiquer une action réciproque par le sujet :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yesVerbal'">
@@ -28820,7 +28822,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28835,12 +28837,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28877,7 +28879,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28892,12 +28894,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28934,7 +28936,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -28949,12 +28951,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -28990,7 +28992,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29005,12 +29007,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29045,7 +29047,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29060,12 +29062,12 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29088,12 +29090,12 @@
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipAffix/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/recipDistinct/@checked)='no' and normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipNounPoss/@checked)='no' and normalize-space(//pron/recipQP/@checked)='no' and normalize-space(//pron/recipOther/@checked)='no'">
-<xsl:text>Ces pronoms réciproques sont formés d’un autre pronom en attachant un affixe réciproque.</xsl:text>
+<xsl:text>Ces pronoms réciproques sont formés à partir d’un autre pronom auquel un affixe réciproque est rattaché.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes' or normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipAffix/@checked)='yes' or normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipAffix/@checked)='yes'">
-<xsl:text>Certains de ces pronoms réciproques sont formés d’un autre pronom en attachant un affixe réciproque.</xsl:text>
+<xsl:text>Certains de ces pronoms réciproques sont formés à partir d’un autre pronom auquel un affixe réciproque est rattaché.</xsl:text>
 </xsl:if>
-<xsl:text>  Les affixes réciproques sont:</xsl:text>
+<xsl:text>  Voici les affixes réciproques :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipAffix/@checked)='yes'">
@@ -29128,7 +29130,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29140,12 +29142,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29162,7 +29164,7 @@
 <xsl:if test="normalize-space(//pron/recipnounPoss/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipNounPoss/@checked)='yes' or normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes' or normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipNounPoss/@checked)='yes'">
 <xsl:text>Certains de ces réciproques sont formés d’un certain substantif qui est possédé par les pronoms possesseur.</xsl:text>
 </xsl:if>
-<xsl:text>  Le substantif spécial qui est possédé par les pronoms possesseur est:</xsl:text>
+<xsl:text>  Le substantif spécial qui est possédé par les pronoms possesseur est le suivant :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipNounPoss/@checked)='yes'">
@@ -29197,7 +29199,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29209,12 +29211,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29231,14 +29233,14 @@
 <xsl:if test="normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipOther/@checked)='yes' or normalize-space(//pron/recipAffix/@checked)='yes' and normalize-space(//pron/recipQP/@checked)='yes' or normalize-space(//pron/recipNounPoss/@checked)='yes' and normalize-space(//pron/recipQP/@checked)='yes' or normalize-space(//pron/recipQP/@checked)='yes' and normalize-space(//pron/recipDistinct/@checked)='yes'">
 <xsl:text>Certains de ces réciproques sont formés de syntagmes nominaux quantifiés spéciaux.</xsl:text>
 </xsl:if>
-<xsl:text>  Les quantificateurs ou syntagmes spéciaux sont:</xsl:text>
+<xsl:text>  Les quantifieurs ou syntagmes spéciaux sont les suivants :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yes' and normalize-space(//pron/recipQP/@checked)='yes'">
 <example num="xPron.PronRecip.30">
 <table border="1">
 		         <tr>
-		         	<th>Quantificateurs spéciaux pour réciproques</th>
+		         	<th>Quantifieurs spéciaux pour réciproques</th>
 		            <th>Glose</th>
 		         </tr>			
 		         <xsl:variable name="sExampleValue0.0">
@@ -29266,7 +29268,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29278,12 +29280,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29307,7 +29309,7 @@
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/@recip)='yes'">
 <p>
-<xsl:text>Des exemples das réciproques dans des phrases sont:</xsl:text>
+<xsl:text>Voici quelques exemples des réciproques dans des phrases :</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//pron/@recip)='yes'">
@@ -29325,10 +29327,10 @@
 	   <section2 id="sPronDem">
 	   	<secTitle>Pronoms démonstratifs</secTitle>
 	   	<p contentType="ctPracticalIntro">
-<xsl:text>Les pronoms démonstratifs spécifient la distance de celui qui parle à la chose ou aux choses dont on parle.</xsl:text>
+<xsl:text>Les pronoms démonstratifs spécifient la distance de celui qui parle avec la chose ou les choses dont on parle.</xsl:text>
 </p>
 	   	<p contentType="ctComparativeIntro">
-<xsl:text>La plupart des langues ont des pronoms démonstratifs qui sont apparentés aux démonstratifs qui modifient un substantif ou aux adverbes locatifs.  Les pronoms démonstratifs spécifient la distance de celui qui parle et peuvent avoir des formes singulières et plurielles.  Des exemples en français sont </xsl:text>
+<xsl:text>La plupart des langues ont des pronoms démonstratifs qui sont apparentés soit aux démonstratifs qui modifient un substantif ou aux adverbes locatifs.  Les pronoms démonstratifs spécifient la distance à partir de celui qui parle et peuvent avoir des formes singulier et pluriel.  Des exemples en français sont </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -29348,7 +29350,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>ceux-là</langData>
-<xsl:text>.  Les pronoms démonstratifs se presentment seuls comme sujet ou objet d’une phrase, comme: </xsl:text>
+<xsl:text>.  Les pronoms démonstratifs se présentment seuls comme sujet ou objet d’une phrase, comme dans les exemples suivants : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -29391,22 +29393,22 @@
 </xsl:if>
 <xsl:text>formes des pronoms démonstratifs sont </xsl:text>
 <xsl:choose>
-	         	<xsl:when test="//advp/@locativeDem='distinct'">complètement distincts des adverbes locatifs. </xsl:when>
-	         	<xsl:when test="//advp/@locativeDem='same'">identiques aux adverbes locatifs, bien qu’ils soient utilisés dans des positions différentes dans la phrase. </xsl:when>
+	         	<xsl:when test="//advp/@locativeDem='distinct'">complètement distinctes des adverbes locatifs. </xsl:when>
+	         	<xsl:when test="//advp/@locativeDem='same'">identiques aux adverbes locatifs, bien qu’elles soient employées dans des positions différentes dans la phrase. </xsl:when>
 	         	<xsl:when test="//advp/@locativeDem='someSame'">identiques aux adverbes locatifs, mais d’autres sont distincts. </xsl:when>
-	         	<xsl:when test="//advp/@locativeDem='demAffix'">liés aux adverbes locatifs.  Un affixe est ajouté à un demonstratif pour former un adverbe locatif. </xsl:when>
-	         	<xsl:when test="//advp/@locativeDem='locativeAffix'">liés aux adverbes locatifs.  Un affixe est ajouté à un adverbe pour former un demonstratif. </xsl:when>
-	         	<xsl:when test="//advp/@locativeDem='other'">apparenté aux adverbes comme ceci: </xsl:when>
+	         	<xsl:when test="//advp/@locativeDem='demAffix'">liées aux adverbes locatifs.  Un affixe est ajouté à un demonstratif pour former un adverbe locatif. </xsl:when>
+	         	<xsl:when test="//advp/@locativeDem='locativeAffix'">liées aux adverbes locatifs.  Un affixe est ajouté à un adverbe pour former un demonstratif. </xsl:when>
+	         	<xsl:when test="//advp/@locativeDem='other'">apparentées aux adverbes commede la façon suivante : </xsl:when>
 	         </xsl:choose>
 <xsl:text> Voir la section </xsl:text>
 <sectionRef sec="sAdvPLocative" />
-<xsl:text> pour des renseignements sur les adverbes locatifs.   </xsl:text>
+<xsl:text> pour des détails sur les adverbes locatifs.   </xsl:text>
 <xsl:if test="normalize-space(//np/@artAndDem)='demonstrative' or normalize-space(//np/@artAndDem)='both'">
 <xsl:text>Les formes des pronoms démonstratifs sont </xsl:text>
 	            <xsl:choose>
 	            	<xsl:when test="//pron/@demAdjSame='yes'">identiques aux démonstratifs qui modifient un substantif.</xsl:when>
-	            	<xsl:when test="//pron/@demAdjSame='some'">parfois le même,  mais parfois distincts des démonstratifs qui modifient un substantif.</xsl:when>
-	            	<xsl:when test="//pron/@demAdjSame='no'">distincts des démonstratifs qui modifient un substantif.</xsl:when>
+	            	<xsl:when test="//pron/@demAdjSame='some'">parfois les mêmes, mais parfois distinctes des démonstratifs qui modifient un substantif.</xsl:when>
+	            	<xsl:when test="//pron/@demAdjSame='no'">distinctes des démonstratifs qui modifient un substantif.</xsl:when>
 	            </xsl:choose>
 	         	<xsl:text> Voir la section </xsl:text>
 <sectionRef sec="sAdjArtDem" />
@@ -29427,20 +29429,20 @@
 </xsl:otherwise>
 </xsl:choose>
 <xsl:choose>
-	   		<xsl:when test="//pron/@demCase='no'"> n’ont pas de distinctions pour les cas.  On peut utiliser les mêmes formes dans toutes les positions. </xsl:when>
-	   		<xsl:when test="//pron/@demCase='yes'"> ont des classes distinctes pour les positions différentes selon le cas. </xsl:when>
+	   		<xsl:when test="//pron/@demCase='no'"> n’ont pas de distinctions pour les cas.  On peut employer les mêmes formes dans toutes les positions. </xsl:when>
+	   		<xsl:when test="//pron/@demCase='yes'"> ont des classes distinctes pour les positions différentes, selon le cas. </xsl:when>
 	      </xsl:choose>
 <xsl:text> Il </xsl:text>
 <xsl:choose>
-	      	<xsl:when test="//pron/@demNumber='no'">n’y a pas de distinction de forme pour se référer aux choses singulières contre les choses plurielles.</xsl:when>
-	      	<xsl:when test="//pron/@demNumber='yes'">y a des formes distinctes pour se référer aux choses singulières contre les choses plurielles.</xsl:when>
+	      	<xsl:when test="//pron/@demNumber='no'">n’y a pas de distinction de forme pour se référer aux choses au singulier versus les choses au pluriel.</xsl:when>
+	      	<xsl:when test="//pron/@demNumber='yes'">y a des formes distinctes pour se référer aux choses au singulier versus les choses au pluriel.</xsl:when>
 	      </xsl:choose>
 </p>
 </xsl:if>
 	      
 	      <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//pron/@demNumber)='no' or normalize-space(//pron/@demCase)='no' and normalize-space(//pron/@demNumber)='no'">
 <p>
-<xsl:text>Les pronoms démonstlratifs sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//pron/@demNumber)='no' or normalize-space(//pron/@demCase)='no' and normalize-space(//pron/@demNumber)='no'">
@@ -29474,14 +29476,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29492,16 +29494,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29531,14 +29533,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29549,16 +29551,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29588,14 +29590,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29606,16 +29608,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29645,14 +29647,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29663,16 +29665,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29702,14 +29704,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29720,16 +29722,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29759,14 +29761,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29777,16 +29779,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29799,7 +29801,7 @@
 	      
 	      <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//pron/@demNumber)='yes' or normalize-space(//pron/@demCase)='no' and normalize-space(//pron/@demNumber)='yes'">
 <p>
-<xsl:text>Les pronoms démonstlratifs sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstlratifs sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//pron/@demNumber)='yes' or normalize-space(//pron/@demCase)='no' and normalize-space(//pron/@demNumber)='yes'">
@@ -29834,7 +29836,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -29844,7 +29846,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29855,19 +29857,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29897,7 +29899,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -29907,7 +29909,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29918,19 +29920,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -29960,7 +29962,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -29970,7 +29972,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -29981,19 +29983,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30023,7 +30025,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -30033,7 +30035,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30044,19 +30046,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30086,7 +30088,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -30096,7 +30098,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30107,19 +30109,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30149,7 +30151,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -30159,7 +30161,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30170,19 +30172,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30212,7 +30214,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -30222,7 +30224,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30233,19 +30235,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30275,7 +30277,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -30285,7 +30287,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30296,19 +30298,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30338,7 +30340,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -30348,7 +30350,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30359,19 +30361,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30401,7 +30403,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -30411,7 +30413,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30422,19 +30424,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30464,7 +30466,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -30474,7 +30476,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30485,19 +30487,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30527,7 +30529,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -30537,7 +30539,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30548,19 +30550,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30573,7 +30575,7 @@
 	      
 	   	<xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Puisqu’en </xsl:text>
+<xsl:text>Puisqu’il y a un sytème de cas nominatif-accusatif en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -30582,7 +30584,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un sytème de cas nominatif-accusatif, il y a des classes de pronoms démonstratifs distinctes pour les sujets, les objets et les possesseurs.  Les pronoms démonstratifs qu’on peut utiliser pour les sujets sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>, il y a des classes de pronoms démonstratifs distinctes pour les sujets, les objets et les possesseurs.  Les pronoms démonstratifs qu’on peut employer pour les sujets sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -30619,14 +30621,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30637,16 +30639,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30676,14 +30678,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30694,16 +30696,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30733,14 +30735,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30751,16 +30753,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30790,14 +30792,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30808,16 +30810,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30847,14 +30849,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30865,16 +30867,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30904,14 +30906,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30922,16 +30924,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -30976,7 +30978,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -30986,7 +30988,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -30997,19 +30999,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31039,7 +31041,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -31049,7 +31051,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31060,19 +31062,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31102,7 +31104,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -31112,7 +31114,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31123,19 +31125,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31165,7 +31167,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -31175,7 +31177,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31186,19 +31188,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31228,7 +31230,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -31238,7 +31240,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31249,19 +31251,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31291,7 +31293,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -31301,7 +31303,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31312,19 +31314,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31354,7 +31356,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -31364,7 +31366,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31375,19 +31377,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31417,7 +31419,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -31427,7 +31429,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31438,19 +31440,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31480,7 +31482,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -31490,7 +31492,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31501,19 +31503,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31543,7 +31545,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -31553,7 +31555,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31564,19 +31566,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31606,7 +31608,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -31616,7 +31618,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31627,19 +31629,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31669,7 +31671,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -31679,7 +31681,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31690,19 +31692,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31715,7 +31717,7 @@
 
 	   	<xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme objets directs sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme objets directs sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -31752,14 +31754,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31770,16 +31772,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31809,14 +31811,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31827,16 +31829,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31866,14 +31868,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31884,16 +31886,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31923,14 +31925,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31941,16 +31943,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -31980,14 +31982,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -31998,16 +32000,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32037,14 +32039,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32055,16 +32057,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32109,7 +32111,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -32119,7 +32121,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32130,19 +32132,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32172,7 +32174,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -32182,7 +32184,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32193,19 +32195,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32235,7 +32237,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -32245,7 +32247,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32256,19 +32258,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32298,7 +32300,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -32308,7 +32310,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32319,19 +32321,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32361,7 +32363,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -32371,7 +32373,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32382,19 +32384,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32424,7 +32426,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -32434,7 +32436,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32445,19 +32447,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32487,7 +32489,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -32497,7 +32499,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32508,19 +32510,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32550,7 +32552,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -32560,7 +32562,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32571,19 +32573,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32613,7 +32615,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -32623,7 +32625,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32634,19 +32636,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32676,7 +32678,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -32686,7 +32688,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32697,19 +32699,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32739,7 +32741,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -32749,7 +32751,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32760,19 +32762,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32802,7 +32804,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -32812,7 +32814,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32823,19 +32825,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32847,7 +32849,7 @@
 </xsl:if>	      
 	   	<xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme possesseurs sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme possesseurs sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -32884,14 +32886,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32902,16 +32904,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32941,14 +32943,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -32959,16 +32961,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -32998,14 +33000,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33016,16 +33018,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33055,14 +33057,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33073,16 +33075,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33112,14 +33114,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33130,16 +33132,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33169,14 +33171,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33187,16 +33189,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33241,7 +33243,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -33251,7 +33253,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33262,19 +33264,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33304,7 +33306,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -33314,7 +33316,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33325,19 +33327,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33367,7 +33369,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -33377,7 +33379,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33388,19 +33390,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33430,7 +33432,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -33440,7 +33442,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33451,19 +33453,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33493,7 +33495,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -33503,7 +33505,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33514,19 +33516,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33556,7 +33558,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -33566,7 +33568,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33577,19 +33579,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33619,7 +33621,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -33629,7 +33631,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33640,19 +33642,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33682,7 +33684,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -33692,7 +33694,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33703,19 +33705,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33745,7 +33747,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -33755,7 +33757,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33766,19 +33768,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33808,7 +33810,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -33818,7 +33820,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33829,19 +33831,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33871,7 +33873,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -33881,7 +33883,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33892,19 +33894,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33934,7 +33936,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -33944,7 +33946,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -33955,19 +33957,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -33980,7 +33982,7 @@
 	      
 	   	<xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Puisqu’en </xsl:text>
+<xsl:text>Puisqu’il y a un système ergatif-absolutif en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -33989,7 +33991,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un système ergatif-absolutif, il y a des classes distinctes de pronoms démonstratifs pour les sujets de verbes transitifs contre les sujets de verbes intransitifs et les objets directs de verbes transitifs contre les possesseurs.  Les pronoms démonstratifs qu’on peut utiliser comme sujets de verbes transitifs sont présentés dans le tableau ci-dessous, basés la distance de celui qui parle:</xsl:text>
+<xsl:text>, il y a des classes distinctes de pronoms démonstratifs pour les sujets de verbes transitifs versus les sujets de verbes intransitifs et les objets directs de verbes transitifs versus les possesseurs.  Les pronoms démonstratifs qu’on peut employer comme sujets de verbes transitifs sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -34026,14 +34028,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34044,16 +34046,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34083,14 +34085,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34101,16 +34103,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34140,14 +34142,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34158,16 +34160,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34197,14 +34199,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34215,16 +34217,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34254,14 +34256,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34272,16 +34274,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34311,14 +34313,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34329,16 +34331,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34383,7 +34385,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -34393,7 +34395,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34404,19 +34406,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34446,7 +34448,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -34456,7 +34458,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34467,19 +34469,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34509,7 +34511,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -34519,7 +34521,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34530,19 +34532,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34572,7 +34574,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -34582,7 +34584,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34593,19 +34595,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34635,7 +34637,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -34645,7 +34647,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34656,19 +34658,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34698,7 +34700,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -34708,7 +34710,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34719,19 +34721,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34761,7 +34763,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -34771,7 +34773,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34782,19 +34784,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34824,7 +34826,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -34834,7 +34836,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34845,19 +34847,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34887,7 +34889,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -34897,7 +34899,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34908,19 +34910,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -34950,7 +34952,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -34960,7 +34962,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -34971,19 +34973,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35013,7 +35015,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -35023,7 +35025,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35034,19 +35036,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35076,7 +35078,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -35086,7 +35088,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35097,19 +35099,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35121,7 +35123,7 @@
 </xsl:if>	      
 	   	<xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme les sujets de verbes intransitifs ou comme les objets directs de verbes transitifs sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme sujet de verbes intransitifs ou comme objet direct de verbes transitifs sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -35158,14 +35160,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35176,16 +35178,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35215,14 +35217,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35233,16 +35235,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35272,14 +35274,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35290,16 +35292,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35329,14 +35331,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35347,16 +35349,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35386,14 +35388,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35404,16 +35406,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35443,14 +35445,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35461,16 +35463,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35515,7 +35517,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -35525,7 +35527,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35536,19 +35538,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35578,7 +35580,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -35588,7 +35590,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35599,19 +35601,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35641,7 +35643,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -35651,7 +35653,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35662,19 +35664,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35704,7 +35706,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -35714,7 +35716,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35725,19 +35727,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35767,7 +35769,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -35777,7 +35779,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35788,19 +35790,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35830,7 +35832,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -35840,7 +35842,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35851,19 +35853,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35893,7 +35895,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -35903,7 +35905,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35914,19 +35916,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -35956,7 +35958,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -35966,7 +35968,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -35977,19 +35979,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36019,7 +36021,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -36029,7 +36031,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36040,19 +36042,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36082,7 +36084,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -36092,7 +36094,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36103,19 +36105,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36145,7 +36147,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -36155,7 +36157,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36166,19 +36168,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36208,7 +36210,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -36218,7 +36220,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36229,19 +36231,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36254,7 +36256,7 @@
 
 	   	<xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//np/@possCaseErg)='genitive'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme possesseurs sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme possesseurs sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no' and normalize-space(//np/@possCaseErg)='genitive'">
@@ -36291,14 +36293,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36309,16 +36311,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36348,14 +36350,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36366,16 +36368,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36405,14 +36407,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36423,16 +36425,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36462,14 +36464,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36480,16 +36482,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36519,14 +36521,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36537,16 +36539,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36576,14 +36578,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36594,16 +36596,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36648,7 +36650,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -36658,7 +36660,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36669,19 +36671,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36711,7 +36713,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -36721,7 +36723,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36732,19 +36734,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36774,7 +36776,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -36784,7 +36786,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36795,19 +36797,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36837,7 +36839,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -36847,7 +36849,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36858,19 +36860,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36900,7 +36902,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -36910,7 +36912,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36921,19 +36923,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -36963,7 +36965,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -36973,7 +36975,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -36984,19 +36986,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37026,7 +37028,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -37036,7 +37038,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37047,19 +37049,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37089,7 +37091,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -37099,7 +37101,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37110,19 +37112,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37152,7 +37154,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -37162,7 +37164,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37173,19 +37175,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37215,7 +37217,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -37225,7 +37227,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37236,19 +37238,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37278,7 +37280,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -37288,7 +37290,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37299,19 +37301,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37341,7 +37343,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -37351,7 +37353,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37362,19 +37364,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37396,12 +37398,12 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un système de cas dédoublé, il y a des classes de pronoms démonstratifs distinctes pour le système de cas nominatif-accusatif normal, pour distinguer les sujets, les objets et les possesseurs, et d’autres pour les cas spéciaux quand on utilise le système ergatif-absolutif, pour distinguer les sujets de verbes transitifs contre les sujets de verbes intransitifs et les objets de verbes transitifs.</xsl:text>
+<xsl:text> il y a un système de cas mixte, il y a des classes de pronoms démonstratifs distinctes pour le système de cas nominatif-accusatif normal, pour distinguer les sujets, les objets et les possesseurs, et d’autres pour les cas spéciaux quand on utilise le système ergatif-absolutif, pour distinguer les sujets de verbes transitifs versus les sujets de verbes intransitifs et les objets de verbes transitifs.</xsl:text>
 </p>
 </xsl:if>
 	   	<xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme les sujets dans un système nominatif-accusatif normal sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme les sujets dans un système nominatif-accusatif normal sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -37438,14 +37440,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37456,16 +37458,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37495,14 +37497,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37513,16 +37515,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37552,14 +37554,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37570,16 +37572,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37609,14 +37611,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37627,16 +37629,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37666,14 +37668,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37684,16 +37686,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37723,14 +37725,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37741,16 +37743,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37795,7 +37797,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -37805,7 +37807,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37816,19 +37818,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37858,7 +37860,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -37868,7 +37870,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37879,19 +37881,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37921,7 +37923,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -37931,7 +37933,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -37942,19 +37944,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -37984,7 +37986,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -37994,7 +37996,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38005,19 +38007,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38047,7 +38049,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -38057,7 +38059,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38068,19 +38070,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38110,7 +38112,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -38120,7 +38122,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38131,19 +38133,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38173,7 +38175,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -38183,7 +38185,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38194,19 +38196,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38236,7 +38238,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -38246,7 +38248,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38257,19 +38259,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38299,7 +38301,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -38309,7 +38311,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38320,19 +38322,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38362,7 +38364,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -38372,7 +38374,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38383,19 +38385,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38425,7 +38427,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -38435,7 +38437,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38446,19 +38448,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38488,7 +38490,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -38498,7 +38500,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38509,19 +38511,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38533,7 +38535,7 @@
 </xsl:if>	      
 	   	<xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme objets directs dans le système nominatif-accusatif normal sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme objets directs dans le système nominatif-accusatif normal sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -38570,14 +38572,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38588,16 +38590,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38627,14 +38629,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38645,16 +38647,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38684,14 +38686,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38702,16 +38704,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38741,14 +38743,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38759,16 +38761,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38798,14 +38800,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38816,16 +38818,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38855,14 +38857,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38873,16 +38875,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38927,7 +38929,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -38937,7 +38939,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -38948,19 +38950,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -38990,7 +38992,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -39000,7 +39002,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39011,19 +39013,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39053,7 +39055,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -39063,7 +39065,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39074,19 +39076,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39116,7 +39118,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -39126,7 +39128,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39137,19 +39139,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39179,7 +39181,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -39189,7 +39191,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39200,19 +39202,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39242,7 +39244,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -39252,7 +39254,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39263,19 +39265,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39305,7 +39307,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -39315,7 +39317,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39326,19 +39328,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39368,7 +39370,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -39378,7 +39380,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39389,19 +39391,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39431,7 +39433,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -39441,7 +39443,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39452,19 +39454,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39494,7 +39496,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -39504,7 +39506,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39515,19 +39517,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39557,7 +39559,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -39567,7 +39569,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39578,19 +39580,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39620,7 +39622,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -39630,7 +39632,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39641,19 +39643,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39666,7 +39668,7 @@
 
 	   	<xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme possesseurs sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme possesseurs sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -39703,14 +39705,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39721,16 +39723,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39760,14 +39762,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39778,16 +39780,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39817,14 +39819,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39835,16 +39837,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39874,14 +39876,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39892,16 +39894,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39931,14 +39933,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -39949,16 +39951,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -39988,14 +39990,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40006,16 +40008,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40060,7 +40062,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -40070,7 +40072,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40081,19 +40083,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40123,7 +40125,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -40133,7 +40135,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40144,19 +40146,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40186,7 +40188,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -40196,7 +40198,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40207,19 +40209,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40249,7 +40251,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -40259,7 +40261,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40270,19 +40272,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40312,7 +40314,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -40322,7 +40324,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40333,19 +40335,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40375,7 +40377,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -40385,7 +40387,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40396,19 +40398,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40438,7 +40440,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -40448,7 +40450,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40459,19 +40461,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40501,7 +40503,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -40511,7 +40513,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40522,19 +40524,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40564,7 +40566,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -40574,7 +40576,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40585,19 +40587,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40627,7 +40629,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -40637,7 +40639,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40648,19 +40650,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40690,7 +40692,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -40700,7 +40702,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40711,19 +40713,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40753,7 +40755,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -40763,7 +40765,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40774,19 +40776,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40799,7 +40801,7 @@
 	      	      
 	   	<xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme sujets de verbes transitifs dans les situation d’ergativité dédoublée sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme sujets de verbes transitifs dans les cas d’ergativité mixte sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -40835,14 +40837,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40853,16 +40855,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40892,14 +40894,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40910,16 +40912,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -40949,14 +40951,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -40967,16 +40969,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41006,14 +41008,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41024,16 +41026,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41063,14 +41065,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41081,16 +41083,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41120,14 +41122,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41138,16 +41140,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41191,7 +41193,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -41201,7 +41203,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41212,19 +41214,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41254,7 +41256,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -41264,7 +41266,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41275,19 +41277,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41317,7 +41319,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -41327,7 +41329,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41338,19 +41340,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41380,7 +41382,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -41390,7 +41392,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41401,19 +41403,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41443,7 +41445,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -41453,7 +41455,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41464,19 +41466,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41506,7 +41508,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -41516,7 +41518,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41527,19 +41529,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41569,7 +41571,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -41579,7 +41581,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41590,19 +41592,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41632,7 +41634,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -41642,7 +41644,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41653,19 +41655,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41695,7 +41697,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -41705,7 +41707,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41716,19 +41718,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41758,7 +41760,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -41768,7 +41770,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41779,19 +41781,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41821,7 +41823,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -41831,7 +41833,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41842,19 +41844,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41884,7 +41886,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -41894,7 +41896,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41905,19 +41907,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -41929,7 +41931,7 @@
 </xsl:if>	      
 	   	<xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Les pronoms démonstratifs qu’on peut utiliser comme sujets de verbes intransitifs ou comme objets directs de verbes transitifs dans les situations d’ergativité dédoublée sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>Les pronoms démonstratifs qu’on peut employer comme sujets de verbes intransitifs ou comme objets directs de verbes transitifs dans les cas d’ergativité mixte sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -41966,14 +41968,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -41984,16 +41986,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42023,14 +42025,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42041,16 +42043,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42080,14 +42082,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42098,16 +42100,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42137,14 +42139,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42155,16 +42157,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42194,14 +42196,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42212,16 +42214,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42251,14 +42253,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42269,16 +42271,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42323,7 +42325,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -42333,7 +42335,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42344,19 +42346,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42386,7 +42388,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -42396,7 +42398,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42407,19 +42409,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42449,7 +42451,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -42459,7 +42461,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42470,19 +42472,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42512,7 +42514,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -42522,7 +42524,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42533,19 +42535,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42575,7 +42577,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -42585,7 +42587,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42596,19 +42598,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42638,7 +42640,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -42648,7 +42650,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42659,19 +42661,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42701,7 +42703,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -42711,7 +42713,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42722,19 +42724,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42764,7 +42766,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -42774,7 +42776,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42785,19 +42787,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42827,7 +42829,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -42837,7 +42839,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42848,19 +42850,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42890,7 +42892,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -42900,7 +42902,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42911,19 +42913,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -42953,7 +42955,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -42963,7 +42965,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -42974,19 +42976,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43016,7 +43018,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -43026,7 +43028,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43037,19 +43039,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43062,11 +43064,11 @@
 
 	   	<xsl:if test="normalize-space(//typology/@case)!='none' and normalize-space(//pron/@demCase)='yes'">
 <p>
-<xsl:text>Il y a une autre classe de pronoms démonstratifs qu’on peut utiliser </xsl:text>
+<xsl:text>Il y a une autre classe de pronoms démonstratifs qu’on peut employer </xsl:text>
 <xsl:if test="normalize-space(//typology/@caseExperiencer)='yesDat'">
-<xsl:text>comme les sujets de verbes expérienceur ou </xsl:text>
+<xsl:text>comme sujet de verbes expérient ou </xsl:text>
 </xsl:if>
-<xsl:text>comme les objets indirects, qui sont présentés dans le tableau ci-dessous, basés sur la distance de celui qui parle:</xsl:text>
+<xsl:text>comme objet indirect, qui sont présentés dans le tableau ci-dessous, en fonction de la distance avec celui qui parle.</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)!='none' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -43103,14 +43105,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43121,16 +43123,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43160,14 +43162,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43178,16 +43180,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43217,14 +43219,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43235,16 +43237,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43274,14 +43276,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43292,16 +43294,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43331,14 +43333,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43349,16 +43351,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43388,14 +43390,14 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43406,16 +43408,16 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43460,7 +43462,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -43470,7 +43472,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43481,19 +43483,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43523,7 +43525,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -43533,7 +43535,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43544,19 +43546,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43586,7 +43588,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -43596,7 +43598,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43607,19 +43609,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43649,7 +43651,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -43659,7 +43661,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43670,19 +43672,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43712,7 +43714,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -43722,7 +43724,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43733,19 +43735,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43775,7 +43777,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -43785,7 +43787,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43796,19 +43798,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43838,7 +43840,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -43848,7 +43850,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43859,19 +43861,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43901,7 +43903,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -43911,7 +43913,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43922,19 +43924,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -43964,7 +43966,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -43974,7 +43976,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -43985,19 +43987,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -44027,7 +44029,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
@@ -44037,7 +44039,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -44048,19 +44050,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Singulier</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -44090,7 +44092,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -44100,7 +44102,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -44111,19 +44113,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -44153,7 +44155,7 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
@@ -44163,7 +44165,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -44174,19 +44176,19 @@
 <xsl:otherwise>
 <tr>
 <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 <td align="left">
 <xsl:text>Pluriel</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -44199,8 +44201,8 @@
 	      
 	      <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
 <p>
-<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple: </xsl:text>
-<object type="tComment"> Il faut entrer la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
+<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple : </xsl:text>
+<object type="tComment"> Il faut saisir la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -44218,7 +44220,7 @@
 	            </tr>			
 	            <tr>
 	               <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -44247,7 +44249,7 @@
 	            </tr>
 	            <tr>
 	               <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -44276,7 +44278,7 @@
 	            </tr>
 	            <tr>
 	               <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -44308,8 +44310,8 @@
 </xsl:if>	      
 	      <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='yes'">
 <p>
-<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple: </xsl:text>
-<object type="tComment"> Il faut entrer la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
+<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple : </xsl:text>
+<object type="tComment"> Il faut saisir la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='yes'">
@@ -44516,8 +44518,8 @@
 
 	      <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
 <p>
-<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple: </xsl:text>
-<object type="tComment"> Il faut entrer la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
+<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple : </xsl:text>
+<object type="tComment"> Il faut saisir la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -44537,7 +44539,7 @@
 	            </tr>			
 	            <tr>
 	               <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -44568,7 +44570,7 @@
 	            </tr>
 	            <tr>
 	               <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -44599,7 +44601,7 @@
 	            </tr>
 	            <tr>
 	               <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -44633,8 +44635,8 @@
 </xsl:if>	      
 	      <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='yes'">
 <p>
-<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple: </xsl:text>
-<object type="tComment"> Il faut entrer la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
+<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple : </xsl:text>
+<object type="tComment"> Il faut saisir la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='yes'">
@@ -44854,8 +44856,8 @@
 	      
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
 <p>
-<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple: </xsl:text>
-<object type="tComment"> Il faut entrer la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
+<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple : </xsl:text>
+<object type="tComment"> Il faut saisir la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='no'">
@@ -44875,7 +44877,7 @@
 	               </tr>			
 	            <tr>
 	               <td align="left">
-<xsl:text>Proximale</xsl:text>
+<xsl:text>Proximal</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -44916,7 +44918,7 @@
 	            </tr>
 	            <tr>
 	               <td align="left">
-<xsl:text>Médiale</xsl:text>
+<xsl:text>Médial</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -44957,7 +44959,7 @@
 	            </tr>
 	            <tr>
 	               <td align="left">
-<xsl:text>Distale</xsl:text>
+<xsl:text>Distal</xsl:text>
 </td>
 	               <td align="left">
 <langData>
@@ -45001,8 +45003,8 @@
 </xsl:if>	      
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='yes'">
 <p>
-<xsl:text>The following table shows all the forms for easier comparison: </xsl:text>
-<object type="tComment">You need to enter the form in each cell here.  Delete this paragraph and table if you do not wish to use it.</object>
+<xsl:text>Le tableau ci-dessous présente toutes les formes pour une comparaison plus simple : </xsl:text>
+<object type="tComment"> Il faut saisir la forme dans chaque cellule ici.  Supprimez ce paragraphe et le tableau si vous ne voulez pas vous en servir.</object>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@demCase)='yes' and normalize-space(//pron/@demNumber)='yes'">
@@ -45285,112 +45287,38 @@
 		<section2 id="sPronIndef">
 			<secTitle>Indéfinis</secTitle>
 			<p contentType="ctComparativeIntro">
-<xsl:text>Les indéfinis constituent une sorte finale de pronoms.  Il y a deux classes fondamentales de pronoms indéfinis, mais toutes les langues ne les fusionnent pas en un seul mot:  ceux qui sont formés d’un quantificateur et un substantif générique indéfini, tels que </xsl:text>
+<xsl:text>Les indéfinis constituent un dernier type de pronoms.  Il y a deux classes de base de pronoms indéfinis, bien que toutes les langues ne les fusionnent pas en un seul mot :  ceux qui sont formés d’un quantifieur et d’un substantif générique indéfini, tels que </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>everybody</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « tout le monde »</xsl:text>
-</gloss>
+</xsl:attribute>tout le monde</langData>
 <xsl:text>, </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>everything</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « tout »</xsl:text>
-</gloss>
+</xsl:attribute>toute chose</langData>
 <xsl:text>, </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>everyone</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « tout le monde »</xsl:text>
-</gloss>
-<xsl:text>, </xsl:text>
-<langData>
-<xsl:attribute name="lang">
-<xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>anybody</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « n’importe qui »</xsl:text>
-</gloss>
-<xsl:text>, </xsl:text>
-<langData>
-<xsl:attribute name="lang">
-<xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>anything</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « n’importe quoi »</xsl:text>
-</gloss>
-<xsl:text>, </xsl:text>
-<langData>
-<xsl:attribute name="lang">
-<xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>anyone</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « n’importe qui »</xsl:text>
-</gloss>
-<xsl:text>, </xsl:text>
-<langData>
-<xsl:attribute name="lang">
-<xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>somebody</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « quelqu’un »</xsl:text>
-</gloss>
-<xsl:text>, </xsl:text>
-<langData>
-<xsl:attribute name="lang">
-<xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>something</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « quelque chose »</xsl:text>
-</gloss>
-<xsl:text>, </xsl:text>
-<langData>
-<xsl:attribute name="lang">
-<xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>someone</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « quelqu’un »</xsl:text>
-</gloss>
-<xsl:text>, et ceux qui sont formés d’un mot interrogatif, tels que </xsl:text>
-<langData>
-<xsl:attribute name="lang">
-<xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>whoever</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « quiconque »</xsl:text>
-</gloss>
+</xsl:attribute>quelqu’un</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>whatever</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text> « quoi que »</xsl:text>
-</gloss>
+</xsl:attribute>quelque chose</langData>
+<xsl:text>, et ceux qui sont formés d’un mot interrogatif, tels que </xsl:text>
+<langData>
+<xsl:attribute name="lang">
+<xsl:text>lPAWSSKEnglish</xsl:text>
+</xsl:attribute>quiconque</langData>
 <xsl:text>.</xsl:text>
 </p>	   
 			<p contentType="ctPracticalIntro">
-<xsl:text>Les indéfinis servent pour se référer à une personne, un endroit ou une chose non-spécifique.  Ils se composent normalement d’un quatificateur et un substantif générique ou d’un mot interrogatif et un mot indéfini, et ils ne sont pas toujours fusionnés en un seul mot.</xsl:text>
+<xsl:text>Les indéfinis sont employer pour se référer à une personne, un lieu ou une chose non spécifique.  Ils se composent normalement d’un quantifieur et d’un substantif générique ou d’un mot interrogatif et d’un mot indéfini, et ils ne fusionment pas toujours en un seul mot.</xsl:text>
 </p>
 		        <p>
-<xsl:text>Commençant avec la première sorte qui comprend un quantificateur et un substantif générique (ou l’utilisation impersonnelle du nombre « un »), en </xsl:text>
+<xsl:text>Commençant par le premier type, qui comprend un quantifieur et un substantif générique, en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -45399,9 +45327,9 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> </xsl:text>
+<xsl:text>, </xsl:text>
 <xsl:if test="normalize-space(//pron/pronIndefTypeQNone/@checked)='yes'">
-<xsl:text>les indéfinis ne sont pas exprimés avec un quantificateur. </xsl:text>
+<xsl:text>les indéfinis ne sont pas exprimés avec un quantifieur. </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='no' and normalize-space(//pron/indefQWord/@checked)='no' and normalize-space(//pron/indefQOther/@checked)='yes'">
 <xsl:text>ils sont exprimés par ___</xsl:text>
@@ -45409,28 +45337,28 @@
 <xsl:text>. </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='no' and normalize-space(//pron/indefQWord/@checked)='yes' and normalize-space(//pron/indefQOther/@checked)='no'">
-<xsl:text>ceux-ci sont exprimés par un quantificateur et un substantif générique fusionnés en un seul mot.  Des exemples sont: </xsl:text>
+<xsl:text>ceux-ci sont exprimés par un quantifieur et un substantif générique fusionnés en un seul mot.  Voici quelques exemples : </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='yes' and normalize-space(//pron/indefQWord/@checked)='yes' and normalize-space(//pron/indefQOther/@checked)='no'">
-<xsl:text>certains sont exprimés par un quantificateur et un substantif générique fusionnés en un seul mot, mais d’autres continuent comme un syntagme.  Des exemples des formes des pronoms sont: </xsl:text>
+<xsl:text>certains sont exprimés par un quantifieur et un substantif générique fusionnés en un seul mot, mais d’autres restent un syntagme.  Voici des exemples de forme des pronoms : </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='no' and normalize-space(//pron/indefQWord/@checked)='yes' and normalize-space(//pron/indefQOther/@checked)='yes'">
-<xsl:text>certains sont exprimés par un quantificateur et un substantif générique fusionnés en un seul mot, mais d’autres sont exprimés par ___</xsl:text>
+<xsl:text>certains sont exprimés par un quantifieur et un substantif générique fusionnés en un seul mot, mais d’autres sont exprimés par ___</xsl:text>
 <xsl:value-of select="//pron/indefQOther" />
-<xsl:text>.  Des exemples de formes de pronoms sont: </xsl:text>
+<xsl:text>.  Voici des exemples de formes de pronoms : </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='yes' and normalize-space(//pron/indefQWord/@checked)='no' and normalize-space(//pron/indefQOther/@checked)='no'">
-<xsl:text>ceux-ci sont exprimés par un quantificateur et un substantif générique qui ne se fusionnent pas en un seul mot, mais continuent comme un syntagme. </xsl:text>
+<xsl:text>ceux-ci sont exprimés par un quantifieur et un substantif générique qui ne fusionnent pas en un seul mot, mais restent un syntagme. </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='yes' and normalize-space(//pron/indefQWord/@checked)='no' and normalize-space(//pron/indefQOther/@checked)='yes'">
-<xsl:text>certains sont exprimés par un quantificateur et un substantif générique qui ne se fusionnent pas en un seul mot, mais continuent comme un syntagme, et d’autres encore sont exprimés par ___</xsl:text>
+<xsl:text>certains sont exprimés par un quantifieur et un substantif générique qui ne fusionnent pas en un seul mot, mais restent un syntagme, et d’autres encore sont exprimés par ___</xsl:text>
 <xsl:value-of select="//pron/indefQOther" />
 <xsl:text>.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='yes' and normalize-space(//pron/indefQWord/@checked)='yes' and normalize-space(//pron/indefQOther/@checked)='yes'">
-<xsl:text>certains en sont exprimés par un quantificateur et un substantif générique fusionnés en un seul mot, mais d’autres continuent comme un syntagme, et d’autres encore sont exprimés par ___</xsl:text>
+<xsl:text>certains sont exprimés par un quantifieur et un substantif générique fusionnés en un seul mot, mais d’autres restent un syntagme, et d’autres encore sont exprimés par ___</xsl:text>
 <xsl:value-of select="//pron/indefQOther" />
-<xsl:text>.  Des exemples de formes de pronoms sont: </xsl:text>
+<xsl:text>.  Voici des exemples de formes de pronoms : </xsl:text>
 </xsl:if>
 <xsl:text></xsl:text>
 </p>
@@ -45438,7 +45366,7 @@
 <example num="xPron.PronIndef.10">
 <table border="1">
 		         <tr>
-		         	<th>Pronoms indéfinis formés d’un quantificateur</th>
+		         	<th>Pronoms indéfinis formés d’un quantifieur</th>
 		            <th>Glose</th>
 		         </tr>				
 		         <xsl:variable name="sExampleValue0.0">
@@ -45466,7 +45394,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -45478,12 +45406,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -45495,7 +45423,7 @@
 		<xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='yes' and normalize-space(//pron/indefTypeQPQOther/@checked)='no'">
-		   	<xsl:text>Dans les formes qui ne se fusionnent pas en un seul mot, le quantificateur se présente </xsl:text>
+		   	<xsl:text>Dans les formes qui ne fusionnent pas en un seul mot, le quantifieur apparaît </xsl:text>
 		   	<xsl:if test="normalize-space(//pron/indefTypeQPQBefore/@checked)='yes' and normalize-space(//pron/indefTypeQPQAfter/@checked)='no' and normalize-space(//pron/indefTypeQPQBoth/@checked)='no'">
 <xsl:text>avant le</xsl:text>
 </xsl:if>
@@ -45509,23 +45437,23 @@
 <xsl:text>d’un côté ou l’autre du</xsl:text>
 </xsl:if>
 		   	<xsl:if test="normalize-space(//pron/indefTypeQPQBefore/@checked)='yes' and normalize-space(//pron/indefTypeQPQAfter/@checked)='no' and normalize-space(//pron/indefTypeQPQBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés du</xsl:text>
+<xsl:text>avant ou de part et d’autre du</xsl:text>
 </xsl:if>
 		   	<xsl:if test="normalize-space(//pron/indefTypeQPQBefore/@checked)='no' and normalize-space(//pron/indefTypeQPQAfter/@checked)='yes' and normalize-space(//pron/indefTypeQPQBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés du</xsl:text>
+<xsl:text>après ou de part et d’autre du</xsl:text>
 </xsl:if>
 		   	<xsl:if test="normalize-space(//pron/indefTypeQPQBefore/@checked)='yes' and normalize-space(//pron/indefTypeQPQAfter/@checked)='yes' and normalize-space(//pron/indefTypeQPQBoth/@checked)='yes'">
-<xsl:text>d’un côté ou l’autre ou des deux côtés du</xsl:text>
+<xsl:text>d’un côté ou l’autre ou de part et d’autre du</xsl:text>
 </xsl:if>
 		   	<xsl:text> substantif générique.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefTypeQPQOther/@checked)='yes' and normalize-space(//pron/indefTypeQPQBefore/@checked)='no' and normalize-space(//pron/indefTypeQPQAfter/@checked)='no' and normalize-space(//pron/indefTypeQPQBoth/@checked)='no'"> 
-		      	<xsl:text>Dans les formes qui ne se fusionnent pas en un seul mot, le quantificateur se présente ___</xsl:text>
+		      	<xsl:text>Dans les formes qui ne fusionnent pas en un seul mot, le quantifieur apparaît ___</xsl:text>
 <xsl:value-of select="//pron/indefTypeQPQOther" />
 		         <xsl:text>.</xsl:text>
 		      </xsl:if>
 <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='yes' and normalize-space(//pron/indefTypeQPQOther/@checked)='yes' and normalize-space(//pron/indefTypeQPQBefore/@checked)='yes' or normalize-space(//pron/indefQPhrase/@checked)='yes' and normalize-space(//pron/indefTypeQPQOther/@checked)='yes' and normalize-space(//pron/indefTypeQPQAfter/@checked)='yes' or normalize-space(//pron/indefQPhrase/@checked)='yes' and normalize-space(//pron/indefTypeQPQOther/@checked)='yes' and normalize-space(//pron/indefTypeQPQBoth/@checked)='yes'">
-		      	<xsl:text>Dans les formes qui ne se fusionnent pas en un seul mot, le quantificateur se présente </xsl:text>
+		      	<xsl:text>Dans les formes qui ne fusionnent pas en un seul mot, le quantifieur apparaît </xsl:text>
 		      	<xsl:if test="normalize-space(//pron/indefTypeQPQBefore/@checked)='yes' and normalize-space(//pron/indefTypeQPQAfter/@checked)='no' and normalize-space(//pron/indefTypeQPQBoth/@checked)='no'">
 <xsl:text>avant le</xsl:text>
 </xsl:if>
@@ -45539,26 +45467,26 @@
 <xsl:text>d’un côté ou l’autre du</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeQPQBefore/@checked)='yes' and normalize-space(//pron/indefTypeQPQAfter/@checked)='no' and normalize-space(//pron/indefTypeQPQBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés du</xsl:text>
+<xsl:text>avant ou de part et d’autre du</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeQPQBefore/@checked)='no' and normalize-space(//pron/indefTypeQPQAfter/@checked)='yes' and normalize-space(//pron/indefTypeQPQBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés du</xsl:text>
+<xsl:text>après ou de part et d’autre du</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeQPQBefore/@checked)='yes' and normalize-space(//pron/indefTypeQPQAfter/@checked)='yes' and normalize-space(//pron/indefTypeQPQBoth/@checked)='yes'">
-<xsl:text>d’un côté ou l’autre ou des deux côtés du</xsl:text>
+<xsl:text>d’un côté ou l’autre ou de part et d’autre du</xsl:text>
 </xsl:if>
-		      	<xsl:text> substantif générique, et ils peuvent se présenter aussi ___</xsl:text>
+		      	<xsl:text> substantif générique, et ils peuvent aussi apparaître ___</xsl:text>
 <xsl:value-of select="//pron/indefTypeQPQOther" />
 <xsl:text>.</xsl:text>
 		      </xsl:if>
-<xsl:text>  Des exemples de syntagmes nominaux indéfinis sont:</xsl:text>
+<xsl:text>  Voici quelques exemples de syntagmes nominaux indéfinis :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/indefQPhrase/@checked)='yes'">
 <example num="xPron.PronIndef.14">
 <table border="1">
 		         <tr>
-		         	<th>Syntagmes indéfinis formés d’un quantificateur</th>
+		         	<th>Syntagmes indéfinis formés d’un quantifieur</th>
 		            <th>Glose</th>
 		         </tr>				
 		         <xsl:variable name="sExampleValue0.0">
@@ -45586,7 +45514,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -45598,12 +45526,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -45614,14 +45542,14 @@
 </xsl:if>
 			<xsl:if test="normalize-space(//pron/indefQOther/@checked)='yes'">
 <p>
-<xsl:text>Des exemples d’indéfinis formés de cette autre manière sont:</xsl:text>
+<xsl:text>Voici quelques exemples d’indéfinis formés de cette autre manière :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/indefQOther/@checked)='yes'">
 <example num="xPron.PronIndef.18">
 <table border="1">
 		         <tr>
-		         	<th>Indéfinis formés d’un quantificateur</th>
+		         	<th>Indéfinis formés d’un quantifieur</th>
 		            <th>Glose</th>
 		         </tr>				
 		         <xsl:variable name="sExampleValue0.0">
@@ -45649,7 +45577,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -45661,12 +45589,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -45676,7 +45604,7 @@
 </example>
 </xsl:if>
 <p>
-<xsl:text>Pour la deuxième sorte d’indéfini qui comprend un interrogatif et un mot indéfini, en </xsl:text>
+<xsl:text>Pour le deuxième type d’indéfini, qui comprend un interrogatif et un mot indéfini, en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -45685,7 +45613,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> </xsl:text>
+<xsl:text>, </xsl:text>
 <xsl:if test="normalize-space(//pron/pronIndefTypeIntNone/@checked)='yes'">
 <xsl:text>les indéfinis ne sont pas exprimés avec un interrogatif.</xsl:text>
 </xsl:if>
@@ -45695,28 +45623,28 @@
 <xsl:text>. </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='no' and normalize-space(//pron/indefIntWord/@checked)='yes' and normalize-space(//pron/indefIntOther/@checked)='no'">
-<xsl:text>ces éléments sont fusionnés en un seul mot.  Des exemples sont: </xsl:text>
+<xsl:text>ces éléments sont fusionnés en un seul mot.  Voici quelques exemples : </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='yes' and normalize-space(//pron/indefIntWord/@checked)='yes' and normalize-space(//pron/indefIntOther/@checked)='no'">
-<xsl:text>certains de ceux-ci sont fusionnés en un seul mot, mais d’autres continuent comme un syntagme.  Des exemples de formes de pronoms sont: </xsl:text>
+<xsl:text>certains de ceux-ci sont fusionnés en un seul mot, mais d’autres restent un syntagme.  Voici quelques exemples de formes de pronoms : </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='no' and normalize-space(//pron/indefIntWord/@checked)='yes' and normalize-space(//pron/indefIntOther/@checked)='yes'">
 <xsl:text>certains parmi ceux-ci sont fusionnés en un seul mot, mais d’autres sont exprimés par  ___</xsl:text>
 <xsl:value-of select="//pron/indefIntOther" />
-<xsl:text>  Des exemples des formes des pronoms sont:  </xsl:text>
+<xsl:text>  Voici quelques exemples de formes de pronoms :  </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='yes' and normalize-space(//pron/indefIntWord/@checked)='no' and normalize-space(//pron/indefIntOther/@checked)='no'">
-<xsl:text>ces éléments ne se fusionnent pas en un seul mot, mais continuent comme un syntagme. </xsl:text>
+<xsl:text>ces éléments ne fusionnent pas en un seul mot, mais restent un syntagme. </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='yes' and normalize-space(//pron/indefIntWord/@checked)='no' and normalize-space(//pron/indefIntOther/@checked)='yes'">
-<xsl:text>certains de ceux-ci ne se fusionnent ps en un seul mot, mais continuent comme un syntagme, et d’autres encore sont exprimés par ___</xsl:text>
+<xsl:text>certains de ceux-ci ne fusionnent pas en un seul mot, mais restent un syntagme, et d’autres encore sont exprimés par ___</xsl:text>
 <xsl:value-of select="//pron/indefIntOther" />
 <xsl:text>.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='yes' and normalize-space(//pron/indefIntWord/@checked)='yes' and normalize-space(//pron/indefIntOther/@checked)='yes'">
-<xsl:text>certains de ceux-ci sont fusionnés en un seul mot, mais d’autres continuent comme un syntagme, et d’autres encore continuent comme un syntagme, et certains sont exprimés par ___</xsl:text>
+<xsl:text>certains de ceux-ci sont fusionnés en un seul mot, mais d’autres continuent restent syntagme, et d’autres encore restent un syntagme, et certains sont exprimés par ___</xsl:text>
 <xsl:value-of select="//pron/indefIntOther" />
-<xsl:text>.  Des exemples des formes des pronoms sont: </xsl:text>
+<xsl:text>.  Voici quelques exemples de formes de pronoms : </xsl:text>
 </xsl:if>
 <xsl:text></xsl:text>
 </p>
@@ -45752,7 +45680,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -45764,12 +45692,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -45781,7 +45709,7 @@
 		   <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='yes'">
 <p>
 <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='yes' and normalize-space(//pron/indefTypeIntOther/@checked)='no'">
-		      	<xsl:text>Dans les formes qui ne se fusionnent pas en un seul mot, l’interrogatif se présente </xsl:text>
+		      	<xsl:text>Dans les formes qui ne fusionnent pas en un seul mot, l’interrogatif apparaît </xsl:text>
 		         <xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='no' and normalize-space(//pron/indefTypeIntBoth/@checked)='no'">
 <xsl:text>avant</xsl:text>
 </xsl:if>
@@ -45789,29 +45717,29 @@
 <xsl:text>après</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='no' and normalize-space(//pron/indefTypeIntAfter/@checked)='no' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-<xsl:text>des deux côtés de</xsl:text>
+<xsl:text>de part et d’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='yes' and normalize-space(//pron/indefTypeIntBoth/@checked)='no'">
 <xsl:text>d’un côté ou de l’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='no' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés de</xsl:text>
+<xsl:text>avant ou de part et d’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='no' and normalize-space(//pron/indefTypeIntAfter/@checked)='yes' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés de</xsl:text>
+<xsl:text>après ou de part et d’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='yes' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-<xsl:text>d’un côté ou de l’autre ou des deux côtés de</xsl:text>
+<xsl:text>d’un côté ou de l’autre ou de part et d’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:text> l’indéfini.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//pron/indefTypeIntOther/@checked)='yes' and normalize-space(//pron/indefTypeIntBefore/@checked)='no' and normalize-space(//pron/indefTypeIntAfter/@checked)='no' and normalize-space(//pron/indefTypeIntBoth/@checked)='no'"> 
-		      	<xsl:text>Dans les formes qui ne se fusionnent pas en un seul mot, l’interrogatif se présente ___</xsl:text>
+		      	<xsl:text>Dans les formes qui ne fusionnent pas en un seul mot, l’interrogatif apparaît ___</xsl:text>
 <xsl:value-of select="//pron/indefTypeIntOther" />
 		         <xsl:text>.</xsl:text>
 		      </xsl:if>
 <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='yes' and normalize-space(//pron/indefTypeIntOther/@checked)='yes' and normalize-space(//pron/indefTypeIntBefore/@checked)='yes' or normalize-space(//pron/indefIntPhrase/@checked)='yes' and normalize-space(//pron/indefTypeIntOther/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='yes' or normalize-space(//pron/indefIntPhrase/@checked)='yes' and normalize-space(//pron/indefTypeIntOther/@checked)='yes' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-		      	<xsl:text>Dans les formes qui ne se fusionnent pas en un seul mot, l’interrogatif se présente </xsl:text>
+		      	<xsl:text>Dans les formes qui ne fusionnent pas en un seul mot, l’interrogatif apparaît </xsl:text>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='no' and normalize-space(//pron/indefTypeIntBoth/@checked)='no'">
 <xsl:text>avant</xsl:text>
 </xsl:if>
@@ -45819,25 +45747,25 @@
 <xsl:text>après</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='no' and normalize-space(//pron/indefTypeIntAfter/@checked)='no' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-<xsl:text>des deux côtés de</xsl:text>
+<xsl:text>de part et d’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='yes' and normalize-space(//pron/indefTypeIntBoth/@checked)='no'">
 <xsl:text>d’un côté ou de l’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='no' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés de</xsl:text>
+<xsl:text>avant ou de part et d’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='no' and normalize-space(//pron/indefTypeIntAfter/@checked)='yes' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés de</xsl:text>
+<xsl:text>après ou de part et d’autre de</xsl:text>
 </xsl:if>
 		      	<xsl:if test="normalize-space(//pron/indefTypeIntBefore/@checked)='yes' and normalize-space(//pron/indefTypeIntAfter/@checked)='yes' and normalize-space(//pron/indefTypeIntBoth/@checked)='yes'">
-<xsl:text>d’un côté ou de l’autre ou des deux côtés de</xsl:text>
+<xsl:text>d’un côté ou de l’autre ou de part et d’autre de</xsl:text>
 </xsl:if>
-		      	<xsl:text> l’indéfini, et ils peuvent se présenter ___</xsl:text>
+		      	<xsl:text> l’indéfini, et ils peuvent apparaître ___</xsl:text>
 <xsl:value-of select="//pron/indefTypeIntOther" />
 <xsl:text>.</xsl:text>
 		      </xsl:if>
-<xsl:text>  Des exemples de syntagmes nominaux indéfinis sont:</xsl:text>
+<xsl:text>  Voici quelques exemples de syntagmes nominaux indéfinis :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/indefIntPhrase/@checked)='yes'">
@@ -45872,7 +45800,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -45884,12 +45812,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -45900,7 +45828,7 @@
 </xsl:if>
 			<xsl:if test="normalize-space(//pron/indefIntOther/@checked)='yes'">
 <p>
-<xsl:text>Des exemples d’indéfinis formés de cette autre façon sont:</xsl:text>
+<xsl:text>Voici quelques exemples d’indéfinis formés de cette autre façon :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//pron/indefIntOther/@checked)='yes'">
@@ -45935,7 +45863,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -45947,12 +45875,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -45967,8 +45895,8 @@
 	<section2 id="sPronNP">
 		<secTitle>Pronoms comme syntagmes nominaux</secTitle>
 		<p contentType="ctComparativeIntro">
-<xsl:text>Les pronoms de toutes sortes se présentent normalement seuls dans la place d’un syntagme nominal entier, mais ils peuvent aussi être modifiés par une proposition relative.  Dans certaines langues les pronoms peuvent être modifiés par des syntagmes partitifs, et d’autres langues permettent que les pronoms soient modifiés par des déterminateurs et des mots de degré à portée large.  
-			Des exemples en français de cette sorte comprennent:  </xsl:text>
+<xsl:text>Les pronoms de tous les types apparaissent normalement seuls à la place d’un syntagme nominal entier, mais ils peuvent aussi être modifiés par une proposition relative.  Dans certaines langues, les pronoms peuvent être modifiés par des syntagmes partitifs, et d’autres langues permettent que les pronoms soient modifiés par des déterminants et des mots de degré à large portée.  
+			Des exemples en français de ce sorte comprennent :  </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -45983,10 +45911,10 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>seulement ceux-ci</langData>
-<xsl:text>.   Dans une minorité de langues, les pronoms peuvent être modifiés par des adjectifs et des possesseurs fonctionnant comme des substantifs.</xsl:text>
+<xsl:text>.   Dans une minorité de langues, les pronoms peuvent être modifiés par des adjectifs et des possesseurs, fonctionnant comme des substantifs.</xsl:text>
 </p>		
 		<p contentType="ctPracticalIntro">
-<xsl:text>Les pronoms de toutes les sortes se présentent seuls dans la place d’un syntagme nominal entier, mais on peut les modifier généralement par une proposition relative et parfois par d’autres modificateurs.</xsl:text>
+<xsl:text>Les pronoms de tous les types apparaissent seuls à la place d’un syntagme nominal entier, mais on peut généralement les modifier par une proposition relative et parfois par d’autres modificateurs.</xsl:text>
 </p>		
 	   <p>
 <xsl:text>En </xsl:text>
@@ -46000,15 +45928,15 @@
 </xsl:choose>
 <xsl:text>, </xsl:text>
 <xsl:choose>
-	   	<xsl:when test="//pron/@pronMod='no'">les pronoms ne se présentent que seuls sans modificateurs quand ils remplacent un syntagme nominal.  Les propositions relatives ne sont pas permises du tout.</xsl:when>
-	   	<xsl:when test="//pron/@pronMod='rel'">les pronoms se présentent normalement seuls sans modificateurs, mais la modification par des propositions relatives est permise.</xsl:when>
-	   	<xsl:when test="//pron/@pronMod='part'">les pronoms se présentent normalement seuls sans modificateurs, mais les propositions relatives et les syntagmes partitifs sont permis comme modificateurs.</xsl:when>
-	   	<xsl:when test="//pron/@pronMod='det'">ces éléments peuvent être modifiés par une étendue large de mots de degré et par <xsl:choose>
+	   	<xsl:when test="//pron/@pronMod='no'">les pronoms n’apparaissent que seuls sans modificateurs quand ils remplacent un syntagme nominal.  Les propositions relatives ne sont pas permises du tout.</xsl:when>
+	   	<xsl:when test="//pron/@pronMod='rel'">les pronoms apparaissent normalement seuls sans modificateurs, mais la modification par une propositions relatives est permise.</xsl:when>
+	   	<xsl:when test="//pron/@pronMod='part'">les pronoms apparaissent normalement seuls sans modificateurs, mais les propositions relatives et les syntagmes partitifs sont permis comme modificateurs.</xsl:when>
+	   	<xsl:when test="//pron/@pronMod='det'">ces éléments peuvent être modifiés par les mots de degré à large portée et par <xsl:choose>
 	         <xsl:when test="//np/@artAndDem='article'">des articles</xsl:when>
 	   		<xsl:when test="//np/@artAndDem='demonstrative'">des démonstratifs</xsl:when>
 	   		<xsl:when test="//np/@artAndDem='both'">des articles et des démonstratifs</xsl:when>
-	   	</xsl:choose> aussi bien que par des propositions relatives et des syntagmes partitifs.  Des exemples sont:</xsl:when>
-	   	<xsl:when test="//pron/@pronMod='all'">ces éléments peuvent être modifiés par tous les mêmes modificateurs que les substantifs, y compris les adjectifs et les possesseurs.  Des exemples sont:</xsl:when>
+	   	</xsl:choose> aussi bien que par des propositions relatives et des syntagmes partitifs.  Voici quelques exemples :</xsl:when>
+	   	<xsl:when test="//pron/@pronMod='all'">ces éléments peuvent être modifiés par les mêmes modificateurs que les substantifs, y compris les adjectifs et les possesseurs.  Voici quelques exemples :</xsl:when>
 	   </xsl:choose>
 </p>
 	   <xsl:if test="normalize-space(//pron/@pronMod)='det' or normalize-space(//pron/@pronMod)='all'">
@@ -46024,7 +45952,7 @@
 </xsl:if>
 	   <xsl:if test="normalize-space(//pron/@pronMod)='det' or normalize-space(//pron/@pronMod)='all'">
 <p>
-<xsl:text>Des phrases avec les exemples ci-dessus comme sujets ou objets en </xsl:text>
+<xsl:text>Voici quelques phrases dans lesquelles exemples ci-dessus sont sujet ou objet en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -46033,7 +45961,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 </xsl:if>		
 	   <xsl:if test="normalize-space(//pron/@pronMod)='det' or normalize-space(//pron/@pronMod)='all'">
@@ -46049,7 +45977,7 @@
 </xsl:if>
 <xsl:if test="normalize-space(//pron/@pronMod)!='no' and normalize-space(//pron/@pronMod)!='rel'">
 <p contentType="ctComparativeIntro">
-<xsl:text>Les pronoms peuvent généralement être modifiés aussi par des syntagmes partitifs (ou un autre syntagme adpositionnel), comme dans: </xsl:text>
+<xsl:text>Les pronoms peuvent généralement être également modifiés par des syntagmes partitifs (ou un autre syntagme adpositionnel), comme dans : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -46069,21 +45997,21 @@
 </xsl:if>
 	   <xsl:if test="normalize-space(//pron/@pronMod)!='no' and normalize-space(//pron/@pronMod)!='rel'">
 <p>
-<xsl:text>Des exemples de phrases avec des pronoms modifiés par un syntagme partitif ou un syntagme </xsl:text>
+<xsl:text>Voici quelques exemples de phrases avec des pronoms modifiés par un syntagme partitif ou un syntagme </xsl:text>
 <xsl:choose>
 	   		<xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
 	         <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
 	         <xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
 	         <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
 	   	</xsl:choose>
-<xsl:text> qui se présente </xsl:text>
+<xsl:text> qui apparaît </xsl:text>
 <xsl:choose>
 	   		<xsl:when test="//pron/@partitivePos='before'">avant le</xsl:when>
 	   		<xsl:when test="//pron/@partitivePos='after'">après le</xsl:when>
-	   		<xsl:when test="//pron/@partitivePos='either'">d’un côté ou de l’autre du</xsl:when>
+	   		<xsl:when test="//pron/@partitivePos='either'">de part ou d’autre du</xsl:when>
 	         <xsl:when test="//pron/@partitivePos='unknown'">_______</xsl:when>
 	   	</xsl:choose>
-<xsl:text> pronom sont:</xsl:text>
+<xsl:text> pronom :</xsl:text>
 </p>
 </xsl:if>		
 	   <xsl:if test="normalize-space(//pron/@pronMod)!='no' and normalize-space(//pron/@pronMod)!='rel'">
@@ -46102,13 +46030,13 @@
 <p>
 <xsl:text>Voir la section </xsl:text>
 <sectionRef sec="sQPPartitive" />
-<xsl:text> pour les syntagmes partitifs avec des quantificateurs.</xsl:text>
+<xsl:text> pour les syntagmes partitifs avec un quantifieur.</xsl:text>
 </p>
 </xsl:if>
 	   
 	   <xsl:if test="normalize-space(//pron/@pronMod)!='no'">
 <p contentType="ctComparativeIntro">
-<xsl:text>En plus, il est possible d’avoir un pronom modifié par une proposition relative, comme dans </xsl:text>
+<xsl:text>De plus, il est possible de modifier un pronom par une proposition relative, comme dans </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -46128,7 +46056,7 @@
 </xsl:if>
 		<xsl:if test="normalize-space(//pron/@pronMod)!='no'">
 <p>
-<xsl:text>Des exemples de pronoms modifiés par une proposition relative en </xsl:text>
+<xsl:text>Voici quelques exemples de pronoms modifiés par une proposition relative en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -46137,7 +46065,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> compris dans des phrases complètes sont:</xsl:text>
+<xsl:text>, compris dans des phrases complètes :</xsl:text>
 </p>
 </xsl:if>
 	   <xsl:if test="normalize-space(//pron/@pronMod)!='no'">
@@ -46153,7 +46081,7 @@
 </xsl:if>
 		<xsl:if test="normalize-space(//typology/@classifier)='yesSpecific'">
 <p>
-<xsl:text>Dans la plupart des langues qui emploient des classificateurs, le classificateur peut se présenter sans substantif, pourvu que les caractéristiques du classificateur ou le contexte rendent claire la référence.  
+<xsl:text>Dans la plupart des langues qui emploient des classificateurs, le classificateur peut apparaître sans substantif, pourvu que les caractéristiques du classificateur ou le contexte rendent la référence claire.  
 			En </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
@@ -46165,7 +46093,7 @@
 </xsl:choose>
 <xsl:text>, </xsl:text>
 <xsl:choose>
-				<xsl:when test="//pron/@classifierNoN='yes'">les classificateurs peuvent se présenter sans substantif dans ces situations.  Des exemples de syntagmes nominaux ou phases où le classificateur sert sans usubstantif sont: </xsl:when>
+				<xsl:when test="//pron/@classifierNoN='yes'">les classificateurs ppeuvent apparaître sans substantif dans ces contextes.  Voici quelques exemples de syntagmes nominaux où le classificateur est employé sans usubstantif : </xsl:when>
 				<xsl:when test="//pron/@classifierNoN='no'">un substantif est toujours obligatoire.</xsl:when>
 		</xsl:choose>
 </p>

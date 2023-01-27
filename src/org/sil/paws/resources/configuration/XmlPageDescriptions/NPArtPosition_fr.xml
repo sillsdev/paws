@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="NPArtPosition" count="5.3.2">
-    <title level="2">Syntagmes nominaux – Articles et Démonstratifs: Caractéristiques de position et d’accord</title>
+    <title level="2">Syntagmes nominaux – Articles et Démonstratifs : Caractéristiques de position et d’accord</title>
     <form section="np">
         <prompt id="NPArtAndDemInstruction" show="swNPArtAndDem"><span id="NPArtandDemTreespan" show="swNotPractical"><br/>Nous sommes maintenant prêts à construire la prochaine partie de l'arbre syntagmatique.  
         </span>Saisissez quelques exemples de syntagmes nominaux avec <span id="NPArtandDemSpan" show="swNPArtAndDemBoth">des articles et des démonstratifs</span><span id="NPArtSpan" show="swNPArtAndDemArt">des articles</span><span id="NPDemSpan" show="swNPArtAndDemDem">des démonstratifs</span> :</prompt>

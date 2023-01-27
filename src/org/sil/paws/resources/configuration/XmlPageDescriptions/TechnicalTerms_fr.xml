@@ -25,8 +25,8 @@
    </technicalTerm>
    <technicalTerm id="ttAlienably">
       <termInLang>
-         <term>alienablement</term>
-         <termDefinition>Les noms alienablement possédés sont des choses qui peuvent être possédées temporairement, tels que « mon argent ». Certaines langues ajoutent un affixe à de tels noms pour indiquer que le possesseur doit être présent.</termDefinition>
+         <term>alienable</term>
+         <termDefinition>Les noms alienable sont des choses qui peuvent être possédées temporairement, tels que « mon argent ». Certaines langues ajoutent un affixe à de tels noms pour indiquer que le possesseur doit être présent.</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttAllomorph">
@@ -85,20 +85,20 @@
    </technicalTerm>
    <technicalTerm id="ttCausative">
       <termInLang>
-         <term>causal</term>
+         <term>causatif</term>
          <termDefinition>Un affixe ou mot causal ajoute un argument supplémentaire à une phrase soit intransitive, soit transitive. Cet argument supplémentaire est l’agent s’il n’y a pas déjà un agent présent, ou il est l’élément causal de l’action.</termDefinition>
       </termInLang>
    </technicalTerm>
  <technicalTerm id="ttClassifier">
     <termInLang>
        <term>classificateur</term>
-       <termDefinition>Un classificateur est un affixe ou mot indépendant qui caractérise les noms en fonction de leur forme, position, couleur, animéité ou autres caractéristiques. Les classificateurs apparaissent  souvent avec des chiffres ou autres quantificateurs ou avec des démonstratifs. Généralement ils ne font pas partie du système d’accord comme le sont les marqueurs de classes nominales.</termDefinition>
+       <termDefinition>Un classificateur est un affixe ou mot indépendant qui caractérise les noms en fonction de leur forme, position, couleur, animéité ou autres caractéristiques. Les classificateurs apparaissent  souvent avec des chiffres ou autres quantifieurs ou avec des démonstratifs. Généralement ils ne font pas partie du système d’accord comme le sont les marqueurs de classes nominales.</termDefinition>
     </termInLang>
  </technicalTerm>
    <technicalTerm id="ttClitic">
       <termInLang>
          <term>clitique</term>
-         <termDefinition>Un clitique tel que défini ici est un élément syntaxique qui est phonologiquement dépendant, donc, il s’attache à un autre mot ou syntagme. Les syntagmes clitiques peuvent être des proclitiques qui s’attachent au premier mot du syntagme, ou des enclitiques qui s’attachent au mot qui le termine. Tout élément qui s’écrit comme mot indépendant dans votre orthographe ne doit pas être considéré comme clitique en PAWS.</termDefinition>
+         <termDefinition>Un clitique tel que défini ici est un élément syntaxique qui est phonologiquement dépendant, donc, il s’attache à un autre mot ou syntagme. Les clitiques syntagmatiques peuvent être des proclitiques qui s’attachent au premier mot du syntagme, ou des enclitiques qui s’attachent au mot qui le termine. Tout élément qui s’écrit comme mot indépendant dans votre orthographe ne doit pas être considéré comme clitique en PAWS.</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttComplements">
@@ -133,14 +133,14 @@
    </technicalTerm>
    <technicalTerm id="ttContrafactual">
       <termInLang>
-         <term>contrafactuel</term>
-         <termDefinition>L’aspect contrafactuel est utilisé pour les déclarations qui expriment une idée présupposée fausse.</termDefinition>
+         <term>contrefactuel</term>
+         <termDefinition>L’aspect contrefactuel est utilisé pour les déclarations qui expriment une idée présupposée fausse.</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttCopular">
       <termInLang>
          <term>copule</term>
-         <termDefinition>Un verbe copulatif  (un copule) est un verbe de liaison, tel que «est» . Les phrases copulatives ont un adjectif ou un syntagme nominale au lieu d’un verbe d’action comme prédicat.</termDefinition>
+         <termDefinition>Un copule verbale (une copule) est un verbe de liaison, tel que «est» . Les constructions copulatives ont un adjectif ou un syntagme nominale au lieu d'un verbe d'action comme prédicat.</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttDative">
@@ -205,8 +205,8 @@
    </technicalTerm>
    <technicalTerm id="ttExperiencer">
       <termInLang>
-         <term>expérimentateur</term>
-         <termDefinition>Le rôle sémantique de l’expérimentateur est utilisé pour le sujet des verbes qui expriment une expérience au lieu d’une action.</termDefinition>
+         <term>expérient</term>
+         <termDefinition>Le rôle sémantique de l’expérient est utilisé pour le sujet des verbes qui expriment une expérience au lieu d’une action.</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttOvert">
@@ -242,7 +242,7 @@
    <technicalTerm id="ttGerund">
      <termInLang>
         <term>gérondif</term>
-        <termDefinition>Un gérondif est un verbe ou syntagme verbal qui agit comme un nom ou une phrase nominale. Par exemple en anglais, « playing football » est une expression gérondif agissant en tant que sujet dans la phrase « Playing football is fun. " En français le gérondif ne s’utilise qu’avec « en » – par exemple « en rentrant j’ai croisé mon voisin » (on entering I bumped into my neighbour). Pour traduire l’exemple anglais ci-dessus le français emploie l’infinitif : « Jouer au football est très amusant ».</termDefinition>
+        <termDefinition>Un gérondif est un verbe ou syntagme verbal qui agit comme un nom ou une phrase nominale. Le français emploie l’infinitif dans une phrase nominale. Par exemple, « jouer au foot » est une expression gérondif agissant en tant que sujet dans la phrase « jouer au foot est un plaisir » . En français le gérondif ne s’utilise qu’avec « en » – par exemple « en rentrant j’ai croisé mon voisin » .</termDefinition>
      </termInLang>
   </technicalTerm>
    <technicalTerm id="ttHabitual">
@@ -265,7 +265,7 @@
    </technicalTerm>
    <technicalTerm id="ttImperfective">
       <termInLang>
-         <term>impérfectif</term>
+         <term>imperfectif</term>
          <termDefinition>L’aspect imperfectif est utilisé pour décrire une activité qui est en cours. Il comprend les sens des deux aspects habituels et progressifs.</termDefinition>
       </termInLang>
    </technicalTerm>
@@ -326,7 +326,7 @@
    <technicalTerm id="ttMass">
       <termInLang>
          <term>masse</term>
-         <termDefinition>Un nom de masse désigne quelque chose qui ne peut pas être comptée (par exemple , une substance ou qualité ), généralement un nom qui n’a pas de pluriel dans l’usage ordinaire.</termDefinition>
+         <termDefinition>Un nom de masse / massif désigne quelque chose qui ne peut pas être comptée (par exemple , une substance ou qualité ), généralement un nom qui n’a pas de pluriel dans l’usage ordinaire.</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttMorphemes">
@@ -374,7 +374,7 @@
    <technicalTerm id="ttParticiple">
       <termInLang>
          <term>participe</term>
-         <termDefinition>Un participe est un adjectif (mot descriptif) formé à partir d’un verbe, comme « chantants » dans «ces oiseaux chantants » et « parlée » dans « la langue parlée ».</termDefinition>
+         <termDefinition>Un participe est un adjectif (mot descriptif) formé à partir d’un verbe, comme « chantant » dans «ces oiseaux chantant » et « parlée » dans « la langue parlée ».</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttPartitive">
@@ -457,26 +457,26 @@
    </technicalTerm>
    <technicalTerm id="ttQuantifiers">
    <termInLang>
-      <term>quantificateurs</term>
-      <termDefinition>Les quantificateurs expriment la quantité du nom qu’ils modifient. Les quantificateurs sont des chiffres et des mots tels que «tous», «beaucoup» et «quelques».</termDefinition>
+      <term>quantifieurs</term>
+      <termDefinition>Les quantifieurs expriment la quantité du nom qu’ils modifient. Les quantifieurs sont des chiffres et des mots tels que «tous», «beaucoup» et «quelques».</termDefinition>
    </termInLang>
 </technicalTerm>
    <technicalTerm id="ttReciprocals">
       <termInLang>
-         <term>réciproques</term>
-         <termDefinition>Les réciproques expriment une action ou un rapport mutuel. Un exemple d’un pronom réciproque est «l’un l’autre».</termDefinition>
+         <term>réciproque</term>
+         <termDefinition>Les réciproques expriment une action ou un rapport réciproque. Un exemple d'un pronom réciproque est «se».</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttReduplication">
       <termInLang>
          <term>redoublement</term>
-         <termDefinition>Parfois, un morphème peut être exprimé en utilisant le redoublement, qui est la répétition d’une voyelle ou d’une partie ou la totalité de la racine ou du mot entier.</termDefinition>
+         <termDefinition>Parfois, un morphème peut être exprimé en utilisant la réduplication, qui est la répétition d'une voyelle ou d'une partie ou la totalité de la racine ou du mot entier.</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttReflexives">
       <termInLang>
-         <term>réflexifs</term>
-         <termDefinition>Dans les phrases réflexives, le sujet d’un verbe et un objet dans la phrase se réfèrent à la même personne ou chose, servant à indiquer que l’action du verbe est redirigée vers le sujet, comme dans la phrase  "Jacques s’est blessé ".</termDefinition>
+         <term>réfléchis (pr pronoms)</term>
+         <termDefinition>Dans les phrases réflexives, le sujet d’un verbe et un objet dans la phrase se réfèrent à la même personne ou chose, servant à indiquer que l’action du verbe est redirigée vers le sujet, comme dans la phrase « Jacques s’est blessé ».</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttSemantics">
@@ -519,6 +519,12 @@
       <termInLang>
          <term>thème</term>
          <termDefinition>Le rôle sémantique du thème est l’argument qui reçoit l’action exprimée par le verbe. C’est un terme général qui peut être utilisé pour les arguments animés et inanimés, mais certains choisissent de limiter l’utilisation du terme « thème » aux arguments inanimés et d’utiliser « patient » pour les arguments animés.</termDefinition>
+      </termInLang>
+   </technicalTerm>
+   <technicalTerm id="ttTopic">
+      <termInLang>
+         <term>topique</term>
+         <termDefinition>Les constructions topicalisée consistent en une phrase qui exprime ce dont on parle (le sujet), généralement mis à part par une virgule, suivi par une phrase complète ou une question. Certaines langues ont des affixes ou des mots qui sont également utilisés pour marquer les sujets.</termDefinition>
       </termInLang>
    </technicalTerm>
    <technicalTerm id="ttTransitive">

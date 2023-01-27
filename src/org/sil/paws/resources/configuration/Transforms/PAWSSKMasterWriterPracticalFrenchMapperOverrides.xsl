@@ -10,7 +10,7 @@
 	-->
 	<xsl:template name="DoFree">
 		<free>
-			<gloss lang="lGloss">ENTRER TRADUCTION LIBRE ICI.</gloss>
+			<gloss lang="lGloss">SAISIR TRADUCTION LIBRE ICI.</gloss>
 		</free>
 	</xsl:template>
 	<!--
@@ -22,7 +22,7 @@
 	-->
 	<xsl:template name="DoGloss">
 		<line>
-			<gloss lang="lGloss">ENTRER GLOSE ICI</gloss>
+			<gloss lang="lGloss">SAISIR GLOSE ICI</gloss>
 		</line>
 	</xsl:template>
 	<!--
@@ -34,7 +34,7 @@
 	-->
 	<xsl:template name="DoMorphemeGloss">
 		<line>
-			<gloss lang="lGloss">IMP.entrer glose de morphème-PL ici</gloss>
+			<gloss lang="lGloss">IMP.saisir glose de morphème-PL ici</gloss>
 		</line>
 	</xsl:template>
 	<!--
@@ -46,7 +46,7 @@
 	-->
 	<xsl:template name="DoWordGloss">
 		<line>
-			<gloss lang="lGloss">ENTRER GLOSE DU MOT ICI</gloss>
+			<gloss lang="lGloss">SAISIR GLOSE DU MOT ICI</gloss>
 		</line>
 	</xsl:template>
 	<!--
@@ -69,5 +69,7 @@
 	<xsl:template name="OutputContentsElement">
 		<contents showLevel="3" label="Contenu"/>
 	</xsl:template>
-
+	<xsl:template name="OutputEnterExampleHereMessage">
+		<xsl:text>SAISIR UN EXEMPLE ICI</xsl:text>
+	</xsl:template>
 </xsl:stylesheet>

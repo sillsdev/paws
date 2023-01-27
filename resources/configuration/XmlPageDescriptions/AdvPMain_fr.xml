@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="AdvPMain" count="3.1">
-   <title>Adverbes et Syntagmes Adverbiaux</title>
+   <title>Adverbes et Syntagmes adverbiaux</title>
    <introduction>Les adverbes expriment quatre sortes d’informations:
 <ul>
             <li> temps,</li>
@@ -12,7 +12,7 @@
    <li>manière, et</li>
    <li>raison ou but.</li>
         </ul>
-      Les adverbes <technicalTermRef term="ttIndefinite">indéfinis</technicalTermRef> aussi sont présentés ici et les adverbes <technicalTermRef term="ttInterrogative">interrogatifs</technicalTermRef> seront traités dans la section <section number="11.">Questions – Syntagmes interrogatifs</section>. Les différents types d’adverbe ont des caractéristiques différentes selon leur position dans la phrase et selon la façon dont on peut les modifier<span id="AdvPTemporalNotPracticalInstruction" show="swNotPractical">, il est donc nécessaire de les distinguer les uns des autrespar une de leurs caractéristiques</span>. 
+      Les adverbes <technicalTermRef term="ttIndefinite">indéfinis</technicalTermRef> aussi sont présentés ici et les adverbes <technicalTermRef term="ttInterrogative">interrogatifs</technicalTermRef> seront traités dans la section <section number="11.">Interrogations – Syntagmes interrogatifs</section>. Les différents types d’adverbe ont des caractéristiques différentes selon leur position dans la phrase et selon la façon dont on peut les modifier<span id="AdvPTemporalNotPracticalInstruction" show="swNotPractical">, il est donc nécessaire de les distinguer les uns des autrespar une de leurs caractéristiques</span>. 
        Les types seront traités l’un après l’autre.
 </introduction>
    <introduction>Les adverbes de temps comprennent, par exemple, les mots français : <example>déjà</example>, <example>alors</example>, <example>bientôt</example>, <example>maintenant</example>,
@@ -25,7 +25,7 @@
    <li>les syntagmes prépositionnels, <example>dans peu de temps</example>, <example>à 10 heures</example>, et </li>
    <li>les propositions adverbiales, <example>pendant que vous travaillez</example>, <example>lorsque Suzanne est arrivée</example>.</li> 
 </ul>
-      Il y aura des questions ci-dessous au sujet des noms simples qui expriment le temps. Les syntagmes temporels, prépositionnels ou postpositionnels seront traités dans la <section number="8">Syntagmes Adpostpositionnels</section> ; et les propositions adverbiales dans la <section number="13">Propositions Adverbiales</section>. 
+      Il y aura des questions ci-dessous au sujet des noms simples qui expriment le temps. Les syntagmes temporels, prépositionnels ou postpositionnels seront traités dans la <section number="8">Syntagmes adpostpositionnels</section> ; et les propositions adverbiales dans la <section number="13">Propositions adverbiales</section>. 
        <br/><br/>
       Donnez d’abord des adverbes simples. Les exemples de syntagmes adverbiaux de temps avec des mots de degré en français, sont :
 </introduction>

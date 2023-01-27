@@ -4,29 +4,26 @@
     <section1 id="sComp">
        <secTitle>Propositions complétives</secTitle>
         <p>
-<xsl:text>Les différents types de propositions subordonnées qui sont les compléments des verbes principaux ou des adjectifs qui fonctionnent comme les prédicats dans les phrases seront présentés, après avoir traité les complétiviseurs et leur position dans les propositions déclaratives subordonnées.</xsl:text>
+<xsl:text>Les différents types de propositions subordonnées qui sont les compléments d’un verb principal ou d’un adjectif qui fonctionne comme le prédicat de la phrase seront présentés, après que les conjonctions de subordination et leur position dans les propositions déclaratives subordonnées ont été traités.</xsl:text>
 </p>
        
           <p contentType="ctComparativeIntro">
-<xsl:text>L’anglais a deux complétiviseurs qui marquent les propositions déclaratives subordonnées: </xsl:text>
+<xsl:text>Le français a plusieurs conjonctions de subordination qui marquent les propositions déclaratives subordonnées : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>that</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « que »</xsl:text>
-</gloss>
-<xsl:text> pour les propositions finies et </xsl:text>
+</xsl:attribute>que</langData>
+<xsl:text> pour les propositions finies, et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>for</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « pour »</xsl:text>
-</gloss>
-<xsl:text> pour les propositions non finies. Dans d’autres langues les complétiviseurs pour les propositions déclaratives subordonnées peuvent être manifestes et dans certaines langues ce sont des clitiques qui sont écrits, attachés à un autre mot.</xsl:text>
+</xsl:attribute>pour</langData>
+<xsl:text> ou </xsl:text>
+<langData>
+<xsl:attribute name="lang">
+<xsl:text>lPAWSSKEnglish</xsl:text>
+</xsl:attribute>de</langData>
+<xsl:text> pour les propositions non finies. Dans d’autres langues, les conjonctions de subordination pour les propositions déclaratives subordonnées peuvent être explicites ou implicites, et dans certaines langues ce sont des clitiques qui sont écrits rattachés à un autre mot.</xsl:text>
 </p>
        <p>
 <xsl:text>En </xsl:text>
@@ -40,59 +37,59 @@
 </xsl:choose>
 <xsl:text> il </xsl:text>
 <xsl:choose>
-                <xsl:when test="//comp/@comp='no'">n’y a pas de complétiviseur ni de clitique ni d’affixe pour des propositions déclaratives dépentantes. Toutes les propositions subordonnées ont donc la même structure que des phrases normales.  <xsl:choose>
+                <xsl:when test="//comp/@comp='no'">n’y a ni conjonction de subordination ni clitique ni affixe pour les propositions déclaratives subordonnées. Toutes les propositions subordonnées ont donc la même structure que des phrases normales.  <xsl:choose>
                    <xsl:when test="//ip/@auxNonfinite='yes'">Il y a toujours une distinction entre les propositions subordonnées finies et non-finies puisqu’il y a un auxilliaire non-fini. </xsl:when>
-                   <xsl:when test="//ip/@auxNonfinite='no'">Il y a toujours une distinction entre des propositions subordonnées finies et non-finies puisqu’il y a un marqueur non-fini sur le verbe. </xsl:when>
-                   <xsl:when test="//ip/@auxNonfinite='none'">Il n’y a pas non plus de distinction entre des propositions finies et non finies subordonnées puisqu’il n’y a pas de forme non finie dans la langue. </xsl:when>
+                   <xsl:when test="//ip/@auxNonfinite='no'">Il y a toujours une distinction entre les propositions subordonnées finies et non-finies puisqu’il y a un marqueur non-fini sur le verbe. </xsl:when>
+                   <xsl:when test="//ip/@auxNonfinite='none'">Il n’y a pas non plus de distinction entre les propositions finies et non finies subordonnées puisqu’il n’y a pas de forme non finie dans la langue. </xsl:when>
                 </xsl:choose>
 </xsl:when>
-                <xsl:when test="//comp/@comp='yes'">au moins un complétiviseur pour les propositions déclaratives subordonnées.  </xsl:when>
+                <xsl:when test="//comp/@comp='yes'">au moins une conjonction de subordination pour les propositions déclaratives subordonnées.  </xsl:when>
              </xsl:choose>
 <xsl:if test="normalize-space(//comp/@comp)='yes'">
 <xsl:text>Il </xsl:text>
              <xsl:choose>
-                <xsl:when test="//comp/@compNonfinite='yes'">y a un complétiviseur distinct pour les propositions non-finies. </xsl:when>   
-                <xsl:when test="//comp/@compNonfinite='no'">n’y a pas de complétiviseur distinct pour les propositions non-finies.  <xsl:choose>
-                   <xsl:when test="//ip/@auxNonfinite='yes'">Il y a toujours une distinction entre des propositions subordonnées finies et non-finies puisqu’il y a un auxilliaire non-fini. </xsl:when>
+                <xsl:when test="//comp/@compNonfinite='yes'">y a une conjonction de subordination distincte pour les propositions non-finies. </xsl:when>   
+                <xsl:when test="//comp/@compNonfinite='no'">n’y a pas de conjonction de subordination distincte pour les propositions non-finies.  <xsl:choose>
+                   <xsl:when test="//ip/@auxNonfinite='yes'">Il y a toujours une distinction entre les propositions subordonnées finies et non-finies puisqu’il y a un auxilliaire non-fini. </xsl:when>
                    <xsl:when test="//ip/@auxNonfinite='no'">Il y a toujours une distinction entre les propositions subordonnées finies et non-finies puisqu’il y a un marqueur non-fini sur le verbe. </xsl:when>
-                   <xsl:when test="//ip/@auxNonfinite='none'">Il n’y a pas non plus de distinction entre des propositions finies et non finies subordonnées puisqu’il n’y a pas de forme non finie dans la langue. </xsl:when>
+                   <xsl:when test="//ip/@auxNonfinite='none'">Il n’y a pas non plus de distinction entre les propositions finies et non finies subordonnées puisqu’il n’y a pas de forme non finie dans la langue. </xsl:when>
                 </xsl:choose>
 </xsl:when>
           </xsl:choose>
              <xsl:if test="normalize-space(//comp/@compWord)='some' and normalize-space(//comp/@comp)='yes'">
-<xsl:text> Certains</xsl:text>
+<xsl:text> Certaines</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//comp/@compWord)!='some' and normalize-space(//comp/@comp)='yes'">
 <xsl:text> Les</xsl:text>
 </xsl:if>
-<xsl:text> complétiviseurs </xsl:text>
+<xsl:text> conjonctions de subordination </xsl:text>
                 <xsl:choose>
-                   <xsl:when test="//comp/@compWord='yes'">sont écrits comme mot indépendant. </xsl:when>
-                   <xsl:when test="//comp/@compWord='some'">sont écrits comme mot indépendant, mais quelques-uns s’attachent </xsl:when>
-                   <xsl:when test="//comp/@compWord='no'">s’attachent </xsl:when>
+                   <xsl:when test="//comp/@compWord='yes'">sont écrites comme mot indépendant. </xsl:when>
+                   <xsl:when test="//comp/@compWord='some'">sont écrites comme mot indépendant, mais quelques-unes sont rattachées </xsl:when>
+                   <xsl:when test="//comp/@compWord='no'">sont rattachées </xsl:when>
                 </xsl:choose>
                 <xsl:text></xsl:text>
                 <xsl:if test="normalize-space(//comp/@compWord)='no' and normalize-space(//comp/@comp)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/@comp)='yes'">
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='no' and normalize-space(//comp/compSuffix/@checked)='no'">
-<xsl:text>au début du mots qui commence la proposition complétive comme proclitique.  </xsl:text>
+<xsl:text>au début du premier mot de la proposition complétive, quel que soit ce mot, comme proclitique de constituant.  </xsl:text>
 </xsl:if>
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='no' and normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compPrefix/@checked)='no' and normalize-space(//comp/compSuffix/@checked)='no'">
-<xsl:text>à la fin d’un mot qui termine la proposition complétive comme enclitique.    </xsl:text>
+<xsl:text>à la fin du dernier mot de la proposition complétive, quel que soit ce mot, comme enclitique de constituant.    </xsl:text>
 </xsl:if>
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compPrefix/@checked)='no' and normalize-space(//comp/compSuffix/@checked)='no'">
-<xsl:text>ou au début du mots qui commence la proposition complétive ou à la fin d’un mot qui termine la proposition complétive comme clitique.   </xsl:text>
+<xsl:text>soit au début du premier mot de la proposition complétive ou à la fin du dernier mot de la proposition complétive, quel que soient ces mots, comme clitique de constituant.   </xsl:text>
 </xsl:if>
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='no' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='no'">
-<xsl:text> au verbe dans la proposition complétive comme un préfixe.  </xsl:text>
+<xsl:text> sur le verbe dans la proposition complétive, comme préfixe.  </xsl:text>
 </xsl:if>
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='no' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='no' and normalize-space(//comp/compSuffix/@checked)='yes'">
-<xsl:text> au verbe dans la proposition complétive comme un suffixe.   </xsl:text>
+<xsl:text> sur le verbe dans la proposition complétive, comme suffixe.   </xsl:text>
 </xsl:if>
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='no' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='yes'">
-<xsl:text>au verbe dans la proposition complétive,  certains comme préfixe et d’autres comme suffixe.   </xsl:text>
+<xsl:text>sur le verbe dans la proposition complétive,  certains comme préfixes et d’autres comme suffixes.   </xsl:text>
 </xsl:if>
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='no' or normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='no' and normalize-space(//comp/compSuffix/@checked)='yes' or normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='yes' or normalize-space(//comp/compProclitic/@checked)='no' and normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='no' or normalize-space(//comp/compProclitic/@checked)='no' and normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compPrefix/@checked)='no' and normalize-space(//comp/compSuffix/@checked)='yes' or normalize-space(//comp/compProclitic/@checked)='no' and normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='yes' or normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='yes' or normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='no' or normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compPrefix/@checked)='no' and normalize-space(//comp/compSuffix/@checked)='yes' or normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compSuffix/@checked)='yes'">
-<xsl:text>ou  au début ou à la fin de la proposition complétive comme clitique, ou au verbe dans la proposition complétive comme affixe.  </xsl:text>
+<xsl:text>soit au début au à la fin de la proposition complétive comme clitique de constituant, ou sur le verbe dans la proposition complétive comme affixe.  </xsl:text>
 </xsl:if>
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='no' and normalize-space(//comp/compEnclitic/@checked)='no' and normalize-space(//comp/compPrefix/@checked)='no' and normalize-space(//comp/compSuffix/@checked)='no' and normalize-space(//comp/compAttachesOther/@checked)='yes'">
 <xsl:text>___</xsl:text>
@@ -100,7 +97,7 @@
 <xsl:text>.  </xsl:text>
 </xsl:if>
                    <xsl:if test="normalize-space(//comp/compProclitic/@checked)='yes' and normalize-space(//comp/compAttachesOther/@checked)='yes' or normalize-space(//comp/compEnclitic/@checked)='yes' and normalize-space(//comp/compAttachesOther/@checked)='yes' or normalize-space(//comp/compPrefix/@checked)='yes' and normalize-space(//comp/compAttachesOther/@checked)='yes' or normalize-space(//comp/compSuffix/@checked)='yes' and normalize-space(//comp/compAttachesOther/@checked)='yes'">
-<xsl:text>  Certains aussi s’attachent ___</xsl:text>
+<xsl:text>  Certains aussi se rattachent ___</xsl:text>
 <xsl:value-of select="//comp/attachesOther" />  <xsl:text>.</xsl:text>
 </xsl:if>              
                 </xsl:if>  </xsl:if>
@@ -108,14 +105,14 @@
        
        <xsl:if test="normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compProclitic/@checked)='yes' or normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compEnclitic/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compProclitic/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compEnclitic/@checked)='yes'">
 <p>
-<xsl:text>Ces clitiques de complétiviseur sont:</xsl:text>
+<xsl:text>Voici les clitiques complétifs :</xsl:text>
 </p>
 </xsl:if>   
        <xsl:if test="normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compProclitic/@checked)='yes' or normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compEnclitic/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compProclitic/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compEnclitic/@checked)='yes'">
 <example num="xComp.12">
 <table border="1">
              <tr>
-                <th>Clitiqies de complétiviseur</th>
+                <th>Clitiqies complétifs</th>
                 <th>Glose</th>
              </tr>
              <xsl:variable name="sExampleValue0.0">
@@ -143,7 +140,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -155,12 +152,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -171,14 +168,14 @@
 </xsl:if>     
        <xsl:if test="normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compPrefix/@checked)='yes' or normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compSuffix/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compPrefix/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compSuffix/@checked)='yes'">
 <p>
-<xsl:text>Ces affixes de complétiviseur sont:</xsl:text>
+<xsl:text>Voici les affixes complétifs :</xsl:text>
 </p>
 </xsl:if>   
        <xsl:if test="normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compPrefix/@checked)='yes' or normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compSuffix/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compPrefix/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compSuffix/@checked)='yes'">
 <example num="xComp.16">
 <table border="1">
              <tr>
-                <th>Affixes de complétiviseur</th>
+                <th>Affixes complétifs</th>
                 <th>Glose</th>
              </tr>
              <xsl:variable name="sExampleValue0.0">
@@ -206,7 +203,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -218,12 +215,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -234,7 +231,7 @@
 </xsl:if>     
        <xsl:if test="normalize-space(//comp/@compWord)='no' and normalize-space(//comp/compAttachesOther/@checked)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/compAttachesOther/@checked)='yes'">
 <p>
-<xsl:text>Les autres complétiviseurs qui s’attachent comme permis en </xsl:text>
+<xsl:text>Voici les autres conjonctions de subordination qui se rattachent comme cela est admis en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -250,7 +247,7 @@
 <example num="xComp.20">
 <table border="1">
              <tr>
-                <th>Autres complétiviseurs qui s’attachent</th>
+                <th>Autres conjonctions de subordination qui se rattachent</th>
                 <th>Glose</th>
              </tr>
              <xsl:variable name="sExampleValue0.0">
@@ -278,7 +275,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -290,12 +287,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -307,7 +304,7 @@
        
        <xsl:if test="normalize-space(//comp/@compWord)='yes' and normalize-space(//comp/@comp)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/@comp)='yes'">
 <p>
-<xsl:text> Les complétiviseurs qui sont des mots indépendants se trouvent </xsl:text>
+<xsl:text> Les conjonctions de subordination qui sont des mots indépendants se trouvent </xsl:text>
 <xsl:if test="normalize-space(//comp/compBefore/@checked)='yes' and normalize-space(//comp/compAfter/@checked)='no' and normalize-space(//comp/compBoth/@checked)='no'">
 <xsl:text>avant le</xsl:text>
 </xsl:if>
@@ -315,19 +312,19 @@
 <xsl:text>après le</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//comp/compBefore/@checked)='no' and normalize-space(//comp/compAfter/@checked)='no' and normalize-space(//comp/compBoth/@checked)='yes'">
-<xsl:text>des deux côtés du</xsl:text>
+<xsl:text>de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//comp/compBefore/@checked)='yes' and normalize-space(//comp/compAfter/@checked)='yes' and normalize-space(//comp/compBoth/@checked)='no'">
-<xsl:text>de chaque côté du</xsl:text>
+<xsl:text>d’un côté ou de l’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//comp/compBefore/@checked)='yes' and normalize-space(//comp/compAfter/@checked)='no' and normalize-space(//comp/compBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés du</xsl:text>
+<xsl:text>avant ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//comp/compBefore/@checked)='no' and normalize-space(//comp/compAfter/@checked)='yes' and normalize-space(//comp/compBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés du</xsl:text>
+<xsl:text>après ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//comp/compBefore/@checked)='yes' and normalize-space(//comp/compAfter/@checked)='yes' and normalize-space(//comp/compBoth/@checked)='yes'">
-<xsl:text>de chaque côté ou des deux côtés du</xsl:text>
+<xsl:text>d’un côté ou de l’autre ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//comp/compOther/@checked)='no'">
 <xsl:text> reste de la proposition complétive. </xsl:text>
@@ -340,14 +337,14 @@
 <xsl:if test="normalize-space(//comp/compBefore/@checked)='yes' and normalize-space(//comp/compOther/@checked)='yes' or normalize-space(//comp/compAfter/@checked)='yes' and normalize-space(//comp/compOther/@checked)='yes' or normalize-space(//comp/compBoth/@checked)='yes' and normalize-space(//comp/compOther/@checked)='yes'">
 <xsl:text> reste de la proposition complétive et peuvent aussi se trouver ___</xsl:text> <xsl:value-of select="//comp/compOther" /> <xsl:text>. </xsl:text>
 </xsl:if>
-<xsl:text> Ces complétiviseurs sont:</xsl:text>
+<xsl:text> Voici les conjonctions de subordination :</xsl:text>
 </p>
 </xsl:if>          
        <xsl:if test="normalize-space(//comp/@compWord)='yes' and normalize-space(//comp/@comp)='yes' or normalize-space(//comp/@compWord)='some' and normalize-space(//comp/@comp)='yes'">
 <example num="xComp.24">
 <table border="1">
              <tr>
-                <th>Complétiviseurs</th>
+                <th>Conjonctions de subordination</th>
                 <th>Glose</th>
              </tr>
              <xsl:variable name="sExampleValue0.0">
@@ -375,7 +372,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -387,12 +384,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -406,21 +403,21 @@
        <p>
 <xsl:text>Voir la section </xsl:text>
 <sectionRef sec="sQues" />
-<xsl:text> pour un discussion similaire sur les complétiviseurs pour des questions et la section </xsl:text>
+<xsl:text> pour une discussion semblable sur les conjonctions de subordination pour des questions et la section </xsl:text>
 <sectionRef sec="sRelCl" />
-<xsl:text> pour des propositions relatives.</xsl:text>
+<xsl:text> pour les propositions relatives.</xsl:text>
 </p>
        <p>
-<xsl:text>Chacune des sous-sections suivantes typifie un type particulier de complément pour un verbe ou autre prédicat. Voir la section </xsl:text>
+<xsl:text>Chacune des sous-sections suivantes présente un type particulier de complément pour un verbe ou tout autre prédicat. Voir la section </xsl:text>
 <sectionRef sec="sAdvCl" />
-<xsl:text> pour des exemples de propositions adverbiales. Certains adverbes peuvent aussi prendre des compléments prépositionnels semblables à ceux-ci, mais les propositions adverbiales ne sont pas des compléments du verbe principal.  </xsl:text>
-<object type="tComment">Vous devrez peut-être enlever certaines parties du texte et combiner des exemples si votre langue ne fait pas les mêmes distinctions.</object>
+<xsl:text> pour des exemples de propositions adverbiales. Certains adverbes peuvent aussi prendre des compléments de proposition semblables à ceux-ci, mais les propositions adverbiales ne sont pas des compléments du verbe principal.  </xsl:text>
+<object type="tComment">Vous devrez peut-être supprimer certaines parties du texte et combiner des exemples si votre langue ne fait pas les mêmes distinctions.</object>
 </p>
        <xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compNonfinite)='yes' or normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compNonfinite)='no' and normalize-space(//ip/@auxNonfinite)!='none'">
 <section2 id="sCompTypeFiniteAndNonfiniteCP">
           <secTitle>Propositions complétives finis et non-finis</secTitle>
                 <p contentType="ctComparativeIntro">
-<xsl:text>Verbes qui prennent seulement une proposition complétive finie, avec ou sans complétiviseur, comprennent les exemples suivants en anglais et en français: </xsl:text>
+<xsl:text>Les verbes qui prennent seulement une proposition complétive finie, avec ou sans conjonction de subordination, comprennent les exemples suivants en anglais et en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -447,7 +444,7 @@
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>  « Je sais qu’il m’aime »</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -456,10 +453,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes ont seulement une proposition complétive finie avec ou sans complétiviseur. Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes ont seulement une proposition complétive finie avec ou sans conjonction de subordination. Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -468,7 +465,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
                 <example num="xComp.CompTypeFiniteAndNonfiniteCP.8">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -480,14 +477,14 @@
 </xsl:call-template>
 </example>
                 <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent ou un complément fini, avec ou sans un  complétiviseur, ou un complément non-fini sans un  complétiviseur comprennent les exemples suivants: </xsl:text>
+<xsl:text>Des verbes qui prennent soit un complément fini, avec ou sans conjonction de subordination, soit un complément non-fini sans conjonction de subordination comprennent les exemples suivants en anglais et en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>I expect that Joe will come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends à ce que Jacques va venir à la soirée »</xsl:text>
+<xsl:text>  « Je m’attends à ce que Jacques va venir à la fête »</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -496,9 +493,9 @@
 </xsl:attribute>I expect Joe to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends à Jacques à venir à la soirée »</xsl:text>
+<xsl:text>  « Je m’attends à Jacques à venir à la fête »</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -507,10 +504,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes peuvent avoir ou un complément fini, avec ou sans un complétiviseur ou un complément non-fini sans complétiseur. Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes peuvent avoir soit un complément fini, avec ou sans conjonction de subordination soit un complément non-fini sans conjonction de subordination. Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -519,7 +516,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteAndNonfiniteCP.14">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -531,25 +528,17 @@
 </xsl:call-template>
 </example>
                 <p contentType="ctComparativeIntro">
-<xsl:text>Certains verbes qui ne prennent qu’un  complément non-fini sans un complétiviseur et permettent soit un sujet différent que la proposition principale ou un sujet nul lorsque cela se réfère au sujet de la proposition principale. Voici des exemples: </xsl:text>
+<xsl:text>Certains verbes qui ne prennent qu’un complément non-fini sans un conjonction de subordination admettent soit un sujet différent que celui de la proposition principale ou un sujet omis lorsque le sujet est identique à celui de la proposition principale. Voici quelques exemples en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I want to come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je veux venir à la soirée »</xsl:text>
-</gloss>
+</xsl:attribute>Je veux venir à la fête</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I want Joe to come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je veux que Jacques vienne à la soirée »</xsl:text>
-</gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+</xsl:attribute>Je veux que Jacques vienne à la fête</langData>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -558,10 +547,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes ont seulement un complément non-fini sans un complétiviseur et permettent soit un différent sujet que la proposition principale soit un sujet nul lorsque cela se réfère au sujet de la proposition principale. Des exemples de ce type en </xsl:text>
+<xsl:text>conjonction de subordination et admettent soit un sujet différent que celui de la proposition principale soit un sujet omis lorsque le sujet se réfère à celui de la proposition principale. Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -570,7 +559,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteAndNonfiniteCP.20">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -582,25 +571,17 @@
 </xsl:call-template>
 </example>
                 <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent seulement un  complément non-fini sans un complétiviseur, mais exigent que le sujet se réfère au sujet de la proposition principale comprennent les exemples suivants: </xsl:text>
+<xsl:text>Des verbes qui ne prennent qu’un  complément non-fini sans conjonction de subordination, mais qui exigent que le sujet se réfère au sujet de la proposition principale comprennent les exemples suivants en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Joe tried to come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques a essayé de venir à la soirée »</xsl:text>
-</gloss>
+</xsl:attribute>Jacques a essayé de venir à la fête</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I tried to think of more examples</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « J’ai essayé de penser à d’autres exemples »</xsl:text>
-</gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+</xsl:attribute>J’ai essayé de penser à d’autres exemples</langData>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -609,10 +590,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes ont seulement un complément non-fini sans un complétiviseur mais exigent que le sujet se réfère au sujet de la proposition principale et nul.  Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes ont seulement un complément non-fini sans conjonction de subordination mais exigent que le sujet se réfère au sujet de la proposition principale et qu’il soit omis. Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -621,7 +602,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>     
                 <example num="xComp.CompTypeFiniteAndNonfiniteCP.26">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -633,7 +614,7 @@
 </xsl:call-template>
 </example>
                 <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent seulement un complément non-fini, mais le complétiviseur en anglais </xsl:text>
+<xsl:text>Des verbes qui ne prennent seulement qu’un complément non-fini, mais pour lesquels la conjonction de subordination en anglais </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -642,14 +623,14 @@
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>  « pour »</xsl:text>
 </gloss>
-<xsl:text> est présent quand le sujet dépendant ne se réfère pas au sujet de la proposition principale comprennent les exemples suivants: </xsl:text>
+<xsl:text> est présente quand le sujet subordoneé ne se réfère pas au sujet de la proposition principale comprennent les exemples suivants en anglais : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Joe would hate for Sue to be at the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques n’aimerait pas que Suzanne soit à la soirée »</xsl:text>
+<xsl:text> (Jacques n’aimerait pas que Suzanne soit à la fête)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -658,7 +639,7 @@
 </xsl:attribute>Joe hates to dance</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques déteste danser »</xsl:text>
+<xsl:text> (Jacques déteste danser)</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -667,9 +648,9 @@
 </xsl:attribute>I would like to be appreciated</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je voudrais être apprécié »</xsl:text>
+<xsl:text> (Je voudrais être apprécié)</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  En français, la propositions complément doit être introduite par ‘que’ et le verbe sera conjugué lorsque les sujets sont différents, alors que le verbe sera à une forme non finie si les sujets sont co-référents dans les deux propositions.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -678,10 +659,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes ont seulement un complément non-fini, mais le complétiviseur est présent lorsque le sujet dépendant ne se réfère pas au sujet de la proposition principale.  Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes n’ont qu’un complément non-fini, mais la conjonction de subordination est présent lorsque le sujet enchâssé ne se réfère pas au sujet de la proposition principale. Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -690,7 +671,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteAndNonfiniteCP.32">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -702,14 +683,14 @@
 </xsl:call-template>
 </example>
                 <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent un object direct de même qu’ou bien une proposition complétive finie ou non-finie comprennent les exemples suivants: </xsl:text>
+<xsl:text>Des verbes qui prennent un object direct tout comme une proposition complétive soit finie ou non-finie comprennent les exemples suivants en anglais : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>I will persuade Joe that he should come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je vais persuader Jacques qu’il devrait venir à la soirée »</xsl:text>
+<xsl:text> (Je vais persuader Jacques qu’il devrait venir à la fête)</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -718,9 +699,9 @@
 </xsl:attribute>I will persuade Joe to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je vais persuader Jacques de venir à la soirée »</xsl:text>
+<xsl:text> (Je vais persuader Jacques de venir à la fête)</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -729,10 +710,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>D’autres verbes ont un objet direct de même qu’une proposition complétive finie et non-finie.   Des exemples de ce type en </xsl:text>
+<xsl:text>D’autres verbes ont un objet direct de même qu’une proposition complétive finie et non-finie.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -741,7 +722,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteAndNonfiniteCP.38">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -757,16 +738,16 @@
            
        <xsl:if test="normalize-space(//comp/@comp)='yes' and normalize-space(//comp/@compNonfinite)='no' and normalize-space(//ip/@auxNonfinite)='none'">
 <section2 id="sCompTypeFiniteCP">
-          <secTitle>Propositions comme compléments</secTitle>
+          <secTitle>Propositions complétives</secTitle>
           <p contentType="ctComparativeIntro">
-<xsl:text>Les verbes qui prennent une proposition complétive, avec ou sans complétiviseur incluent les exemples suivants en anglais et français: </xsl:text>
+<xsl:text>Les verbes qui prennent une proposition complétive, avec ou sans conjonction de subordination incluent les exemples suivants en anglais (les constructions sont différentes du français) : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>I believe (that) Jill is my friend</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je crois que Jeanne est mon amie »</xsl:text>
+<xsl:text> (Je crois que Jeanne est mon amie)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -775,7 +756,7 @@
 </xsl:attribute>Jill insists (that) she is my friend</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jeanne insiste qu’elle est mon amie »</xsl:text>
+<xsl:text> (Jeanne insiste qu’elle est mon amie)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -784,7 +765,7 @@
 </xsl:attribute>I know (that) he likes me</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je sais qu’il m’aime »</xsl:text>
+<xsl:text> (Je sais qu’il m’aime)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -793,7 +774,7 @@
 </xsl:attribute>I expect that Joe will come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends à ce que Jacques va venir à la soirée »</xsl:text>
+<xsl:text> (Je m’attends à ce que Jacques va venir à la fête)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -802,7 +783,7 @@
 </xsl:attribute>I expect Joe to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends à Jacques à venir à la soirée »</xsl:text>
+<xsl:text> (Je m’attends à Jacques à venir à la fête)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -811,7 +792,7 @@
 </xsl:attribute>I want to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je veux aller à la soirée »</xsl:text>
+<xsl:text> (Je veux aller à la fête)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -820,7 +801,7 @@
 </xsl:attribute>I want Joe to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je veux que Jacques vienne à la soirée »</xsl:text>
+<xsl:text> (Je veux que Jacques vienne à la fête)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -829,7 +810,7 @@
 </xsl:attribute>Joe tried to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques a essayé de venir à la soirée »</xsl:text>
+<xsl:text> (Jacques a essayé de venir à la fête)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -838,7 +819,7 @@
 </xsl:attribute>Joe would hate for Sue to be at the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques n’aimerait pas que Suzanne soit à la soirée »</xsl:text>
+<xsl:text> (Jacques ne voudrait pas que Suzanne soit à la fête)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -847,7 +828,7 @@
 </xsl:attribute>Joe hates to dance</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques déteste danser »</xsl:text>
+<xsl:text> (Jacques déteste danser)</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -856,9 +837,9 @@
 </xsl:attribute>I would like to be appreciated</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « J’aimerais être apprécié »</xsl:text>
+<xsl:text> (J’aimerais être apprécié)</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -867,10 +848,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes ont seulement une proposition complétive avec ou sans complétiviseur Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes ont seulement une proposition complétive avec ou sans conjonction de subordination. Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -879,7 +860,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteCP.8">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -927,14 +908,14 @@
 </xsl:call-template>
 </example>
           <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent un objet direct aussi bien qu’une proposition complétive incluent les exemples suivants: </xsl:text>
+<xsl:text>Des verbes qui prennent un objet direct tout comme une proposition complétive incluent les exemples suivants en anglais : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>I will persuade Joe that he should come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je vais persuader Jacques qu’il devrait venir à la soirée »</xsl:text>
+<xsl:text> (Je persuaderai Jacques qu’il devrait venir à la fête)</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -943,9 +924,9 @@
 </xsl:attribute>I will persuade Joe to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je vais persuader Jacques de venir à la soirée »</xsl:text>
+<xsl:text> (Je vais persuader Jacques de venir à la fête)</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -954,10 +935,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>D’autres verbes ont un objet direct de même qu’une proposition complétive finie ou non-finie.  Des exemples de ce type en </xsl:text>
+<xsl:text>D’autres verbes ont un objet direct tout comme une proposition complétive finie ou non-finie.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -966,7 +947,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteCP.22">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -984,14 +965,14 @@
 <section2 id="sCompTypeFiniteAndNonfiniteIP">
           <secTitle>Compléments phrastiques finis et non-finis</secTitle>
           <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent seulement un complément phrastique fini incluent les exemples suivants: </xsl:text>
+<xsl:text>Des verbes qui ne prennent qu’un complément phrastique fini incluent les exemples suivants en anglais : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>I believe Jill is my friend</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je crois que Jeanne est mon amie »</xsl:text>
+<xsl:text> (Je crois que Jeanne est mon amie)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -1000,7 +981,7 @@
 </xsl:attribute>Jill insists she is my friend</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jeanne insiste qu’elle est mon amie »</xsl:text>
+<xsl:text> (Jeanne insiste qu’elle est mon amie)</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -1009,9 +990,9 @@
 </xsl:attribute>I know he likes me</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je sais qu’il m’aime »</xsl:text>
+<xsl:text> (Je sais qu’il m’aime)</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1020,10 +1001,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes ont seulement un complément phrastique fini. Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes n’ont qu’un complément phrastique fini. Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1032,7 +1013,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteAndNonfiniteIP.8">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1044,14 +1025,14 @@
 </xsl:call-template>
 </example>
           <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent soit un complément phrastique fini ou non-fini incluent les exemples suivants: </xsl:text>
+<xsl:text>Des verbes qui prennent soit un complément phrastique fini ou non-fini incluent les exemples suivants en angais : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>I expect Joe will come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends à ce que Jacques va venir à la soirée »</xsl:text>
+<xsl:text> (Je m’attends à ce que Jacques va venir à la fête)</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -1060,9 +1041,9 @@
 </xsl:attribute>I expect Joe to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends à Jacques à venir à la soirée »</xsl:text>
+<xsl:text> (Je m’attends à Jacques vienne à la fête)</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1071,10 +1052,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes peuvent avoir un complément phrastique fini ou non-fini.  Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes peuvent avoir un complément phrastique fini ou non-fini.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1083,7 +1064,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteAndNonfiniteIP.14">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1095,25 +1076,17 @@
 </xsl:call-template>
 </example>
           <p contentType="ctComparativeIntro">
-<xsl:text>Certains verbes qui prennent seulement un complément phrastique non-fini permettent soit un sujet différent que la proposition principale soit un sujet nul lorsqu’il se réfère au sujet de la proposition principale. Des exemples comprennent: </xsl:text>
+<xsl:text>Certains verbes qui ne prennent seulement qu’un complément phrastique non-fini admettent soit un sujet différent que la proposition principale soit un sujet omis lorsqu'il se réfère au sujet de la proposition principale. Des exemples en français comprennent : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I want to come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je veux aller à la soirée »</xsl:text>
-</gloss>
+</xsl:attribute>Je veux aller à la fête</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I want Joe to come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je veux que Jacques vienne à la soirée »</xsl:text>
-</gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+</xsl:attribute>Je veux que Jacques vienne à la fête</langData>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1122,10 +1095,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes ont seulement un complément phrastique non-fini et permettent soit un sujet différent que la proposition principale soit un sujet nul lorsqu’il se réfère au sujet de la proposition principale.  Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes ont seulement un complément phrastique non-fini et admettent soit un sujet différent que la proposition principale soit un sujet omis lorsqu’il se réfère au sujet de la proposition principale.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1134,7 +1107,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteAndNonfiniteIP.20">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1146,34 +1119,22 @@
 </xsl:call-template>
 </example>
           <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent seulement un complément phrastique non-fini mais exigent que le sujet se réfère au sujet de la proposition principale et nul comprennent les exemples suivants : </xsl:text>
+<xsl:text>Des verbes qui prennent seulement un complément phrastique non-fini mais exigent que le sujet se réfère au sujet de la proposition principale et omis comprennent les exemples suivants en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Joe tried to come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques a essayé de venir à la soirée »</xsl:text>
-</gloss>
+</xsl:attribute>Jacques a essayé de venir à la fête</langData>
 <xsl:text>, </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Joe hates to dance</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques déteste danser »</xsl:text>
-</gloss>
+</xsl:attribute>Jacques déteste danser</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I would like to be appreciated</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « J’aimerais être apprécié »</xsl:text>
-</gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+</xsl:attribute>J’aimerais être apprécié</langData>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1182,10 +1143,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>D’autres verbes ont seulement un complément phrastique non-fini  mais exigent que le sujet se réfère au sujet de la proposition principale et nul.  Des exemples de ce type en </xsl:text>
+<xsl:text>D’autres verbes ont seulement un complément phrastique non-fini mais exigent que le sujet se réfère au sujet de la proposition principale et omis.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1194,7 +1155,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>     
           <example num="xComp.CompTypeFiniteAndNonfiniteIP.26">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1215,25 +1176,17 @@
 </xsl:call-template>
 </example>
           <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent un objet direct aussi bien qu’un complément phrastique fini ou non-fini incluent les exemples  suivants: </xsl:text>
+<xsl:text>Des verbes qui prennent un objet direct aussi bien qu’un complément phrastique fini ou non-fini incluent les exemples suivants en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I will persuade Joe he should come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je vais persuader Jacques qu’il devrait venir à la soirée »</xsl:text>
-</gloss>
+</xsl:attribute>Je vais persuader Jacques qu’il devrait venir à la fête</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I will persuade Joe to come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je vais persuader Jacques de venir à la soirée »</xsl:text>
-</gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+</xsl:attribute>Je vais persuader Jacques de venir à la fête</langData>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1242,10 +1195,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>D’autres verbes ont un objet direct de même qu’un complément phrastique fini ou non-fini.  Des exemples de ce type en </xsl:text>
+<xsl:text>D’autres verbes ont un objet direct de même qu’un complément phrastique fini ou non-fini.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1254,7 +1207,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteAndNonfiniteIP.34">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1272,7 +1225,7 @@
 <section2 id="sCompTypeFiniteIP">
           <secTitle>Compléments phrastiques</secTitle>
           <p contentType="ctComparativeIntro">
-<xsl:text>Certains verbes qui prennent un complément phrastique incluent les exemples suivants en anglais et français: </xsl:text>
+<xsl:text>Certains verbes qui prennent un complément phrastique incluent les exemples suivants en anglais et français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -1306,7 +1259,7 @@
 </xsl:attribute>I expect Joe will come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends à ce que Jacques va venir à la soirée »</xsl:text>
+<xsl:text>  « Je m’attends à ce que Jacques va venir à la fête »</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -1315,7 +1268,7 @@
 </xsl:attribute>I expect Joe to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je m’attends à Jacques à venir à la soirée »</xsl:text>
+<xsl:text>  « Je m’attends à Jacques à venir à la fête »</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -1324,7 +1277,7 @@
 </xsl:attribute>I want to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je veux aller à la soirée »</xsl:text>
+<xsl:text>  « Je veux aller à la fête »</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -1333,7 +1286,7 @@
 </xsl:attribute>I want Joe to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je veux que Jacques vienne à la soirée »</xsl:text>
+<xsl:text>  « Je veux que Jacques vienne à la fête »</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -1342,7 +1295,7 @@
 </xsl:attribute>Joe tried to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques a essayé de venir à la soirée »</xsl:text>
+<xsl:text>  « Jacques a essayé de venir à la fête »</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -1362,7 +1315,7 @@
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>  « J’aimerais être apprécié »</xsl:text>
 </gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1371,10 +1324,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Certains verbes ont seulement un complément phrastique. Des exemples de ce type en </xsl:text>
+<xsl:text>Certains verbes ont seulement un complément phrastique. Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1383,7 +1336,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteIP.8">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1431,25 +1384,17 @@
 </xsl:call-template>
 </example>
           <p contentType="ctComparativeIntro">
-<xsl:text>Des verbes qui prennent un objet direct de même qu’un complément phrastique incluent les exemples suivants: </xsl:text>
+<xsl:text>Des verbes qui prennent un objet direct de même qu’un complément phrastique incluent les exemples suivants en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I will persuade Joe he should come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je vais persuader Jacques qu’il devrait venir à la soirée »</xsl:text>
-</gloss>
+</xsl:attribute>Je vais persuader Jacques qu’il devrait venir à la fête</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>I will persuade Joe to come to the party</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Je vais persuader Jacques de venir à la soirée »</xsl:text>
-</gloss>
-<xsl:text>.  Des exemples de ce type en </xsl:text>
+</xsl:attribute>Je vais persuader Jacques de venir à la fête</langData>
+<xsl:text>.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1458,10 +1403,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>D’autres verbes ont un objet direct de même qu’une complément phrastique.  Des exemples de ce type en </xsl:text>
+<xsl:text>D’autres verbes ont un objet direct de même qu’une proposition complétive finie ou non-finie.  Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1470,7 +1415,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
           <example num="xComp.CompTypeFiniteIP.22">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1487,14 +1432,14 @@
        <section2 id="sCompRaising">
           <secTitle>Constructions « de montée »</secTitle>
           <p contentType="ctComparativeIntro">
-<xsl:text>Les verbes « de montée » semblent inclure tous les verbes de perception et verbes copulatifs. Ces verbes ont soit un complément non-fini ou un complément adjectival qui lui-même a soit un complément fini avec un complétiviseur ou un complément non-fini. Le verbe principal n’a pas son propre sujet, alors la position du sujet est remplie par le sujet du complément non-fini comme dans: </xsl:text>
+<xsl:text>Les verbes « de montée » semblent inclure tous les verbes de perception et verbes copulatifs. Ces verbes ont soit un complément non-fini ou un complément adjectival qui lui-même a soit un complément fini avec un conjonction de subordination  ou un complément non-fini. Le verbe principal n’a pas son propre sujet, alors la position du sujet est remplie par le sujet du complément non-fini comme dans en anglais : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>John seemed to like the tortillas</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jean semblait aimer les tortillas »</xsl:text>
+<xsl:text> (Jean semblait aimer les tortillas)</xsl:text>
 </gloss>
 <xsl:text>, </xsl:text>
 <langData>
@@ -1503,7 +1448,7 @@
 </xsl:attribute>Joe is likely to come to the party</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques est probable de venir à la soirée »</xsl:text>
+<xsl:text> (Jacques est probable de venir à la fête)</xsl:text>
 </gloss>
 <xsl:text> et </xsl:text>
 <langData>
@@ -1512,7 +1457,7 @@
 </xsl:attribute>The weather is certain to change soon</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Le temps est certain à changer bientôt »</xsl:text>
+<xsl:text> (Le temps est certain à changer bientôt)</xsl:text>
 </gloss>
 <xsl:text>.  Lorsque la proposition complétive est finie, le sujet ne peut pas être « monté », ainsi un pronom sans caractéristique </xsl:text>
 <langData>
@@ -1523,7 +1468,7 @@
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>  « il »</xsl:text>
 </gloss>
-<xsl:text> remplit la position du sujet de la proposition principale en anglais et français comme dans: </xsl:text>
+<xsl:text> remplit la position du sujet de la proposition principale en anglais et français comme dans : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -1541,13 +1486,13 @@
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>  « Il est certain que le temps va changer bientôt »</xsl:text>
 </gloss>
-<xsl:text>.  Certaines langues ont simplement le verbe sans un sujet, suivi d’une proposition complétive, alors aucune « montée » ne se passe: les deux propositions partagent simplement le même sujet. </xsl:text>
+<xsl:text>.  Certaines langues ont simplement le verbe sans un sujet, suivi d’une proposition complétive, alors aucune « montée » ne se passe : les deux propositions partagent simplement le même sujet. </xsl:text>
 </p>
           <p contentType="ctPracticalIntro">
-<xsl:text>Les verbes « de montée » semblent inclure tous les verbes de perception et verbes copulatifs. Le verbe principal n’a pas son propre sujet, ainsi la position du sujet est remplie par le sujet du complément non-fini ou par un pronom sans caractéristique.   Certaines langues ont simplement le verbe sans un sujet, suivi d’une proposition complétive, alors aucune « montée » ne se passe: les deux propositions partagent simplement le même sujet. </xsl:text>
+<xsl:text>Les verbes « de montée » semblent inclure tous les verbes de perception et verbes copulatifs. Le verbe principal n’a pas son propre sujet, ainsi la position du sujet est remplie par le sujet du complément non-fini ou par un pronom sans caractéristique. Certaines langues ont simplement le verbe principal sans sujet, suivi d’une proposition complétive, alors aucune « montée » ne se passe : les deux propositions partagent simplement le même sujet. </xsl:text>
 </p>
               <p>
-<xsl:text>Des exemples de ce type en </xsl:text>
+<xsl:text>Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1556,7 +1501,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
               <example num="xComp.CompRaising.10">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1572,33 +1517,33 @@
            <section2 id="sCompCausative">
               <secTitle>Compléments causatifs</secTitle>
               <p contentType="ctComparativeIntro">
-<xsl:text>Les causatif syntactiques  sont faits de deux propositions et ont un objet qui agit comme le sujet de la proposition complétive. Cette proposition complétive est toujours non-finie mais n’a pas besoin du marqueur non-fini avec certains verbes en anglais et français comme dans: </xsl:text>
+<xsl:text>Les causatif syntactiques sont formés de deux propositions et ont un objet qui agit également comme le sujet de la proposition complétive. Cette proposition complétive est toujours non-finie mais n’a pas besoin du marqueur non-fini avec certains verbes en anglais comme dans : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>My mother made me clean my room</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Ma mère m’a fait nettoyer ma chambre »</xsl:text>
+<xsl:text> (Ma mère m’a obligé à nettoyer ma chambre)</xsl:text>
 </gloss>
-<xsl:text>, alors que cela est demandé dans d’autres comme dans: </xsl:text>
+<xsl:text>, alors que cela est exigé par d’autres comme dans : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>The other girl forced us to leave the group</langData>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « L’autre fille nous a forcé de quitter le groupe »</xsl:text>
+<xsl:text> (L’autre fille nous a forcé de quitter le groupe)</xsl:text>
 </gloss>
-<xsl:text>.</xsl:text>
+<xsl:text>.  (Les constructions sont différentes en français.)</xsl:text>
 </p>
               
               <p contentType="ctPracticalIntro">
-<xsl:text>Les causatifs syntactiques  sont faits de deux propositions et ont un objet qui agit comme le sujet de la proposition complétive. </xsl:text>
+<xsl:text>Les causatifs syntactiques sont formés de deux propositions et ont un objet qui agit également comme le sujet de la proposition complétive. </xsl:text>
 </p>
               <xsl:if test="normalize-space(//ip/causativeMake/@checked)='no'">
 <p>
-<xsl:text>En </xsl:text>
+<xsl:text>Il n’y a pas de causatifs syntactiques en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1607,12 +1552,12 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il n’y a pas de causatifs syntactiques.</xsl:text>
+<xsl:text>.</xsl:text>
 </p>
 </xsl:if>
                  <xsl:if test="normalize-space(//ip/causativeMake/@checked)='yes'">
 <p>
-<xsl:text>Des exemples de ce type en </xsl:text>
+<xsl:text>Voici quelques exemples de ce type en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1621,7 +1566,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 </xsl:if>
               <example num="xComp.CompCausative.12">
@@ -1637,7 +1582,7 @@
 <p>
 <xsl:text>Voir section </xsl:text>
 <sectionRef sec="sIPCausatives" />
-<xsl:text> pour des exemples de casuatifs dans des propositions uniques, dans laquelle le verbe est marqué avec un affixe qui introduit un argument supplémentaire.</xsl:text>
+<xsl:text> pour des exemples de causatifs dans des propositions uniques, dans lesquelles le verbe est marqué par un affixe qui introduit un argument supplémentaire.</xsl:text>
 </p>
 </xsl:if>
            </section2>
@@ -1646,60 +1591,40 @@
               <secTitle>Citations direct et indirect comme compléments</secTitle>
               
               <p contentType="ctComparativeIntro">
-<xsl:text>Les verbes de parole peuvent avoir des compléments de citations direct ou indirect. Les citations directes peuvent être juste une phrase ou une interjection ou une salutation comme:  </xsl:text>
+<xsl:text>Les verbes de parole peuvent avoir des compléments qui sont des discours direct ou indirect. Les citations directes peuvent être à peu près n’importe quelle phrase ou interjection ou salutation comme :  </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Sue said, “I will come to your house tomorrow”</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Suzannee a dit: « Je viendrai demain chez toi » »</xsl:text>
-</gloss>
+</xsl:attribute>Suzannee a dit : « je viendrai chez toi demain »</langData>
 <xsl:text> ou </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Joe said, “Bye!”</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Jacques a dit: « Au revoir! » »</xsl:text>
-</gloss>
+</xsl:attribute>Jacques a dit : « Au revoir ! »</langData>
 </p>
               <p contentType="ctComparativeIntro">
-<xsl:text>Les citations indirectes comme compléments sont plus limitées. En anglais certains verbes d’expression prennent un complément de phrase finie avec ou sans complétiviseur, et une phrase prépositionnelle facultative pour exprimer celui qui écoute comme dans:  </xsl:text>
+<xsl:text>Les citations indirectes comme compléments sont plus restreintes. En français et anglais, certains verbes de parole prennent un complément phrastique finie avec ou sans conjonction de subordination, et une syntagme prépositionnelle facultatif pour exprimer l’auditeur comme dans :  </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Sue said (to me) that she would come here tomorrow</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Suzanne (m’)a dit qu’elle viendrait ici demain »</xsl:text>
-</gloss>
-<xsl:text>.  Others require the hearer to be expressed as an object plus either a finite sentential complement, as in: </xsl:text>
+</xsl:attribute>Suzanne (m’a dit) qu’elle viendrait ici demain</langData>
+<xsl:text>.  D'autres demandent que l’auditeur soit exprimé comme un objet avec un complément phrastique fini comme dans : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Sue told me that she would come here tomorrow</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Suzanne m’a dit qu’elle viendrait ici demain »</xsl:text>
-</gloss>
-<xsl:text>, or a nonfinite sentential complement in which the subject must be coreferent with the main clause subject and dropped, as in: </xsl:text>
+</xsl:attribute>Suzanne m’a dit qu’elle viendrait ici demain</langData>
+<xsl:text>, ou un complément phrastique non-fini dans lequel le sujet doit se référer au sujet de la proposition principale et omis comme dans : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Sue told me to come here tomorrow</langData>
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>  « Suzanne m’a dit de venir ici demain »</xsl:text>
-</gloss>
+</xsl:attribute>Suzanne m’a dit de venir ici demain</langData>
 <xsl:text>.</xsl:text>
 </p>
               <p contentType="ctPracticalIntro">
-<xsl:text>Les verbes de parole peuvent avoir des compléments de citations direct ou indirect. Les citations directes peuvent être seulement une phrase ou une interjection ou une salutation, mais les citations indirectes sont plus limitées et dépendent du verbe principal.</xsl:text>
+<xsl:text>Les verbes de parole peuvent avoir des compléments qui sont des discours direct ou indirect. Les citations directes peuvent être à peu près n’importe quelle phrase ou interjection ou salutation, mais les citations indirectes sont plus restreintes et dépendent du verbe principal.</xsl:text>
 </p>
               <p>
-<xsl:text>Des exemples de compléments de verbes de parole en </xsl:text>
+<xsl:text>Voici quelques exemples de compléments de verbes de parole en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -1708,7 +1633,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
               <example num="xComp.CompSpeech.12">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1723,9 +1648,9 @@
            
             <xsl:if test="normalize-space(//comp/@compTypeOther)='yes'">
 <section2 id="sCompTypeOther">
-               <secTitle>Autres limitations sur des propositions complétives</secTitle>
+               <secTitle>Autres restrictions pour des propositions complétives</secTitle>
                 <p contentType="ctComparativeIntro">
-<xsl:text>Certaines langues ont aussi des verbes qui ont d’autres limitations sur les propositions subordonnées comme quand le verbe dépendant doit être au subjonctif ou à l’aspect perfectif. </xsl:text>
+<xsl:text>Certaines langues ont aussi des verbes qui ont d’autres restrictions sur les propositions subordonnées, comme par exemple que le verbe dépendant doit être au subjonctif ou à l’aspect perfectif. </xsl:text>
 </p>
    
                 <p>
@@ -1738,9 +1663,9 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>  il y a aussi la limitation avec certains verbes que __</xsl:text>
+<xsl:text>  il y a aussi la restriction suivantes avec certains verbes :  __</xsl:text>
 <xsl:value-of select="//comp/otherRestrictions" />
-<xsl:text>.  Des exemples sont montrés ici:</xsl:text>
+<xsl:text>.  Voici quelques exemples :</xsl:text>
 </p>
                 <example num="xComp.CompTypeOther.8">
 <xsl:call-template name="OutputInterlinearEntries">

@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
 	<section1 id="sNP">
 		<secTitle>Syntagmes nominaux</secTitle>
 		<p>
-			<content>Les syntagmes nominaux peuvent être très complexes.  Cette section se concentre sur la mise en ordre des modificateurs qui sont écrits comme mots indépendants permis dans les syntagmes nominaux avec des noms communs comme unité lexicale principale.  La modification par le articles, les démonstratifs, les possesseurs, les quantificateurs et les mots de degré, les syntagmes adjectivaux et syntagmes </content>
+			<content>Les syntagmes nominaux peuvent être très complexes.  Cette section se concentre sur l’ordre des modificateurs écrits comme mots indépendants admis dans les syntagmes nominaux dont le noyau lexical est un nom commun.  La modification par les articles, les démonstratifs, les possesseurs, les quantifieurs et les mots de degré, les syntagmes adjectivaux et les syntagmes </content>
 			<case element="pp" attr="pPos">
 				<caseText value="before">prépositionnels</caseText>
 				<caseText value="after">postpositionnels</caseText>
 				<caseText value="both">prépositionnels et/ou postpositionnels</caseText>
 				<caseText value="unknown">prépositionnels et/ou postpositionnels</caseText>
 			</case>
-			<content> tout ceci est considéré ici.  Les participes et les gérondifs sont traités à la fin de cette section, mais voir section </content>
-			<sectionRef sec="sNPCompounds"/><content> pour les noms composés s’ils sont écrits comme mots seuls ou non.  Les syntagmes nominaux avec des noms propres en tête sont discutées dans la section </content>
+			<content> tout ceci est considéré ici.  Les participes et les gérondifs sont traités à la fin de cette section, mais il faut voir la section </content>
+			<sectionRef sec="sNPCompounds"/><content> pour les noms composés, qu’ils sont écrits comme mots séparés ou non.  Les syntagmes nominaux dont le noyau est un nom propre en tête sont discutées dans la section </content>
 			<sectionRef sec="sProp"/>
-			<content> et celles avec des pronoms de tous les types et quantificateurs seront traitées dans les sections </content>
+			<content> et ceux dont le noyau est un pronom, quel que soit le type, ou un quantifieur seront traitées dans les sections </content>
 		   <sectionRef sec="sPronNP"/><content> et </content><sectionRef sec="sQPPartitive"/>
-			<content>.  Les propositions relatives qui viennent normalement à la fin d’un syntagme nominal sont traités dans la section </content>
+			<content>.  Les propositions relatives, qui se placent normalement à la fin d’un syntagme nominal, sont traités dans la section </content>
 			<sectionRef sec="sRelCl"/>
 			<content>.</content>
 		</p>
-		<p><content>Nous commencerons avec les modificateurs qui ont la plus grande portée et nous approcherons ensuite vers le nom.</content></p>
+		<p><content>Nous commencerons avec les modificateurs qui ont la portée la plus large et nous nous rapprocherons ensuite du nom.</content></p>
 		<section2 id="sNPDegree">
-			<secTitle>Quantificateurs de grande portée et de mots de degré</secTitle>
+			<secTitle>Quantifieurs à large portée et mots de degré</secTitle>
 			<p contentType="ctPracticalIntro">
-				<content>Les quantificateurs de grande portée et les mots de degré qui modifient le syntagme nominal entier ont été discutés dans la section </content>
+				<content>Les quantifieurs à large portée et les mots de degré qui modifient le syntagme nominal dans son esemble ont été discutés dans la section </content>
 				<sectionRef sec="sQPAll"/>
 			   <content>. </content></p>
 		   <p contentType="ctComparativeIntro">
-		   	<content>Les quantificateurs de grande portée et les mots de degré qui modifient le syntagme nominal entier, tels que </content>
-		      <langData>tout</langData>
+		   	<content>Les quantifieurs à large portée et les mots de degré qui modifient le syntagme nominal dans son esemble, tels que </content>
+		      <langData>tous</langData>
 		      <content>, </content>
 		      <langData>presque</langData>
+		      <content>, </content>
+		      <langData>juste</langData>
 		      <content> et </content>
 		      <langData>seulement</langData>
 		   	<content>, ont été discutés dans la section </content>
@@ -39,11 +41,11 @@
 		      <content>. </content></p>
 		   
 		   <p show="swQPNPDegreeClassifierYes">
-		   	<content>Le tableau suivant revise la façon dont les quantificateurs de grande portée et les mots de degré qui modifient le syntagme nominal entier sone exprimés en </content><langName/>
-		   	<content>.  Les formes montrées dans le tableau sont les racines; chacune peut apparaître avec le classificateur approprié attaché.</content>
+		   	<content>Le tableau suivant reprend la façon dont les quantifieurs à large portée et les mots de degré qui modifient le syntagme nominal dans son esemble sont exprimés en </content><langName/>
+		   	<content>.  Les formes présentées dans le tableau sont les radicaux; chacun peut apparaître avec le classificateur approprié.</content>
 		   </p>
 		   <p show="swQPNPDegreeClassifierNo">
-		   	<content>Le tableau suivant revise la façon dont les quantificateurs de grande portée et les mots de degré qui modifient le syntagme nominal entier sone exprimés en </content><langName/>
+		   	<content>Le tableau suivant reprend la façon dont les quantifieurs à large portée et les mots de degré qui modifient le syntagme nominal dans son esemble sont exprimés en </content><langName/>
 		      <content>:</content>
 		   </p>
 		   <example>
@@ -55,7 +57,7 @@
 		         <row>
 		            <col exampleLoc="qp/all"/>
 		            <col>
-		               <gloss><content>tout</content></gloss>
+		               <gloss><content>tous</content></gloss>
 		            </col>
 		         </row>
 		         <row>
@@ -67,44 +69,44 @@
 		         <row>
 		            <col exampleLoc="qp/only"/>
 		            <col>
-		               <gloss><content>seulement</content></gloss>
+		               <gloss><content>seulement ou juste</content></gloss>
 		            </col>
 		         </row>
 		      </table>
 		   </example>
 			<p show="swQPNPDegreeNo">
-				<content>Ces éléments ne sont pas exprimés en tant que mots indépendants qui modifient le syntagme nominal entier. Au lieu de cela ils s’attachent tous à un autre mot dans le syntagme nominal.</content></p>
+				<content>Ces éléments ne sont pas exprimés en tant que mots indépendants qui modifient le syntagme nominal dans son esemble. Au lieu de cela ils se rattachent chacun à un autre mot dans le syntagme nominal.</content></p>
 			<p show="swQPNPDegreeSome">
-				<content>Certains de ces éléments ne sont pas exprimés en tant que mots indépendants qui modifient le syntagme nominal entier. Au lieu de cela ils s’attachent à un autre mot dans le syntagme nominal.</content></p>
+				<content>Certains de ces éléments ne sont pas exprimés en tant que mots indépendants qui modifient le syntagme nominal dans son esemble. Au lieu de cela ils se rattachent à un autre mot dans le syntagme nominal.</content></p>
 			<p show="swQPNPDegreeNoOrSomeAndClitic">
-				<content>Des exemples de formes clitiques inclues dans les syntagmes nominaux entiers sont:</content>
+				<content>Voici quelques exemples de formes clitiques inclues dans les syntagmes nominaux complets :</content>
 			</p>
 			<example show="swQPNPDegreeNoOrSomeAndClitic">
 				<interlinear exampleLoc="qp/npDegreeCliticExample"/>
 			</example>
 			<p show="swQPNPDegreeNoOrSomeAndAffix">
-				<content>Des exemples de formes d’affixes inclues dans des syntagmes nominaux entiers sont:</content>
+				<content>Voici quelques exemples de formes d’affixes inclues dans des syntagmes nominaux complets :</content>
 			</p>
 			<example show="swQPNPDegreeNoOrSomeAndAffix">
 				<interlinear exampleLoc="qp/npDegreeAffixExample"/>
 			</example>
 			<p show="swQPNPDegreeNoOrSomeAndOther">
-				<content>Des exemples de formes qui s’attachent comme permis en </content><langName/><content> inclus dans les syntagmes nominaux entiers sont:</content>
+				<content>Voici quelques exemples de formes qui se rattachent comme le </content><langName/><content> l’admet, inclus dans les syntagmes nominaux compets :</content>
 			</p>
 			<example show="swQPNPDegreeNoOrSomeAndOther">
 				<interlinear exampleLoc="qp/npDegreeOtherExample"/>
 			</example>     
 			
 		   <p show="swQPNPDegreeYesOrSome">
-		   	<content>Les quantificateurs de grande portée et les mots de degré qui sont des mots indépendants se trouvent </content>
+		   	<content>Les quantifieurs à large portée et les mots de degré qui sont des mots indépendants se trouvent </content>
 		      <text show="swQPNPDegreePosBefore"><content>avant le</content></text>
 		   	<text show="swQPNPDegreePosAfter"><content>après le</content></text>
 		   	<text show="swQPNPDegreePosBoth"><content>des deux côtés du</content></text>
-		   	<text show="swQPNPDegreePosEither"><content>d’un côté ou l’autre du</content></text>
-		   	<text show="swQPNPDegreePosBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-		   	<text show="swQPNPDegreePosAfterOrBoth"><content>après ou des deux côtes du</content></text>
-		   	<text show="swQPNPDegreePosEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
-		   	<text show="swQPNPDegreePosNotOther"><content> reste de la syntagme nominal.  </content>
+		   	<text show="swQPNPDegreePosEither"><content>de part et d’autre du</content></text>
+		   	<text show="swQPNPDegreePosBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+		   	<text show="swQPNPDegreePosAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+		   	<text show="swQPNPDegreePosEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
+		   	<text show="swQPNPDegreePosNotOther"><content> reste du syntagme nominal.  </content>
 		      </text>
 		      <text show="swQPNPDegreePosOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="qp/npDegreePosOther"/><content>.  </content>
 		      </text>
@@ -112,61 +114,61 @@
 		   </p>
 		   
 		   <p show="swQPNPDegreeYesOrSome">
-		   	<content>Des exemples de formes de mot indépendant inclus dans les syntagmes nominaux entiers sont:</content>
+		   	<content>Voici quelques exemples de formes de mot indépendant inclus dans les syntagmes nominaux complets :</content>
 		   </p>                        
 		   <example>
 		      <interlinear exampleLoc="qp/example"/>
 		   </example>         
 			
-			<p show="swOTClassifierSpecificAndQPNPDegreeYesOrSome"><content>Dans ces syntagmes nominaux avec les mots qui signifent « tout », « presque » ou « seulement » </content>
+			<p show="swOTClassifierSpecificAndQPNPDegreeYesOrSome"><content>Dans ces syntagmes nominaux avec les mots qui signifiant « tous », « presque », « seulement » ou « juste » </content>
 				<case element="np" attr="classifierPresent"><caseText value="yes"> un classificateur est nécessaire.</caseText>
-					<caseText value="some"> un classificateur est présent dans certains syntagmes nominaux de ce type, mais n’est pas requis dans tous.</caseText>
+					<caseText value="some"> un classificateur est présent dans certains syntagmes nominaux de ce type, mais n’est pas obligatoire dans chacun.</caseText>
 					<caseText value="no"> un classificateur n’est jamais utilisé.</caseText></case>
 				<text show="swOTClassifierSpecificAndQPNPDegreeYesOrSomeAndNPClassifierPresentYesOrSome"><content> Le classificateur </content>
-					<text show="swNPClassifierSpecificPosBeforeBothOnly"><content>se trouve avant le quantificateur de grande portée ou le mot de degré et le nom.</content></text>
-					<text show="swNPClassifierSpecificPosBeforeBothAnd"><content>peut se trouver avant le quantificateur de grande portée ou le mot de degré et le nom.</content></text>
-					<text show="swNPClassifierSpecificPosAfterBothCont"><content> Il se trouve aussi après le nom et le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosAfterBothOnly"><content>se trouve après le nom et le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosAfterBothAnd"><content>peut se trouver après le nom et le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosAfterQBeforeNCont"><content> Il se trouve aussi après le quantificateur de grande portée ou le mot de degré mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificPosAfterQBeforeNOnly"><content>se trouve après le quantificateur de grande portée ou le mot de degré mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificPosAfterQBeforeNAnd"><content>peut se trouver après le quantificateur de grande portée ou le mot de degré mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificPosAfterNBeforeQCont"><content> Il se trouve aussi après le nom mais avant le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosAfterNBeforeQOnly"><content>se trouve après le nom mais avant le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosAfterNBeforeQAnd"><content>peut se trouver après le nom mais avant le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosPrefixQCont"><content> Il peut s’attacher comme préfixe sur le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosPrefixQOnly"><content>s’attache comme préfixe sur le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosPrefixQAnd"><content>peut s’attacher comme préfixe sur le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosSuffixQCont"><content> Il peut s’attacher aussi comme suffixe sur le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosSuffixQOnly"><content>s’attache comme suffixe sur le quantificateur de grande portée ou le mot de degré.</content></text>
-					<text show="swNPClassifierSpecificPosSuffixQAnd"><content>peut s’attacher comme suffixe sur le quantificateur de grande portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosBeforeBothOnly"><content>se trouve avant le quantifieur à large portée ou le mot de degré et le nom.</content></text>
+					<text show="swNPClassifierSpecificPosBeforeBothAnd"><content>peut se trouver avant le quantifieur à large portée ou le mot de degré et le nom.</content></text>
+					<text show="swNPClassifierSpecificPosAfterBothCont"><content> Il se trouve aussi après le nom et le quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosAfterBothOnly"><content>se trouve après le nom et le quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosAfterBothAnd"><content>peut se trouver après le nom et le quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosAfterQBeforeNCont"><content> Il se trouve aussi après le quantifieur à large portée ou le mot de degré mais avant le nom.</content></text>
+					<text show="swNPClassifierSpecificPosAfterQBeforeNOnly"><content>se trouve après le quantifieur à large portée ou le mot de degré mais avant le nom.</content></text>
+					<text show="swNPClassifierSpecificPosAfterQBeforeNAnd"><content>peut se trouver après le quantifieur à large portée ou le mot de degré mais avant le nom.</content></text>
+					<text show="swNPClassifierSpecificPosAfterNBeforeQCont"><content> Il se trouve aussi après le nom mais avant le quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosAfterNBeforeQOnly"><content>se trouve après le nom mais avant le quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosAfterNBeforeQAnd"><content>peut se trouver après le nom mais avant le quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosPrefixQCont"><content> Il peut se rattacher comme préfixe au quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosPrefixQOnly"><content>se rattache comme préfixe au quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosPrefixQAnd"><content>peut se rattacher comme préfixe au quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosSuffixQCont"><content> Il peut se rattacher aussi comme suffixe au quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosSuffixQOnly"><content>se rattache comme suffixe au quantifieur à large portée ou le mot de degré.</content></text>
+					<text show="swNPClassifierSpecificPosSuffixQAnd"><content>peut se rattacher comme suffixe au quantifieur à large portée ou le mot de degré.</content></text>
 					<text show="swNPClassifierSpecificPosOtherCont"><content> Il peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificPosOther"/><content>. </content></text>
 					<text show="swNPClassifierSpecificPosOtherOnly"><content>se trouve ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificPosOther"/><content>. </content></text>	
 				</text></p>
 			
 			
-			<p><content>La négation d’un syntagme nominal se trouve aussi dans cette position de grande portée. Voir section </content><sectionRef sec="sNegNominal"/><content> pour des exemples.</content></p>
+			<p><content>La négation d’un syntagme nominal se trouve aussi dans la position du quantifieur à large portée. Voir section </content><sectionRef sec="sNegNominal"/><content> pour des exemples.</content></p>
 		   
 		</section2>
 		<section2 id="sNPArtDem">
 			<secTitle><case element="np" attr="artAndDem">
-				<caseText value="no">Articles et démonstratifs</caseText>
+				<caseText value="no">Articles et Démonstratifs</caseText>
 			   <caseText value="article">Articles</caseText>
 				<caseText value="demonstrative">Démonstratifs</caseText>
-				<caseText value="both">Articles et démonstratifs</caseText>
+				<caseText value="both">Articles et Démonstratifs</caseText>
 			</case></secTitle>
 			<p contentType="ctComparativeIntro" show="swNPArtAndDem">
-				<content>En français les articles et les démonstratifs ne viennent pas ensemble dans le même syntagme nominal, mais tous deux viennent avant le nom.  Certaines langues permettent aux deux de paraître dans le même syntagme et ils peuvent se trouver dans de différentes positions par rapport au nom.  Ils ont donc besoin de catégories syntactiques distinctes.</content>
+				<content>En français les articles et les démonstratifs n’apparaissent pas ensemble dans le même syntagme nominal, mais tous les deux se placent avant le nom.  Certaines langues admettent que les deux apparaissent dans le même syntagme et ils peuvent se trouver dans des positions différentes par rapport au nom.  Par conséquent, ils ont besoin de catégories syntactiques distinctes.</content>
 			</p>
 			<p>
-				<content>Comme vu dans la section </content><sectionRef sec="sAdjArtDem"/><content>, </content>
+				<content>Comme nous l’avons vu dans la section </content><sectionRef sec="sAdjArtDem"/><content>, </content>
 				<langName/>
 				<content/>
 				<case element="np" attr="artAndDem">
-					<caseText value="no"> n’a ni articles ni démonstratifs qui sont réalisés comme mots indépendants.</caseText>
+					<caseText value="no"> n’a ni articles ni démonstratifs réalisés comme mots indépendants.</caseText>
 					<caseText value="article"> n’a que des articles qui sont réalisés comme mots indépendants, mais pas de démonstratifs.</caseText>
 					<caseText value="demonstrative"> a seulement des démonstratifs qui sont réalisés comme mots indépendants, mais pas d’articles.</caseText>
-					<caseText value="both"> a des articles et des démonstratifs qui sont réalisés comme mots indépendants.</caseText>
+					<caseText value="both"> a à la fois des articles et des démonstratifs qui sont réalisés comme mots indépendants.</caseText>
 				</case>
 				<content/>
 				<text show="swNPArtAndOrDem">
@@ -191,11 +193,11 @@
 				<content>L’article se trouve </content>
 				<text show="swNPArtOnlyBefore"><content>avant le</content></text>
 				<text show="swNPArtOnlyAfter"><content>après le</content></text>
-				<text show="swNPArtOnlyBoth"><content>des deux côtés du</content></text>
-				<text show="swNPArtOnlyEither"><content>d’un côté ou l’autre du</content></text>
-				<text show="swNPArtOnlyBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-				<text show="swNPArtOnlyAfterOrBoth"><content>après ou des deux côtés du</content></text>
-				<text show="swNPArtOnlyEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+				<text show="swNPArtOnlyBoth"><content>de part et d’autre du</content></text>
+				<text show="swNPArtOnlyEither"><content>d’un côté ou de l’autre du</content></text>
+				<text show="swNPArtOnlyBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+				<text show="swNPArtOnlyAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+				<text show="swNPArtOnlyEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
 			   <text show="swNPArtOnlyNotOther"><content> nom.  </content>
 			   </text>
 			   <text show="swNPArtOnlyOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/artOnlyOther"/><content>.  </content>
@@ -204,13 +206,13 @@
 				<text show="swNPArtAgreementNumberYes"><content> La présence d’un article est </content>
 					<case element="np" attr="artRequired">
 						<caseText value="no">toujours facultative.</caseText>
-						<caseText value="mass">facultative avec des noms au pluriel ou noms de masse, mais est exigée avec des noms au singulier.</caseText>
-						<caseText value="yes">toujours exigée.</caseText>
+						<caseText value="mass">facultative avec des noms au pluriel ou noms des masse, mais est obligatoire avec des noms au singulier.</caseText>
+						<caseText value="yes">toujours obligatoire.</caseText>
 					</case></text>
 				<text show="swNPArtAgreementNumberNo"><content>  La présence d’un article est </content>
 				<case element="np" attr="artRequired">
 					<caseText value="no">toujours facultative.</caseText>
-					<caseText value="yes">toujours exigée.</caseText>
+					<caseText value="yes">toujours obligatoire.</caseText>
 				</case>
 				</text>
 				<content/>
@@ -219,11 +221,11 @@
 				<content>Le démonstratif se trouve </content>
 				<text show="swNPDemOnlyBefore"><content>avant le</content></text>
 				<text show="swNPDemOnlyAfter"><content>après le</content></text>
-				<text show="swNPDemOnlyBoth"><content>des deux côtés du</content></text>
-				<text show="swNPDemOnlyEither"><content>d’un côté ou l’autre du</content></text>
-				<text show="swNPDemOnlyBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-				<text show="swNPDemOnlyAfterOrBoth"><content>après ou des deux côtés du</content></text>
-				<text show="swNPDemOnlyEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+				<text show="swNPDemOnlyBoth"><content>de part et d’autre du</content></text>
+				<text show="swNPDemOnlyEither"><content>d’un côté ou de l’autre du</content></text>
+				<text show="swNPDemOnlyBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+				<text show="swNPDemOnlyAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+				<text show="swNPDemOnlyEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 			   <text show="swNPDemOnlyNotOther"><content> nom.  </content>
 			   </text>
 			   <text show="swNPDemOnlyOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/demOnlyOther"/><content>r.  </content>
@@ -232,25 +234,25 @@
 				<text show="swNPDemAgreementNumberYes"><content>  La présence d’un démonstratif est </content>
 				<case element="np" attr="demRequired">
 					<caseText value="no">toujours facultative.</caseText>
-					<caseText value="mass">facultative avec des noms au pluriel ou noms de masse, mais est exigée avec des noms au singulier.</caseText>
-					<caseText value="yes">toujours exigée.</caseText>
+					<caseText value="mass">facultative avec des noms au pluriel ou noms des masse, mais est obligatoire avec des noms au singulier.</caseText>
+					<caseText value="yes">toujours obligatoire.</caseText>
 				</case></text>
 				<text show="swNPDemAgreementNumberNo"><content> La présence d’un démonstratif est </content>
 					<case element="np" attr="artRequired">
 						<caseText value="no">toujours facultative.</caseText>
-						<caseText value="yes">toujours exigée.</caseText>
+						<caseText value="yes">toujours obligatoire.</caseText>
 					</case></text>
 				<content/>
 			</p>
 			<p show="swNPArtAndDemBothCooccurNo">
-				<content>Les articles et démonstratifs apparaissent tous deux dans la même position, ils ne se trouvent donc pas ensemble dans la même syntagme nominal.  Les articles et les démonstratifs apparaissent </content>
+				<content>Les articles et démonstratifs apparaissent tous deux dans la même position, ils ne se trouvent donc pas ensemble dans le même syntagme nominal.  Les articles et les démonstratifs apparaissent </content>
 				<text show="swNPDemOrArtPosBefore"><content>avant le</content></text>
 				<text show="swNPDemOrArtPosAfter"><content>après le</content></text>
-				<text show="swNPDemOrArtPosBoth"><content>des deux côtés du</content></text>
-				<text show="swNPDemOrArtPosEither"><content>d’un côté ou l’autre du</content></text>
-				<text show="swNPDemOrArtPosBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-				<text show="swNPDemOrArtPosAfterOrBoth"><content>après ou des deux côtés du</content></text>
-				<text show="swNPDemOrArtPosEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtes du</content></text>
+				<text show="swNPDemOrArtPosBoth"><content>de part et d’autre du</content></text>
+				<text show="swNPDemOrArtPosEither"><content>d’un côté ou de l’autre du</content></text>
+				<text show="swNPDemOrArtPosBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+				<text show="swNPDemOrArtPosAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+				<text show="swNPDemOrArtPosEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 			   <text show="swNPDemOrArtPosNotOther"><content> nom.  </content>
 				   </text>
 			   <text show="swNPDemOrArtPosOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/demOrArtPosOther"/><content>.  </content>
@@ -259,13 +261,13 @@
 				<text show="swNPArtOrDemAgreementNumberYes"><content>  La présence d’un article ou d’un démonstratif est </content>
 				<case element="np" attr="demOrArtRequired">
 					<caseText value="no">toujours facultative.</caseText>
-					<caseText value="mass">facultative avec des noms au pluriel ou noms de masse, mais est exigée avec des noms au singulier.</caseText>
-					<caseText value="yes">toujours exigée.</caseText>
+					<caseText value="mass">facultative avec des noms au pluriel ou des noms de masse, mais est obligatoire avec des noms au singulier.</caseText>
+					<caseText value="yes">toujours obligatoire.</caseText>
 				</case></text>
 				<text show="swNPArtOrDemAgreementNumberNo"><content>  La présence d’un article ou d’un démonstratif est </content>
 					<case element="np" attr="demOrArtRequired">
 						<caseText value="no">toujours facultative.</caseText>
-						<caseText value="yes">toujours exigée.</caseText>
+						<caseText value="yes">toujours obligatoire.</caseText>
 					</case></text>
 				<content/>
 			</p>
@@ -280,11 +282,11 @@
 			<p show="swNPArtAndDemBothCooccurYes"><content>  L’article se trouve </content>
 				<text show="swNPDemAndArtArtBefore"><content>avant le</content></text>
 				<text show="swNPDemAndArtArtAfter"><content>après le</content></text>
-				<text show="swNPDemAndArtArtBoth"><content>des deux côtés du</content></text>
-				<text show="swNPDemAndArtArtEither"><content>d’un côté ou l’autre du</content></text>
-				<text show="swNPDemAndArtArtBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-				<text show="swNPDemAndArtArtAfterOrBoth"><content>/ après ou des deux côtés du</content></text>
-				<text show="swNPDemAndArtArtEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+				<text show="swNPDemAndArtArtBoth"><content>de part et d’autre du</content></text>
+				<text show="swNPDemAndArtArtEither"><content>d’un côté ou de l’autre du</content></text>
+				<text show="swNPDemAndArtArtBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+				<text show="swNPDemAndArtArtAfterOrBoth"><content>/ après ou de part et d’autre du</content></text>
+				<text show="swNPDemAndArtArtEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 				<text show="swNPDemAndArtArtNotOther"><content> nom.  </content>
 		      </text>
 		      <text show="swNPDemAndArtArtOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/demAndArtArtOther"/><content>.  </content>
@@ -293,19 +295,19 @@
 				<content>  La présence d’un article est </content>
 		   <case element="np" attr="demAndArtArtRequired">
 		   	<caseText value="no">toujours facultative.</caseText>
-		   	<caseText value="mass">facultative avec des noms au pluriel ou noms de masse, mais est exigée avec des noms au singulier.</caseText>
-		   	<caseText value="yes">toujours exigée.</caseText>
+		   	<caseText value="mass">facultative avec des noms au pluriel ou des noms de masse, mais est obligatoire avec des noms au singulier.</caseText>
+		   	<caseText value="yes">toujours obligatoire.</caseText>
 		   </case>
 		   <content/>
 		   </p>
 			<p show="swNPArtAndDemBothCooccurYes"><content>Le démonstratif se trouve </content>
 				<text show="swNPDemAndArtDemBefore"><content>avant le</content></text>
 				<text show="swNPDemAndArtDemAfter"><content>après le</content></text>
-				<text show="swNPDemAndArtDemBoth"><content>des deux côtés du</content></text>
-				<text show="swNPDemAndArtDemEither"><content>d’un côté ou l’autre du</content></text>
-				<text show="swNPDemAndArtDemBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-				<text show="swNPDemAndArtDemAfterOrBoth"><content>après ou des deux côtés du</content></text>
-				<text show="swNPDemAndArtDemEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+				<text show="swNPDemAndArtDemBoth"><content>de part et d’autre du</content></text>
+				<text show="swNPDemAndArtDemEither"><content>d’un côté ou de l’autre du</content></text>
+				<text show="swNPDemAndArtDemBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+				<text show="swNPDemAndArtDemAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+				<text show="swNPDemAndArtDemEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 		      <text show="swNPDemAndArtDemNotOther"><content> nom.  </content>
 				   </text>
 		      <text show="swNPDemAndArtDemOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/demAndArtDemOther"/><content>.  </content>
@@ -314,76 +316,76 @@
 				<content>  La présence d’un démonstratif est </content>
 				<case element="np" attr="demAndArtDemRequired">
 					<caseText value="no">toujours facultative.</caseText>
-					<caseText value="mass">facultative avec des noms au pluriel ou noms de masse, mais est exigée avec des noms au singulier.</caseText>
-					<caseText value="yes">toujours exigée.</caseText>
+					<caseText value="mass">facultative avec des noms au pluriel ou des noms de masse, mais est obligatoire avec des noms au singulier.</caseText>
+					<caseText value="yes">toujours obligatoire.</caseText>
 				</case>
 				</p>
 		   
 		
 			<p show="swNPArtAndOrDem">
-				<content>Des exemples de syntagmes nominaux avec </content>
+				<content>Voici quelques exemples de syntagmes nominaux avec </content>
 				<case element="np" attr="artAndDem">
 					<caseText value="article">des articles</caseText>
 					<caseText value="demonstrative">des démonstratifs</caseText>
 					<caseText value="both">des articles et/ou des démonstratifs</caseText>
 				</case>
-				<content> comme permis en </content>
+				<content> comme le </content>
 				<langName/>
-				<content> incluent:</content>
+				<content> l’admet :</content>
 			</p>
 			<example show="swNPArtAndOrDem">
 				<interlinear exampleLoc="np/example"/>
 			</example>
 	
-			<p show="swOTClassifierSpecificAndNPArtAndDemDem"><content>Dans ces syntagmes nominaux avec démonstratifs</content>
-				<case element="np" attr="classifierPresentDem"><caseText value="yes"> un classificateur est exigé.</caseText>
-					<caseText value="some"> un classificateur est présent dans certaines syntagmes nominaux de ce type mais n’est pas exigé en tous.</caseText>
+			<p show="swOTClassifierSpecificAndNPArtAndDemDem"><content>Dans ces syntagmes nominaux avec des démonstratifs</content>
+				<case element="np" attr="classifierPresentDem"><caseText value="yes"> un classificateur est obligatoire.</caseText>
+					<caseText value="some"> un classificateur est présent dans certaines syntagmes nominaux de ce type mais n’est pas obligatoire en tous.</caseText>
 					<caseText value="no"> un classificateur n’est jamais utilisé.</caseText></case>
 				<text show="swOTClassifierSpecificAndNPArtAndDemDemAndNPClassifierPresentDemYesOrSome"><content> Le classificateur </content>
 					<text show="swNPClassifierSpecificDemPosBeforeBothOnly"><content>se trouve avant le démonstratif et le nom.</content></text>
 					<text show="swNPClassifierSpecificDemPosBeforeBothAnd"><content>peut se trouver avant le démonstratif et le nom.</content></text>
-					<text show="swNPClassifierSpecificDemPosAfterBothCont"><content> Il se trouve aussi après le nom et le démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemPosAfterBothCont"><content> Il se trouve également après le nom et le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemPosAfterBothOnly"><content>se trouve après le nom et le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemPosAfterBothAnd"><content>peut se trouver après le nom et le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemPosAfterDemBeforeNCont"><content> Il se trouve aussi après le démonstratif mais avant le nom.</content></text>
+					<text show="swNPClassifierSpecificDemPosAfterDemBeforeNCont"><content> Il se trouve également après le démonstratif mais avant le nom.</content></text>
 					<text show="swNPClassifierSpecificDemPosAfterDemBeforeNOnly"><content>se trouve après le démonstratif mais avant le nom.</content></text>
 					<text show="swNPClassifierSpecificDemPosAfterDemBeforeNAnd"><content>peut se trouver après le démonstratif mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificDemPosAfterNBeforeDemCont"><content> Il se trouve aussi après le nom mais avant le démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemPosAfterNBeforeDemCont"><content> Il se trouve également après le nom mais avant le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemPosAfterNBeforeDemOnly"><content>se trouve après le nom mais avant le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemPosAfterNBeforeDemAnd"><content>peut se trouver après le nom mais avant le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemPosPrefixDemCont"><content> Il peut aussi s’attacher comme préfixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemPosPrefixDemOnly"><content>s’attache comme préfixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemPosPrefixDemAnd"><content>peut s’attacher comme préfixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemPosSuffixDemCont"><content> Il peut aussi s’attacher comme suffixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemPosSuffixDemOnly"><content>s’attache comme suffixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemPosSuffixDemAnd"><content>peut s’attacher comme suffixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemPosOtherCont"><content> Il peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificDemPosOther"/><content>. </content></text>
-					<text show="swNPClassifierSpecificDemPosOtherOnly"><content>se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificDemPosOther"/><content>. </content></text>	
+					<text show="swNPClassifierSpecificDemPosPrefixDemCont"><content> Il peut également se rattacher comme préfixe sur le démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemPosPrefixDemOnly"><content>se rattache comme préfixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemPosPrefixDemAnd"><content>peut se rattacher comme préfixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemPosSuffixDemCont"><content> Il peut également se rattacher comme suffixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemPosSuffixDemOnly"><content>se rattache comme suffixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemPosSuffixDemAnd"><content>peut se rattacher comme suffixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemPosOtherCont"><content> Il peut également se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificDemPosOther"/><content>. </content></text>
+					<text show="swNPClassifierSpecificDemPosOtherOnly"><content>se trouve ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificDemPosOther"/><content>. </content></text>	
 				</text></p>
 			
-			<p show="swOTClassifierSpecificAndNPArtAndDemBoth"><content>Dans ces syntagmes nominaux avec démonstratifs</content>
-				<case element="np" attr="classifierPresentDemBoth"><caseText value="yes"> un classificateur est exigé.</caseText>
-					<caseText value="some"> un classificateur est présent dans certaines syntagmes nominaux de ce type mais n’est pas exigé en tous.</caseText>
+			<p show="swOTClassifierSpecificAndNPArtAndDemBoth"><content>Dans ces syntagmes nominaux avec des démonstratifs</content>
+				<case element="np" attr="classifierPresentDemBoth"><caseText value="yes"> un classificateur est obligatoire.</caseText>
+					<caseText value="some"> un classificateur est présent dans certaines syntagmes nominaux de ce type mais n’est pas obligatoire dans tous les cas.</caseText>
 					<caseText value="no"> un classificateur n’est jamais utilisé.</caseText></case>
 				<text show="swOTClassifierSpecificAndNPArtAndDemBothAndNPClassifierPresentDemBothYesOrSome"><content> Le classificateur </content>
 					<text show="swNPClassifierSpecificDemBothPosBeforeBothOnly"><content>se trouve avant le démonstratif et avant le nom.</content></text>
 					<text show="swNPClassifierSpecificDemBothPosBeforeBothAnd"><content>peut se trouver avant le démonstratif et avant le nom.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosAfterBothCont"><content> Il se trouve aussi après le nom et le démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosAfterBothCont"><content> Il se trouve également après le nom et le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemBothPosAfterBothOnly"><content>se trouve après le nom et le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemBothPosAfterBothAnd"><content>peut se trouver après le nom et le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosAfterDemBeforeNCont"><content> Il se trouve aussi après le nom mais avant le démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosAfterDemBeforeNCont"><content> Il se trouve également après le nom mais avant le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemBothPosAfterDemBeforeNOnly"><content>se trouve après le démonstratif mais avant le nom.</content></text>
 					<text show="swNPClassifierSpecificDemBothPosAfterDemBeforeNAnd"><content>peut se trouver après le démonstratif mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosAfterNBeforeDemCont"><content> Il se trouve aussi après le nom mais avant le démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosAfterNBeforeDemCont"><content> Il se trouve également après le nom mais avant le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemBothPosAfterNBeforeDemOnly"><content>se trouve après le nom mais avant le démonstratif.</content></text>
 					<text show="swNPClassifierSpecificDemBothPosAfterNBeforeDemAnd"><content>peut se trouver après le nom mais avant le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosPrefixDemCont"><content> Il peut aussi s’attacher comme préfixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosPrefixDemOnly"><content>s’attacher comme un préfixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosPrefixDemAnd"><content>peut s’attacher comme un préfixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosSuffixDemCont"><content> Il peut aussi s’attacher comme suffixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosSuffixDemOnly"><content>s’attache comme suffixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosSuffixDemAnd"><content>peut s’attacher comme suffixe sur le démonstratif.</content></text>
-					<text show="swNPClassifierSpecificDemBothPosOtherCont"><content> Il peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificDemBothPosOther"/><content>. </content></text>
+					<text show="swNPClassifierSpecificDemBothPosPrefixDemCont"><content> Il peut également se rattacher comme préfixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosPrefixDemOnly"><content>se rattacher comme un préfixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosPrefixDemAnd"><content>peut se rattacher comme un préfixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosSuffixDemCont"><content> Il peut également se rattacher comme suffixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosSuffixDemOnly"><content>se rattache comme suffixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosSuffixDemAnd"><content>peut se rattacher comme suffixe au démonstratif.</content></text>
+					<text show="swNPClassifierSpecificDemBothPosOtherCont"><content> Il peut également se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificDemBothPosOther"/><content>. </content></text>
 					<text show="swNPClassifierSpecificDemBothPosOtherOnly"><content>se trouve ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificDemBothPosOther"/><content>. </content></text>	
 				</text></p>
 			
@@ -391,60 +393,60 @@
 		<section2 id="sNPPoss">
 			<secTitle>Possesseurs</secTitle>
 		   <p contentType="ctPracticalIntro">
-		   	<content>La possession peut s’exprimer normalement par un pronom ou par un syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.</content></p>
+		   	<content>La possession peut être normalement exprimée par un pronom ou par un syntagme nominal qui consiste en un nom propre, un nom simple ou un nom totalement modifié.</content></p>
 		   <p contentType="ctComparativeIntro">
-		   	<content>La possession peut s’exprimer normalement par un pronom ou par un syntagme nominal qui consiste en un nom propre, un nom simple ou un nom complètement modifié.  
-		   		Cependant le français permet seulement les pronoms dans la position possesseur qu’avant le nom, avec tous les possesseurs nominaux et possesseurs de syntagmes nominaux entiers exprimés dans un syntagme prépositionnelle avec </content><langData>de</langData><content> après le nom.</content></p>
-			<p contentType="ctComparativeIntro"><content>Dans les langues qui expriment les possesseurs par des noms ou des syntagmes nominaux entiers aussi bien que par des pronoms, beaucoup ajoutent aussi une sorte de marque comme le </content>
+		   	<content>La possession peut être normalement exprimée par un pronom ou par un syntagme nominal qui consiste en un nom propre, un nom simple ou un nom totalement modifié.  
+		   		Cependant le français n’admet les pronoms dans la position possesseur qu’avant le nom, et tous les possesseurs nominaux et possesseurs de syntagmes nominaux complets nécessairement exprimés dans un syntagme prépositionnelle avec </content><langData>de</langData><content> après le nom.</content></p>
+			<p contentType="ctComparativeIntro"><content>Dans les langues qui expriment les possesseurs par des noms ou des syntagmes nominaux complets aussi bien que par des pronoms, beaucoup rajoutent aussi une sorte de marque comme le </content>
 				<langData>’s</langData>
-				<content> en anglais pour indiquer la possession.  Ces marques sont soit des affixes soit des clitiques sur le nom principal ou sur des clitiques syntagme qui s’attachent à un bout ou à l’autre du syntagme entier.  Quelque fois la marque du syntagme possesseur est écrit comme mot indépendant.  
+				<content> en anglais pour indiquer la possession.  Ces marques sont soit des affixes soit des clitiques rattachés au nom principal ou des clitiques syntagme de constituant qui se rattachent à un bout ou à l’autre du syntagme complet.  Quelquefois la marque du syntagme possesseur est écrite comme un mot indépendant.  
 					La marque en anglais est de ce second type, parce qu’à côté des syntagmes où le </content>
 				<langData>’s</langData>
 				<content> apparaît attaché au nom principal comme dans </content>
 				<langData>the boy’s mother</langData><gloss><content>  « la mère du garçon »</content></gloss>
-				<content> il y a aussi des syntagmes qui montrent clairement que le clitique s’attache à la fin du syntagme nominal entier comme dans </content>
+				<content> il y a aussi des syntagmes qui montrent clairement que le clitique se rattache à la fin du syntagme nominal complet comme dans </content>
 				<langData>the boy that I just talked to’s mother</langData><gloss><content>  « la mère du garçon à qui je viens de parler »</content></gloss>
 				<content> ou </content>
 				<langData>the girl in green’s wonderful speech</langData><gloss><content>  « le discours merveilleux de la fille en vert »</content></gloss>
-				<content>.  Ces exemples montrent  que des possesseurs peuvent inclure des syntagmes </content>
+				<content>.  Ces exemples illustrent que des possesseurs peuvent comprendre des syntagmes </content>
 				<case element="pp" attr="pPos">
 					<caseText value="before">prépositionnels</caseText>
 					<caseText value="after">postpositionnels</caseText>
 					<caseText value="both">prépositionnels et /ou postpositionnels</caseText>
 					<caseText value="unknown">prépositionnels et /ou postpositionnels</caseText>
 				</case>
-				<content> et propositions relatives.  Les possesseurs peuvent aussi être incorporés  l’un dans l’autre comme dans </content>
+				<content> et des propositions relatives.  Les possesseurs peuvent aussi être enchâssés l’un dans l’autre comme dans </content>
 				<langData>the boy’s sister’s dog</langData><gloss><content> « le chien de la soeur du garçon »</content></gloss>
-				<content>.  Cela est permis en français dans le syntagme prépositionnel après le nom.</content>
+				<content>.  Cela est admis en français dans le syntagme prépositionnel après le nom.</content>
 			</p>
 		   <p><content>En </content><langName/><content>, </content>
 		   <case element="np" attr="possNP">
-		   	<caseText value="yes">les syntagmes nominaux et les pronoms peuvent posséder un nom directement, et les deux peuvent se trouver dans un syntagme <case element="pp" attr="pPos">
+		   	<caseText value="yes">le possesseur peut être un syntagme nominal ou un pronom ajoutés directement au nom, qui tous deux peuvent aussi se trouver  dans  un syntagme <case element="pp" attr="pPos">
 		   		<caseText value="before">prepositionnel</caseText>
 		   		<caseText value="after">postpositionnel</caseText>
 		   		<caseText value="both">adpositionnel</caseText>
 		   		<caseText value="unknown">adpositionnel</caseText>
 		      </case>.  </caseText>
-		   	<caseText value="yesOnly">les syntagmes nominaux et les pronoms peuvent posséder un nom directement, mais les syntagmes possesseurs <case element="pp" attr="pPos">
+		   	<caseText value="yesOnly">le possesseur peut être un syntagme nominal ou un pronom ajoutés directement au nom, mais les syntagmes de possession <case element="pp" attr="pPos">
 		      	<caseText value="before">prepositionnel</caseText>
 		      	<caseText value="after">postpositionnel</caseText>
 		      	<caseText value="both">adpositionnel</caseText>
 		      	<caseText value="unknown">adpositionnel</caseText>
-		   	</case> ne sont pas permis.  </caseText>
-		   	<caseText value="no">seuls les pronoms peuvent posséder un nom directement; les syntagmes nominaux possesseurs se trouvent seulement dans un syntagme <case element="pp" attr="pPos">
+		   	</case> ne sont pas admis.  </caseText>
+		   	<caseText value="no">le possesseur peut seulement être un pronom ajouté directement au nom ; les syntagmes nominaux de possession se trouvent uniquement dans un syntagme  <case element="pp" attr="pPos">
 		   	<caseText value="before">prepositionnel</caseText>
 		   	<caseText value="after">postpositionnel</caseText>
 		   	<caseText value="both">adpositionnel</caseText>
 		   	<caseText value="unknown">adpositionnel</caseText>
 		   	</case>.  </caseText>
-		   	<caseText value="none">ni les syntagmes nominaux ni les pronoms ne peuvent posséder un nom directement; la possession est exprimée seulement dans un syntagme <case element="pp" attr="pPos">
+		   	<caseText value="none">ni les syntagmes nominaux ni les pronoms ne peuvent posséder un nom directement ; la possession est exprimée seulement dans un syntagme <case element="pp" attr="pPos">
 		      	<caseText value="before">prepositionnel</caseText>
 		      	<caseText value="after">postpositionnel</caseText>
 		      	<caseText value="both">adpositionnel</caseText>
 		      	<caseText value="unknown">adpositionnel</caseText>
 		      </case>.  </caseText>
 		   </case>
-		   	<text show="swNPPossNPNotYesOnly"><content>Le syntagme possesseur </content><case element="pp" attr="pPos">
+		   	<text show="swNPPossNPNotYesOnly"><content>Le syntagme de possession </content><case element="pp" attr="pPos">
 		      	<caseText value="before">prepositionnel</caseText>
 		      	<caseText value="after">postpositionnel</caseText>
 		      	<caseText value="both">adpositionnel</caseText>
@@ -467,71 +469,71 @@
 		   </p>
 		   
 			<p>
-				<content>Des exemples de syntagmes nominaux possessédés simples en </content>
+				<content>D\Voici quelques exemples de syntagmes nominaux de possession avec des possesseurs simples et enchâssés en </content>
 				<langName/>
-				<content> incluent:</content>
+				<content> incluent :</content>
 			</p>
 			<example>
 				<interlinear exampleLoc="np/possessorExample"/>
 			</example>
 			<p>
-				<content>Des exemples de syntagmes nominaux possessédés avec des possesseurs incorporés en </content>
+				<content>Voici quelques exemples de syntagmes nominaux de possession avec des possesseurs enchâssés en </content>
 				<langName/>
-				<content> incluent:</content>
+				<content> incluent :</content>
 			</p>
 			<example>
 				<interlinear exampleLoc="np/embeddedExample"/>
 			</example>
 			<p show="swNPPossNPNotYesOnly">
-		   	<content>Des exemples avec des syntagmes </content>
+		   	<content>Voici quelques exemples avec des syntagmes </content>
 				<case element="pp" attr="pPos">
 					<caseText value="before">prepositionnels</caseText>
 					<caseText value="after">postpositionnels</caseText>
 					<caseText value="both">adpositionnels</caseText>
 					<caseText value="unknown">adpositionnels</caseText>
 				</case>
-		   	<content> comme possesseur incluent:</content>
+		   	<content> comme possesseur incluent :</content>
 			</p>
 		   <example show="swNPPossNPNotYesOnly">
 				<interlinear exampleLoc="np/ppExample"/>
 			</example>
 			<p>
-				<content>Des exemples avec des propositions relatives dans le possesseur, incluses dans des phrases complètes et simples sont:</content>
+				<content>Voici quelques exemples avec des propositions relatives dans le possesseur, incluses dans des phrases complètes sont :</content>
 			</p>
 			<example>
 				<interlinear exampleLoc="np/relClExample"/>
 			</example>
 			<p show="swNPPossNPYesOrYesOnly">
-				<content>Comme vu dans les exemples ci-dessus, en </content>
+				<content>Comme cela a été vu dans les exemples ci-dessus, en </content>
 				<langName/>
-				<content/>
+				<content>,</content>
 				<case element="np" attr="possMarked">
-					<caseText value="no"> n’a pas de marque spéciale pour distinguer les possesseurs de n’importe quelle autre syntagme nominal.</caseText>
-					<caseText value="yesAffix"> marque le nom principal dans le possesseur avec un affixe pour distinguer les possesseurs de n’importe quelle autre syntagme nominal.  L’affixe est:</caseText>
-					<caseText value="yesProclitic"> marque le syntagme entier avec une proclitique qui s’attache au premier mot dans le possesseur pour distinguer les possesseurs de n’importe quelle autre syntagme nominal.  Le clitique est:</caseText>
-					<caseText value="yesEnclitic"> marque le syntagme entier avec un enclitique qui s’attache au dernier mot dans le possesseur pour distinguer les possesseurs de n’importe quelle autre syntagme nominal.  Le clitique est:</caseText>
-					<caseText value="yesWord"> marque le syntagme possesseur entier avec un mot indépendant pour le distinguer de toute autre syntagme nominal.  La présence du mot marqué est  <case element="np" attr="possWordRequired">
+					<caseText value="no"> il n’a pas de marque spéciale pour distinguer les possesseurs de tout autre syntagme nominal.</caseText>
+					<caseText value="yesAffix"> on marque le nom principal dans le possesseur avec un affixe pour distinguer les possesseurs de tout autre syntagme nominal.  L’affixe est :</caseText>
+					<caseText value="yesProclitic"> marque le syntagme dans son ensemble avec une proclitique qui se rattache au premier mot dans le possesseur pour distinguer les possesseurs de tout autre syntagme nominal.  Le clitique est :</caseText>
+					<caseText value="yesEnclitic"> marque le syntagme dans son enemble avec un enclitique qui se rattache au dernier mot dans le possesseur pour distinguer les possesseurs de tout autre syntagme nominal.  Le clitique est :</caseText>
+					<caseText value="yesWord"> marque le syntagme possesseur dans son ensemble avec un mot indépendant pour le distinguer de toute autre syntagme nominal.  La présence du mot marqué est  <case element="np" attr="possWordRequired">
 						<caseText value="no">facultatif dans certains cas.</caseText>
-						<caseText value="yes">toujours exigé.</caseText>
+						<caseText value="yes">toujours obligatoire.</caseText>
 					</case>  Il se trouve </caseText>
 				</case>
 				<text show="swNPPossMarkedYesWordBefore"><content>avant le</content></text>
 				<text show="swNPPossMarkedYesWordAfter"><content>après le</content></text>
 				<text show="swNPPossMarkedYesWordBoth"><content>des les deux côtés du</content></text>
 				<text show="swNPPossMarkedYesWordEither"><content>d’un côté ou de l’autre du</content></text>
-				<text show="swNPPossMarkedYesWordBeforeOrBoth"><content>avant ou des les deux côtés du</content></text>
-				<text show="swNPPossMarkedYesWordAfterOrBoth"><content>après ou des les deux côtés du</content></text>
-				<text show="swNPPossMarkedYesWordEitherOrBoth"><content>d’un côté ou de l’autre ou des les deux côtés du</content></text>
-				<text show="swNPPossMarkedYesWordNotOther"><content> syntagme possesseur.  Ce mot est:</content>
+				<text show="swNPPossMarkedYesWordBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+				<text show="swNPPossMarkedYesWordAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+				<text show="swNPPossMarkedYesWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
+				<text show="swNPPossMarkedYesWordNotOther"><content> syntagme possesseur.  Ce mot est :</content>
 				   </text>
-				<text show="swNPPossMarkedYesWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/possWordOther"/><content>.  Ce mot est:</content>
+				<text show="swNPPossMarkedYesWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/possWordOther"/><content>.  Ce mot est :</content>
 				   </text>
-				<text show="swNPPossMarkedYesWordAndOther"><content> syntagme possesseur et peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/possWordOther"/><content>.  Ce mot est:</content></text>
+				<text show="swNPPossMarkedYesWordAndOther"><content> syntagme possesseur et peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/possWordOther"/><content>.  Ce mot est :</content></text>
 			</p>
 	<example show="swNPPossMarkedYesAffix">
 	   <table border="1">
 	      <headerRow>
-	      	<headerCol>Affixe de marque possesseure</headerCol>
+	      	<headerCol>Affixe marquant la possession</headerCol>
 	      </headerRow>
 	      <row>
 	         <col exampleLoc="np/possMarkerAffix"/>
@@ -541,7 +543,7 @@
 		   <example show="swNPPossMarkedYesClitic">
 		      <table border="1">
 		         <headerRow>
-		         	<headerCol>Clitique de marque possesseure</headerCol>
+		         	<headerCol>Clitique marquant la possession</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/possMarkerClitic"/>
@@ -551,7 +553,7 @@
 		   <example show="swNPPossMarkedYesWord">
 		      <table border="1">
 		         <headerRow>
-		         	<headerCol>Mot de marque possesseure</headerCol>
+		         	<headerCol>Mot marquant la possession</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/possMarkerWord"/>
@@ -563,8 +565,8 @@
 					<content>En anglais les possesseurs et les articles ou démonstratifs ne se trouvent pas dans le même syntagme nominal, à moins que le possesseur soit exprimé dans un syntagme prépositionnel.  Par exemple </content>
 					<langData>those [the boy’s] books</langData><gloss><content> (ces [du garçon] livres-là)</content></gloss>
 					<content> n’est pas correct du point de vue grammatical. On devrait utiliser </content>
-					<langData>those books [of his]</langData><gloss><content> (ces livres [sont à lui])</content></gloss>
-					<content> pour exprimer la même pensée. En français ces éléments ne se trouvent pas ensemble.  Certaines autres langues permettent aux possesseurs et aux articles ou démonstratifs de se trouver dans le même syntagme, le premier exemple ci-dessus serait donc grammatical.</content>
+					<langData>those books [of his]</langData><gloss><content> (ces livres [du garçon])</content></gloss>
+					<content> pour exprimer la même pensée. En français ces éléments ne se trouvent pas ensemble.  Certaines autres langues admettent aux possesseurs et aux articles ou démonstratifs se trouvent dans le même syntagme ; le premier exemple, donc, serait correct.</content>
 				</p>
 				<p>
 					<content>En </content>
@@ -583,13 +585,13 @@
 					<content> dans la position normale de possesseur</content>
 				   <case element="np" attr="possCooccur">
 				      <caseText value="yes">.</caseText>
-				   	<caseText value="no">.  En lieu </caseText>
+				   	<caseText value="no">.  Au lieu de cela </caseText>
 				   </case>				   
 					<text show="swNPPossCooccurNo"><content>le possesseur est exprimé dans un syntagme </content>
 				      <case element="pp" attr="pPos">
 				      	<caseText value="before">prepositionnel</caseText>
 				      	<caseText value="after">postpositionnel</caseText>
-				      	<caseText value="both">adpositionnel</caseText>
+				      	<caseText value="both">prépositionel ou postpositionnel </caseText>
 				      	<caseText value="unknown">adpositionnel</caseText>
 				      </case>
 				      <content>.</content>
@@ -600,75 +602,75 @@
 		<section2 id="sNPQP">
 			<secTitle>Syntagmes de quantité</secTitle>
 			<p contentType="ctPracticalIntro">
-				<content>Les syntagmes de quantité incluent et les nombres (la section </content>
+				<content>Les syntagmes de quantité incluent à la fois les nombres (la section </content>
 				<sectionRef sec="sAdjNumbers"/>
-				<content>) et les quantificateurs de portée plus étroite (la section </content><sectionRef sec="sQPOtherQuantifiers"/><content>).</content></p>
+				<content>) et les quantifieurs de portée plus restreinte (la section </content><sectionRef sec="sQPOtherQuantifiers"/><content>).</content></p>
 		   <p contentType="ctComparativeIntro">
-		   	<content>Les syntagmes de quantité incluent et les nombres (section </content>
+		   	<content>Les syntagmes de quantité incluent à la fois les numéraux (section </content>
 		      <sectionRef sec="sAdjNumbers"/>
-		   	<content>) et les quantificateurs de portée plus étroite (la section </content><sectionRef sec="sQPOtherQuantifiers"/><content>).  Tels modificateurs marquent le nombre du la syntagme nominal entier.  Des exemples de syntagmes nominaux quantificateurs incluent: </content>
-		   	<langData>seuls ces quelques livres</langData>
+		   	<content>) et les quantifieurs de portée plus restreinte (la section </content><sectionRef sec="sQPOtherQuantifiers"/><content>).  Ces modificateurs marquent le nombre du syntagme nominal dans son ensemble.  Voici quelques exemples de syntagmes nominaux quantifieurs en anglais : </content>
+		   	<langData>those very few books</langData><gloss><content> (ces quelques rares livres)</content></gloss>
 		      <content>, </content>
-		   	<langData>les nombreux chiens du garçon</langData>
+		   	<langData>the boy’s many dogs</langData><gloss><content> (le grand nombre de chiens du garçon)</content></gloss>
 		      <content> et </content>
-		   	<langData>seuls les cent premiers garçons</langData>
-		   	<content>.  En français tous les syntagmes quantificateurs se trouvent avant le nom.</content>
+		   	<langData>only the first one hundred boys</langData><gloss><content> (seulement les cent premiers garçons)</content></gloss>
+		   	<content>.  En anglais et en français, tous les syntagmes quantifieurs se trouvent avant le nom.</content>
 		   </p>
 		   <p>
 				<content>En </content>
 				<langName/>
-		   	<content> les syntagmes quantificateurs se trouvent </content>
+		   	<content>, les syntagmes quantifieurs se trouvent </content>
 		   	<text show="swNPQPPosBefore"><content>après le</content></text>
 		   	<text show="swNPQPPosAfter"><content>avant le</content></text>
-		   	<text show="swNPQPPosBoth"><content>des deux côtés du</content></text>
-		   	<text show="swNPQPPosEither"><content>d’un côté ou l’autre du</content></text>
-		   	<text show="swNPQPPosBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-		   	<text show="swNPQPPosAfterOrBoth"><content>après ou des deux côtés du</content></text>
-		   	<text show="swNPQPPosEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+		   	<text show="swNPQPPosBoth"><content>de part et d’autre du</content></text>
+		   	<text show="swNPQPPosEither"><content>d’un côté ou de l’autre du</content></text>
+		   	<text show="swNPQPPosBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+		   	<text show="swNPQPPosAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+		   	<text show="swNPQPPosEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 		      <text show="swNPQPPosNotOther"><content> nom.  </content>
 		      </text>
 		      <text show="swNPQPPosOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/qpPosOther"/><content>.   </content>
 		      </text>
 		   	<text show="swNPQPPosAndOther"><content> nom et peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/qpPosOther"/><content>.  </content></text>
 <text show="swNPQPPosEitherRestrictedNumBefore">
-	<content>Tous les nombres se trouvent avant le nom. </content>
+	<content>Tous les numéraux se trouvent avant le nom. </content>
 					</text>
 					<content/>
 					<text show="swNPQPPosEitherRestrictedNumAfter">
-						<content>Tous les nombres se trouvent après le nom. </content>
+						<content>Tous les numéraux se trouvent après le nom. </content>
 					</text>
 		      </p>
 				<p>
-					<content>Des exemples de syntagmes quantificateurs en </content>
-						<langName/><content> incluent:</content>
+					<content>Voici quelques exemples de syntagmes quantifieurs en </content>
+						<langName/><content> :</content>
 			</p>
 			<example>
 				<interlinear exampleLoc="np/qpExample"/>
 			</example>
 			
-			<p show="swOTClassifierSpecific"><content>Dans ces syntagmes nominaux avec des nombres ou autres quantificateurs</content>
-				<case element="np" attr="classifierPresentQ"><caseText value="yes"> un classificateur est exigé.</caseText>
-					<caseText value="some"> un classificateur est présent dans certains syntagmes nominaux de ce type, mais pas exigé en tous.</caseText>
+			<p show="swOTClassifierSpecific"><content>Dans ces syntagmes nominaux avec des numéraux ou d’autres quantifieurs</content>
+				<case element="np" attr="classifierPresentQ"><caseText value="yes"> un classificateur est obligatoire.</caseText>
+					<caseText value="some"> un classificateur est présent dans certains syntagmes nominaux de ce type, mais pas obligatoire pour tous.</caseText>
 					<caseText value="no"> un classificateur n’est jamais utilisé.</caseText></case>
 				<text show="swOTClassifierSpecificAndNPClassifierPresentQYesOrSome"><content> Le classificateur </content>
-					<text show="swNPClassifierSpecificQPosBeforeBothOnly"><content>se trouve avant le quatificateur et le nom.</content></text>
-					<text show="swNPClassifierSpecificQPosBeforeBothAnd"><content>peut se trouver avant le quatificateur et le nom.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterBothCont"><content> Il se trouve aussi après le nom et le quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterBothOnly"><content>se trouve après le nom et le quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterBothAnd"><content>peut se trouver après le nom et le quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterQBeforeNCont"><content> Il se trouve aussi après le quantificateur mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterQBeforeNOnly"><content>se trouve après le quantificateur mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterQBeforeNAnd"><content>peut se trouver après le quantificateur mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterNBeforeQCont"><content> Il se trouve aussi après le nom mais avant le quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterNBeforeQOnly"><content>se trouve après le nom mais avant le quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosAfterNBeforeQAnd"><content>peut se trouver après le nom mais avant le quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosPrefixQCont"><content> Il peut s’attacher comme préfixe au quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosPrefixQOnly"><content>s’attache comme préfixe au quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosPrefixQAnd"><content>peut s’attacher comme préfixe au quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosSuffixQCont"><content> Il peut aussi s’atttacher comme suffixe au quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosSuffixQOnly"><content>s’attache comme suffixe au quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosSuffixQAnd"><content>peut s’attacher comme suffixe au quantificateur.</content></text>
-					<text show="swNPClassifierSpecificQPosOtherCont"><content> Il peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificQPosOther"/><content>. </content></text>
+					<text show="swNPClassifierSpecificQPosBeforeBothOnly"><content>se trouve avant le quantifieur et le nom.</content></text>
+					<text show="swNPClassifierSpecificQPosBeforeBothAnd"><content>peut se trouver avant le quatifieur et le nom.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterBothCont"><content> Il se trouve également après le nom et le quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterBothOnly"><content>se trouve après le nom et le quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterBothAnd"><content>peut se trouver après le nom et le quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterQBeforeNCont"><content> Il se trouve également après le quantifieur mais avant le nom.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterQBeforeNOnly"><content>se trouve après le quantifieur mais avant le nom.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterQBeforeNAnd"><content>peut se trouver après le quantifieur mais avant le nom.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterNBeforeQCont"><content> Il se trouve également après le nom mais avant le quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterNBeforeQOnly"><content>se trouve après le nom mais avant le quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosAfterNBeforeQAnd"><content>peut se trouver après le nom mais avant le quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosPrefixQCont"><content> Il peut également s’attacher comme préfixe au quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosPrefixQOnly"><content>se rattache comme préfixe au quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosPrefixQAnd"><content>peut se rattacher comme préfixe au quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosSuffixQCont"><content> Il peut également se ratttacher comme suffixe au quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosSuffixQOnly"><content>se rattache comme suffixe au quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosSuffixQAnd"><content>peut se rattacher comme suffixe au quantifieur.</content></text>
+					<text show="swNPClassifierSpecificQPosOtherCont"><content> Il peut également se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificQPosOther"/><content>. </content></text>
 					<text show="swNPClassifierSpecificQPosOtherOnly"><content>se trouve ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificQPosOther"/><content>. </content></text>	
 				</text></p>
 			
@@ -677,65 +679,65 @@
 		<section2 id="sNPAdjP">
 			<secTitle>Syntagmes adjectivaux</secTitle>
 			<p contentType="ctPracticalIntro">
-				<content>On a discuté les adjectifs qualitatifs et leurs modificateurs dans la section </content>
+				<content>Les adjectifs qualitatifs et leurs modificateurs ont été traités dans la section </content>
 				<sectionRef sec="sAdjQual"/>
-				<content>. </content></p>
+				<content> ci-dessus. </content></p>
 		   <p contentType="ctComparativeIntro">
-		   	<content>On a discuté les adjectifs qualitatifs et leurs modificateurs dans la section </content>
+		   	<content>Les adjectifs qualitatifs et leurs modificateurs ont été traités dans la section </content>
 		      <sectionRef sec="sAdjQual"/>
-		   	<content>.  Les syntagmes adjectivaux se trouvent près du nom, donnant des syntagmes nominaux tels que:</content>
-		   	<langData>those very dirty old books</langData><gloss><content> « ces vieux livres très sales »</content></gloss>
+		   	<content> ci-dessus.  Les syntagmes adjectivaux se trouvent près du nom, donnant des syntagmes nominaux tels que :</content>
+		   	<langData>those very few old, dirty books</langData><gloss><content> « ces très peu de vieux livres sales »</content></gloss>
 		      <content>, </content>
-		   	<langData>the boy’s many black dogs</langData><gloss><content> « les nombreux chiens noirs du garçon »</content></gloss>
+		   	<langData>all the boy’s many black dogs</langData><gloss><content> « tous les nombreux chiens noirs du garçon »</content></gloss>
 		      <content> et </content>
-		   	<langData>only the first ten very eager young boys</langData><gloss><content> « seulement les dix premiers jeunes garçons très passionés »</content></gloss>
-		   	<content>.  Comme les exemples en anglais le montrent, tous les adjectifs se trouvent avant le nom et au contraire des autres modificateurs discutés précédemment plus qu’un syntagme adjectival est permis.  En français normalement l’adjectif se trouve après le nom, avec quelques exceptions précises; où deux ou plusieurs adjectifs accompagnent un nom, on peut se trouver avant et l’autre(s) après.</content></p>
+		   	<langData>only the first one hundred very eager young boys</langData><gloss><content> « seulement les cent premiers jeunes garçons très impatients »</content></gloss>
+		   	<content>.  En anglais, comme les exemples le mettent en évidence, tous les adjectifs se trouvent avant le nom et plus qu'un syntagme adjectival est admis, contrairement aux modificateurs traités jusqu’à présent.  En français, normalement l’adjectif se trouve après le nom, avec quelques exceptions précises ; où deux ou plusieurs adjectifs accompagnent un nom, on peut se trouver avant et l’autre(s) après.</content></p>
 		   <p>
 				<content>En </content>
 				<langName/>
 		   	<content> les syntagmes adjectivaux se trouvent </content>
 		   	<text show="swNPAdjBefore"><content>avant le</content></text>
 		   	<text show="swNPAdjAfter"><content>après le</content></text>
-		   	<text show="swNPAdjBoth"><content>des deux côtés du</content></text>
+		   	<text show="swNPAdjBoth"><content>de part et d’autre du</content></text>
 		   	<text show="swNPAdjEither"><content>d’un côté ou l’autre du</content></text>
-		   	<text show="swNPAdjBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-		   	<text show="swNPAdjAfterOrBoth"><content>après ou des deux côtés du</content></text>
-		   	<text show="swNPAdjEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+		   	<text show="swNPAdjBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+		   	<text show="swNPAdjAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+		   	<text show="swNPAdjEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
 		      <text show="swNPAdjPosNotOther"><content> nom.  </content>
 		      </text>
 		      <text show="swNPAdjPosOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="np/adjPosOther"/><content>.   </content>
 		      </text>
-		   	<text show="swNPAdjPosAndOther"><content> nom et peut se trouver aussi ___</content><contentCheckBoxOther contentLoc="np/adjPosOther"/><content>.  </content></text>
+		   	<text show="swNPAdjPosAndOther"><content> nom et peuvent aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/adjPosOther"/><content>.  </content></text>
 		   </p>
 		   <p>
-		   	<content>Des exemples de syntagmes nominaux modifiés par des adjectifs qualitatifs ou syntagmes adjectivaux en </content><langName/><content> incluent:</content>
+		   	<content>Voice quelques exemples de syntagmes nominaux modifiés par des adjectifs qualitatifs ou syntagmes adjectivaux en </content><langName/><content> :</content>
 			</p>
 			<example>
 				<interlinear exampleLoc="np/adjpExample"/>
 			</example>
-			<p show="swOTClassifierSpecific"><content>Dans ces syntagmes nominaux avec adjectifs</content>
-				<case element="np" attr="classifierPresentAdj"><caseText value="yes"> un classificateur est exigé</caseText>
-					<caseText value="some"> un classificateur est présent dans certains syntagmes nominaux de ce type, mais n’est pas exigé dans tous.</caseText>
+			<p show="swOTClassifierSpecific"><content>Dans ces syntagmes nominaux avec des adjectifs</content>
+				<case element="np" attr="classifierPresentAdj"><caseText value="yes"> un classificateur est obligatoire</caseText>
+					<caseText value="some"> un classificateur est présent dans certains syntagmes nominaux de ce type, mais n’est pas obligatoire dans tous.</caseText>
 					<caseText value="no"> un classificateur n’est jamais utilisé.</caseText></case>
 				<text show="swOTClassifierSpecificAndNPClassifierPresentAdjYesOrSome"><content> Le classificateur </content>
 					<text show="swNPClassifierSpecificAdjPosBeforeBothOnly"><content>se trouve avant l’adjectif et le nom.</content></text>
 					<text show="swNPClassifierSpecificAdjPosBeforeBothAnd"><content>peut se trouver avant l’adjectif et le nom.</content></text>
-					<text show="swNPClassifierSpecificAdjPosAfterBothCont"><content> Il se trouve aussi après le nom et l’adjectif.</content></text>
+					<text show="swNPClassifierSpecificAdjPosAfterBothCont"><content> Il se trouve également après le nom et l’adjectif.</content></text>
 					<text show="swNPClassifierSpecificAdjPosAfterBothOnly"><content>se trouve après le nom et l’adjectif.</content></text>
 					<text show="swNPClassifierSpecificAdjPosAfterBothAnd"><content>peut se trouver après le nom et l’adjectif.</content></text>
-					<text show="swNPClassifierSpecificAdjPosAfterAdjBeforeNCont"><content> Il se trouve aussi après l’adjectif mais avant le nom.</content></text>
+					<text show="swNPClassifierSpecificAdjPosAfterAdjBeforeNCont"><content> Il se trouve également après l’adjectif mais avant le nom.</content></text>
 					<text show="swNPClassifierSpecificAdjPosAfterAdjBeforeNOnly"><content>se trouve après l’adjectif mais avant le nom.</content></text>
 					<text show="swNPClassifierSpecificAdjPosAfterAdjBeforeNAnd"><content>peut se trouver après l’adjectif mais avant le nom.</content></text>
-					<text show="swNPClassifierSpecificAdjPosAfterNBeforeAdjCont"><content> Il se trouve aussi après le nom mais avant l’adjectif.</content></text>
+					<text show="swNPClassifierSpecificAdjPosAfterNBeforeAdjCont"><content> Il se trouve également après le nom mais avant l’adjectif.</content></text>
 					<text show="swNPClassifierSpecificAdjPosAfterNBeforeAdjOnly"><content>se trouve après le nom mais avant l’adjectif.</content></text>
 					<text show="swNPClassifierSpecificAdjPosAfterNBeforeAdjAnd"><content>peut se trouver après le nom mais avant l’adjectif.</content></text>
-					<text show="swNPClassifierSpecificAdjPosPrefixAdjCont"><content> Il peut aussi s’attacher comme préfixe à l’adjectif.</content></text>
-					<text show="swNPClassifierSpecificAdjPosPrefixAdjOnly"><content>s’attache comme préfixe à l’adjectif.</content></text>
-					<text show="swNPClassifierSpecificAdjPosPrefixAdjAnd"><content>peut s’attacher comme préfixe à l’adjectif.</content></text>
-					<text show="swNPClassifierSpecificAdjPosSuffixAdjCont"><content> Il peut aussi s’attacher comme suffixe à l’adjectif.</content></text>
-					<text show="swNPClassifierSpecificAdjPosSuffixAdjOnly"><content>s’attache comme suffixe à l’adjectif.</content></text>
-					<text show="swNPClassifierSpecificAdjPosSuffixAdjAnd"><content>peut s’attacher comme suffixe à l’adjectif.</content></text>
-					<text show="swNPClassifierSpecificAdjPosOtherCont"><content> Il peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificAdjPosOther"/><content>. </content></text>
+					<text show="swNPClassifierSpecificAdjPosPrefixAdjCont"><content> Il peut également se rattacher comme préfixe à l’adjectif.</content></text>
+					<text show="swNPClassifierSpecificAdjPosPrefixAdjOnly"><content>se rattache comme préfixe à l’adjectif.</content></text>
+					<text show="swNPClassifierSpecificAdjPosPrefixAdjAnd"><content>peut se rattacher comme préfixe à l’adjectif.</content></text>
+					<text show="swNPClassifierSpecificAdjPosSuffixAdjCont"><content> Il peut également se rattacher comme suffixe à l’adjectif.</content></text>
+					<text show="swNPClassifierSpecificAdjPosSuffixAdjOnly"><content>se rattache comme suffixe à l’adjectif.</content></text>
+					<text show="swNPClassifierSpecificAdjPosSuffixAdjAnd"><content>peut se rattacher comme suffixe à l’adjectif.</content></text>
+					<text show="swNPClassifierSpecificAdjPosOtherCont"><content> Il peut également se trouver ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificAdjPosOther"/><content>. </content></text>
 					<text show="swNPClassifierSpecificAdjPosOtherOnly"><content>se trouve ___</content><contentCheckBoxOther contentLoc="np/classifierSpecificAdjPosOther"/><content>. </content></text>	
 				</text></p>
 			
@@ -749,7 +751,7 @@
 				<caseText value="unknown">Syntagmes adpositionnels</caseText>
 			</case></secTitle>
 			<p contentType="ctPracticalIntro">
-				<content>Les noms simples et les noms composés peuvent avoir des modificateurs ou compléments de syntagmes </content>
+				<content>Les noms simples et les noms composés peuvent avoir des modificateurs de syntagmes ou des compléments </content>
 				<case element="pp" attr="pPos">
 					<caseText value="before">prépositionnels</caseText>
 					<caseText value="after">postpositionnels</caseText>
@@ -759,7 +761,7 @@
 				<content>. </content>
 			</p>
 		   <p contentType="ctComparativeIntro">
-		   	<content>Les noms simples et les noms composés peuvent avoir des modificateurs ou compléments de syntagmes </content>
+		   	<content>Les noms simples et les noms composés peuvent avoir des modificateurs ou de compléments de syntagmes </content>
 		   	<case element="pp" attr="pPos">
 		   		<caseText value="before">prépositionnels</caseText>
 		   		<caseText value="after">postpositionnels</caseText>
@@ -767,10 +769,10 @@
 		   		<caseText value="unknown">adpositionnels</caseText>
 		   	</case>
 		   	<content> tels que </content>
-		   	<langData>la grande bouteille [de sirop]</langData>
+		   	<langData>the large, round bottle [of syrup]</langData><gloss><content> (la grande bouteille ronde [de sirop])</content></gloss>
 		      <content> et </content>
-		   	<langData>la lettre du garçon [à cette fille]</langData>
-		   	<content>.  En plus des syntagmes </content>
+		   	<langData>the boy’s letter [to that girl]</langData><gloss><content> (la lettre du garçon [à la fille])</content></gloss>
+		   	<content>.  En plus de cela, des syntagmes </content>
 		      <case element="pp" attr="pPos">
 		      	<caseText value="before">prépositionnels</caseText>
 		      	<caseText value="after">postpositionnels</caseText>
@@ -778,15 +780,15 @@
 		      	<caseText value="unknown">adpositionnels</caseText>
 		      </case>
 		   	<content>au génitif peuvent prendre la place du possesseur, comme dans </content>
-		   	<langData>those dogs [of his]</langData><gloss><content> (ces chiens-là [sont à lui])</content></gloss>
-		      <content> and </content>
-		   	<langData>the tablecloth [of my mother’s]</langData><gloss><content> « la nappe [de ma mère] »</content></gloss>
-		   	<content>.    En français le syntagme prépositionnel vient toujours après le nom.</content>
+		   	<langData>those dogs [of his]</langData><gloss><content> (ces chiens [à lui])</content></gloss>
+		      <content> et </content>
+		   	<langData>the tablecloth [of my mother’s]</langData><gloss><content> (cette nappe [à ma mère])</content></gloss>
+		   	<content>.    En français et en anglais, le syntagme prépositionnel se place toujours après le nom.</content>
 		   </p>
 		   <p>
 				<content>En </content>
 				<langName/>
-		   	<content> syntagme </content>
+		   	<content>, le syntagme </content>
 				<case element="pp" attr="pPos">
 					<caseText value="before">prépositionnel</caseText>
 					<caseText value="after">postpositionnel</caseText>
@@ -797,17 +799,17 @@
 				      <case attr="ppPos" element="np">
 				      	<caseText value="before">avant le</caseText>
 				      	<caseText value="after">après le</caseText>
-				      	<caseText value="either">d’un côté ou l’autre de</caseText>
+				      	<caseText value="either">de part ou d’autre de</caseText>
 				         <caseText value="unknown">_______</caseText>
 				      </case>
-		   	<content> nom qu’il modifie. Des exemples de modificateurs de syntagme </content>
+		   	<content> nom qu’il modifie. Voice quelques exemples de modificateurs de syntagme ou des compléments </content>
 				<case element="pp" attr="pPos">
 					<caseText value="before">prépositionnel</caseText>
 					<caseText value="after">postpositionnel</caseText>
 					<caseText value="both">prépositionnel et/ou  postpositionnel</caseText>
 					<caseText value="unknown">adpositionnel</caseText>
 				</case>
-				<content> en </content><langName/><content> incluent:</content>
+				<content> en </content><langName/><content> :</content>
 			</p>
 			<example>
 				<interlinear exampleLoc="np/compPPExample"/>
@@ -828,50 +830,54 @@
 			</p>
 		</section2>
 <section2 id="sNPParticiple">
-	<secTitle>Participes et gérondifs</secTitle>
+	<secTitle>Participes</secTitle>
    <p contentType="ctPracticalIntro">
-   	<content>Les participes ou syntagmes participiaux peuvent agir comme adjectifs qualitatifs qui modifient un nom. </content>
+   	<content>Les participes ou syntagmes participiaux peuvent fonctionner comme des adjectifs qualificatifs et modifier un nom. </content>
    </p>
    <p contentType="ctComparativeIntro">
-   	<content>Les participes ou syntagmes participiaux peuvent agir comme adjectifs qualitatifs qui modifient un nom.  Quelques exemples en français avec le participe ou le syntagme participial entre les crochets incluent: </content>
-   	<langData>le soleil [brillant], mon enfant [pleurant]</langData>
+   	<content>Les participes ou syntagmes participiaux peuvent fonctionner comme des adjectifs qualificatifs et modifier un nom.  Voici quelques exemples en français avec le participe ou le syntagme participial entre parenthèses : </content>
+   	<langData>le soleil clair, [brillant]</langData>
+   	  <content> et </content>
+   	<langData>mon enfant [larmoyant]</langData>
       <content> et </content>
-   	<langData>les livres [aimés par des millions].</langData>
+   	<langData>les livres [appréciés par des millions de lecteurs].</langData>
    </p>
    <p>
-   	<content>Des exemples en </content>
+   	<content>Voice quelques exemples en </content>
       <langName/>
-      <content> incluent:</content>
+      <content> :</content>
    </p>
    <example>
       <interlinear exampleLoc="np/partExample"/>
    </example>
    <p contentType="ctPracticalIntro">
-   	<content>Un gérondif ou syntagme gérondif peut ressembler à un nom et un complément. Ce syntagme entier occupe une position d’argument normal tel que le sujet, l’objet, l’objet indirect ou l’objet d’une adposition. </content>
+   	<content>Un participe ou syntagme participial peut ressembler à un nom et un complément. Ce syntagme complet occupe une position d’argument tout à fait normal, tel que le sujet, l’objet, l’objet indirect ou l’objet d’une adposition. Ceux-ci sont appelés gérondifs en anglais et dans certaines autres langues, mais le français utilise un infinitif au lieu d'un gérondif, c'est donc une phrase participe en français.</content>
    </p>
    <p contentType="ctComparativeIntro">
-   	<content>Un gérondif ou syntagme gérondif peut ressembler à un nom et un complément. Ce syntagme entier occupe une position d’argument normal tel que le sujet, l’objet, l’objet indirect ou l’objet d’une adposition.  Certains exemples en anglais avec des syntagmes entières avec la syntagme de gérondif entre corchets incluent: : </content>
-   	<langData>[Studying grammar] is challenging  « [Etudier la grammaire] est difficile »</langData>
+   	<content>Un participe ou syntagme participial peut ressembler à un nom et un complément. Ce syntagme complet occupe une position d’argument normal tout à fait, tel que le sujet, l’objet, l’objet indirect ou l’objet d’une adposition. Ceux-ci sont appelés gérondifs en anglais et dans certaines autres langues, mais le français utilise un infinitif au lieu d'un gérondif, c'est donc une phrase participe en français. Certains exemples en anglais avec des syntagmes complets avec le syntagme avec nom verbal incluent : </content>
+   	<langData>[Studying participles] is challenging</langData><gloss><content> « [Etudier la grammaire] est difficile »</content></gloss> 
       <content> et </content>
-   	<langData>He likes [reading Latin poetry] « Il aime [lire la poésie latine] »</langData>
-   	<content>  Des exemples comme ceux-ci en français utiliser l’infinitif au lieu d’un gérondif. Quelques exemples français de gérondifs sont:</content>
+   	<langData>He likes [reading Latin poetry]</langData><gloss><content> « Il aime [lire la poésie latine] »</content></gloss>
+   	<content>.  Voice quelques exemples français comme ceux-ci utiliser l’infinitif :</content>
    	<langData>Le voleur a ouvert la porte en [cassant la serrure]</langData><content> et </content>
    	<langData>Nous avons trouvé le chien en [cherchant dans le bois]</langData>
-   	<content>.  De telles syntagmes peuvent être possessédés ou aussi être modifies en plus et quelquefois seul le gérondif reste seul à la tête d’un syntagme nominal comme dans: </content>
-   	<langData>les gravement blessés</langData>
+   	<content>.  De tels syntagmes peuvent être modifiés par un possesseur et/ou un autre déterminant, et quelquefois seul le participe reste le noyau d’un syntagme nominal comme dans : </content>
+   	<langData>les blessés graves</langData>
       <content> et </content>
-   	<langData>les mourants.</langData>
+   	<langData>les mourants</langData>
+       <content> et </content>
+   	<langData>vos poursuivants</langData><content>.</content>
    </p>
    <p>
-   	<content>Des exemples de gérondifs ou de syntagmes gérondifs qui peuvent prendre la place d’un syntagme nominal en </content>
+   	<content>Voici quelques exemples de participes ou de syntagmes participiaux qui peuvent prendre la place d’un syntagme nominal en </content>
       <langName/>
-      <content> incluent:</content>
+      <content> :</content>
    </p>
    <example>
       <interlinear exampleLoc="np/partHeadExample"/>
    </example>
    <p>
-   	<content>Ces syntagmes gérondifs peuvent être utilisés dans des syntagmes entiers comme montré ici:</content>
+   	<content>Ces syntagmes participiaux peuvent être utilisés dans des syntagmes complets comme cela est illustré ci-dessous :</content>
    </p>
    <example>
       <interlinear exampleLoc="np/partHeadSentExample"/>

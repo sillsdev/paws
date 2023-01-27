@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="QPCardinal" count="2.4">
-	<title level="2">Quantifieurs et Syntagmes de Quantification – Nombres</title>
+	<title level="2">Quantifieurs et Syntagmes de quantification – Nombres</title>
 	<introduction>Maintenant, considérez les nombres.  On ne peut pas les modifier avec des mots de degré comme les quantifieurs, bien qu’ils se présentent dans la même position.  Notez que les nombres <technicalTermRef term="ttCardinal">cardinaux</technicalTermRef> peuvent être modifiés par les nombres 
 		<technicalTermRef term="ttOrdinal">ordinaux</technicalTermRef> et par <example>suivant</example> et <example>dernier</example>, comme <example>les vingt premiers garçons</example> ou
 		<example>les cent années suivantes</example>.  Les nombres ordinaux ainsi que <example>suivant</example> et <example>dermier</example> peuvent aussi modifier directement les substantifs, comme <example>la troisième fille</example> et <example>le dernier garçon</example>. 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="AdvPManner" count="3.3">
    <title level="2">Adverbes et Syntagmes adverbiaux – Adverbes de manière</title>
-   <introduction>Les adverbes de manière modifient le verbe de façon directe ;  en français ils se terminent d’habitude en <example>-ment</example>.  Il semble qu’ils n’aient pas des équivalents des autres types de syntagmes, sauf peut-être de certains comparatifs, tels que <example>aussi vite qu’il le pouvait</example>.  (On traitera des comparatifs dans la <section number="9.5">Propositions Simples – Comparatifs</section>.)  En français on peut modifier les adverbes de manière en mettant <example>très</example>
+   <introduction>Les adverbes de manière modifient le verbe de façon directe ;  en français ils se terminent d’habitude en <example>-ment</example>.  Il semble qu’ils n’aient pas des équivalents des autres types de syntagmes, sauf peut-être de certains comparatifs, tels que <example>aussi vite qu’il le pouvait</example>.  (On traitera des comparatifs dans la <section number="9.5">Propositions simples – Comparatives</section>.)  En français on peut modifier les adverbes de manière en mettant <example>très</example>
 et <example>si</example>, comme dans les exemples ci-dessous :
 </introduction>
     <EnglishExample>

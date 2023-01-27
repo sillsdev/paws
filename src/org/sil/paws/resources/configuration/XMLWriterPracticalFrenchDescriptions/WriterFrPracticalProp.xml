@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
     <section1 id="sProp">
         <secTitle>Noms propres</secTitle>
        <p contentType="ctPracticalIntro">
-           <content>Les noms propres sont une espèce spéciale de substantif ou de syntagme qui fonctionne dans la syntaxe tout comme les autres substantifs ou syntagmes nominaux.</content>
+           <content>Les noms propres sont un type particulier de substantif ou de syntagme qui fonctionne tout comme les autres substantifs ou syntagmes nominaux sur le plan syntaxique.</content>
        </p>
        <p contentType="ctComparativeIntro">
-           <content>Les noms propres sont une espèce spéciale de substantif ou de syntagme qui fonctionne dans la syntaxe tout comme les autres substantifs ou syntagmes nominaux.  En français, certains nom propres peuvent se présenter seuls, comme </content>
+           <content>Les noms propres sont un type particulier de substantif ou de syntagme qui fonctionne tout comme les autres substantifs ou syntagmes nominaux sur le plan syntaxique.  En français, certains noms propres peuvent se présenter seuls, comme </content>
             <langData>Susanne</langData>
             <content> et </content>
             <langData>Russie</langData>
@@ -24,31 +24,31 @@
            <langData>les Etats-Unis d’Amérique</langData>
            <content>.  Bien des langues exigent un article devant un nom.  Les appositifs se présentent, parfois avec un possesseur, comme </content>
            <langData>mon fils, David</langData>
-           <content> mais on les traitera plus tard dans la section </content><sectionRef sec="sCoordAppositive"/><content>.  En plus, les noms propres peuvent être modifiés par des adjectifs et des propositions relatives, comme dans  </content>
+           <content> mais ils seront traités plus tard dans la section </content><sectionRef sec="sCoordAppositive"/><content>.  En plus, les noms propres peuvent être modifiés par des adjectifs et des propositions relatives, comme dans  </content>
            <langData>la belle France</langData>
             <content> ou </content>
            <langData>la Susanne Leblanc que je connais</langData>
             <content>.</content>
         </p>
-        <p show="swClassifiersYesPropYes"><content>En </content><langName/><content> les noms propres portent des classificateurs comme les substantifs comme partie du système de concorde.</content></p>
-        <p show="swClassifiersYesPropNo"><content>En </content><langName/><content> les noms propres ne portent pas de classificateurs comme le font les substantifs comme partie du système de concorde.</content></p>
+        <p show="swClassifiersYesPropYes"><content>En </content><langName/><content>, les noms propres portent des classificateurs qui marquent l’accord, comme pour les substantifs.</content></p>
+        <p show="swClassifiersYesPropNo"><content>En </content><langName/><content>, les noms propres ne portent pas de classificateurs pour marquer l’accord comme pour les substantifs.</content></p>
         <p show="swNPArtAndDemNotNo"><content>Les nom propres en </content><langName/><case element="prop" attr="pnDeterminer">
             <caseText value="none"> ne peuvent pas</caseText>
-            <caseText value="no"> peuvent mais ne sont pas obligés de</caseText>
+            <caseText value="no"> peuvent, mais ce n’est pas obligatoire</caseText>
             <caseText value="yes"> doivent</caseText>
        </case><content> contenir </content><case element="np" attr="artAndDem">
           <caseText value="article">un article</caseText>
            <caseText value="demonstrative">un démonstratif</caseText>
            <caseText value="both">un article et/ou un démonstratif</caseText></case><content> ou un possesseur.</content></p>
        <p>
-           <content>Des exemples avec des noms propres simples et composés en </content>
+           <content>Voice quelques exemples avec des noms propres simples et composés en </content>
             <langName/>
-           <content> comprennent:</content>
+           <content> :</content>
         </p>
         <example>
             <interlinear exampleLoc="prop/example"/>
         </example>
-        <p><content>Des exemples de noms propres avec syntagmes </content>
+        <p><content>Voice quelques exemples de noms propres avec des syntagmes </content>
             <case element="pp" attr="pPos">
                 <caseText value="before">prépositionnels</caseText>
                 <caseText value="after">postpositionnels</caseText>
@@ -57,13 +57,13 @@
             </case>
             <content> en </content>
             <langName/>
-                <content> comprennent:</content>
+                <content> :</content>
         </p>
         <example>
             <interlinear exampleLoc="prop/ppExample"/>
         </example>
         <p>
-            <content>Des exemples de noms propres modifiés par des propositions relatives comprises dans des phrases simples mais complètes sont:</content>
+            <content>Voici quelques exemples de noms propres modifiés par des propositions relatives comprises dans des phrases simples mais complètes :</content>
         </p>
         <example>
             <interlinear exampleLoc="prop/relClExample"/>

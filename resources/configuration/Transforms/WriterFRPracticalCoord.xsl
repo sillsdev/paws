@@ -2,20 +2,20 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/" mode="coord">
   <section1 id="sCoord">
-  	<secTitle>Constructions coordonnées</secTitle>
+  	<secTitle>Constructions de coordination</secTitle>
 	<p contentType="ctComparativeIntro">
-<xsl:text>Cette section commence avec des constructions de coordination simples, où il y a une conjonction visible entre les conjoints. Ceci comprend la coordination au niveau de la phrase et au niveau du syntagme verbal, du syntagme nominal, du syntagme </xsl:text>
+<xsl:text>Cette section commence par res constructions de coordination simples, où il y a une conjonction explicite entre les conjoints. Ceci comprend la coordination au niveau de la phrase et au niveau du syntagme verbal, du syntagme nominal, du syntagme </xsl:text>
 <xsl:choose>
 			<xsl:when test="//pp/@pPos='before'">prépositionnel</xsl:when>
 		 <xsl:when test="//pp/@pPos='after'">postpositionnel</xsl:when>
 		 <xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
 		 <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
 		</xsl:choose>
-<xsl:text> et du syntagme adjectival. Ensuite on traitera, au niveau du syntagme nominal seulement, les listes et les constructions appositives. </xsl:text>
+<xsl:text> et du syntagme adjectival. Ensuite les listes et les constructions appositives seront traitées, au niveau du syntagme nominal seulement. </xsl:text>
 </p>
 
   	<p contentType="ctComparativeIntro">
-<xsl:text>En français, les conjonctions utilisées entre deux conjoints sont </xsl:text>
+<xsl:text>En français, les conjonctions utilisées entre deux conjoncts sont </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -35,17 +35,17 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>et/ou</langData>
-<xsl:text>.  En plus il y a d’autres constructions de coordination qui ont besoin d’une conjonction initiale, comme </xsl:text>
+<xsl:text>.  En plus il y a d’autres constructions de coordination qui exigent une conjonction initiale, comme </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>ou...ou</langData>
+</xsl:attribute>soit...soit</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>ni...ni</langData>
-<xsl:text>.  Certaines langues utilisent aussi un mot qui veut dire </xsl:text>
+<xsl:text>.  Certaines langues utilisent aussi un mot qui signifie </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -54,14 +54,14 @@
 </xsl:text>
 </p>
      <p contentType="ctPracticalIntro">
-<xsl:text>On donne des exemples de la coordination de phrases, de syntagmes verbaux, de syntagmes nominaux, de syntagmes </xsl:text>
+<xsl:text>Des exemples de la coordination de phrases, de syntagmes verbaux, de syntagmes nominaux, de syntagmes </xsl:text>
 <xsl:choose>
      		<xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
            <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
            <xsl:when test="//pp/@pPos='both'">adpositionnels</xsl:when>
            <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
      	</xsl:choose>
-<xsl:text> et de syntagmes adjectivaux. Ensuite on décrit les listes et les constructions  appositives. </xsl:text>
+<xsl:text> et de syntagmes adjectivaux seront donnés. Ensuite les listes et les constructions appositives seront décrites. </xsl:text>
 </p>
      
      <p>
@@ -74,7 +74,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> on utilise les conjonctions suivantes entre deux conjoints:</xsl:text>
+<xsl:text>, on utilise les conjonctions suivantes entre deux conjoncts :</xsl:text>
 </p>
 			<example num="xCoord.12">
 <table border="1">
@@ -116,7 +116,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 							<xsl:text>et</xsl:text>
@@ -147,7 +147,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>et ensuite</xsl:text>
+							<xsl:text>et puis</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -158,10 +158,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-							<xsl:text>et ensuite</xsl:text>
+							<xsl:text>et puis</xsl:text>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -200,7 +200,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 							<xsl:text>ou</xsl:text>
@@ -242,7 +242,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 							<xsl:text>et/ou</xsl:text>
@@ -284,7 +284,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 							<xsl:text>mais</xsl:text>
@@ -326,7 +326,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 							<xsl:text>avec</xsl:text>
@@ -368,7 +368,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 							<xsl:text>autres</xsl:text>
@@ -392,13 +392,13 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>ou...ou</langData>
+</xsl:attribute>soit...soit</langData>
 <xsl:text> ou </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>ni...ni</langData>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 			<example num="xCoord.16">
 <table border="1">
@@ -429,7 +429,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>ou (partie initiale)</xsl:text>
+							<xsl:text>soit (partie initiale)</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -440,10 +440,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-							<xsl:text>ou (partie initiale)</xsl:text>
+							<xsl:text>soit (partie initiale)</xsl:text>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -471,7 +471,7 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-				      	<xsl:text>ou (deuxième partie)</xsl:text>
+				      	<xsl:text>ou, soit (deuxième partie)</xsl:text>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -482,10 +482,10 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-				      	<xsl:text>ou (deuxième partie)</xsl:text>
+				      	<xsl:text>ou, soit (deuxième partie)</xsl:text>
 				      </td>
 </tr>
 </xsl:otherwise>
@@ -524,7 +524,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 							<xsl:text>ni (partie initiale)</xsl:text>
@@ -566,7 +566,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 					  	<xsl:text>ni (deuxième partie)</xsl:text>
@@ -580,19 +580,19 @@
 	 <p>
 <xsl:text></xsl:text>
 <xsl:choose>
-	 	<xsl:when test="//coord/@conjWord='yes'">Toutes les conjonctions ci-dessus sont écrites comme des mots indépendants entre les conjoints.</xsl:when>
-	 	<xsl:when test="//coord/@conjWord='some'">Quelques-unes de ces conjonctions sont écrites comme ces mots indépendants entre les conjoints, mais d’autres s’attachent </xsl:when>
-	 	<xsl:when test="//coord/@conjWord='no'">Toutes les conjonctions s’attachent </xsl:when>
+	 	<xsl:when test="//coord/@conjWord='yes'">Toutes les conjonctions ci-dessus sont écrites comme des mots indépendants entre les conjoncts.</xsl:when>
+	 	<xsl:when test="//coord/@conjWord='some'">Quelques-unes de ces conjonctions sont écrites comme des mots indépendants entre les conjoncts, mais d’autres se rattachent </xsl:when>
+	 	<xsl:when test="//coord/@conjWord='no'">Toutes les conjonctions se rattachent </xsl:when>
 	 </xsl:choose>
 <xsl:if test="normalize-space(//coord/@conjWord)!='yes'">
 	 	<xsl:if test="normalize-space(//coord/proclitic/@checked)='yes' and normalize-space(//coord/enclitic/@checked)='no'">
-<xsl:text>au début du deuxième conjoint comme des proclitiques</xsl:text>
+<xsl:text>au début du deuxième conjonct comme des proclitiques de syntagme</xsl:text>
 </xsl:if>
 	 	<xsl:if test="normalize-space(//coord/proclitic/@checked)='no' and normalize-space(//coord/enclitic/@checked)='yes'">
-<xsl:text>à la fin du premier conjoint comme enclitiques</xsl:text>
+<xsl:text>soit comme enclitiques de syntagme</xsl:text>
 </xsl:if>
 	 	<xsl:if test="normalize-space(//coord/proclitic/@checked)='yes' and normalize-space(//coord/enclitic/@checked)='yes'">
-<xsl:text>ou bien au début du deuxième conjoint comme des clitiques</xsl:text>
+<xsl:text>soit au début du deuxième conjonct ou à la fin du premier conjonct comme des clitiques de syntagme</xsl:text>
 </xsl:if>
 	    <xsl:if test="normalize-space(//coord/attachesOther/@checked)='no'">
 <xsl:text>. </xsl:text>
@@ -603,16 +603,16 @@
 <xsl:text>. </xsl:text>
 </xsl:if>
 	 	<xsl:if test="normalize-space(//coord/proclitic/@checked)='yes' and normalize-space(//coord/attachesOther/@checked)='yes' or normalize-space(//coord/enclitic/@checked)='yes' and normalize-space(//coord/attachesOther/@checked)='yes'">
-<xsl:text> et peuvent aussi s’attacher à ___</xsl:text>
+<xsl:text> et peuvent aussi se rattacher à ___</xsl:text>
 <xsl:value-of select="//coord/attachesOther" />
 <xsl:text>. </xsl:text>
 </xsl:if>
 	 </xsl:if>
 <xsl:if test="normalize-space(//coord/@noConj)='yes'">
-<xsl:text>  Outre ces conjonctions, deux éléments peuvent se joindre sans aucune conjonction, au moins au niveau du syntagme nominal et de la phrase. </xsl:text>
+<xsl:text>  Outre ces conjonctions, deux éléments peuvent être joints sans aucune conjonction, au moins au niveau du syntagme nominal et de la phrase. </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//coord/@noConj)='no'">
-<xsl:text>  Lorsque seulement deux éléments se joignent, une des conjonctions ci-dessus doit être présente.</xsl:text>
+<xsl:text>  Lorsque seulement deux éléments seulement sont joints, une des conjonctions ci-dessus doit être présente.</xsl:text>
 </xsl:if>
 </p>
 
@@ -623,9 +623,9 @@
 <xsl:text>Dans les sections qui suivent on présente les différents niveaux de coordination.</xsl:text>
 </p>
 		<section3 id="sCoordSentence">
-			<secTitle>Coordination de phrases</secTitle>
+			<secTitle>Coordination de syntagmes</secTitle>
 			<p contentType="ctComparativeIntro">
-<xsl:text>En général, la coordination se pratique entre des catégories pareilles. Au niveau de la phrase, ceci veut dire que deux phrases déclaratives peuvent se joindre, comme suit: </xsl:text>
+<xsl:text>En général, la coordination se pratique entre des catégories pareilles. Au niveau de la phrase, ceci veut dire que deux phrases déclaratives peuvent se joindre, comme suit : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -635,7 +635,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Ou je viendrai à la soirée ou j’enverrai ma sœur</langData>
-<xsl:text>, ou deux questions, comme suit: </xsl:text>
+<xsl:text>, ou deux questions, comme suit : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -645,7 +645,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>mais</langData>
-<xsl:text>, un des conjoints doit être au négatif, comme suit: </xsl:text>
+<xsl:text>, un des conjoints doit être au négatif, comme suit : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -653,12 +653,12 @@
 <xsl:text>.</xsl:text>
 </p>
 		   <p contentType="ctPracticalIntro">
-<xsl:text>En général, la coordination existe entre catégories pareilles. Pour les phrases ceci veut dire que deux phrases déclaratives, ou bien deux questions, peuvent être conjointes. Lorsqu’on utilise la conjonction de contraste </xsl:text>
+<xsl:text>En général, la coordination se fait entre des éléments de catégorie identique. Pour les phrases, ceci veut dire que deux phrases déclaratives, ou deux questions, peuvent être coordonnées. Quand la conjonction contrastive est </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>mais</langData>
-<xsl:text>, un des conjoints doit être au négatif. </xsl:text>
+<xsl:text>, un des conjoncts est fréquemment négatif.</xsl:text>
 </p>
 		   <p>
 <xsl:text>Voici quelques exemples de la coordination de deux phrases en </xsl:text>
@@ -670,7 +670,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 			<example num="xCoord.CoordLevels.CoordSentence.10">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -682,7 +682,7 @@
 </xsl:call-template>
 </example>
 			<p>
-<xsl:text>Voici quelques exemples de la coordination séquentielle entre deux phrases:</xsl:text>
+<xsl:text>Voici quelques exemples de la coordination séquentielle entre deux phrases :</xsl:text>
 </p>
 			<example num="xCoord.CoordLevels.CoordSentence.14">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -694,15 +694,15 @@
 </xsl:call-template>
 </example>
 			<p>
-<xsl:text>Regardez la section </xsl:text>
+<xsl:text>Voir dans la section </xsl:text>
 <sectionRef sec="sAdvCl" />
-<xsl:text> pour des exemples de mots et propositions d’introduction quelquefois appelés coordination, ainsi que des exemples de propositions adverbiales, appelées subordination.</xsl:text>
+<xsl:text> pour des exemples de mots et propositions d’introduction quelquefois appelés coordination, ainsi que des exemples de propositions adverbiales, qui sont la subordination.</xsl:text>
 </p>
 </section3>
 		<section3 id="sCoordVP">
 			<secTitle>Coordination de syntagmes verbaux</secTitle>
 			<p contentType="ctComparativeIntro">
-<xsl:text>La coordination de syntagmes verbaux consiste de deux syntagmes verbaux qui partagent un même sujet. Voici quelques exemples en français qui ont des syntagmes verbaux de coordination: </xsl:text>
+<xsl:text>La coordination de syntagmes verbaux implique deux syntagmes verbaux qui partagent le même sujet. Voici quelques exemples en français qui ont des syntagmes verbaux de coordination : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -720,10 +720,10 @@
 <xsl:text>.</xsl:text>
 </p>
 		   <p contentType="ctPracticalIntro">
-<xsl:text>La coordination de syntagmes verbaux consiste de deux syntagmes verbaux qui partagent un même sujet.</xsl:text>
+<xsl:text>La coordination de syntagmes verbaux implique deux syntagmes verbaux qui partagent le même sujet.</xsl:text>
 </p>
 		   <p>
-<xsl:text>Voici des exemples de la coordination de syntagmes verbaux en </xsl:text>
+<xsl:text>Voici quelques exemples de la coordination de syntagmes verbaux en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -732,7 +732,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 			<example num="xCoord.CoordLevels.CoordVP.10">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -747,14 +747,14 @@
 		<section3 id="sCoordDP">
 			<secTitle>Coordination de syntagmes nominaux</secTitle>
 			<p contentType="ctComparativeIntro">
-<xsl:text>Normalement, les syntagmes nominaux coordonnés se présentent comme sujets, objets, objets indirects, et objets d’une </xsl:text>
+<xsl:text>Généralement, les syntagmes nominaux coordonnés fonctionnent comme sujet, objet, objet indirect, et objet d’une </xsl:text>
 <xsl:choose>
 					<xsl:when test="//pp/@pPos='before'">préposition</xsl:when>
 			      <xsl:when test="//pp/@pPos='after'">postposition</xsl:when>
 			      <xsl:when test="//pp/@pPos='both'">adposition</xsl:when>
 			      <xsl:when test="//pp/@pPos='unknown'">adposition</xsl:when>
 				</xsl:choose>
-<xsl:text>, tout comme pour un syntagme nominal normal. Voici des exemples en français qui comprennent la coordination de syntagmes nominaux: </xsl:text>
+<xsl:text>, tout comme un syntagme nominal normal. Voici des exemples en français qui comprennent la coordination de syntagmes nominaux : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -777,17 +777,17 @@
 <xsl:text>. </xsl:text>
 </p>
 		   <p contentType="ctPracticalIntro">
-<xsl:text>Normalement, les syntagmes nominaux coordonnés se présentent comme sujets, objets, objets indirects, et objets d’une </xsl:text>
+<xsl:text>Généralement, les syntagmes nominaux coordonnés fonctionnent comme sujet, objet, objet indirect, et objet d’une </xsl:text>
 <xsl:choose>
 		   		<xsl:when test="//pp/@pPos='before'">préposition</xsl:when>
 		   		<xsl:when test="//pp/@pPos='after'">postposition</xsl:when>
 		   		<xsl:when test="//pp/@pPos='both'">adposition</xsl:when>
 		   		<xsl:when test="//pp/@pPos='unknown'">adposition</xsl:when>
 		   	</xsl:choose>
-<xsl:text>, tout comme pour un syntagme nominal normal.</xsl:text>
+<xsl:text>, tout comme un syntagme nominal normal.</xsl:text>
 </p>
 		   <p>
-<xsl:text>Voici des exemples de la coordination de syntagmes nominaux en </xsl:text>
+<xsl:text>Voici quelques exemples de la coordination de syntagmes nominaux en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -818,7 +818,7 @@
 			</xsl:choose>
 </secTitle>
 		  <p contentType="ctComparativeIntro">
-<xsl:text>Normalement il est possible d’avoir les syntagmes </xsl:text>
+<xsl:text>Généralement il est possible de trouver les syntagmes </xsl:text>
 <xsl:choose>
 		     	<xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
 				<xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
@@ -832,11 +832,11 @@
 		        <xsl:when test="//pp/@pPos='both'">adpositionnel</xsl:when>
 		        <xsl:when test="//pp/@pPos='unknown'">adpositionnel</xsl:when>
 		     </xsl:choose>
-<xsl:text> normal. Voici des exemples en français de phrases qui comprennent des syntagmes prépositionnels de coordination: </xsl:text>
+<xsl:text> normal. Voici des exemples en français de phrases qui comprennent des syntagmes prépositionnels de coordination : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Guillaume a couru à travers la forêt et à travers le pont</langData>
+</xsl:attribute>Guillaume a couru à travers la forêt et à travers le pont en courant</langData>
 <xsl:text>, </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -846,11 +846,11 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Je viendrai aux noces et/ou à la réception</langData>
+</xsl:attribute>Je viendrai soit aux noces, soit à la réception</langData>
 <xsl:text>.</xsl:text>
 </p>
 	     <p contentType="ctPracticalIntro">
-<xsl:text>Normalement il est possible d’avoir les syntagmes </xsl:text>
+<xsl:text>Généralement il est possible de trouver les syntagmes </xsl:text>
 <xsl:choose>
 	     		<xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
 	     		<xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
@@ -867,7 +867,7 @@
 <xsl:text> normal.</xsl:text>
 </p>
 	     <p>
-<xsl:text>Voici des exemples en </xsl:text>
+<xsl:text>Voici quelques exemples en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -883,7 +883,7 @@
 			  	<xsl:when test="//pp/@pPos='both'">prépositionnels ou postpositionnels</xsl:when>
 				  <xsl:when test="//pp/@pPos='unknown'">adpositionnels</xsl:when>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 		  <example num="xCoord.CoordLevels.CoordPP.10">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -898,7 +898,7 @@
 	  <section3 id="sCoordAdj">
 	  	<secTitle>Coordination de syntagmes adjectivaux</secTitle>
 			<p contentType="ctComparativeIntro">
-<xsl:text>Finalement, les adjectifs ou les syntagmes adjectivaux peuvent normalement être coordinés, et lorsqu’ils modifient un nom, comme suit: </xsl:text>
+<xsl:text>Finalement, les adjectifs ou les syntagmes adjectivaux peuvent normalement être coordinés, et lorsqu’ils modifient un nom, comme suit : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -913,7 +913,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Cela paraît être une plaie terriblement douloureuse et très dangereuse sur ta jambe</langData>
-<xsl:text>, et lorsqu’ils servent d’adjectif  prédicatif dans une phrase copulative, comme suit: </xsl:text>
+<xsl:text>, et lorsqu’ils servent d’adjectif  prédicatif dans une phrase copulative, comme suit : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -926,10 +926,10 @@
 <xsl:text>.</xsl:text>
 </p>
 	     <p contentType="ctPracticalIntro">
-<xsl:text>Finalement, les adjectifs ou les syntagmes adjectivaux peuvent normalement être coordonnés, et lorsqu’ils modifient un nom et lorsqu’ils servent d’adjectif  prédicatif dans une phrase copulative.</xsl:text>
+<xsl:text>Enfin, les adjectifs ou les syntagmes adjectivaux peuvent généralement être coordonnés, à la fois lorsqu’ils modifient un nom et lorsqu’ils servent de prédicat adjectival dans une phrase à copule.</xsl:text>
 </p>
 	     <p>
-<xsl:text>Voici des exemples en </xsl:text>
+<xsl:text>Voici quelques exemples en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -938,7 +938,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> de coordination de syntagmes adjectivaux:</xsl:text>
+<xsl:text> de coordination de syntagmes adjectivaux :</xsl:text>
 </p>
 			<example num="xCoord.CoordLevels.CoordAdj.10">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -954,7 +954,7 @@
 	 <section2 id="sCoordList">
 		<secTitle>Listes</secTitle>
 	 	<p contentType="ctComparativeIntro">
-<xsl:text>Les listes comprennent trois éléments conjoints (ou plus) qui forment un seul syntagme nominal. Les éléments initiaux sont séparés normalement par des virgules, et il y a une conjonction distincte avant l’élément final, quoique d’autres possibilités existent. Voici des exemples en français de syntagmes nominaux sous forme de listes: </xsl:text>
+<xsl:text>Les listes comprennent trois ou plus éléments conjoncts qui forment un seul syntagme nominal. Les éléments initiaux sont séparés normalement par des virgules, et il y a une conjonction explicite avant l’élément final, quoique d’autres possibilités existent. Voici quelques exemples de syntagmes nominaux sous forme de listes en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -977,11 +977,11 @@
 <xsl:text>.</xsl:text>
 </p>
 	 	<p contentType="ctPracticalIntro">
-<xsl:text>Les listes comprennent trois éléments conjoints (ou plus) qui forment un seul syntagme nominal. Les éléments initiaux sont séparés normalement par des virgules, et il y a une conjonction distincte avant l’élément final, quoique d’autres possibilités existent. </xsl:text>
+<xsl:text>Les listes comprennent trois ou plus éléments conjoncts qui forment un seul syntagme nominal. Les éléments initiaux sont généralement séparés par des virgules, et il y a une conjonction explicite avant l’élément final, quoique d’autres possibilités existent. </xsl:text>
 </p>
 	    
 		<p>
-<xsl:text>Voici des exemples de listes en </xsl:text>
+<xsl:text>Voici quelques exemples de listes en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -990,7 +990,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> dans un syntagme nominal:</xsl:text>
+<xsl:text> dans un syntagme nominal :</xsl:text>
 </p>
 		<example num="xCoord.CoordList.10">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -1007,7 +1007,7 @@
 	 <section2 id="sCoordAppositive">
 		<secTitle>Appositifs</secTitle>
 	 	<p contentType="ctComparativeIntro">
-<xsl:text>Les appositifs aussi forment un seul syntagme nominal. Les appositifs consistent normalement d’un nom suivi d’une virgule, ensuite une description suivie d’une virgule; l’ordre peut être inversé. Voici quelques exemples en français: </xsl:text>
+<xsl:text>Les appositifs aussi forment un seul syntagme nominal. Les appositifs sont généralement formés d’un nom suivi d’une virgule, puis vient une description suivie d’une virgule; l’ordre peut être inversé. Voici quelques exemples en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -1020,7 +1020,7 @@
 <xsl:text>.</xsl:text>
 </p>
 	 	<p contentType="ctPracticalIntro">
-<xsl:text>Les appositifs aussi forment un seul syntagme nominal. Les appositifs consistent normalement d’un nom suivi d’une virgule, ensuite une description suivie d’une virgule; l’ordre peut être inversé.</xsl:text>
+<xsl:text>Les appositifs aussi forment un seul syntagme nominal. Les appositifs sont généralement formés d’un nom suivi d’une virgule, puis vient une description suivie d’une virgule; l’ordre peut être inversé.</xsl:text>
 </p>
 	    <p>
 <xsl:text>Voici des exemples d’appositifs en </xsl:text>
@@ -1032,7 +1032,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> dans un syntagme nominal:</xsl:text>
+<xsl:text> dans un syntagme nominal :</xsl:text>
 </p>
 		<example num="xCoord.CoordAppositive.10">
 <xsl:call-template name="OutputInterlinearEntries">

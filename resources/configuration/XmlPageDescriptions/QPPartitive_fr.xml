@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="QPPartitive" count="2.5">
-	<title level="2">Quantifieurs et Syntagmes de Quantité – Partitifs</title>
+	<title level="2">Quantifieurs et Syntagmes de quantification – Partitifs</title>
 	<introduction>De façon générale, tous les quantifieurs, y compris les nombres, peuvent apparaître dans des constructions <technicalTermRef term="ttPartitive">partitives</technicalTermRef>.  Ces constructions sont employées pour indiquer qu’on parle d’une partie d’un groupe plus grand.  Voici quelques exemples:
 	</introduction>
    <EnglishExample>
@@ -41,7 +41,7 @@
 	   <textBox id="QPPartitiveOfExample" dataItem="partitiveOf" rows="3" show="swQPPartitiveYes" kind="table"/>
 	   <br/>
 	   
-		<prompt id="QPPartitiveRelClPrompt" show="swQPPartitiveNo">La structure des propositions relatives sera traitée dans la <section number="12">Propositions Relatives</section>.</prompt>
+		<prompt id="QPPartitiveRelClPrompt" show="swQPPartitiveNo">La structure des propositions relatives sera traitée dans la <section number="12">Propositions relatives</section>.</prompt>
 <br/>		<br/>
 		<buttons>
 			<button id="QPPartitiveBack" value="Back" goto="QPCardinal.xml"/>

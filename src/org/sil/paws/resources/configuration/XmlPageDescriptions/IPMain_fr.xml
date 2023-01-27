@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="IPMain" count="9.1.1">
-    <title level="2">Phrases Simples</title>
+    <title level="2">Phrases simples</title>
    <instruction id="IPMainIntroNotPractical" show="swNotPractical">In this section, we want to handle copular, intransitive, transitive and ditransitive sentences in their basic word order (i.e. not changed by focus, topic, interrogative, or negation constructions).  Inflection and agreement features on verbs, cases when a subject may be missing, auxiliaries, and sentences with passive and other voice changes are also covered.
       <br/>
       <br/>
@@ -19,10 +19,10 @@ SOV, VOS, and OVS word orders can be handled by taking the mirror image of the a
         <br/>
 The basic issues to be dealt with are presented here for your consideration and gathering of appropriate data, then the questions relevant to the basic word order of your language (as determined in section <section number="1">Overall Typology Questions</section>) will deal with the details of setting up the phrase structure rules and lexical features and constraints.
 </instruction>
-    <introduction id="IPMainIntroPractical" show="swPractical">Cette section traite les phrases copulatives, intransitives, transitives et ditransitives; chaque phrase selon son ordre fondamental (c’est à dire sans changement dû au focus, thème, ou constructions interrogatives ou négatives).
+    <introduction id="IPMainIntroPractical" show="swPractical">Dans cette section nous traiterons les phrases copulatives, intransitives, transitives ou ditransitives, dans lesquelles aucun terme n’est  marqué (c’est-à-dire modifié par unede focalisation, de topicalisation, interrogative ou négative). 
         <br/>
         <br/>
-        La flexion et caractéristiques d’accord par verbes, phrases à sujet nul, auxiliaires, impératifs, subjonctifs, conditionnelles, et phrases avec passif et autres changements de voix aussi se traitent.
+        Nous couvrirons aussi les caractéristiques de la flexion et de l’accord des verbes, les cas où le sujet est omis, les verbes auxiliaires, les impératifs, les subjonctifs, les conditionnels ainsi que les constructions passives et d’autres changements de voix.
     </introduction>
     <form section="ip" transparent="yes">
         <br/>

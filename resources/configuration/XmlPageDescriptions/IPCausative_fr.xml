@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -48,8 +48,8 @@
 			<radio id="IPApplicativeNo" dataValue="no">Non</radio>
 			<radio id="IPApplicativeYes" dataValue="yes">Oui</radio>
 		</radioGroup>
-		<prompt id="IPApplicativeNoPrompt" show="swIPApplicativeNoAndFeaturesYes">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous avez coché la boîte pour indiquer que votre langue utilise l’applicatif. Ceci n’est pas conforme avec votre réponse ici. Veuillez changer votre réponse ici pour dire que votre langue possède des applicatifs, ou bien revenez à la <section number="9.2">Phrases Simples – La flexion</section> et annuler la coche pour l’usage de l’applicatif.</prompt>
-		<prompt id="IPApplicativeYesPrompt" show="swIPApplicativeYesAndFeaturesNo">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous n’avez pas coché la case pour indiquer que votre langue utilise l’applicatif  Ceci n’est pas conforme avec votre réponse ici. Si votre langue possède un affixe causatif ou plusieurs, revenez à la <section number="9.2">Phrases Simples – La flexion</section> et cochez le caractéristique applicatif et entrez les morphèmes applicatifs comme demandé sur cette page.</prompt>
+		<prompt id="IPApplicativeNoPrompt" show="swIPApplicativeNoAndFeaturesYes">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous avez coché la boîte pour indiquer que votre langue utilise l’applicatif. Ceci n’est pas conforme avec votre réponse ici. Veuillez changer votre réponse ici pour dire que votre langue possède des applicatifs, ou bien revenez à la <section number="9.2">Phrases simples – La flexion</section> et annuler la coche pour l’usage de l’applicatif.</prompt>
+		<prompt id="IPApplicativeYesPrompt" show="swIPApplicativeYesAndFeaturesNo">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous n’avez pas coché la case pour indiquer que votre langue utilise l’applicatif  Ceci n’est pas conforme avec votre réponse ici. Si votre langue possède un affixe causatif ou plusieurs, revenez à la <section number="9.2">Phrases simples – La flexion</section> et cochez le caractéristique applicatif et entrez les morphèmes applicatifs comme demandé sur cette page.</prompt>
 		<prompt id="IPApplicativePrompt" show="swIPApplicativeYes">Saisissez ici des exemples de phrases applicatives dans votre langue :</prompt>
 		<textBox id="IPApplicativeExample" dataItem="applicativeExample" cols="80" show="swIPApplicativeYes"/>
 		
@@ -63,8 +63,8 @@
 	      <radio id="IPAntipassiveNo" dataValue="no">Non</radio>
 	      <radio id="IPAntipassiveYes" dataValue="yes">Oui</radio>
 	   </radioGroup>
-		<prompt id="IPAntipassiveNoPrompt" show="swIPAntipassiveNoAndFeaturesYes">ATTENTION : Dans la <section number="9.2">Phrases Simples – La flexion</section> vous avez coché la case pour indiquer que votre langue utilise l’antipassif. Ceci ne correspond pas à votre réponse ici. changez votre réponse ici pour dire que votre langue connaît les antipassifs, ou revenez à la <section number="9.2">Phrases simples – La flexion</section> et décochez la case indiquant l’usage de l’antipassif.</prompt>
-		<prompt id="IPAntipassiveYesPrompt" show="swIPAntipassiveYesAndFeaturesNo">ATTENTION : Dans la <section number="9.2">Phrases Simples – La flexion</section> vous n’avez pas coché la case pour indiquer que votre langue connaît l’antipassif.  Ceci ne correspond pas à votre réponse ici. Si votre langue possède des antipassifs, revenez à la <section number="9.2">Phrases simples – La flexion</section> et cochez la caractéristique <feature>antipassif</feature>.</prompt>
+		<prompt id="IPAntipassiveNoPrompt" show="swIPAntipassiveNoAndFeaturesYes">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous avez coché la case pour indiquer que votre langue utilise l’antipassif. Ceci ne correspond pas à votre réponse ici. changez votre réponse ici pour dire que votre langue connaît les antipassifs, ou revenez à la <section number="9.2">Phrases simples – La flexion</section> et décochez la case indiquant l’usage de l’antipassif.</prompt>
+		<prompt id="IPAntipassiveYesPrompt" show="swIPAntipassiveYesAndFeaturesNo">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous n’avez pas coché la case pour indiquer que votre langue connaît l’antipassif.  Ceci ne correspond pas à votre réponse ici. Si votre langue possède des antipassifs, revenez à la <section number="9.2">Phrases simples – La flexion</section> et cochez la caractéristique <feature>antipassif</feature>.</prompt>
 		<prompt id="IPAntipassivePrompt" show="swIPAntipassiveYes">Saisissez ici des exemples de phrases antipassives dans votre langue ; ajoutez quelques exemples d’objet ou du Patient facultatif si votre langue le permet. </prompt>
 	   <textBox id="IPAntipassiveExample" dataItem="antipassiveExample" cols="80" show="swIPAntipassiveYes"/>
 	   <checkboxGroup id="IPAntipassiveFormation" show="swIPAntipassiveYes">

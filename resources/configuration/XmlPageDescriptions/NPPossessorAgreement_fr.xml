@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
@@ -117,8 +117,8 @@
        <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes" kind="table"/>
        <br/><br/>
         <buttons>
-            <button id="NPPossAgrBack" value="Back" goto="NPPossessors.xml"/>
-            <button id="NPPossAgrNext" value="Next" goto="NPContents_fr.htm"/>
+            <button id="NPPossessorAgreementBack" value="Back" goto="NPPossessors.xml"/>
+            <button id="NPPossessorAgreementNext" value="Next" goto="NPContents_fr.htm"/>
         </buttons>
     </form>
      <showWhen id="swNPArtAgreementNone">

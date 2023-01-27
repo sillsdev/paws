@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
    <section1 id="sQues">
         <secTitle>Questions</secTitle>
         <p>
-           <content>Il y a deux types de questions: celles qui invitent une réponse </content><langData>Oui</langData><content> ou </content><langData>Non</langData><content>, et celles qui cherchent un renseignement. Cette section considère la proposition principale et les variétés de propositions subordonnées pour chaque type.</content>
+           <content>Il y a deux types de questions : celles qui exigent une réponse </content><langData>oui</langData><content> ou </content><langData>non</langData><content>, et celles qui cherchent une informations. Cette section considère la proposition principale et les variétés de propositions subordonnées pour chaque type.</content>
         </p>
         <section2 id="sQuesYN">
            <secTitle>Les questions oui/non</secTitle>
             <p contentType="ctComparativeIntro">
-               <content> En anglais les propositions principales interrogatives de type oui/non se forment en mettant un verbe auxiliaire avant le sujet.  En français les questions oui/non se forment ou par l’inversion du verbe et du sujet ou par l’addition de </content><langData>est-ce que/qu’</langData><content> au début de la phrase.  D’autres langues utilisent soit un marqueur pour les interrogatifs de type oui/non, soit un complétiseur spécial au lieu d’un auxiliaire en position initiale. C’est ainsi pour les questions subordonnées de type oui/non en anglais et en français; on ne tolère pas d’auxiliaire en position initiale mais </content>
+               <content> En français, les propositions principales interrogatives de type oui/non se forment en antéposant le auxiliaire avant le sujet lorsqu’il est pronominal.  En français les questions oui/non se forment ou par l’inversion du verbe et du sujet ou par l’addition de </content><langData>est-ce que/qu’</langData><content> au début de la phrase.  D’autres langues utilisent soit un marqueur pour les interrogatifs de type oui/non, soit une conjonction de subordination spéciale au lieu d’un auxiliaire placé en position initiale. C’est ainsi pour les questions subordonnées de type oui/non en français ; on ne modifie pas l’ordre des éléments, mais </content>
                 <langData>si</langData>
-               <content> prend la position du complétiseur. Puisque les langues se comportent quelquefois de manière différente dans les interrogatifs de type oui/non dans la proposition principale et la proposition subordonnée, chaque structure sera traitée séparément.</content>
+               <content> prend la position de la conjonction de subordination. Puisque les langues construisent parfois la question oui/non dans une proposition principale ou dans une proposition subordonnée de façon différente, chaque structure sera traitée séparément.</content>
             </p>
            <p contentType="ctPracticalIntro">
-              <content> Les propositions principales interrogatives et les questions subordonnées de type oui/non se forment quelquefois de façon différents selon le mouvement de l’auxiliaire, et les marqueurs de questions ou les complétiseurs.</content>
+              <content> Les propositions principales interrogatives et les questions subordonnées de type oui/non se forment quelquefois de façon différente selon le mouvement de l’auxiliaire, et les marqueurs de questions ou conjonctions de subordination.</content>
            </p>
            <section3 id="sQuesYNMain">
               <secTitle>Les propositions principales interrogatives de type oui/non</secTitle>
                 <p contentType="ctComparativeIntro">
-                   <content>Voici des exemples en anglais de propositions principales interrogatives de type oui/non; ils montrent la position initiale obligatoire d’un auxiliaire: </content>
-                   <langData>Are you going to the store?</langData><gloss><content>  « Allez-vous au magasin? / Est-ce que vous allez au magasin? »</content></gloss>
+                   <content>Voici quelques exemples en français de propositions principales interrogatives de type oui/non. Ils montrent que les questions sont formées en antéposant le auxiliare avant le sujet lorsqu’il est pronominal : </content>
+                   <langData>Lit-il un livre ?</langData>
                     <content>, </content>
-                   <langData>Will Sue buy the present for her mother?</langData><gloss><content>  « Est-ce que Sue achètera le cadeau pour sa mère? »</content></gloss>
-                    <content> et </content>
-                   <langData>Could the boy have hit the ball?</langData><gloss><content>  « Est-ce que le garçon aurait pu toucher la balle? »</content></gloss>
-                   <content>  La construction « est-ce que » est plus courant en français; seul le premier exemple ci-dessus serait possible avec un verbe initial suivi du sujet, mais quand même la construction « est-ce-que » serait plus naturelle. En français on peut aussi indiquer la présence d’une question par le moyen de l’intonation: </content>
-                   <langData>Vous allez aux magasins?</langData><content/>
+                   <langData>Puis-je venir ?</langData>
+                    <content>, ou en reprenant le sujet de 3e personne par un pronom lorsqu’il est nominal :</content>
+                   <langData>Jean lit-il un livre ?</langData>
+                   <content>.  Il est également possible d’employer </content><langData>est-ce que</langData><content> à l’initiale de la phrase, sans modifier l’ordre des termes</content>
+                   <langData>Est-ce que vous allez aux magasins ?</langData>
+                   <content>.  Cette dernière construction est fréquente dans le langage parlé. Dans la langue parlée, on emploie également l’intonation montante pour marquer l’interrogation oui/non, sans modifier l’ordre des termes ou ajouter un élément.</content>
                 </p>
               <p>
-                 <content>Voici des exemples de propositions principales interrogatives de type oui/non en </content><langName/>
-                 <content>:</content>
+                 <content>Voici quelques exemples de propositions principales interrogatives de type oui/non en </content><langName/>
+                 <content> :</content>
               </p>
               <example>
                  <interlinear exampleLoc="q/example"/>
@@ -41,7 +42,7 @@
                     <case element="q" attr="mainYN">
                        <caseText value="no">il n’y a ni marqueur ni changement d’ordre, seulement une différence d’intonation ou de ton ou d’autre marqueur non-syntaxique.</caseText>
                        <caseText value="noAux">le mouvement d’un auxiliaire</caseText>
-                       <caseText value="yes">il y a un ou plusieurs marqueurs interrogatifs ou complétiseurs</caseText>
+                       <caseText value="yes">il y a un ou plusieurs marqueurs interrogatifs ou conjonctions de subordination</caseText>
                     </case>
               
                     <text show="swQMainYNNoAux">
@@ -51,30 +52,30 @@
                            <caseText value="after">position finale</caseText>
                             <caseText value="unknown">_______</caseText>
                         </case>
-                       <content> de la question est obligatoire.</content>
+                       <content> de la question sont obligatoires.</content>
                     </text>
               
                     <text show="swQMainYNYes">
-                        <content> qui </content>
+                        <content> sont </content>
                         <case element="q" attr="mainYNWord">
                            <caseText value="yes">écrits comme des mots indépendants.</caseText>
-                           <caseText value="some">ou bien écrits comme des mots indépendants ou bien attachés </caseText>
-                           <caseText value="no">attachés </caseText>
+                           <caseText value="some">écrits soit comme des mots indépendants ou rattachés </caseText>
+                           <caseText value="no">rattachés </caseText>
                         </case>
                         <text show="swQMainYNWordNoOrSome">
-                           <text show="swQMainYNProclitic"><content>au début du premier mot de la question oui/non comme proclitiques.  </content></text>
-                           <text show="swQMainYNEnclitic"><content>à la fin du dernier mot de la question oui/non comme enclitiques.   </content></text>
-                           <text show="swQMainYNClitic"><content>ou bien au début du premier mot ou à la fin du dernier mot de la question oui/non comme clitiques.   </content></text>
-                           <text show="swQMainYNPrefix"><content>au verbe dans la question oui/non comme préfixes.  </content></text>
-                           <text show="swQMainYNSuffix"><content>au verbe dans la question oui/non comme suffixes.   </content></text>
-                           <text show="swQMainYNAffix"><content>au verbe dans la question oui/non, quelques-uns comme préfixes d’autres comme suffixes.   </content></text>
-                           <text show="swQMainYNCliticAffix"><content>ou bien au début ou à la fin de la question oui/non comme clitiques, ou au verbe dans la question oui/non comme affixes.  </content></text>
+                           <text show="swQMainYNProclitic"><content>au début du premier mot de la question oui/non, quel que soit ce mot, comme un proclitique de constituant.  </content></text>
+                           <text show="swQMainYNEnclitic"><content>à la fin du dernier mot de la question oui/non, quel que soit ce mot, comme un enclitique de constituant.   </content></text>
+                           <text show="swQMainYNClitic"><content>soit au début du premier mot, ou à la fin du dernier mot de la question oui/non, quel que soit ce mot, comme des clitiques de constituant.   </content></text>
+                           <text show="swQMainYNPrefix"><content>au verbe dans la question oui/non comme préfixe.  </content></text>
+                           <text show="swQMainYNSuffix"><content>au verbe dans la question oui/non comme suffixe.   </content></text>
+                           <text show="swQMainYNAffix"><content>au verbe dans la question oui/non, certains comme préfixe et d’autres comme suffixe.   </content></text>
+                           <text show="swQMainYNCliticAffix"><content>soit au début ou à la fin de la question oui/non comme un clitique de constituant, ou au verbe dans la question oui/non comme un affixe.  </content></text>
                            <text show="swQMainYNOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/mainYNCliticOther"/><content>.  </content></text>
-                           <text show="swQMainYNOtherAnd"><content>  D’autres s’attachent aussi ___</content><contentCheckBoxOther contentLoc="q/mainYNCliticOther"/>  <content>.</content></text>              
+                           <text show="swQMainYNOtherAnd"><content>  D’autres se rattachent aussi ___</content><contentCheckBoxOther contentLoc="q/mainYNCliticOther"/>  <content>.</content></text>              
                          </text>  <content></content>
                     </text>
                 </p>   
-              <p show="swQMainYNWordNoOrSomeAndClitic"><content>Les clitiques qui marquent les propositions principales interrogatives de type oui/non sont:</content></p>      
+              <p show="swQMainYNWordNoOrSomeAndClitic"><content>Voici les clitiques qui marquent les propositions principales interrogatives de type oui/non :</content></p>      
               <example show="swQMainYNWordNoOrSomeAndClitic">
                  <table border="1">
                     <headerRow>
@@ -83,11 +84,11 @@
                     </headerRow>
                     <row>
                        <col exampleLoc="q/mainYNCliticExample"/>
-                       <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                       <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                     </row>
                  </table>
               </example>     
-              <p show="swQMainYNWordNoOrSomeAndAffix"><content>Les affixes qui marquent les propositions principales interrogatives de type oui/non sont:</content></p>      
+              <p show="swQMainYNWordNoOrSomeAndAffix"><content>Voici les affixes qui marquent les propositions principales interrogatives de type oui/non :</content></p>      
               <example show="swQMainYNWordNoOrSomeAndAffix">
                  <table border="1">
                     <headerRow>
@@ -96,40 +97,40 @@
                     </headerRow>
                     <row>
                        <col exampleLoc="q/mainYNAffixExample"/>
-                       <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                       <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                     </row>
                  </table>
               </example>     
                     <p show="swQMainYNWordYesOrSome">
-                       <content> Le marqueur interrogatif ou les mots complétiseurs se mettent </content>
+                       <content> Le marqueur interrogatif ou les conjonctions de subordination se placent </content>
                        <text show="swQMainYNWordBefore"><content>avant</content></text>
                        <text show="swQMainYNWordAfter"><content>après</content></text>
-                       <text show="swQMainYNWordBoth"><content>des deux côtés du</content></text>
+                       <text show="swQMainYNWordBoth"><content>de part et d’autre du</content></text>
                        <text show="swQMainYNWordEither"><content>d’un côté ou de l’autre du</content></text>
-                       <text show="swQMainYNWordBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-                       <text show="swQMainYNWordAfterOrBoth"><content>après ou des deux côtés du</content></text>
-                       <text show="swQMainYNWordEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
+                       <text show="swQMainYNWordBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+                       <text show="swQMainYNWordAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+                       <text show="swQMainYNWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
                        <text show="swQMainYNWordNotOther"><content> le reste de la question oui/non.  </content></text>
                        <text show="swQMainYNWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/mainYNWordOther"/><content>.  </content></text>
-                       <text show="swQMainYNWordPosAndOther"><content> le reste de la question oui/non et peuvent aussi se mettre ___</content> <contentCheckBoxOther contentLoc="q/mainYNWordOther"/> <content>. </content></text><content> Les marqueurs interrogatifs oui/non sont:</content>
+                       <text show="swQMainYNWordPosAndOther"><content> le reste de la question oui/non et peuvent aussi se placer ___</content> <contentCheckBoxOther contentLoc="q/mainYNWordOther"/> <content>. </content></text><content> Voici les marqueurs interrogatifs oui/non :</content>
                 </p>
               <example show="swQMainYNWordYesOrSome">
                  <table border="1">
                     <headerRow>
-                       <headerCol>Les marqueurs de questions oui/non</headerCol>
+                       <headerCol>Marqueurs de questions oui/non</headerCol>
                        <headerCol>Glose</headerCol>
                     </headerRow>
                     <row>
                        <col exampleLoc="q/mainYNWordExample"/>
-                       <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                       <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                     </row>
                  </table>
               </example>     
             </section3>
             <section3 id="sQuesYNEmb">
-               <secTitle>Les questions oui/non comme proposition subordonnée</secTitle>
+               <secTitle>Les questions oui/non dans les propositions subordonnées</secTitle>
                 <p contentType="ctComparativeIntro">
-                   <content>Voici des exemples en français de questions oui/non dans des propositions subordonnées qui montrent la présence des marqueurs interrogatifs ou des complétiseurs: </content>
+                   <content>Voici des exemples en français de questions oui/non dans des propositions subordonnées, ils montrent la présence des marqueurs interrogatifs ou des conjonctions de subordination : </content>
                    <langData>Je me demande si elle viendra</langData>
                     <content>, </content>
                    <langData>Je saurai si elle part</langData>
@@ -138,8 +139,8 @@
                     <content>.</content>
                 </p>
                <p>
-                  <content>Voici des exemples de questions oui/non dans des propositions subordonnées en </content><langName/>
-                  <content>:</content>
+                  <content>Voici quelques exemples de questions oui/non dans des propositions subordonnées en </content><langName/>
+                  <content> :</content>
                </p>
                <example>
                   <interlinear exampleLoc="q/embYNExample"/>
@@ -147,9 +148,9 @@
                <p>
                   <content>Comme le montrent les exemples, </content>
                   <case element="q" attr="embYN">
-                     <caseText value="no"> il n’y a ni marqueur ni changement de l’ordre des mots, seulement une différence de l’intonation ou de ton ou d’autre marqueur non-syntaxique. </caseText>
+                     <caseText value="no"> il n’y a ni marqueur ni changement de l’ordre des mots, seulement une différence d’intonation ou de ton ou un marqueur non-syntaxique. </caseText>
                      <caseText value="noAux">mouvement d’un auxiliaire</caseText>
-                     <caseText value="yes">il y a un ou plusieurs marqueurs interrogatifs ou complétiseurs</caseText>
+                     <caseText value="yes">il y a un ou plusieurs marqueurs interrogatifs ou conjonctions de subordination</caseText>
                   </case>
                   
                   <text show="swQEmbYNNoAux">
@@ -166,23 +167,23 @@
                      <content> qui </content>
                      <case element="q" attr="embYNWord">
                         <caseText value="yes">sont écrits comme mots indépendants.</caseText>
-                        <caseText value="some">ou bien écrits comme mots indépendants ou s’attachent </caseText>
-                        <caseText value="no">s’attachent </caseText>
+                        <caseText value="some">soit écrits comme mots indépendants ou se rattachent </caseText>
+                        <caseText value="no">se rattachent </caseText>
                      </case>
                  
                   <text show="swQEmbYNWordNoOrSome">
-                     <text show="swQEmbYNProclitic"><content>au début du mot en tête de la question oui/non comme proclitiques.  </content></text>
-                     <text show="swQEmbYNEnclitic"><content>à la fin du mot qui termine la question oui/non comme enclitiques.    </content></text>
-                     <text show="swQEmbYNClitic"><content>ou bien au début du mot qui commence la question oui/non ou à la fin du mot qui termine la question oui/non comme clitiques.   </content></text>
+                     <text show="swQEmbYNProclitic"><content>au début du premier mot de la question oui/non, quel que soit ce mot, comme proclitiques de constituant.  </content></text>
+                     <text show="swQEmbYNEnclitic"><content>à la fin du dernier mot de la question oui/non, quel que soit ce mot, comme enclitiques de constituant.    </content></text>
+                     <text show="swQEmbYNClitic"><content>ou bien au début du premier mot de la question oui/non ou à la fin du dernier mot de la question oui/non, quel que soit ce mot, comme clitiques de constituant.   </content></text>
                      <text show="swQEmbYNPrefix"><content>au verbe dans la question oui/non comme préfixes.  </content></text>
                      <text show="swQEmbYNSuffix"><content>au verbe dans la question oui/non comme suffixes.   </content></text>
-                     <text show="swQEmbYNAffix"><content>au verbe dans la question oui/non quelques-unes comme préfixes et d’autres comme suffixes.   </content></text>
-                     <text show="swQEmbYNCliticAffix"><content>ou bien au début ou bien à la fin de la question oui/non comme clitiques, ou bien au verbe dans la question oui/non comme affixes.  </content></text>
+                     <text show="swQEmbYNAffix"><content>au verbe dans la question oui/non certains comme préfixes et d’autres comme suffixes.   </content></text>
+                     <text show="swQEmbYNCliticAffix"><content>soit au début soit à la fin de la question oui/non comme clitiques de cnstituant, soit au verbe dans la question oui/non comme affixes.  </content></text>
                      <text show="swQEmbYNOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/embYNCliticOther"/><content>.  </content></text>
-                     <text show="swQEmbYNOtherAnd"><content>  Quelques-uns s’attachent aussi ___</content><contentCheckBoxOther contentLoc="q/embYNCliticOther"/>  <content>.</content></text>              
+                     <text show="swQEmbYNOtherAnd"><content>  Certains se rattachent aussi ___</content><contentCheckBoxOther contentLoc="q/embYNCliticOther"/>  <content>.</content></text>              
                   </text>  <content></content>
                   </text></p>   
-               <p show="swQEmbYNWordNoOrSomeAndClitic"><content>Voici les clitiques qui marquent les questions oui/non dans des propositions subordonnées:</content></p>      
+               <p show="swQEmbYNWordNoOrSomeAndClitic"><content>Voici les clitiques qui marquent les questions oui/non dans des propositions subordonnées :</content></p>      
                <example show="swQEmbYNWordNoOrSomeAndClitic">
                   <table border="1">
                      <headerRow>
@@ -191,11 +192,11 @@
                      </headerRow>
                      <row>
                         <col exampleLoc="q/embYNCliticExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     
-               <p show="swQEmbYNWordNoOrSomeAndAffix"><content>Voici les affixes qui marquent les questions oui/non dans des propositions subordonnées:</content></p>      
+               <p show="swQEmbYNWordNoOrSomeAndAffix"><content>Voici les affixes qui marquent les questions oui/non dans des propositions subordonnées :</content></p>      
                <example show="swQEmbYNWordNoOrSomeAndAffix">
                   <table border="1">
                      <headerRow>
@@ -204,32 +205,32 @@
                      </headerRow>
                      <row>
                         <col exampleLoc="q/embYNAffixExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     
                <p show="swQEmbYNWordYesOrSome">
-                  <content> Le marqueur interrogatif ou les mots complétiseurs se mettent </content>
+                  <content> Le marqueur interrogatif ou les conjonctions de subordination se placent </content>
                   <text show="swQEmbYNWordBefore"><content>avant le</content></text>
                   <text show="swQEmbYNWordAfter"><content>après le</content></text>
-                  <text show="swQEmbYNWordBoth"><content>des deux côtés du</content></text>
+                  <text show="swQEmbYNWordBoth"><content>de part et d’autre du</content></text>
                   <text show="swQEmbYNWordEither"><content>d’un côté ou de l’autre du</content></text>
-                  <text show="swQEmbYNWordBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-                  <text show="swQEmbYNWordAfterOrBoth"><content>après ou des deux côtés du</content></text>
-                  <text show="swQEmbYNWordEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
-                  <text show="swQEmbYNWordNotOther"><content> reste de la question oui/non.  </content></text>
+                  <text show="swQEmbYNWordBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+                  <text show="swQEmbYNWordAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+                  <text show="swQEmbYNWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
+                  <text show="swQEmbYNWordNotOther"><content>du reste de la question oui/non.  </content></text>
                   <text show="swQEmbYNWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/embYNWordOther"/><content>.  </content></text>
-                  <text show="swQEmbYNWordPosAndOther"><content> reste de la question oui/non et peuvent aussi se mettre ___</content> <contentCheckBoxOther contentLoc="q/embYNWordOther"/> <content>. </content></text><content> Voici ces marqueurs:</content>
+                  <text show="swQEmbYNWordPosAndOther"><content>du reste de la question oui/non et peuvent aussi se placer ___</content> <contentCheckBoxOther contentLoc="q/embYNWordOther"/> <content>. </content></text><content> Voici ces marqueurs :</content>
                </p>
                <example show="swQEmbYNWordYesOrSome">
                   <table border="1">
                      <headerRow>
-                        <headerCol>Les marqueurs interrogatifs oui/non</headerCol>
+                        <headerCol>Marqueurs interrogatifs oui/non</headerCol>
                         <headerCol>Glose</headerCol>
                      </headerRow>
                      <row>
                         <col exampleLoc="q/embYNWordExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     
@@ -237,21 +238,21 @@
             </section3>
         </section2>
         <section2 id="sQuesContent">
-           <secTitle>Les questions de contenu</secTitle>
+           <secTitle>Questions d’information</secTitle>
             <p contentType="ctComparativeIntro">
-               <content>Les questions de contenu diffèrent de questions oui/non, en ce qu’elles contiennent un mot ou syntagme interrogatif.  Dans certaines langues tous ces interrogatifs, ou quelques-uns, s’expriment comme des affixes.  Les mots interrogatifs  ou bien des syntagmes ou affixes équivalents en </content>
+               <content>Les questions d’information diffèrent de questions oui/non, en ce qu’elles contiennent un mot ou syntagme interrogatif.  Dans certaines langues tous ces interrogatifs, ou quelques-uns, s’expriment comme des affixes.  Les mots interrogatifs ou les syntagmes ou affixes équivalents en </content>
                 <langName/>
-               <content> se montrent dans le tableau </content><exampleRef num="xWh"/><content>.</content>
+               <content> sont présentés dans le tableau </content><exampleRef num="xWh"/><content>.</content>
             </p>
            <p contentType="ctPracticalIntro">
-              <content>Les questions de contenu diffèrent des questions oui/non, en ce qu’elles contiennent un mot ou syntagme interrogatif. Les mots ou les syntagmes ou les affixes interrogatifs en </content>
+              <content>Les questions d’information diffèrent des questions oui/non, en ce qu’elles contiennent un mot ou syntagme interrogatif. Les mots ou les syntagmes ou les affixes interrogatifs en </content>
               <langName/>
-              <content> se montrent dans le tableau </content><exampleRef num="xWh"/><content>.</content>
+              <content> sont présentés dans le tableau </content><exampleRef num="xWh"/><content>.</content>
            </p>
            <example num="xWh">
                 <table border="1">
                     <caption>
-                       <content>Interrogatifs utilisés dans les questions de contenu</content>
+                       <content>Interrogatifs utilisés dans les questions d’information</content>
                     </caption>
                     <headerRow>
                        <headerCol>Morphèmes</headerCol>
@@ -266,7 +267,7 @@
                     <row>
                         <col exampleLoc="q/what"/>
                         <col>
-                           <content>quoi</content>
+                           <content>que (qu’)</content>
                         </col>
                     </row>
                     <row>
@@ -308,7 +309,7 @@
                     <row>
                         <col exampleLoc="q/whose"/>
                         <col>
-                           <content>de qui / à qui</content>
+                           <content>à qui</content>
                         </col>
                     </row>
                     <row>
@@ -320,39 +321,39 @@
                 </table>
             </example>
             <p contentType="ctComparativeIntro">
-               <content>Selon l’ordre fondamental des mots de la langue, on peut former les questions de contenu avec - ou sans – un syntagme interrogatif en tête. Les langues à tête finale  (SOV, OVS, et OSV) évitent d’habitude le déplacement du syntagme interrogatif dans les questions de contenu, tandis que pour les langues à tête initiale (SVO, VOS, et VSO) le syntagme interrogatif est habituellement en position initiale.</content></p>
-           <p contentType="ctComparativeIntro"><content>Pour les langues où les interrogatifs ne prennent pas la position initiale, la structure du syntagme est la même que pour une question oui/non: le marqueur ou l’auxiliaire interrogatif se met en position du complétiseur; ou bien elle ressemble à celle d’une phrase normale. Dans les deux cas, le syntagme interrogatif se met dans sa position habituelle de l’argument. Beaucoup de langues SOV permettent que le syntagme interrogatif se place directement avant le verbe. 
+               <content>Selon l’ordre de base des mots de la langue, on peut former les questions d’information avec ou sans antéposition d’un syntagme interrogatif. Dans les langues à tête finale (SOV, OVS, et OSV), on évite généralement le déplacement du syntagme interrogatif dans les questions d’information, tandis que pour les langues à tête initiale (SVO, VOS, et VSO) le syntagme interrogatif est généralement déplacé en position initiale.</content></p>
+           <p contentType="ctComparativeIntro"><content>Pour les langues où les interrogatifs sont pas antéposés, la structure du syntagme est soit la même que pour une question oui/non : le marqueur ou l’auxiliaire interrogatif se met dans la position de la conjonction de subordination ; ou la même que celle d’une phrase normale. Dans les deux cas, le syntagme interrogatif se met dans la position normale de l’argument. Beaucoup de langues SOV permettent que le syntagme interrogatif soit déplacé immédiatement avant le verbe. 
 </content>
             </p>
             <p>
-               <content>Et dans les propositions principales interrogatives et dans les questions de contenu subordonnées en </content>
+               <content>Dans les propositions principales interrogatives tout comme dans les questions d’information subordonnées en </content>
                 <langName/>
                <content>, le syntagme interrogatif </content>
                 <case element="q" attr="contFront">
-                   <caseText value="no">ne se déplace pas ; il reste en tête; il maintient sa place habituelle.</caseText>
-                   <caseText value="after">peut maintenir sa place ou se déplacer jusque devant le verbe.</caseText>
-                   <caseText value="before">se déplace à la position initiale de la proposition.</caseText>
+                   <caseText value="no">n’est pas antéposé ; il reste dans sa position ; il peut rester dans sa position habituelle.</caseText>
+                   <caseText value="after">peut rester dans sa position ou être déplacé dans la position immédiatement avant le verbe.</caseText>
+                   <caseText value="before">est déplace dans la position initiale de la proposition.</caseText>
                     <caseText value="unknown">_______.</caseText>
                 </case>
          </p>
             <section3 id="sQuesContentMain">
-                <secTitle>Les questions de contenu comme la proposition principale</secTitle>
+                <secTitle>Les questions d’information propositions principales</secTitle>
                 <p contentType="ctComparativeIntro">
-                   <content>En français et en anglais, pour les propositions principales interrogatives de contenu il faut un syntagme interrogatif initial, suivi directement d’un auxiliaire -  quand la question s’agit d’autre chose que le sujet. Voici quelques exemples en français de ces propositions principales interrogatives de contenu: </content>
-                   <langData>Quel garçon a mangé la banane?</langData>
+                   <content>En français,  pour les questions d’information qui sont proposition principale, le syntagme interrogatif doit être antéposé. Lorsque la question ne porte pas sur le sujet, le verbe est en seconde position, suivi par le sujet. Il peut y avoir d’autres changements dans la structure, mais le syntagme interrogatif est toujours en première position. Voici quelques exemples en français de ces questions d’information propositions principales : </content>
+                   <langData>Quel garçon a mangé la banane ? </langData>
                     <content>, </content>
-                   <langData>Qui a pu manger la banane?</langData>
+                   <langData>Qui a pu manger la banane ? </langData>
                     <content>, </content>
-                   <langData>Qu’est-ce que le garçon a mangé?</langData>
+                   <langData>Qu’est-ce que le garçon a mangé ? </langData>
                     <content>, </content>
-                   <langData>Quand est-ce qu’elle viendra?</langData>
+                   <langData>Quand est-ce qu’elle viendra ? </langData>
                     <content> et </content>
-                   <langData>Où est le chef?</langData>
+                   <langData>Où est le chef ?</langData>
                     <content>&#x20;</content>
                 </p>
                <p>
-                  <content>Voici des exemples de  propositions principales interrogatives de contenu en </content><langName/>
-                  <content>:</content>
+                  <content>Voici quelques exemples de questions d’information propositions principales en </content><langName/>
+                  <content> :</content>
                </p>
                <example>
                   <interlinear exampleLoc="q/contentExample"/>
@@ -360,20 +361,20 @@
                <p>
                   <content>Comme le montrent les exemples, </content>
                     <case element="q" attr="mainCont">
-                       <caseText value="no">il n’y a ni  marqueur ni déplacement en tête de l’auxiliaire,</caseText>
-                       <caseText value="noAux">un déplacement de l’auxiliaire</caseText>
-                       <caseText value="yes">il y a au moins un marqueur interrogatif ou complétiseur dans les propositions principales interrogatives de contenu. </caseText>
+                       <caseText value="no">il n’y a ni marqueur ni antéposition de l’auxiliaire,</caseText>
+                       <caseText value="noAux">de déplacement de l’auxiliaire</caseText>
+                       <caseText value="yes">il y a au moins un marqueur interrogatif ou une conjonction de subordination dans les questions d’information propositions principales. </caseText>
                     </case>
                     <content>&#x20;</content>
                     <text show="swQMainContNo">
                         <content> simplement </content>
                         <case element="q" attr="contFront">
                            <caseText value="no">une différence de</caseText>
-                           <caseText value="after">de déplacement facultatif d’un syntagme interrogatif et peut-être une différence de</caseText>
-                           <caseText value="before">de la mise en tête d’un syntagme interrogatif et peut-être une différence de</caseText>
-                           <caseText value="unknown">_______ d’un syntagme interrogatif et peut-être une différence de</caseText>
+                           <caseText value="after">un déplacement facultatif d’un syntagme interrogatif et peut-être une différence dans</caseText>
+                           <caseText value="before">l’antéposition d’un syntagme interrogatif et peut-être une différence dans</caseText>
+                           <caseText value="unknown">_______ d’un syntagme interrogatif et peut-être une différence dans</caseText>
                         </case>
-                       <content> intonation ou de marqueur non-syntaxique.</content>
+                       <content> l’intonation ou le ton ou un marqueur non-syntaxique.</content>
                     </text>
                   <text show="swQMainContNoAux">
                         <content/>
@@ -384,47 +385,47 @@
                         </case>
                         <content> de la question est </content>
                         <case element="q" attr="mainContAuxRequired">
-                           <caseText value="no">permis mais pas obligatoire</caseText>
+                           <caseText value="no">admis mais pas obligatoire</caseText>
                             <caseText value="yes">obligatoire</caseText>
-                           <caseText value="object">obligatoirement en position initiale, sauf quand le sujet est questionné</caseText>
+                           <caseText value="object">obligatoirement antéposé, sauf quand l’interrogation porte sur le sujet</caseText>
                         </case>
                         <case element="q" attr="contFront">
                             <caseText value="no">.</caseText>
                             <caseText value="after">.</caseText>
-                           <caseText value="before"> en plus du déplacement en position initiale d’un syntagme interrogatif.</caseText>
+                           <caseText value="before"> en plus de l’antéposition  d’un syntagme interrogatif.</caseText>
                            <caseText value="unknown">.</caseText>
                         </case>
                   </text>
                  <text show="swQMainContYes">
-                    <text show="swQMainContWordSome"><content> Quelques-uns des marqueurs interrogatifs ou des complémentiseurs sont écrits comme des mots indépendants mais d’autres s’attachent </content></text>
-                    <text show="swQMainContWordYes"><content> Les marqueurs interrogatifs ou des complétiseurs sont écrits comme des mots indépendants. </content></text>
-                    <text show="swQMainContWordNo"><content> Les marqueurs interrogatifs ou des complétiseurs s’attachent </content></text>
+                    <text show="swQMainContWordSome"><content> Certains des marqueurs interrogatifs ou des conjonctions de subordination sont écrits comme des mots indépendants mais d’autres se rattachent </content></text>
+                    <text show="swQMainContWordYes"><content> Les marqueurs interrogatifs ou des conjonctions de subordination sont écrits comme des mots indépendants. </content></text>
+                    <text show="swQMainContWordNo"><content> Les marqueurs interrogatifs ou des conjonctions de subordination se rattachent </content></text>
                       <text show="swQMainContWordNoOrSome">
-                         <text show="swQMainContProclitic"><content>au début du mot qui commence la question comme proclitiques.</content></text>
-                         <text show="swQMainContProcliticAndBetweenProclitic"><content>au début du mot qui commence la question ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question comme proclitiques.</content></text>
-                         <text show="swQMainContProcliticAndBetweenEnclitic"><content>au début du mot qui commence la question comme proclitiques ou à la fin du dernier mot du syntagme interrogatif initial comme enclitiques, avant le reste de la question.</content></text>
-                         <text show="swQMainContProcliticAndBetweenBoth"><content>au début du mot qui commence la question ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question comme proclitiques ou à la fin du dernier mot du syntagme interrogatif comme enclitiques, avant le reste de la question.</content></text>
-                         <text show="swQMainContBetweenProclitic"><content>après le syntagme interrogatif  initial au début du mot qui commence le reste de la question comme proclitiques.</content></text>
-                         <text show="swQMainContEnclitic"><content>à la fin du mot qui termine la question comme enclitiques.</content></text>
-                         <text show="swQMainContEncliticAndBetweenProclitic"><content>à la fin du mot qui termine la question comme enclitiques ou après le syntagme interrogatif initial au début du mot qui commence la question comme proclitiques.</content></text>
-                         <text show="swQMainContEncliticAndBetweenEnclitic"><content>à la fin du mot qui termine la question ou à la fin du dernier mot du syntagme interrogatif initial, avant le reste de la question, comme enclitiques.</content></text>
-                         <text show="swQMainContEncliticAndBetweenBoth"><content>à la fin du mot qui termine la question ou à la fin du dernier mot du syntagme interrogatif initial, avant le reste de la question, comme enclitiques ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question comme proclitiques.</content></text>
-                         <text show="swQMainContBetweenEnclitic"><content>à la fin du dernier mot du syntagme interrogatif initial comme enclitiques, avant le reste de la question.</content></text>
-                         <text show="swQMainContBetweenClitic"><content>après le syntagme interrogatif initial au début du mot qui commence le reste de la question comme proclitiques ou à la fin du dernier mot du syntagme interrogatif initial comme enclitiques, avant le reste de la question.</content></text>
-                         <text show="swQMainContClitic"><content>ou bien au début du mot qui commence la question, ou bien à la fin du mot qui termine la question comme clitiques.</content></text>
-                         <text show="swQMainContCliticAndBetweenProclitic"><content>ou bien au début du mot qui commence la question ou bien à la fin du mot qui termine la question ou bien après le syntagme interrogatif initial au début du mot qui commence le reste de la question comme clitiques.</content></text>
-                         <text show="swQMainContCliticAndBetweenEnclitic"><content>ou bien au début du mot qui commence la question ou bien à la fin du mot qui termine la question ou bien à la fin du dernier mot du syntagme interrogatif initial, avant le reste de la question, comme clitiques.</content></text>
-                         <text show="swQMainContCliticAll"><content>ou bien au début du mot qui commence la question, ou bien à la fin du mot qui termine la question ou bien après le syntagme interrogatif initial au début du mot qui commence le reste de la question ou bien à la fin du dernier mot du syntagme interrogatif initial, avant le reste de la question, comme clitiques.</content></text>
+                         <text show="swQMainContProclitic"><content>au début du premier mot de la question, quel que soit ce mot, comme proclitique de constituant.</content></text>
+                         <text show="swQMainContProcliticAndBetweenProclitic"><content>au début du premier mot de la question ou après le syntagme interrogatif antéposé au début du premier mot du reste de la question comme proclitiques de constituant.</content></text>
+                         <text show="swQMainContProcliticAndBetweenEnclitic"><content>au début du premier mot de la question comme proclitique de constituant ou à la fin du dernier mot du syntagme interrogatif antéposé comme enclitiques de constituant, quels que soient ces mots, avant le reste de la question.</content></text>
+                         <text show="swQMainContProcliticAndBetweenBoth"><content>au début du premier mot de la question, quel que soit ce mot, ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question comme proclitiques ou à la fin du dernier mot du syntagme interrogatif comme enclitiques, quels que soient ces mots, avant le reste de la question.</content></text>
+                         <text show="swQMainContBetweenProclitic"><content>au début du premier mot de la question, quel que soit ce mot, ou après le syntagme interrogatif antéposé.</content></text>
+                         <text show="swQMainContEnclitic"><content>à la fin du mot qui termine la question, quel que soit ce mot, comme enclitiques de constituant.</content></text>
+                         <text show="swQMainContEncliticAndBetweenProclitic"><content>soit à la fin du mot qui termine la question, quel que soit ce mot, comme enclitiques ou après le syntagme interrogatif initial au début du premier mot de la question comme proclitiques de constituant.</content></text>
+                         <text show="swQMainContEncliticAndBetweenEnclitic"><content>à la fin du dernier mot de la question ou à la fin du dernier mot du syntagme interrogatif antéposé, quels que soient ces mots, avant le reste de la question, comme enclitiques de constituant.</content></text>
+                         <text show="swQMainContEncliticAndBetweenBoth"><content>à la fin du dernier mot de la question ou à la fin du dernier mot du syntagme interrogatif antéposé, quels que soient ces mots, avant le reste de la question, comme enclitiques de constituant, ou après le syntagme interrogatif antéposé au début du premier mot du reste de la question comme proclitiques de constituant.</content></text>
+                         <text show="swQMainContBetweenEnclitic"><content>à la fin du dernier mot du syntagme interrogatif antéposé comme enclitiques de constituant, avant le reste de la question.</content></text>
+                         <text show="swQMainContBetweenClitic"><content>après le syntagme interrogatif antéposé au début du premier mot du reste de la question, quel que soit ce mot, comme proclitiques de constituant, ou à la fin du dernier mot du syntagme interrogatif antéposé comme enclitiques de constituant, avant le reste de la question.</content></text>
+                         <text show="swQMainContClitic"><content>soit au début du premier mot de la question, quel que soit ce mot, comme proclitique de constituant, ou à la fin du mot qui termine la question, quel que soit ce mot, comme enclitiques de constituant.</content></text>
+                         <text show="swQMainContCliticAndBetweenProclitic"><content>soit au début du premier mot de la question, ou à la fin du dernier mot de la question, quels que soient ces mots, comme clitiques de constituant.</content></text>
+                         <text show="swQMainContCliticAndBetweenEnclitic"><content>soit au début du premier mot de la question, ou bien à la fin du dernier mot de la question ou à la fin du dernier mot de la question à la fin du syntagme interrogatif antéposé, quels que soient ces mots, avant le reste de la question, comme clitiques de constituant.</content></text>
+                         <text show="swQMainContCliticAll"><content>soit au début du premier mot de la question ou à la fin du dernier mot de la question ou après le syntagme interrogatif antéposé au début du premier mot du reste de la question ou à la fin du dernier mot  de la question à la fin du dernier mot du syntagme interrogatif antéposé, avant le reste de la question, comme clitiques de constituant.</content></text>
                          <text show="swQMainContPrefix"><content>au verbe dans la question comme préfixes.</content></text>
                          <text show="swQMainContSuffix"><content>au verbe dans la question comme suffixes.</content></text>
-                         <text show="swQMainContAffix"><content>au verbe de la question, quelques-uns comme préfixes, d’autres comme suffixes.</content></text>
-                         <text show="swQMainContCliticAffix"><content>ou bien au début ou à la fin de la question comme clitiques, ou bien au verbe de la question comme affixes.</content></text>
+                         <text show="swQMainContAffix"><content>au verbe de la question, certains comme préfixes, d’autres comme suffixes.</content></text>
+                         <text show="swQMainContCliticAffix"><content>soit au début ou à la fin de la question comme clitiques de constituant, ou au verbe de la question comme affixes.</content></text>
                          <text show="swQMainContOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/mainYNCliticOther"/><content>.  </content></text>
-                         <text show="swQMainContOtherAnd"><content>  Quelques-uns aussi s’attachent ___</content><contentCheckBoxOther contentLoc="q/mainYNCliticOther"/>  <content>.</content></text>              
+                         <text show="swQMainContOtherAnd"><content>  Certains aussi se rattachent ___</content><contentCheckBoxOther contentLoc="q/mainYNCliticOther"/>  <content>.</content></text>              
                       </text>
                  </text>
                </p>
-               <p show="swQMainContWordNoOrSomeAndClitic"><content>Voici les clitiques qui marquent les propositions principales interrogatives:</content></p>      
+               <p show="swQMainContWordNoOrSomeAndClitic"><content>Voici les clitiques qui marquent les propositions principales interrogatives :</content></p>      
                <example show="swQMainContWordNoOrSomeAndClitic">
                   <table border="1">
                      <headerRow>
@@ -433,11 +434,11 @@
                      </headerRow>
                      <row>
                         <col exampleLoc="q/mainContCliticExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     
-               <p show="swQMainContWordNoOrSomeAndAffix"><content>Voici les affixes qui marquent les propositions principales interrogatives:</content></p>      
+               <p show="swQMainContWordNoOrSomeAndAffix"><content>Voici les affixes qui marquent les propositions principales interrogatives :</content></p>      
                <example show="swQMainContWordNoOrSomeAndAffix">
                   <table border="1">
                      <headerRow>
@@ -446,46 +447,46 @@
                      </headerRow>
                      <row>
                         <col exampleLoc="q/mainContAffixExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     
                
                 <p show="swQMainContWordYesOrSome">
                    <text show="swNotVSO">
-                      <content>  Les marqueurs interrogatifs ou les complétiseurs </content><text show="swQMainContWordSome"><content>qui sont des mots indépendants </content></text>
+                      <content>  Les marqueurs interrogatifs ou les conjonctions de subordination </content><text show="swQMainContWordSome"><content>qui sont des mots indépendants </content></text>
                       <content>se mettent </content>
                    <text show="swQMainContWordBefore"><content>avant le</content></text>
                       <text show="swQMainContWordAfter"><content>après le</content></text>
-                      <text show="swQMainContWordBoth"><content>des deux côtés du </content></text>
+                      <text show="swQMainContWordBoth"><content>de part et d’autre du </content></text>
                       <text show="swQMainContWordEither"><content>d’un côté ou de l’autre du</content></text>
-                      <text show="swQMainContWordBeforeOrBoth"><content>avant ou des deux côtés du </content></text>
-                      <text show="swQMainContWordAfterOrBoth"><content>après ou des deux côtés du </content></text>
-                      <text show="swQMainContWordEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du </content></text>
+                      <text show="swQMainContWordBeforeOrBoth"><content>avant ou de part et d’autre du </content></text>
+                      <text show="swQMainContWordAfterOrBoth"><content>après ou de part et d’autre du </content></text>
+                      <text show="swQMainContWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du </content></text>
                    <text show="swQMainContWordNotOther"><content> reste de le question.  </content></text>
                    <text show="swQMainContWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/mainContWordOther"/><content>.  </content></text>
                       <text show="swQMainContWordPosAndOther"><content> reste de la question et peut aussi se trouver ___</content> <contentCheckBoxOther contentLoc="q/mainContWordOther"/> <content>. </content></text>
                   </text>
                   <text show="swVSO">
-                     <content> Les marqueurs interrogatifs ou complétiseurs </content><text show="swQMainContWordSome"><content>qui sont des mots indépendants </content></text>
+                     <content> Les marqueurs interrogatifs ou conjonctions de subordination </content><text show="swQMainContWordSome"><content>qui sont des mots indépendants </content></text>
                      <content>se mettent </content>
-                     <text show="swQMainContVSOBeforeWh"><content>avant un syntagme interrogatif initial.</content></text>
-                     <text show="swQMainContVSOAfterWh"><content>directement après un syntagme interrogatif initial.</content></text>
+                     <text show="swQMainContVSOBeforeWh"><content>avant un syntagme interrogatif antéposé.</content></text>
+                     <text show="swQMainContVSOAfterWh"><content>immédiatement après un syntagme interrogatif antéposé.</content></text>
                      <text show="swQMainContVSOEnd"><content>à la fin de la question.</content></text>
-                     <text show="swQMainContVSOBeforeWhOrAfter"><content>ou bien avant un syntagme interrogatif initial ou bien directement après.</content></text>
-                     <text show="swQMainContVSOBeforeWhOrEnd"><content>ou bien avant un syntagme interrogatif initial ou à la fin de la question.</content></text>
-                     <text show="swQMainContVSOAfterWhOrEnd"><content>ou bien directement après un syntagme interrogatif initial ou à la fin de la question.</content></text>
-                     <text show="swQMainContVSOBeforeWhOrAfterOrEnd"><content>ou bien avant un syntagme interrogatif initial ou directement après, ou bien à la fin de la question.</content></text>
+                     <text show="swQMainContVSOBeforeWhOrAfter"><content>soit avant un syntagme interrogatif antéposé ou bien immédiatement après.</content></text>
+                     <text show="swQMainContVSOBeforeWhOrEnd"><content>soit avant un syntagme interrogatif antéposé ou à la fin de la question.</content></text>
+                     <text show="swQMainContVSOAfterWhOrEnd"><content>soit immédiatement après un syntagme interrogatif antéposé ou à la fin de la question.</content></text>
+                     <text show="swQMainContVSOBeforeWhOrAfterOrEnd"><content>soit avant un syntagme interrogatif antéposé ou immédiatement après, ou à la fin de la question.</content></text>
                      <text show="swQMainContVSOOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/mainContVSOOther"/><content>.</content></text>
-                     <text show="swQMainContVSOPosAndOther"><content>  Quelques-uns peuvent aussi se mettre ___</content><contentCheckBoxOther contentLoc="q/mainContVSOOther"/><content>.</content></text>
+                     <text show="swQMainContVSOPosAndOther"><content>  Certains peuvent aussi se placer ___</content><contentCheckBoxOther contentLoc="q/mainContVSOOther"/><content>.</content></text>
                   </text>
-                   <content> Un marqueur interrogatif ou un complétiseur est </content>
+                   <content> Un marqueur interrogatif ou une conjonction de subordination sont </content>
                         <case element="q" attr="mainContRequired">
-                           <caseText value="yes">obligatoire dans toute question de contenu.</caseText>
-                           <caseText value="no">facultatif dans les questions de contenu.</caseText>
+                           <caseText value="yes">obligatoires dans toute question d’information.</caseText>
+                           <caseText value="no">facultatifs dans les questions d’information.</caseText>
                         </case>
                         <content></content>
-                   <text show="swQMainContRequiredSpecial"><content>absent quand ___</content><contentCheckBoxOther contentLoc="q/mainContSpecialConditions"/><content>.</content></text><content> Les marqueurs interrogatifs sont:</content>
+                   <text show="swQMainContRequiredSpecial"><content>omis quand ___</content><contentCheckBoxOther contentLoc="q/mainContSpecialConditions"/><content>.</content></text><content> Voici les marqueurs interrogatifs :</content>
                </p>
             
                <example show="swQMainContWordYesOrSome">
@@ -496,7 +497,7 @@
                      </headerRow>
                      <row>
                         <col exampleLoc="q/mainContWordExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     
@@ -504,18 +505,18 @@
                
             </section3>
             <section3 id="sQuesContentEmb">
-               <secTitle>Les questions de contenu comme proposition subordonnée</secTitle>
+               <secTitle>Les propositions interrogatives d’information subordonnées</secTitle>
                 <p contentType="ctComparativeIntro">
-                   <content>En français et en anglais, dans les propositions interrogatives subordonnées, un syntagme interrogatif doit se mettre au début de la proposition subordonnée. Cependant, contrairement aux propositions principales interrogatives de contenu, il n’y a pas d’auxiliaire initial. Voici des exemples en français de questions subordonnées de contenu: </content>
+                   <content>En français, dans les propositions interrogatives subordonnées, un syntagme interrogatif doit se mettre au début de la proposition subordonnée.  Voici des exemples de questions d’information subordonées en français : </content>
                    <langData>Je sais qui a mangé la banane</langData>
                     <content>, </content>
                    <langData>Je me demande quand elle viendra</langData>
                     <content> et </content>
-                   <langData>Je demanderai de quoi le garçon aura besoin pour l’école</langData>
+                   <langData>Je demanderai ce que le garçon a touché</langData>
                     <content>.</content>
                 </p>
                <p>
-                  <content>Voici des exemples de propositions interrogatives subordonnées de contenu en </content><langName/>
+                  <content>Voici quelques exemples de propositions interrogatives d’information subordonées en </content><langName/>
                   <content>:</content>
                </p>
                <example>
@@ -524,20 +525,20 @@
                <p>
                   <content>Comme le montrent ces exemples, </content>
                   <case element="q" attr="embCont">
-                     <caseText value="no">il n’y a ni marqueur ni auxiliaire initial, </caseText>
-                     <caseText value="noAux">un déplacement de l’auxiliaire</caseText>
-                     <caseText value="yes">il y a au moins un marqueur interrogatif ou complétiseur dans les propositions interrogatives subordonnées de contenu.  </caseText>
+                     <caseText value="no">il n’y a ni marqueur ni auxiliaire antéposé, </caseText>
+                     <caseText value="noAux">ni déplacement de l’auxiliaire</caseText>
+                     <caseText value="yes">il y a au moins un marqueur interrogatif ou une conjonction de subordination dans les propositions interrogatives d’information subordonées.  </caseText>
                   </case>
                   <content>&#x20;</content>
                   <text show="swQEmbContNo">
                      <content> seulement </content>
                      <case element="q" attr="contFront">
-                        <caseText value="no">une différence de</caseText>
-                        <caseText value="after">un déplacement facultatif d’un syntagme interrogatif et peut-être une différence de</caseText>
-                        <caseText value="before">un syntagme interrogatif initial et peut-être une différence de</caseText>
-                        <caseText value="unknown">_______ d’un syntagme interrogatif et peut-être une différence de</caseText>
+                        <caseText value="no">une différence</caseText>
+                        <caseText value="after">le déplacement facultatif d’un syntagme interrogatif et peut-être une différence</caseText>
+                        <caseText value="before">un syntagme interrogatif antéposé et peut-être une différence</caseText>
+                        <caseText value="unknown">_______ d’un syntagme interrogatif et peut-être une différence</caseText>
                      </case>
-                     <content> l’intonation ou le ton ou un autre marqueur non-syntaxique.</content>
+                     <content> d’intonation ou de ton ou d’un autre marqueur non-syntaxique.</content>
                   </text>
                   <text show="swQEmbContNoAux">
                      <content/>
@@ -548,60 +549,60 @@
                      </case>
                      <content> de la question subordonnée est </content>
                      <case element="q" attr="embContAuxRequired">
-                        <caseText value="no">permis mais pas obligatoire</caseText>
+                        <caseText value="no">admis mais pas obligatoire</caseText>
                         <caseText value="yes">obligatoire</caseText>
-                        <caseText value="object">obligatoirement en tête, sauf quand le sujet est interrogé</caseText>
+                        <caseText value="object">obligatoirement antéposé, sauf quand l’interrogation porte sur le sujet</caseText>
                      </case>
                      <case element="q" attr="contFront">
                         <caseText value="no">.</caseText>
                         <caseText value="after">.</caseText>
-                        <caseText value="before"> outre la mise en tête d’un syntagme interrogatif.</caseText>
+                        <caseText value="before"> outre l’antéposition d’un syntagme interrogatif.</caseText>
                         <caseText value="unknown">.</caseText>
                      </case>
                   </text>
                   <text show="swQEmbContYes">
-                     <text show="swQEmbContWordSome"><content> Quelques-uns des marqueurs interrogatifs ou complétiseurs sont des mots indépendants mais d’autres s’attachent </content></text>
-                     <text show="swQEmbContWordYes"><content> Les marqueurs interrogatifs ou complétiseurs sont écrits comme des mots indépendants. </content></text>
-                     <text show="swQEmbContWordNo"><content> Les marqueurs interrogatifs ou complétiseurs s’attachent </content></text>
+                     <text show="swQEmbContWordSome"><content> Certains des marqueurs interrogatifs ou conjonctions de subordination sont des mots indépendants mais d’autres se rattachent </content></text>
+                     <text show="swQEmbContWordYes"><content> Les marqueurs interrogatifs ou conjonctions de subordination sont écrits comme des mots indépendants. </content></text>
+                     <text show="swQEmbContWordNo"><content> Les marqueurs interrogatifs ou conjonctions de subordination se rattachent </content></text>
                      <text show="swQEmbContWordNoOrSome">
-                        <text show="swQEmbContProclitic"><content>au début du mot qui commence la question subordonnée comme proclitiques.  </content></text>
-                        <text show="swQEmbContProcliticAndBetweenProclitic"><content>au début du mot qui commence la question subordonnée ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question subordonnée comme proclitiques.  </content></text>
-                        <text show="swQEmbContProcliticAndBetweenEnclitic"><content>au début du mot qui commence la question subordonnée comme proclitiques ou à la fin du dernier mot du syntagme interrogatif initial comme enclitiques, avant le reste de la question subordonnée.    </content></text>
-                        <text show="swQEmbContProcliticAndBetweenBoth"><content>au début du mot qui commence la question subordonnée comme proclitiques ou à la fin du dernier mot du syntagme interrogatif initial comme proclitiques ou à la fin du dernier mot du syntagme interrogatif initial comme enclitiques, avant le reste de la question subordonnée.    </content></text>
-                        <text show="swQEmbContBetweenProclitic"><content>après le syntagme interrogatif initial au début du mot qui commence le reste de la question subordonnée comme proclitiques.  </content></text>
-                        <text show="swQEmbContEnclitic"><content>à la fin du mot qui termine la question subordonnée comme enclitiques.    </content></text>
-                        <text show="swQEmbContEncliticAndBetweenProclitic"><content>à la fin du mot qui termine la question subordonnée ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question subordonnée comme proclitiques.  </content></text>
-                        <text show="swQEmbContEncliticAndBetweenEnclitic"><content>a la fin du mot qui termine la question subordonnée ou à la fin du dernier mot du syntagme interrogatif initial. avant le reste de la question subordonnée, comme enclitiques.    </content></text>
-                        <text show="swQEmbContEncliticAndBetweenBoth"><content>à la fin du mot qui termine la question subordonnée ou à la fin du dernier mot du syntagme interrogatif initial, avant le reste de la question subordonnée comme enclitiques ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question subordonnée comme proclitiques. </content></text>
-                        <text show="swQEmbContBetweenEnclitic"><content>à la fin du dernier mot du syntagme interrogatif initial comme enclitiques, avant le reste de la question subordonnée.    </content></text>
-                        <text show="swQEmbContBetweenClitic"><content>après le syntagme interrogatif initial au début du mot qui commence le reste de la question subordonnée comme proclitiques, ou à la fin du dernier mot du syntagme interrogatif initial comme enclitiques, avant le reste de la question subordonnée.    </content></text>
-                        <text show="swQEmbContClitic"><content>. ou bien au début du mot qui commence la question subordonnée ou à la fin du mot qui termine la question subordonnée comme clitiques.   </content></text>
-                        <text show="swQEmbContCliticAndBetweenProclitic"><content>ou bien au début du mot qui commence la question subordonnée ou à la fin du mot qui termine la question subordonnée comme clitiques ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question subordonnée comme proclitiques.  </content></text>
-                        <text show="swQEmbContCliticAndBetweenEnclitic"><content>ou bien au début du mot qui commence la question subordonnée ou à la fin du mot qui termine la question subordonnée comme clitiques ou bien à la fin du mot qui termine la question subordonnée à la fin du dernier mot du syntagme interrogatif initial, avant le reste de la question subordonnée comme enclitiques.    </content></text>
-                        <text show="swQEmbContCliticAll"><content>ou bien au début du mot qui commence la question subordonnée ou à la fin du mot qui termine la question subordonnée comme clitiques ou après le syntagme interrogatif initial au début du mot qui commence le reste de la question subordonnée comme proclitiques. ou à la fin du mot qui termine la question subordonnée à la fin du dernier mot du syntagme interrogatif initial, avant le reste de la question subordonnée, comme enclitiques.   </content></text>
+                        <text show="swQEmbContProclitic"><content>au début du premier mot de la question subordonnée, quel que soit ce mot, comme proclitiques de constituant.  </content></text>
+                        <text show="swQEmbContProcliticAndBetweenProclitic"><content>au début du premier mot de la question subordonnée ou après le syntagme interrogatif antéposé au début du premier mot du reste de la question subordonnée, quels que soient ces mots, comme proclitiques de constituant.  </content></text>
+                        <text show="swQEmbContProcliticAndBetweenEnclitic"><content>au début du premier mot de la question subordonnée, quel qu’il soit, comme proclitiques de constituant ou à la fin du dernier mot du syntagme interrogatif antéposé, quel que soit ce mot, comme enclitiques de constituant, avant le reste de la question subordonnée.    </content></text>
+                        <text show="swQEmbContProcliticAndBetweenBoth"><content>au début du premier mot de la question subordonnée, quel que soit ce mot, comme proclitiques de constituant ou à la fin du dernier mot du syntagme interrogatif antéposé comme proclitiques de constituant ou à la fin du dernier mot du syntagme interrogatif antéposé comme enclitiques de constituant, avant le reste de la question subordonnée.    </content></text>
+                        <text show="swQEmbContBetweenProclitic"><content>après le syntagme interrogatif antéposé au début du premier mot du reste de la question subordonnée comme proclitiques de constituant.  </content></text>
+                        <text show="swQEmbContEnclitic"><content>à la fin du dernier mot de la question subordonnée comme enclitiques de constituant.    </content></text>
+                        <text show="swQEmbContEncliticAndBetweenProclitic"><content>à la fin du dernier mot de la question subordonnée ou après le syntagme interrogatif antéposé au début du mot qui commence le reste de la question subordonnée comme proclitiques de constituant.  </content></text>
+                        <text show="swQEmbContEncliticAndBetweenEnclitic"><content>a la fin du dernier mot de la question subordonnée ou à la fin du dernier mot du syntagme interrogatif antéposé avant le reste de la question subordonée, comme enclitiques de constituant.    </content></text>
+                        <text show="swQEmbContEncliticAndBetweenBoth"><content>à la fin du dernier mot du syntagme interrogatif subordonnée ou à la fin du dernier mot du syntagme interrogatif antéposé, avant le reste de la question subordonnée comme enclitiques de constituant, ou après le syntagme interrogatif antéposé au début du mot qui commence le reste de la question subordonnée, comme proclitiques de constituant. </content></text>
+                        <text show="swQEmbContBetweenEnclitic"><content>à la fin du dernier mot du syntagme interrogatif antéposé comme enclitiques de constituant, avant le reste de la question subordonnée.    </content></text>
+                        <text show="swQEmbContBetweenClitic"><content>après le syntagme interrogatif antéposé au début du premier mot du reste de la question subordonnée comme proclitiques de constituant, ou à la fin du dernier mot du syntagme interrogatif antéposé comme enclitiques de constituant, quels que soient ces mots, avant le reste de la question subordonnée.    </content></text>
+                        <text show="swQEmbContClitic"><content>soit au début du premier mot de la question subordonnée ou à la fin du dermier mot de la question subordonnée, quels que soient ces mots, comme clitiques de constituant.   </content></text>
+                        <text show="swQEmbContCliticAndBetweenProclitic"><content>soit au début du premier mot de la question subordonnée ou à la fin du dernier mot de la question subordonnée, quels que soient ces mots, comme clitiques de constituant, ou après le syntagme interrogatif antéposé au début du premier mot du reste de la question subordonnée, quel que soit ce mot, comme proclitiques de constituant.  </content></text>
+                        <text show="swQEmbContCliticAndBetweenEnclitic"><content>soit au début du premier mot de la question subordonnée, quels que soient ces mots, comme clitiques de constituant, ou à la fin du dernier mot de la question subordonnée, quel que soit ce mot, à la fin du dernier mot du syntagme interrogatif antéposé, avant le reste de la question subordonnée comme enclitiques de constituant.    </content></text>
+                        <text show="swQEmbContCliticAll"><content>soit au début du premier mot de la question subordonnée ou à la fin du dernier mot de la question subordonnée, quels que soient ces mots, comme clitiques de constituant, ou après le syntagme interrogatif antéposé au début du premier mot du reste de la question subordonée comme proclitiques de constituant, ou à la fin du dernier mot de la question subordonnée, quel que soit ce mot, à la fin du dernier mot du syntagme interrogatif antéposé, avant le reste de la question subordonnée, comme enclitiques de constituant.   </content></text>
                         <text show="swQEmbContPrefix"><content>au verbe de la question subordonnée comme préfixe. </content></text>
                         <text show="swQEmbContSuffix"><content>au verbe dans la question subordonnée comme suffixe.   </content></text>
-                        <text show="swQEmbContAffix"><content>au verbe de la question subordonnée, quelques-uns comme préfixes, d’autres comme suffixes.   </content></text>
-                        <text show="swQEmbContCliticAffix"><content>ou bien au début ou à la fin de la question subordonnée comme clitique, ou au verbe de la question subordonnée comme affixe.  </content></text>
+                        <text show="swQEmbContAffix"><content>au verbe de la question subordonnée, certains comme préfixes, d’autres comme suffixes.   </content></text>
+                        <text show="swQEmbContCliticAffix"><content>soit au début ou à la fin de la question subordonnée comme clitique de constituant, ou au verbe de la question subordonnée comme affixe.  </content></text>
                         <text show="swQEmbContOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/embYNCliticOther"/><content>.  </content></text>
-                        <text show="swQEmbContOtherAnd"><content>  Quelques-uns s’attachent aussi ___</content><contentCheckBoxOther contentLoc="q/embYNCliticOther"/>  <content>.</content></text>              
+                        <text show="swQEmbContOtherAnd"><content>  Certains se rattachent aussi ___</content><contentCheckBoxOther contentLoc="q/embYNCliticOther"/>  <content>.</content></text>              
                      </text>
                   </text>
                </p>
-               <p show="swQEmbContWordNoOrSomeAndClitic"><content>Voici les clitiques qui marquent les propositions interrogatives subordonnées:</content></p>      
+               <p show="swQEmbContWordNoOrSomeAndClitic"><content>Voici les clitiques qui marquent les propositions interrogatives subordonnées :</content></p>      
                <example show="swQEmbContWordNoOrSomeAndClitic">
                   <table border="1">
                      <headerRow>
-                        <headerCol>Clitiques de marqueur interrogatif</headerCol>
+                        <headerCol>Clitiques marqueurs interrogatifs</headerCol>
                         <headerCol>Glose</headerCol>
                      </headerRow>
                      <row>
                         <col exampleLoc="q/embContCliticExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     
-               <p show="swQEmbContWordNoOrSomeAndAffix"><content>Les affixes qui marquent les propositions interrogatives subordonnées sont:</content></p>      
+               <p show="swQEmbContWordNoOrSomeAndAffix"><content>Voici les affixes qui marquent les propositions interrogatives subordonnées :</content></p>      
                <example show="swQEmbContWordNoOrSomeAndAffix">
                   <table border="1">
                      <headerRow>
@@ -610,57 +611,57 @@
                      </headerRow>
                      <row>
                         <col exampleLoc="q/embContAffixExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     
                
                <p show="swQEmbContWordYesOrSome">
                   <text show="swNotVSO">
-                     <content>  Les marqueurs interrogatifs ou complétiseurs </content><text show="swQEmbContWordSome"><content>qui sont des mots indépendants </content></text>
-                     <content>se mettent </content>
+                     <content>  Les marqueurs interrogatifs ou conjonctions de subordination </content><text show="swQEmbContWordSome"><content>qui sont des mots indépendants </content></text>
+                     <content>se placent </content>
                      <text show="swQEmbContWordBefore"><content>avant le</content></text>
                      <text show="swQEmbContWordAfter"><content>après le</content></text>
-                     <text show="swQEmbContWordBoth"><content>des deux côtés du</content></text>
+                     <text show="swQEmbContWordBoth"><content>de part et d’autre du</content></text>
                      <text show="swQEmbContWordEither"><content>d’un côté ou de l’autre du</content></text>
-                     <text show="swQEmbContWordBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-                     <text show="swQEmbContWordAfterOrBoth"><content>après ou des deux côtés du</content></text>
-                     <text show="swQEmbContWordEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
+                     <text show="swQEmbContWordBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+                     <text show="swQEmbContWordAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+                     <text show="swQEmbContWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
                      <text show="swQEmbContWordNotOther"><content> reste de la question subordonnée.  </content></text>
                      <text show="swQEmbContWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/embContWordOther"/><content>.  </content></text>
                      <text show="swQEmbContWordPosAndOther"><content> reste de la question subordonnée et peut aussi se mettre ___</content> <contentCheckBoxOther contentLoc="q/embContWordOther"/> <content>. </content></text>
                   </text>
                   <text show="swVSO">
-                     <content>  Les marqueurs interrogatifs ou complétiseurs </content><text show="swQEmbContWordSome"><content>qui sont des mots indépendants </content></text>
-                     <content>se mettent </content>
-                     <text show="swQEmbContVSOBeforeWh"><content>avant un syntagme interrogatif initial.</content></text>
-                     <text show="swQEmbContVSOAfterWh"><content>directement après un syntagme interrogatif initial.</content></text>
+                     <content>  Les marqueurs interrogatifs ou conjonctions de subordination </content><text show="swQEmbContWordSome"><content>qui sont des mots indépendants </content></text>
+                     <content>se placent </content>
+                     <text show="swQEmbContVSOBeforeWh"><content>avant un syntagme interrogatif antéposé.</content></text>
+                     <text show="swQEmbContVSOAfterWh"><content>directement après un syntagme interrogatif antéposé.</content></text>
                      <text show="swQEmbContVSOEnd"><content>à la fin de la question subordonnée.</content></text>
-                     <text show="swQEmbContVSOBeforeWhOrAfter"><content>ou bien avant un syntagme interrogatif initial ou directement après.</content></text>
-                     <text show="swQEmbContVSOBeforeWhOrEnd"><content>ou bien avant un syntagme interrogatif initial ou à la fin de la question subordonnée.</content></text>
-                     <text show="swQEmbContVSOAfterWhOrEnd"><content>ou bien directement après un syntagme interrogatif initial ou à la fin de la question subordonnée.</content></text>
-                     <text show="swQEmbContVSOBeforeWhOrAfterOrEnd"><content>ou bien avant un syntagme interrogatif initial ou directement après, ou à la fin de la question subordonnée.</content></text>
+                     <text show="swQEmbContVSOBeforeWhOrAfter"><content>osoit avant un syntagme interrogatif antéposé ou directement après.</content></text>
+                     <text show="swQEmbContVSOBeforeWhOrEnd"><content>soit avant un syntagme interrogatif antéposé ou à la fin de la question subordonnée.</content></text>
+                     <text show="swQEmbContVSOAfterWhOrEnd"><content>soit directement après un syntagme interrogatif antéposé ou à la fin de la question subordonnée.</content></text>
+                     <text show="swQEmbContVSOBeforeWhOrAfterOrEnd"><content>soit avant un syntagme interrogatif antéposé ou directement après, ou à la fin de la question subordonnée.</content></text>
                      <text show="swQEmbContVSOOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="q/embContVSOOther"/><content>.</content></text>
-                     <text show="swQEmbContVSOPosAndOther"><content>  Quelques-uns peuvent aussi se mettre ___</content><contentCheckBoxOther contentLoc="q/embContVSOOther"/><content>.</content></text>
+                     <text show="swQEmbContVSOPosAndOther"><content>  Certains peuvent aussi se placer ___</content><contentCheckBoxOther contentLoc="q/embContVSOOther"/><content>.</content></text>
                   </text>
-                  <content>  Un marqueur interrogatif ou complémentiseur est </content>
+                  <content>  Un marqueur interrogatif ou une conjonction de subordination sont </content>
                   <case element="q" attr="embContRequired">
-                     <caseText value="yes">obligatoire dans toute question de contenu subordonnée.</caseText>
-                     <caseText value="no">facultative dans les questions subordonnées de contenu.</caseText>
+                     <caseText value="yes">obligatoires dans toute question d’information subordonnée.</caseText>
+                     <caseText value="no">facultatifs dans les questions question d’information subordonnées.</caseText>
                   </case>
                   <content></content>
-                  <text show="swQEmbContRequiredSpecial"><content>ne s’emploie pas quand ___</content><contentCheckBoxOther contentLoc="q/embContSpecialConditions"/><content>.</content></text><content> Les marqueurs interrogatifs sont:</content>
+                  <text show="swQEmbContRequiredSpecial"><content>ne s’emploient pas quand ___</content><contentCheckBoxOther contentLoc="q/embContSpecialConditions"/><content>.</content></text><content> Voici les marqueurs interrogatifs :</content>
                </p>
                
                <example show="swQMainContWordYesOrSome">
                   <table border="1">
                      <headerRow>
-                        <headerCol>Les marqueurs interrogatifs</headerCol>
+                        <headerCol>Marqueurs interrogatifs</headerCol>
                         <headerCol>Glose</headerCol>
                      </headerRow>
                      <row>
                         <col exampleLoc="q/embContWordExample"/>
-                        <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                        <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                      </row>
                   </table>
                </example>     

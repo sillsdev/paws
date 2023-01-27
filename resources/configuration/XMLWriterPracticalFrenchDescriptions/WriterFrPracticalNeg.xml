@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
     <section1 id="sNeg">
-       <secTitle>Constructions Négatives</secTitle>
+       <secTitle>Constructions négatives</secTitle>
         <p>
-           <content>On présentera d’abord les éléments verbaux négatifs, les adverbes négatifs, les pronoms indéfinis négatifs, et la négation des syntagmes nominaux. Ensuite on précisera le type du système de négation qui caracterise </content><langName/><content>.</content>
+           <content>Les éléments négatifs verbaux, les adverbes négatifs, les pronoms indéfinis négatifs, et la négation des syntagmes nominaux seront présentés en premier lieu, ensuite le type du système de négation qui caracterise </content><langName/><content> sera précisé.</content>
         </p>
         <section2 id="sNegVerbal">
            <secTitle>Négation de l’auxiliaire et du verbe</secTitle>
               
               <p contentType="ctComparativeIntro">
-                 <content>Dans certaines langues la négation du verbe se fait par moyen d’un élément auxiliaire; dans d’autres par moyen d’un affixe verbal. L’anglais possède l’auxiliaire </content>
+                 <content>Dans certaines langues, la négation du verbe se fait au moyen d’un élément auxiliaire ; alors que dans d’autres, elle se fait simplement au moyen d’un affixe verbal. L’anglais possède l’auxiliaire </content>
                  <langData>not</langData><gloss><content> (ne)</content></gloss>
                  <content> - mot indépendent qui suit toujours un autre auxiliaire - et la forme contractée </content>
                  <langData>-n’t</langData>
-                 <content> qui s’attache comme suffixe à l’auxiliaire. Quelques exemples de phrases négatives en anglais sont: </content>
+                 <content> qui se rattache comme suffixe à l’auxiliaire. Quelques exemples de phrases négatives en anglais sont : </content>
                  <langData>The boy did not eat the banana</langData><gloss><content>  « Le garçon n’a pas mangé la banane »</content></gloss>
                  <content> et </content>
                  <langData>The boy didn’t eat the banana</langData><gloss><content>  « Le garçon n’a pas mangé la banane »</content></gloss>
-                 <content>.  En français la negation se fait par le moyen de deux auxiliaires </content><langData>ne</langData><content> - mot indépendent qui précède le verbe, et </content><langData>pas</langData><content> qui le suit. Quelques exemples de phrases négatives en français sont: </content>
+                 <content>.  En français par contre, la negation se fait au moyen de deux auxiliaires </content><langData>ne</langData><content> - mot indépendent qui précède le verbe, et </content><langData>pas</langData><content> qui le suit. Quelques exemples de phrases négatives en français sont : </content>
                  <langData>Le garçon n’a pas trouvé sa montre</langData><content> et </content><langData>Je ne le vois pas</langData><content>.</content>
               </p>
            <p>
                  <content>En </content><langName/>
-                 <content/>
+                 <content>,</content>
                  <case element="neg" attr="negVerbal">
-                    <caseText value="yes"> la negation du verbe  s’exprime des façons suivantes. </caseText>				
-                    <caseText value="no"> il n’y a  aucun moyen d’exprimer la négation, ni sur l’auxiliaire ni sur le verbe.</caseText>			
+                    <caseText value="yes"> la négation du verbe  s’exprime des façons suivantes. </caseText>				
+                    <caseText value="no"> il n’y a aucun moyen d’exprimer la négation, ni sur l’auxiliaire ni sur le verbe.</caseText>			
                  </case>
               </p>
-           <p show="swNegAuxWord"><content>Certains auxiliaires négatifs s’écrivent comme des mots indépendents.  L’auxiliaire négatif </content>
+           <p show="swNegAuxWord"><content>Certains auxiliaires négatifs sont écrits comme des mots indépendents.  L’auxiliaire négatif </content>
               <case element="neg" attr="negAuxRequiresAux">
                  <caseText value="no">peut être le seul auxiliaire du syntagme.</caseText>
-                 <caseText value="yes">n’est pas nécessairement le seul auxiliaire du syntagme; il faut la présence d’un auxiliaire positif.</caseText>
+                 <caseText value="yes">n’est pas nécessairement le seul auxiliaire dans le syntagme ; il faut la présence d’un auxiliaire positif.</caseText>
            </case>
               <content/>
            </p>
@@ -44,14 +44,14 @@
               </headerRow>
               <row>
                  <col exampleLoc="neg/negAuxExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>   
            
            
               <p show="swNegAuxAffix">		   
-                 <content>Il y a </content><text show="swNegAuxWord"><content>aussi </content></text><content>un affixe négatif qui s’attache à un auxiliaire positif pour le mettre au négatif. Parmi les exemples des affixes d’auxiliaire négatif qui s’attachent à un auxiliaire positif on peut citer:</content>
+                 <content>Il y a </content><text show="swNegAuxWord"><content>aussi </content></text><content>un affixe négatif qui s’attache à un auxiliaire positif pour le mettre au négatif. Parmi les exemples des affixes d’auxiliaire négatif qui s’attachent à un auxiliaire positif on peut citer :</content>
               </p>
                  <example show="swNegAuxAffix">
                     <table border="1">
@@ -61,12 +61,12 @@
                        </headerRow>
                        <row>
                           <col exampleLoc="neg/negAuxAffixExample"/>
-                          <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                          <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                        </row>
                     </table>              
                  </example>
           
-           <p show="swNegVAffix"><content>Il y a </content><text show="swNegAuxWordOrAffix"><content>aussi </content></text><content>un affixe négatif qui s’attache au verbe pour le mettre au négatif. Parmi les exemples des affixes verbaux qui s’attachent à un verbe on peut citer:</content></p>
+           <p show="swNegVAffix"><content>Il y a </content><text show="swNegAuxWordOrAffix"><content>aussi </content></text><content>un affixe négatif qui se rattache au verbe pour le mettre au négatif. Voici quelques exemples d’affixes verbaux rattachés à un verbe :</content></p>
            <example show="swNegVAffix">
               <table border="1">
                  <headerRow>
@@ -75,11 +75,11 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negVerbExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table> 
            </example>
-           <p show="swNegVerbalOther"><content>Il y a </content><text show="swNegAuxWordOrAffixOrVAffix"><content>aussi  </content></text><content>___</content><contentCheckBoxOther contentLoc="neg/negVerbalOther"/><content>.  Parmi les exemples des éléments verbaux négatifs on peut citer:</content></p>  
+           <p show="swNegVerbalOther"><content>Il y a </content><text show="swNegAuxWordOrAffixOrVAffix"><content>aussi  </content></text><content>___</content><contentCheckBoxOther contentLoc="neg/negVerbalOther"/><content>.  Voici quelques exemples d’éléments verbaux négatifs :</content></p>  
            <example show="swNegVerbalOther">
               <table border="1">
                  <headerRow>
@@ -88,32 +88,32 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negVerbalOtherExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table> 
            </example>
            
            <p show="swNegAuxWord">
-              <content>Parmi les auxiliaires négatifs qu’on utilise dans une phrase complète (sans arguments négatifs) on peut citer:</content>
+              <content>Voici quelques auxiliaires négatifs qu’on utilise dans une phrase complète (sans arguments négatifs) :</content>
            </p>
            <example show="swNegAuxWord">
               <interlinear exampleLoc="neg/auxExample"/>
            </example>
            <p show="swNegAuxAffix">
-              <content>Parmi les exemples des affixes auxiliaires négatifs attachés à un auxiliaire positif qu’on utilise dans une phrase complète on cite:</content>
+              <content>Voici quelques exemples d‘affixes auxiliaires négatifs rattachés à un auxiliaire positif utilisés dans une phrase complète (sans arguments négatifs) :</content>
            </p>
            <example show="swNegAuxAffix">
               <interlinear exampleLoc="neg/auxAffixExample"/>
            </example>
            <p show="swNegVAffix">
-              <content>Parmi les exemples de phrases complètes qui comprennent des verbes au négatif on cite:</content>
+              <content>Voici quelques exemples de phrases complètes qui comprennent des verbes négatifs :</content>
            </p>
            <example show="swNegVAffix">
               <interlinear exampleLoc="neg/verbAffixExample"/>
            </example>
            
            <p show="swNegVerbalOther">
-              <content>Parmi les exemples de phrases complètes qui comprennent les autres éléments verbaux au négatif en </content><langName/><content> on cite:</content>
+              <content>Voici quelques exemples de phrases complètes qui comprennent les autres éléments verbaux négatifs admis en </content><langName/><content> :</content>
            </p>
            <example show="swNegVerbalOther">
               <interlinear exampleLoc="neg/negVerbalOtherSentExample"/>
@@ -121,8 +121,8 @@
            <p show="swNegAuxWordOrAffixAndVAffix">
               <content> Comme montrent ces exemples, </content>
               <case element="neg" attr="auxVerbRequired">
-                 <caseText value="yes">un auxiliaire négatif n’est pas permis sans un verbe au négatif.</caseText>
-                 <caseText value="no">il n’est pas nécessaire que le verbe soit au négatif lorsqu’il y a un auxiliaire au négatif.</caseText>
+                 <caseText value="yes">un auxiliaire négatif n’est pas admis sans un verbe au négatif.</caseText>
+                 <caseText value="no">il n’est pas nécessaire que le verbe soit négatif lorsqu’il y a un auxiliaire négatif.</caseText>
               </case>
            </p>
            
@@ -131,10 +131,10 @@
         <section2 id="sNegAdverb">
            <secTitle>Les adverbes négatifs</secTitle>
           
-           <p><content>L’adverbe temporel négatif </content><langData>ne...jamais</langData><content> s’exprime en </content><langName/><content> ainsi:</content></p>
+           <p><content>L’adverbe temporel négatif </content><langData>jamais</langData><content> s’exprime ainsi en </content><langName/><content> :</content></p>
            
            <p show="swNegTemporalTypeWord">
-              <content>Il y a au moins un mot ou syntagme indépendent qui est sans rapport aux adverbes temporels positifs. Ces adverbes ou syntagmes temporels négatifs sont:</content></p>   
+              <content>Il y a au moins un mot ou syntagme indépendent qui est sans relation ave les adverbes temporels positifs. Voici ces adverbes ou syntagmes temporels négatifs :</content></p>   
            <example show="swNegTemporalTypeWord">
               <table border="1">
                  <headerRow>
@@ -143,13 +143,13 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negTemporalExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
            
            <p show="swNegTemporalTypeAdverb">
-              <content>Il y a </content><text show="swNegTemporalTypeWord"><content>aussi </content></text><content> un affixe négatif qui peut être attaché à un syntagme temporel positif pour former un mot. L’affixe négatif est:</content></p>
+              <content>Il y a </content><text show="swNegTemporalTypeWord"><content>aussi </content></text><content> un affixe négatif qui peut être rattaché à un syntagme temporel positif pour former un mot adverbial temporel négatif. Voici l’affixe négatif :</content></p>
            <example show="swNegTemporalTypeAdverb">
               <table border="1">
                  <headerRow>
@@ -158,11 +158,11 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negTemporalAdverbAffixExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
-           <p show="swNegTemporalTypeAdverb"><content>Parmi les exemples d’adverbes temporels négatifs formés par l’attachement d’un affixe négatif aux adverbes temporels positifs on cite: </content></p>   
+           <p show="swNegTemporalTypeAdverb"><content>Voici quelques exemples d’adverbes temporels négatifs formés par l’ajout d’un affixe négatif aux adverbes temporels positifs : </content></p>   
            <example show="swNegTemporalTypeAdverb">
               <table border="1">
                  <headerRow>
@@ -171,24 +171,24 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negTemporalAdverbExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
                     
            <p show="swNegTemporalTypeAdverbWord">
-              <content>Il y a </content><text show="swNegTemporalTypeWordOrAdverb"><content>aussi </content></text><content>un mot indépendent négatif qui se met  </content>
+              <content>Il y a </content><text show="swNegTemporalTypeWordOrAdverb"><content>aussi </content></text><content>un mot indépendent négatif qui se met </content>
               <text show="swNegTemporalTypeAdverbWordBefore"><content>avant un</content></text>
               <text show="swNegTemporalTypeAdverbWordAfter"><content>après un</content></text>
-              <text show="swNegTemporalTypeAdverbWordBoth"><content>des deux côtés d’un</content></text>
-              <text show="swNegTemporalTypeAdverbWordEither"><content>d’un côté ou de autre côté d’un </content></text>
-              <text show="swNegTemporalTypeAdverbWordBeforeOrBoth"><content>avant ou des deux côtés d’un</content></text>
-              <text show="swNegTemporalTypeAdverbWordAfterOrBoth"><content>après ou des deux côtés d’un</content></text>
-              <text show="swNegTemporalTypeAdverbWordEitherOrBoth"><content>d’un côté ou de autre côté ou des deux côtés d’un</content></text>
-              <text show="swNegTemporalTypeAdverbWordNotOther"><content> adverbe temporel positif pour former un syntagme temporel de négation.   </content></text>
+              <text show="swNegTemporalTypeAdverbWordBoth"><content>de part et d’autre d’un</content></text>
+              <text show="swNegTemporalTypeAdverbWordEither"><content>d’un côté ou de l’autre de d’un</content></text>
+              <text show="swNegTemporalTypeAdverbWordBeforeOrBoth"><content>avant ou de part et d’autre d’un</content></text>
+              <text show="swNegTemporalTypeAdverbWordAfterOrBoth"><content>après ou de part et d’autre d’un</content></text>
+              <text show="swNegTemporalTypeAdverbWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre d’un</content></text>
+              <text show="swNegTemporalTypeAdverbWordNotOther"><content> adverbe temporel positif pour former un syntagme adverbial temporel de négation.   </content></text>
               <text show="swNegTemporalTypeAdverbWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="neg/negTemporalTypeAdverbWordOther"/><content>.  </content></text>
-              <text show="swNegTemporalTypeAdverbWordPosAndOther"><content> adverbe temporel positif pour former un syntagme temporel de négation et peut aussi se mettre ___</content> <contentCheckBoxOther contentLoc="neg/negTemporalTypeAdverbWordOther"/> <content>.  </content></text>
-              <content> Le mot négatif qu’on rencontre avec les adverbes temporels positifs est: </content></p>
+              <text show="swNegTemporalTypeAdverbWordPosAndOther"><content> un adverbe temporel positif pour former un syntagme adverbial temporel négatif et peut aussi se placer ___</content> <contentCheckBoxOther contentLoc="neg/negTemporalTypeAdverbWordOther"/> <content>.  </content></text>
+              <content> Voici le mot négatif qu’on rencontre avec les adverbes temporels positifs : </content></p>
               <example show="swNegTemporalTypeAdverbWord">
                  <table border="1">
                     <headerRow>
@@ -197,51 +197,51 @@
                     </headerRow>
                     <row>
                        <col exampleLoc="neg/negTemporalAdverbWordExample"/>
-                       <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                       <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                     </row>
                  </table>
               </example>
-           <p show="swNegTemporalTypeAdverbWord"><content>Parmi les exemples de syntagmes temporels négatifs formés par le mot négatif et les adverbes temporels positifs on cite:</content></p>   
+           <p show="swNegTemporalTypeAdverbWord"><content>Voici quelques exemples de syntagmes adverbiaux temporels négatifs formés par le mot négatif et les adverbes temporels positifs :</content></p>   
               <example show="swNegTemporalTypeAdverbWord">
                  <interlinear exampleLoc="neg/negTemporalAdverbWordsExample"/>
               </example>     
            
            <p show="swNegTemporalTypeAffix">
-              <content>Il y a </content><text show="swNegTemporalTypeWordOrAdverbOrAdverbWord"><content>aussi </content></text><content>au moins un affixe verbal qui exprime le sens de l’adverbe temporel négatif. Les affixes adverbiaux temporels au négatif qui peuvent s’attacher aux verbes sont: </content></p>                     
+              <content>Il y a </content><text show="swNegTemporalTypeWordOrAdverbOrAdverbWord"><content>aussi </content></text><content>au moins un affixe verbal qui exprime le sens de l’adverbe temporel négatif. Voici les affixes adverbiaux temporels négatifs qui peuvent se rattacher aux verbes : </content></p>                     
            <example show="swNegTemporalTypeAffix">
               <table border="1">
                  <headerRow>
-                    <headerCol>Affixes adverbiaux temporels au négatif</headerCol>
+                    <headerCol>Affixes adverbiaux temporels négatifs</headerCol>
                     <headerCol>Glose</headerCol>
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negTemporalAffixExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
            
-           <p show="swNegTemporalTypeAffix"><content>Parmi les exemples des affixes adverbiaux temporels au négatif attachés aux verbes on cite:</content></p>                     
+           <p show="swNegTemporalTypeAffix"><content>Voici quelques exemples d’affixes adverbiaux temporels négatifs rattachés aux verbes :</content></p>                     
            <example show="swNegTemporalTypeAffix">
               <table border="1">
                  <headerRow>
-                    <headerCol>Verbes aux affixes adverbiaux temporels au négatif</headerCol>
+                    <headerCol>Verbes aux affixes adverbiaux temporels négatifs</headerCol>
                     <headerCol>Glose</headerCol>
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negTemporalAffixVerbExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
                
            <p show="swNegTemporalTypeVerb">
-              <content>Il y a </content><text show="swNegTemporalTypeWordOrAdverbOrAdverbWordOrAffix"><content>aussi  </content></text><content>un affixe verbal négatif, et un verbe au négatif peut exister avec des adverbes temporels positifs pour donner un sens temporel négatif. Parmi des exemples d’adverbes temporels positifs accompagnés d’un verbe au négatif on cite:</content></p>   
+              <content>Il y a </content><text show="swNegTemporalTypeWordOrAdverbOrAdverbWordOrAffix"><content>aussi  </content></text><content>un affixe verbal négatif, et un verbe au négatif peut exister avec des adverbes temporels positifs pour donner un sens temporel négatif. Voici quelques exemples d’adverbes temporels positifs accompagnés d’un verbe négatif :</content></p>   
            <example show="swNegTemporalTypeVerb">
               <interlinear exampleLoc="neg/negTemporalVerbExample"/>
            </example>
            <p show="swNegTemporalTypeOther">
-              <content>Le temporel négatif peut </content><text show="swNegTemporalTypeWordOrAdverbOrAdverbWordOrAffixOrVerb"><content>aussi  </content></text><content>être exprimé par ___</content><contentCheckBoxOther contentLoc="neg/negTemporalTypeOther"/><content> comme pas exemple:</content></p>   
+              <content>Le temporel négatif peut </content><text show="swNegTemporalTypeWordOrAdverbOrAdverbWordOrAffixOrVerb"><content>aussi  </content></text><content>être exprimé par ___</content><contentCheckBoxOther contentLoc="neg/negTemporalTypeOther"/><content> comme pas exemple :</content></p>   
            <example show="swNegTemporalTypeOther">
               <table border="1">
                  <headerRow>
@@ -250,51 +250,51 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negTemporalOtherExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>
            
             <p>
-               <content>Parmi des phrases complètes qui contiennent un temporel négatif on cite:</content>
+               <content>Voici quelques phrases complètes qui contiennent un temporel négatif :</content>
             </p>
             <example>
                 <interlinear exampleLoc="neg/advTemporalExample"/>
             </example>
           
               
-           <p><content>L’adverbe locatif négatif </content><langData>nulle part</langData><content> s’exprime en </content><langName/><content> des façons suivantes:</content></p>
+           <p><content>L’adverbe locatif négatif </content><langData>nulle part</langData><content> s’exprime des façons suivantes en </content><langName/><content> :</content></p>
            
            <p show="swNegLocativeTypeWord">
-              <content>Il y a au moins un mot ou syntagme indépendent qui est sans rapport aux adverbes locatifs positifs. Ces adverbes ou syntagmes locatifs au négatif sont:</content></p>   
+              <content>Il y a au moins un mot ou syntagme indépendent qui est sans relation avec les adverbes locatifs positifs. Voici ces adverbes ou syntagmes locatifs négatifs :</content></p>   
            <example show="swNegLocativeTypeWord">
               <table border="1">
                  <headerRow>
-                    <headerCol>Adverbes ou syntagmes locatifs au négatif</headerCol>
+                    <headerCol>Adverbes ou syntagmes locatifs négatifs</headerCol>
                     <headerCol>Glose</headerCol>
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negLocativeExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
            
            <p show="swNegLocativeTypeAdverb">
-              <content>Il y a </content><text show="swNegLocativeTypeWord"><content>aussi </content></text><content>un affixe négatif qui peut s’attacher à un adverbe locatif positif pour former un mot adverbial locatif au négatif. L’affixe négatif est:</content></p>
+              <content>Il y a </content><text show="swNegLocativeTypeWord"><content>aussi </content></text><content>un affixe négatif qui peut se rattacher à un adverbe locatif positif pour former un mot adverbial locatif négatif. Voici l’affixe négatif :</content></p>
            <example show="swNegLocativeTypeAdverb">
               <table border="1">
                  <headerRow>
-                    <headerCol>L’affixe négatif</headerCol>
+                    <headerCol>Affixe négatif</headerCol>
                     <headerCol>Glose</headerCol>
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negLocativeAdverbAffixExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
-           <p show="swNegLocativeTypeAdverb"><content>Parmi les exemples des adverbes locatifs négatifs qu’on forme en attachant l’affixe négatif aux adverbes locatifs positifs on cite:</content></p>   
+           <p show="swNegLocativeTypeAdverb"><content>Voici quelques exemples d’adverbes locatifs négatifs qu’on forme en rattachant l’affixe négatif aux adverbes locatifs positifs :</content></p>   
            <example show="swNegLocativeTypeAdverb">
               <table border="1">
                  <headerRow>
@@ -303,7 +303,7 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negLocativeAdverbExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
@@ -312,15 +312,15 @@
               <content>Il y a </content><text show="swNegLocativeTypeWordOrAdverb"><content>aussi </content></text><content>un mot indépendent négatif qui se met </content>
               <text show="swNegLocativeTypeAdverbWordBefore"><content>avant un</content></text>
               <text show="swNegLocativeTypeAdverbWordAfter"><content>après un</content></text>
-              <text show="swNegLocativeTypeAdverbWordBoth"><content>des deux côtés d’un</content></text>
-              <text show="swNegLocativeTypeAdverbWordEither"><content>d’un côté ou de autre côté d’un</content></text>
-              <text show="swNegLocativeTypeAdverbWordBeforeOrBoth"><content>avant ou des deux côtés d’un</content></text>
-              <text show="swNegLocativeTypeAdverbWordAfterOrBoth"><content>après ou des deux côtés d’un</content></text>
-              <text show="swNegLocativeTypeAdverbWordEitherOrBoth"><content>d’un côté ou de autre côté ou des deux côtés d’un</content></text>
-              <text show="swNegLocativeTypeAdverbWordNotOther"><content> adverbe locatif positif pour former un syntagme locatif de négation.  </content></text>
+              <text show="swNegLocativeTypeAdverbWordBoth"><content>de part et d’autre d’un</content></text>
+              <text show="swNegLocativeTypeAdverbWordEither"><content>d’un côté ou de l’autre d’un</content></text>
+              <text show="swNegLocativeTypeAdverbWordBeforeOrBoth"><content>avant ou de part et d’autre d’un</content></text>
+              <text show="swNegLocativeTypeAdverbWordAfterOrBoth"><content>après ou de part et d’autre d’un</content></text>
+              <text show="swNegLocativeTypeAdverbWordEitherOrBoth"><content>d’un côté ou de l’autre d’un ou de part et d’autre d’un</content></text>
+              <text show="swNegLocativeTypeAdverbWordNotOther"><content> adverbe locatif positif pour former un syntagme adverbial locatif négatif.  </content></text>
               <text show="swNegLocativeTypeAdverbWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="neg/negLocativeTypeAdverbWordOther"/><content>.  </content></text>
-              <text show="swNegLocativeTypeAdverbWordPosAndOther"><content> adverbe locatif positif pour former un syntagme locatif de négation et puet aussi se mettre ___</content> <contentCheckBoxOther contentLoc="neg/negLocativeTypeAdverbWordOther"/> <content>.  </content></text>
-              <content> The mot négatif qu’on rencontre avec les adverbes locatifs positifs est:</content></p>
+              <text show="swNegLocativeTypeAdverbWordPosAndOther"><content> un adverbe locatif positif pour former un syntagme adverbial locatif négatif et puet aussi se mettre ___</content> <contentCheckBoxOther contentLoc="neg/negLocativeTypeAdverbWordOther"/> <content>.  </content></text>
+              <content> Voici le mot négatif qu’on emploie avec les adverbes locatifs positifs :</content></p>
            <example show="swNegLocativeTypeAdverbWord">
               <table border="1">
                  <headerRow>
@@ -329,31 +329,31 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negLocativeAdverbWordExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>
-           <p show="swNegLocativeTypeAdverbWord"><content>Parmi les exemples de syntagmes adverbiaux locatifs au négatif qu’on forme avec le mot négatif et les adverbes locatifs positifs on cite:</content></p>   
+           <p show="swNegLocativeTypeAdverbWord"><content>Voici quelques exemples de syntagmes adverbiaux locatifs négatifs qu’on forme avec le mot négatif et les adverbes locatifs positifs :</content></p>   
            <example show="swNegLocativeTypeAdverbWord">
               <interlinear exampleLoc="neg/negLocativeAdverbWordsExample"/>
            </example>     
            
            <p show="swNegLocativeTypeAffix">
-              <content>Il y a </content><text show="swNegLocativeTypeWordOrAdverbOrAdverbWord"><content>aussi </content></text><content>au moins un affixe verbal qui exprime le sens de l’adverbe locatif négatif. Ces affixes adverbiaux locatifs au négatif qui peuvent s’attacher aux verbes sont:</content></p>                     
+              <content>Il y a </content><text show="swNegLocativeTypeWordOrAdverbOrAdverbWord"><content>aussi </content></text><content>au moins un affixe verbal qui exprime le sens de l’adverbe locatif négatif. Voici ces affixes adverbiaux locatifs négatifs qui peuvent se rattacher aux verbes :</content></p>                     
            <example show="swNegLocativeTypeAffix">
               <table border="1">
                  <headerRow>
-                    <headerCol>Affixes adverbiaux locatifs au négatif</headerCol>
+                    <headerCol>Affixes adverbiaux locatifs négatifs</headerCol>
                     <headerCol>Glose</headerCol>
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negLocativeAffixExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
            
-           <p show="swNegLocativeTypeAffix"><content>Parmi des exemples d’affixes adverbiaux locatifs au négatif qui s’attachent aux verbes on cite:</content></p>                     
+           <p show="swNegLocativeTypeAffix"><content>Voici quelques exemples d’affixes adverbiaux locatifs négatifs qui se rattachent aux verbes :</content></p>                     
            <example show="swNegLocativeTypeAffix">
               <table border="1">
                  <headerRow>
@@ -362,18 +362,18 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negLocativeAffixVerbExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>  
            
            <p show="swNegLocativeTypeVerb">
-              <content>Il y a </content><text show="swNegLocativeTypeWordOrAdverbOrAdverbWordOrAffix"><content>aussi  </content></text><content>un affixe verbal négatif, et un verbe négatif peut exister avec les adverbes locatifs positifs pour donner un sens négatif au locatif. Parmi des exemples d’adverbes locatifs positifs avec un verbe négatif on cite:</content></p>   
+              <content>Il y a </content><text show="swNegLocativeTypeWordOrAdverbOrAdverbWordOrAffix"><content>aussi  </content></text><content>un affixe verbal négatif, et un verbe négatif peut apparaître avec les adverbes locatifs positifs pour donner un sens négatif au locatif. Voici quelques exemples d’adverbes locatifs positifs avec un verbe négatif :</content></p>   
            <example show="swNegLocativeTypeVerb">
               <interlinear exampleLoc="neg/negLocativeVerbExample"/>
            </example>
            <p show="swNegLocativeTypeOther">
-              <content>Le locatif négatif peut s’exprimer </content><text show="swNegLocativeTypeWordOrAdverbOrAdverbWordOrAffixOrVerb"><content>aussi  </content></text><content>par ___</content><contentCheckBoxOther contentLoc="neg/negLocativeTypeOther"/><content> comme suit:</content></p>   
+              <content>Le locatif négatif peut s’exprimer </content><text show="swNegLocativeTypeWordOrAdverbOrAdverbWordOrAffixOrVerb"><content>aussi  </content></text><content>par ___</content><contentCheckBoxOther contentLoc="neg/negLocativeTypeOther"/><content> comme cela est illustré ici :</content></p>   
            <example show="swNegLocativeTypeOther">
               <table border="1">
                  <headerRow>
@@ -382,13 +382,13 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="neg/negLocativeOtherExample"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>
            
            <p>
-              <content>Parmi les phrases complètes qui contiennent un locatif négatif on cite: </content>
+              <content>Voici quelques phrases complètes qui contiennent un locatif négatif : </content>
            </p>
            <example>
               <interlinear exampleLoc="neg/advLocativeExample"/>
@@ -398,24 +398,25 @@
                 <content>En </content>
                 <langName/>
                 <case element="neg" attr="advVerbRequired">
-                   <caseText value="yes"> un adverbe négatif écrit comme un mot indépendent n’est pas permis sans que le verbe ou l’auxiliaire soit au négatif aussi.</caseText>
-                   <caseText value="no"> un verbe négatif ou un auxiliaire négatif n’est pas nécessaire lorsqu’il y a un adverbe négatif écrit comme un mot indépendent.</caseText>
+                   <caseText value="yes"> un adverbe négatif écrit comme un mot indépendent n’est pas admis sans que le verbe ou l’auxiliaire ne soit également négatif.</caseText>
+                   <caseText value="no"> un verbe négatif ou un auxiliaire négatif n’est pas obligatoire lorsqu’il y a un adverbe négatif écrit comme un mot indépendent.</caseText>
                 </case>
             </p>
         </section2>
  
  <section2 id="sNegPron">
     <secTitle>Pronoms indéfinis négatifs</secTitle>
-    <p contentType="ctComparativeIntro"><content> Il y a aussi des versions négatives des pronoms indéfinis, tels que </content> <langData>personne...ne</langData><content>, </content><langData>rien...ne</langData><content> et </content><langData>aucun</langData><content>.  Notez que ces pronoms se forment d’un négatif et d’un numéro générique ou d’un nom. Quelquefois ces indéfinis négatifs ne se fusionnent pas en un seul mot. </content> </p>
+    <p contentType="ctComparativeIntro"><content> Il y a aussi des versions négatives des pronoms indéfinis, tels que </content> <langData>personne</langData><content>, </content><langData>rien</langData><content> et </content><langData>aucun</langData><content>.  Quelquefois ces indéfinis négatifs ne se fusionnent pas en un seul mot, comme</content>
+       <langData>nulle part</langData><content>.</content> </p>
     
     <p>
-       <content>En </content><langName/><text show="swNegIndefNotSome"><content> les </content></text><text show="swNegIndefSome"><content> certains </content></text><content>pronoms indéfinis au négatif </content>
+       <content>En </content><langName/><text show="swNegIndefNotSome"><content>, les </content></text><text show="swNegIndefSome"><content>, certains </content></text><content>pronoms indéfinis négatifs </content>
     <case element="neg" attr="negIndef">
-       <caseText value="yes">sont tous des pronoms à un seul mot. </caseText>
-       <caseText value="no">sont tous des syntagmes nominaux au lieu de pronoms à un seul mot. </caseText>
-       <caseText value="some">sont des pronoms à un seul mot, mais d’autres sont des syntagmes nominaux. </caseText>
+       <caseText value="yes">sont tous des pronoms en un seul mot. </caseText>
+       <caseText value="no">sont tous des syntagmes nominaux au lieu de pronoms en un seul mot. </caseText>
+       <caseText value="some">sont des pronoms en un seul mot, mais d’autres sont des syntagmes nominaux. </caseText>
     </case>
-       <content> Ces formes indéfinies sont:</content></p>
+       <content> Voici ces formes indéfinies :</content></p>
     
     <example>
        <table border="1">
@@ -428,17 +429,17 @@
           <row show="swNegIndefYesOrSome">
              <col><content>Pronoms</content></col>
              <col exampleLoc="neg/negIndefExample"/>
-             <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+             <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
           </row>
           <row show="swNegIndefNoOrSome">
              <col><content>Syntagmes</content></col>
              <col exampleLoc="neg/negIndefNPExample"/>
-             <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+             <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
           </row>
        </table>
     </example>
     <p>
-       <content>Parmi les </content><text show="swNegIndefYes"><content>pronoms indéfinis au négatif </content></text><text show="swNegIndefNo"><content>syntagmes nominaux négatifs</content></text><text show="swNegIndefSome"><content>pronoms et/ou syntagmes nominaux négatifs</content></text><content>utilisés comme le sujet d’une phrase on cite:</content>
+       <content>Voici quelques </content><text show="swNegIndefYes"><content>pronoms indéfinis négatifs </content></text><text show="swNegIndefNo"><content>syntagmes nominaux négatifs</content></text><text show="swNegIndefSome"><content>pronoms et/ou syntagmes nominaux négatifs</content></text><content>utilisés comme sujet d’une phrase :</content>
     </p>
     <example>
        <interlinear exampleLoc="neg/negIndefSubjExample"/>
@@ -448,8 +449,8 @@
        <content>En </content>
        <langName/>
        <case element="neg" attr="subjVerbRequired">
-          <caseText value="yes"> un sujet négatif n’est pas permis sans que le verbe ou l’auxiliaire soit au négatif, lui aussi.</caseText>
-          <caseText value="no"> le verbe ou l’auxiliaire n’est pas permis au négatif lorsque le sujet est au négatif.</caseText>
+          <caseText value="yes"> un sujet négatif n’est pas admis sans que le verbe ou l’auxiliaire soit négatif, lui aussi.</caseText>
+          <caseText value="no"> le verbe ou l’auxiliaire n’est pas obligatoirement négatif lorsque le sujet est négatif.</caseText>
        </case>
     </p>
     
@@ -458,58 +459,58 @@
        <section2 id="sNegNominal">
           <secTitle>Négation des syntagmes nominaux</secTitle>
             <p contentType="ctComparativeIntro">
-               <content> Les négatifs </content><langData>pas</langData><content> ou </content><langData>nul</langData><content> peut nier un syntagme nominal.   Notez que </content><langData>pas</langData><content> peut se mettre à la place des quantificateurs ou des autres mots de degré à large portée (ou bien avant eux), comme dans les exemples en français: </content><langData>pas les enfants</langData><content>, </content><langData>pas tous les enfants</langData><content> et </content><langData>pas seulement les cinq enfants de Suzanne</langData><content>.  </content><langData>Nul</langData><content> aussi se met à la première place dans le syntagme nominal, comme dans l’exemple </content><langData>nuls petits enfants</langData><content> et </content><langData>nuls grands garçons</langData><content>. La négation d’un syntagme nominal se trouve normalement en tête ou en fin de syntagme, ayant la plus grande portée de tous les modificateurs nominaux du syntagme</content>
+               <content> Les mots de négation </content><langData>pas</langData><content> ou </content><langData>non</langData><content> peut nier un syntagme nominal.   Notez que </content><langData>pas</langData><content> peut se mettre soit à la place des quantifieurs ou des autres mots de degré à large portée ou avant eux, comme dans les exemples en français: </content><langData>pas les enfants</langData><content>, </content><langData>non tous les cinq enfants</langData><content> et </content><langData>non seulement les cinq enfants de Suzanne</langData><content>.  </content><langData>Pas</langData><content> se met en tête de la phrase nominale, comme dans l’exemple </content><langData>pas de petits enfants</langData><content> et </content><langData>pas de grands garçons</langData><content>. La négation d’un syntagme nominal se trouve normalement en tête ou en fin de syntagme, de sorte qu’il a la plus large portée de tous les modificateurs nominaux du syntagme</content>
             </p>
           <p contentType="ctPracticalIntro">
-             <content> Les négatifs </content><langData>pas</langData><content> ou </content><langData>nul</langData><content> peut nier un syntagme nominal.  La négation d’un syntagme nominal se trouve normalement en tête ou en fin de syntagme, ayant la plus grande portée de tous les modificateurs nominaux du syntagme</content>
+             <content> Les mots de négation </content><langData>pas</langData><content> ou </content><langData>non</langData><content>peut nier un syntagme nominal. La négation d’un syntagme nominal se place normalement en tête ou en fin de syntagme, de sorte qu’il a la plus large portée de tous les modificateurs nominaux du syntagme</content>
           </p>
           <p show="swNegNPDegreeNegNone"><content>Il n’y a pas, semble-t-il, de moyen de nier un syntagme nominal en </content><langName/><content>.</content></p>      
 
-          <p show="swNegNPDegreeNegNotNone"><content>En </content><langName/><content>, </content><text show="swNegNPDegreeNegNotSome"><content>les </content></text><text show="swNegNPDegreeNegSome"><content>certains </content></text><content>éléments qui peuvent nier un syntagme nominal </content>
+          <p show="swNegNPDegreeNegNotNone"><content>En </content><langName/><content>, </content><text show="swNegNPDegreeNegNotSome"><content>des </content></text><text show="swNegNPDegreeNegSome"><content>certains </content></text><content>éléments qui peuvent nier un syntagme nominal </content>
 <case element="neg" attr="npDegreeNeg">
    <caseText value="yes">sont tous des mots indépendents. </caseText>
-   <caseText value="some">sont des mots indépendents, mais d’autres s’attachent </caseText>
-   <caseText value="no">s’attachent </caseText>
+   <caseText value="some">sont des mots indépendents, mais d’autres se rattachent </caseText>
+   <caseText value="no">se rattachent </caseText>
 </case>
    <text show="swNegNPDegreeNegNoOrSome">
-      <text show="swNegNPDegreeNegProclitic"><content>au début du mot – quel qu’il soit – qui commence le syntagme nominal en tant que proclitiques.  </content></text>
-      <text show="swNegNPDegreeNegEnclitic"><content>à la fin du mot qui termine le syntagme nominal en tant qu’enclitiques.    </content></text>
-      <text show="swNegNPDegreeNegClitic"><content>ou bien au début du mot qui commence le syntagme nominal ou bien à la fin du mot qui termine le syntagme nominal en tant que clitiques.   </content></text>
-      <text show="swNegNPDegreeNegPrefix"><content>au nom principal du syntagme nominal en tant que préfixes.  </content></text>
-      <text show="swNegNPDegreeNegSuffix"><content>au nom principal du syntagme nominal en tant que suffixes.   </content></text>
-      <text show="swNegNPDegreeNegAffix"><content>au nom principal du syntagme nominal, quelques-uns comme préfixes d’autres comment suffixes.   </content></text>
-      <text show="swNegNPDegreeNegCliticAffix"><content>à la tête du syntagme ou à la fin comme clitiques, ou bien au nom principal dans le syntagme nominal comme affixes.  </content></text>
+      <text show="swNegNPDegreeNegProclitic"><content>au début du premier mot, quel qu’il soit, du syntagme nominal en tant que proclitiques syntagmatiques.  </content></text>
+      <text show="swNegNPDegreeNegEnclitic"><content>à la fin du dernier mot, quel qu’il soit, du syntagme nominal en tant qu’enclitiques syntagmatiques.    </content></text>
+      <text show="swNegNPDegreeNegClitic"><content>soit au début du premier mot du syntagme nominal ou à la fin du dernier mot du syntagme nominal, quels que soient ces mots, en tant que clitiques syntagmatiques.   </content></text>
+      <text show="swNegNPDegreeNegPrefix"><content>au nom noyau du syntagme nominal en tant que préfixes.  </content></text>
+      <text show="swNegNPDegreeNegSuffix"><content>au nom noyau du syntagme nominal en tant que suffixes.   </content></text>
+      <text show="swNegNPDegreeNegAffix"><content>au nom noyau du syntagme nominal, quelques-uns comme préfixes, d’autres comment suffixes.   </content></text>
+      <text show="swNegNPDegreeNegCliticAffix"><content>soit au début ou à la fin du syntagme nominal comme clitiques syntagmatiques, soit au nom noyau dans le syntagme nominal comme affixe.  </content></text>
       <text show="swNegNPDegreeNegOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="neg/npDegreeNegOther"/><content>.  </content></text>
-      <text show="swNegNPDegreeNegOtherAnd"><content>  D’autres s’attachent ___</content><contentCheckBoxOther contentLoc="neg/npDegreeNegOther"/>  <content>.</content></text>              
+      <text show="swNegNPDegreeNegOtherAnd"><content>  D’autres se rattachent ___</content><contentCheckBoxOther contentLoc="neg/npDegreeNegOther"/>  <content>.</content></text>              
    </text>  <content></content>
 </p>   
 
-          <p show="swNegNPDegreeNegNoOrSomeAndClitic"><content>Voici des exemples de syntagmes nominaux au négatif auxquels les clitiques négatifs s’attachent:</content></p>   
+          <p show="swNegNPDegreeNegNoOrSomeAndClitic"><content>Voici quelques exemples de syntagmes nominaux négatifs auxquels les clitiques négatifs sont rattachés :</content></p>   
           <example show="swNegNPDegreeNegNoOrSomeAndClitic">
                    <interlinear exampleLoc="neg/negCliticExample"/>
           </example>     
-          <p show="swNegNPDegreeNegNoOrSomeAndAffix"><content>Voici des exemples de syntagmes nominaux au négatifs auxquels les clitiques négatifs s’attachent:</content></p>   
+          <p show="swNegNPDegreeNegNoOrSomeAndAffix"><content>Voici quelques exemples de syntagmes nominaux négatifs auxquels les clitiques négatifs sont rattachés :</content></p>   
           <example show="swNegNPDegreeNegNoOrSomeAndAffix">
              <interlinear exampleLoc="neg/negAffixExample"/>
           </example>     
-          <p show="swNegNPDegreeNegNoOrSomeAndOther"><content>Voici des exemples de syntagmes nominaux négatifs auxquels les éléments négatifs permis en </content><langName/><content>:</content></p>   
+          <p show="swNegNPDegreeNegNoOrSomeAndOther"><content>Voici quelques exemples de syntagmes nominaux négatifs auxquels les éléments négatifs admis en </content><langName/><content> :</content></p>   
           <example show="swNegNPDegreeNegNoOrSomeAndOther">
              <interlinear exampleLoc="neg/negOtherExample"/>
           </example>     
           
           <p show="swNegNPDegreeNegYesOrSome">
-             <content>Les mots indépendents négatifs qui se mettent </content>
+             <content>Les mots indépendents négatifs qui se placent </content>
              <text show="swNegNPDegreeNegWordBefore"><content>avant le</content></text>
              <text show="swNegNPDegreeNegWordAfter"><content>après le</content></text>
-             <text show="swNegNPDegreeNegWordBoth"><content>des deux côtés du</content></text>
-             <text show="swNegNPDegreeNegWordEither"><content>d’un côté ou de autre côté du</content></text>
-             <text show="swNegNPDegreeNegWordBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-             <text show="swNegNPDegreeNegWordAfterOrBoth"><content>après ou des deux côtés du</content></text>
-             <text show="swNegNPDegreeNegWordEitherOrBoth"><content>d’un côté ou de autre côté ou des deux côtés du</content></text>
+             <text show="swNegNPDegreeNegWordBoth"><content>de part et d’autre du</content></text>
+             <text show="swNegNPDegreeNegWordEither"><content>d’un côté ou de l’autre du</content></text>
+             <text show="swNegNPDegreeNegWordBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+             <text show="swNegNPDegreeNegWordAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+             <text show="swNegNPDegreeNegWordEitherOrBoth"><content>d’un côté ou de l’autre du ou de part et d’autre du</content></text>
              <text show="swNegNPDegreeNegWordNotOther"><content> reste du syntagme nominal. </content></text>
              <text show="swNegNPDegreeNegWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="neg/npDegreeNegWordOther"/><content>.  </content></text>
-             <text show="swNegNPDegreeNegWordPosAndOther"><content> reste du syntagme nominal et peuvent aussi se mettre ___</content> <contentCheckBoxOther contentLoc="neg/npDegreeNegWordOther"/> <content>. </content></text>
-             <content> Des exemples de syntagmes nominaux négatifs sans quantificateurs positifs à large portée ni éléments de degré sont: </content>
+             <text show="swNegNPDegreeNegWordPosAndOther"><content> reste du syntagme nominal et peuvent aussi se placer ___</content> <contentCheckBoxOther contentLoc="neg/npDegreeNegWordOther"/> <content>. </content></text>
+             <content> Voici quelques exemples de syntagmes nominaux négatifs sans quantifieurs positifs à large portée ni éléments de degré : </content>
                    </p>          
                  <example show="swNegNPDegreeNegYesOrSome">
                     <interlinear exampleLoc="neg/negExample"/>
@@ -518,18 +519,18 @@
                <p show="swNegNPDegreeNegCooccurNo">
                   <content>En </content>
                   <langName/>
-                  <content> les éléments négatifs ne peuvent pas coexister avec les quantificateurs positifs à large portée, ni avec les éléments de degré, dans un seul syntagme nominal.</content>
+                  <content>, les éléments négatifs ne peuvent pas apparaître avec les quantifieurs positifs à large portée, ni avec les éléments de degré, dans le même syntagme nominal.</content>
                </p>
                <p show="swNegNPDegreeNegCooccurYes">
                   <content>En </content>
                   <langName/>
-                  <content> les éléments négatifs peuvent coexister avec les quantificateurs positifs à large portée, ou bien avec les éléments de degré, dans un seul syntagme nominal, comme suit:</content>
+                  <content>, les éléments négatifs peuvent coexister avec les quantifieurs positifs à large portée, ou bien avec les éléments de degré, dans le même syntagme nominal, de la façon suivante :</content>
                </p>
                <example show="swNegNPDegreeNegCooccurYes">
                   <interlinear exampleLoc="neg/negCooccurExample"/>
                </example>
                 <p show="swNegNPDegreeNegNotNone">
-                   <content>Les syntagmes nominaux négatifs qui suivent peuvent servir comme sujets de phrases complètes; en voici quelques exemples: </content>
+                   <content>Les syntagmes nominaux négatifs qui suivent peuvent fonctionnes comme sujets dans les phrases complètes ; en voici quelques exemples : </content>
                 </p>
                 <example show="swNegNPDegreeNegNotNone">
                     <interlinear exampleLoc="neg/npDegreeSubjExample"/>
@@ -538,8 +539,8 @@
                 <p show="swNegNPDegreeNegNotNoneAndNegVerbalYes">
                    <content>Les exemples ci-dessus montrent qu’</content>
                     <case element="neg" attr="subjVerbRequired">
-                       <caseText value="yes">un subjet négatif n’est pas permis sans être accompagné par un verbe au négatif ou un auxiliaire au négatif. </caseText>
-                       <caseText value="no">un verbe au négatif ou un auxiliaire au négatif  n’est pas nécessaire lorsque le sujet est négatif.</caseText>
+                       <caseText value="yes">un subjet négatif n’est pas admis s’il n’est pas accompagné par un verbe négatif ou un auxiliaire négatif. </caseText>
+                       <caseText value="no">un verbe au négatif ou un auxiliaire négatif n’est pas obligatoire lorsque le sujet est négatif.</caseText>
                     </case>
                 </p>
         
@@ -547,38 +548,37 @@
        <section2 id="sNegType">
           <secTitle>Type de système de négation</secTitle>
           <p contentType="ctComparativeIntro">
-             <content>Quant à la négation les langues se groupent selon deux classifications majeures: les langues qui changent de polarité, et les langues à concordance négative, une différence exemplifiée par l’anglais contre le français. </content>
+             <content>En ce qui concerne la négation les langues se classent en deux catégories majeures: les langues qui changent de polarité contre les langues à concordance négative, dont les exemples sont l’anglais standard par contraste avec l’anglais parlé par les Africains ou les Sud-Américains. </content>
           </p>
           <p contentType="ctComparativeIntro">
-             <content>Les langues qui changent de polarité admettent d’habitude un seul élément négatif dans la phrase pour exprimer la négation (du point de vue technique n’importe quel nombre impair de négatifs exprime la polarité négative), parce que la présence de deux élements (ou un nombre pair d’éléments) change la polarité et la remet au positif. 
-                Par exemple, </content>
+             <content>Les langues qui changent de polarité admettent normalement un seul élément négatif dans la phrase pour exprimer la négation ( sur le plan technique n’importe quel nombre impair peut exprimer la polarité négative) parce que la présence de deux éléments négatifs (voire de n’importe quel nombre pair) change la polarité négative en polarité positive. 
+                Par exemple en anglais (le français fonctionne différemment, les traductions données essaient de rendre le sens de l’anglais), </content>
              <langData>John saw nothing</langData><gloss><content>  « Jean n’a rien vu »</content></gloss>
              <content> est négatif, mais </content>
-             <langData>John didn’t see nothing</langData><gloss><content> (Jean n’a rien vu)</content></gloss>
-             <content> est positif parce la phrase veut dire la même chose que </content>
+             <langData>John didn’t see nothing</langData><gloss><content> « Jean n’a pas rien vu »</content></gloss>
+             <content> est positif parce qu’il veut dire le même que </content>
              <langData>John saw something</langData><gloss><content>  « Jean a vu quelque chose »</content></gloss>
-             <content>.  La version à auxiliaire négatif s’exprime </content>
-             <langData>John didn’t see anything</langData><gloss><content>  « Jean n’a vu n’importe quoi »</content></gloss>
-             <content>, celle-ci utilise dans la position de l’objet ce qu’on appelle un élément de polarité negative.  Ces éléments de polarité peuvent être des sujets dans certains contextes sans autre négation (exemple: </content>
+             <content>.  La version à auxiliaire négatif s’exprime ainsi: </content>
+             <langData>John didn’t see anything</langData><gloss><content>  « Jean n’a rien vu »</content></gloss>
+             <content>, ce qui met l’élément de polarité négative dans la position de l’objet. Ces éléments de polarité négative peuvent se présenter comme sujets en certains contextes dans lesquels une deuxième négation est omise, ainsi: </content>
              <langData>Anyone may come</langData><gloss><content>  « N’importe qui peut venir »</content></gloss>
-             <content>), pourtant, ils doivent se mettre dans la position de l’objet lorsqu’un élément qui précède est au négatif. Par exemple, on peut dire </content>
-             <langData>Nobody saw anyone</langData><gloss><content>  « Personne n’a vu personne »</content></gloss>
+             <content>). Néanmoins, ils ne peuvent apparaître dans la position de l’objet que dans le cas où un élément précédant est négatif. Par exemple, on peut dire: </content>
+             <langData>Nobody saw anyone</langData><gloss><content>  « Personne n’a rien vu »</content></gloss>
              <content> et </content>
-             <langData>Nowhere will they find anyone</langData><gloss><content>  « Ils ne trouveront personne nulle part »</content></gloss>
-             <content>.  Cependant, en l’absence du sujet négatif ou d’un adverbe négatif en tête de phrase on doit utiliser l’auxiliaire négatif, par exemple: </content>
+             <langData>Nowhere will they find anyone</langData><gloss><content>  « Nulle part ils ne trouveront personne »</content></gloss>
+             <content>.  Toutefois, l’auxiliaire négatif doit être employé lorsque  le sujet n’est pas négatif et qu’il n’y a pas d’adverbe négatif antéposé , comme dans les exemples suivants: </content>
              <langData>We did not see anyone</langData><gloss><content>  « Nous n’avons vu personne »</content></gloss>
              <content> et </content>
-             <langData>They will not find anyone anywhere</langData><gloss><content>  « Ils ne trouveront pas personne n’importe où »</content></gloss>
+             <langData>They will not find anyone anywhere</langData><gloss><content>  « Ils ne trouveront personne nulle part »</content></gloss>
              <content>.</content>
           </p>
-          <p contentType="ctComparativeIntro">
-             <content>Dans les langues à concordance négative n’importe quel nombre d’éléments négatifs exprime la polarité négative; ce qui veut dire qu’en français - une langue à concordance negative - </content>
-             <langData>Jean n’a rien vu</langData>
-             <content> est la façon correcte d’exprimer une phrase négative à objet négatif. Dans ces langues, tout comme la restriction sur les éléments de polarité négative, un élément négatif se met d’habitude dans la position du sujet, ou bien une position en tête de phrase sans qu’il y ait un autre élément; mais un objet au négatif doit exister seulement quand un autre élément qui précède est au négatif. 
-                Dans certaines langues à concordance négative on exige que l’argument négatif coexiste avec la négation du verbe; dans d’autres c’est l’argument au négatif qui précède, tout comme les mots ou syntagmes interrogatifs doivent être à la tête dans les questions de contenu.</content>
+            <p contentType="ctComparativeIntro">
+             <content>Quant aux langues à concordance négative n’importe quel nombre d’éléments négatifs expriment la polarité négative; ainsi dans une version à concordance négative d’anglais (tel que l’anglais parlé par les Noirs) </content>
+            <langData>John didn’t see nothing</langData><gloss><content> « Jean n’a pas rien vu »</content></gloss>
+             <content> est la façon correcte d’exprimer une phrase négative à objet négatif. Dans ces langues, un élément négatif se met habituellement dans la position du sujet ou est antéposé sans la présence d’un autre élément négatif; mais un objet négatif se met seulement après un autre élément négatif. Certaines langues à concordance négative ont une restriction plus stricte, que chaque mot (ou syntagme) négatif s’accompagne d’une négation verbale; d’autres langues encore exigent que le mot ou syntagme négatif soit antéposé, de la même façon que certains interrogatifs ou syntagmes d’interrogation sont antéposés dans les questions d’information.</content>
           </p>
           <p contentType="ctPracticalIntro">
-             <content>Quant à la négation, les deux classements majeurs sont les langues qui changent de polarité contre les langues à concordance négative. Celles-là permettent généralement un seul élément négatif dans une phrase où se trouvent des éléments spéciaux de polarité négative au lieu d’un deuxième élément négatif. Par contre, dans les langues à concordance négative n’importe quel nombre d’éléments expriment la polarité négative, puisque les éléments négatifs visent un accord de polarité. </content>
+             <content>Quant à la négation, les deux classifications majeures sont les langues qui changent de polarité et les langues à concordance négative. Les langues qui changent de polarité admettent généralement un seul élément négatif dans une phrase dans laquelles des éléments spéciaux de polarité négative se trouvent à la place d’un deuxième élément négatif. Par contre, dans les langues à concordance négative, n’importe quel nombre d’éléments exprime la polarité négative, puisque les éléments négatifs rendent la polarité négative.   </content>
           </p>
           <p>
              <content>Le </content><langName/>
@@ -589,29 +589,29 @@
              </case>
              <content>, puisque </content>
              <case element="neg" attr="type">
-                <caseText value="changing">la polarité change entre positive et  négative avec chaque exemple de négation. </caseText>
-                <caseText value="concord">n’importe quel nombre d’éléments négatifs visent à rendre la polarité négative. </caseText>
+                <caseText value="changing">la polarité change entre positive et négative avec occurence d‘un élément de négation. </caseText>
+                <caseText value="concord">n’importe quel nombre d’éléments négatifs rendent la polarité négative. </caseText>
              </case>
              <content/>
           </p>
           <p show="swNegTypeChanging">
-             <content>En </content><langName/>
+             <content>Le </content><langName/>
              <content/>
              <case element="neg" attr="polarityItems">
-                <caseText value="yes"> il y a </caseText>
-                <caseText value="no">  il n’y a pas </caseText>
+                <caseText value="yes"> possède des </caseText>
+                <caseText value="no"> ne possède pas d’</caseText>
              </case>
-             <content>d’éléments de polarité négatifs.  </content>
+             <content>éléments de polarité négative.  </content>
              <case element="neg" attr="polarityItems">
-                <caseText value="yes">Les pronoms, déterminateurs et adverbes suivants  prennent la position de l’objet ou bien la position normale de l’adverbe au lieu de l’élément négatif équivalent lorsqu’un autre élément négatif est présent dans la phrase.</caseText>
-                <caseText value="no">Les pronoms, déterminateurs et adverbes (tous au négatif) prennent la position de l’objet ou la position adverbiale normale, même quand il y a un autre élément dans la phrase.</caseText>
+                <caseText value="yes">Les pronoms, déterminants et adverbes suivants se placent dans la position de l’objet ou dans la position normale de l’adverbe à la place de l’élément négatif équivalent lorsqu’un autre élément négatif n’est présent dans la phrase.</caseText>
+                <caseText value="no">Les pronoms, déterminants et adverbes (tous négatifs) se placent dans la position de l’objet ou dans la position adverbiale normale, même quand il y a un autre élément négatif dans la phrase.</caseText>
              </case>
           </p>
           <example show="swPolarityItemsYes">
              <table border="1">
                 <headerRow>
                    <headerCol>Type</headerCol>
-                   <headerCol>Eléments de polarité négatifs</headerCol>
+                   <headerCol>Eléments de polarité négative</headerCol>
                    <headerCol>Glose</headerCol>
                 </headerRow>
                 <row>
@@ -619,48 +619,48 @@
                       <content>Pronoms</content>
                    </col>
                    <col exampleLoc="neg/npiPronounExample"/>
-                   <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                   <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                 </row>
                 <row>
                    <col rowspan="1">
-                      <content>Determinateurs</content>
+                      <content>Determinants</content>
                    </col>
                    <col exampleLoc="neg/npiDeterminerExample"/>
-                   <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                   <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                 </row>
                 <row>
                    <col rowspan="">
                       <content>Adverbes temporels</content>
                    </col>
                    <col exampleLoc="neg/npiTemporalExample"/>
-                   <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                   <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                 </row>
                 <row>
                    <col rowspan="">
                       <content>Adverbes locatifs</content>
                    </col>
                    <col exampleLoc="neg/npiLocativeExample"/>
-                   <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                   <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                 </row>
              </table>
           </example>
           
           <p>
-             <content>Parmi les exemples ayant un sujet positif et un </content>
+             <content>Voici quelques exemples ayant un sujet positif et un </content>
              <text show="swPolarityItemsYes">
                 <content>élément de polarité négatif dans le </content>
              </text>
-             <content>syntagme nominal de l’objet </content><text show="swPolarityItemsNo"><content>négatif </content></text><content>on cite: </content>
+             <content>syntagme nominal de l’objet</content><text show="swPolarityItemsNo"><content> négatif</content></text><content> : </content>
           </p>
           <example>
              <interlinear exampleLoc="neg/objectExample"/>
           </example>
           <p>
-             <content>Parmi les exemples ayant un sujet positif et un </content>
+             <content>Voici quelques exemples ayant un sujet positif et un </content>
              <text show="swPolarityItemsYes">
                 <content>élément de polarité négatif dans le </content>
              </text>
-             <content>syntagme nominal de l’objet indirect </content><text show="swPolarityItemsNo"><content>négatif </content></text><content>on cite: </content>
+             <content>syntagme nominal de l’objet indirect</content><text show="swPolarityItemsNo"><content> négatif</content></text><content> : </content>
           </p>
          
           <example>
@@ -689,11 +689,11 @@
              <text show="swObjectVerbRequiredNo">
                 <content>peut</content>
              </text>
-             <content> exister dans la position de l’objet ou de l’objet indirect </content>
+             <content> apparaître dans la position de l’objet ou de l’objet indirect </content>
              <case element="neg" attr="objVerbRequired">
                 <caseText value="yes">sauf si le verbe ou l’auxiliaire est négatif.</caseText>
                 <caseText value="other">sauf si le verbe ou l’auxiliaire ou un autre élément est négatif.</caseText>
-                <caseText value="no">sans restriction d’autres éléments négatifs dans la phrase.</caseText>
+                <caseText value="no">sans restriction quant aux autres éléments négatifs dans la phrase.</caseText>
              </case>
           </p>
           
@@ -705,40 +705,40 @@
              <text show="swObjectVerbRequiredNo">
                 <content>peut</content>
              </text>
-             <content> exister dans la position de l’objet ou de l’objet indirect </content>
+             <content> apparaître dans la position de l’objet ou de l’objet indirect </content>
              <case element="neg" attr="objVerbRequired">
                 <caseText value="yes">sauf si le verbe ou l’auxiliaire est négatif.</caseText>
                 <caseText value="other">sauf si le verbe ou l’auxiliaire ou un autre élément est négatif.</caseText>
-                <caseText value="no">sans restriction d’autres éléments négatifs dans la phrase.</caseText>
+                <caseText value="no">sans restriction quant aux autres éléments négatifs dans la phrase.</caseText>
              </case>
              <case element="neg" attr="negFront">
-                <caseText value="yes">  Un objet négatif doit se mettre en tête de la phrase, tout comme les syntagmes interrogatifs. </caseText>
+                <caseText value="yes">  Un objet négatif doit être placé en tête de la phrase, tout comme les syntagmes interrogatifs. </caseText>
                 <caseText value="optional">  Un objet négatif peut se mettre en position initiale, ou il peut garder sa position habituelle. </caseText>
-                <caseText value="beforeVerb">  Un élément négatif peut se mettre directement avant le verbe, ou bien il peut garder sa position habituelle. </caseText>
-                <caseText value="no">  Un objet negative paraît simplement dans sa position habituelle, sans aucun mouvement. </caseText>
+                <caseText value="beforeVerb">  Un élément négatif peut être placé dans la position immédiatement avant le verbe, ou il peut garder sa position habituelle. </caseText>
+                <caseText value="no">  Un objet negative apparaît simplement dans sa position habituelle, sans aucun mouvement. </caseText>
              </case>
           </p>
           
           
           <p show="swNegTypeChangingAndNegTwoYes">
-             <content>Finalement, parmi les exemples où se trouvent un sujet négatif et un </content>
+             <content>Enfin, voici quelques exemples dans lesquels on trouve un sujet négatif ainsi qu’un </content>
              <text show="swPolarityItemsYes">
-                <content>élément de polarité négatif dans le </content>
+                <content>élément de polarité négative dans le </content>
              </text>
-             <content>syntagme nominal de l’objet </content><text show="swPolarityItemsNo"><content>négatif </content></text><content>on cite: </content>
+             <content>syntagme nominal objet</content><text show="swPolarityItemsNo"><content> négatif</content></text><content> : </content>
              </p>
           <p show="swNegTypeChangingAndNegTwoOneOnly">
-             <content>En </content><langName/><content>on ne permet pas d’exemples où figurent un sujet négatif et un </content>
+             <content>Des exemples où figurent un sujet négatif et un </content>
              <text show="swPolarityItemsYes">
                 <content>élément de polarité négatif dans le </content>
              </text>
-             <content>syntagme nominal de l’objet </content><text show="swPolarityItemsNo"><content>négatif </content></text><content>.  On cite ci-dessous quelques exemples qui montrent comment ces messages se transmettent en utilisant un indéfini ou en séparant la phrase en deux: :</content>
+             <content>syntagme nominal de l’objet </content><text show="swPolarityItemsNo"><content>négatif </content></text><content> ne sont pas admis en </content><langName/><content>.  Voici quelques exemples qui montrent comment ces sens sont exprimés en utilisant un indéfini ou en coupant la phrase en deux :</content>
           </p>
           <p show="swNegTypeConcordAndNotNegFrontTwoOneOnly">
-             <content>Finalement, parmi les exemples où se trouvent un sujet négatif et un syntagme nominal négatif comme objet on cite:</content>
+             <content>Enfin, voici quelques exemples où se trouvent à la fois un sujet négatif et un syntagme nominal objet négatif :</content>
           </p>
           <p show="swNegTypeConcordAndNegFrontTwoOneOnlyOrFrontNoAndNegTwoOneOnly">
-             <content>En </content><langName/><content> on ne permet pas d’exemples où figurent un sujet négatif et un syntagme nominal négatif comme objet. On cite ci-dessous quelques exemples qui montrent comment ces messages se transmettent en utilisant un indéfini ou en séparant la phrase en deux:</content>
+             <content>Des exemples où figurent un sujet négatif et un syntagme nominal négatif comme objet ne sont pas admis en </content><langName/><content>. Voici quelques exemples qui montrent comment ces sens sont exprmiés en utilisant un indéfini ou en coupant la phrase en deux :</content>
           </p>
           <example>
              <interlinear exampleLoc="neg/subjectObjectExample"/>
@@ -747,12 +747,12 @@
              
           <p show="swNegTypeConcord">
              <text show="swNegFrontNotNoAndNotOneOnly">
-                <content> Si le sujet et l’objet sont tous deux au négatif, </content>
+                <content> Si le sujet et l’objet sont tous deux négatifs, </content>
                    <case element="neg" attr="negFrontTwo">
                       <caseText value="yes">les deux éléments négatifs doivent être en tête de phrase.</caseText>
-                      <caseText value="optional">les deux éléments peuvent être en tête, ou bien l’objet négatif peut retenir sa position habituelle.</caseText>
-                      <caseText value="beforeVerb">les deux éléments peuvent se mettre immédiatement avant le verbe, ou bien l’objet négatif peut retenir sa position habituelle.</caseText>
-                      <caseText value="no">seul le sujet négatif vient en tête, l’objet négatif paraît simplement dans sa position habituelle dans la phrase.</caseText>
+                      <caseText value="optional">les deux éléments peuvent être en tête, ou l’objet négatif peut rester dans sa position habituelle.</caseText>
+                      <caseText value="beforeVerb">les deux éléments peuvent se placer immédiatement avant le verbe, ou l’objet négatif peut rester dans sa position habituelle.</caseText>
+                      <caseText value="no">seul le sujet négatif est antéposé, l’objet négatif paraît simplement dans sa position habituelle dans la phrase.</caseText>
                    </case>
                 </text>
           </p>

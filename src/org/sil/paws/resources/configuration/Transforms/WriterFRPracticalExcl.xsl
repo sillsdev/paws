@@ -2,14 +2,14 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/" mode="excl">
   <section1 id="sExcl">
-     <secTitle>Salutations, interjections et exclamations</secTitle>
+     <secTitle>Salutations, Interjections et Exclamations</secTitle>
 	<p>
-<xsl:text>Cette section considère les différents types d’expressions communes qui ne sont pas des phrases complètes. Les salutations, interjections et exclamations seront traitées tour à tour.</xsl:text>
+<xsl:text>Cette section considère les différents types d’expressions fréquentes, mais qui ne sont pas des phrases complètes. Les salutations, les interjections et les exclamations seront traitées tour à tour.</xsl:text>
 </p>
 <section2 id="sExclGreet">
 	<secTitle>Salutations</secTitle>
    <p contentType="ctComparativeIntro">
-<xsl:text>Les salutations consistent typiquement d’un mot ou locution particulier, soit qui est seul(e) soit suivi(e) d’un nom ou d’un syntagme nominal qui décrit la personne ou l’animal salué(e). Certains sont des phrases entières ou des questions entières, comme dans </xsl:text>
+<xsl:text>Les salutations sont typiquement formées d'un mot particulier ou d'une locution particulière, qui sont soit seuls soit suivis d'un nom ou d'un syntagme nominal qui décrit la personne ou l'animal salués. Certaines sont des phrases complètes ou des questions complètes, comme dans </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -19,15 +19,10 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Comment allez-vous?</langData>
-<xsl:text> et </xsl:text>
-<langData>
-<xsl:attribute name="lang">
-<xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Bonne journée!</langData>
 <xsl:text> qui ne doivent pas être traitées séparément. </xsl:text>
 </p>
    <p contentType="ctComparativeIntro">
-<xsl:text>Certains exemples de salutations en français sont:
+<xsl:text>Certains exemples de salutations en français sont :
    </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -47,7 +42,7 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Bonjour Monsieur</langData>
+</xsl:attribute>Bonjour, Monsieur</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -59,7 +54,7 @@
 <xsl:text>Les salutations consistent typiquement d’un mot particulier ou d’une locution particulière, qui est soit seul(e) soit suivie(e) d’un nom ou d’un syntagme nominal qui décrit la personne ou l’animal salué(e).</xsl:text>
 </p>
    <p>
-<xsl:text>Des exemples de salutations en </xsl:text>
+<xsl:text>Voici quelques exemples de salutations en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -68,7 +63,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 			<example num="xExcl.ExclGreet.12">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -83,12 +78,12 @@
 <section2 id="sExclIntj">
 	<secTitle>Interjections</secTitle>
    <p contentType="ctComparativeIntro">
-<xsl:text>Les interjections consistent typiquement de mots ou locutions particuliers qui sont utilisés seuls, suivis d’habitude d’un point d’exclamation. Bien que beaucoup de mots dans des interjections ne soient pas utilisés ailleurs, les adjectifs réguliers sont utilisés de cette façon. Quelques exemples d’interjections en français sont:
+<xsl:text>Les interjections sont typiquement formées de mots ou locutions particuliers qui sont utilisés seuls, généralement suivis d’un point d’exclamation. Bien que beaucoup de mots utilisés dans les interjections ne le soient pas ailleurs, les adjectifs ordinaires sont également utilisés de cette façon. Voici quelques exemples d'interjections en français :
    </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Aie!</langData>
+</xsl:attribute>Aïe!</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -98,7 +93,7 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Sacré bleu!</langData>
+</xsl:attribute>Dégueu !</langData>
 <xsl:text> et </xsl:text>
 <langData>
 <xsl:attribute name="lang">
@@ -106,11 +101,11 @@
 </xsl:attribute>Oh là là!</langData>
 </p>
    <p contentType="ctPracticalIntro">
-<xsl:text>Les interjections consistent typiquement de mots ou locutions particuliers qui sont utilisés seuls, suivis d’habitude d’un point d’exclamation. Bien que beaucoup de mots dans des interjections ne soient pas utilisés ailleurs, les adjectifs réguliers sont utilisés de cette façon.</xsl:text>
+<xsl:text>interjections sont typiquement formées de mots ou locutions particuliers qui sont utilisés seuls, généralement suivis d'un point d'exclamation. Bien que beaucoup de mots utilisés dans des interjections ne le soient pas ailleurs, les adjectifs ordinaires sont également utilisés de cette façon.</xsl:text>
 </p>
       
    <p>
-<xsl:text>Des exemples d’interjection en </xsl:text>
+<xsl:text>Voici quelques exemples d’interjection en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -119,7 +114,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> comprennent :</xsl:text>
 </p>
 			<example num="xExcl.ExclIntj.10">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -141,7 +136,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Non</langData>
-<xsl:text> à des questions sont similaires à des interjections.  En </xsl:text>
+<xsl:text> à des questions sont similaires à des interjections.  Voici les mots suivants sont utilisés pour exprimer ces réponses en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -150,7 +145,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> les mots suivants sont utilisés pour exprimer ces réponses:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 <example num="xExcl.ExclIntj.14">
 <table border="1">
@@ -184,7 +179,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left" rowspan="1">
@@ -202,12 +197,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left" rowspan="1">
@@ -244,7 +239,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left" rowspan="1">
@@ -262,12 +257,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left" rowspan="1">
@@ -285,7 +280,7 @@
 <section2 id="sExclExcl">
    <secTitle>Exclamations</secTitle>
    <p contentType="ctComparativeIntro">
-<xsl:text>Les exclamations consistent typiquement en un mot particulier comme </xsl:text>
+<xsl:text>Les exclamations sont typiquement formées en un mot particulier comme </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -300,7 +295,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>que</langData>
-<xsl:text> en français. suivis d’un syntagme adjectival et généralement ponctuée d’un point d’exclamation. Des exemples en français incluent: </xsl:text>
+<xsl:text> en français. suivies d’un syntagme adjectival et généralement terminées d’un point d’exclamation. Voici quelques exemples en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -314,11 +309,12 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Combien c’est merveilleux que ta famille puisse venir!</langData>
+</xsl:attribute>Combien c’est merveilleux que votre famille puisse venir!</langData>
 </p>
    <p contentType="ctPracticalIntro">
-<xsl:text>Les exclamations consistent typiquement en un mot particulier suivis d’un syntagme adjectival et généralement ponctuée d’un point d’exclamation.</xsl:text>
+<xsl:text>Les exclamations sont typiquement formées en un mot particulier suivies d’un syntagme adjectival et généralement terminées d’un point d’exclamation.</xsl:text>
 </p>  
+  
    <xsl:if test="normalize-space(//excl/@exclM)='no'">
 <p>
 <xsl:text>En </xsl:text>
@@ -330,7 +326,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il n’y a pas de mot spécial qui marque des exclamations de ce type, elles ne sont donc pas différentes des interjections qui comprennent des adjectifs dans la section précédente.</xsl:text>
+<xsl:text> il n’y a pas de mot spécial pour marquer les exclamations de ce type, elles ne sont donc pas différentes des interjections formées d’adjectifs de la section précédente.</xsl:text>
 </p>
 </xsl:if>
    <xsl:if test="normalize-space(//excl/@exclM)='yes'">
@@ -344,7 +340,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a un ou plususieurs mots spéciaux qui signalent une exclamation qui apparaîssent </xsl:text>
+<xsl:text> il y a un ou plusieurs mots spéciaux qui signalent une exclamation, ces mots apparaîssent </xsl:text>
 <xsl:if test="normalize-space(//excl/exclMBefore/@checked)='yes' and normalize-space(//excl/exclMAfter/@checked)='no' and normalize-space(//excl/exclMBoth/@checked)='no'">
 <xsl:text>avant le</xsl:text>
 </xsl:if>
@@ -352,19 +348,19 @@
 <xsl:text>après le</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//excl/exclMBefore/@checked)='no' and normalize-space(//excl/exclMAfter/@checked)='no' and normalize-space(//excl/exclMBoth/@checked)='yes'">
-<xsl:text>des deux côtés du</xsl:text>
+<xsl:text>de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//excl/exclMBefore/@checked)='yes' and normalize-space(//excl/exclMAfter/@checked)='yes' and normalize-space(//excl/exclMBoth/@checked)='no'">
-<xsl:text>d’un côté ou de autre côté du</xsl:text>
+<xsl:text>d’un côté ou de l’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//excl/exclMBefore/@checked)='yes' and normalize-space(//excl/exclMAfter/@checked)='no' and normalize-space(//excl/exclMBoth/@checked)='yes'">
-<xsl:text>avant ou des deux côtés du</xsl:text>
+<xsl:text>avant ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//excl/exclMBefore/@checked)='no' and normalize-space(//excl/exclMAfter/@checked)='yes' and normalize-space(//excl/exclMBoth/@checked)='yes'">
-<xsl:text>après ou des deux côtés du</xsl:text>
+<xsl:text>après ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//excl/exclMBefore/@checked)='yes' and normalize-space(//excl/exclMAfter/@checked)='yes' and normalize-space(//excl/exclMBoth/@checked)='yes'">
-<xsl:text>d’un côté ou de autre côté ou des deux côtés du</xsl:text>
+<xsl:text>d’un côté ou de l’autre ou de part et d’autre du</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//excl/exclMOther/@checked)='no'">
 <xsl:text> syntagme adjectival.  </xsl:text>
@@ -379,7 +375,7 @@
 <xsl:value-of select="//excl/exclMOther" />
 <xsl:text>.  </xsl:text>
 </xsl:if>
-<xsl:text>Ces marqueurs d’exclamation sont:</xsl:text>
+<xsl:text>Voici les marqueurs d’exclamation :</xsl:text>
 </p>
 </xsl:if>
 <xsl:if test="normalize-space(//excl/@exclM)='yes'">
@@ -414,7 +410,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -426,12 +422,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -442,7 +438,7 @@
 </xsl:if>
 
    <p>
-<xsl:text>Des exemples d’exclamations en </xsl:text>
+<xsl:text>Voici quelques exemples d’exclamations en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -451,7 +447,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
    <example num="xExcl.ExclExcl.16">
 <xsl:call-template name="OutputInterlinearEntries">

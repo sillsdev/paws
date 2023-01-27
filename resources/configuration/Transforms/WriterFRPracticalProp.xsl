@@ -4,10 +4,10 @@
     <section1 id="sProp">
         <secTitle>Noms propres</secTitle>
        <p contentType="ctPracticalIntro">
-<xsl:text>Les noms propres sont une espèce spéciale de substantif ou de syntagme qui fonctionne dans la syntaxe tout comme les autres substantifs ou syntagmes nominaux.</xsl:text>
+<xsl:text>Les noms propres sont un type particulier de substantif ou de syntagme qui fonctionne tout comme les autres substantifs ou syntagmes nominaux sur le plan syntaxique.</xsl:text>
 </p>
        <p contentType="ctComparativeIntro">
-<xsl:text>Les noms propres sont une espèce spéciale de substantif ou de syntagme qui fonctionne dans la syntaxe tout comme les autres substantifs ou syntagmes nominaux.  En français, certains nom propres peuvent se présenter seuls, comme </xsl:text>
+<xsl:text>Les noms propres sont un type particulier de substantif ou de syntagme qui fonctionne tout comme les autres substantifs ou syntagmes nominaux sur le plan syntaxique.  En français, certains noms propres peuvent se présenter seuls, comme </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -39,7 +39,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>mon fils, David</langData>
-<xsl:text> mais on les traitera plus tard dans la section </xsl:text>
+<xsl:text> mais ils seront traités plus tard dans la section </xsl:text>
 <sectionRef sec="sCoordAppositive" />
 <xsl:text>.  En plus, les noms propres peuvent être modifiés par des adjectifs et des propositions relatives, comme dans  </xsl:text>
 <langData>
@@ -64,7 +64,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> les noms propres portent des classificateurs comme les substantifs comme partie du système de concorde.</xsl:text>
+<xsl:text>, les noms propres portent des classificateurs qui marquent l’accord, comme pour les substantifs.</xsl:text>
 </p>
 </xsl:if>
         <xsl:if test="normalize-space(//typology/@classifier)='yesAgr' and normalize-space(//prop/@pnClassifier)='no'">
@@ -78,7 +78,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> les noms propres ne portent pas de classificateurs comme le font les substantifs comme partie du système de concorde.</xsl:text>
+<xsl:text>, les noms propres ne portent pas de classificateurs pour marquer l’accord comme pour les substantifs.</xsl:text>
 </p>
 </xsl:if>
         <xsl:if test="normalize-space(//np/@artAndDem)!='no'">
@@ -94,7 +94,7 @@
 </xsl:choose>
 <xsl:choose>
             <xsl:when test="//prop/@pnDeterminer='none'"> ne peuvent pas</xsl:when>
-            <xsl:when test="//prop/@pnDeterminer='no'"> peuvent mais ne sont pas obligés de</xsl:when>
+            <xsl:when test="//prop/@pnDeterminer='no'"> peuvent, mais ce n’est pas obligatoire</xsl:when>
             <xsl:when test="//prop/@pnDeterminer='yes'"> doivent</xsl:when>
        </xsl:choose>
 <xsl:text> contenir </xsl:text>
@@ -107,7 +107,7 @@
 </p>
 </xsl:if>
        <p>
-<xsl:text>Des exemples avec des noms propres simples et composés en </xsl:text>
+<xsl:text>Voice quelques exemples avec des noms propres simples et composés en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -116,7 +116,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
         <example num="xProp.16">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -128,7 +128,7 @@
 </xsl:call-template>
 </example>
         <p>
-<xsl:text>Des exemples de noms propres avec syntagmes </xsl:text>
+<xsl:text>Voice quelques exemples de noms propres avec des syntagmes </xsl:text>
 <xsl:choose>
                 <xsl:when test="//pp/@pPos='before'">prépositionnels</xsl:when>
                 <xsl:when test="//pp/@pPos='after'">postpositionnels</xsl:when>
@@ -144,7 +144,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> comprennent:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
         <example num="xProp.20">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -156,7 +156,7 @@
 </xsl:call-template>
 </example>
         <p>
-<xsl:text>Des exemples de noms propres modifiés par des propositions relatives comprises dans des phrases simples mais complètes sont:</xsl:text>
+<xsl:text>Voici quelques exemples de noms propres modifiés par des propositions relatives comprises dans des phrases simples mais complètes :</xsl:text>
 </p>
         <example num="xProp.24">
 <xsl:call-template name="OutputInterlinearEntries">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
     <section1 id="sPP">
         <secTitle>
@@ -11,18 +11,18 @@
             </case>
             </secTitle>
        <p contentType="ctComparativeIntro">
-          <content>Cette section traite de la structure des syntagmes adpositionnels qui expriment généralement le lieu, l’accompagnement, le but, l’instrument, le receveur ou l’agent pour les langues qui n’ont pas de marque de cas sur les noms ou sur les syntagmes nominaux.  Normalement les langues avec marque de cas ont toujours des syntagmes adpositionnels de lieu et temps.</content></p>
-       <p contentType="ctComparativeIntro"><content>Les prépositions precedent leurs complements, tandis que les postpositions les suivent.  En français il y a des prépositions comme montré ici dans </content>
+          <content>Cette section traite de la structure des syntagmes adpositionnels qui expriment généralement le lieu, l’accompagnement, le but, l’instrument, le destinataire ou l’agent pour les langues qui n’ont pas de marque de cas sur les noms ou les syntagmes nominaux.  Normalement les langues avec des marques de cas ont toujours des syntagmes adpositionnels locatif et temporel.</content></p>
+       <p contentType="ctComparativeIntro"><content>Les prépositions précèdent leurs compléments, tandis que les postpositions les suivent.  Le français a des prépositions comme par exemple dans </content>
           <langData>pour Jean</langData>
             <content> et </content>
           <langData>devant la porte</langData>
-          <content>.  Les prépositions ou postpositions peuvent être des mots indépendants ou des clitiques qui se rattachent au bord du complément ou à sa tête.</content>
+          <content>.  Les prépositions ou postpositions peuvent être des mots indépendants ou des clitiques qui se rattachent à la frontière du complément ou à sa tête.</content>
         </p>
-       <p contentType="ctPracticalIntro" show="swNPCaseNNo"><content>Les syntagmes adpositionnels peuvent exprimer le lieu et le temps de même que des relations grammaticales de l’accompagnement, le but, l’instrument, le receveur, le possesseur ou l’agent puisque le cas n’est pas marqué sur le nom ou syntagme nominal en </content><langName/><content>.</content>
+       <p contentType="ctPracticalIntro" show="swNPCaseNNo"><content>Les syntagmes adpositionnels peuvent exprimer le lieu et le temps de même que les relations grammaticales de l’accompagnement, du but, de l’instrument, du destinatiare, du possesseur ou de l’agent, puisque le cas n'est pas marqué sur le nom ou le syntagme nominal en </content><langName/><content>.</content>
        </p>
-       <p contentType="ctPracticalIntro" show="swNPCaseNYes"><content>Normalement les syntagmes adpositionnels expriment seulement le lieu et le temps puisque le cas est marqué sur le nom ou sur le syntagme nominal en </content><langName/><content>.</content>
+       <p contentType="ctPracticalIntro" show="swNPCaseNYes"><content>Normalement, les syntagmes adpositionnels expriment seulement le lieu et le temps puisque le cas est marqué sur le nom ou sur le syntagme nominal en </content><langName/><content>.</content>
        </p>
-       <p><content>Voici quelques exemples de syntagmes de lieu </content>
+       <p><content>Voici quelques exemples de syntagmes locatifs </content>
           <case element="pp" attr="pPos">
              <caseText value="before">prépositionnels</caseText>
           <caseText value="after">postpositionnels</caseText>
@@ -47,14 +47,14 @@
             <content/>
             <case element="pp" attr="pType">
                <caseText value="word">Ce sont tous des mots indépendants.</caseText>
-               <caseText value="clitic">Ce sont tous des clitiques attachés à un autre mot. </caseText>
-               <caseText value="both">Certains sont écrits comme mots indépendants mais quelques-uns sont des clitiques attachés à un autre mot.  </caseText>
+               <caseText value="clitic">Ce sont tous des clitiques rattachés à un autre mot. </caseText>
+               <caseText value="both">Certains sont écrits comme des mots indépendants mais certains sont des clitiques rattachés à un autre mot.  </caseText>
             </case>
             <content/>
             <text show="swPPTypeCliticOrBoth">
                <content>Les clitiques se rattachent </content>
                 <case element="pp" attr="attaches">
-                   <caseText value="edge">au bord</caseText>
+                   <caseText value="edge">à la frontière</caseText>
                    <caseText value="head">à la tête</caseText>
                 </case>
                <content> du complément.  </content>
@@ -64,10 +64,10 @@
            <caseText value="after">Les postpositions</caseText>
    <caseText value="both">Les prépositions et postpositions</caseText>
               <caseText value="unknown">Les adpositions</caseText></case>
-   <content> sont marquées avec des classificateurs en </content><langName/><content> comme partie du système d’accord concordant.  Seules les racines sont montrées ici dans les tableaux mais les syntagmes montrent les formes entières marquées avec des classificateurs.</content> </text>
+   <content> sont marquées par des classificateurs en </content><langName/><content> puisqu’elles s’intègrent dans le système d’accord.  Seules les racines sont montrées dans les tableaux mais les syntagmes illustrent les formes complètes marquées avec des classificateurs.</content> </text>
         </p>
-       <p show="swPPPosPrep"><content>Voici des exemples de prépositions </content><text show="swPPBodypartYes"><content>régulières </content></text>
-          <content>utilisées dans des syntagmes de lieu:</content></p>
+       <p show="swPPPosPrep"><content>Voici quelques exemples de prépositions </content><text show="swPPBodypartYes"><content>habituelles </content></text>
+          <content>utilisées dans des syntagmes locatifs :</content></p>
         <example show="swPPPosPrep">
            <table border="1">
               <headerRow>
@@ -76,12 +76,12 @@
               </headerRow>				
               <row>
                  <col exampleLoc="pp/locativePrepExample"/>
-                 <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
               </row>
            </table>
         </example>
-       <p show="swPPPosPost"><content>Voici des exemples de postpositions </content><text show="swPPBodypartYes"><content>régulières </content></text>
-          <content>utilisées dans des syntagmes de lieu:</content></p>
+       <p show="swPPPosPost"><content>Voici quelques exemples de postpositions </content><text show="swPPBodypartYes"><content>habituelles </content></text>
+          <content>utilisées dans des syntagmes locatifs :</content></p>
        <example show="swPPPosPost">
           <table border="1">
              <headerRow>
@@ -90,12 +90,12 @@
              </headerRow>				
              <row>
                 <col exampleLoc="pp/locativePostExample"/>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
              </row>
           </table>
        </example>
-       <p show="swPPPosBothOrUnknown"><content>Voici des exemples de prépositions et postpositions </content><text show="swPPBodypartYes"><content>régulières </content></text>
-          <content>utilisées dans des syntagmes de lieu:</content></p>
+       <p show="swPPPosBothOrUnknown"><content>Voici quelques exemples de prépositions et postpositions </content><text show="swPPBodypartYes"><content>habituelles </content></text>
+          <content>utilisées dans des syntagmes locatifs :</content></p>
        <example show="swPPPosBothOrUnknown">
           <table border="1">
              <headerRow>
@@ -106,33 +106,33 @@
              <row>
                 <col><content>Prépositions</content></col>
                 <col exampleLoc="pp/locativePrepExample"/>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
              </row>
              <row>
                 <col><content>Postpositions</content></col>
                 <col exampleLoc="pp/locativePostExample"/>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
              </row>
           </table>
        </example>
-       <p show="swPPosBeforeOrBoth"><content>Voici des exemples de syntagmes prépositionnels utilisés dans des syntagmes de lieu:</content></p>
+       <p show="swPPosBeforeOrBoth"><content>Voici quelquees exemples de syntagmes prépositionnels locatifs :</content></p>
        <example show="swPPosBeforeOrBoth">
           <interlinear exampleLoc="pp/locativePrepPPExample"/>
        </example>
-       <p show="swPPosAfterOrBoth"><content>Voici des exemples de syntagmes postpositionnels  utilisée dans des syntagmes de lieu:</content></p>
+       <p show="swPPosAfterOrBoth"><content>Voici quelques exemples de syntagmes postpositionnels locatifs :</content></p>
        <example show="swPPosAfterOrBoth">
           <interlinear exampleLoc="pp/locativePostPPExample"/>
        </example>
-       <p show="swPPBodypartYes"><content>En </content><langName/><content> utilise principalement des mots des parties du corps pour exprimer le lieu dans des syntagmes </content><case element="pp" attr="pPos">
+       <p show="swPPBodypartYes"><content>Le </content><langName/><content> utilise principalement des mots des parties du corps pour exprimer le lieu dans les syntagmes </content><case element="pp" attr="pPos">
           <caseText value="before">prépositionnels</caseText>
           <caseText value="after">postpositionnels</caseText>
           <caseText value="both">prépositionnels et postpositionnels</caseText>
-          <caseText value="unknown">adpositional</caseText></case>
-          <content>.  Voici des exemples des </content><case element="pp" attr="pPos">
+          <caseText value="unknown">adpositionels</caseText></case>
+          <content>.  Voici quelques exemples des </content><case element="pp" attr="pPos">
              <caseText value="before">prépositions</caseText>
              <caseText value="after">postpositions</caseText>
              <caseText value="both">prépositions et postpositions</caseText>
-             <caseText value="unknown">adpositions</caseText></case><content> des parties du corps:</content>
+             <caseText value="unknown">adpositions</caseText></case><content> dérivées de parties du corps :</content>
        </p>      
        <example show="swPPPosPrepAndBodypartYes">
           <table border="1">
@@ -143,8 +143,8 @@
              </headerRow>				
              <row>
                 <col exampleLoc="pp/bodyPartPrepExample"/>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
              </row>
           </table>
        </example>
@@ -157,8 +157,8 @@
              </headerRow>				
              <row>
                 <col exampleLoc="pp/bodyPartPostExample"/>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
              </row>
           </table>
        </example>
@@ -173,22 +173,22 @@
              <row>
                 <col><content>Prépositions</content></col>
                 <col exampleLoc="pp/bodyPartPrepExample"/>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
              </row>
              <row>
                 <col><content>Postpositions</content></col>
                 <col exampleLoc="pp/bodyPartPostExample"/>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-                <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+                <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
              </row>
           </table>
        </example>
-       <p show="swPPosBeforeOrBothAndBodypartYes"><content>Voici des exemples de syntagmes prépositionnels de lieu qui utilisent des parties du corps:</content></p>
+       <p show="swPPosBeforeOrBothAndBodypartYes"><content>Voici quelques exemples de syntagmes prépositionnels locatifs qui utilisent des parties du corps :</content></p>
        <example show="swPPosBeforeOrBothAndBodypartYes">
           <interlinear exampleLoc="pp/bodyPartPrepPPExample"/>
        </example>
-       <p show="swPPosAfterOrBothAndBodypartYes"><content>Voici des exemples de syntagmes postpositionnels de lieu qui utilisent des parties du corps:</content></p>
+       <p show="swPPosAfterOrBothAndBodypartYes"><content>Voici quelques exemples de syntagmes postpositionnels locatifs qui utilisent des parties du corps :</content></p>
        <example show="swPPosAfterOrBothAndBodypartYes">
           <interlinear exampleLoc="pp/bodyPartPostPPExample"/>
        </example>
@@ -196,7 +196,7 @@
           <caseText value="before">prépositions</caseText>
           <caseText value="after">postpositions</caseText>
           <caseText value="both">prépositions et postpositions</caseText>
-          <caseText value="unknown">adpositions</caseText></case><content> qui sont utilisées comme un type de marqueur du cas pour les relations grammaticales mineures sont montrées en </content><exampleRef num="xCaseP"/><content>.</content></p>
+          <caseText value="unknown">adpositions</caseText></case><content> qui sont utilisées comme un type de marqueur du cas pour les relations grammaticales mineures sont présentées en </content><exampleRef num="xCaseP"/><content>.</content></p>
        <example num="xCaseP" show="swNPCaseNNo">
           <table border="1">
              <caption>
@@ -210,7 +210,7 @@
              <row>
                 <col exampleLoc="pp/genitiveP"/>
                 <col>
-                   <content>génitif</content>
+                   <content>Génitif</content>
                 </col>
                 <col>
                    <content>possesseurs</content>
@@ -219,7 +219,7 @@
              <row>
                 <col exampleLoc="pp/dativeP"/>
                 <col>
-                   <content>datif</content>
+                   <content>Datif</content>
                 </col>
                 <col>
                    <content>objets indirects</content>
@@ -228,7 +228,7 @@
              <row>
                 <col exampleLoc="pp/ablativeP"/>
                 <col>
-                   <content>ablatif</content>
+                   <content>Ablatif</content>
                 </col>
                 <col>
                    <content>source ou origine</content>
@@ -237,7 +237,7 @@
              <row>
                 <col exampleLoc="pp/instrumentalP"/>
                 <col>
-                   <content>instrumental</content>
+                   <content>Instrumental</content>
                 </col>
                 <col>
                    <content>instrument, moyen ou agent</content>
@@ -246,7 +246,7 @@
              <row>
                 <col exampleLoc="pp/vocativeP"/>
                 <col>
-                   <content>vocatif</content>
+                   <content>Vocatif</content>
                 </col>
                 <col>
                    <content>adresse directe</content>
@@ -255,7 +255,7 @@
              <row>
                 <col exampleLoc="pp/obliqueP"/>
                 <col>
-                   <content>oblique</content>
+                   <content>Oblique</content>
                 </col>
                 <col>
                    <content>relation grammaticale mineure générale</content>
@@ -265,47 +265,47 @@
        </example>	      
        
                 <p>
-                   <content>Tous les exemples ci-dessus ont un nom, un nom  propre ou un syntagme nominal comme complément.  Des modificateurs possibles du syntagme </content><case element="pp" attr="pPos">
+                   <content>Tous les exemples ci-dessus ont un nom, un nom propre ou un syntagme nominal comme complément.  Des modificateurs possibles du syntagme </content><case element="pp" attr="pPos">
                       <caseText value="before">prépositionnel</caseText>
                       <caseText value="after">postpositionnel</caseText>
                       <caseText value="both">adpositionnel</caseText>
-                      <caseText value="unknown">adpositionnel</caseText></case><content> entire sont considérés ensuite. Puis des exemples d’autres types de compléments permis sont donnés dans la section </content><sectionRef sec="sPPComps"/><content>.</content>
+                      <caseText value="unknown">adpositionnel</caseText></case><content> entier sont considérés ensuite, puis des exemples d’autres types de compléments permis sont donnés dans la section </content><sectionRef sec="sPPComps"/><content>.</content>
         </p>
         <section2 id="sPPModifiers">
            <secTitle>Modificateurs</secTitle>
             <p contentType="ctComparativeIntro">
-               <content>Il y a normalement quelques mots de degré qui peuvent modifier un syntagme </content>
+               <content>Il y a normalement quelques mots de degré qui peuvent modifier tout un syntagme </content>
                 <case element="pp" attr="pPos">
                    <caseText value="before">prépositionnel</caseText>
                    <caseText value="after">postpositionnel</caseText>
                    <caseText value="both">adpositionnel</caseText>
                    <caseText value="unknown">adpositionnel</caseText>
                 </case>
-               <content> entier, tels que </content>
+               <content>, tels </content>
                 <langData>juste</langData>
                 <content> et </content>
                 <langData>tout</langData>
                 <content> dans </content>
-               <langData>juste après le  coin</langData>
+               <langData>juste au coin</langData>
                 <content> et </content>
                <langData>tout au bout de la rue</langData>
-               <content>. Certaines langues ont un groupe d’adverbes de lieu signifiant </content><gloss><content>« juste ici »</content></gloss><content> et </content><gloss><content>« juste là »</content></gloss><content> qui peuvent modifier les syntagmes adpositionnels. Les ordinaux peuvent aussi modifier les syntagmes </content>
+               <content>. Certaines langues ont un groupe d’adverbes locatifs signifiant </content><gloss><content>« juste ici »</content></gloss><content> et </content><gloss><content>« juste là »</content></gloss><content> qui peuvent modifier les syntagmes adpositionnels. Les ordinaux peuvent aussi modifier les syntagmes </content>
                 <case element="pp" attr="pPos">
-                   <caseText value="before">prépositionnel</caseText>
-                   <caseText value="after">postpositionnel</caseText>
-                   <caseText value="both">adpositionnel</caseText>
-                   <caseText value="unknown">adpositionnel</caseText>
+                   <caseText value="before">prépositionnels</caseText>
+                   <caseText value="after">postpositionnels</caseText>
+                   <caseText value="both">adpositionnels</caseText>
+                   <caseText value="unknown">adpositionnels</caseText>
                 </case>
                 <content> comme dans </content>
-               <langData>[le] suivant dans la queue</langData>
+               <langData>[le] suivant dans la file</langData>
                 <content> et </content>
-               <langData>[le] premier sorti de la porte</langData>
+               <langData>[le] premier de la porte</langData>
                <content>.  En plus, certains adverbes de manière peuvent modifier des syntagmes </content>
                 <case element="pp" attr="pPos">
-                   <caseText value="before">prépositionnel</caseText>
-                   <caseText value="after">postpositionnel</caseText>
-                   <caseText value="both">adpositionnel</caseText>
-                   <caseText value="unknown">adpositionnel</caseText>
+                   <caseText value="before">prépositionnels</caseText>
+                   <caseText value="after">postpositionnels</caseText>
+                   <caseText value="both">adpositionnels</caseText>
+                   <caseText value="unknown">adpositionnels</caseText>
                 </case>
                 <content> comme dans </content>
                <langData>presque dans le trou</langData>
@@ -316,34 +316,34 @@
                 <content>.</content>
             </p>
            <p contentType="ctPracticalIntro">
-              <content>Généralement, il y a certains mots de degré, ordinaux et adverbes de manière qui peuvent modifier un syntagme </content>
+              <content>Généralement, il y a certains mots de degré, des ordinaux et des adverbes de manière qui peuvent modifier tout un syntagme </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnel</caseText>
                  <caseText value="after">postpositionnel</caseText>
                  <caseText value="both">adpositionnel</caseText>
                  <caseText value="unknown">adpositionnel</caseText>
               </case>
-              <content> entier.</content>
+              <content>.</content>
                    </p>
             <p>
-                <content>En </content>
+                <content>Le </content>
                 <langName/>
                 <content/>
                 <case element="pp" attr="modifiers">
-                   <caseText value="no"> il n’y a pas de modificateurs qui se trouvent soit avant soit après le syntagme entier.</caseText>
-                   <caseText value="yes"> un syntagme <case element="pp" attr="pPos">
+                   <caseText value="no"> n’a pas de modificateurs qui se trouvent soit avant soit après le syntagme</caseText>
+                   <caseText value="yes"> admet que les catégories suivantes de mots indépendants modifient le syntagme <case element="pp" attr="pPos">
                       <caseText value="before">prépositionnel</caseText>
                       <caseText value="after">postpositionnel</caseText>
                       <caseText value="both">prépositionnel ou postpositionnel</caseText>
                       <caseText value="unknown">adpositionnel</caseText>
-                   </case> entier peuvent être modifiés par les catégories suivants de mots indépendants.</caseText>
+                   </case> dans son ensemble.</caseText>
                 </case>
                <text show="swPPModifiersNo"><content>  Ni les mots de degré ni les ordinaux ni les adverbes ne peuvent modifier les syntagmes </content>
                     <case element="pp" attr="pPos">
-                       <caseText value="before">prépositionnel</caseText>
-                       <caseText value="after">postpositionnel</caseText>
-                       <caseText value="both">prépositionnel ou postpositionnel</caseText>
-                       <caseText value="unknown">adpositionnel</caseText>
+                       <caseText value="before">prépositionnels</caseText>
+                       <caseText value="after">postpositionnels</caseText>
+                       <caseText value="both">prépositionnels ou postpositionnels</caseText>
+                       <caseText value="unknown">adpositionnels</caseText>
                     </case>
                   <content> comme mots indépendants.</content> </text>
                 <content/>
@@ -359,22 +359,22 @@
               <content> peuvent être modifiés par des mots de degré qui se trouvent </content>
               <text show="swPPDegreePosBefore"><content>avant le</content></text>
               <text show="swPPDegreePosAfter"><content>après le</content></text>
-              <text show="swPPDegreePosBoth"><content>des deux côtés du</content></text>
+              <text show="swPPDegreePosBoth"><content>de part et d’autre du</content></text>
               <text show="swPPDegreePosEither"><content>d’un côté ou l’autre du</content></text>
-              <text show="swPPDegreePosBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-              <text show="swPPDegreePosAfterOrBoth"><content>après ou des deux côtés du</content></text>
-              <text show="swPPDegreePosEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
-              <text show="swPPDegreePosNotOther"><content> syntagme entier.  </content></text>
+              <text show="swPPDegreePosBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+              <text show="swPPDegreePosAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+              <text show="swPPDegreePosEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
+              <text show="swPPDegreePosNotOther"><content> syntagme dans son ensemble.  </content></text>
               <text show="swPPDegreePosOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="pp/ppDegreePosOther"/><content>.  </content></text>
-              <text show="swPPDegreePosPosAndOther"><content> syntagme entier et peut se trouver aussi ___</content><contentCheckBoxOther contentLoc="pp/ppDegreePosOther"/><content>.  </content></text>
-              <content>Les mots de degré qui peuvent modifier le syntagme </content>
+              <text show="swPPDegreePosPosAndOther"><content> syntagme dans son enseemble et peuvent aussi se trouver ___</content><contentCheckBoxOther contentLoc="pp/ppDegreePosOther"/><content>.  </content></text>
+              <content>Voici les mots de degré qui peuvent modifier l’ensemble du syntagme </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnel</caseText>
                  <caseText value="after">postpositionnel</caseText>
                  <caseText value="both">prépositionnel ou postpositionnel</caseText>
                  <caseText value="unknown">adpositionnel</caseText>
               </case>
-              <content> entier en </content><langName/><content> sont:</content></p>
+              <content> en </content><langName/><content> :</content></p>
            <example show="swPPModifiersYesDegree">
               <table border="1">
                  <headerRow>
@@ -383,18 +383,18 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="pp/degree"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>     
-           <p show="swPPModifiersYesDegree"><content>Voici des exemples de syntagmes </content>
+           <p show="swPPModifiersYesDegree"><content>Voici quelques exemples de syntagmes </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnels</caseText>
                  <caseText value="after">postpositionnels</caseText>
                  <caseText value="both">prépositionnels ou postpositionnels</caseText>
                  <caseText value="unknown">adpositionnels</caseText>
               </case>
-              <content> avec des mots de degré qui les modifient:</content></p>          
+              <content> avec des mots de degré qui les modifient :</content></p>          
            <example show="swPPModifiersYesDegree">
               <interlinear exampleLoc="pp/degreeWithPP"/>
            </example>            
@@ -424,7 +424,7 @@
                  <caseText value="both">prépositionnel ou postpositionnel</caseText>
                  <caseText value="unknown">adpositionnel</caseText>
               </case>
-              <content> entier en </content><langName/><content> sont:</content></p>
+              <content> dans son ensemble en </content><langName/><content> sont :</content></p>
            <example show="swPPModifiersYesOrdinal">
               <table border="1">
                  <headerRow>
@@ -433,18 +433,18 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="pp/ordinal"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>     
-           <p show="swPPModifiersYesOrdinal"><content>Voici des exemples de syntagmes </content>
+           <p show="swPPModifiersYesOrdinal"><content>Voici quelques exemples de syntagmes </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnels</caseText>
                  <caseText value="after">postpositionnels</caseText>
                  <caseText value="both">prépositionnels ou postpositionnels</caseText>
                  <caseText value="unknown">adpositionnels</caseText>
               </case>
-              <content> avec des mots ordinaux qui les modifient:</content></p>          
+              <content> avec des mots ordinaux qui les modifient :</content></p>          
            <example show="swPPModifiersYesOrdinal">
               <interlinear exampleLoc="pp/ordinalWithPP"/>
            </example>            
@@ -456,17 +456,17 @@
                  <caseText value="both">prépositionnels ou postpositionnels</caseText>
                  <caseText value="unknown">adpositionnels</caseText>
               </case>
-              <content> peuvent être modifies </content><text show="swPPModifiersYesDegreeOrOrdinal"><content>aussi </content></text><content>par des adverbs de manière qui se trouvent </content>
+              <content> peuvent être modifies </content><text show="swPPModifiersYesDegreeOrOrdinal"><content>aussi </content></text><content>par des adverbes de manière qui se trouvent </content>
               <text show="swPPMannerPosBefore"><content>avant le</content></text>
               <text show="swPPMannerPosAfter"><content>après le</content></text>
-              <text show="swPPMannerPosBoth"><content>des deux côtés du</content></text>
+              <text show="swPPMannerPosBoth"><content>de part et d’autre du</content></text>
               <text show="swPPMannerPosEither"><content>d’un côté ou l’autre du</content></text>
-              <text show="swPPMannerPosBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-              <text show="swPPMannerPosAfterOrBoth"><content>après ou des deux côtés du</content></text>
-              <text show="swPPMannerPosEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+              <text show="swPPMannerPosBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+              <text show="swPPMannerPosAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+              <text show="swPPMannerPosEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
               <text show="swPPMannerPosNotOther"><content> syntagme entier.  </content></text>
               <text show="swPPMannerPosOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="pp/ppMannerPosOther"/><content>.  </content></text>
-              <text show="swPPMannerPosPosAndOther"><content> syntagme entier et peut se trouver aussi ___</content><contentCheckBoxOther contentLoc="pp/ppMannerPosOther"/><content>.  </content></text>
+              <text show="swPPMannerPosPosAndOther"><content> syntagme entier et peuvent aussi se trouver ___</content><contentCheckBoxOther contentLoc="pp/ppMannerPosOther"/><content>.  </content></text>
               <content>Les adverbs de manière qui peuvent modifier le syntagme </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnel</caseText>
@@ -474,7 +474,7 @@
                  <caseText value="both">prépositionnel ou postpositionnel</caseText>
                  <caseText value="unknown">adpositionnel</caseText>
               </case>
-              <content> entier en </content><langName/><content> sont:</content></p>
+              <content> dans son ensemble en </content><langName/><content> sont :</content></p>
            <example show="swPPModifiersYesManner">
               <table border="1">
                  <headerRow>
@@ -483,18 +483,18 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="pp/manner"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>     
-           <p show="swPPModifiersYesManner"><content>Voici des exemples de syntagmes </content>
+           <p show="swPPModifiersYesManner"><content>Voici quelques exemples de syntagmes </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnels</caseText>
                  <caseText value="after">postpositionnels</caseText>
                  <caseText value="both">prépositionnels ou postpositionnels</caseText>
                  <caseText value="unknown">adpositionnels</caseText>
               </case>
-              <content> avec des adverbs de manière qui les modifient:</content></p>          
+              <content> avec des adverbes de manière qui les modifient :</content></p>          
            <example show="swPPModifiersYesManner">
               <interlinear exampleLoc="pp/mannerWithPP"/>
            </example>            
@@ -506,18 +506,18 @@
                  <caseText value="both">prépositionnels ou postpositionnels</caseText>
                  <caseText value="unknown">adpositionnels</caseText>
               </case>
-              <content> peuvent être modifies </content><text show="swPPModifiersYesDegreeOrOrdinalOrManner"><content>aussi </content></text><content>par des adverbs de lieu qui se trouvent </content>
+              <content> peuvent être modifies </content><text show="swPPModifiersYesDegreeOrOrdinalOrManner"><content>aussi </content></text><content>par des adverbes locatifs qui se trouvent </content>
               <text show="swPPLocativePosBefore"><content>avant le</content></text>
               <text show="swPPLocativePosAfter"><content>après le</content></text>
-              <text show="swPPLocativePosBoth"><content>des deux côtés du</content></text>
+              <text show="swPPLocativePosBoth"><content>de part et d’autre du</content></text>
               <text show="swPPLocativePosEither"><content>d’un côté ou l’autre du</content></text>
-              <text show="swPPLocativePosBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-              <text show="swPPLocativePosAfterOrBoth"><content>après ou des deux côtés du</content></text>
-              <text show="swPPLocativePosEitherOrBoth"><content>d’un côté ou l’autre ou des deux côtés du</content></text>
+              <text show="swPPLocativePosBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+              <text show="swPPLocativePosAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+              <text show="swPPLocativePosEitherOrBoth"><content>d’un côté ou l’autre ou de part et d’autre du</content></text>
               <text show="swPPLocativePosNotOther"><content> syntagme entier.  </content></text>
               <text show="swPPLocativePosOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="pp/ppLocativePosOther"/><content>.  </content></text>
-              <text show="swPPLocativePosPosAndOther"><content> syntagme entier et peut se trouver aussi ___</content><contentCheckBoxOther contentLoc="pp/ppLocativePosOther"/><content>.  </content></text>
-              <content>Les adverbs de lieu qui peuvent modifier le syntagme </content>
+              <text show="swPPLocativePosPosAndOther"><content> syntagme entier et peuvent aussi se trouver ___</content><contentCheckBoxOther contentLoc="pp/ppLocativePosOther"/><content>.  </content></text>
+              <content>Voici les adverbes locatifs qui peuvent modifier le syntagme </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnel</caseText>
                  <caseText value="after">postpositionnel</caseText>
@@ -528,23 +528,23 @@
            <example show="swPPModifiersYesLocative">
               <table border="1">
                  <headerRow>
-                    <headerCol>Adverbes de lieu</headerCol>
+                    <headerCol>Adverbes locatifs</headerCol>
                     <headerCol>Glose</headerCol>
                  </headerRow>
                  <row>
                     <col exampleLoc="pp/locative"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>     
-           <p show="swPPModifiersYesLocative"><content>Voici des exemples de syntagmes </content>
+           <p show="swPPModifiersYesLocative"><content>Voici quelques exemples de syntagmes </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnels</caseText>
                  <caseText value="after">postpositionnels</caseText>
                  <caseText value="both">prépositionnels ou postpositionnels</caseText>
                  <caseText value="unknown">adpositionnels</caseText>
               </case>
-              <content> avec des adverbs de lieu qui les modifient:</content></p>          
+              <content> avec des adverbes locatifs qui les modifient :</content></p>          
            <example show="swPPModifiersYesLocative">
               <interlinear exampleLoc="pp/locativeWithPP"/>
            </example>            
@@ -556,14 +556,14 @@
                  <caseText value="both">prépositionnels ou postpositionnels</caseText>
                  <caseText value="unknown">adpositionnels</caseText>
               </case>
-              <content> peuvent être modifies </content><text show="swPPModifiersYesNotOtherOnly"><content>aussi </content></text><content>par ___</content><contentCheckBoxOther contentLoc="pp/ppModifierOther"/><content>.  Voici des exemples de ces autres éléments qui peuvent modifier le syntagme </content>
+              <content> peuvent </content><text show="swPPModifiersYesNotOtherOnly"><content>aussi </content></text><content> être modifiés par ___</content><contentCheckBoxOther contentLoc="pp/ppModifierOther"/><content>.  Voici quelques exemples de ces autres éléments qui peuvent modifier le syntagme </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnel</caseText>
                  <caseText value="after">postpositionnel</caseText>
                  <caseText value="both">prépositionnel ou postpositionnel</caseText>
                  <caseText value="unknown">adpositionnel</caseText>
               </case>
-              <content> entier en </content><langName/><content> sont:</content></p>
+              <content> dans son ensemble en </content><langName/><content> :</content></p>
            <example show="swPPModifiersYesOther">
               <table border="1">
                  <headerRow>
@@ -572,18 +572,18 @@
                  </headerRow>
                  <row>
                     <col exampleLoc="pp/otherMod"/>
-                    <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                    <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                  </row>
               </table>
            </example>     
-           <p show="swPPModifiersYesOther"><content>Voici des exemples de syntagmes </content>
+           <p show="swPPModifiersYesOther"><content>Voici quelques exemples de syntagmes </content>
               <case element="pp" attr="pPos">
                  <caseText value="before">prépositionnels</caseText>
                  <caseText value="after">postpositionnels</caseText>
                  <caseText value="both">prépositionnels ou postpositionnels</caseText>
                  <caseText value="unknown">adpositionnels</caseText>
               </case>
-              <content> avec ces autres éléments qui les modifient:</content></p>          
+              <content> avec ces autres éléments qui les modifient :</content></p>          
            <example show="swPPModifiersYesOther">
               <interlinear exampleLoc="pp/otherModWithPP"/>
            </example>            
@@ -598,27 +598,27 @@
                         <caseText value="after">postpositions</caseText>
                         <caseText value="both">prépositions or postpositions</caseText>
                         <caseText value="unknown">adpositions</caseText>                  
-                    </case><content>  peuvent rester seules sans un complément dû à un mouvement de particule comme dans les phrases en anglais </content>
-                   <langData>Come [right in]</langData><gloss><content>  « Entrez, entrez! (littéralement, entrez [droit dans]) »</content></gloss>
+                    </case><content> peuvent fonctionner seules, sans complément à cause d’un mouvement de particule, comme dans les exemples suivants en anglais </content>
+                   <langData>Come [right in]</langData><gloss><content>  « Entre directement »</content></gloss>
                     <content> et </content>
-                   <langData>John turned the light [on/off]</langData><gloss><content> « Jean a allumé/éteint la lumière" (littéralement, Jean a tourné la lumière [sur / de]) »</content></gloss>
-                   <content>.  Aussi certaines langues permettent des </content>
+                   <langData>John turned the light [on/off]</langData><gloss><content> « Jean a allumé/éteint la lumière »</content></gloss>
+                   <content>. (Aucun de ces exemples n’est correct en français.) De même, certaines langues admettent que des </content>
                     <case element="pp" attr="pPos">
                         <caseText value="before">prépositions</caseText>
                         <caseText value="after">postpositions</caseText>
                         <caseText value="both">prépositions or postpositions</caseText>
                         <caseText value="unknown">adpositions</caseText>                  
-                    </case><content> de rester seules quand leur complément fait partie d’une question,  comme dans </content>
-                   <langData>Who(m) did you give the book [to _ ]?</langData><gloss><content> « A qui as-tu donné le livre? (littéralement, Qui as-tu donné le livre [à]?) »</content></gloss>
-                   <content> en anglais.   Aucun de ces exemples n’est correct en français.</content>
+                    </case><content> fonctionnent seules quand leur complément fait partie d’une question, comme dans </content>
+                   <langData>Who(m) did you give the book [to _ ]?</langData><gloss><content> « A qui avez-vous donné le livre ? (littéralement, Qui avez-vous donné le livre [à] ?) »</content></gloss>
+                   <content> en anglais.   (Aucun de ces exemples n’est correct en français.)</content>
                 </p>
             <p>
-                    <content>En </content>
+                    <content>Le </content>
                     <langName/>
                     <content/>
                     <case element="pp" attr="alone">
-                       <caseText value="no"> il n’est pas permis aux </caseText>
-                       <caseText value="yes"> il est permis à certains </caseText>
+                       <caseText value="no"> n’admet pas que les </caseText>
+                       <caseText value="yes"> admet que certaines des </caseText>
                     </case>
                <content>ses </content>
                     <text show="swPPPosPrep">
@@ -636,9 +636,9 @@
                     <text show="swPPPosBoth">
                         <content>prépositions ou postpositions</content>
                     </text>
-               <content> de rester seules sans complément dû au mouvement. </content>
+               <content> fonctionnent seules sans complément dû au mouvement de particule. </content>
                     <text show="swPPAloneYes">
-                       <content>Voici des exemples dans des phrases complètes:</content>
+                       <content>Voici quelques exemples dans des phrases complètes :</content>
                     </text>
                     <content/>
                 </p>
@@ -647,27 +647,27 @@
                 </example>
  
             <p contentType="ctComparativeIntro">
-               <content>La plupart des langues permettent des adverbes de lieu comme compléments de </content>
+               <content>La plupart des langues admettent des adverbes locatifs comme compléments de </content>
                     <case element="pp" attr="pPos">
                         <caseText value="before">prépositions</caseText>
                         <caseText value="after">postpositions</caseText>
                         <caseText value="both">prépositions ou postpositions</caseText>
                         <caseText value="unknown">adpositions</caseText>                  
-                    </case><content>, par exemple en anglais </content>
-               <langData>over there</langData><gloss><content>  « là-bas »</content></gloss>
+                    </case><content>, ainsi par exemple </content>
+               <langData>par ici</langData>
                     <content> et </content>
-               <langData>in here</langData><gloss><content>  « ci-dedans »</content></gloss>
+               <langData>par là</langData>
                     <content>.</content>
                 </p>
             <p>
-                    <content>En </content>
+                    <content>Le </content>
                     <langName/>
                     <content/>
                     <case element="pp" attr="locative">
-                       <caseText value="no"> il n’est pas permis aux </caseText>
-                       <caseText value="yes">  il est permis à certains </caseText>
+                       <caseText value="no"> n’admet </caseText>
+                       <caseText value="yes"> admet </caseText>
                     </case>
-               <content> adverbes de lieu comme compléments de </content>
+               <content> les adverbes locatifs comme compléments de </content>
                     <text show="swPPPosPrep">
                         <content>prépositions.</content>
                     </text>
@@ -685,7 +685,7 @@
                     </text>
                     <content/>
                     <text show="swPPLocativeYes">
-                       <content>  Voici des exemples avec des complements adverbiaux de lieu:</content>
+                       <content>  Voici quelques exemples avec des complements adverbiaux locatifs :</content>
                     </text>
                     <content/>
                 </p>
@@ -700,27 +700,27 @@
                         <caseText value="after">postpositions</caseText>
                         <caseText value="both">prépositions et postpositions</caseText>
                         <caseText value="unknown">adpositions</caseText>                  
-                    </case><content> de lieu sont un groupe spécial dans ce sens qu’elles peuvent prendre un autre syntagme </content>
+                    </case><content> locatifs sont un groupe spécial dans ce sens qu’elles peuvent prendre un autre syntagme </content>
                     <case element="pp" attr="pPos">
                        <caseText value="before">prépositionnel</caseText>
                        <caseText value="after">postpositionnel</caseText>
                        <caseText value="both">prépositionnel ou postpositionnel</caseText>
                        <caseText value="unknown">adpositionnel</caseText>
-                    </case><content> comme complément.  Des exemples en anglais de ce type sont: </content>
-               <langData>up [to the top]</langData><gloss><content> (en haut [jusqu’au sommet])</content></gloss>
+                    </case><content> comme complément.  Des exemples en anglais de ce type sont : </content>
+               <langData>up [to the top]</langData><gloss><content> (jusqu’en haut)</content></gloss>
                     <content>, </content>
-               <langData>around [behind the shed]</langData><gloss><content> (autour [derrière la cabane])</content></gloss>
+               <langData>around [behind the shed]</langData><gloss><content> (à l'arrière de la remise)</content></gloss>
                     <content> et </content>
-               <langData>over [by the table]</langData><gloss><content>  (là-bas [près de la table])</content></gloss>
+               <langData>over [by the table]</langData><gloss><content>  (là-bas près de la table)</content></gloss>
                <content>.  Ceci n’est pas permis en français.</content>
                 </p>
             <p>
-                    <content>En </content>
+                    <content>Le </content>
                     <langName/>
                     <content/>
                     <case element="pp" attr="ppComp">
-                       <caseText value="no"> il n’y a pas de </caseText>
-                        <caseText value="yes"> il y a des </caseText>
+                       <caseText value="no"> n’a pas de </caseText>
+                        <caseText value="yes"> a des </caseText>
                     </case>
                     <content/>
                     <text show="swPPPosPrep">
@@ -738,15 +738,15 @@
                     <text show="swPPPosBoth">
                         <content>prépositions et postpositions</content>
                     </text>
-               <content> de lieu qui prennent un syntagme </content>
+               <content> locatives qui admettent un syntagme </content>
                     <case element="pp" attr="pPos">
                        <caseText value="before">prépositionnel</caseText>
                        <caseText value="after">postpositionnel</caseText>
                        <caseText value="both">prépositionnel ou postpositionnel</caseText>
                        <caseText value="unknown">adpositionnel</caseText>
-                    </case><content> de lieu comme complément.  </content>
+                    </case><content> locatifs comme complément.  </content>
                     <text show="swPPCompPPYes">
-                       <content>Voici des exemples:</content>
+                       <content>Voici quelques exemples :</content>
                     </text>
                     <content/>
                 </p>
@@ -762,17 +762,16 @@
                       <caseText value="both">prépositions ou postpositions</caseText>
                       <caseText value="unknown">adpositions</caseText>                  
                    </case><content> quand ils prennent un syntagme nominal comme complément comme dans </content><langData>avant vous</langData><content> ou </content><langData>après cela</langData>
-               <content>.  En anglais ils peuvent aussi être suivi d’un complément gérondif comme dans </content><langData>before [signing the contract]</langData><gloss><content>  « avant de [signer le contrat] »</content></gloss><content> et </content><langData>after [buying our new house]</langData><gloss><content>  « après [avoir acheté notre nouvelle maison] »</content></gloss>
-               <content> puisque les gérondifs sont un type spécial de syntagme nominal.  En français il faudrait un infinitif au lieu d’un gérondif dans  le syntagme équivalent.</content> </p>
+               <content>.  En anglais, ils peuvent aussi être suivi d’un complément gérondif comme dans </content><langData>before [signing the contract]</langData><gloss><content>  « avant de [signer le contrat] »</content></gloss><content> et </content><langData>after [buying our new house]</langData><gloss><content>  « après [avoir acheté notre nouvelle maison] »</content></gloss>
+               <content> puisqu’en anglais les gérondifs sont un type spécial de syntagme nominal.  En français il faudrait un infinitif au lieu d’un gérondif dans le syntagme équivalent.</content> </p>
             <p>
-                    <content>En </content>
+                    <content>Le </content>
                     <langName/>
                     <content/>
                     <case element="pp" attr="tempComp">
-                       <caseText value="no"> il y en a pas </caseText>
-                       <caseText value="yes"> il y a </caseText>
+                       <caseText value="no"> n'a pas de </caseText>
+                       <caseText value="yes"> a des </caseText>
                     </case>
-                    <content>des </content>
                     <text show="swPPPosPrep">
                         <content>prépositions</content>
                     </text>
@@ -788,9 +787,9 @@
                     <text show="swPPPosBoth">
                         <content>prépositions ou postpositions</content>
                     </text>
-               <content> temporelles qui prennent un syntagme nominal ou un gérundif comme complément.  </content>
+               <content> temporelles qui admettent un syntagme nominal ou un gérundif comme complément.  </content>
                     <text show="swPPTempCompYes">
-                       <content>Voici des exemples en phrases completes:</content>
+                       <content>Voici quelques exemples dans des phrases completes :</content>
                     </text>
                     <content/>
                 </p>
@@ -803,7 +802,7 @@
                   <caseText value="after">postpositions</caseText>
                   <caseText value="both">prépositions ou postpositions</caseText>
                   <caseText value="unknown">adpositions</caseText>                  
-               </case><content> temporelles peuvent aussi avoir des phrases comme compléments.  Dans cette fonction ce sont des adverbes temporels et la phrase entière est une phrase adverbiale qui modifie habituellement la phrase principale.  De tels exemples seront détaillés dans la section </content><sectionRef sec="sAdvCl"/><content>.</content>
+               </case><content> temporelles peuvent aussi admettre des phrases comme compléments.  Dans cette fonction, ce sont des adverbes temporels et la phrase entière est une proposition adverbiale qui modifie habituellement la proposition principale.  Ce type d’exemples sera traité dans la section </content><sectionRef sec="sAdvCl"/><content>.</content>
             </p>
             <p contentType="ctComparativeIntro" show="swPPTempCompYes"><content>Ces mêmes </content>
                <case element="pp" attr="pPos">
@@ -811,17 +810,17 @@
                   <caseText value="after">postpositions</caseText>
                   <caseText value="both">prépositions ou postpositions</caseText>
                   <caseText value="unknown">adpositions</caseText>                  
-               </case><content> temporelles peuvent aussi avoir des phrases comme compléments, comme par exemple en anglais </content>
+               </case><content> temporelles peuvent aussi admettre des phrases comme compléments, comme par exemple en anglais </content>
                <langData>before [the rain stops]</langData><gloss><content>  « avant que [la pluie s’arrête] »</content></gloss>
                <content> et </content>
                <langData>after [John came home]</langData><gloss><content>  « après que [Jean soit rentré] »</content></gloss>
-               <content>.  (En français l’adverbe est suivi du complémentiseur « que » et une proposition au subjonctif.)  Utilisés ainsi ce sont des adverbes temporels au lieu de </content>
+               <content>.  (En français l’adverbe est suivi du complémentiseur « que » et une proposition au subjonctif.)  Dans cet emploi, ce sont des adverbes temporels et non des </content>
                <case element="pp" attr="pPos">
                   <caseText value="before">prépositions</caseText>
                   <caseText value="after">postpositions</caseText>
                   <caseText value="both">prépositions ou postpositions</caseText>
                   <caseText value="unknown">adpositions</caseText>                  
-               </case><content> et le syntagme entier est une proposition adverbial qui modifie la phrase principale. De tels exemples seront détaillés dans la section </content><sectionRef sec="sAdvCl"/><content>.</content>
+               </case><content> et le syntagme entier est une proposition adverbiale qui modifie la proposition principale. Ce type d’exemples sera traité dans la section </content><sectionRef sec="sAdvCl"/><content>.</content>
             </p>
          </section2>
     </section1>

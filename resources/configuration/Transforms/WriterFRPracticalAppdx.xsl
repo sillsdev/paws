@@ -16,7 +16,7 @@
 <xsl:text>.</xsl:text>
 </p>
 		<section1 id="sConsonants">
-			<secTitle>Consonnes</secTitle>
+			<secTitle>Les Consonnes</secTitle>
 			<p>
 <xsl:text>En </xsl:text>
 <xsl:choose>
@@ -27,14 +27,13 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a les consonnes montrés en </xsl:text>
+<xsl:text> il y a les consonnes montrées dans le tableau </xsl:text>
 <exampleRef num="xConsonants" equal="no" letterOnly="no" />
-<xsl:text>.   Le tableau identifie les sons dans l’alphabet phonétique (API), suivis du symbole utilisé dans l’orthographe pratique entre parenthèses, 
-					s’ils sont différents.</xsl:text>
+<xsl:text>.   Ce tableau identifie les sons dans l’alphabet phonétique (API), les symboles sont suivis du symbole utilisé dans l’orthographe pratique entre parenthèses, 
+					dans les cas où ils sont différents.</xsl:text>
 </p>
 			<p>
-<object type="tComment">Il faut noter que le tableau contient un plus grand nombre de symboles API que l’on ne voit en votre langue. Il faut effacer tous les symboles et peut-être des colonnes ou des lignes entières qui ne sont pas utilisés dans votre langue. 
-			En plus, entrez le symbole de l’orthographe pratique entre parenthèses après le symbole API dans chaque cas où ils sont différents.</object>
+<object type="tComment">Il faut remarquer que le tableau contient un plus grand nombre de symboles API que l’on ne trouve en votre langue. Il faudra effacer tout ce qui n’est pas utilisé dans votre langue, les symboles et probablement  des colonnes ou des lignes entières. Ensuite, il faudra saisir, entre parenthèses, le symbole de l’orthographe pratique après le symbole API, dans chaque cas où ils sont différents.</object>
 </p>
 			<example num="xConsonants">
 <table>
@@ -625,7 +624,7 @@
 </example>
 		</section1>
 		<section1 id="sVowels">
-			<secTitle>Voyelles</secTitle>
+			<secTitle>Les Voyelles</secTitle>
 			<p>
 <xsl:text>En </xsl:text>
 <xsl:choose>
@@ -636,13 +635,12 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> il y a les voyelles montrées en </xsl:text>
+<xsl:text> il y a les voyelles montrées dans le tableau </xsl:text>
 <exampleRef num="xVowels" equal="no" letterOnly="no" />
-<xsl:text>.  Le tableau identifie les sons de l’alphabet phonétique (API), suivis du symbole utilisé dans l’orthographe pratique entre parenthèses, s’ils sont différents.</xsl:text>
+<xsl:text>.  Ce tableau identifie les sons de l’alphabet phonétique (API), les symboles sont suivis du symbole utilisé dans l’orthographe pratique entre parenthèses, dans les cas où ils sont différents.</xsl:text>
 </p>
 			<p>
-<object type="tComment">Il faut noter que le tableau contient un plus grand nombre de symboles API que l’on ne voit en votre langue. Il faut effacer tous les symboles et peut-être des colonnes ou des lignes entières qui ne sont pas utilisés dans votre langue. En plus, entrez le symbole de l’orthographe pratique entre parenthèses après le symbole 
-				API dans chaque cas où ils sont différents.</object>
+<object type="tComment">Il faut remarquer que le tableau contient un plus grand nombre de symboles API que l’on ne trouve en votre langue. Il faudra effacer tout ce qui n’est pas utilisé dans votre langue, les symboles et probablement des colonnes ou des lignes entières. Ensuite, il faudra saisir, entre parenthèses, le symbole de l’orthographe pratique après le symbole API, dans chaque cas où ils sont différents.</object>
 </p>
 			<example num="xVowels">
 <table>

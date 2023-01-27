@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="QPDeterminers" count="2.2">
-   <title level="2">Quantifieurs et Syntagmes de Quantification – Sans autres déterminants</title>
+   <title level="2">Quantifieurs et Syntagmes de quantification – Sans autres déterminants</title>
    <introduction>La seconde série comprend des quantifieurs tels que <example>quelques</example>, <example>quelconque</example>, <example>chaque</example> et <example>tout</example> qui normalement ne permettent pas d’autres <technicalTermRef term="ttDeterminers">déterminats</technicalTermRef> tels que les <technicalTermRef term="ttArticles">articles</technicalTermRef>, les <technicalTermRef term="ttDemonstratives">démonstratifs</technicalTermRef> ou les <technicalTermRef term="ttPossessors">possesseurs</technicalTermRef> dans le syntagme nominal. Note : ‘déterminant’ ne se réfère pas à tous les éléments pouvant préciser le sens du nom noyau, mais uniquement aux articles, démonstratifs ou possessifs. <br/><br/>
       Les exemples français (1-3) montrent ce qui est grammatical, mais les exemples (4-6) illustrent que ces mots ne peuvent pas se apparaître avec les articles.  
       Notez qu’un exemple comme <example> quelques-uns des enfants</example> est grammatical, mais ceci est un cas où <example>quelques</example>  est employé comme noyau du syntagme nominal, modifié par un syntagme <technicalTermRef term="ttPartitive">partitif</technicalTermRef><example> des enfants</example>.  Ce point sera traité sur la page finale de cette section.

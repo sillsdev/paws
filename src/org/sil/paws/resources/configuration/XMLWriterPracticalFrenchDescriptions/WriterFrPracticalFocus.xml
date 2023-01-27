@@ -1,130 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
    <section1 id="sFocus">
-      <secTitle>Constructions de focus et de thème</secTitle>
+      <secTitle>Constructions de focus et de topique</secTitle>
 	  <p contentType="ctPracticalIntro"><content>
-	     Cette section traite deux sortes de constructions qui attirent l’attention à un élément particulier.  Puisque les thèmes se trouvent en dehors des constructions de focus et ont une portée plus étendue, nous les considérerons en priorité. Il est possible qu’une seule phrase ait à la fois un syntagme de thème et un syntagme de focus.</content></p>
+	     Cette section traite deux types de constructions qui attirent l’attention sur un élément particulier.  Nous considérerons les topiques en premier lieu, puisqu’ils se trouvent en dehors des constructions de focus et ont une portée plus étendue. Il est possible qu'une seule phrase ait à la fois un syntagme de topique et un syntagme de focus.</content></p>
       <p contentType="ctComparativeIntro"><content>
-         Cette section traite deux sortes de constructions qui attirent l’attention à un élément particulier.  Puisque les thèmes se trouvent en dehors des constructions de focus et ont une portée plus étendue, nous les considérerons en priorité.  L’exemple </content><langData>Quant à Guillaume, le football il joue ___ le mieux</langData><content> montre qu’une seule phrase peut avoir un syntagme de thème et de focus à la fois.  Dans ce cas le thème </content><langData>Guillaume</langData><content> est introduit par le marqueur de thème </content><langData>quant à</langData><content>, puis la phrase de focus </content><langData>football</langData><content> qui a été déplacé de sa place normale dans la phrase.</content></p>
+         Cette section traite deux types de constructions qui attirent l’attention sur un élément particulier.  Nous considérerons les topiques en premier lieu, puisqu’ils se trouvent en dehors des constructions de focus et ont une portée plus étendue.  L’exemple </content><langData>Quant à Guillaume, c'est au foot qu'il joue ____le mieux</langData><content> montre qu’une seule phrase peut avoir à la fois un syntagme de topique et un syntagme de focus.  Dans ce cas le topique </content><langData>Guillaume</langData><content> est introduit par le marqueur de topique </content><langData>quant à</langData><content>, puis le syntagme de focus </content><langData>foot</langData><content> qui a été déplacée de sa place normale dans la phrase, la suit.</content></p>
    <section2 id="sFocusTopics">
-      <secTitle>Thèmes et marqueurs de thème</secTitle>
+      <secTitle>Topiques et Marqueurs de topique</secTitle>
 		 <p contentType="ctPracticalIntro"><content>
-		    Selon la définition ici, les constructions de thème se composent d’un syntagme de thème suivi d’une phrase complète ou d’une question et séparée d’habitude par la ponctuation.  Certain marqueurs peuvent aussi être utilisés pour signaler les thèmes. </content>
+		    Selon la définition donnée ici, les constructions de topique sont formées d’un syntagme de topique suivi d’une phrase complète ou d’une question, généralement séparés par la ponctuation.  Certain marqueurs peuvent aussi être utilisés pour indiquer les topiques. </content>
  </p>
       <p contentType="ctComparativeIntro"><content>
-         Selon la définition ici, les constructions de thème se composent d’un syntagme de thème suivi d’une phrase complète ou d’une question et séparée d’habitude par la ponctuation.  Certain marqueurs peuvent aussi être utilisés pour signaler les thèmes, comme montré dans les exemples suivants en français: </content>
-         <langData>Quant à Jean, je pense qu’il fera un bon médecin</langData><content> et </content><langData>Parlant de Jeanne, où est-elle?</langData>    </p>
+         Selon la définition donnée ici, les constructions de topique sont formées d’un syntagme de topique suivi d’une phrase complète ou d’une questiongénéralement séparés par la ponctuation.  Certain marqueurs peuvent aussi être utilisés pour indiquer les topiques,  comme cela est montré dans les exemples suivants en français : </content>
+         <langData>Quant à Jean, je crois qu’il fera un bon médecin</langData><content> et </content><langData>Parlant de Jeanne, où est-elle?</langData>    </p>
       
-      <p show="swTopicNo"><content>En </content><langName/><content> les syntagmes de thème ne sont pas permis. </content></p>
-      <p show="swTopicYes"><content>En </content><langName/><content> il y a des syntagmes de thème qui se trouvent </content>
+      <p show="swTopicNo"><content>En </content><langName/><content> les syntagmes de topique ne sont pas admis. </content></p>
+      <p show="swTopicYes"><content>En </content><langName/><content> il y a des syntagmes de topique qui sont placés </content>
             <case element="focus" attr="topicPos">
 			   <caseText value="before">avant</caseText>
                <caseText value="after">après</caseText>
 			   <caseText value="unknown">_______</caseText>
             </case>
-         <content> la phrase principale ou question.   Certains exemples comprennent:</content>
+         <content> la phrase principale.   Voici quelques exemples :</content>
 		 </p>
 		 <example show="swTopicYes">
 			<interlinear exampleLoc="focus/topicExample"/>
 		 </example>
-      <p show="swTopicYes"><content>Comme les exemples le montrent le syntagme de thème </content>
+      <p show="swTopicYes"><content>Comme les exemples le montrent le syntagme de topique </content>
 			<case element="focus" attr="topicMarker">
-			   <caseText value="no">n’est pas marqué par un marqueur de thème. Seulement la position dans la phrase et peut-être la ponctuation distinguent le syntagme de thème.</caseText>
-			   <caseText value="yesWord">est marqué par certains mots ou certaines phrases.</caseText>
-			   <caseText value="yesClitic">est marqué par un  clitique ou plusieurs qui s’attache(nt) au syntagme de thème.  Ces clitiques sont: </caseText>
-			   <caseText value="yesAffix">marqués par un affixe ou plusieurs qui s’attache(nt) au nom principal dans le syntagme de thème. Ces affixes sont: </caseText>
+			   <caseText value="no">n’est pas marqué par un marqueur de topique. Seule la position dans la phrase et la ponctuation, éventuellement, distinguent le syntagme de topique.</caseText>
+			   <caseText value="yesWord">est marqué par certains mots ou certaines syntagmes.</caseText>
+			   <caseText value="yesClitic">est marqué par un ou plusieurs clitiques qui se rattachent au syntagme de topique.  Voici ces clitiques : </caseText>
+			   <caseText value="yesAffix">marqués par un ou plusieurs affixes qui se rattachent au nom noyau dans le syntagme de topique. Voici ces affixes : </caseText>
 			</case>
-         <text show="swTopicMarkerYesWord"><content>Les marqueurs de thème se trouvent </content>
+         <text show="swTopicMarkerYesWord"><content>Les marqueurs de topique se trouvent </content>
 			   <text show="swTopicMarkerBefore"><content>avant le</content></text>
             <text show="swTopicMarkerAfter"><content>après le</content></text>
-            <text show="swTopicMarkerBoth"><content>des deux côtés du</content></text>
+            <text show="swTopicMarkerBoth"><content>de part et d’autre du</content></text>
             <text show="swTopicMarkerEither"><content>d’un côté ou de l’autre du</content></text>
-            <text show="swTopicMarkerBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-            <text show="swTopicMarkerAfterOrBoth"><content>après ou des deux côtés du</content></text>
-            <text show="swTopicMarkerEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
-            <text show="swTopicMarkerNotOther"><content> syntagme de thème.  </content>
+            <text show="swTopicMarkerBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+            <text show="swTopicMarkerAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+            <text show="swTopicMarkerEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
+            <text show="swTopicMarkerNotOther"><content> syntagme de topique.  </content>
 			   </text>
 			   <text show="swTopicMarkerOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="focus/topicMarkerOther"/><content>.  </content>
 			   </text>
-            <text show="swTopicMarkerAndOther"><content> syntagme de thème et peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="focus/topicMarkerOther"/><content>.  </content></text>
-            <content> Un marqueur de thème est </content><case element="focus" attr="topicMarkerRequired">
+            <text show="swTopicMarkerAndOther"><content> syntagme de topique et peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="focus/topicMarkerOther"/><content>.  </content></text>
+            <content> Un marqueur de topique est </content><case element="focus" attr="topicMarkerRequired">
                <caseText value="no">facultatif</caseText>
-               <caseText value="yes">exigé</caseText></case>
-            <content> chaque fois qu’il y a un syntagme de thème.  Les marqueurs de thèmes sont:</content>
+               <caseText value="yes">obligatoire</caseText></case>
+            <content> chaque fois qu’il y a un syntagme de topique.  Voici les marqueurs de topiques :</content>
 			</text>
 		 </p>
 		 <example show="swTopicMarkerYesWord">
 			<table border="1">
 			   <headerRow>
-			      <headerCol>Marqueurs de thème</headerCol>
+			      <headerCol>Marqueurs de topique</headerCol>
 				  <headerCol>Glose</headerCol>
 			   </headerRow>
 			   <row>
 				  <col exampleLoc="focus/topicMarkerExample"></col>
-				  <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+				  <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 			   </row>
 			</table>
 		 </example>
       <example show="swTopicMarkerYesClitic">
          <table border="1">
             <headerRow>
-               <headerCol>Clitiques de marqueurs de thème</headerCol>
+               <headerCol>Clitiques marqueurs de topique</headerCol>
                <headerCol>Glose</headerCol>
             </headerRow>
             <row>
                <col exampleLoc="focus/topicMarkerCliticExample"></col>
-               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
             </row>
          </table>
       </example>
       <example show="swTopicMarkerYesAffix">
          <table border="1">
             <headerRow>
-               <headerCol>Affixes de marqueurs de thème</headerCol>
+               <headerCol>Affixes marqueurs de topique</headerCol>
                <headerCol>Glose</headerCol>
             </headerRow>
             <row>
                <col exampleLoc="focus/topicMarkerAffixExample"></col>
-               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
             </row>
          </table>
       </example>
    </section2>
 
 	  <section2 id="sFocusFocus">
-	     <secTitle>Syntagmes de focus et marqueurs de focus</secTitle>
-	     <p contentType="ctPracticalIntro"><content>Les constructions de thème ont aussi un syntagme nominal qui se trouve soit en premier soit en dernier et peut être séparé par la ponctuation.  Cependant, par contraste avec les thèmes, le syntagme de focus est déplacé de sa position normale dans la phrase, laissant un vide.  Certains marqueurs peuvent être utilisés pour marquer le syntagme de focus.</content></p>
-	     <p contentType="ctComparativeIntro"><content>Les constructions de focus ont aussi un syntagme nominal qui se trouve soit en premier soit en dernier et peut être séparé par la ponctuation.  Cependant, par contraste avec les thèmes, le syntagme de focus est déplacé de sa position normale dans la phrase, laissant un vide.  Certains marqueurs tels que </content><langData>seulement</langData>  <content> en français, peuvent être utilisés pour marquer le syntagme de focus. Les constructions de focus ne sont pas utilisées fréquemment dans les langues SVO, puisque le sujet est habituellement en focus et est déjà en premier  dans l’ordre normal. Les langues avec d’autres ordres de mots telles que les langues VSO peuvent faire un usage extensif de constructions de focus. Des exemples en français de constructions de thème comprennent: </content>
+	     <secTitle>Syntagmes de focus et Marqueurs de focus</secTitle>
+	     <p contentType="ctPracticalIntro"><content>Les constructions de focus ont elles aussi un syntagme nominal qui se trouve soit en initiale soit en finale et peut être séparé du reste de la phrase par la ponctuation.  Cependant, par contraste avec les topiques, le syntagme de focus est déplacé de sa position normale dans la phrase, laissant un vide.  Certains marqueurs peuvent être utilisés pour marquer le syntagme focalisé.</content></p>
+	     <p contentType="ctComparativeIntro"><content>Les constructions de focus ont elles aussi un syntagme nominal qui se trouve soit en initiale soit en finale et peut être séparé du reste de la phrase par la ponctuation.  Cependant, par contraste avec les topiques, le syntagme de focus est déplacé de sa position normale dans la phrase, laissant un vide.  Certains marqueurs tels que </content><langData>seulement</langData>  <content> en français, peuvent être utilisés pour marquer le syntagme de focus. Les constructions de focus ne sont pas utilisées fréquentes dans les langues SVO, puisque le sujet est habituellement en focus et est déjà en premier dans l’ordre normal. Les langues avec d’autres ordres de mots telles que les langues VSO peuvent faire un usage extensif de constructions de focus. Voici quelques exemples en français de constructions de focus comprennent : </content>
 	        <langData>Les filles, j’aime __</langData><content>, </content><langData>Le football, Guillaume le joue __ le mieux</langData><content> et </content><langData>Seulement ce garçon-là, Gérald l’a frappé __ </langData><content>.</content></p>
 	     
-	     <p show="swFocusNo"><content>En </content><langName/><content> un syntagme de focus ne doit pas être déplacé avant ou après le reste de la phrase au lieu de sa position normale. </content></p>
+	     <p show="swFocusNo"><content>En </content><langName/><content> un syntagme de focus ne puet pas être déplacé avant ou après le reste de la phrase au lieu de rester dans la position normale. </content></p>
 	     <p show="swFocusYes"><content>En </content><langName/><content> il y a des syntagmes de focus qui se trouvent </content>
             <case element="focus" attr="focusPos">
 			   <caseText value="before">avant</caseText>
                <caseText value="after">après</caseText>
 			   <caseText value="unknown">_______</caseText>
             </case>
-	        <content> le reste de la phrase.   En voici quelques exemples:</content>
+	        <content> le reste de la phrase.   En voici quelques exemples :</content>
 		 </p>
 		 <example show="swFocusYes">
 			<interlinear exampleLoc="focus/focusExample"/>
 		 </example>
-	     <p show="swFocusYes"><content>Comme les exemples le montrent, le syntagme de focus </content>
+	     <p show="swFocusYes"><content>Comme les exemples le montrent, le syntagme de focus en </content><langName/>
 			<case element="focus" attr="focusMarker">
-			   <caseText value="no">n’est pas marqué par un marqueur de focus. Seule la position dans la phrase et peut-être la ponctuation distinguent le syntagme de focus.</caseText>
+			   <caseText value="no">n’est pas marqué par un marqueur de focus. Seule la position dans la phrase et la ponctuation, éventuellement, distinguent le syntagme de focus.</caseText>
 			   <caseText value="yesWord">est marqué par certains mots ou syntagmes. </caseText>
-			   <caseText value="yesClitic">est marqué par un clitique ou plusieurs qui s’attache(nt) au syntagme de focus. Ces clitiques sont:</caseText>
-			   <caseText value="yesAffix">est marqué par un affixe ou plusieurs qui s’attache(nt) au nom principal dans le syntagme de focus.  Ces affixes sont:</caseText>
+			   <caseText value="yesClitic">est marqué par un ou plusieurs clitiques qui se rattachent au syntagme de focus. Voici les clitiques :</caseText>
+			   <caseText value="yesAffix">est marqué par un ou plusieurs affixes qui se rattachent au nom noyau dans le syntagme de focus.  Voici les affixes :</caseText>
 			</case>
 	        <text show="swFocusMarkerYesWord"><content>Les marqueurs de focus se trouvent </content>
 	            <text show="swFocusMarkerBefore"><content>avant le</content></text>
 	           <text show="swFocusMarkerAfter"><content>après le</content></text>
-	           <text show="swFocusMarkerBoth"><content>des deux côtés du</content></text>
+	           <text show="swFocusMarkerBoth"><content>de part et d’autre du</content></text>
 	           <text show="swFocusMarkerEither"><content>d’un côté ou de l’autre du</content></text>
-	           <text show="swFocusMarkerBeforeOrBoth"><content>avant ou des deux côtés du</content></text>
-	           <text show="swFocusMarkerAfterOrBoth"><content>après ou des deux côtés du</content></text>
-	           <text show="swFocusMarkerEitherOrBoth"><content>d’un côté ou de l’autre ou des deux côtés du</content></text>
+	           <text show="swFocusMarkerBeforeOrBoth"><content>avant ou de part et d’autre du</content></text>
+	           <text show="swFocusMarkerAfterOrBoth"><content>après ou de part et d’autre du</content></text>
+	           <text show="swFocusMarkerEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre du</content></text>
 	           <text show="swFocusMarkerNotOther"><content> syntagme de focus.  </content>
 			   </text>
 			   <text show="swFocusMarkerOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="focus/focusMarkerOther"/><content>.  </content>
@@ -133,7 +133,7 @@
 	           <content> Un marqueur de focus est </content><case element="focus" attr="focusMarkerRequired">
 	              <caseText value="no">facultatif</caseText>
 	              <caseText value="yes">exigé</caseText></case>
-	           <content> chaque fois qu’il y a un syntagme de focus. Les marqueurs de focus sont:</content>
+	           <content> chaque fois qu’il y a un syntagme de focus. Voici les marqueurs de focus :</content>
 			</text>
 		 </p>
 		 <example show="swFocusMarkerYesWord">
@@ -144,31 +144,31 @@
 			   </headerRow>
 			   <row>
 				  <col exampleLoc="focus/focusMarkerExample"/>
-				  <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+				  <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 			   </row>
 			</table>
 		 </example>
 	     <example show="swFocusMarkerYesClitic">
 	        <table border="1">
 	           <headerRow>
-	              <headerCol>Clitiques de marqueurs de focus</headerCol>
+	              <headerCol>Clitiques marqueurs de focus</headerCol>
 	              <headerCol>Glose</headerCol>
 	           </headerRow>
 	           <row>
 	              <col exampleLoc="focus/focusMarkerCliticExample"></col>
-	              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	           </row>
 	        </table>
 	     </example>
 	     <example show="swFocusMarkerYesAffix">
 	        <table border="1">
 	           <headerRow>
-	              <headerCol>Affixes de marqueurs de focus</headerCol>
+	              <headerCol>Affixes marqueurs de focus</headerCol>
 	              <headerCol>Glose</headerCol>
 	           </headerRow>
 	           <row>
 	              <col exampleLoc="focus/focusMarkerAffixExample"></col>
-	              <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+	              <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 	           </row>
 	        </table>
 	     </example>

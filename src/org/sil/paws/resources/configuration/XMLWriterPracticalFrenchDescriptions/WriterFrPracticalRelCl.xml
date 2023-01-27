@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
    <section1 id="sRelCl">
       <secTitle>Propositions relatives </secTitle>
       <p contentType="ctComparativeIntro">
-         <content>Les propositions relatives qualifient normalement un nom principal et elles ont une de ces quatre structures: comme en anglais, pareil à une proposition complétive avec un complémentiseur signifiant </content><langData>that</langData><gloss><content> « que »</content></gloss><content>, comme dans </content>
-         <langData>the man that came to the party late</langData><gloss><content>  « l’homme qui est venu en retard à la soirée »</content></gloss>
-         <content>; comme en anglais, pareil à une question de contenu avec </content><langData>who</langData><gloss><content>  « qui »</content></gloss><content> ou </content><langData>which</langData><gloss><content> « quel »</content></gloss><content> au commencement, comme dans </content>
-         <langData>the man who came to the party late</langData><gloss><content>  « l’homme qui est venu en retard à la soirée »</content></gloss>
-         <content>; comme en français, pareil à une proposition complétive mais ayant un marqueur relatif spécial dans la position du complémentiseur: </content><langData>qui</langData><content>pour les sujets et </content><langData>que</langData><content> pour les objets directs, comme dans </content>
-         <langData>l’homme qui est dans le magasin</langData><content> et </content><langData>le livre que je veux lire</langData><content> (ou pour quelques langues peut-être avec deux marqueurs qui se trouvent des deux côtés de la proposition relative); (ou pour quelques langues autres que le françaiset l’anglais) comme une phrase normale avec un marqueur relatif attaché au verbe.</content>
+         <content>Les propositions relatives qualifient normalement un nom noyau et elles ont l’une des quatre structures suivantes : une proposition complétive avec une conjonction de subordination signifiant </content><langData>qui/que</langData><content>, comme dans 
+         </content><langData>l’homme qui est venu en retard à la réunion</langData><content> ; ou une question d’information avec </content><langData>qui/que</langData><content> antéposé, comme dans </content>
+         <langData>l’homme qui est venu en retard à la réunion</langData><content> ; ou, (pour quelques langues autres que le français) une proposition complétive mais ayant un marqueur relatif spécial dans la position de la conjonction de subordination, ou, peut-être avec deux marqueurs qui se trouvent de part et d’autre de la proposition relative ; ou (pour quelques langues autres que le français) une phrase normale avec un marqueur relatif attaché au verbe.</content>
          </p>
       <p contentType="ctPracticalIntro">
-         <content>Les propositions relatives qualifient normalement un nom principal et elles ont une de ces quatre structures: comme une proposition complétive avec un complémentiseur; comme une question de contenu avec « qui » au commencement, comme une proposition complétive mais ayant un marqueur relatif spécial dans la position du complémentiseur, ou comme une phrase normale avec un marqueur relatif attaché au verbe.</content>
+         <content>Les propositions relatives qualifient normalement un nom noyau et elles ont l’une de quatre structures suivantes : une proposition complétive avec uns conjonction de subordination ; ou une question d’information avec </content><langData>qui/que</langData><content> antéposé ; ou une proposition complétive mais ayant un marqueur relatif spécial dans la position du conjonction de subordination ; ou une phrase normale avec un marqueur relatif attaché au verbe.</content>
       </p>
       <p show="swRelClExistNo">
          <content>En </content><langName/>
@@ -21,14 +18,14 @@
       <p show="swRelClExistYes">
          <content>En </content>
             <langName/>
-         <content> les propositions relatives se trouvent </content>
+         <content>, les propositions relatives se trouvent </content>
             <case element="relcl" attr="clausePos">
                <caseText value="before">avant le</caseText>
                <caseText value="after">après le</caseText>
-               <caseText value="either">des deux côtés du</caseText>
+               <caseText value="either">de part et d’autre du</caseText>
                <caseText value="unknown"> _______ </caseText>
             </case>
-         <content> nom principal comme montré dans les exemples suivants:</content>
+         <content> nom noyau comme montré dans les exemples suivants l’illustrent :</content>
       </p>
       <example show="swRelClExistYes">
          <interlinear exampleLoc="relcl/example"/>
@@ -37,70 +34,70 @@
       <p show="swRelClExistYesAndRelTypeCPCompAndNotCompNoOrTypeCPRelOrTypeCPWh">
            <text show="swRelTypeCPComp"> <text show="swRelTypeCPCompOnly"><content>Les </content></text>
               <text show="swRelTypeCPCompAnd"><content>Certaines des </content></text><content>propositions relatives en </content><langName/>
-              <content> sont comme une proposition complétive qui utilise le complementiseur verbal normal.  </content></text>
+              <content> sont comme une proposition complétive qui utilise la conjonction de subordination verbale habituelle.  </content></text>
          <text show="swRelTypeCPRel"><text show="swRelTypeCPRelOnly"><content>Les </content></text>
             <text show="swRelTypeCPCompAndRel"><content>D’autres </content></text>
             <text show="swRelTypeCPRelNotCompAnd"><content>Certaines </content></text><content>propositions relatives en </content><langName/>
             <content> sont comme une proposition complétive avec des marqueurs relatifs spéciaux.  </content></text>
          <text show="swRelTypeCPWh"><text show="swRelTypeCPWhOnly"><content>Les </content></text>
             <text show="swRelTypeCPWhAndCompOrRel"><content>D’autres </content></text>
-            <text show="swRelTypeCPWhNotCompNotRelAnd"><content>Certaines </content></text><content>relative clauses in </content><langName/>
-            <content> sont comme une question de contenu avec un mot interrogatif.  </content><case element="relcl" attr="whAndComp">
-               <caseText value="no">Il n’y a que le mot interrogatif initial qui se trouve dans ce type de proposition relative, il n’y a pas de marqueur relatif.</caseText>  
-               <caseText value="yes">Un marqueur relatif et le mot interrogatif initial sont tous deux requis dans ce type de proposition relative. </caseText>
-               <caseText value="optional">Un marqueur relatif peut se trouver facultativement avec le mot interrogatif initial dans ce type de proposition relative. </caseText>
+            <text show="swRelTypeCPWhNotCompNotRelAnd"><content>Certaines </content></text><content>propositions relatives en </content><langName/>
+            <content> sont comme une question d’information avec un mot interrogatif antéposé.  </content><case element="relcl" attr="whAndComp">
+               <caseText value="no">Il n’y a que le mot interrogatif antéposé qui se trouve dans ce type de proposition relative, il n’y a pas de marqueur relatif.</caseText>  
+               <caseText value="yes">Un marqueur relatif et le mot interrogatif antéposé sont tous deux exigés dans ce type de proposition relative. </caseText>
+               <caseText value="optional">Un marqueur relatif peut se trouver facultativement avec le mot interrogatif antéposé dans ce type de proposition relative. </caseText>
             </case></text>
          
-         <text show="swRelClRelWordSome"><content>Certaines </content></text>
+         <text show="swRelClRelWordSome"><content>Certaines des </content></text>
          <text show="swRelClRelWordNotSome"><content>Les </content></text>  
-         <content>marqueurs relatifs ou complémentiseurs </content>
+         <content>marqueurs relatifs ou conjonctions de subordination </content>
          <case element="relcl" attr="relWord">
             <caseText value="yes">sont écrits comme mots indépendants.  </caseText>
-            <caseText value="some">sont écrits comme mots indépendants mais certains s’attachent </caseText>
-            <caseText value="no">s’atttachent </caseText>
+            <caseText value="some">sont écrits comme mots indépendants mais certains se rattachent </caseText>
+            <caseText value="no">se ratttachent </caseText>
          </case>
          <case element="relcl" attr="relCliticPos">
-            <caseText value="before">au début du premier mot dans la partie phrastique de la proposition relative comme proclitique. Ces clitiques sont:</caseText>
-            <caseText value="after">à la fin du dernier mot dans la partie phrastique de la proposition relative comme enclitique. Ces clitiques sont:</caseText>
-            <caseText value="both">des deux côtés pour entourer la partie phrastique de la proposition relative comme clitique . Ces clitiques sont:</caseText>
-            <caseText value="unknown">à ________ dans la partie phrastique de la proposition relative comme clitique. Ces clitiques sont:</caseText>
+            <caseText value="before">au début du premier mot dans la partie phrastique de la proposition relative comme proclitique de constituant. Voici ces clitiques :</caseText>
+            <caseText value="after">à la fin du dernier mot dans la partie phrastique de la proposition relative comme enclitique de constituant. Voici ces clitiques :</caseText>
+            <caseText value="both">des deux côtés pour entourer la partie phrastique de la proposition relative comme clitique de constituant. Voici ces clitiques :</caseText>
+            <caseText value="unknown">à ________ dans la partie phrastique de la proposition relative comme clitique de constituant. Voici ces clitiques :</caseText>
          </case>
       </p>     
       <example show="swRelClExistYesAndRelTypeCPCompAndNotCompNoOrTypeCPRelOrTypeCPWhNotWhCompNoAndRelWordNoOrSome">
          <table border="1">
             <headerRow>
-               <headerCol>Clitiques de marqueur relatif </headerCol>
+               <headerCol>Clitiques marqueur relatif </headerCol>
                <headerCol>Glose</headerCol>
             </headerRow>
             <row>
                <col exampleLoc="relcl/relCliticExample"/>
-               <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
             </row>
          </table>
       </example>
       <p show="swRelClExistYesAndRelTypeCPCompAndNotCompNoOrTypeCPRelOrTypeCPWhNotWhCompNoAndRelWordYesOrSome">
-         <content>Les marqueurs relatifs se trouvent </content>
+         <content>Les mots marqueurs relatifs sont placé </content>
          <text show="swRelWordBefore"><content>avant</content></text>
          <text show="swRelWordAfter"><content>après</content></text>
-         <text show="swRelWordBoth"><content>des deux côtés de</content></text>
+         <text show="swRelWordBoth"><content>de part et d’autre de</content></text>
          <text show="swRelWordEither"><content>d’un côté ou de l’autre de</content></text>
-         <text show="swRelWordBeforeOrBoth"><content>avant ou des deux côtés de</content></text>
-         <text show="swRelWordAfterOrBoth"><content>après ou des deux côtés de</content></text>
-         <text show="swRelWordEitherOrBoth"><content>des deux après ou d’un côté ou de l’autre de</content></text>
+         <text show="swRelWordBeforeOrBoth"><content>avant ou de part et d’autre de</content></text>
+         <text show="swRelWordAfterOrBoth"><content>après ou de part et d’autre de</content></text>
+         <text show="swRelWordEitherOrBoth"><content>d’un côté ou de l’autre ou de part et d’autre de</content></text>
          <text show="swRelWordNotOther"><content> la partie phrastique de la proposition relative.  </content></text>
          <text show="swRelWordOtherOnly"><content>___</content><contentCheckBoxOther contentLoc="relcl/relWordOther"/><content>.  </content></text>
-         <text show="swRelWordPosAndOther"><content> la partie phrastique de la proposition relative et peut aussi se trouver ___</content><contentCheckBoxOther contentLoc="relcl/relWordOther"/><content>.  </content></text>
-         <content>Les marqueurs relatifs sont: </content>
+         <text show="swRelWordPosAndOther"><content> la partie phrastique de la proposition relative et peuvent aussi se trouver ___</content><contentCheckBoxOther contentLoc="relcl/relWordOther"/><content>.  </content></text>
+         <content>Voici les mots marqueurs relatifs : </content>
       </p>
       <example show="swRelClExistYesAndRelTypeCPCompAndNotCompNoOrTypeCPRelOrTypeCPWhNotWhCompNoAndRelWordYesOrSome">
             <table border="1">
                <headerRow>
-                  <headerCol>Marqueurs relatifs </headerCol>
+                  <headerCol>Mots marqueurs relatifs </headerCol>
                   <headerCol>Glose</headerCol>
                </headerRow>
                <row>
                   <col exampleLoc="relcl/relWordExample"/>
-                  <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                  <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                </row>
             </table>
          </example>
@@ -108,8 +105,8 @@
       <p show="swRelClExistYesAndRelTypeIPRel">
           <text show="swRelTypeIPRelOnly"><content>Les </content></text>
          <text show="swRelTypeIPRelAndSomeCP"><content>D’autres </content></text>
-         <text show="swRelTypeIPRelAndNotCPAnd"><content>Certaines </content></text><content>des propositions relatives en </content><langName/>
-         <content> sont comme une phrase normale avec un marqueur relatif spécial attaché au verbe.  L’affixe relative est:</content>  
+         <text show="swRelTypeIPRelAndNotCPAnd"><content>Certaines des </content></text><content>propositions relatives en </content><langName/>
+         <content> sont comme une phrase normale avec un marqueur relatif spécial rattaché au verbe.  Voici l’affixe relatif :</content>  
          </p>
          <example show="swRelClExistYesAndRelTypeIPRel">
             <table border="1">
@@ -119,7 +116,7 @@
                </headerRow>
                <row>
                   <col exampleLoc="relcl/relAffixExample"/>
-                  <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+                  <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
                </row>
             </table>
          </example>
@@ -127,27 +124,27 @@
       <p show="swRelClExistYesAndRelTypeIP">
          <text show="swRelTypeIPOnly"><content>Les </content></text>
          <text show="swRelTypeIPAndSomeCPOrIPRel"><content>D’autres </content></text>
-         <text show="swRelTypeIPAndOtherOnly"><content>Certaines </content></text><content>des propositions relatives en </content><langName/>
-         <content> ) sont comme une phrase normale qui modifie le nom principal sans marquage spécial.  </content>  
+         <text show="swRelTypeIPAndOtherOnly"><content>Certaines des </content></text><content>propositions relatives en </content><langName/>
+         <content> sont comme une phrase normale qui modifie le nom noyau sans marquage spécial.  </content>  
       </p>
       
       <p show="swRelClExistYesAndRelTypeOther">
          <text show="swRelTypeOtherOnly"><content>Les propositions relatives en </content><langName/>
-            <content> sont formés en ___</content><contentCheckBoxOther contentLoc="relcl/relTypeOther"/><content>.</content></text>
+            <content> sont formées en ___</content><contentCheckBoxOther contentLoc="relcl/relTypeOther"/><content>.</content></text>
          <text show="swRelTypeOtherAnd"><content>Il y a aussi des propositions relatives qui sont formées en ___</content><contentCheckBoxOther contentLoc="relcl/relTypeOther"/><content>.</content></text>  
       </p>    
       
       <p show="swRelClExistYes">
-         <content>Des exemples de phrases entières des propositions relatives ci-dessus incluent:</content>
+         <content>Voici quelques exemples de phrases complètes comprenant les propositions relatives ci-dessus :</content>
       </p>
       <example show="swRelClExistYes">
          <interlinear exampleLoc="relcl/sentExample"/>
       </example>
       <p contentType="ctComparativeIntro" show="swRelClExistYes">
-         <content>Il y a des langues où une des structures mentionnées ci-dessus peut se trouver comme syntagme nominale sans nom principal à modifier, ce qui s’appelle d’habitude les propositions relatives « sans tête ». Par exemple, en anglais la phrase  </content><langData>Julie brought [the food that we ate today]</langData><gloss><content> « Jeanne a apporté [la nourriture que nous avons mangée aujourd’hui] »</content></gloss><content> a une pleine proposition relative dans la position de l’objet, alors que </content><langData>Julie brought [what we ate today]</langData><gloss><content> « Jeanne a apporté [ce que nous avons mangé aujourd’hui] »</content></gloss><content> a comme complément d’objet une proposition relative “sans tête”.</content>
+         <content>Il y a des langues dans lesquelles une des structures mentionnées ci-dessus peut se trouver comme syntagme nominale sans nom noyau à modifier, ce qui s’appelle d’habitude les propositions relatives « sans tête ». Par exemple, la phrase, en anglais, </content><langData>Julie brought [the food that we ate today]</langData><gloss><content> « Jeanne a apporté [la nourriture que nous avons mangée aujourd’hui] »</content></gloss><content> a une pleine proposition relative complète dans la position de l’objet, alors que </content><langData>Julie brought [what we ate today]</langData><gloss><content> « Jeanne a apporté [ce que nous avons mangé aujourd’hui] »</content></gloss><content> a comme complément d’objet une proposition relative « sans tête ».</content>
       </p>
       <p contentType="ctPracticalIntro" show="swRelClExistYes">
-         <content>Dans les propositions relatives « sans tête » une proposition relative se trouve par elle-même comme syntagme nominal sans un nom principal pour le modifier.</content>
+         <content>Dans les propositions relatives « sans tête », une proposition relative se trouve seule comme syntagme nominal, sans un nom noyau qu’elle modifie.</content>
       </p>
       
       <p show="swRelClExistYes">
@@ -155,13 +152,13 @@
          <langName/>
          <content>&#x20;</content>
          <case element="relcl" attr="headless">
-            <caseText value="no"> il est exigé qu’un nom principal soit présent dans toutes les propositions relatives; aucune proposition relative sans tête n’est donc pas permise.</caseText>
-            <caseText value="yes"> il est permis que le nom principal manque dans les propositions relatives; les propositions relatives sans tête sont donc permises.</caseText>
+            <caseText value="no"> un nom noyau est obligatoirement présent dans toutes les propositions relatives ; aucune proposition relative sans tête n’est donc pas admise.</caseText>
+            <caseText value="yes"> il est admis que le nom noyau manque dans les propositions relatives ; les propositions relatives sans tête sont donc admises.</caseText>
          </case>
          <content>&#x20;</content>
       </p>
       <p show="swRelClHeadlessYes">
-         <content>Voici des exemples de propositions relatives dans des phrases completes:</content>
+         <content>Voici quelques exemples de propositions relatives sans tête dans des phrases completes :</content>
       </p>
       <example show="swRelClHeadlessYes">
          <interlinear exampleLoc="relcl/headlessExample"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="AdvPReason" count="3.4">
-    <title level="2">Adverbes et Syntagmes Adverbiaux – Adverbes de raison ou de but</title>
+    <title level="2">Adverbes et Syntagmes adverbiaux – Adverbes de raison ou de but</title>
     <introduction>Les adverbes de raison ou de but sont les mots comme <example>donc</example> et
         <example>ainsi</example>.  Les modificateurs ne sont généralement pas souvent utilisés avec les adverbes de raison ou de but. <br/><br/>
         La raison ou le but peuvent aussi être exprimés par un syntagme prépositionnel, comme <example>pour cette raison</example> ou <example>dans ce but</example>, et

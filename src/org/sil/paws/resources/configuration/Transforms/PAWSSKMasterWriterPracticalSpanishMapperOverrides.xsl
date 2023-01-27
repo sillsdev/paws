@@ -69,5 +69,7 @@
 	<xsl:template name="OutputContentsElement">
 		<contents showLevel="3" label="Contenido"/>
 	</xsl:template>
-
+	<xsl:template name="OutputEnterExampleHereMessage">
+		<xsl:text>ESCRIBA UN EJEMPLO AQUÍ</xsl:text>
+	</xsl:template>	
 </xsl:stylesheet>

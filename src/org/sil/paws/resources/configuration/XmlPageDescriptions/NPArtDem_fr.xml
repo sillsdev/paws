@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="NPArtDem" count="5.3.1">
-   <title level="2">Syntagmes nominaux – Articles et Démonstratifs: Exemples et Cas</title>
+   <title level="2">Syntagmes nominaux – Articles et Démonstratifs : Exemples et Cas</title>
    <introduction>Considérez maintenant les articles et les démonstratifs. En français, les articles sont <example>un, une, des, le, la, les</example> et les démonstratifs comprennent <example>ce, cette, ces</example>.  Voici quelques exemples simples:</introduction>
     <EnglishExample>
        <exItem label="1.">un livre</exItem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
 	<appendix id="aAppdx">
 		<secTitle>Appendice pour les linguistes</secTitle>
@@ -9,13 +9,12 @@
 			<content>.</content>
 		</p>
 		<section1 id="sConsonants">
-			<secTitle>Consonnes</secTitle>
+			<secTitle>Les Consonnes</secTitle>
 			<p>
-				<content>En </content><langName/><content> il y a les consonnes montrés en </content><exampleRef num="xConsonants"/><content>.   Le tableau identifie les sons dans l’alphabet phonétique (API), suivis du symbole utilisé dans l’orthographe pratique entre parenthèses, 
-					s’ils sont différents.</content>
+				<content>En </content><langName/><content> il y a les consonnes montrées dans le tableau </content><exampleRef num="xConsonants"/><content>.   Ce tableau identifie les sons dans l’alphabet phonétique (API), les symboles sont suivis du symbole utilisé dans l’orthographe pratique entre parenthèses, 
+					dans les cas où ils sont différents.</content>
 			</p>
-			<p><comment>Il faut noter que le tableau contient un plus grand nombre de symboles API que l’on ne voit en votre langue. Il faut effacer tous les symboles et peut-être des colonnes ou des lignes entières qui ne sont pas utilisés dans votre langue. 
-			En plus, entrez le symbole de l’orthographe pratique entre parenthèses après le symbole API dans chaque cas où ils sont différents.</comment>
+			<p><comment>Il faut remarquer que le tableau contient un plus grand nombre de symboles API que l’on ne trouve en votre langue. Il faudra effacer tout ce qui n’est pas utilisé dans votre langue, les symboles et probablement  des colonnes ou des lignes entières. Ensuite, il faudra saisir, entre parenthèses, le symbole de l’orthographe pratique après le symbole API, dans chaque cas où ils sont différents.</comment>
 			</p>
 			<example num="xConsonants">
 				<table>
@@ -342,15 +341,14 @@
 			</example>
 		</section1>
 		<section1 id="sVowels">
-			<secTitle>Voyelles</secTitle>
+			<secTitle>Les Voyelles</secTitle>
 			<p>
 				<content>En </content><langName/>
-				<content> il y a les voyelles montrées en </content>
+				<content> il y a les voyelles montrées dans le tableau </content>
 				<exampleRef num="xVowels"/>
-				<content>.  Le tableau identifie les sons de l’alphabet phonétique (API), suivis du symbole utilisé dans l’orthographe pratique entre parenthèses, s’ils sont différents.</content>
+				<content>.  Ce tableau identifie les sons de l’alphabet phonétique (API), les symboles sont suivis du symbole utilisé dans l’orthographe pratique entre parenthèses, dans les cas où ils sont différents.</content>
 			</p>
-			<p><comment>Il faut noter que le tableau contient un plus grand nombre de symboles API que l’on ne voit en votre langue. Il faut effacer tous les symboles et peut-être des colonnes ou des lignes entières qui ne sont pas utilisés dans votre langue. En plus, entrez le symbole de l’orthographe pratique entre parenthèses après le symbole 
-				API dans chaque cas où ils sont différents.</comment></p>
+			<p><comment>Il faut remarquer que le tableau contient un plus grand nombre de symboles API que l’on ne trouve en votre langue. Il faudra effacer tout ce qui n’est pas utilisé dans votre langue, les symboles et probablement des colonnes ou des lignes entières. Ensuite, il faudra saisir, entre parenthèses, le symbole de l’orthographe pratique après le symbole API, dans chaque cas où ils sont différents.</comment></p>
 			<example num="xVowels">
 				<table>
 					<headerRow>

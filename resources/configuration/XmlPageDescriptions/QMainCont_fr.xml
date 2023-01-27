@@ -2,8 +2,8 @@
 <!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="QMainCont" count="11.6">
-   <title level="2">Interrogations – Questions de contenu dans une proposition principale</title>
-   <introduction>En anglais dans les questions de contenu sous forme de proposition principale, il faut placer le syntagme interrogatif en tête ; l’auxiliaire doit être déplacé directement après le syntagme interrogatif quand on pose la question sur autre chose que le sujet. En français écrit, le verbe se place immédiatement après le mot interrogatif.  Voici quelques exemples en anglais et français de questions de contenu sous forme de proposition principale :</introduction>
+   <title level="2">Interrogations – Questions d’information dans une proposition principale</title>
+   <introduction>En anglais dans les questions d’information sous forme de proposition principale, il faut placer le syntagme interrogatif en tête ; l’auxiliaire doit être déplacé directement après le syntagme interrogatif quand on pose la question sur autre chose que le sujet. En français écrit, le verbe se place immédiatement après le mot interrogatif.  Voici quelques exemples en anglais et français de questions d’information sous forme de proposition principale :</introduction>
         <EnglishExample>
            <exItem label="1.">Which boy ate the banana?  « Quel garçon a mangé la banane ? »</exItem>
            <exItem label="2.">Who ate the banana?  « Qui a mangé la banane ? »</exItem>
@@ -26,10 +26,10 @@
         </radioGroup>
       <radioGroup>
          <groupName dataItem="mainCont" default="no">RQMainCont</groupName>
-         <prompt><br/>Pour les questions de contenu sous forme de proposition principale, est-ce que votre langue possède un ou plusieurs marqueur / conjonction de subordination (mentionnez dans votre réponse les affixes et les clitiques) ? </prompt>
+         <prompt><br/>Pour les questions d’information sous forme de proposition principale, est-ce que votre langue possède un ou plusieurs marqueur / conjonction de subordination (mentionnez dans votre réponse les affixes et les clitiques) ? </prompt>
          <radio id="QMainContYes" dataValue="yes">Oui</radio>
          <radio id="QMainContNoAux" dataValue="noAux">Non, mais l’auxiliaire se met en tête</radio>
-         <radio id="QMainContNo" dataValue="no">Non, dans les questions de contenu sous forme de proposition principale on ne place pas le marqueur ou l’auxiliaire en tête - seul <span id="QMainContNoFrontYesSpan" show="swQContFrontYes">l’interrogatif se met en tête et </span>
+         <radio id="QMainContNo" dataValue="no">Non, dans les questions d’information sous forme de proposition principale on ne place pas le marqueur ou l’auxiliaire en tête - seul <span id="QMainContNoFrontYesSpan" show="swQContFrontYes">l’interrogatif se met en tête et </span>
             <span id="QMainContNoFrontOptionalSpan" show="swQContFrontOptional">l’interrogatif est quelquefois se déplace et </span>l’intonation ou le ton (ou autre marqueur non-syntaxique) est quelquefois différent</radio>
       </radioGroup>
       <prompt id="QMainContAuxAndNoAuxPrompt" show="swQMainContAuxAndNoAux">ATTENTION : Vos réponses sont contradictoires ; la mise en tête de l’auxiliaire est impossible si la langue ne possède pas d’auxiliaires écrits comme des mots indépendants. Il faut soit changer votre réponse ici ou revenir à la <section number="9.3">Phrases simples – Auxiliaires</section> et changer votre réponse en « Oui » avant de continuer.</prompt>
@@ -91,7 +91,7 @@
       
       <radioGroup id="QMainContRequiredTable" show="swQMainContWordYesOrSome">
          <groupName dataItem="mainContRequired" default="no">RQMainContRequired</groupName>
-         <prompt><br/>Est-ce qu’on doit placer un marqueur interrogatif dans chaque question de contenu ?</prompt>
+         <prompt><br/>Est-ce qu’on doit placer un marqueur interrogatif dans chaque question d’information  ?</prompt>
          <radio id="QMainContRequiredYes" dataValue="yes">Oui</radio>
          <radio id="QMainContRequiredNo" dataValue="no">Non, le marqueur est toujours facultatif</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">Non, le marqueur interrogatif n’est pas utilisé dans les conditions suivantes :</radio>
@@ -106,7 +106,7 @@
       </radioGroup>
       <radioGroup id="QMainContAuxTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxRequired" default="no">RQMainContAux</groupName>
-         <prompt><br/>Est-ce qu’on doit placer l’auxiliaire en tête dans toutes les questions de contenu ?</prompt>
+         <prompt><br/>Est-ce qu’on doit placer l’auxiliaire en tête dans toutes les questions d’information  ?</prompt>
          <radio id="QMainContAuxRequiredYes" dataValue="yes">Oui</radio>
          <radio id="QMainContAuxRequiredObject" dataValue="object">On doit placer un auxiliaire en tête, sauf quand on interroge sur le sujet</radio>
          <radio id="QMainContAuxRequiredNo" dataValue="no">Non, la déplacement en tête d’un auxiliaire est facultatif</radio>

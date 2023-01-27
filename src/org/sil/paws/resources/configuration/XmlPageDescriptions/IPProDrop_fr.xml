@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="IPProDrop" count="9.4.1">
    <title level="2">Phrases simples – Pro-Drop et Impératives</title>
-   <introduction>Certaines langues (dites ‘pro-drop’) admettent l’omission du pronom (sujet ou objet). Par exemple, en espagnol la façon normale de dire « j’achète un livre »  est <example>Compro un libro</example> sans pronom sujet, plutôt qu’avec le pronom sujet : <example>Yo compro un libro</example>.  En français, on ne peut pas ommettre pas le pronom, sauf dans les impératifs. (L’absence du sujet d’un verbe à l’infinitf dans une proposition subordonnée sera considérée dans la <section number="10">Propositions Complétives</section>.)  <br/>
+   <introduction>Certaines langues (dites ‘pro-drop’) admettent l’omission du pronom (sujet ou objet). Par exemple, en espagnol la façon normale de dire « j’achète un livre »  est <example>Compro un libro</example> sans pronom sujet, plutôt qu’avec le pronom sujet : <example>Yo compro un libro</example>.  En français, on ne peut pas ommettre pas le pronom, sauf dans les impératifs. (L’absence du sujet d’un verbe à l’infinitf dans une proposition subordonnée sera considérée dans la <section number="10">Propositions complétives</section>.)  <br/>
         <br/>
       Certaines langues n’admettent pas l’omission du pronom à proprement parler, mais quelques-uns au moins des pronoms sont des clitiques qui se rattachent au verbe : il n’y a pas de pronom ou de syntagme nominal dans la position sujet, la phrase ressemble alors à celle d’une langue pro-drop, qui admet l’omission du pronom.</introduction>
     <form section="ip">

@@ -4,25 +4,25 @@
 	<section1 id="sV">
 		<secTitle>Verbes</secTitle>
 		<p>
-<xsl:text>Les verbes expriment les actions, les états ou les émotions. D’abord, on étudie les types de flexion verbal et les caractéristiques de l’accord verbal, puis on présente des paradigmes verbaux. Dans la section </xsl:text>
+<xsl:text>Les verbes expriment les actions, les états ou les émotions. D’abord, les types de flexion verbale et les caractéristiques de l’accord verbal seront traités en premier, puis quelques paradigmes verbaux seront présentés. Dans la section </xsl:text>
 <sectionRef sec="sIPProDrop" />
-<xsl:text> on discute l’absence du sujet, et les auxiliaires dans la section </xsl:text>
+<xsl:text> les contextes dans lesquels le sujet est omis seront abordés, et les auxiliaires seront traités dans la section </xsl:text>
 <sectionRef sec="sIPAux" />
-<xsl:text>, suivi par les composés verbaux. Les exemples des verbes utilisés dans les phrases se trouvent dans la section </xsl:text>
+<xsl:text>, suivis par les composés verbaux. Les exemples des verbes utilisés dans les phrases se trouvent dans la section </xsl:text>
 <sectionRef sec="sIP" />
-<xsl:text>.  On présente les constructions plus complexes aux sections </xsl:text>
+<xsl:text>.  Les constructions plus complexes seront abordées dans les sections </xsl:text>
 <sectionRef sec="sFocus" />
 <xsl:text> - </xsl:text>
 <sectionRef sec="sRelCl" />
 <xsl:text>.</xsl:text>
 </p>
 		<section2 id="sIPInfl">
-			<secTitle>Flexion</secTitle>
+			<secTitle>Caractéristiques flexionnelles</secTitle>
 			<p>
-<xsl:text>D’habitude les verbes et les auxiliaires portent  des caractéristiques de flexion, tels que le temps, l’aspect et/ou le mode. Dans la plupart des cas ces caractéristiques se font par le moyen d’affixes, mais ils peuvent faire partie aussi de formes verbales irrégulières.</xsl:text>
+<xsl:text>Les verbes et les auxiliaires portent  généralement des caractéristiquesflexionnelles, telles que  le temps, l’aspect et / ou le mode. Dans la plupart des cas, ces caractéristiques sont ajoutées par des affixes, mais elles peuvent aussi faire partie de formes verbales irrégulières.</xsl:text>
 </p>
 			<p>
-<xsl:text>Les caractérisques de flexion suivants se marquent sur les verbes et/ou sur les auxiliaires en </xsl:text>
+<xsl:text>Les caractérisques flexionnelles suivantes sont marquées sur les verbes et / ou sur les auxiliaires en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -31,7 +31,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 			<example num="xV.IPInfl.8">
 <table border="1">
@@ -84,7 +84,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -134,7 +134,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -184,7 +184,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -234,7 +234,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -284,7 +284,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -316,7 +316,7 @@
 							<xsl:text>temps</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>ENTRER GLOSE</xsl:text>
+							<xsl:text>SAISIR GLOSE</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -330,11 +330,11 @@
 							<xsl:text>temps</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>ENTRER GLOSE</xsl:text>
+							<xsl:text>SAISIR GLOSE</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -384,7 +384,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -434,7 +434,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -466,7 +466,7 @@
 				         <xsl:text>aspect</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>contrafactuel</xsl:text>
+				         <xsl:text>contrefactuel</xsl:text>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -480,11 +480,11 @@
 				         <xsl:text>aspect</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>contrafactuel</xsl:text>
+				         <xsl:text>contrefactuel</xsl:text>
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -534,7 +534,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -584,7 +584,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -634,7 +634,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -684,7 +684,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -734,7 +734,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -784,7 +784,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -834,7 +834,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -884,7 +884,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -934,7 +934,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -966,7 +966,7 @@
 							<xsl:text>aspect</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>purposif</xsl:text>
+							<xsl:text>intentionnel</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -980,11 +980,11 @@
 							<xsl:text>aspect</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>purposif</xsl:text>
+							<xsl:text>intentionnel</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1034,7 +1034,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1084,7 +1084,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1116,7 +1116,7 @@
 							<xsl:text>aspect</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>ENTRER GLOSE</xsl:text>
+							<xsl:text>SAISIR GLOSE</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1130,11 +1130,11 @@
 							<xsl:text>aspect</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>ENTRER GLOSE</xsl:text>
+							<xsl:text>SAISIR GLOSE</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1184,7 +1184,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1234,7 +1234,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1284,7 +1284,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1334,7 +1334,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1384,7 +1384,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1434,7 +1434,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1484,7 +1484,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1534,7 +1534,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1566,7 +1566,7 @@
 							<xsl:text>mode</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>ENTRER GLOSE</xsl:text>
+							<xsl:text>SAISIR GLOSE</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1580,11 +1580,11 @@
 							<xsl:text>mode</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>ENTRER GLOSE</xsl:text>
+							<xsl:text>SAISIR GLOSE</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1634,7 +1634,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1684,7 +1684,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1734,7 +1734,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1766,7 +1766,7 @@
 <xsl:text>évidentialité</xsl:text>
 </td>
 <td align="left">
-<xsl:text>de deuxième main</xsl:text>
+<xsl:text>de seconde main</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1780,11 +1780,11 @@
 <xsl:text>évidentialité</xsl:text>
 </td>
 <td align="left">
-<xsl:text>de deuxième main</xsl:text>
+<xsl:text>de seconde main</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1834,7 +1834,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1884,7 +1884,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1934,7 +1934,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -1984,7 +1984,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2034,7 +2034,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2066,7 +2066,7 @@
 <xsl:text>évidentialité</xsl:text>
 </td>
 <td align="left">
-<xsl:text>reportatif</xsl:text>
+<xsl:text>rapporté</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2080,11 +2080,11 @@
 <xsl:text>évidentialité</xsl:text>
 </td>
 <td align="left">
-<xsl:text>reportatif</xsl:text>
+<xsl:text>rapporté</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2134,7 +2134,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2184,7 +2184,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2234,7 +2234,7 @@
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2266,7 +2266,7 @@
 <xsl:text>évidentialité</xsl:text>
 </td>
 <td align="left">
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2280,11 +2280,11 @@
 <xsl:text>évidentialité</xsl:text>
 </td>
 <td align="left">
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2335,7 +2335,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2385,7 +2385,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2435,7 +2435,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2485,7 +2485,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2535,7 +2535,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2585,7 +2585,7 @@
 				   		</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2635,7 +2635,7 @@
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2685,7 +2685,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2717,7 +2717,7 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				      	<xsl:text>voix d’acteur</xsl:text>
+				      	<xsl:text>voix d’actant</xsl:text>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2731,11 +2731,11 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				      	<xsl:text>voix d’acteur</xsl:text>
+				      	<xsl:text>voix d’actant</xsl:text>
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2767,7 +2767,7 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>voix datif </xsl:text>
+				         <xsl:text>voix dative</xsl:text>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2781,11 +2781,11 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>voix datif </xsl:text>
+				         <xsl:text>voix dative</xsl:text>
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2817,7 +2817,7 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>voix but</xsl:text>
+				         <xsl:text>voix de finalité</xsl:text>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2831,11 +2831,11 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>voix but</xsl:text>
+				         <xsl:text>voix de finalité</xsl:text>
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2867,7 +2867,7 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>voix instrumentable</xsl:text>
+				         <xsl:text>voix instrumentale</xsl:text>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2881,11 +2881,11 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>voix instrumentable</xsl:text>
+				         <xsl:text>voix instrumentale</xsl:text>
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2917,7 +2917,7 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>voix locatif</xsl:text>
+				         <xsl:text>voix locative</xsl:text>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2931,11 +2931,11 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				         <xsl:text>voix locatif</xsl:text>
+				         <xsl:text>voix locative</xsl:text>
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -2967,7 +2967,7 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				      	<xsl:text>voix d’objet</xsl:text>
+				      	<xsl:text>voix objet</xsl:text>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2981,11 +2981,11 @@
 				         <xsl:text>voix</xsl:text>
 				      </td>
 <td align="left">
-				      	<xsl:text>voix d’objet</xsl:text>
+				      	<xsl:text>voix objet</xsl:text>
 				      </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3017,7 +3017,7 @@
 <xsl:text>voix</xsl:text>
 </td>
 <td align="left">
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -3031,11 +3031,11 @@
 <xsl:text>voix</xsl:text>
 </td>
 <td align="left">
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3045,11 +3045,11 @@
 </example>
 		</section2>
 		<section2 id="sIPAgr">
-			<secTitle>Accord</secTitle>
+			<secTitle>Caractéristiques d’accord</secTitle>
 			<p>
-<xsl:text>Les verbes et les auxiliaires peuvent aussi porter les caractéristiques de l’accord qui correspondent au sujet ou à l’objet direct.  La plupart de ces caractéristiques se font par des affixes ou par des clitiques pronominaux qui peuvent s’attacher au verbe.  </xsl:text>
+<xsl:text>Les verbes et les auxiliaires peuvent aussi porter les marques d’accord qui correspondent au sujet ou à l’objet direct.  La plupart de ces caractéristiques se font par des affixes ou par des clitiques pronominaux rattaches au verbe.  </xsl:text>
 <xsl:if test="normalize-space(//typology/@classifier)!='no'">
-<xsl:text>On a déjà présenté l’accord de classe à la section </xsl:text>
+<xsl:text>L’accord de classe a déjà été présenté dans la section </xsl:text>
 <sectionRef sec="sClassifiers" />
 <xsl:text>.</xsl:text>
 </xsl:if>
@@ -3064,7 +3064,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> les caractéristiques de l’accord suivants se marquent sur les verbes et / ou sur les auxiliaires:</xsl:text>
+<xsl:text> les caractéristiques d’accord suivantes sont marquées sur les verbes et / ou sur les auxiliaires :</xsl:text>
 </p>
 			<example num="xV.IPAgr.8">
 <table border="1">
@@ -3117,7 +3117,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3167,7 +3167,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3217,7 +3217,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3267,7 +3267,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3299,7 +3299,7 @@
 							<xsl:text>personne</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>première personne exclusif sujet </xsl:text>
+							<xsl:text>première personne sujet exclusif</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -3313,11 +3313,11 @@
 							<xsl:text>personne</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>première personne exclusif sujet </xsl:text>
+							<xsl:text>première personne sujet exclusif</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3349,7 +3349,7 @@
 							<xsl:text>personne</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>première personne exclusif objet </xsl:text>
+							<xsl:text>première personne objet exclusif</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -3363,11 +3363,11 @@
 							<xsl:text>personne</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>première personne exclusif objet </xsl:text>
+							<xsl:text>première personne objet exclusif</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3417,7 +3417,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3467,7 +3467,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3499,7 +3499,7 @@
 							<xsl:text>personne</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>première personne inclusif sujet </xsl:text>
+							<xsl:text>première personne sujet inclusif</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -3513,11 +3513,11 @@
 							<xsl:text>personne</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>première personne inclusif sujet </xsl:text>
+							<xsl:text>première personne sujet inclusif</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3549,7 +3549,7 @@
 							<xsl:text>personne</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>première personne inclusif objet </xsl:text>
+							<xsl:text>première personne objet inclusif</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -3563,11 +3563,11 @@
 							<xsl:text>personne</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>première personne inclusif objet </xsl:text>
+							<xsl:text>première personne objet inclusif</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3617,7 +3617,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3667,7 +3667,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3717,7 +3717,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3767,7 +3767,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3817,7 +3817,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3867,7 +3867,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3917,7 +3917,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -3967,7 +3967,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4017,7 +4017,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4067,7 +4067,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4117,7 +4117,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4167,7 +4167,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4217,7 +4217,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4267,7 +4267,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4299,7 +4299,7 @@
 							<xsl:text>nombre</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>sujet double</xsl:text>
+							<xsl:text>sujet duel</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -4313,11 +4313,11 @@
 							<xsl:text>nombre</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>sujet double</xsl:text>
+							<xsl:text>sujet duel</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4349,7 +4349,7 @@
 							<xsl:text>nombre</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>objet double</xsl:text>
+							<xsl:text>objet duel</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -4363,11 +4363,11 @@
 							<xsl:text>nombre</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>objet double</xsl:text>
+							<xsl:text>objet duel</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4399,7 +4399,7 @@
 							<xsl:text>nombre</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>argument ergatif double</xsl:text>
+							<xsl:text>argument ergatif duel</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -4413,11 +4413,11 @@
 							<xsl:text>nombre</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>argument ergatif double</xsl:text>
+							<xsl:text>argument ergatif duel</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4449,7 +4449,7 @@
 							<xsl:text>nombre</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>argument absolutif double</xsl:text>
+							<xsl:text>argument absolutif duel</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -4463,11 +4463,11 @@
 							<xsl:text>nombre</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>argument absolutif double</xsl:text>
+							<xsl:text>argument absolutif duel</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4517,7 +4517,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4567,7 +4567,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4617,7 +4617,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4667,7 +4667,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4717,7 +4717,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4767,7 +4767,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4817,7 +4817,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4867,7 +4867,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4917,7 +4917,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -4967,7 +4967,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5017,7 +5017,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5067,7 +5067,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5117,7 +5117,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5167,7 +5167,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5217,7 +5217,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5267,7 +5267,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5317,7 +5317,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5367,7 +5367,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5417,7 +5417,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5467,7 +5467,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5517,7 +5517,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5567,7 +5567,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5617,7 +5617,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5667,7 +5667,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5717,7 +5717,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5767,7 +5767,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5817,7 +5817,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5867,7 +5867,7 @@
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5899,7 +5899,7 @@
 							<xsl:text>animéité</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>sujet nonhumain</xsl:text>
+							<xsl:text>sujet non-humain</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -5913,11 +5913,11 @@
 							<xsl:text>animéité</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>sujet nonhumain</xsl:text>
+							<xsl:text>sujet non-humain</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5949,7 +5949,7 @@
 							<xsl:text>animéité</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>objet nonhumain</xsl:text>
+							<xsl:text>objet non-humain</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -5963,11 +5963,11 @@
 							<xsl:text>animéité</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>objet nonhumain</xsl:text>
+							<xsl:text>objet non-humain</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -5999,7 +5999,7 @@
 							<xsl:text>animéité</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>argument ergatif nonhumain</xsl:text>
+							<xsl:text>argument ergatif non-humain</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -6013,11 +6013,11 @@
 							<xsl:text>animéité</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>argument ergatif nonhumain</xsl:text>
+							<xsl:text>argument ergatif non-humain</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -6049,7 +6049,7 @@
 							<xsl:text>animéité</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>argument absolutif nonhumain</xsl:text>
+							<xsl:text>argument absolutif non-humain</xsl:text>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -6063,11 +6063,11 @@
 							<xsl:text>animéité</xsl:text>
 						</td>
 <td align="left">
-							<xsl:text>argument absolutif nonhumain</xsl:text>
+							<xsl:text>argument absolutif non-humain</xsl:text>
 						</td>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 </tr>
 </xsl:otherwise>
@@ -6077,18 +6077,18 @@
 </example>
 		</section2>
 	   <section2 id="sVerbParadigms">
-	   	<secTitle>Paradigmes du verbe</secTitle>
+	   	<secTitle>Les paradigmes verbaux</secTitle>
 	   	<p>
-<xsl:text>Les paradigmes illustrent sous forme de tableau certains changements  qui ont lieu quand les morphèmes d’inflexion et d’accord s’attachent aux verbes spécifiques; certains verbes sont réguliers, d’autres sont irréguliers.</xsl:text>
+<xsl:text>Les paradigmes illustrent sous forme de tableau certains changements qui ont lieu quand les morphèmes de flexion et d’accord se rattachent à des verbes spécifiques. Certains verbes sont réguliers, d’autres sont irréguliers.</xsl:text>
 </p>
 	  <section3 id="sVerbParadigmsRegular">
 	  	<secTitle>Paradigmes pour certains verbes réguliers</secTitle>
 	  	<p>
-<xsl:text>Voici les paradigmes de quatre verbes réguliers:   </xsl:text>
-<object type="tComment">Vous devrez ajouter les formes à chaque case. Vous pouvez changer de verbes s’ils ne sont pas réguliers dans votre langue.  
+<xsl:text>Voici les paradigmes de quatre verbes réguliers :   </xsl:text>
+<object type="tComment">Vous devrez rajouter les formes dans chaque case. Vous pouvez changer de verbes si ceux qui sont proposés ne sont pas réguliers dans votre langue.  
 	  		<xsl:choose>
 	  			<xsl:when test="//pron/@dependentPron='yes'"> Vous pouvez supprimer des colonnes si le tableau en pdf est trop large.</xsl:when>
-	  			<xsl:when test="//pron/@dependentPron='no'"> Puisqu’en votre langue les verbes ne changent pas pour un sujet différent, les paradigmes sont assez simples. Peut-être aurez-vous besoin d’ajouter des colonnes pour les changements qui sont marqués dans les verbes, tels que changements pour le mode et/ou les sujets au pluriel.</xsl:when>
+	  			<xsl:when test="//pron/@dependentPron='no'"> Puisqu’en votre langue les verbes ne changent pas pour un sujet différent, les paradigmes sont assez simples. Peut-être aurez-vous besoin d’ajouter des colonnes pour autres changements qui sont marqués dans les verbes.</xsl:when>
 	  		</xsl:choose>
 </object>
 </p>
@@ -6227,7 +6227,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -6344,7 +6344,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -6803,7 +6803,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -7172,7 +7172,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -7957,7 +7957,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -8506,7 +8506,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -8946,7 +8946,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -9063,7 +9063,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -9522,7 +9522,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -9891,7 +9891,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -10676,7 +10676,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -11225,7 +11225,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -11665,7 +11665,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -11782,7 +11782,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -12241,7 +12241,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -12610,7 +12610,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -13395,7 +13395,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -13944,7 +13944,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -14384,7 +14384,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -14501,7 +14501,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -14960,7 +14960,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -15329,7 +15329,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -16114,7 +16114,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -16663,7 +16663,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -16972,13 +16972,13 @@
 	  </section3>
 	      
 	      <section3 id="sVerbParadigmsIrregular">
-	      	<secTitle>Paradigmes pour quelques verbes irréguliers</secTitle>
+	      	<secTitle>Les paradigmes pour quelques verbes irréguliers</secTitle>
 	      	<p>
-<xsl:text>Voici les paradigmes pour trois verbes irréguliers: </xsl:text>
-<object type="tComment">Vous devrez ajouter les formes dans chaque case. Vous pouvez changer les verbes s’ils n’existent pas dans votre langue, ou qu’ils ne sont pas irréguliers. Notez que « venir » peut être « aller vers la base », et « aller » peut indiquer « partir vers une non-base » ou « partir de la base » dans votre langue.  
+<xsl:text>Voici les paradigmes pour trois verbes irréguliers : </xsl:text>
+<object type="tComment">Vous devrez ajouter les formes dans chaque case. Vous pouvez changer les verbes s’ils n’existent pas dans votre langue ou s’ils ne sont pas irréguliers. Notez que « venir » peut être « aller vers le point de référence », et « aller » peut indiquer « aller, sans indication de direction » ou « s’éloigner du point de référence » dans votre langue.  
 	      		<xsl:choose>
 	      			<xsl:when test="//pron/@dependentPron='yes'"> Vous pouvez supprimer quelques colonnes si le tableau est trop large en pdf.</xsl:when>
-	      			<xsl:when test="//pron/@dependentPron='no'"> Puisqu’en votre langue les verbes ne changent pas pour un sujet différent, les paradigmes sont assez simples. Peut-être aurez-vous besoin d’ajouter des colonnes pour les changements qui sont marqués dans les verbes, tels que changements pour le mode et/ou les sujets au pluriel.</xsl:when>
+	      			<xsl:when test="//pron/@dependentPron='no'"> Puisqu’en votre langue les verbes ne changent pas pour un sujet différent, les paradigmes sont assez simples. Peut-être aurez-vous besoin d’ajouter des colonnes pour autres changements qui sont marqués dans les verbes.</xsl:when>
 	      		</xsl:choose>
 </object>
 </p>
@@ -17117,7 +17117,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -17234,7 +17234,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -17692,7 +17692,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -18061,7 +18061,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -18846,7 +18846,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -19395,7 +19395,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -19835,7 +19835,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -19952,7 +19952,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -20411,7 +20411,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -20780,7 +20780,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -21565,7 +21565,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -22114,7 +22114,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -22554,7 +22554,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -22671,7 +22671,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -23130,7 +23130,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -23499,7 +23499,7 @@
 	  			<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	  				<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	  				<td align="left">
 <langData>
@@ -24284,7 +24284,7 @@
 	           <xsl:if test="normalize-space(//ip/ipInflFeatContrafactual/@checked)='yes'">
 <tr>
 	              <td align="left" rowspan="1">
-<xsl:text>Contrafactuel</xsl:text>
+<xsl:text>Contrefactuel</xsl:text>
 </td>
 	              <td align="left">
 <langData>
@@ -24833,7 +24833,7 @@
 	        	<xsl:if test="normalize-space(//ip/ipInflFeatPurposive/@checked)='yes'">
 <tr>
 	        		<td align="left" rowspan="1">
-<xsl:text>Purposif</xsl:text>
+<xsl:text>Intentionnel</xsl:text>
 </td>
 	        		<td align="left">
 <langData>
@@ -25144,9 +25144,9 @@
 	   </section2>
 	   
 	   <section2 id="sIPProDrop">
-	   	<secTitle>Sujets absents</secTitle>
+	   	<secTitle>Les sujets omis</secTitle>
 			<p contentType="ctComparativeIntro">
-<xsl:text>Certaines langues s’appellent les langues « à sujet nul » (=« pro-drop »), parce qu’elles permettent qu’un sujet et/ou un objet manque, ou qu’il ne soit pas exprimé dans la position syntaxique normale. Par exemple, en espagnol l’équivalent de </xsl:text>
+<xsl:text>Certaines langues s’appellent les langues « à sujet nul » (=« pro-drop »), parce qu’elles admettent qu’un sujet et / ou un objet manque, ou qu’il ne soit pas exprimé dans la position syntaxique normale. Par exemple, en espagnol l’équivalent de </xsl:text>
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>« j’achète un livre »</xsl:text>
@@ -25156,22 +25156,22 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Compro un libro</langData>
-<xsl:text> plutôt qu’avec la présence du pronom sujet: </xsl:text>
+<xsl:text> plutôt qu’avec la présence du pronom sujet : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>Yo compro un libro</langData>
-<xsl:text>.  On ne fait pas cela en anglais, ni en français, sauf pour les impératifs. (On traitera le phénomène de l’absence du sujet des infinitifs dans les propositions subordonnées à la section </xsl:text>
+<xsl:text>.  On ne fait pas cela en anglais, ni en français, sauf pour les impératifs. (On traitera le phénomène de l’omission du sujet des infinitifs dans les propositions subordonnées dans la section </xsl:text>
 <sectionRef sec="sComp" />
 <xsl:text>.) </xsl:text>
 </p>
 			<p contentType="ctComparativeIntro">
 <xsl:text>
-					Certaines langues ne sont pas vraiment des langues « à sujet nul », mais au moins certains des pronoms sont des clitiques qui peuvent s’attacher au verbe. Quand ceci se passe, il n’y a pas de pronom ni de syntagme nominal dans la position du sujet; ainsi la phrase paraît la même que celle d’une langue authentiquement « à sujet nul ». </xsl:text>
+					Certaines langues ne sont pas vraiment des langues « à sujet nul », mais au moins certains des pronoms au moins sont des clitiques qui se rattacher au verbe. Quand ceci se passe, il n’y a pas ni ronom ni syntagme nominal dans la position du sujet ; ainsi la phrase paraît la même que celle d’une langue authentiquement « à sujet nul ». </xsl:text>
 </p>
 	      <p contentType="ctPracticalIntro">
 <xsl:text>
-	         	Les langues « à sujet nul » permettent qu’un sujet et / ou un objet manque, ou qu’il ne soit pas exprimé dans la position syntaxique normale. Il y a aussi des langues où au moins certains des pronoms sont des clitiques qui s’attachent au verbe. Quand ceci se passe, il n’y a pas de pronom ni de syntagme nominal dans la position du sujet; ainsi la phrase paraît la même que celle d’une langue authentiquement « à sujet nul ».</xsl:text>
+	         	Les langues « à sujet nul » (‘pro-drop’) admettent qu’un sujet et / ou un objet manque, ou qu’il ne soit pas exprimé dans la position syntaxique normale. Dans certaines langues, certains des pronoms au moins sont des clitiques qui se rattachent au verbe. Quand ceci se passe, il n’y a pas ni pronom ni syntagme nominal dans la position du sujet ; ainsi la phrase paraît la même que celle d’une langue authentiquement « à sujet nul ».</xsl:text>
 </p>
 	      <p>
 <xsl:text>En </xsl:text>
@@ -25185,80 +25185,80 @@
 </xsl:choose>
 <xsl:text> </xsl:text>
 <xsl:if test="normalize-space(//ip/proDropYes/@checked)='yes' and normalize-space(//ip/proDropImp/@checked)='no' and normalize-space(//ip/proDropClitic/@checked)='no'">
-<xsl:text>la suppression du sujet est permis dans toutes sortes de phrase. </xsl:text>
+<xsl:text>l’omission du sujet (‘pro-drop’) est admise dans tous les types de phrases. </xsl:text>
 	            <xsl:if test="normalize-space(//ip/proDropYes/@checked)='yes'">
-	            	<xsl:text>  La suppression de l’objet </xsl:text>
+	            	<xsl:text>  L’omission de l’objet (‘pro-drop’) </xsl:text>
 	            <xsl:choose>
-	            	<xsl:when test="//ip/@proDropObject='no'">n’est pas permis</xsl:when>
-	            	<xsl:when test="//ip/@proDropObject='yes'">est aussi permis</xsl:when>
+	            	<xsl:when test="//ip/@proDropObject='no'">n’est pas admise</xsl:when>
+	            	<xsl:when test="//ip/@proDropObject='yes'">est également admise</xsl:when>
 	            </xsl:choose>
 	            <xsl:text>.  </xsl:text>
 	         </xsl:if>
 	         </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropClitic/@checked)='yes' and normalize-space(//ip/proDropYes/@checked)='no' and normalize-space(//ip/proDropImp/@checked)='no'">
-<xsl:text>on peut supposer que le sujet est absent lorsque des pronoms dépendents (des clitiques pronominaux) s’attachent au verbe; cependant, il ne s’agit pas d’une langue « à sujet nul ».  </xsl:text>
+<xsl:text>le sujet semble omis lorsque des pronoms dépendants (des clitiques pronominaux) se rattachent au verbe ; cependant, il ne s’agit pas d’une véritable langue ‘pro-drop’.  </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropClitic/@checked)='yes' and normalize-space(//ip/proDropYes/@checked)='yes' and normalize-space(//ip/proDropImp/@checked)='no'">
-<xsl:text>la suppression du sujet est permis dans toutes sortes de phrase, et il y a aussi des clitiques pronominaux qui peuvent s’attacher au verbe.  </xsl:text>
+<xsl:text>l’omission du sujet (pro-drop) est admise dans tous les types de phrases et il y a également des clitiques pronominaux qui se rattachent au verbe.  </xsl:text>
 	            <xsl:if test="normalize-space(//ip/proDropYes/@checked)='yes'">
-	            	<xsl:text>  La suppression de l’objet </xsl:text>
+	            	<xsl:text>  L’omission de l’objet (‘pro-drop’) </xsl:text>
 	            	<xsl:choose>
-	            		<xsl:when test="//ip/@proDropObject='no'">n’est pas permis</xsl:when>
-	            		<xsl:when test="//ip/@proDropObject='yes'">est aussi permis</xsl:when>
+	            		<xsl:when test="//ip/@proDropObject='no'">n’est pas admise</xsl:when>
+	            		<xsl:when test="//ip/@proDropObject='yes'">est également admise</xsl:when>
 	            	</xsl:choose>
 	            <xsl:text>.  </xsl:text>
 	         </xsl:if>
 	         </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropImp/@checked)='yes' and normalize-space(//ip/proDropYes/@checked)='no' and normalize-space(//ip/proDropClitic/@checked)='no' and normalize-space(//ip/proDropOther/@checked)='no'">
-<xsl:text>l’absence du sujet n’est pas permis.  Le sujet doit être évident, sauf dans les impératifs.</xsl:text>
+<xsl:text>l’omission du sujet (pro-drop) n’est pas admise.  Le sujet doit être explicite mis à part dans les impératifs.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropYes/@checked)='yes' and normalize-space(//ip/proDropImp/@checked)='yes' and normalize-space(//ip/proDropClitic/@checked)='no'">
-<xsl:text>l’absence du  sujet (pro-drop) est permis dans toutes sortes de phrase, y compris les impératifs. </xsl:text>
+<xsl:text>l’omission du sujet (pro-drop) est admise dans tous les types de phrases, y compris dans les impératifs. </xsl:text>
 	            <xsl:if test="normalize-space(//ip/proDropYes/@checked)='yes'">
-	            	<xsl:text>  La suppression de l’objet </xsl:text>
+	            	<xsl:text>  L’omission de l’objet </xsl:text>
 	            	<xsl:choose>
-	            		<xsl:when test="//ip/@proDropObject='no'">n’est pas permis</xsl:when>
-	            		<xsl:when test="//ip/@proDropObject='yes'">est aussi permis</xsl:when>
+	            		<xsl:when test="//ip/@proDropObject='no'">n’est pas admise</xsl:when>
+	            		<xsl:when test="//ip/@proDropObject='yes'">est également admise</xsl:when>
 	            	</xsl:choose>
 	            <xsl:text>.  </xsl:text>
 	         </xsl:if>
 	         </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropClitic/@checked)='yes' and normalize-space(//ip/proDropYes/@checked)='no' and normalize-space(//ip/proDropImp/@checked)='yes'">
-<xsl:text>on peut supposer que le sujet est absent lorsque des pronoms dépendents (des clitiques pronominaux) s’attachent au verbe; cependant, il ne s’agit pas d’une langue à sujet nul.  On permet l’absence du sujet dans les impératifs.  </xsl:text>
+<xsl:text>le sujet semble omis lorsque des pronoms dépendants (des clitiques pronominaux) se rattachent au verbe ; cependant, il ne s’agit pas d’une véritable langue ‘pro-drop’.  L’omission (pro-drop) du sujet est admise dans les impératifs.  </xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropClitic/@checked)='yes' and normalize-space(//ip/proDropYes/@checked)='yes' and normalize-space(//ip/proDropImp/@checked)='yes'">
-<xsl:text>on permet l’absence du sujet dans toutes sortes de phrase, y compris les impératifs, et il y a aussi des clitiques pronominaux qui peuvent s’attacher au verbe.  </xsl:text>
+<xsl:text>L’omission du sujet est admise dans tous les types de phrases, y compris dans les impératifs, et il y a aussi des clitiques pronominaux qui peuvent se rattacher au verbe.  </xsl:text>
 	            <xsl:if test="normalize-space(//ip/proDropYes/@checked)='yes'">
-	            	<xsl:text>  La suppression de l’objet </xsl:text>
+	            	<xsl:text>  L’omission (pro-drop) de l’objet </xsl:text>
 	            	<xsl:choose>
-	            		<xsl:when test="//ip/@proDropObject='no'">n’est pas permis</xsl:when>
-	            		<xsl:when test="//ip/@proDropObject='yes'">est aussi permis</xsl:when>
+	            		<xsl:when test="//ip/@proDropObject='no'">n’est pas admise</xsl:when>
+	            		<xsl:when test="//ip/@proDropObject='yes'">est également admise</xsl:when>
 	            	</xsl:choose>
 	            <xsl:text>.  </xsl:text>
 	         </xsl:if>
 	         </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropNone/@checked)='yes' and normalize-space(//ip/proDropYes/@checked)='no' and normalize-space(//ip/proDropClitic/@checked)='no' and normalize-space(//ip/proDropOther/@checked)='no' and normalize-space(//ip/proDropImp/@checked)='no'">
-<xsl:text>l’absence du sujet n’est pas permis.  Le sujet doit être évident même dans les impératifs.</xsl:text>
+<xsl:text>l’omission du sujet (pro-drop) n’est pas admise.  Le sujet doit être explicite, même dans les impératifs.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropOther/@checked)='yes' and normalize-space(//ip/proDropYes/@checked)='no' and normalize-space(//ip/proDropClitic/@checked)='no' and normalize-space(//ip/proDropImp/@checked)='no'">
-<xsl:text>l’absence du sujet est sulement permis  ___</xsl:text>
+<xsl:text>l’omission du sujet est seulement admise ___</xsl:text>
 <xsl:value-of select="//ip/proDropOther" />
 <xsl:text>.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropYes/@checked)='no' and normalize-space(//ip/proDropClitic/@checked)='no' and normalize-space(//ip/proDropOther/@checked)='yes' and normalize-space(//ip/proDropImp/@checked)='yes'">
-<xsl:text>l’absence du sujet est permis ___</xsl:text>
+<xsl:text>l’omission du sujet est admise ___</xsl:text>
 <xsl:value-of select="//ip/proDropOther" />
-<xsl:text> et aussi dans les impératifs.</xsl:text>
+<xsl:text> ainsi que dans les impératifs.</xsl:text>
 </xsl:if>
 <xsl:if test="normalize-space(//ip/proDropOther/@checked)='yes' and normalize-space(//ip/proDropYes/@checked)='yes' or normalize-space(//ip/proDropOther/@checked)='yes' and normalize-space(//ip/proDropClitic/@checked)='yes'">
-<xsl:text>  L’absence du sujet est aussi permis ___</xsl:text>
+<xsl:text>  l’omission du sujet est aussi admise ___</xsl:text>
 <xsl:value-of select="//ip/proDropOther" />
 <xsl:text>.</xsl:text>
 </xsl:if>
 </p>
 		   <xsl:if test="normalize-space(//ip/proDropYes/@checked)='yes'">
 <p>
-<xsl:text>  Voici des phrases qui montrent à sujet nul:</xsl:text>
+<xsl:text>  Voici des phrases qui illustrent le pro-drop :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//ip/proDropYes/@checked)='yes'">
@@ -25274,7 +25274,7 @@
 </xsl:if>				
 				<xsl:if test="normalize-space(//ip/proDropClitic/@checked)='yes'">
 <p>
-<xsl:text>  Voici des phrases qui ont l’air de montrer à sujet nul grâce aux pronoms clitiques attachés au verbe:</xsl:text>
+<xsl:text>  Voici quelques phrases qui semblent illustrer le pro-drop à cause des pronoms clitiques rattachés au verbe :</xsl:text>
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//ip/proDropClitic/@checked)='yes'">
@@ -25290,7 +25290,7 @@
 </xsl:if>	
 	      <xsl:if test="normalize-space(//ip/proDropOther/@checked)='yes'">
 <p>
-<xsl:text>  Voici des phrases en </xsl:text>
+<xsl:text>  Voici quelques phrases en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -25299,7 +25299,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> où le sujet est absent:</xsl:text>
+<xsl:text> dans lesquelles le sujet est omis :</xsl:text>
 </p>
 </xsl:if>
 	      <xsl:if test="normalize-space(//ip/proDropOther/@checked)='yes'">
@@ -25324,7 +25324,7 @@
 		<section2 id="sIPAux">
 			<secTitle>Auxiliaires</secTitle>
 			<p>
-<xsl:text>Il y a plusieurs genres d’éléments auxiliaires verbaux, y compris les mots auxiliaires et les genres non-finis, les genres de mouvement et autres types.</xsl:text>
+<xsl:text>Il y a plusieurs types d’éléments auxiliaires verbaux, comprenant les mots auxiliaires, mais également les auxiliaires non-finis, de mouvements et d’ autres types.</xsl:text>
 </p>
 		   
 		   <section3 id="sIPAuxPositive">
@@ -25332,11 +25332,11 @@
 		   
 		   <p contentType="ctPracticalIntro">
 <xsl:text>
-		   	Les éléments auxiliaires qui sont écrits comme mots indépendants expriment certains genres de flexion verbal.</xsl:text>
+		   	Les éléments auxiliaires qui sont écrits comme mots indépendants expriment certains types de flexion verbale.</xsl:text>
 </p>
 		      <p contentType="ctComparativeIntro">
 <xsl:text>
-		      	Certaines langues ont des éléments auxiliaires qui sont des mots indépendants; quelques-unes peuvent accepter plus d’un élément auxiliaire avant le verbe principal. Voici des exemples pour des phrases transitives: </xsl:text>
+		      	Certaines langues ont des éléments auxiliaires qui sont des mots indépendants ; quelques-unes admettent plus d’un élément auxiliaire avant le verbe principal. Voici des exemples de phrases transitives en français : </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -25355,8 +25355,8 @@
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
-</xsl:attribute>Le garçon pouvait avoir mangé la banane</langData>
-<xsl:text>.  Dans d’autres langues tous ces sens se communiquent par la flexion verbale.</xsl:text>
+</xsl:attribute>Le garçon aurait pu manger la banane</langData>
+<xsl:text>.  Dans d’autres langues tous ces sens sont communiqués par la flexion verbale.</xsl:text>
 </p>
 		      <p>
 <xsl:text>En </xsl:text>
@@ -25370,10 +25370,10 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-					<xsl:when test="//ip/@aux='no'"> il n’y a pas d’auxiliaires</xsl:when>
-					<xsl:when test="//ip/@aux='yes'"> il y a des auxiliaires</xsl:when>
+					<xsl:when test="//ip/@aux='no'">, il n’y a pas d’auxiliaires</xsl:when>
+					<xsl:when test="//ip/@aux='yes'">, il y a des auxiliaires</xsl:when>
 				</xsl:choose>
-<xsl:text> qu’on écrit comme mots indépendants.  </xsl:text>
+<xsl:text> écrits comme des mots indépendants.  </xsl:text>
 <xsl:if test="normalize-space(//ip/@aux)='yes'">
 					<xsl:text>Un auxiliaire est </xsl:text>
 					<xsl:choose>
@@ -25383,14 +25383,14 @@
 					<xsl:text> et  </xsl:text>
 					<xsl:choose>
 						<xsl:when test="//ip/@auxMany='no'">un seul est possible</xsl:when>
-						<xsl:when test="//ip/@auxMany='yes'">plus d’un peut se trouver</xsl:when>
+						<xsl:when test="//ip/@auxMany='yes'">plus d’un peuvent se trouver</xsl:when>
 					</xsl:choose>
 					<xsl:text> dans une seule proposition. </xsl:text>
 					<xsl:if test="normalize-space(//typology/@wordOrder)='VSO'">
 						<xsl:text> Après un auxiliaire, l’ordre normal VSO </xsl:text>
 						<xsl:choose>
 							<xsl:when test="//ip/@auxOrder='yes'">est maintenu.  L’ordre est Aux V S O.</xsl:when>
-							<xsl:when test="//ip/@auxOrder='no'">peut changer, pour faire paraître le sujet directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</xsl:when>
+							<xsl:when test="//ip/@auxOrder='no'">peut changer et le sujet est placé directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</xsl:when>
 						</xsl:choose>
 						<xsl:text></xsl:text>
 					</xsl:if>
@@ -25399,7 +25399,7 @@
 						<xsl:text> Avant un auxiliaire l’ordre normal O S V </xsl:text>
 						<xsl:choose>
 							<xsl:when test="//ip/@auxOrder='yes'">est maintenu.  L’ordre est O S V Aux.</xsl:when>
-							<xsl:when test="//ip/@auxOrder='no'">peut changer, pour faire paraître le sujet directement après le verbe et avant l’auxiliaire.  L’ordre dans ces propositions est O V S Aux.</xsl:when>
+							<xsl:when test="//ip/@auxOrder='no'">peut changer et le sujet est placé directement après le verbe et avant l’auxiliaire.  L’ordre dans ces propositions est O V S Aux.</xsl:when>
 						</xsl:choose>
 						<xsl:text></xsl:text>
 					</xsl:if>
@@ -25408,7 +25408,7 @@
 </p>
 			<xsl:if test="normalize-space(//ip/@aux)='yes'">
 <p>
-<xsl:text>Voici des exemples d’auxiliaires en </xsl:text>
+<xsl:text>Voici quelques exemples d’auxiliaires en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -25417,7 +25417,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//ip/@aux)='yes'">
@@ -25452,7 +25452,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25464,12 +25464,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25480,7 +25480,7 @@
 </xsl:if>
 			<xsl:if test="normalize-space(//ip/@aux)='yes'">
 <p>
-<xsl:text>Voici des phrases qui incluent ces auxiliaires:</xsl:text>
+<xsl:text>Voici des phrases qui incluent ces auxiliaires :</xsl:text>
 </p>
 </xsl:if>
 			
@@ -25499,7 +25499,7 @@
 		   <section3 id="sIPAuxNonfinite">
 		   	<secTitle>Auxiliaire non-fini</secTitle>	   
 		   <p contentType="ctPracticalIntro">
-<xsl:text>Le marqueur non-fini peut aussi agir comme auxiliaire s’il s’écrit comme mot indépendant. </xsl:text>
+<xsl:text>Le marqueur non-fini peut aussi fonctionner comme auxiliaire s’il s’écrit comme un mot indépendant. </xsl:text>
 </p>
 		      <p contentType="ctComparativeIntro">
 <xsl:text>Le mot non-fini </xsl:text>
@@ -25507,7 +25507,7 @@
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
 </xsl:attribute>to</langData>
-<xsl:text> utilisé en anglais dans les propositions subordonnées fonctionne comme un auxiliaire, puisqu’il prend la même position et qu’il peut se mettre avant d’autres auxiliaires. Par exemple, </xsl:text>
+<xsl:text> utilisé en anglais dans les propositions subordonnées fonctionne comme un auxiliaire, puisqu’il se trouve dans la même position et qu’il peut être placé avant d’autres auxiliaires. Voyez par exemple, </xsl:text>
 <langData>
 <xsl:attribute name="lang">
 <xsl:text>lPAWSSKEnglish</xsl:text>
@@ -25530,9 +25530,9 @@
 </xsl:choose>
 <xsl:text></xsl:text>
 <xsl:choose>
-					<xsl:when test="//ip/@auxNonfinite='none'"> il n’y a pas de marqueur pour les propositions non-finies. </xsl:when>
-					<xsl:when test="//ip/@auxNonfinite='no'"> on ne marque que le caractéristique non-fini comme élément du verbe. </xsl:when>
-					<xsl:when test="//ip/@auxNonfinite='yes'"> possède quelques marqueurs de type auxiliaire non-fini écrits comme mots indépendants.  </xsl:when>
+					<xsl:when test="//ip/@auxNonfinite='none'">, il n’y a pas de marqueur pour les propositions non-finies. </xsl:when>
+					<xsl:when test="//ip/@auxNonfinite='no'">, la caractéristique non-fini est uniquement marquée comme un élément du verbe. </xsl:when>
+					<xsl:when test="//ip/@auxNonfinite='yes'">, il existe quelques marqueurs de type auxiliaire non-fini écrits comme des mots indépendants.  </xsl:when>
 				</xsl:choose>
 <xsl:text></xsl:text>
 <xsl:if test="normalize-space(//ip/@auxNonfinite)='yes'">
@@ -25546,16 +25546,16 @@
 						<xsl:text> Après un auxiliaire non-fini, l’ordre normal VSO  </xsl:text>
 						<xsl:choose>
 							<xsl:when test="//ip/@auxNonfiniteOrder='yes'">est maintenu.  L’ordre est Aux  V S O.</xsl:when>
-							<xsl:when test="//ip/@auxNonfiniteOrder='no'">peut changer pour faire paraître le sujet directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</xsl:when>
+							<xsl:when test="//ip/@auxNonfiniteOrder='no'">peut changer changer et le sujet est placé directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</xsl:when>
 						</xsl:choose>
 						<xsl:text></xsl:text>
 					</xsl:if>
 					<xsl:text></xsl:text>
 					<xsl:if test="normalize-space(//typology/@wordOrder)='OSV'">
-						<xsl:text> Avant un auxiliaire non-fini, l’ordre normal  OSV </xsl:text>
+						<xsl:text> Avant un auxiliaire non-fini, l’ordre normal OSV </xsl:text>
 						<xsl:choose>
-							<xsl:when test="//ip/@auxOrder='yes'">est maintenu.  L’ordre est  O S V Aux.</xsl:when>
-							<xsl:when test="//ip/@auxOrder='no'">peut changer pour faire paraître le sujet directement après le verbe et avant l’auxiliaire.  L’ordre dans ces syntagmes est O V S Aux.</xsl:when>
+							<xsl:when test="//ip/@auxOrder='yes'">est maintenu.  L’ordre est O S V Aux.</xsl:when>
+							<xsl:when test="//ip/@auxOrder='no'">peut changer et le sujet est placé directement après le verbe et avant l’auxiliaire.  L’ordre dans ces propositions est O V S Aux.</xsl:when>
 						</xsl:choose>
 						<xsl:text></xsl:text>
 					</xsl:if>
@@ -25564,7 +25564,7 @@
 </p>
 			<xsl:if test="normalize-space(//ip/@auxNonfinite)='yes'">
 <p>
-<xsl:text>Le marqueur auxiliaire non-fini en </xsl:text>
+<xsl:text>En </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -25573,14 +25573,14 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> est:</xsl:text>
+<xsl:text>, le(s) marqueur(s) auxiliaire(s) non-fini(s) est / sont le(s) suivant(s) :</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//ip/@auxNonfinite)='yes'">
 <example num="xV.IPAux.IPAuxNonfinite.12">
 <table border="1">
 					<tr>
-						<th>Marqeur auxiliaire non-fini</th>
+						<th>Marqueur auxiliaire non-fini</th>
 						<th>Glose</th>
 					</tr>
 					<xsl:variable name="sExampleValue0.0">
@@ -25620,7 +25620,7 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
@@ -25636,7 +25636,7 @@
 </xsl:if>
 			<xsl:if test="normalize-space(//ip/@auxNonfinite)='yes'">
 <p>
-<xsl:text>Voici des exemples de propositions non-finies qui comprennent ces auxiliaires non-finis:</xsl:text>
+<xsl:text>Voici quelques exemples de propositions non-finies qui comprennent ces auxiliaires non-finis :</xsl:text>
 </p>
 </xsl:if>
 			
@@ -25656,10 +25656,10 @@
 		   	<secTitle>Autres types d’auxiliaires</secTitle>
 		  		   
 		   <p contentType="ctPracticalIntro">
-<xsl:text>D’autres mots peuvent aussi fonctionner comme des auxiliaires, tels que les auxiliaires de mouvement ou des marqueurs d’emprunt. </xsl:text>
+<xsl:text>D’autres mots également peuvent fonctionner comme des auxiliaires, tels que les auxiliaires de mouvement ou des marqueurs empruntés. </xsl:text>
 </p>
 		      <p contentType="ctComparativeIntro">
-<xsl:text>Certaines langues ont d’autres mots qui fonctionnent comme des auxiliaires, tels que les auxiliaires de mouvement ou les marqueurs d’emprunt qui partagent le même sujet et les mêmes compléments que le verbe principal.</xsl:text>
+<xsl:text>Certaines langues ont d’autres mots qui fonctionnent comme des auxiliaires, tels que les auxiliaires de mouvement ou les marqueurs empruntés qui partagent le même sujet et les mêmes compléments que le verbe principal.</xsl:text>
 </p>
 		      <p>
 <xsl:text>En </xsl:text>
@@ -25681,8 +25681,8 @@
 					<xsl:if test="normalize-space(//typology/@wordOrder)='VSO'">
 						<xsl:text> Après un de ces auxiliaires l’ordre habituel VSO </xsl:text>
 						<xsl:choose>
-							<xsl:when test="//ip/@auxOtherOrder='yes'">est maintenu.  L’ordre est Aux  V S O.</xsl:when>
-							<xsl:when test="//ip/@auxOtherOrder='no'">peut changer pour faire paraître le sujet directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</xsl:when>
+							<xsl:when test="//ip/@auxOtherOrder='yes'">est maintenu.  L’ordre dans ces propositions est Aux  V S O.</xsl:when>
+							<xsl:when test="//ip/@auxOtherOrder='no'">peut changer et le sujet est placé directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</xsl:when>
 						</xsl:choose>
 						<xsl:text></xsl:text>
 					</xsl:if>
@@ -25690,8 +25690,8 @@
 					<xsl:if test="normalize-space(//typology/@wordOrder)='OSV'">
 						<xsl:text> Avant un de ces auxiliaires l’ordre habituel OSV   </xsl:text>
 						<xsl:choose>
-							<xsl:when test="//ip/@auxOrder='yes'">est maintenu.  L’ordre est  O S V Aux.</xsl:when>
-							<xsl:when test="//ip/@auxOrder='no'">peut changer pour faire paraître le sujet directement après le verbe et avant l’auxiliaire.  L’ordre dans ces syntagmes est O V S Aux.</xsl:when>
+							<xsl:when test="//ip/@auxOrder='yes'">est maintenu.  L’ordre dans ces propositions est  O S V Aux.</xsl:when>
+							<xsl:when test="//ip/@auxOrder='no'">peut changer et le sujet est placé directement après le verbe et avant l’auxiliaire.  L’ordre dans ces propositions est O V S Aux.</xsl:when>
 						</xsl:choose>
 						<xsl:text></xsl:text>
 					</xsl:if>
@@ -25709,7 +25709,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//ip/@auxOther)='yes'">
@@ -25744,7 +25744,7 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25756,12 +25756,12 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25772,7 +25772,7 @@
 </xsl:if>
 			<xsl:if test="normalize-space(//ip/@auxOther)='yes'">
 <p>
-<xsl:text>Voici des exemples de phrases qui contiennent ces autres auxiliaires:</xsl:text>
+<xsl:text>Voici quelques exemples de phrases qui contiennent ces autres auxiliaires :</xsl:text>
 </p>
 </xsl:if>
 			
@@ -25792,12 +25792,12 @@
 <section2 id="sVCompounds">
 	<secTitle>Composés verbaux</secTitle>
 	<p>
-<xsl:text>Les verbes peuvent se combiner avec d’autres verbes, ou bien avec des noms ou d’autres catégories de mots pour former des composés verbaux. Ces composés fonctionnent toujours comme des verbes, quoiqu’ils aient pu changer de valence, par exemple, en changeant de verbe transitif en verbe intransitif. On citera ici des exemples des types les plus fréquents.</xsl:text>
+<xsl:text>Les verbes peuvent se combiner avec d’autres verbes, ou avec des noms ou d’autres catégories de mots pour former des composés verbaux. Ces composés fonctionnent toujours comme des verbes, quoiqu’ils aient pu changer de valence, par exemple, en passant de transitif à intransitif. Des exemples des types les plus fréquents seront donnés ici.</xsl:text>
 </p>
    
 	<xsl:if test="normalize-space(//ip/@heartCompound)='yes'">
 <p>
-<xsl:text>Une série spéciale de composés verbaux contiennent tous le nom qui décrit le centre des émotions, comme par exemple le coeur.</xsl:text>
+<xsl:text>Dans une série spéciale de composés verbaux, tous les verbes contiennent le nom qui décrit le centre des émotions, comme par exemple le coeur ou le ventre.</xsl:text>
 </p>
 </xsl:if>
    <xsl:if test="normalize-space(//ip/@heartCompound)='yes'">
@@ -25836,13 +25836,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25854,18 +25854,18 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25876,13 +25876,13 @@
 </xsl:if>
 	<xsl:if test="normalize-space(//ip/@bodypartCompound)='yes'">
 <p>
-<xsl:text>Une </xsl:text>
+<xsl:text>Dans une </xsl:text>
 <xsl:if test="normalize-space(//ip/@heartCompound)='yes'">
 <xsl:text>autre </xsl:text>
 </xsl:if>
-<xsl:text>série spéciale de composés verbaux contient le nom d’une partie du corps</xsl:text>
+<xsl:text>série spéciale de composés verbaux, les verbes contiennent le nom d’une partie du corps</xsl:text>
 <xsl:if test="normalize-space(//ip/@heartCompound)='yes'">
-<xsl:text> outre que  le centre des émotions</xsl:text>
+<xsl:text> autre que le centre des émotions</xsl:text>
 </xsl:if>
 <xsl:text>.</xsl:text>
 </p>
@@ -25923,13 +25923,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -25941,18 +25941,18 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -25997,13 +25997,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26015,18 +26015,18 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26071,13 +26071,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26089,18 +26089,18 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26111,7 +26111,7 @@
 </xsl:if>
    
 	<p>
-<xsl:text>Voici des exemples de ces composés qui consistent en un verbe et un nom dans des phrases:</xsl:text>
+<xsl:text>Voici quelques exemples de ces formés d’un verbe et d’un nom utilisés dans des phrases :</xsl:text>
 </p>
    <example num="xV.VCompounds.20">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -26124,12 +26124,12 @@
 </example>
    
 	<p>
-<xsl:text>Voici quelques composés qui consistent d’un verbe et d’une autre catégorie à part un nom:</xsl:text>
+<xsl:text>Voici quelques composés formés d’un verbe et d’une autre catégorie autre que le nom :</xsl:text>
 </p>
    <example num="xV.VCompounds.24">
 <table border="1">
       	<caption>
-<xsl:text>Composés verbaux à part les composés avec des noms</xsl:text>
+<xsl:text>Composés verbaux autres que les composés avec des noms</xsl:text>
 </caption>
          <tr>
             <th>Composé</th>
@@ -26161,13 +26161,13 @@
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </xsl:with-param>
@@ -26179,18 +26179,18 @@
 <tr>
 <td>
 <langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ENTRER UN EXEMPLE ICI</langData>
+<xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 <td align="left">
 <gloss>
 <xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ENTRER GLOSE</xsl:text>
+<xsl:text>SAISIR GLOSE</xsl:text>
 </gloss>
 </td>
 </tr>
@@ -26199,7 +26199,7 @@
       </table>
 </example>
 	<p>
-<xsl:text>Voici des exemples de ces composés qui consistent d’un verbe et d’un non-substantif:</xsl:text>
+<xsl:text>Voici quelques exemples de ces composés formés d’un verbe et d’un non-substantif :</xsl:text>
 </p>
    <example num="xV.VCompounds.28">
 <xsl:call-template name="OutputInterlinearEntries">
@@ -26211,7 +26211,7 @@
 </xsl:call-template>
 </example>
 	<p contentType="ctPracticalIntro">
-<xsl:text>Certaines expressions idiomatiques consistent d’un verbe et d’un autre mot qui, pris ensemble, expriment une notion qui n’est pas pareille au sens des deux mots indépendants. Voici quelques exemples d’expressions idiomatiques en </xsl:text>
+<xsl:text>Certaines expressions idiomatiques sont formées d’un verbe et d’un autre mot qui, ensemble, expriment une notion qui n’est pas  la somme des deux mots indépendants. Voici quelques exemples d’expressions idiomatiques en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -26220,10 +26220,10 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 	<p contentType="ctComparativeIntro">
-<xsl:text>À part les composés écrits en un seul mot, il existe des expressions idiomatiques qui consistent d’un verbe et d’un autre mot qui, pris ensemble, expriment une notion qui n’a pas le même sens que les deux mots pris indépendamment. Voici des exemples d’expressions idiomatiques en </xsl:text>
+<xsl:text>À part les composés écrits en un seul mot, il existe des expressions idiomatiques formées d’un verbe et d’un autre mot qui, ensemble, expriment une notion différente de la somme des deux mots pris indépendamment. Voici quelques exemples d’expressions idiomatiques en </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />
@@ -26232,7 +26232,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
    <example num="xV.VCompounds.34">
 <xsl:call-template name="OutputInterlinearEntries">

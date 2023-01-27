@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE portion SYSTEM "../Data/PAWSSKWriterDescription.dtd">
+<!DOCTYPE portion SYSTEM "..\Data\PAWSSKWriterDescription.dtd">
 <portion>
 	<section1 id="sV">
 		<secTitle>Verbes</secTitle>
 		<p>
-			<content>Les verbes expriment les actions, les états ou les émotions. D’abord, on étudie les types de flexion verbal et les caractéristiques de l’accord verbal, puis on présente des paradigmes verbaux. Dans la section </content><sectionRef sec="sIPProDrop"/><content> on discute l’absence du sujet, et les auxiliaires dans la section </content><sectionRef sec="sIPAux"/><content>, suivi par les composés verbaux. Les exemples des verbes utilisés dans les phrases se trouvent dans la section </content><sectionRef sec="sIP"/><content>.  On présente les constructions plus complexes aux sections </content><sectionRef sec="sFocus"/><content> - </content><sectionRef sec="sRelCl"/><content>.</content>
+			<content>Les verbes expriment les actions, les états ou les émotions. D’abord, les types de flexion verbale et les caractéristiques de l’accord verbal seront traités en premier, puis quelques paradigmes verbaux seront présentés. Dans la section </content><sectionRef sec="sIPProDrop"/><content> les contextes dans lesquels le sujet est omis seront abordés, et les auxiliaires seront traités dans la section </content><sectionRef sec="sIPAux"/><content>, suivis par les composés verbaux. Les exemples des verbes utilisés dans les phrases se trouvent dans la section </content><sectionRef sec="sIP"/><content>.  Les constructions plus complexes seront abordées dans les sections </content><sectionRef sec="sFocus"/><content> - </content><sectionRef sec="sRelCl"/><content>.</content>
 		</p>
 		<section2 id="sIPInfl">
-			<secTitle>Flexion</secTitle>
+			<secTitle>Caractéristiques flexionnelles</secTitle>
 			<p>
-				<content>D’habitude les verbes et les auxiliaires portent  des caractéristiques de flexion, tels que le temps, l’aspect et/ou le mode. Dans la plupart des cas ces caractéristiques se font par le moyen d’affixes, mais ils peuvent faire partie aussi de formes verbales irrégulières.</content>
+				<content>Les verbes et les auxiliaires portent  généralement des caractéristiquesflexionnelles, telles que  le temps, l’aspect et / ou le mode. Dans la plupart des cas, ces caractéristiques sont ajoutées par des affixes, mais elles peuvent aussi faire partie de formes verbales irrégulières.</content>
 			</p>
 			<p>
-				<content>Les caractérisques de flexion suivants se marquent sur les verbes et/ou sur les auxiliaires en </content>
+				<content>Les caractérisques flexionnelles suivantes sont marquées sur les verbes et / ou sur les auxiliaires en </content>
 				<langName/>
-				<content>:</content>
+				<content> :</content>
 			</p>
 			<example>
 				<table border="1">
@@ -73,7 +73,7 @@
 							<content>temps</content>
 						</col>
 						<col>
-							<content>ENTRER GLOSE</content>
+							<content>SAISIR GLOSE</content>
 						</col>
 						<col exampleLoc="ip/otherTense"/>			
 					</row>
@@ -100,7 +100,7 @@
 				         <content>aspect</content>
 				      </col>
 				      <col>
-				         <content>contrafactuel</content>
+				         <content>contrefactuel</content>
 				      </col>
 				      <col exampleLoc="ip/contrafactualAspect"/>			
 				   </row>
@@ -190,7 +190,7 @@
 							<content>aspect</content>
 						</col>
 						<col>
-							<content>purposif</content>
+							<content>intentionnel</content>
 						</col>
 						<col exampleLoc="ip/purposiveAspect"/>			
 					</row>
@@ -217,7 +217,7 @@
 							<content>aspect</content>
 						</col>
 						<col>
-							<content>ENTRER GLOSE</content>
+							<content>SAISIR GLOSE</content>
 						</col>
 						<col exampleLoc="ip/otherAspect"/>			
 					</row>
@@ -298,7 +298,7 @@
 							<content>mode</content>
 						</col>
 						<col>
-							<content>ENTRER GLOSE</content>
+							<content>SAISIR GLOSE</content>
 						</col>
 						<col exampleLoc="ip/otherMood"/>			
 					</row>
@@ -319,7 +319,7 @@
 					</row>
 					<row show="swIPInflFeatSecondhand">
 						<col><content>évidentialité</content></col>
-						<col><content>de deuxième main</content></col>
+						<col><content>de seconde main</content></col>
 						<col exampleLoc="ip/secondhandEvident"/>
 					</row>
 					<row show="swIPInflFeatThirdhand">
@@ -349,7 +349,7 @@
 					</row>
 					<row show="swIPInflFeatReportative">
 						<col><content>évidentialité</content></col>
-						<col><content>reportatif</content></col>
+						<col><content>rapporté</content></col>
 						<col exampleLoc="ip/reportativeEvident"/>
 					</row>
 					<row show="swIPInflFeatHearsay">
@@ -369,7 +369,7 @@
 					</row>
 					<row show="swIPInflFeatOtherEvident">
 						<col><content>évidentialité</content></col>
-						<col><content>ENTRER GLOSE</content></col>
+						<col><content>SAISIR GLOSE</content></col>
 						<col exampleLoc="ip/otherEvident"/>
 					</row>
 					
@@ -450,7 +450,7 @@
 				         <content>voix</content>
 				      </col>
 				      <col>
-				      	<content>voix d’acteur</content>
+				      	<content>voix d’actant</content>
 				      </col>
 				      <col exampleLoc="ip/actorVoice"/>			
 				   </row>
@@ -459,7 +459,7 @@
 				         <content>voix</content>
 				      </col>
 				      <col>
-				         <content>voix datif </content>
+				         <content>voix dative</content>
 				      </col>
 				      <col exampleLoc="ip/dativeVoice"/>			
 				   </row>
@@ -468,7 +468,7 @@
 				         <content>voix</content>
 				      </col>
 				      <col>
-				         <content>voix but</content>
+				         <content>voix de finalité</content>
 				      </col>
 				      <col exampleLoc="ip/goalVoice"/>			
 				   </row>
@@ -477,7 +477,7 @@
 				         <content>voix</content>
 				      </col>
 				      <col>
-				         <content>voix instrumentable</content>
+				         <content>voix instrumentale</content>
 				      </col>
 				      <col exampleLoc="ip/instrumentalVoice"/>			
 				   </row>
@@ -486,7 +486,7 @@
 				         <content>voix</content>
 				      </col>
 				      <col>
-				         <content>voix locatif</content>
+				         <content>voix locative</content>
 				      </col>
 				      <col exampleLoc="ip/locativeVoice"/>			
 				   </row>
@@ -495,27 +495,27 @@
 				         <content>voix</content>
 				      </col>
 				      <col>
-				      	<content>voix d’objet</content>
+				      	<content>voix objet</content>
 				      </col>
 				      <col exampleLoc="ip/objectVoice"/>			
 				   </row>
 					<row show="swIPInflFeatOtherVoice">
 						<col><content>voix</content></col>
-						<col><content>ENTRER GLOSE</content></col>
+						<col><content>SAISIR GLOSE</content></col>
 						<col exampleLoc="ip/otherVoice"/>
 					</row>
 				</table>
 			</example>
 		</section2>
 		<section2 id="sIPAgr">
-			<secTitle>Accord</secTitle>
+			<secTitle>Caractéristiques d’accord</secTitle>
 			<p>
-				<content>Les verbes et les auxiliaires peuvent aussi porter les caractéristiques de l’accord qui correspondent au sujet ou à l’objet direct.  La plupart de ces caractéristiques se font par des affixes ou par des clitiques pronominaux qui peuvent s’attacher au verbe.  </content><text show="swClassifiersNotNo"><content>On a déjà présenté l’accord de classe à la section </content><sectionRef sec="sClassifiers"/><content>.</content></text>
+				<content>Les verbes et les auxiliaires peuvent aussi porter les marques d’accord qui correspondent au sujet ou à l’objet direct.  La plupart de ces caractéristiques se font par des affixes ou par des clitiques pronominaux rattaches au verbe.  </content><text show="swClassifiersNotNo"><content>L’accord de classe a déjà été présenté dans la section </content><sectionRef sec="sClassifiers"/><content>.</content></text>
 			</p>
 			<p>
 				<content>En </content>
 				<langName/>
-				<content> les caractéristiques de l’accord suivants se marquent sur les verbes et / ou sur les auxiliaires:</content>
+				<content> les caractéristiques d’accord suivantes sont marquées sur les verbes et / ou sur les auxiliaires :</content>
 			</p>
 			<example>
 				<table border="1">
@@ -565,7 +565,7 @@
 							<content>personne</content>
 						</col>
 						<col>
-							<content>première personne exclusif sujet </content>
+							<content>première personne sujet exclusif</content>
 						</col>
 					   <col exampleLoc="ip/firstExclusiveSubjectPerson"></col>
 					</row>
@@ -574,7 +574,7 @@
 							<content>personne</content>
 						</col>
 						<col>
-							<content>première personne exclusif objet </content>
+							<content>première personne objet exclusif</content>
 						</col>
 					   <col exampleLoc="ip/firstExclusiveObjectPerson"></col>
 					</row>
@@ -601,7 +601,7 @@
 							<content>personne</content>
 						</col>
 						<col>
-							<content>première personne inclusif sujet </content>
+							<content>première personne sujet inclusif</content>
 						</col>
 					   <col exampleLoc="ip/firstInclusiveSubjectPerson"></col>
 					</row>
@@ -610,7 +610,7 @@
 							<content>personne</content>
 						</col>
 						<col>
-							<content>première personne inclusif objet </content>
+							<content>première personne objet inclusif</content>
 						</col>
 					   <col exampleLoc="ip/firstInclusiveObjectPerson"></col>
 					</row>
@@ -745,7 +745,7 @@
 							<content>nombre</content>
 						</col>
 						<col>
-							<content>sujet double</content>
+							<content>sujet duel</content>
 						</col>
 					   <col exampleLoc="ip/dualSubjectNumber"></col>
 					</row>
@@ -754,7 +754,7 @@
 							<content>nombre</content>
 						</col>
 						<col>
-							<content>objet double</content>
+							<content>objet duel</content>
 						</col>
 					   <col exampleLoc="ip/dualObjectNumber"></col>
 					</row>
@@ -763,7 +763,7 @@
 							<content>nombre</content>
 						</col>
 						<col>
-							<content>argument ergatif double</content>
+							<content>argument ergatif duel</content>
 						</col>
 					   <col exampleLoc="ip/dualErgativeNumber"></col>
 					</row>
@@ -772,7 +772,7 @@
 							<content>nombre</content>
 						</col>
 						<col>
-							<content>argument absolutif double</content>
+							<content>argument absolutif duel</content>
 						</col>
 					   <col exampleLoc="ip/dualAbsolutiveNumber"></col>
 					</row>
@@ -1033,7 +1033,7 @@
 							<content>animéité</content>
 						</col>
 						<col>
-							<content>sujet nonhumain</content>
+							<content>sujet non-humain</content>
 						</col>
 					   <col exampleLoc="ip/nonhumanSubjectAnimacy"></col>
 					</row>
@@ -1042,7 +1042,7 @@
 							<content>animéité</content>
 						</col>
 						<col>
-							<content>objet nonhumain</content>
+							<content>objet non-humain</content>
 						</col>
 					   <col exampleLoc="ip/nonhumanObjectAnimacy"></col>
 					</row>
@@ -1051,7 +1051,7 @@
 							<content>animéité</content>
 						</col>
 						<col>
-							<content>argument ergatif nonhumain</content>
+							<content>argument ergatif non-humain</content>
 						</col>
 					   <col exampleLoc="ip/nonhumanErgativeAnimacy"></col>
 					</row>
@@ -1060,7 +1060,7 @@
 							<content>animéité</content>
 						</col>
 						<col>
-							<content>argument absolutif nonhumain</content>
+							<content>argument absolutif non-humain</content>
 						</col>
 					   <col exampleLoc="ip/nonhumanAbsolutiveAnimacy"></col>
 					</row>
@@ -1068,14 +1068,14 @@
 			</example>
 		</section2>
 	   <section2 id="sVerbParadigms">
-	   	<secTitle>Paradigmes du verbe</secTitle>
-	   	<p><content>Les paradigmes illustrent sous forme de tableau certains changements  qui ont lieu quand les morphèmes d’inflexion et d’accord s’attachent aux verbes spécifiques; certains verbes sont réguliers, d’autres sont irréguliers.</content></p>
+	   	<secTitle>Les paradigmes verbaux</secTitle>
+	   	<p><content>Les paradigmes illustrent sous forme de tableau certains changements qui ont lieu quand les morphèmes de flexion et d’accord se rattachent à des verbes spécifiques. Certains verbes sont réguliers, d’autres sont irréguliers.</content></p>
 	  <section3 id="sVerbParadigmsRegular">
 	  	<secTitle>Paradigmes pour certains verbes réguliers</secTitle>
-	  	<p><content>Voici les paradigmes de quatre verbes réguliers:   </content><comment>Vous devrez ajouter les formes à chaque case. Vous pouvez changer de verbes s’ils ne sont pas réguliers dans votre langue.  
+	  	<p><content>Voici les paradigmes de quatre verbes réguliers :   </content><comment>Vous devrez rajouter les formes dans chaque case. Vous pouvez changer de verbes si ceux qui sont proposés ne sont pas réguliers dans votre langue.  
 	  		<case element="pron" attr="dependentPron">
 	  			<caseText value="yes"> Vous pouvez supprimer des colonnes si le tableau en pdf est trop large.</caseText>
-	  			<caseText value="no"> Puisqu’en votre langue les verbes ne changent pas pour un sujet différent, les paradigmes sont assez simples. Peut-être aurez-vous besoin d’ajouter des colonnes pour les changements qui sont marqués dans les verbes, tels que changements pour le mode et/ou les sujets au pluriel.</caseText>
+	  			<caseText value="no"> Puisqu’en votre langue les verbes ne changent pas pour un sujet différent, les paradigmes sont assez simples. Peut-être aurez-vous besoin d’ajouter des colonnes pour autres changements qui sont marqués dans les verbes.</caseText>
 	  		</case></comment></p>
 
 	  		     <tablenumbered show="swPronDependentNo">
@@ -1122,7 +1122,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatHabitual">
@@ -1158,7 +1158,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        	</row>
 	        	<row show="swIPInflFeatStative">
@@ -1263,7 +1263,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatContrafactual">
-	  				<col rowspan="1"><content>Contrafactuel</content></col>
+	  				<col rowspan="1"><content>Contrefactuel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -1335,7 +1335,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatPurposive">
-	  				<col rowspan="1"><content>Purposif</content></col>
+	  				<col rowspan="1"><content>Intentionnel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -1491,7 +1491,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -1590,7 +1590,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -1691,7 +1691,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatHabitual">
@@ -1727,7 +1727,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        	</row>
 	        	<row show="swIPInflFeatStative">
@@ -1832,7 +1832,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatContrafactual">
-	  				<col rowspan="1"><content>Contrafactuel</content></col>
+	  				<col rowspan="1"><content>Contrefactuel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -1904,7 +1904,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatPurposive">
-	  				<col rowspan="1"><content>Purposif</content></col>
+	  				<col rowspan="1"><content>Intentionnel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -2060,7 +2060,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -2159,7 +2159,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -2260,7 +2260,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatHabitual">
@@ -2296,7 +2296,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        	</row>
 	        	<row show="swIPInflFeatStative">
@@ -2401,7 +2401,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatContrafactual">
-	  				<col rowspan="1"><content>Contrafactuel</content></col>
+	  				<col rowspan="1"><content>Contrefactuel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -2473,7 +2473,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatPurposive">
-	  				<col rowspan="1"><content>Purposif</content></col>
+	  				<col rowspan="1"><content>Intentionnel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -2629,7 +2629,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -2728,7 +2728,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -2829,7 +2829,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatHabitual">
@@ -2865,7 +2865,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        	</row>
 	        	<row show="swIPInflFeatStative">
@@ -2970,7 +2970,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatContrafactual">
-	  				<col rowspan="1"><content>Contrafactuel</content></col>
+	  				<col rowspan="1"><content>Contrefactuel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -3042,7 +3042,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatPurposive">
-	  				<col rowspan="1"><content>Purposif</content></col>
+	  				<col rowspan="1"><content>Intentionnel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -3198,7 +3198,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -3297,7 +3297,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -3357,11 +3357,11 @@
 	  </section3>
 	      
 	      <section3 id="sVerbParadigmsIrregular">
-	      	<secTitle>Paradigmes pour quelques verbes irréguliers</secTitle>
-	      	<p><content>Voici les paradigmes pour trois verbes irréguliers: </content><comment>Vous devrez ajouter les formes dans chaque case. Vous pouvez changer les verbes s’ils n’existent pas dans votre langue, ou qu’ils ne sont pas irréguliers. Notez que « venir » peut être « aller vers la base », et « aller » peut indiquer « partir vers une non-base » ou « partir de la base » dans votre langue.  
+	      	<secTitle>Les paradigmes pour quelques verbes irréguliers</secTitle>
+	      	<p><content>Voici les paradigmes pour trois verbes irréguliers : </content><comment>Vous devrez ajouter les formes dans chaque case. Vous pouvez changer les verbes s’ils n’existent pas dans votre langue ou s’ils ne sont pas irréguliers. Notez que « venir » peut être « aller vers le point de référence », et « aller » peut indiquer « aller, sans indication de direction » ou « s’éloigner du point de référence » dans votre langue.  
 	      		<case element="pron" attr="dependentPron">
 	      			<caseText value="yes"> Vous pouvez supprimer quelques colonnes si le tableau est trop large en pdf.</caseText>
-	      			<caseText value="no"> Puisqu’en votre langue les verbes ne changent pas pour un sujet différent, les paradigmes sont assez simples. Peut-être aurez-vous besoin d’ajouter des colonnes pour les changements qui sont marqués dans les verbes, tels que changements pour le mode et/ou les sujets au pluriel.</caseText>
+	      			<caseText value="no"> Puisqu’en votre langue les verbes ne changent pas pour un sujet différent, les paradigmes sont assez simples. Peut-être aurez-vous besoin d’ajouter des colonnes pour autres changements qui sont marqués dans les verbes.</caseText>
 	      		</case></comment></p>
 
 	      	<tablenumbered show="swPronDependentNo">
@@ -3408,7 +3408,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatHabitual">
@@ -3444,7 +3444,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        	</row>
 	        	<row show="swIPInflFeatStative">
@@ -3548,7 +3548,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatContrafactual">
-	  				<col rowspan="1"><content>Contrafactuel</content></col>
+	  				<col rowspan="1"><content>Contrefactuel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -3620,7 +3620,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatPurposive">
-	  				<col rowspan="1"><content>Purposif</content></col>
+	  				<col rowspan="1"><content>Intentionnel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -3776,7 +3776,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -3875,7 +3875,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -3976,7 +3976,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatHabitual">
@@ -4012,7 +4012,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        	</row>
 	        	<row show="swIPInflFeatStative">
@@ -4117,7 +4117,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatContrafactual">
-	  				<col rowspan="1"><content>Contrafactuel</content></col>
+	  				<col rowspan="1"><content>Contrefactuel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -4189,7 +4189,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatPurposive">
-	  				<col rowspan="1"><content>Purposif</content></col>
+	  				<col rowspan="1"><content>Intentionnel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -4345,7 +4345,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -4444,7 +4444,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -4545,7 +4545,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatHabitual">
@@ -4581,7 +4581,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        	</row>
 	        	<row show="swIPInflFeatStative">
@@ -4686,7 +4686,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatContrafactual">
-	  				<col rowspan="1"><content>Contrafactuel</content></col>
+	  				<col rowspan="1"><content>Contrefactuel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -4758,7 +4758,7 @@
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  			</row>
 	  			<row show="swIPInflFeatPurposive">
-	  				<col rowspan="1"><content>Purposif</content></col>
+	  				<col rowspan="1"><content>Intentionnel</content></col>
 	  				<col><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	  				<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -4914,7 +4914,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	           <row show="swIPInflFeatContrafactual">
-	              <col rowspan="1"><content>Contrafactuel</content></col>
+	              <col rowspan="1"><content>Contrefactuel</content></col>
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	              <col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -5013,7 +5013,7 @@
 	              <col><langData lang="lVernacular">FORME</langData></col>
 	           </row>
 	        	<row show="swIPInflFeatPurposive">
-	        		<col rowspan="1"><content>Purposif</content></col>
+	        		<col rowspan="1"><content>Intentionnel</content></col>
 	        		<col><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
 	        		<col show="swPronExclYes"><langData lang="lVernacular">FORME</langData></col>
@@ -5075,90 +5075,90 @@
 	   </section2>
 	   
 	   <section2 id="sIPProDrop">
-	   	<secTitle>Sujets absents</secTitle>
+	   	<secTitle>Les sujets omis</secTitle>
 			<p contentType="ctComparativeIntro">
-				<content>Certaines langues s’appellent les langues « à sujet nul » (=« pro-drop »), parce qu’elles permettent qu’un sujet et/ou un objet manque, ou qu’il ne soit pas exprimé dans la position syntaxique normale. Par exemple, en espagnol l’équivalent de </content><gloss><content>« j’achète un livre »</content></gloss><content> est </content>
+				<content>Certaines langues s’appellent les langues « à sujet nul » (=« pro-drop »), parce qu’elles admettent qu’un sujet et / ou un objet manque, ou qu’il ne soit pas exprimé dans la position syntaxique normale. Par exemple, en espagnol l’équivalent de </content><gloss><content>« j’achète un livre »</content></gloss><content> est </content>
 				<langData>Compro un libro</langData>
-				<content> plutôt qu’avec la présence du pronom sujet: </content>
+				<content> plutôt qu’avec la présence du pronom sujet : </content>
 				<langData>Yo compro un libro</langData>
-				<content>.  On ne fait pas cela en anglais, ni en français, sauf pour les impératifs. (On traitera le phénomène de l’absence du sujet des infinitifs dans les propositions subordonnées à la section </content>
+				<content>.  On ne fait pas cela en anglais, ni en français, sauf pour les impératifs. (On traitera le phénomène de l’omission du sujet des infinitifs dans les propositions subordonnées dans la section </content>
 				<sectionRef sec="sComp"/>
 				<content>.) </content>
 			</p>
 			<p contentType="ctComparativeIntro">
 				<content>
-					Certaines langues ne sont pas vraiment des langues « à sujet nul », mais au moins certains des pronoms sont des clitiques qui peuvent s’attacher au verbe. Quand ceci se passe, il n’y a pas de pronom ni de syntagme nominal dans la position du sujet; ainsi la phrase paraît la même que celle d’une langue authentiquement « à sujet nul ». </content>
+					Certaines langues ne sont pas vraiment des langues « à sujet nul », mais au moins certains des pronoms au moins sont des clitiques qui se rattacher au verbe. Quand ceci se passe, il n’y a pas ni ronom ni syntagme nominal dans la position du sujet ; ainsi la phrase paraît la même que celle d’une langue authentiquement « à sujet nul ». </content>
 			</p>
 	      <p contentType="ctPracticalIntro">
 	         <content>
-	         	Les langues « à sujet nul » permettent qu’un sujet et / ou un objet manque, ou qu’il ne soit pas exprimé dans la position syntaxique normale. Il y a aussi des langues où au moins certains des pronoms sont des clitiques qui s’attachent au verbe. Quand ceci se passe, il n’y a pas de pronom ni de syntagme nominal dans la position du sujet; ainsi la phrase paraît la même que celle d’une langue authentiquement « à sujet nul ».</content>
+	         	Les langues « à sujet nul » (‘pro-drop’) admettent qu’un sujet et / ou un objet manque, ou qu’il ne soit pas exprimé dans la position syntaxique normale. Dans certaines langues, certains des pronoms au moins sont des clitiques qui se rattachent au verbe. Quand ceci se passe, il n’y a pas ni pronom ni syntagme nominal dans la position du sujet ; ainsi la phrase paraît la même que celle d’une langue authentiquement « à sujet nul ».</content>
 	      </p>
 	      <p>
 	         <content>En </content>
 	         <langName/>
 	         <content> </content>
-	      	<text show="swProDropYesOnly"><content>la suppression du sujet est permis dans toutes sortes de phrase. </content>
+	      	<text show="swProDropYesOnly"><content>l’omission du sujet (‘pro-drop’) est admise dans tous les types de phrases. </content>
 	            <text show="swProDropYes">
-	            	<content>  La suppression de l’objet </content>
+	            	<content>  L’omission de l’objet (‘pro-drop’) </content>
 	            <case element="ip" attr="proDropObject">
-	            	<caseText value="no">n’est pas permis</caseText>
-	            	<caseText value="yes">est aussi permis</caseText>
+	            	<caseText value="no">n’est pas admise</caseText>
+	            	<caseText value="yes">est également admise</caseText>
 	            </case>
 	            <content>.  </content>
 	         </text>
 	         </text>
-	      	<text show="swProDropCliticOnly"><content>on peut supposer que le sujet est absent lorsque des pronoms dépendents (des clitiques pronominaux) s’attachent au verbe; cependant, il ne s’agit pas d’une langue « à sujet nul ».  </content></text>
-	      	<text show="swProDropYesAndCliticOnly"><content>la suppression du sujet est permis dans toutes sortes de phrase, et il y a aussi des clitiques pronominaux qui peuvent s’attacher au verbe.  </content>
+	      	<text show="swProDropCliticOnly"><content>le sujet semble omis lorsque des pronoms dépendants (des clitiques pronominaux) se rattachent au verbe ; cependant, il ne s’agit pas d’une véritable langue ‘pro-drop’.  </content></text>
+	      	<text show="swProDropYesAndCliticOnly"><content>l’omission du sujet (pro-drop) est admise dans tous les types de phrases et il y a également des clitiques pronominaux qui se rattachent au verbe.  </content>
 	            <text show="swProDropYes">
-	            	<content>  La suppression de l’objet </content>
+	            	<content>  L’omission de l’objet (‘pro-drop’) </content>
 	            	<case element="ip" attr="proDropObject">
-	            		<caseText value="no">n’est pas permis</caseText>
-	            		<caseText value="yes">est aussi permis</caseText>
+	            		<caseText value="no">n’est pas admise</caseText>
+	            		<caseText value="yes">est également admise</caseText>
 	            	</case>
 	            <content>.  </content>
 	         </text>
 	         </text>
-	      	<text show="swProDropJustImp"><content>l’absence du sujet n’est pas permis.  Le sujet doit être évident, sauf dans les impératifs.</content></text>
-	      	<text show="swProDropYesAndImp"><content>l’absence du  sujet (pro-drop) est permis dans toutes sortes de phrase, y compris les impératifs. </content>
+	      	<text show="swProDropJustImp"><content>l’omission du sujet (pro-drop) n’est pas admise.  Le sujet doit être explicite mis à part dans les impératifs.</content></text>
+	      	<text show="swProDropYesAndImp"><content>l’omission du sujet (pro-drop) est admise dans tous les types de phrases, y compris dans les impératifs. </content>
 	            <text show="swProDropYes">
-	            	<content>  La suppression de l’objet </content>
+	            	<content>  L’omission de l’objet </content>
 	            	<case element="ip" attr="proDropObject">
-	            		<caseText value="no">n’est pas permis</caseText>
-	            		<caseText value="yes">est aussi permis</caseText>
+	            		<caseText value="no">n’est pas admise</caseText>
+	            		<caseText value="yes">est également admise</caseText>
 	            	</case>
 	            <content>.  </content>
 	         </text>
 	         </text>
-	      	<text show="swProDropCliticAndImp"><content>on peut supposer que le sujet est absent lorsque des pronoms dépendents (des clitiques pronominaux) s’attachent au verbe; cependant, il ne s’agit pas d’une langue à sujet nul.  On permet l’absence du sujet dans les impératifs.  </content></text>
-	      	<text show="swProDropYesAndCliticAndImp"><content>on permet l’absence du sujet dans toutes sortes de phrase, y compris les impératifs, et il y a aussi des clitiques pronominaux qui peuvent s’attacher au verbe.  </content>
+	      	<text show="swProDropCliticAndImp"><content>le sujet semble omis lorsque des pronoms dépendants (des clitiques pronominaux) se rattachent au verbe ; cependant, il ne s’agit pas d’une véritable langue ‘pro-drop’.  L’omission (pro-drop) du sujet est admise dans les impératifs.  </content></text>
+	      	<text show="swProDropYesAndCliticAndImp"><content>L’omission du sujet est admise dans tous les types de phrases, y compris dans les impératifs, et il y a aussi des clitiques pronominaux qui peuvent se rattacher au verbe.  </content>
 	            <text show="swProDropYes">
-	            	<content>  La suppression de l’objet </content>
+	            	<content>  L’omission (pro-drop) de l’objet </content>
 	            	<case element="ip" attr="proDropObject">
-	            		<caseText value="no">n’est pas permis</caseText>
-	            		<caseText value="yes">est aussi permis</caseText>
+	            		<caseText value="no">n’est pas admise</caseText>
+	            		<caseText value="yes">est également admise</caseText>
 	            	</case>
 	            <content>.  </content>
 	         </text>
 	         </text>
-	      	<text show="swProDropNone"><content>l’absence du sujet n’est pas permis.  Le sujet doit être évident même dans les impératifs.</content></text>
-	      	<text show="swProDropOtherOnly"><content>l’absence du sujet est sulement permis  ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content>.</content></text>
-	      	<text show="swProDropOtherAndImp"><content>l’absence du sujet est permis ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content> et aussi dans les impératifs.</content></text>
-	      	<text show="swProDropAndOther"><content>  L’absence du sujet est aussi permis ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content>.</content></text>
+	      	<text show="swProDropNone"><content>l’omission du sujet (pro-drop) n’est pas admise.  Le sujet doit être explicite, même dans les impératifs.</content></text>
+	      	<text show="swProDropOtherOnly"><content>l’omission du sujet est seulement admise ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content>.</content></text>
+	      	<text show="swProDropOtherAndImp"><content>l’omission du sujet est admise ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content> ainsi que dans les impératifs.</content></text>
+	      	<text show="swProDropAndOther"><content>  l’omission du sujet est aussi admise ___</content><contentCheckBoxOther contentLoc="ip/proDropOther"/><content>.</content></text>
 	      </p>
 		   <p show="swProDropYes">
-		   	<content>  Voici des phrases qui montrent à sujet nul:</content>
+		   	<content>  Voici des phrases qui illustrent le pro-drop :</content>
 				</p>
 		   <example show="swProDropYes">
 		      <interlinear exampleLoc="ip/proDropExample"/>
 		   </example>				
 				<p show="swProDropClitic">
-					<content>  Voici des phrases qui ont l’air de montrer à sujet nul grâce aux pronoms clitiques attachés au verbe:</content>
+					<content>  Voici quelques phrases qui semblent illustrer le pro-drop à cause des pronoms clitiques rattachés au verbe :</content>
 				</p>
 		   <example show="swProDropClitic">
 		      <interlinear exampleLoc="ip/cliticPnExample"/>
 		   </example>	
 	      <p show="swProDropOther">
-	      	<content>  Voici des phrases en </content><langName/><content> où le sujet est absent:</content>
+	      	<content>  Voici quelques phrases en </content><langName/><content> dans lesquelles le sujet est omis :</content>
 	      </p>
 	      <example show="swProDropOther">
 	         <interlinear exampleLoc="ip/proDropOtherExample"/>
@@ -5170,33 +5170,33 @@
 		<section2 id="sIPAux">
 			<secTitle>Auxiliaires</secTitle>
 			<p>
-				<content>Il y a plusieurs genres d’éléments auxiliaires verbaux, y compris les mots auxiliaires et les genres non-finis, les genres de mouvement et autres types.</content></p>
+				<content>Il y a plusieurs types d’éléments auxiliaires verbaux, comprenant les mots auxiliaires, mais également les auxiliaires non-finis, de mouvements et d’ autres types.</content></p>
 		   
 		   <section3 id="sIPAuxPositive">
 		   	<secTitle>Mots auxiliaires</secTitle>
 		   
 		   <p contentType="ctPracticalIntro"><content>
-		   	Les éléments auxiliaires qui sont écrits comme mots indépendants expriment certains genres de flexion verbal.</content>
+		   	Les éléments auxiliaires qui sont écrits comme mots indépendants expriment certains types de flexion verbale.</content>
 			</p>
 		      <p contentType="ctComparativeIntro"><content>
-		      	Certaines langues ont des éléments auxiliaires qui sont des mots indépendants; quelques-unes peuvent accepter plus d’un élément auxiliaire avant le verbe principal. Voici des exemples pour des phrases transitives: </content>
+		      	Certaines langues ont des éléments auxiliaires qui sont des mots indépendants ; quelques-unes admettent plus d’un élément auxiliaire avant le verbe principal. Voici des exemples de phrases transitives en français : </content>
 		      	<langData>Le garçon a mangé la banane</langData>
 		         <content>, </content>
 		      	<langData>Le garçon va manger la banane</langData>
 		      	<content>, </content>
 		      	<langData>Le garçon a pu manger la banane</langData>
 		      	<content> et </content>
-		      	<langData>Le garçon pouvait avoir mangé la banane</langData>
-		      	<content>.  Dans d’autres langues tous ces sens se communiquent par la flexion verbale.</content>
+		      	<langData>Le garçon aurait pu manger la banane</langData>
+		      	<content>.  Dans d’autres langues tous ces sens sont communiqués par la flexion verbale.</content>
 		      </p>
 		      <p>
 				<content>En </content><langName/>
 				<content/>
 				<case element="ip" attr="aux">
-					<caseText value="no"> il n’y a pas d’auxiliaires</caseText>
-					<caseText value="yes"> il y a des auxiliaires</caseText>
+					<caseText value="no">, il n’y a pas d’auxiliaires</caseText>
+					<caseText value="yes">, il y a des auxiliaires</caseText>
 				</case>
-		      	<content> qu’on écrit comme mots indépendants.  </content>
+		      	<content> écrits comme des mots indépendants.  </content>
 				<text show="swIPAuxYes">
 					<content>Un auxiliaire est </content>
 					<case element="ip" attr="auxRequired">
@@ -5206,14 +5206,14 @@
 					<content> et  </content>
 					<case element="ip" attr="auxMany">
 						<caseText value="no">un seul est possible</caseText>
-						<caseText value="yes">plus d’un peut se trouver</caseText>
+						<caseText value="yes">plus d’un peuvent se trouver</caseText>
 					</case>
 					<content> dans une seule proposition. </content>
 					<text show="swIPAuxOrderVSO">
 						<content> Après un auxiliaire, l’ordre normal VSO </content>
 						<case element="ip" attr="auxOrder">
 							<caseText value="yes">est maintenu.  L’ordre est Aux V S O.</caseText>
-							<caseText value="no">peut changer, pour faire paraître le sujet directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</caseText>
+							<caseText value="no">peut changer et le sujet est placé directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</caseText>
 						</case>
 						<content/>
 					</text>
@@ -5222,7 +5222,7 @@
 						<content> Avant un auxiliaire l’ordre normal O S V </content>
 						<case element="ip" attr="auxOrder">
 							<caseText value="yes">est maintenu.  L’ordre est O S V Aux.</caseText>
-							<caseText value="no">peut changer, pour faire paraître le sujet directement après le verbe et avant l’auxiliaire.  L’ordre dans ces propositions est O V S Aux.</caseText>
+							<caseText value="no">peut changer et le sujet est placé directement après le verbe et avant l’auxiliaire.  L’ordre dans ces propositions est O V S Aux.</caseText>
 						</case>
 						<content/>
 					</text>
@@ -5230,7 +5230,7 @@
 				</text>				
 			</p>
 			<p show="swIPAuxYes">
-				<content>Voici des exemples d’auxiliaires en </content><langName/><content>:</content>
+				<content>Voici quelques exemples d’auxiliaires en </content><langName/><content> :</content>
 			</p>
 			<example show="swIPAuxYes">
 				<table border="1">
@@ -5240,12 +5240,12 @@
 					</headerRow>
 					<row>
 						<col exampleLoc="ip/auxiliaryExample"/>
-						<col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+						<col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 					</row>
 				</table>
 			</example>
 			<p show="swIPAuxYes">
-				<content>Voici des phrases qui incluent ces auxiliaires:</content>
+				<content>Voici des phrases qui incluent ces auxiliaires :</content>
 			</p>
 			
 				<example show="swIPAuxYes">
@@ -5255,12 +5255,12 @@
 		   <section3 id="sIPAuxNonfinite">
 		   	<secTitle>Auxiliaire non-fini</secTitle>	   
 		   <p contentType="ctPracticalIntro">
-		   	<content>Le marqueur non-fini peut aussi agir comme auxiliaire s’il s’écrit comme mot indépendant. </content>
+		   	<content>Le marqueur non-fini peut aussi fonctionner comme auxiliaire s’il s’écrit comme un mot indépendant. </content>
 			</p>
 		      <p contentType="ctComparativeIntro">
 		      	<content>Le mot non-fini </content>
 		         <langData>to</langData>
-		      	<content> utilisé en anglais dans les propositions subordonnées fonctionne comme un auxiliaire, puisqu’il prend la même position et qu’il peut se mettre avant d’autres auxiliaires. Par exemple, </content>
+		      	<content> utilisé en anglais dans les propositions subordonnées fonctionne comme un auxiliaire, puisqu’il se trouve dans la même position et qu’il peut être placé avant d’autres auxiliaires. Voyez par exemple, </content>
 		      	<langData>The boy would like to have eaten the banana</langData><gloss><content> (Le garçon aurait aimé avoir mangé la banane)</content></gloss>
 		         <content>. </content>
 		      </p>
@@ -5268,9 +5268,9 @@
 				<content>En </content><langName/>
 				<content/>
 				<case element="ip" attr="auxNonfinite">
-					<caseText value="none"> il n’y a pas de marqueur pour les propositions non-finies. </caseText>
-					<caseText value="no"> on ne marque que le caractéristique non-fini comme élément du verbe. </caseText>
-					<caseText value="yes"> possède quelques marqueurs de type auxiliaire non-fini écrits comme mots indépendants.  </caseText>
+					<caseText value="none">, il n’y a pas de marqueur pour les propositions non-finies. </caseText>
+					<caseText value="no">, la caractéristique non-fini est uniquement marquée comme un élément du verbe. </caseText>
+					<caseText value="yes">, il existe quelques marqueurs de type auxiliaire non-fini écrits comme des mots indépendants.  </caseText>
 				</case>
 				<content/>  
 				<text show="swIPAuxNonfiniteYes">
@@ -5284,16 +5284,16 @@
 						<content> Après un auxiliaire non-fini, l’ordre normal VSO  </content>
 						<case element="ip" attr="auxNonfiniteOrder">
 							<caseText value="yes">est maintenu.  L’ordre est Aux  V S O.</caseText>
-							<caseText value="no">peut changer pour faire paraître le sujet directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</caseText>
+							<caseText value="no">peut changer changer et le sujet est placé directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</caseText>
 						</case>
 						<content/>
 					</text>
 					<content/>
 					<text show="swIPAuxNonfiniteOrderOSV">
-						<content> Avant un auxiliaire non-fini, l’ordre normal  OSV </content>
+						<content> Avant un auxiliaire non-fini, l’ordre normal OSV </content>
 						<case element="ip" attr="auxOrder">
-							<caseText value="yes">est maintenu.  L’ordre est  O S V Aux.</caseText>
-							<caseText value="no">peut changer pour faire paraître le sujet directement après le verbe et avant l’auxiliaire.  L’ordre dans ces syntagmes est O V S Aux.</caseText>
+							<caseText value="yes">est maintenu.  L’ordre est O S V Aux.</caseText>
+							<caseText value="no">peut changer et le sujet est placé directement après le verbe et avant l’auxiliaire.  L’ordre dans ces propositions est O V S Aux.</caseText>
 						</case>
 						<content/>
 					</text>
@@ -5301,12 +5301,12 @@
 				</text>				
 			</p>
 			<p show="swIPAuxNonfiniteYes">
-				<content>Le marqueur auxiliaire non-fini en </content><langName/><content> est:</content>
+				<content>En </content><langName/><content>, le(s) marqueur(s) auxiliaire(s) non-fini(s) est / sont le(s) suivant(s) :</content>
 			</p>
 			<example show="swIPAuxNonfiniteYes">
 				<table border="1">
 					<headerRow>
-						<headerCol>Marqeur auxiliaire non-fini</headerCol>
+						<headerCol>Marqueur auxiliaire non-fini</headerCol>
 						<headerCol>Glose</headerCol>
 					</headerRow>
 					<row>
@@ -5316,7 +5316,7 @@
 				</table>
 			</example>
 			<p show="swIPAuxNonfiniteYes">
-				<content>Voici des exemples de propositions non-finies qui comprennent ces auxiliaires non-finis:</content>
+				<content>Voici quelques exemples de propositions non-finies qui comprennent ces auxiliaires non-finis :</content>
 			</p>
 			
 			<example show="swIPAuxNonfiniteYes">
@@ -5327,10 +5327,10 @@
 		   	<secTitle>Autres types d’auxiliaires</secTitle>
 		  		   
 		   <p contentType="ctPracticalIntro">
-		   	<content>D’autres mots peuvent aussi fonctionner comme des auxiliaires, tels que les auxiliaires de mouvement ou des marqueurs d’emprunt. </content>
+		   	<content>D’autres mots également peuvent fonctionner comme des auxiliaires, tels que les auxiliaires de mouvement ou des marqueurs empruntés. </content>
 			</p>
 		      <p contentType="ctComparativeIntro">
-		      	<content>Certaines langues ont d’autres mots qui fonctionnent comme des auxiliaires, tels que les auxiliaires de mouvement ou les marqueurs d’emprunt qui partagent le même sujet et les mêmes compléments que le verbe principal.</content>
+		      	<content>Certaines langues ont d’autres mots qui fonctionnent comme des auxiliaires, tels que les auxiliaires de mouvement ou les marqueurs empruntés qui partagent le même sujet et les mêmes compléments que le verbe principal.</content>
 		      </p>
 		      <p>
 				<content>En </content><langName/>
@@ -5344,8 +5344,8 @@
 					<text show="swIPAuxOtherOrderVSO">
 						<content> Après un de ces auxiliaires l’ordre habituel VSO </content>
 						<case element="ip" attr="auxOtherOrder">
-							<caseText value="yes">est maintenu.  L’ordre est Aux  V S O.</caseText>
-							<caseText value="no">peut changer pour faire paraître le sujet directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</caseText>
+							<caseText value="yes">est maintenu.  L’ordre dans ces propositions est Aux  V S O.</caseText>
+							<caseText value="no">peut changer et le sujet est placé directement après l’auxiliaire et avant le verbe.  L’ordre dans ces propositions est Aux S V O.</caseText>
 						</case>
 						<content/>
 					</text>
@@ -5353,8 +5353,8 @@
 					<text show="swIPAuxOtherOrderOSV">
 						<content> Avant un de ces auxiliaires l’ordre habituel OSV   </content>
 						<case element="ip" attr="auxOrder">
-							<caseText value="yes">est maintenu.  L’ordre est  O S V Aux.</caseText>
-							<caseText value="no">peut changer pour faire paraître le sujet directement après le verbe et avant l’auxiliaire.  L’ordre dans ces syntagmes est O V S Aux.</caseText>
+							<caseText value="yes">est maintenu.  L’ordre dans ces propositions est  O S V Aux.</caseText>
+							<caseText value="no">peut changer et le sujet est placé directement après le verbe et avant l’auxiliaire.  L’ordre dans ces propositions est O V S Aux.</caseText>
 						</case>
 						<content/>
 					</text>
@@ -5362,7 +5362,7 @@
 				</text>			
 			</p>
 			<p show="swIPAuxOtherYes">
-				<content>Voici les autres auxiliaires en </content><langName/><content>:</content>
+				<content>Voici les autres auxiliaires en </content><langName/><content> :</content>
 			</p>
 			<example show="swIPAuxOtherYes">
 				<table border="1">
@@ -5372,12 +5372,12 @@
 					</headerRow>
 					<row>
 						<col exampleLoc="ip/auxiliaryOtherExample"/>
-						<col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+						<col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 					</row>
 				</table>
 			</example>
 			<p show="swIPAuxOtherYes">
-				<content>Voici des exemples de phrases qui contiennent ces autres auxiliaires:</content>
+				<content>Voici quelques exemples de phrases qui contiennent ces autres auxiliaires :</content>
 			</p>
 			
 			<example show="swIPAuxOtherYes">
@@ -5387,9 +5387,9 @@
 		</section2>
 <section2 id="sVCompounds">
 	<secTitle>Composés verbaux</secTitle>
-	<p><content>Les verbes peuvent se combiner avec d’autres verbes, ou bien avec des noms ou d’autres catégories de mots pour former des composés verbaux. Ces composés fonctionnent toujours comme des verbes, quoiqu’ils aient pu changer de valence, par exemple, en changeant de verbe transitif en verbe intransitif. On citera ici des exemples des types les plus fréquents.</content></p>
+	<p><content>Les verbes peuvent se combiner avec d’autres verbes, ou avec des noms ou d’autres catégories de mots pour former des composés verbaux. Ces composés fonctionnent toujours comme des verbes, quoiqu’ils aient pu changer de valence, par exemple, en passant de transitif à intransitif. Des exemples des types les plus fréquents seront donnés ici.</content></p>
    
-	<p show="swIPHeartCompoundYes"><content>Une série spéciale de composés verbaux contiennent tous le nom qui décrit le centre des émotions, comme par exemple le coeur.</content></p>
+	<p show="swIPHeartCompoundYes"><content>Dans une série spéciale de composés verbaux, tous les verbes contiennent le nom qui décrit le centre des émotions, comme par exemple le coeur ou le ventre.</content></p>
    <example show="swIPHeartCompoundYes">
       <table border="1">
       	<caption><content>Composés avec le centre des emotions</content></caption>
@@ -5400,12 +5400,12 @@
          </headerRow>
          <row>
             <col exampleLoc="ip/heartCompoundExample"/>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
          </row>
       </table>
    </example>
-	<p show="swIPBodypartCompoundYes"><content>Une </content><text show="swIPHeartCompoundYes"><content>autre </content></text><content>série spéciale de composés verbaux contient le nom d’une partie du corps</content><text show="swIPHeartCompoundYes"><content> outre que  le centre des émotions</content></text><content>.</content></p>
+	<p show="swIPBodypartCompoundYes"><content>Dans une </content><text show="swIPHeartCompoundYes"><content>autre </content></text><content>série spéciale de composés verbaux, les verbes contiennent le nom d’une partie du corps</content><text show="swIPHeartCompoundYes"><content> autre que le centre des émotions</content></text><content>.</content></p>
    <example show="swIPBodypartCompoundYes">
       <table border="1">
       	<caption><content>Composés avec une partie du corps</content></caption> 
@@ -5416,8 +5416,8 @@
          </headerRow>
          <row>
             <col exampleLoc="ip/bodypartCompoundExample"/>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
          </row>
       </table>
    </example>
@@ -5431,8 +5431,8 @@
          </headerRow>
          <row>
             <col exampleLoc="ip/verbNCompoundExample"/>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
          </row>
       </table>
    </example>
@@ -5446,21 +5446,21 @@
          </headerRow>
          <row>
             <col exampleLoc="ip/verbNCompoundExample"/>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
          </row>
       </table>
    </example>
    
-	<p><content>Voici des exemples de ces composés qui consistent en un verbe et un nom dans des phrases:</content></p>
+	<p><content>Voici quelques exemples de ces formés d’un verbe et d’un nom utilisés dans des phrases :</content></p>
    <example>
       <interlinear exampleLoc="ip/verbNCompoundSentExample"/>
    </example>
    
-	<p><content>Voici quelques composés qui consistent d’un verbe et d’une autre catégorie à part un nom:</content></p>
+	<p><content>Voici quelques composés formés d’un verbe et d’une autre catégorie autre que le nom :</content></p>
    <example>
       <table border="1">
-      	<caption><content>Composés verbaux à part les composés avec des noms</content></caption>
+      	<caption><content>Composés verbaux autres que les composés avec des noms</content></caption>
          <headerRow>
             <headerCol>Composé</headerCol>
             <headerCol>Glose pour chaque racine</headerCol>
@@ -5468,17 +5468,17 @@
          </headerRow>
          <row>
             <col exampleLoc="ip/verbOtherCompoundExample"/>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
-            <col ><gloss><content>ENTRER GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
+            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
          </row>
       </table>
    </example>
-	<p><content>Voici des exemples de ces composés qui consistent d’un verbe et d’un non-substantif:</content></p>
+	<p><content>Voici quelques exemples de ces composés formés d’un verbe et d’un non-substantif :</content></p>
    <example>
       <interlinear exampleLoc="ip/verbOtherCompoundSentExample"/>
    </example>
-	<p contentType="ctPracticalIntro"><content>Certaines expressions idiomatiques consistent d’un verbe et d’un autre mot qui, pris ensemble, expriment une notion qui n’est pas pareille au sens des deux mots indépendants. Voici quelques exemples d’expressions idiomatiques en </content><langName/><content>:</content></p>
-	<p contentType="ctComparativeIntro"><content>À part les composés écrits en un seul mot, il existe des expressions idiomatiques qui consistent d’un verbe et d’un autre mot qui, pris ensemble, expriment une notion qui n’a pas le même sens que les deux mots pris indépendamment. Voici des exemples d’expressions idiomatiques en </content><langName/><content>:</content></p>
+	<p contentType="ctPracticalIntro"><content>Certaines expressions idiomatiques sont formées d’un verbe et d’un autre mot qui, ensemble, expriment une notion qui n’est pas  la somme des deux mots indépendants. Voici quelques exemples d’expressions idiomatiques en </content><langName/><content> :</content></p>
+	<p contentType="ctComparativeIntro"><content>À part les composés écrits en un seul mot, il existe des expressions idiomatiques formées d’un verbe et d’un autre mot qui, ensemble, expriment une notion différente de la somme des deux mots pris indépendamment. Voici quelques exemples d’expressions idiomatiques en </content><langName/><content> :</content></p>
    <example>
       <interlinear exampleLoc="ip/verbIdiomExample"/>
    </example>

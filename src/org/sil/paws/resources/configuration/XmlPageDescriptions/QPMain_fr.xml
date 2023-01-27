@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd" [
+<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd" [
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
 <page id="QPMain" count="2.1">
-	<title>Quantifieurs et Syntagmes de Quantification</title>
+	<title>Quantifieurs et Syntagmes de quantification</title>
 	<introduction>Les <technicalTermRef term="ttQuantifiers">quantifieurs</technicalTermRef> peuvent se présenter à plusieurs endroits dans le syntagme nominal, selon leur <technicalTermRef term="ttScope">portée</technicalTermRef>. La plupart des langues ont quatre séries de quantifieurs:
 <ul>
 	<li>Quantifieurs à large portée avec le sens de <example>tout</example>, qui modifient le syntagme nominal dans son ensemble,</li>
@@ -15,7 +15,7 @@
 		Nous traiterons les quantifieurs avant d’examiner les constructions <technicalTermRef term="ttPartitive">partitives</technicalTermRef>.
 </introduction>
 	<introduction>Les quantifieurs ayant le sens de <example>tout</example> semblent former une catégorie distincte.  Ils se présentent généralement au début (ou à la fin) du syntagme. Leur position est distincte des autres quantifieurs, mais identique à celle des mots indiquant un degré, comme 
-		<example>seulement</example> et <example>juste</example> (qui peuvent fonctionner comme des marqueurs de <technicalTermRef term="ttFocus">focus</technicalTermRef> et qui seront traités dans la <section number="16">Constructions de Focalisation et de Thèmatisation</section>) et les mots de degré comme <example>presque</example> (qui peut apparaître avec <example>tout</example> comme dans l’exemple (4) ci-dessous).  Nous traiterons <example>tout</example> comme un quantifieur à large portée.
+		<example>seulement</example> et <example>juste</example> (qui peuvent fonctionner comme des marqueurs de <technicalTermRef term="ttFocus">focus</technicalTermRef> et qui seront traités dans la <section number="16">Constructions de focus et de topique</section>) et les mots de degré comme <example>presque</example> (qui peut apparaître avec <example>tout</example> comme dans l’exemple (4) ci-dessous).  Nous traiterons <example>tout</example> comme un quantifieur à large portée.
 <br/><br/>
 		Cherchez des exemples dans votre langue tels que ceux qui suivent :
 	</introduction>
@@ -68,7 +68,7 @@
 		</radioGroup>
 <br/><br/>	
 		<prompt id="QPNPDegreePromptYes" show="swQPNPDegreeYesOrSome">Saisissez ci-dessous des exemples de mots indépendants ayant le sens de « tout », « presque » et « seulement » ou « juste ». Ces mots doivent être inclus dans un syntagme nominal complet.    
-			<span id="ClassifiersSpecificSpan" show="swOTClassifierSpecific"> (De façon générale, incluez les classificateurs là où ils se présentent dans les exemples de syntagmes nominaux demandés dans PAWS, quel que soit le sujet traité.  Les restrictions sur la position ou l’ordre et l’accord des classificateurs dans les syntagmes nominaux seront traitées dans la <section number="5.">Syntagmes Nominaux</section>.  Partez du principe que les classificateurs forment une partie du « reste du syntagme nominal » dans toutes les questions qui ne traitent pas directement des classificateurs.)</span></prompt>
+			<span id="ClassifiersSpecificSpan" show="swOTClassifierSpecific"> (De façon générale, incluez les classificateurs là où ils se présentent dans les exemples de syntagmes nominaux demandés dans PAWS, quel que soit le sujet traité.  Les restrictions sur la position ou l’ordre et l’accord des classificateurs dans les syntagmes nominaux seront traitées dans la <section number="5.">Syntagmes nominaux</section>.  Partez du principe que les classificateurs forment une partie du « reste du syntagme nominal » dans toutes les questions qui ne traitent pas directement des classificateurs.)</span></prompt>
 		
 	   <textBox id="QPNPExample" dataItem="example" cols="80" show="swQPNPDegreeYesOrSome"/>
 	   <br/><br/>
@@ -100,7 +100,7 @@
 		<prompt id="QPNPDegreeAttachesNoCheckPrompt" show="swQPNPDegreeNoandNoCheck">ATTENTION: Il faut soit cocher au moins une boîte pour décrire comment ces éléments de degré ou ces quantifieurs se rattachent dans votre.</prompt>
 	   
 		<prompt id="QPNPDegreeCliticPrompt" show="swQPNPDegreeNoOrSomeAndClitic">Saisissez maintenant des exemples de clitiques ayant le sens de « tout », « presque » et « seulement » ou « juste ». Ces clitiques doivent être inclus dans des syntagmes nominaux complets.   
-			<span id="ClassifiersSpecificSpan1" show="swOTClassifierSpecific">(De façon générale, incluez les classificateurs là où ils se présentent dans les exemples de syntagmes nominaux demandés dans PAWS, quel que soit le sujet traité.  Les restrictions sur la position ou l’ordre et l’accord des classificateurs dans les syntagmes nominaux seront traitées dans la <section number="5.">Syntagmes Nominaux</section>.  Partez du principe que les classificateurs forment une partie du « reste du syntagme nominal » dans toutes les questions qui ne traitent pas directement des classificateurs.)</span></prompt>  
+			<span id="ClassifiersSpecificSpan1" show="swOTClassifierSpecific">(De façon générale, incluez les classificateurs là où ils se présentent dans les exemples de syntagmes nominaux demandés dans PAWS, quel que soit le sujet traité.  Les restrictions sur la position ou l’ordre et l’accord des classificateurs dans les syntagmes nominaux seront traitées dans la <section number="5.">Syntagmes nominaux</section>.  Partez du principe que les classificateurs forment une partie du « reste du syntagme nominal » dans toutes les questions qui ne traitent pas directement des classificateurs.)</span></prompt>  
 	   <textBox id="QPNPDegreeCliticExample" dataItem="npDegreeCliticExample" cols="80" show="swQPNPDegreeNoOrSomeAndClitic"/>
 	   <instruction id="QPNPDegreeProcliticInstruction" show="swQPNPDegreeNoOrSomeAndProclitic">In the lexicon, mark the proclitics meaning <example>all</example> with the features <feature>plural quantifier_prefix</feature>.
 	   </instruction>
