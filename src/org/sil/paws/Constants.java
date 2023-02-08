@@ -10,7 +10,7 @@ package org.sil.paws;
  *
  */
 public class Constants {
-	public static final String VERSION_NUMBER = "1.2.3";
+	public static final String VERSION_NUMBER = "1.3.0";
 	public static final String CURRENT_DATABASE_VERSION = "12";
 	public static final long OUTPUT_TRANSFORM_COUNT = 17;
 
