@@ -77,7 +77,7 @@
 </p>
 		<p>
 <object type="tComment"> DO NOT MODIFY THIS FILE UNTIL YOU HAVE COMPLETED PAWS - including the Final Check section - because your work will be overwritten by the PAWS program!  We suggest you save this file under another name before editing it. </object>
-<object type="tComment">If you are not already using it, we suggest switching to the XMLMind XML Editor if possible.   It makes editing and printing a pdf version much easier, since special addons are available to handle all the extra features of XLingPaper, which the grammar writeup is using.  You can find out more information at http://www.xlingpaper.org/.</object>
+<object type="tComment">If you are not already using it, we suggest switching to the XMLMind XML Editor if possible.   It makes editing and printing a pdf version much easier, since special addons are available to handle all the extra features of XLingPaper, which the grammar writeup is using.  You can find out more information at https://software.sil.org/xlingpaper/.</object>
 </p>
 	   <p>
 <object type="tComment">There are some comments in red like this throughout the grammar giving you specific instructions to consider.  Please delete each comment once you have completed it, so that it will not show up in the output.  We purposely had them show in the output as reminders to you and a consultant of what might still need to be done.</object>

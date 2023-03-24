@@ -263,61 +263,61 @@
                     <row>
                         <col exampleLoc="q/who"/>
                         <col>
-                            <content>who</content>
+                            <gloss><content>who</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="q/what"/>
                         <col>
-                            <content>what</content>
+                            <gloss><content>what</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="q/why"/>
                         <col>
-                            <content>why</content>
+                            <gloss><content>why</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="q/where"/>
                         <col>
-                            <content>where</content>
+                            <gloss><content>where</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="q/when"/>
                         <col>
-                            <content>when</content>
+                            <gloss><content>when</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="q/how"/>
                         <col>
-                            <content>how</content>
+                            <gloss><content>how</content></gloss>
                         </col>
                     </row>
                    <row>
                       <col exampleLoc="q/howMany"/>
                       <col>
-                         <content>how many or how much</content>
+                         <gloss><content>how many or how much</content></gloss>
                       </col>
                    </row>
                    <row>
                         <col exampleLoc="q/which"/>
                         <col>
-                            <content>which</content>
+                            <gloss><content>which</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="q/whose"/>
                         <col>
-                            <content>whose</content>
+                            <gloss><content>whose</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="q/other"/>
                         <col>
-                            <content>other interrogatives</content>
+                            <gloss><content>other interrogatives</content></gloss>
                         </col>
                     </row>
                 </table>

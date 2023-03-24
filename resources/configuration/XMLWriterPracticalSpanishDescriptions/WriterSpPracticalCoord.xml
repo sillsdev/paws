@@ -37,43 +37,43 @@
                     <row>
                         <col exampleLoc="coord/and"/>
                         <col>
-                            <content>y</content>
+                            <gloss><content>y</content></gloss>
                         </col>
                     </row>
                    <row>
                       <col exampleLoc="coord/andThen"/>
                       <col>
-                         <content>y luego</content>
+                         <gloss><content>y luego</content></gloss>
                       </col>
                    </row>
                    <row>
                         <col exampleLoc="coord/or"/>
                         <col>
-                            <content>o</content>
+                            <gloss><content>o</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="coord/andOr"/>
                         <col>
-                            <content>y/o</content>
+                            <gloss><content>y/o</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="coord/but"/>
                         <col>
-                            <content>pero</content>
+                            <gloss><content>pero</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="coord/with"/>
                         <col>
-                            <content>con</content>
+                            <gloss><content>con</content></gloss>
                         </col>
                     </row>
                     <row>
                         <col exampleLoc="coord/other"/>
                         <col>
-                            <content>otros (si hay)</content>
+                            <gloss><content>otros (si hay)</content></gloss>
                         </col>
                     </row>
                 </table>
@@ -92,25 +92,25 @@
                     <row>
                         <col exampleLoc="coord/either"/>
                         <col>
-                            <content>o (cualquiera) - elemento inicial</content>
+                            <gloss><content>o (cualquiera) - elemento inicial</content></gloss>
                         </col>
                     </row>
                    <row>
                       <col exampleLoc="coord/eitherOr"/>
                       <col>
-                         <content>o - elemento del medio</content>
+                         <gloss><content>o - elemento del medio</content></gloss>
                       </col>
                    </row>
                    <row>
                         <col exampleLoc="coord/neither"/>
                         <col>
-                            <content>ni (ningunos) - elemento inicial</content>
+                            <gloss><content>ni (ningunos) - elemento inicial</content></gloss>
                         </col>
                     </row>
                    <row>
                       <col exampleLoc="coord/nor"/>
                       <col>
-                         <content>ni - elemento del medio</content>
+                         <gloss><content>ni - elemento del medio</content></gloss>
                       </col>
                    </row>
                 </table>

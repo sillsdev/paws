@@ -798,7 +798,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>1</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -809,7 +812,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>1</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -840,7 +846,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>2</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -851,7 +860,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>2</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -882,7 +894,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>3</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -893,7 +908,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>3</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -924,7 +942,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>4</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -935,7 +956,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>4</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -966,7 +990,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>5</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -977,7 +1004,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>5</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1008,7 +1038,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>6</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1019,7 +1052,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>6</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1050,7 +1086,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>7</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1061,7 +1100,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>7</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1092,7 +1134,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>8</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1103,7 +1148,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>8</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1134,7 +1182,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>9</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1145,7 +1196,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>9</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1176,7 +1230,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>10</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1187,7 +1244,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>10</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1218,7 +1278,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>11</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1229,7 +1292,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>11</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1260,7 +1326,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>12</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1271,7 +1340,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>12</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1302,7 +1374,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>13</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1313,7 +1388,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>13</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1344,7 +1422,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>14</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1355,7 +1436,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>14</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1386,7 +1470,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>15</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1397,7 +1484,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>15</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1428,7 +1518,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>16</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1439,7 +1532,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>16</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1470,7 +1566,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>17</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1481,7 +1580,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>17</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1512,7 +1614,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>18</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1523,7 +1628,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>18</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1554,7 +1662,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>19</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1565,7 +1676,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>19</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1596,7 +1710,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>20</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1607,7 +1724,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>20</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1638,7 +1758,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>30</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1649,7 +1772,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>30</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1680,7 +1806,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>40</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1691,7 +1820,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>40</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1722,7 +1854,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>50</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1733,7 +1868,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>50</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1764,7 +1902,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>60</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1775,7 +1916,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>60</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1806,7 +1950,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>70</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1817,7 +1964,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>70</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1848,7 +1998,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>80</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1859,7 +2012,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>80</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1890,7 +2046,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>90</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1901,7 +2060,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>90</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -1932,7 +2094,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>100</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -1943,7 +2108,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>100</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2095,7 +2263,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>premier</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2106,7 +2277,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>premier</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2137,7 +2311,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>deuxième, seconde</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2148,7 +2325,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>deuxième, seconde</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2179,7 +2359,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>troisième</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2190,7 +2373,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>troisième</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2221,7 +2407,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>quatrième</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2232,7 +2421,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>quatrième</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2263,7 +2455,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>cinquième</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2274,7 +2469,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>cinquième</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2305,7 +2503,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>sixième</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2316,7 +2517,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>sixième</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2347,7 +2551,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>septième</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2358,7 +2565,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>septième</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2389,7 +2599,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>huitième</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2400,7 +2613,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>huitième</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2431,7 +2647,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>neuvième</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2442,7 +2661,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>neuvième</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2473,7 +2695,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>dixième</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2484,7 +2709,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>dixième</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2515,7 +2743,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>suivant</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2526,7 +2757,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>suivant</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>
@@ -2557,7 +2791,10 @@
 </xsl:with-param>
 <xsl:with-param name="columnsBefore">
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>dernier</xsl:text>
+</gloss>
 </td>
 </xsl:with-param>
 <xsl:with-param name="columnsAfter" />
@@ -2568,7 +2805,10 @@
 <xsl:otherwise>
 <tr>
 <td align="left" rowspan="1">
+<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
 <xsl:text>dernier</xsl:text>
+</gloss>
 </td>
 <td>
 <langData>

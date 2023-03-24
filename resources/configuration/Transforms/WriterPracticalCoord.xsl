@@ -105,7 +105,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>and</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>and</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -119,7 +122,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>and</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>and</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -147,7 +153,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>and then</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>and then</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -161,7 +170,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>and then</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>and then</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -189,7 +201,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>or</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>or</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -203,7 +218,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>or</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>or</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -231,7 +249,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>and/or</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>and/or</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -245,7 +266,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>and/or</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>and/or</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -273,7 +297,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>but</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>but</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -287,7 +314,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>but</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>but</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -315,7 +345,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>with</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>with</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -329,7 +362,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>with</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>with</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -357,7 +393,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>any others</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>any others</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -371,7 +410,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>any others</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>any others</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -429,7 +471,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>either</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>either</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -443,7 +488,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>either</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>either</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -471,7 +519,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-				         <xsl:text>or</xsl:text>
+				         <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>or</xsl:text>
+</gloss>
 				      </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -485,7 +536,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-				         <xsl:text>or</xsl:text>
+				         <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>or</xsl:text>
+</gloss>
 				      </td>
 </tr>
 </xsl:otherwise>
@@ -513,7 +567,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-							<xsl:text>neither</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>neither</xsl:text>
+</gloss>
 						</td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -527,7 +584,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-							<xsl:text>neither</xsl:text>
+							<gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>neither</xsl:text>
+</gloss>
 						</td>
 </tr>
 </xsl:otherwise>
@@ -555,7 +615,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-						 <xsl:text>nor</xsl:text>
+						 <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>nor</xsl:text>
+</gloss>
 					  </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -569,7 +632,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>ENTER AN EXAMPLE HERE</langData>
 </td>
 <td align="left">
-						 <xsl:text>nor</xsl:text>
+						 <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>nor</xsl:text>
+</gloss>
 					  </td>
 </tr>
 </xsl:otherwise>

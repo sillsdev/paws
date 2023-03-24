@@ -752,7 +752,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                            <xsl:text>qui</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>qui</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -766,7 +769,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                            <xsl:text>qui</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>qui</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>
@@ -794,7 +800,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                           <xsl:text>que (qu’)</xsl:text>
+                           <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>que (qu’)</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -808,7 +817,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                           <xsl:text>que (qu’)</xsl:text>
+                           <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>que (qu’)</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>
@@ -836,7 +848,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                            <xsl:text>pourquoi</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>pourquoi</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -850,7 +865,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                            <xsl:text>pourquoi</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>pourquoi</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>
@@ -878,7 +896,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                           <xsl:text>où</xsl:text>
+                           <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>où</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -892,7 +913,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                           <xsl:text>où</xsl:text>
+                           <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>où</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>
@@ -920,7 +944,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                            <xsl:text>quand</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>quand</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -934,7 +961,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                            <xsl:text>quand</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>quand</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>
@@ -962,7 +992,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                            <xsl:text>comment</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>comment</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -976,7 +1009,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                            <xsl:text>comment</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>comment</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>
@@ -1004,7 +1040,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                         <xsl:text>combien</xsl:text>
+                         <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>combien</xsl:text>
+</gloss>
                       </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -1018,7 +1057,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                         <xsl:text>combien</xsl:text>
+                         <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>combien</xsl:text>
+</gloss>
                       </td>
 </tr>
 </xsl:otherwise>
@@ -1046,7 +1088,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                            <xsl:text>quel</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>quel</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -1060,7 +1105,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                            <xsl:text>quel</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>quel</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>
@@ -1088,7 +1136,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                           <xsl:text>à qui</xsl:text>
+                           <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>à qui</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -1102,7 +1153,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                           <xsl:text>à qui</xsl:text>
+                           <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>à qui</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>
@@ -1130,7 +1184,10 @@
 <xsl:with-param name="columnsBefore" />
 <xsl:with-param name="columnsAfter">
 <td align="left">
-                            <xsl:text>autres interrogatifs</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>autres interrogatifs</xsl:text>
+</gloss>
                         </td>
 </xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
@@ -1144,7 +1201,10 @@
 <xsl:attribute name="lang">lVernacular</xsl:attribute>SAISIR UN EXEMPLE ICI</langData>
 </td>
 <td align="left">
-                            <xsl:text>autres interrogatifs</xsl:text>
+                            <gloss>
+<xsl:attribute name="lang">lGloss</xsl:attribute>
+<xsl:text>autres interrogatifs</xsl:text>
+</gloss>
                         </td>
 </tr>
 </xsl:otherwise>

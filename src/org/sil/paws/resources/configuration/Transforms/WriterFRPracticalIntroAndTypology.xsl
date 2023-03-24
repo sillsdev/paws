@@ -77,7 +77,7 @@
 </p>
 		<p>
 <object type="tComment"> NE MODIFIEZ PAS CE FICHIER JUSQU’A CE QUE VOUS AYEZ terminé de remplir toutes les pages de PAWS - sans oublier la Vérification Finale - parce que les corrections faites dans ce fichier seront effacées par le programme PAWS lorsque vous exporterez le fichier la fois suivante.  Nous suggérons que vous enregistriez ce fichier sous un autre nom avant de l’éditer. </object>
-<object type="tComment">Si vous ne l’utilisez pas encore, nous vous suggérons d’utiliser l’éditeur XML XMLMind si possible.  Il facile grandement l’impression d’une version pdf puisque des options supplémentaires sont disponibles pour traiter tous les modules complémentaires de XLing Paper, logiciel utilisé pour exporter la grammaire.  Vous trouverez plus d’informations sur http://www.xlingpaper.org/.</object>
+<object type="tComment">Si vous ne l’utilisez pas encore, nous vous suggérons d’utiliser l’éditeur XML XMLMind si possible.  Il facile grandement l’impression d’une version pdf puisque des options supplémentaires sont disponibles pour traiter tous les modules complémentaires de XLing Paper, logiciel utilisé pour exporter la grammaire.  Vous trouverez plus d’informations sur https://software.sil.org/xlingpaper/.</object>
 </p>
 	   <p>
 <object type="tComment">Certains commentaires, en rouge comme celui-ci dans la grammaire, vous donneront des instructions spéciales à prendre en compte.  Effacez chaque commentaire lorsque vous l'aurez complété, afin qu'il n’apparaisse pas dans le document final. Ces commentaires apparaissent intentionnellement dans le document exportéet servent de à vous rappeler, à vous et à votre consultant tout ce qui reste à faire encore.</object>

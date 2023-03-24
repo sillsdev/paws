@@ -36,43 +36,43 @@
 					<row>
 						<col exampleLoc="coord/and"/>
 						<col>
-							<content>et</content>
+							<gloss><content>et</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col exampleLoc="coord/andThen"/>
 						<col>
-							<content>et puis</content>
+							<gloss><content>et puis</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col exampleLoc="coord/or"/>
 						<col>
-							<content>ou</content>
+							<gloss><content>ou</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col exampleLoc="coord/andOr"/>
 						<col>
-							<content>et/ou</content>
+							<gloss><content>et/ou</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col exampleLoc="coord/but"/>
 						<col>
-							<content>mais</content>
+							<gloss><content>mais</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col exampleLoc="coord/with"/>
 						<col>
-							<content>avec</content>
+							<gloss><content>avec</content></gloss>
 						</col>
 					</row>
 					<row>
 						<col exampleLoc="coord/other"/>
 						<col>
-							<content>autres</content>
+							<gloss><content>autres</content></gloss>
 						</col>
 					</row>
 				</table>
@@ -91,25 +91,25 @@
 					<row>
 						<col exampleLoc="coord/either"/>
 						<col>
-							<content>soit (partie initiale)</content>
+							<gloss><content>soit (partie initiale)</content></gloss>
 						</col>
 					</row>
 				   <row>
 				      <col exampleLoc="coord/eitherOr"/>
 				      <col>
-				      	<content>ou, soit (deuxième partie)</content>
+				      	<gloss><content>ou, soit (deuxième partie)</content></gloss>
 				      </col>
 				   </row>
 				   <row>
 						<col exampleLoc="coord/neither"/>
 						<col>
-							<content>ni (partie initiale)</content>
+							<gloss><content>ni (partie initiale)</content></gloss>
 						</col>
 					</row>
 				   <row>
 					  <col exampleLoc="coord/nor"/>
 					  <col>
-					  	<content>ni (deuxième partie)</content>
+					  	<gloss><content>ni (deuxième partie)</content></gloss>
 					  </col>
 				   </row>
 				</table>
