@@ -1,7 +1,7 @@
 ;This file will be executed next to the application bundle image
 ;I.e. current directory will contain folder PAWS with application files
 [Setup]
-AppId={{fxApplication}}
+AppId={{868009FD-62E9-4349-9747-D1438E46E669}
 AppName=PAWS
 AppVersion=1.3.1
 AppVerName=PAWS version 1.3.1
