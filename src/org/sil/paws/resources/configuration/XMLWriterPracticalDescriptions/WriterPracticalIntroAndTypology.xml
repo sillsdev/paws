@@ -42,7 +42,7 @@
 		<p>
 			<comment> DO NOT MODIFY THIS FILE UNTIL YOU HAVE COMPLETED PAWS - including the Final Check section - because your work will be overwritten by the PAWS program!  We suggest you save this file under another name before editing it. </comment>
 
-			<comment>If you are not already using it, we suggest switching to the XMLMind XML Editor if possible.   It makes editing and printing a pdf version much easier, since special addons are available to handle all the extra features of XLingPaper, which the grammar writeup is using.  You can find out more information at https://software.sil.org/xlingpaper/.</comment>
+		   <comment>If you are not already using it, we suggest switching to the XMLMind XML Editor if possible.   It makes editing and printing a pdf version much easier, since special addons are available to handle all the extra features of XLingPaper, which the grammar writeup is using.  You can find out more information at https://software.sil.org/xlingpaper/.</comment>
 		</p>
 	   <p>
 		   <comment>There are some comments in red like this throughout the grammar giving you specific instructions to consider.  Please delete each comment once you have completed it, so that it will not show up in the output.  We purposely had them show in the output as reminders to you and a consultant of what might still need to be done.</comment>
@@ -367,12 +367,12 @@
 		</section2>
 		<section2 id="sExamples">
 			<secTitle>Conventions used in the examples</secTitle>
-			<p>
+			<p show="swStandardInterlinear">
 				<content>This grammar contains many illustrative phrases and sentences.  Most of the examples are presented in an interlinear format consisting of three or four lines, as shown in </content>
 				<exampleRef num="xEx"/>
 				<content>:</content>
 			</p>
-			<example num="xEx">
+			<example num="xEx" show="swStandardInterlinear">
 				<table>
 					<row>
 						<col>
@@ -426,7 +426,7 @@
 					</row>
 				</table>
 			</example>
-			<p>
+			<p show="swStandardInterlinear">
 				<content>The words in </content>
 				<langName/>
 				<content> are given on the first line.  The second line presents a literal translation in English, word for word, giving the English word gloss that is the closest in meaning to the word in </content>
@@ -437,8 +437,99 @@
 				<langName/>
 				<content> words has more than one part (morpheme), the third line shows the glosses or abbreviations for the parts of the word, with the prefixes, root, and suffixes separated by hyphens.  This third line may be most useful to linguists.  The final line gives the free translation for the whole example.</content>
 			</p>
+
+						<p show="swBlessymolInterlinear">
+				<content>This grammar contains many illustrative phrases and sentences.  Most of the examples are presented in an interlinear format consisting of six lines, as shown in </content>
+				<exampleRef num="xBlessyEx"/>
+				<content>:</content>
+			</p>
+			<example num="xBlessyEx" show="swBlessymolInterlinear">
+				<table>
+					<row>
+						<col>
+							<content>[vernacular words]</content>
+						</col>
+						<col>
+							<langData>word</langData>
+						</col>
+						<col>
+							<langData>word</langData>
+						</col>
+						<col>
+							<langData>word</langData>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[words in IPA]</content>
+						</col>
+						<col>
+							<content>IPA</content>
+						</col>
+						<col>
+							<content>IPA</content>
+						</col>
+						<col>
+							<content>IPA</content>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[IPA with morpheme breaks]</content>
+						</col>
+						<col>
+							<content>IPA-IPA-IPA</content>
+						</col>
+						<col>
+							<content>IPA-IPA-IPA</content>
+						</col>
+						<col>
+							<content>IPA-IPA-IPA</content>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[English morpheme glosses]</content>
+						</col>
+						<col>
+							<content>PRE-root-SUF</content>
+						</col>
+						<col>
+							<content>PRE-root-SUF</content>
+						</col>
+						<col>
+							<content>PRE-root-SUF</content>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[English free translation]</content>
+						</col>
+						<col colspan="3">
+							<content>free translation phrase or sentence</content>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[State language free translation]</content>
+						</col>
+						<col colspan="3">
+							<content>free translation phrase or sentence</content>
+						</col>
+					</row>
+				</table>
+			</example>
+			<p show="swBlessymolInterlinear">
+				<content>The words in </content>
+				<langName/>
+				<content> are given on the first line.  The second line presents the words in IPA.  The third line adds hyphens to the IPA to show the separation of the words into morphemes.
+					The fourth gives morpheme by morpheme translation into English, with the morphemes separated by hyphens.  The best literal translation is used for each root, separated by periods if more than one English word is needed to express the meaning of the </content>
+				<langName/>
+				<content> root, while the prefixes and suffixes are shown by glosses or abbreviations for their features.  This third line may be most useful to linguists.  The final two lines give the free translation for the whole example, first in English and then in the State language.</content>
+			</p>
+
 			<p>
-				<comment>Say more here about  any differences between your language and English.  For example, if your language does not distinguish between number and/or gender on nouns, but the gloss language does, you may choose to use only singular and/or masculine forms for the glosses.</comment>
+				<comment>Say more here about any differences between your language and English.  For example, if your language does not distinguish between number and/or gender on nouns, but the gloss language does, you may choose to use only singular and/or masculine forms for the glosses.</comment>
 			</p>
 			<p>
 				<content>After giving information on the syntactic typology of the language, the grammar begins by describing the parts of speech and the phrases they head in sections </content>
@@ -1482,6 +1573,12 @@
    		<interlinear exampleLoc="typology/classifierSpecificExample"/>
    	</example>
    </section1>
+	<showWhen id="swStandardInterlinear">
+		<whenValue element="language/interlinearOutputStyle" attr="style" value="standard"/>
+	</showWhen>
+	<showWhen id="swBlessymolInterlinear">
+		<whenValue element="language/interlinearOutputStyle" attr="style" value="Blessymol"/>
+	</showWhen>
 <showWhen id="swNPPossNPYes">
    <whenValue element="np" attr="possNP" value="yes"/>
    <or/>

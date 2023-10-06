@@ -17,11 +17,21 @@
   LangPropLangNameFr.value =  pawsApp.getAnswerValue("//language/langNames/langName[@lang='fr']");
   LangPropLangAbbr.value =  pawsApp.getAnswerValue("//language/langAbbr");
   
+  attr = pawsApp.getAnswerValue("//language/interlinearOutputStyle/@style");
+  if (attr == "Blessymol")
+  Blessymol.checked = true;
+  else
+  standard.checked = true;
+
   LangPropFont.value =  pawsApp.getAnswerValue("//language/font/fontName");
   attr = pawsApp.getAnswerValue("//language/font/@rtl");
   if (attr == "False")
   LangPropRTLLTR.checked = true; else
   LangPropRTLRTL.checked = true;
+
+  LangPropFreeFont.value =  pawsApp.getAnswerValue("//language/freeFont/fontName");
+  
+  LangPropIpaFont.value =  pawsApp.getAnswerValue("//language/ipaFont/fontName");
   
   ShowBackNextButtons.style.display = "none";
   Return.style.display = "";
@@ -49,7 +59,16 @@
   sTemp = "True";
   
   pawsApp.setAnswerValue("//language/font/@rtl", sTemp);
-  
+
+  pawsApp.setAnswerValue("//language/freeFont/@rtl", sTemp);
+
+  sTemp = "standard" // use default if all else fails...
+  if (standard.checked)
+  sTemp = "standard";
+  if (Blessymol.checked)
+  sTemp = "Blessymol";
+  pawsApp.setAnswerValue("//language/interlinearOutputStyle/@style", sTemp);
+
   pawsApp.languageNameChanged();
   pawsApp.saveData();
   }
@@ -58,12 +77,32 @@
   pawsApp.changeFontInfo();
   LangPropFont.value =  pawsApp.getAnswerValue("//language/font/fontName");
   }
+  function ButtonLangPropFreeFont() {
+  saveData();
+  pawsApp.changeFreeFontInfo();
+  LangPropFreeFont.value =  pawsApp.getAnswerValue("//language/freeFont/fontName");
+  }
+  function ButtonLangPropIpaFont() {
+  saveData();
+  pawsApp.changeIpaFontInfo();
+  LangPropIpaFont.value =  pawsApp.getAnswerValue("//language/ipaFont/fontName");
+  }
+  function RInterlinearStyle(radio)
+  {
+  radio.checked = true;
+  Refresh();
+  }
+
   function ButtonNext() {
   saveData();
   pawsApp.load("LanguageFilesNewMode");
   }
   function Refresh() {
   var valArray = new Array();
+  if (Blessymol.checked)
+  UseIpa.style.display = "";
+  else
+  UseIpa.style.display = "none";
   }
 </script></head>
 <body>
@@ -81,7 +120,54 @@ below.</p>
   <textarea class="vernacular" style="margin-left: 0.5in" wrap="off" rows="1" cols="50" id="LangPropLangNameFr" name="LangPropLangNameFr" contenteditable="inherit"></textarea>
   <br><br><p style="margin-left: 0.125in">Enter an abbreviation for your language (we suggest using the Ethnologue or ISO639-3 code):<br></p>
 <textarea class="vernacular" style="margin-left: 0.5in" wrap="off" rows="1" cols="4" id="LangPropLangAbbr" name="LangPropLangAbbr" contenteditable="inherit"></textarea>
-	    <p style="margin-left: 0.125in">The name of the font that will be used to display your language data is shown below.  Click on the 'Change font' button to change it or any of its font properties.<br></p>
+    <p>You can have two styles of interlinear text output.  Please select the style you want to use:</p>
+    <table border="0" style="margin-left: 0.5in">
+      <tr>
+        <td valign="top"><input type="radio" name="RInterlinearStyle" id="standard" onclick="RInterlinearStyle(standard)" value="standard"></td>
+        <td width="99%" id="standardPrompt" onclick="RInterlinearStyle(standard)" value="standard" onmouseover="this.style.cursor='default'">
+          <table border="0">
+            <tr>
+              <td>Vernacular</td>
+            </tr>
+            <tr>
+              <td>Word gloss</td>
+            </tr>
+            <tr>
+              <td>morpheme break gloss</td>
+            </tr>
+            <tr>
+              <td>free translation</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><input type="radio" name="RInterlinearStyle" id="Blessymol" onclick="RInterlinearStyle(Blessymol)" value="Blessymol"></td>
+        <td width="99%" id="BlessymolPrompt" onclick="RInterlinearStyle(Blessymol)" value="Blessymol" onmouseover="this.style.cursor='default'">
+          <table border="0">
+            <tr>
+              <td>Vernacular</td>
+            </tr>
+            <tr>
+              <td>IPA</td>
+            </tr>
+            <tr>
+              <td>IPA morpheme breaks</td>
+            </tr>
+            <tr>
+              <td>morpheme break gloss</td>
+            </tr>
+            <tr>
+              <td>free translation</td>
+            </tr>
+            <tr>
+              <td>free translation in the state's language</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <p style="margin-left: 0.125in">The name of the font that will be used to display your language data is shown below.  Click on the 'Change font' button to change it or any of its font properties.<br></p>
 <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="40" id="LangPropFont" name="LangPropFont" contenteditable="false"></textarea>
 &nbsp;&nbsp;&nbsp;
 <input type="button" value=" Change Font " name="BLangPropFont" id="BLangPropFont" onclick="ButtonLangPropFont()" style=""><table border="0" style="margin-left: 0.5in">
@@ -97,7 +183,17 @@ below.</p>
 <td width="99%" id="LangPropRTLRTLRPrompt" onclick="RLangPropRTL(LangPropRTLRTL)" value="True" onmouseover="this.style.cursor='default'">Right to left</td>
 </tr>
 </table>
-<div id="ShowBackNextButtons">
+  <div id="UseIpa">
+    <p style="margin-left: 0.125in">The name of the font that will be used to display your IPA data is shown below.  Click on the 'Change font' button to change it or any of its font properties.<br></p>
+    <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="40" id="LangPropIpaFont" name="LangPropIpaFont" contenteditable="false"></textarea>
+    &nbsp;&nbsp;&nbsp;
+    <input type="button" value=" Change Font " name="BLangPropIpaFont" id="BLangPropIpaFont" onclick="ButtonLangPropIpaFont()" style="">
+  </div>
+  <p style="margin-left: 0.125in">The name of the font that will be used to display your free translation data is shown below.  Click on the 'Change font' button to change it or any of its font properties.<br></p>
+  <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="40" id="LangPropFreeFont" name="LangPropFreeFont" contenteditable="false"></textarea>
+  &nbsp;&nbsp;&nbsp;
+  <input type="button" value=" Change Font " name="BLangPropFreeFont" id="BLangPropFreeFont" onclick="ButtonLangPropFreeFont()" style="">
+ <div id="ShowBackNextButtons">
 <br/><input type="button" value="Next >" name="BNext" id="LangPropNext" onclick="ButtonNext()" style="width: 78px; height: 24px">
 </div>
 </div>

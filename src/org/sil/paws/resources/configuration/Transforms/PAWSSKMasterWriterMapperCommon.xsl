@@ -10,6 +10,7 @@
 	<xsl:param name="prmSDateTime" select="'DATE GOES HERE'"/>
 	<xsl:param name="prmSVersionNumber" select="'PAWS VERSION NUMBER GOES HERE'"/>
 	<xsl:variable name="sMasterLetterList">a b c d e f g h i j k l m n o p q r s t u v w x y z aa bb cc dd ee ff gg hh ii jj kk ll mm nn oo pp qq rr ss tt uu vv ww xx yy zz </xsl:variable>
+	<xsl:variable name="fOutputStyle" select="/paws/language/interlinearOutputStyle/@style"/>
 	<!--
 		======================================
 		Special handling of rowspan in columns of tables
@@ -86,6 +87,17 @@
 		</free>
 	</xsl:template>
 	<!--
+		DoFreeParagraph
+	-->
+	<xsl:template name="DoFreeParagraph">
+		<xsl:param name="sParagraphContent"/>
+		<p>
+			<gloss lang="lGloss">
+				<xsl:value-of select="$sParagraphContent"/>
+			</gloss>
+		</p>
+	</xsl:template>
+	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 		DoGloss
 		routine to create empty gloss line for interlinear
@@ -98,6 +110,70 @@
 		</line>
 	</xsl:template>
 	<!--
+		DoInterlinearTextLineGroup
+	-->
+	<xsl:template name="DoInterlinearTextInterlinear">
+		<xsl:param name="sFree"/>
+		<xsl:param name="sGloss"/>
+		<xsl:param name="sIPA"/>
+		<xsl:param name="sIPAMorphBreaks"/>
+		<xsl:param name="sLanguage"/>
+		<xsl:param name="sMorphemes"/>
+		<xsl:param name="sStateFree"/>
+		<interlinear>
+			<lineGroup>
+				<line>
+					<langData lang="lVernacular">
+						<xsl:value-of select="$sLanguage"/>
+					</langData>
+				</line>
+				<xsl:choose>
+					<xsl:when test="$fOutputStyle = 'Blessymol'">
+						<line>
+							<gloss lang="lIPA">
+								<xsl:value-of select="$sIPA"/>
+							</gloss>
+						</line>
+						<line>
+							<gloss lang="lIPAMorphBreaks">
+								<xsl:value-of select="$sIPAMorphBreaks"/>
+							</gloss>
+						</line>
+						<line>
+							<gloss lang="lGloss">
+								<xsl:value-of select="$sMorphemes"/>
+							</gloss>
+						</line>
+					</xsl:when>
+					<xsl:otherwise>
+						<line>
+							<gloss lang="lGloss">
+								<xsl:value-of select="$sGloss"/>
+							</gloss>
+						</line>
+						<line>
+							<gloss lang="lGloss">
+								<xsl:value-of select="$sMorphemes"/>
+							</gloss>
+						</line>
+					</xsl:otherwise>
+				</xsl:choose>
+			</lineGroup>
+			<free>
+				<gloss lang='lGloss'>
+					<xsl:value-of select="$sFree"/>
+				</gloss>
+			</free>
+			<xsl:if test="$fOutputStyle = 'Blessymol'">
+				<free>
+					<gloss lang='lStateGloss'>
+						<xsl:value-of select="$sStateFree"/>
+					</gloss>
+				</free>
+			</xsl:if>
+		</interlinear>
+	</xsl:template>
+	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 		DoMorphemeGloss
 		routine to create empty word gloss line for interlinear
@@ -108,6 +184,17 @@
 		<line>
 			<gloss lang="lGloss">IMP.enter morpheme gloss-PL here</gloss>
 		</line>
+	</xsl:template>
+	<!--
+		DoTextParagraph
+	-->
+	<xsl:template name="DoTextParagraph">
+		<xsl:param name="sParagraphContent"/>
+		<p>
+			<langData lang="lVernacular">
+				<xsl:value-of select="$sParagraphContent"/>
+			</langData>
+		</p>
 	</xsl:template>
 	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -275,9 +362,18 @@
 		<languages>
 			<language id="lPAWSSKEnglish" name="PAWSSKEnglish" color="black" font-style="italic"/>
 			<language id="lGloss" name="GlossLanguage" color="#446688"/>
+			<language id="lStateGloss" name="StateGlossLanguage" color="maroon"/>
 			<language name="IPA">
 				<xsl:attribute name="id">
 					<xsl:text>lIPA</xsl:text>
+				</xsl:attribute>
+				<xsl:attribute name="font-family">
+					<xsl:value-of select="'Charis SIL'"/>
+				</xsl:attribute>
+			</language>
+			<language name="IPAMorphBreaks" color="navy">
+				<xsl:attribute name="id">
+					<xsl:text>lIPAMorphBreaks</xsl:text>
 				</xsl:attribute>
 				<xsl:attribute name="font-family">
 					<xsl:value-of select="'Charis SIL'"/>
@@ -364,6 +460,19 @@
 			</contentControlChoices>
 		</contentControl>
 	</xsl:template>
+	<!--
+		OutputIpaLine
+	-->
+	<xsl:template name="OutputIpaLine">
+		<xsl:choose>
+			<xsl:when test="string-length(normalize-space(ipaLine)) &gt; 0">
+				<xsl:value-of select="ipaLine"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:call-template name="OutputEnterIpaLineHereMessage"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
 	<xsl:template name="OutputReferencesElement">
 		<xsl:param name="sReferencesLabel"/>
 		<references>
@@ -423,6 +532,12 @@
 		<xsl:text>ENTER AN EXAMPLE HERE</xsl:text>
 	</xsl:template>
 	<!--
+		OutputEnterIpaLineHereMessage
+	-->
+	<xsl:template name="OutputEnterIpaLineHereMessage">
+		<xsl:text>ENTER THE IPA HERE</xsl:text>
+	</xsl:template>
+	<!--
 		OutputInterlinearEntries
 	-->
 	<xsl:template name="OutputInterlinearEntries">
@@ -446,9 +561,37 @@
 								<xsl:call-template name="OutputEnterExampleHereMessage"/>
 							</langData>
 						</line>
-						<xsl:call-template name="DoInterlinearGlossLines"/>
+						<xsl:choose>
+							<xsl:when test="$fOutputStyle='Blessymol'">
+								<line>
+									<langData>
+										<xsl:attribute name="lang">
+											<xsl:text>lIPA</xsl:text>
+										</xsl:attribute>
+										<xsl:call-template name="OutputEnterExampleHereMessage"/>
+									</langData>
+								</line>
+								<line>
+									<langData>
+										<xsl:attribute name="lang">
+											<xsl:text>lIPAMorphBreaks</xsl:text>
+										</xsl:attribute>
+										<xsl:call-template name="OutputEnterExampleHereMessage"/>
+									</langData>
+								</line>
+								<xsl:call-template name="DoMorphemeGloss"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:call-template name="DoInterlinearGlossLines"/>
+							</xsl:otherwise>
+						</xsl:choose>
 					</lineGroup>
 					<xsl:call-template name="DoFree"/>
+					<xsl:if test="$fOutputStyle='Blessymol'">
+						<free>
+							<gloss lang="lStateGloss">ENTER STATE LANGUAGE FREE TRANSLATION HERE.</gloss>
+						</free>
+					</xsl:if>
 				</listInterlinear>
 			</xsl:when>
 			<xsl:otherwise>
@@ -477,13 +620,41 @@
 					<xsl:value-of select="vernacularLine"/>
 				</langData>
 			</line>
-			<xsl:call-template name="DoInterlinearGlossLines"/>
+			<xsl:choose>
+				<xsl:when test="$fOutputStyle='Blessymol'">
+					<line>
+						<langData>
+							<xsl:attribute name="lang">
+								<xsl:text>lIPA</xsl:text>
+							</xsl:attribute>
+							<xsl:call-template name="OutputIpaLine"/>
+						</langData>
+					</line>
+					<line>
+						<langData>
+							<xsl:attribute name="lang">
+								<xsl:text>lIPAMorphBreaks</xsl:text>
+							</xsl:attribute>
+							<xsl:call-template name="OutputIpaLine"/>
+						</langData>
+					</line>
+					<xsl:call-template name="DoMorphemeGloss"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:call-template name="DoInterlinearGlossLines"/>
+				</xsl:otherwise>
+			</xsl:choose>
 		</lineGroup>
 		<free>
 			<gloss lang="lGloss">
 				<xsl:value-of select="freeLine"/>
 			</gloss>
 		</free>
+		<xsl:if test="$fOutputStyle='Blessymol'">
+			<free>
+				<gloss lang="lStateGloss">ENTER STATE LANGUAGE FREE TRANSLATION HERE.</gloss>
+			</free>
+		</xsl:if>
 	</xsl:template>
 	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

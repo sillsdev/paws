@@ -642,14 +642,16 @@
 			<example num="xVowels">
 <table>
 					<tr>
-						<th></th>
+						<th>
+</th>
 						<th>Front</th>
 						<th>Central</th>
 						<th>Back</th>
 						<th>Back</th>
 					</tr>
 					<tr>
-						<th></th>
+						<th>
+</th>
 						<th>Unrounded</th>
 						<th>Unrounded</th>
 						<th>Unrounded</th>

@@ -659,12 +659,15 @@
 		</section2>
 		<section2 id="sExamples">
 			<secTitle>Conventions used in the examples</secTitle>
-			<p>
+			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
+<p>
 <xsl:text>This grammar contains many illustrative phrases and sentences.  Most of the examples are presented in an interlinear format consisting of three or four lines, as shown in </xsl:text>
 <exampleRef num="xEx" equal="no" letterOnly="no" />
 <xsl:text>:</xsl:text>
 </p>
-			<example num="xEx">
+</xsl:if>
+			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
+<example num="xEx">
 <table>
 					<tr>
 						<td align="left">
@@ -727,7 +730,9 @@
 					</tr>
 				</table>
 </example>
-			<p>
+</xsl:if>
+			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
+<p>
 <xsl:text>The words in </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='en'])) &gt; 0">
@@ -766,8 +771,129 @@
 </xsl:choose>
 <xsl:text> words has more than one part (morpheme), the third line shows the glosses or abbreviations for the parts of the word, with the prefixes, root, and suffixes separated by hyphens.  This third line may be most useful to linguists.  The final line gives the free translation for the whole example.</xsl:text>
 </p>
+</xsl:if>
+
+						<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='Blessymol'">
+<p>
+<xsl:text>This grammar contains many illustrative phrases and sentences.  Most of the examples are presented in an interlinear format consisting of six lines, as shown in </xsl:text>
+<exampleRef num="xBlessyEx" equal="no" letterOnly="no" />
+<xsl:text>:</xsl:text>
+</p>
+</xsl:if>
+			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='Blessymol'">
+<example num="xBlessyEx">
+<table>
+					<tr>
+						<td align="left">
+							<xsl:text>[vernacular words]</xsl:text>
+						</td>
+						<td align="left">
+							<langData>
+<xsl:attribute name="lang">
+<xsl:text>lPAWSSKEnglish</xsl:text>
+</xsl:attribute>word</langData>
+						</td>
+						<td align="left">
+							<langData>
+<xsl:attribute name="lang">
+<xsl:text>lPAWSSKEnglish</xsl:text>
+</xsl:attribute>word</langData>
+						</td>
+						<td align="left">
+							<langData>
+<xsl:attribute name="lang">
+<xsl:text>lPAWSSKEnglish</xsl:text>
+</xsl:attribute>word</langData>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[words in IPA]</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA</xsl:text>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[IPA with morpheme breaks]</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA-IPA-IPA</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA-IPA-IPA</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA-IPA-IPA</xsl:text>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[English morpheme glosses]</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>PRE-root-SUF</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>PRE-root-SUF</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>PRE-root-SUF</xsl:text>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[English free translation]</xsl:text>
+						</td>
+						<td align="left" colspan="3">
+							<xsl:text>free translation phrase or sentence</xsl:text>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[State language free translation]</xsl:text>
+						</td>
+						<td align="left" colspan="3">
+							<xsl:text>free translation phrase or sentence</xsl:text>
+						</td>
+					</tr>
+				</table>
+</example>
+</xsl:if>
+			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='Blessymol'">
+<p>
+<xsl:text>The words in </xsl:text>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='en'])) &gt; 0">
+<xsl:value-of select="normalize-space(//language/langNames/langName[@lang='en'])" />
+</xsl:when>
+<xsl:otherwise>
+<xsl:text>Vernacular</xsl:text>
+</xsl:otherwise>
+</xsl:choose>
+<xsl:text> are given on the first line.  The second line presents the words in IPA.  The third line adds hyphens to the IPA to show the separation of the words into morphemes.
+					The fourth gives morpheme by morpheme translation into English, with the morphemes separated by hyphens.  The best literal translation is used for each root, separated by periods if more than one English word is needed to express the meaning of the </xsl:text>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='en'])) &gt; 0">
+<xsl:value-of select="normalize-space(//language/langNames/langName[@lang='en'])" />
+</xsl:when>
+<xsl:otherwise>
+<xsl:text>Vernacular</xsl:text>
+</xsl:otherwise>
+</xsl:choose>
+<xsl:text> root, while the prefixes and suffixes are shown by glosses or abbreviations for their features.  This third line may be most useful to linguists.  The final two lines give the free translation for the whole example, first in English and then in the State language.</xsl:text>
+</p>
+</xsl:if>
+
 			<p>
-<object type="tComment">Say more here about  any differences between your language and English.  For example, if your language does not distinguish between number and/or gender on nouns, but the gloss language does, you may choose to use only singular and/or masculine forms for the glosses.</object>
+<object type="tComment">Say more here about any differences between your language and English.  For example, if your language does not distinguish between number and/or gender on nouns, but the gloss language does, you may choose to use only singular and/or masculine forms for the glosses.</object>
 </p>
 			<p>
 <xsl:text>After giving information on the syntactic typology of the language, the grammar begins by describing the parts of speech and the phrases they head in sections </xsl:text>
@@ -1397,7 +1523,8 @@
    					<xsl:text>humans</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1439,7 +1566,8 @@
    					<xsl:text>animals</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1481,7 +1609,8 @@
    					<xsl:text>birds</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1523,7 +1652,8 @@
    					<xsl:text>boats</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1565,7 +1695,8 @@
    					<xsl:text>clothing</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1607,7 +1738,8 @@
    					<xsl:text>trees</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1649,7 +1781,8 @@
    					<xsl:text>long, thin items</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1691,7 +1824,8 @@
    					<xsl:text>long, wavy items</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1733,7 +1867,8 @@
    					<xsl:text>flat items</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1775,7 +1910,8 @@
    					<xsl:text>cylindrical items</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1817,7 +1953,8 @@
    					<xsl:text>mechanical items</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1859,7 +1996,8 @@
    					<xsl:text>generic items</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1901,7 +2039,8 @@
    					<xsl:text>ENTER GLOSS</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -1959,7 +2098,8 @@
 				  <xsl:text>animal</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2001,7 +2141,8 @@
 				  <xsl:text>insect</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2043,7 +2184,8 @@
 				  <xsl:text>liquid</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2085,7 +2227,8 @@
 				  <xsl:text>round</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2127,7 +2270,8 @@
 				  <xsl:text>cylindrical</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2169,7 +2313,8 @@
 				  <xsl:text>spherical</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2211,7 +2356,8 @@
 				  <xsl:text>tree</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2253,7 +2399,8 @@
 				  <xsl:text>wooden</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2295,7 +2442,8 @@
 				  <xsl:text>ENTER GLOSS</xsl:text>
 			   </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2366,7 +2514,8 @@
    					<xsl:text>animal</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2408,7 +2557,8 @@
    					<xsl:text>insect</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2450,7 +2600,8 @@
    					<xsl:text>liquid</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2492,7 +2643,8 @@
    					<xsl:text>round</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2534,7 +2686,8 @@
    					<xsl:text>cylindrical</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2576,7 +2729,8 @@
    					<xsl:text>spherical</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2618,7 +2772,8 @@
    					<xsl:text>tree</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2660,7 +2815,8 @@
    					<xsl:text>wooden</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2702,7 +2858,8 @@
    					<xsl:text>ENTER GLOSS</xsl:text>
    				</td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2762,7 +2919,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2810,7 +2968,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2858,7 +3017,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2906,7 +3066,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -2954,7 +3115,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3002,7 +3164,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3050,7 +3213,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3098,7 +3262,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3146,7 +3311,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3194,7 +3360,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3242,7 +3409,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3290,7 +3458,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3338,7 +3507,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3386,7 +3556,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3434,7 +3605,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3482,7 +3654,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3530,7 +3703,8 @@
 <xsl:text>singular</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -3578,7 +3752,8 @@
 <xsl:text>plural</xsl:text>
 </td>
 </xsl:with-param>
-<xsl:with-param name="columnsAfter" />
+<xsl:with-param name="columnsAfter">
+</xsl:with-param>
 <xsl:with-param name="bHandleRowSpans" select="'Y'" />
 <xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
 </xsl:call-template>
@@ -5075,7 +5250,8 @@
 <xsl:with-param name="iLength">
 <xsl:value-of select="$iExampleLength0.0" />
 </xsl:with-param>
-<xsl:with-param name="columnsBefore" />
+<xsl:with-param name="columnsBefore">
+</xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
@@ -5140,6 +5316,12 @@
 </xsl:if>
    </section1>
 </xsl:if>
+	
+		
+	
+	
+		
+	
 
    
    

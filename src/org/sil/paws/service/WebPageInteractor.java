@@ -233,13 +233,25 @@ public class WebPageInteractor {
 	}
 
 	public final void changeFontInfo() {
-		final String ksFontName = "//language/font/fontName";
-		final String ksFontSize = "//language/font/fontSize";
-		final String ksFontColor = "//language/font/fontColor";
-		final String ksBold = "//language/font/@bold";
-		final String ksItalic = "//language/font/@italic";
-		final String ksUnder = "//language/font/@under";
-		final String ksStrike = "//language/font/@strike";
+		changeFontInfoOfFont("//language/font/");
+	}
+
+	public final void changeFreeFontInfo() {
+		changeFontInfoOfFont("//language/freeFont/");
+	}
+
+	public final void changeIpaFontInfo() {
+		changeFontInfoOfFont("//language/ipaFont/");
+	}
+
+	private final void changeFontInfoOfFont(String sFontPath) {
+		String ksFontName = sFontPath + "fontName";
+		String ksFontSize = sFontPath + "fontSize";
+		String ksFontColor = sFontPath + "fontColor";
+		String ksBold = sFontPath + "@bold";
+		String ksItalic = sFontPath + "@italic";
+		String ksUnder = sFontPath + "@under";
+		String ksStrike = sFontPath + "@strike";
 		final String ksTrue = "True";
 		final String ksFalse = "False";
 		final String kBold = "Bold";

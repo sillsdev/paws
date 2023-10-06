@@ -130,7 +130,8 @@
 <xsl:with-param name="iLength">
 <xsl:value-of select="$iExampleLength0.0" />
 </xsl:with-param>
-<xsl:with-param name="columnsBefore" />
+<xsl:with-param name="columnsBefore">
+</xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
@@ -193,7 +194,8 @@
 <xsl:with-param name="iLength">
 <xsl:value-of select="$iExampleLength0.0" />
 </xsl:with-param>
-<xsl:with-param name="columnsBefore" />
+<xsl:with-param name="columnsBefore">
+</xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
@@ -265,7 +267,8 @@
 <xsl:with-param name="iLength">
 <xsl:value-of select="$iExampleLength0.0" />
 </xsl:with-param>
-<xsl:with-param name="columnsBefore" />
+<xsl:with-param name="columnsBefore">
+</xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>
@@ -362,7 +365,8 @@
 <xsl:with-param name="iLength">
 <xsl:value-of select="$iExampleLength0.0" />
 </xsl:with-param>
-<xsl:with-param name="columnsBefore" />
+<xsl:with-param name="columnsBefore">
+</xsl:with-param>
 <xsl:with-param name="columnsAfter">
 <td align="left">
 <gloss>

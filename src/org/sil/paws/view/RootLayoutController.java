@@ -538,7 +538,7 @@ public class RootLayoutController implements Initializable {
 				throw new IOException(css.getPath());
 			}
 			sCSSContent = new String(Files.readAllBytes(css.toPath()), StandardCharsets.UTF_8)
-					+ getvernacularstyle();
+					+ getVernacularStyle() + getFreeStyle() + getIpaStyle();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -602,6 +602,8 @@ public class RootLayoutController implements Initializable {
 		params.add(new XsltParameter("prmInstallPath", sInstallPath));
 		params.add(new XsltParameter("prmLangAbbr", language.getValue("/paws/language/langAbbr")));
 		params.add(new XsltParameter("prmRtlScript", language.getValue("/paws/language/font/@rtl")));
+		params.add(new XsltParameter("prmInterlinearOutputStyle", language.getValue("/paws/language/interlinearOutputStyle/@style")));
+
 		params.add(new XsltParameter("prmStylesheet", sCSSContent));
 		String sAdjusted = sPAWSWorkingDirectory + File.separator;
 		if (operatingSystem.toLowerCase().contains("windows")) {
@@ -628,6 +630,8 @@ public class RootLayoutController implements Initializable {
 				"webpage.vernacular").get()));
 		params.add(new XsltParameter("prmFree", RESOURCE_FACTORY.getStringBinding(
 				"webpage.free").get()));
+		params.add(new XsltParameter("prmIpa", RESOURCE_FACTORY.getStringBinding(
+				"webpage.ipa").get()));
 		transformer.clearParameters();
 		for (XsltParameter param : params) {
 			transformer.setParameter(param.name, param.value);
@@ -650,24 +654,37 @@ public class RootLayoutController implements Initializable {
 		labelPageCount.setText(sCount);
 	}
 
-	private String getvernacularstyle() {
+	private String getVernacularStyle() {
+		return getFontStyle(".vernacular", "//language/font/");
+	}
+
+	private String getFreeStyle() {
+		return getFontStyle(".free", "//language/freeFont/");
+	}
+
+	private String getIpaStyle() {
+		return getFontStyle(".ipa", "//language/ipaFont/");
+	}
+
+	private String getFontStyle(String sFontCssName, String sFontPath) {
 		StringBuilder sb = new StringBuilder();
-		sb.append(".vernacular {");
+		sb.append(sFontCssName);
+		sb.append(" {");
 		sb.append("font-family: ");
-		sb.append(language.getValue("//language/font/fontName"));
+		sb.append(language.getValue(sFontPath + "fontName"));
 		sb.append(";");
 		sb.append("font-size: ");
-		sb.append(language.getValue("//language/font/fontSize"));
+		sb.append(language.getValue(sFontPath + "fontSize"));
 		sb.append("pt;");
 		sb.append("color: ");
-		sb.append(language.getValue("//language/font/fontColor"));
+		sb.append(language.getValue(sFontPath + "fontColor"));
 		sb.append(";");
-		if ("True" == language.getValue("//language/font/@bold"))
+		if ("True" == language.getValue(sFontPath + "@bold"))
 			sb.append("font-weight: bold;");
-		if ("True" == language.getValue("//language/font/@italic"))
+		if ("True" == language.getValue(sFontPath + "@italic"))
 			sb.append("font-style: italic;");
-		boolean bFontUnderline = ("True" == language.getValue("//language/font/@under"));
-		boolean bFontStrikeout = ("True" == language.getValue("//language/font/@strike"));
+		boolean bFontUnderline = ("True" == language.getValue(sFontPath + "@under"));
+		boolean bFontStrikeout = ("True" == language.getValue(sFontPath + "@strike"));
 		if (bFontUnderline || bFontStrikeout) {
 			sb.append("text-decoration: ");
 			if (bFontUnderline)
@@ -676,7 +693,7 @@ public class RootLayoutController implements Initializable {
 				sb.append("line-through");
 			sb.append(";");
 		}
-		sb.append("}");
+		sb.append("}\n");
 		return sb.toString();
 	}
 

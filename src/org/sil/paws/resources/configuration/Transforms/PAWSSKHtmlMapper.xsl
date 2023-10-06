@@ -33,7 +33,9 @@ Preamble
 	<xsl:param name="prmExplanation" select="'Explanation'"/>
 	<xsl:param name="prmMorphemes" select="'Morphemes'"/>
 	<xsl:param name="prmOutputGrammar" select="'False'"/>
+	<xsl:param name="prmInterlinearOutputStyle" select="'standard'"/>
 	<xsl:param name="prmVernacular" select="'Language:'"/>
+	<xsl:param name="prmIpa" select="'IPA:'"/>
 	<xsl:param name="prmFree" select="'Free:'"/>
 	<xsl:variable name="Section">
 		<xsl:value-of select="//form/@section"/>
@@ -82,6 +84,40 @@ BODY {
 				<xsl:apply-templates/>
 			</body>
 		</html>
+	</xsl:template>
+	<!--
+		GetInterlinearIDType
+	-->
+	<xsl:template name="GetInterlinearIDType">
+		<xsl:param name="type"/>
+		<xsl:choose>
+			<xsl:when test="$type='vernacular'">
+				<xsl:text>v</xsl:text>
+			</xsl:when>
+			<xsl:when test="$type='ipa'">
+				<xsl:text>i</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>f</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<!--
+		GetInterlinearLineType
+	-->
+	<xsl:template name="GetInterlinearLineType">
+		<xsl:param name="sType"/>
+		<xsl:choose>
+			<xsl:when test="$sType='vernacular'">
+				<xsl:text>vernacular</xsl:text>
+			</xsl:when>
+			<xsl:when test="$sType='ipa'">
+				<xsl:text>ipa</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>free</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	<!--
 		GetPathForInterlinearEntry
@@ -1464,6 +1500,13 @@ technicalTermRef
 			<xsl:with-param name="sPath" select="$sPath"/>
 			<xsl:with-param name="sType" select="'vernacular'"/>
 		</xsl:call-template>
+		<xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
+			<xsl:call-template name="CreateInterlinearLineLoadJScript">
+				<xsl:with-param name="iCount" select="$iCount"/>
+				<xsl:with-param name="sPath" select="$sPath"/>
+				<xsl:with-param name="sType" select="'ipa'"/>
+			</xsl:call-template>
+		</xsl:if>
 		<xsl:call-template name="CreateInterlinearLineLoadJScript">
 			<xsl:with-param name="iCount" select="$iCount"/>
 			<xsl:with-param name="sPath" select="$sPath"/>
@@ -1484,28 +1527,18 @@ technicalTermRef
 		<xsl:param name="sPath"/>
 		<xsl:param name="sType"/>
 		<xsl:value-of select="@id"/>
-		<xsl:choose>
-			<xsl:when test="$sType='vernacular'">
-				<xsl:text>v</xsl:text>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:text>f</xsl:text>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="GetInterlinearIDType">
+			<xsl:with-param name="type" select="$sType"/>
+		</xsl:call-template>
 		<xsl:value-of select="$iCount"/>
 		<xsl:text>.value = pawsApp.getAnswerValue("//</xsl:text>
 		<xsl:value-of select="$sPath"/>
 		<xsl:text>/interlinearEntry[</xsl:text>
 		<xsl:value-of select="$iCount"/>
 		<xsl:text>]/</xsl:text>
-		<xsl:choose>
-			<xsl:when test="$sType='vernacular'">
-				<xsl:text>vernacular</xsl:text>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:text>free</xsl:text>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="GetInterlinearLineType">
+			<xsl:with-param name="sType" select="$sType"/>
+		</xsl:call-template>
 		<xsl:text>Line");
 </xsl:text>
 	</xsl:template>
@@ -1520,6 +1553,13 @@ technicalTermRef
 			<xsl:with-param name="sPath" select="$sPath"/>
 			<xsl:with-param name="sType" select="'vernacular'"/>
 		</xsl:call-template>
+		<xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
+			<xsl:call-template name="CreateInterlinearLineSaveJScript">
+			<xsl:with-param name="iCount" select="$iCount"/>
+			<xsl:with-param name="sPath" select="$sPath"/>
+			<xsl:with-param name="sType" select="'ipa'"/>
+			</xsl:call-template>
+		</xsl:if>
 		<xsl:call-template name="CreateInterlinearLineSaveJScript">
 			<xsl:with-param name="iCount" select="$iCount"/>
 			<xsl:with-param name="sPath" select="$sPath"/>
@@ -1544,24 +1584,14 @@ technicalTermRef
 		<xsl:text>/interlinearEntry[</xsl:text>
 		<xsl:value-of select="$iCount"/>
 		<xsl:text>]/</xsl:text>
-		<xsl:choose>
-			<xsl:when test="$sType='vernacular'">
-				<xsl:text>vernacular</xsl:text>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:text>free</xsl:text>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="GetInterlinearLineType">
+			<xsl:with-param name="sType" select="$sType"/>
+		</xsl:call-template>
 		<xsl:text>Line", </xsl:text>
 		<xsl:value-of select="@id"/>
-		<xsl:choose>
-			<xsl:when test="$sType='vernacular'">
-				<xsl:text>v</xsl:text>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:text>f</xsl:text>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="GetInterlinearIDType">
+			<xsl:with-param name="type" select="$sType"/>
+		</xsl:call-template>
 		<xsl:value-of select="$iCount"/>
 		<xsl:text>.value);
 </xsl:text>
@@ -1585,6 +1615,19 @@ technicalTermRef
 							</xsl:call-template>
 						</td>
 					</tr>
+					<xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
+						<tr>
+							<td>
+								<xsl:value-of select="$prmIpa"/>
+							</td>
+							<td>
+								<xsl:call-template name="CreateInterlinearLine">
+									<xsl:with-param name="type" select="'ipa'"/>
+									<xsl:with-param name="iCount" select="$iCount"/>
+								</xsl:call-template>
+							</td>
+						</tr>
+					</xsl:if>
 					<tr>
 						<td>
 							<xsl:value-of select="$prmFree"/>
@@ -1612,14 +1655,9 @@ technicalTermRef
 		<xsl:param name="type" select="'vernacular'"/>
 		<xsl:param name="iCount"/>
 		<xsl:value-of select="@id"/>
-		<xsl:choose>
-			<xsl:when test="$type='vernacular'">
-				<xsl:text>v</xsl:text>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:text>f</xsl:text>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="GetInterlinearIDType">
+			<xsl:with-param name="type" select="$type"/>
+		</xsl:call-template>
 		<xsl:value-of select="$iCount"/>
 	</xsl:template>
 	<!--
