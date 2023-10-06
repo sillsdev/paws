@@ -387,6 +387,11 @@ public class RootLayoutController implements Initializable {
 							".style.display = \"temp\";");
 					sPage = sPage.replace(".style.display = \"\";", ".style.display = \"none\";");
 					sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
+					// exception for UseIpa
+					sPage = sPage.replace("UseIpa.style.display = \"none\";",
+							"UseIpa.style.display = \"temp\";");
+					sPage = sPage.replace("UseIpa.style.display = \"\";", "UseIpa.style.display = \"none\";");
+					sPage = sPage.replace("UseIpa.style.display = \"temp\";", "UseIpa.style.display = \"\";");
 					webEngine.loadContent(sPage);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
