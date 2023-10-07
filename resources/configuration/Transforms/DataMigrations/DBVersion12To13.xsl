@@ -2,7 +2,7 @@
 <!-- transform to convert PAWS answer file from dbversion 12 to 13 (add ipaLine in interlinearExample)
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:include href="../PAWSSKCommon.xsl"/>
 	<xsl:template match="@* |  node()">
 		<xsl:copy>
