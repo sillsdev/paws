@@ -21,6 +21,7 @@ import org.sil.paws.model.FontInfo;
 import org.sil.paws.model.Language;
 import org.sil.paws.view.RootLayoutController;
 import org.sil.utility.StringUtilities;
+import org.sil.utility.service.keyboards.KeyboardInfo;
 import org.sil.utility.view.ObservableResourceFactory;
 
 import com.sun.deploy.uitoolkit.impl.fx.HostServicesFactory;
@@ -290,6 +291,38 @@ public class WebPageInteractor {
 		language.setValue(ksBold, sBoolean);
 		sBoolean = sStyle.contains(kItalic) ? ksTrue : ksFalse;
 		language.setValue(ksItalic, sBoolean);
+		controller.handleSaveLanguage();
+		controller.initCSS();
+	}
+
+	public final void changeKeyboardInfo() {
+		changeKeyboardInfoOfKeyboard("//language/keyboard/");
+	}
+
+	public final void changeFreeKeyboardInfo() {
+		changeKeyboardInfoOfKeyboard("//language/freeKeyboard/");
+	}
+
+	public final void changeIpaKeyboardInfo() {
+		changeKeyboardInfoOfKeyboard("//language/ipaKeyboard/");
+	}
+
+	private final void changeKeyboardInfoOfKeyboard(String sKeyboardPath) {
+		String ksKeyboardDescription = sKeyboardPath + "keyboardDescription";
+		String ksKeyboardLocale = sKeyboardPath + "keyboardLocale";
+		String ksKeyboardWindowsLangID = sKeyboardPath + "keyboardWindowsLangID";
+		String sKeyboardDescription = language.getValue(ksKeyboardDescription);
+		String sKeyboardLocale = language.getValue(ksKeyboardLocale);
+		String sKeyboardWindowsLangID = language.getValue(ksKeyboardWindowsLangID);
+		Locale locale = new Locale(sKeyboardLocale);
+		KeyboardInfo keyboardInfo = new KeyboardInfo(locale, sKeyboardDescription, Integer.parseInt(sKeyboardWindowsLangID));
+		keyboardInfo = controller.showKeyboardInfo(keyboardInfo);
+		// set the values
+		language.setValue(ksKeyboardDescription, keyboardInfo.getDescription());
+		// TODO: following is wrong; how we do this?
+		language.setValue(ksKeyboardLocale, String.valueOf(keyboardInfo.getLocale()));
+		sKeyboardWindowsLangID = locale.getDisplayName();
+		language.setValue(ksKeyboardWindowsLangID, sKeyboardWindowsLangID);
 		controller.handleSaveLanguage();
 		controller.initCSS();
 	}

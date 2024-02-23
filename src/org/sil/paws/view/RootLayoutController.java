@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2018-2022 SIL International
+ * Copyright (c) 2018-2024 SIL International
  * This software is licensed under the LGPL, version 2.1 or later
  * (http://www.gnu.org/licenses/lgpl-2.1.html)
  */
@@ -38,6 +38,7 @@ import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.concurrent.Worker.State;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
 import javafx.scene.control.Alert;
@@ -71,6 +72,9 @@ import javafx.util.Duration;
 import netscape.javascript.JSObject;
 
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
+import org.sil.lingtree.view.KeyboardChooserController;
+import org.sil.lingtree.view.RootLayoutController;
+import org.sil.paws.model.Keyboard;
 import org.sil.paws.model.FontInfo;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.Constants;
@@ -80,6 +84,12 @@ import org.sil.paws.service.WebPageInteractor;
 import org.sil.paws.MainApp;
 import org.sil.utility.HandleExceptionMessage;
 import org.sil.utility.StringUtilities;
+import org.sil.utility.service.keyboards.KeyboardChanger;
+import org.sil.utility.service.keyboards.KeyboardHandler;
+import org.sil.utility.service.keyboards.KeyboardInfo;
+import org.sil.utility.service.keyboards.LinuxKeyboardHandler;
+import org.sil.utility.service.keyboards.MacOSXKeyboardHandler;
+import org.sil.utility.service.keyboards.WindowsKeyboardHandler;
 import org.sil.utility.view.ControllerUtilities;
 import org.sil.utility.view.ObservableResourceFactory;
 import org.sil.utility.xml.XsltParameter;
@@ -90,6 +100,8 @@ public class RootLayoutController implements Initializable {
 
 	// Reference to the main application
 	private MainApp mainApp;
+	KeyboardChanger keyboardChanger;
+	private String sOperatingSystem;
 
 	private String sAboutHeader;
 	private String sAboutContent;
@@ -254,6 +266,8 @@ public class RootLayoutController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		this.location = location;
 		bundle = resources;
+		keyboardChanger = KeyboardChanger.getInstance();
+		keyboardChanger.initKeyboardHandler();
 		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
 		try {
 			sConfigurationDirectory = new File(".").getCanonicalPath() + File.separator
@@ -820,6 +834,7 @@ public class RootLayoutController implements Initializable {
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
 		this.applicationPreferences = mainApp.getApplicationPreferences();
+		keyboardChanger.setStage(mainApp.getPrimaryStage());
 		menuItemShowStatusBar.setSelected(applicationPreferences.getShowStatusBar());
 		handleMenuShowStatusBar();
 		webPageInteractor.setMainApp(mainApp);
@@ -1255,6 +1270,47 @@ public class RootLayoutController implements Initializable {
 			markAsDirty();
 		}
 		return fontInfo;
+	}
+
+	@FXML
+	private void handleKeyboards() {
+		try {
+			// Load the fxml file and create a new stage for the popup.
+			Stage dialogStage = new Stage();
+			String resource = "fxml/KeyboardChooser.fxml";
+			String title = RESOURCE_FACTORY.getStringBinding("keyboarddialog.title").get();
+			FXMLLoader loader = ControllerUtilities.getLoader(mainApp, currentLocale, dialogStage,
+					title, RootLayoutController.class.getResource(resource),
+					Constants.RESOURCE_LOCATION);
+
+			KeyboardChooserController controller = loader.getController();
+			controller.setDialogStage(dialogStage);
+			controller.setData(ltTree);
+			dialogStage.setResizable(false);
+			dialogStage.showAndWait();
+			if (controller.isOkClicked()) {
+				markAsDirty();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+	public KeyboardInfo showKeyboardInfo(KeyboardInfo kbInfo) {
+		ChoiceDialog<KeyboardInfo> dialog = new ChoiceDialog<KeyboardInfo>();
+		dialog.setTitle(RESOURCE_FACTORY.getStringBinding("keyboard.header").get());
+		dialog.setHeaderText(RESOURCE_FACTORY.getStringBinding("keyboard.content").get());
+		dialog.setContentText(RESOURCE_FACTORY.getStringBinding("keyboard.choose").get());
+		dialog.setSelectedItem(applicationPreferences.getTreeDescriptionFontSize());
+		Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
+		stage.getIcons().add(mainApp.getNewMainIconImage());
+		Optional<KeyboardInfo> result = dialog.showAndWait();
+		if (result.isPresent()) {
+			defaultFont = new Font(result.get());
+			applicationPreferences.setTreeDescriptionFontSize(result.get());
+			computeHighlighting();
+		}
+		return kbInfo;
 	}
 
 	public void showLanguageLastPage() {
