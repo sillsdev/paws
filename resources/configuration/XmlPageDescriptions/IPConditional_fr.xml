@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
+<!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
 <page id="IPConditional" count="9.4.2">
    <title level="2">Phrases simples – Conditionnels</title>
@@ -33,7 +33,7 @@
          <checkbox id="IPConditionEnclitic" dataItem="conditionEnclitic">Comme enclitique de constituant qui se rattache au début du dernier mot du syntagme conditionnel</checkbox>
          <checkbox id="IPConditionPrefix" dataItem="conditionPrefix">Comme préfixe qui se rattache au verbe du syntagme conditionnel</checkbox>
          <checkbox id="IPConditionSuffix" dataItem="conditionSuffix">Comme suffixe qui se rattache au verbe du syntagme conditionnel</checkbox>
-         <checkbox id="IPConditionOther" dataItem="conditionOther">Dans ma langue, ces éléments peuvent se rattacher  dans la position suivante : <textBox  id="IPConditionOtherContent" dataItem="conditionOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="IPConditionOther" dataItem="conditionOther">Dans ma langue, ces éléments peuvent se rattacher  dans la position suivante : <textBox  id="IPConditionOtherContent" dataItem="conditionOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="IPConditionAttachesNoCheckPrompt" show="swIPConditionWordNoOrSomeandNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire comment les marqueurs de condition fonctionnent dans votre langue. Si vous n’avez que des mots indépendants,  changez la réponse ci-dessus et cochez « Oui, ce sont tous des mots indépendants » , ou bien « Non, le seul marqueur de conditionnel dans ma langue est le mode conditionnel marqué sur le verbe » .</prompt>
       
@@ -55,7 +55,7 @@
          <checkbox id="IPConditionPosBefore"  dataItem="conditionWordBefore">Avant</checkbox>
          <checkbox id="IPConditionPosAfter"  dataItem="conditionWordAfter">Après</checkbox>
          <checkbox id="IPConditionPosBoth"  dataItem="conditionWordBoth">De part et d’autre dans le syntagme</checkbox>
-         <checkbox id="IPConditionPosOther"  dataItem="conditionWordOther">Dans ma langue, les marqueurs se placent dans la position suivante : <textBox  id="IPConditionPosOtherContent" dataItem="conditionWordOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="IPConditionPosOther"  dataItem="conditionWordOther">Dans ma langue, les marqueurs se placent dans la position suivante : <textBox  id="IPConditionPosOtherContent" dataItem="conditionWordOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="IPConditionPosNoCheckPrompt" show="swIPConditionYesandNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position de ces marqueurs de condition par rapport au reste du syntagme conditionnel dans votre langue. Si vous n’avez rien coché, il faut cocher « Non, ils s’attachent à un autre mot du syntagme conditionnel » dans la boîte ci-dessus.</prompt>
       <instruction id="IPConditionYesInstruction" show="swIPConditionWordYesOrSome">In the lexicon, you will likely need to add a separate entry for each of these words, if they can also be used as adverbs and/or complementizers in embedded questions.  Give this entry the category <category>Cond</category> and the feature <feature>conditional</feature>.</instruction>

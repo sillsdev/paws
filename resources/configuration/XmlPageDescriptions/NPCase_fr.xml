@@ -36,7 +36,7 @@
           <checkbox id="NPCaseWordBefore"  dataItem="caseWordBefore">Avant</checkbox>
           <checkbox id="NPCaseWordAfter"  dataItem="caseWordAfter">Après</checkbox>
           <checkbox id="NPCaseWordBoth"  dataItem="caseWordBoth">De part et d’autre</checkbox>
-          <checkbox id="NPCaseWordOther"  dataItem="caseWordOther">Dans ma langue elles peuvent se trouver dans la position suivante : <textBox  id="NPCaseWordOtherContent" dataItem="caseWordOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="NPCaseWordOther"  dataItem="caseWordOther">Dans ma langue elles peuvent se trouver dans la position suivante : <textBox  id="NPCaseWordOtherContent" dataItem="caseWordOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPCaseWordNoCheckPrompt" show="swNPCaseWordYesOrSomeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour indiquer où ces marqueurs de cas sont placés par rapport au reste du syntagme nominal dans votre langue, ou changez la réponse ci-dessus en « Non, ils sont tous rattachés à un autre mot dans le syntagme nominal ».</prompt>
        <checkboxGroup id="NPCaseAttachesPosTable" show="swNPCaseNYesAndWordNoOrSome">
@@ -45,7 +45,7 @@
           <checkbox id="NPCaseAttachesEnclitic" dataItem="caseAttachesEnclitic">C’est un proclitique du syntagme qui se rattache à la fin du dernier mot du syntagme nominal, quelle que soit sa catégorie grammaticale </checkbox>
           <checkbox id="NPCaseAttachesPrefix" dataItem="caseAttachesPrefix">C’est un préfixe qui se r’attache au nom principal du syntagme nominal </checkbox>
           <checkbox id="NPCaseAttachesSuffix" dataItem="caseAttachesSuffix">C’est un suffixe qui s’attache au nom principal du syntagme nominal</checkbox>
-          <checkbox id="NPCaseAttachesOther" dataItem="caseAttachesOther">Dans ma langue, ces marqueurs de cas peuvent se ratttacher  dans la position suivante : <textBox  id="NPCaseAttachesOtherContent" dataItem="caseAttachesOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="NPCaseAttachesOther" dataItem="caseAttachesOther">Dans ma langue, ces marqueurs de cas peuvent se ratttacher  dans la position suivante : <textBox  id="NPCaseAttachesOtherContent" dataItem="caseAttachesOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPCaseAttachesNoCheckPrompt" show="swNPCaseAttachesAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où ces marqueurs de cas sont rattachés au syntagme dans votre langue.Sinon, il faut changer la réponse ci-dessus en « Oui, tous sont des mots indépendants ».</prompt>
        

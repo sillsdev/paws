@@ -17,7 +17,7 @@
           <checkbox id="NPArtAndDemArtPosBefore" dataItem="artOnlyBefore">Antes del sustantivo</checkbox>
           <checkbox id="NPArtAndDemArtPosAfter" dataItem="artOnlyAfter">Después del sustantivo</checkbox>
           <checkbox id="NPArtAndDemArtPosBoth" dataItem="artOnlyBoth">En ambos lados en la misma frase nominal</checkbox>
-           <checkbox id="NPArtAndDemArtPosOther" dataItem="artOnlyOther">En mi lengua, el artículo puede presentarse: <textBox  id="NPArtAndDemArtPosOtherContent" dataItem="artOnlyOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemArtPosOther" dataItem="artOnlyOther">En mi lengua, el artículo puede presentarse: <textBox  id="NPArtAndDemArtPosOtherContent" dataItem="artOnlyOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemArtPosNoCheckPrompt" show="swNPArtAndDemArtAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el artículo con respecto al sustantivo, o cambia su respuesta en la página anterior al uno que no incluye artículos que se escriben como palabras independientes.</prompt>
         <radioGroup id="NPArtAndDemArtRequiredTable" show="swNPArtAndDemArt">
@@ -33,7 +33,7 @@
           <checkbox id="NPArtAndDemDemPosBefore" dataItem="demOnlyBefore">Antes del sustantivo</checkbox>
           <checkbox id="NPArtAndDemDemPosAfter" dataItem="demOnlyAfter">Después del sustantivo</checkbox>
           <checkbox id="NPArtAndDemDemPosBoth" dataItem="demOnlyBoth">En ambos lados en la misma frase nominal</checkbox>
-           <checkbox id="NPArtAndDemDemPosOther" dataItem="demOnlyOther">En mi lengua, el demostrativo puede presentarse:<textBox  id="NPArtAndDemDemPosOtherContent" dataItem="demOnlyOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemDemPosOther" dataItem="demOnlyOther">En mi lengua, el demostrativo puede presentarse:<textBox  id="NPArtAndDemDemPosOtherContent" dataItem="demOnlyOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemDemPosNoCheckPrompt" show="swNPArtAndDemDemAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el demostrativo con respecto al sustantivo, o cambia su respuesta en la página anterior al uno que no incluye demostrativos que se escriben como palabras independientes.</prompt>
         <radioGroup id="NPArtAndDemDemRequiredTable" show="swNPArtAndDemDem">
@@ -59,7 +59,7 @@
       <checkbox id="NPDemClassifierSpecificPosAfterNBeforeDem"  dataItem="classifierSpecificDemPosAfterNBeforeDem">Después del sustantivo pero antes del demostrativo</checkbox>
       <checkbox id="NPDemClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemPosPrefixDem">Como un prefijo en el demostrativo</checkbox>
       <checkbox id="NPDemClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemPosSuffixDem">Como un sufijo en el demostrativo</checkbox>
-         <checkbox id="NPDemClassifierSpecificPosOther"  dataItem="classifierSpecificDemPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPClassifierSpecificDemPosOtherContent" dataItem="classifierSpecificDemPosOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="NPDemClassifierSpecificPosOther"  dataItem="classifierSpecificDemPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPClassifierSpecificDemPosOtherContent" dataItem="classifierSpecificDemPosOther" cols="70" rows="1" kind="other"/></checkbox>
      </checkboxGroup>
      <prompt id="NPDemClassifierSpecificPosNoCheckPrompt" show="swNPDemClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto al demostrativo y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
      
@@ -77,7 +77,7 @@
           <checkbox id="NPArtAndDemBothCooccurNoPosBefore" dataItem="demOrArtPosBefore">Antes del sustantivo</checkbox>
           <checkbox id="NPArtAndDemBothCooccurNoPosAfter" dataItem="demOrArtPosAfter">Después del sustantivo</checkbox>
           <checkbox id="NPArtAndDemBothCooccurNoPosBoth" dataItem="demOrArtPosBoth">En ambos lados en la misma frase nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurNoPosOther" dataItem="demOrArtPosOther">En mi lengua, el demostrativo o artículo puede presentarse: <textBox  id="NPArtAndDemBothCooccurNoPosOtherContent" dataItem="demOrArtPosOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurNoPosOther" dataItem="demOrArtPosOther">En mi lengua, el demostrativo o artículo puede presentarse: <textBox  id="NPArtAndDemBothCooccurNoPosOtherContent" dataItem="demOrArtPosOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemBothCooccurNoPosNoCheckPrompt" show="swNPArtAndDemBothCooccurNoAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el demostrativo o el artículo con respecto al sustantivo en su lengua.</prompt>
  
@@ -86,7 +86,7 @@
           <checkbox id="NPArtAndDemBothCooccurYesDemPosBefore" dataItem="demAndArtDemBefore">Antes del sustantivo</checkbox>
           <checkbox id="NPArtAndDemBothCooccurYesDemPosAfter" dataItem="demAndArtDemAfter">Después del sustantivo</checkbox>
           <checkbox id="NPArtAndDemBothCooccurYesDemPosBoth" dataItem="demAndArtDemBoth">En ambos lados en la misma frase nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesDemPosOther" dataItem="demAndArtDemOther">En mi lengua, el demostrativo puede presentarse: <textBox  id="NPArtAndDemBothCooccurYesDemPosOtherContent" dataItem="demAndArtDemOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesDemPosOther" dataItem="demAndArtDemOther">En mi lengua, el demostrativo puede presentarse: <textBox  id="NPArtAndDemBothCooccurYesDemPosOtherContent" dataItem="demAndArtDemOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemBothCooccurYesDemPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndDemPosNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el demostrativo con respecto al sustantivo en su lengua.</prompt>
        
@@ -95,7 +95,7 @@
           <checkbox id="NPArtAndDemBothCooccurYesArtPosBefore" dataItem="demAndArtArtBefore">Antes del sustantivo</checkbox>
           <checkbox id="NPArtAndDemBothCooccurYesArtPosAfter" dataItem="demAndArtArtAfter">Después del sustantivo</checkbox>
           <checkbox id="NPArtAndDemBothCooccurYesArtPosBoth" dataItem="demAndArtArtBoth">En ambos lados en la misma frase nominal</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesArtPosOther" dataItem="demAndArtArtOther">En mi lengua, el artículo puede presentarse: <textBox  id="NPArtAndDemBothCooccurYesArtPosOtherContent" dataItem="demAndArtArtOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesArtPosOther" dataItem="demAndArtArtOther">En mi lengua, el artículo puede presentarse: <textBox  id="NPArtAndDemBothCooccurYesArtPosOtherContent" dataItem="demAndArtArtOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemBothCooccurYesArtPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndArtPosNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el artículo con respecto al sustantivo en su lengua.</prompt>
        <instruction id="NPArtDemEitherSideRestrictedInstruction" show="swNPArtDemEitherSideRestricted">In the lexicon, mark those which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any articles or demonstratives which can occur on either side.</instruction>
@@ -140,7 +140,7 @@
       <checkbox id="NPDemBothClassifierSpecificPosAfterNBeforeDem"  dataItem="classifierSpecificDemBothPosAfterNBeforeDem">Después del sustantivo pero antes del demostrativo</checkbox>
       <checkbox id="NPDemBothClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemBothPosPrefixDem">Como un prefijo en el demostrativo</checkbox>
       <checkbox id="NPDemBothClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemBothPosSuffixDem">Como un sufijo en el demostrativo</checkbox>
-         <checkbox id="NPDemBothClassifierSpecificPosOther"  dataItem="classifierSpecificDemBothPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPClassifierSpecificDemBothPosOtherContent" dataItem="classifierSpecificDemBothPosOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="NPDemBothClassifierSpecificPosOther"  dataItem="classifierSpecificDemBothPosOther">En mi lengua, los clasificadores pueden presentarse: <textBox  id="NPClassifierSpecificDemBothPosOtherContent" dataItem="classifierSpecificDemBothPosOther" cols="70" rows="1" kind="other"/></checkbox>
      </checkboxGroup>
      <prompt id="NPDemBothClassifierSpecificPosNoCheckPrompt" show="swNPDemBothClassifierPresentYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los clasificadores con respecto al demostrativo y al sustantivo en su lengua, o cambia la respuesta anterior a “No, un clasificador nunca se presenta en esta tipo de frase nominal”.</prompt>
      

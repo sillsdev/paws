@@ -98,7 +98,7 @@
 					<checkbox id="NPPossMarkedYesWordBefore" dataItem="possWordBefore">Avant le possesseur</checkbox>
 					<checkbox id="NPPossMarkedYesWordAfter" dataItem="possWordAfter">Après le possesseur</checkbox>
 					<checkbox id="NPPossMarkedYesWordBoth" dataItem="possWordBoth">De part et d’autre du possesseur</checkbox>
-					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">Dans ma langue, le mot possessif peut se trouver dans les positions suivantes : <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1" kind="table"/></checkbox>
+					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">Dans ma langue, le mot possessif peut se trouver dans les positions suivantes : <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1" kind="other"/></checkbox>
 				</checkboxGroup>
 		<prompt id="NPPossMarkedYesWordAndNoCheckPrompt" show="swPossMarkedYesWordAndNoCheck">ATTENTION : Vous avez dit ci-dessus que les possesseurs sont marqués par un mot possessif mais vous n'avez pas coché de case pour indiquer où ce mot se place. Cochez ici la ou les cases correspondant à votre langue . Si ce n’est pas le cas, il faut changer la réponse ci-dessus en indiquant un type de marqueur différent ou cocher la case  « Non, il n’y a pas de marqueur spécial ».</prompt>
 	   

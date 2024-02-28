@@ -49,7 +49,7 @@
           <checkbox id="RelClTypeCPWh" dataItem="relTypeCPWh">Como una pregunta abierta con ‘quien' o ‘cual' desplazado hacia la izquierda</checkbox>
           <checkbox id="RelClTypeIPRel" dataItem="relTypeIPRel">Como una oración regular con un indicador relativo unido al verbo</checkbox>
           <checkbox id="RelClTypeIP" dataItem="relTypeIP">Solamente una oración regular modificando a un sustantivo, con ningún indicador especial</checkbox>
-          <checkbox id="RelClTypeOther" dataItem="relTypeOther">En mi lengua, las cláusulas relativas se forman con: <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="RelClTypeOther" dataItem="relTypeOther">En mi lengua, las cláusulas relativas se forman con: <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="RelClTypeNoCheckPrompt" show="swRelClExistYesAndTypeNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir qué tipos de las cláusulas relativas tiene su lengua, o cambia su respuesta arriba a ‘No, no hay ningún tipo de cláusula relativa’.</prompt>
        
@@ -95,7 +95,7 @@
           <checkbox id="RelClWordBefore" checked="yes" dataItem="relWordBefore">Antes de la parte de la cláusula relativa que es una oración</checkbox>
           <checkbox id="RelClWordAfter" checked="yes" dataItem="relWordAfter">Después de la parte de la cláusula relativa que es una oración</checkbox>
           <checkbox id="RelClWordBoth" checked="yes" dataItem="relWordBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="RelClWordOther" dataItem="relWordOther">En mi lengua, el indicador relativo puede presentarse: <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="RelClWordOther" dataItem="relWordOther">En mi lengua, el indicador relativo puede presentarse: <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="RelClWordPosNoCheckPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el indicador relativo con respecto de la parte de la cláusula relativa que es una oración en su lengua.</prompt>
        <instruction id="RelClTypeCPCompEitherRestrictedInstruction" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeBoth">In the lexicon, mark those markers which can only occur initially with the feature <feature>CP-initial</feature> and those which can only occur finally with the feature <feature>CP-final</feature>.  Do not enter either feature on any markers which can occur on either side.</instruction>

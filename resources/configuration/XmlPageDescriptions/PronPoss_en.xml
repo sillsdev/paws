@@ -55,7 +55,7 @@
           <checkbox id="PronPossAffixYes" dataItem="possAffixPron">One or more affixes are used to make another pronoun into a possessive pronoun</checkbox>
           <checkbox id="PronPossAffixYesWord" dataItem="possAffixWord">One or more affixes are used to make another word (which is not a pronoun) into a possessive pronoun</checkbox>
           <checkbox id="PronPossAffixNoPhrase" dataItem="possPhrase">The possessor pronouns are used to possess a special word (which is not a pronoun) and this becomes a possessive phrase that has the same meaning and usage as a stand alone possessive pronoun</checkbox>
-          <checkbox id="PronPossAffixOther" dataItem="possOther">My language does the following to form a possessive pronoun:<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronPossAffixOther" dataItem="possOther">My language does the following to form a possessive pronoun:<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronPossAffixNoCheckPrompt" show="swPronPossYesNoCheck">WARNING: You said above that your language has possessive pronouns, but you did not check any of the options to say how they are formed.  Please either check one or more options as appropriate, unless you do not have any possessive pronouns, in which case you should not have added any forms to the text boxes and should change the answer above to ‘No’.</prompt>

@@ -54,7 +54,7 @@
               <checkbox id="PPModifiersOrdinal" dataItem="ppModifierOrdinal">Ordinaux</checkbox>
               <checkbox id="PPModifiersManner" dataItem="ppModifierManner">Adverbes de manière</checkbox>
               <checkbox id="PPModifiersLocative" dataItem="ppModifierLocative">Adverbes de lieu</checkbox>
-              <checkbox id="PPModifiersOther" dataItem="ppModifierOther">Dans ma langue, voici d’autres modificateurs qui peuvent être utilisés : <textBox  id="PPModifiersOtherContent" dataItem="ppModifierOther" cols="70"  rows="1" kind="table"/></checkbox>
+              <checkbox id="PPModifiersOther" dataItem="ppModifierOther">Dans ma langue, voici d’autres modificateurs qui peuvent être utilisés : <textBox  id="PPModifiersOtherContent" dataItem="ppModifierOther" cols="70"  rows="1" kind="other"/></checkbox>
            </checkboxGroup>
            </radioGroup>
       <prompt id="PPModifiersNoCheckPrompt" show="swPPModifiersYesandNoCheck">ATTENTION : vous devez cocher au moins une case pour décrire les modificateurs dans votre langue, sinon, il faut changer la réponse et cocher « Non ».</prompt>
@@ -69,7 +69,7 @@
          <checkbox id="PPDegreePosBefore"  dataItem="ppDegreePosBefore">Avant</checkbox>
          <checkbox id="PPDegreePosAfter"  dataItem="ppDegreePosAfter">Après</checkbox>
          <checkbox id="PPDegreePosBoth"  dataItem="ppDegreePosBoth">De part et d’autre du syntagme</checkbox>
-         <checkbox id="PPDegreePosOther"  dataItem="ppDegreePosOther">Dans ma langue ils se trouvent dans la position suivante : <textBox  id="PPDegreePosOtherContent" dataItem="ppDegreePosOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="PPDegreePosOther"  dataItem="ppDegreePosOther">Dans ma langue ils se trouvent dans la position suivante : <textBox  id="PPDegreePosOtherContent" dataItem="ppDegreePosOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="PPDegreeWordNoCheckPrompt" show="swPPDegreeYesandNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où ces modificateurs mots de degré se trouvent par rapport au reste du syntagme adpositionnel dans votre langue, sinon, il faut changer la réponse ci-dessus et cocher un type différent de modificateur. Dans ce cas, vous ne devriez pas avoir d'exemples de syntagmes adpositionnels modifiés par un mot de degré dans la boîte ci-dessus.</prompt>
       <instruction id="PPModifiersDegreeYesInstruction" show="swPPModifiersYesDegree">In the lexicon, mark the degree words with the features <feature>makeDeg modifies_PP</feature>.    (If any of these degree words are the same as those which can modify another category, you can simply add the additional feature <feature>modifies_PP</feature> to the same lexical entry.)</instruction>
@@ -85,7 +85,7 @@
          <checkbox id="PPOrdinalPosBefore"  dataItem="ppOrdinalPosBefore">Avant</checkbox>
          <checkbox id="PPOrdinalPosAfter"  dataItem="ppOrdinalPosAfter">Après</checkbox>
          <checkbox id="PPOrdinalPosBoth"  dataItem="ppOrdinalPosBoth">De part et d’autre du syntagme</checkbox>
-         <checkbox id="PPOrdinalPosOther"  dataItem="ppOrdinalPosOther">Dans ma langue ils peuvent se trouver dans la position suivante : <textBox  id="PPOrdinalPosOtherContent" dataItem="ppOrdinalPosOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="PPOrdinalPosOther"  dataItem="ppOrdinalPosOther">Dans ma langue ils peuvent se trouver dans la position suivante : <textBox  id="PPOrdinalPosOtherContent" dataItem="ppOrdinalPosOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="PPOrdinalNoCheckPrompt" show="swPPOrdinalYesandNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où ces modificateurs ordinaux se placent par rapport au reste du syntagme adpositionnel dans votre langue, sinon, il faut changer la réponse que vous avez donné ci-dessus et cocher un autre type de modificateur. Dans ce cas, vous ne devriez pas avoir d'exemples de syntagmes adpositionnels modifiés parun nombre ordinal dans la boîte ci-dessus.</prompt>
       <instruction id="PPModifiersOrdinalYesInstruction" show="swPPModifiersYesOrdinal">In the lexicon, mark the ordinals with the feature <feature>modifies_PP</feature>.</instruction>
@@ -101,7 +101,7 @@
          <checkbox id="PPMannerPosBefore"  dataItem="ppMannerPosBefore">Avant</checkbox>
          <checkbox id="PPMannerPosAfter"  dataItem="ppMannerPosAfter">Après</checkbox>
          <checkbox id="PPMannerPosBoth"  dataItem="ppMannerPosBoth">Des deux côtés en même temps</checkbox>
-         <checkbox id="PPMannerPosOther"  dataItem="ppMannerPosOther">Dans ma langue ils se trouvent dans la position suivante : <textBox  id="PPMannerPosOtherContent" dataItem="ppMannerPosOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="PPMannerPosOther"  dataItem="ppMannerPosOther">Dans ma langue ils se trouvent dans la position suivante : <textBox  id="PPMannerPosOtherContent" dataItem="ppMannerPosOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="PPMannerNoCheckPrompt" show="swPPMannerYesandNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où ces modificateurs se placent par rapport au reste du syntagme adpositionnel dans votre langue, sinon, il faut changerz la réponse ci-dessus et cocher un type de modificateur différent. Dans ce cas vous ne devriez pas avoir d'exemples de syntagmes adpositionnels modifiés par des adverbiaux de manière dans la boîte ci-dessus.</prompt>
       <instruction id="PPModifiersMannerYesInstruction" show="swPPModifiersYesManner">In the lexicon, mark the manner adverbials with the feature <feature>modifies_PP</feature>.</instruction>
@@ -117,7 +117,7 @@
          <checkbox id="PPLocativePosBefore"  dataItem="ppLocativePosBefore">Avant</checkbox>
          <checkbox id="PPLocativePosAfter"  dataItem="ppLocativePosAfter">Après</checkbox>
          <checkbox id="PPLocativePosBoth"  dataItem="ppLocativePosBoth">De part et d’autre du syntagme</checkbox>
-         <checkbox id="PPLocativePosOther"  dataItem="ppLocativePosOther">Dans ma langue ils peuvent se trouver dans la position suivante : <textBox  id="PPLocativePosOtherContent" dataItem="ppLocativePosOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="PPLocativePosOther"  dataItem="ppLocativePosOther">Dans ma langue ils peuvent se trouver dans la position suivante : <textBox  id="PPLocativePosOtherContent" dataItem="ppLocativePosOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="PPLocativeNoCheckPrompt" show="swPPLocativeYesandNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où les modificateurs adverbes de lieu se trouvent par rapport au reste du syntagme adpositionnel dans votre langue, sinon, il faut changer la réponse ci-dessus et cocher un type différent de modificateur. Dans ce cas, vous ne devriez pas avoir d'exemples de syntagmes adpositionnels modifiés par un adverbe de lieu dans la boîte ci-dessus.</prompt>
       <instruction id="PPModifiersLocativeYesInstruction" show="swPPModifiersYesLocative">In the lexicon, mark the locative adverbials with the feature <feature>modifies_PP</feature>.</instruction>

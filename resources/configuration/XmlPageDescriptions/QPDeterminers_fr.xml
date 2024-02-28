@@ -61,7 +61,7 @@
 	      <checkbox id="QPDeterminerPosBefore"  dataItem="determinerPosBefore">Avant le syntagme nominal</checkbox>
 	      <checkbox id="QPDeterminerPosAfter"  dataItem="determinerPosAfter">Après le syntagme nominal</checkbox>
 	      <checkbox id="QPDeterminerPosBoth"  dataItem="determinerPosBoth">De part et d’autre du syntagme nominal à la fois</checkbox>
-	      <checkbox id="QPDeterminerPosOther"  dataItem="determinerPosOther">Dans ma langue, ils peuvent paraître dans la position suivante: <textBox  id="QPDeterminerPosOtherContent" dataItem="determinerPosOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="QPDeterminerPosOther"  dataItem="determinerPosOther">Dans ma langue, ils peuvent paraître dans la position suivante: <textBox  id="QPDeterminerPosOtherContent" dataItem="determinerPosOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDeterminerWordNoCheckPrompt" show="swQPDeterminerYesandNoCheck">ATTENTION : Il faut cocher au moins une boîte pour décrire où ces quantifieurs paraissent relatif au reste du syntagme nominal dans votre langue, sinon il faut changer la réponse ci-dessus et cocher   « Non, ils se rattachent tous à un autre mot dans le syntagme nominal ».</prompt>
 	   <instruction id="QPDeterminerYesInstruction" show="swQPDeterminerTypeYesOrSomeAndDeterminerYesOrSome">In the lexicon, mark this type of quantifier determiner that is written as an independent word with the feature <feature>determiner</feature>.  If it does not already have the category <category>Q</category>, add the feature <feature>makeQ</feature> to change the category for the syntax.  If a particular quantifier determiner can only go with plural nouns or if it marks plural itself (such as <example>some</example>), add the feature <feature>plural</feature> to that entry.  If a particular quantifier determiner can only go with singular nouns (such as <example>every</example> in English), add the feature <feature>singular</feature> to that entry.  Do not add either feature to a quantifier determiner which can go with either singular or plural nouns. </instruction>
@@ -77,7 +77,7 @@
 	      <checkbox id="QPDeterminerEnclitic" dataItem="determinerTypeEnclitic">Comme un enclitique de constituant qui se rattache à la fin du mot qui termine le syntagme nominal</checkbox>
 	      <checkbox id="QPDeterminerPrefix" dataItem="determinerTypePrefix">Comme un préfixe qui se rattache au nom principal du syntagme nominal</checkbox>
 	      <checkbox id="QPDeterminerSuffix" dataItem="determinerTypeSuffix">Comme un préfixe qui se rattache au nom principal du syntagme nominal</checkbox>
-	      <checkbox id="QPDeterminerOther" dataItem="determinerTypeOther">Dans ma langue, ces éléments peuvent se rattachent de la façon suivante : <textBox  id="QPDeterminerTypeOtherContent" dataItem="determinerTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="QPDeterminerOther" dataItem="determinerTypeOther">Dans ma langue, ces éléments peuvent se rattachent de la façon suivante : <textBox  id="QPDeterminerTypeOtherContent" dataItem="determinerTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDeterminerAttachesNoCheckPrompt" show="swQPDeterminerTypeNoAndNoCheck">ATTENTION : Il faut cocher au moins une boîte pour décrire comment ces quantifieurs se rattachent dans votre langue, sinon il faut changer la réponse ci-dessus et cocher « Oui, ils sont tous des mots indépendants ».</prompt>
 	   

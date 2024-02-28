@@ -16,7 +16,7 @@
           <checkbox id="IPProDropYes" dataItem="proDropYes">Se permite el sujeto tácito en cualquier tipo de oración</checkbox>
           <checkbox id="IPProDropClitic" dataItem="proDropClitic">El sujeto puede parecer como no está presente debido a clíticos pronominales que se unen al verbo</checkbox>
           <checkbox id="IPProDropImp" dataItem="proDropImp">Se permite el sujeto tácito en imperativas</checkbox>
-          <checkbox id="IPProDropOther" dataItem="proDropOther">En mi lengua, el sujeto tácito se permite en esta construcción: <textBox  id="IPProDropOtherContent" dataItem="proDropOther" cols="70"  rows="1" kind="table"/></checkbox>
+          <checkbox id="IPProDropOther" dataItem="proDropOther">En mi lengua, el sujeto tácito se permite en esta construcción: <textBox  id="IPProDropOtherContent" dataItem="proDropOther" cols="70"  rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="IPProDropNoCheckPrompt" show="swIPProDropNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cuáles son las circumstancias en que un sujeto tácito se permite en su lengua.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno, el sujeto debe ser explícito aun en las oraciones imperativas’ abajo.</prompt>
        <checkboxGroup id="IPProDropNoNoneTable" show="swIPProDropNoCheck">

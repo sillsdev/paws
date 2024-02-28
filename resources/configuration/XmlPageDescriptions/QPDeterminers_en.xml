@@ -61,7 +61,7 @@
 	      <checkbox id="QPDeterminerPosBefore"  dataItem="determinerPosBefore">Before it</checkbox>
 	      <checkbox id="QPDeterminerPosAfter"  dataItem="determinerPosAfter">After it</checkbox>
 	      <checkbox id="QPDeterminerPosBoth"  dataItem="determinerPosBoth">On both sides at the same time</checkbox>
-	      <checkbox id="QPDeterminerPosOther"  dataItem="determinerPosOther">In my language, they may occur in the following position: <textBox  id="QPDeterminerPosOtherContent" dataItem="determinerPosOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="QPDeterminerPosOther"  dataItem="determinerPosOther">In my language, they may occur in the following position: <textBox  id="QPDeterminerPosOtherContent" dataItem="determinerPosOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDeterminerWordNoCheckPrompt" show="swQPDeterminerYesandNoCheck">WARNING: You need to check at least one box to describe where these quantifiers occur with respect to the rest of the nominal phrase in your language, or change the answer above to “No, they all attach to another word in the nominal phrase”.</prompt>
 	   <instruction id="QPDeterminerYesInstruction" show="swQPDeterminerTypeYesOrSomeAndDeterminerYesOrSome">In the lexicon, mark this type of quantifier determiner that is written as an independent word with the feature <feature>makeDet</feature> to change the category for the syntax.  If a particular quantifier determiner can only go with plural nouns or if it marks plural itself (such as <example>some</example>), add the feature <feature>plural</feature> to that entry.  If a particular quantifier determiner can only go with singular nouns (such as <example>every</example> in English), add the feature <feature>singular</feature> to that entry.  Do not add either feature to a quantifier determiner which can go with either singular or plural nouns. </instruction>
@@ -77,7 +77,7 @@
 	      <checkbox id="QPDeterminerEnclitic" dataItem="determinerTypeEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the nominal phrase</checkbox>
 	      <checkbox id="QPDeterminerPrefix" dataItem="determinerTypePrefix">As a prefix which attaches to the head noun of the nominal phrase</checkbox>
 	      <checkbox id="QPDeterminerSuffix" dataItem="determinerTypeSuffix">As a suffix which attaches to the head noun of the nominal phrase</checkbox>
-	      <checkbox id="QPDeterminerOther" dataItem="determinerTypeOther">In my language, these elements may attach as follows: <textBox  id="QPDeterminerTypeOtherContent" dataItem="determinerTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="QPDeterminerOther" dataItem="determinerTypeOther">In my language, these elements may attach as follows: <textBox  id="QPDeterminerTypeOtherContent" dataItem="determinerTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDeterminerAttachesNoCheckPrompt" show="swQPDeterminerTypeNoAndNoCheck">WARNING: You need to check at least one box to describe how these quantifiers attach in your language, or change the answer above to “Yes, they are all independent words”.</prompt>
 	   

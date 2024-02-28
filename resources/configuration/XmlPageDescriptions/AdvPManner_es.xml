@@ -39,7 +39,7 @@ y <example>tan</example>, como en:
              <checkbox id="AdvPMannerWordDegreeWord" dataItem="mannerWordDegreeWord">Con ciertas palabras de grado independientes</checkbox>
              <checkbox id="AdvPMannerWordDegreeAttaches" dataItem="mannerWordDegreeAttaches">Hay afijos o clíticos que se unen al adverbio de modo para intensificarlo</checkbox>
              <checkbox id="AdvPMannerWordDegreeRedup" dataItem="mannerWordDegreeRedup">Utiliza reduplicación para intensificar el significado del adverbio de modo</checkbox>
-             <checkbox id="AdvPMannerWordDegreeOther" dataItem="mannerWordDegreeOther">En mi lengua, los adverbios de modo se pueden modificar por:<textBox  id="AdvPMannerWordDegreeOtherContent" dataItem="mannerWordDegreeOther" cols="70" rows="1" kind="table"/></checkbox>
+             <checkbox id="AdvPMannerWordDegreeOther" dataItem="mannerWordDegreeOther">En mi lengua, los adverbios de modo se pueden modificar por:<textBox  id="AdvPMannerWordDegreeOtherContent" dataItem="mannerWordDegreeOther" cols="70" rows="1" kind="other"/></checkbox>
           </checkboxGroup>
        </radioGroup>
        <prompt id="AdvPMannerWordDegreeNoCheckPrompt" show="swAdvPMannerTypeWordDegreeYesNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cuáles modificadores pueden modificar o intensificar a los adverbios de modo en su lengua, o cambia la respuesta de arriba a “No, los adverbios de modo no se modifican ni intensifican”.</prompt>
@@ -53,7 +53,7 @@ y <example>tan</example>, como en:
           <checkbox id="AdvPMannerDegreeWordBefore" checked="yes" dataItem="mannerDegreeWordBefore">Antes del adverbio</checkbox>
           <checkbox id="AdvPMannerDegreeWordAfter" checked="yes" dataItem="mannerDegreeWordAfter">Después del adverbio</checkbox>
           <checkbox id="AdvPMannerDegreeWordBoth" checked="yes" dataItem="mannerDegreeWordBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="AdvPMannerDegreeWordOther" checked="yes" dataItem="mannerDegreeWordOther">En mi lengua, estas palabras de grado pueden presentarse:  <textBox  id="AdvPMannerDegreeWordOtherContent" dataItem="mannerDegreeWordOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPMannerDegreeWordOther" checked="yes" dataItem="mannerDegreeWordOther">En mi lengua, estas palabras de grado pueden presentarse:  <textBox  id="AdvPMannerDegreeWordOtherContent" dataItem="mannerDegreeWordOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="AdvPMannerDegreeWordNoCheckPrompt" show="swAdvPMannerDegreeWordAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estas palabras de grado en su lengua, o cambia la respuesta de arriba a un tipo diferente de modificador.</prompt>
        <instruction  id="AdvPMannerDegreeYesInstruction" show="swAdvPMannerTypeWordAndYesDegree">In the lexicon, key the features <feature>makeDeg modifies_manner</feature> on the degree words to change the category and allow it to modify manner adverbs.  Simply add the <feature>modifies_manner</feature> feature if this same degree word can modify temporal and/or locative adverbs and you already marked it with those features.</instruction>
@@ -78,7 +78,7 @@ y <example>tan</example>, como en:
              <checkbox id="AdvPMannerAffixDegreeYesBefore" dataItem="mannerAffixDegreeYesBefore">Un afijo de grado puede presentarse antes del afijo adverbial de modo</checkbox>
              <checkbox id="AdvPMannerAffixDegreeYesAfter" dataItem="mannerAffixDegreeYesAfter">Un afijo de grado puede presentarse después del afijo adverbial de modo</checkbox>
              <checkbox id="AdvPMannerAffixDegreeRedup" dataItem="mannerAffixDegreeRedup">Utiliza reduplicación para intensificar el significado del afijo adverbial de modo</checkbox>
-             <checkbox id="AdvPMannerAffixDegreeOther" dataItem="mannerAffixDegreeOther">En mi lengua, los afijos adverbiales de modo se pueden modificar por:<textBox  id="AdvPMannerAffixDegreeOtherContent" dataItem="mannerAffixDegreeOther" cols="70" rows="1" kind="table"/></checkbox>
+             <checkbox id="AdvPMannerAffixDegreeOther" dataItem="mannerAffixDegreeOther">En mi lengua, los afijos adverbiales de modo se pueden modificar por:<textBox  id="AdvPMannerAffixDegreeOtherContent" dataItem="mannerAffixDegreeOther" cols="70" rows="1" kind="other"/></checkbox>
           </checkboxGroup>
        </radioGroup>
        <prompt id="AdvPMannerAffixDegreeNoCheckPrompt" show="swAdvPMannerTypeAffixDegreeYesNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cuáles modificadores pueden modificar o intensificar a los afijos adverbiales de modo en su lengua, o cambia la respuesta de arriba a “No, los afijos adverbiales de modo no se modifican ni intensifican”.</prompt>

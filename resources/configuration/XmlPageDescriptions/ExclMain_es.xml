@@ -66,7 +66,7 @@
           <checkbox id="ExclMPosBefore" dataItem="exclMBefore">Antes de la frase adjetival</checkbox>
           <checkbox id="ExclMPosAfter" dataItem="exclMAfter">Después de la frase adjetival</checkbox>
           <checkbox id="ExclMPosBoth" dataItem="exclMBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="ExclMPosOther" dataItem="exclMOther" >En mi lengua, la palabra especial que expresa una exclamación puede presentarse: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="ExclMPosOther" dataItem="exclMOther" >En mi lengua, la palabra especial que expresa una exclamación puede presentarse: <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="ExclMPosNoCheckPrompt" show="swExclMYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estas palabras especiales que experesan una exclamación en su lengua, o cambia su respuesta de arriba a ‘No’. En este caso, no debe ser ningún ejemplo en el campo de arriba tampoco.</prompt>       
        <instruction id="ExclMInstruction" show="swExclMYes">In the lexicon, add the feature <feature>makeExcl</feature> to each word which signals an exclamation to assure the proper category for the syntax.</instruction>

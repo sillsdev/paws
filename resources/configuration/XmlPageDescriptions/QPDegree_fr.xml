@@ -64,7 +64,7 @@
 	   	<checkbox id="QPDegreeBefore"  dataItem="degreeBefore">Avant le quantifieur</checkbox>
 	   	<checkbox id="QPDegreeAfter"  dataItem="degreeAfter">Après le quantifieur</checkbox>
 	   	<checkbox id="QPDegreeBoth"  dataItem="degreeBoth">De part et d’autredu quantifieur</checkbox>
-	   	<checkbox id="QPDegreeOther"  dataItem="degreeOther">Dans ma langue, ils peuvent se présenter dans la position suivante : <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPDegreeOther"  dataItem="degreeOther">Dans ma langue, ils peuvent se présenter dans la position suivante : <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 		<prompt id="QPDegreeWordPosNoCheckPrompt" show="swQPDegreeWordPosNoCheck">ATTENTION : Il faut cocher au moins une boîte pour décrire où ces mots de degré se présentent par rapport au quantifieur dans votre langue, sinon il faut modifier la réponse ci-dessus et dire que les éléments de degré ne sont pas exprimés comme mots indépendants.</prompt>  
 	   <instruction id="QPDegreeYesInstruction" show="swQPDegreeYesOrSome">
@@ -80,7 +80,7 @@
 	   	<prompt>D’après les exemples dans la boîte ci-dessus, où les éléments de degré se rattachent-ils (facultativement) au quantifieur ?  Cochez toutes les options valables pour votre langue.</prompt>
 	   	<checkbox id="QPDegreeTypePrefix" dataItem="degreeTypePrefix">Comme un préfixe qui se rattache au quantifieur</checkbox>
 	   	<checkbox id="QPDegreeTypeSuffix" dataItem="degreeTypeSuffix">Comme un suffixe qui se rattache au quantifieur</checkbox>
-	   	<checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">Dans ma langue, ces éléments se rattachent de la façon suivante :<textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">Dans ma langue, ces éléments se rattachent de la façon suivante :<textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 		<prompt id="QPDegreeAttachesPosNoCheckPrompt" show="swQPDegreeAttachesPosNoCheck">ATTENTION : Il faut cocher au moins une boîte pour décrire où ces affixes de degré se rattachent au quantifieur dans votre langue, sinon il faut modifier votre réponse et pour dire que les éléments de degré sont tous écrits comme des mots indépendants.</prompt>  
 <br/>

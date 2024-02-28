@@ -17,7 +17,7 @@
           <prompt><br/>Empezando con el tipo que se componen de un cuantificador y un sustantivo genérico (o el uso impersonal para el número ‘uno’), ¿cómo se expresan estos indefinidos en su lengua? Seleccione todas las opciones que son correctas en su lengua.  Si ninguna opción se permite en su lengua, quita estas opciones y seleccione la opción para ‘Ninguno’ más abajo</prompt>
           <checkbox id="PronIndefTypeQWord" dataItem="indefQWord">Un cuantificador y un sustantivo genérico se fusionan en una sola palabra</checkbox>
           <checkbox id="PronIndefTypeQPhrase" dataItem="indefQPhrase">Un cuantificador se presenta con un sustantivo genérico, pero no se combinan en una sola palabra; se permanecen como frases nominales</checkbox>
-          <checkbox id="PronIndefTypeQOther" dataItem="indefQOther">En mi lengua, estos significados indefinidos se expresan con: <textBox id="PronIndefTypeQOtherContent" dataItem="indefQOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronIndefTypeQOther" dataItem="indefQOther">En mi lengua, estos significados indefinidos se expresan con: <textBox id="PronIndefTypeQOtherContent" dataItem="indefQOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="PronIndefTypeQNoCheckPrompt" show="swPronIndefTypeQNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo su lengua expresa estos significados indefinidos.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno’ abajo.</prompt>
        <checkboxGroup id="PronIndefTypeQNoneTable" show="swPronIndefTypeQNoCheck">
@@ -36,7 +36,7 @@
           <checkbox id="PronIndefTypeQPQBefore" checked="yes" dataItem="indefTypeQPQBefore">Antes del sustantivo genérico</checkbox>
           <checkbox id="PronIndefTypeQPQAfter" checked="yes" dataItem="indefTypeQPQAfter">Después del  sustantivo genérico</checkbox>
           <checkbox id="PronIndefTypeQPQBoth" checked="yes" dataItem="indefTypeQPQBoth">En ambos lados en la misma frase</checkbox>
-          <checkbox id="PronIndefTypeQPQOther" checked="yes" dataItem="indefTypeQPQOther">En mi lengua, el cuantificador puede presentarse: <textBox  id="PronIndefTypeQPQOtherContent" dataItem="indefTypeQPQOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronIndefTypeQPQOther" checked="yes" dataItem="indefTypeQPQOther">En mi lengua, el cuantificador puede presentarse: <textBox  id="PronIndefTypeQPQOtherContent" dataItem="indefTypeQPQOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="PronIndefTypeQPPhraseNoCheckPrompt" show="swPronIndefTypeQPPhraseAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el cuantificador con respecto del sustantivo genérico en su lengua, o cambia la respuesta anterior a una forma diferente.</prompt>
        <instruction id="PronIndefTypeQPhraseInstruction" show="swPronIndefTypeQPhrase">In the lexicon, mark the generic noun with the feature <feature>generic</feature> and make sure it has the category <category>N</category>.</instruction>           
@@ -50,7 +50,7 @@
           <prompt><br/>Ahora, se consideren los indefinidos que se componen de un pronombre interrogativo y una palabra indefinida, como ‘whoever (quienquiera)’ y ‘whatever (quequiera)’.  ¿Cómo se expresan estos indefinidos en su lengua? Seleccione todas las opciones que se aplican.  Si ninguna opción se permite en su lengua, quita estas opciones y seleccione la opción para ‘Ninguno’ más abajo</prompt>
           <checkbox id="PronIndefTypeIntWord" dataItem="indefIntWord">Un pronombre interrogativo y una palabra indefinida se fusionan en una sola palabra</checkbox>
           <checkbox id="PronIndefTypeIntPhrase" dataItem="indefIntPhrase">Un pronombre interrogativo se presenta con una palabra indefinida, pero no se combinanan en una sola palabra; se permanecen como una frase nominal</checkbox>
-          <checkbox id="PronIndefTypeIntOther" dataItem="indefIntOther">En mi lengua, estos significados indefinidos se expresan con:<textBox  id="PronIndefTypeIntOtherContent" dataItem="indefIntOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronIndefTypeIntOther" dataItem="indefIntOther">En mi lengua, estos significados indefinidos se expresan con:<textBox  id="PronIndefTypeIntOtherContent" dataItem="indefIntOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="PronIndefTypeIntNoCheckPrompt" show="swPronIndefTypeIntNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo su lengua expresa estos significados indefinidos.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno’ abajo.</prompt>
        <checkboxGroup id="PronIndefTypeIntNoneTable" show="swPronIndefTypeIntNoCheck">
@@ -69,7 +69,7 @@
           <checkbox id="PronIndefTypeIntPhraseBefore" checked="yes" dataItem="indefTypeIntBefore">Antes del indefinido</checkbox>
           <checkbox id="PronIndefTypeIntPhraseAfter" checked="yes" dataItem="indefTypeIntAfter">Después del indefinido</checkbox>
           <checkbox id="PronIndefTypeIntPhraseBoth" checked="yes" dataItem="indefTypeIntBoth">En ambos lados en la misma frase</checkbox>
-          <checkbox id="PronIndefTypeIntPhraseOther" checked="yes" dataItem="indefTypeIntOther">En mi lengua, el pronombre interrogativo puede presentarse: <textBox  id="PronIndefTypeIntPhraseOtherContent" dataItem="indefTypeIntOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronIndefTypeIntPhraseOther" checked="yes" dataItem="indefTypeIntOther">En mi lengua, el pronombre interrogativo puede presentarse: <textBox  id="PronIndefTypeIntPhraseOtherContent" dataItem="indefTypeIntOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="PronIndefTypeIntPhraseNoCheckPrompt" show="swPronIndefTypeIntPhraseAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el pronombre interrogativo con respecto de la palabra indefinida en su lengua, o cambia la respuesta anterior a una forma diferente.</prompt>
        <instruction id="PronIndefTypeIntPhraseInstruction" show="swPronIndefTypeIntPhrase">In the lexicon, key the feature <feature>makeIndef</feature> on the indefinite word to give it a special category. </instruction>

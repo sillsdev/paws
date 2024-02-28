@@ -56,7 +56,7 @@
               <checkbox id="PPModifiersOrdinal" dataItem="ppModifierOrdinal">Ordinales</checkbox>
               <checkbox id="PPModifiersManner" dataItem="ppModifierManner">Adverbios de modo</checkbox>
               <checkbox id="PPModifiersLocative" dataItem="ppModifierLocative">Adverbios de lugar</checkbox>
-              <checkbox id="PPModifiersOther" dataItem="ppModifierOther">En mi lengua, se utilizan estos otros modificadores: <textBox  id="PPModifiersOtherContent" dataItem="ppModifierOther" cols="70"  rows="1" kind="table"/></checkbox>
+              <checkbox id="PPModifiersOther" dataItem="ppModifierOther">En mi lengua, se utilizan estos otros modificadores: <textBox  id="PPModifiersOtherContent" dataItem="ppModifierOther" cols="70"  rows="1" kind="other"/></checkbox>
            </checkboxGroup>
         </radioGroup>
       <prompt id="PPModifiersNoCheckPrompt" show="swPPModifiersYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para descirbir cuáles modicifadores pueden presentarse en su lengua, o cambia su respuesta de arriba a ‘No, ni las palabras de grado ni los ordinales ni los adverbios pueden a modificar las frases adposicionales como palabras independientes’.</prompt>
@@ -71,7 +71,7 @@
          <checkbox id="PPDegreePosBefore"  dataItem="ppDegreePosBefore">Antes de la frase</checkbox>
          <checkbox id="PPDegreePosAfter"  dataItem="ppDegreePosAfter">Después de la frase</checkbox>
          <checkbox id="PPDegreePosBoth"  dataItem="ppDegreePosBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="PPDegreePosOther"  dataItem="ppDegreePosOther">En mi lengua, pueden presentarse: <textBox  id="PPDegreePosOtherContent" dataItem="ppDegreePosOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="PPDegreePosOther"  dataItem="ppDegreePosOther">En mi lengua, pueden presentarse: <textBox  id="PPDegreePosOtherContent" dataItem="ppDegreePosOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="PPDegreeWordNoCheckPrompt" show="swPPDegreeYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las palabras de grado con respecto al resto de la frase adposicional en su lengua, o cambia la respuesta anterior a un tipo diferente de modificador. En ese caso, no debe tener ejemplos de las frases adposicionales con palabras de grado que las modificn en el campo de arriba tampoco.</prompt>
       <instruction id="PPModifiersDegreeYesInstruction" show="swPPModifiersYesDegree">In the lexicon, mark the degree words with the features <feature>makeDeg modifies_PP</feature>.    (If any of these degree words are the same as those which can modify another category, you can simply add the additional feature <feature>modifies_PP</feature> to the same lexical entry.)</instruction>
@@ -87,7 +87,7 @@
          <checkbox id="PPOrdinalPosBefore"  dataItem="ppOrdinalPosBefore">Antes de la frase</checkbox>
          <checkbox id="PPOrdinalPosAfter"  dataItem="ppOrdinalPosAfter">Después de la frase</checkbox>
          <checkbox id="PPOrdinalPosBoth"  dataItem="ppOrdinalPosBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="PPOrdinalPosOther"  dataItem="ppOrdinalPosOther">En mi lengua, pueden presentarse: <textBox  id="PPOrdinalPosOtherContent" dataItem="ppOrdinalPosOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="PPOrdinalPosOther"  dataItem="ppOrdinalPosOther">En mi lengua, pueden presentarse: <textBox  id="PPOrdinalPosOtherContent" dataItem="ppOrdinalPosOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="PPOrdinalNoCheckPrompt" show="swPPOrdinalYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los ordinales con respecto al resto de la frase adposicional en su lengua, o cambia la respuesta anterior a un tipo diferente de modificador. En ese caso, no debe tener ejemplos de las frases adposicionales con ordinales que las modifican en el campo de arriba tampoco.</prompt>
       <instruction id="PPModifiersOrdinalYesInstruction" show="swPPModifiersYesOrdinal">In the lexicon, mark the ordinals with the feature <feature>modifies_PP</feature>.</instruction>
@@ -103,7 +103,7 @@
          <checkbox id="PPMannerPosBefore"  dataItem="ppMannerPosBefore">Antes de la frase</checkbox>
          <checkbox id="PPMannerPosAfter"  dataItem="ppMannerPosAfter">Después de la frase</checkbox>
          <checkbox id="PPMannerPosBoth"  dataItem="ppMannerPosBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="PPMannerPosOther"  dataItem="ppMannerPosOther">En mi lengua, pueden presentarse: <textBox  id="PPMannerPosOtherContent" dataItem="ppMannerPosOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="PPMannerPosOther"  dataItem="ppMannerPosOther">En mi lengua, pueden presentarse: <textBox  id="PPMannerPosOtherContent" dataItem="ppMannerPosOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="PPMannerNoCheckPrompt" show="swPPMannerYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los adverbios de modo con respecto al resto de la frase adposicional en su lengua, o cambia la respuesta anterior a un tipo diferente de modificador. En ese caso, no debe tener ejemplos de las frases adposicionales con adverbios de modo que las modifican en el campo de arriba tampoco.</prompt>
       <instruction id="PPModifiersMannerYesInstruction" show="swPPModifiersYesManner">In the lexicon, mark the manner adverbials with the feature <feature>modifies_PP</feature>.</instruction>
@@ -119,7 +119,7 @@
          <checkbox id="PPLocativePosBefore"  dataItem="ppLocativePosBefore">Antes de la frase</checkbox>
          <checkbox id="PPLocativePosAfter"  dataItem="ppLocativePosAfter">Después de la frase</checkbox>
          <checkbox id="PPLocativePosBoth"  dataItem="ppLocativePosBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="PPLocativePosOther"  dataItem="ppLocativePosOther">En mi lengua, pueden presentarse: <textBox  id="PPLocativePosOtherContent" dataItem="ppLocativePosOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="PPLocativePosOther"  dataItem="ppLocativePosOther">En mi lengua, pueden presentarse: <textBox  id="PPLocativePosOtherContent" dataItem="ppLocativePosOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="PPLocativeNoCheckPrompt" show="swPPLocativeYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los adverbios de lugar con respecto al resto de la frase adposicional en su lengua, o cambia la respuesta anterior a un tipo diferente de modificador. En ese caso, no debe tener ejemplos de las frases adposicionales con adverbios de lugar que las modifican en el campo de arriba tampoco.</prompt>
       <instruction id="PPModifiersLocativeYesInstruction" show="swPPModifiersYesLocative">In the lexicon, mark the locative adverbials with the feature <feature>modifies_PP</feature>.</instruction>

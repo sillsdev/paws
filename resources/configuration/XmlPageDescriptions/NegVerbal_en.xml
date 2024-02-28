@@ -14,7 +14,7 @@
       <checkbox id="NegTemporalTypeAdverbWord" dataItem="negTemporalTypeAdverbWord">An independent negative word occurs with the positive temporal adverb(s) to form the negative temporal adverb phrase(s)</checkbox>
       <checkbox id="NegTemporalTypeAffix" dataItem="negTemporalTypeAffix">It is a verbal affix</checkbox>
       <checkbox id="NegTemporalTypeVerb" dataItem="negTemporalTypeVerb">There is only a verbal negative affix, but a negative verb may occur with positive temporal adverbs to give a negative temporal meaning</checkbox>
-      <checkbox id="NegTemporalTypeOther" dataItem="negTemporalTypeOther">My language does the following to express the negative temporal meaning:<textBox  id="NegTemporalTypeOtherContent" dataItem="negTemporalTypeOther" rows="1" cols="70" kind="table"/></checkbox>
+      <checkbox id="NegTemporalTypeOther" dataItem="negTemporalTypeOther">My language does the following to express the negative temporal meaning:<textBox  id="NegTemporalTypeOtherContent" dataItem="negTemporalTypeOther" rows="1" cols="70" kind="other"/></checkbox>
    </checkboxGroup>
    <prompt id="NegTemporalTypeNoCheckPrompt" show="swNegTemporalTypeNoCheck">WARNING: You need to check at least one box to describe how your language expresses the negative temporal meaning.</prompt>
    <prompt id="NegTemporalExamplePrompt" show="swNegTemporalTypeWord">Key your examples of negative temporal adverbs here:</prompt>
@@ -40,7 +40,7 @@
       <checkbox id="NegTemporalAdverbWordBefore" checked="yes" dataItem="negTemporalAdverbWordBefore">Before the temporal adverb</checkbox>
       <checkbox id="NegTemporalAdverbWordAfter" checked="yes" dataItem="negTemporalAdverbWordAfter">After the temporal adverb</checkbox>
       <checkbox id="NegTemporalAdverbWordBoth" checked="yes" dataItem="negTemporalAdverbWordBoth">On both sides at the same time</checkbox>
-      <checkbox id="NegTemporalAdverbWordOther" checked="yes" dataItem="negTemporalAdverbWordOther">In my language, these negative words may occur as follows: <textBox  id="NegTemporalAdverbWordOtherContent" dataItem="negTemporalAdverbWordOther" rows="1" cols="70" kind="table"/></checkbox>
+      <checkbox id="NegTemporalAdverbWordOther" checked="yes" dataItem="negTemporalAdverbWordOther">In my language, these negative words may occur as follows: <textBox  id="NegTemporalAdverbWordOtherContent" dataItem="negTemporalAdverbWordOther" rows="1" cols="70" kind="other"/></checkbox>
    </checkboxGroup>	
    <prompt id="NegTemporalAdverbWordNoCheckPrompt" show="swNegTemporalAdverbWordAndNoCheck">WARNING: You need to check at least one box to describe where these negative words occur in your language, or change the answer above as to how the negative temporal adverbs are related to the positive forms.</prompt>
    <instruction id="NegTemporalTypeAdverbWordInstruction" show="swNegTemporalTypeAdverbWord">In the lexicon, key the features <feature>makeNeg modifies_temporal</feature>
@@ -78,7 +78,7 @@
       <checkbox id="NegLocativeTypeAdverbWord" dataItem="negLocativeTypeAdverbWord"> An independent negative word occurs with the positive locative adverb(s) to form the negative locative adverb phrase(s)</checkbox>
       <checkbox id="NegLocativeTypeAffix" dataItem="negLocativeTypeAffix">It is a verbal affix</checkbox>
       <checkbox id="NegLocativeTypeVerb" dataItem="negLocativeTypeVerb">There is only a verbal negative affix, but a negative verb may occur with positive locative adverbs to give a negative locative meaning</checkbox>
-      <checkbox id="NegLocativeTypeOther" dataItem="negLocativeTypeOther">My language does the following to express the negative locative meaning:<textBox  id="NegLocativeTypeOtherContent" dataItem="negLocativeTypeOther" rows="1" cols="70" kind="table"/></checkbox>
+      <checkbox id="NegLocativeTypeOther" dataItem="negLocativeTypeOther">My language does the following to express the negative locative meaning:<textBox  id="NegLocativeTypeOtherContent" dataItem="negLocativeTypeOther" rows="1" cols="70" kind="other"/></checkbox>
    </checkboxGroup>
    <prompt id="NegLocativeTypeNoCheckPrompt" show="swNegLocativeTypeNoCheck">WARNING: You need to check at least one box to describe how your language expresses the negative locative meaning.</prompt>
    
@@ -104,7 +104,7 @@
       <checkbox id="NegLocativeAdverbWordBefore" checked="yes" dataItem="negLocativeAdverbWordBefore">Before the locative adverb</checkbox>
       <checkbox id="NegLocativeAdverbWordAfter" checked="yes" dataItem="negLocativeAdverbWordAfter">After the locative adverb</checkbox>
       <checkbox id="NegLocativeAdverbWordBoth" checked="yes" dataItem="negLocativeAdverbWordBoth">On both sides at the same time</checkbox>
-      <checkbox id="NegLocativeAdverbWordOther" checked="yes" dataItem="negLocativeAdverbWordOther">In my language, these negative words may occur as follows: <textBox  id="NegLocativeAdverbWordOtherContent" dataItem="negLocativeAdverbWordOther" rows="1" cols="70" kind="table"/></checkbox>
+      <checkbox id="NegLocativeAdverbWordOther" checked="yes" dataItem="negLocativeAdverbWordOther">In my language, these negative words may occur as follows: <textBox  id="NegLocativeAdverbWordOtherContent" dataItem="negLocativeAdverbWordOther" rows="1" cols="70" kind="other"/></checkbox>
    </checkboxGroup>	
    <prompt id="NegLocativeAdverbWordNoCheckPrompt" show="swNegLocativeAdverbWordAndNoCheck">WARNING: You need to check at least one box to describe where these negative words occur in your language, or change the answer above as to how the negative locative adverbs are related to the positive forms.</prompt>
    <instruction id="NegLocativeTypeAdverbWordInstruction" show="swNegLocativeTypeAdverbWord">In the lexicon, key the features <feature>makeNeg modifies_locative</feature>
@@ -161,7 +161,7 @@
          <checkbox id="NegAux" dataItem="negAuxWord" checked="yes">Negative auxiliary words</checkbox>
          <checkbox id="NegAuxAffix" dataItem="negAuxAffix" checked="yes">Negative affixes that attach to a positive auxiliary word</checkbox>
          <checkbox id="NegVAffix" dataItem="negVAffix" checked="yes">Negative affixes that attach to a verb to make it negative</checkbox>
-         <checkbox id="NegVerbalOther" dataItem="negVerbalOther" checked="yes">In my language, the verb or auxiliary may be negated as follows: <textBox  id="NegVerbalOtherContent" dataItem="negVerbalOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="NegVerbalOther" dataItem="negVerbalOther" checked="yes">In my language, the verb or auxiliary may be negated as follows: <textBox  id="NegVerbalOtherContent" dataItem="negVerbalOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>	
       <prompt id="NegVerbalNoCheckPrompt" show="swNegVerbalAndNoCheck">WARNING: You need to check at least one box to describe how negation of the verb or auxiliary is expressed in your language, or change the answer above to ‘No’.</prompt>
       <radioGroup id="NegAuxRequiresAuxTable" show="swNegAuxAndVerbalYes">

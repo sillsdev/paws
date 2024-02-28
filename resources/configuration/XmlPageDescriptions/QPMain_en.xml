@@ -80,7 +80,7 @@ like <example>only</example> and <example>just</example> (which can also act as 
    <checkbox id="QPNPDegreePosBefore"  dataItem="npDegreePosBefore">Before it</checkbox>
    <checkbox id="QPNPDegreePosAfter"  dataItem="npDegreePosAfter">After it</checkbox>
    <checkbox id="QPNPDegreePosBoth"  dataItem="npDegreePosBoth">On both sides at the same time</checkbox>
-	   	<checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">In my language, they may occur in the following position: <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">In my language, they may occur in the following position: <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="other"/></checkbox>
    </checkboxGroup>
 	   <prompt id="QPNPDegreeWordNoCheckPrompt" show="swQPNPDegreeYesandNoCheck">WARNING: You need to check at least one box to describe where these degree words or quantifiers occur with respect to the rest of the nominal phrase in your language, or change the answer above to ‘No, they all attach to another word in the nominal phrase’.</prompt>
 	   
@@ -98,7 +98,7 @@ like <example>only</example> and <example>just</example> (which can also act as 
 	      <checkbox id="QPNPDegreeEnclitic" dataItem="npDegreeTypeEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the nominal phrase</checkbox>
 	      <checkbox id="QPNPDegreePrefix" dataItem="npDegreeTypePrefix">As a prefix which attaches to the head noun of the nominal phrase</checkbox>
 	      <checkbox id="QPNPDegreeSuffix" dataItem="npDegreeTypeSuffix">As a suffix which attaches to the head noun of the nominal phrase</checkbox>
-	   	<checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPNPDegreeAttachesNoCheckPrompt" show="swQPNPDegreeNoandNoCheck">WARNING: You need to check at least one box to describe how these degree elements or quantifiers attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
 	   

@@ -42,7 +42,7 @@
          <checkbox id="QEmbContBetweenEnclitic" dataItem="embContBetweenEnclitic" show="swQContFrontYes">Comme un enclitique qui se rattache à la fin du dernier mot du syntagme interrogatif placé en tête, avant le reste de la question subordonnée</checkbox>
          <checkbox id="QEmbContCliticPrefix" dataItem="embContPrefix">Comme un préfixe qui se rattache au verbe de la proposition subordonnée</checkbox>
          <checkbox id="QEmbContCliticSuffix" dataItem="embContSuffix">Comme un suffixe qui se rattache au verbe de la proposition subordonnée</checkbox>
-         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">Dans ma langue, ces éléments peuvent se rattacher de la façon suivante :<textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">Dans ma langue, ces éléments peuvent se rattacher de la façon suivante :<textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContCliticPosNoCheckPrompt" show="swQEmbContWordNoOrSomeandNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire comment ces marqueurs se rattachent à un autre mot dans votre langue ; soit changer la réponse ci-dessus en « Oui ».</prompt>
       
@@ -63,7 +63,7 @@
          <checkbox id="QEmbContPosBefore"  dataItem="embContWordBefore">Avant le reste de la question</checkbox>
          <checkbox id="QEmbContPosAfter"  dataItem="embContWordAfter">Après le reste de la question</checkbox>
          <checkbox id="QEmbContPosBoth"  dataItem="embContWordBoth">De part et d’autre</checkbox>
-         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">Dans ma langue les marqueurs peuvent se placer dans la position suivante :<textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">Dans ma langue les marqueurs peuvent se placer dans la position suivante :<textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContPosNoCheckPrompt" show="swQEmbContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire dans votre langue où ces marqueurs interrogatifs se placent par rapport au reste de la question subordonnée ; soit changer la réponse ci-dessus en « Non, ils se rattachent tous à un autre mot ».</prompt>
       <instruction id="QEmbContWordYesInstruction" show="swQEmbContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
@@ -74,7 +74,7 @@
          <checkbox id="QEmbContVSOAfterWh" dataItem="embContVSOAfterWh">Immédiatement après le syntagme interrogatif placé en tête</checkbox>
          <checkbox id="QEmbContVSOBeforeWh" dataItem="embContVSOBeforeWh">Au début de la question subordonnée, avant le syntagme interrogatif placé en tête</checkbox>
          <checkbox id="QEmbContVSOEnd" dataItem="embContVSOEnd">A la fin de la question subordonnée</checkbox>
-         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">Dans ma langue ils peuvent se placer dans la position suivante : <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">Dans ma langue ils peuvent se placer dans la position suivante : <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">ATTENTION : Vous devez spot cocher au moins une case pour décrire dans votre langue la position de ces marqueurs interrogatifs par rapport au syntagme interrogatif et au reste de la question subordonnée ; soit changer la réponse ci-dessus en « Non, ils se rattachent tous à un autre mot ».</prompt>
       

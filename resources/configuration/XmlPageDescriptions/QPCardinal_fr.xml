@@ -182,7 +182,7 @@
 	   	<checkbox id="QPOrdinalAffix" checked="yes" dataItem="ordinalAffix">Un affixe est ajouté au nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalIndependent" checked="yes" dataItem="ordinalIndependent">Une partie ou la totalité desnombres ordinaux sont des mots distincts des nombres cardinaux </checkbox>
 	   	<checkbox id="QPOrdinalWord" checked="yes" dataItem="ordinalWord">Un autre mot est ajouté au nombre cardinal</checkbox>
-	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">Dans ma langue, les nombres ordinaux sont formés de la façon suivante : <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">Dans ma langue, les nombres ordinaux sont formés de la façon suivante : <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" cols="70" rows="1" kind="other"/></checkbox>
 		</checkboxGroup>
 		<prompt id="QPOrdinalFormNoCheckPrompt" show="swQPOrdinalFormNoCheck">ATTENTION : Il faut cocher au moins une case pour décrire comment les nombres ordinaux sont formés dans votre langue.</prompt>  
 	   
@@ -197,7 +197,7 @@
 	   	<checkbox id="QPOrdinalWordBefore" dataItem="ordinalWordBefore">Avant le nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalWordAfter" dataItem="ordinalWordAfter">Après le nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalWordBoth" dataItem="ordinalWordBoth">De part et d’autre du nombre cardinal</checkbox>
-	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">Dans ma langue, le mot ordinal se présente de la façon suivante : <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">Dans ma langue, le mot ordinal se présente de la façon suivante : <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>		
 		<prompt id="QPOrdinalWordPosNoCheckPrompt" show="swQPOrdinalWordPosNoCheck">ATTENTION : Il faut cocher au moins une case pour décrire où le mot est ajouté au nombre cardinal pour former le nombre ordinal dans votre langue, sinon il faut changer la réponse ci-dessus pour dire que les nombres ordinaux sont formés d’une autre façon.</prompt>  
 		<br/>
@@ -227,7 +227,7 @@
 	   	<checkbox id="QPOrdinalBefore" checked="yes" dataItem="ordinalBefore">Avant le nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalAfter" checked="yes" dataItem="ordinalAfter">Après le nombre cardinal</checkbox>
 	   	<checkbox id="QPOrdinalBoth" checked="yes" dataItem="ordinalBoth">De part et d’autre du nombre cardinal</checkbox>
-	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">Dans ma langue, ces éléments se présentent de la façon suivante par rapport au nombre cardinal :<textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">Dans ma langue, ces éléments se présentent de la façon suivante par rapport au nombre cardinal :<textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>		
 		<prompt id="QPOrdinalNumNoCheckPrompt" show="swQPOrdinalNumNoCheck">ATTENTION : Il faut cocher au moins une case pour décrire la position des nombres ordinaux et des mots pour « suivant » et « dernier » par rapport au nombre cardinal, à moins que votre langue ne permette ni les nombres ordinaux ni les mots pour « suivant » ou « dernier » avec un nombre cardinal.  Dans ce cas-là, cochez « Nulle part » ci-dessous. </prompt>  
 		<checkboxGroup id="QPOrdinalNumNowhereTable" show="swQPOrdinalNumNoCheck">

@@ -62,7 +62,7 @@
 	      <checkbox id="QPDeterminerPosBefore"  dataItem="determinerPosBefore">Antes</checkbox>
 	      <checkbox id="QPDeterminerPosAfter"  dataItem="determinerPosAfter">Después</checkbox>
 	      <checkbox id="QPDeterminerPosBoth"  dataItem="determinerPosBoth">En ambos lados en la misma oración</checkbox>
-	      <checkbox id="QPDeterminerPosOther"  dataItem="determinerPosOther">En mi lengua, pueden presentarse: <textBox  id="QPDeterminerPosOtherContent" dataItem="determinerPosOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="QPDeterminerPosOther"  dataItem="determinerPosOther">En mi lengua, pueden presentarse: <textBox  id="QPDeterminerPosOtherContent" dataItem="determinerPosOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDeterminerWordNoCheckPrompt" show="swQPDeterminerYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos cuantificadores con respecto al resto de la frase nominal en su lengua, o cambia la respuesta anterior a “No, todos se unen a otra palabra en la frase nominal”.</prompt>
 	   <instruction id="QPDeterminerYesInstruction" show="swQPDeterminerTypeYesOrSomeAndDeterminerYesOrSome">In the lexicon, mark this type of quantifier determiner that is written as an independent word with the feature <feature>determiner</feature>.  If it does not already have the category <category>Q</category>, add the feature <feature>makeQ</feature> to change the category for the syntax.  If a particular quantifier determiner can only go with plural nouns or if it marks plural itself (such as <example>some</example>), add the feature <feature>plural</feature> to that entry.  If a particular quantifier determiner can only go with singular nouns (such as <example>every</example> in English), add the feature <feature>singular</feature> to that entry.  Do not add either feature to a quantifier determiner which can go with either singular or plural nouns. </instruction>
@@ -78,7 +78,7 @@
 	      <checkbox id="QPDeterminerEnclitic" dataItem="determinerTypeEnclitic">Como un enclítico que se une al final de culaquiera palabra que termina la frase nominal</checkbox>
 	      <checkbox id="QPDeterminerPrefix" dataItem="determinerTypePrefix">Como un prefijo que se une al sustantivo principal en la frase nominal</checkbox>
 	      <checkbox id="QPDeterminerSuffix" dataItem="determinerTypeSuffix">Como un sufijo que se une al sustantivo principal en la frase nominal</checkbox>
-	      <checkbox id="QPDeterminerOther" dataItem="determinerTypeOther">En mi lengua, estos elementos se unen:  <textBox  id="QPDeterminerTypeOtherContent" dataItem="determinerTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="QPDeterminerOther" dataItem="determinerTypeOther">En mi lengua, estos elementos se unen:  <textBox  id="QPDeterminerTypeOtherContent" dataItem="determinerTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDeterminerAttachesNoCheckPrompt" show="swQPDeterminerTypeNoAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos cuantificadores se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
 	   

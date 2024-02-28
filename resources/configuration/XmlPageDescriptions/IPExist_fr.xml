@@ -18,7 +18,7 @@
             <checkbox id="IPExistWord" dataItem="existWord">Un mot ou des mots existentiels distincts comme « il y a » en français</checkbox>
             <checkbox id="IPExistVerb" dataItem="existVerb">Un verbe existentiel comme « hay » en espagnol ou « exister » en français</checkbox>
             <checkbox id="IPExistPosition" dataItem="existPosition">Un groupe de verbes existentiels qui expriment la position de l’objet</checkbox>
-            <checkbox id="IPExistOther" dataItem="existOther">Dans ma langue, les phrases existentielles peuvent être indiquées de la façon suivante : <textBox  id="IPExistOtherContent" dataItem="existOther" cols="70"  rows="1" kind="table"/></checkbox>
+            <checkbox id="IPExistOther" dataItem="existOther">Dans ma langue, les phrases existentielles peuvent être indiquées de la façon suivante : <textBox  id="IPExistOtherContent" dataItem="existOther" cols="70"  rows="1" kind="other"/></checkbox>
         </checkboxGroup>
         <prompt id="IPExistNoCheckPrompt" show="swIPExistNoCheck">ATTENTION : Vous n’avez coché aucune case pour décrire la façon dont les phrases existentielles sont indiquées dans votre langue. Cochez au moins une des options ci-dessus. S’il n’y a aucune option qui convient, cochez la case « Aucune » ci-dessous.</prompt>
        <checkboxGroup id="IPExistNoneTable" show="swIPExistNoCheck">

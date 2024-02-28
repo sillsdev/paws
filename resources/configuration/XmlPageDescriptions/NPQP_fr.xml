@@ -21,7 +21,7 @@
             <checkbox id="NPQPPosBefore" dataItem="qpPosBefore">Avant le nom</checkbox>
             <checkbox id="NPQPPosAfter" dataItem="qpPosAfter">Après le nom</checkbox>
             <checkbox id="NPQPPosBoth" dataItem="qpPosBoth">De part et d’autre dans le même syntagme nominal</checkbox>
-            <checkbox id="NPQPPosOther" dataItem="qpPosOther">Dans ma langue les quantifieurs peuvent se trouver dans les positions suivantes : <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1" kind="table"/></checkbox>
+            <checkbox id="NPQPPosOther" dataItem="qpPosOther">Dans ma langue les quantifieurs peuvent se trouver dans les positions suivantes : <textBox  id="NPQPPosOtherContent" dataItem="qpPosOther" cols="70" rows="1" kind="other"/></checkbox>
            </checkboxGroup>
         <prompt id="NPQPPosNoCheckPrompt" show="swNPQPNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position des quantifieurs par rapport au nom dans votre langue.</prompt>
            <radioGroup id="NPQPPosEitherorBothRestrictedTable" show="swNPQPPosEitherorBothRestricted">
@@ -47,7 +47,7 @@
             <checkbox id="NPQClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificQPosAfterNBeforeQ">Après le nom mais avant le quantifieur</checkbox>
             <checkbox id="NPQClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificQPosPrefixQ">Ajouté comme préfixe au quantifieur</checkbox>
             <checkbox id="NPQClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificQPosSuffixQ">Ajouté comme suffixe au quantifieur</checkbox>
-            <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">Dans ma langue les classificateurs peuvent se mettre dans la position suivante : <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1" kind="table"/></checkbox>
+            <checkbox id="NPQClassifierSpecificPosOther"  dataItem="classifierSpecificQPosOther">Dans ma langue les classificateurs peuvent se mettre dans la position suivante : <textBox  id="NPQClassifierSpecificPosOtherContent" dataItem="classifierSpecificQPosOther" cols="70" rows="1" kind="other"/></checkbox>
         </checkboxGroup>
         <prompt id="NPQClassifierSpecificPosNoCheckPrompt" show="swNPQClassifierPresentYesOrSomeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position des classificateurs par rapport aux quantifieurs et au nom dans votre langue ; sinon vous devez modifier votre réponse et cocher : « Non, on n’utilise jamais de classificateur dans ce genre de syntagme nominal ».</prompt>
         

@@ -53,7 +53,7 @@
           <checkbox id="PronRecipAffixYes" dataItem="recipAffix">One or more affixes are chosen among to make another pronoun into a reciprocal</checkbox>
           <checkbox id="PronRecipAffixNoNoun" dataItem="recipNounPoss">A certain noun with a pronoun as the possessor is used</checkbox>
           <checkbox id="PronRecipAffixNoQP" dataItem="recipQP">Special quantified noun phrases are used</checkbox>
-          <checkbox id="PronRecipAffixOther" dataItem="recipOther">My language does the following to form a reciprocal:<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronRecipAffixOther" dataItem="recipOther">My language does the following to form a reciprocal:<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronRecipAffixNoCheckPrompt" show="swPronRecipYesNoCheck">WARNING: You said above that your language has reciprocals, but you did not check any of the options to say how they are formed.  Please either check one or more options as appropriate, unless you do not have any reciprocals, in which case you should not have added any forms to the text boxes and should change the answer above to either ‘No’ or ‘Yes, a verbal affix indicates reciprocal action’.</prompt>

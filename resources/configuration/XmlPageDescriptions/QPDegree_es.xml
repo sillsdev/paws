@@ -61,7 +61,7 @@
 	      <checkbox id="QPDegreeBefore"  dataItem="degreeBefore">Antes del cuantificador</checkbox>
 	      <checkbox id="QPDegreeAfter"  dataItem="degreeAfter">Después del cuantificador</checkbox>
 	      <checkbox id="QPDegreeBoth"  dataItem="degreeBoth">En ambos lados en la misma oración</checkbox>
-	      <checkbox id="QPDegreeOther"  dataItem="degreeOther">En mi lengua, pueden presentarse: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="QPDegreeOther"  dataItem="degreeOther">En mi lengua, pueden presentarse: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeWordPosNoCheckPrompt" show="swQPDegreeWordPosNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan las palabras de grado (opcionalmente) con respecto al cuantificador en su lengua, o cambia su respuesta anterior para decir que los elementos de grado no se expresan como palabras independientes.</prompt> 
 	   <instruction id="QPDegreeYesInstruction" show="swQPDegreeYesOrSome">
@@ -77,7 +77,7 @@
 	      <prompt>De acuerdo con estos ejemplos, ¿dónde se unen los afijos o clíticos de grado con respecto al cuantificador? Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="QPDegreeTypePrefix" dataItem="degreeTypePrefix">Como un prefijo que se une al cuantificador</checkbox>
 	      <checkbox id="QPDegreeTypeSuffix" dataItem="degreeTypeSuffix">Como un sufijo que se une al cuantificador</checkbox>
-	      <checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">En mi lengua, pueden unirse: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">En mi lengua, pueden unirse: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeAttachesPosNoCheckPrompt" show="swQPDegreeAttachesPosNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se unen los afijos o clíticos de grado con respecto al cuantificador en su lengua, o cambia su respuesta anterior para decir que todos elementos de grado se escriben como palabras independientes.</prompt>
 	     

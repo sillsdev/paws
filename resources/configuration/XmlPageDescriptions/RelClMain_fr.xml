@@ -47,7 +47,7 @@
            <checkbox id="RelClTypeCPWh" dataItem="relTypeCPWh">Semblable à une question d’information  commençant par « qui » ou « quel / que »</checkbox>
            <checkbox id="RelClTypeIPRel" dataItem="relTypeIPRel">Semblable à une phrase normale ayant un marqueur relatif attaché au verbe</checkbox>
            <checkbox id="RelClTypeIP" dataItem="relTypeIP">Seulement une phrase normale qui modifie un nom, avec aucun marquage spécial</checkbox>
-           <checkbox id="RelClTypeOther" dataItem="relTypeOther">Dans ma langue les propositions relatives peuvent sont formées de la façon suivante : <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70" kind="table"/></checkbox>
+           <checkbox id="RelClTypeOther" dataItem="relTypeOther">Dans ma langue les propositions relatives peuvent sont formées de la façon suivante : <textBox  id="RelClTypeOtherContent" dataItem="relTypeOther" rows="1" cols="70" kind="other"/></checkbox>
         </checkboxGroup>
        <prompt id="RelClTypeNoCheckPrompt" show="swRelClExistYesAndTypeNoCheck">ATTENTION : Vous n’avez coché aucunes des boîtes pour décrire quels types de propositions relatives sont possibles dans votre langue. Cocher une ou plusieurs boîtes ou changez votre réponse ci-dessus en « Non, il n’y a pas de propositions relatives ».</prompt>
        
@@ -93,7 +93,7 @@
           <checkbox id="RelClWordBefore" checked="yes" dataItem="relWordBefore">Avant la partie qui constitue la phrase</checkbox>
           <checkbox id="RelClWordAfter" checked="yes" dataItem="relWordAfter">Après la partie qui constitue la phrase</checkbox>
           <checkbox id="RelClWordBoth" checked="yes" dataItem="relWordBoth">Des deux côtés en même temps</checkbox>
-          <checkbox id="RelClWordOther" dataItem="relWordOther">Dans ma langue le mot relatif peut se trouver dans la position suivante : <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="RelClWordOther" dataItem="relWordOther">Dans ma langue le mot relatif peut se trouver dans la position suivante : <textBox  id="RelClWordOtherContent" dataItem="relWordOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="RelClWordPosNoCheckPrompt" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeAndNoCheck">ATTENNTION : Vous n’avez pas coché aucune des boîtes pour décrire où le marqueur relatif peut se placer dans votre langue. cochez une boîte ou plus, selon ce que fait votre langue.</prompt>
        <instruction id="RelClTypeCPCompEitherRestrictedInstruction" show="swRelClTypeCPCompOrRelOrWhNotNoAndCompWordYesOrSomeBoth">In the lexicon, mark those markers which can only occur initially with the feature <feature>CP-initial</feature> and those which can only occur finally with the feature <feature>CP-final</feature>.  Do not enter either feature on any markers which can occur on either side.</instruction>

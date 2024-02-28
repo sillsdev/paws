@@ -37,7 +37,7 @@
          <checkbox id="QEmbYNCliticEnclitic" dataItem="embYNEnclitic">Comme un enclitique qui se rattache à la fin du dernier mot dans la question oui/non subordonnée</checkbox>
          <checkbox id="QEmbYNCliticPrefix" dataItem="embYNPrefix">Comme un préfixe qui se rattache au verbe</checkbox>
          <checkbox id="QEmbYNCliticSuffix" dataItem="embYNSuffix">Comme un suffixe qui se rattache au verbe</checkbox>
-         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">Dans ma langue ces éléments peuvent se rattacher dans la position suivante : <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">Dans ma langue ces éléments peuvent se rattacher dans la position suivante : <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNCliticPosNoCheckPrompt" show="swQEmbYNWordNoOrSomeandNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire comment les marqueurs de question oui/non se rattachent à un mot dans votre langue soit changer la réponse ci-dessus en « Oui, ce sont tous des mots indépendants ».</prompt>
       <prompt id="QEmbYNCliticsExamplesPrompt" show="swQEmbYNCliticProcliticOrEnclitic"><br/>Saisissez ici les clitiques qui sont utilisés pour marquer des questions oui/non subordonnées en mettant un signe d’égalité pour indiquer de quel côté ils se rattachent à la question oui/non :</prompt>    
@@ -57,7 +57,7 @@
          <checkbox id="QEmbYNPosBefore"  dataItem="embYNWordBefore">Avant</checkbox>
          <checkbox id="QEmbYNPosAfter"  dataItem="embYNWordAfter">Après</checkbox>
          <checkbox id="QEmbYNPosBoth"  dataItem="embYNWordBoth">De part et d’autre</checkbox>
-         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">Dans ma langue ils peuvent se trouver dans la position suivante : <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">Dans ma langue ils peuvent se trouver dans la position suivante : <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNPosNoCheckPrompt" show="swQEmbYNWordYesOrSomeandNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire où les marqueurs de question oui/non se trouvent par rapport au reste de la question subordonée dans votre langue, soit changer la réponse ci-dessus en « Non, ils se rattachent tous à un autre mot ».</prompt>
       

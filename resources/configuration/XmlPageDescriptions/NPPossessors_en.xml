@@ -98,7 +98,7 @@
 				   <checkbox id="NPPossMarkedYesWordBefore" dataItem="possWordBefore">Before the possessor</checkbox>
 				   <checkbox id="NPPossMarkedYesWordAfter" dataItem="possWordAfter">After the possessor</checkbox>
 				   <checkbox id="NPPossMarkedYesWordBoth" dataItem="possWordBoth">On both sides of the possessor</checkbox>
-					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">In my language, the possessive marker word may occur as follows: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1" kind="table"/></checkbox>
+					<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">In my language, the possessive marker word may occur as follows: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1" kind="other"/></checkbox>
 				</checkboxGroup>
 	   <prompt id="NPPossMarkedYesWordAndNoCheckPrompt" show="swPossMarkedYesWordAndNoCheck">WARNING: You said above that possessors are marked with a possessive word, but you did not check any of the options as to where it occurs.  Please either check one or more options here as appropriate, or change the answer above to a different type pf marker or "No, there is no special marking".</prompt>
 	   

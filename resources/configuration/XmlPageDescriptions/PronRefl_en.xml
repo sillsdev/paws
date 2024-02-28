@@ -56,7 +56,7 @@
            <checkbox id="PronReflAffixYes" dataItem="reflAffix">One or more affixes are chosen among to make another pronoun reflexive</checkbox>
            <checkbox id="PronReflAffixNoNoun" dataItem="reflNounPoss">A certain noun with a pronoun as the possessor is used</checkbox>
            <checkbox id="PronReflAffixNoQP" dataItem="reflQP">Special quantified noun phrases are used</checkbox>
-           <checkbox id="PronReflAffixOther" dataItem="reflOther">My language does the following to form a reflexive:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="PronReflAffixOther" dataItem="reflOther">My language does the following to form a reflexive:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="other"/></checkbox>
         </checkboxGroup>
        <br/><br/>
        <prompt id="PronReflAffixNoCheckPrompt" show="swPronReflYesNoCheck">WARNING: You said above that your language has reflexives, but you did not check any of the options to say how they are formed.  Please either check one or more options as appropriate, unless you do not have any reflexives, in which case you should not have added any forms to the text boxes and should change the answer above to either ‘No’ or ‘Yes, a verbal affix indicates reflexive action’.</prompt>

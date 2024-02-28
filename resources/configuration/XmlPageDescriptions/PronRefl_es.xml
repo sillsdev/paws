@@ -57,7 +57,7 @@
           <checkbox id="PronReflAffixYes" dataItem="reflAffix">Uno o más afijos se eligen entre para hacer otro pronombre en un reflexivo</checkbox>
           <checkbox id="PronReflAffixNoNoun" dataItem="reflNounPoss">Se utiliza un cierto sustantivo especial con un pronombre como el posesivo</checkbox>
           <checkbox id="PronReflAffixNoQP" dataItem="reflQP">Se utiliza unas frases nominales cuantificadas especiales</checkbox>
-          <checkbox id="PronReflAffixOther" dataItem="reflOther">En mi lengua, los reflexivos son construidos con:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronReflAffixOther" dataItem="reflOther">En mi lengua, los reflexivos son construidos con:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronReflAffixNoCheckPrompt" show="swPronReflYesNoCheck">ADVERTENCIA: Usted dijo anteriormente que su lengua tiene pronombres reflexivos, pero no ha marcado ninguna de las opciones para decir cómo se forman. Por favor, seleccione una o más opciones según corresponda, a menos que su lengua no tiene ningún reflexivo, en cuyo caso no debe tener ninguna forma en los campos y debe cambia la respuesta anterior a ‘No’ o ‘Sí, un afijo verbal indica la acción reflexiva’.</prompt>

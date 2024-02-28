@@ -17,7 +17,7 @@
 			<prompt><br/>Comment est-ce que votre langue exprime-t-elle les causatifs ?  Cochez toutes les options valables pour votre langue.</prompt>
 			<checkbox id="IPCausativeAffix" dataItem="causativeAffix">Il y a un affixe verbal pour un causatif qui introduit un argument supplémentaire</checkbox>
 			<checkbox id="IPCausativeMake" dataItem="causativeMake">Les phrases causatives sont formés de deux propositions où le verbe principal signifie « faire / causer / obliger » </checkbox>
-			<checkbox id="IPCausativeOther" dataItem="causativeOther">Ma langue exprime les causatifs de la façon suivante :<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" cols="70"  rows="1" kind="table"/></checkbox>
+			<checkbox id="IPCausativeOther" dataItem="causativeOther">Ma langue exprime les causatifs de la façon suivante :<textBox  id="IPCausativeOtherContent" dataItem="causativeOther" cols="70"  rows="1" kind="other"/></checkbox>
 		</checkboxGroup>
 		<prompt id="IPCausativeNoCheckPrompt" show="swIPCausativeNoCheck">ATTENTION : Vous n’avez coché aucune case pour décrire la façon dont les causatifs sont formés dans votre langue.  Veuillez cocher au moins une option.</prompt>
 		<prompt id="IPCausativeAffixAndFeaturesNoPrompt" show="swIPCausativeAffixAndFeaturesNo">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous n’avez pas coché la case pour indiquer que le causatif existe dans votre langue.  Ceci ne correspond pas à votre réponseici, puisque vous dites qu’il existe un affixe verbal pour le causatif. Si votre langue possède un ou plusieurs affixes causatifs, revenez à la<section number="9.2">Phrases simples – La flexion</section> et cochez la case <feature>causatif</feature>.</prompt>
@@ -72,7 +72,7 @@
 	   	<checkbox id="IPAntipassiveErg"  dataItem="antipassiveErg" show="swCaseErgOrSplit">Le cas du sujet d’un verbe transitif change en absolutif lorsqu’on supprime l’objet</checkbox>
 	   	<checkbox id="IPAntipassiveAgr" dataItem="antipassiveAgr">Pour signaler un antipassif, l’affixe qui marque l’accord de l’objet sur le verbe est supprimé</checkbox>
 	   	<checkbox id="IPAntipassiveAffix" dataItem="antipassiveAffix">Il y a un affixe verbal pour l’antipassif qui signale le changement des relations grammaticales</checkbox>
-	   	<checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">Dans ma langue, l’antipassif peut se former de la façon suivante : <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" cols="70"  rows="1" kind="table"/></checkbox>
+	   	<checkbox id="IPAntipassiveOther" dataItem="antipassiveOther">Dans ma langue, l’antipassif peut se former de la façon suivante : <textBox  id="IPAntipassiveOtherContent" dataItem="antipassiveOther" cols="70"  rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 		<prompt id="IPAntipassiveNoCheckPrompt" show="swIPAntipassiveYesAndNoCheck">ATTENTION : Vous n’avez coché aucune case pour décrire comment les antipassifs sont formés dans votre langue. cochez une ou plusieurs boîtes , ou changez votre réponse en « Non ». Dans de dernier cas, la boîte ci-dessus ne devrait pas contenir d’exemples.</prompt>
 	   

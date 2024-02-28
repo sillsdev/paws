@@ -187,7 +187,7 @@ transparent = 'yes' means do not show yellow background, let the grey background
 	rows CDATA #IMPLIED
 	cols CDATA #IMPLIED
 	show IDREF #IMPLIED
-	kind (interlinear | table) "interlinear"
+	kind (interlinear | table | other) "interlinear"
 >
 <!ELEMENT th (#PCDATA) >
 <!ATTLIST th

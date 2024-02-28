@@ -47,7 +47,7 @@
 	      <checkbox id="AdjPModifiersManner" checked="yes" dataItem="modifiersManner">With manner adverbs or phrases</checkbox>
 	      <checkbox id="AdjPModifiersAttaches" dataItem="modifiersAttaches">There are affixes or clitics that attach to the adjective to intensify it</checkbox>
 	      <checkbox id="AdjPModifiersRedup" dataItem="modifiersRedup">Reduplication is used to intensify the meaning of the adjective</checkbox>
-	      <checkbox id="AdjPModifiersOther" dataItem="modifiersOther">In my language, adjectives may be modified as follows: <textBox  id="AdjPModifiersOtherContent" dataItem="modifiersOther" cols="70" rows="1" kind="table"/></checkbox>
+	      <checkbox id="AdjPModifiersOther" dataItem="modifiersOther">In my language, adjectives may be modified as follows: <textBox  id="AdjPModifiersOtherContent" dataItem="modifiersOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>	
 	   <prompt id="AdjPModifiersYesNoCheckPrompt" show="swAdjPModifiersYesAndNoCheck">WARNING: You need to check at least one box to describe which modifiers may modify or intensify adjectives in your language, or change the answer above to “No, adjectives are not modified or intensified”.</prompt>
 	   <br/>
@@ -69,7 +69,7 @@
 	      <checkbox id="AdjPDegreeBefore" checked="yes" dataItem="degreeBefore">Before the adjective</checkbox>
 	      <checkbox id="AdjPDegreeAfter" checked="yes" dataItem="degreeAfter">After the adjective</checkbox>
 	      <checkbox id="AdjPDegreeBoth" checked="yes" dataItem="degreeBoth">On both sides at the same time</checkbox>
-	   	<checkbox id="AdjPDegreeOther" checked="yes" dataItem="degreeOther">In my language, these degree words may occur as follows: <textBox  id="AdjPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="AdjPDegreeOther" checked="yes" dataItem="degreeOther">In my language, these degree words may occur as follows: <textBox  id="AdjPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>	
 	   <prompt id="AdjPModifiersYesDegreeNoCheckPrompt" show="swAdjPModifiersYesDegreeAndNoCheck">WARNING: You need to check at least one box to describe where these degree words occur in your language, or change the answer above to a different type of modifier.</prompt>
 	   <instruction id="AdjPModifiersYesDegreeInstruction" show="swAdjPModifiersYesDegree">In the lexicon, mark the degree words with the feature <feature>makeDeg modifies_Adj</feature>.    (If any of these degree words are the same as those which can modify an entire nominal phrase or a quantifier or an adverb, you can simply add the additional feature <feature>modifies_Adj</feature> to the same lexical entry.)</instruction>
@@ -83,7 +83,7 @@
 	      <checkbox id="AdjPMannerBefore" checked="yes" dataItem="mannerBefore">Before the adjective</checkbox>
 	      <checkbox id="AdjPMannerAfter" checked="yes" dataItem="mannerAfter">After the adjective</checkbox>
 	      <checkbox id="AdjPMannerBoth" checked="yes" dataItem="mannerBoth">On both sides at the same time</checkbox>
-	   	<checkbox id="AdjPMannerOther" checked="yes" dataItem="mannerOther">In my language, these manner adverbs or phrases may occur as follows: <textBox  id="AdjPMannerOtherContent" dataItem="mannerOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="AdjPMannerOther" checked="yes" dataItem="mannerOther">In my language, these manner adverbs or phrases may occur as follows: <textBox  id="AdjPMannerOtherContent" dataItem="mannerOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>	
 	   <prompt id="AdjPModifiersYesMannerNoCheckPrompt" show="swAdjPModifiersYesMannerAndNoCheck">WARNING: You need to check at least one box to describe where these manner adverbs or phrases occur in your language, or change the answer above to a different type of modifier.</prompt>
 	   <instruction id="AdjPModifiersYesMannerInstruction" show="swAdjPModifiersYesManner">

@@ -96,7 +96,7 @@
 	      <checkbox id="NPPossMarkedYesWordBefore" dataItem="possWordBefore">Antes de la frase</checkbox>
 	      <checkbox id="NPPossMarkedYesWordAfter" dataItem="possWordAfter">Después de la frase</checkbox>
 	      <checkbox id="NPPossMarkedYesWordBoth" dataItem="possWordBoth">En ambos lados</checkbox>
-	   	<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">En mi lengua, el indicador posesivo se presenta: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="NPPossMarkedYesWordOther" dataItem="possWordOther">En mi lengua, el indicador posesivo se presenta: <textBox  id="NPPossMarkedYesWordOtherContent" dataItem="possWordOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="NPPossMarkedYesWordAndNoCheckPrompt" show="swPossMarkedYesWordAndNoCheck">ADVERTENCIA: Usted dijo anteriormente que las frases posesivas se marcan con una palabra posesiva, pero no ha marcado ninguna de las opciones en cuanto a dónde se presenta. Por favor marque una o más opciones según corresponda, o cambia la respuesta anterior a un diverso tipo de marcador o a ‘No, no hay indicador especial’.</prompt>
 	   

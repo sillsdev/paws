@@ -77,7 +77,7 @@
    <checkbox id="QPNPDegreePosBefore"  dataItem="npDegreePosBefore">Avant le syntagme nominal</checkbox>
 	   	<checkbox id="QPNPDegreePosAfter"  dataItem="npDegreePosAfter">Après le syntagme nominal</checkbox>
 	   	<checkbox id="QPNPDegreePosBoth"  dataItem="npDegreePosBoth">De part et d’autre du syntagme nominal</checkbox>
-	   	<checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">Dans ma langue, ils peuvent se présenter dans la position suivante: <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">Dans ma langue, ils peuvent se présenter dans la position suivante: <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="other"/></checkbox>
    </checkboxGroup>
 		<prompt id="QPNPDegreeWordNoCheckPrompt" show="swQPNPDegreeYesandNoCheck">ATTENTION: Il faut soit cocher au moins une boîte pour décrire où se placent ces mots de degré ou ces quantifieurs par rapport au reste du syntagme nominal dans votre langue, ou soit changer la réponse ci-dessus et cocher  « Non, ils se rattachent tous à un autre mot dans le syntagme nominal. »</prompt>
 	   
@@ -95,7 +95,7 @@
 	   	<checkbox id="QPNPDegreeEnclitic" dataItem="npDegreeTypeEnclitic">Comme un enclitique de constituant qui se rattache à la fin du mot qui termine le syntagme nominal</checkbox>
 	   	<checkbox id="QPNPDegreePrefix" dataItem="npDegreeTypePrefix">Comme un préfixe qui se rattache au nom noyau du syntagme nominal</checkbox>
 	   	<checkbox id="QPNPDegreeSuffix" dataItem="npDegreeTypeSuffix">Comme un suffixe qui se rattache au nom noyau du syntagme nominal</checkbox>
-	   	<checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">Dans ma langue, ces éléments se rattachent de la façon suivante : <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">Dans ma langue, ces éléments se rattachent de la façon suivante : <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 		<prompt id="QPNPDegreeAttachesNoCheckPrompt" show="swQPNPDegreeNoandNoCheck">ATTENTION: Il faut soit cocher au moins une boîte pour décrire comment ces éléments de degré ou ces quantifieurs se rattachent dans votre.</prompt>
 	   

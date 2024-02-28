@@ -60,7 +60,7 @@
          <prompt><br/>How do the conjunctions attach within the coordination construction?  Choose all that apply:</prompt>
          <checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">As a proclitic which attaches to the beginning of the second conjunct</checkbox>
          <checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">As an enclitic which attaches to the end of the first conjunct</checkbox>
-         <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">In my language, the conjunctions may attach in this other way within the coordination construction: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">In my language, the conjunctions may attach in this other way within the coordination construction: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">WARNING: You did not check any boxes to describe how the conjunctions may attach in your language.  Please check one or more boxes as appropriate, or change your answer above to ‘Yes, they are all independent words’.</prompt>
       

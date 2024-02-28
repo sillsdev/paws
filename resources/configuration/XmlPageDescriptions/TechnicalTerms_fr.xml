@@ -113,12 +113,6 @@
          <termDefinition>L’aspect complétif est utilisé lorsque l’action est terminée. Elle n’est plus en cours.</termDefinition>
       </termInLang>
    </technicalTerm>
-   <technicalTerm id="ttTopic">
-      <termInLang>
-         <term>constructions thèmatiques</term>
-         <termDefinition>Les constructions thèmatiques consistent en une phrase qui exprime ce dont on parle (le sujet), généralement mis à part par une virgule, suivi par une phrase complète ou une question. Certaines langues ont des affixes ou des mots qui sont également utilisés pour marquer les thèmes.</termDefinition>
-      </termInLang>
-   </technicalTerm>
    <technicalTerm id="ttContemplative">
       <termInLang>
          <term>contemplatif</term>

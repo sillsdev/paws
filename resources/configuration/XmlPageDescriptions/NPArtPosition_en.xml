@@ -17,7 +17,7 @@
           <checkbox id="NPArtAndDemArtPosBefore" dataItem="artOnlyBefore">Before it</checkbox>
              <checkbox id="NPArtAndDemArtPosAfter" dataItem="artOnlyAfter">After it</checkbox>
                 <checkbox id="NPArtAndDemArtPosBoth" dataItem="artOnlyBoth">On both sides in the same nominal phrase</checkbox>
-           <checkbox id="NPArtAndDemArtPosOther" dataItem="artOnlyOther">In my language, the articles may occur as follows: <textBox  id="NPArtAndDemArtPosOtherContent" dataItem="artOnlyOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemArtPosOther" dataItem="artOnlyOther">In my language, the articles may occur as follows: <textBox  id="NPArtAndDemArtPosOtherContent" dataItem="artOnlyOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemArtPosNoCheckPrompt" show="swNPArtAndDemArtAndNoCheck">WARNING: You need to check at least one box to describe where the articles occur with respect to the noun in your language, or change the answer on the previous page to one that does not include articles which are written as independent words.</prompt>
        <radioGroup id="NPArtAndDemArtRequiredTable" show="swNPArtAndDemArt">
@@ -33,7 +33,7 @@
           <checkbox id="NPArtAndDemDemPosBefore" dataItem="demOnlyBefore">Before it</checkbox>
           <checkbox id="NPArtAndDemDemPosAfter" dataItem="demOnlyAfter">After it</checkbox>
           <checkbox id="NPArtAndDemDemPosBoth" dataItem="demOnlyBoth">On both sides in the same nominal phrase</checkbox>
-           <checkbox id="NPArtAndDemDemPosOther" dataItem="demOnlyOther">In my language, the demonstratives may occur as follows: <textBox  id="NPArtAndDemDemPosOtherContent" dataItem="demOnlyOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemDemPosOther" dataItem="demOnlyOther">In my language, the demonstratives may occur as follows: <textBox  id="NPArtAndDemDemPosOtherContent" dataItem="demOnlyOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemDemPosNoCheckPrompt" show="swNPArtAndDemDemAndNoCheck">WARNING: You need to check at least one box to describe where the demonstratives occur with respect to the noun in your language, or change the answer on the previous page to one that does not include demonstratives which are written as independent words.</prompt>
        <radioGroup id="NPArtAndDemDemRequiredTable" show="swNPArtAndDemDem">
@@ -59,7 +59,7 @@
             <checkbox id="NPDemClassifierSpecificPosAfterNBeforeDem"  dataItem="classifierSpecificDemPosAfterNBeforeDem">After the noun but before the demonstrative</checkbox>
             <checkbox id="NPDemClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemPosPrefixDem">As a prefix on the demonstrative</checkbox>
             <checkbox id="NPDemClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemPosSuffixDem">As a suffix on the demonstrative</checkbox>
-            <checkbox id="NPDemClassifierSpecificPosOther"  dataItem="classifierSpecificDemPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPClassifierSpecificDemPosOtherContent" dataItem="classifierSpecificDemPosOther" cols="70" rows="1" kind="table"/></checkbox>
+            <checkbox id="NPDemClassifierSpecificPosOther"  dataItem="classifierSpecificDemPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPClassifierSpecificDemPosOtherContent" dataItem="classifierSpecificDemPosOther" cols="70" rows="1" kind="other"/></checkbox>
         </checkboxGroup>
         <prompt id="NPDemClassifierSpecificPosNoCheckPrompt" show="swNPDemClassifierPresentYesOrSomeAndNoCheck">WARNING: You need to check at least one box to describe where the classifiers occur with respect to the demonstrative and the noun in your language, or change your answer above to “No, a classifier is never used in this type of nominal phrase”.</prompt>
         
@@ -75,7 +75,7 @@
           <checkbox id="NPArtAndDemBothCooccurNoPosBefore" dataItem="demOrArtPosBefore">Before it</checkbox>
           <checkbox id="NPArtAndDemBothCooccurNoPosAfter" dataItem="demOrArtPosAfter">After it</checkbox>
           <checkbox id="NPArtAndDemBothCooccurNoPosBoth" dataItem="demOrArtPosBoth">On both sides in the same nominal phrase</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurNoPosOther" dataItem="demOrArtPosOther">In my language, the demonstrative or article may occur as follows: <textBox  id="NPArtAndDemBothCooccurNoPosOtherContent" dataItem="demOrArtPosOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurNoPosOther" dataItem="demOrArtPosOther">In my language, the demonstrative or article may occur as follows: <textBox  id="NPArtAndDemBothCooccurNoPosOtherContent" dataItem="demOrArtPosOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemBothCooccurNoPosNoCheckPrompt" show="swNPArtAndDemBothCooccurNoAndNoCheck">WARNING: You need to check at least one box to describe where the articles and demonstratives occur with respect to the noun in your language.</prompt>
  
@@ -85,7 +85,7 @@
           <checkbox id="NPArtAndDemBothCooccurYesDemPosBefore" dataItem="demAndArtDemBefore">Before it</checkbox>
           <checkbox id="NPArtAndDemBothCooccurYesDemPosAfter" dataItem="demAndArtDemAfter">After it</checkbox>
           <checkbox id="NPArtAndDemBothCooccurYesDemPosBoth" dataItem="demAndArtDemBoth">On both sides in the same nominal phrase</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesDemPosOther" dataItem="demAndArtDemOther">In my language, the demonstratives may occur as follows: <textBox  id="NPArtAndDemBothCooccurYesDemPosOtherContent" dataItem="demAndArtDemOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesDemPosOther" dataItem="demAndArtDemOther">In my language, the demonstratives may occur as follows: <textBox  id="NPArtAndDemBothCooccurYesDemPosOtherContent" dataItem="demAndArtDemOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemBothCooccurYesDemPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndDemPosNoCheck">WARNING: You need to check at least one box to describe where the demonstratives occur with respect to the noun in your language.</prompt>
        
@@ -94,7 +94,7 @@
           <checkbox id="NPArtAndDemBothCooccurYesArtPosBefore" dataItem="demAndArtArtBefore">Before it</checkbox>
           <checkbox id="NPArtAndDemBothCooccurYesArtPosAfter" dataItem="demAndArtArtAfter">After it</checkbox>
           <checkbox id="NPArtAndDemBothCooccurYesArtPosBoth" dataItem="demAndArtArtBoth">On both sides in the same nominal phrase</checkbox>
-           <checkbox id="NPArtAndDemBothCooccurYesArtPosOther" dataItem="demAndArtArtOther">In my language, the articles may occur as follows: <textBox  id="NPArtAndDemBothCooccurYesArtPosOtherContent" dataItem="demAndArtArtOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPArtAndDemBothCooccurYesArtPosOther" dataItem="demAndArtArtOther">In my language, the articles may occur as follows: <textBox  id="NPArtAndDemBothCooccurYesArtPosOtherContent" dataItem="demAndArtArtOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPArtAndDemBothCooccurYesArtPosNoCheckPrompt" show="swNPArtAndDemBothCooccurYesAndArtPosNoCheck">WARNING: You need to check at least one box to describe where the articles occur with respect to the noun in your language.</prompt>
        <instruction id="NPArtDemEitherSideRestrictedInstruction" show="swNPArtDemEitherSideRestricted">In the lexicon, mark those which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>.  Do not enter either feature on any articles or demonstratives which can occur on either side.</instruction>
@@ -138,7 +138,7 @@
             <checkbox id="NPDemBothClassifierSpecificPosAfterNBeforeDem"  dataItem="classifierSpecificDemBothPosAfterNBeforeDem">After the noun but before the demonstrative</checkbox>
             <checkbox id="NPDemBothClassifierSpecificPosPrefixDem"  dataItem="classifierSpecificDemBothPosPrefixDem">As a prefix on the demonstrative</checkbox>
             <checkbox id="NPDemBothClassifierSpecificPosSuffixDem"  dataItem="classifierSpecificDemBothPosSuffixDem">As a suffix on the demonstrative</checkbox>
-            <checkbox id="NPDemBothClassifierSpecificPosOther"  dataItem="classifierSpecificDemBothPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPClassifierSpecificDemBothPosOtherContent" dataItem="classifierSpecificDemBothPosOther" cols="70" rows="1" kind="table"/></checkbox>
+            <checkbox id="NPDemBothClassifierSpecificPosOther"  dataItem="classifierSpecificDemBothPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPClassifierSpecificDemBothPosOtherContent" dataItem="classifierSpecificDemBothPosOther" cols="70" rows="1" kind="other"/></checkbox>
         </checkboxGroup>
         <prompt id="NPDemBothClassifierSpecificPosNoCheckPrompt" show="swNPDemBothClassifierPresentYesOrSomeAndNoCheck">WARNING: You need to check at least one box to describe where the classifiers occur with respect to the demonstrative and the noun in your language, or change your answer above to “No, a classifier is never used in this type of nominal phrase”.</prompt>
         

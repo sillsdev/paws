@@ -67,7 +67,7 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	      <checkbox id="QPDegreeBefore"  dataItem="degreeBefore">Before the quantifier</checkbox>
 	      <checkbox id="QPDegreeAfter"  dataItem="degreeAfter">After the quantifier</checkbox>
 	      <checkbox id="QPDegreeBoth"  dataItem="degreeBoth">On both sides of the quantifier at the same time</checkbox>
-	   	<checkbox id="QPDegreeOther"  dataItem="degreeOther">In my language, they may occur in the following position: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPDegreeOther"  dataItem="degreeOther">In my language, they may occur in the following position: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeWordPosNoCheckPrompt" show="swQPDegreeWordPosNoCheck">WARNING: You need to check at least one box to describe where these degree words occur with respect to the quantifier in your language or change your answer above to say that the degree elements are not expressed as independent words.</prompt>  
 	   <instruction id="QPDegreeYesInstruction" show="swQPDegreeYesOrSome">
@@ -83,7 +83,7 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	      <prompt>Based on the examples in the box above, where do the degree elements (optionally) attach with respect to the quantifier? Check all options that are correct for your language</prompt>
 	      <checkbox id="QPDegreeTypePrefix" dataItem="degreeTypePrefix">As a prefix which attaches to the quantifier</checkbox>
 	      <checkbox id="QPDegreeTypeSuffix" dataItem="degreeTypeSuffix">As a suffix which attaches to the quantifier</checkbox>
-	   	<checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeAttachesPosNoCheckPrompt" show="swQPDegreeAttachesPosNoCheck">WARNING: You need to check at least one box to describe where these degree affixes occur with respect to the quantifier in your language or change your answer above to say that the degree elements are all written as independent words.</prompt>  
 <br/>

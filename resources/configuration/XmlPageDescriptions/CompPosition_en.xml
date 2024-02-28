@@ -33,7 +33,7 @@
           <checkbox id="CompAttachesEnclitic" dataItem="compEnclitic">As an enclitic which attaches to the end of whatever word ends the complement clause</checkbox>
           <checkbox id="CompAttachesPrefix" dataItem="compPrefix">As a prefix which attaches to the verb in the complement clause</checkbox>
           <checkbox id="CompAttachesSuffix" dataItem="compSuffix">As a suffix which attaches to the verb in the complement clause</checkbox>
-          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">In my language, these elements may attach as follows: <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" cols="70"  rows="1" kind="table"/></checkbox>
+          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">In my language, these elements may attach as follows: <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" cols="70"  rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="CompAttachesNoCheckPrompt" show="swCompWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these complementizer clitics attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
        
@@ -57,7 +57,7 @@
           <checkbox id="CompWordPosBefore"  dataItem="compBefore">Before it</checkbox>
           <checkbox id="CompWordPosAfter"  dataItem="compAfter">After it</checkbox>
           <checkbox id="CompWordPosBoth"  dataItem="compBoth">On both sides in the same clause</checkbox>
-          <checkbox id="CompWordPosOther"  dataItem="compOther">In my language, they may occur in the following position: <textBox  id="CompWordPosOtherContent" dataItem="compOther" cols="70"  rows="1" kind="table"/></checkbox>
+          <checkbox id="CompWordPosOther"  dataItem="compOther">In my language, they may occur in the following position: <textBox  id="CompWordPosOtherContent" dataItem="compOther" cols="70"  rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="CompWordNoCheckPrompt" show="swCompWordYesOrSomeAndNoCheck">WARNING: You need to check at least one box to describe where these complementizers occur with respect to the rest of the embedded clause in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
        

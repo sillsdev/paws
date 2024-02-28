@@ -37,7 +37,7 @@
           <checkbox id="NPCaseWordBefore"  dataItem="caseWordBefore">Antes de la frase nominal</checkbox>
           <checkbox id="NPCaseWordAfter"  dataItem="caseWordAfter">Después de la frase nominal</checkbox>
           <checkbox id="NPCaseWordBoth"  dataItem="caseWordBoth">En ambos lados en la misma frase nominal</checkbox>
-          <checkbox id="NPCaseWordOther"  dataItem="caseWordOther">En mi lengua, los indicadores de caso pueden presentarse:  <textBox  id="NPCaseWordOtherContent" dataItem="caseWordOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="NPCaseWordOther"  dataItem="caseWordOther">En mi lengua, los indicadores de caso pueden presentarse:  <textBox  id="NPCaseWordOtherContent" dataItem="caseWordOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPCaseWordNoCheckPrompt" show="swNPCaseWordYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los indicadoees de caso con respecto al resto de la frase nominal, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra en la frase nominal’.</prompt>
 
@@ -47,7 +47,7 @@
           <checkbox id="NPCaseAttachesEnclitic" dataItem="caseAttachesEnclitic">Al final de la palabra final en la frase nominal como enclíticos</checkbox>
           <checkbox id="NPCaseAttachesPrefix" dataItem="caseAttachesPrefix">Como prefijos que se unen al sustantivo principal</checkbox>
           <checkbox id="NPCaseAttachesSuffix" dataItem="caseAttachesSuffix">Como sufijos que se unen al sustantivo principa</checkbox>
-           <checkbox id="NPCaseAttachesOther" dataItem="caseAttachesOther">En mi lengua, los indicadores de caso se unen: <textBox  id="NPCaseAttachesOtherContent" dataItem="caseAttachesOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="NPCaseAttachesOther" dataItem="caseAttachesOther">En mi lengua, los indicadores de caso se unen: <textBox  id="NPCaseAttachesOtherContent" dataItem="caseAttachesOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="NPCaseAttachesNoCheckPrompt" show="swNPCaseAttachesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se unen los indicadores de caso que no son palabras independientes en la frase nominal, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
        

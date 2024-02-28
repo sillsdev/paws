@@ -55,7 +55,7 @@
           <checkbox id="PronPossAffixYes" dataItem="possAffixPron">Uno o más afijos se unen para hacer otro pronombre en un posesivo</checkbox>
           <checkbox id="PronPossAffixYesWord" dataItem="possAffixWord">Uno o más afijos se unen para hacer otra palabra (que no es un pronombre) en un posesivo</checkbox>
           <checkbox id="PronPossAffixNoPhrase" dataItem="possPhrase">Se utilizan los pronombres como el posesivo de una palabra especial (que no es un pronombre) y esto se convierte en una frase posesiva que tiene el mismo significado y uso como un pronombre posesivo</checkbox>
-          <checkbox id="PronPossAffixOther" dataItem="possOther">En mi lengua, los posesivos son construidos con:<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronPossAffixOther" dataItem="possOther">En mi lengua, los posesivos son construidos con:<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronPossAffixNoCheckPrompt" show="swPronPossYesNoCheck">ADVERTENCIA: Usted dijo anteriormente que su lengua tiene pronombres posesivos, pero no ha marcado ninguna de las opciones para decir cómo se forman. Por favor, seleccione una o más opciones según corresponda, a menos que su lengua no tiene ningún pronombre posesivo, en cuyo caso no debe tener ninguna forma en los campos y debe cambia la respuesta anterior a ‘No’.</prompt>

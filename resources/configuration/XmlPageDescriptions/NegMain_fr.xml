@@ -49,7 +49,7 @@
           <checkbox id="NegNPDegreeNegEnclitic" dataItem="npDegreeNegEnclitic">Comme un enclitique de constituant qui se rattache à la fin du dernier mot du syntagme nominal, quel qu’il soit</checkbox>
           <checkbox id="NegNPDegreeNegPrefix" dataItem="npDegreeNegPrefix">Comme un préfixe qui se rattache au nom principal du syntagme nominal</checkbox>
           <checkbox id="NegNPDegreeNegSuffix" dataItem="npDegreeNegSuffix">Comme un suffixe qui se rattache au nom principal du syntagme nominal</checkbox>
-          <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">Dans ma langue ces éléments peuvent se rattacher dans la position suivante : <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="NegNPDegreeNegOther" dataItem="npDegreeNegOther">Dans ma langue ces éléments peuvent se rattacher dans la position suivante : <textBox  id="NegNPDegreeNegOtherContent" dataItem="npDegreeNegOther" rows="1" cols="70" kind="other"/></checkbox>
           </checkboxGroup>	 
        <prompt id="NegNPDegreeAttachesNoCheckPrompt" show="swNegNPDegreeNoAndNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire comment ces éléments se rattachent à un autre mot dans votre langue ; soit changez votre réponse ci-dessus et cocher : « Oui, ce sont tous des mots indépendants ».</prompt>
        <br/>
@@ -76,7 +76,7 @@
           <checkbox id="NegNPDegreeNegWordBefore" dataItem="npDegreeNegWordBefore">Avant</checkbox>
           <checkbox id="NegNPDegreeNegWordAfter"  dataItem="npDegreeNegWordAfter">Après</checkbox>
           <checkbox id="NegNPDegreeNegWordBoth"  dataItem="npDegreeNegWordBoth">De part et d’autre en même temps</checkbox>
-          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">Dans ma langue ces éléments se placent dans la position suivante : <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">Dans ma langue ces éléments se placent dans la position suivante : <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70" kind="o"/></checkbox>
        </checkboxGroup>	
        <prompt id="NegNPDegreeWordNoCheckPrompt" show="swNegNPDegreeYesAndNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire la position de ces éléments négatifs dans votre langue ; soit changer votre réponse et cocher : « Non, ils se rattachent tous à un autre mot dans le syntagme nominal ».</prompt>
        <instruction id="NegNPDegreeNegYesInstruction" show="swNegNPDegreeNegYesOrSome">In the lexicon, mark the words meaning   « not »  and  « no »  with the features <feature>makeNeg modifies_DP</feature>. </instruction>

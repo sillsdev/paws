@@ -41,7 +41,7 @@
          <checkbox id="QEmbContBetweenEnclitic" dataItem="embContBetweenEnclitic" show="swQContFrontYes">Como un enclítico que se une al final de la palabra que termina la frase interrogativa despazada, antes del resto de la pregunta subordinada</checkbox>
          <checkbox id="QEmbContCliticPrefix" dataItem="embContPrefix">Como un prefijo que se une al verbo en la pregunta subordinada</checkbox>
          <checkbox id="QEmbContCliticSuffix" dataItem="embContSuffix">Como un sufijo que se une al verbo en la pregunta subordinada</checkbox>
-         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContCliticPosNoCheckPrompt" show="swQEmbContWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos indicadores o complementadores de pregunta subordinada se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       
@@ -62,7 +62,7 @@
          <checkbox id="QEmbContPosBefore"  dataItem="embContWordBefore">Antes de la pregunta subordinada</checkbox>
          <checkbox id="QEmbContPosAfter"  dataItem="embContWordAfter">Después de la pregunta subordinada</checkbox>
          <checkbox id="QEmbContPosBoth"  dataItem="embContWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">En mi lengua, el indicador o complementador de pregunta puede presentarse:  <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">En mi lengua, el indicador o complementador de pregunta puede presentarse:  <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
          <prompt id="QEmbContPosNoCheckPrompt" show="swQEmbContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta que se escriben como palabras independientes con respecto al resto de la pregunta subordinada en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       <instruction id="QEmbContWordYesInstruction" show="swQEmbContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
@@ -73,7 +73,7 @@
          <checkbox id="QEmbContVSOAfterWh" dataItem="embContVSOAfterWh">Inmediatamente después de una frase interrogativa desplazada</checkbox>
          <checkbox id="QEmbContVSOBeforeWh" dataItem="embContVSOBeforeWh">Al inicio de la pregunta subordinada, antes de una frase interrogativa desplazada</checkbox>
          <checkbox id="QEmbContVSOEnd" dataItem="embContVSOEnd">Al final de la pregunta subordinada</checkbox>
-         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">En mi lengua, el indicador o complementador de pregunta puede presentarse: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
          <prompt id="QEmbContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta que se escriben como palabras independientes con respecto de la frase interrogativa desplazada y al resto de la pregunta subordinada en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       

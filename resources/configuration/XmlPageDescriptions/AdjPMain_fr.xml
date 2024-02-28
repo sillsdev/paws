@@ -48,7 +48,7 @@
 	   	<checkbox id="AdjPModifiersManner" checked="yes" dataItem="modifiersManner">Avec des adverbes de manière ou des syntagmes exprimant la manière</checkbox>
 	   	<checkbox id="AdjPModifiersAttaches" dataItem="modifiersAttaches">Des affixes ou des clitiques sont rattachés à l'adjectif pour l'intensifier</checkbox>
 	   	<checkbox id="AdjPModifiersRedup" dataItem="modifiersRedup">La réduplication est utilisée pour intensifier la signification de l’adjectif</checkbox>
-	   	<checkbox id="AdjPModifiersOther" dataItem="modifiersOther">Dans ma langue les adjectifs peuvent être modifiés de la façon suivante : <textBox  id="AdjPModifiersOtherContent" dataItem="modifiersOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="AdjPModifiersOther" dataItem="modifiersOther">Dans ma langue les adjectifs peuvent être modifiés de la façon suivante : <textBox  id="AdjPModifiersOtherContent" dataItem="modifiersOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>	
 		<prompt id="AdjPModifiersYesNoCheckPrompt" show="swAdjPModifiersYesAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire quels modificateurs peuvent modifier ou intensifier les adjectifs dans votre langue, sinon, il faut changer la réponse ci-dessus et indiquer « Non, les adjectifs ne sont ni modifiés ni intensifiés ».</prompt>
 	   <br/>
@@ -70,7 +70,7 @@
 	   	<checkbox id="AdjPDegreeBefore" checked="yes" dataItem="degreeBefore">Avant l’adjectif</checkbox>
 	   	<checkbox id="AdjPDegreeAfter" checked="yes" dataItem="degreeAfter">Après l’adjectif</checkbox>
 	   	<checkbox id="AdjPDegreeBoth" checked="yes" dataItem="degreeBoth">De part et d’autre de l’adjectif</checkbox>
-	   	<checkbox id="AdjPDegreeOther" checked="yes" dataItem="degreeOther">Dans ma langue ces mots de degré se  trouvent dans la position suivante suivante : <textBox  id="AdjPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="AdjPDegreeOther" checked="yes" dataItem="degreeOther">Dans ma langue ces mots de degré se  trouvent dans la position suivante suivante : <textBox  id="AdjPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>	
 		<prompt id="AdjPModifiersYesDegreeNoCheckPrompt" show="swAdjPModifiersYesDegreeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où ces mots de degré se trouvent dans votre langue, sinon, il faut changer la réponse ci-dessus et indiquer un type différent de modificateur.</prompt>
 	   <instruction id="AdjPModifiersYesDegreeInstruction" show="swAdjPModifiersYesDegree">In the lexicon, mark the degree words with the feature <feature>makeDeg modifies_Adj</feature>.    (If any of these degree words are the same as those which can modify an entire nominal phrase or a quantifier or an adverb, you can simply add the additional feature <feature>modifies_Adj</feature> to the same lexical entry.)</instruction>
@@ -84,7 +84,7 @@
 	   	<checkbox id="AdjPMannerBefore" checked="yes" dataItem="mannerBefore">Avant l’adjectif</checkbox>
 	   	<checkbox id="AdjPMannerAfter" checked="yes" dataItem="mannerAfter">Après l’adjectif</checkbox>
 	   	<checkbox id="AdjPMannerBoth" checked="yes" dataItem="mannerBoth">Des deux côtés à la fois</checkbox>
-	   	<checkbox id="AdjPMannerOther" checked="yes" dataItem="mannerOther">Dan mas langue ces adverbs de manière se  trouvent dans la position suivante : <textBox  id="AdjPMannerOtherContent" dataItem="mannerOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="AdjPMannerOther" checked="yes" dataItem="mannerOther">Dan mas langue ces adverbs de manière se  trouvent dans la position suivante : <textBox  id="AdjPMannerOtherContent" dataItem="mannerOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>	
 		<prompt id="AdjPModifiersYesMannerNoCheckPrompt" show="swAdjPModifiersYesMannerAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où ces adverbes de manière ou syntagmes se trouvent dans votre langue, sinon il faut changer la réponse ci-dessus et indiquer un type différent de modificateur.</prompt>
 	   <instruction id="AdjPModifiersYesMannerInstruction" show="swAdjPModifiersYesManner">

@@ -19,7 +19,7 @@
           <checkbox id="IPExistWord" dataItem="existWord">Una palabra existencial independiente, como ‘there' en inglés</checkbox>
           <checkbox id="IPExistVerb" dataItem="existVerb">Un verbo existencial, como ‘hay’ en español, o posiblemente los verbos copulativos como en inglés</checkbox>
           <checkbox id="IPExistPosition" dataItem="existPosition">Un sistema de verbos existenciales que expresan la posición del objeto que se describe</checkbox>
-          <checkbox id="IPExistOther" dataItem="existOther">En mi lengua, las oraciones existenciales se pueden marcar en esta manera: <textBox  id="IPExistOtherContent" dataItem="existOther" cols="70"  rows="1" kind="table"/></checkbox>
+          <checkbox id="IPExistOther" dataItem="existOther">En mi lengua, las oraciones existenciales se pueden marcar en esta manera: <textBox  id="IPExistOtherContent" dataItem="existOther" cols="70"  rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="IPExistNoCheckPrompt" show="swIPExistNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir qué elementos especiales se utilizan en oraciones existenciales en su lengua.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno, son exactamente las mismas que oraciones copulativas’ abajo.</prompt>
        <checkboxGroup id="IPExistNoneTable" show="swIPExistNoCheck">

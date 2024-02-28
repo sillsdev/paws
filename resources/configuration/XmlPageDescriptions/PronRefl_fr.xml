@@ -56,7 +56,7 @@
            <checkbox id="PronReflAffixYes" dataItem="reflAffix">Un ou plusieurs affixes sont choisis pour former un autre pronom réfléchi</checkbox>
            <checkbox id="PronReflAffixNoNoun" dataItem="reflNounPoss">Un substantif donné est utilisé avec un pronom comme possesseur</checkbox>
            <checkbox id="PronReflAffixNoQP" dataItem="reflQP">On utilise des syntagmes nominaux quantifiés</checkbox>
-           <checkbox id="PronReflAffixOther" dataItem="reflOther">Dans ma langue, on forme le réfléchi de la façon suivante :<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="PronReflAffixOther" dataItem="reflOther">Dans ma langue, on forme le réfléchi de la façon suivante :<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="other"/></checkbox>
         </checkboxGroup>
        <br/><br/>
        <prompt id="PronReflAffixNoCheckPrompt" show="swPronReflYesNoCheck">ATTENTION : Vous avez dit ci-dessus que votre langue a des réfléchis, mais vous n’avez coché aucune option pour dire comment ils sont formés.  Il faut cocher une ou plusieurs options, à moins que vous n’ayez pas de réfléchis.  Dans ce cas, il ne vous aurait pas fallu ajouter de formes dans les boîtes, il faut changer changer la réponse à la question ci-dessus et cocher soit « Non » ou à « Oui, un affixe verbal indique l’action réfléchie ».</prompt>

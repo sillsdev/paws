@@ -43,7 +43,7 @@
          <checkbox id="QEmbContBetweenEnclitic" dataItem="embContBetweenEnclitic" show="swQContFrontYes">As an enclitic which attaches to the end of the last word in the fronted interrogative phrase, before the rest of the embedded question</checkbox>
          <checkbox id="QEmbContCliticPrefix" dataItem="embContPrefix">As a prefix which attaches to the embedded clause verb</checkbox>
          <checkbox id="QEmbContCliticSuffix" dataItem="embContSuffix">As a suffix which attaches to the embedded clause verb</checkbox>
-         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContCliticOther" dataItem="embContCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbContCliticOtherContent" dataItem="embContCliticOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContCliticPosNoCheckPrompt" show="swQEmbContWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these embedded clause question markers attach in your language, or change the answer above to ‘Yes’.</prompt>
       
@@ -64,7 +64,7 @@
          <checkbox id="QEmbContPosBefore"  dataItem="embContWordBefore">Before it</checkbox>
          <checkbox id="QEmbContPosAfter"  dataItem="embContWordAfter">After it</checkbox>
          <checkbox id="QEmbContPosBoth"  dataItem="embContWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">In my language, they may occur in the following position: <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContPosOther"  dataItem="embContWordOther">In my language, they may occur in the following position: <textBox  id="QEmbContPosOtherContent" dataItem="embContWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContPosNoCheckPrompt" show="swQEmbContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">WARNING: You need to check at least one box to describe where these embedded clause question markers occur with respect to the rest of the embedded question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       <instruction id="QEmbContWordYesInstruction" show="swQEmbContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in main clause questions, add the feature <feature>-root</feature> to this entry.  If this same marker is used in main clause questions, do not add any <feature>root</feature> feature.</instruction>
@@ -75,7 +75,7 @@
          <checkbox id="QEmbContVSOAfterWh" dataItem="embContVSOAfterWh">Immediately after the fronted interrogative phrase</checkbox>
          <checkbox id="QEmbContVSOBeforeWh" dataItem="embContVSOBeforeWh">At the beginning of the embedded question, before the fronted interrogative phrase</checkbox>
          <checkbox id="QEmbContVSOEnd" dataItem="embContVSOEnd">At the end of the embedded question</checkbox>
-         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">In my language, they may occur in the following position: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbContVSOOther"  dataItem="embContVSOOther">In my language, they may occur in the following position: <textBox  id="QEmbContVSOOtherContent" dataItem="embContVSOOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">WARNING: You need to check at least one box to describe where these embedded clause question markers occur with respect to the interrogative phrase and the rest of the embedded question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       

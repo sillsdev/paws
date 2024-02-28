@@ -60,7 +60,7 @@
       	<prompt><br/>Comment les conjonctions se rattachent-elles dans une construction de coordination ?  Choisissez toutes les options valables dans votre langue.</prompt>
       	<checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">Comme un proclitique qui se rattache au début du deuxième conjonct</checkbox>
       	<checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">Comme un enclitique qui se rattache à la fin du premier conjonct</checkbox>
-      	<checkbox id="CoordConjAttachesOther" dataItem="attachesOther">Dans ma langue, les conjonctions peuvent se rattacher de la façon suivante dans la construction de coordination : <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="table"/></checkbox>
+      	<checkbox id="CoordConjAttachesOther" dataItem="attachesOther">Dans ma langue, les conjonctions peuvent se rattacher de la façon suivante dans la construction de coordination : <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
    	<prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">ATTENTION : Vous n’avez marqué aucune case pour décrire comment les conjonctions peuvent se rattacher à un mot dans votre langue.  Vous devez soit cocher une ou plusieurs cases, selon ce qui convient, ou changer votre réponse en « Oui, elles sont toutes des mots indépendants ».</prompt>
       

@@ -184,7 +184,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 		   <checkbox id="QPOrdinalAffix" checked="yes" dataItem="ordinalAffix">An affix is added to the cardinal number</checkbox>
 		   <checkbox id="QPOrdinalIndependent" checked="yes" dataItem="ordinalIndependent">Some or all of the ordinal numbers are distinct words</checkbox>
 		   <checkbox id="QPOrdinalWord" checked="yes" dataItem="ordinalWord">Another word is added to the cardinal number</checkbox>
-	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">In my language, ordinal numbers are formed as follows: <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">In my language, ordinal numbers are formed as follows: <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" cols="70" rows="1" kind="other"/></checkbox>
 		</checkboxGroup>
 	   <prompt id="QPOrdinalFormNoCheckPrompt" show="swQPOrdinalFormNoCheck">WARNING: You need to check at least one box to describe how the ordinal numbers are formed in your language.</prompt>  
 	   
@@ -199,7 +199,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	      <checkbox id="QPOrdinalWordBefore" dataItem="ordinalWordBefore">Before the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalWordAfter" dataItem="ordinalWordAfter">After the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalWordBoth" dataItem="ordinalWordBoth">On both sides of the cardinal number</checkbox>
-	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">In my language, the ordinal word occurs as follows: <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">In my language, the ordinal word occurs as follows: <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>		
 	   <prompt id="QPOrdinalWordPosNoCheckPrompt" show="swQPOrdinalWordPosNoCheck">WARNING: You need to check at least one box to describe where the ordinal word occurs with respect to the cardinal number to form the ordinal number in your language, or change your answer above to say that the the ordinal numbers are formed in another way.</prompt>  
 		<br/>
@@ -229,7 +229,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	      <checkbox id="QPOrdinalBefore" checked="yes" dataItem="ordinalBefore">Before the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalAfter" checked="yes" dataItem="ordinalAfter">After the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalBoth" checked="yes" dataItem="ordinalBoth">On both sides of the cardinal number at the same time</checkbox>
-	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">In my language, these elements occur as follows with respect to the cardinal number: <textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">In my language, these elements occur as follows with respect to the cardinal number: <textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>		
 		<prompt id="QPOrdinalNumNoCheckPrompt" show="swQPOrdinalNumNoCheck">WARNING: You need to check at least one box to describe where the ordinal numbers and the words for ‘next’ and ‘last’ occur with respect to the cardinal number, unless your language does not allow either ordinal numbers or the words for ‘next’ or ‘last’ to occur with a cardinal number.  In that case, select  ‘Nowhere’ below.</prompt>  
 		<checkboxGroup id="QPOrdinalNumNowhereTable" show="swQPOrdinalNumNoCheck">

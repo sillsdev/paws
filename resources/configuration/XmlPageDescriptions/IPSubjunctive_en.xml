@@ -39,7 +39,7 @@
          <checkbox id="IPSubjunctiveCondEnclitic" dataItem="subjunctiveCondEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the subjunctive conditional phrase</checkbox>
          <checkbox id="IPSubjunctiveCondPrefix" dataItem="subjunctiveCondPrefix">As a prefix which attaches to the verb in the subjunctive conditional phrase</checkbox>
          <checkbox id="IPSubjunctiveCondSuffix" dataItem="subjunctiveCondSuffix">As a suffix which attaches to the verb in the subjunctive conditional phrase</checkbox>
-         <checkbox id="IPSubjunctiveCondOther" dataItem="subjunctiveCondOther">In my language, these elements may attach as follows: <textBox  id="IPSubjunctiveCondOtherContent" dataItem="subjunctiveCondOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="IPSubjunctiveCondOther" dataItem="subjunctiveCondOther">In my language, these elements may attach as follows: <textBox  id="IPSubjunctiveCondOtherContent" dataItem="subjunctiveCondOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="IPSubjunctiveCondAttachesNoCheckPrompt" show="swIPSubjunctiveCondWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these subjunctive conditional markers attach in your language, or change the answer above to ‘Yes, they are all independent words’ or ‘No, there is no marker for the conditional in subjunctives in my language, only the subjunctive mood itself marked on the verb’.</prompt>
       
@@ -61,7 +61,7 @@
          <checkbox id="IPSubjunctiveCondPosBefore"  dataItem="subjunctiveCondWordBefore">Before it</checkbox>
          <checkbox id="IPSubjunctiveCondPosAfter"  dataItem="subjunctiveCondWordAfter">After it</checkbox>
          <checkbox id="IPSubjunctiveCondPosBoth"  dataItem="subjunctiveCondWordBoth">On both sides in the same phrase</checkbox>
-         <checkbox id="IPSubjunctiveCondPosOther"  dataItem="subjunctiveCondWordOther">In my language, they may occur in the following position: <textBox  id="IPSubjunctiveCondPosOtherContent" dataItem="subjunctiveCondWordOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="IPSubjunctiveCondPosOther"  dataItem="subjunctiveCondWordOther">In my language, they may occur in the following position: <textBox  id="IPSubjunctiveCondPosOtherContent" dataItem="subjunctiveCondWordOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="IPSubjunctiveCondPosNoCheckPrompt" show="swIPSubjunctiveCondYesandNoCheck">WARNING: You need to check at least one box to describe where these subjunctive condition markers occur with respect to the rest of the subjunctive conditional phrase in your language, or change the answer to one of the ‘No’ answers above.</prompt>
       <instruction id="IPSubjunctiveCondYesInstruction" show="swIPSubjunctiveCondWordYesOrSome">In the lexicon, if this word is the same as the conditional word for conditionals discussed on the last page, simply add the feature <feature>subjunctive_conditional</feature> to the same entry you added on the last page with the category <category>Cond</category>.  If it is distinct from that entry, give this entry the category <category>Cond</category> and the feature <feature>subjunctive_conditional</feature>.  If this word can also be used as a complementizers in embedded questions, you will need to add a separate entry for it.   </instruction>

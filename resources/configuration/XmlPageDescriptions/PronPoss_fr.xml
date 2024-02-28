@@ -55,7 +55,7 @@
           <checkbox id="PronPossAffixYes" dataItem="possAffixPron">Un ou plusieurs affixe sont utilisés  pour faire un pronom possessif à partir d’un autre pronom</checkbox>
           <checkbox id="PronPossAffixYesWord" dataItem="possAffixWord">Un ou plusieurs affixe sont utilisés  pour faire un pronom possessif à partir d’un autre mot (qui n’est pas un pronom) en un pronom possessif</checkbox>
           <checkbox id="PronPossAffixNoPhrase" dataItem="possPhrase">Les pronoms possesseurs sont ajoutés à un mot spécial (qui n’est pas un pronom) et l’ensemble mot+pronom devient un syntagme possessif qui a le même sens et le même emploi qu’un pronom possessif autonome</checkbox>
-          <checkbox id="PronPossAffixOther" dataItem="possOther">Ma langue forme les pronoms possessifs de la façon suivante :<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronPossAffixOther" dataItem="possOther">Ma langue forme les pronoms possessifs de la façon suivante :<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronPossAffixNoCheckPrompt" show="swPronPossYesNoCheck">ATTENTION: Vous avez dit ci-dessus que votre langue a des pronoms possessifs, mais vous n’avez coché aucune des options pour indiquer comment ils sont formés.  Vous devez soit cocher une (ou plus) des options proposées. Si vous n’avez pas de pronoms possessifs, il n’aurait fallu entrer aucune forme dans les boîtes. Il faut alors changer la réponse ci-dessus et cocher « Non ».</prompt>

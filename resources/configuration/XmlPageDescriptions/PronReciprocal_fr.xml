@@ -53,7 +53,7 @@
           <checkbox id="PronRecipAffixYes" dataItem="recipAffix">On choisit un ou plusieurs affixes pour créer un réciproque à partir d’un autre pronom</checkbox>
           <checkbox id="PronRecipAffixNoNoun" dataItem="recipNounPoss">On utilise un substantif spécifique avec un pronom comme possesseur</checkbox>
           <checkbox id="PronRecipAffixNoQP" dataItem="recipQP">On utilise des substantifs quantifiés spéciaux</checkbox>
-          <checkbox id="PronRecipAffixOther" dataItem="recipOther">Ma langue forme les réciproques de la façon suivante :<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronRecipAffixOther" dataItem="recipOther">Ma langue forme les réciproques de la façon suivante :<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronRecipAffixNoCheckPrompt" show="swPronRecipYesNoCheck">ATTENTION :  Vous avez dit ci-dessus que votre langue a des réciproques, mais vous n’avez coché aucune des options pour dire comment ils sont formés.  Il faut cocher une ou plusieurs options , à moins que vous n’ayez pas deréciproques.  Dans ce cas, il ne faut pas saisir de formes dans les boîtes et il faut changer la réponse et cocher « Non » ou à « Oui, un affixe verbal indique une action réciproque ».</prompt>

@@ -63,7 +63,7 @@
 	      <prompt><br/>¿Dónde se unen los clíticos o afijos dentro de la construcción coordinada?  Seleccione todas las opciones que son correctas en su lengua</prompt>
 	      <checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">Al principio de la segunda oración enlazada como un proclítico</checkbox>
 	      <checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">Al final de la primera oración enlazada como un enclítico</checkbox>
-	      <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">En mi lengua, las conjunciones pueden unirse: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="table"/></checkbox>
+	      <checkbox id="CoordConjAttachesOther" dataItem="attachesOther">En mi lengua, las conjunciones pueden unirse: <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde las conjunciones se unen en su lengua, o cambia la respuesta de arriba a “Sí, todas son palabras independientes”.</prompt>
 	   

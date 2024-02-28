@@ -32,7 +32,7 @@
           <checkbox id="CompAttachesEnclitic" dataItem="compEnclitic">Como un enclítico que se une al final de culaquiera palabra que termina la cláusula subordinada</checkbox>
           <checkbox id="CompAttachesPrefix" dataItem="compPrefix">Como un prefijo que se une al verbo en la cláusula subordinada</checkbox>
           <checkbox id="CompAttachesSuffix" dataItem="compSuffix">Como un sufijo que se une al verbo en la cláusula subordinada</checkbox>
-          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">En mi lengua, estos elementos se unen: <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" cols="70"  rows="1" kind="table"/></checkbox>
+          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">En mi lengua, estos elementos se unen: <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" cols="70"  rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="CompAttachesNoCheckPrompt" show="swCompWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos complementadores se unen en su lengua, o cambia su respuesta arriba a ‘Sí, todos son palabras independientes’.</prompt>
        
@@ -56,7 +56,7 @@
           <checkbox id="CompWordPosBefore"  dataItem="compBefore">Antes de la cláusula</checkbox>
           <checkbox id="CompWordPosAfter"  dataItem="compAfter">Después de la cláusula</checkbox>
           <checkbox id="CompWordPosBoth"  dataItem="compBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="CompWordPosOther"  dataItem="compOther">En mi lengua, el complementador puede presentarse: <textBox  id="CompWordPosOtherContent" dataItem="compOther" cols="70"  rows="1" kind="table"/></checkbox>
+          <checkbox id="CompWordPosOther"  dataItem="compOther">En mi lengua, el complementador puede presentarse: <textBox  id="CompWordPosOtherContent" dataItem="compOther" cols="70"  rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="CompWordNoCheckPrompt" show="swCompWordYesOrSomeAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos complementadores que se escriben como palabras independientes en su lengua, o cambia su respuesta arriba a ‘No, todos se unen a otra palabra’.</prompt>
        
