@@ -272,6 +272,7 @@ public class RootLayoutController implements Initializable {
 				useWaitCursor();
 				if (newState == State.SUCCEEDED) {
 					System.out.println("succeeded: url='" + webEngine.getLocation() + "'");
+//					System.out.println("doc=" + webEngine.executeScript("document.documentElement.outerHTML"));
 					changeStatusOfBackForwardItems();
 					Platform.runLater(new Runnable() {
 						@Override
@@ -637,6 +638,8 @@ public class RootLayoutController implements Initializable {
 				"webpage.free").get()));
 		params.add(new XsltParameter("prmIpa", RESOURCE_FACTORY.getStringBinding(
 				"webpage.ipa").get()));
+		params.add(new XsltParameter("prmGloss", RESOURCE_FACTORY.getStringBinding(
+				"webpage.gloss").get()));
 		transformer.clearParameters();
 		for (XsltParameter param : params) {
 			transformer.setParameter(param.name, param.value);

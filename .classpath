@@ -7,6 +7,6 @@
 	<classpathentry kind="lib" path="ControlsFX/controlsfx-8.40.12.jar"/>
 	<classpathentry kind="lib" path="saxon/saxon9he.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="LibJavaDev/libjavadev-1.2.0.jar"/>
+	<classpathentry kind="lib" path="LibJavaDev/libjavadev-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

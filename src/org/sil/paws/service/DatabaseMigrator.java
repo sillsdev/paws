@@ -49,6 +49,7 @@ public class DatabaseMigrator {
 			{"10", "DBVersion10To11.xsl"},
 			{"11", "DBVersion11To12.xsl"},
 			{"12", "DBVersion12To13.xsl"},
+			{"13", "DBVersion13To14.xsl"},
 	};
 	File databaseFile;
 

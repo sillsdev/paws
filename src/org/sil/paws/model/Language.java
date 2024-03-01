@@ -13,6 +13,10 @@ import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import com.sun.org.apache.xml.internal.dtm.ref.DTMNodeList;
+import com.sun.org.apache.xpath.internal.NodeSet;
 
 /**
  * @author Andy Black
@@ -49,6 +53,32 @@ public class Language {
 		return code;
 	}
 	
+	public int getFormsLength(String XPath) {
+		int result = 1;
+		XPathFactory xPathfactory = XPathFactory.newInstance();
+		XPath xpath = xPathfactory.newXPath();
+		try {
+			XPathExpression expr = xpath.compile(XPath);
+			Node node = (Node) expr.evaluate(answersDOM, XPathConstants.NODE);
+			if (node != null) {
+				int iCount = 0;
+				for (int i = 0; i < node.getChildNodes().getLength(); i++) {
+					Node n = node.getChildNodes().item(i);
+					if (n.getNodeName().equals("form")) {
+						iCount++;
+					}
+				}
+				result = iCount;
+			} else {
+				System.out.println("\tnode is null");
+			}
+		} catch (XPathExpressionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return result;
+	}
+
 	public String getValue(String XPath) {
 		String sResult = "";
 		XPathFactory xPathfactory = XPathFactory.newInstance();

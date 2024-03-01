@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2018-2022 SIL International
+ * Copyright (c) 2018-2024 SIL International
  * This software is licensed under the LGPL, version 2.1 or later
  * (http://www.gnu.org/licenses/lgpl-2.1.html)
  */
@@ -73,6 +73,12 @@ public class WebPageInteractor {
 	public String getAnswerValue(String sXPath) {
 		sOutValue = language.getValue(sXPath);
 		return sOutValue;
+	}
+
+	public int getFormsLength(String sXPath) {
+		int result = language.getFormsLength(sXPath);
+//		System.out.println("forms length of '" + sXPath + "' = " + result);
+		return result;
 	}
 
 	public String getInterfaceLanguage() {
@@ -151,6 +157,10 @@ public class WebPageInteractor {
 	public void setLeftOffAt(String sValue) {
 		language.setValue("/paws/leftOffAt", sValue);
 		saveData();
+	}
+
+	public void showSomething(String something) {
+		System.out.println(something);
 	}
 
 	public void languageNameChanged() {
