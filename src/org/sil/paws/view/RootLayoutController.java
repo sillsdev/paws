@@ -1153,6 +1153,7 @@ public class RootLayoutController implements Initializable {
 	public void handleBack() {
 		final WebHistory history = webEngine.getHistory();
 		if (canGoBack(history)) {
+			webEngine.executeScript("saveData()");
 			Platform.runLater(new Runnable() {
 				public void run() {
 					history.go(-1);
@@ -1174,6 +1175,7 @@ public class RootLayoutController implements Initializable {
 	private void handleForward() {
 		final WebHistory history = webEngine.getHistory();
 		if (canGoForward(history)) {
+			webEngine.executeScript("saveData()");
 			Platform.runLater(new Runnable() {
 				public void run() {
 					history.go(1);
