@@ -38,6 +38,7 @@ Preamble
 	<xsl:param name="prmIpa" select="'IPA:'"/>
 	<xsl:param name="prmFree" select="'Free:'"/>
 	<xsl:param name="prmGloss" select="'Gloss:'"/>
+	<xsl:param name="prmAddExample" select="' Add another example'"/>
 	<xsl:variable name="Section">
 		<xsl:value-of select="//form/@section"/>
 	</xsl:variable>
@@ -439,6 +440,7 @@ return newRow;
 }
 
 function ExampleInsertClicked(tableme,idValue) {
+pawsApp.showSomething("ExampleInsertClicked called; idValue='" + idValue + "'");
 var size = tableme.rows.length;
 var trnew = document.createElement("tr");
 var tdnew = document.createElement("td");
@@ -1517,7 +1519,9 @@ technicalTermRef
 			<xsl:call-template name="CreateExampleSubTable"/>
 			<tr id="{@id}InsertAction">
 				<td onclick="ExampleInsertClicked({@id},'{@id}')">
-					<img  style="margin-left: 0.5in" src="{$prmInstallPath}/Styles/insertAction.png" alt="Insert Acton icon"/>
+					<img  style="margin-left: 0.5in" src="{$prmInstallPath}/Styles/insertAction.png" alt="Insert Acton icon">
+						<xsl:value-of select="$prmAddExample"/>
+					</img>
 				</td>
 			</tr>
 		</table>
@@ -1686,7 +1690,9 @@ thisTextarea = document.getElementById(sTemp);
 				<xsl:call-template name="CreateInterlinearSubTable"/>
 			<tr id="{@id}InsertAction">
 				<td onclick="InsertClicked{@id}()">
-					<img  style="margin-left: 0.5in" src="{$prmInstallPath}/Styles/insertAction.png" alt="Insert Acton icon"/>
+					<img  style="margin-left: 0.5in" src="{$prmInstallPath}/Styles/insertAction.png" alt="Insert Acton icon">
+						<xsl:value-of select="$prmAddExample"/>
+					</img>
 				</td>
 			</tr>
 		</table>

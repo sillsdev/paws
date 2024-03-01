@@ -640,6 +640,8 @@ public class RootLayoutController implements Initializable {
 				"webpage.ipa").get()));
 		params.add(new XsltParameter("prmGloss", RESOURCE_FACTORY.getStringBinding(
 				"webpage.gloss").get()));
+		params.add(new XsltParameter("prmAddExample", RESOURCE_FACTORY.getStringBinding(
+				"webpage.addexample").get()));
 		transformer.clearParameters();
 		for (XsltParameter param : params) {
 			transformer.setParameter(param.name, param.value);
