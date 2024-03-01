@@ -64,7 +64,7 @@ et <example>si</example>, comme dans les exemples ci-dessous :
        <prompt id="AdvPMannerWordDegreeRedupPrompt" show="swAdvPMannerTypeWordRedup">Saisissez ici des exemples des adverbes de manière utilisant la <technicalTermRef term="ttReduplication">reduplication</technicalTermRef> comme moyen d’intensification :</prompt>
    <textBox id="AdvPMannerDegreeRedupExample" dataItem="mannerDegreeRedupExample" rows="5" show="swAdvPMannerTypeWordRedup" kind="table"/> 
        <prompt id="AdvPMannerWordDegreeOtherPrompt" show="swAdvPMannerTypeWordAndOther">Saisissez ici des exemples des adverbes de manière pour lequels d’autres moyens sont utilisés pour les intensifier :</prompt>
-       <textBox id="AdvPMannerDegreeOtherExample" dataItem="mannerDegreeOtherExample" cols="80" rows="5" show="swAdvPMannerTypeWordAndOther" kind="table"/> 
+       <textBox id="AdvPMannerDegreeOtherExample" dataItem="mannerDegreeOtherExample" rows="5" show="swAdvPMannerTypeWordAndOther" kind="table"/> 
 
     <radioGroup id="AdvPMannerAffixDegree" show="swAdvPMannerTypeAffix">
         <groupName dataItem="mannerAffixDegree" default="no">RAdvPMannerAffixDegree</groupName>
@@ -88,7 +88,7 @@ et <example>si</example>, comme dans les exemples ci-dessous :
        <prompt id="AdvPMannerAffixDegreeRedupPrompt" show="swAdvPMannerTypeAffixRedup">Saisissez ici des exemples d’affixes adverbiaux de manière qui se rattachent au verbe et qui ont la <technicalTermRef term="ttReduplication">reduplication</technicalTermRef> comme moyen d’intensification :</prompt>
         <textBox id="AdvPMannerAffixDegreeRedupExample" dataItem="mannerAffixDegreeRedupExample" rows="5" show="swAdvPMannerTypeAffixRedup" kind="table"/>
        <prompt id="AdvPMannerAffixDegreeOtherPrompt" show="swAdvPMannerTypeAffixAndOther">Saisissez ici des exemples d’affixes adverbiaux de manière qui montrent les autres possibilités de les intensifier :</prompt>
-       <textBox id="AdvPMannerAffixDegreeOtherExample" dataItem="mannerAffixDegreeOtherExample" cols="80" rows="5" show="swAdvPMannerTypeAffixAndOther" kind="table"/> 
+       <textBox id="AdvPMannerAffixDegreeOtherExample" dataItem="mannerAffixDegreeOtherExample" rows="5" show="swAdvPMannerTypeAffixAndOther" kind="table"/> 
        <br/><br/>      
         <buttons>
             <button id="AdvPMannerExamplesBack" value="Back" goto="AdvPLocative.xml"/>

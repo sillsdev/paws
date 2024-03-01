@@ -128,23 +128,23 @@
 <br/>
        <introduction id="OTClassifierChartsIntroduction" show="swOTClassifierNotNo">Maintenant on vous demandera des renseignements sur chaque <span id="OTClassifierAgrSpan1" show="swOTClassifierAgr">marqueur de classe nominale</span><span id="OTClassifierNotAgrSpan" show="swOTClassifierTypeOrSpecific">classificateur</span>, afin de créer un tableau qui sera intégré à la description grammaticale. Remplissez toutes les zones de textes<span id="OTClassifierYesAgrSpan" show="swOTClassifierAgrNum"> et cochez le numéro qui correspond au nombre (singulier ou pluriel) de l’accord pour chaque classe</span>.   S’il existe plus d’une forme (allomorphe) pour un <span id="OTClassifierAgrSpan2" show="swOTClassifierAgr">marqueur de classe nominale</span><span id="OTClassifierNotAgrSpan2" show="swOTClassifierTypeOrSpecific">classificateur</span>, saisissez chacune des formes sur une ligne.  Ajoutez un tiret à chaque affixe pour indiquer s’il s’agit d’un préfixe ou d’un suffixe. Nous partons du principe que vous numérotez les classes à partir de <span id="OTClassifierAgrNumSpan" show="swOTClassifierAgrNum" >« un » .  Si ce n’est pas le cas, il vous faudra les modifier dans la description grammaticale produite. Si la langue a moins de classes, laissez les zones de texte vides, tout simplement. Si vous ne trouvez pas certains des classificateurs énumérés ici, laissez ces zones de texte vides. Ajoutez les classificateurs supplémentaires dans la zone de texte « autres » pour qu’ils soient intégrés dans la description grammaticale produite.</span> </introduction>
 <br/>
-       <prompt id="OTClassifierAgrNumPrompt1" show="swOTClassifierAgrNum">Saisissez les formes pour la 1ère classe :</prompt>
-       <textBox id="OTClassifierAgrNumExample1" dataItem="class1Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
-       <radioGroup id="OTClassifierAgrNum1" show="swOTClassifierAgrNum">
+       <prompt id="OTClassifierAgrNumPrompt01" show="swOTClassifierAgrNum">Saisissez les formes pour la 1ère classe :</prompt>
+       <textBox id="OTClassifierAgrNumExample01" dataItem="class1Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <radioGroup id="OTClassifierAgrNum01" show="swOTClassifierAgrNum">
           <groupName dataItem="class1agr" default="irrelevant">ROTClassifierAgrNum1</groupName>
           <prompt>Le nombre de la classe 1 est :</prompt>
-          <radio id="OTClassifierAgrNum1Sg" dataValue="sg">Singulier</radio>
-          <radio id="OTClassifierAgrNum1Pl" dataValue="pl">Pluriel</radio>
-          <radio id="OTClassifierAgrNum1Irr" dataValue="irrelevant">Non pertinent</radio>
+          <radio id="OTClassifierAgrNum01Sg" dataValue="sg">Singulier</radio>
+          <radio id="OTClassifierAgrNum01Pl" dataValue="pl">Pluriel</radio>
+          <radio id="OTClassifierAgrNum01Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
-       <prompt id="OTClassifierAgrNumPrompt2" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 2 :</prompt>
-       <textBox id="OTClassifierAgrNumExample2" dataItem="class2Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
-       <radioGroup id="OTClassifierAgrNum2" show="swOTClassifierAgrNum">
+       <prompt id="OTClassifierAgrNumPrompt02" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 2 :</prompt>
+       <textBox id="OTClassifierAgrNumExample02" dataItem="class2Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <radioGroup id="OTClassifierAgrNum02" show="swOTClassifierAgrNum">
           <groupName dataItem="class2agr" default="irrelevant">ROTClassifierAgrNum2</groupName>
           <prompt>Le nombre de la classe 2 est :</prompt>
-          <radio id="OTClassifierAgrNum2Sg" dataValue="sg">Singulier</radio>
-          <radio id="OTClassifierAgrNum2Pl" dataValue="pl">Pluriel</radio>
-          <radio id="OTClassifierAgrNum2Irr" dataValue="irrelevant">Non pertinent</radio>
+          <radio id="OTClassifierAgrNum02Sg" dataValue="sg">Singulier</radio>
+          <radio id="OTClassifierAgrNum02Pl" dataValue="pl">Pluriel</radio>
+          <radio id="OTClassifierAgrNum02Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt3" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 3 :</prompt>
        <textBox id="OTClassifierAgrNumExample3" dataItem="class3Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>

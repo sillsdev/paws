@@ -19,7 +19,7 @@
           <checkbox id="IPExistWord" dataItem="existWord">Una palabra existencial independiente, como ‘there' en inglés</checkbox>
           <checkbox id="IPExistVerb" dataItem="existVerb">Un verbo existencial, como ‘hay’ en español, o posiblemente los verbos copulativos como en inglés</checkbox>
           <checkbox id="IPExistPosition" dataItem="existPosition">Un sistema de verbos existenciales que expresan la posición del objeto que se describe</checkbox>
-          <checkbox id="IPExistOther" dataItem="existOther">En mi lengua, las oraciones existenciales se pueden marcar en esta manera: <textBox  id="IPExistOtherContent" dataItem="existOther" cols="70"  rows="1" kind="table"/></checkbox>
+          <checkbox id="IPExistOther" dataItem="existOther">En mi lengua, las oraciones existenciales se pueden marcar en esta manera: <textBox  id="IPExistOtherContent" dataItem="existOther" cols="70"  rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="IPExistNoCheckPrompt" show="swIPExistNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir qué elementos especiales se utilizan en oraciones existenciales en su lengua.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno, son exactamente las mismas que oraciones copulativas’ abajo.</prompt>
        <checkboxGroup id="IPExistNoneTable" show="swIPExistNoCheck">
@@ -40,7 +40,7 @@
         <textBox id="IPExamplesExistPositionExample" dataItem="existPositionExample" rows="3" show="swIPExistPosition" kind="table"/>
        <instruction id="IPExistVerbYesInstruction" show="swIPExistVerbOrPosition">Add the feature <feature>exist</feature> to the appropriate verbs in the lexicon. Since the existential verbs are a small, closed set, the feature must be entered in the lexicon on the appropriate verbs; the default setting is <feature>-exist</feature>.  If any copular verbs can be used in these existential constructions, you need to make a separate lexical entry with the feature <feature>exist</feature>, distinct from the entry which has the feature <feature>copular</feature>.</instruction>
        <prompt id="IPExistOtherExamples" show="swIPExistOther"><br/>Escriba ejemplos de la otra manera de marcar las oraciones existenciales en su lengua aquí:</prompt>
-       <textBox id="IPExamplesExistOtherExample" dataItem="existOtherExample" rows="3" cols="80" show="swIPExistOther" kind="table"/>
+       <textBox id="IPExamplesExistOtherExample" dataItem="existOtherExample" rows="3" show="swIPExistOther" kind="table"/>
        <br/>  <br/>
        <buttons>
             <button id="IPExistBack" value="Back" goto="IPComparative.xml"/>

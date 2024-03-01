@@ -67,7 +67,7 @@ and <example>so</example>, as in:
    <prompt id="AdvPMannerWordDegreeRedupPrompt" show="swAdvPMannerTypeWordRedup">Key examples of the manner adverbs with <technicalTermRef term="ttReduplication"/> to intensify them here:</prompt>
    <textBox id="AdvPMannerDegreeRedupExample" dataItem="mannerDegreeRedupExample" rows="5" show="swAdvPMannerTypeWordRedup" kind="table"/> 
        <prompt id="AdvPMannerWordDegreeOtherPrompt" show="swAdvPMannerTypeWordAndOther">Key examples of the manner adverbs with the other means your language uses to intensify them here:</prompt>
-       <textBox id="AdvPMannerDegreeOtherExample" dataItem="mannerDegreeOtherExample" cols="80" rows="5" show="swAdvPMannerTypeWordAndOther" kind="table"/> 
+       <textBox id="AdvPMannerDegreeOtherExample" dataItem="mannerDegreeOtherExample" rows="5" show="swAdvPMannerTypeWordAndOther" kind="table"/> 
 
     <radioGroup id="AdvPMannerAffixDegree" show="swAdvPMannerTypeAffix">
         <groupName dataItem="mannerAffixDegree" default="no">RAdvPMannerAffixDegree</groupName>
@@ -91,7 +91,7 @@ and <example>so</example>, as in:
         <prompt id="AdvPMannerAffixDegreeRedupPrompt" show="swAdvPMannerTypeAffixRedup">Key examples of the manner adverb affixes attached to a verb with <technicalTermRef term="ttReduplication"/> also intensifying them here:</prompt>
         <textBox id="AdvPMannerAffixDegreeRedupExample" dataItem="mannerAffixDegreeRedupExample" rows="5" show="swAdvPMannerTypeAffixRedup" kind="table"/>
        <prompt id="AdvPMannerAffixDegreeOtherPrompt" show="swAdvPMannerTypeAffixAndOther">Key examples of the manner adverb affixes with the other means your language uses to intensify them here:</prompt>
-       <textBox id="AdvPMannerAffixDegreeOtherExample" dataItem="mannerAffixDegreeOtherExample" cols="80" rows="5" show="swAdvPMannerTypeAffixAndOther" kind="table"/> 
+       <textBox id="AdvPMannerAffixDegreeOtherExample" dataItem="mannerAffixDegreeOtherExample" rows="5" show="swAdvPMannerTypeAffixAndOther" kind="table"/> 
        <br/><br/>      
         <buttons>
             <button id="AdvPMannerExamplesBack" value="Back" goto="AdvPLocative.xml"/>

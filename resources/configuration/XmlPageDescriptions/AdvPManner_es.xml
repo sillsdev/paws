@@ -66,7 +66,7 @@ y <example>tan</example>, como en:
        <prompt id="AdvPMannerWordDegreeRedupPrompt" show="swAdvPMannerTypeWordRedup">Escriba ejemplos de adverbios de modo con <technicalTermRef term="ttReduplication">reduplicación</technicalTermRef> aquí:</prompt>
        <textBox id="AdvPMannerDegreeRedupExample" dataItem="mannerDegreeRedupExample" rows="5" show="swAdvPMannerTypeWordRedup" kind="table"/> 
        <prompt id="AdvPMannerWordDegreeOtherPrompt" show="swAdvPMannerTypeWordAndOther">Escriba ejemplos de adverbios de modo modificados o intensificados como se permiten en su lengua aquí:</prompt>
-       <textBox id="AdvPMannerDegreeOtherExample" dataItem="mannerDegreeOtherExample" cols="80" rows="5" show="swAdvPMannerTypeWordAndOther" kind="table"/> 
+       <textBox id="AdvPMannerDegreeOtherExample" dataItem="mannerDegreeOtherExample" rows="5" show="swAdvPMannerTypeWordAndOther" kind="table"/> 
        
        <radioGroup id="AdvPMannerAffixDegree" show="swAdvPMannerTypeAffix">
           <groupName dataItem="mannerAffixDegree" default="no">RAdvPMannerAffixDegree</groupName>
@@ -90,7 +90,7 @@ y <example>tan</example>, como en:
        <prompt id="AdvPMannerAffixDegreeRedupPrompt" show="swAdvPMannerTypeAffixRedup">Escriba ejemplos de los afijos adverbiales de modo con <technicalTermRef term="ttReduplication">reduplicación</technicalTermRef> unidos a los verbos aquí:</prompt>
        <textBox id="AdvPMannerAffixDegreeRedupExample" dataItem="mannerAffixDegreeRedupExample" rows="5" show="swAdvPMannerTypeAffixRedup" kind="table"/>
        <prompt id="AdvPMannerAffixDegreeOtherPrompt" show="swAdvPMannerTypeAffixAndOther">Escriba ejemplos de afijos adverbiales de modo modificados o intensificados como se permiten en su lengua aquí:</prompt>
-       <textBox id="AdvPMannerAffixDegreeOtherExample" dataItem="mannerAffixDegreeOtherExample" cols="80" rows="5" show="swAdvPMannerTypeAffixAndOther" kind="table"/> 
+       <textBox id="AdvPMannerAffixDegreeOtherExample" dataItem="mannerAffixDegreeOtherExample" rows="5" show="swAdvPMannerTypeAffixAndOther" kind="table"/> 
    
        <br/><br/>
        

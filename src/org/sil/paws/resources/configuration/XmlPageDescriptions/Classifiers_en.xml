@@ -129,23 +129,23 @@
 <br/>
        <introduction id="OTClassifierChartsIntroduction" show="swOTClassifierNotNo">You will now be asked for information about each <span id="OTClassifierAgrSpan1" show="swOTClassifierAgr">class marker</span><span id="OTClassifierNotAgrSpan" show="swOTClassifierTypeOrSpecific">classifier</span> so that a table can be created for the grammar writer output.  Please fill in all relevant text boxes<span id="OTClassifierYesAgrSpan" show="swOTClassifierAgrNum"> and click on the appropriate number agreement feature for each class</span>.  If more than one morpheme form is used for a particular <span id="OTClassifierAgrSpan2" show="swOTClassifierAgr">class</span><span id="OTClassifierNotAgrSpan2" show="swOTClassifierTypeOrSpecific">classifier</span>, please enter each on a separate line.  Also, please add a hyphen to each form that is an affix to indicate whether it is a prefix or suffix. <span id="OTClassifierAgrNumSpan" show="swOTClassifierAgrNum" >We are assuming you use numbers beginning with one.  If not, you will need to change them when you edit the grammar output.  If you do not have as many classes as asked for here, simply leave the appropriate text boxes empty.</span> <span id="OTClassifierTypeOrSpecificSpan" show="swOTClassifierTypeOrSpecific" >If you do not have certain classifiers asked for here, simply leave those text boxes empty.  List additional classifiers in the final ‘other’ text box, so they can be glossed in the grammar output.</span> </introduction>
 <br/>
-       <prompt id="OTClassifierAgrNumPrompt1" show="swOTClassifierAgrNum">Enter the forms for class 1 here:</prompt>
-       <textBox id="OTClassifierAgrNumExample1" dataItem="class1Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
-       <radioGroup id="OTClassifierAgrNum1" show="swOTClassifierAgrNum">
+       <prompt id="OTClassifierAgrNumPrompt01" show="swOTClassifierAgrNum">Enter the forms for class 1 here:</prompt>
+       <textBox id="OTClassifierAgrNumExample01" dataItem="class1Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <radioGroup id="OTClassifierAgrNum01" show="swOTClassifierAgrNum">
           <groupName dataItem="class1agr" default="irrelevant">ROTClassifierAgrNum1</groupName>
           <prompt>Number agreement feature for class 1 is:</prompt>
-          <radio id="OTClassifierAgrNum1Sg" dataValue="sg">Singular</radio>
-          <radio id="OTClassifierAgrNum1Pl" dataValue="pl">Plural</radio>
-          <radio id="OTClassifierAgrNum1Irr" dataValue="irrelevant">Irrelevant</radio>
+          <radio id="OTClassifierAgrNum01Sg" dataValue="sg">Singular</radio>
+          <radio id="OTClassifierAgrNum01Pl" dataValue="pl">Plural</radio>
+          <radio id="OTClassifierAgrNum01Irr" dataValue="irrelevant">Irrelevant</radio>
        </radioGroup>
-       <prompt id="OTClassifierAgrNumPrompt2" show="swOTClassifierAgrNum">Enter the forms for class 2 here:</prompt>
-       <textBox id="OTClassifierAgrNumExample2" dataItem="class2Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
-       <radioGroup id="OTClassifierAgrNum2" show="swOTClassifierAgrNum">
+       <prompt id="OTClassifierAgrNumPrompt02" show="swOTClassifierAgrNum">Enter the forms for class 2 here:</prompt>
+       <textBox id="OTClassifierAgrNumExample02" dataItem="class2Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <radioGroup id="OTClassifierAgrNum02" show="swOTClassifierAgrNum">
           <groupName dataItem="class2agr" default="irrelevant">ROTClassifierAgrNum2</groupName>
           <prompt>Number agreement feature for class 2 is:</prompt>
-          <radio id="OTClassifierAgrNum2Sg" dataValue="sg">Singular</radio>
-          <radio id="OTClassifierAgrNum2Pl" dataValue="pl">Plural</radio>
-          <radio id="OTClassifierAgrNum2Irr" dataValue="irrelevant">Irrelevant</radio>
+          <radio id="OTClassifierAgrNum02Sg" dataValue="sg">Singular</radio>
+          <radio id="OTClassifierAgrNum02Pl" dataValue="pl">Plural</radio>
+          <radio id="OTClassifierAgrNum02Irr" dataValue="irrelevant">Irrelevant</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt3" show="swOTClassifierAgrNum">Enter the forms for class 3 here:</prompt>
        <textBox id="OTClassifierAgrNumExample3" dataItem="class3Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>

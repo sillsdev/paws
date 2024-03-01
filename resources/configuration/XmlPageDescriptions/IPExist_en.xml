@@ -38,7 +38,7 @@
        <br/>
        <instruction id="IPExistVerbYesInstruction" show="swIPExistVerbOrPosition">Add the feature <feature>exist</feature> to the appropriate verbs in the lexicon. Since the existential verbs are a small, closed set, the feature must be entered in the lexicon on the appropriate verbs; the default setting is <feature>-exist</feature>.  If any copular verbs can be used in these existential constructions, you need to make a separate lexical entry with the feature <feature>exist</feature>, distinct from the entry which has the feature <feature>copular</feature>.</instruction>
        <prompt id="IPExistOtherExamples" show="swIPExistOther"><br/>Key examples of the other marking used for existential sentences in your language here:</prompt>
-       <textBox id="IPExamplesExistOtherExample" dataItem="existOtherExample" rows="3" cols="80" show="swIPExistOther" kind="table"/>
+       <textBox id="IPExamplesExistOtherExample" dataItem="existOtherExample" rows="3" show="swIPExistOther" kind="table"/>
        
        <br/>  <br/>
        <buttons>
