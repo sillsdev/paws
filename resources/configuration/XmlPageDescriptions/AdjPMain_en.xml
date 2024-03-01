@@ -97,7 +97,7 @@ The manner adverbs should already be marked with the feature <feature>manner</fe
 	   <prompt id="AdjPModifiersDegreeRedup" show="swAdjPModifiersNoRedup">Key examples of qualitative adjectives with reduplication modifying or intensifying them here:</prompt>
 	   <textBox id="AdjPModifiersDegreeRedupExample" dataItem="adjectiveDegreeRedupExample" show="swAdjPModifiersNoRedup" kind="table"/> 
 	   <prompt id="AdjPModifiersOtherPrompt" show="swAdjPModifiersOther">Key examples of qualitative adjectives modifed or intensifed as your language allows here:</prompt>
-	   <textBox id="AdjPModifiersOtherExample" dataItem="adjectiveDegreeOtherExample" show="swAdjPModifiersOther" cols="80" kind="table"/>              
+	   <textBox id="AdjPModifiersOtherExample" dataItem="adjectiveDegreeOtherExample" show="swAdjPModifiersOther" kind="table"/>
 		<br/><br/>
 		<buttons>
 			<button id="AdjPMainBack" value="Back" goto="Contents_en.htm"/>
