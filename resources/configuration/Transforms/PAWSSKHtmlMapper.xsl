@@ -461,6 +461,46 @@ trnew.appendChild(tdnew);
 var lastRow = document.getElementById(idValue + "InsertAction");
 tableme.tBodies[0].insertBefore(trnew,lastRow);
 }
+
+function CreateExampleEntryLineSave(sId,sDataPath,i,sCode,sType) {
+sTemp = sId + sCode + i;
+thisTextarea = document.getElementById(sTemp);
+pawsApp.setAnswerValue("//" + sDataPath + "/form[" + i +"]/" + sType, thisTextarea.value);
+}
+
+function CreateExampleEntrySave(sId,sDataPath) {
+thisTable = document.getElementById(sId);
+maxForms = thisTable.rows.length - 1;
+for (let i = 1; i &lt;= maxForms; i++) {
+CreateExampleEntryLineSave(sId,sDataPath,i,"v","vernacular");
+<xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
+CreateExampleEntryLineSave(sId,sDataPath,i,"i","ipa");
+</xsl:if>
+CreateExampleEntryLineSave(sId,sDataPath,i,"f","gloss");
+}
+}
+
+function CreateExampleEntryLineLoad(sId,sDataPath,i,sCode,sType) {
+sTemp = sId + sCode + i;
+thisTextarea = document.getElementById(sTemp);
+sTemp = pawsApp.getAnswerValue("//" + sDataPath + "/form[" + i +"]/" + sType);
+thisTextarea.innerHTML = sTemp;
+}
+
+function CreateExampleEntryLoad(sId,sDataPath) {
+thisTable = document.getElementById(sId);
+maxForms = thisTable.rows.length - 1;
+for (let i = 1; i &lt;= maxForms; i++) {
+if (i &gt; 1) {
+ExampleInsertClicked(thisTable,sId);
+}
+CreateExampleEntryLineLoad(sId,sDataPath,i,"v","vernacular");
+<xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
+CreateExampleEntryLineLoad(sId,sDataPath,i,"i","ipa");
+</xsl:if>
+CreateExampleEntryLineLoad(sId,sDataPath,i,"f","gloss");
+}
+}
 </script>
 	</xsl:template>
 	<!--
@@ -479,15 +519,11 @@ tableme.tBodies[0].insertBefore(trnew,lastRow);
 		<xsl:variable name="sPath">
 			<xsl:call-template name="GetPathForInterlinearEntry"/>
 		</xsl:variable>
-		<xsl:text>maxForms = pawsApp.getFormsLength("//</xsl:text>
+		<xsl:text>CreateExampleEntryLoad("</xsl:text>
+		<xsl:value-of select="@id"/>
+		<xsl:text>","</xsl:text>
 		<xsl:value-of select="$sPath"/>
 		<xsl:text>");
-for (let i = 1; i &lt;= maxForms; i++) {
-</xsl:text>
-		<xsl:call-template name="CreateExampleEntryLoadJScript">
-			<xsl:with-param name="sPath" select="$sPath"/>
-		</xsl:call-template>
-		<xsl:text>}
 </xsl:text>
 	</xsl:template>
 	<xsl:template match="//textBox[not(contains(@dataItem,'Example')) and @dataItem!='example' or @kind='other'] | //catMap" mode="load">
@@ -519,17 +555,12 @@ for (let i = 1; i &lt;= maxForms; i++) {
 		<xsl:variable name="sPath">
 			<xsl:call-template name="GetPathForInterlinearEntry"/>
 		</xsl:variable>
-		<xsl:text>thisTable = document.getElementById("</xsl:text>
+		<xsl:text>CreateExampleEntrySave("</xsl:text>
 		<xsl:value-of select="@id"/>
+		<xsl:text>","</xsl:text>
+		<xsl:value-of select="$sPath"/>
 		<xsl:text>");
-maxForms = thisTable.rows.length - 1;
-for (let i = 1; i &lt;= maxForms; i++) {
-		</xsl:text>
-		<xsl:call-template name="CreateExampleEntrySaveJScript">
-			<xsl:with-param name="sPath" select="$sPath"/>
-		</xsl:call-template>
-		<xsl:text>}
-		</xsl:text>
+</xsl:text>
 	</xsl:template>
 	<xsl:template match="//textBox[not(contains(@dataItem,'Example')) and @dataItem!='example' or @kind='other'] | //catMap" mode="save">
 		<xsl:text>pawsApp.setAnswerValue("//</xsl:text>
@@ -1527,107 +1558,7 @@ technicalTermRef
 		</table>
 	</xsl:template>
 	<!--
-		CreateExampleEntryLoadJScript
-	-->
-	<xsl:template name="CreateExampleEntryLoadJScript">
-		<xsl:param name="sPath"/>
-		<xsl:text>thisTable = document.getElementById("</xsl:text>
-		<xsl:value-of select="@id"/>
-		<xsl:text>");
-if (i &gt; 1) {
-ExampleInsertClicked(thisTable,"</xsl:text>
-		<xsl:value-of select="@id"/>
-		<xsl:text>");
-}
-</xsl:text>
-		<xsl:call-template name="CreateExampleLineLoadJScript">
-			<xsl:with-param name="sPath" select="$sPath"/>
-			<xsl:with-param name="sType" select="'vernacular'"/>
-			<xsl:with-param name="code" select="'v'"/>
-		</xsl:call-template>
-		<xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
-			<xsl:call-template name="CreateExampleLineLoadJScript">
-				<xsl:with-param name="sPath" select="$sPath"/>
-				<xsl:with-param name="sType" select="'ipa'"/>
-				<xsl:with-param name="code" select="'i'"/>
-			</xsl:call-template>
-		</xsl:if>
-		<xsl:call-template name="CreateExampleLineLoadJScript">
-			<xsl:with-param name="sPath" select="$sPath"/>
-			<xsl:with-param name="sType" select="'gloss'"/>
-			<xsl:with-param name="code" select="'f'"/>
-		</xsl:call-template>
-	</xsl:template>
-	<!--
-		CreateExampleLineLoadJScript
-	-->
-	<xsl:template name="CreateExampleLineLoadJScript">
-		<xsl:param name="sPath"/>
-		<xsl:param name="sType"/>
-		<xsl:param name="code" select="'v'"/>
-		<xsl:text>sTemp = "</xsl:text>
-		<xsl:value-of select="@id"/>
-		<xsl:value-of select="$code"/>
-		<xsl:text>" + i;
-thisTextarea = document.getElementById(sTemp);
-</xsl:text>
-		<xsl:text>sTemp = pawsApp.getAnswerValue("//</xsl:text>
-		<xsl:value-of select="$sPath"/>
-		<xsl:text>/form["</xsl:text>
-		<xsl:text> + i +</xsl:text>
-		<xsl:text>"]/</xsl:text>
-		<xsl:value-of select="$sType"/>
-		<xsl:text>");
-thisTextarea.innerHTML = sTemp;
-</xsl:text>
-	</xsl:template>
-	<!--
-		CreateExampleEntrySaveJScript
-	-->
-	<xsl:template name="CreateExampleEntrySaveJScript">
-		<xsl:param name="sPath"/>
-		<xsl:call-template name="CreateExampleLineSaveJScript">
-			<xsl:with-param name="sPath" select="$sPath"/>
-			<xsl:with-param name="sType" select="'vernacular'"/>
-			<xsl:with-param name="code" select="'v'"/>
-		</xsl:call-template>
-		<xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
-			<xsl:call-template name="CreateExampleLineSaveJScript">
-				<xsl:with-param name="sPath" select="$sPath"/>
-				<xsl:with-param name="sType" select="'ipa'"/>
-				<xsl:with-param name="code" select="'i'"/>
-			</xsl:call-template>
-		</xsl:if>
-		<xsl:call-template name="CreateExampleLineSaveJScript">
-			<xsl:with-param name="sPath" select="$sPath"/>
-			<xsl:with-param name="sType" select="'gloss'"/>
-			<xsl:with-param name="code" select="'f'"/>
-		</xsl:call-template>
-	</xsl:template>
-	<!--
-		CreateExampleLineSaveJScript
-	-->
-	<xsl:template name="CreateExampleLineSaveJScript">
-		<xsl:param name="sPath"/>
-		<xsl:param name="sType"/>
-		<xsl:param name="code" select="'v'"/>
-		<xsl:text>sTemp = "</xsl:text>
-		<xsl:value-of select="@id"/>
-		<xsl:value-of select="$code"/>
-		<xsl:text>" + i;
-thisTextarea = document.getElementById(sTemp);
-</xsl:text>
-		<xsl:text>pawsApp.setAnswerValue("//</xsl:text>
-		<xsl:value-of select="$sPath"/>
-		<xsl:text>/form["</xsl:text>
-		<xsl:text> + i +</xsl:text>
-		<xsl:text>"]/</xsl:text>
-		<xsl:value-of select="$sType"/>
-		<xsl:text>", thisTextarea.value);
-</xsl:text>
-	</xsl:template>
-	<!--
-		CreateExampleSubTable  WHAT DO ABOUT GETTING DATA IN???
+		CreateExampleSubTable
 	-->
 	<xsl:template name="CreateExampleSubTable">
 		<xsl:param name="iCount" select="1"/>
