@@ -653,7 +653,7 @@ Key the independent first person <span id="PronNumberSpan" show="swPronNumberYes
           <checkbox id="PronDependentEnclitic" dataItem="dependentTypeEnclitic">As an enclitic which attaches to the end of whatever word ends the verb phrase or nominal phrase</checkbox>
           <checkbox id="PronDependentPrefix" dataItem="dependentTypePrefix">As a prefix which attaches to the verb or noun</checkbox>
           <checkbox id="PronDependentSuffix" dataItem="dependentTypeSuffix">As a suffix which attaches to the verb or noun</checkbox>
-          <checkbox id="PronDependentOther" dataItem="dependentTypeOther">In my language, these elements may attach as follows: <textBox  id="PronDependentContent" dataItem="dependentTypeOther" cols="70" rows="1"/></checkbox>
+          <checkbox id="PronDependentOther" dataItem="dependentTypeOther">In my language, these elements may attach as follows: <textBox  id="PronDependentOtherContent" dataItem="dependentTypeOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="PronDependentNoCheckPrompt" show="swPronDependentYesandNoCheck">WARNING: You need to check at least one box to describe how these dependent pronouns attach in your language, or change the answer above to ‘No, only independent pronouns’.</prompt>
        <br/>
