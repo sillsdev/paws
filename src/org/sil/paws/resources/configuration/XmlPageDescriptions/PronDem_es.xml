@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronDem" count="7.5">
+<page id="PronDem" count="8.6">
     <title level="2">Los pronombres - Los demostrativos</title>
    <introduction>Muchas lenguas tienen pronombres demostrativos que están relacionados con los demostrativos que modifican a un sustantivo o a los adverbios de lugar.  
       Los pronombres demostrativos especifican la distancia entre el hablante y el objeto que representa el pronombre y pueden tener formas singulares y plurales.  Ejemplos en español son <example>este, esto, estos, aquellos</example> y <example>esos</example>, que son casi idénticos a los demostrativos que modifican a un sustantivo.  Los pronombres demostrativos pueden presentarse como el sujeto u objeto de una oración, como en:

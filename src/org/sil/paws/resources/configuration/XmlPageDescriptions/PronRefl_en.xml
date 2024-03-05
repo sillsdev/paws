@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronRefl" count="7.3">
+<page id="PronRefl" count="8.4">
     <title level="2">Pronouns - Reflexives</title>
    <introduction><technicalTermRef term="ttReflexives" capitalize="yes"/> are another type of pronoun that most languages have.  They normally occur in the object position of a transitive sentence to refer back to the subject.  Reflexives occur only in the same case as direct objects and normally must agree with the subject in person, gender, and number features.  Examples in English are: <example>herself</example>, <example>himself</example>, <example>themselves</example>, <example>myself</example>.   
       <br/><br/>There is quite a bit of variety in the ways reflexives are formed.  Some languages have a completely separate set of pronoun forms for reflexives. Other languages use a phrase which consists of a noun (usually meaning ‘self’) that is possessed by the pronoun that refers back to the subject. Some languages might use a special quantified nominal phrase something like ‘one another’ that English uses for <technicalTermRef term="ttReciprocals"/>. Some languages have a verbal affix to indicate reflexive action, and some languages do not distinguish reflexive constructions at all.</introduction>
@@ -56,7 +56,7 @@
            <checkbox id="PronReflAffixYes" dataItem="reflAffix">One or more affixes are chosen among to make another pronoun reflexive</checkbox>
            <checkbox id="PronReflAffixNoNoun" dataItem="reflNounPoss">A certain noun with a pronoun as the possessor is used</checkbox>
            <checkbox id="PronReflAffixNoQP" dataItem="reflQP">Special quantified noun phrases are used</checkbox>
-           <checkbox id="PronReflAffixOther" dataItem="reflOther">My language does the following to form a reflexive:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="table"/></checkbox>
+           <checkbox id="PronReflAffixOther" dataItem="reflOther">My language does the following to form a reflexive:<textBox  id="PronReflAffixOtherContent" dataItem="reflOther" cols="70" rows="1" kind="other"/></checkbox>
         </checkboxGroup>
        <br/><br/>
        <prompt id="PronReflAffixNoCheckPrompt" show="swPronReflYesNoCheck">WARNING: You said above that your language has reflexives, but you did not check any of the options to say how they are formed.  Please either check one or more options as appropriate, unless you do not have any reflexives, in which case you should not have added any forms to the text boxes and should change the answer above to either ‘No’ or ‘Yes, a verbal affix indicates reflexive action’.</prompt>

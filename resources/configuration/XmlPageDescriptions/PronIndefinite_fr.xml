@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronIndefinite" count="7.6">
+<page id="PronIndefinite" count="8.7">
    <title level="2">Pronoms – Indéfinis</title>
    <introduction>Les <technicalTermRef term="ttIndefinite">indéfinis</technicalTermRef> constituent dernier type de pronoms. Il y a deux séries de pronoms indéfinis, mais toutes les langues ne les fusionnent pas dans un seul mot et emploient parfois un syntagme nominal pour le pronom:
       <ul>

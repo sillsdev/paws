@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronReciprocal" count="7.4">
+<page id="PronReciprocal" count="8.5">
    <title level="2">Pronoms – Réciproques</title>
    <introduction>Les <technicalTermRef term="ttReciprocals">réciproques</technicalTermRef>  la seule différence est qu’ils se présentent seulement avec des sujets pluriels.  Ils peuvent être formés de la même façon ou d’une autre façon que les réfléchis .  Par exemple, en anglais, les réciproques sont des syntagmes quantifieurs spéciaux : <example>each other</example> et <example>one another</example>; en français:<example>l’un l’autre</example>.  En français les réciproques s’expriment par les pronoms <example>nous</example>, <example>vous</example> ou <example>se</example>, selon la personne ; <example>l’un l’autre</example> peut renforcer le pronom.  Certaines langues utilisent seulement un affixe verbal pour indiquer une action réciproque pour un sujet pluriel, d’autres ont des pronoms distincts, d’autres utilisent un syntagme nominal possédé, et d’autres encore ne marquent pas du tout l’action réciproque.</introduction>
     <form section="pron">
@@ -53,7 +53,7 @@
           <checkbox id="PronRecipAffixYes" dataItem="recipAffix">On choisit un ou plusieurs affixes pour créer un réciproque à partir d’un autre pronom</checkbox>
           <checkbox id="PronRecipAffixNoNoun" dataItem="recipNounPoss">On utilise un substantif spécifique avec un pronom comme possesseur</checkbox>
           <checkbox id="PronRecipAffixNoQP" dataItem="recipQP">On utilise des substantifs quantifiés spéciaux</checkbox>
-          <checkbox id="PronRecipAffixOther" dataItem="recipOther">Ma langue forme les réciproques de la façon suivante :<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronRecipAffixOther" dataItem="recipOther">Ma langue forme les réciproques de la façon suivante :<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronRecipAffixNoCheckPrompt" show="swPronRecipYesNoCheck">ATTENTION :  Vous avez dit ci-dessus que votre langue a des réciproques, mais vous n’avez coché aucune des options pour dire comment ils sont formés.  Il faut cocher une ou plusieurs options , à moins que vous n’ayez pas deréciproques.  Dans ce cas, il ne faut pas saisir de formes dans les boîtes et il faut changer la réponse et cocher « Non » ou à « Oui, un affixe verbal indique une action réciproque ».</prompt>

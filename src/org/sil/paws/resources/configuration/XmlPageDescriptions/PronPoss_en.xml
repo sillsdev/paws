@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronPoss" count="7.2">
+<page id="PronPoss" count="8.3">
     <title level="2">Pronouns - Possessives</title>
     <introduction>Many languages also have possessive pronouns which can stand alone, such as <example>yours</example>, <example>mine</example>, <example>theirs</example> or <example>hers</example> in English.  <technicalTermRef term="ttPossessives" capitalize="yes"/> are distinct from those pronouns which can occur in possessor position and directly possess a noun, such as <example>your</example>, <example>my</example>, <example>their</example> or <example>her</example>, which were handled on the previous page.<br/><br/>
     The possessive pronouns may not be written as a single word in some languages.</introduction>
@@ -55,7 +55,7 @@
           <checkbox id="PronPossAffixYes" dataItem="possAffixPron">One or more affixes are used to make another pronoun into a possessive pronoun</checkbox>
           <checkbox id="PronPossAffixYesWord" dataItem="possAffixWord">One or more affixes are used to make another word (which is not a pronoun) into a possessive pronoun</checkbox>
           <checkbox id="PronPossAffixNoPhrase" dataItem="possPhrase">The possessor pronouns are used to possess a special word (which is not a pronoun) and this becomes a possessive phrase that has the same meaning and usage as a stand alone possessive pronoun</checkbox>
-          <checkbox id="PronPossAffixOther" dataItem="possOther">My language does the following to form a possessive pronoun:<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronPossAffixOther" dataItem="possOther">My language does the following to form a possessive pronoun:<textBox  id="PronPossAffixOtherContent" dataItem="possOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronPossAffixNoCheckPrompt" show="swPronPossYesNoCheck">WARNING: You said above that your language has possessive pronouns, but you did not check any of the options to say how they are formed.  Please either check one or more options as appropriate, unless you do not have any possessive pronouns, in which case you should not have added any forms to the text boxes and should change the answer above to ‘No’.</prompt>
@@ -85,7 +85,7 @@
        <instruction id="PronPossPhraseWordInstruction" show="swPronPossAffixNoPhrase">In the lexicon, add the feature <feature>possessive</feature> to this special possessive word, which also must have the category <category>N</category>.</instruction>
        <br/><br/>
         <buttons>
-            <button id="PronPossBack" value="Back" goto="PronMain.xml"/>
+            <button id="PronPossBack" value="Back" goto="PronDependent.xml"/>
             <button id="PronPossNext" value="Next" goto="PronRefl.xml"/>
         </buttons>
     </form>

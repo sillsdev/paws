@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronReciprocal" count="7.4">
+<page id="PronReciprocal" count="8.5">
     <title level="2">Pronouns - Reciprocals</title>
     <introduction><technicalTermRef term="ttReciprocals" capitalize="yes"/> are similar to reflexives except that they only occur with plural subjects.  They may be formed in the same way reflexives are, or they may be distinct.  For example, in English, the reciprocal forms are special quantifier phrases: <example>each other</example> and <example>one another</example>.  Some languages use only a verbal affix to indicate reciprocal action of the plural subject, others have separate pronouns, others use a possessed noun phrase, and some do not mark reciprocal action at all.</introduction>
     <form section="pron">
@@ -53,7 +53,7 @@
           <checkbox id="PronRecipAffixYes" dataItem="recipAffix">One or more affixes are chosen among to make another pronoun into a reciprocal</checkbox>
           <checkbox id="PronRecipAffixNoNoun" dataItem="recipNounPoss">A certain noun with a pronoun as the possessor is used</checkbox>
           <checkbox id="PronRecipAffixNoQP" dataItem="recipQP">Special quantified noun phrases are used</checkbox>
-          <checkbox id="PronRecipAffixOther" dataItem="recipOther">My language does the following to form a reciprocal:<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronRecipAffixOther" dataItem="recipOther">My language does the following to form a reciprocal:<textBox  id="PronRecipAffixOtherContent" dataItem="recipOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <br/><br/>
        <prompt id="PronRecipAffixNoCheckPrompt" show="swPronRecipYesNoCheck">WARNING: You said above that your language has reciprocals, but you did not check any of the options to say how they are formed.  Please either check one or more options as appropriate, unless you do not have any reciprocals, in which case you should not have added any forms to the text boxes and should change the answer above to either ‘No’ or ‘Yes, a verbal affix indicates reciprocal action’.</prompt>
