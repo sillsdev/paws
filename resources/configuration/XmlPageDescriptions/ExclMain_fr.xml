@@ -33,7 +33,7 @@
         <br/>
         <introduction>Les réponses « Oui » et « Non » à des questions seront traitées <span id="ExclYesNoNotPracticalSpan" show="swNotPractical">par la règle qui permet </span><span id="ExclYesNoPracticalSpan" show="swPractical">comme </span>des interjections.  </introduction>
         <prompt>Saisissez ici les mots qui peuvent être employés seuls et qui signifient « Oui », comme  « Oui » et  « Ouais » en français :</prompt>
-        <textBox id="ExclYes" dataItem="yesExample" rows="3" kind="table"/>
+        <textBox id="ExclYes" dataItem="yesExample" rows="3" kind="table"></textBox>
         <br/>
         <prompt>Saisissez ici les mots qui peuvent être employés seuls et qui signifient « Non » :</prompt>
         <textBox id="ExclNo" dataItem="noExample" rows="3" kind="table"/>

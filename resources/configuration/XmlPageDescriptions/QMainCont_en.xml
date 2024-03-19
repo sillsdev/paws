@@ -96,7 +96,7 @@
          <radio id="QMainContRequiredNo" dataValue="no">No, a question marker is always optional</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">No, a question marker is not used under the following circumstances:</radio>
       </radioGroup>
-      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="table"/>
+      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="other"/>
       
       <radioGroup id="QMainContAuxPosTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxPos" default="unknown" position="yesHead">RQMainContAuxPos</groupName>

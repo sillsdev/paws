@@ -21,115 +21,115 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	   <prompt id="QPNumberClassifierAgrPrompt" show="swOTClassifierAgrNumberYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the words asked for on this page.</prompt>	   
 	   <br/>	   
 	   <prompt>Key the cardinal number meaning ‘one’ here:</prompt>
-		<textBox id="QPCardinalNumbers1" dataItem="cardinalNumbers1" rows="2" kind="table"/>
+		<textBox id="QPCardinalNumbers1" dataItem="cardinalNumbers1" rows="2" kind="table"><gloss>1</gloss></textBox>
 		<br/>
 		<br/>
 	   <prompt>Key the cardinal number meaning ‘two’ here:</prompt>
-	   <textBox id="QPCardinalNumbers2" dataItem="cardinalNumbers2" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers2" dataItem="cardinalNumbers2" rows="2" kind="table"><gloss>2</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘three’ here:</prompt>
-	   <textBox id="QPCardinalNumbers3" dataItem="cardinalNumbers3" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers3" dataItem="cardinalNumbers3" rows="2" kind="table"><gloss>3</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘four’ here:</prompt>
-	   <textBox id="QPCardinalNumbers4" dataItem="cardinalNumbers4" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers4" dataItem="cardinalNumbers4" rows="2" kind="table"><gloss>4</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘five’ here:</prompt>
-	   <textBox id="QPCardinalNumbers5" dataItem="cardinalNumbers5" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers5" dataItem="cardinalNumbers5" rows="2" kind="table"><gloss>5</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘six’ here:</prompt>
-	   <textBox id="QPCardinalNumbers6" dataItem="cardinalNumbers6" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers6" dataItem="cardinalNumbers6" rows="2" kind="table"><gloss>6</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘seven’ here:</prompt>
-	   <textBox id="QPCardinalNumbers7" dataItem="cardinalNumbers7" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers7" dataItem="cardinalNumbers7" rows="2" kind="table"><gloss>7</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘eight’ here:</prompt>
-	   <textBox id="QPCardinalNumbers8" dataItem="cardinalNumbers8" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers8" dataItem="cardinalNumbers8" rows="2" kind="table"><gloss>8</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘nine’ here:</prompt>
-	   <textBox id="QPCardinalNumbers9" dataItem="cardinalNumbers9" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers9" dataItem="cardinalNumbers9" rows="2" kind="table"><gloss>9</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘ten’ here:</prompt>
-	   <textBox id="QPCardinalNumbers10" dataItem="cardinalNumbers10" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers10" dataItem="cardinalNumbers10" rows="2" kind="table"><gloss>10</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘eleven’ here:</prompt>
-	   <textBox id="QPCardinalNumbers11" dataItem="cardinalNumbers11" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers11" dataItem="cardinalNumbers11" rows="2" kind="table"><gloss>11</gloss></textBox>
 		<br/>
 		<br/>
 	   <prompt>Key the cardinal number meaning ‘twelve’ here:</prompt>
-	   <textBox id="QPCardinalNumbers12" dataItem="cardinalNumbers12" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers12" dataItem="cardinalNumbers12" rows="2" kind="table"><gloss>12</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘thirteen’ here:</prompt>
-	   <textBox id="QPCardinalNumbers13" dataItem="cardinalNumbers13" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers13" dataItem="cardinalNumbers13" rows="2" kind="table"><gloss>13</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘fourteen’ here:</prompt>
-	   <textBox id="QPCardinalNumbers14" dataItem="cardinalNumbers14" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers14" dataItem="cardinalNumbers14" rows="2" kind="table"><gloss>14</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘fifteen’ here:</prompt>
-	   <textBox id="QPCardinalNumbers15" dataItem="cardinalNumbers15" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers15" dataItem="cardinalNumbers15" rows="2" kind="table"><gloss>15</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘sixteen’ here:</prompt>
-	   <textBox id="QPCardinalNumbers16" dataItem="cardinalNumbers16" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers16" dataItem="cardinalNumbers16" rows="2" kind="table"><gloss>16</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘seventeen’ here:</prompt>
-	   <textBox id="QPCardinalNumbers17" dataItem="cardinalNumbers17" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers17" dataItem="cardinalNumbers17" rows="2" kind="table"><gloss>17</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘eighteen’ here:</prompt>
-	   <textBox id="QPCardinalNumbers18" dataItem="cardinalNumbers18" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers18" dataItem="cardinalNumbers18" rows="2" kind="table"><gloss>18</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘nineteen’ here:</prompt>
-	   <textBox id="QPCardinalNumbers19" dataItem="cardinalNumbers19" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers19" dataItem="cardinalNumbers19" rows="2" kind="table"><gloss>19</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘twenty’ here:</prompt>
-	   <textBox id="QPCardinalNumbers20" dataItem="cardinalNumbers20" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers20" dataItem="cardinalNumbers20" rows="2" kind="table"><gloss>20</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘thirty’ here:</prompt>
-		<textBox id="QPCardinalNumbers30" dataItem="cardinalNumbers30" rows="2" kind="table"/>
+		<textBox id="QPCardinalNumbers30" dataItem="cardinalNumbers30" rows="2" kind="table"><gloss>30</gloss></textBox>
 		<br/>
 		<br/>
 	   <prompt>Key the cardinal number meaning ‘forty’ here:</prompt>
-	   <textBox id="QPCardinalNumbers40" dataItem="cardinalNumbers40" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers40" dataItem="cardinalNumbers40" rows="2" kind="table"><gloss>40</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘fifty’ here:</prompt>
-	   <textBox id="QPCardinalNumbers50" dataItem="cardinalNumbers50" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers50" dataItem="cardinalNumbers50" rows="2" kind="table"><gloss>50</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘sixty’ here:</prompt>
-	   <textBox id="QPCardinalNumbers60" dataItem="cardinalNumbers60" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers60" dataItem="cardinalNumbers60" rows="2" kind="table"><gloss>60</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘seventy’ here:</prompt>
-	   <textBox id="QPCardinalNumbers70" dataItem="cardinalNumbers70" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers70" dataItem="cardinalNumbers70" rows="2" kind="table"><gloss>70</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘eighty’ here:</prompt>
-	   <textBox id="QPCardinalNumbers80" dataItem="cardinalNumbers80" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers80" dataItem="cardinalNumbers80" rows="2" kind="table"><gloss>80</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘ninety’ here:</prompt>
-	   <textBox id="QPCardinalNumbers90" dataItem="cardinalNumbers90" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers90" dataItem="cardinalNumbers90" rows="2" kind="table"><gloss>90</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘one hundred’ here:</prompt>
-	   <textBox id="QPCardinalNumbers100" dataItem="cardinalNumbers100" rows="2" kind="table"/>
+	   <textBox id="QPCardinalNumbers100" dataItem="cardinalNumbers100" rows="2" kind="table"><gloss>100</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Key some examples of nominal phrases containing different cardinal numbers with a noun here:  
@@ -140,43 +140,43 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 		
 		
 		<prompt>Now for the ordinal numbers, key the ordinal number meaning ‘first’ here:</prompt>
-		<textBox id="QPOrdinalNumbers1" dataItem="ordinalNumbers1" rows="2" kind="table"/>
+		<textBox id="QPOrdinalNumbers1" dataItem="ordinalNumbers1" rows="2" kind="table"><gloss>first</gloss></textBox>
 		<br/>
 		<br/>		
 	   <prompt>Key the ordinal number meaning ‘second’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers2" dataItem="ordinalNumbers2" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers2" dataItem="ordinalNumbers2" rows="2" kind="table"><gloss>second</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <prompt>Key the ordinal number meaning ‘third’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers3" dataItem="ordinalNumbers3" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers3" dataItem="ordinalNumbers3" rows="2" kind="table"><gloss>third</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <prompt>Key the ordinal number meaning ‘fourth’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers4" dataItem="ordinalNumbers4" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers4" dataItem="ordinalNumbers4" rows="2" kind="table"><gloss>fourth</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <prompt>Key the ordinal number meaning ‘fifth’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers5" dataItem="ordinalNumbers5" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers5" dataItem="ordinalNumbers5" rows="2" kind="table"><gloss>fifth</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <prompt>Key the ordinal number meaning ‘sixth’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers6" dataItem="ordinalNumbers6" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers6" dataItem="ordinalNumbers6" rows="2" kind="table"><gloss>sixth</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <prompt>Key the ordinal number meaning ‘seventh’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers7" dataItem="ordinalNumbers7" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers7" dataItem="ordinalNumbers7" rows="2" kind="table"><gloss>seventh</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <prompt>Key the ordinal number meaning ‘eighth’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers8" dataItem="ordinalNumbers8" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers8" dataItem="ordinalNumbers8" rows="2" kind="table"><gloss>eighth</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <prompt>Key the ordinal number meaning ‘ninth’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers9" dataItem="ordinalNumbers9" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers9" dataItem="ordinalNumbers9" rows="2" kind="table"><gloss>ninth</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <prompt>Key the ordinal number meaning ‘tenth’ here:</prompt>
-	   <textBox id="QPOrdinalNumbers10" dataItem="ordinalNumbers10" rows="2" kind="table"/>
+	   <textBox id="QPOrdinalNumbers10" dataItem="ordinalNumbers10" rows="2" kind="table"><gloss>tenth</gloss></textBox>
 	   <br/>
 	   <br/>		
 	   <checkboxGroup>
@@ -184,7 +184,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 		   <checkbox id="QPOrdinalAffix" checked="yes" dataItem="ordinalAffix">An affix is added to the cardinal number</checkbox>
 		   <checkbox id="QPOrdinalIndependent" checked="yes" dataItem="ordinalIndependent">Some or all of the ordinal numbers are distinct words</checkbox>
 		   <checkbox id="QPOrdinalWord" checked="yes" dataItem="ordinalWord">Another word is added to the cardinal number</checkbox>
-	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">In my language, ordinal numbers are formed as follows: <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalOther" checked="yes" dataItem="ordinalOther">In my language, ordinal numbers are formed as follows: <textBox  id="QPOrdinalOtherContent" dataItem="ordinalOther" cols="70" rows="1" kind="other"/></checkbox>
 		</checkboxGroup>
 	   <prompt id="QPOrdinalFormNoCheckPrompt" show="swQPOrdinalFormNoCheck">WARNING: You need to check at least one box to describe how the ordinal numbers are formed in your language.</prompt>  
 	   
@@ -199,7 +199,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	      <checkbox id="QPOrdinalWordBefore" dataItem="ordinalWordBefore">Before the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalWordAfter" dataItem="ordinalWordAfter">After the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalWordBoth" dataItem="ordinalWordBoth">On both sides of the cardinal number</checkbox>
-	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">In my language, the ordinal word occurs as follows: <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalWordOther" dataItem="ordinalWordOther">In my language, the ordinal word occurs as follows: <textBox  id="QPOrdinalWordOtherContent" dataItem="ordinalWordOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>		
 	   <prompt id="QPOrdinalWordPosNoCheckPrompt" show="swQPOrdinalWordPosNoCheck">WARNING: You need to check at least one box to describe where the ordinal word occurs with respect to the cardinal number to form the ordinal number in your language, or change your answer above to say that the the ordinal numbers are formed in another way.</prompt>  
 		<br/>
@@ -213,11 +213,11 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	   <br/>
 	   <br/>
 	   <prompt>Key how your language expresses ‘next’ here:</prompt>
-	   <textBox id="QPNextExample" dataItem="nextExample" rows="2" kind="table"/>
+	   <textBox id="QPNextExample" dataItem="nextExample" rows="2" kind="table"><gloss>next</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key how your language expresses ‘last’ here:</prompt>
-	   <textBox id="QPLastExample" dataItem="lastExample" rows="2" kind="table"/>
+	   <textBox id="QPLastExample" dataItem="lastExample" rows="2" kind="table"><gloss>last</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Key your examples of nominal phrases containing ‘next’ or ‘last’ with a noun, such as ‘the next street’ here.  Also include some examples of ‘next’ or ‘last’ with a cardinal number and a noun, such as ‘the last five boxes’, if allowed.</prompt>
@@ -229,7 +229,7 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	      <checkbox id="QPOrdinalBefore" checked="yes" dataItem="ordinalBefore">Before the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalAfter" checked="yes" dataItem="ordinalAfter">After the cardinal number</checkbox>
 	      <checkbox id="QPOrdinalBoth" checked="yes" dataItem="ordinalBoth">On both sides of the cardinal number at the same time</checkbox>
-	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">In my language, these elements occur as follows with respect to the cardinal number: <textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPOrdinalNumOther" dataItem="ordinalNumOther">In my language, these elements occur as follows with respect to the cardinal number: <textBox  id="QPOrdinalNumOtherContent" dataItem="ordinalNumOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>		
 		<prompt id="QPOrdinalNumNoCheckPrompt" show="swQPOrdinalNumNoCheck">WARNING: You need to check at least one box to describe where the ordinal numbers and the words for ‘next’ and ‘last’ occur with respect to the cardinal number, unless your language does not allow either ordinal numbers or the words for ‘next’ or ‘last’ to occur with a cardinal number.  In that case, select  ‘Nowhere’ below.</prompt>  
 		<checkboxGroup id="QPOrdinalNumNowhereTable" show="swQPOrdinalNumNoCheck">

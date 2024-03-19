@@ -21,14 +21,14 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	   <prompt id="QPQuantifierClassifierAgrPrompt" show="swOTClassifierAgrAndQuantifierYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the quantifiers here.</prompt>	   
 <br/>
 	   <prompt>Key the way your language expresses “many” (which modifies nouns which can be counted), with each word on a separate line. </prompt>
-	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"/>
+	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"><gloss>many</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the way your language expresses “much” (which only modifies <technicalTermRef term="ttMass"/> nouns), with each word on a separate line.</prompt>
-	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"/>
+	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"><gloss>much</gloss></textBox>
 	   <br/><br/>
 	   <prompt>Key the way your language expresses “few”, with each word on a separate line. </prompt>
-	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"/>
+	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"><gloss>few</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the way your language expresses any other quantifiers of this type, with each word on a separate line.</prompt>
@@ -67,7 +67,7 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	      <checkbox id="QPDegreeBefore"  dataItem="degreeBefore">Before the quantifier</checkbox>
 	      <checkbox id="QPDegreeAfter"  dataItem="degreeAfter">After the quantifier</checkbox>
 	      <checkbox id="QPDegreeBoth"  dataItem="degreeBoth">On both sides of the quantifier at the same time</checkbox>
-	   	<checkbox id="QPDegreeOther"  dataItem="degreeOther">In my language, they may occur in the following position: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPDegreeOther"  dataItem="degreeOther">In my language, they may occur in the following position: <textBox  id="QPDegreeOtherContent" dataItem="degreeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeWordPosNoCheckPrompt" show="swQPDegreeWordPosNoCheck">WARNING: You need to check at least one box to describe where these degree words occur with respect to the quantifier in your language or change your answer above to say that the degree elements are not expressed as independent words.</prompt>  
 	   <instruction id="QPDegreeYesInstruction" show="swQPDegreeYesOrSome">
@@ -83,7 +83,7 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	      <prompt>Based on the examples in the box above, where do the degree elements (optionally) attach with respect to the quantifier? Check all options that are correct for your language</prompt>
 	      <checkbox id="QPDegreeTypePrefix" dataItem="degreeTypePrefix">As a prefix which attaches to the quantifier</checkbox>
 	      <checkbox id="QPDegreeTypeSuffix" dataItem="degreeTypeSuffix">As a suffix which attaches to the quantifier</checkbox>
-	   	<checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPDegreeTypeOther" dataItem="degreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPDegreeTypeOtherContent" dataItem="degreeTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPDegreeAttachesPosNoCheckPrompt" show="swQPDegreeAttachesPosNoCheck">WARNING: You need to check at least one box to describe where these degree affixes occur with respect to the quantifier in your language or change your answer above to say that the degree elements are all written as independent words.</prompt>  
 <br/>

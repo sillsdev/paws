@@ -17,14 +17,14 @@
 	   <prompt id="QPQuantifierClassifierAgrPrompt" show="swOTClassifierAgrAndQuantifierYes">Puesto que usted ha detallado ya las formas de los indicadores de clase, usted necesita solamente escribir las raíces para cada uno de los cuantificadores.</prompt>	   
 	   <br/>
 	   <prompt>Escriba cómo se expresa “muchos” (que modifica a sustantivos que se pueden contar), con cada palabra en una línea separada. </prompt>
-	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"/>
+	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"><gloss>muchos</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba cómo se expresa “mucho” (que solamente modifica a sustantivos <technicalTermRef term="ttMass">no contables</technicalTermRef>), con cada palabra en una línea separada. </prompt>
-	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"/>
+	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"><gloss>mucho</gloss></textBox>
 	   <br/><br/>
 	   <prompt>Escriba cómo se expresa “poco”, con cada palabra en una línea separada. </prompt>
-	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"/>
+	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"><gloss>poco</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba ejemplos de cualquier otro cuantificador de este tipo de en su lengua aquí, con cada palabra en una línea separada.</prompt>

@@ -96,7 +96,7 @@
          <radio id="QMainContRequiredNo" dataValue="no">No, un indicador o complementador de pregunta siempre es opcional</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">No, no se utiliza un indicador o complementador de pregunta bajo las siguientes circunstancias:</radio>
       </radioGroup>
-      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="table"/>
+      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="other"/>
       
       <radioGroup id="QMainContAuxPosTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxPos" default="unknown" position="yesHead">RQMainContAuxPos</groupName>

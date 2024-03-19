@@ -66,7 +66,7 @@
         <radio id="NPCaseSplit" checked="yes" dataValue="split">Split Ergativity: the language has a Nominative-Accusative system normally, but the Ergative-Absolutive system is used under certain grammatical conditions</radio>
         </radioGroup>
        <prompt id="NPCaseSplitPrompt" show="swNPCaseSplit">The Ergative-Absolutive case system is used when:</prompt>
-       <textBox id="NPCaseSplitConditions" dataItem="splitConditions" cols="70" rows="1" show="swNPCaseSplit" kind="table"/>
+       <textBox id="NPCaseSplitConditions" dataItem="splitConditions" cols="70" rows="1" show="swNPCaseSplit" kind="other"/>
  <br/><br/>
        <radioGroup id="NPCaseExperiencerTable" show="swNPCaseNotNone">
           <groupName dataItem="caseExperiencer" default="no">RNPCaseExperiencer</groupName>

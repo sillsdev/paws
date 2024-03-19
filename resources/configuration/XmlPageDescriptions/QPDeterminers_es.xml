@@ -20,14 +20,14 @@
    Puesto que se presentan en el lugar de artículos, de demonstratives y de posesivos, se analizan estos cuantificadores como determinantes que modifican a los sustantivos solos<span id="QPDetNotPracticalSpan" show="swNotPractical"> con su propia regla para la estructura de la frase</span>.</introduction>
 	<form section="qp">
 	   <prompt><br/>Escriba cómo su lengua expresa “alguno” o “algunos”, con cada palabra en una línea separada. (Si “alguno” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con un guión o signo igual indicando en qué lado se une)</prompt>
-	   <textBox id="QPSomeExample" dataItem="some" rows="3" kind="table"/>
+	   <textBox id="QPSomeExample" dataItem="some" rows="3" kind="table"><gloss>alguno o algunos</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba cómo su lengua expresa “cualquier”, con cada palabra en una línea separada. (Si “cualquier” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con un guión o signo igual indicando en qué lado se une)</prompt>
-	   <textBox id="QPAnyeExample" dataItem="any" rows="3" kind="table"/>
+	   <textBox id="QPAnyeExample" dataItem="any" rows="3" kind="table"><gloss>cualquier</gloss></textBox>
 	   <br/> <br/>
-	   <prompt>Escriba cómo su lengua expresa “cada”, con cada palabra en una línea separada. (Si “todo” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con un guión o signo igual indicando en qué lado se une)</prompt>
-	   <textBox id="QPEveryExample" dataItem="every" rows="3" kind="table"/>
+	   <prompt>Escriba cómo su lengua expresa “cada”, con cada palabra en una línea separada. (Si “cada” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con un guión o signo igual indicando en qué lado se une)</prompt>
+	   <textBox id="QPEveryExample" dataItem="every" rows="3" kind="table"><gloss>cada</gloss></textBox>
 	   <br/>
 	   <br/>
 	   

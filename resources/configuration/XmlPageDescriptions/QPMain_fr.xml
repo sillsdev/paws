@@ -48,15 +48,15 @@
 		<prompt id="QPClassifierAgrPrompt" show="swOTClassifierAgrNPDegreeYes">Puisque vous avez déjà indiqué les formes des marqueurs de classe nominale, il suffit de saisir les radicaux pour chacun des mots demandés sur cette page.  Les exemples de syntagmes nominaux complets et les exemples de phrases demandés partout dans PAWS doivent comprendre, bien entendu, les marqueurs de classe nominale.</prompt>	   
 	   <br/>
 		<prompt>Saisissez la façon dont votre langue exprime « tout » en mettant chaque mot sur une ligne distincte.  (Si « tout » est un affixe ou un <technicalTermRef term="ttClitic">clitique</technicalTermRef> qui se rattache à un autre mot dans le syntagme nominal, saisissez-le ici avec un trait d’union ou un signe égal indiquant de quel côté il se rattache.)</prompt>
-		<textBox id="QPAllExample" dataItem="all" rows="3" kind="table"/>
+		<textBox id="QPAllExample" dataItem="all" rows="3" kind="table"><gloss>tout</gloss></textBox>
 		<br/>
 		<br/>
 		<prompt>Saisissez la façon dont votre langue exprime « presque » en mettant chaque mot sur une ligne distincte.  (Si l’un d’eux est un affixe ou un clitique qui se rattache à un autre mot dans le syntagme nominal, saisissez-le ici avec un trait d’union ou un signe égal indiquant de quel côté il se rattache.)</prompt>
-		<textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"/>
+		<textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"><gloss>presque</gloss></textBox>
 		<br/>
 		<br/>
 		<prompt>Saisissez la façon dont votre langue exprime « seulement ». (Si l’un d’eux est un affixe ou un clitique qui se rattache à un autre mot dans le syntagme nominal, saisissez-le ici avec un trait d’union ou un signe égal indiquant de quel côté il se rattache.)</prompt>
-		<textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"/>
+		<textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"><gloss>seulement</gloss></textBox>
 		<br/>
 		<br/>
 		<radioGroup>

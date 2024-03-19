@@ -76,39 +76,39 @@
 <br/><br/>
        <prompt  id="NPCaseTable" show="swNPCaseNYes">Pour toutes les zones de texte suivantes, <span id="NPCaseNYesAndWordNoSpan" show="swNPCaseNYesAndWordNoOrSome">insérez les marqueurs de cas  qui sont affixes ou clitiques en indiquant par  un trait d’union ou avec un signe d’égalité le côté duquel il se rattache. S’il</span><span id="NPCaseNYesAndWordYesSpan" show="swNPCaseNYesAndWordYes">s’il</span> y a plus qu’un marqueur pour un cas particulier, insérez chacun d’eux sur une ligne séparée. Si votre langue n’a pas de cas particulier, laissez la zone de texte simplement vide.</prompt>
        <prompt id="NPCaseNominativePrompt" show="swNPCaseNomOrSplitAndNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas nominatif, pour exprimer le sujet (au moins pour les Agents) :</prompt>
-       <textBox id="NPNom" dataItem="nominative" rows="2" show="swNPCaseNomOrSplitAndNYes" kind="table"/>
+       <textBox id="NPNom" dataItem="nominative" rows="2" show="swNPCaseNomOrSplitAndNYes" kind="table"><gloss>nominatif</gloss></textBox>
        <br/>
        <prompt id="NPCaseAccusativePrompt" show="swNPCaseNomOrSplitAndNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas accusatif, pour exprimer l'objet direct, et pour d'autresemplois :</prompt>
-       <textBox id="NPAcc" dataItem="accusative" rows="2" show="swNPCaseNomOrSplitAndNYes" kind="table"/>
+       <textBox id="NPAcc" dataItem="accusative" rows="2" show="swNPCaseNomOrSplitAndNYes" kind="table"><gloss>acusatif</gloss></textBox>
        <br/>
        <prompt id="NPCaseErgativePrompt" show="swNPCaseErgAndNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas ergatif, pour exprimer le sujet de verbes transitifs (au moins pour les Agents) :</prompt>
        <prompt id="NPCaseSplitErgativePrompt" show="swNPCaseSplitAndNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas ergatif, pour exprimer le sujet des verbes transitifs (au moins pour les Agents) dans les parties de votre langue  où on trouve un marquage ergatif mixte :</prompt>
-       <textBox id="NPErg" dataItem="ergative" rows="2" show="swNPCaseErgOrSplitAndNYes" kind="table"/>
+       <textBox id="NPErg" dataItem="ergative" rows="2" show="swNPCaseErgOrSplitAndNYes" kind="table"><gloss>ergatif</gloss></textBox>
        <br/>
        <prompt id="NPCaseAbsolutivePrompt" show="swNPCaseErgAndNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas absolutif, pour exprimer le sujet des verbes intransitifs (au moins pour les Agents) ainsi que l'objet direct des verbes transitifs :</prompt>
        <prompt id="NPCaseSplitAbsolutivePrompt" show="swNPCaseSplitAndNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas absolutif, pour exprimer le sujet des verbes intransitifs (au moins pour les Agents) ainsi que l'objet direct des verbes transitifs dans les parties de votre langue où on trouve un marquage ergatif mixte :</prompt>
-       <textBox id="NPAbs" dataItem="absolutive" rows="2" show="swNPCaseErgOrSplitAndNYes" kind="table"/>
+       <textBox id="NPAbs" dataItem="absolutive" rows="2" show="swNPCaseErgOrSplitAndNYes" kind="table"><gloss>absolutif</gloss></textBox>
        <br/>
        <prompt id="NPCaseGenitivePrompt" show="swNPCaseNomOrSplitOrErgPossGenAndNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas génitif, pour exprimer la possession :</prompt>
-       <textBox id="NPGen" dataItem="genitive" rows="2" show="swNPCaseNomOrSplitOrErgPossGenAndNYes" kind="table"/>
+       <textBox id="NPGen" dataItem="genitive" rows="2" show="swNPCaseNomOrSplitOrErgPossGenAndNYes" kind="table"><gloss>génitif</gloss></textBox>
        <br/>     
        <prompt id="NPCaseDativePrompt" show="swNPCaseNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas datif, pour exprimer l'objet indirect et éventuellement le sujet de verbes dont le sujet est un expérient :</prompt>
-       <textBox id="NPDat" dataItem="dative" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPDat" dataItem="dative" rows="2" show="swNPCaseNYes" kind="table"><gloss>datif</gloss></textBox>
        <br/>     
        <prompt id="NPCaseAblativePrompt" show="swNPCaseNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas ablatif pour exprimer la source ou l'origine :</prompt>
-       <textBox id="NPAbl" dataItem="ablative" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPAbl" dataItem="ablative" rows="2" show="swNPCaseNYes" kind="table"><gloss>ablatif</gloss></textBox>
        <br/>     
        <prompt id="NPCaseInstrumentalPrompt" show="swNPCaseNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas instrumental, pour exprimer l'instrument, le moyen ou l'agent :</prompt>
-       <textBox id="NPIns" dataItem="instrumental" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPIns" dataItem="instrumental" rows="2" show="swNPCaseNYes" kind="table"><gloss>instrumental</gloss></textBox>
        <br/>     
        <prompt id="NPCaseLocativePrompt" show="swNPCaseNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas locatif pour exprimer le lieu :</prompt>
-       <textBox id="NPLoc" dataItem="locative" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPLoc" dataItem="locative" rows="2" show="swNPCaseNYes" kind="table"><gloss>locatif</gloss></textBox>
        <br/>     
        <prompt id="NPCaseVocativePrompt" show="swNPCaseNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas vocatif pour une forme d’adresse directe :</prompt>
-       <textBox id="NPVoc" dataItem="vocative" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPVoc" dataItem="vocative" rows="2" show="swNPCaseNYes" kind="table"><gloss>vocatif</gloss></textBox>
        <br/>     
        <prompt id="NPCaseObliquePrompt" show="swNPCaseNYes">Saisissez le marqueur de cas utilisé dans votre langue pour le cas oblique pour exprimer une relation grammaticale générale mineure :</prompt>
-       <textBox id="NPObl" dataItem="oblique" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPObl" dataItem="oblique" rows="2" show="swNPCaseNYes" kind="table"><gloss>oblique</gloss></textBox>
        <br/>     
        <prompt id="NPCaseOtherPrompt" show="swNPCaseNYes">Saisissez d'autres marqueurs de cas utilisé dans votre langue pour exprimer une relation grammaticale mineure :</prompt>
        <textBox id="NPOther" dataItem="otherCase" rows="2" show="swNPCaseNYes" kind="table"/>

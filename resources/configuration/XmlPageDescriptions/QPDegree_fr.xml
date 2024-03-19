@@ -18,14 +18,14 @@
 		<prompt id="QPQuantifierClassifierAgrPrompt" show="swOTClassifierAgrAndQuantifierYes">Puisque vous avez déjà identifié les formes des marqueurs de classe nominale,  il suffit de saisir ici les radicaux de chaque quantifieur.</prompt>	   
 <br/>
 		<prompt>Saisissez la façon dont votre langue exprime « beaucoup de » (qui modifie les substantifs qu’on peut compter), en mettant chaque mot sur une ligne. </prompt>
-	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"/>
+	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"><gloss>beaucoup de (qui modifie les substantifs qu’on peut compter)</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez la manière dont votre langue exprime  « beaucoup de » (qui modifie les noms de <technicalTermRef term="ttMass">masse</technicalTermRef>), en mettant chaque mot sur une ligne.</prompt>
-	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"/>
+	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"><gloss>beaucoup de(qui modifie les noms de masse)</gloss></textBox>
 	   <br/><br/>
 		<prompt>Saisissez la manière dont votre langue exprime  « peu de », en mettant chaque mot sur une ligne. </prompt>
-	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"/>
+	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"><gloss>peu de</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez la manière dont votre langue exprime d’autres quantifieurs de ce type, en mettant chaque mot sur une ligne.</prompt>

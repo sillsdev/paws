@@ -7,31 +7,31 @@
     <form section="q">
         <prompt>Pour chacune des boîtes suivantes, si votre langue exprime l’interrogatif au moyen d’un affixe ou clitique, saisissez-le dans la boîte avec un trait d’union ou un signe d’égalité avant si c'est un préfixe ou un proclitique, ou après si c’est un suffixe ou un enclitique.  Chaque terme devrait être saisi sur une ligne individuelle.</prompt>
         <prompt>Saisissez ici la manière dont votre langue exprime « qui » :</prompt>
-        <textBox id="QWho" dataItem="who" rows="3" kind="table"/>
+        <textBox id="QWho" dataItem="who" rows="3" kind="table"><gloss>qui</gloss></textBox>
         <br/>
         <prompt>Saisissez ici la manière dont votre langue exprime « que / qu’  » :</prompt>
-        <textBox id="QWhat" dataItem="what" rows="3" kind="table"/>
+        <textBox id="QWhat" dataItem="what" rows="3" kind="table"><gloss>que ou qu’</gloss></textBox>
         <br/>
         <prompt>Saisissez ici la manière dont votre langue exprime « pourquoi » :</prompt>
-        <textBox id="QWhy" dataItem="why" rows="3" kind="table"/>
+        <textBox id="QWhy" dataItem="why" rows="3" kind="table"><gloss>pourquoi</gloss></textBox>
         <br/>
         <prompt>Saisissez ici la manière dont votre langue exprime « où » :</prompt>
-        <textBox id="QWhere" dataItem="where" rows="3" kind="table"/>
+        <textBox id="QWhere" dataItem="where" rows="3" kind="table"><gloss>où</gloss></textBox>
         <br/>
         <prompt>Saisissez ici la manière dont votre langue exprime « quand » :</prompt>
-        <textBox id="QWhen" dataItem="when" rows="3" kind="table"/>
+        <textBox id="QWhen" dataItem="when" rows="3" kind="table"><gloss>quand</gloss></textBox>
         <br/>
         <prompt>Saisissez ici la manière dont votre langue exprime « comment » :</prompt>
-        <textBox id="QHow" dataItem="how" rows="3" kind="table"/>
+        <textBox id="QHow" dataItem="how" rows="3" kind="table"><gloss>comment</gloss></textBox>
         <br/>
         <prompt>Saisissez ici la manière dont votre langue exprime « combien » :</prompt>
-        <textBox id="QHowMany" dataItem="howMany" rows="3" kind="table"/>
+        <textBox id="QHowMany" dataItem="howMany" rows="3" kind="table"><gloss>combien</gloss></textBox>
         <br/>
         <prompt>Saisissez ici la manière dont votre langue exprime « quel / lequel » :</prompt>
-        <textBox id="QWhich" dataItem="which" rows="3" kind="table"/>
+        <textBox id="QWhich" dataItem="which" rows="3" kind="table"><gloss>quel or lequel</gloss></textBox>
         <br/>
         <prompt>Saisissez ici la manière dont votre langue exprime « de qui » :</prompt>
-        <textBox id="QWhose" dataItem="whose" rows="3" kind="table"/>
+        <textBox id="QWhose" dataItem="whose" rows="3" kind="table"><gloss>de qui</gloss></textBox>
         <br/>
         <prompt>Saisissez ici tout autre interrogatif utilisé par votre langue :</prompt>
         <textBox id="QOther" dataItem="other" rows="3" kind="table"/>

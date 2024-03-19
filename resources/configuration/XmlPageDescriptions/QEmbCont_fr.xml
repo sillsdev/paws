@@ -88,7 +88,7 @@
          <radio id="QEmbContRequiredNo" dataValue="no">Non, le marqueur interrogatif est toujours facultatif</radio>
          <radio id="QEmbContRequiredSpecial" dataValue="special">Non, le marqueur interrogatif n’est pas utilisé dans les conditions suivantes :</radio>
       </radioGroup>
-      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial" kind="table"/>
+      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial" kind="other"/>
       
       <radioGroup id="QEmbContAuxPosTable" show="swQEmbContNoAux">
          <groupName dataItem="embContAuxPos" default="unknown" position="yesHead">RQEmbContAuxPos</groupName>

@@ -33,7 +33,7 @@
          <checkbox id="NPAgreeClassifier" dataItem="agreeClassifier" show="swOTClassifiersYesSpecific">Un clasificador que concuerda con la clase o tipo del sustantivo está presente con los sustantivos que son contados o especificados, pero otros modificadores no se marcan para clase</checkbox>
          <checkbox id="NPAgreeYesGender" dataItem="agreeGender">Pueden/deben concordar en género</checkbox>
          <checkbox id="NPAgreeYesAnimacy" dataItem="agreeAnimacy">Pueden/deben concordar en animacidad</checkbox>
-         <checkbox id="NPAgreeYesOtherFeat" dataItem="agreeOtherFeat">En mi lengua, pueden/deben concordar en este otra característica:<textBox  id="NPAgreeYesOtherFeatContent" dataItem="agreeOtherFeat" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="NPAgreeYesOtherFeat" dataItem="agreeOtherFeat">En mi lengua, pueden/deben concordar en este otra característica:<textBox  id="NPAgreeYesOtherFeatContent" dataItem="agreeOtherFeat" cols="70" rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="NPAgreeOtherTypeNoCheckPrompt" show="swNPAgreeOtherTypeNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir qué características adicionales pueden o deben marcarse en modificadores que concuerdan con el sustantivo principal en su lengua.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno’ abajo.</prompt>  
       <checkboxGroup id="NPAgreeOtherNoneTable" show="swNPAgreeOtherTypeNoCheck">

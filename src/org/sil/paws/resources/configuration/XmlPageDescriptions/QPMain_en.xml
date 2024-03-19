@@ -51,15 +51,15 @@ like <example>only</example> and <example>just</example> (which can also act as 
 	   <prompt id="QPClassifierAgrPrompt" show="swOTClassifierAgrNPDegreeYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the words asked for on this page.  The full nominal phrase examples and sentential examples asked for throughout PAWS should, of course, include the noun class markers.</prompt>	   
 	   <br/>
 		<prompt>Key the way your language expresses “all”, with each word on a separate line.  (If “all” is an affix or a <technicalTermRef term="ttClitic"/> which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-		<textBox id="QPAllExample" dataItem="all" rows="3" kind="table"/>
+		<textBox id="QPAllExample" dataItem="all" rows="3" kind="table"><gloss>all</gloss></textBox>
 		<br/>
 		<br/>
 		<prompt>Key the way your language expresses “almost” or “nearly”, with each word on a separate line.  (If either one is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-		<textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"/>
+		<textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"><gloss>almost or nearly</gloss></textBox>
 		<br/>
 		<br/>
 		<prompt>Key the way your language expresses “only” or “just”.  (If either one is an affix or clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-		<textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"/>
+		<textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"><gloss>only or just</gloss></textBox>
 		<br/>
 		<br/>
 		<radioGroup>
@@ -80,7 +80,7 @@ like <example>only</example> and <example>just</example> (which can also act as 
    <checkbox id="QPNPDegreePosBefore"  dataItem="npDegreePosBefore">Before it</checkbox>
    <checkbox id="QPNPDegreePosAfter"  dataItem="npDegreePosAfter">After it</checkbox>
    <checkbox id="QPNPDegreePosBoth"  dataItem="npDegreePosBoth">On both sides at the same time</checkbox>
-	   	<checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">In my language, they may occur in the following position: <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">In my language, they may occur in the following position: <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="other"/></checkbox>
    </checkboxGroup>
 	   <prompt id="QPNPDegreeWordNoCheckPrompt" show="swQPNPDegreeYesandNoCheck">WARNING: You need to check at least one box to describe where these degree words or quantifiers occur with respect to the rest of the nominal phrase in your language, or change the answer above to ‘No, they all attach to another word in the nominal phrase’.</prompt>
 	   
@@ -98,7 +98,7 @@ like <example>only</example> and <example>just</example> (which can also act as 
 	      <checkbox id="QPNPDegreeEnclitic" dataItem="npDegreeTypeEnclitic">As a phrasal enclitic which attaches to the end of whatever word ends the nominal phrase</checkbox>
 	      <checkbox id="QPNPDegreePrefix" dataItem="npDegreeTypePrefix">As a prefix which attaches to the head noun of the nominal phrase</checkbox>
 	      <checkbox id="QPNPDegreeSuffix" dataItem="npDegreeTypeSuffix">As a suffix which attaches to the head noun of the nominal phrase</checkbox>
-	   	<checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+	   	<checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">In my language, these elements may attach as follows: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="other"/></checkbox>
 	   </checkboxGroup>
 	   <prompt id="QPNPDegreeAttachesNoCheckPrompt" show="swQPNPDegreeNoandNoCheck">WARNING: You need to check at least one box to describe how these degree elements or quantifiers attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
 	   

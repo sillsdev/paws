@@ -87,7 +87,7 @@
          <radio id="QEmbContRequiredNo" dataValue="no">No, un indicador o complementizador de la pregunta siempre es opcional</radio>
          <radio id="QEmbContRequiredSpecial" dataValue="special">No, no se utiliza un indicador o complementador de pregunta bajo las siguientes circunstancias:</radio>
       </radioGroup>
-      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial" kind="table"/>
+      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial" kind="other"/>
       
       <radioGroup id="QEmbContAuxPosTable" show="swQEmbContNoAux">
          <groupName dataItem="embContAuxPos" default="unknown" position="yesHead">RQEmbContAuxPos</groupName>

@@ -35,7 +35,7 @@ Un classificateur s'accordant avec la classe ou le type de nom est présent avec
 </checkbox>
              <checkbox id="NPAgreeYesGender" dataItem="agreeGender">Ils s’accordent en genre</checkbox>
              <checkbox id="NPAgreeYesAnimacy" dataItem="agreeAnimacy">Ils s’accordent en animéité</checkbox>
-             <checkbox id="NPAgreeYesOtherFeat" dataItem="agreeOtherFeat">Ils s’accordent avec la caractéristique suivante ma langue:<textBox  id="NPAgreeYesOtherFeatContent" dataItem="agreeOtherFeat" cols="70" rows="1" kind="table"/></checkbox>
+             <checkbox id="NPAgreeYesOtherFeat" dataItem="agreeOtherFeat">Ils s’accordent avec la caractéristique suivante ma langue:<textBox  id="NPAgreeYesOtherFeatContent" dataItem="agreeOtherFeat" cols="70" rows="1" kind="other"/></checkbox>
           </checkboxGroup>
        <prompt id="NPAgreeOtherTypeNoCheckPrompt" show="swNPAgreeOtherTypeNoCheck">ATTENTION : Vous devez cocher les options qui décrivent comment des noms et leurs modificateurs peuvent/doivent s’accorder avec d’autres caractéristiques à part le  nombre, à moins qu’il n’y ait aucun type d’accord. Dans ce cas, cochez la case « Aucun ».</prompt>  
        <checkboxGroup id="NPAgreeOtherNoneTable" show="swNPAgreeOtherTypeNoCheck">

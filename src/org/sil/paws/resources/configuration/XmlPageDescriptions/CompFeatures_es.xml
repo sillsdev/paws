@@ -136,7 +136,7 @@
           <radio id="CompTypeOtherNo" dataValue="no">No</radio>
        </radioGroup>
        <prompt id="CompTypeOtherYesRestriction" show="swCompTypeOtherYes" >Escriba este otro tipo de restricción que su lengua tiene aquí:</prompt>
-       <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="table"/>
+       <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="other"/>
        <br/><br/>
        
        <prompt id="CompTypeOtherExamplePrompt" show="swCompTypeOtherYes"> Escriba algunos ejemplos de oraciones que incluyen las cláusulas de complemento con este otro tipo de restricción aquí:</prompt>

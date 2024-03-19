@@ -49,15 +49,15 @@ o <example>pocos</example>, y</li>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “todos”, con cada palabra en una línea separada.  (Si “todos” es un afijo o un <technicalTermRef term="ttClitic"/> que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPAllExample" dataItem="all" rows="3" kind="table"/>
+      <textBox id="QPAllExample" dataItem="all" rows="3" kind="table"><gloss>todos</gloss></textBox>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “casi”, con cada palabra en una línea separada.  (Si “casi” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"/>
+      <textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"><gloss>casi</gloss></textBox>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “solamente” o “apenas”, con cada palabra en una línea separada.  (Si uno es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"/>
+      <textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"><gloss>solamente o apenas</gloss></textBox>
       <br/>
       <br/>
       <radioGroup>

@@ -29,7 +29,7 @@
 	      <radio id="QPPartitiveOther" dataValue="other">No, my language uses some other means than either a prepositional or postpositional phrase or a relative clause to express similar meanings</radio>
 	   </radioGroup>
 		<prompt id="QPPartitiveOtherPrompt" show="swQPPartitiveOther">The construction my language uses to express the group or item being discussed in this kind of partitive construction is:</prompt>
-		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther" kind="table"/>
+		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther" kind="other"/>
 		
 	   <radioGroup id="QPPartitivePPPosTable" show="swQPPartitiveYes">
 	      <groupName dataItem="partitivePPPos" default="unknown" position="yesHeadDiff">RQPPartitivePPPos</groupName>

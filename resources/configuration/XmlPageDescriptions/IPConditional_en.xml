@@ -47,7 +47,7 @@
       <instruction id="IPConditionAffixInstruction" show="swIPConditionNoOrSomeAndAffix">In the lexicon, add the feature <feature>conditional</feature> to the affixes which can mark the verb in a conditional phrase.</instruction>
       <prompt id="IPConditionOtherPrompt" show="swIPConditionNoOrSomeAndOther">Key examples of the other elements which can mark a conditional phrase in the other way your language allows here:</prompt>  
       <textBox id="IPConditionOtherExample" dataItem="conditionOtherExample" rows="3" show="swIPConditionNoOrSomeAndOther" kind="table"/>   
-      <prompt id="IPConditionYesPrompt" show="swIPConditionWordYesOrSome">Key the independent words which can mark a conditional  phrase here:</prompt>
+      <prompt id="IPConditionYesPrompt" show="swIPConditionWordYesOrSome">Key the independent words which can mark a conditional phrase here:</prompt>
       <textBox id="IPConditionWordExample" dataItem="conditionWordExample" rows="3" show="swIPConditionWordYesOrSome" kind="table"/>
       <br/><br/>		
       <checkboxGroup id="IPConditionPos" show="swIPConditionWordYesOrSome">

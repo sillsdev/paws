@@ -96,7 +96,7 @@
          <radio id="QMainContRequiredNo" dataValue="no">Non, le marqueur est toujours facultatif</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">Non, le marqueur interrogatif n’est pas utilisé dans les conditions suivantes :</radio>
       </radioGroup>
-      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="table"/>
+      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="other"/>
       
       <radioGroup id="QMainContAuxPosTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxPos" default="unknown" position="yesHead">RQMainContAuxPos</groupName>

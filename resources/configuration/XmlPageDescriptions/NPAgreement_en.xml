@@ -32,7 +32,7 @@
              <checkbox id="NPAgreeClassifier" dataItem="agreeClassifier" show="swOTClassifiersYesSpecific">A classifier which agrees with the class or type of the noun is present with nouns that are counted or specified, but other modifiers are not marked for class</checkbox>
              <checkbox id="NPAgreeYesGender" dataItem="agreeGender">They agree in gender</checkbox>
              <checkbox id="NPAgreeYesAnimacy" dataItem="agreeAnimacy">They agree in animacy</checkbox>
-             <checkbox id="NPAgreeYesOtherFeat" dataItem="agreeOtherFeat">They agree in this other feature in my language:<textBox  id="NPAgreeYesOtherFeatContent" dataItem="agreeOtherFeat" cols="70" rows="1" kind="table"/></checkbox>
+             <checkbox id="NPAgreeYesOtherFeat" dataItem="agreeOtherFeat">They agree in this other feature in my language:<textBox  id="NPAgreeYesOtherFeatContent" dataItem="agreeOtherFeat" cols="70" rows="1" kind="other"/></checkbox>
           </checkboxGroup>
        <prompt id="NPAgreeOtherTypeNoCheckPrompt" show="swNPAgreeOtherTypeNoCheck">WARNING: You need to check options for how nouns and their modifiers may/must agree in other features besides number, unless there is no type of agreement.  In that case, select  ‘None’ below.</prompt>  
        <checkboxGroup id="NPAgreeOtherNoneTable" show="swNPAgreeOtherTypeNoCheck">

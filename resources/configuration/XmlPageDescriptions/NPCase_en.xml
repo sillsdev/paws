@@ -76,39 +76,39 @@
 <br/><br/>
        <prompt  id="NPCaseTable" show="swNPCaseNYes">For all of the following text boxes, <span id="NPCaseNYesAndWordNoSpan" show="swNPCaseNYesAndWordNoOrSome">enter the case markers which are affixes or clitics with a hyphen or equal sign on the appropriate side to indicate which side it attaches on.  If</span><span id="NPCaseNYesAndWordYesSpan" show="swNPCaseNYesAndWordYes">if</span> there is more than one marker for a particular case, enter each on a separate line.  If your language does not use a particular case, simply leave that text box empty.</prompt>
        <prompt id="NPCaseNominativePrompt" show="swNPCaseNomOrSplitAndNYes">Key the case marker your language uses for nominative case to express the subject (at least  for Agents):</prompt>
-       <textBox id="NPNom" dataItem="nominative" rows="2" show="swNPCaseNomOrSplitAndNYes" kind="table"/>
+       <textBox id="NPNom" dataItem="nominative" rows="2" show="swNPCaseNomOrSplitAndNYes" kind="table"><gloss>nominative</gloss></textBox>
        <br/>
        <prompt id="NPCaseAccusativePrompt" show="swNPCaseNomOrSplitAndNYes">Key the case marker your language uses for accusative case to express the direct object and other uses:</prompt>
-       <textBox id="NPAcc" dataItem="accusative" rows="2" show="swNPCaseNomOrSplitAndNYes" kind="table"/>
+       <textBox id="NPAcc" dataItem="accusative" rows="2" show="swNPCaseNomOrSplitAndNYes" kind="table"><gloss>accusative</gloss></textBox>
        <br/>
        <prompt id="NPCaseErgativePrompt" show="swNPCaseErgAndNYes">Key the case marker your language uses for ergative case to express the subject of transitive verbs (at least for Agents):</prompt>
        <prompt id="NPCaseSplitErgativePrompt" show="swNPCaseSplitAndNYes">Key the case marker your language uses for ergative case to express the subject of transitive verbs (at least for Agents) in the parts of your language that display split ergativity:</prompt>
-       <textBox id="NPErg" dataItem="ergative" rows="2" show="swNPCaseErgOrSplitAndNYes" kind="table"/>
+       <textBox id="NPErg" dataItem="ergative" rows="2" show="swNPCaseErgOrSplitAndNYes" kind="table"><gloss>ergative</gloss></textBox>
        <br/>
        <prompt id="NPCaseAbsolutivePrompt" show="swNPCaseErgAndNYes">Key the case marker your language uses for absolutive case to express the subject of intransitive verbs (at least  for Agents) and the direct object of transitive verbs:</prompt>
        <prompt id="NPCaseSplitAbsolutivePrompt" show="swNPCaseSplitAndNYes">Key the case marker your language uses for absolutive case to express the subject of intransitive verbs (at least  for Agents) and the direct object of transitive verbs in the parts of your language that display split ergativity:</prompt>
-       <textBox id="NPAbs" dataItem="absolutive" rows="2" show="swNPCaseErgOrSplitAndNYes" kind="table"/>
+       <textBox id="NPAbs" dataItem="absolutive" rows="2" show="swNPCaseErgOrSplitAndNYes" kind="table"><gloss>absolutive</gloss></textBox>
        <br/>
        <prompt id="NPCaseGenitivePrompt" show="swNPCaseNomOrSplitOrErgPossGenAndNYes">Key the case marker your language uses for genitive case to express possession:</prompt>
-       <textBox id="NPGen" dataItem="genitive" rows="2" show="swNPCaseNomOrSplitOrErgPossGenAndNYes" kind="table"/>
+       <textBox id="NPGen" dataItem="genitive" rows="2" show="swNPCaseNomOrSplitOrErgPossGenAndNYes" kind="table"><gloss>genitive</gloss></textBox>
        <br/>     
        <prompt id="NPCaseDativePrompt" show="swNPCaseNYes">Key the case marker your language uses for dative case to express the indirect object and possibly the subject of verbs with Experiencer subjects:</prompt>
-       <textBox id="NPDat" dataItem="dative" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPDat" dataItem="dative" rows="2" show="swNPCaseNYes" kind="table"><gloss>dative</gloss></textBox>
        <br/>     
        <prompt id="NPCaseAblativePrompt" show="swNPCaseNYes">Key the case marker your language uses for ablative case to express source or origin:</prompt>
-       <textBox id="NPAbl" dataItem="ablative" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPAbl" dataItem="ablative" rows="2" show="swNPCaseNYes" kind="table"><gloss>ablative</gloss></textBox>
        <br/>     
        <prompt id="NPCaseInstrumentalPrompt" show="swNPCaseNYes">Key the case marker your language uses for instrumental case to express the instrument, means or agency:</prompt>
-       <textBox id="NPIns" dataItem="instrumental" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPIns" dataItem="instrumental" rows="2" show="swNPCaseNYes" kind="table"><gloss>instrumental</gloss></textBox>
        <br/>     
        <prompt id="NPCaseLocativePrompt" show="swNPCaseNYes">Key the case marker your language uses for locative case to express the location:</prompt>
-       <textBox id="NPLoc" dataItem="locative" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPLoc" dataItem="locative" rows="2" show="swNPCaseNYes" kind="table"><gloss>locative</gloss></textBox>
        <br/>     
        <prompt id="NPCaseVocativePrompt" show="swNPCaseNYes">Key the case marker your language uses for vocative case to express a direct address:</prompt>
-       <textBox id="NPVoc" dataItem="vocative" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPVoc" dataItem="vocative" rows="2" show="swNPCaseNYes" kind="table"><gloss>vocative</gloss></textBox>
        <br/>     
        <prompt id="NPCaseObliquePrompt" show="swNPCaseNYes">Key the case marker your language uses for oblique case to express a general minor grammatical relation:</prompt>
-       <textBox id="NPObl" dataItem="oblique" rows="2" show="swNPCaseNYes" kind="table"/>
+       <textBox id="NPObl" dataItem="oblique" rows="2" show="swNPCaseNYes" kind="table"><gloss>oblique</gloss></textBox>
        <br/>     
        <prompt id="NPCaseOtherPrompt" show="swNPCaseNYes">Key any other specific case markers your language uses to express a minor grammatical relation:</prompt>
        <textBox id="NPOther" dataItem="otherCase" rows="2" show="swNPCaseNYes" kind="table"/>

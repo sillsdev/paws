@@ -27,7 +27,7 @@
 	   	<radio id="QPPartitiveOther" dataValue="other">Non, ma langue utilise d’autres moyens que des syntagmes prépositionnels ou postpositionnels ou des propositions relatives dans une construction partitive</radio>
 	   </radioGroup>
 		<prompt id="QPPartitiveOtherPrompt" show="swQPPartitiveOther">La construction que ma langue utilise pour indiquer le groupe ou la chose discuté dans ce type de construction partitive est la suivante :</prompt>
-		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther" kind="table"/>
+		<textBox id="QPPartitiveOtherConstruction" dataItem="partitiveConstruction" cols="70" rows="1" show="swQPPartitiveOther" kind="other"/>
 		
 	   <radioGroup id="QPPartitivePPPosTable" show="swQPPartitiveYes">
 	      <groupName dataItem="partitivePPPos" default="unknown" position="yesHeadDiff">RQPPartitivePPPos</groupName>

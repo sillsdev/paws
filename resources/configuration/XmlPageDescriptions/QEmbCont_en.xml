@@ -89,7 +89,7 @@
          <radio id="QEmbContRequiredNo" dataValue="no">No, a question marker is always optional</radio>
          <radio id="QEmbContRequiredSpecial" dataValue="special">No, a question marker is not used under the following circumstances:</radio>
       </radioGroup>
-      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial" kind="table"/>
+      <textBox id="QEmbContSpecialConditions" dataItem="embContSpecialConditions" cols="70" rows="1" show="swQEmbContRequiredSpecial" kind="other"/>
       
       <radioGroup id="QEmbContAuxPosTable" show="swQEmbContNoAux">
          <groupName dataItem="embContAuxPos" default="unknown" position="yesHead">RQEmbContAuxPos</groupName>

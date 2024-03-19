@@ -132,7 +132,7 @@
      <radio id="CompTypeOtherNo" dataValue="no">No, I don't know of any others</radio>
   </radioGroup>
        <prompt id="CompTypeOtherYesRestriction" show="swCompTypeOtherYes" >Key the other type of restriction your language has here:</prompt>
-     <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="table"/>
+     <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="other"/>
        <br/><br/>
        
 <prompt id="CompTypeOtherExamplePrompt" show="swCompTypeOtherYes">Key examples of sentences including complement clauses with this other type of restriction here:</prompt>

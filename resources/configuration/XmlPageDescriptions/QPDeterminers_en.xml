@@ -20,14 +20,14 @@
 	<introduction>Because they take the place of articles, demonstratives and possessors, we will treat these quantifiers as a type of determiner which modifies a noun alone<span id="QPDetNotPracticalSpan" show="swNotPractical"> with its own phrase structure rule</span>.</introduction>  
 	<form section="qp">
 	   <prompt><br/>Key the way your language expresses “some”, with each word on a separate line.  (If “some” is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-	   <textBox id="QPSomeExample" dataItem="some" rows="3" kind="table"/>
+	   <textBox id="QPSomeExample" dataItem="some" rows="3" kind="table"><gloss>some</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the way your language expresses “any”, with each word on a separate line.  (If “any” is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-	   <textBox id="QPAnyeExample" dataItem="any" rows="3" kind="table"/>
+	   <textBox id="QPAnyeExample" dataItem="any" rows="3" kind="table"><gloss>any</gloss></textBox>
 	   <br/><br/>
 	   <prompt>Key the way your language expresses “every”, with each word on a separate line.  (If “every” is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
-	   <textBox id="QPEveryExample" dataItem="every" rows="3" kind="table"/>
+	   <textBox id="QPEveryExample" dataItem="every" rows="3" kind="table"><gloss>every</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <radioGroup>

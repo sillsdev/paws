@@ -129,7 +129,7 @@
        <introduction id="OTClassifierChartsIntroduction" show="swOTClassifierNotNo">Maintenant on vous demandera des renseignements sur chaque <span id="OTClassifierAgrSpan1" show="swOTClassifierAgr">marqueur de classe nominale</span><span id="OTClassifierNotAgrSpan" show="swOTClassifierTypeOrSpecific">classificateur</span>, afin de créer un tableau qui sera intégré à la description grammaticale. Remplissez toutes les zones de textes<span id="OTClassifierYesAgrSpan" show="swOTClassifierAgrNum"> et cochez le numéro qui correspond au nombre (singulier ou pluriel) de l’accord pour chaque classe</span>.   S’il existe plus d’une forme (allomorphe) pour un <span id="OTClassifierAgrSpan2" show="swOTClassifierAgr">marqueur de classe nominale</span><span id="OTClassifierNotAgrSpan2" show="swOTClassifierTypeOrSpecific">classificateur</span>, saisissez chacune des formes sur une ligne.  Ajoutez un tiret à chaque affixe pour indiquer s’il s’agit d’un préfixe ou d’un suffixe. Nous partons du principe que vous numérotez les classes à partir de <span id="OTClassifierAgrNumSpan" show="swOTClassifierAgrNum" >« un » .  Si ce n’est pas le cas, il vous faudra les modifier dans la description grammaticale produite. Si la langue a moins de classes, laissez les zones de texte vides, tout simplement. Si vous ne trouvez pas certains des classificateurs énumérés ici, laissez ces zones de texte vides. Ajoutez les classificateurs supplémentaires dans la zone de texte « autres » pour qu’ils soient intégrés dans la description grammaticale produite.</span> </introduction>
 <br/>
        <prompt id="OTClassifierAgrNumPrompt01" show="swOTClassifierAgrNum">Saisissez les formes pour la 1ère classe :</prompt>
-       <textBox id="OTClassifierAgrNumExample01" dataItem="class1Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample01" dataItem="class1Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>1</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum01" show="swOTClassifierAgrNum">
           <groupName dataItem="class1agr" default="irrelevant">ROTClassifierAgrNum1</groupName>
           <prompt>Le nombre de la classe 1 est :</prompt>
@@ -138,7 +138,7 @@
           <radio id="OTClassifierAgrNum01Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt02" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 2 :</prompt>
-       <textBox id="OTClassifierAgrNumExample02" dataItem="class2Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample02" dataItem="class2Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>2</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum02" show="swOTClassifierAgrNum">
           <groupName dataItem="class2agr" default="irrelevant">ROTClassifierAgrNum2</groupName>
           <prompt>Le nombre de la classe 2 est :</prompt>
@@ -147,7 +147,7 @@
           <radio id="OTClassifierAgrNum02Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt3" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 3 :</prompt>
-       <textBox id="OTClassifierAgrNumExample3" dataItem="class3Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample3" dataItem="class3Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>3</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum3" show="swOTClassifierAgrNum">
           <groupName dataItem="class3agr" default="irrelevant">ROTClassifierAgrNum3</groupName>
           <prompt> Le nombre de la classe 3 est :</prompt>
@@ -156,7 +156,7 @@
           <radio id="OTClassifierAgrNum3Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt4" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 4 :</prompt>
-       <textBox id="OTClassifierAgrNumExample4" dataItem="class4Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample4" dataItem="class4Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>4</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum4" show="swOTClassifierAgrNum">
           <groupName dataItem="class4agr" default="irrelevant">ROTClassifierAgrNum4</groupName>
           <prompt>Le nombre de la classe 4 est :</prompt>
@@ -165,7 +165,7 @@
           <radio id="OTClassifierAgrNum4Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt5" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 5 :</prompt>
-       <textBox id="OTClassifierAgrNumExample5" dataItem="class5Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample5" dataItem="class5Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>5</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum5" show="swOTClassifierAgrNum">
           <groupName dataItem="class5agr" default="irrelevant">ROTClassifierAgrNum5</groupName>
           <prompt> Le nombre de la classe 5 est :</prompt>
@@ -174,7 +174,7 @@
           <radio id="OTClassifierAgrNum5Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt6" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 6 :</prompt>
-       <textBox id="OTClassifierAgrNumExample6" dataItem="class6Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample6" dataItem="class6Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>6</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum6" show="swOTClassifierAgrNum">
           <groupName dataItem="class6agr" default="irrelevant">ROTClassifierAgrNum6</groupName>
           <prompt>Le nombre de la classe 6 est :</prompt>
@@ -183,7 +183,7 @@
           <radio id="OTClassifierAgrNum6Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt7" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 7 :</prompt>
-       <textBox id="OTClassifierAgrNumExample7" dataItem="class7Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample7" dataItem="class7Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>7</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum7" show="swOTClassifierAgrNum">
           <groupName dataItem="class7agr" default="irrelevant">ROTClassifierAgrNum7</groupName>
           <prompt>Le nombre de la classe 7 est :</prompt>
@@ -192,7 +192,7 @@
           <radio id="OTClassifierAgrNum7Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt8" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 8 :</prompt>
-       <textBox id="OTClassifierAgrNumExample8" dataItem="class8Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample8" dataItem="class8Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>8</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum8" show="swOTClassifierAgrNum">
           <groupName dataItem="class8agr" default="irrelevant">ROTClassifierAgrNum8</groupName>
           <prompt>Le nombre de la classe 8 est :</prompt>
@@ -201,7 +201,7 @@
           <radio id="OTClassifierAgrNum8Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt9" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 9 :</prompt>
-       <textBox id="OTClassifierAgrNumExample9" dataItem="class9Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample9" dataItem="class9Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>9</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum9" show="swOTClassifierAgrNum">
           <groupName dataItem="class9agr" default="irrelevant">ROTClassifierAgrNum9</groupName>
           <prompt>Le nombre de la classe 9 est :</prompt>
@@ -210,7 +210,8 @@
           <radio id="OTClassifierAgrNum9Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt10" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 10 :</prompt>
-       <textBox id="OTClassifierAgrNumExample10" dataItem="class10Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample10" dataItem="class10Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>10</gloss>
+       </textBox>
        <radioGroup id="OTClassifierAgrNum10" show="swOTClassifierAgrNum">
           <groupName dataItem="class10agr" default="irrelevant">ROTClassifierAgrNum10</groupName>
           <prompt>Le nombre de la classe 10 est :</prompt>
@@ -219,7 +220,7 @@
           <radio id="OTClassifierAgrNum10Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt11" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 11 :</prompt>
-       <textBox id="OTClassifierAgrNumExample11" dataItem="class11Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample11" dataItem="class11Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>11</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum11" show="swOTClassifierAgrNum">
           <groupName dataItem="class11agr" default="irrelevant">ROTClassifierAgrNum11</groupName>
           <prompt>Le nombre de la classe 11 est :</prompt>
@@ -228,7 +229,7 @@
           <radio id="OTClassifierAgrNum11Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt12" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 12 :</prompt>
-       <textBox id="OTClassifierAgrNumExample12" dataItem="class12Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample12" dataItem="class12Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>12</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum12" show="swOTClassifierAgrNum">
           <groupName dataItem="class12agr" default="irrelevant">ROTClassifierAgrNum12</groupName>
           <prompt>Le nombre de la classe 12 est :</prompt>
@@ -237,7 +238,7 @@
           <radio id="OTClassifierAgrNum12Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt13" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 13 :</prompt>
-       <textBox id="OTClassifierAgrNumExample13" dataItem="class13Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample13" dataItem="class13Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>13</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum13" show="swOTClassifierAgrNum">
           <groupName dataItem="class13agr" default="irrelevant">ROTClassifierAgrNum13</groupName>
           <prompt>Le nombre de la classe 13 est :</prompt>
@@ -246,7 +247,7 @@
           <radio id="OTClassifierAgrNum13Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt14" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 14 :</prompt>
-       <textBox id="OTClassifierAgrNumExample14" dataItem="class14Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample14" dataItem="class14Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>14</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum14" show="swOTClassifierAgrNum">
           <groupName dataItem="class14agr" default="irrelevant">ROTClassifierAgrNum14</groupName>
           <prompt>Le nombre de la classe 14 est :</prompt>
@@ -255,7 +256,7 @@
           <radio id="OTClassifierAgrNum14Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt15" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 15 :</prompt>
-       <textBox id="OTClassifierAgrNumExample15" dataItem="class15Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample15" dataItem="class15Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>15</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum15" show="swOTClassifierAgrNum">
           <groupName dataItem="class15agr" default="irrelevant">ROTClassifierAgrNum15</groupName>
           <prompt>Le nombre de la classe 15 est :</prompt>
@@ -264,7 +265,7 @@
           <radio id="OTClassifierAgrNum15Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt16" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 16 :</prompt>
-       <textBox id="OTClassifierAgrNumExample16" dataItem="class16Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample16" dataItem="class16Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>16</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum16" show="swOTClassifierAgrNum">
           <groupName dataItem="class16agr" default="irrelevant">ROTClassifierAgrNum16</groupName>
           <prompt>Le nombre de la classe 16 est :</prompt>
@@ -273,7 +274,7 @@
           <radio id="OTClassifierAgrNum16Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt17" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 17 :</prompt>
-       <textBox id="OTClassifierAgrNumExample17" dataItem="class17Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample17" dataItem="class17Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>17</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum17" show="swOTClassifierAgrNum">
           <groupName dataItem="class17agr" default="irrelevant">ROTClassifierAgrNum17</groupName>
           <prompt>Le nombre de la classe 17 est :</prompt>
@@ -282,7 +283,7 @@
           <radio id="OTClassifierAgrNum17Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt18" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 18 :</prompt>
-       <textBox id="OTClassifierAgrNumExample18" dataItem="class18Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample18" dataItem="class18Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>18</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum18" show="swOTClassifierAgrNum">
           <groupName dataItem="class18agr" default="irrelevant">ROTClassifierAgrNum18</groupName>
           <prompt>Le nombre de la classe 18 est :</prompt>
@@ -291,7 +292,7 @@
           <radio id="OTClassifierAgrNum18Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt19" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 19 :</prompt>
-       <textBox id="OTClassifierAgrNumExample19" dataItem="class19Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample19" dataItem="class19Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>19</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum19" show="swOTClassifierAgrNum">
           <groupName dataItem="class19agr" default="irrelevant">ROTClassifierAgrNum19</groupName>
           <prompt>Le nombre de la classe 19 est :</prompt>
@@ -300,7 +301,7 @@
           <radio id="OTClassifierAgrNum19Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt20" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 20 :</prompt>
-       <textBox id="OTClassifierAgrNumExample20" dataItem="class20Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample20" dataItem="class20Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>20</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum20" show="swOTClassifierAgrNum">
           <groupName dataItem="class20agr" default="irrelevant">ROTClassifierAgrNum20</groupName>
           <prompt>Le nombre de la classe 20 est :</prompt>
@@ -309,7 +310,7 @@
           <radio id="OTClassifierAgrNum20Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt21" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 21 :</prompt>
-       <textBox id="OTClassifierAgrNumExample21" dataItem="class21Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample21" dataItem="class21Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>21</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum21" show="swOTClassifierAgrNum">
           <groupName dataItem="class21agr" default="irrelevant">ROTClassifierAgrNum21</groupName>
           <prompt>Le nombre de la classe 21 est :</prompt>
@@ -318,7 +319,7 @@
           <radio id="OTClassifierAgrNum21Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt22" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 22 :</prompt>
-       <textBox id="OTClassifierAgrNumExample22" dataItem="class22Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample22" dataItem="class22Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>22</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum22" show="swOTClassifierAgrNum">
           <groupName dataItem="class22agr" default="irrelevant">ROTClassifierAgrNum22</groupName>
           <prompt>Le nombre de la classe 22 est :</prompt>
@@ -327,7 +328,7 @@
           <radio id="OTClassifierAgrNum22Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt23" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 23 :</prompt>
-       <textBox id="OTClassifierAgrNumExample23" dataItem="class23Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample23" dataItem="class23Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>23</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum23" show="swOTClassifierAgrNum">
           <groupName dataItem="class23agr" default="irrelevant">ROTClassifierAgrNum23</groupName>
           <prompt>Le nombre de la classe 23 est :</prompt>
@@ -336,7 +337,7 @@
           <radio id="OTClassifierAgrNum23Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt24" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 24 :</prompt>
-       <textBox id="OTClassifierAgrNumExample24" dataItem="class24Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample24" dataItem="class24Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>24</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum24" show="swOTClassifierAgrNum">
           <groupName dataItem="class24agr" default="irrelevant">ROTClassifierAgrNum24</groupName>
           <prompt>Le nombre de la classe 24 est :</prompt>
@@ -345,7 +346,7 @@
           <radio id="OTClassifierAgrNum24Irr" dataValue="irrelevant">Non pertinent</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt25" show="swOTClassifierAgrNum">Saisissez ici les formes de la classe 25 :</prompt>
-       <textBox id="OTClassifierAgrNumExample25" dataItem="class25Example" show="swOTClassifierAgrNum" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrNumExample25" dataItem="class25Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>25</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum25" show="swOTClassifierAgrNum">
           <groupName dataItem="class25agr" default="irrelevant">ROTClassifierAgrNum25</groupName>
           <prompt>Le nombre de la classe 25 est :</prompt>
@@ -361,85 +362,85 @@
        </radioGroup>
 <br/>     
        <prompt id="OTClassifierAgrTypeAnimalSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur singulier pour les animaux :</prompt>
-       <textBox id="OTClassifierAgrTypeAnimalSgExample" dataItem="classAnimalSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeAnimalSgExample" dataItem="classAnimalSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>animaux</gloss></textBox>
        <prompt id="OTClassifierAgrTypeAnimalPlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur pluriel pour les animaux :</prompt>
-       <textBox id="OTClassifierAgrTypeAnimalPlExample" dataItem="classAnimalPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeAnimalPlExample" dataItem="classAnimalPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>animaux</gloss></textBox>
        <prompt id="OTClassifierAgrTypeInsectSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur singulier pour les insectes :</prompt>
-       <textBox id="OTClassifierAgrTypeInsectSgExample" dataItem="classInsectSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeInsectSgExample" dataItem="classInsectSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>insectes</gloss></textBox>
        <prompt id="OTClassifierAgrTypeInsectPlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur pluriel pour les insectes :</prompt>
-       <textBox id="OTClassifierAgrTypeInsectPlExample" dataItem="classInsectPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeInsectPlExample" dataItem="classInsectPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>insectes</gloss></textBox>
        <prompt id="OTClassifierAgrTypeLiquidSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur singulier pour les liquides :</prompt>
-       <textBox id="OTClassifierAgrTypeLiquidSgExample" dataItem="classLiquidSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeLiquidSgExample" dataItem="classLiquidSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>liquides</gloss></textBox>
        <prompt id="OTClassifierAgrTypeLiquidPlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur pluriel pour les liquides :</prompt>
-       <textBox id="OTClassifierAgrTypeLiquidPlExample" dataItem="classLiquidPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeLiquidPlExample" dataItem="classLiquidPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>liquides</gloss></textBox>
        <prompt id="OTClassifierAgrTypeRoundSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur singulier pour les objets ronds :</prompt>
-       <textBox id="OTClassifierAgrTypeRoundSgExample" dataItem="classRoundSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeRoundSgExample" dataItem="classRoundSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>objets ronds</gloss></textBox>
        <prompt id="OTClassifierAgrTypeRoundPlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur pluriel pour les objets ronds :</prompt>
-       <textBox id="OTClassifierAgrTypeRoundPlExample" dataItem="classRoundPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeRoundPlExample" dataItem="classRoundPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>objets ronds</gloss></textBox>
        <prompt id="OTClassifierAgrTypeCylinderSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur singulier pour les objets cylindriques :</prompt>
-       <textBox id="OTClassifierAgrTypeCylinderSgExample" dataItem="classCylinderSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeCylinderSgExample" dataItem="classCylinderSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>objets cylindriques</gloss></textBox>
        <prompt id="OTClassifierAgrTypeCylinderPlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur pluriel pour les objets cylindriques :</prompt>
-       <textBox id="OTClassifierAgrTypeCylinderPlExample" dataItem="classCylinderPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeCylinderPlExample" dataItem="classCylinderPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>objets cylindriques</gloss></textBox>
        <prompt id="OTClassifierAgrTypeSphereSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur singulier pour les objets sphériques :</prompt>
-       <textBox id="OTClassifierAgrTypeSphereSgExample" dataItem="classSphereSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeSphereSgExample" dataItem="classSphereSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>objets sphériques</gloss></textBox>
        <prompt id="OTClassifierAgrTypeSpherePlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur pluriel pour les objets sphériques :</prompt>
-       <textBox id="OTClassifierAgrTypeSpherePlExample" dataItem="classSpherePlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeSpherePlExample" dataItem="classSpherePlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>objets sphériques</gloss></textBox>
        <prompt id="OTClassifierAgrTypeTreeSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur singulier pour les abres :</prompt>
-       <textBox id="OTClassifierAgrTypeTreeSgExample" dataItem="classTreeSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeTreeSgExample" dataItem="classTreeSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>abres</gloss></textBox>
        <prompt id="OTClassifierAgrTypeTreePlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur pluriel pour les abres :</prompt>
-       <textBox id="OTClassifierAgrTypeTreePlExample" dataItem="classTreePlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeTreePlExample" dataItem="classTreePlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>abres</gloss></textBox>
        <prompt id="OTClassifierAgrTypeWoodSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur singulier pour le bois :</prompt>
-       <textBox id="OTClassifierAgrTypeWoodSgExample" dataItem="classWoodSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeWoodSgExample" dataItem="classWoodSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>bois</gloss></textBox>
        <prompt id="OTClassifierAgrTypeWoodPlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur pluriel pour le bois :</prompt>
-       <textBox id="OTClassifierAgrTypeWoodPlExample" dataItem="classWoodPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeWoodPlExample" dataItem="classWoodPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"><gloss>bois</gloss></textBox>
        <prompt id="OTClassifierAgrTypeOtherSgPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur général singulier pour les inanimés, ou tout autre marqueur :</prompt>
        <textBox id="OTClassifierAgrTypeOtherSgExample" dataItem="classOtherSgExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
        <prompt id="OTClassifierAgrTypeOtherPlPrompt" show="swOTClassifierAgrTypeNumAgrYes">Saisissez ici les formes pour le marqueur général pluriel pour les inanimés, ou tout autre marqueur :</prompt>
        <textBox id="OTClassifierAgrTypeOtherPlExample" dataItem="classOtherPlExample" show="swOTClassifierAgrTypeNumAgrYes" rows="2" kind="table"/>
   
        <prompt id="OTClassifierAgrTypeAnimalPrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur pour les animaux :</prompt>
-       <textBox id="OTClassifierAgrTypeAnimalExample" dataItem="classAnimalExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeAnimalExample" dataItem="classAnimalExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"><gloss>animaux</gloss></textBox>
        <prompt id="OTClassifierAgrTypeInsectPrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur pour les insectes :</prompt>
-       <textBox id="OTClassifierAgrTypeInsectExample" dataItem="classInsectExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeInsectExample" dataItem="classInsectExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"><gloss>insectes</gloss></textBox>
        <prompt id="OTClassifierAgrTypeLiquidPrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur pour les liquides :</prompt>
-       <textBox id="OTClassifierAgrTypeLiquidExample" dataItem="classLiquidExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeLiquidExample" dataItem="classLiquidExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"><gloss>liquides</gloss></textBox>
        <prompt id="OTClassifierAgrTypeRoundPrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur pour les objets ronds :</prompt>
-       <textBox id="OTClassifierAgrTypeRoundExample" dataItem="classRoundExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeRoundExample" dataItem="classRoundExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"><gloss>objets ronds</gloss></textBox>
        <prompt id="OTClassifierAgrTypeCylinderPrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur pour les objets cylindriques :</prompt>
-       <textBox id="OTClassifierAgrTypeCylinderExample" dataItem="classCylinderExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeCylinderExample" dataItem="classCylinderExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"><gloss>objets cylindriques</gloss></textBox>
        <prompt id="OTClassifierAgrTypeSpherePrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur pour les objets sphériques :</prompt>
-       <textBox id="OTClassifierAgrTypeSphereExample" dataItem="classSphereExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeSphereExample" dataItem="classSphereExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"><gloss>objets sphériques</gloss></textBox>
        <prompt id="OTClassifierAgrTypeTreePrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur pour les abres :</prompt>
-       <textBox id="OTClassifierAgrTypeTreeExample" dataItem="classTreeExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeTreeExample" dataItem="classTreeExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"><gloss>abres</gloss></textBox>
        <prompt id="OTClassifierAgrTypeWoodPrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur pour les bois :</prompt>
-       <textBox id="OTClassifierAgrTypeWoodExample" dataItem="classWoodExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
+       <textBox id="OTClassifierAgrTypeWoodExample" dataItem="classWoodExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"><gloss>bois</gloss></textBox>
        <prompt id="OTClassifierAgrTypeOtherPrompt" show="swOTClassifierTypeOrNumAgrNo">Saisissez ici les formes pour le marqueur général pour les inanimés, ou tout autre marqueur :</prompt>
        <textBox id="OTClassifierAgrTypeOtherExample" dataItem="classOtherExample" show="swOTClassifierTypeOrNumAgrNo" rows="2" kind="table"/>
        
        <prompt id="OTClassifierSpecificHumanPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les humains :</prompt>
-       <textBox id="OTClassifierSpecificHumanExample" dataItem="classifierHumanExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificHumanExample" dataItem="classifierHumanExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>humains</gloss></textBox>
        <prompt id="OTClassifierSpecificAnimalPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les animaux :</prompt>
-       <textBox id="OTClassifierSpecificAnimalExample" dataItem="classifierAnimalExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificAnimalExample" dataItem="classifierAnimalExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>animaux</gloss></textBox>
        <prompt id="OTClassifierSpecificBirdPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les oiseaux :</prompt>
-       <textBox id="OTClassifierSpecificBirdExample" dataItem="classifierBirdExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificBirdExample" dataItem="classifierBirdExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>oiseaux</gloss></textBox>
        <prompt id="OTClassifierSpecificBoatPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les bateaux :</prompt>
-       <textBox id="OTClassifierSpecificBoatExample" dataItem="classifierBoatExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificBoatExample" dataItem="classifierBoatExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>bateaux</gloss></textBox>
        <prompt id="OTClassifierSpecificClothingPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les vêtements :</prompt>
-       <textBox id="OTClassifierSpecificClothingExample" dataItem="classifierClothingExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificClothingExample" dataItem="classifierClothingExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>vêtements</gloss></textBox>
        <prompt id="OTClassifierSpecificTreePrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les arbres :</prompt>
-       <textBox id="OTClassifierSpecificTreeExample" dataItem="classifierTreeExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificTreeExample" dataItem="classifierTreeExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>arbres</gloss></textBox>
        <prompt id="OTClassifierSpecificLongThinPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les objets longs et minces :</prompt>
-       <textBox id="OTClassifierSpecificLongThinExample" dataItem="classifierLongThinExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificLongThinExample" dataItem="classifierLongThinExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>objets longs et minces</gloss></textBox>
        <prompt id="OTClassifierSpecificLongWavyPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les objets longs et ondulés :</prompt>
-       <textBox id="OTClassifierSpecificLongWavyExample" dataItem="classifierLongWavyExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificLongWavyExample" dataItem="classifierLongWavyExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>objets longs et ondulés</gloss></textBox>
        <prompt id="OTClassifierSpecificFlatPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les objets plats :</prompt>
-       <textBox id="OTClassifierSpecificFlatExample" dataItem="classifierFlatExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificFlatExample" dataItem="classifierFlatExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>objets plats</gloss></textBox>
        <prompt id="OTClassifierSpecificCylindricalPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les objets cylindriques :</prompt>
-       <textBox id="OTClassifierSpecificCylindricalExample" dataItem="classifierCylindricalExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificCylindricalExample" dataItem="classifierCylindricalExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>objets cylindriques</gloss></textBox>
        <prompt id="OTClassifierSpecificMechanicalPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les objets mécaniques :</prompt>
-       <textBox id="OTClassifierSpecificMechanicalExample" dataItem="classifierMechanicalExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
-       <prompt id="OTClassifierSpecificGenericPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur générique :</prompt>
-       <textBox id="OTClassifierSpecificGenericExample" dataItem="classifierGenericExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
+       <textBox id="OTClassifierSpecificMechanicalExample" dataItem="classifierMechanicalExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>objets mécaniques</gloss></textBox>
+       <prompt id="OTClassifierSpecificGenericPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour le classificateur pour les objets génériques :</prompt>
+       <textBox id="OTClassifierSpecificGenericExample" dataItem="classifierGenericExample" show="swOTClassifierSpecific" rows="2" kind="table"><gloss>objets génériques</gloss></textBox>
        <prompt id="OTClassifierSpecificOtherPrompt" show="swOTClassifierSpecific">Saisissez ici les formes pour tout autre classificateur :</prompt>
        <textBox id="OTClassifierSpecificOtherExample" dataItem="classifierOtherExample" show="swOTClassifierSpecific" rows="2" kind="table"/>
        <br/><br/>

@@ -21,14 +21,14 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	   <prompt id="QPQuantifierClassifierAgrPrompt" show="swOTClassifierAgrAndQuantifierYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the quantifiers here.</prompt>	   
 <br/>
 	   <prompt>Key the way your language expresses “many” (which modifies nouns which can be counted), with each word on a separate line. </prompt>
-	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"/>
+	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"><gloss>many</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the way your language expresses “much” (which only modifies <technicalTermRef term="ttMass"/> nouns), with each word on a separate line.</prompt>
-	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"/>
+	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"><gloss>much</gloss></textBox>
 	   <br/><br/>
 	   <prompt>Key the way your language expresses “few”, with each word on a separate line. </prompt>
-	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"/>
+	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"><gloss>few</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the way your language expresses any other quantifiers of this type, with each word on a separate line.</prompt>

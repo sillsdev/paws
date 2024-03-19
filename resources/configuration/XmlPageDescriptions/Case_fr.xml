@@ -65,7 +65,7 @@
            <radio id="NPCaseSplit" checked="yes" dataValue="split">Ergativité mixte : d’habitude la langue utilise un système nominatif-accusatif, mais dans certains contextes grammaticaux la langue utilise le système ergatif-absolutif</radio>
         </radioGroup>
        <prompt id="NPCaseSplitPrompt" show="swNPCaseSplit">Le système casuel ergatif-absolutif s’emploie quand :</prompt>
-       <textBox id="NPCaseSplitConditions" dataItem="splitConditions" cols="70" rows="1" show="swNPCaseSplit" kind="table"/>
+       <textBox id="NPCaseSplitConditions" dataItem="splitConditions" cols="70" rows="1" show="swNPCaseSplit" kind="other"/>
  <br/><br/>
        <radioGroup id="NPCaseExperiencerTable" show="swNPCaseNotNone">
           <groupName dataItem="caseExperiencer" default="no">RNPCaseExperiencer</groupName>

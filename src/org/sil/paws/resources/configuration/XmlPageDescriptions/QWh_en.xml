@@ -7,31 +7,31 @@
     <form section="q">
 <prompt>For each of the following text boxes, if your language expresses that interrogative via an affix or clitic, enter it in the box with a hyphen or equal sign on the appropriate side to indicate whether it is a prefix or proclitic or a suffix or enclitic.  Each item should be entered on a separate line.</prompt>
         <prompt>Key the way your language expresses ‘who’ or ‘whom’ here:</prompt>
-        <textBox id="QWho" dataItem="who" rows="3" kind="table"/>
+        <textBox id="QWho" dataItem="who" rows="3" kind="table"><gloss>who</gloss></textBox>
         <br/>
        <prompt>Key the way your language expresses ‘what’ here:</prompt>
-        <textBox id="QWhat" dataItem="what" rows="3" kind="table"/>
+        <textBox id="QWhat" dataItem="what" rows="3" kind="table"><gloss>what</gloss></textBox>
         <br/>
        <prompt>Key the way your language expresses ‘why’ here:</prompt>
-        <textBox id="QWhy" dataItem="why" rows="3" kind="table"/>
+        <textBox id="QWhy" dataItem="why" rows="3" kind="table"><gloss>why</gloss></textBox>
         <br/>
        <prompt>Key the way your language expresses ‘where’ here:</prompt>
-        <textBox id="QWhere" dataItem="where" rows="3" kind="table"/>
+        <textBox id="QWhere" dataItem="where" rows="3" kind="table"><gloss>where</gloss></textBox>
         <br/>
        <prompt>Key the way your language expresses ‘when’ here:</prompt>
-        <textBox id="QWhen" dataItem="when" rows="3" kind="table"/>
+        <textBox id="QWhen" dataItem="when" rows="3" kind="table"><gloss>when</gloss></textBox>
         <br/>
        <prompt>Key the way your language expresses ‘how’ here:</prompt>
-        <textBox id="QHow" dataItem="how" rows="3" kind="table"/>
+        <textBox id="QHow" dataItem="how" rows="3" kind="table"><gloss>how</gloss></textBox>
         <br/>
        <prompt>Key the way your language expresses ‘how many’ or ‘how much’ here:</prompt>
-        <textBox id="QHowMany" dataItem="howMany" rows="3" kind="table"/>
+        <textBox id="QHowMany" dataItem="howMany" rows="3" kind="table"><gloss>how much</gloss></textBox>
         <br/>
        <prompt>Key the way your language expresses ‘which’ here:</prompt>
-        <textBox id="QWhich" dataItem="which" rows="3" kind="table"/>
+        <textBox id="QWhich" dataItem="which" rows="3" kind="table"><gloss>which</gloss></textBox>
         <br/>
        <prompt>Key the way your language expresses ‘whose’ here:</prompt>
-        <textBox id="QWhose" dataItem="whose" rows="3" kind="table"/>
+        <textBox id="QWhose" dataItem="whose" rows="3" kind="table"><gloss>whose</gloss></textBox>
         <br/>
         <prompt>Key any additional interrogatives your language uses here:</prompt>
         <textBox id="QOther" dataItem="other" rows="3" kind="table"/>

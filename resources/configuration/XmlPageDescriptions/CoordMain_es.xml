@@ -16,34 +16,37 @@
 		   Se consideran las palabras o cláusulas de introducción, designadas a veces como coordinación, y los ejemplos de cláusulas adverbiales, que son subordinación, en <section number="13">Las cláusulas adverbiales</section>.</introduction>
 	   <prompt>Escriba la manera en que su lengua expresa estas conjunciones en los siguientes campos. Si hay más de una opción, escriba cada palabra en una línea separada. Si la conjunción es un afijo o clítico, escriba un guión o signo igual con la conjunción indicando en qué lado se une.</prompt>
 	   <prompt>Escriba la palabra su lengua utiliza para la conjunción ‘y':</prompt>
-		<textBox id="CoordAnd" dataItem="and" rows="3" kind="table"/>
+		<textBox id="CoordAnd" dataItem="and" rows="3" kind="table"><gloss>y</gloss></textBox>
 		<br/>
 		<prompt>Escriba la palabra su lengua utiliza para la conjunción ‘y luego’entre dos oraciones aquí:</prompt>
-		<textBox id="CoordSeq" dataItem="andThen" rows="3" kind="table"/>
+		<textBox id="CoordSeq" dataItem="andThen" rows="3" kind="table"><gloss>y luego</gloss></textBox>
 		<br/>
 		<prompt>Escriba la palabra su lengua utiliza para la conjunción ‘o' aquí:</prompt>
-		<textBox id="CoordOr" dataItem="or" rows="3" kind="table"/>
+		<textBox id="CoordOr" dataItem="or" rows="3" kind="table"><gloss>o</gloss></textBox>
 		<br/>
 	   <prompt>Escriba la palabra su lengua utiliza para la conjunción ‘pero' aquí:</prompt>
-		<textBox id="CoordBut" dataItem="but" rows="3" kind="table"/>
+		<textBox id="CoordBut" dataItem="but" rows="3" kind="table"><gloss>pero</gloss></textBox>
 		<br/>
 	   <prompt>Escriba la palabra su lengua utiliza para la conjunción ‘y/o' aquí:</prompt>
-		<textBox id="CoordAndOr" dataItem="andOr" rows="3" kind="table"/>
+		<textBox id="CoordAndOr" dataItem="andOr" rows="3" kind="table"><gloss>y/o</gloss></textBox>
 		<br/>
 	   <prompt>Si su lengua utiliza ‘con' igual que una conjunción entre frases nominales, escriba esa palabra aquí:</prompt>
-		<textBox id="CoordWith" dataItem="with" rows="3" kind="table"/>
+		<textBox id="CoordWith" dataItem="with" rows="3" kind="table"><gloss>con</gloss></textBox>
 		<br/>
 		<prompt>Escriba cualquiera palabra adicional que su lengua utiliza entre las oraciones conjuntivas aquí:</prompt>
 		<textBox id="CoordOther" dataItem="other" rows="3" kind="table"/>
 		<br/>
 	   <prompt>Escriba la conjuncion inicial que significa ‘o' que su lengua utiliza para ‘o...o' construcciones aquí:</prompt>
-		<textBox id="CoordEither" dataItem="either" rows="3" kind="table"/>
+		<textBox id="CoordEither" dataItem="either" rows="3" kind="table"><gloss>o</gloss></textBox>
+		<br/>
+	   <prompt>Escriba la conjuncion medial que significa ‘o' que su lengua utiliza para ‘o...o' construcciones aquí (solamente la segunda parte):</prompt>
+		<textBox id="CoordEitherOr" dataItem="eitherOr" rows="3" kind="table"><gloss>o</gloss></textBox>
 		<br/>
 	   <prompt>Escriba la conjuncion inicial negativa que significa ‘ni' que su lengua utiliza para ‘ni...ni' construcciones aquí:</prompt>
-		<textBox id="CoordNeither" dataItem="neither" rows="3" kind="table"/>
+		<textBox id="CoordNeither" dataItem="neither" rows="3" kind="table"><gloss>ni</gloss></textBox>
 		<br/>
-	   <prompt>Escriba la conjuncion negativa que significa ‘ni' que su lengua utiliza para ‘ni...ni' construcciones aquí ((incluso si una conjunción inicial no se requiere para su lengua):</prompt>
-		<textBox id="CoordNor" dataItem="nor" rows="3" kind="table"/>
+	   <prompt>Escriba la conjuncion negativa que significa ‘ni' que su lengua utiliza para ‘ni...ni' construcciones aquí (incluso si una conjunción inicial no se requiere para su lengua):</prompt>
+		<textBox id="CoordNor" dataItem="nor" rows="3" kind="table"><gloss>ni</gloss></textBox>
 		<br/>
 	   <instruction id="CoordAndOrInstruction">Note that a word like ‘and/or' which is written with a slash (/) in the word, must be entered in your lexicon with a backslash in front of the slash (eg. ‘and\/or') for <tool>CARLA Studio</tool> to process it correctly.</instruction>
 	   <radioGroup>
