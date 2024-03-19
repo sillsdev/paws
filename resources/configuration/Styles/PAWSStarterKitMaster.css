@@ -193,6 +193,9 @@ width: 100%;
 border: 1px solid black;
 margin-left:0.5in;
 }
+.exampleEntryTable {
+border: 1px solid black;
+}
 .return {
 font-size:larger;
 margin-top: .25in;

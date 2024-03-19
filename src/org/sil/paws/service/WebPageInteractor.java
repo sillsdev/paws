@@ -75,6 +75,10 @@ public class WebPageInteractor {
 		return sOutValue;
 	}
 
+	public void createNewFormEntry(String sXPath, int index) {
+		language.createNewFormEntry(sXPath, index);
+	}
+
 	public int getFormsLength(String sXPath) {
 		int result = language.getFormsLength(sXPath);
 //		System.out.println("forms length of '" + sXPath + "' = " + result);

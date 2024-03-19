@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2016-2018 SIL International
+ * Copyright (c) 2016-2024 SIL International
  * This software is licensed under the LGPL, version 2.1 or later
  * (http://www.gnu.org/licenses/lgpl-2.1.html)
  */
@@ -12,6 +12,7 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -108,5 +109,27 @@ public class Language {
 			e.printStackTrace();
 		}
 		return sResult;
+	}
+
+	public void createNewFormEntry(String XPath, int index) {
+		XPathFactory xPathfactory = XPathFactory.newInstance();
+		XPath xpath = xPathfactory.newXPath();
+		try {
+			XPathExpression expr = xpath.compile(XPath);
+			Node node = (Node) expr.evaluate(answersDOM, XPathConstants.NODE);
+			if (node != null) {
+				Element form = node.getOwnerDocument().createElement("form");
+				node.insertBefore(form, null);
+				Element vernacular = node.getOwnerDocument().createElement("vernacular");
+				Element ipa = node.getOwnerDocument().createElement("ipa");
+				Element gloss = node.getOwnerDocument().createElement("gloss");
+				form.insertBefore(vernacular, null);
+				form.insertBefore(ipa, null);
+				form.insertBefore(gloss, null);
+			}
+		} catch (XPathExpressionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
