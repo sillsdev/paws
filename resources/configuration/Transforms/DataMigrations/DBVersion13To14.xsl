@@ -2,7 +2,7 @@
 <!-- transform to convert PAWS answer file from dbversion 12 to 13 (convert #PCDATA examples to form wiht vernacular, ipa, and gloss for table-based examples)
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
 	<xsl:include href="../PAWSSKCommon.xsl"/>
 	<xsl:template match="@* |  node()">
 		<xsl:copy>
@@ -2863,7 +2863,7 @@
 		</xsl:element>
 	</xsl:template>
 	<!--
-			ConvertInterlinearExamples
+		ConvertExamples
 		-->
 	<xsl:template name="ConvertExamples">
 		<xsl:param name="iNumberOfForms"/>
@@ -2917,17 +2917,19 @@
 				<!--				</xsl:if>-->
 			</xsl:when>
 			<xsl:otherwise>
-				<form>
-					<vernacular/>
-					<ipa/>
-					<gloss/>
-				</form>
-				<xsl:if test="$iCount &lt;= $iNumberOfForms">
+				<xsl:if test="$iCount = 1">
+					<form>
+						<vernacular/>
+						<ipa/>
+						<gloss/>
+					</form>
+				</xsl:if>
+<!--				<xsl:if test="$iCount &lt;= $iNumberOfForms">
 					<xsl:call-template name="ConvertExamples">
 						<xsl:with-param name="sExamples" select="''"/>
 						<xsl:with-param name="iCount" select="$iCount+1"/>
 					</xsl:call-template>
-				</xsl:if>
+				</xsl:if>-->
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
