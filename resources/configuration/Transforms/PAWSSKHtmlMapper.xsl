@@ -498,9 +498,9 @@ function CreateExampleEntryLoad(sId,sDataPath,defaultGloss,cssClass) {
 thisTable = document.getElementById(sId);
 maxForms = pawsApp.getFormsLength("//" + sDataPath);
 for (let i = 1; i &lt;= maxForms; i++) {
-/*if (i &gt; 1) {*/
+if (i &gt; 1) {
 ExampleInsertClicked(thisTable,sId,cssClass);
-/*}*/
+}
 CreateExampleEntryLineLoad(sId,sDataPath,i,"v","vernacular","");
 <xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
 CreateExampleEntryLineLoad(sId,sDataPath,i,"i","ipa","");
@@ -1568,7 +1568,7 @@ technicalTermRef
 	<xsl:template name="CreateExampleEntry">
 		<xsl:param name="fIndent" select="'Y'"/>
 		<table id="{@id}">
-			<!--<xsl:call-template name="CreateExampleSubTable"/>-->
+			<xsl:call-template name="CreateExampleSubTable"/>
 			<tr id="{@id}InsertAction">
 				<td>
 <!--					<td onclick="ExampleInsertClicked({@id},'{@id}')">-->
@@ -1612,7 +1612,7 @@ technicalTermRef
 					<xsl:attribute name="class">
 						<xsl:choose>
 							<xsl:when test="ancestor::featureRow">
-								<xsl:text>exampleEntyTable</xsl:text>
+								<xsl:text>exampleEntryTable</xsl:text>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:text>interlinearTable</xsl:text>
