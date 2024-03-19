@@ -196,6 +196,9 @@ margin-left:0.5in;
 .exampleEntryTable {
 border: 1px solid black;
 }
+.exampleEntryTable textarea {
+width: 100%;
+}
 .return {
 font-size:larger;
 margin-top: .25in;
