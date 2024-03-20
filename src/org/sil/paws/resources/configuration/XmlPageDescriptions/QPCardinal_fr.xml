@@ -19,39 +19,39 @@
 		<prompt id="QPNumberClassifierAgrPrompt" show="swOTClassifierAgrNumberYes">Puisque vous avez déjà indiqué les formes des marqueurs de classe nominale, il suffit de saisir les radicaux pour chaque mot demandé sur cette page.</prompt>	   
 	   <br/>	   
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « un » :</prompt>
-		<textBox id="QPCardinalNumbers1" dataItem="cardinalNumbers1" rows="2" kind="table"><gloss>1</gloss></textBox>
+		<textBox id="QPCardinalNumbers01" dataItem="cardinalNumbers1" rows="2" kind="table"><gloss>1</gloss></textBox>
 		<br/>
 		<br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « deux » :</prompt>
-	   <textBox id="QPCardinalNumbers2" dataItem="cardinalNumbers2" rows="2" kind="table"><gloss>2</gloss></textBox>
+	   <textBox id="QPCardinalNumbers02" dataItem="cardinalNumbers2" rows="2" kind="table"><gloss>2</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « trois » :</prompt>
-	   <textBox id="QPCardinalNumbers3" dataItem="cardinalNumbers3" rows="2" kind="table"><gloss>3</gloss></textBox>
+	   <textBox id="QPCardinalNumbers03" dataItem="cardinalNumbers3" rows="2" kind="table"><gloss>3</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « quatre » :</prompt>
-	   <textBox id="QPCardinalNumbers4" dataItem="cardinalNumbers4" rows="2" kind="table"><gloss>4</gloss></textBox>
+	   <textBox id="QPCardinalNumbers04" dataItem="cardinalNumbers4" rows="2" kind="table"><gloss>4</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « cinq » :</prompt>
-	   <textBox id="QPCardinalNumbers5" dataItem="cardinalNumbers5" rows="2" kind="table"><gloss>5</gloss></textBox>
+	   <textBox id="QPCardinalNumbers05" dataItem="cardinalNumbers5" rows="2" kind="table"><gloss>5</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « six » :</prompt>
-	   <textBox id="QPCardinalNumbers6" dataItem="cardinalNumbers6" rows="2" kind="table"><gloss>6</gloss></textBox>
+	   <textBox id="QPCardinalNumbers06" dataItem="cardinalNumbers6" rows="2" kind="table"><gloss>6</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « sept » :</prompt>
-	   <textBox id="QPCardinalNumbers7" dataItem="cardinalNumbers7" rows="2" kind="table"><gloss>7</gloss></textBox>
+	   <textBox id="QPCardinalNumbers07" dataItem="cardinalNumbers7" rows="2" kind="table"><gloss>7</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « huit » :</prompt>
-	   <textBox id="QPCardinalNumbers8" dataItem="cardinalNumbers8" rows="2" kind="table"><gloss>8</gloss></textBox>
+	   <textBox id="QPCardinalNumbers08" dataItem="cardinalNumbers8" rows="2" kind="table"><gloss>8</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « neuf » :</prompt>
-	   <textBox id="QPCardinalNumbers9" dataItem="cardinalNumbers9" rows="2" kind="table"><gloss>9</gloss></textBox>
+	   <textBox id="QPCardinalNumbers09" dataItem="cardinalNumbers9" rows="2" kind="table"><gloss>9</gloss></textBox>
 	   <br/>
 	   <br/>
 		<prompt>Saisissez ici le nombre cardinal ayant le sens de « dix » :</prompt>

@@ -20,39 +20,39 @@
 	   <prompt id="QPNumberClassifierAgrPrompt" show="swOTClassifierAgrNumberYes">Puesto que usted ha detallado ya las formas de los indicadores de clase, usted necesita solamente escribir las raíces para cada una de las palabras solicitadas en esta página.</prompt>	   
 	   <br/>	   
 	   <prompt>Escriba el número cardinal que significa ‘uno’ aquí:</prompt>
-		<textBox id="QPCardinalNumbers1" dataItem="cardinalNumbers1" rows="2" kind="table"><gloss>1</gloss></textBox>
+		<textBox id="QPCardinalNumbers01" dataItem="cardinalNumbers1" rows="2" kind="table"><gloss>1</gloss></textBox>
 		<br/>
 		<br/>
 	   <prompt>Escriba el número cardinal que significa ‘dos’ aquí:</prompt>
-	   <textBox id="QPCardinalNumbers2" dataItem="cardinalNumbers2" rows="2" kind="table"><gloss>2</gloss></textBox>
+	   <textBox id="QPCardinalNumbers02" dataItem="cardinalNumbers2" rows="2" kind="table"><gloss>2</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba el número cardinal que significa ‘tres’ aquí:</prompt>
-	   <textBox id="QPCardinalNumbers3" dataItem="cardinalNumbers3" rows="2" kind="table"><gloss>3</gloss></textBox>
+	   <textBox id="QPCardinalNumbers03" dataItem="cardinalNumbers3" rows="2" kind="table"><gloss>3</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba el número cardinal que significa ‘cuatro’ aquí:</prompt>
-	   <textBox id="QPCardinalNumbers4" dataItem="cardinalNumbers4" rows="2" kind="table"><gloss>4</gloss></textBox>
+	   <textBox id="QPCardinalNumbers04" dataItem="cardinalNumbers4" rows="2" kind="table"><gloss>4</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba el número cardinal que significa ‘cinco’ aquí:</prompt>
-	   <textBox id="QPCardinalNumbers5" dataItem="cardinalNumbers5" rows="2" kind="table"><gloss>5</gloss></textBox>
+	   <textBox id="QPCardinalNumbers05" dataItem="cardinalNumbers5" rows="2" kind="table"><gloss>5</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba el número cardinal que significa ‘séis’ aquí:</prompt>
-	   <textBox id="QPCardinalNumbers6" dataItem="cardinalNumbers6" rows="2" kind="table"><gloss>6</gloss></textBox>
+	   <textBox id="QPCardinalNumbers06" dataItem="cardinalNumbers6" rows="2" kind="table"><gloss>6</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba el número cardinal que significa ‘seite’ aquí:</prompt>
-	   <textBox id="QPCardinalNumbers7" dataItem="cardinalNumbers7" rows="2" kind="table"><gloss>7</gloss></textBox>
+	   <textBox id="QPCardinalNumbers07" dataItem="cardinalNumbers7" rows="2" kind="table"><gloss>7</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba el número cardinal que significa ‘ocho’ aquí:</prompt>
-	   <textBox id="QPCardinalNumbers8" dataItem="cardinalNumbers8" rows="2" kind="table"><gloss>8</gloss></textBox>
+	   <textBox id="QPCardinalNumbers08" dataItem="cardinalNumbers8" rows="2" kind="table"><gloss>8</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba el número cardinal que significa ‘nueve’ aquí:</prompt>
-	   <textBox id="QPCardinalNumbers9" dataItem="cardinalNumbers9" rows="2" kind="table"><gloss>9</gloss></textBox>
+	   <textBox id="QPCardinalNumbers09" dataItem="cardinalNumbers9" rows="2" kind="table"><gloss>9</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Escriba el número cardinal que significa ‘diez’ aquí:</prompt>

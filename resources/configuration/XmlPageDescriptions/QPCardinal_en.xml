@@ -21,39 +21,39 @@ position.  Note, however, that <technicalTermRef term="ttCardinal"/> numbers can
 	   <prompt id="QPNumberClassifierAgrPrompt" show="swOTClassifierAgrNumberYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the words asked for on this page.</prompt>	   
 	   <br/>	   
 	   <prompt>Key the cardinal number meaning ‘one’ here:</prompt>
-		<textBox id="QPCardinalNumbers1" dataItem="cardinalNumbers1" rows="2" kind="table"><gloss>1</gloss></textBox>
+		<textBox id="QPCardinalNumbers01" dataItem="cardinalNumbers1" rows="2" kind="table"><gloss>1</gloss></textBox>
 		<br/>
 		<br/>
 	   <prompt>Key the cardinal number meaning ‘two’ here:</prompt>
-	   <textBox id="QPCardinalNumbers2" dataItem="cardinalNumbers2" rows="2" kind="table"><gloss>2</gloss></textBox>
+	   <textBox id="QPCardinalNumbers02" dataItem="cardinalNumbers2" rows="2" kind="table"><gloss>2</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘three’ here:</prompt>
-	   <textBox id="QPCardinalNumbers3" dataItem="cardinalNumbers3" rows="2" kind="table"><gloss>3</gloss></textBox>
+	   <textBox id="QPCardinalNumbers03" dataItem="cardinalNumbers3" rows="2" kind="table"><gloss>3</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘four’ here:</prompt>
-	   <textBox id="QPCardinalNumbers4" dataItem="cardinalNumbers4" rows="2" kind="table"><gloss>4</gloss></textBox>
+	   <textBox id="QPCardinalNumbers04" dataItem="cardinalNumbers4" rows="2" kind="table"><gloss>4</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘five’ here:</prompt>
-	   <textBox id="QPCardinalNumbers5" dataItem="cardinalNumbers5" rows="2" kind="table"><gloss>5</gloss></textBox>
+	   <textBox id="QPCardinalNumbers05" dataItem="cardinalNumbers5" rows="2" kind="table"><gloss>5</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘six’ here:</prompt>
-	   <textBox id="QPCardinalNumbers6" dataItem="cardinalNumbers6" rows="2" kind="table"><gloss>6</gloss></textBox>
+	   <textBox id="QPCardinalNumbers06" dataItem="cardinalNumbers6" rows="2" kind="table"><gloss>6</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘seven’ here:</prompt>
-	   <textBox id="QPCardinalNumbers7" dataItem="cardinalNumbers7" rows="2" kind="table"><gloss>7</gloss></textBox>
+	   <textBox id="QPCardinalNumbers07" dataItem="cardinalNumbers7" rows="2" kind="table"><gloss>7</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘eight’ here:</prompt>
-	   <textBox id="QPCardinalNumbers8" dataItem="cardinalNumbers8" rows="2" kind="table"><gloss>8</gloss></textBox>
+	   <textBox id="QPCardinalNumbers08" dataItem="cardinalNumbers8" rows="2" kind="table"><gloss>8</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘nine’ here:</prompt>
-	   <textBox id="QPCardinalNumbers9" dataItem="cardinalNumbers9" rows="2" kind="table"><gloss>9</gloss></textBox>
+	   <textBox id="QPCardinalNumbers09" dataItem="cardinalNumbers9" rows="2" kind="table"><gloss>9</gloss></textBox>
 	   <br/>
 	   <br/>
 	   <prompt>Key the cardinal number meaning ‘ten’ here:</prompt>
