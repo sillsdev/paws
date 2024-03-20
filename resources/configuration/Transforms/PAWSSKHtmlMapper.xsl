@@ -205,16 +205,16 @@ var SpecPosUnknown = 4;
 
 function Initialize(locale)
 {
+document.body.style.cursor = "wait";
 var sTemp;
 var thisTextarea;
 var thisTable;
 var maxForms;
-pawsApp.useWaitCursor();
 <xsl:apply-templates select="//textBox | //groupName | //catMap | //featureItem | //checkbox | //contentCheckBoxOther" mode="load"/>
 pawsApp.setLeftOffAt("<xsl:value-of select="$prmWorkingPath"/>
 			<xsl:value-of select="//page/@id"/>.htm");
 Refresh();
-pawsApp.useDefaultCursor();
+document.body.style.cursor = "default";
 }
 function GetSpecifierPos()
 {
@@ -281,12 +281,15 @@ function GetPositionBasedOnHead(sAttr, bSame)
 <xsl:apply-templates select="//groupName" mode="checked"/>
 function saveData()
 {
+document.body.style.cursor = "wait";
 var sTemp;
 <xsl:apply-templates select="//textBox | //groupName | //catMap | //featureItem | //checkbox" mode="save"/>
 pawsApp.saveData();
+document.body.style.cursor = "default";
 }
 function ButtonNext()
 {
+document.body.style.cursor = "wait";
 	saveData();
 	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");
 	if (attr == "False") {
@@ -306,9 +309,11 @@ function ButtonNext()
 	 else {
 			pawsApp.load ("<xsl:value-of select="$prmInstallPath"/>HTMs/<xsl:value-of select="$sGoTo"/>");
 			}
+			document.body.style.cursor = "default";
 }
 function ButtonBack()
 {
+document.body.style.cursor = "wait";
 	saveData();
 	attr = pawsApp.getAnswerValue("/paws/@outputGrammar");
 	if (attr == "False")
@@ -326,6 +331,7 @@ function ButtonBack()
 			</xsl:choose>");
 			else
 			pawsApp.load ("<xsl:value-of select="$prmInstallPath"/>HTMs/<xsl:value-of select="$sBackGoTo"/>");
+			document.body.style.cursor = "default";
 }
 function ReturnContents()
 {
