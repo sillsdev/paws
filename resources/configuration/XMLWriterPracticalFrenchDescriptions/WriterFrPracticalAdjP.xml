@@ -124,7 +124,7 @@
               <headerCol>Glose</headerCol>
            </headerRow>
            <row>
-              <col exampleLoc="adjp/adjectiveDegreeAffixExample"/>
+              <col exampleLoc="adjp/adjectiveDegreeAffixPhraseExample"/>
               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
@@ -220,116 +220,116 @@
                                <headerCol>Nombres cardinaux</headerCol>
                             </headerRow>
                             <row>
-                                <col rowspan="1"><gloss><content>1</content></gloss></col>
                                 <col exampleLoc="qp/cardinalNumbers1"/>
+                               <col rowspan="1"><gloss><content>1</content></gloss></col>
                             </row>
                            <row>
-                              <col rowspan="1"><gloss><content>2</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers2"/>
+                              <col rowspan="1"><gloss><content>2</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>3</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers3"/>
+                              <col rowspan="1"><gloss><content>3</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>4</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers4"/>
+                              <col rowspan="1"><gloss><content>4</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>5</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers5"/>
+                              <col rowspan="1"><gloss><content>5</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>6</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers6"/>
+                              <col rowspan="1"><gloss><content>6</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>7</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers7"/>
+                              <col rowspan="1"><gloss><content>7</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>8</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers8"/>
+                              <col rowspan="1"><gloss><content>8</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>9</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers9"/>
+                              <col rowspan="1"><gloss><content>9</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>10</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers10"/>
+                              <col rowspan="1"><gloss><content>10</content></gloss></col>
                            </row>
                            <row>
-                                <col rowspan="1"><gloss><content>11</content></gloss></col>
                                 <col exampleLoc="qp/cardinalNumbers11"/>
-                            </row>
+                              <col rowspan="1"><gloss><content>11</content></gloss></col>
+                           </row>
                            <row>
-                              <col rowspan="1"><gloss><content>12</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers12"/>
+                              <col rowspan="1"><gloss><content>12</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>13</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers13"/>
+                              <col rowspan="1"><gloss><content>13</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>14</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers14"/>
+                              <col rowspan="1"><gloss><content>14</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>15</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers15"/>
+                              <col rowspan="1"><gloss><content>15</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>16</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers16"/>
+                              <col rowspan="1"><gloss><content>16</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>17</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers17"/>
+                              <col rowspan="1"><gloss><content>17</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>18</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers18"/>
+                              <col rowspan="1"><gloss><content>18</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>19</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers19"/>
+                              <col rowspan="1"><gloss><content>19</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>20</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers20"/>
+                              <col rowspan="1"><gloss><content>20</content></gloss></col>
                            </row>
                            <row>
-                                <col rowspan="1"><gloss><content>30</content></gloss></col>
                                 <col exampleLoc="qp/cardinalNumbers30"/>
-                            </row>
+                              <col rowspan="1"><gloss><content>30</content></gloss></col>
+                           </row>
                            <row>
-                              <col rowspan="1"><gloss><content>40</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers40"/>
+                              <col rowspan="1"><gloss><content>40</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>50</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers50"/>
+                              <col rowspan="1"><gloss><content>50</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>60</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers60"/>
+                              <col rowspan="1"><gloss><content>60</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>70</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers70"/>
+                              <col rowspan="1"><gloss><content>70</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>80</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers80"/>
+                              <col rowspan="1"><gloss><content>80</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>90</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers90"/>
+                              <col rowspan="1"><gloss><content>90</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>100</content></gloss></col>
                               <col exampleLoc="qp/cardinalNumbers100"/>
+                              <col rowspan="1"><gloss><content>100</content></gloss></col>
                            </row>
                         </table>
                     </example>
@@ -387,52 +387,52 @@
                                <headerCol>Nombres ordinaux</headerCol>
                             </headerRow>
                            <row>
-                              <col rowspan="1"><gloss><content>premier</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers1"/>
+                              <col rowspan="1"><gloss><content>premier</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>deuxième, seconde</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers2"/>
+                              <col rowspan="1"><gloss><content>deuxième, seconde</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>troisième</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers3"/>
+                              <col rowspan="1"><gloss><content>troisième</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>quatrième</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers4"/>
+                              <col rowspan="1"><gloss><content>quatrième</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>cinquième</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers5"/>
+                              <col rowspan="1"><gloss><content>cinquième</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>sixième</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers6"/>
+                              <col rowspan="1"><gloss><content>sixième</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>septième</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers7"/>
+                              <col rowspan="1"><gloss><content>septième</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>huitième</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers8"/>
+                              <col rowspan="1"><gloss><content>huitième</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>neuvième</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers9"/>
+                              <col rowspan="1"><gloss><content>neuvième</content></gloss></col>
                            </row>
                            <row>
-                              <col rowspan="1"><gloss><content>dixième</content></gloss></col>
                               <col exampleLoc="qp/ordinalNumbers10"/>
+                              <col rowspan="1"><gloss><content>dixième</content></gloss></col>
                            </row>
                        <row>
+                          <col exampleLoc="qp/nextExample"/>
                           <col rowspan="1"><gloss><content>suivant</content></gloss></col>
-                              <col exampleLoc="qp/nextExample"/>
-                           </row>
+                       </row>
                            <row>
-                              <col rowspan="1"><gloss><content>dernier</content></gloss></col>
                               <col exampleLoc="qp/lastExample"/>
+                              <col rowspan="1"><gloss><content>dernier</content></gloss></col>
                            </row>
                         </table>
                     </example>
