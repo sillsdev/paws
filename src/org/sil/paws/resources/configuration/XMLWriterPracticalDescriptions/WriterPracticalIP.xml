@@ -130,6 +130,7 @@
 	         <table border="1">
 	            <headerRow>
 	               <headerCol>Copular Prefix</headerCol>
+	            	<headerCol>Gloss</headerCol>
 	            </headerRow>
 	            <row>
 	               <col exampleLoc="ip/copularAffix"/>
@@ -140,6 +141,7 @@
 	         <table border="1">
 	            <headerRow>
 	               <headerCol>Copular Suffix</headerCol>
+	            	<headerCol>Gloss</headerCol>
 	            </headerRow>
 	            <row>
 	               <col exampleLoc="ip/copularAffix"/>
@@ -150,6 +152,7 @@
 	         <table border="1">
 	            <headerRow>
 	               <headerCol>Copular Affixes</headerCol>
+	            	<headerCol>Gloss</headerCol>
 	            </headerRow>
 	            <row>
 	               <col exampleLoc="ip/copularAffix"/>

@@ -128,6 +128,7 @@
 		      <table border="1">
 		         <headerRow>
 		            <headerCol>Prefijo copulativo</headerCol>
+		         	<headerCol>Glosa</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="ip/copularAffix"/>
@@ -138,6 +139,7 @@
 		      <table border="1">
 		         <headerRow>
 		            <headerCol>Sufijo copulativo</headerCol>
+		         	<headerCol>Glosa</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="ip/copularAffix"/>
@@ -148,6 +150,7 @@
 		      <table border="1">
 		         <headerRow>
 		            <headerCol>Afijos copulativos</headerCol>
+		         	<headerCol>Glosa</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="ip/copularAffix"/>
