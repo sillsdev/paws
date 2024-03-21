@@ -22,6 +22,7 @@
 						<headerCol>Type of feature</headerCol>
 						<headerCol>Feature</headerCol>
 						<headerCol>Morphemes</headerCol>
+						<headerCol>Gloss</headerCol>
 					</headerRow>
 					<row show="swIPInflFeatPresent">
 						<col>
@@ -523,6 +524,7 @@
 						<headerCol>Type of feature</headerCol>
 						<headerCol>Feature</headerCol>
 					   <headerCol>Morphemes</headerCol>
+						<headerCol>Gloss</headerCol>
 					</headerRow>
 					<row show="swIPAgrFeatFirstSubject">
 						<col>

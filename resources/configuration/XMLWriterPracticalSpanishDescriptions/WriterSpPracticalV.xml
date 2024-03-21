@@ -25,6 +25,7 @@
 					   <headerCol>Accidente</headerCol>
 					   <headerCol>Significado</headerCol>
 					   <headerCol>Morfemas</headerCol>
+						<headerCol>Glosa</headerCol>
 					</headerRow>
 					<row show="swIPInflFeatPresent">
 					   <col>
@@ -529,6 +530,7 @@
 					   <headerCol>Accidente</headerCol>
 					   <headerCol>Significado</headerCol>
 					   <headerCol>Morfemas</headerCol>
+						<headerCol>Glosa</headerCol>
 					</headerRow>
 					<row show="swIPAgrFeatFirstSubject">
 						<col>
