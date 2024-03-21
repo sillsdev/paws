@@ -287,142 +287,143 @@
 	            	<headerCol>Morphèmes</headerCol>
 	               <headerCol>Cas</headerCol>
 	            	<headerCol>Utilisation</headerCol>
+	            	<headerCol>Glose</headerCol>
 	            </headerRow>
 	            <row show="swNPCaseNomOrSplit">
-	               <col exampleLoc="np/nominative"/>
 	               <col>
 	               	<content>nominatif</content>
 	               </col>
 	               <col>
 	                  <content>sujet</content>
 	               </col>
+	            	<col exampleLoc="np/nominative"/>
 	            </row>
 	            <row show="swNPCaseNomOrSplit">
-	               <col exampleLoc="np/accusative"/>
 	               <col>
 	               	<content>accusatif</content>
 	               </col>
 	               <col>
 	               	<content>objet direct et autres emplois</content>
 	               </col>
+	            	<col exampleLoc="np/accusative"/>
 	            </row>
 	            <row show="swNPCaseErgOrSplitNotPossErg">
-	               <col exampleLoc="np/ergative"/>
 	               <col>
 	               	<content>ergatif</content>
 	               </col>
 	               <col>
 	               	<content>sujet de verbes transitifs</content>
 	               </col>
+	            	<col exampleLoc="np/ergative"/>
 	            </row>
 	            <row show="swNPCaseErgOrSplitPossErg">
-	               <col exampleLoc="np/ergative"/>
 	               <col>
 	               	<content>ergatif</content>
 	               </col>
 	               <col>
 	               	<content>sujet de verbes transitifs et possesseurs</content>
 	               </col>
+	            	<col exampleLoc="np/ergative"/>
 	            </row>
 	            <row show="swNPCaseErgOrSplitNotPossAbs">
-	               <col exampleLoc="np/absolutive"/>
 	               <col>
 	               	<content>absolutif</content>
 	               </col>
 	               <col>
 	               	<content>sujet de verbes intransitifs et objet de verbes transitifs</content>
 	               </col>
+	            	<col exampleLoc="np/absolutive"/>
 	            </row>
 	            <row show="swNPCaseErgOrSplitPossAbs">
-	               <col exampleLoc="np/absolutive"/>
 	               <col>
 	               	<content>absolutif</content>
 	               </col>
 	               <col>
 	               	<content>sujet de verbes intransitifs et objet de verbes transitifs et possesseurs</content>
 	               </col>
+	            	<col exampleLoc="np/absolutive"/>
 	            </row>
 	            <row show="swNPCaseNomOrSplitOrErgPossGen">
-	               <col exampleLoc="np/genitive"/>
 	               <col>
 	               	<content>génitif</content>
 	               </col>
 	               <col>
 	               	<content>possesseurs</content>
 	               </col>
+	            	<col exampleLoc="np/genitive"/>
 	            </row>
 	            <row show="swExperiencerNo">
-	               <col exampleLoc="np/dative"/>
 	               <col>
 	               	<content>datif</content>
 	               </col>
 	               <col>
 	               	<content>objet indirect</content>
 	               </col>
+	            	<col exampleLoc="np/dative"/>
 	            </row>
 	            <row show="swExperiencerNotNo">
-	               <col exampleLoc="np/dative"/>
 	               <col>
 	               	<content>datif</content>
 	               </col>
 	               <col>
 	               	<content>objet indirect et sujet-expérient</content>
 	               </col>
+	            	<col exampleLoc="np/dative"/>
 	            </row>
 	            <row>
-	               <col exampleLoc="np/ablative"/>
 	               <col>
 	                  <content>ablatif</content>
 	               </col>
 	               <col>
 	               	<content>source ou origine</content>
 	               </col>
+	            	<col exampleLoc="np/ablative"/>
 	            </row>
 	               <row>
-	                  <col exampleLoc="np/instrumental"/>
 	                  <col>
 	                     <content>instrumental</content>
 	                  </col>
 	                  <col>
 	                  	<content>instrument, moyen ou agent</content>
 	                  </col>
-	                  </row>
+	               	<col exampleLoc="np/instrumental"/>
+	               </row>
 	                  <row>
-	                     <col exampleLoc="np/locative"/>
 	                     <col>
 	                        <content>locatif</content>
 	                     </col>
 	                     <col>
 	                        <content>lieu</content>
 	                     </col>
-	                     </row>
+	                  	<col exampleLoc="np/locative"/>
+	                  </row>
 	                     <row>
-	                        <col exampleLoc="np/vocative"/>
 	                        <col>
 	                           <content>vocatif</content>
 	                        </col>
 	                        <col>
 	                        	<content>adresse directe</content>
 	                        </col>
-	                        </row>
+	                     	<col exampleLoc="np/vocative"/>
+	                     </row>
 	                        <row>
-	                           <col exampleLoc="np/oblique"/>
 	                           <col>
 	                              <content>oblique</content>
 	                           </col>
 	                           <col>
 	                           	<content>relation grammaticale mineure générale</content>
 	                           </col>
-	                           </row>
+	                        	<col exampleLoc="np/oblique"/>
+	                        </row>
 	                           <row>
-	                              <col exampleLoc="np/other"/>
 	                              <col>
 	                                 <content>autre</content>
 	                              </col>
 	                              <col>
 	                              	<content>autres marqueurs spécifiques</content>
 	                              </col>
-	                              </row>
+	                           	<col exampleLoc="np/other"/>
+	                           </row>
 	         </table>
 	      </example>	      
 	   </section2>

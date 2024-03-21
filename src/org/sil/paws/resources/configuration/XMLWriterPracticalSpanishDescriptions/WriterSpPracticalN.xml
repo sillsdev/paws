@@ -297,142 +297,143 @@
 	            <headerRow>
 	               <headerCol>Morfemas</headerCol>
 	               <headerCol>Caso</headerCol>
-	               <headerCol>Uso</headerCol>
+	            	<headerCol>Uso</headerCol>
+	            	<headerCol>Glosa</headerCol>
 	            </headerRow>
 	            <row show="swNPCaseNomOrSplit">
-	               <col exampleLoc="np/nominative"/>
 	               <col>
 	                  <content>nominativo</content>
 	               </col>
 	               <col>
 	                  <content>sujetos</content>
 	               </col>
+	            	<col exampleLoc="np/nominative"/>
 	            </row>
 	            <row show="swNPCaseNomOrSplit">
-	               <col exampleLoc="np/accusative"/>
 	               <col>
 	                  <content>accusativo</content>
 	               </col>
 	               <col>
 	                  <content>objetos directos y otros usos</content>
 	               </col>
+	            	<col exampleLoc="np/accusative"/>
 	            </row>
 	            <row show="swNPCaseErgOrSplitNotPossErg">
-	               <col exampleLoc="np/ergative"/>
 	               <col>
 	                  <content>ergativo</content>
 	               </col>
 	               <col>
 	                  <content>sujetos de verbos transitivos</content>
 	               </col>
+	            	<col exampleLoc="np/ergative"/>
 	            </row>
 	            <row show="swNPCaseErgOrSplitPossErg">
-	               <col exampleLoc="np/ergative"/>
 	               <col>
 	                  <content>ergativo</content>
 	               </col>
 	               <col>
 	                  <content>sujetos de verbos transitivos y posesivos</content>
 	               </col>
+	            	<col exampleLoc="np/ergative"/>
 	            </row>
 	            <row show="swNPCaseErgOrSplitNotPossAbs">
-	               <col exampleLoc="np/absolutive"/>
 	               <col>
 	                  <content>absolutivo</content>
 	               </col>
 	               <col>
 	                  <content>sujetos de verbos intransitivos y objetos de verbos transitivos</content>
 	               </col>
+	            	<col exampleLoc="np/absolutive"/>
 	            </row>
 	            <row show="swNPCaseErgOrSplitPossAbs">
-	               <col exampleLoc="np/absolutive"/>
 	               <col>
 	                  <content>absolutivo</content>
 	               </col>
 	               <col>
 	                  <content>sujetos de verbos intransitivos y objetos de verbos transitivos y posesivos</content>
 	               </col>
+	            	<col exampleLoc="np/absolutive"/>
 	            </row>
 	            <row show="swNPCaseNomOrSplitOrErgPossGen">
-	               <col exampleLoc="np/genitive"/>
 	               <col>
 	                  <content>genitivo</content>
 	               </col>
 	               <col>
 	                  <content>posesivos</content>
 	               </col>
+	            	<col exampleLoc="np/genitive"/>
 	            </row>
 	            <row show="swExperiencerNo">
-	               <col exampleLoc="np/dative"/>
 	               <col>
 	                  <content>dativo</content>
 	               </col>
 	               <col>
 	                  <content>objetos indirectos</content>
 	               </col>
+	            	<col exampleLoc="np/dative"/>
 	            </row>
 	            <row show="swExperiencerNotNo">
-	               <col exampleLoc="np/dative"/>
 	               <col>
 	                  <content>dativo</content>
 	               </col>
 	               <col>
 	                  <content>objetos indirectos y sujetos-experimentadores</content>
 	               </col>
+	            	<col exampleLoc="np/dative"/>
 	            </row>
 	            <row>
-	               <col exampleLoc="np/ablative"/>
 	               <col>
 	                  <content>ablativo</content>
 	               </col>
 	               <col>
 	                  <content>fuentes o origen</content>
 	               </col>
+	            	<col exampleLoc="np/ablative"/>
 	            </row>
 	            <row>
-	               <col exampleLoc="np/instrumental"/>
 	               <col>
 	                  <content>instrumento</content>
 	               </col>
 	               <col>
 	                  <content>medios o instrumentos</content>
 	               </col>
+	            	<col exampleLoc="np/instrumental"/>
 	            </row>
 	            <row>
-	               <col exampleLoc="np/locative"/>
 	               <col>
 	                  <content>locativo</content>
 	               </col>
 	               <col>
 	                  <content>locativos</content>
 	               </col>
+	            	<col exampleLoc="np/locative"/>
 	            </row>
 	            <row>
-	               <col exampleLoc="np/vocative"/>
 	               <col>
 	                  <content>vocativo</content>
 	               </col>
 	               <col>
 	                  <content>discursos directos</content>
 	               </col>
+	            	<col exampleLoc="np/vocative"/>
 	            </row>
 	            <row>
-	               <col exampleLoc="np/oblique"/>
 	               <col>
 	                  <content>oblicuo</content>
 	               </col>
 	               <col>
 	                  <content>relaciones gramaticales de menor importancia en general</content>
 	               </col>
+	            	<col exampleLoc="np/oblique"/>
 	            </row>
 	            <row>
-	               <col exampleLoc="np/other"/>
 	               <col>
 	                  <content>otro</content>
 	               </col>
 	               <col>
 	                  <content>cualquier otro indicador específico</content>
 	               </col>
+	            	<col exampleLoc="np/other"/>
 	            </row>
 	         </table>
 	      </example>	      
