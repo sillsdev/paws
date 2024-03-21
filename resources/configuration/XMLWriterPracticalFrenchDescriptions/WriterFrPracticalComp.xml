@@ -87,7 +87,7 @@
                 <headerCol>Glose</headerCol>
              </headerRow>
              <row>
-                <col exampleLoc="comp/compAttachesOtherExample"/>
+                <col exampleLoc="comp/compOtherExample"/>
                 <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
              </row>
           </table>

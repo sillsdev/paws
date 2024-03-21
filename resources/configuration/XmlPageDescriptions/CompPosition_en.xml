@@ -47,7 +47,7 @@
        <instruction id="CompAffixInstruction" show="swCompWordNoOrSomeAndAffix">In the lexicon, add the feature <feature>comp</feature> to these verbal affixes.</instruction>
        
        <prompt id="CompAtachesOtherPrompt" show="swCompWordNoOrSomeAndOther">Key the complementizers which attach in the other way your language allows here, with a equal sign or hyphen to indicate which side they attach on:</prompt>  
-       <textBox id="CompAttachesOtherExample" dataItem="compAttachesOtherExample" show="swCompWordNoOrSomeAndOther" rows="3" kind="table"/>   
+       <textBox id="CompAttachesOtherExample" dataItem="compOtherExample" show="swCompWordNoOrSomeAndOther" rows="3" kind="table"/>
        
        <prompt id="CompWordYesPrompt" show="swCompWordYesOrSome">Key the complementizers which are written as independent words here:</prompt>
        <textBox id="CompWordYesExample" dataItem="compExample" show="swCompWordYesOrSome" rows="3" kind="table"/>

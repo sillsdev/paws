@@ -46,7 +46,7 @@
        <instruction id="CompAffixInstruction" show="swCompWordNoOrSomeAndAffix">In the lexicon, add the feature <feature>comp</feature> to these verbal affixes.</instruction>
        
        <prompt id="CompAtachesOtherPrompt" show="swCompWordNoOrSomeAndOther">Escriba los complementadores que se unen como se permiten en su lengua aquí, con un signo igual o un guión para indicar en qué lado se unen:</prompt>  
-       <textBox id="CompAttachesOtherExample" dataItem="compAttachesOtherExample" show="swCompWordNoOrSomeAndOther" rows="3" kind="table"/>   
+       <textBox id="CompAttachesOtherExample" dataItem="compOtherExample" show="swCompWordNoOrSomeAndOther" rows="3" kind="table"/>
  
        <prompt id="CompWordYesPrompt" show="swCompWordYesOrSome">Escriba los complementadores que se escriben como palabras independientes aquí:</prompt>
        <textBox id="CompWordYesExample" dataItem="compExample" show="swCompWordYesOrSome" rows="3" kind="table"/>

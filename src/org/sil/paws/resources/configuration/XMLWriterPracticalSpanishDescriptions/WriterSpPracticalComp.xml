@@ -90,7 +90,7 @@
                 <headerCol>Glosa</headerCol>
              </headerRow>
              <row>
-                <col exampleLoc="comp/compAttachesOtherExample"/>
+                <col exampleLoc="comp/compOtherExample"/>
                 <col ><gloss><content>ESCRIBA LA GLOSA</content></gloss></col>
              </row>
           </table>

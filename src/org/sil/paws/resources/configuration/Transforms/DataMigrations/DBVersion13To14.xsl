@@ -154,7 +154,7 @@
 	<xsl:template match="comp/compAffixExample">
 		<xsl:call-template name="ConvertExample"/>
 	</xsl:template>
-	<xsl:template match="comp/compAttachesOtherExample">
+	<xsl:template match="comp/compOtherExample">
 		<xsl:call-template name="ConvertExample"/>
 	</xsl:template>
 	<xsl:template match="comp/compCliticExample">

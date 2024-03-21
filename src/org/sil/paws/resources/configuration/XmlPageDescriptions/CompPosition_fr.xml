@@ -33,7 +33,7 @@
           <checkbox id="CompAttachesEnclitic" dataItem="compEnclitic">Comme un enclitique qui se rattache à la fin du mot qui termine la proposition complétive</checkbox>
           <checkbox id="CompAttachesPrefix" dataItem="compPrefix">Comme un préfixe qui se rattache au verbe dans la proposition complétive</checkbox>
           <checkbox id="CompAttachesSuffix" dataItem="compSuffix">Comme un suffixe qui se rattache au verbe dans la proposition complétive</checkbox>
-          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">Dans ma langue ces éléments peuvent se rattacher de la façon suivante : <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="CompAttachesOther" dataItem="compAttachesOther">Dans ma langue ces éléments peuvent se rattacher de la façon suivante : <textBox  id="CompAttachesOtherContent" dataItem="compAttachesOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="CompAttachesNoCheckPrompt" show="swCompWordNoOrSomeandNoCheck">ATTENTION : Il faut vous devez soit cocher au moins une case pour décrire comment ces clitiques de subordinationse rattachent à un mot dans votre langue,  soit changer la réponse ci-dessus en « Oui, ce sont des mots indépendants ».</prompt>
        
@@ -47,7 +47,7 @@
        <instruction id="CompAffixInstruction" show="swCompWordNoOrSomeAndAffix">In the lexicon, add the feature <feature>comp</feature> to these verbal affixes.</instruction>
        
        <prompt id="CompAtachesOtherPrompt" show="swCompWordNoOrSomeAndOther">Saisissez ici les conjonctions de subordinationqui se rattachent de l’autre manière permise dans votre langue, avec un signe d’égalité ou un trait d’union pour indiquer de quel côté ils se rattachent :</prompt>  
-       <textBox id="CompAttachesOtherExample" dataItem="compAttachesOtherExample" show="swCompWordNoOrSomeAndOther" rows="3" kind="table"/>   
+       <textBox id="CompAttachesOtherExample" dataItem="compOtherExample" show="swCompWordNoOrSomeAndOther" rows="3" kind="table"/>
        
        <prompt id="CompWordYesPrompt" show="swCompWordYesOrSome">Saisissez ici les conjonctions de subordinationqui sont écrites comme des mots indépendants :</prompt>
        <textBox id="CompWordYesExample" dataItem="compExample" show="swCompWordYesOrSome" rows="3" kind="table"/>
@@ -57,7 +57,7 @@
           <checkbox id="CompWordPosBefore"  dataItem="compBefore">Avant</checkbox>
           <checkbox id="CompWordPosAfter"  dataItem="compAfter">Après</checkbox>
           <checkbox id="CompWordPosBoth"  dataItem="compBoth">De part et d’autre dans la même proposition</checkbox>
-          <checkbox id="CompWordPosOther"  dataItem="compOther">Dans ma langue, ils peuvent se trouver dans la position suivante : <textBox  id="CompWordPosOtherContent" dataItem="compOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="CompWordPosOther"  dataItem="compOther">Dans ma langue, ils peuvent se trouver dans la position suivante : <textBox  id="CompWordPosOtherContent" dataItem="compOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="CompWordNoCheckPrompt" show="swCompWordYesOrSomeAndNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire où ces conjonctions de subordinationse placent par rapport au reste de la proposition subordonnée dans votre langue soit changer la réponse en « Non, elles se rattachent toutes à un autre mot. »</prompt>
        
