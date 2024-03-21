@@ -534,6 +534,7 @@
 	   <table border="1">
 	      <headerRow>
 	      	<headerCol>Affixe marquant la possession</headerCol>
+	      	<headerCol>Glose</headerCol>
 	      </headerRow>
 	      <row>
 	         <col exampleLoc="np/possMarkerAffix"/>

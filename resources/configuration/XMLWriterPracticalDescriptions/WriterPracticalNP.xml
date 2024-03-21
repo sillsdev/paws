@@ -529,7 +529,8 @@
 	<example show="swNPPossMarkedYesAffix">
 	   <table border="1">
 	      <headerRow>
-	         <headerCol>Possessor Marker Affix</headerCol>
+	        <headerCol>Possessor Marker Affix</headerCol>
+	      	<headerCol>Gloss</headerCol>
 	      </headerRow>
 	      <row>
 	         <col exampleLoc="np/possMarkerAffix"/>

@@ -535,6 +535,7 @@
 		      <table border="1">
 		         <headerRow>
 		            <headerCol>Afijo posesivo</headerCol>
+		         	<headerCol>Glosa</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/possMarkerAffix"/>
