@@ -140,54 +140,72 @@
                 <th>Preposiciones</th>
                 <th>Glosa</th>
              </tr>				
-             <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/locativePrepExample),'.','')" />
+             <tr>
+<xsl:for-each select="//pp/locativePrepExample/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/locativePrepExample/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/locativePrepExample/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
           </table>
 </example>
 </xsl:if>
@@ -207,54 +225,72 @@
                 <th>Posposiciones</th>
                 <th>Glosa</th>
              </tr>				
-             <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/locativePostExample),'.','')" />
+             <tr>
+<xsl:for-each select="//pp/locativePostExample/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/locativePostExample/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/locativePostExample/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
           </table>
 </example>
 </xsl:if>
@@ -275,116 +311,150 @@
                 <th>Morfemas</th>
                 <th>Glosa</th>
              </tr>				
-             <xsl:variable name="sExampleValue0.1">
-<xsl:value-of select="translate(string(//pp/locativePrepExample),'.','')" />
-</xsl:variable>
-<xsl:variable name="iExampleLength0.1" select="string-length(normalize-space($sExampleValue0.1))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength0.1 != 0 and $sExampleValue0.1 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.1" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.1" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.1" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore">
-<td align="left">
+             <tr>
+<td>
 <xsl:text>Preposiciones</xsl:text>
 </td>
-</xsl:with-param>
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<tr>
-<td align="left">
-<xsl:text>Preposiciones</xsl:text>
+<xsl:for-each select="//pp/locativePrepExample/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
+</gloss>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td> </td>
+<xsl:for-each select="//pp/locativePrepExample/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/locativePrepExample/form[position() &gt; 1]">
+<tr>
+<td> </td>
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
-             <xsl:variable name="sExampleValue1.1">
-<xsl:value-of select="translate(string(//pp/locativePostExample),'.','')" />
-</xsl:variable>
-<xsl:variable name="iExampleLength1.1" select="string-length(normalize-space($sExampleValue1.1))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength1.1 != 0 and $sExampleValue1.1 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue1.1" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue1.1" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength1.1" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore">
-<td align="left">
-<xsl:text>Posposiciones</xsl:text>
-</td>
-</xsl:with-param>
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+<xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
-<td align="left">
+<td> </td>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
+             <tr>
+<td>
 <xsl:text>Posposiciones</xsl:text>
+</td>
+<xsl:for-each select="//pp/locativePostExample/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
+</gloss>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td> </td>
+<xsl:for-each select="//pp/locativePostExample/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/locativePostExample/form[position() &gt; 1]">
+<tr>
+<td> </td>
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td> </td>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
           </table>
 </example>
 </xsl:if>
@@ -456,66 +526,72 @@
                 <th>Glosa como sustantivo</th>
                 <th>Glosa como preposición</th>
              </tr>				
-             <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/bodyPartPrepExample),'.','')" />
+             <tr>
+<xsl:for-each select="//pp/bodyPartPrepExample/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/bodyPartPrepExample/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/bodyPartPrepExample/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
           </table>
 </example>
 </xsl:if>
@@ -527,66 +603,72 @@
                 <th>Glosa como sustantivo</th>
                 <th>Glosa como posposición</th>
              </tr>				
-             <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/bodyPartPostExample),'.','')" />
+             <tr>
+<xsl:for-each select="//pp/bodyPartPostExample/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/bodyPartPostExample/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/bodyPartPostExample/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
           </table>
 </example>
 </xsl:if>
@@ -599,140 +681,150 @@
                 <th>Glosa como sustantivo</th>
                 <th>Glosa como adposición</th>
              </tr>				
-             <xsl:variable name="sExampleValue0.1">
-<xsl:value-of select="translate(string(//pp/bodyPartPrepExample),'.','')" />
-</xsl:variable>
-<xsl:variable name="iExampleLength0.1" select="string-length(normalize-space($sExampleValue0.1))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength0.1 != 0 and $sExampleValue0.1 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.1" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.1" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.1" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore">
-<td align="left">
+             <tr>
+<td>
 <xsl:text>Preposiciones</xsl:text>
 </td>
-</xsl:with-param>
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<tr>
-<td align="left">
-<xsl:text>Preposiciones</xsl:text>
+<xsl:for-each select="//pp/bodyPartPrepExample/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td> </td>
+<xsl:for-each select="//pp/bodyPartPrepExample/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/bodyPartPrepExample/form[position() &gt; 1]">
+<tr>
+<td> </td>
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
-             <xsl:variable name="sExampleValue1.1">
-<xsl:value-of select="translate(string(//pp/bodyPartPostExample),'.','')" />
-</xsl:variable>
-<xsl:variable name="iExampleLength1.1" select="string-length(normalize-space($sExampleValue1.1))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength1.1 != 0 and $sExampleValue1.1 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue1.1" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue1.1" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength1.1" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore">
-<td align="left">
-<xsl:text>Posposiciones</xsl:text>
-</td>
-</xsl:with-param>
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
-</gloss>
-</td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+<xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
-<td align="left">
+<td> </td>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
+             <tr>
+<td>
 <xsl:text>Posposiciones</xsl:text>
+</td>
+<xsl:for-each select="//pp/bodyPartPostExample/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td> </td>
+<xsl:for-each select="//pp/bodyPartPostExample/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/bodyPartPostExample/form[position() &gt; 1]">
+<tr>
+<td> </td>
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td> </td>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
           </table>
 </example>
 </xsl:if>
@@ -793,294 +885,438 @@
                 <th>Caso</th>
                 <th>Uso</th>
              </tr>
-             <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/genitiveP),'.','')" />
-</xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
-<xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
+             <tr>
+<td>
                    <xsl:text>genitivo</xsl:text>
                 </td>
-<td align="left">
+<td>
                    <xsl:text>posesivos</xsl:text>
                 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
+<xsl:for-each select="//pp/genitiveP/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/genitiveP/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/genitiveP/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-                   <xsl:text>genitivo</xsl:text>
-                </td>
-<td align="left">
-                   <xsl:text>posesivos</xsl:text>
-                </td>
-</tr>
-</xsl:otherwise>
-</xsl:choose>
-             <xsl:variable name="sExampleValue1.0">
-<xsl:value-of select="translate(string(//pp/dativeP),'.','')" />
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength1.0" select="string-length(normalize-space($sExampleValue1.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength1.0 != 0 and $sExampleValue1.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue1.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue1.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength1.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
+             <tr>
+<td>
                    <xsl:text>dativo</xsl:text>
                 </td>
-<td align="left">
+<td>
                    <xsl:text>objetos indirectos</xsl:text>
                 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
+<xsl:for-each select="//pp/dativeP/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/dativeP/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/dativeP/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-                   <xsl:text>dativo</xsl:text>
-                </td>
-<td align="left">
-                   <xsl:text>objetos indirectos</xsl:text>
-                </td>
-</tr>
-</xsl:otherwise>
-</xsl:choose>
-             <xsl:variable name="sExampleValue2.0">
-<xsl:value-of select="translate(string(//pp/ablativeP),'.','')" />
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength2.0" select="string-length(normalize-space($sExampleValue2.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength2.0 != 0 and $sExampleValue2.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue2.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue2.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength2.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
+             <tr>
+<td>
                    <xsl:text>ablativo</xsl:text>
                 </td>
-<td align="left">
+<td>
                    <xsl:text>fuente u origen</xsl:text>
                 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
+<xsl:for-each select="//pp/ablativeP/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/ablativeP/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/ablativeP/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-                   <xsl:text>ablativo</xsl:text>
-                </td>
-<td align="left">
-                   <xsl:text>fuente u origen</xsl:text>
-                </td>
-</tr>
-</xsl:otherwise>
-</xsl:choose>
-             <xsl:variable name="sExampleValue3.0">
-<xsl:value-of select="translate(string(//pp/instrumentalP),'.','')" />
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength3.0" select="string-length(normalize-space($sExampleValue3.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength3.0 != 0 and $sExampleValue3.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue3.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue3.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength3.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
+             <tr>
+<td>
                    <xsl:text>instrumento</xsl:text>
                 </td>
-<td align="left">
+<td>
                    <xsl:text>instrumento o medio</xsl:text>
                 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
+<xsl:for-each select="//pp/instrumentalP/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/instrumentalP/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/instrumentalP/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-                   <xsl:text>instrumento</xsl:text>
-                </td>
-<td align="left">
-                   <xsl:text>instrumento o medio</xsl:text>
-                </td>
-</tr>
-</xsl:otherwise>
-</xsl:choose>
-             <xsl:variable name="sExampleValue4.0">
-<xsl:value-of select="translate(string(//pp/vocativeP),'.','')" />
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength4.0" select="string-length(normalize-space($sExampleValue4.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength4.0 != 0 and $sExampleValue4.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue4.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue4.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength4.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
+             <tr>
+<td>
                    <xsl:text>vocativo</xsl:text>
                 </td>
-<td align="left">
-                   <xsl:text>discurso directo</xsl:text>
-                </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
-<tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
-</td>
-<td align="left">
-                   <xsl:text>vocativo</xsl:text>
-                </td>
-<td align="left">
                    <xsl:text>discurso directo</xsl:text>
                 </td>
-</tr>
-</xsl:otherwise>
-</xsl:choose>
-             <xsl:variable name="sExampleValue5.0">
-<xsl:value-of select="translate(string(//pp/obliqueP),'.','')" />
+<xsl:for-each select="//pp/vocativeP/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength5.0" select="string-length(normalize-space($sExampleValue5.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength5.0 != 0 and $sExampleValue5.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue5.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue5.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength5.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-                   <xsl:text>oblicuo</xsl:text>
-                </td>
-<td align="left">
-                   <xsl:text>relación gramatical menor o general</xsl:text>
-                </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/vocativeP/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/vocativeP/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
+             <tr>
+<td>
                    <xsl:text>oblicuo</xsl:text>
                 </td>
-<td align="left">
+<td>
                    <xsl:text>relación gramatical menor o general</xsl:text>
                 </td>
-</tr>
-</xsl:otherwise>
+<xsl:for-each select="//pp/obliqueP/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise></xsl:otherwise>
 </xsl:choose>
+</gloss>
+</td>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/obliqueP/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/obliqueP/form[position() &gt; 1]">
+<tr>
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise></xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
           </table>
 </example>
 </xsl:if>	      
@@ -1333,54 +1569,72 @@
                     <th>Palabras de grado</th>
                     <th>Glosa</th>
                  </tr>
-                 <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/degree),'.','')" />
+                 <tr>
+<xsl:for-each select="//pp/degree/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/degree/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/degree/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
               </table>
 </example>
 </xsl:if>     
@@ -1472,54 +1726,72 @@
                     <th>Palabras ordinales</th>
                     <th>Glosa</th>
                  </tr>
-                 <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/ordinal),'.','')" />
+                 <tr>
+<xsl:for-each select="//pp/ordinal/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/ordinal/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/ordinal/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
               </table>
 </example>
 </xsl:if>     
@@ -1611,54 +1883,72 @@
                     <th>Adverbios de modo</th>
                     <th>Glosa</th>
                  </tr>
-                 <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/manner),'.','')" />
+                 <tr>
+<xsl:for-each select="//pp/manner/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA  GLOSA</xsl:text>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA  GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/manner/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/manner/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA  GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA  GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
               </table>
 </example>
 </xsl:if>     
@@ -1750,54 +2040,72 @@
                     <th>Adverbios de lugar</th>
                     <th>Glosa</th>
                  </tr>
-                 <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/locative),'.','')" />
+                 <tr>
+<xsl:for-each select="//pp/locative/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/locative/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/locative/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
               </table>
 </example>
 </xsl:if>     
@@ -1856,54 +2164,72 @@
                     <th>Modificadores</th>
                     <th>Glosa</th>
                  </tr>
-                 <xsl:variable name="sExampleValue0.0">
-<xsl:value-of select="translate(string(//pp/otherMod),'.','')" />
+                 <tr>
+<xsl:for-each select="//pp/otherMod/form[1]">
+<td>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
+</td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
 </xsl:variable>
-<xsl:variable name="iExampleLength0.0" select="string-length(normalize-space($sExampleValue0.0))" />
 <xsl:choose>
-<xsl:when test="$iExampleLength0.0 != 0 and $sExampleValue0.0 != ' '">
-<xsl:variable name="sCalculatedRows">
-<xsl:call-template name="CalculateRows">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-</xsl:call-template>
-</xsl:variable>
-<xsl:call-template name="OutputColExamples">
-<xsl:with-param name="sExamples">
-<xsl:value-of select="$sExampleValue0.0" />
-</xsl:with-param>
-<xsl:with-param name="iLength">
-<xsl:value-of select="$iExampleLength0.0" />
-</xsl:with-param>
-<xsl:with-param name="columnsBefore" />
-<xsl:with-param name="columnsAfter">
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
-</xsl:with-param>
-<xsl:with-param name="bHandleRowSpans" select="'Y'" />
-<xsl:with-param name="iRowsToSpan" select="string-length($sCalculatedRows)" />
-</xsl:call-template>
-</xsl:when>
-<xsl:otherwise>
+</xsl:for-each>
+</tr>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<xsl:for-each select="//pp/otherMod/form[1]">
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</xsl:for-each>
+</tr>
+</xsl:if>
+<xsl:for-each select="//pp/otherMod/form[position() &gt; 1]">
 <tr>
 <td>
-<langData>
-<xsl:attribute name="lang">lVernacular</xsl:attribute>ESCRIBA UN EJEMPLO AQUÍ</langData>
+<langData lang="lVernacular">
+<xsl:value-of select="vernacular" />
+</langData>
 </td>
-<td align="left">
-<gloss>
-<xsl:attribute name="lang">lGloss</xsl:attribute>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
+</xsl:choose>
 </gloss>
 </td>
 </tr>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:if test="$fOutputStyle='Blessymol'">
+<tr>
+<td>
+<langData lang="lIPA">
+<xsl:value-of select="ipa" />
+</langData>
+</td>
+<td> </td>
+</tr>
+</xsl:if>
+</xsl:for-each>
               </table>
 </example>
 </xsl:if>     
