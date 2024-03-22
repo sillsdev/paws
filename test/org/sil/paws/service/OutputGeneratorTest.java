@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2016-2018 SIL International
+ * Copyright (c) 2016-2024 SIL International
  * This software is licensed under the LGPL, version 2.1 or later
  * (http://www.gnu.org/licenses/lgpl-2.1.html)
  */
@@ -122,8 +122,8 @@ public class OutputGeneratorTest {
 			assertEquals(true, Files.exists(xmlResultPath));
 			Path htmResultPath = Paths.get(sTestDir + "TestDataWriterPractical.htm");
 			assertEquals(true, Files.exists(htmResultPath));
-			assertEquals(598185, Files.size(xmlResultPath));
-			assertEquals(1331616, Files.size(htmResultPath));
+			assertEquals(504693, Files.size(xmlResultPath));
+			assertEquals(1119662, Files.size(htmResultPath));
 			Files.delete(xmlResultPath);
 			Files.delete(htmResultPath);
 		} catch (Exception e1) {
