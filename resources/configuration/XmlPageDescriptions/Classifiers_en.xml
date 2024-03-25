@@ -337,8 +337,7 @@
           <radio id="OTClassifierAgrNum23Irr" dataValue="irrelevant">Irrelevant</radio>
        </radioGroup>
        <prompt id="OTClassifierAgrNumPrompt24" show="swOTClassifierAgrNum">Enter the forms for class 24 here:</prompt>
-       <textBox id="OTClassifierAgrNumExample24" dataItem="class24Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>2
-       4</gloss></textBox>
+       <textBox id="OTClassifierAgrNumExample24" dataItem="class24Example" show="swOTClassifierAgrNum" rows="2" kind="table"><gloss>24</gloss></textBox>
        <radioGroup id="OTClassifierAgrNum24" show="swOTClassifierAgrNum">
           <groupName dataItem="class24agr" default="irrelevant">ROTClassifierAgrNum24</groupName>
           <prompt>Number agreement feature for class 24 is:</prompt>
