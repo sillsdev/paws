@@ -3645,7 +3645,7 @@
 		         <row show="swPronExclYes">
 		            <col><content>Première</content></col>
 		            <col ><content>Exclusif</content></col>
-		            <col exampleLoc="pron/reflsFirstExclExample"/>
+		            <col exampleLoc="pron/reflFirstExclExample"/>
 		            <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
 		         </row>
 		         <row show="swPronExclYes">
