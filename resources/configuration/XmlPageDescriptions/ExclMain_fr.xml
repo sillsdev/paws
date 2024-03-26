@@ -33,7 +33,7 @@
         <br/>
         <introduction>Les réponses « Oui » et « Non » à des questions seront traitées <span id="ExclYesNoNotPracticalSpan" show="swNotPractical">par la règle qui permet </span><span id="ExclYesNoPracticalSpan" show="swPractical">comme </span>des interjections.  </introduction>
         <prompt>Saisissez ici les mots qui peuvent être employés seuls et qui signifient « Oui », comme  « Oui » et  « Ouais » en français :</prompt>
-        <textBox id="ExclYes" dataItem="yesExample" rows="3" kind="table"/>
+        <textBox id="ExclYes" dataItem="yesExample" rows="3" kind="table"></textBox>
         <br/>
         <prompt>Saisissez ici les mots qui peuvent être employés seuls et qui signifient « Non » :</prompt>
         <textBox id="ExclNo" dataItem="noExample" rows="3" kind="table"/>
@@ -63,7 +63,7 @@
    <checkbox id="ExclMPosBefore" dataItem="exclMBefore">Avant</checkbox>
     <checkbox id="ExclMPosAfter" dataItem="exclMAfter">Après</checkbox>
     <checkbox id="ExclMPosBoth" dataItem="exclMBoth">De part et d’autre</checkbox>
-    <checkbox id="ExclMPosOther" dataItem="exclMOther" >Dans ma langue les mots qui signalent une exclamation sont placés de la façon suivante : <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70" kind="table"/></checkbox>
+    <checkbox id="ExclMPosOther" dataItem="exclMOther" >Dans ma langue les mots qui signalent une exclamation sont placés de la façon suivante : <textBox  id="ExclMPosOtherContent" dataItem="exclMOther" rows="1" cols="70" kind="other"/></checkbox>
 </checkboxGroup>
         <prompt id="ExclMPosNoCheckPrompt" show="swExclMYesandNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire où les mots qui marquent une exclamation apparaissent dans votre langue, soit changer la réponse ci-dessus en « Non ». Dans ce cas, il ne devrait pas y avoir d’exemples dans la boîte ci-dessus.</prompt>       
 <instruction id="ExclMInstruction" show="swExclMYes">In the lexicon, add the feature <feature>makeExcl</feature> to each word which signals an exclamation to assure the proper category for the syntax.</instruction>

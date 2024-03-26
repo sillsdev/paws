@@ -286,6 +286,7 @@ public class RootLayoutController implements Initializable {
 				useWaitCursor();
 				if (newState == State.SUCCEEDED) {
 					System.out.println("succeeded: url='" + webEngine.getLocation() + "'");
+//					System.out.println("doc=" + webEngine.executeScript("document.documentElement.outerHTML"));
 					changeStatusOfBackForwardItems();
 					Platform.runLater(new Runnable() {
 						@Override
@@ -651,6 +652,10 @@ public class RootLayoutController implements Initializable {
 				"webpage.free").get()));
 		params.add(new XsltParameter("prmIpa", RESOURCE_FACTORY.getStringBinding(
 				"webpage.ipa").get()));
+		params.add(new XsltParameter("prmGloss", RESOURCE_FACTORY.getStringBinding(
+				"webpage.gloss").get()));
+		params.add(new XsltParameter("prmAddExample", RESOURCE_FACTORY.getStringBinding(
+				"webpage.addexample").get()));
 		transformer.clearParameters();
 		for (XsltParameter param : params) {
 			transformer.setParameter(param.name, param.value);
@@ -1165,6 +1170,7 @@ public class RootLayoutController implements Initializable {
 	public void handleBack() {
 		final WebHistory history = webEngine.getHistory();
 		if (canGoBack(history)) {
+			webEngine.executeScript("saveData()");
 			Platform.runLater(new Runnable() {
 				public void run() {
 					history.go(-1);
@@ -1186,6 +1192,7 @@ public class RootLayoutController implements Initializable {
 	private void handleForward() {
 		final WebHistory history = webEngine.getHistory();
 		if (canGoForward(history)) {
+			webEngine.executeScript("saveData()");
 			Platform.runLater(new Runnable() {
 				public void run() {
 					history.go(1);

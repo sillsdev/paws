@@ -138,7 +138,7 @@
    <radio id="CompTypeOtherNo" dataValue="no">Non, je n’en connais pas d’autres</radio>
   </radioGroup>
      <prompt id="CompTypeOtherYesRestriction" show="swCompTypeOtherYes" >Saisissez ici d'autres types de restriction qu'a votre langue :</prompt>
-       <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="table"/>
+       <textBox id="CompTypeOtherYesRestrictions" dataItem="otherRestrictions" cols="70"  rows="1" show="swCompTypeOtherYes" kind="other"/>
        <br/><br/>
        
        <prompt id="CompTypeOtherExamplePrompt" show="swCompTypeOtherYes">Saisissez ici des exemples de phrases qui comprennent des propositions complétives avec ces autres types de restriction :</prompt>

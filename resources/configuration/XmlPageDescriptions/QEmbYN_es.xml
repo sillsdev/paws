@@ -37,7 +37,7 @@
          <checkbox id="QEmbYNCliticEnclitic" dataItem="embYNEnclitic">Como un enclítico que se une al final de culaquiera palabra que termina la pregunta de respuesta sí/no subordinada</checkbox>
          <checkbox id="QEmbYNCliticPrefix" dataItem="embYNPrefix">Como un prefijo que se une al verbo en la pregunta de respuesta sí/no subordinada</checkbox>
          <checkbox id="QEmbYNCliticSuffix" dataItem="embYNSuffix">Como un sufijo que se une al verbo en la pregunta de respuesta sí/no subordinada</checkbox>
-         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">En mi lengua, estos elementos se unen: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNCliticPosNoCheckPrompt" show="swQEmbYNWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos indicadores o complementadores de pregunta de respuesta sí/no subordinada se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       <prompt id="QEmbYNCliticsExamplesPrompt" show="swQEmbYNCliticProcliticOrEnclitic"><br/>Escriba los indicadores o complementadores de pregunta de respuesta sí/no subordinada que son clíticos con un signo igual para indicar en qué lado se unen aquí:</prompt>
@@ -57,7 +57,7 @@
          <checkbox id="QEmbYNPosBefore"  dataItem="embYNWordBefore">Antes de la pregunta</checkbox>
          <checkbox id="QEmbYNPosAfter"  dataItem="embYNWordAfter">Después de la pregunta</checkbox>
          <checkbox id="QEmbYNPosBoth"  dataItem="embYNWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">En mi lengua, el indicador o complementador de pregunta de respuesta sí/no puede presentarse:   <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">En mi lengua, el indicador o complementador de pregunta de respuesta sí/no puede presentarse:   <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNPosNoCheckPrompt" show="swQEmbYNWordYesOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos indicadores o complementadores de pregunta de respuesta sí/no que se escriben como palabras independientes con respecto al resto de la pregunta de respuesta sí/no subordinada en su lengua, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra’.</prompt>
       

@@ -50,7 +50,7 @@
          <checkbox id="QMainContBetweenEnclitic" dataItem="mainContBetweenEnclitic" show="swQContFrontYes">As an enclitic which attaches to the end of the last word in the fronted interrogative phrase, before the rest of the question</checkbox>
          <checkbox id="QMainContCliticPrefix" dataItem="mainContPrefix">As a prefix which attaches to the verb</checkbox>
          <checkbox id="QMainContCliticSuffix" dataItem="mainContSuffix">As a suffix which attaches to the verb</checkbox>
-         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">In my language, these elements may attach as follows: <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">In my language, these elements may attach as follows: <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContCliticPosNoCheckPrompt" show="swQMainContWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these question markers attach in your language, or change the answer above to ‘Yes’.</prompt>
       
@@ -71,7 +71,7 @@
          <checkbox id="QMainContPosBefore"  dataItem="mainContWordBefore">Before it</checkbox>
          <checkbox id="QMainContPosAfter"  dataItem="mainContWordAfter">After it</checkbox>
          <checkbox id="QMainContPosBoth"  dataItem="mainContWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">In my language, they may occur in the following position: <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">In my language, they may occur in the following position: <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContPosNoCheckPrompt" show="swQMainContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">WARNING: You need to check at least one box to describe where these question markers occur with respect to the rest of the question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       <instruction id="QMainContWordYesInstruction" show="swQMainContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
@@ -82,7 +82,7 @@
          <checkbox id="QMainContVSOAfterWh" dataItem="mainContVSOAfterWh">Immediately after the fronted interrogative phrase</checkbox>
          <checkbox id="QMainContVSOBeforeWh" dataItem="mainContVSOBeforeWh">At the beginning of the question, before the fronted interrogative phrase</checkbox>
          <checkbox id="QMainContVSOEnd" dataItem="mainContVSOEnd">At the end of the question</checkbox>
-         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">In my language, they may occur in the following position: <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">In my language, they may occur in the following position: <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">WARNING: You need to check at least one box to describe where these question markers occur with respect to the interrogative phrase and the rest of the question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       
@@ -96,7 +96,7 @@
          <radio id="QMainContRequiredNo" dataValue="no">No, a question marker is always optional</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">No, a question marker is not used under the following circumstances:</radio>
       </radioGroup>
-      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="table"/>
+      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="other"/>
       
       <radioGroup id="QMainContAuxPosTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxPos" default="unknown" position="yesHead">RQMainContAuxPos</groupName>

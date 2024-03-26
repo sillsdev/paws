@@ -46,7 +46,7 @@
          <radio id="AdvPLocAffixDem" dataValue="locativeAffix">Por medio de un afijo que se une a un adverbio de lugar para formar a un pronombre demostrativo</radio>
          <radio id="AdvPLocDemOther" dataValue="other">Se relacionan en mi lengua por medio de:</radio>
       </radioGroup>       
-      <textBox  id="AdvPLocativeDemOtherContent" dataItem="locativeDemOther" cols="70" rows="1" show="swAdvPLocDemOther" kind="table"/>
+      <textBox  id="AdvPLocativeDemOtherContent" dataItem="locativeDemOther" cols="70" rows="1" show="swAdvPLocDemOther" kind="other"/>
       
       <instruction id="AdvPLocDemSameInstruction" show="swAdvPLocDemSame">In the lexicon, you will need to have two entries for each word, one with the category <category>Adv </category> and feature <feature>locative</feature> and one with the category <category>Dem</category>.</instruction>
       <instruction id="AdvPLocDemAffixInstruction" show="swAdvPLocDemAffix">In the lexicon, key the features <feature>locative makeAdv</feature> on the affix that  is added to a demonstrative to form a locative adverb, as this will take care of the category change needed.</instruction>
@@ -62,7 +62,7 @@
             <checkbox id="AdvPLocativeDegreeWord" dataItem="locativeDegreeWord">Una palabra de grado puede modificar a un adverbio de lugar</checkbox>
             <checkbox id="AdvPLocativeDegreeAttaches" dataItem="locativeDegreeAttaches">Hay un afijo o clítico que se une al adverbio de lugar para intensificarlo</checkbox>
             <checkbox id="AdvPLocativeDegreeRedup" dataItem="locativeDegreeRedup">Utiliza reduplicación para intensificar el significado del adverbio de lugar</checkbox>
-            <checkbox id="AdvPLocativeDegreeOther" dataItem="locativeDegreeOther">En mi lengua, los adverbios de lugar se pueden modificar por: <textBox  id="AdvPLocativeDegreeOtherContent" dataItem="locativeDegreeOther" cols="70" rows="1" kind="table"/></checkbox>
+            <checkbox id="AdvPLocativeDegreeOther" dataItem="locativeDegreeOther">En mi lengua, los adverbios de lugar se pueden modificar por: <textBox  id="AdvPLocativeDegreeOtherContent" dataItem="locativeDegreeOther" cols="70" rows="1" kind="other"/></checkbox>
          </checkboxGroup>
       </radioGroup>
       <prompt id="AdvPLocativeDegreeNoCheckPrompt" show="swAdvPLocativeDegreeYesNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cuáles modificadores pueden modificar o intensificar a los adverbios de lugar en su lengua, o cambia la respuesta de arriba a “No, los adverbios de lugar no se modifican ni intensifican”.</prompt>
@@ -76,7 +76,7 @@
          <checkbox id="AdvPLocativeDegreeWordBefore" checked="yes" dataItem="locativeDegreeWordBefore">Antes del adverbio de lugar</checkbox>
          <checkbox id="AdvPLocativeDegreeWordAfter" checked="yes" dataItem="locativeDegreeWordAfter">Después del adverbio de lugar</checkbox>
          <checkbox id="AdvPLocativeDegreeWordBoth" checked="yes" dataItem="locativeDegreeWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="AdvPLocativeDegreeWordOther" checked="yes" dataItem="locativeDegreeWordOther">En mi lengua, estas palabras de grado pueden presentarse: <textBox  id="AdvPLocativeDegreeWordOtherContent" dataItem="locativeDegreeWordOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="AdvPLocativeDegreeWordOther" checked="yes" dataItem="locativeDegreeWordOther">En mi lengua, estas palabras de grado pueden presentarse: <textBox  id="AdvPLocativeDegreeWordOtherContent" dataItem="locativeDegreeWordOther" cols="70" rows="1" kind="other"/></checkbox>
       </checkboxGroup>	
       <prompt id="AdvPLocativeDegreeWordNoCheckPrompt" show="swAdvPLocativeDegreeWordAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estas palabras de grado en su lengua, o cambia su respuesta de arriba a un tipo diferente de modificador.</prompt>
       <instruction  id="AdvPLocativeDegreeYesInstruction" show="swAdvPLocativeDegreeYesWord">In the lexicon, key the features <feature>makeDeg modifies_locative</feature> on the degree words to change the category and allow it to modify locative adverbs.  Simply add the <feature>modifies_locative</feature> feature if this same degree word can modify temporal adverbs and you already marked it with those features.</instruction>
@@ -98,7 +98,7 @@
          <prompt><br/>Primero, se consideran los adverbios indefinidos de lugar que incluyen un cuantificador. ¿Cómo se expresan estos adverbios de lugar indefinidos en su lengua? Seleccione todas las opciones que son correctas en su lengua.  Si ninguna opción se permite en su lengua, quita estas opciones y seleccione la opción para ‘Ninguno’ más abajo</prompt>
          <checkbox id="AdvPLocativeIndefTypeQWord" dataItem="locativeIndefQWord">Un cuantificador y un sustantivo genérico de lugar se unen en una sola palabra</checkbox>
          <checkbox id="AdvPLocativeIndefTypeQPhrase" dataItem="locativeIndefQPhrase">Un cuantificador se presenta con un sustantivo genérico de lugar pero las dos palabras se permanecen independientes como una frase</checkbox>
-         <checkbox id="AdvPLocativeIndefTypeQOther" dataItem="locativeIndefQOther">En mi lengua estos adverbios de lugar indefinidos se expresan con:<textBox  id="AdvPLocativeIndefTypeQOtherContent" dataItem="locativeIndefQOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="AdvPLocativeIndefTypeQOther" dataItem="locativeIndefQOther">En mi lengua estos adverbios de lugar indefinidos se expresan con:<textBox  id="AdvPLocativeIndefTypeQOtherContent" dataItem="locativeIndefQOther" cols="70" rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="AdvPLocativeIndefTypeQNoCheckPrompt" show="swAdvPLocativeIndefTypeQNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se expresan estos adverbios de lugar indefinidos en su lengua.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno’ abajo.</prompt>
       <checkboxGroup id="AdvPLocativeIndefTypeQNoneTable" show="swAdvPLocativeIndefTypeQNoCheck">
@@ -116,7 +116,7 @@
          <checkbox id="AdvPLocativeIndefTypeQPQBefore" checked="yes" dataItem="locativeIndefTypeQPQBefore">Antes del sustantivo</checkbox>
          <checkbox id="AdvPLocativeIndefTypeQPQAfter" checked="yes" dataItem="locativeIndefTypeQPQAfter">Después del sustantivo</checkbox>
          <checkbox id="AdvPLocativeIndefTypeQPQBoth" checked="yes" dataItem="locativeIndefTypeQPQBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="AdvPLocativeIndefTypeQPQOther" checked="yes" dataItem="locativeIndefTypeQPQOther">En mi lengua, el cuantificador puede presentarse: <textBox  id="AdvPLocativeIndefTypeQPQOtherContent" dataItem="locativeIndefTypeQPQOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="AdvPLocativeIndefTypeQPQOther" checked="yes" dataItem="locativeIndefTypeQPQOther">En mi lengua, el cuantificador puede presentarse: <textBox  id="AdvPLocativeIndefTypeQPQOtherContent" dataItem="locativeIndefTypeQPQOther" cols="70" rows="1" kind="other"/></checkbox>
       </checkboxGroup>	
       <prompt id="AdvPLocativeIndefTypeQPPhraseNoCheckPrompt" show="swAdvPLocativeIndefTypeQPPhraseAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el cuantifiacdor con respecto al sustantivo genérico de lugar en su lengua, o cambia su respuesta de arriba a una forma diferente.</prompt>
       <instruction  id="AdvPLocativeIndefTypeQPPhraseInstruction" show="swAdvPLocativeIndefTypeQPhrase">In the lexicon, key the features <feature>locative generic</feature> on the general locative nouns, and make sure they also have the category <category>N</category>.</instruction>
@@ -129,7 +129,7 @@
          <prompt><br/>Ahora se consideren los adverbios de lugar indefinidos que constan de una palabra intrerrogativa de lugar y una palabra indefinida, como ‘dondequiera’.  ¿Cómo se expresan estos adverbios de lugar indefinidos en su lengua? Seleccione todas las opciones que son correctas en su lengua.  Si ninguna opción se permite en su lengua, quita estas opciones y seleccione la opción para ‘Ninguno’ más abajo</prompt>
          <checkbox id="AdvPLocativeIndefTypeIntWord" dataItem="locativeIndefIntWord">Una palabra intrerrogativa de lugar y una palabra indefinida se fusionan en una sola palabra</checkbox>
          <checkbox id="AdvPLocativeIndefTypeIntPhrase" dataItem="locativeIndefIntPhrase">Una palabra intrerrogativa de lugar se presenta con una palabra indefinida pero las dos palabras se permanecen independientes como una frase</checkbox>
-         <checkbox id="AdvPLocativeIndefTypeIntOther" dataItem="locativeIndefIntOther">En mi lengua estos adverbios de lugar indefinidos se expresan con:<textBox  id="AdvPLocativeIndefTypeIntOtherContent" dataItem="locativeIndefIntOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="AdvPLocativeIndefTypeIntOther" dataItem="locativeIndefIntOther">En mi lengua estos adverbios de lugar indefinidos se expresan con:<textBox  id="AdvPLocativeIndefTypeIntOtherContent" dataItem="locativeIndefIntOther" cols="70" rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="AdvPLocativeIndefTypeIntNoCheckPrompt" show="swAdvPLocativeIndefTypeIntNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se expresan estos adverbios de lugar indefinidos en su lengua.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno’ abajo.</prompt>
       <checkboxGroup id="AdvPLocativeIndefTypeIntNoneTable" show="swAdvPLocativeIndefTypeIntNoCheck">
@@ -149,7 +149,7 @@
          <checkbox id="AdvPLocativeIndefTypeIntPhraseBefore" checked="yes" dataItem="locativeIndefTypeIntBefore">Antes de la palabra indefinida</checkbox>
          <checkbox id="AdvPLocativeIndefTypeIntPhraseAfter" checked="yes" dataItem="locativeIndefTypeIntAfter">Después de la palabra indefinida</checkbox>
          <checkbox id="AdvPLocativeIndefTypeIntPhraseBoth" checked="yes" dataItem="locativeIndefTypeIntBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="AdvPLocativeIndefTypeIntPhraseOther" checked="yes" dataItem="locativeIndefTypeIntOther">En mi lengua, la palabra interrogativa de lugar puede presentarse: <textBox  id="AdvPLocativeIndefTypeIntPhraseOtherContent" dataItem="locativeIndefTypeIntOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="AdvPLocativeIndefTypeIntPhraseOther" checked="yes" dataItem="locativeIndefTypeIntOther">En mi lengua, la palabra interrogativa de lugar puede presentarse: <textBox  id="AdvPLocativeIndefTypeIntPhraseOtherContent" dataItem="locativeIndefTypeIntOther" cols="70" rows="1" kind="other"/></checkbox>
       </checkboxGroup>	
       <prompt id="AdvPLocativeIndefTypeIntPhraseNoCheckPrompt" show="swAdvPLocativeIndefTypeIntPhraseAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta la palabra interrogativa de lugar con respecto a la palabra indefinida en su lengua, o cambia su respuesta de arriba a una forma diferente.</prompt>
       <instruction  id="AdvPLocativeIndefTypeIntPhraseInstruction" show="swAdvPLocativeIndefTypeIntPhrase">In the lexicon, key the features <feature>makeAdv locative wh</feature> on the locative interrogative words.  Key the feature <feature>makeIndef</feature> on the indefinite word.</instruction>

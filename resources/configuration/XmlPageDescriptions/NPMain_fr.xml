@@ -36,7 +36,7 @@ Cochez toutes les options qui conviennent pour votre langue.
             <checkbox id="NPClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificPosAfterNBeforeQ">Après le nom mais avant le quantifieur à  large portée ou le mot de degré</checkbox>
             <checkbox id="NPClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificPosPrefixQ">Comme préfixe du quantifieur à portée ou du mot de degré</checkbox>
             <checkbox id="NPClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificPosSuffixQ">Comme suffixe du quantifieur à large portée ou du mot de degré</checkbox>
-            <checkbox id="NPClassifierSpecificPosOther"  dataItem="classifierSpecificPosOther">Dans ma langue, les classifieurs peuvent paraître dans la position suivante : <textBox  id="NPClassifierSpecificPosOtherContent" dataItem="classifierSpecificPosOther" cols="70" rows="1" kind="table"/></checkbox>
+            <checkbox id="NPClassifierSpecificPosOther"  dataItem="classifierSpecificPosOther">Dans ma langue, les classifieurs peuvent paraître dans la position suivante : <textBox  id="NPClassifierSpecificPosOtherContent" dataItem="classifierSpecificPosOther" cols="70" rows="1" kind="other"/></checkbox>
         </checkboxGroup>
         <prompt id="NPClassifierSpecificPosNoCheckPrompt" show="swNPClassifierPresentYesOrSomeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où sont placés les classificateurs par rapport à ces quantifieurs à large portée ou aux mots de degré et le nom dans votre langue. Sinon, il faut modifier votre réponse et cocher : « Non, un classificateur n’est jamais employé dans ce type de syntagme nominal ».</prompt>
         

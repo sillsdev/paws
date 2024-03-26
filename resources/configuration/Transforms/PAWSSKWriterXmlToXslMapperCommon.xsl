@@ -1093,34 +1093,121 @@ DoOL
 		</ol>
 	</xsl:template>
 	<!--
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-DoP
-	routine to create a p element
+		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		DoP
+		routine to create a p element
 		Parameters: none
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
--->
+		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	-->
 	<xsl:template name="DoP">
 		<p>
-		   <xsl:if test="@contentType">
-		   <xsl:attribute name="contentType">
-		      <xsl:value-of select="@contentType"/>
-		   </xsl:attribute>
-		   </xsl:if>
+			<xsl:if test="@contentType">
+				<xsl:attribute name="contentType">
+					<xsl:value-of select="@contentType"/>
+				</xsl:attribute>
+			</xsl:if>
 			<xsl:apply-templates select="*"/>
 		</p>
 	</xsl:template>
 	<!--
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-DoRow
-	routine to create a row element
+		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		DoRow
+		routine to create a row element
 		Parameters: none
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
--->
+		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	-->
 	<xsl:template name="DoRow">
+		<xsl:variable name="iPosition" select="count(parent::row/preceding-sibling::row)"/>
+		<xsl:variable name="sGlossCol" select="col/gloss/content"/>
 		<xsl:choose>
 			<xsl:when test="col[@exampleLoc]">
-				<!-- N.B. this assumes at most one exampleLoc per row -->
-				<xsl:apply-templates select="col[@exampleLoc]"/>
+				<tr>
+					<xsl:for-each select="col[not(@exampleLoc) and not(gloss/content)]">
+						<td>
+							<xsl:apply-templates/>
+						</td>
+					</xsl:for-each>
+					<xsl:element name="xsl:for-each">
+						<xsl:attribute name="select">
+							<xsl:text>//</xsl:text>
+							<xsl:value-of select="col/@exampleLoc"/>
+							<xsl:text>/form[1]</xsl:text>
+						</xsl:attribute>
+						<xsl:call-template name="DoExampleEntryVernacularAndGloss">
+							<xsl:with-param name="sGlossCol" select="$sGlossCol"/>
+						</xsl:call-template>
+					</xsl:element>
+				</tr>
+				<xsl:element name="xsl:if">
+					<xsl:attribute name="test">
+						<xsl:text>$fOutputStyle='Blessymol'</xsl:text>
+					</xsl:attribute>
+					<tr>
+						<xsl:for-each select="col[@exampleLoc]">
+							<xsl:call-template name="InsertEmptyTdsForIpa">
+								<xsl:with-param name="numCols" select="count(preceding-sibling::col)"/>
+							</xsl:call-template>
+						</xsl:for-each>
+						<xsl:element name="xsl:for-each">
+							<xsl:attribute name="select">
+								<xsl:text>//</xsl:text>
+								<xsl:value-of select="col/@exampleLoc"/>
+								<xsl:text>/form[1]</xsl:text>
+							</xsl:attribute>
+							<td>
+								<xsl:element name="langData">
+									<xsl:attribute name="lang">lIPA</xsl:attribute>
+									<xsl:element name="xsl:value-of">
+										<xsl:attribute name="select">
+											<xsl:text>ipa</xsl:text>
+										</xsl:attribute>
+									</xsl:element>
+								</xsl:element>
+							</td>
+							<td>&#xa0;</td>
+						</xsl:element>
+					</tr>
+				</xsl:element>
+				<xsl:element name="xsl:for-each">
+					<xsl:attribute name="select">
+						<xsl:text>//</xsl:text>
+						<xsl:value-of select="col/@exampleLoc"/>
+						<xsl:text>/form[position() &gt; 1]</xsl:text>
+					</xsl:attribute>
+					<tr>
+						<xsl:for-each select="col[@exampleLoc]">
+							<xsl:call-template name="InsertEmptyTdsForIpa">
+								<xsl:with-param name="numCols" select="count(preceding-sibling::col)"/>
+							</xsl:call-template>
+						</xsl:for-each>
+						<xsl:call-template name="DoExampleEntryVernacularAndGloss">
+							<xsl:with-param name="sGlossCol" select="$sGlossCol"/>
+						</xsl:call-template>
+					</tr>
+					<xsl:element name="xsl:if">
+						<xsl:attribute name="test">
+							<xsl:text>$fOutputStyle='Blessymol'</xsl:text>
+						</xsl:attribute>
+						<tr>
+							<xsl:for-each select="col[@exampleLoc]">
+								<xsl:call-template name="InsertEmptyTdsForIpa">
+									<xsl:with-param name="numCols" select="count(preceding-sibling::col)"/>
+								</xsl:call-template>
+							</xsl:for-each>
+							<td>
+								<xsl:element name="langData">
+									<xsl:attribute name="lang">lIPA</xsl:attribute>
+									<xsl:element name="xsl:value-of">
+										<xsl:attribute name="select">
+											<xsl:text>ipa</xsl:text>
+										</xsl:attribute>
+									</xsl:element>
+								</xsl:element>
+							</td>
+							<td>&#xa0;</td>
+						</tr>
+					</xsl:element>
+				</xsl:element>
 			</xsl:when>
 			<xsl:otherwise>
 				<tr>
@@ -1128,6 +1215,49 @@ DoRow
 				</tr>
 			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>
+	<xsl:template name="DoExampleEntryVernacularAndGloss">
+		<xsl:param name="sGlossCol"/>
+		<td>
+			<xsl:element name="langData">
+				<xsl:attribute name="lang">lVernacular</xsl:attribute>
+				<xsl:element name="xsl:value-of">
+					<xsl:attribute name="select">
+						<xsl:text>vernacular</xsl:text>
+					</xsl:attribute>
+				</xsl:element>
+			</xsl:element>
+		</td>
+		<td>
+			<xsl:element name="gloss">
+				<xsl:attribute name="lang">lGloss</xsl:attribute>
+				<xsl:element name="xsl:variable">
+					<xsl:attribute name="name">
+						<xsl:text>sGloss</xsl:text>
+					</xsl:attribute>
+					<xsl:element name="xsl:value-of">
+						<xsl:attribute name="select">
+							<xsl:text>gloss</xsl:text>
+						</xsl:attribute>
+					</xsl:element>
+				</xsl:element>
+				<xsl:element name="xsl:choose">
+					<xsl:element name="xsl:when">
+						<xsl:attribute name="test">
+							<xsl:text>string-length(normalize-space($sGloss)) &gt; 0</xsl:text>
+						</xsl:attribute>
+						<xsl:element name="xsl:value-of">
+							<xsl:attribute name="select">
+								<xsl:text>$sGloss</xsl:text>
+							</xsl:attribute>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="xsl:otherwise">
+						<xsl:value-of select="$sGlossCol"/>
+					</xsl:element>
+				</xsl:element>
+			</xsl:element>
+		</td>
 	</xsl:template>
 	<!--
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1227,5 +1357,21 @@ DoUL
 		<ul>
 			<xsl:apply-templates/>
 		</ul>
+	</xsl:template>
+	<!--
+		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		InsertEmptyTdsForIpa
+		routine to insert empty <td> elements for IPA values
+		Parameters: numCols = number of columns to skip
+		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	-->
+	<xsl:template name="InsertEmptyTdsForIpa">
+		<xsl:param name="numCols" select="0"/>
+		<xsl:if test="$numCols &gt; 0">
+			<td>&#xa0;</td>
+			<xsl:call-template name="InsertEmptyTdsForIpa">
+				<xsl:with-param name="numCols" select="$numCols -1"/>
+			</xsl:call-template>
+		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>

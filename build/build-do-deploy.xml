@@ -5,7 +5,7 @@
 	<import file="${basedir}/build-do-compile.xml" as="nested"/>
 
 	<property name="appName" value="PAWS"/>
-	<property name="version" value="1.4.0"/>
+	<property name="version" value="1.5.0"/>
 
 	<target name="do-deploy" depends="nested.setup-staging-area, nested.do-compile, nested.init-fx-tasks">
 		<antcall target="build-windows-iss-file"/>
@@ -23,7 +23,7 @@
 
 		<mkdir dir="dist/resources" />
 	    <copy todir="dist/resources">
-	      <fileset dir="../src/org/sil/paws/resources">
+	      <fileset dir="../resources">
 	        <include name="**" />
 	      </fileset>
 	    </copy>

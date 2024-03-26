@@ -53,7 +53,7 @@
              <checkbox id="AdvPTemporalDegreeWord" dataItem="temporalDegreeWord">Una palabra de grado puede modificar a un adverbio de tiempo</checkbox>
              <checkbox id="AdvPTemporalDegreeAttaches" dataItem="temporalDegreeAttaches">Hay un afijo o clítico que se une al adverbio de tiempo para intensificarlo</checkbox>
              <checkbox id="AdvPTemporalDegreeRedup" dataItem="temporalDegreeRedup">Utiliza reduplicación para intensificar el significado del adverbio de tiempo</checkbox>
-             <checkbox id="AdvPTemporalDegreeOther" dataItem="temporalDegreeOther">En mi lengua, los adverbios de tiempo se pueden modificar por: <textBox  id="AdvPTemporalDegreeOtherContent" dataItem="temporalDegreeOther" cols="70" rows="1" kind="table"/></checkbox>
+             <checkbox id="AdvPTemporalDegreeOther" dataItem="temporalDegreeOther">En mi lengua, los adverbios de tiempo se pueden modificar por: <textBox  id="AdvPTemporalDegreeOtherContent" dataItem="temporalDegreeOther" cols="70" rows="1" kind="other"/></checkbox>
           </checkboxGroup>
        </radioGroup>
        <br/><br/>
@@ -68,7 +68,7 @@
           <checkbox id="AdvPTemporalDegreeWordBefore" checked="yes" dataItem="temporalDegreeWordBefore">Antes del adverbio de tiempo</checkbox>
           <checkbox id="AdvPTemporalDegreeWordAfter" checked="yes" dataItem="temporalDegreeWordAfter">Después del adverbio de tiempo</checkbox>
           <checkbox id="AdvPTemporalDegreeWordBoth" checked="yes" dataItem="temporalDegreeWordBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="AdvPTemporalDegreeWordOther" checked="yes" dataItem="temporalDegreeWordOther">En mi lengua, estas palabras de grado pueden presentarse: <textBox  id="AdvPTemporalDegreeWordOtherContent" dataItem="temporalDegreeWordOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPTemporalDegreeWordOther" checked="yes" dataItem="temporalDegreeWordOther">En mi lengua, estas palabras de grado pueden presentarse: <textBox  id="AdvPTemporalDegreeWordOtherContent" dataItem="temporalDegreeWordOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="AdvPTemporalDegreeWordNoCheckPrompt" show="swAdvPTemporalDegreeWordAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estas palabras de grado en su lengua, o cambia su respuesta de arriba a un tipo diferente de modificador.</prompt>
        <instruction  id="AdvPTemporalDegreeYesInstruction" show="swAdvPTemporalDegreeYesWord">In the lexicon, key the features <feature>makeDeg modifies_temporal</feature> on the degree words to change the category and allow it to modify temporal adverbs.</instruction>
@@ -101,7 +101,7 @@
           <prompt><br/>Primero, se consideran los adverbios indefinidos de tiempo que incluyen un cuantificador. ¿Cómo se expresan estos adverbios de tiempo indefinidos en su lengua? Seleccione todas las opciones que son correctas en su lengua.  Si ninguna opción se permite en su lengua, quita estas opciones y seleccione la opción para ‘Ninguno’ más abajo</prompt>
           <checkbox id="AdvPTemporalIndefTypeQWord" dataItem="temporalIndefQWord">Un cuantificador y un sustantivo genérico de tiempo se fusionan en una sola palabra</checkbox>
           <checkbox id="AdvPTemporalIndefTypeQPhrase" dataItem="temporalIndefQPhrase">Un cuantificador se presenta con un sustantivo genérico de tiempo pero las dos palabras se permanecen independientes como una frase</checkbox>
-          <checkbox id="AdvPTemporalIndefTypeQOther" dataItem="temporalIndefQOther">En mi lengua estos adverbios de tiempo indefinidos se expresan con:<textBox  id="AdvPTemporalIndefTypeQOtherContent" dataItem="temporalIndefQOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPTemporalIndefTypeQOther" dataItem="temporalIndefQOther">En mi lengua estos adverbios de tiempo indefinidos se expresan con:<textBox  id="AdvPTemporalIndefTypeQOtherContent" dataItem="temporalIndefQOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="AdvPTemporalIndefTypeQNoCheckPrompt" show="swAdvPTemporalIndefTypeQNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se expresan estos adverbios de tiempo indefinidos en su lengua.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno’ abajo.</prompt>
        <checkboxGroup id="AdvPTemporalIndefTypeQNoneTable" show="swAdvPTemporalIndefTypeQNoCheck">
@@ -119,7 +119,7 @@
           <checkbox id="AdvPTemporalIndefTypeQPQBefore" checked="yes" dataItem="temporalIndefTypeQPQBefore">Antes del sustantivo</checkbox>
           <checkbox id="AdvPTemporalIndefTypeQPQAfter" checked="yes" dataItem="temporalIndefTypeQPQAfter">Después del sustantivo</checkbox>
           <checkbox id="AdvPTemporalIndefTypeQPQBoth" checked="yes" dataItem="temporalIndefTypeQPQBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="AdvPTemporalIndefTypeQPQOther" checked="yes" dataItem="temporalIndefTypeQPQOther">En mi lengua, el cuantificador puede presentarse: <textBox  id="AdvPTemporalIndefTypeQPQOtherContent" dataItem="temporalIndefTypeQPQOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPTemporalIndefTypeQPQOther" checked="yes" dataItem="temporalIndefTypeQPQOther">En mi lengua, el cuantificador puede presentarse: <textBox  id="AdvPTemporalIndefTypeQPQOtherContent" dataItem="temporalIndefTypeQPQOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="AdvPTemporalIndefTypeQPPhraseNoCheckPrompt" show="swAdvPTemporalIndefTypeQPPhraseAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el cuantificador con respecto al sustantivo genérico de tiempo en su lengua, o cambia su respuesta de arriba a una forma diferente.</prompt>
        <instruction  id="AdvPTemporalIndefTypeQPPhraseInstruction" show="swAdvPTemporalIndefTypeQPhrase">In the lexicon, key the features <feature>temporal generic</feature> on the general temporal nouns, and make sure they also have the category <category>N</category>.</instruction>
@@ -132,7 +132,7 @@
           <prompt><br/>Ahora se consideren los adverbios de tiempo indefinidos que incluyen una palabra intrerrogativa de tiempo y una palabra indefinida,  como ‘cuandoquiera’.  ¿Cómo se expresan estos adverbios de tiempo indefinidos en su lengua? Seleccione todas las opciones que son correctas en su lengua.  Si ninguna opción se permite en su lengua, quita estas opciones y seleccione la opción para ‘Ninguno’ más abajo</prompt>
           <checkbox id="AdvPTemporalIndefTypeIntWord" dataItem="temporalIndefIntWord">Una palabra interrogativa de tiempo y una palabra indefinida se fusionan en una sola palabra</checkbox>
           <checkbox id="AdvPTemporalIndefTypeIntPhrase" dataItem="temporalIndefIntPhrase">Una palabra interrogativa de tiempo se presenta con una palabra indefinida pero las dos palabras se permanecen independientes como una frase</checkbox>
-          <checkbox id="AdvPTemporalIndefTypeIntOther" dataItem="temporalIndefIntOther">En mi lengua estos adverbios de tiempo indefinidos se expresan con:<textBox  id="AdvPTemporalIndefTypeIntOtherContent" dataItem="temporalIndefIntOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPTemporalIndefTypeIntOther" dataItem="temporalIndefIntOther">En mi lengua estos adverbios de tiempo indefinidos se expresan con:<textBox  id="AdvPTemporalIndefTypeIntOtherContent" dataItem="temporalIndefIntOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="AdvPTemporalIndefTypeIntNoCheckPrompt" show="swAdvPTemporalIndefTypeIntNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se expresan estos adverbios de tiempo indefinidos en su lengua.  Si ninguna opción es correcto, por favor seleccione ‘Ninguno’ abajo.</prompt>
        <checkboxGroup id="AdvPTemporalIndefTypeIntNoneTable" show="swAdvPTemporalIndefTypeIntNoCheck">
@@ -151,7 +151,7 @@
           <checkbox id="AdvPTemporalIndefTypeIntPhraseBefore" checked="yes" dataItem="temporalIndefTypeIntBefore">Antes de la palabra indefinida</checkbox>
           <checkbox id="AdvPTemporalIndefTypeIntPhraseAfter" checked="yes" dataItem="temporalIndefTypeIntAfter">Después de la palabra indefinida</checkbox>
           <checkbox id="AdvPTemporalIndefTypeIntPhraseBoth" checked="yes" dataItem="temporalIndefTypeIntBoth">En ambos lados en la misma oración</checkbox>
-          <checkbox id="AdvPTemporalIndefTypeIntPhraseOther" checked="yes" dataItem="temporalIndefTypeIntOther">En mi lengua, la palabra interrogativa de tiempo puede presentarse:<textBox  id="AdvPTemporalIndefTypeIntPhraseOtherContent" dataItem="temporalIndefTypeIntOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPTemporalIndefTypeIntPhraseOther" checked="yes" dataItem="temporalIndefTypeIntOther">En mi lengua, la palabra interrogativa de tiempo puede presentarse:<textBox  id="AdvPTemporalIndefTypeIntPhraseOtherContent" dataItem="temporalIndefTypeIntOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="AdvPTemporalIndefTypeIntPhraseNoCheckPrompt" show="swAdvPTemporalIndefTypeIntPhraseAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta la palabra interrogativa de tiempo con respecto a la palabra indefinida en su lengua, o cambia su respuesta de arriba a una forma diferente.</prompt>
        <instruction  id="AdvPTemporalIndefTypeIntPhraseInstruction" show="swAdvPTemporalIndefTypeIntPhrase">In the lexicon, key the features <feature>makeAdv temporal wh</feature> on the temporal interrogative words.  Key the feature <feature>makeIndef</feature> on the indefinite word.</instruction>

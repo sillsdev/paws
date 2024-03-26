@@ -13,7 +13,7 @@
          <checkbox id="NegTemporalTypeAdverbWord" dataItem="negTemporalTypeAdverbWord">Una palabra negativa se presenta con un adverbio de tiempo (positivo) para formar una frase adverbial de tiempo negativa</checkbox>
          <checkbox id="NegTemporalTypeAffix" dataItem="negTemporalTypeAffix">Es un afijo en el verbo</checkbox>
          <checkbox id="NegTemporalTypeVerb" dataItem="negTemporalTypeVerb">Hay solamente un afijo negativo para el verbo, pero un verbo negativo puede presentarse con un adverbio de tiempo para dar el significado del adverbio de tiempo negativo</checkbox>
-         <checkbox id="NegTemporalTypeOther" dataItem="negTemporalTypeOther">Este significado se expresa en mi lengua con: <textBox  id="NegTemporalTypeOtherContent" dataItem="negTemporalTypeOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="NegTemporalTypeOther" dataItem="negTemporalTypeOther">Este significado se expresa en mi lengua con: <textBox  id="NegTemporalTypeOtherContent" dataItem="negTemporalTypeOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="NegTemporalTypeNoCheckPrompt" show="swNegTemporalTypeNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo expresa su lengua el significado del adverbio de tiempo negativo.</prompt>
       <prompt id="NegTemporalExamplePrompt" show="swNegTemporalTypeWord">Escriba ejemplos de los adverbios negativos de tiempo aquí:</prompt>
@@ -39,7 +39,7 @@
          <checkbox id="NegTemporalAdverbWordBefore" checked="yes" dataItem="negTemporalAdverbWordBefore">Antes del adverbio de tiempo</checkbox>
          <checkbox id="NegTemporalAdverbWordAfter" checked="yes" dataItem="negTemporalAdverbWordAfter">Después del adverbio de tiempo</checkbox>
          <checkbox id="NegTemporalAdverbWordBoth" checked="yes" dataItem="negTemporalAdverbWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="NegTemporalAdverbWordOther" checked="yes" dataItem="negTemporalAdverbWordOther">En mi lengua, esta palabra negativa puede presentarse:  <textBox  id="NegTemporalAdverbWordOtherContent" dataItem="negTemporalAdverbWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="NegTemporalAdverbWordOther" checked="yes" dataItem="negTemporalAdverbWordOther">En mi lengua, esta palabra negativa puede presentarse:  <textBox  id="NegTemporalAdverbWordOtherContent" dataItem="negTemporalAdverbWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>	
       <prompt id="NegTemporalAdverbWordNoCheckPrompt" show="swNegTemporalAdverbWordAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta la palabra negativa con respecto al adverbio de tiempo positivo, o cambia su respuesta de arriba acerca de cómo los adverbios de tiempo negativos son relacionados con los adverbios de tiempo positivos.</prompt>
       <instruction id="NegTemporalTypeAdverbWordInstruction" show="swNegTemporalTypeAdverbWord">In the lexicon, key the features <feature>makeNeg modifies_temporal</feature>
@@ -76,7 +76,7 @@
          <checkbox id="NegLocativeTypeAdverbWord" dataItem="negLocativeTypeAdverbWord">Una palabra negativa se presenta con un adverbio de lugar (positivo) para formar una frase adverbial de lugar negativa</checkbox>
          <checkbox id="NegLocativeTypeAffix" dataItem="negLocativeTypeAffix">Es un afijo en el verbo</checkbox>
          <checkbox id="NegLocativeTypeVerb" dataItem="negLocativeTypeVerb">Hay solamente un afijo negativo para el verbo, pero un verbo negativo puede presentarse con un adverbio de lugar para dar el significado del adverbio de lugar negativo</checkbox>
-         <checkbox id="NegLocativeTypeOther" dataItem="negLocativeTypeOther">Este significado se expresa en mi lengua con: <textBox  id="NegLocativeTypeOtherContent" dataItem="negLocativeTypeOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="NegLocativeTypeOther" dataItem="negLocativeTypeOther">Este significado se expresa en mi lengua con: <textBox  id="NegLocativeTypeOtherContent" dataItem="negLocativeTypeOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="NegLocativeTypeNoCheckPrompt" show="swNegLocativeTypeNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo expresa su lengua el significado del adverbio de lugar negativo .</prompt>
       
@@ -102,7 +102,7 @@
          <checkbox id="NegLocativeAdverbWordBefore" checked="yes" dataItem="negLocativeAdverbWordBefore">Antes del adverbio de lugar</checkbox>
          <checkbox id="NegLocativeAdverbWordAfter" checked="yes" dataItem="negLocativeAdverbWordAfter">Después del adverbio de lugar</checkbox>
          <checkbox id="NegLocativeAdverbWordBoth" checked="yes" dataItem="negLocativeAdverbWordBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="NegLocativeAdverbWordOther" checked="yes" dataItem="negLocativeAdverbWordOther">En mi lengua, esta palabra negativa puede presentarse: <textBox  id="NegLocativeAdverbWordOtherContent" dataItem="negLocativeAdverbWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="NegLocativeAdverbWordOther" checked="yes" dataItem="negLocativeAdverbWordOther">En mi lengua, esta palabra negativa puede presentarse: <textBox  id="NegLocativeAdverbWordOtherContent" dataItem="negLocativeAdverbWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>	
       <prompt id="NegLocativeAdverbWordNoCheckPrompt" show="swNegLocativeAdverbWordAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta la palabra negativa con respecto al adverbio de lugar positivo, o cambia su respuesta de arriba acerca de cómo los adverbios de lugar negativos son relacionados con los adverbios de lugar positivos.</prompt>
       <instruction id="NegLocativeTypeAdverbWordInstruction" show="swNegLocativeTypeAdverbWord">In the lexicon, key the features <feature>makeNeg modifies_locative</feature>
@@ -159,7 +159,7 @@
             <checkbox id="NegAux" dataItem="negAuxWord" checked="yes">Uno o más auxiliares negativos </checkbox>
             <checkbox id="NegAuxAffix" dataItem="negAuxAffix" checked="yes">Un afijo negativo que se une con un auxiliar positivo para ser negativo</checkbox>
             <checkbox id="NegVAffix" dataItem="negVAffix" checked="yes">Un afijo verbal negativo que se une con un verbo para ser negativo</checkbox>
-            <checkbox id="NegVerbalOther" dataItem="negVerbalOther" checked="yes">En mi lengua, el verbo o el auxiliar puede ser negativo con: <textBox  id="NegVerbalOtherContent" dataItem="negVerbalOther" rows="1" cols="70" kind="table"/></checkbox>
+            <checkbox id="NegVerbalOther" dataItem="negVerbalOther" checked="yes">En mi lengua, el verbo o el auxiliar puede ser negativo con: <textBox  id="NegVerbalOtherContent" dataItem="negVerbalOther" rows="1" cols="70" kind="other"/></checkbox>
          </checkboxGroup>	
       <prompt id="NegVerbalNoCheckPrompt" show="swNegVerbalAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se expresa la negación en el verbo o en un auxiliar en su lengua, o cambia su respuesta de arriba a ‘No’.</prompt>
          <radioGroup id="NegAuxRequiresAuxTable" show="swNegAuxAndVerbalYes">

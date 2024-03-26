@@ -47,7 +47,7 @@
           <checkbox id="TopicMarkerPosBefore" dataItem="topicMarkerBefore">Antes de la frase sí mismo de tópico</checkbox>
           <checkbox id="TopicMarkerPosAfter" dataItem="topicMarkerAfter">Después de la frase sí mismo de tópico</checkbox>
           <checkbox id="TopicMarkerPosBoth" dataItem="topicMarkerBoth">En ambos lados en la misma frase de tópico</checkbox>
-          <checkbox id="TopicMarkerPosOther" dataItem="topicMarkerOther">En mi lengua, el indicador de tópico puede presentarse: <textBox  id="TopicMarkerOtherContent" dataItem="topicMarkerOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="TopicMarkerPosOther" dataItem="topicMarkerOther">En mi lengua, el indicador de tópico puede presentarse: <textBox  id="TopicMarkerOtherContent" dataItem="topicMarkerOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="TopicMarkerPosNoCheckPrompt" show="swTopicMarkerYesWordAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el indicador de tópico en su lengua, o cambia su respuesta de arriba a ‘No, solamente la posición en la oración y posiblemente la puntuación distingue el tópico’.  En este caso, no debe ser ningún ejemplo de indicadores de tópico en el campo de arriba.tampoco.</prompt>
        
@@ -110,7 +110,7 @@
           <checkbox id="FocusMarkerPosBefore" dataItem="focusMarkerBefore">Antes de la frase enfocada sí mismo</checkbox>
           <checkbox id="FocusMarkerPosAfter" dataItem="focusMarkerAfter">Después de la frase enfocada sí mismo</checkbox>
           <checkbox id="FocusMarkerPosBoth" dataItem="focusMarkerBoth">En ambos lados de la frase enfocada sí mismo</checkbox>
-          <checkbox id="FocusMarkerPosOther" dataItem="focusMarkerOther">En mi lengua, el indicador de foco puede presentarse: <textBox  id="FocusMarkerOtherContent" dataItem="focusMarkerOther" rows="1" cols="70" kind="table"/></checkbox>
+          <checkbox id="FocusMarkerPosOther" dataItem="focusMarkerOther">En mi lengua, el indicador de foco puede presentarse: <textBox  id="FocusMarkerOtherContent" dataItem="focusMarkerOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="FocusMarkerPosNoCheckPrompt" show="swFocusMarkerYesWordAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presenta el indicador de foco en su lengua, o cambia su respuesta arriba a ‘No, solamente la posición en la oración y posiblemente la puntuación distingue la frase enfocada’.  En este caso, no debe ser ningún ejemplo de indicadores de foco en el campo de arriba.tampoco.</prompt>
           <radioGroup id="FocusMarkerRequiredTable" show="swFocusMarkerYesWord">

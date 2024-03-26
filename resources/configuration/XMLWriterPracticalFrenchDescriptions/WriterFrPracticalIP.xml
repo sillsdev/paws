@@ -130,6 +130,7 @@
 	         <table border="1">
 	            <headerRow>
 	            	<headerCol>Préfixe copulatif</headerCol>
+	            	<headerCol>Glose</headerCol>
 	            </headerRow>
 	            <row>
 	               <col exampleLoc="ip/copularAffix"/>
@@ -140,6 +141,7 @@
 	         <table border="1">
 	            <headerRow>
 	            	<headerCol>Suffixe copulatif</headerCol>
+	            	<headerCol>Glose</headerCol>
 	            </headerRow>
 	            <row>
 	               <col exampleLoc="ip/copularAffix"/>
@@ -150,6 +152,7 @@
 	         <table border="1">
 	            <headerRow>
 	            	<headerCol>Affixes copulatifs</headerCol>
+	            	<headerCol>Glose</headerCol>
 	            </headerRow>
 	            <row>
 	               <col exampleLoc="ip/copularAffix"/>

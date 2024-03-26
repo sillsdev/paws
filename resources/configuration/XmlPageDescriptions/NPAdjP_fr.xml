@@ -24,7 +24,7 @@
 			<checkbox id="NPAdjPPosBefore" dataItem="adjBefore">Avant le nom</checkbox>
 			<checkbox id="NPAdjPPosAfter" dataItem="adjAfter">Après le nom</checkbox>
 			<checkbox id="NPAdjPPosBoth" dataItem="adjBoth">De part et d’autre du le même syntagme nominal</checkbox>
-			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">Dans ma langue l'adjectif peut se placer dans la position suivante par rapport au nom : <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1" kind="table"/></checkbox>
+			<checkbox id="NPAdjPPosOther" dataItem="adjPosOther">Dans ma langue l'adjectif peut se placer dans la position suivante par rapport au nom : <textBox  id="NPAdjPPosOtherContent" dataItem="adjPosOther" cols="70" rows="1" kind="other"/></checkbox>
 		</checkboxGroup>
 		<prompt id="NPAdjPPosNoCheckPrompt" show="swNPAdjPPosNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les modificateurs  adjectivaux par rapport au nom dans votre langue.</prompt>
 	   <instruction id="NPAdjPPosEitherSideRestrictedInstruction" show="swNPAdjPPosEitherSideRestricted">In the lexicon, mark those adjectives which can only occur before the noun with the feature <feature>DP-initial</feature> and those which can only occur after the noun with the feature <feature>DP-final</feature>. Do not enter either feature on any adjective which can occur on either side.</instruction>
@@ -43,7 +43,7 @@
 			<checkbox id="NPAdjClassifierSpecificPosAfterNBeforeAdj"  dataItem="classifierSpecificAdjPosAfterNBeforeAdj">Après le nom mais avant l’adjectif</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosPrefixAdj"  dataItem="classifierSpecificAdjPosPrefixAdj">Comme un préfixe sur l’adjectif</checkbox>
 			<checkbox id="NPAdjClassifierSpecificPosSuffixAdj"  dataItem="classifierSpecificAdjPosSuffixAdj">Comme un suffixe sur l’adjectif</checkbox>
-			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">Dans ma langue les classificateurs peuvent se trouver dans la position suivante : <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1" kind="table"/></checkbox>
+			<checkbox id="NPAdjClassifierSpecificPosOther"  dataItem="classifierSpecificAdjPosOther">Dans ma langue les classificateurs peuvent se trouver dans la position suivante : <textBox  id="NPAdjClassifierSpecificPosOtherContent" dataItem="classifierSpecificAdjPosOther" cols="70" rows="1" kind="other"/></checkbox>
 		</checkboxGroup>
 		<prompt id="NPAdjClassifierSpecificPosNoCheckPrompt" show="swNPAdjClassifierPresentYesOrSomeAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire où se trouvent les classificateurs par rapport  aux adjectifs et au nom dans votre langue.  Sinon, il faut cocher « Non, un classificateur n’est jamais utilisé dans ce type de syntagme nominal ».</prompt>
 		

@@ -15,7 +15,7 @@
           <checkbox id="IPProDropYes" dataItem="proDropYes">L’omission du sujet est admise</checkbox>
           <checkbox id="IPProDropClitic" dataItem="proDropClitic">Le sujet semble être omis à cause des clitiques pronominaux rattachés au verbe</checkbox>
           <checkbox id="IPProDropImp" dataItem="proDropImp">Dans les impératifs, le sujet peut être omis</checkbox>
-          <checkbox id="IPProDropOther" dataItem="proDropOther">Dans ma langue, le sujet peut être omis dans la construction qui suivante :<textBox  id="IPProDropOtherContent" dataItem="proDropOther" cols="70"  rows="1" kind="table"/></checkbox>
+          <checkbox id="IPProDropOther" dataItem="proDropOther">Dans ma langue, le sujet peut être omis dans la construction qui suivante :<textBox  id="IPProDropOtherContent" dataItem="proDropOther" cols="70"  rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="IPProDropNoCheckPrompt" show="swIPProDropNoCheck">ATTENTION : Vous n’avez coché aucune case pour décrire quand le sujet peut être omis de sa position habituelle dans votre langue. Si le sujet ne peut jamais êtreomis, cochez la case « Aucune omission... » ci-dessous :</prompt>
   <checkboxGroup id="IPProDropNoNoneTable" show="swIPProDropNoCheck">

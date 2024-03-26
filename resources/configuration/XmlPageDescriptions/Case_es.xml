@@ -74,7 +74,7 @@
            <radio id="NPCaseSplit" checked="yes" dataValue="split">Ergatividad escindida: la lengua normalmente posee un sistema nominativo-accusativo, pero también utiliza el sistema ergativo-absolutiva en ciertas condiciones gramaticales</radio>
     </radioGroup>
        <prompt id="NPCaseSplitPrompt" show="swNPCaseSplit">El sistema de caso del ergativo-absolutivo se utiliza en estas condiciones:</prompt>
-       <textBox id="NPCaseSplitConditions" dataItem="splitConditions" cols="70" rows="1" show="swNPCaseSplit" kind="table"/>
+       <textBox id="NPCaseSplitConditions" dataItem="splitConditions" cols="70" rows="1" show="swNPCaseSplit" kind="other"/>
        <br/><br/>
        <radioGroup id="NPCaseExperiencerTable" show="swNPCaseNotNone">
           <groupName dataItem="caseExperiencer" default="no">RNPCaseExperiencer</groupName>

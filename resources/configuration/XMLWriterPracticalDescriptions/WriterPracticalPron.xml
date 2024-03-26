@@ -3637,7 +3637,7 @@
 		         <row show="swPronExclYes">
 		            <col><content>First</content></col>
 		            <col ><content>Exclusive</content></col>
-		            <col exampleLoc="pron/reflsFirstExclExample"/>
+		            <col exampleLoc="pron/reflFirstExclExample"/>
 		            <col ><gloss><content>ENTER GLOSS</content></gloss></col>
 		         </row>
 		         <row show="swPronExclYes">

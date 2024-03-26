@@ -33,7 +33,7 @@ It may be difficult to understand the need for the change in English, because ar
             <checkbox id="NPClassifierSpecificPosAfterNBeforeQ"  dataItem="classifierSpecificPosAfterNBeforeQ">After the noun but before the wide-scope quantifier or degree word</checkbox>
             <checkbox id="NPClassifierSpecificPosPrefixQ"  dataItem="classifierSpecificPosPrefixQ">As a prefix on the wide-scope quantifier or degree word</checkbox>
             <checkbox id="NPClassifierSpecificPosSuffixQ"  dataItem="classifierSpecificPosSuffixQ">As a suffix on the wide-scope quantifier or degree word</checkbox>
-            <checkbox id="NPClassifierSpecificPosOther"  dataItem="classifierSpecificPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPClassifierSpecificPosOtherContent" dataItem="classifierSpecificPosOther" cols="70" rows="1" kind="table"/></checkbox>
+            <checkbox id="NPClassifierSpecificPosOther"  dataItem="classifierSpecificPosOther">In my language, the classifiers may occur in the following position: <textBox  id="NPClassifierSpecificPosOtherContent" dataItem="classifierSpecificPosOther" cols="70" rows="1" kind="other"/></checkbox>
         </checkboxGroup>
         <prompt id="NPClassifierSpecificPosNoCheckPrompt" show="swNPClassifierPresentYesOrSomeAndNoCheck">WARNING: You need to check at least one box to describe where the classifiers occur with respect to these wide-scope quantifiers or degree words and the noun in your language, or change your answer above to “No, a classifier is never used in this type of nominal phrase”.</prompt>
         

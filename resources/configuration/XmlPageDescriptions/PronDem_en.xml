@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronDem" count="7.5">
+<page id="PronDem" count="8.6">
     <title level="2">Pronouns - Demonstratives</title>
     <introduction>Most languages have demonstrative pronouns that are related either to the demonstratives that modify a noun or to the locative adverbials.  The demonstrative pronouns specify the distance from the speaker and may have singular and plural forms.  English examples are <example>this, that, these</example> and <example>those</example>, which are identical to the demonstratives which modify a noun.  Demonstrative pronouns stand alone as the subject or object of a sentence, as in:
     </introduction>

@@ -45,7 +45,7 @@
           <radio id="AdvPLocAffixDem" dataValue="locativeAffix">Un affixe s’ajoute à un adverbe locatif pour former un démonstratif</radio>
           <radio id="AdvPLocDemOther" dataValue="other">Les deux formes ont une relation différente dans ma langue. Leur relation est la suivante :</radio>
       </radioGroup>       
-       <textBox  id="AdvPLocativeDemOtherContent" dataItem="locativeDemOther" cols="70" rows="1" show="swAdvPLocDemOther" kind="table"/>
+       <textBox  id="AdvPLocativeDemOtherContent" dataItem="locativeDemOther" cols="70" rows="1" show="swAdvPLocDemOther" kind="other"/>
        
        <instruction id="AdvPLocDemSameInstruction" show="swAdvPLocDemSame">In the lexicon, you will need to have two entries for each word, one with the category <category>Adv</category> and feature <feature>locative</feature> and one with the category <category>Dem</category>.</instruction>
        <instruction id="AdvPLocDemAffixInstruction" show="swAdvPLocDemAffix">In the lexicon, key the features <feature>locative makeAdv</feature> on the affix that  is added to a demonstrative to form a locative adverb, as this will take care of the category change needed.</instruction>
@@ -61,7 +61,7 @@
              <checkbox id="AdvPLocativeDegreeWord" dataItem="locativeDegreeWord">Les mots de degré peuvent modifier les adverbes locatifs</checkbox>
              <checkbox id="AdvPLocativeDegreeAttaches" dataItem="locativeDegreeAttaches">Il y a un affixe ou un clitique qui se rattache à l’adverbe locatif pour l’intensifier</checkbox>
              <checkbox id="AdvPLocativeDegreeRedup" dataItem="locativeDegreeRedup">L’intensification de l’adverbe locatif se fait par la reduplication</checkbox>
-             <checkbox id="AdvPLocativeDegreeOther" dataItem="locativeDegreeOther">Ma langue intensifie le sens de l’adverbe locatif de la façon suivante :<textBox  id="AdvPLocativeDegreeOtherContent" dataItem="locativeDegreeOther" cols="70" rows="1" kind="table"/></checkbox>
+             <checkbox id="AdvPLocativeDegreeOther" dataItem="locativeDegreeOther">Ma langue intensifie le sens de l’adverbe locatif de la façon suivante :<textBox  id="AdvPLocativeDegreeOtherContent" dataItem="locativeDegreeOther" cols="70" rows="1" kind="other"/></checkbox>
           </checkboxGroup>
        </radioGroup>
        <prompt id="AdvPLocativeDegreeNoCheckPrompt" show="swAdvPLocativeDegreeYesNoCheck">ATTENTION : Vous avez dit ci-dessus que les adverbes locatifs peuvent être modifiés ou intensifiés, mais vous n’avez coché aucune des options. Il faut cocher une ou plusieurs options ou changer la réponse ci-dessus et cocher « Non, les adverbes locatifs ne sont ni modifiés ni intensifiés ».</prompt>
@@ -75,7 +75,7 @@
           <checkbox id="AdvPLocativeDegreeWordBefore" checked="yes" dataItem="locativeDegreeWordBefore">Avant l’adverbe locatif</checkbox>
           <checkbox id="AdvPLocativeDegreeWordAfter" checked="yes" dataItem="locativeDegreeWordAfter">Après l’adverbe locatif</checkbox>
           <checkbox id="AdvPLocativeDegreeWordBoth" checked="yes" dataItem="locativeDegreeWordBoth">De part et d’autre de l’adverbe locatif</checkbox>
-          <checkbox id="AdvPLocativeDegreeWordOther" checked="yes" dataItem="locativeDegreeWordOther">Dans ma langue, ces mots de degré se trouvent dans la position suivante : <textBox  id="AdvPLocativeDegreeWordOtherContent" dataItem="locativeDegreeWordOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPLocativeDegreeWordOther" checked="yes" dataItem="locativeDegreeWordOther">Dans ma langue, ces mots de degré se trouvent dans la position suivante : <textBox  id="AdvPLocativeDegreeWordOtherContent" dataItem="locativeDegreeWordOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="AdvPLocativeDegreeWordNoCheckPrompt" show="swAdvPLocativeDegreeWordAndNoCheck">ATTENTION : Vous devez cochez au moins une case pour décrire la position de ces mots de degré dans votre langue, ou bien changez la réponse ci-dessus à un autre type de modificateur.</prompt>
        <instruction  id="AdvPLocativeDegreeYesInstruction" show="swAdvPLocativeDegreeYesWord">In the lexicon, key the features <feature>makeDeg modifies_locative</feature> on the degree words to change the category and allow it to modify locative adverbs.  Simply add the <feature>modifies_locative</feature> feature if this same degree word can modify temporal adverbs and you already marked it with those features.</instruction>
@@ -97,7 +97,7 @@
           <prompt><br/>Commencez par considérerles indéfinis adverbiaux locatifs qui comprennent un quantifieur. Comment votre langue exprime-t-elle ces indéfinis adverbiaux locatifs ? Cochez toutes les options valables pour votre langue. Si votre langue n’a pas ce type d’indéfinis adverbiaux, ne cochez aucune de ces cases, mais choisissez l’option  « Aucun » ci-dessous.</prompt>
           <checkbox id="AdvPLocativeIndefTypeQWord" dataItem="locativeIndefQWord">Un quantificateur et un nom locatif général fusionnent en un seul mot</checkbox>
           <checkbox id="AdvPLocativeIndefTypeQPhrase" dataItem="locativeIndefQPhrase">Un quantificateur se trouve avec un nom locatif général, mais ils ne fusionnent pas en un seul mot</checkbox>
-          <checkbox id="AdvPLocativeIndefTypeQOther" dataItem="locativeIndefQOther">Ma langue exprime ces sens locatifs indéfinis de la façon suivante :<textBox  id="AdvPLocativeIndefTypeQOtherContent" dataItem="locativeIndefQOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPLocativeIndefTypeQOther" dataItem="locativeIndefQOther">Ma langue exprime ces sens locatifs indéfinis de la façon suivante :<textBox  id="AdvPLocativeIndefTypeQOtherContent" dataItem="locativeIndefQOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="AdvPLocativeIndefTypeQNoCheckPrompt" show="swAdvPLocativeIndefTypeQNoCheck">ATTENTION : Vous devez cochez au moins une case pour décrire la façon dont votre langue exprime ces sens indéfinis locatifs.  Si votre langue n’a pas ce type d’indéfini adverbial, cochez « Aucun » ci-dessous.</prompt>
        <checkboxGroup id="AdvPLocativeIndefTypeQNoneTable" show="swAdvPLocativeIndefTypeQNoCheck">
@@ -116,7 +116,7 @@
           <checkbox id="AdvPLocativeIndefTypeQPQBefore" checked="yes" dataItem="locativeIndefTypeQPQBefore">Avant le mot locatif général</checkbox>
           <checkbox id="AdvPLocativeIndefTypeQPQAfter" checked="yes" dataItem="locativeIndefTypeQPQAfter">Après le mot locatif général</checkbox>
           <checkbox id="AdvPLocativeIndefTypeQPQBoth" checked="yes" dataItem="locativeIndefTypeQPQBoth">De part et d’autre du mot locatif</checkbox>
-          <checkbox id="AdvPLocativeIndefTypeQPQOther" checked="yes" dataItem="locativeIndefTypeQPQOther">Dans ma langue ces quantifieurs se trouvent  dans la position suivante par rapport au mot locatif général : <textBox  id="AdvPLocativeIndefTypeQPQOtherContent" dataItem="locativeIndefTypeQPQOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPLocativeIndefTypeQPQOther" checked="yes" dataItem="locativeIndefTypeQPQOther">Dans ma langue ces quantifieurs se trouvent  dans la position suivante par rapport au mot locatif général : <textBox  id="AdvPLocativeIndefTypeQPQOtherContent" dataItem="locativeIndefTypeQPQOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="AdvPLocativeIndefTypeQPPhraseNoCheckPrompt" show="swAdvPLocativeIndefTypeQPPhraseAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position de ces quantificateurs et mots locatifs généraux dans votre langue, sinon, il faut changer votre réponse ci-dessus et indiquer une formation différente.</prompt>
        <instruction  id="AdvPLocativeIndefTypeQPPhraseInstruction" show="swAdvPLocativeIndefTypeQPhrase">In the lexicon, key the features <feature>locative generic</feature> on the general locative nouns, and make sure they also have the category <category>N</category>.</instruction>
@@ -130,7 +130,7 @@
           <prompt><br/>Considérez maintenant les indéfinis adverbiaux locatifs basés sur un interrogatif locatif et un mot indéfini, comme <example>whereever (n’importe où)</example> en anglais. Comment votre langue exprime-t-elle ces indéfinis adverbiaux locatifs ? Cochez toutes les options valables pour votre langue.  Si votre langue n’a pas ce type d’indéfini adverbial, laissez toutes ces options vides, et choisissez l’option  « Aucun » ci-dessous.</prompt>
           <checkbox id="AdvPLocativeIndefTypeIntWord" dataItem="locativeIndefIntWord">Un mot interrogatif locatif et un indéfini fusionnent pour former un seul mot</checkbox>
           <checkbox id="AdvPLocativeIndefTypeIntPhrase" dataItem="locativeIndefIntPhrase">Un mot interrogatif locatif apposé à un indéfini, mais ils ne se fusionnent pas en un seul mot</checkbox>
-          <checkbox id="AdvPLocativeIndefTypeIntOther" dataItem="locativeIndefIntOther">Ma langue exprime ce type de sens indéfini locatif de la façon suivante :<textBox  id="AdvPLocativeIndefTypeIntOtherContent" dataItem="locativeIndefIntOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPLocativeIndefTypeIntOther" dataItem="locativeIndefIntOther">Ma langue exprime ce type de sens indéfini locatif de la façon suivante :<textBox  id="AdvPLocativeIndefTypeIntOtherContent" dataItem="locativeIndefIntOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="AdvPLocativeIndefTypeIntNoCheckPrompt" show="swAdvPLocativeIndefTypeIntNoCheck">ATTENTION : Vous devez cochez au moins une case pour décrire comment votre langue exprime ce type de sens locatif indéfini.  Si votre langue n’a pas ce type d’indéfini adverbial, cochez « Aucun » ci-dessous.</prompt>
        <checkboxGroup id="AdvPLocativeIndefTypeIntNoneTable" show="swAdvPLocativeIndefTypeIntNoCheck">
@@ -150,7 +150,7 @@
           <checkbox id="AdvPLocativeIndefTypeIntPhraseBefore" checked="yes" dataItem="locativeIndefTypeIntBefore">Avant l’indéfini</checkbox>
           <checkbox id="AdvPLocativeIndefTypeIntPhraseAfter" checked="yes" dataItem="locativeIndefTypeIntAfter">Après l’indéfini</checkbox>
           <checkbox id="AdvPLocativeIndefTypeIntPhraseBoth" checked="yes" dataItem="locativeIndefTypeIntBoth">De part et d’autre du mot indéfini</checkbox>
-          <checkbox id="AdvPLocativeIndefTypeIntPhraseOther" checked="yes" dataItem="locativeIndefTypeIntOther">Dans ma langue, ces mots interrogatifs de lieu se trouvent dans la position suivante par rapport au mot indéfini : <textBox  id="AdvPLocativeIndefTypeIntPhraseOtherContent" dataItem="locativeIndefTypeIntOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="AdvPLocativeIndefTypeIntPhraseOther" checked="yes" dataItem="locativeIndefTypeIntOther">Dans ma langue, ces mots interrogatifs de lieu se trouvent dans la position suivante par rapport au mot indéfini : <textBox  id="AdvPLocativeIndefTypeIntPhraseOtherContent" dataItem="locativeIndefTypeIntOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="AdvPLocativeIndefTypeIntPhraseNoCheckPrompt" show="swAdvPLocativeIndefTypeIntPhraseAndNoCheck">ATTENTION : Vous devez cocher au moins une case pour décrire la position de ces mots interrogatifs locatifs dans votre langue, sinon il faut changer la réponse et cocher une case différente.</prompt>
        <instruction  id="AdvPLocativeIndefTypeIntPhraseInstruction" show="swAdvPLocativeIndefTypeIntPhrase">In the lexicon, key the features <feature>makeAdv locative wh</feature> on the locative interrogative words.  Key the feature <feature>makeIndef</feature> on the indefinite word.</instruction>

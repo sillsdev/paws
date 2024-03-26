@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronIndefinite" count="7.6">
+<page id="PronIndefinite" count="8.7">
    <title level="2">Pronoms – Indéfinis</title>
    <introduction>Les <technicalTermRef term="ttIndefinite">indéfinis</technicalTermRef> constituent dernier type de pronoms. Il y a deux séries de pronoms indéfinis, mais toutes les langues ne les fusionnent pas dans un seul mot et emploient parfois un syntagme nominal pour le pronom:
       <ul>
@@ -17,7 +17,7 @@
           <prompt><br/>Nous commencerons par le première type ci-dessus, qui comprend un quantifieur tel que « tout le monde » ou « quelqu’un » (ou l’utilisation impersonnelle du nombre « un »).  Comment votre langue exprime-t-elle ces indéfinis ?  Cochez toutes les options correctes pour votre langue.  Si votre langue n’a pas ce type sorte d’indéfinis, ne cochez aucune des options ci-dessous mais choisissez la dernière ci-dessous et cochez « Aucun » .</prompt>
           <checkbox id="PronIndefTypeQWord" dataItem="indefQWord">Un quantifieur et un substantif générique fusionnent en un seul mot</checkbox>
           <checkbox id="PronIndefTypeQPhrase" dataItem="indefQPhrase">Un quantifieur se présente avec un substantif générique, mais ils ne fusionnent pas en un seul mot</checkbox>
-          <checkbox id="PronIndefTypeQOther" dataItem="indefQOther">Ma langue exprime ainsi les sens indéfinis :<textBox  id="PronIndefTypeQOtherContent" dataItem="indefQOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronIndefTypeQOther" dataItem="indefQOther">Ma langue exprime ainsi les sens indéfinis :<textBox  id="PronIndefTypeQOtherContent" dataItem="indefQOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="PronIndefTypeQNoCheckPrompt" show="swPronIndefTypeQNoCheck">ATTENTION : Il faut cocher au moins une case pour décrire comment votre langue exprime ces sens indéfinis. Si votre langue n’a pas ce type d’indéfini, il faut cocher « Aucun » ci-dessous.</prompt>
        <checkboxGroup id="PronIndefTypeQNoneTable" show="swPronIndefTypeQNoCheck">
@@ -35,7 +35,7 @@
           <checkbox id="PronIndefTypeQPQBefore" checked="yes" dataItem="indefTypeQPQBefore">Avant le substantif générique</checkbox>
           <checkbox id="PronIndefTypeQPQAfter" checked="yes" dataItem="indefTypeQPQAfter">Après le substantif générique</checkbox>
           <checkbox id="PronIndefTypeQPQBoth" checked="yes" dataItem="indefTypeQPQBoth">De part et d’autre du substantif générique</checkbox>
-          <checkbox id="PronIndefTypeQPQOther" checked="yes" dataItem="indefTypeQPQOther">Dans ma langue, ces quantifieurs sont placés de la façon suivant par rapport au substantif générique : <textBox  id="PronIndefTypeQPQOtherContent" dataItem="indefTypeQPQOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronIndefTypeQPQOther" checked="yes" dataItem="indefTypeQPQOther">Dans ma langue, ces quantifieurs sont placés de la façon suivant par rapport au substantif générique : <textBox  id="PronIndefTypeQPQOtherContent" dataItem="indefTypeQPQOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="PronIndefTypeQPPhraseNoCheckPrompt" show="swPronIndefTypeQPPhraseAndNoCheck">ATTENTION : Il faut cocher au moins une case pour décrire où ces quantifieurs et ces substantifs génériques se placent dans votre langue. Sinon, il faut changerla réponse ci-dessus et cocher une autre case.</prompt>
        <instruction id="PronIndefTypeQPhraseInstruction" show="swPronIndefTypeQPhrase">In the lexicon, mark the generic noun with the feature <feature>generic</feature> and make sure it has the category <category>N</category>.</instruction>           
@@ -49,7 +49,7 @@
           <prompt><br/>Considérez maintenant les indéfinis construits à l’aide d’un mot interrogatif et d’un mot indéfini, tels que <example>quiconque</example> ou <example>quelque chose</example>.  Comment votre langue exprime-t-elle ces indéfinis ?  Cochez toutes les options qui sont correctes dans votre langue.  Si votre langue n’a pas ce type d’indéfinis, ne cochez aucune des options ci-dessous mais cochez l’option « Aucun » ci-dessous.</prompt>
           <checkbox id="PronIndefTypeIntWord" dataItem="indefIntWord">Un mot interrogatif et un indéfini fusionnent en un seul mot</checkbox>
           <checkbox id="PronIndefTypeIntPhrase" dataItem="indefIntPhrase">Un mot interrogatif se présente avec un mot indéfini, mais ils ne fusionnent pas en un seul mot</checkbox>
-          <checkbox id="PronIndefTypeIntOther" dataItem="indefIntOther">Ma langue exprime ce type de sens indéfini de la façon suivante :<textBox  id="PronIndefTypeIntOtherContent" dataItem="indefIntOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronIndefTypeIntOther" dataItem="indefIntOther">Ma langue exprime ce type de sens indéfini de la façon suivante :<textBox  id="PronIndefTypeIntOtherContent" dataItem="indefIntOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>
        <prompt id="PronIndefTypeIntNoCheckPrompt" show="swPronIndefTypeIntNoCheck">ATTENTION : Il faut cocher au moins une case pour décrire comment votrelangue exprime ce type de sens indéfini. Si votre langue n’a pas ce type, il faut cocher l’option « Aucun » ci-dessous.</prompt>
        <checkboxGroup id="PronIndefTypeIntNoneTable" show="swPronIndefTypeIntNoCheck">
@@ -69,7 +69,7 @@
           <checkbox id="PronIndefTypeIntPhraseBefore" checked="yes" dataItem="indefTypeIntBefore">Avant l’indéfini</checkbox>
           <checkbox id="PronIndefTypeIntPhraseAfter" checked="yes" dataItem="indefTypeIntAfter">Après l’indéfini</checkbox>
           <checkbox id="PronIndefTypeIntPhraseBoth" checked="yes" dataItem="indefTypeIntBoth">De part et d’autre de l’indéfini</checkbox>
-          <checkbox id="PronIndefTypeIntPhraseOther" checked="yes" dataItem="indefTypeIntOther">Dans ma langue, ces mots interrogatifs se placent dans la position suivante par rapport au mot indéfini : <textBox  id="PronIndefTypeIntPhraseOtherContent" dataItem="indefTypeIntOther" cols="70" rows="1" kind="table"/></checkbox>
+          <checkbox id="PronIndefTypeIntPhraseOther" checked="yes" dataItem="indefTypeIntOther">Dans ma langue, ces mots interrogatifs se placent dans la position suivante par rapport au mot indéfini : <textBox  id="PronIndefTypeIntPhraseOtherContent" dataItem="indefTypeIntOther" cols="70" rows="1" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="PronIndefTypeIntPhraseNoCheckPrompt" show="swPronIndefTypeIntPhraseAndNoCheck">ATTENTION : Il faut cocher au moins une case pour décrire où ces mots interrogatifs et ces mots indéfinis se placent dans votre langue, sinon, il faut changer la réponse ci-dessus et cocher une autre case.</prompt>
        <instruction id="PronIndefTypeIntPhraseInstruction" show="swPronIndefTypeIntPhrase">In the lexicon, key the feature <feature>makeIndef</feature> on the indefinite word to give it a special category. </instruction>

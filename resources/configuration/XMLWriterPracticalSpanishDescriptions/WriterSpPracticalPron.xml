@@ -4176,7 +4176,7 @@ id="sPronRefl"
          <row show="swPronExclYes">
             <col><content>Primera</content></col>
             <col ><content>Exclusivo</content></col>
-            <col exampleLoc="pron/reflsFirstExclExample"/>
+            <col exampleLoc="pron/reflFirstExclExample"/>
             <col ><gloss><content>ESCRIBA LA GLOSA</content></gloss></col>
          </row>
          <row show="swPronExclYes">

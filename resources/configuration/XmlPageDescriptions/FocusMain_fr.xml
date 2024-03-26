@@ -48,7 +48,7 @@
    <checkbox id="TopicMarkerPosBefore" dataItem="topicMarkerBefore">Avant</checkbox>
            <checkbox id="TopicMarkerPosAfter" dataItem="topicMarkerAfter">Après</checkbox>
            <checkbox id="TopicMarkerPosBoth" dataItem="topicMarkerBoth">De part et d’autre du même topique</checkbox>
-           <checkbox id="TopicMarkerPosOther" dataItem="topicMarkerOther">Dans ma langue, le marqueur de topique peut se présenter dans la position suivante : <textBox  id="TopicMarkerOtherContent" dataItem="topicMarkerOther" rows="1" cols="70" kind="table"/></checkbox>
+           <checkbox id="TopicMarkerPosOther" dataItem="topicMarkerOther">Dans ma langue, le marqueur de topique peut se présenter dans la position suivante : <textBox  id="TopicMarkerOtherContent" dataItem="topicMarkerOther" rows="1" cols="70" kind="other"/></checkbox>
 </checkboxGroup>
         <prompt id="TopicMarkerPosNoCheckPrompt" show="swTopicMarkerYesWordAndNoCheck">ATTENTION :  Vous n’avez coché de boîte pour décrire où le marqueur de thème peut se présenter par rapport au constituant topicalisé dans votre langue.  Vous devez cocher une ou plusieurs boîtes, ou changer votre réponse et cocher  « Non, le topique n’est marqué que par sa position » ci-dessus.  Dans ce cas, vous ne devriez pas non plus avoir pas d’exemples de marqueurs de topique dans la boîte. </prompt>
        
@@ -110,7 +110,7 @@
           <checkbox id="FocusMarkerPosBefore" dataItem="focusMarkerBefore">Avant</checkbox>
            <checkbox id="FocusMarkerPosAfter" dataItem="focusMarkerAfter">Après</checkbox>
            <checkbox id="FocusMarkerPosBoth" dataItem="focusMarkerBoth">De part et d’autre d’un constituant focalisé</checkbox>
-           <checkbox id="FocusMarkerPosOther" dataItem="focusMarkerOther">Dans ma langue, le marqueur de focalisé peut se  placer dans la position suivante : <textBox  id="FocusMarkerOtherContent" dataItem="focusMarkerOther" rows="1" cols="70" kind="table"/></checkbox>
+           <checkbox id="FocusMarkerPosOther" dataItem="focusMarkerOther">Dans ma langue, le marqueur de focalisé peut se  placer dans la position suivante : <textBox  id="FocusMarkerOtherContent" dataItem="focusMarkerOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>
         <prompt id="FocusMarkerPosNoCheckPrompt" show="swFocusMarkerYesWordAndNoCheck">ATTENTION : Vous n’avez coché aucune boîte pour décrire la position du marqueur de focalisation par rapport au constituant focalisé dans votre langue.  Vous devez soit cocher une ou plusieurs boîtes, ou changer votre réponse ci-dessus en « Non, le constituant focalisé n’est marqué que par sa position ».  Dans ce cas, il ne faudrait pas non plus donner d’exemples de marqueurs focalisation dans la boîte.</prompt>
        

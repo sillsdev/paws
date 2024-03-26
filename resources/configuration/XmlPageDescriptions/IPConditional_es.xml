@@ -33,7 +33,7 @@
          <checkbox id="IPConditionEnclitic" dataItem="conditionEnclitic">Como enclíticos que se unen an final de la última palabra en la frase condicional</checkbox>
          <checkbox id="IPConditionPrefix" dataItem="conditionPrefix">Como prefijos que se unen al verbo en la frase condicional</checkbox>
          <checkbox id="IPConditionSuffix" dataItem="conditionSuffix">Como sufijos que se unen al verbo en la frase condicional</checkbox>
-         <checkbox id="IPConditionOther" dataItem="conditionOther">En mi lengua, los indicadores de la condición se unen: <textBox  id="IPConditionOtherContent" dataItem="conditionOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="IPConditionOther" dataItem="conditionOther">En mi lengua, los indicadores de la condición se unen: <textBox  id="IPConditionOtherContent" dataItem="conditionOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="IPConditionAttachesNoCheckPrompt" show="swIPConditionWordNoOrSomeandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se unen los indicadores de la condición, o cambia su respuesta de arriba a ‘Sí, todas son palabras independientes’ o ‘No, solamente utiliza el modo condicional en el verbo’.</prompt>
       
@@ -55,7 +55,7 @@
          <checkbox id="IPConditionPosBefore"  dataItem="conditionWordBefore">Antes del resto de la frase condicional</checkbox>
          <checkbox id="IPConditionPosAfter"  dataItem="conditionWordAfter">Después del resto de la frase condicional</checkbox>
          <checkbox id="IPConditionPosBoth"  dataItem="conditionWordBoth">En ambos lados de la misma frase condicional</checkbox>
-         <checkbox id="IPConditionPosOther"  dataItem="conditionWordOther">En mi lengua, pueden presentarse: <textBox  id="IPConditionPosOtherContent" dataItem="conditionWordOther" cols="70"  rows="1" kind="table"/></checkbox>
+         <checkbox id="IPConditionPosOther"  dataItem="conditionWordOther">En mi lengua, pueden presentarse: <textBox  id="IPConditionPosOtherContent" dataItem="conditionWordOther" cols="70"  rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="IPConditionPosNoCheckPrompt" show="swIPConditionYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan los indicadores de la condición con respecto del resto de la frase condicional, o cambia su respuesta de arriba a ‘No, todos se unen a otra palabra en la frase condicional’ o ‘No, solamente utiliza el modo condicional en el verbo’.</prompt>
       <instruction id="IPConditionYesInstruction" show="swIPConditionWordYesOrSome">In the lexicon, you will likely need to add a separate entry for each of these words, if they can also be used as adverbs and/or complementizers in embedded questions.  Give this entry the category <category>Cond</category> and the feature <feature>conditional</feature>.</instruction>

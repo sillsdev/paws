@@ -279,151 +279,152 @@
 	      <content> are shown in the following table.</content>
 	      </p>
 	      <example num="xCase" show="swNPCaseNotNoneAndCaseNYes">
-	         <table border="1">
-	            <caption>
-	               <content>Case markers</content>
-	            </caption>
-	            <headerRow>
-	               <headerCol>Morphemes</headerCol>
-	               <headerCol>Case</headerCol>
-	               <headerCol>Use</headerCol>
-	            </headerRow>
-	            <row show="swNPCaseNomOrSplit">
-	               <col exampleLoc="np/nominative"/>
-	               <col>
-	                  <content>nominative</content>
-	               </col>
-	               <col>
-	                  <content>subjects</content>
-	               </col>
-	            </row>
-	            <row show="swNPCaseNomOrSplit">
-	               <col exampleLoc="np/accusative"/>
-	               <col>
-	                  <content>accusative</content>
-	               </col>
-	               <col>
-	                  <content>direct objects and other uses</content>
-	               </col>
-	            </row>
-	            <row show="swNPCaseErgOrSplitNotPossErg">
-	               <col exampleLoc="np/ergative"/>
-	               <col>
-	                  <content>ergative</content>
-	               </col>
-	               <col>
-	                  <content>subjects of transitive verbs</content>
-	               </col>
-	            </row>
-	            <row show="swNPCaseErgOrSplitPossErg">
-	               <col exampleLoc="np/ergative"/>
-	               <col>
-	                  <content>ergative</content>
-	               </col>
-	               <col>
-	                  <content>subjects of transitive verbs and possessors</content>
-	               </col>
-	            </row>
-	            <row show="swNPCaseErgOrSplitNotPossAbs">
-	               <col exampleLoc="np/absolutive"/>
-	               <col>
-	                  <content>absolutive</content>
-	               </col>
-	               <col>
-	                  <content>subjects of intransitive verbs and objects of transitive verbs</content>
-	               </col>
-	            </row>
-	            <row show="swNPCaseErgOrSplitPossAbs">
-	               <col exampleLoc="np/absolutive"/>
-	               <col>
-	                  <content>absolutive</content>
-	               </col>
-	               <col>
-	                  <content>subjects of intransitive verbs and objects of transitive verbs and possessors</content>
-	               </col>
-	            </row>
-	            <row show="swNPCaseNomOrSplitOrErgPossGen">
-	               <col exampleLoc="np/genitive"/>
-	               <col>
-	                  <content>genitive</content>
-	               </col>
-	               <col>
-	                  <content>possessors</content>
-	               </col>
-	            </row>
-	            <row show="swExperiencerNo">
-	               <col exampleLoc="np/dative"/>
-	               <col>
-	                  <content>dative</content>
-	               </col>
-	               <col>
-	                  <content>indirect objects</content>
-	               </col>
-	            </row>
-	            <row show="swExperiencerNotNo">
-	               <col exampleLoc="np/dative"/>
-	               <col>
-	                  <content>dative</content>
-	               </col>
-	               <col>
-	                  <content>indirect objects and Experiencer subjects</content>
-	               </col>
-	            </row>
-	            <row>
-	               <col exampleLoc="np/ablative"/>
-	               <col>
-	                  <content>ablative</content>
-	               </col>
-	               <col>
-	                  <content>source or origin</content>
-	               </col>
-	            </row>
-	               <row>
-	                  <col exampleLoc="np/instrumental"/>
-	                  <col>
-	                     <content>instrumental</content>
-	                  </col>
-	                  <col>
-	                     <content>instrument, means or agency</content>
-	                  </col>
-	                  </row>
-	                  <row>
-	                     <col exampleLoc="np/locative"/>
-	                     <col>
-	                        <content>locative</content>
-	                     </col>
-	                     <col>
-	                        <content>location</content>
-	                     </col>
-	                     </row>
-	                     <row>
-	                        <col exampleLoc="np/vocative"/>
-	                        <col>
-	                           <content>vocative</content>
-	                        </col>
-	                        <col>
-	                           <content>direct address</content>
-	                        </col>
-	                        </row>
-	                        <row>
-	                           <col exampleLoc="np/oblique"/>
-	                           <col>
-	                              <content>oblique</content>
-	                           </col>
-	                           <col>
-	                              <content>general minor grammatical relation</content>
-	                           </col>
-	                           </row>
-	                           <row>
-	                              <col exampleLoc="np/other"/>
-	                              <col>
-	                                 <content>other</content>
-	                              </col>
-	                              <col>
-	                                 <content>any other specific markers</content>
-	                              </col>
-	                              </row>
-	         </table>
+	      	<table border="1">
+	      		<caption>
+	      			<content>Case markers</content>
+	      		</caption>
+	      		<headerRow>
+	      			<headerCol>Morphemes</headerCol>
+	      			<headerCol>Case</headerCol>
+	      			<headerCol>Use</headerCol>
+	      			<headerCol>Gloss</headerCol>
+	      		</headerRow>
+	      		<row show="swNPCaseNomOrSplit">
+	      			<col>
+	      				<content>nominative</content>
+	      			</col>
+	      			<col>
+	      				<content>subjects</content>
+	      			</col>
+	      			<col exampleLoc="np/nominative"/>
+	      		</row>
+	      		<row show="swNPCaseNomOrSplit">
+	      			<col>
+	      				<content>accusative</content>
+	      			</col>
+	      			<col>
+	      				<content>direct objects and other uses</content>
+	      			</col>
+	      			<col exampleLoc="np/accusative"/>
+	      		</row>
+	      		<row show="swNPCaseErgOrSplitNotPossErg">
+	      			<col>
+	      				<content>ergative</content>
+	      			</col>
+	      			<col>
+	      				<content>subjects of transitive verbs</content>
+	      			</col>
+	      			<col exampleLoc="np/ergative"/>
+	      		</row>
+	      		<row show="swNPCaseErgOrSplitPossErg">
+	      			<col>
+	      				<content>ergative</content>
+	      			</col>
+	      			<col>
+	      				<content>subjects of transitive verbs and possessors</content>
+	      			</col>
+	      			<col exampleLoc="np/ergative"/>
+	      		</row>
+	      		<row show="swNPCaseErgOrSplitNotPossAbs">
+	      			<col>
+	      				<content>absolutive</content>
+	      			</col>
+	      			<col>
+	      				<content>subjects of intransitive verbs and objects of transitive verbs</content>
+	      			</col>
+	      			<col exampleLoc="np/absolutive"/>
+	      		</row>
+	      		<row show="swNPCaseErgOrSplitPossAbs">
+	      			<col>
+	      				<content>absolutive</content>
+	      			</col>
+	      			<col>
+	      				<content>subjects of intransitive verbs and objects of transitive verbs and possessors</content>
+	      			</col>
+	      			<col exampleLoc="np/absolutive"/>
+	      		</row>
+	      		<row show="swNPCaseNomOrSplitOrErgPossGen">
+	      			<col>
+	      				<content>genitive</content>
+	      			</col>
+	      			<col>
+	      				<content>possessors</content>
+	      			</col>
+	      			<col exampleLoc="np/genitive"/>
+	      		</row>
+	      		<row show="swExperiencerNo">
+	      			<col>
+	      				<content>dative</content>
+	      			</col>
+	      			<col>
+	      				<content>indirect objects</content>
+	      			</col>
+	      			<col exampleLoc="np/dative"/>
+	      		</row>
+	      		<row show="swExperiencerNotNo">
+	      			<col>
+	      				<content>dative</content>
+	      			</col>
+	      			<col>
+	      				<content>indirect objects and Experiencer subjects</content>
+	      			</col>
+	      			<col exampleLoc="np/dative"/>
+	      		</row>
+	      		<row>
+	      			<col>
+	      				<content>ablative</content>
+	      			</col>
+	      			<col>
+	      				<content>source or origin</content>
+	      			</col>
+	      			<col exampleLoc="np/ablative"/>
+	      		</row>
+	      		<row>
+	      			<col>
+	      				<content>instrumental</content>
+	      			</col>
+	      			<col>
+	      				<content>instrument, means or agency</content>
+	      			</col>
+	      			<col exampleLoc="np/instrumental"/>
+	      		</row>
+	      		<row>
+	      			<col>
+	      				<content>locative</content>
+	      			</col>
+	      			<col>
+	      				<content>location</content>
+	      			</col>
+	      			<col exampleLoc="np/locative"/>
+	      		</row>
+	      		<row>
+	      			<col>
+	      				<content>vocative</content>
+	      			</col>
+	      			<col>
+	      				<content>direct address</content>
+	      			</col>
+	      			<col exampleLoc="np/vocative"/>
+	      		</row>
+	      		<row>
+	      			<col>
+	      				<content>oblique</content>
+	      			</col>
+	      			<col>
+	      				<content>general minor grammatical relation</content>
+	      			</col>
+	      			<col exampleLoc="np/oblique"/>
+	      		</row>
+	      		<row>
+	      			<col>
+	      				<content>other</content>
+	      			</col>
+	      			<col>
+	      				<content>any other specific markers</content>
+	      			</col>
+	      			<col exampleLoc="np/other"/>
+	      		</row>
+	      	</table>
 	      </example>	      
 	   </section2>
 	   

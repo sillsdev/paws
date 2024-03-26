@@ -95,6 +95,7 @@ transparent = 'yes' means do not show yellow background, let the grey background
 	transparent (yes | no) "no"
 	section CDATA #REQUIRED
 >
+<!ELEMENT gloss (#PCDATA) >
 <!ELEMENT help (#PCDATA)>
 <!ATTLIST help
 	href CDATA #REQUIRED
@@ -178,7 +179,7 @@ transparent = 'yes' means do not show yellow background, let the grey background
 <!ATTLIST td
 	colspan CDATA #IMPLIED
 >
-<!ELEMENT textBox EMPTY>
+<!ELEMENT textBox (gloss?)>
 <!ATTLIST textBox
 	id ID #REQUIRED
 	contenteditable (true | inherit | false) "inherit"
@@ -187,7 +188,7 @@ transparent = 'yes' means do not show yellow background, let the grey background
 	rows CDATA #IMPLIED
 	cols CDATA #IMPLIED
 	show IDREF #IMPLIED
-	kind (interlinear | table) "interlinear"
+	kind (interlinear | table | other) "interlinear"
 >
 <!ELEMENT th (#PCDATA) >
 <!ATTLIST th

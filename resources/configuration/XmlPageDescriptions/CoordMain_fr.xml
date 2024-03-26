@@ -10,38 +10,38 @@
    <form section="coord" transparent="no">
    	<prompt><br/>Saisissez la manière dont votre langue exprime ces conjonctions dans les boîtes ci-dessous.  S’il y a plus d’une option, saisissez chaque forme sur une ligne distincte.  Si la conjonction est un clitique,  indiquez le côté auquel il se rattache par un signe d’égalité.</prompt>
    	<prompt>Saisissez ici la/les conjonction(s) que votre langue utilise pour « et » :</prompt>
-		<textBox id="CoordAnd" dataItem="and" rows="3" kind="table"/>
+		<textBox id="CoordAnd" dataItem="and" rows="3" kind="table"><gloss>et</gloss></textBox>
 		<br/>
    	<prompt>Saisissez ici la/les construction(s) séquentielle(s) que votre langue utilise pour la coordination au niveau de la phrase avec le sens de « et plus » :</prompt>
-   	<textBox id="CoordSeq" dataItem="andThen" rows="3" kind="table"/>
+   	<textBox id="CoordSeq" dataItem="andThen" rows="3" kind="table"><gloss>et plus</gloss></textBox>
    	<br/>
    	<prompt>Saisissez ici la/les conjonction(s) qu’utilise votre langue pour « ou » :</prompt>
-		<textBox id="CoordOr" dataItem="or" rows="3" kind="table"/>
+		<textBox id="CoordOr" dataItem="or" rows="3" kind="table"><gloss>ou</gloss></textBox>
 		<br/>
    	<prompt>Saisissez ici la/les conjonction(s) qu’utilise votre langue pour « mais » :</prompt>
-		<textBox id="CoordBut" dataItem="but" rows="3" kind="table"/>
+		<textBox id="CoordBut" dataItem="but" rows="3" kind="table"><gloss>mais</gloss></textBox>
 		<br/>
    	<prompt>Saisissez ici la/les conjonction(s) qu’utilise votre langue pour « et/ou » :</prompt>
-		<textBox id="CoordAndOr" dataItem="andOr" rows="3" kind="table"/>
+		<textBox id="CoordAndOr" dataItem="andOr" rows="3" kind="table"><gloss>et/ou</gloss></textBox>
    	<instruction id="CoordAndOrInstruction">Note that a word like  ‘and/or’ which is written with a slash (/) in the word, must be entered in your lexicon with a backslash in front of the slash (eg.  »and\/or’) for <tool>CARLA Studio</tool> to process it correctly.</instruction>
       <br/>
    	<prompt>Si votre langue utilise « avec » comme une conjonction de syntagme nominal, saisissez-le ici :</prompt>
-		<textBox id="CoordWith" dataItem="with" rows="3" kind="table"/>
+		<textBox id="CoordWith" dataItem="with" rows="3" kind="table"><gloss>with</gloss></textBox>
 		<br/>
    	<prompt>Saisissez ici d’autres conjonctions qu’utilise votre langue seule entre des conjoncts :</prompt>
 		<textBox id="CoordOther" dataItem="other" rows="3" kind="table"/>
 		<br/>
    	<prompt>Saississez ici la/les conjonction(s) initiales avec les sens de « ou/soit » que votre langue utilise dans les constructions « ou/soit...ou/soit » (seulement la première partie) :</prompt>
-		<textBox id="CoordEither" dataItem="either" rows="3" kind="table"/>
+		<textBox id="CoordEither" dataItem="either" rows="3" kind="table"><gloss>ou/soit</gloss></textBox>
 		<br/>
    	<prompt>Saisissez la/les secondes conjonction(s) que votre langue utilise dans les constructions « ou/soit...ou/soit » (seulement la deuxième partie) :</prompt>
-      <textBox id="CoordEitherOr" dataItem="eitherOr" rows="3" kind="table"/>
+      <textBox id="CoordEitherOr" dataItem="eitherOr" rows="3" kind="table"><gloss>ou/soit</gloss></textBox>
       <br/>
    	<prompt>Saisissez ici la/les conjonction(s) négative(s) avec le sens de « ni » que votre langue utilise dans les constructions « ni...ni » (seulement la première partie) :</prompt>
-		<textBox id="CoordNeither" dataItem="neither" rows="3" kind="table"/>
+		<textBox id="CoordNeither" dataItem="neither" rows="3" kind="table"><gloss>ni</gloss></textBox>
 		<br/>
    	<prompt>Saisissez la/les construction(s) négative(s) avec le sens de « ni » que votre langue utilise, soit seules, soit dans les constructions « ni...ni » (seulement la deuxième partie ) :</prompt>
-		<textBox id="CoordNor" dataItem="nor" rows="3" kind="table"/>
+		<textBox id="CoordNor" dataItem="nor" rows="3" kind="table"><gloss>ni</gloss></textBox>
 		<br/>
 <radioGroup>
    <groupName dataItem="conjWord" default="yes">RCoordConjWord</groupName>
@@ -60,7 +60,7 @@
       	<prompt><br/>Comment les conjonctions se rattachent-elles dans une construction de coordination ?  Choisissez toutes les options valables dans votre langue.</prompt>
       	<checkbox id="CoordConjAttachesProclitic" dataItem="proclitic">Comme un proclitique qui se rattache au début du deuxième conjonct</checkbox>
       	<checkbox id="CoordConjAttachesEnclitic" dataItem="enclitic">Comme un enclitique qui se rattache à la fin du premier conjonct</checkbox>
-      	<checkbox id="CoordConjAttachesOther" dataItem="attachesOther">Dans ma langue, les conjonctions peuvent se rattacher de la façon suivante dans la construction de coordination : <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="table"/></checkbox>
+      	<checkbox id="CoordConjAttachesOther" dataItem="attachesOther">Dans ma langue, les conjonctions peuvent se rattacher de la façon suivante dans la construction de coordination : <textBox  id="CoordConjAttachesOtherContent" dataItem="attachesOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
    	<prompt id="CoordConjAttachesNoCheckPrompt" show="swCoordConjWordNotYesAndNoCheck">ATTENTION : Vous n’avez marqué aucune case pour décrire comment les conjonctions peuvent se rattacher à un mot dans votre langue.  Vous devez soit cocher une ou plusieurs cases, selon ce qui convient, ou changer votre réponse en « Oui, elles sont toutes des mots indépendants ».</prompt>
       

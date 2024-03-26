@@ -49,15 +49,15 @@ o <example>pocos</example>, y</li>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “todos”, con cada palabra en una línea separada.  (Si “todos” es un afijo o un <technicalTermRef term="ttClitic"/> que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPAllExample" dataItem="all" rows="3" kind="table"/>
+      <textBox id="QPAllExample" dataItem="all" rows="3" kind="table"><gloss>todos</gloss></textBox>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “casi”, con cada palabra en una línea separada.  (Si “casi” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"/>
+      <textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"><gloss>casi</gloss></textBox>
       <br/>
       <br/>
       <prompt>Escriba la manera que su lengua expresa “solamente” o “apenas”, con cada palabra en una línea separada.  (Si uno es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
-      <textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"/>
+      <textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"><gloss>solamente o apenas</gloss></textBox>
       <br/>
       <br/>
       <radioGroup>
@@ -77,7 +77,7 @@ o <example>pocos</example>, y</li>
          <checkbox id="QPNPDegreePosBefore"  dataItem="npDegreePosBefore">Antes</checkbox>
          <checkbox id="QPNPDegreePosAfter"  dataItem="npDegreePosAfter">Después</checkbox>
          <checkbox id="QPNPDegreePosBoth"  dataItem="npDegreePosBoth">En ambos lados en la misma oración</checkbox>
-         <checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">En mi lengua, pueden presentarse <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="QPNPDegreePosOther"  dataItem="npDegreePosOther">En mi lengua, pueden presentarse <textBox  id="QPNPDegreePosOtherContent" dataItem="npDegreePosOther" cols="70" rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QPNPDegreeWordNoCheckPrompt" show="swQPNPDegreeYesandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se presentan estos cuantificadores o palabras de grado con respecto al resto de la frase nominal en su lengua, o cambia la respuesta anterior a “No, todos se unen a otra palabra en la frase nominal”.</prompt>
       
@@ -95,7 +95,7 @@ o <example>pocos</example>, y</li>
          <checkbox id="QPNPDegreeEnclitic" dataItem="npDegreeTypeEnclitic">Como enclíticos que se unen al final de cualquier palabra con que termina la frase nominal</checkbox>
          <checkbox id="QPNPDegreePrefix" dataItem="npDegreeTypePrefix">Como prefijos que se unen al sustantivo principal de la frase nominal</checkbox>
          <checkbox id="QPNPDegreeSuffix" dataItem="npDegreeTypeSuffix">Como sufijos que se unen al sustantivo principal de la frase nominal</checkbox>
-         <checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">En mi lengua, estos elementos se unen: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="table"/></checkbox>
+         <checkbox id="QPNPDegreeOther" dataItem="npDegreeTypeOther">En mi lengua, estos elementos se unen: <textBox  id="QPNPDegreeTypeOtherContent" dataItem="npDegreeTypeOther" cols="70" rows="1" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QPNPDegreeAttachesNoCheckPrompt" show="swQPNPDegreeNoandNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo estos cuantificadores o palabras de grado se unen en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
       

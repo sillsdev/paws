@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronNP" count="7.7">
+<page id="PronNP" count="8.8">
 	<title level="2">Los pronombres  - Como frases nominales</title>
 
    <introduction>Los pronombres de cualquir tipo comúnmente se presentan solos en lugar de una frase nominal completa, pero a veces acompañados porque pueden ser modificados por una cláusula relativa.  En algunas lenguas los pronombres puenden ser modificados por una frase <technicalTermRef term="ttPartitive">partitiva</technicalTermRef> y en otras lenguas los pronombres se pueden modificar por los <technicalTermRef term="ttDeterminers">determinantes</technicalTermRef> y los cuantificadores o palabras de grado de ámbito amplio. Algunos ejemplos en español de este tipo final son los siguientes: </introduction>

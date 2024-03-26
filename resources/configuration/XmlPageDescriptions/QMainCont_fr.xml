@@ -50,7 +50,7 @@
          <checkbox id="QMainContBetweenEnclitic" dataItem="mainContBetweenEnclitic" show="swQContFrontYes">Comme un enclitique qui se rattache à la fin du dernier mot du syntagme interrogatif placé en tête, avant le reste de la question</checkbox>
          <checkbox id="QMainContCliticPrefix" dataItem="mainContPrefix">Comme un préfixe qui se rattache au verbe</checkbox>
          <checkbox id="QMainContCliticSuffix" dataItem="mainContSuffix">Comme un suffixe qui se rattache au verbe</checkbox>
-         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">Dans ma langue ces éléments peuvent se rattacher de la façon suivante : <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QMainContCliticOther" dataItem="mainContCliticOther">Dans ma langue ces éléments peuvent se rattacher de la façon suivante : <textBox  id="QMainContCliticOtherContent" dataItem="mainContCliticOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContCliticPosNoCheckPrompt" show="swQMainContWordNoOrSomeandNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire comment ces marqueurs se rattachent à un autre mot dans votre langue ; soit changer la réponse ci-dessus en « Oui ».</prompt>
       
@@ -71,7 +71,7 @@
          <checkbox id="QMainContPosBefore"  dataItem="mainContWordBefore">Avant le reste de la question</checkbox>
          <checkbox id="QMainContPosAfter"  dataItem="mainContWordAfter">Après le reste de la question</checkbox>
          <checkbox id="QMainContPosBoth"  dataItem="mainContWordBoth">De part et d’autre</checkbox>
-         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">Dans ma langue les marqueurs peuvent se placer dans la position suivante : <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QMainContPosOther"  dataItem="mainContWordOther">Dans ma langue les marqueurs peuvent se placer dans la position suivante : <textBox  id="QMainContPosOtherContent" dataItem="mainContWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContPosNoCheckPrompt" show="swQMainContWordYesOrSomeAndFrontNoOrOptionalOrFrontYesNotVSOandNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire dans votre langue où ces marqueurs interrogatifs se placent par rapport au reste de la question ; soit changer la réponse ci-dessus en « Non, ils se rattachent tous à un autre mot ».</prompt>
       <instruction id="QMainContWordYesInstruction" show="swQMainContWordYesOrSome">In the lexicon, if this word does not already have the category <category>C</category>, add the feature <feature>makeC</feature> to the feature line to change the category for the syntax.  (If a particular entry can also be used as another syntactic category, make a separate lexical entry for each use.)  In either case, add the feature <feature>question</feature>.  If a different marker is used in embedded questions, add the feature <feature>+root</feature> to this entry.  If this same marker is used in embedded questions, do not add any <feature>root</feature> feature.</instruction>
@@ -82,7 +82,7 @@
          <checkbox id="QMainContVSOAfterWh" dataItem="mainContVSOAfterWh">Immédiatement après le syntagme interrogatif placé en tête</checkbox>
          <checkbox id="QMainContVSOBeforeWh" dataItem="mainContVSOBeforeWh">Au début de la question, avant le syntagme interrogatif placé en tête</checkbox>
          <checkbox id="QMainContVSOEnd" dataItem="mainContVSOEnd">A la fin de la question</checkbox>
-         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">Dans ma langue, ils peuvent se placer dans la position suivante : <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QMainContVSOOther"  dataItem="mainContVSOOther">Dans ma langue, ils peuvent se placer dans la position suivante : <textBox  id="QMainContVSOOtherContent" dataItem="mainContVSOOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QMainContVSOPosNoCheckPrompt" show="swVSOWordFrontYesandNoCheck">ATTENTION : Vous devez spot cocher au moins une case pour décrire dans votre langue la position de ces marqueurs interrogatifs par rapport au syntagme interrogatif et au reste de la question ; soit changer la réponse ci-dessus en « Non, ils se rattachent tous à un autre mot ».</prompt>
       
@@ -96,7 +96,7 @@
          <radio id="QMainContRequiredNo" dataValue="no">Non, le marqueur est toujours facultatif</radio>
          <radio id="QMainContRequiredSpecial" dataValue="special">Non, le marqueur interrogatif n’est pas utilisé dans les conditions suivantes :</radio>
       </radioGroup>
-      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="table"/>
+      <textBox id="QMainContSpecialConditions" dataItem="mainContSpecialConditions" cols="70" rows="1" show="swQMainContRequiredSpecial" kind="other"/>
       
       <radioGroup id="QMainContAuxPosTable" show="swQMainContNoAux">
          <groupName dataItem="mainContAuxPos" default="unknown" position="yesHead">RQMainContAuxPos</groupName>

@@ -37,7 +37,7 @@
          <checkbox id="QEmbYNCliticEnclitic" dataItem="embYNEnclitic">As an enclitic which attaches to the end of the last word in the embedded Yes/No question</checkbox>
          <checkbox id="QEmbYNCliticPrefix" dataItem="embYNPrefix">As a prefix which attaches to the verb</checkbox>
          <checkbox id="QEmbYNCliticSuffix" dataItem="embYNSuffix">As a suffix which attaches to the verb</checkbox>
-         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbYNCliticOther" dataItem="embYNCliticOther">In my language, these elements may attach as follows: <textBox  id="QEmbYNCliticOtherContent" dataItem="embYNCliticOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNCliticPosNoCheckPrompt" show="swQEmbYNWordNoOrSomeandNoCheck">WARNING: You need to check at least one box to describe how these Yes/No question markers attach in your language, or change the answer above to ‘Yes, they are all independent words’.</prompt>
       <prompt id="QEmbYNCliticsExamplesPrompt" show="swQEmbYNCliticProcliticOrEnclitic"><br/>Key the clitics which are used to mark embedded Yes/No questions here, with an equal sign to indicate which side it attaches to the Yes/No question on:</prompt>    
@@ -57,7 +57,7 @@
          <checkbox id="QEmbYNPosBefore"  dataItem="embYNWordBefore">Before it</checkbox>
          <checkbox id="QEmbYNPosAfter"  dataItem="embYNWordAfter">After it</checkbox>
          <checkbox id="QEmbYNPosBoth"  dataItem="embYNWordBoth">On both sides at the same time</checkbox>
-         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">In my language, they may occur in the following position: <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70" kind="table"/></checkbox>
+         <checkbox id="QEmbYNPosOther"  dataItem="embYNWordOther">In my language, they may occur in the following position: <textBox  id="QEmbYNPosOtherContent" dataItem="embYNWordOther" rows="1" cols="70" kind="other"/></checkbox>
       </checkboxGroup>
       <prompt id="QEmbYNPosNoCheckPrompt" show="swQEmbYNWordYesOrSomeandNoCheck">WARNING: You need to check at least one box to describe where these Yes/No question markers occur with respect to the rest of the embedded question in your language, or change the answer above to ‘No, they all attach to another word’.</prompt>
       
