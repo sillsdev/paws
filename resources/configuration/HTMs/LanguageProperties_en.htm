@@ -108,6 +108,8 @@ td = document.getElementById("LangPropFreeGlossKeyboard");
 td.innerHTML =  pawsApp.getAnswerValue("//language/freeGlossKeyboard/description");
 td = document.getElementById("LangPropIPAKeyboard");
 td.innerHTML = pawsApp.getAnswerValue("//language/ipaKeyboard/description");
+td = document.getElementById("LangPropWriterKeyboard");
+td.innerHTML = pawsApp.getAnswerValue("//language/writerKeyboard/description");
 }
 
 function ButtonNext() {
@@ -230,6 +232,10 @@ below.</p>
   <tr id="useIpaKeyboard">
     <td>The name of the keyboard that will be used to key your IPA data is: </td>
     <td id="LangPropIPAKeyboard"></td>
+  </tr>
+  <tr>
+    <td>The name of the keyboard that will be used to key plain text for the writer output is: </td>
+    <td id="LangPropWriterKeyboard"></td>
   </tr>
 </table>
     <p>Click on the 'Change keyboards' button to change the keyboards to use.

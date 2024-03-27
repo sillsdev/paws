@@ -1310,6 +1310,9 @@ public class RootLayoutController implements Initializable {
 		case "v":
 			keyboardChanger.tryToChangeKeyboardTo(language.getVernacularKeyboard());
 			break;
+		case "w":
+			keyboardChanger.tryToChangeKeyboardTo(language.getWriterKeyboard());
+			break;
 		}
 	}
 

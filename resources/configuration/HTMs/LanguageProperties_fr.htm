@@ -60,6 +60,17 @@
         pawsApp.changeFontInfo();
         LangPropFont.value =  pawsApp.getAnswerValue("//language/font/fontName");
         }
+        function SetKeyboardValues() {
+        var td = document.getElementById("LangPropVernacularKeyboard");
+        td.innerHTML = pawsApp.getAnswerValue("//language/keyboard/description");
+        td = document.getElementById("LangPropFreeGlossKeyboard");
+        td.innerHTML =  pawsApp.getAnswerValue("//language/freeGlossKeyboard/description");
+        td = document.getElementById("LangPropIPAKeyboard");
+        td.innerHTML = pawsApp.getAnswerValue("//language/ipaKeyboard/description");
+        td = document.getElementById("LangPropWriterKeyboard");
+        td.innerHTML = pawsApp.getAnswerValue("//language/writerKeyboard/description");
+        }
+        
         function ButtonNext() {
         saveData();
         pawsApp.load("LanguageFilesNewMode");
@@ -111,8 +122,12 @@
                     <td id="LangPropFreeGlossKeyboard"></td>
                 </tr>
                 <tr id="useIpaKeyboard">
-                    <td>Le nom du clavier qui sera utilisé pour saisir les données de l'API est le suivant </td>
+                    <td>Le nom du clavier qui sera utilisé pour saisir les données de l'API est le suivant : </td>
                     <td id="LangPropIPAKeyboard"></td>
+                </tr>
+                <tr>
+                    <td>Le nom du clavier qui sera utilisé pour saisir du texte brut pour la sortie du rédacteur est : </td>
+                    <td id="LangPropWriterKeyboard"></td>
                 </tr>
             </table>
             <p>Cliquez sur le bouton "Changer de clavier" pour modifier les claviers à utiliser.

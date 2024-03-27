@@ -526,6 +526,9 @@ break;
 case "i":
 pawsApp.switchToIpaKeyboard();
 break;
+case "w":
+pawsApp.switchToWriterKeyboard();
+break;
 }
 }
 </script>
@@ -1953,7 +1956,7 @@ technicalTermRef
 		<xsl:param name="sMarginLeft" select="'0.5in'"/>
 		<xsl:element name="textarea">
 			<xsl:attribute name="class">vernacular</xsl:attribute>
-			<xsl:attribute name="onfocus">switchKeyboard('v')</xsl:attribute>
+			<xsl:attribute name="onfocus">switchKeyboard('w')</xsl:attribute>
 			<xsl:attribute name="onfocusout">saveData()</xsl:attribute>
 			<xsl:if test="string-length($sMarginLeft)&gt;0">
 				<xsl:attribute name="style">
@@ -2004,7 +2007,7 @@ technicalTermRef
 	&#xa;
 <xsl:element name="textarea">
 			<xsl:attribute name="style">margin-left: 0.5in</xsl:attribute>
-	<xsl:attribute name="onfocus">switchKeyboard('v')</xsl:attribute>
+	<xsl:attribute name="onfocus">switchKeyboard('w')</xsl:attribute>
 	<xsl:attribute name="onfocusout">saveData()</xsl:attribute>
 	        <xsl:attribute name="wrap">off</xsl:attribute>
 			<xsl:attribute name="rows">1</xsl:attribute>

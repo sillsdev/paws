@@ -76,6 +76,15 @@ public class WebPageInteractor {
 		return sOutValue;
 	}
 
+	public void createNewFormEntry(String sXPath, int index) {
+		language.createNewFormEntry(sXPath, index);
+	}
+
+	public int getFormsLength(String sXPath) {
+		int result = language.getFormsLength(sXPath);
+		return result;
+	}
+
 	public String getInterfaceLanguage() {
 		sOutValue = prefs.getLastLocaleLanguage();
 		if (StringUtilities.isNullOrEmpty(sOutValue)) {
@@ -255,8 +264,8 @@ public class WebPageInteractor {
 		String ksFontColor = sFontPath + "fontColor";
 		String ksBold = sFontPath + "@bold";
 		String ksItalic = sFontPath + "@italic";
-		String ksUnder = sFontPath + "@under";
-		String ksStrike = sFontPath + "@strike";
+//		String ksUnder = sFontPath + "@under";
+//		String ksStrike = sFontPath + "@strike";
 		final String ksTrue = "True";
 		final String ksFalse = "False";
 		final String kBold = "Bold";
@@ -348,6 +357,10 @@ public class WebPageInteractor {
 
 	public void switchToIpaKeyboard() {
 		controller.switchToKeyboard("i");
+	}
+
+	public void switchToWriterKeyboard() {
+		controller.switchToKeyboard("w");
 	}
 
 	public void setLanguage(Language language) {

@@ -33,9 +33,11 @@ public class Language {
 	KeyboardInfo vernacularKeyboard;
 	KeyboardInfo freeGlossKeyboard;
 	KeyboardInfo ipaKeyboard;
+	KeyboardInfo writerKeyboard;
 	static final String ksVernacularKeyboard = "//language/keyboard/";
 	static final String ksFreeGlossKeyboard = "//language/freeGlossKeyboard/";
 	static final String ksIpaKeyboard = "//language/ipaKeyboard/";
+	static final String ksWriterKeyboard = "//language/writerKeyboard/";
 
 	public Language() {
 		super(); 
@@ -87,6 +89,15 @@ public class Language {
 		setKeyboardValues(ksIpaKeyboard, ipaKeyboard);
 	}
 
+	public KeyboardInfo getWriterKeyboard() {
+		return writerKeyboard;
+	}
+
+	public void setWriterKeyboard(KeyboardInfo writerKeyboard) {
+		this.writerKeyboard = writerKeyboard;
+		setKeyboardValues(ksWriterKeyboard, writerKeyboard);
+	}
+
 	private void setKeyboardValues(String sPath, KeyboardInfo keyboardInfo) {
 		setValue(sPath + "description", keyboardInfo.getDescription());
 		setValue(sPath + "SLocale", keyboardInfo.getSLocale());
@@ -98,6 +109,7 @@ public class Language {
 		vernacularKeyboard = createKeyboardInfoOfKeyboard(ksVernacularKeyboard);
 		freeGlossKeyboard = createKeyboardInfoOfKeyboard(ksFreeGlossKeyboard);
 		ipaKeyboard = createKeyboardInfoOfKeyboard(ksIpaKeyboard);
+		writerKeyboard = createKeyboardInfoOfKeyboard(ksWriterKeyboard);
 	}
 
 	private final KeyboardInfo createKeyboardInfoOfKeyboard(String sKeyboardPath) {

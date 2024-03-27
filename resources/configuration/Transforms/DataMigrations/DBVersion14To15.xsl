@@ -40,6 +40,11 @@
 				<SLocale>en</SLocale>
 				<windowsLangID>0</windowsLangID>
 			</ipaKeyboard>
+			<writerKeyboard>
+				<description>English</description>
+				<SLocale>en</SLocale>
+				<windowsLangID>0</windowsLangID>
+			</writerKeyboard>
 		</language>
 	</xsl:template>
 </xsl:stylesheet>

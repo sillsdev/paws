@@ -73,6 +73,8 @@
         td.innerHTML =  pawsApp.getAnswerValue("//language/freeGlossKeyboard/description");
         td = document.getElementById("LangPropIPAKeyboard");
         td.innerHTML = pawsApp.getAnswerValue("//language/ipaKeyboard/description");
+        td = document.getElementById("LangPropWriterKeyboard");
+        td.innerHTML = pawsApp.getAnswerValue("//language/writerKeyboard/description");
         }
         function ButtonNext() {
         saveData();
@@ -127,6 +129,10 @@
         <tr id="useIpaKeyboard">
             <td>El nombre del teclado que se utilizará para teclear sus datos API es: </td>
             <td id="LangPropIPAKeyboard"></td>
+        </tr>
+        <tr>
+            <td>El nombre del teclado que se utilizará para teclear texto sin formato para la salida del escritor es: </td>
+            <td id="LangPropWriterKeyboard"></td>
         </tr>
     </table>
     <p>Haz clic en el botón "Cambiar teclados" para cambiar los teclados a utilizar.

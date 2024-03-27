@@ -38,10 +38,13 @@ public class KeyboardChooserController implements Initializable {
 	private ComboBox<KeyboardInfo> freeGloss = new ComboBox<KeyboardInfo>();
 	@FXML
 	private ComboBox<KeyboardInfo> ipa = new ComboBox<KeyboardInfo>();
+	@FXML
+	private ComboBox<KeyboardInfo> writer = new ComboBox<KeyboardInfo>();
 
 	private KeyboardInfo vernacularKeyboardInfo = new KeyboardInfo(new Locale("en"), "English"); 
 	private KeyboardInfo freeGlossKeyboardInfo = new KeyboardInfo(new Locale("en"), "English"); 
 	private KeyboardInfo ipaKeyboardInfo = new KeyboardInfo(new Locale("en"), "English"); 
+	private KeyboardInfo writerKeyboardInfo = new KeyboardInfo(new Locale("en"), "English");
 	private Text keyboardText = new Text();
 	
 	Stage dialogStage;
@@ -130,6 +133,22 @@ public class KeyboardChooserController implements Initializable {
 			keyboardText.setText(newValue.getDescription());
 			ipaKeyboardInfo = newValue;
 		});
+
+		writer.setItems(activeKeyboards);
+		writer.setConverter(new StringConverter<KeyboardInfo>() {
+			@Override
+			public String toString(KeyboardInfo object) {
+				return object.getDescription();
+			}
+			@Override
+			public KeyboardInfo fromString(String string) {
+				return null;
+			}
+		});
+		writer.valueProperty().addListener((observable, oldValue, newValue) -> {
+			keyboardText.setText(newValue.getDescription());
+			writerKeyboardInfo = newValue;
+		});
 	}
 
 	/**
@@ -149,6 +168,8 @@ public class KeyboardChooserController implements Initializable {
 		freeGloss.setValue(freeGlossKeyboardInfo);
 		ipaKeyboardInfo = lang.getIpaKeyboard();
 		ipa.setValue(ipaKeyboardInfo);
+		writerKeyboardInfo = lang.getWriterKeyboard();
+		writer.setValue(writerKeyboardInfo);
 	}
 
 	/**
@@ -168,6 +189,7 @@ public class KeyboardChooserController implements Initializable {
 		language.setVernacularKeyboard(vernacularKeyboardInfo);
 		language.setFreeGlossKeyboard(freeGlossKeyboardInfo);
 		language.setIpaKeyboard(ipaKeyboardInfo);
+		language.setWriterKeyboard(writerKeyboardInfo);
 		okClicked = true;
 		dialogStage.close();
 	}
