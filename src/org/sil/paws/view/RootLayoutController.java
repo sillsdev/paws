@@ -1305,21 +1305,19 @@ public class RootLayoutController implements Initializable {
 		}
 
 	}
-	public KeyboardInfo showKeyboardInfo(KeyboardInfo kbInfo) {
-		ChoiceDialog<KeyboardInfo> dialog = new ChoiceDialog<KeyboardInfo>();
-//		dialog.setTitle(RESOURCE_FACTORY.getStringBinding("keyboard.header").get());
-//		dialog.setHeaderText(RESOURCE_FACTORY.getStringBinding("keyboard.content").get());
-//		dialog.setContentText(RESOURCE_FACTORY.getStringBinding("keyboard.choose").get());
-//		dialog.setSelectedItem(applicationPreferences.getTreeDescriptionFontSize());
-		Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
-		stage.getIcons().add(mainApp.getNewMainIconImage());
-		Optional<KeyboardInfo> result = dialog.showAndWait();
-		if (result.isPresent()) {
-//			defaultFont = new Font(result.get());
-//			applicationPreferences.setTreeDescriptionFontSize(result.get());
-//			computeHighlighting();
+
+	public void switchToKeyboard(String sCode) {
+		switch (sCode) {
+		case "f":
+			keyboardChanger.tryToChangeKeyboardTo(language.getFreeGlossKeyboard());
+			break;
+		case "i":
+			keyboardChanger.tryToChangeKeyboardTo(language.getIpaKeyboard());
+			break;
+		case "v":
+			keyboardChanger.tryToChangeKeyboardTo(language.getVernacularKeyboard());
+			break;
 		}
-		return kbInfo;
 	}
 
 	public void showLanguageLastPage() {

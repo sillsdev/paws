@@ -434,6 +434,7 @@ var newTextArea = document.createElement("textarea");
 newTextArea.setAttribute("rows", "1");
 newTextArea.setAttribute("contenteditable", "true");
 newTextArea.setAttribute("class", cssClass);
+newTextArea.setAttribute("onfocus", "switchKeyboard('" + code + "')");
 newTextArea.setAttribute("onfocusout", "saveData()");
 newTextArea.setAttribute("wrap", "off");
 newTextArea.setAttribute("cols", "40");
@@ -512,6 +513,19 @@ CreateExampleEntryLineLoad(sId,sDataPath,i,"v","vernacular","");
 CreateExampleEntryLineLoad(sId,sDataPath,i,"i","ipa","");
 </xsl:if>
 CreateExampleEntryLineLoad(sId,sDataPath,i,"f","gloss",defaultGloss);
+}
+}
+function switchKeyboard(code) {
+switch(code) {
+case "v":
+pawsApp.switchToVernacularKeyboard();
+break;
+case "f":
+pawsApp.switchToFreeGlossKeyboard();
+break;
+case "i":
+pawsApp.switchToIpaKeyboard();
+break;
 }
 }
 </script>
@@ -1898,6 +1912,11 @@ technicalTermRef
 			<xsl:attribute name="class">
 				<xsl:value-of select="$type"/>
 			</xsl:attribute>
+			<xsl:attribute name="onfocus">
+				<xsl:text>switchKeyboard('</xsl:text>
+				<xsl:value-of select="substring($type,1,1)"/>
+				<xsl:text>')</xsl:text>
+			</xsl:attribute>
 			<xsl:attribute name="onfocusout">saveData()</xsl:attribute>
 			<xsl:if test="$prmRtlScript='True'">
 				<xsl:attribute name="style">direction: rtl</xsl:attribute>
@@ -1934,6 +1953,7 @@ technicalTermRef
 		<xsl:param name="sMarginLeft" select="'0.5in'"/>
 		<xsl:element name="textarea">
 			<xsl:attribute name="class">vernacular</xsl:attribute>
+			<xsl:attribute name="onfocus">switchKeyboard('v')</xsl:attribute>
 			<xsl:attribute name="onfocusout">saveData()</xsl:attribute>
 			<xsl:if test="string-length($sMarginLeft)&gt;0">
 				<xsl:attribute name="style">
@@ -1984,7 +2004,8 @@ technicalTermRef
 	&#xa;
 <xsl:element name="textarea">
 			<xsl:attribute name="style">margin-left: 0.5in</xsl:attribute>
-	        <xsl:attribute name="onfocusout">saveData()</xsl:attribute>
+	<xsl:attribute name="onfocus">switchKeyboard('v')</xsl:attribute>
+	<xsl:attribute name="onfocusout">saveData()</xsl:attribute>
 	        <xsl:attribute name="wrap">off</xsl:attribute>
 			<xsl:attribute name="rows">1</xsl:attribute>
 			<xsl:attribute name="cols">

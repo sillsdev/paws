@@ -338,6 +338,18 @@ public class WebPageInteractor {
 		controller.handleSaveLanguage();
 	}
 
+	public void switchToVernacularKeyboard() {
+		controller.switchToKeyboard("v");
+	}
+
+	public void switchToFreeGlossKeyboard() {
+		controller.switchToKeyboard("f");
+	}
+
+	public void switchToIpaKeyboard() {
+		controller.switchToKeyboard("i");
+	}
+
 	public void setLanguage(Language language) {
 		this.language = language;
 	}
