@@ -233,6 +233,10 @@ public class WebPageInteractor {
 		alert.showAndWait();
 	}
 
+	public final void showSomething(String something) {
+		System.out.println(something);
+	}
+
 	public final void changeFontInfo() {
 		changeFontInfoOfFont("//language/font/");
 	}
@@ -295,12 +299,19 @@ public class WebPageInteractor {
 		controller.initCSS();
 	}
 
+	public final void changeKeyboards() {
+		controller.handleKeyboards();
+		changeKeyboardInfo();
+		changeFreeGlossKeyboardInfo();
+		changeIpaKeyboardInfo();
+	}
+
 	public final void changeKeyboardInfo() {
 		changeKeyboardInfoOfKeyboard("//language/keyboard/");
 	}
 
-	public final void changeFreeKeyboardInfo() {
-		changeKeyboardInfoOfKeyboard("//language/freeKeyboard/");
+	public final void changeFreeGlossKeyboardInfo() {
+		changeKeyboardInfoOfKeyboard("//language/freeGlossKeyboard/");
 	}
 
 	public final void changeIpaKeyboardInfo() {
@@ -308,23 +319,23 @@ public class WebPageInteractor {
 	}
 
 	private final void changeKeyboardInfoOfKeyboard(String sKeyboardPath) {
-		String ksKeyboardDescription = sKeyboardPath + "keyboardDescription";
-		String ksKeyboardLocale = sKeyboardPath + "keyboardLocale";
-		String ksKeyboardWindowsLangID = sKeyboardPath + "keyboardWindowsLangID";
+		String ksKeyboardDescription = sKeyboardPath + "description";
+		String ksKeyboardLocale = sKeyboardPath + "SLocale";
+		String ksKeyboardWindowsLangID = sKeyboardPath + "windowsLangID";
 		String sKeyboardDescription = language.getValue(ksKeyboardDescription);
 		String sKeyboardLocale = language.getValue(ksKeyboardLocale);
 		String sKeyboardWindowsLangID = language.getValue(ksKeyboardWindowsLangID);
 		Locale locale = new Locale(sKeyboardLocale);
+		if (sKeyboardWindowsLangID.equals("")) {
+			sKeyboardWindowsLangID = "0";
+		}
 		KeyboardInfo keyboardInfo = new KeyboardInfo(locale, sKeyboardDescription, Integer.parseInt(sKeyboardWindowsLangID));
-		keyboardInfo = controller.showKeyboardInfo(keyboardInfo);
 		// set the values
 		language.setValue(ksKeyboardDescription, keyboardInfo.getDescription());
 		// TODO: following is wrong; how we do this?
 		language.setValue(ksKeyboardLocale, String.valueOf(keyboardInfo.getLocale()));
-		sKeyboardWindowsLangID = locale.getDisplayName();
 		language.setValue(ksKeyboardWindowsLangID, sKeyboardWindowsLangID);
 		controller.handleSaveLanguage();
-		controller.initCSS();
 	}
 
 	public void setLanguage(Language language) {

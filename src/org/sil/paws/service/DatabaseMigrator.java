@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2023 SIL International 
+// Copyright (c) 2018-2024 SIL International 
 // This software is licensed under the LGPL, version 2.1 or later 
 // (http://www.gnu.org/licenses/lgpl-2.1.html) 
 /**
@@ -50,6 +50,7 @@ public class DatabaseMigrator {
 			{"11", "DBVersion11To12.xsl"},
 			{"12", "DBVersion12To13.xsl"},
 			{"13", "DBVersion13To14.xsl"},
+			{"14", "DBVersion14To15.xsl"},
 	};
 	File databaseFile;
 

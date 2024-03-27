@@ -33,6 +33,8 @@
   
   LangPropIpaFont.value =  pawsApp.getAnswerValue("//language/ipaFont/fontName");
   
+  SetKeyboardValues();
+  
   ShowBackNextButtons.style.display = "none";
   Return.style.display = "";
   
@@ -93,16 +95,35 @@
   Refresh();
   }
 
-  function ButtonNext() {
+function ButtonLangPropKeyboards() {
+saveData();
+pawsApp.changeKeyboards();
+SetKeyboardValues();
+}
+
+function SetKeyboardValues() {
+var td = document.getElementById("LangPropVernacularKeyboard");
+td.innerHTML = pawsApp.getAnswerValue("//language/keyboard/description");
+td = document.getElementById("LangPropFreeGlossKeyboard");
+td.innerHTML =  pawsApp.getAnswerValue("//language/freeGlossKeyboard/description");
+td = document.getElementById("LangPropIPAKeyboard");
+td.innerHTML = pawsApp.getAnswerValue("//language/ipaKeyboard/description");
+}
+
+function ButtonNext() {
   saveData();
   pawsApp.load("LanguageFilesNewMode");
   }
   function Refresh() {
   var valArray = new Array();
-  if (Blessymol.checked)
+  if (Blessymol.checked) {
   UseIpa.style.display = "";
-  else
+  useIpaKeyboard.style.display = "";
+  }
+  else {
   UseIpa.style.display = "none";
+  useIpaKeyboard.style.display = "none";
+  }
   }
 </script></head>
 <body>
@@ -193,7 +214,30 @@ below.</p>
   <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="40" id="LangPropFreeFont" name="LangPropFreeFont" contenteditable="false"></textarea>
   &nbsp;&nbsp;&nbsp;
   <input type="button" value=" Change Font " name="BLangPropFreeFont" id="BLangPropFreeFont" onclick="ButtonLangPropFreeFont()" style="">
- <div id="ShowBackNextButtons">
+    <p>&nbsp;</p>
+<table style="margin-left: 0.125in" border="1">
+  <tr>
+    <th colspan="2">Keyboards to Use</th>
+  </tr>
+  <tr>
+    <td>The name of the keyboard that will be used to key your language data is: </td>
+    <td id="LangPropVernacularKeyboard"></td>
+  </tr>
+  <tr>
+    <td>The name of the keyboard that will be used to key your free translation and gloss data is: </td>
+    <td id="LangPropFreeGlossKeyboard"></td>
+  </tr>
+  <tr id="useIpaKeyboard">
+    <td>The name of the keyboard that will be used to key your IPA data is: </td>
+    <td id="LangPropIPAKeyboard"></td>
+  </tr>
+</table>
+    <p>Click on the 'Change keyboards' button to change the keyboards to use.
+      &nbsp;&nbsp;&nbsp;
+      <input type="button" value=" Change Keyboards " name="BLangPropKeyboards" id="BLangPropKeyboards" onclick="ButtonLangPropKeyboards()" style=""/>
+    </p>
+    <p>&nbsp;</p>
+    <div id="ShowBackNextButtons">
 <br/><input type="button" value="Next >" name="BNext" id="LangPropNext" onclick="ButtonNext()" style="width: 78px; height: 24px">
 </div>
 </div>

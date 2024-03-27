@@ -175,6 +175,7 @@ public class MainApp extends Application implements MainAppUtilities {
 		}
 		xmlBackEndProvider.loadLanguageDataFromFile(file);
 		language = xmlBackEndProvider.getLanguage();
+		language.initializeKeyboards();
 		applicationPreferences.setLastOpenedFilePath(file);
 		applicationPreferences.setLastOpenedDirectoryPath(file.getParent());
 		updateStageTitle(file);

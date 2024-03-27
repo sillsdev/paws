@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="236.0" prefWidth="620.0" stylesheets="@paws.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sil.paws.view.KeyboardChooserController">
+   <children>
+      <ButtonBar layoutX="347.0" layoutY="191.0" prefHeight="40.0" prefWidth="272.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="1.0">
+        <buttons>
+          <Button defaultButton="true" mnemonicParsing="true" onAction="#handleOk" text="%label.ok" />
+            <Button cancelButton="true" mnemonicParsing="true" onAction="#handleCancel" text="%label.cancel" />
+        </buttons>
+      </ButtonBar>
+      <GridPane layoutX="14.0" layoutY="51.0" prefHeight="120.0" prefWidth="482.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="600.0" minWidth="327.66668701171875" prefWidth="300.6666259765625" />
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="282.33331298828125" minWidth="10.0" prefWidth="209.3333740234375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints vgrow="SOMETIMES" /> <!-- maxHeight="93.0" minHeight="10.0" prefHeight="66.0"  -->
+          <RowConstraints vgrow="SOMETIMES" /> <!-- maxHeight="128.0" minHeight="10.0" prefHeight="73.0"  -->
+          <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="%keyboarddialog.vernacular" wrapText="true" GridPane.rowIndex="1" />
+            <Label text="%keyboarddialog.freegloss" wrapText="true" GridPane.rowIndex="2" />
+            <Label text="%keyboarddialog.ipa" wrapText="true" GridPane.rowIndex="3" />
+            <ComboBox fx:id="vernacular" prefWidth="209.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="freeGloss" prefWidth="209.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="ipa" prefWidth="209.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

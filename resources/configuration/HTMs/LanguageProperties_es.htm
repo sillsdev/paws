@@ -23,6 +23,8 @@
         LangPropRTLLTR.checked = true; else
         LangPropRTLRTL.checked = true;
         
+        SetKeyboardValues();
+        
         ShowBackNextButtons.style.display = "none";
         Return.style.display = "";
         
@@ -57,6 +59,20 @@
         saveData();
         pawsApp.changeFontInfo();
         LangPropFont.value =  pawsApp.getAnswerValue("//language/font/fontName");
+        }
+        function ButtonLangPropKeyboards() {
+        saveData();
+        pawsApp.changeKeyboards();
+        SetKeyboardValues();
+        }
+        
+        function SetKeyboardValues() {
+        var td = document.getElementById("LangPropVernacularKeyboard");
+        td.innerHTML = pawsApp.getAnswerValue("//language/keyboard/description");
+        td = document.getElementById("LangPropFreeGlossKeyboard");
+        td.innerHTML =  pawsApp.getAnswerValue("//language/freeGlossKeyboard/description");
+        td = document.getElementById("LangPropIPAKeyboard");
+        td.innerHTML = pawsApp.getAnswerValue("//language/ipaKeyboard/description");
         }
         function ButtonNext() {
         saveData();
@@ -95,7 +111,30 @@
 <td width="99%" id="LangPropRTLRTLRPrompt" onclick="RLangPropRTL(LangPropRTLRTL)" value="True" onmouseover="this.style.cursor='default'">De derecha a izquierda</td>
 </tr>
 </table>
-<div id="ShowBackNextButtons">
+    <p>&nbsp;</p>
+    <table style="margin-left: 0.125in" border="1">
+        <tr>
+            <th colspan="2">Teclados a utilizar</th>
+        </tr>
+        <tr>
+            <td>El nombre del teclado que se utilizará para teclear sus datos lingüísticos es: </td>
+            <td id="LangPropVernacularKeyboard"></td>
+        </tr>
+        <tr>
+            <td>El nombre del teclado que se utilizará para teclear sus datos de traducción libre y glosa es: </td>
+            <td id="LangPropFreeGlossKeyboard"></td>
+        </tr>
+        <tr id="useIpaKeyboard">
+            <td>El nombre del teclado que se utilizará para teclear sus datos API es: </td>
+            <td id="LangPropIPAKeyboard"></td>
+        </tr>
+    </table>
+    <p>Haz clic en el botón "Cambiar teclados" para cambiar los teclados a utilizar.
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" value=" Cambiar Teclados " name="BLangPropKeyboards" id="BLangPropKeyboards" onclick="ButtonLangPropKeyboards()" style=""/>
+    </p>
+    <p>&nbsp;</p>
+    <div id="ShowBackNextButtons">
     <br/><input type="button" value="Próximo >" name="BNext" id="LangPropNext" onclick="ButtonNext()" style="width: 78px; height: 24px">
 </div>
 </div>

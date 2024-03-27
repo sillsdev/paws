@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- transform to convert PAWS answer file from dbversion 12 to 13 (convert #PCDATA examples to form wiht vernacular, ipa, and gloss for table-based examples)
+<!-- transform to convert PAWS answer file from dbversion 13 to 14 (convert #PCDATA examples to form with vernacular, ipa, and gloss for table-based examples)
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>

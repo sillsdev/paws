@@ -5,12 +5,15 @@
  */
 package org.sil.paws.model;
 
+import java.util.Locale;
+
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import org.sil.utility.service.keyboards.KeyboardInfo;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -31,6 +34,12 @@ import com.sun.org.apache.xpath.internal.NodeSet;
 public class Language {
 
 	Document answersDOM;
+	KeyboardInfo vernacularKeyboard;
+	KeyboardInfo freeGlossKeyboard;
+	KeyboardInfo ipaKeyboard;
+	static final String ksVernacularKeyboard = "//language/keyboard/";
+	static final String ksFreeGlossKeyboard = "//language/freeGlossKeyboard/";
+	static final String ksIpaKeyboard = "//language/ipaKeyboard/";
 
 	public Language() {
 		super(); 
@@ -39,6 +48,7 @@ public class Language {
 	public Language(Document answersDOM) {
 		super();
 		this.answersDOM = answersDOM;
+		initializeKeyboards();
 	}
 
 	public Document getAnswersDOM() {
@@ -54,6 +64,61 @@ public class Language {
 		return code;
 	}
 	
+	public KeyboardInfo getVernacularKeyboard() {
+		return vernacularKeyboard;
+	}
+
+	public void setVernacularKeyboard(KeyboardInfo vernacularKeyboard) {
+		this.vernacularKeyboard = vernacularKeyboard;
+		setKeyboardValues(ksVernacularKeyboard, vernacularKeyboard);
+	}
+
+	public KeyboardInfo getFreeGlossKeyboard() {
+		return freeGlossKeyboard;
+	}
+
+	public void setFreeGlossKeyboard(KeyboardInfo freeGlossKeyboard) {
+		this.freeGlossKeyboard = freeGlossKeyboard;
+		setKeyboardValues(ksFreeGlossKeyboard, freeGlossKeyboard);
+	}
+
+	public KeyboardInfo getIpaKeyboard() {
+		return ipaKeyboard;
+	}
+
+	public void setIpaKeyboard(KeyboardInfo ipaKeyboard) {
+		this.ipaKeyboard = ipaKeyboard;
+		setKeyboardValues(ksIpaKeyboard, ipaKeyboard);
+	}
+
+	private void setKeyboardValues(String sPath, KeyboardInfo keyboardInfo) {
+		setValue(sPath + "description", keyboardInfo.getDescription());
+		setValue(sPath + "SLocale", keyboardInfo.getSLocale());
+		int id = keyboardInfo.getWindowsLangID();
+		setValue(sPath + "windowsLangID", Integer.toString(id));
+	}
+
+	public void initializeKeyboards() {
+		vernacularKeyboard = createKeyboardInfoOfKeyboard(ksVernacularKeyboard);
+		freeGlossKeyboard = createKeyboardInfoOfKeyboard(ksFreeGlossKeyboard);
+		ipaKeyboard = createKeyboardInfoOfKeyboard(ksIpaKeyboard);
+	}
+
+	private final KeyboardInfo createKeyboardInfoOfKeyboard(String sKeyboardPath) {
+		String ksKeyboardDescription = sKeyboardPath + "description";
+		String ksKeyboardLocale = sKeyboardPath + "SLocale";
+		String ksKeyboardWindowsLangID = sKeyboardPath + "windowsLangID";
+		String sKeyboardDescription = getValue(ksKeyboardDescription);
+		String sKeyboardLocale = getValue(ksKeyboardLocale);
+		String sKeyboardWindowsLangID = getValue(ksKeyboardWindowsLangID);
+		Locale locale = new Locale(sKeyboardLocale);
+		if (sKeyboardWindowsLangID.equals("")) {
+			sKeyboardWindowsLangID = "0";
+		}
+		KeyboardInfo keyboardInfo = new KeyboardInfo(locale, sKeyboardDescription, Integer.parseInt(sKeyboardWindowsLangID));
+		return keyboardInfo;
+	}
+
 	public int getFormsLength(String XPath) {
 		int result = 1;
 		XPathFactory xPathfactory = XPathFactory.newInstance();

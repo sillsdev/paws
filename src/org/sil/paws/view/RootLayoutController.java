@@ -72,8 +72,8 @@ import javafx.util.Duration;
 import netscape.javascript.JSObject;
 
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
-import org.sil.lingtree.view.KeyboardChooserController;
-import org.sil.lingtree.view.RootLayoutController;
+import org.sil.paws.view.KeyboardChooserController;
+import org.sil.paws.view.RootLayoutController;
 import org.sil.paws.model.Keyboard;
 import org.sil.paws.model.FontInfo;
 import org.sil.paws.ApplicationPreferences;
@@ -1279,8 +1279,7 @@ public class RootLayoutController implements Initializable {
 		return fontInfo;
 	}
 
-	@FXML
-	private void handleKeyboards() {
+	public void handleKeyboards() {
 		try {
 			// Load the fxml file and create a new stage for the popup.
 			Stage dialogStage = new Stage();
@@ -1292,11 +1291,14 @@ public class RootLayoutController implements Initializable {
 
 			KeyboardChooserController controller = loader.getController();
 			controller.setDialogStage(dialogStage);
-			controller.setData(ltTree);
+			controller.setData(language);
 			dialogStage.setResizable(false);
 			dialogStage.showAndWait();
 			if (controller.isOkClicked()) {
-				markAsDirty();
+				language.setVernacularKeyboard(controller.getVernacularKeyboardInfo());
+				language.setFreeGlossKeyboard(controller.getFreeGlossKeyboardInfo());
+				language.setIpaKeyboard(controller.getIpaKeyboardInfo());
+				handleSaveLanguage();
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -1305,17 +1307,17 @@ public class RootLayoutController implements Initializable {
 	}
 	public KeyboardInfo showKeyboardInfo(KeyboardInfo kbInfo) {
 		ChoiceDialog<KeyboardInfo> dialog = new ChoiceDialog<KeyboardInfo>();
-		dialog.setTitle(RESOURCE_FACTORY.getStringBinding("keyboard.header").get());
-		dialog.setHeaderText(RESOURCE_FACTORY.getStringBinding("keyboard.content").get());
-		dialog.setContentText(RESOURCE_FACTORY.getStringBinding("keyboard.choose").get());
-		dialog.setSelectedItem(applicationPreferences.getTreeDescriptionFontSize());
+//		dialog.setTitle(RESOURCE_FACTORY.getStringBinding("keyboard.header").get());
+//		dialog.setHeaderText(RESOURCE_FACTORY.getStringBinding("keyboard.content").get());
+//		dialog.setContentText(RESOURCE_FACTORY.getStringBinding("keyboard.choose").get());
+//		dialog.setSelectedItem(applicationPreferences.getTreeDescriptionFontSize());
 		Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(mainApp.getNewMainIconImage());
 		Optional<KeyboardInfo> result = dialog.showAndWait();
 		if (result.isPresent()) {
-			defaultFont = new Font(result.get());
-			applicationPreferences.setTreeDescriptionFontSize(result.get());
-			computeHighlighting();
+//			defaultFont = new Font(result.get());
+//			applicationPreferences.setTreeDescriptionFontSize(result.get());
+//			computeHighlighting();
 		}
 		return kbInfo;
 	}
