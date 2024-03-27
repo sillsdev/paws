@@ -74,7 +74,6 @@ import netscape.javascript.JSObject;
 import org.controlsfx.dialog.FontSelectorDialogWithColor;
 import org.sil.paws.view.KeyboardChooserController;
 import org.sil.paws.view.RootLayoutController;
-import org.sil.paws.model.Keyboard;
 import org.sil.paws.model.FontInfo;
 import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.Constants;
@@ -85,11 +84,6 @@ import org.sil.paws.MainApp;
 import org.sil.utility.HandleExceptionMessage;
 import org.sil.utility.StringUtilities;
 import org.sil.utility.service.keyboards.KeyboardChanger;
-import org.sil.utility.service.keyboards.KeyboardHandler;
-import org.sil.utility.service.keyboards.KeyboardInfo;
-import org.sil.utility.service.keyboards.LinuxKeyboardHandler;
-import org.sil.utility.service.keyboards.MacOSXKeyboardHandler;
-import org.sil.utility.service.keyboards.WindowsKeyboardHandler;
 import org.sil.utility.view.ControllerUtilities;
 import org.sil.utility.view.ObservableResourceFactory;
 import org.sil.utility.xml.XsltParameter;
@@ -101,7 +95,6 @@ public class RootLayoutController implements Initializable {
 	// Reference to the main application
 	private MainApp mainApp;
 	KeyboardChanger keyboardChanger;
-	private String sOperatingSystem;
 
 	private String sAboutHeader;
 	private String sAboutContent;
@@ -282,7 +275,7 @@ public class RootLayoutController implements Initializable {
 		webEngine.setOnAlert(event -> showAlert(event.getData()));
 		webPageInteractor = new WebPageInteractor(language, webEngine, this);
 		webEngine.getLoadWorker().stateProperty().addListener(new ChangeListener<State>() {
-			public void changed(ObservableValue ov, State oldState, State newState) {
+			public void changed(@SuppressWarnings("rawtypes") ObservableValue ov, State oldState, State newState) {
 				useWaitCursor();
 				if (newState == State.SUCCEEDED) {
 					System.out.println("succeeded: url='" + webEngine.getLocation() + "'");
