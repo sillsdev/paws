@@ -17,11 +17,21 @@
         LangPropLangNameFr.value =  pawsApp.getAnswerValue("//language/langNames/langName[@lang='fr']");
         LangPropLangAbbr.value =  pawsApp.getAnswerValue("//language/langAbbr");
         
+        attr = pawsApp.getAnswerValue("//language/interlinearOutputStyle/@style");
+        if (attr == "Blessymol")
+        Blessymol.checked = true;
+        else
+        standard.checked = true;
+        
         LangPropFont.value =  pawsApp.getAnswerValue("//language/font/fontName");
         attr = pawsApp.getAnswerValue("//language/font/@rtl");
         if (attr == "False")
         LangPropRTLLTR.checked = true; else
         LangPropRTLRTL.checked = true;
+        
+        LangPropFreeFont.value =  pawsApp.getAnswerValue("//language/freeFont/fontName");
+        
+        LangPropIpaFont.value =  pawsApp.getAnswerValue("//language/ipaFont/fontName");
         
         SetKeyboardValues();
         
@@ -52,6 +62,15 @@
         
         pawsApp.setAnswerValue("//language/font/@rtl", sTemp);
         
+        pawsApp.setAnswerValue("//language/freeFont/@rtl", sTemp);
+        
+        sTemp = "standard" // use default if all else fails...
+        if (standard.checked)
+        sTemp = "standard";
+        if (Blessymol.checked)
+        sTemp = "Blessymol";
+        pawsApp.setAnswerValue("//language/interlinearOutputStyle/@style", sTemp);
+        
         pawsApp.languageNameChanged();
         pawsApp.saveData();
         }
@@ -60,6 +79,22 @@
         pawsApp.changeFontInfo();
         LangPropFont.value =  pawsApp.getAnswerValue("//language/font/fontName");
         }
+        function ButtonLangPropFreeFont() {
+        saveData();
+        pawsApp.changeFreeFontInfo();
+        LangPropFreeFont.value =  pawsApp.getAnswerValue("//language/freeFont/fontName");
+        }
+        function ButtonLangPropIpaFont() {
+        saveData();
+        pawsApp.changeIpaFontInfo();
+        LangPropIpaFont.value =  pawsApp.getAnswerValue("//language/ipaFont/fontName");
+        }
+        function RInterlinearStyle(radio)
+        {
+        radio.checked = true;
+        Refresh();
+        }
+        
         function ButtonLangPropKeyboards() {
         saveData();
         pawsApp.changeKeyboards();
@@ -76,12 +111,21 @@
         td = document.getElementById("LangPropWriterKeyboard");
         td.innerHTML = pawsApp.getAnswerValue("//language/writerKeyboard/description");
         }
+        
         function ButtonNext() {
         saveData();
         pawsApp.load("LanguageFilesNewMode");
         }
         function Refresh() {
         var valArray = new Array();
+        if (Blessymol.checked) {
+        UseIpa.style.display = "";
+        useIpaKeyboard.style.display = "";
+        }
+        else {
+        UseIpa.style.display = "none";
+        useIpaKeyboard.style.display = "none";
+        }
         }
     </script></head>
 <body>
@@ -97,6 +141,53 @@
     <textarea class="vernacular" style="margin-left: 0.5in" wrap="off" rows="1" cols="50" id="LangPropLangNameFr" name="LangPropLangNameFr" contenteditable="inherit"></textarea>
     <br><br><p style="margin-left: 0.125in">Escriba una abreviatura para su lengua aquí (sugerimos utilizar la codificación ISO639-3 o del Ethnologue):<br></p>
 <textarea class="vernacular" style="margin-left: 0.5in" wrap="off" rows="1" cols="4" id="LangPropLangAbbr" name="LangPropLangAbbr" contenteditable="inherit"></textarea>
+        <p>Puede tener dos estilos de salida de texto interlineal.  Seleccione el estilo que desee utilizar:</p>
+        <table border="0" style="margin-left: 0.5in">
+            <tr>
+                <td valign="top"><input type="radio" name="RInterlinearStyle" id="standard" onclick="RInterlinearStyle(standard)" value="standard"></td>
+                <td width="99%" id="standardPrompt" onclick="RInterlinearStyle(standard)" value="standard" onmouseover="this.style.cursor='default'">
+                    <table border="0">
+                        <tr>
+                            <td>vernácula</td>
+                        </tr>
+                        <tr>
+                            <td>glosa de la palabra</td>
+                        </tr>
+                        <tr>
+                            <td>glosa de ruptura de morfema</td>
+                        </tr>
+                        <tr>
+                            <td>traducción libre</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><input type="radio" name="RInterlinearStyle" id="Blessymol" onclick="RInterlinearStyle(Blessymol)" value="Blessymol"></td>
+                <td width="99%" id="BlessymolPrompt" onclick="RInterlinearStyle(Blessymol)" value="Blessymol" onmouseover="this.style.cursor='default'">
+                    <table border="0">
+                        <tr>
+                            <td>vernácula</td>
+                        </tr>
+                        <tr>
+                            <td>AFI</td>
+                        </tr>
+                        <tr>
+                            <td>IPA morpheme breaks</td>
+                        </tr>
+                        <tr>
+                            <td>glosa de ruptura de morfema</td>
+                        </tr>
+                        <tr>
+                            <td>traducción libre</td>
+                        </tr>
+                        <tr>
+                            <td>traducción libre a la lengua del Estado</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
         <p style="margin-left: 0.125in">El nombre de la fuente que se utilizará para escribir su lengua se muestra abajo.  Presione el botón 'Cambiar la fuente' si desea cambiar la fuente o sus propiedades.<br></p>
 <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="40" id="LangPropFont" name="LangPropFont" contenteditable="false"></textarea>
 &nbsp;&nbsp;&nbsp;
@@ -113,6 +204,16 @@
 <td width="99%" id="LangPropRTLRTLRPrompt" onclick="RLangPropRTL(LangPropRTLRTL)" value="True" onmouseover="this.style.cursor='default'">De derecha a izquierda</td>
 </tr>
 </table>
+    <div id="UseIpa">
+        <p style="margin-left: 0.125in">El nombre de la fuente que se utilizará para escribir AFI se muestra abajo.  Presione el botón 'Cambiar la fuente' si desea cambiar la fuente o sus propiedades.<br></p>
+        <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="40" id="LangPropIpaFont" name="LangPropIpaFont" contenteditable="false"></textarea>
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" value=" Cambiar la fuente " name="BLangPropIpaFont" id="BLangPropIpaFont" onclick="ButtonLangPropIpaFont()" style="">
+    </div>
+    <p style="margin-left: 0.125in">El nombre de la fuente que se utilizará para escribir traducción libre se muestra abajo.  Presione el botón 'Cambiar la fuente' si desea cambiar la fuente o sus propiedades.<br></p>
+    <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="40" id="LangPropFreeFont" name="LangPropFreeFont" contenteditable="false"></textarea>
+    &nbsp;&nbsp;&nbsp;
+    <input type="button" value=" Cambiar la fuente " name="BLangPropFreeFont" id="BLangPropFreeFont" onclick="ButtonLangPropFreeFont()" style="">
     <p>&nbsp;</p>
     <table style="margin-left: 0.125in" border="1">
         <tr>
