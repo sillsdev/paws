@@ -473,6 +473,22 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	<!--
+		OutputIpaMorphBreaksLine
+	-->
+	<xsl:template name="OutputIpaMorphBreaksLine">
+		<xsl:choose>
+			<xsl:when test="string-length(normalize-space(ipaLine)) &gt; 0">
+				<xsl:value-of select="ipaLine"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:call-template name="OutputEnterIpaMorphBreaksLineHereMessage"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<!--
+		OutputReferencesElement
+	-->
 	<xsl:template name="OutputReferencesElement">
 		<xsl:param name="sReferencesLabel"/>
 		<references>
@@ -529,13 +545,19 @@
 		OutputEnterExampleHereMessage
 	-->
 	<xsl:template name="OutputEnterExampleHereMessage">
-		<xsl:text>ENTER AN EXAMPLE HERE</xsl:text>
+		<xsl:text>ENTER VERNACULAR WORDS HERE</xsl:text>
 	</xsl:template>
 	<!--
 		OutputEnterIpaLineHereMessage
 	-->
 	<xsl:template name="OutputEnterIpaLineHereMessage">
-		<xsl:text>ENTER THE IPA HERE</xsl:text>
+		<xsl:text>ENTER IPA WORDS HERE</xsl:text>
+	</xsl:template>
+	<!--
+		OutputEnterIpaMorphBreaksLineHereMessage
+	-->
+	<xsl:template name="OutputEnterIpaMorphBreaksLineHereMessage">
+		<xsl:text>ENTER MORPHEME-S IN-IPA HERE</xsl:text>
 	</xsl:template>
 	<!--
 		OutputInterlinearEntries
@@ -546,7 +568,7 @@
 		<xsl:param name="sLetterList"/>
 		<xsl:variable name="iNumEntries" select="count($sExamples/interlinearEntry[string-length(vernacularLine) &gt; 0])"/>
 		<xsl:choose>
-			<xsl:when test="$iNumEntries &lt;= 1">
+			<xsl:when test="$iNumEntries &lt; 1">
 				<listInterlinear>
 					<xsl:attribute name="letter">
 						<xsl:value-of select="$sExNumber"/>
@@ -568,7 +590,7 @@
 										<xsl:attribute name="lang">
 											<xsl:text>lIPA</xsl:text>
 										</xsl:attribute>
-										<xsl:call-template name="OutputEnterExampleHereMessage"/>
+										<xsl:call-template name="OutputEnterIpaLineHereMessage"/>
 									</langData>
 								</line>
 								<line>
@@ -576,7 +598,7 @@
 										<xsl:attribute name="lang">
 											<xsl:text>lIPAMorphBreaks</xsl:text>
 										</xsl:attribute>
-										<xsl:call-template name="OutputEnterExampleHereMessage"/>
+										<xsl:call-template name="OutputEnterIpaMorphBreaksLineHereMessage"/>
 									</langData>
 								</line>
 								<xsl:call-template name="DoMorphemeGloss"/>
@@ -635,7 +657,7 @@
 							<xsl:attribute name="lang">
 								<xsl:text>lIPAMorphBreaks</xsl:text>
 							</xsl:attribute>
-							<xsl:call-template name="OutputIpaLine"/>
+							<xsl:call-template name="OutputIpaMorphBreaksLine"/>
 						</langData>
 					</line>
 					<xsl:call-template name="DoMorphemeGloss"/>
