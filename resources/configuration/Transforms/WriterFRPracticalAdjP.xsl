@@ -468,7 +468,7 @@
               <th>Glose</th>
            </tr>
            <tr>
-<xsl:for-each select="//adjp/adjectiveDegreeAffixPhraseExample/form[1]">
+<xsl:for-each select="//adjp/adjectiveDegreeAffixExample/form[1]">
 <td>
 <langData lang="lVernacular">
 <xsl:value-of select="vernacular" />
@@ -491,7 +491,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
-<xsl:for-each select="//adjp/adjectiveDegreeAffixPhraseExample/form[1]">
+<xsl:for-each select="//adjp/adjectiveDegreeAffixExample/form[1]">
 <td>
 <langData lang="lIPA">
 <xsl:value-of select="ipa" />
@@ -501,7 +501,7 @@
 </xsl:for-each>
 </tr>
 </xsl:if>
-<xsl:for-each select="//adjp/adjectiveDegreeAffixPhraseExample/form[position() &gt; 1]">
+<xsl:for-each select="//adjp/adjectiveDegreeAffixExample/form[position() &gt; 1]">
 <tr>
 <td>
 <langData lang="lVernacular">
@@ -549,7 +549,7 @@
               <th>Glose</th>
            </tr>
            <tr>
-<xsl:for-each select="//adjp/adjectivePhraseAffixExample/form[1]">
+<xsl:for-each select="//adjp/adjectiveDegreeAffixPhraseExample/form[1]">
 <td>
 <langData lang="lVernacular">
 <xsl:value-of select="vernacular" />
@@ -572,7 +572,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
-<xsl:for-each select="//adjp/adjectivePhraseAffixExample/form[1]">
+<xsl:for-each select="//adjp/adjectiveDegreeAffixPhraseExample/form[1]">
 <td>
 <langData lang="lIPA">
 <xsl:value-of select="ipa" />
@@ -582,7 +582,7 @@
 </xsl:for-each>
 </tr>
 </xsl:if>
-<xsl:for-each select="//adjp/adjectivePhraseAffixExample/form[position() &gt; 1]">
+<xsl:for-each select="//adjp/adjectiveDegreeAffixPhraseExample/form[position() &gt; 1]">
 <tr>
 <td>
 <langData lang="lVernacular">
@@ -881,8 +881,8 @@
                     <example num="xAdjP.AdjNumbers.QPNumbersCardinal.8">
 <table border="1">
                             <tr>
-                                <th>Glose</th>
-                               <th>Nombres cardinaux</th>
+                                   <th>Nombres cardinaux</th>
+                            <th>Glose</th>
                             </tr>
                             <tr>
 <xsl:for-each select="//qp/cardinalNumbers1/form[1]">
@@ -2850,8 +2850,8 @@
                     <example num="xAdjP.AdjNumbers.QPNumbersOrdinal.8">
 <table border="1">
                             <tr>
-                                <th>Glose</th>
                                <th>Nombres ordinaux</th>
+                                <th>Glose</th>
                             </tr>
                            <tr>
 <xsl:for-each select="//qp/ordinalNumbers1/form[1]">
@@ -4194,7 +4194,7 @@
             <example num="xAdjP.AdjQP.QPAll.12">
 <table border="1">
                   <tr>
-                     <th>Morphèmes</th>
+                     <th>Quantifieurs</th>
                      <th>Glose</th>
                   </tr>
                   <tr>
@@ -4699,13 +4699,13 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 </xsl:if>
                <example num="xAdjP.AdjQP.QPDeterminers.12">
 <table border="1">
                      <tr>
-                        <th>Morphèmes</th>
+                        <th>Quantifieurs</th>
                         <th>Glose</th>
                      </tr>
                      <tr>
@@ -5219,7 +5219,7 @@
                  <example num="xAdjP.AdjQP.QPOtherQuantifiers.12">
 <table border="1">
                        <tr>
-                          <th>quantifieurs</th>
+                          <th>Quantifieurs</th>
                           <th>Glose</th>
                        </tr>
                        <tr>
@@ -5579,7 +5579,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> sont:</xsl:text>
+<xsl:text> sont :</xsl:text>
 </p>
 </xsl:if>
                  
@@ -5724,7 +5724,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> sont:</xsl:text>
+<xsl:text> sont :</xsl:text>
 </p>
 </xsl:if>
               

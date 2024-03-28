@@ -362,7 +362,7 @@
 				<exampleRef num="xEx"/>
 				<content> :</content>
 			</p>
-			<example num="xEx">
+			<example num="xEx" show="swStandardInterlinear">
 				<table>
 					<row>
 						<col>
@@ -416,7 +416,7 @@
 					</row>
 				</table>
 			</example>
-			<p>
+			<p show="swStandardInterlinear">
 				<content>Les mots en </content>
 				<langName/>
 				<content> sont donnés sur la première ligne.  La seconde ligne présente une traduction littérale en français, mot à mot, donnant la glose du mot français qui se rapproche le plus de la signification du mot en </content>
@@ -427,6 +427,98 @@
 				<langName/>
 				<content> a plus d’une partie (morphème), la troisième ligne montre les gloses ou abbréviations pour chaque parties du mot, les préfixes, radicaux et suffixes seront séparés par des traits d’union.  Cette troisième ligne sera probablement la plus utile pour les linguistes. La dernière ligne donne la traduction libre pour l’exemple dans son ensemble.</content>
 			</p>
+			
+							<p show="swBlessymolInterlinear">
+				<content>This grammar contains many illustrative phrases and sentences.  Most of the examples are presented in an interlinear format consisting of six lines, as shown in </content>
+				<exampleRef num="xBlessyEx"/>
+				<content>:</content>
+			</p>
+			<example num="xBlessyEx" show="swBlessymolInterlinear">
+				<table>
+					<row>
+						<col>
+							<content>[mots vernaculaires]</content>
+						</col>
+						<col>
+							<langData>mot</langData>
+						</col>
+						<col>
+							<langData>mot</langData>
+						</col>
+						<col>
+							<langData>mot</langData>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[mots en IPA]</content>
+						</col>
+						<col>
+							<content>IPA</content>
+						</col>
+						<col>
+							<content>IPA</content>
+						</col>
+						<col>
+							<content>IPA</content>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[IPA séparée par des morphèmes]</content>
+						</col>
+						<col>
+							<content>IPA-IPA-IPA</content>
+						</col>
+						<col>
+							<content>IPA-IPA-IPA</content>
+						</col>
+						<col>
+							<content>IPA-IPA-IPA</content>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[gloses de morphème]</content>
+						</col>
+						<col>
+							<content>PRE-root-SUF</content>
+						</col>
+						<col>
+							<content>PRE-root-SUF</content>
+						</col>
+						<col>
+							<content>PRE-root-SUF</content>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[traduction libre en français]</content>
+						</col>
+						<col colspan="3">
+							<content>traduction libre du syntagme ou de la phrase</content>
+						</col>
+					</row>
+					<row>
+						<col>
+							<content>[traduction libre en langue officielle de l'Etat]</content>
+						</col>
+						<col colspan="3">
+							<content>traduction libre du syntagme ou de la phrase</content>
+						</col>
+					</row>
+				</table>
+			</example>
+			<p show="swBlessymolInterlinear">
+				<content>Les mots en </content>
+				<langName/>
+				<content> sont donnés sur la première ligne. La deuxième ligne présente les mots en IPA.  La troisième ligne ajoute des traits d'union à l'API pour montrer la séparation des mots en morphèmes.
+					La quatrième ligne donne la traduction morphème par morphème en françaish, les morphèmes étant séparés par des traits d'union.  La meilleure traduction littérale est utilisée pour chaque racine, séparée par des points si plus d'un mot espagnol est nécessaire pour exprimer le sens du </content>
+				<langName/>
+				<content> racine, tandis que les préfixes et suffixes sont indiqués par des gloses ou des abréviations de leurs caractéristiques.  Cette quatrième ligne peut s'avérer très utile pour les linguistes.  Les deux dernières lignes donnent la traduction libre de l'ensemble de l'exemple, d'abord en français, puis dans la langue de l'Etat.</content>
+			</p>
+
+			
 			<p>
 				<comment>Ajoutez ici plus de détails sur toutes les différences entre votre langue et le français. Par exemple, si votre langue ne distingue pas entre le nombre et/ou le genre pour les noms, mais que la langue de la glose le fait, vous pouvez choisir d’utiliser uniquement les formes au singulier et/ou au masculin pour les gloses.</comment>
 			</p>
@@ -753,84 +845,98 @@
    					Type
    				</headerCol>
    				<headerCol>Classificateur</headerCol>
+   				<headerCol>Glose</headerCol>
    			</headerRow>
    			<row>
    				<col>
    					<content>humains</content>
    				</col>
    				<col exampleLoc="typology/classifierHumanExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>animaux</content>
    				</col>
    				<col exampleLoc="typology/classifierAnimalExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>oiseaux</content>
    				</col>
    				<col exampleLoc="typology/classifierBirdExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>bateaux</content>
    				</col>
    				<col exampleLoc="typology/classifierBoatExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>vêtements</content>
    				</col>
    				<col exampleLoc="typology/classifierClothingExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>arbres</content>
    				</col>
    				<col exampleLoc="typology/classifierTreeExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>objets longs et minces</content>
    				</col>
    				<col exampleLoc="typology/classifierLongThinExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>objets longs et ondulés</content>
    				</col>
    				<col exampleLoc="typology/classifierLongWavyExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>objets plats</content>
    				</col>
    				<col exampleLoc="typology/classifierFlatExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>objets cylindriques</content>
    				</col>
    				<col exampleLoc="typology/classifierCylindricalExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>objets mécaniques</content>
    				</col>
    				<col exampleLoc="typology/classifierMechanicalExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>objets génériques</content>
    				</col>
    				<col exampleLoc="typology/classifierGenericExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
-   					<content>SAISIR GLOSE</content>
+   					<content>SAISIR TYPE</content>
    				</col>
    				<col exampleLoc="typology/classifierOtherExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    		</table>
    	</example>
@@ -845,61 +951,71 @@
 				  Type
 			   </headerCol>
 				<headerCol>Classificateur</headerCol>
+				<headerCol>Glose</headerCol>
 			</headerRow>
 			<row>
 			   <col>
 				  <content>animal</content>
 			   </col>
 			   <col exampleLoc="typology/classAnimalExample"/>
-			 </row>
+			     <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>insecte</content>
 			   </col>
 			   <col exampleLoc="typology/classInsectExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>liquide</content>
 			   </col>
 			   <col exampleLoc="typology/classLiquidExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>rond</content>
 			   </col>
 			   <col exampleLoc="typology/classRoundExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>cylindrique</content>
 			   </col>
 			   <col exampleLoc="typology/classCylinderExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 			   	<content>sphérique</content>
 			   </col>
 			   <col exampleLoc="typology/classSphereExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>arbre</content>
 			   </col>
 			   <col exampleLoc="typology/classTreeExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>en bois</content>
 			   </col>
 			   <col exampleLoc="typology/classWoodExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
-				  <content>SAISIR GLOSE</content>
+				  <content>SAISIR TYPE</content>
 			   </col>
 			   <col exampleLoc="typology/classOtherExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 		 </table>
 	  </example>
    	<p show="swClassifiersYesAgr"><content>Les marqueurs de classe nominale en </content><langName/><content> sont présentés dans le tableau di-dessous :</content></p>
@@ -913,60 +1029,70 @@
    					Type
    				</headerCol>
    				<headerCol>Marqueurs de classe</headerCol>
+   				<headerCol>Glose</headerCol>
    			</headerRow>
    			<row>
    				<col>
    					<content>animal</content>
    				</col>
    				<col exampleLoc="typology/classAnimalExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>insecte</content>
    				</col>
    				<col exampleLoc="typology/classInsectExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>liquide</content>
    				</col>
    				<col exampleLoc="typology/classLiquidExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>rond</content>
    				</col>
    				<col exampleLoc="typology/classRoundExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>cylindrique</content>
    				</col>
    				<col exampleLoc="typology/classCylinderExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>sphérique</content>
    				</col>
    				<col exampleLoc="typology/classSphereExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>arbre</content>
    				</col>
    				<col exampleLoc="typology/classTreeExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
    					<content>en bois</content>
    				</col>
    				<col exampleLoc="typology/classWoodExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    			<row>
    				<col>
-   					<content>SAISIR GLOSE</content>
+   					<content>SAISIR TYPE</content>
    				</col>
    				<col exampleLoc="typology/classOtherExample"/>
+   			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
    			</row>
    		</table>
    	</example>
@@ -980,6 +1106,7 @@
 			   <headerCol>Type</headerCol>
 				<headerCol>Accord en nombre</headerCol>
 				<headerCol>Marqueurs de classe</headerCol>
+				<headerCol>Glose</headerCol>
 			</headerRow>
 			<row>
 			   <col>
@@ -987,126 +1114,144 @@
 			   </col>
 			   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classAnimalSgExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>animal</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			<col exampleLoc="typology/classAnimalPlExample"/>
-			</row>
-	 <row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
+	 		<row>
 			   <col>
 				  <content>insecte</content>
 			   </col>
 		<col><content>singulier</content></col>
 		<col exampleLoc="typology/classInsectSgExample"/>
-	 </row>
+	     <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>insecte</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classInsectPlExample"/>
-	 </row>
+	     <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col >
 				  <content>liquide</content>
 			   </col>
 			   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classLiquidSgExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col >
 				  <content>liquide</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classLiquidPlExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>rond</content>
 			   </col>
 			   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classRoundSgExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>rond</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classRoundPlExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>cylindrique</content>
 			   </col>
 			   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classCylinderSgExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>cylindrique</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classCylinderPlExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 			   	<content>sphérique</content>
 			   </col>
 			   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classSphereSgExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 			   	<content>sphérique</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classSpherePlExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>arbre</content>
 			   </col>
 			   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classTreeSgExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>arbre</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classTreePlExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>en bois</content>
 			   </col>
-			   <col><content>singulier</content></col>
+	     	   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classWoodSgExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
 				  <content>en bois</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classWoodPlExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
-				  <content>SAISIR GLOSE</content>
+				  <content>SAISIR TYPE</content>
 			   </col>
 			   <col><content>singulier</content></col>
 			   <col exampleLoc="typology/classOtherSgExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 			<row>
 			   <col>
-				  <content>SAISIR GLOSE</content>
+				  <content>SAISIR TYPE</content>
 			   </col>
 			   <col><content>pluriel</content></col>
 			   <col exampleLoc="typology/classOtherPlExample"/>
-			</row>
+			    <col><gloss><content>SAISIR GLOSE</content></gloss></col>
+   			</row>
 		 </table>
 	  </example>
 	  <example show="swClassifiersYesAgrNum">
@@ -1116,14 +1261,14 @@
 			</caption>
 			<headerRow>
 			   <headerCol>Numéro de classe</headerCol>
-			   <headerCol>Marqueur de classe</headerCol>
 				<headerCol>Accord en nombre</headerCol>
+			   <headerCol>Marqueur de classe</headerCol>
+			   <headerCol>Glose</headerCol>
 			</headerRow>
 			<row>
 			   <col>
 				  <content>1</content>
 			   </col>
-			   <col exampleLoc="typology/class1Example"/>
 			   <col>
 				  <case element="typology" attr="class1agr">
 					 <caseText value="sg">singulier</caseText>
@@ -1131,318 +1276,319 @@
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+			   <col exampleLoc="typology/class1Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>2</content>
 			   </col>
-			   <col exampleLoc="typology/class2Example"/>
 			   <col>
 				  <case element="typology" attr="class2agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
-				  </col>
-			</row>
+			   </col>
+			   <col exampleLoc="typology/class2Example"/>
+			 </row>
 			<row>
 			   <col>
 				  <content>3</content>
 			   </col>
-			   <col exampleLoc="typology/class3Example"/>
-			   <col>
+			 		   <col>
 				  <case element="typology" attr="class3agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+	  <col exampleLoc="typology/class3Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>4</content>
 			   </col>
-			   <col exampleLoc="typology/class4Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class4agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class4Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>5</content>
 			   </col>
-			   <col exampleLoc="typology/class5Example"/>
-			   <col>
+					   <col>
 				  <case element="typology" attr="class5agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
-			</row>
+	   <col exampleLoc="typology/class5Example"/>
+			  </row>
 			<row>
 			   <col>
 				  <content>6</content>
 			   </col>
-			   <col exampleLoc="typology/class6Example"/>
-			   <col>
+			  		   <col>
 				  <case element="typology" attr="class6agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
-			</row>
+	 <col exampleLoc="typology/class6Example"/>
+			 	</row>
 			<row>
 			   <col>
 				  <content>7</content>
 			   </col>
-			   <col exampleLoc="typology/class7Example"/>
 			   <col>
 				  <case element="typology" attr="class7agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+			   <col exampleLoc="typology/class7Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>8</content>
 			   </col>
-			   <col exampleLoc="typology/class8Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class8agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class8Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>9</content>
 			   </col>
-			   <col exampleLoc="typology/class9Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class9agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class9Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>10</content>
 			   </col>
-			   <col exampleLoc="typology/class10Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class10agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class10Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>11</content>
 			   </col>
-			   <col exampleLoc="typology/class11Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class11agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class11Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>12</content>
 			   </col>
-			   <col exampleLoc="typology/class12Example"/>
 			   <col>
 				  <case element="typology" attr="class12agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+			   <col exampleLoc="typology/class12Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>13</content>
 			   </col>
-			   <col exampleLoc="typology/class13Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class13agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class13Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>14</content>
 			   </col>
-			   <col exampleLoc="typology/class14Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class14agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class14Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>15</content>
 			   </col>
-			   <col exampleLoc="typology/class15Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class15agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class15Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>16</content>
 			   </col>
-			   <col exampleLoc="typology/class16Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class16agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class16Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>17</content>
 			   </col>
-			   <col exampleLoc="typology/class17Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class17agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class17Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>18</content>
 			   </col>
-			   <col exampleLoc="typology/class18Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class18agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class18Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>19</content>
 			   </col>
-			   <col exampleLoc="typology/class19Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class19agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class19Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>20</content>
 			   </col>
-			   <col exampleLoc="typology/class20Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class20agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class20Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>21</content>
 			   </col>
-			   <col exampleLoc="typology/class21Example"/>
 			   <col>
 				  <case element="typology" attr="class21agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+			   <col exampleLoc="typology/class21Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>22</content>
 			   </col>
-			   <col exampleLoc="typology/class22Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class22agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class22Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>23</content>
 			   </col>
-			   <col exampleLoc="typology/class23Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class23agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class23Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>24</content>
 			   </col>
-			   <col exampleLoc="typology/class24Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class24agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class24Example"/>
 			</row>
 			<row>
 			   <col>
 				  <content>25</content>
 			   </col>
-			   <col exampleLoc="typology/class25Example"/>
-			   <col>
+				   <col>
 				  <case element="typology" attr="class25agr">
-				  	<caseText value="sg">singulier</caseText>
-				  	<caseText value="pl">pluriel</caseText>
+					 <caseText value="sg">singulier</caseText>
+					 <caseText value="pl">pluriel</caseText>
 				  	<caseText value="irrelevant">non pertinent</caseText>
 				  </case>
 			   </col>
+		   <col exampleLoc="typology/class25Example"/>
 			</row>
 		 </table>
 	  </example>
@@ -1469,6 +1615,12 @@
    		<interlinear exampleLoc="typology/classifierSpecificExample"/>
    	</example>
    </section1>
+	<showWhen id="swStandardInterlinear">
+		<whenValue element="language/interlinearOutputStyle" attr="style" value="standard"/>
+	</showWhen>
+	<showWhen id="swBlessymolInterlinear">
+		<whenValue element="language/interlinearOutputStyle" attr="style" value="Blessymol"/>
+	</showWhen>
 <showWhen id="swNPPossNPYes">
    <whenValue element="np" attr="possNP" value="yes"/>
    <or/>

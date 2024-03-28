@@ -124,7 +124,7 @@
               <headerCol>Glose</headerCol>
            </headerRow>
            <row>
-              <col exampleLoc="adjp/adjectiveDegreeAffixPhraseExample"/>
+              <col exampleLoc="adjp/adjectiveDegreeAffixExample"/>
               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
@@ -137,7 +137,7 @@
               <headerCol>Glose</headerCol>
            </headerRow>
            <row>
-              <col exampleLoc="adjp/adjectivePhraseAffixExample"/>
+              <col exampleLoc="adjp/adjectiveDegreeAffixPhraseExample"/>
               <col ><gloss><content>SAISIR GLOSE</content></gloss></col>
            </row>
         </table>
@@ -216,8 +216,8 @@
                     <example>
                         <table border="1">
                             <headerRow>
-                                <headerCol>Glose</headerCol>
-                               <headerCol>Nombres cardinaux</headerCol>
+                                   <headerCol>Nombres cardinaux</headerCol>
+                            <headerCol>Glose</headerCol>
                             </headerRow>
                             <row>
                                 <col exampleLoc="qp/cardinalNumbers1"/>
@@ -383,8 +383,8 @@
                     <example>
                         <table border="1">
                             <headerRow>
-                                <headerCol>Glose</headerCol>
                                <headerCol>Nombres ordinaux</headerCol>
+                                <headerCol>Glose</headerCol>
                             </headerRow>
                            <row>
                               <col exampleLoc="qp/ordinalNumbers1"/>
@@ -599,7 +599,7 @@
             <example>
                <table border="1">
                   <headerRow>
-                     <headerCol>Morphèmes</headerCol>
+                     <headerCol>Quantifieurs</headerCol>
                      <headerCol>Glose</headerCol>
                   </headerRow>
                   <row>
@@ -719,12 +719,12 @@
                </p>
                <p show="swQPDeterminerClassifierNo">
                   <content>Le tableau suivant montre comment ces quantifieurs qui agissent comme déterminant unique sont exprimés en </content><langName/>
-                  <content>:</content>
+                  <content> :</content>
                </p>
                <example>
                   <table border="1">
                      <headerRow>
-                        <headerCol>Morphèmes</headerCol>
+                        <headerCol>Quantifieurs</headerCol>
                         <headerCol>Glose</headerCol>
                      </headerRow>
                      <row>
@@ -867,7 +867,7 @@
                  <example>
                     <table border="1">
                        <headerRow>
-                          <headerCol>quantifieurs</headerCol>
+                          <headerCol>Quantifieurs</headerCol>
                           <headerCol>Glose</headerCol>
                        </headerRow>
                        <row>
@@ -916,7 +916,7 @@
                  </p>
               <p show="swQPDegreeYesOrSomeAndClassifierNo"><content>Les mots de degré qui peuvent modifier les quantifieurs en </content>
                     <langName/>
-                    <content> sont:</content>
+                    <content> sont :</content>
                  </p>
                  
                  <example show="swQPDegreeYesOrSome">
@@ -950,7 +950,7 @@
               </p>   
               <p show="swQPDegreeAttachesOrSome"><content>Les affixes de degré qui peuvent modifier les quantifieurs en </content>
                  <langName/>
-                 <content> sont:</content>
+                 <content> sont :</content>
               </p>
               
               <example show="swQPDegreeAttachesOrSome">

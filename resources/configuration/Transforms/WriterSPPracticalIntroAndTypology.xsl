@@ -646,7 +646,8 @@
 <exampleRef num="xEx" equal="no" letterOnly="no" />
 <xsl:text>:</xsl:text>
 </p>
-            <example num="xEx">
+            <xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
+<example num="xEx">
 <table>
                     <tr>
                         <td align="left">
@@ -709,7 +710,9 @@
                     </tr>
                 </table>
 </example>
-            <p>
+</xsl:if>
+            <xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
+<p>
 <xsl:text>Las palabras en el </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='es'])) &gt; 0">
@@ -748,6 +751,127 @@
 </xsl:choose>
 <xsl:text> tenga más de una parte con significado (morfema), la tercera línea indicará la glosa para cada una de las partes de la palabra, con los prefijos, la raíz, y los sufijos separados por un guión. Esta línea puede ser la más útil para los lingüistas. En la línea final se proporciona la traducción libre del ejemplo completo.</xsl:text>
 </p>
+</xsl:if>
+
+				<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='Blessymol'">
+<p>
+<xsl:text>Esta gramática contiene muchas frases y oraciones ilustrativas. La mayor parte de ellas se presentan en un formato interlinearizado que consiste en seis líneas, como se muestra en </xsl:text>
+<exampleRef num="xBlessyEx" equal="no" letterOnly="no" />
+<xsl:text>:</xsl:text>
+</p>
+</xsl:if>
+			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='Blessymol'">
+<example num="xBlessyEx">
+<table>
+					<tr>
+						<td align="left">
+							<xsl:text>[palabras vernáculas]</xsl:text>
+						</td>
+						<td align="left">
+							<langData>
+<xsl:attribute name="lang">
+<xsl:text>lPAWSSKEnglish</xsl:text>
+</xsl:attribute>palabra</langData>
+						</td>
+						<td align="left">
+							<langData>
+<xsl:attribute name="lang">
+<xsl:text>lPAWSSKEnglish</xsl:text>
+</xsl:attribute>palabra</langData>
+						</td>
+						<td align="left">
+							<langData>
+<xsl:attribute name="lang">
+<xsl:text>lPAWSSKEnglish</xsl:text>
+</xsl:attribute>palabra</langData>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[palabras en IPA]</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA</xsl:text>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[IPA separada por morfemas]</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA-IPA-IPA</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA-IPA-IPA</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>IPA-IPA-IPA</xsl:text>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[glosa por morfemas]</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>PRE-raíz-SUF</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>PRE-raíz-SUF</xsl:text>
+						</td>
+						<td align="left">
+							<xsl:text>PRE-raíz-SUF</xsl:text>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[traducción libre]</xsl:text>
+						</td>
+						<td align="left" colspan="3">
+							<xsl:text>traducción libre de frase u oración</xsl:text>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">
+							<xsl:text>[traducción libre a la lengua oficial del estado ]</xsl:text>
+						</td>
+						<td align="left" colspan="3">
+							<xsl:text>traducción libre de frase u oración</xsl:text>
+						</td>
+					</tr>
+				</table>
+</example>
+</xsl:if>
+			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='Blessymol'">
+<p>
+<xsl:text>Las palabras en el </xsl:text>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='es'])) &gt; 0">
+<xsl:value-of select="normalize-space(//language/langNames/langName[@lang='es'])" />
+</xsl:when>
+<xsl:otherwise>
+<xsl:text>Vernacular</xsl:text>
+</xsl:otherwise>
+</xsl:choose>
+<xsl:text> aparecen en la primera línea. La segunda línea presenta las palabras in IPA.  La tercera línea añade guiones al IPA para mostrar la separación de las palabras en morfemas.
+					La cuarta línea presenta la traducción morfema por morfema al español, con los morfemas separados por guiones.  Se utiliza la mejor traducción literal para cada raíz, separada por puntos si se necesita más de una palabra en español para expresar el significado del </xsl:text>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='es'])) &gt; 0">
+<xsl:value-of select="normalize-space(//language/langNames/langName[@lang='es'])" />
+</xsl:when>
+<xsl:otherwise>
+<xsl:text>Vernacular</xsl:text>
+</xsl:otherwise>
+</xsl:choose>
+<xsl:text> raíz, mientras que los prefijos y sufijos se muestran mediante glosas o abreviaturas de sus características.  Esta cuarta línea puede ser de gran utilidad para los lingüistas.  Las dos últimas líneas ofrecen la traducción libre de todo el ejemplo, primero en español y luego en la lengua oficial del Estado.</xsl:text>
+</p>
+</xsl:if>
+           
             <p>
 <object type="tComment">Mencione aquí cualquier diferencia que haya entre su lengua y el español. Por ejemplo, si su lengua no distingue entre el número y/o el género en los sustantivos, como lo hace el español, deberá usar el singular y la forma en masculino para las glosas de las palabras.</object>
 </p>
@@ -1345,6 +1469,7 @@
                   Clase
                </th>
                <th>Clasificador</th>
+               <th>Glosa</th>
             </tr>
             <tr>
 <td>
@@ -1365,7 +1490,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1401,7 +1526,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1437,7 +1562,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1473,7 +1598,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1509,7 +1634,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1545,7 +1670,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1581,7 +1706,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1617,7 +1742,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1653,7 +1778,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1689,7 +1814,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1725,7 +1850,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1761,7 +1886,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1797,7 +1922,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1833,7 +1958,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1869,7 +1994,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1905,7 +2030,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1941,7 +2066,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1977,7 +2102,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2013,7 +2138,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2049,7 +2174,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2085,7 +2210,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2121,7 +2246,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2157,7 +2282,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2193,7 +2318,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2212,7 +2337,7 @@
 </xsl:for-each>
             <tr>
 <td>
-                  <xsl:text>ESCRIBA LA GLOSA</xsl:text>
+                  <xsl:text>ESCRIBA EL CLASE</xsl:text>
                </td>
 <xsl:for-each select="//typology/classifierOtherExample/form[1]">
 <td>
@@ -2229,7 +2354,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2265,7 +2390,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2297,6 +2422,7 @@
                   Clase
                </th>
                <th>Clasificador</th>
+               <th>Glosa</th>
             </tr>
             <tr>
 <td>
@@ -2317,7 +2443,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2353,7 +2479,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2389,7 +2515,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2425,7 +2551,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2461,7 +2587,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2497,7 +2623,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2533,7 +2659,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2569,7 +2695,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2605,7 +2731,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2641,7 +2767,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2677,7 +2803,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2713,7 +2839,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2749,7 +2875,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2785,7 +2911,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2821,7 +2947,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2857,7 +2983,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2876,7 +3002,7 @@
 </xsl:for-each>
             <tr>
 <td>
-                  <xsl:text>ESCRIBA LA GLOSA</xsl:text>
+                  <xsl:text>ESCRIBA EL CLASE</xsl:text>
                </td>
 <xsl:for-each select="//typology/classOtherExample/form[1]">
 <td>
@@ -2893,7 +3019,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2929,7 +3055,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2976,6 +3102,7 @@
                   Nombre
                </th>
                <th>Indicador de clase</th>
+               <th>Glosa</th>
             </tr>
             <tr>
 <td>
@@ -2996,7 +3123,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3032,7 +3159,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3068,7 +3195,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3104,7 +3231,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3140,7 +3267,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3176,7 +3303,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3212,7 +3339,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3248,7 +3375,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3284,7 +3411,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3320,7 +3447,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3356,7 +3483,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3392,7 +3519,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3428,7 +3555,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3464,7 +3591,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3500,7 +3627,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3536,7 +3663,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3572,7 +3699,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3608,7 +3735,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3638,6 +3765,7 @@
                <th>Nombre</th>
                <th>Concordancia de número</th>
                <th>Indicador</th>
+               <th>Glosa</th>
             </tr>
             <tr>
 <td>
@@ -3661,7 +3789,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3699,7 +3827,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3739,7 +3867,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3777,7 +3905,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3817,7 +3945,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3855,7 +3983,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3895,7 +4023,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3933,7 +4061,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -3973,7 +4101,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4011,7 +4139,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4051,7 +4179,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4089,7 +4217,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4129,7 +4257,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4167,7 +4295,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4207,7 +4335,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4245,7 +4373,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4285,7 +4413,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4323,7 +4451,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4363,7 +4491,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4401,7 +4529,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4441,7 +4569,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4479,7 +4607,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4519,7 +4647,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4557,7 +4685,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4597,7 +4725,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4635,7 +4763,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4675,7 +4803,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4713,7 +4841,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4753,7 +4881,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4791,7 +4919,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4831,7 +4959,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4869,7 +4997,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4889,7 +5017,7 @@
 </xsl:for-each>
             <tr>
 <td>
-                  <xsl:text>ESCRIBA LA GLOSA</xsl:text>
+                  <xsl:text>ESCRIBA EL CLASE</xsl:text>
                </td>
 <td>
 <xsl:text>singular</xsl:text>
@@ -4909,7 +5037,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4947,7 +5075,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -4967,7 +5095,7 @@
 </xsl:for-each>
             <tr>
 <td>
-                  <xsl:text>ESCRIBA LA GLOSA</xsl:text>
+                  <xsl:text>ESCRIBA EL CLASE</xsl:text>
                </td>
 <td>
 <xsl:text>plural</xsl:text>
@@ -4987,7 +5115,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -5025,7 +5153,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ESCRIBA LA GLOSA</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -5056,8 +5184,9 @@
                <th>
                   Número de clase
                </th>
-               <th>Indiicador</th>
                <th>Concordancia de número</th>
+               <th>Indiicador</th>
+               <th>Glosa</th>
             </tr>
             <tr>
 <td>
@@ -5094,6 +5223,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class1Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5106,6 +5236,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class1Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5128,6 +5259,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5148,7 +5280,7 @@
                      <xsl:when test="//typology/@class2agr='pl'">plural</xsl:when>
                      <xsl:when test="//typology/@class2agr='irrelevant'">no aplica</xsl:when>
                   </xsl:choose>
-                  </td>
+               </td>
 <xsl:for-each select="//typology/class2Example/form[1]">
 <td>
 <langData lang="lVernacular">
@@ -5172,6 +5304,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <xsl:for-each select="//typology/class2Example/form[1]">
 <td>
@@ -5186,6 +5319,7 @@
 <xsl:for-each select="//typology/class2Example/form[position() &gt; 1]">
 <tr>
 <td> </td>
+<td> </td>
 <td>
 <langData lang="lVernacular">
 <xsl:value-of select="vernacular" />
@@ -5208,6 +5342,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <td>
 <langData lang="lIPA">
 <xsl:value-of select="ipa" />
@@ -5220,6 +5355,13 @@
             <tr>
 <td>
                   <xsl:text>3</xsl:text>
+               </td>
+<td>
+                  <xsl:choose>
+                     <xsl:when test="//typology/@class3agr='sg'">singular</xsl:when>
+                     <xsl:when test="//typology/@class3agr='pl'">plural</xsl:when>
+                     <xsl:when test="//typology/@class3agr='irrelevant'">no aplica</xsl:when>
+                  </xsl:choose>
                </td>
 <td>
                   <xsl:choose>
@@ -5252,6 +5394,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class3Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5264,6 +5407,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class3Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5286,6 +5430,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5331,6 +5476,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class4Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5343,6 +5489,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class4Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5365,6 +5512,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5410,6 +5558,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class5Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5422,6 +5571,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class5Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5444,6 +5594,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5489,6 +5640,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class6Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5501,6 +5653,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class6Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5523,6 +5676,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5568,6 +5722,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class7Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5580,6 +5735,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class7Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5602,6 +5758,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5647,6 +5804,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class8Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5659,6 +5817,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class8Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5681,6 +5840,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5726,6 +5886,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class9Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5738,6 +5899,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class9Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5760,6 +5922,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5805,6 +5968,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class10Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5817,6 +5981,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class10Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5839,6 +6004,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5884,6 +6050,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class11Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5896,6 +6063,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class11Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5918,6 +6086,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -5963,6 +6132,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class12Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -5975,6 +6145,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class12Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -5997,6 +6168,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6042,6 +6214,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class13Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6054,6 +6227,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class13Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6076,6 +6250,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6121,6 +6296,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class14Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6133,6 +6309,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class14Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6155,6 +6332,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6200,6 +6378,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class15Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6212,6 +6391,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class15Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6234,6 +6414,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6279,6 +6460,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class16Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6291,6 +6473,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class16Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6313,6 +6496,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6358,6 +6542,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class17Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6370,6 +6555,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class17Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6392,6 +6578,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6437,6 +6624,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class18Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6449,6 +6637,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class18Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6471,6 +6660,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6516,6 +6706,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class19Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6528,6 +6719,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class19Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6550,6 +6742,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6595,6 +6788,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class20Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6607,6 +6801,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class20Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6629,6 +6824,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6674,6 +6870,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class21Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6686,6 +6883,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class21Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6708,6 +6906,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6753,6 +6952,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class22Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6765,6 +6965,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class22Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6787,6 +6988,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6832,6 +7034,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class23Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6844,6 +7047,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class23Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6866,6 +7070,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6911,6 +7116,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class24Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -6923,6 +7129,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class24Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -6945,6 +7152,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -6990,6 +7198,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
+<td> </td>
 <xsl:for-each select="//typology/class25Example/form[1]">
 <td>
 <langData lang="lIPA">
@@ -7002,6 +7211,7 @@
 </xsl:if>
 <xsl:for-each select="//typology/class25Example/form[position() &gt; 1]">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lVernacular">
@@ -7024,6 +7234,7 @@
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
+<td> </td>
 <td> </td>
 <td>
 <langData lang="lIPA">
@@ -7153,6 +7364,12 @@
 </xsl:if>
    </section1>
 </xsl:if>
+	
+		
+	
+	
+		
+	
 
    
    

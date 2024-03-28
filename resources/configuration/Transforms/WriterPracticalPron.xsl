@@ -35043,7 +35043,7 @@
 <td>
 <xsl:text>First exclusive</xsl:text>
 </td>
-<xsl:for-each select="//pron/reflFirsExclExample/form[1]">
+<xsl:for-each select="//pron/reflFirstExclExample/form[1]">
 <td>
 <langData lang="lVernacular">
 <xsl:value-of select="vernacular" />
@@ -35067,7 +35067,7 @@
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
 <td> </td>
-<xsl:for-each select="//pron/reflFirsExclExample/form[1]">
+<xsl:for-each select="//pron/reflFirstExclExample/form[1]">
 <td>
 <langData lang="lIPA">
 <xsl:value-of select="ipa" />
@@ -35077,7 +35077,7 @@
 </xsl:for-each>
 </tr>
 </xsl:if>
-<xsl:for-each select="//pron/reflFirsExclExample/form[position() &gt; 1]">
+<xsl:for-each select="//pron/reflFirstExclExample/form[position() &gt; 1]">
 <tr>
 <td> </td>
 <td>

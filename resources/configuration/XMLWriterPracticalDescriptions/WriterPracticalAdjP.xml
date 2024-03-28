@@ -147,7 +147,7 @@
      <p show="swAdjPModifiersYesRedup">
         <text show="swAdjPModifiersYesDegreeOrMannerOrAttaches"><content>Adjectives may also use reduplication to </content></text>
         <text show="swAdjPModifiersNotDegreeOrMannerOrAttaches"><content>In </content>
-           <langName/><content>, reduplication is used to </content></text><content>intensify the meaning of  the qualitative adjective.  Examples of qualitative adjectives with reduplication modifying or intensifying them are:</content></p>
+           <langName/><content>, reduplication is used to </content></text><content>intensify the meaning of the qualitative adjective.  Examples of qualitative adjectives with reduplication modifying or intensifying them are:</content></p>
      <example show="swAdjPModifiersYesRedup">
         <table border="1">
            <headerRow>
@@ -608,7 +608,7 @@
             <example>
                <table border="1">
                   <headerRow>
-                     <headerCol>Morphemes</headerCol>
+                     <headerCol>Quantifiers</headerCol>
                      <headerCol>Gloss</headerCol>
                   </headerRow>
                   <row>
@@ -728,7 +728,7 @@
                <example>
                   <table border="1">
                      <headerRow>
-                        <headerCol>Morphemes</headerCol>
+                        <headerCol>Quantifiers</headerCol>
                         <headerCol>Gloss</headerCol>
                      </headerRow>
                      <row>

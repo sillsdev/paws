@@ -613,7 +613,7 @@
 </xsl:choose>
 <xsl:text>, reduplication is used to </xsl:text>
 </xsl:if>
-<xsl:text>intensify the meaning of  the qualitative adjective.  Examples of qualitative adjectives with reduplication modifying or intensifying them are:</xsl:text>
+<xsl:text>intensify the meaning of the qualitative adjective.  Examples of qualitative adjectives with reduplication modifying or intensifying them are:</xsl:text>
 </p>
 </xsl:if>
      <xsl:if test="normalize-space(//adjp/@modifiers)='yes' and normalize-space(//adjp/modifiersRedup/@checked)='yes'">
@@ -4173,7 +4173,7 @@
             <example num="xAdjP.AdjQP.QPAll.12">
 <table border="1">
                   <tr>
-                     <th>Morphemes</th>
+                     <th>Quantifiers</th>
                      <th>Gloss</th>
                   </tr>
                   <tr>
@@ -4654,7 +4654,7 @@
                <example num="xAdjP.AdjQP.QPDeterminers.12">
 <table border="1">
                      <tr>
-                        <th>Morphemes</th>
+                        <th>Quantifiers</th>
                         <th>Gloss</th>
                      </tr>
                      <tr>
