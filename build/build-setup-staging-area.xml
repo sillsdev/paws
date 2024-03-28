@@ -11,6 +11,15 @@
 			<fileset dir="../LibJavaDev">
 				<filename name="libjavadev-*.jar"/>
 			</fileset>
+			<fileset dir="../LibJavaDev/jna">
+				<include name="jna-*.jar" />
+				<include name="jna-license.txt" />
+				<include name="jna-platform-*.jar" />
+			</fileset>
+			<fileset dir="../LibJavaDev/json">
+				<include name="json-simple-*.jar" />
+				<include name="LICENSE-2..txt" />
+			</fileset>
 			<fileset dir="../ControlsFX">
 				<include name="controlsfx-8.40.12.jar" />
 				<include name="controlsfx-8.40.12license.txt" />
