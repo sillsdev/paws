@@ -16,6 +16,8 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -27,6 +29,7 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.sil.paws.Constants;
 import org.sil.utility.HandleExceptionMessage;
+import org.sil.utility.view.ObservableResourceFactory;
 import org.sil.utility.xml.XsltParameter;
 import org.w3c.dom.Document;
 
@@ -35,6 +38,12 @@ import org.w3c.dom.Document;
  *
  */
 public class DatabaseMigrator {
+
+	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
+	static {
+		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
+				new Locale("en")));
+	}
 
 	String[][] versionToTransform = {
 			{"4", "DBVersion4To5.xsl"},
@@ -98,7 +107,7 @@ public class DatabaseMigrator {
 		return version;
 	}
 
-	public void doMigration() {
+	public void doMigration(Locale locale) {
 		try {
 			String version = getVersion();
 			// make a backup of the database file just in case
@@ -116,6 +125,10 @@ public class DatabaseMigrator {
 				}
 				if (doMigration) {
 						List<XsltParameter> params = new ArrayList<XsltParameter>();
+						RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION, locale));
+						String sDefaultKeyboard = RESOURCE_FACTORY.getStringBinding("label.defaultkeyboard").get();
+						XsltParameter defaultKeyboard = new XsltParameter("prmDefaultKeyboard", sDefaultKeyboard);
+						params.add(defaultKeyboard);
 						file = applyMigrationTransformToFile(v[0], file, v[1], params);
 				}
 			}

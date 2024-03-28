@@ -171,7 +171,7 @@ public class MainApp extends Application implements MainAppUtilities {
 		DatabaseMigrator migrator = new DatabaseMigrator(file);
 		String version = migrator.getVersion();
 		if (!version.equals(Constants.CURRENT_DATABASE_VERSION)) {
-			migrator.doMigration();
+			migrator.doMigration(locale);
 		}
 		xmlBackEndProvider.loadLanguageDataFromFile(file);
 		language = xmlBackEndProvider.getLanguage();

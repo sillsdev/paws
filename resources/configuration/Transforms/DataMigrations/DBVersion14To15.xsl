@@ -4,6 +4,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
 	<xsl:include href="../PAWSSKCommon.xsl"/>
+	<xsl:param name="prmDefaultKeyboard" select="'Default'"/>
 	<xsl:template match="@* |  node()">
 		<xsl:copy>
 			<xsl:apply-templates select="@*"/>
@@ -26,22 +27,22 @@
 		<language>
 			<xsl:apply-templates/>
 			<keyboard>
-				<description>English</description>
+				<description><xsl:value-of select="$prmDefaultKeyboard"/></description>
 				<SLocale>en</SLocale>
 				<windowsLangID>0</windowsLangID>
 			</keyboard>
 			<freeGlossKeyboard>
-				<description>English</description>
+				<description><xsl:value-of select="$prmDefaultKeyboard"/></description>
 				<SLocale>en</SLocale>
 				<windowsLangID>0</windowsLangID>
 			</freeGlossKeyboard>
 			<ipaKeyboard>
-				<description>English</description>
+				<description><xsl:value-of select="$prmDefaultKeyboard"/></description>
 				<SLocale>en</SLocale>
 				<windowsLangID>0</windowsLangID>
 			</ipaKeyboard>
 			<writerKeyboard>
-				<description>English</description>
+				<description><xsl:value-of select="$prmDefaultKeyboard"/></description>
 				<SLocale>en</SLocale>
 				<windowsLangID>0</windowsLangID>
 			</writerKeyboard>

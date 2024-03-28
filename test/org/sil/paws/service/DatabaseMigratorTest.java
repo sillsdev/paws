@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2022 SIL International
+// Copyright (c) 2016-2024 SIL International
 // This software is licensed under the LGPL, version 2.1 or later
 // (http://www.gnu.org/licenses/lgpl-2.1.html)
 /**
@@ -33,6 +33,7 @@ public class DatabaseMigratorTest {
 	File databaseFile;
 	DatabaseMigrator migrator;
 	Language language;
+	Locale locale;
 	
 	@Rule
 	public JavaFXThreadingRule javafxRule = new JavaFXThreadingRule();
@@ -57,6 +58,7 @@ public class DatabaseMigratorTest {
 		Files.copy(Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_11_ORIG),
 				Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_11),
 				StandardCopyOption.REPLACE_EXISTING);
+		locale = new Locale("en");
 	}
 
 	/**
@@ -84,10 +86,9 @@ public class DatabaseMigratorTest {
 		migrator = new DatabaseMigrator(databaseFile);
 		String version = migrator.getVersion();
 		assertEquals("4", version);
-		migrator.doMigration();
+		migrator.doMigration(locale);
 		version = migrator.getVersion();
 		assertEquals(Constants.CURRENT_DATABASE_VERSION, version);
-		Locale locale = new Locale("en");
 		language = new Language();
 		XMLBackEndProvider xmlBackEndProvider = new XMLBackEndProvider(language, locale);
 		System.out.println("databaseFile='" + databaseFile.getPath() + "'");
@@ -108,10 +109,9 @@ public class DatabaseMigratorTest {
 		migrator = new DatabaseMigrator(databaseFile);
 		String version = migrator.getVersion();
 		assertEquals("8", version);
-		migrator.doMigration();
+		migrator.doMigration(locale);
 		version = migrator.getVersion();
 		assertEquals(Constants.CURRENT_DATABASE_VERSION, version);
-		Locale locale = new Locale("en");
 		language = new Language();
 		XMLBackEndProvider xmlBackEndProvider = new XMLBackEndProvider(language, locale);
 		xmlBackEndProvider.loadLanguageDataFromFile(databaseFile);
@@ -130,16 +130,14 @@ public class DatabaseMigratorTest {
 		migrator = new DatabaseMigrator(databaseFile);
 		String version = migrator.getVersion();
 		assertEquals("11", version);
-		migrator.doMigration();
+		migrator.doMigration(locale);
 		version = migrator.getVersion();
 		assertEquals(Constants.CURRENT_DATABASE_VERSION, version);
-		Locale locale = new Locale("en");
 		language = new Language();
 		XMLBackEndProvider xmlBackEndProvider = new XMLBackEndProvider(language, locale);
 		xmlBackEndProvider.loadLanguageDataFromFile(databaseFile);
 		language = xmlBackEndProvider.getLanguage();
 		assertEquals(Constants.CURRENT_DATABASE_VERSION, language.getValue("/paws/@dbversion"));
-		
 
 		assertEquals("Kiyoꞌ Per nits.", language.getValue("/paws/typology/example/interlinearEntry[1]/vernacularLine"));
 		assertEquals("Pedro está tomando agua.", language.getValue("/paws/typology/example/interlinearEntry[1]/freeLine"));
@@ -153,5 +151,10 @@ public class DatabaseMigratorTest {
 		assertEquals("Juan pegó a Felipe.", language.getValue("/paws/typology/example/interlinearEntry[5]/freeLine"));
 		assertEquals("Ndao miyiꞌ bido.", language.getValue("/paws/typology/example/interlinearEntry[6]/vernacularLine"));
 		assertEquals("El hombre comió el plátano.", language.getValue("/paws/typology/example/interlinearEntry[6]/freeLine"));
+
+		assertEquals("Default", language.getValue("/paws/language/keyboard/description"));
+		assertEquals("Default", language.getValue("/paws/language/freeGlossKeyboard/description"));
+		assertEquals("Default", language.getValue("/paws/language/ipaKeyboard/description"));
+		assertEquals("Default", language.getValue("/paws/language/writerKeyboard/description"));
 	}
 }
