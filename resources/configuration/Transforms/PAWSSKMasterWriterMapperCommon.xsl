@@ -83,7 +83,7 @@
 	-->
 	<xsl:template name="DoFree">
 		<free>
-			<gloss lang="lGloss">ENTER FREE TRANSLATION HERE.</gloss>
+			<gloss lang="lGloss">ENTER ENGLISH FREE TRANSLATION HERE.</gloss>
 		</free>
 	</xsl:template>
 	<!--
@@ -669,7 +669,14 @@
 		</lineGroup>
 		<free>
 			<gloss lang="lGloss">
-				<xsl:value-of select="freeLine"/>
+				<xsl:choose>
+					<xsl:when test="string-length(normalize-space(freeline)) = 0">
+						<xsl:call-template name="DoFree"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="freeLine"/>
+					</xsl:otherwise>
+				</xsl:choose>
 			</gloss>
 		</free>
 		<xsl:if test="$fOutputStyle='Blessymol'">
