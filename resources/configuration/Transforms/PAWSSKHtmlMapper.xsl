@@ -437,7 +437,7 @@ newTextArea.setAttribute("class", cssClass);
 newTextArea.setAttribute("onfocus", "switchKeyboard('" + code + "')");
 newTextArea.setAttribute("onfocusout", "saveData()");
 newTextArea.setAttribute("wrap", "off");
-newTextArea.setAttribute("cols", "40");
+newTextArea.setAttribute("cols", "25");
 newTextArea.setAttribute("id", idValue + code + size);
 newTextArea.setAttribute("name", idValue + code + size);
 newCell2.appendChild(newTextArea);
@@ -1931,7 +1931,7 @@ technicalTermRef
 						<xsl:value-of select="@cols"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:text>40</xsl:text>
+						<xsl:text>25</xsl:text>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
