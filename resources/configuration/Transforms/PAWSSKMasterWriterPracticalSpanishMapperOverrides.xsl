@@ -69,7 +69,27 @@
 	<xsl:template name="OutputContentsElement">
 		<contents showLevel="3" label="Contenido"/>
 	</xsl:template>
+	<!--
+		OutputEnterIpaLineHereMessage
+	-->
+	<xsl:template name="OutputEnterIpaLineHereMessage">
+		<xsl:text>ESCRIBA AFI PALABRAS AQUÍ</xsl:text>
+	</xsl:template>
+	<!--
+		OutputEnterIpaMorphBreaksLineHereMessage
+	-->
+	<xsl:template name="OutputEnterIpaMorphBreaksLineHereMessage">
+		<xsl:text>ESCRIBA MORFEMA-S EN-AFI AQUÍ</xsl:text>
+	</xsl:template>
 	<xsl:template name="OutputEnterExampleHereMessage">
-		<xsl:text>ESCRIBA UN EJEMPLO AQUÍ</xsl:text>
+		<xsl:text>ESCRIBA AQUÍ LAS PALABRAS VERNÁCULAS</xsl:text>
 	</xsl:template>	
+	<!--
+		OutputStateFree
+	-->
+	<xsl:template name="OutputStateFree">
+		<free>
+			<gloss lang="lStateGloss">ESCRIBA LA TRADUCCIÓN LIBRE EN LA LENGUA OFFICIAL DEL ESTADO AQUÍ.</gloss>
+		</free>
+	</xsl:template>
 </xsl:stylesheet>

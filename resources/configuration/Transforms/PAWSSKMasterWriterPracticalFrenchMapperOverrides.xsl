@@ -10,7 +10,7 @@
 	-->
 	<xsl:template name="DoFree">
 		<free>
-			<gloss lang="lGloss">SAISIR TRADUCTION LIBRE ICI.</gloss>
+			<gloss lang="lGloss">SAISIR TRADUCTION LIBRE EN FRANÇAIS ICI.</gloss>
 		</free>
 	</xsl:template>
 	<!--
@@ -70,6 +70,26 @@
 		<contents showLevel="3" label="Contenu"/>
 	</xsl:template>
 	<xsl:template name="OutputEnterExampleHereMessage">
-		<xsl:text>SAISIR UN EXEMPLE ICI</xsl:text>
+		<xsl:text>SAISIR LES MOTS VERNACULAIRES ICI</xsl:text>
+	</xsl:template>
+	<!--
+		OutputEnterIpaLineHereMessage
+	-->
+	<xsl:template name="OutputEnterIpaLineHereMessage">
+		<xsl:text>SAISIR API MOTS ICI</xsl:text>
+	</xsl:template>
+	<!--
+		OutputEnterIpaMorphBreaksLineHereMessage
+	-->
+	<xsl:template name="OutputEnterIpaMorphBreaksLineHereMessage">
+		<xsl:text>SAISIR MORPHEME-S EN-API ICI</xsl:text>
+	</xsl:template>
+	<!--
+		OutputStateFree
+	-->
+	<xsl:template name="OutputStateFree">
+		<free>
+			<gloss lang="lStateGloss">SAISIR LA TRADUCTION LIBRE DANS LA LANGUE DE L'ÉTAT ICI.</gloss>
+		</free>
 	</xsl:template>
 </xsl:stylesheet>

@@ -680,9 +680,7 @@
 			</gloss>
 		</free>
 		<xsl:if test="$fOutputStyle='Blessymol'">
-			<free>
-				<gloss lang="lStateGloss">ENTER STATE LANGUAGE FREE TRANSLATION HERE.</gloss>
-			</free>
+			<xsl:call-template name="OutputStateFree"/>
 		</xsl:if>
 	</xsl:template>
 	<!--
@@ -750,5 +748,13 @@
 				</xsl:with-param>
 			</xsl:call-template>
 		</xsl:if>
+	</xsl:template>
+	<!--
+		OutputStateFree
+	-->
+	<xsl:template name="OutputStateFree">
+		<free>
+			<gloss lang="lStateGloss">ENTER STATE LANGUAGE FREE TRANSLATION HERE.</gloss>
+		</free>
 	</xsl:template>
 </xsl:stylesheet>
