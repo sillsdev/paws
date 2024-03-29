@@ -10,7 +10,7 @@
 	-->
 	<xsl:template name="DoFree">
 		<free>
-			<gloss lang="lGloss">ESCRIBA LA TRADUCCIÓN LIBRE AQUÍ .</gloss>
+			<gloss lang="lGloss">ESCRIBA LA TRADUCCIÓN LIBRE AQUÍ.</gloss>
 		</free>
 	</xsl:template>
 	<!--

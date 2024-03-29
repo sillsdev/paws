@@ -397,13 +397,13 @@
 							<content>[gloses de morphème]</content>
 						</col>
 						<col>
-							<content>PRE-radical-SUF</content>
+							<content>PRE-racine-SUF</content>
 						</col>
 						<col>
-							<content>PRE-radical-SUF</content>
+							<content>PRE-racine-SUF</content>
 						</col>
 						<col>
-							<content>PRE-radical-SUF</content>
+							<content>PRE-racine-SUF</content>
 						</col>
 					</row>
 					<row>
@@ -429,9 +429,9 @@
 			</p>
 			
 							<p show="swBlessymolInterlinear">
-				<content>This grammar contains many illustrative phrases and sentences.  Most of the examples are presented in an interlinear format consisting of six lines, as shown in </content>
+				<content>Cette grammaire contient de nombreuses phrases et expressions illustratives.  La plupart des exemples sont présentés dans un format interlinéaire de six lignes, comme le montre l'exemple </content>
 				<exampleRef num="xBlessyEx"/>
-				<content>:</content>
+				<content> :</content>
 			</p>
 			<example num="xBlessyEx" show="swBlessymolInterlinear">
 				<table>
@@ -451,30 +451,30 @@
 					</row>
 					<row>
 						<col>
-							<content>[mots en IPA]</content>
+							<content>[mots en API]</content>
 						</col>
 						<col>
-							<content>IPA</content>
+							<content>API</content>
 						</col>
 						<col>
-							<content>IPA</content>
+							<content>API</content>
 						</col>
 						<col>
-							<content>IPA</content>
+							<content>API</content>
 						</col>
 					</row>
 					<row>
 						<col>
-							<content>[IPA séparée par des morphèmes]</content>
+							<content>[API séparée par des morphèmes]</content>
 						</col>
 						<col>
-							<content>IPA-IPA-IPA</content>
+							<content>API-API-API</content>
 						</col>
 						<col>
-							<content>IPA-IPA-IPA</content>
+							<content>API-API-API</content>
 						</col>
 						<col>
-							<content>IPA-IPA-IPA</content>
+							<content>API-API-API</content>
 						</col>
 					</row>
 					<row>
@@ -482,13 +482,13 @@
 							<content>[gloses de morphème]</content>
 						</col>
 						<col>
-							<content>PRE-root-SUF</content>
+							<content>PRE-racine-SUF</content>
 						</col>
 						<col>
-							<content>PRE-root-SUF</content>
+							<content>PRE-racine-SUF</content>
 						</col>
 						<col>
-							<content>PRE-root-SUF</content>
+							<content>PRE-racine-SUF</content>
 						</col>
 					</row>
 					<row>
@@ -512,7 +512,7 @@
 			<p show="swBlessymolInterlinear">
 				<content>Les mots en </content>
 				<langName/>
-				<content> sont donnés sur la première ligne. La deuxième ligne présente les mots en IPA.  La troisième ligne ajoute des traits d'union à l'API pour montrer la séparation des mots en morphèmes.
+				<content> sont donnés sur la première ligne. La deuxième ligne présente les mots en API.  La troisième ligne ajoute des traits d'union à l'API pour montrer la séparation des mots en morphèmes.
 					La quatrième ligne donne la traduction morphème par morphème en françaish, les morphèmes étant séparés par des traits d'union.  La meilleure traduction littérale est utilisée pour chaque racine, séparée par des points si plus d'un mot espagnol est nécessaire pour exprimer le sens du </content>
 				<langName/>
 				<content> racine, tandis que les préfixes et suffixes sont indiqués par des gloses ou des abréviations de leurs caractéristiques.  Cette quatrième ligne peut s'avérer très utile pour les linguistes.  Les deux dernières lignes donnent la traduction libre de l'ensemble de l'exemple, d'abord en français, puis dans la langue de l'Etat.</content>

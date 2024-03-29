@@ -788,30 +788,30 @@
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[palabras en IPA]</xsl:text>
+							<xsl:text>[palabras en AFI]</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA</xsl:text>
+							<xsl:text>AFI</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA</xsl:text>
+							<xsl:text>AFI</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA</xsl:text>
+							<xsl:text>AFI</xsl:text>
 						</td>
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[IPA separada por morfemas]</xsl:text>
+							<xsl:text>[AFI separada por morfemas]</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA-IPA-IPA</xsl:text>
+							<xsl:text>AFI-AFI-AFI</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA-IPA-IPA</xsl:text>
+							<xsl:text>AFI-AFI-AFI</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA-IPA-IPA</xsl:text>
+							<xsl:text>AFI-AFI-AFI</xsl:text>
 						</td>
 					</tr>
 					<tr>
@@ -858,7 +858,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> aparecen en la primera línea. La segunda línea presenta las palabras in IPA.  La tercera línea añade guiones al IPA para mostrar la separación de las palabras en morfemas.
+<xsl:text> aparecen en la primera línea. La segunda línea presenta las palabras in AFI.  La tercera línea añade guiones al A para mostrar la separación de las palabras en morfemas.
 					La cuarta línea presenta la traducción morfema por morfema al español, con los morfemas separados por guiones.  Se utiliza la mejor traducción literal para cada raíz, separada por puntos si se necesita más de una palabra en español para expresar el significado del </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='es'])) &gt; 0">

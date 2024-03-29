@@ -755,9 +755,9 @@
 	            	<xsl:text>Marqueurs de cas</xsl:text>
 	            </caption>
 	            <tr>
-	            	<th>Morphèmes</th>
 	               <th>Cas</th>
 	            	<th>Utilisation</th>
+	            	<th>Morphèmes</th>
 	            	<th>Glose</th>
 	            </tr>
 	            <xsl:if test="normalize-space(//typology/@case)='nominative' or normalize-space(//typology/@case)='split'">

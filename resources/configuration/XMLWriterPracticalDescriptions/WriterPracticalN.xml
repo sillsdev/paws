@@ -284,9 +284,9 @@
 	      			<content>Case markers</content>
 	      		</caption>
 	      		<headerRow>
-	      			<headerCol>Morphemes</headerCol>
 	      			<headerCol>Case</headerCol>
 	      			<headerCol>Use</headerCol>
+	      			<headerCol>Morphemes</headerCol>
 	      			<headerCol>Gloss</headerCol>
 	      		</headerRow>
 	      		<row show="swNPCaseNomOrSplit">
@@ -423,6 +423,7 @@
 	      				<content>any other specific markers</content>
 	      			</col>
 	      			<col exampleLoc="np/other"/>
+	      			<col><gloss><content>ENTER GLOSS</content></gloss></col>
 	      		</row>
 	      	</table>
 	      </example>	      

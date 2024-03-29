@@ -284,9 +284,9 @@
 	            	<content>Marqueurs de cas</content>
 	            </caption>
 	            <headerRow>
-	            	<headerCol>Morphèmes</headerCol>
 	               <headerCol>Cas</headerCol>
 	            	<headerCol>Utilisation</headerCol>
+	            	<headerCol>Morphèmes</headerCol>
 	            	<headerCol>Glose</headerCol>
 	            </headerRow>
 	            <row show="swNPCaseNomOrSplit">

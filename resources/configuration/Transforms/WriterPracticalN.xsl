@@ -755,9 +755,9 @@
 	      			<xsl:text>Case markers</xsl:text>
 	      		</caption>
 	      		<tr>
-	      			<th>Morphemes</th>
 	      			<th>Case</th>
 	      			<th>Use</th>
+	      			<th>Morphemes</th>
 	      			<th>Gloss</th>
 	      		</tr>
 	      		<xsl:if test="normalize-space(//typology/@case)='nominative' or normalize-space(//typology/@case)='split'">
@@ -1892,7 +1892,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1930,7 +1930,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise></xsl:otherwise>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>

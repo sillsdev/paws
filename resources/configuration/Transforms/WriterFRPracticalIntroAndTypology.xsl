@@ -699,13 +699,13 @@
 							<xsl:text>[gloses de morphème]</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>PRE-radical-SUF</xsl:text>
+							<xsl:text>PRE-racine-SUF</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>PRE-radical-SUF</xsl:text>
+							<xsl:text>PRE-racine-SUF</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>PRE-radical-SUF</xsl:text>
+							<xsl:text>PRE-racine-SUF</xsl:text>
 						</td>
 					</tr>
 					<tr>
@@ -763,9 +763,9 @@
 			
 							<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='Blessymol'">
 <p>
-<xsl:text>This grammar contains many illustrative phrases and sentences.  Most of the examples are presented in an interlinear format consisting of six lines, as shown in </xsl:text>
+<xsl:text>Cette grammaire contient de nombreuses phrases et expressions illustratives.  La plupart des exemples sont présentés dans un format interlinéaire de six lignes, comme le montre l'exemple </xsl:text>
 <exampleRef num="xBlessyEx" equal="no" letterOnly="no" />
-<xsl:text>:</xsl:text>
+<xsl:text> :</xsl:text>
 </p>
 </xsl:if>
 			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='Blessymol'">
@@ -796,30 +796,30 @@
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[mots en IPA]</xsl:text>
+							<xsl:text>[mots en API]</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA</xsl:text>
+							<xsl:text>API</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA</xsl:text>
+							<xsl:text>API</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA</xsl:text>
+							<xsl:text>API</xsl:text>
 						</td>
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[IPA séparée par des morphèmes]</xsl:text>
+							<xsl:text>[API séparée par des morphèmes]</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA-IPA-IPA</xsl:text>
+							<xsl:text>API-API-API</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA-IPA-IPA</xsl:text>
+							<xsl:text>API-API-API</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>IPA-IPA-IPA</xsl:text>
+							<xsl:text>API-API-API</xsl:text>
 						</td>
 					</tr>
 					<tr>
@@ -827,13 +827,13 @@
 							<xsl:text>[gloses de morphème]</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>PRE-root-SUF</xsl:text>
+							<xsl:text>PRE-racine-SUF</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>PRE-root-SUF</xsl:text>
+							<xsl:text>PRE-racine-SUF</xsl:text>
 						</td>
 						<td align="left">
-							<xsl:text>PRE-root-SUF</xsl:text>
+							<xsl:text>PRE-racine-SUF</xsl:text>
 						</td>
 					</tr>
 					<tr>
@@ -866,7 +866,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> sont donnés sur la première ligne. La deuxième ligne présente les mots en IPA.  La troisième ligne ajoute des traits d'union à l'API pour montrer la séparation des mots en morphèmes.
+<xsl:text> sont donnés sur la première ligne. La deuxième ligne présente les mots en API.  La troisième ligne ajoute des traits d'union à l'API pour montrer la séparation des mots en morphèmes.
 					La quatrième ligne donne la traduction morphème par morphème en françaish, les morphèmes étant séparés par des traits d'union.  La meilleure traduction littérale est utilisée pour chaque racine, séparée par des points si plus d'un mot espagnol est nécessaire pour exprimer le sens du </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
