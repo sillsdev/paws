@@ -553,6 +553,19 @@
 </xsl:choose>
 </gloss>
 </td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
 </xsl:for-each>
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
@@ -563,6 +576,7 @@
 <xsl:value-of select="ipa" />
 </langData>
 </td>
+<td> </td>
 <td> </td>
 </xsl:for-each>
 </tr>
@@ -587,6 +601,19 @@
 </xsl:choose>
 </gloss>
 </td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
@@ -595,6 +622,7 @@
 <xsl:value-of select="ipa" />
 </langData>
 </td>
+<td> </td>
 <td> </td>
 </tr>
 </xsl:if>
@@ -630,6 +658,19 @@
 </xsl:choose>
 </gloss>
 </td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
 </xsl:for-each>
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
@@ -640,6 +681,7 @@
 <xsl:value-of select="ipa" />
 </langData>
 </td>
+<td> </td>
 <td> </td>
 </xsl:for-each>
 </tr>
@@ -664,6 +706,19 @@
 </xsl:choose>
 </gloss>
 </td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
@@ -672,6 +727,7 @@
 <xsl:value-of select="ipa" />
 </langData>
 </td>
+<td> </td>
 <td> </td>
 </tr>
 </xsl:if>
@@ -711,6 +767,19 @@
 </xsl:choose>
 </gloss>
 </td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
 </xsl:for-each>
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
@@ -722,6 +791,7 @@
 <xsl:value-of select="ipa" />
 </langData>
 </td>
+<td> </td>
 <td> </td>
 </xsl:for-each>
 </tr>
@@ -747,6 +817,19 @@
 </xsl:choose>
 </gloss>
 </td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
@@ -756,6 +839,7 @@
 <xsl:value-of select="ipa" />
 </langData>
 </td>
+<td> </td>
 <td> </td>
 </tr>
 </xsl:if>
@@ -783,6 +867,19 @@
 </xsl:choose>
 </gloss>
 </td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
 </xsl:for-each>
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
@@ -794,6 +891,7 @@
 <xsl:value-of select="ipa" />
 </langData>
 </td>
+<td> </td>
 <td> </td>
 </xsl:for-each>
 </tr>
@@ -819,6 +917,19 @@
 </xsl:choose>
 </gloss>
 </td>
+<td>
+<gloss lang="lGloss">
+<xsl:variable name="sGloss">
+<xsl:value-of select="gloss" />
+</xsl:variable>
+<xsl:choose>
+<xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
+<xsl:value-of select="$sGloss" />
+</xsl:when>
+<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+</xsl:choose>
+</gloss>
+</td>
 </tr>
 <xsl:if test="$fOutputStyle='Blessymol'">
 <tr>
@@ -828,6 +939,7 @@
 <xsl:value-of select="ipa" />
 </langData>
 </td>
+<td> </td>
 <td> </td>
 </tr>
 </xsl:if>

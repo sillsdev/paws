@@ -1164,7 +1164,9 @@ DoOL
 									</xsl:element>
 								</xsl:element>
 							</td>
-							<td>&#xa0;</td>
+							<xsl:call-template name="DoExampleEntryIpaEmptyCell">
+								<xsl:with-param name="sGlossCol" select="$sGlossCol"/>
+							</xsl:call-template>
 						</xsl:element>
 					</tr>
 				</xsl:element>
@@ -1204,7 +1206,9 @@ DoOL
 									</xsl:element>
 								</xsl:element>
 							</td>
-							<td>&#xa0;</td>
+							<xsl:call-template name="DoExampleEntryIpaEmptyCell">
+								<xsl:with-param name="sGlossCol" select="$sGlossCol"/>
+							</xsl:call-template>
 						</tr>
 					</xsl:element>
 				</xsl:element>
@@ -1216,6 +1220,56 @@ DoOL
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	<xsl:template name="DoExampleEntryIpaEmptyCell">
+		<xsl:param name="sGlossCol"/>
+		<xsl:choose>
+			<xsl:when test="$sGlossCol[descendant-or-self::content]">
+				<xsl:for-each select="$sGlossCol">
+					<td>&#xa0;</td>
+				</xsl:for-each>
+			</xsl:when>
+			<xsl:otherwise>
+				<td>&#xa0;</td>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<!--
+		DoExampleEntryGloss
+	-->
+	<xsl:template name="DoExampleEntryGloss">
+		<xsl:param name="sGlossCol"/>
+		<xsl:element name="gloss">
+			<xsl:attribute name="lang">lGloss</xsl:attribute>
+			<xsl:element name="xsl:variable">
+				<xsl:attribute name="name">
+					<xsl:text>sGloss</xsl:text>
+				</xsl:attribute>
+				<xsl:element name="xsl:value-of">
+					<xsl:attribute name="select">
+						<xsl:text>gloss</xsl:text>
+					</xsl:attribute>
+				</xsl:element>
+			</xsl:element>
+			<xsl:element name="xsl:choose">
+				<xsl:element name="xsl:when">
+					<xsl:attribute name="test">
+						<xsl:text>string-length(normalize-space($sGloss)) &gt; 0</xsl:text>
+					</xsl:attribute>
+					<xsl:element name="xsl:value-of">
+						<xsl:attribute name="select">
+							<xsl:text>$sGloss</xsl:text>
+						</xsl:attribute>
+					</xsl:element>
+				</xsl:element>
+				<xsl:element name="xsl:otherwise">
+					<xsl:value-of select="$sGlossCol"/>
+				</xsl:element>
+			</xsl:element>
+		</xsl:element>
+	</xsl:template>
+	<!--
+		DoExampleEntryVernacularAndGloss
+	-->
 	<xsl:template name="DoExampleEntryVernacularAndGloss">
 		<xsl:param name="sGlossCol"/>
 		<td>
@@ -1228,36 +1282,24 @@ DoOL
 				</xsl:element>
 			</xsl:element>
 		</td>
-		<td>
-			<xsl:element name="gloss">
-				<xsl:attribute name="lang">lGloss</xsl:attribute>
-				<xsl:element name="xsl:variable">
-					<xsl:attribute name="name">
-						<xsl:text>sGloss</xsl:text>
-					</xsl:attribute>
-					<xsl:element name="xsl:value-of">
-						<xsl:attribute name="select">
-							<xsl:text>gloss</xsl:text>
-						</xsl:attribute>
-					</xsl:element>
-				</xsl:element>
-				<xsl:element name="xsl:choose">
-					<xsl:element name="xsl:when">
-						<xsl:attribute name="test">
-							<xsl:text>string-length(normalize-space($sGloss)) &gt; 0</xsl:text>
-						</xsl:attribute>
-						<xsl:element name="xsl:value-of">
-							<xsl:attribute name="select">
-								<xsl:text>$sGloss</xsl:text>
-							</xsl:attribute>
-						</xsl:element>
-					</xsl:element>
-					<xsl:element name="xsl:otherwise">
-						<xsl:value-of select="$sGlossCol"/>
-					</xsl:element>
-				</xsl:element>
-			</xsl:element>
-		</td>
+		<xsl:choose>
+			<xsl:when test="$sGlossCol[descendant-or-self::content]">
+				<xsl:for-each select="$sGlossCol">
+					<td>
+						<xsl:call-template name="DoExampleEntryGloss">
+							<xsl:with-param name="sGlossCol" select="$sGlossCol"/>
+						</xsl:call-template>
+					</td>
+				</xsl:for-each>
+			</xsl:when>
+			<xsl:otherwise>
+				<td>
+					<xsl:call-template name="DoExampleEntryGloss">
+						<xsl:with-param name="sGlossCol" select="$sGlossCol"/>
+					</xsl:call-template>
+				</td>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	<!--
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
