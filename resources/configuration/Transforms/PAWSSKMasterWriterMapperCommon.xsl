@@ -83,7 +83,9 @@
 	-->
 	<xsl:template name="DoFree">
 		<free>
-			<gloss lang="lGloss">ENTER ENGLISH FREE TRANSLATION HERE.</gloss>
+			<gloss lang="lGloss">
+				<xsl:call-template name="OutputEnterFreeTranslationHere"/>
+			</gloss>
 		</free>
 	</xsl:template>
 	<!--
@@ -548,6 +550,12 @@
 		<xsl:text>ENTER VERNACULAR WORDS HERE</xsl:text>
 	</xsl:template>
 	<!--
+		OutputEnterFreeTranslationHere
+	-->
+	<xsl:template name="OutputEnterFreeTranslationHere">
+		<xsl:text>ENTER ENGLISH FREE TRANSLATION HERE.</xsl:text>
+	</xsl:template>
+	<!--
 		OutputEnterIpaLineHereMessage
 	-->
 	<xsl:template name="OutputEnterIpaLineHereMessage">
@@ -618,7 +626,7 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:for-each select="$sExamples/interlinearEntry[string-length(vernacularLine) &gt; 0]">
-						<listInterlinear>
+					<listInterlinear>
 						<xsl:attribute name="letter">
 							<xsl:value-of select="$sExNumber"/>
 							<xsl:value-of select="substring($sLetterList,(position() * 2)-1,1)"/>
@@ -670,8 +678,8 @@
 		<free>
 			<gloss lang="lGloss">
 				<xsl:choose>
-					<xsl:when test="string-length(normalize-space(freeline)) = 0">
-						<xsl:call-template name="DoFree"/>
+					<xsl:when test="string-length(normalize-space(freeLine)) = 0">
+						<xsl:call-template name="OutputEnterFreeTranslationHere"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="freeLine"/>

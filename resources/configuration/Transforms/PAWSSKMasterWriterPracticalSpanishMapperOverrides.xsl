@@ -70,6 +70,12 @@
 		<contents showLevel="3" label="Contenido"/>
 	</xsl:template>
 	<!--
+		OutputEnterFreeTranslationHere
+	-->
+	<xsl:template name="OutputEnterFreeTranslationHere">
+		<xsl:text>ESCRIBA LA TRADUCCIÓN LIBRE EN ESPAÑOL AQUÍ.</xsl:text>
+	</xsl:template>
+	<!--
 		OutputEnterIpaLineHereMessage
 	-->
 	<xsl:template name="OutputEnterIpaLineHereMessage">

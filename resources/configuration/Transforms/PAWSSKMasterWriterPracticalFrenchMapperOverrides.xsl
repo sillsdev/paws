@@ -3,18 +3,6 @@
 <!-- French overrides -->
 	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-		DoFree
-		routine to create empty free line for interlinear
-		Parameters: none
-		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-	-->
-	<xsl:template name="DoFree">
-		<free>
-			<gloss lang="lGloss">SAISIR TRADUCTION LIBRE EN FRANÇAIS ICI.</gloss>
-		</free>
-	</xsl:template>
-	<!--
-		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 		DoGloss
 		routine to create empty gloss line for interlinear
 		Parameters: none
@@ -71,6 +59,12 @@
 	</xsl:template>
 	<xsl:template name="OutputEnterExampleHereMessage">
 		<xsl:text>SAISIR LES MOTS VERNACULAIRES ICI</xsl:text>
+	</xsl:template>
+	<!--
+		OutputEnterFreeTranslationHere
+	-->
+	<xsl:template name="OutputEnterFreeTranslationHere">
+		<xsl:text>SAISIR TRADUCTION LIBRE EN FRANÇAIS ICI.</xsl:text>
 	</xsl:template>
 	<!--
 		OutputEnterIpaLineHereMessage
