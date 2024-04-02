@@ -73,78 +73,6 @@ Include other templates
 	<xsl:include href="WriterPracticalAppdx.xsl"/>
 	<xsl:include href="PAWSSKMasterWriterMapperCommon.xsl"/>
 	<!--
-		DoAnIntelinearText
-	-->
-	<xsl:template name="DoAnIntelinearText">
-		<xsl:param name="sTextNumber" select="'1'"/>
-		<interlinear-text>
-			<textInfo>
-				<textTitle>
-					<xsl:text>title - text </xsl:text>
-					<xsl:value-of select="$sTextNumber"/>
-				</textTitle>
-				<shortTitle/>
-			</textInfo>
-			<xsl:call-template name="DoTextParagraph">
-				<xsl:with-param name="sParagraphContent" select="'paragraphs for the entire text in the language'"/>
-			</xsl:call-template>
-			<xsl:call-template name="DoTextParagraph"/>
-			<xsl:call-template name="DoTextParagraph"/>
-			<xsl:call-template name="DoTextParagraph"/>
-			<xsl:call-template name="DoTextParagraph"/>
-			<xsl:call-template name="DoTextParagraph"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear">
-				<xsl:with-param name="sLanguage" select="'language'"/>
-				<xsl:with-param name="sIPA" select="'IPA'"/>
-				<xsl:with-param name="sIPAMorphBreaks" select="'IPA with morpheme breaks'"/>
-				<xsl:with-param name="sMorphemes" select="'morphemes'"/>
-				<xsl:with-param name="sFree" select="'free translation'"/>
-				<xsl:with-param name="sStateFree" select="'free translation in state language'"/>
-			</xsl:call-template>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoInterlinearTextInterlinear"/>
-			<xsl:call-template name="DoFreeParagraph">
-				<xsl:with-param name="sParagraphContent" select="'paragraphs for the free translation of the entire text'"/>
-			</xsl:call-template>
-			<xsl:call-template name="DoFreeParagraph"/>
-			<xsl:call-template name="DoFreeParagraph"/>
-			<xsl:call-template name="DoFreeParagraph"/>
-			<xsl:call-template name="DoFreeParagraph"/>
-			<xsl:call-template name="DoFreeParagraph"/>
-			<xsl:call-template name="DoFreeParagraph"/>
-		</interlinear-text>
-	</xsl:template>
-	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 		DoInterlinearGlossLines
 		routine to create gloss lines for interlinear
@@ -169,18 +97,68 @@ Include other templates
 			<p><object type="tComment">  A suggested format for presenting the texts is to present it in the vernacular language as a whole first, so the native speakers can appreciate it.  Then present the interlinear form, as in the examples throughout the grammar.  Finally, give a free translation as a whole, so the non-native speaker can appreciate more about the culture.</object></p>
 				<p>
 				<object type="tComment">Please, write your texts here (Open with the the + sign).   You need to prepare at least one native text - or you can import a text from FLEx, in which case you can delete the following unneeded lines.</object>
-			</p>
+				</p>
+			<xsl:variable name="sTextTitle" select="'title - text '"/>
+			<xsl:variable name="sParagraphContent" select="'paragraphs for the entire text in the language'"/>
+			<xsl:variable name="sLanguage" select="'language'"/>
+			<xsl:variable name="sGloss" select="'gloss'"/>
+			<xsl:variable name="sIPA" select="'IPA'"/>
+			<xsl:variable name="sIPAMorphBreaks" select="'IPA with morpheme breaks'"/>
+			<xsl:variable name="sMorphemes" select="'morphemes'"/>
+			<xsl:variable name="sFree" select="'free translation'"/>
+			<xsl:variable name="sStateFree" select="'free translation in state language'"/>
+			<xsl:variable name="sFreeParagraphContent" select="'paragraphs for the free translation of the entire text'"/>
 			<xsl:call-template name="DoAnIntelinearText">
+				<xsl:with-param name="sTextTitle" select="$sTextTitle"/>
 				<xsl:with-param name="sTextNumber" select="'1'"></xsl:with-param>
+				<xsl:with-param name="sParagraphContent" select="$sParagraphContent"/>
+				<xsl:with-param name="sLanguage" select="$sLanguage"/>
+				<xsl:with-param name="sGloss" select="$sGloss"/>
+				<xsl:with-param name="sIPA" select="$sIPA"/>
+				<xsl:with-param name="sIPAMorphBreaks" select="$sIPAMorphBreaks"/>
+				<xsl:with-param name="sMorphemes" select="$sMorphemes"/>
+				<xsl:with-param name="sFree" select="$sFree"/>
+				<xsl:with-param name="sStateFree" select="$sStateFree"/>
+				<xsl:with-param name="sFreeParagraphContent" select="$sFreeParagraphContent"/>
 			</xsl:call-template>
 			<xsl:call-template name="DoAnIntelinearText">
+				<xsl:with-param name="sTextTitle" select="$sTextTitle"/>
 				<xsl:with-param name="sTextNumber" select="'2'"></xsl:with-param>
+				<xsl:with-param name="sParagraphContent" select="$sParagraphContent"/>
+				<xsl:with-param name="sLanguage" select="$sLanguage"/>
+				<xsl:with-param name="sGloss" select="$sGloss"/>
+				<xsl:with-param name="sIPA" select="$sIPA"/>
+				<xsl:with-param name="sIPAMorphBreaks" select="$sIPAMorphBreaks"/>
+				<xsl:with-param name="sMorphemes" select="$sMorphemes"/>
+				<xsl:with-param name="sFree" select="$sFree"/>
+				<xsl:with-param name="sStateFree" select="$sStateFree"/>
+				<xsl:with-param name="sFreeParagraphContent" select="$sFreeParagraphContent"/>
 			</xsl:call-template>
 			<xsl:call-template name="DoAnIntelinearText">
+				<xsl:with-param name="sTextTitle" select="$sTextTitle"/>
 				<xsl:with-param name="sTextNumber" select="'3'"></xsl:with-param>
+				<xsl:with-param name="sParagraphContent" select="$sParagraphContent"/>
+				<xsl:with-param name="sLanguage" select="$sLanguage"/>
+				<xsl:with-param name="sGloss" select="$sGloss"/>
+				<xsl:with-param name="sIPA" select="$sIPA"/>
+				<xsl:with-param name="sIPAMorphBreaks" select="$sIPAMorphBreaks"/>
+				<xsl:with-param name="sMorphemes" select="$sMorphemes"/>
+				<xsl:with-param name="sFree" select="$sFree"/>
+				<xsl:with-param name="sStateFree" select="$sStateFree"/>
+				<xsl:with-param name="sFreeParagraphContent" select="$sFreeParagraphContent"/>
 			</xsl:call-template>
 			<xsl:call-template name="DoAnIntelinearText">
+				<xsl:with-param name="sTextTitle" select="$sTextTitle"/>
 				<xsl:with-param name="sTextNumber" select="'4'"></xsl:with-param>
+				<xsl:with-param name="sParagraphContent" select="$sParagraphContent"/>
+				<xsl:with-param name="sLanguage" select="$sLanguage"/>
+				<xsl:with-param name="sGloss" select="$sGloss"/>
+				<xsl:with-param name="sIPA" select="$sIPA"/>
+				<xsl:with-param name="sIPAMorphBreaks" select="$sIPAMorphBreaks"/>
+				<xsl:with-param name="sMorphemes" select="$sMorphemes"/>
+				<xsl:with-param name="sFree" select="$sFree"/>
+				<xsl:with-param name="sStateFree" select="$sStateFree"/>
+				<xsl:with-param name="sFreeParagraphContent" select="$sFreeParagraphContent"/>
 			</xsl:call-template>
 		</section1>
 	</xsl:template>

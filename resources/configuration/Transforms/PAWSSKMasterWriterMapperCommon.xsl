@@ -75,6 +75,89 @@
 		</xsl:if>
 	</xsl:template>
 	<!--
+		DoAnIntelinearText
+	-->
+	<xsl:template name="DoAnIntelinearText">
+		<xsl:param name="sTextTitle"/>
+		<xsl:param name="sTextNumber" select="'1'"/>
+		<xsl:param name="sParagraphContent" select="'paragraphs for the entire text in the language'"/>
+		<xsl:param name="sLanguage"/>
+		<xsl:param name="sGloss"/>
+		<xsl:param name="sIPA"/>
+		<xsl:param name="sIPAMorphBreaks"/>
+		<xsl:param name="sMorphemes"/>
+		<xsl:param name="sFree"/>
+		<xsl:param name="sStateFree"/>
+		<xsl:param name="sFreeParagraphContent"/>
+		<interlinear-text>
+			<textInfo>
+				<textTitle>
+					<xsl:value-of select="$sTextTitle"/>
+					<xsl:value-of select="$sTextNumber"/>
+				</textTitle>
+				<shortTitle/>
+			</textInfo>
+			<xsl:call-template name="DoTextParagraph">
+				<xsl:with-param name="sParagraphContent" select="$sParagraphContent"/>
+			</xsl:call-template>
+			<xsl:call-template name="DoTextParagraph"/>
+			<xsl:call-template name="DoTextParagraph"/>
+			<xsl:call-template name="DoTextParagraph"/>
+			<xsl:call-template name="DoTextParagraph"/>
+			<xsl:call-template name="DoTextParagraph"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear">
+				<xsl:with-param name="sLanguage" select="$sLanguage"/>
+				<xsl:with-param name="sGloss" select="$sGloss"/>
+				<xsl:with-param name="sIPA" select="$sIPA"/>
+				<xsl:with-param name="sIPAMorphBreaks" select="$sIPAMorphBreaks"/>
+				<xsl:with-param name="sMorphemes" select="$sMorphemes"/>
+				<xsl:with-param name="sFree" select="$sFree"/>
+				<xsl:with-param name="sStateFree" select="$sStateFree"/>
+			</xsl:call-template>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoInterlinearTextInterlinear"/>
+			<xsl:call-template name="DoFreeParagraph">
+				<xsl:with-param name="sParagraphContent" select="$sFreeParagraphContent"/>
+			</xsl:call-template>
+			<xsl:call-template name="DoFreeParagraph"/>
+			<xsl:call-template name="DoFreeParagraph"/>
+			<xsl:call-template name="DoFreeParagraph"/>
+			<xsl:call-template name="DoFreeParagraph"/>
+			<xsl:call-template name="DoFreeParagraph"/>
+			<xsl:call-template name="DoFreeParagraph"/>
+		</interlinear-text>
+	</xsl:template>
+	<!--
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 		DoFree
 		routine to create empty free line for interlinear
