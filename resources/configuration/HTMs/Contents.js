@@ -181,4 +181,12 @@ function Refresh() {
 		InstructionsSaveResultsParser.style.display = "none";
 		InstructionsMakeChanges.style.display = "none";
 	}
+	attr = pawsApp.getAnswerValue("//interlinearOutputStyle/@style");
+	if (attr == "Blessymol") {
+	   InstructionsTextBoxRegular.style.display = "none";
+       InstructionsTextBoxBlessymol.style.display = "";
+	} else {
+	   InstructionsTextBoxRegular.style.display = "";
+       InstructionsTextBoxBlessymol.style.display = "none";
+	}
 }
