@@ -433,7 +433,7 @@
 	               <col>
 	                  <content>cualquier otro indicador específico</content>
 	               </col>
-	            	<col exampleLoc="np/other"/>
+	            	<col exampleLoc="np/otherCase"/>
 	            </row>
 	         </table>
 	      </example>	      
@@ -714,14 +714,14 @@
 				<langData>bottle</langData><gloss><content> ‘botella’</content></gloss>
 				<content>, no al revés. En inglés, en todos los sustantivos compuestos y construcciones con modificadores del sustantivo, el sustantivo principal en la serie es el de la derecha. </content>
 			</p>
-		   <p><content>Los sustantivos compuestos incluyen tanto los que se combinan en una sola palabra como los que se escriben con dos o más palabras independientes. Algunas categorías típicas de los sustantivos compuestos se ejemplifican aquí.</content></p>
+		   <p><content>Los sustantivos compuestos incluyen tanto los que se combinan en una sola palabra como los que se escriben con dos o más palabras independientes. Algunas categorías típicas de los sustantivos compuestos se ejemplifican aquí. </content><comment> La glosa que introdujo en PAWS aparece en ambas columnas para la glosa aquí.  Necesita editar esas celdas para que sean correctas.</comment></p>
 		   <example>
 		      <table border="1">
 		         <caption><content>Compuestos para partes del cuerpo</content></caption>
 		         <headerRow>
 		            <headerCol>Compuesto</headerCol>
-		            <headerCol>Glosa para cada palabra</headerCol>
-		            <headerCol>Glosa para el compuesto</headerCol>
+		            <headerCol>Glosa para cada sustantivo</headerCol>
+		            <headerCol>Glosa del compuesto</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compBodyPartExample"/>
@@ -735,8 +735,8 @@
 		         <caption><content>Compuestos para términos de parentesco</content></caption>
 		         <headerRow>
 		            <headerCol>Compuesto</headerCol>
-		            <headerCol>Glosa para cada palabra</headerCol>
-		            <headerCol>Glosa para el compuesto</headerCol>
+		            <headerCol>Glosa para cada sustantivo</headerCol>
+		            <headerCol>Glosa del compuesto</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compKinshipExample"/>
@@ -750,8 +750,8 @@
 		         <caption><content>Compuestos para alimentos</content></caption>
 		         <headerRow>
 		            <headerCol>Compuesto</headerCol>
-		            <headerCol>Glosa para cada palabra</headerCol>
-		            <headerCol>Glosa para el compuesto</headerCol>
+		            <headerCol>Glosa para cada sustantivo</headerCol>
+		            <headerCol>Glosa del compuesto</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compFoodExample"/>
@@ -765,8 +765,8 @@
 		         <caption><content>Compuestos que describen el material usado para construirlos</content></caption>
 		         <headerRow>
 		            <headerCol>Compuesto</headerCol>
-		            <headerCol>Glosa para cada palabra</headerCol>
-		            <headerCol>Glosa para el compuesto</headerCol>
+		            <headerCol>Glosa para cada sustantivo</headerCol>
+		            <headerCol>Glosa del compuesto</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compMaterialExample"/>
@@ -780,8 +780,8 @@
 		         <caption><content>Otros sustantivos compuestos</content></caption>
 		         <headerRow>
 		            <headerCol>Compuesto</headerCol>
-		            <headerCol>Glosa para cada palabra</headerCol>
-		            <headerCol>Glosa para el compuesto</headerCol>
+		            <headerCol>Glosa para cada sustantivo</headerCol>
+		            <headerCol>Glosa del compuesto</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compExample"/>

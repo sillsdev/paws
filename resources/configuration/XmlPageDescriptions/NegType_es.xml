@@ -64,7 +64,7 @@
             <radio id="PolarityItemsNo" dataValue="no">No, los pronombres negativos, los determinantes y los adverbios pueden presentarse en la posición del objeto o la posición normal del adverbio incluso cuando hay otro elemento negativo en la oración</radio>
          </radioGroup>
       </radioGroup>
-      <prompt id="PolarityItemsYesInstruction" show="swPolarityItemsYes">Escriba ejemplos de los varios elementos especiales de polaridad negativas en los campos apropiados, cada uno en una línea separada.</prompt>
+      <prompt id="PolarityItemsYesInstruction" show="swPolarityItemsYes">Escriba ejemplos de los varios elementos especiales de polaridad negativas en los campos apropiados.</prompt>
       <prompt id="PronounPolarityItemsPrompt" show="swPolarityItemsYes">Los elementos especiales de polaridad negativas que son pronombres, como ‘anyone' (cualquier persona), ‘anybody' (cualquiera) , ‘anything' (cualquier cosa). Incluya los elementos que significan lo mismo, pero se escriben con más de una palabra.</prompt>
       <textBox id="PronounPolarityItemsExamples" dataItem="npiPronounExample" rows="3" show="swPolarityItemsYes" kind="table"/>
       <prompt id="DeterminerPolarityItemsPrompt" show="swPolarityItemsYes">Los elementos especiales de polaridad negativas que son determinantes, por ejemplo ‘any' (cualquiera):</prompt>

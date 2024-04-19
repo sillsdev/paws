@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronIndefinite" count="8.7">
+<page id="PronIndefinite" count="7.7">
     <title level="2">Los pronombres - Los indefinidos</title>
    <introduction>Un tipo final de pronombres es <technicalTermRef term="ttIndefinite">indefinidos</technicalTermRef>.  Hay dos sistemas básicas de pronombres indefinidos, aunque no todas las lenguas fusionan en una sola palabra:
       <ul>

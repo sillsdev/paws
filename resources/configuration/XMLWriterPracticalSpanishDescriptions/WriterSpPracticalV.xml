@@ -25,7 +25,7 @@
 					   <headerCol>Accidente</headerCol>
 					   <headerCol>Significado</headerCol>
 					   <headerCol>Morfemas</headerCol>
-						<headerCol>Glosa</headerCol>
+						<headerCol>Otras restricciones</headerCol>
 					</headerRow>
 					<row show="swIPInflFeatPresent">
 					   <col>
@@ -77,7 +77,7 @@
 							<content>tiempo</content>
 						</col>
 						<col>
-							<content>ESCRIBA LA GLOSA</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherTense"/>			
 					</row>
@@ -221,7 +221,7 @@
 				   			<content>aspecto</content>
 				   		</col>
 				   		<col>
-				   			<content>ESCRIBA LA GLOSA</content>
+				   			<content></content>
 				   		</col>
 				   		<col exampleLoc="ip/otherAspect"/>			
 				   	</row>
@@ -302,7 +302,7 @@
 							<content>modo</content>
 						</col>
 						<col>
-							<content>ESCRIBA LA GLOSA</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherMood"/>			
 					</row>
@@ -373,7 +373,7 @@
 					</row>
 					<row show="swIPInflFeatOtherEvident">
 						<col><content>evidencialidad</content></col>
-						<col><content>ESCRIBA LA GLOSA</content></col>
+						<col><content></content></col>
 						<col exampleLoc="ip/otherEvident"/>
 					</row>
 					<row show="swIPInflFeatFinite">
@@ -507,7 +507,7 @@
 							<content>voz</content>
 						</col>
 						<col>
-							<content>ESCRIBA LA GLOSA</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherVoice"/>			
 					</row>
@@ -530,7 +530,7 @@
 					   <headerCol>Accidente</headerCol>
 					   <headerCol>Significado</headerCol>
 					   <headerCol>Morfemas</headerCol>
-						<headerCol>Glosa</headerCol>
+						<headerCol>Otras restricciones</headerCol>
 					</headerRow>
 					<row show="swIPAgrFeatFirstSubject">
 						<col>
@@ -1074,7 +1074,7 @@
 					</row>
 				</table>
 			</example>
-		</section2>
+			<p><content>Algunas o todas estas características pueden expresarse como morfemas acrónimo que combinan más de una característica en una sola forma. Es probable que estos morfemas acrónimos sean las formas de pronombres dependientes que se mostraron anteriormente en </content><sectionRef sec="sPronPersonal"/><content>.</content></p>	</section2>
 	   	   <section2 id="sVerbParadigms">
 	      <secTitle>Paradigmas de verbos</secTitle>
 	   	      <p><content>Los paradigmas muestran algunos de los cambios en algunos verbos específicos  cuando se añaden los morfemas para flexión y concordancia.  Algunos verbos son regulares y otros son irregulares.</content></p>

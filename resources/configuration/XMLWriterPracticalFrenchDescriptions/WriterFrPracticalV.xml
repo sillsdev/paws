@@ -22,7 +22,7 @@
 						<headerCol>Type de caractéristique</headerCol>
 						<headerCol>Caractéristique</headerCol>
 						<headerCol>Morphèmes</headerCol>
-						<headerCol>Glose</headerCol>
+						<headerCol>Autres restrictions</headerCol>
 					</headerRow>
 					<row show="swIPInflFeatPresent">
 						<col>
@@ -74,7 +74,7 @@
 							<content>temps</content>
 						</col>
 						<col>
-							<content>SAISIR GLOSE</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherTense"/>			
 					</row>
@@ -218,7 +218,7 @@
 							<content>aspect</content>
 						</col>
 						<col>
-							<content>SAISIR GLOSE</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherAspect"/>			
 					</row>
@@ -299,7 +299,7 @@
 							<content>mode</content>
 						</col>
 						<col>
-							<content>SAISIR GLOSE</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherMood"/>			
 					</row>
@@ -370,7 +370,7 @@
 					</row>
 					<row show="swIPInflFeatOtherEvident">
 						<col><content>évidentialité</content></col>
-						<col><content>SAISIR GLOSE</content></col>
+						<col><content></content></col>
 						<col exampleLoc="ip/otherEvident"/>
 					</row>
 					
@@ -502,7 +502,7 @@
 				   </row>
 					<row show="swIPInflFeatOtherVoice">
 						<col><content>voix</content></col>
-						<col><content>SAISIR GLOSE</content></col>
+						<col><content></content></col>
 						<col exampleLoc="ip/otherVoice"/>
 					</row>
 				</table>
@@ -524,7 +524,7 @@
 						<headerCol>Type de caractéristique</headerCol>
 						<headerCol>Caractéristique</headerCol>
 					   <headerCol>Morphèmes</headerCol>
-						<headerCol>Glose</headerCol>
+						<headerCol>Autres restrictions</headerCol>
 					</headerRow>
 					<row show="swIPAgrFeatFirstSubject">
 						<col>
@@ -1068,7 +1068,7 @@
 					</row>
 				</table>
 			</example>
-		</section2>
+			<p><content>Certaines ou toutes ces caractéristiques peuvent être exprimées sous forme de morphèmes mot-valise qui combinent plus d’une caractéristique sous une seule forme. Il est probable que ces morphèmes de mot-valise soient les formes de pronoms dépendants montrées plus haut dans </content><sectionRef sec="sPronPersonal"/><content>.</content></p>	</section2>
 	   <section2 id="sVerbParadigms">
 	   	<secTitle>Les paradigmes verbaux</secTitle>
 	   	<p><content>Les paradigmes illustrent sous forme de tableau certains changements qui ont lieu quand les morphèmes de flexion et d’accord se rattachent à des verbes spécifiques. Certains verbes sont réguliers, d’autres sont irréguliers.</content></p>

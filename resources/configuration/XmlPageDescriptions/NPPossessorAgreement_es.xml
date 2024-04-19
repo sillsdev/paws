@@ -19,19 +19,26 @@
             <radio id="NPPossAlienableNo" dataValue="no">No</radio>
             <radio id="NPPossAlienableYes" dataValue="yes">Sí</radio>
         </radioGroup>
-       <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Escriba los afijos que se utilizan para marcar sustantivos de posesión alienable cuando tienen un poseedor en el campo (cada uno en una línea separada si tiene más de uno). Utilice un guión después de los caracteres alfabéticos para indicar un prefijo, un guión antes para indicar un sufijo, y guiones en ambos lados para indicar un infijo.<br/><br/>
+       <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Escriba los afijos que se utilizan para marcar sustantivos de posesión alienable cuando tienen un poseedor en el campo. Utilice un guión después de los caracteres alfabéticos para indicar un prefijo, un guión antes para indicar un sufijo, y guiones en ambos lados para indicar un infijo.<br/><br/>
           Tenga en cuenta que estos afijos no deben ser iguales a los que concuerdan con o expresan al poseedor, examinado a continuación.</prompt>
         <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes" kind="table"/>
         <br/>
         <instruction id="NPPossAlienableYesInstruction" show="swNPPossAlienableYes">Key the feature <feature>possessed</feature> on the affix(es) that marks the alienably possessed nouns when they have a possessor.  Also, key the feature <feature>possessed</feature> on all inalienably possessed nouns so that a possessor will be required.</instruction>
         <radioGroup id="NPPossAgrTable">
             <groupName dataItem="possAgr" default="no">RNPPossAgr</groupName>
-           <prompt><br/>¿Se marcan los sustantivos con un afijo que concuerda con el posesivo (o posiblemente expresa el poseedor mismo)?  Estos afijos deben ser los pronombres dependientes utilizados para posesivos que se detallan en <section number="7" >Los pronombres</section>.</prompt>
+           <prompt><br/>¿Se marcan los sustantivos con un afijo que concuerda con el posesivo (o posiblemente expresa el poseedor mismo)?  Estos afijos deben ser los pronombres dependientes utilizados para posesivos que se detallan en <section number="7.2" >Los pronombres dependientes</section>.</prompt>
             <radio id="NPPossAgrNo" dataValue="no">No</radio>
             <radio id="NPPossAgrYes" dataValue="yes">Sí</radio>
         </radioGroup>
-       <prompt id="NPPossAgrYesInstruction" show="swNPPossAgrYesAndNotPractical">Mire las características de la tabla abajo y compruebe (haga clic) cualquiera que su lengua utiliza. In the lexicon, add that feature to the appropriate entires.  La concordancia de clase fue analizado en <section number="1.">La tipología - Clases de sustantivo y clasificadores</section>.  <br/>
-            <featureChart>
+         <br/>
+        <prompt id="NPPossAgrYesDependentPronounsInstruction" show="swNPPossAgrYes">Asegúrese de responder "Sí", que tiene pronombres dependientes en <section number="7.2">Pronombres dependientes</section> e introduce las formas de los pronombres dependientes que se adjuntan a los sustantivos para concordar con el poseedor o expresarlo en los cuadros de texto correspondientes.  </prompt>
+        <br/>
+        <prompt id="NPPossAgrYesInstruction" show="swNPPossAgrYesAndNotPractical">Look through the features in the chart below and check any that your language uses.  In the lexicon, add that feature to the appropriate entries. <br/>
+            Further, when you get to <section number="7.1">Pronouns</section> make sure that you check that your language has different forms for singular and plural pronouns if you check any number features here, and that you say that your language distinguishes between exclusive and inclusive pronouns if you check those features here. <br/>
+            <br/>Class agreement was handled in <section number="1.">Overall Typology Questions - Classifiers</section>.  
+            <br/>
+            <br/>
+           <featureChart>
                 <featureRow>
                     <featureType rowspan="5">persona</featureType>
                     <featureItem dataValue="npPossAgrPossFirst" name="NPPossAgrPossFirst">poss_first</featureItem>
@@ -111,7 +118,7 @@
           <radio id="NPPossAbsolutiveNo" dataValue="no">No</radio>
           <radio id="NPPossAbsolutiveYes" dataValue="yes">Sí</radio>
        </radioGroup>
-       <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Escriba los afijos que se presentan en sustantivos en estas situaciones aquí (con cada uno en linea separada). Utilice un guión después de los caracteres alfabéticos para indicar un prefijo, un guión antes de indicar un sufijo y guiones en ambos lados para indicar un infijo.</prompt>
+       <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Escriba los afijos que se presentan en sustantivos en estas situaciones aquí. Utilice un guión después de los caracteres alfabéticos para indicar un prefijo, un guión antes de indicar un sufijo y guiones en ambos lados para indicar un infijo.</prompt>
        <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes" kind="table"/>
        <br/><br/>
        <buttons>

@@ -1838,7 +1838,7 @@
 <td>
 	                  <xsl:text>cualquier otro indicador específico</xsl:text>
 	               </td>
-<xsl:for-each select="//np/other/form[1]">
+<xsl:for-each select="//np/otherCase/form[1]">
 <td>
 <langData lang="lVernacular">
 <xsl:value-of select="vernacular" />
@@ -1863,7 +1863,7 @@
 <tr>
 <td> </td>
 <td> </td>
-<xsl:for-each select="//np/other/form[1]">
+<xsl:for-each select="//np/otherCase/form[1]">
 <td>
 <langData lang="lIPA">
 <xsl:value-of select="ipa" />
@@ -1873,7 +1873,7 @@
 </xsl:for-each>
 </tr>
 </xsl:if>
-<xsl:for-each select="//np/other/form[position() &gt; 1]">
+<xsl:for-each select="//np/otherCase/form[position() &gt; 1]">
 <tr>
 <td> </td>
 <td> </td>
@@ -2499,7 +2499,8 @@
 <xsl:text>, no al revés. En inglés, en todos los sustantivos compuestos y construcciones con modificadores del sustantivo, el sustantivo principal en la serie es el de la derecha. </xsl:text>
 </p>
 		   <p>
-<xsl:text>Los sustantivos compuestos incluyen tanto los que se combinan en una sola palabra como los que se escriben con dos o más palabras independientes. Algunas categorías típicas de los sustantivos compuestos se ejemplifican aquí.</xsl:text>
+<xsl:text>Los sustantivos compuestos incluyen tanto los que se combinan en una sola palabra como los que se escriben con dos o más palabras independientes. Algunas categorías típicas de los sustantivos compuestos se ejemplifican aquí. </xsl:text>
+<object type="tComment"> La glosa que introdujo en PAWS aparece en ambas columnas para la glosa aquí.  Necesita editar esas celdas para que sean correctas.</object>
 </p>
 		   <example num="xN.NPCompounds.10">
 <table border="1">
@@ -2508,8 +2509,8 @@
 </caption>
 		         <tr>
 		            <th>Compuesto</th>
-		            <th>Glosa para cada palabra</th>
-		            <th>Glosa para el compuesto</th>
+		            <th>Glosa para cada sustantivo</th>
+		            <th>Glosa del compuesto</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compBodyPartExample/form[1]">
@@ -2614,8 +2615,8 @@
 </caption>
 		         <tr>
 		            <th>Compuesto</th>
-		            <th>Glosa para cada palabra</th>
-		            <th>Glosa para el compuesto</th>
+		            <th>Glosa para cada sustantivo</th>
+		            <th>Glosa del compuesto</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compKinshipExample/form[1]">
@@ -2720,8 +2721,8 @@
 </caption>
 		         <tr>
 		            <th>Compuesto</th>
-		            <th>Glosa para cada palabra</th>
-		            <th>Glosa para el compuesto</th>
+		            <th>Glosa para cada sustantivo</th>
+		            <th>Glosa del compuesto</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compFoodExample/form[1]">
@@ -2826,8 +2827,8 @@
 </caption>
 		         <tr>
 		            <th>Compuesto</th>
-		            <th>Glosa para cada palabra</th>
-		            <th>Glosa para el compuesto</th>
+		            <th>Glosa para cada sustantivo</th>
+		            <th>Glosa del compuesto</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compMaterialExample/form[1]">
@@ -2932,8 +2933,8 @@
 </caption>
 		         <tr>
 		            <th>Compuesto</th>
-		            <th>Glosa para cada palabra</th>
-		            <th>Glosa para el compuesto</th>
+		            <th>Glosa para cada sustantivo</th>
+		            <th>Glosa del compuesto</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compExample/form[1]">

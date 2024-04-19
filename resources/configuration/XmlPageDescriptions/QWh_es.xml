@@ -6,7 +6,7 @@
    <introduction>Las preguntas de respuesta abierta se diferencian de las de respuesta sí/no en que aquellas contienen una palabra o una frase interrogativa, conocida como <example>wh-phrases ‘frases-wh' </example> en inglés porque casi todos comienzan con las letras <example>wh</example> 
       (<example>who(m) ‘quién'</example>, <example>what ‘qué'</example>, <example>why ‘por qué'</example>, <example>where ‘dónde'</example>, <example>when ‘cuándo'</example>, <example>how ‘cómo'</example>, <example>how many ‘cúantos'</example>, <example>which ‘cuál'</example>, <example>whose ‘de quién'</example>).  En algunas lenguas, algunos o todos estos interrogativos se unen con otra palabra.</introduction>
     <form section="q">
-       <prompt>Para todos los siguientes campos, si su lengua expresa ese interrogativo como un afijo o clítico, escríbalo con un guión en el lado apropiado para indicar si es un prefijo o un sufijo o con o signo igual en el lado apropiado para indicar si es un proclítico o un enclítico. Cada elemento se deben escribir en una línea separada.</prompt>
+       <prompt>Para todos los siguientes campos, si su lengua expresa ese interrogativo como un afijo o clítico, escríbalo con un guión en el lado apropiado para indicar si es un prefijo o un sufijo o con o signo igual en el lado apropiado para indicar si es un proclítico o un enclítico.</prompt>
        <prompt>Escriba cómo su lengua expresa ‘quién' aquí:</prompt>
         <textBox id="QWho" dataItem="who" rows="3" kind="table"><gloss>quién</gloss></textBox>
         <br/>

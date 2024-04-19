@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronNP" count="9.8">
+<page id="PronNP" count="7.8">
    <title level="2">Pronoms – Comme syntagme nominal</title>
    <introduction>Normalement les pronoms de tous les types peuvent être employés seuls en remplacement d’ un syntagme nominal entier, mais ils peuvent aussi être modifiés par une proposition relative.  Dans certaines langues les pronoms peuvent être modifiés par un syntagme <technicalTermRef term="ttPartitive">partitif</technicalTermRef>, et d’autres langues permettent la modification de pronoms par des <technicalTermRef term="ttDeterminers">déterminants</technicalTermRef> et par des quantificateurs à large portée et des mots de degré.  Voici quelques exemples français de ce type :</introduction>
 		<EnglishExample>

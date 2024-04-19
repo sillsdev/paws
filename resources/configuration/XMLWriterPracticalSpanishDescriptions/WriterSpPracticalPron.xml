@@ -1934,8 +1934,9 @@ value="genitive"
             <caseText value="yes">, especialmente en tercera persona, son idénticas o relacionadas a los clasificadores apropiados.</caseText>
          </case></text>
    </p>
-   <p
-      show="swNPCaseNoneAndExperiencerNoAndDependentYes"
+   <p><comment>Es posible que su lengua no tenga formas para todos los mismos conjuntos que para los pronombres independientes. Los conjuntos que están en blanco se pueden eliminar aquí. Sería bueno agregar una explicación sobre qué conjuntos se utilizan en su idioma, como acuerdo de sujeto solo o acuerdo de sujeto y poseedor solamente.</comment></p>
+   
+   <p show="swNPCaseNoneAndExperiencerNoAndDependentYes"
       ><content
          >De acuerdo con lo considerado anteriormente, en el </content
       ><langName

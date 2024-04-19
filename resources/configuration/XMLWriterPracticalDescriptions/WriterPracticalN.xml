@@ -422,8 +422,7 @@
 	      			<col>
 	      				<content>any other specific markers</content>
 	      			</col>
-	      			<col exampleLoc="np/other"/>
-	      			<col><gloss><content>ENTER GLOSS</content></gloss></col>
+	      			<col exampleLoc="np/otherCase"/>
 	      		</row>
 	      	</table>
 	      </example>	      
@@ -705,15 +704,15 @@
 				<langData>bottle</langData>
 				<content>, not the other way around.  In all compound nouns and noun modifier constructions in English, the head is the right-most noun in the series.</content>
 			</p>
-		   <p><content>Noun compounds include those which are combined into a single word as well as those written as two or more independent words.  Some typical categories of noun compounds are exemplified here.</content></p>
+		   <p><content>Noun compounds include those which are combined into a single word as well as those written as two or more independent words.  Some typical categories of noun compounds are exemplified here. </content><comment> The gloss you entered in PAWS is given in both columns for the gloss here.  You need to edit those cells to be correct. </comment></p>
 		   <example>
 		      <table border="1">
 		         <caption><content>Compounds for Body Parts</content></caption>
 		         <headerRow>
 		            <headerCol>Compound</headerCol>
 		            <headerCol>Gloss for each noun</headerCol>
-		            <headerCol>Gloss for the compound</headerCol>
-		         </headerRow>
+		         <headerCol>Gloss for the compound</headerCol>
+		            </headerRow>
 		         <row>
 		            <col exampleLoc="np/compBodyPartExample"/>
 		            <col ><gloss><content>ENTER GLOSS</content></gloss></col>

@@ -80,7 +80,7 @@
 	   <textBox id="AdjPModifiersMannerPhraseExample" dataItem="adjectiveMannerPhraseExample" show="swAdjPModifiersYesManner" cols="80"/>    
 	   <br/><br/>
 	   <checkboxGroup id="AdjPModifiersYesMannerTable" show="swAdjPModifiersYesManner">
-	   	<prompt>En regardant les exemples que vous avez entrés ci-dessus  où les adverbes de manière ou les syntagmess se trouvent-ils par rapport à l’adjectif ?  Cochez toutes les options qui sont valables dans votre langue.</prompt>
+	   	<prompt>En regardant les exemples que vous avez entrés ci-dessus où les adverbes de manière ou les syntagmess se trouvent-ils par rapport à l’adjectif ?  Cochez toutes les options qui sont valables dans votre langue.</prompt>
 	   	<checkbox id="AdjPMannerBefore" checked="yes" dataItem="mannerBefore">Avant l’adjectif</checkbox>
 	   	<checkbox id="AdjPMannerAfter" checked="yes" dataItem="mannerAfter">Après l’adjectif</checkbox>
 	   	<checkbox id="AdjPMannerBoth" checked="yes" dataItem="mannerBoth">Des deux côtés à la fois</checkbox>
@@ -91,7 +91,7 @@
 The manner adverbs should already be marked with the feature <feature>manner</feature>.  They do not need any additional features to modify adjectives. </instruction>
 	      <instruction id="AdjPMannerEitherRestrictedInstruction" show="swAdjPMannerEitherRestricted">In the lexicon, mark those manner adverbs which can only occur before the adjective with the feature <feature>AdjP-initial</feature> and those which can only occur after the adjective with the feature <feature>AdjP-final</feature>.  Do not enter either feature on any manner adverbs which can occur on either side.
 	   </instruction>
-		<prompt id="AdjPModifiersAttachesPrompt" show="swAdjPModifiersAttaches">Saisissez des exemples d'affixes de degré ou de clitiques pouvant modifier les adjectifs, en notant un trait d'union ou un signe d’égalité du côté duquel ils  se rattachent à l'adjectif :</prompt>
+		<prompt id="AdjPModifiersAttachesPrompt" show="swAdjPModifiersAttaches">Saisissez des exemples d'affixes de degré ou de clitiques pouvant modifier les adjectifs, en notant un trait d'union ou un signe d’égalité du côté duquel ils se rattachent à l'adjectif :</prompt>
 	   <textBox id="AdjPModifiersDegreeAffixExample" dataItem="adjectiveDegreeAffixExample" show="swAdjPModifiersAttaches" rows="3" kind="table"/>
 		<prompt id="AdjPModifiersDegreeAffixPhrasePrompt" show="swAdjPModifiersAttaches">Saisissez des exemples d'affixes de degré ou de clitiques rattachés aux adjectifs :</prompt>
 	   <textBox id="AdjPModifiersDegreeAffixPhraseExample" dataItem="adjectiveDegreeAffixPhraseExample" show="swAdjPModifiersAttaches" kind="table"/>

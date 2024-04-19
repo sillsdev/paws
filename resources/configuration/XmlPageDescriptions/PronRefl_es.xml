@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronRefl" count="8.4">
+<page id="PronRefl" count="7.4">
     <title level="2">Los pronombres - Los reflexivos</title>
    <introduction>Los <technicalTermRef term="ttReflexives">reflexivos</technicalTermRef> son otro tipo de pronombres que la mayoría de las lenguas tienen. Normalmente se presentan en la posición del objeto en una oración transitiva para referirse al sujeto. Se presentan solamente en el caso de los objetos directos y deben concordar comúnmente con el sujeto en persona, género y número. Los ejemplos en inglés son: <example>herself ‘ella misma'</example>, <example>himself ‘sí mismo'</example>, <example>themselves ‘ellos mismos’</example> y <example>myself ‘yo mismo'</example>.    
       <br/><br/>Hay variedad en las maneras que se forman reflexivos. Algunas lenguas tienen un sistema totalmente diferente de las formas del pronombre para los reflexivos. Otras lenguas como español 

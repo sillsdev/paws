@@ -19,18 +19,23 @@
             <radio id="NPPossAlienableNo" dataValue="no">Non</radio>
             <radio id="NPPossAlienableYes" dataValue="yes">Oui</radio>
         </radioGroup>
-        <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Entrez dans la case l'affixe ou les affixes utilisé(s) pour marquer les noms possédés aliénables quand ils ont un possesseur (chacun sur une ligne séparée s'il y en a plus d'un). Utilisez un trait d'union après les caractères alphabétiques pour indiquer un préfixe, un trait d'union avant pour indiquer un suffixe et des traits d'union de part et d’autrepour indiquer un infixe.<br/><br/>
+        <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Entrez dans la case l'affixe ou les affixes utilisé(s) pour marquer les noms possédés aliénables quand ils ont un possesseur. Utilisez un trait d'union après les caractères alphabétiques pour indiquer un préfixe, un trait d'union avant pour indiquer un suffixe et des traits d'union de part et d’autrepour indiquer un infixe.<br/><br/>
             Ces affixes ne devraient pas être les mêmes que ceux  qui s’accordent avec le possesseur ou qui expriment le possesseur, comme cela a été discuté ci-dessous.</prompt>
         <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes" kind="table"/>
         <br/>
         <instruction id="NPPossAlienableYesInstruction" show="swNPPossAlienableYes">Key the feature <feature>possessed</feature> on the affix(es) that marks the alienably possessed nouns when they have a possessor.  Also, key the feature <feature>possessed</feature> on all inalienably possessed nouns so that a possessor will be required.</instruction>
         <radioGroup id="NPPossAgrTable">
             <groupName dataItem="possAgr" default="no">RNPPossAgr</groupName>
-            <prompt>Est-ce que les noms sont marqués par  un affixe s’accordant avec le possesseur (ou éventuellement exprimant le possesseur lui-même) ? Ces affixes sont considérés comme le groupe de pronoms dépendants utilisés pour les possesseurs qui seront traités dans la <section number="7" >Pronoms</section>.</prompt>
+            <prompt>Est-ce que les noms sont marqués par un affixe s’accordant avec le possesseur (ou éventuellement exprimant le possesseur lui-même) ? Ces affixes sont considérés comme le groupe de pronoms dépendants utilisés pour les possesseurs qui seront traités dans la <section number="7.2" >Pronoms dépendants</section>.</prompt>
             <radio id="NPPossAgrNo" dataValue="no">Non</radio>
             <radio id="NPPossAgrYes" dataValue="yes">Oui</radio>
         </radioGroup>
-        <prompt id="NPPossAgrYesInstruction" show="swNPPossAgrYesAndNotPractical">Look through the features in the chart below and check any that your language uses.  In the lexicon, add that feature to the appropriate entries.  Class agreement was handled in <section number="1.">Overall Typology Questions – Classifiers</section>.  
+        <br/>
+        <prompt id="NPPossAgrYesDependentPronounsInstruction" show="swNPPossAgrYes">Veillez à répondre "Oui", à savoir que vous avez des pronoms dépendants dans la <section number="7.2">Pronoms dépendants</section> et entrez les formes des pronoms dépendants qui se rattachent aux noms pour s'accorder avec le possesseur ou l'exprimer dans les zones de texte appropriées.  </prompt>
+        <br/>
+        <prompt id="NPPossAgrYesInstruction" show="swNPPossAgrYesAndNotPractical">Look through the features in the chart below and check any that your language uses.  In the lexicon, add that feature to the appropriate entries. <br/>
+            Further, when you get to <section number="7.1">Pronouns</section> make sure that you check that your language has different forms for singular and plural pronouns if you check any number features here, and that you say that your language distinguishes between exclusive and inclusive pronouns if you check those features here. <br/>
+            <br/>Class agreement was handled in <section number="1.">Overall Typology Questions - Classifiers</section>.  
             <br/>
             <br/>
             <featureChart>
@@ -113,7 +118,7 @@
           <radio id="NPPossAbsolutiveNo" dataValue="no">Non</radio>
           <radio id="NPPossAbsolutiveYes" dataValue="yes">Oui</radio>
        </radioGroup>
-        <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Saisissez l’affixe ou les affixes qui sont utilisés pour marquer les noms dans ces cas (chacun sur une ligne séparée s'il y en a plusieurs) dans la boîte ci-dessous. Utilisez un trait d'union après les caractères alphabétiques pour indiquer un préfixe, un trait d'union avant pour indiquer un suffixe, et un trait d'union de part et d’autrepour indiquer un infixe.</prompt>
+        <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Saisissez l’affixe ou les affixes qui sont utilisés pour marquer les noms dans ces cas. Utilisez un trait d'union après les caractères alphabétiques pour indiquer un préfixe, un trait d'union avant pour indiquer un suffixe, et un trait d'union de part et d’autrepour indiquer un infixe.</prompt>
        <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes" kind="table"/>
        <br/><br/>
         <buttons>

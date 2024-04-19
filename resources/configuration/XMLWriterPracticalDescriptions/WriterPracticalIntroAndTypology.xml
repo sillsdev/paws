@@ -404,7 +404,7 @@
 					</row>
 					<row>
 						<col>
-							<content>[morpheme glosses]</content>
+							<content>[English morpheme glosses]</content>
 						</col>
 						<col>
 							<content>PRE-root-SUF</content>
@@ -418,7 +418,7 @@
 					</row>
 					<row>
 						<col>
-							<content>[free translation]</content>
+							<content>[English free translation]</content>
 						</col>
 						<col colspan="3">
 							<content>free translation phrase or sentence</content>

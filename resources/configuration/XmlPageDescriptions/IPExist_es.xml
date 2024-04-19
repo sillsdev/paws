@@ -11,7 +11,7 @@
         </EnglishExample>
    <introduction>En vez de esta palabra existencial, algunas lenguas tienen un verbo existencial, como <example>hay</example> en español.  Otras lenguas tienen un sistema entero de los verbos existenciales que expresan la posición del objeto que se describe.</introduction>
     <form section="ip">
-       <prompt>Escriba algunos ejemplos de oraciones existenciales en su lengua aquí :</prompt>
+       <prompt>Escriba algunos ejemplos de oraciones existenciales en su lengua aquí:</prompt>
         <textBox id="IPExamplesExistExample" dataItem="existExample" cols="80"/>
        <br/><br/>
        <checkboxGroup>
@@ -28,15 +28,15 @@
        </checkboxGroup>   
        <br/>
        <br/>
-       <prompt id="IPExistWordExamples" show="swIPExistWord">Escriba la(s) palabra(s) que significa(n) ‘there (existe)’ utiliza en oraciones existenciales en su lengua aquí (cada uno en una línea separada):</prompt>
+       <prompt id="IPExistWordExamples" show="swIPExistWord">Escriba la(s) palabra(s) que significa(n) ‘there (existe)’ utiliza en oraciones existenciales en su lengua aquí:</prompt>
        <textBox id="IPExamplesExistWordExample" dataItem="existWordExample" rows="3" show="swIPExistWord" kind="table"/>
        <br/>
        <instruction id="IPExistWordPrompt" show="swIPExistWord">Add the feature <feature>exist</feature> to the existential word in the lexicon.  We assume that this word will have the category <category>Adv</category>.  If it does not, please also add the feature <feature>makeAdv</feature> to change the category for these constructions.  If the existential word is synonymous with another word or another category in your language, you will need to make two separate lexical entries.</instruction>
         <br/>
-       <prompt id="IPExistVerbExamples" show="swIPExistVerb">Escriba los verbos utilizados en oraciones existenciales en su lengua aquí (cada uno en una línea separada):</prompt>
+       <prompt id="IPExistVerbExamples" show="swIPExistVerb">Escriba los verbos utilizados en oraciones existenciales en su lengua aquí:</prompt>
         <textBox id="IPExamplesExistVerbExample" dataItem="existVerbExample" rows="5" show="swIPExistVerb" kind="table"/>
         <br/>
-       <prompt id="IPExistPositionExamples" show="swIPExistPosition">Escriba los verbos de posición utilizados en oraciones existenciales en su lengua aquí (cada uno en una línea separada):</prompt>
+       <prompt id="IPExistPositionExamples" show="swIPExistPosition">Escriba los verbos de posición utilizados en oraciones existenciales en su lengua aquí:</prompt>
         <textBox id="IPExamplesExistPositionExample" dataItem="existPositionExample" rows="3" show="swIPExistPosition" kind="table"/>
        <instruction id="IPExistVerbYesInstruction" show="swIPExistVerbOrPosition">Add the feature <feature>exist</feature> to the appropriate verbs in the lexicon. Since the existential verbs are a small, closed set, the feature must be entered in the lexicon on the appropriate verbs; the default setting is <feature>-exist</feature>.  If any copular verbs can be used in these existential constructions, you need to make a separate lexical entry with the feature <feature>exist</feature>, distinct from the entry which has the feature <feature>copular</feature>.</instruction>
        <prompt id="IPExistOtherExamples" show="swIPExistOther"><br/>Escriba ejemplos de la otra manera de marcar las oraciones existenciales en su lengua aquí:</prompt>

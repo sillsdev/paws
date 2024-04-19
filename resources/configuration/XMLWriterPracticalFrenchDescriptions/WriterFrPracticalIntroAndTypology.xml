@@ -357,7 +357,7 @@
 		</section2>
 		<section2 id="sExamples">
 			<secTitle>Conventions utilisées dans les exemples</secTitle>
-			<p>
+			<p show="swStandardInterlinear">
 				<content>Cette grammaire contient beaucoup de syntagmes et phrases illustratifs.  La plupart des exemples sont présentés dans un format interlinéaire consistant en trois ou quatre lignes comme cela est montré sous </content>
 				<exampleRef num="xEx"/>
 				<content> :</content>
@@ -394,7 +394,7 @@
 					</row>
 					<row>
 						<col>
-							<content>[gloses de morphème]</content>
+							<content>[gloses de morphème en français]</content>
 						</col>
 						<col>
 							<content>PRE-racine-SUF</content>
@@ -408,7 +408,7 @@
 					</row>
 					<row>
 						<col>
-							<content>[traduction libre]</content>
+							<content>[traduction libre en français]</content>
 						</col>
 						<col colspan="3">
 							<content>traduction libre du syntagme ou de la phrase</content>
@@ -513,7 +513,7 @@
 				<content>Les mots en </content>
 				<langName/>
 				<content> sont donnés sur la première ligne. La deuxième ligne présente les mots en API.  La troisième ligne ajoute des traits d'union à l'API pour montrer la séparation des mots en morphèmes.
-					La quatrième ligne donne la traduction morphème par morphème en françaish, les morphèmes étant séparés par des traits d'union.  La meilleure traduction littérale est utilisée pour chaque racine, séparée par des points si plus d'un mot espagnol est nécessaire pour exprimer le sens du </content>
+					La quatrième ligne donne la traduction morphème par morphème en français, les morphèmes étant séparés par des traits d'union.  La meilleure traduction littérale est utilisée pour chaque racine, séparée par des points si plus d'un mot français est nécessaire pour exprimer le sens du </content>
 				<langName/>
 				<content> racine, tandis que les préfixes et suffixes sont indiqués par des gloses ou des abréviations de leurs caractéristiques.  Cette quatrième ligne peut s'avérer très utile pour les linguistes.  Les deux dernières lignes donnent la traduction libre de l'ensemble de l'exemple, d'abord en français, puis dans la langue de l'Etat.</content>
 			</p>

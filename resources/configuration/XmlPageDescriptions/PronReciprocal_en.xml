@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronReciprocal" count="8.5">
+<page id="PronReciprocal" count="7.5">
     <title level="2">Pronouns - Reciprocals</title>
     <introduction><technicalTermRef term="ttReciprocals" capitalize="yes"/> are similar to reflexives except that they only occur with plural subjects.  They may be formed in the same way reflexives are, or they may be distinct.  For example, in English, the reciprocal forms are special quantifier phrases: <example>each other</example> and <example>one another</example>.  Some languages use only a verbal affix to indicate reciprocal action of the plural subject, others have separate pronouns, others use a possessed noun phrase, and some do not mark reciprocal action at all.</introduction>
     <form section="pron">

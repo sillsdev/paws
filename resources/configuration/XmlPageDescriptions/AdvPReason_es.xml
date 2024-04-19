@@ -13,7 +13,7 @@
         <textBox id="AdvPReasonExample" dataItem="reasonExample" kind="table"/>
        <prompt>Escriba ejemplos de frases adposicionales que expresan razón o propósito aquí:</prompt>
        <textBox id="AdvPReasonPPExample" dataItem="reasonPPExample" rows="3" kind="table"/>
-       <prompt>Ahora escriba algunos ejemplos de oraciones completas con los adverbios que expresan razón o propósito o de las cláusulas adverbiales o de frases adposicionales que expresan razón o propósito (con una nueva línea después de cada ejemplo) aquí:</prompt>
+       <prompt>Ahora escriba algunos ejemplos de oraciones completas con los adverbios que expresan razón o propósito o de las cláusulas adverbiales o de frases adposicionales que expresan razón o propósito aquí:</prompt>
        <textBox id="AdvPReasonSentExample" dataItem="reasonSentExample" rows="5" cols="80"/> 
        <br/>
        <instruction id="AdvPReasonInstruction">In the lexicon, key the feature <feature>reason</feature> on

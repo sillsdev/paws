@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "..\Data\PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronDem" count="8.6">
+<page id="PronDem" count="7.6">
    <title level="2">Pronoms – Démonstratifs</title>
    <introduction>La plupart des langues ont des pronoms démonstratifs liés soit aux démonstratifs qui modifient un substantif, soit aux adverbiaux locatifs.  Les pronoms démonstratifs spécifient la distance à partir de celui qui parle et peuvent avoir des formes singulier et pluriel.  Des exemples en français sont <example>celui-ci, ceux-ci, celle-ci, celles-ci</example> et <example>celui-là, ceux-là, celle-là, celles-là</example>.  Les pronoms démonstratifs peuvent être employés seuls comme sujet ou objet de la phrase, tels que :
     </introduction>

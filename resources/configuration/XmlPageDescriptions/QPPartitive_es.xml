@@ -39,7 +39,7 @@
 	      <radio id="QPPartitivePPEitherSide" checked="yes" dataValue="either">De cualquier lado</radio>
 	   </radioGroup>
 	   
-	   <prompt id="QPPartitiveOfPrompt" show="swQPPartitiveYes">Escriba las <technicalTermRef term="ttAdposition">adposiciones</technicalTermRef> que pueden utilizar para decir “de” en estas construcciones partitivas, con cada palabra en una línea separada. </prompt>
+	   <prompt id="QPPartitiveOfPrompt" show="swQPPartitiveYes">Escriba las <technicalTermRef term="ttAdposition">adposiciones</technicalTermRef> que pueden utilizar para decir “de” en estas construcciones partitivas aquí: </prompt>
 	   <textBox id="QPPartitiveOfExample" dataItem="partitiveOf" rows="3" show="swQPPartitiveYes" kind="table"/>
 	   <br/>
 	   

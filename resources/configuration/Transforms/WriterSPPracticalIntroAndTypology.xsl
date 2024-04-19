@@ -641,11 +641,13 @@
         </section2>
         <section2 id="sExamples">
             <secTitle>Estructura usada en los ejemplos</secTitle>
-            <p>
+            <xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
+<p>
 <xsl:text>Esta gramática contiene muchas frases y oraciones ilustrativas. La mayor parte de ellas se presentan en un formato interlinearizado que consiste en tres o cuatro líneas, como se muestra en </xsl:text>
 <exampleRef num="xEx" equal="no" letterOnly="no" />
 <xsl:text>:</xsl:text>
 </p>
+</xsl:if>
             <xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
 <example num="xEx">
 <table>
@@ -688,7 +690,7 @@
                     </tr>
                     <tr>
                         <td align="left">
-                            <xsl:text>[glosa por morfemas]</xsl:text>
+                           <xsl:text>[glosa por morfemas en español]</xsl:text>
                         </td>
                         <td align="left">
                             <xsl:text>PRE-raíz-SUF</xsl:text>
@@ -702,7 +704,7 @@
                     </tr>
                     <tr>
                         <td align="left">
-                            <xsl:text>[traducción libre]</xsl:text>
+                            <xsl:text>[traducción libre en español]</xsl:text>
                         </td>
                         <td align="left" colspan="3">
                             <xsl:text>traducción libre de frase u oración</xsl:text>
@@ -830,7 +832,7 @@
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[traducción libre]</xsl:text>
+						   <xsl:text>[traducción libre en español]</xsl:text>
 						</td>
 						<td align="left" colspan="3">
 							<xsl:text>traducción libre de frase u oración</xsl:text>
@@ -838,7 +840,7 @@
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[traducción libre a la lengua oficial del estado ]</xsl:text>
+							<xsl:text>[traducción libre a la lengua oficial del estado]</xsl:text>
 						</td>
 						<td align="left" colspan="3">
 							<xsl:text>traducción libre de frase u oración</xsl:text>
@@ -858,7 +860,7 @@
 <xsl:text>Vernacular</xsl:text>
 </xsl:otherwise>
 </xsl:choose>
-<xsl:text> aparecen en la primera línea. La segunda línea presenta las palabras in AFI.  La tercera línea añade guiones al A para mostrar la separación de las palabras en morfemas.
+<xsl:text> aparecen en la primera línea. La segunda línea presenta las palabras in AFI.  La tercera línea añade guiones al AFI para mostrar la separación de las palabras en morfemas.
 					La cuarta línea presenta la traducción morfema por morfema al español, con los morfemas separados por guiones.  Se utiliza la mejor traducción literal para cada raíz, separada por puntos si se necesita más de una palabra en español para expresar el significado del </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='es'])) &gt; 0">
@@ -3095,7 +3097,7 @@
 <example num="xClassifiers.28">
 <table border="1">
             <caption>
-               <xsl:text>Inidcadores de clase de sustantivos por nombre de clase</xsl:text>
+               <xsl:text>Indicadores de clase de sustantivos por nombre de clase</xsl:text>
             </caption>
             <tr>
                <th>
@@ -5185,7 +5187,7 @@
                   Número de clase
                </th>
                <th>Concordancia de número</th>
-               <th>Indiicador</th>
+               <th>Indicador</th>
                <th>Glosa</th>
             </tr>
             <tr>
@@ -5355,13 +5357,6 @@
             <tr>
 <td>
                   <xsl:text>3</xsl:text>
-               </td>
-<td>
-                  <xsl:choose>
-                     <xsl:when test="//typology/@class3agr='sg'">singular</xsl:when>
-                     <xsl:when test="//typology/@class3agr='pl'">plural</xsl:when>
-                     <xsl:when test="//typology/@class3agr='irrelevant'">no aplica</xsl:when>
-                  </xsl:choose>
                </td>
 <td>
                   <xsl:choose>

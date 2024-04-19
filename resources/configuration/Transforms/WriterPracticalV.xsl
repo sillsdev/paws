@@ -39,7 +39,7 @@
 						<th>Type of feature</th>
 						<th>Feature</th>
 						<th>Morphemes</th>
-						<th>Gloss</th>
+						<th>Other Restrictions</th>
 					</tr>
 					<xsl:if test="normalize-space(//ip/ipInflFeatPresent/@checked)='yes'">
 <tr>
@@ -447,7 +447,7 @@
 							<xsl:text>tense</xsl:text>
 						</td>
 <td>
-							<xsl:text>ENTER GLOSS</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherTense/form[1]">
 <td>
@@ -1727,7 +1727,7 @@
 							<xsl:text>aspect</xsl:text>
 						</td>
 <td>
-							<xsl:text>ENTER GLOSS</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherAspect/form[1]">
 <td>
@@ -2447,7 +2447,7 @@
 							<xsl:text>mood</xsl:text>
 						</td>
 <td>
-							<xsl:text>ENTER GLOSS</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherMood/form[1]">
 <td>
@@ -3567,7 +3567,7 @@
 <xsl:text>evidentiality</xsl:text>
 </td>
 <td>
-<xsl:text>ENTER GLOSS</xsl:text>
+<xsl:text></xsl:text>
 </td>
 <xsl:for-each select="//ip/otherEvident/form[1]">
 <td>
@@ -4873,7 +4873,7 @@
 						<th>Type of feature</th>
 						<th>Feature</th>
 					   <th>Morphemes</th>
-						<th>Gloss</th>
+						<th>Other Restrictions</th>
 					</tr>
 					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstSubject/@checked)='yes'">
 <tr>
@@ -9677,6 +9677,11 @@
 </xsl:if>
 				</table>
 </example>
+			<p>
+<xsl:text>Some or all of these features may be expressed as portmanteau morphemes which combine more than one feature together in a single form.  It is likely that these portmanteau morphemes are the dependent pronoun forms shown earlier in </xsl:text>
+<sectionRef sec="sPronPersonal" />
+<xsl:text>.</xsl:text>
+</p>
 		</section2>
 	   <section2 id="sVerbParadigms">
 	      <secTitle>Verb Paradigms</secTitle>

@@ -7,7 +7,7 @@
 	<title>Los nombres propios</title>
    <introduction> Los nombres propios son una clase especial de sustantivos o frases nominalesque sintácticamente funcionan igual que otros sustantivos o frases nominales. En español, algunos nombres propios pueden presentarse solos, como  <example>Susana</example> y <example>Oaxaca</example>.  Otros funcionan como sustantivos compuestos, como <example>George Washington</example>.  Los nombres propios también pueden contener los artículos y/o <technicalTermRef term="ttAdpositionalPhrases"/>, como en <example>los Estados Unidos de América</example>.  Muchas lenguas requieren un artículo antes de un nombre. Appositives, posiblemente incluyendo un posesivo, como en <example>mi hijo, David</example>, también ocurren, pero apositivos se tratan más adelante en <section number="15."> Las construcciones coordinadas</section>.  Además, los nombres propios se pueden modificar por los adjetivos y cláusulas relativas, como en <example>México fuerte y orgulloso</example> o <example>la Susana que conozco</example>.</introduction>
 	<form section="prop">
-		<prompt>Escriba sus ejemplos nombres propios simples y compuestos, o los que se presentan con artículos, demonstratives, adjetivos o los posesivos, si se permite, aquí :</prompt>
+		<prompt>Escriba sus ejemplos nombres propios simples y compuestos, o los que se presentan con artículos, demonstratives, adjetivos o los posesivos, si se permite, aquí:</prompt>
 		<textBox id="PNExample" dataItem="example" cols="80"/>
 	   <br/><br/>
 	   <radioGroup id="PNClassifiersTable" show="swOTClassifierAgr">

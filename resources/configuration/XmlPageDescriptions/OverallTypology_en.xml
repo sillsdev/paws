@@ -7,17 +7,19 @@
     <title>Overall Typology Questions</title>
     <introduction>The answers given to these questions will be used to set the default values for the remaining questions on phrase structure.  If at any point in PAWS, you do not know the answer to a particular question, you can accept the default value expected for the basic word order of your language.  Then <span id="TypologyNotPractical" show="swNotPractical">test the phrase structures with your data and go back and </span>amend your answers as needed.<br/><br/>
 Note that the grammar write up will also contain some statements based on the default answers until you change them, but the statements about the position of specific elements in the phrase structure will have a _____ to indicate that the information has not been entered yet.  Therefore, the introductory comments in the grammar writeup may not be fully correct or complete for your language until you have completed the later sections.
+<br/><br/>Throughout the pages in PAWS you will see some underlined words that are more technical linguistic terms. If you click on these terms, a separate box will open up that gives a definition to help in your understanding. 
 </introduction>
-   <instruction>Think of one or more basic <technicalTermRef term="ttTransitive"/> sentences in your language.
+    <form section="typology">
+        <prompt>Think of one or more basic <technicalTermRef term="ttTransitive"/> sentences in your language.
   These should be in the normal word order with no special characteristics, such as <technicalTermRef term="ttFocus"/>, 
 <technicalTermRef term="ttTopic"/>, <technicalTermRef term="ttPassive"/> or other <technicalTermRef term="ttVoice"/> changes, <technicalTermRef term="ttImperative"/>, <technicalTermRef term="ttInterrogative"/>, or <technicalTermRef term="ttNegation"/>.  Further, choose sentences with proper names 
 or simple nominal phrases in the subject and direct object positions, rather than pronouns.  Finally, choose sentences that have an <technicalTermRef term="ttAgent"/>, rather than an <technicalTermRef term="ttExperiencer"/>, as the subject, as in the English examples given here.
-</instruction>
+</prompt>
     <EnglishExample>
         <exItem label="1.">[John]<sub>S</sub> [hit]<sub>V</sub> [the ball]<sub>O</sub>.</exItem>
         <exItem label="2.">[The dog]<sub>S</sub> [buried]<sub>V</sub> [a bone]<sub>O</sub>.</exItem>
     </EnglishExample>
-    <form section="typology">
+
         <prompt>Key your examples here:  (Do not key in the brackets and subscripts like the examples have - those are for your information only.)</prompt>
         <textBox id="OTExample" dataItem="example" cols="80"/>
         <radioGroup>

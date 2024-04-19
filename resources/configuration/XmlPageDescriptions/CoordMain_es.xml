@@ -14,7 +14,7 @@
 			Además, hay las construcciones coordinadas que requieren una conjunción inicial, como <example>o...o</example> y <example>ni...ni</example> construcciones. Algunas lenguas también utilizan una palabra que significa <example>con</example> igual que una conjunción entre las frases nominales.
 		<br/><br/>
 		   Se consideran las palabras o cláusulas de introducción, designadas a veces como coordinación, y los ejemplos de cláusulas adverbiales, que son subordinación, en <section number="13">Las cláusulas adverbiales</section>.</introduction>
-	   <prompt>Escriba la manera en que su lengua expresa estas conjunciones en los siguientes campos. Si hay más de una opción, escriba cada palabra en una línea separada. Si la conjunción es un afijo o clítico, escriba un guión o signo igual con la conjunción indicando en qué lado se une.</prompt>
+	   <prompt>Escriba la manera en que su lengua expresa estas conjunciones en los siguientes campos. Si hay más de una opción, escriba cada palabra. Si la conjunción es un afijo o clítico, escriba un guión o signo igual con la conjunción indicando en qué lado se une.</prompt>
 	   <prompt>Escriba la palabra su lengua utiliza para la conjunción ‘y':</prompt>
 		<textBox id="CoordAnd" dataItem="and" rows="3" kind="table"><gloss>y</gloss></textBox>
 		<br/>

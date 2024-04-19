@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronNP" count="8.8">
+<page id="PronNP" count="7.8">
 	<title level="2">Pronouns - As a Nominal Phrase</title>
    <introduction>Pronouns of all types normally stand alone in the place of an entire nominal phrase, but they can usually also be modified by a relative clause. In some languages pronouns may be modified by <technicalTermRef term="ttPartitive"/> phrases, and other languages allow pronouns to also be modified by <technicalTermRef term="ttDeterminers"/> and wide scope quantifiers and degree words. English examples of this last type include the following:</introduction>
 		<EnglishExample>

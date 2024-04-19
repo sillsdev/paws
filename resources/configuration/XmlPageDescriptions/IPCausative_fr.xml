@@ -21,7 +21,7 @@
 		</checkboxGroup>
 		<prompt id="IPCausativeNoCheckPrompt" show="swIPCausativeNoCheck">ATTENTION : Vous n’avez coché aucune case pour décrire la façon dont les causatifs sont formés dans votre langue.  Veuillez cocher au moins une option.</prompt>
 		<prompt id="IPCausativeAffixAndFeaturesNoPrompt" show="swIPCausativeAffixAndFeaturesNo">ATTENTION : Dans la <section number="9.2">Phrases simples – La flexion</section> vous n’avez pas coché la case pour indiquer que le causatif existe dans votre langue.  Ceci ne correspond pas à votre réponseici, puisque vous dites qu’il existe un affixe verbal pour le causatif. Si votre langue possède un ou plusieurs affixes causatifs, revenez à la<section number="9.2">Phrases simples – La flexion</section> et cochez la case <feature>causatif</feature>.</prompt>
-		<prompt id="IPCausativeAffixPrompt" show="swIPCausativeAffix"><br/>Saisissez ici l’affixe causatif (ou les affixes causatifs) dans votre langue ; mettez un tiret pour indiquer de quel côté ils se rattachent au verbe. Saisissez chaque exemple sur une ligne séparée. </prompt>
+		<prompt id="IPCausativeAffixPrompt" show="swIPCausativeAffix"><br/>Saisissez ici l’affixe causatif (ou les affixes causatifs) dans votre langue ; mettez un tiret pour indiquer de quel côté ils se rattachent au verbe.</prompt>
 	   <textBox id="IPCausativeAffixExample" dataItem="causativeAffixExample" rows="3" show="swIPCausativeAffix" kind="table"/>		
 	   <instruction id="IPCausativeAffixInstruction" show="swIPCausativeAffix">Mark the causative affixes with the feature <feature>causative</feature> in the lexicon, if you have not already done so. </instruction>
 
@@ -76,7 +76,7 @@
 	   </checkboxGroup>
 		<prompt id="IPAntipassiveNoCheckPrompt" show="swIPAntipassiveYesAndNoCheck">ATTENTION : Vous n’avez coché aucune case pour décrire comment les antipassifs sont formés dans votre langue. cochez une ou plusieurs boîtes , ou changez votre réponse en « Non ». Dans de dernier cas, la boîte ci-dessus ne devrait pas contenir d’exemples.</prompt>
 	   
-		<prompt id="IPAntipassiveAffixPrompt" show="swIPAntipassiveYesAffix">Saisissez le ou les affixes antipassifs dans votre langue ; mettez un tiret pour indiquer de quel côté ils se rattachent au verbe. Pour chaque exemple utilisez une ligne séparée : </prompt>
+		<prompt id="IPAntipassiveAffixPrompt" show="swIPAntipassiveYesAffix">Saisissez le ou les affixes antipassifs dans votre langue ; mettez un tiret pour indiquer de quel côté ils se rattachent au verbe : </prompt>
 	   <textBox id="IPAntipassiveAffixExample" dataItem="antipassiveAffixExample" rows="3" show="swIPAntipassiveYesAffix" kind="table"/>		
 	   <instruction id="IPAntipassiveInstruction" show="swIPAntipassiveYesAffix">Mark the antipassive affixes with the feature <feature>antipassive</feature> in the lexicon, if you have not already done so.
 	   </instruction>	   

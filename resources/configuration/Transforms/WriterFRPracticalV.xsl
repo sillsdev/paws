@@ -39,7 +39,7 @@
 						<th>Type de caractéristique</th>
 						<th>Caractéristique</th>
 						<th>Morphèmes</th>
-						<th>Glose</th>
+						<th>Autres restrictions</th>
 					</tr>
 					<xsl:if test="normalize-space(//ip/ipInflFeatPresent/@checked)='yes'">
 <tr>
@@ -447,7 +447,7 @@
 							<xsl:text>temps</xsl:text>
 						</td>
 <td>
-							<xsl:text>SAISIR GLOSE</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherTense/form[1]">
 <td>
@@ -1727,7 +1727,7 @@
 							<xsl:text>aspect</xsl:text>
 						</td>
 <td>
-							<xsl:text>SAISIR GLOSE</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherAspect/form[1]">
 <td>
@@ -2447,7 +2447,7 @@
 							<xsl:text>mode</xsl:text>
 						</td>
 <td>
-							<xsl:text>SAISIR GLOSE</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherMood/form[1]">
 <td>
@@ -3567,7 +3567,7 @@
 <xsl:text>évidentialité</xsl:text>
 </td>
 <td>
-<xsl:text>SAISIR GLOSE</xsl:text>
+<xsl:text></xsl:text>
 </td>
 <xsl:for-each select="//ip/otherEvident/form[1]">
 <td>
@@ -4768,7 +4768,7 @@
 <xsl:text>voix</xsl:text>
 </td>
 <td>
-<xsl:text>SAISIR GLOSE</xsl:text>
+<xsl:text></xsl:text>
 </td>
 <xsl:for-each select="//ip/otherVoice/form[1]">
 <td>
@@ -4873,7 +4873,7 @@
 						<th>Type de caractéristique</th>
 						<th>Caractéristique</th>
 					   <th>Morphèmes</th>
-						<th>Glose</th>
+						<th>Autres restrictions</th>
 					</tr>
 					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstSubject/@checked)='yes'">
 <tr>
@@ -9677,7 +9677,11 @@
 </xsl:if>
 				</table>
 </example>
-		</section2>
+			<p>
+<xsl:text>Certaines ou toutes ces caractéristiques peuvent être exprimées sous forme de morphèmes mot-valise qui combinent plus d’une caractéristique sous une seule forme. Il est probable que ces morphèmes de mot-valise soient les formes de pronoms dépendants montrées plus haut dans </xsl:text>
+<sectionRef sec="sPronPersonal" />
+<xsl:text>.</xsl:text>
+</p>	</section2>
 	   <section2 id="sVerbParadigms">
 	   	<secTitle>Les paradigmes verbaux</secTitle>
 	   	<p>

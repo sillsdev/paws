@@ -1877,7 +1877,7 @@
 <td>
 	      				<xsl:text>any other specific markers</xsl:text>
 	      			</td>
-<xsl:for-each select="//np/other/form[1]">
+<xsl:for-each select="//np/otherCase/form[1]">
 <td>
 <langData lang="lVernacular">
 <xsl:value-of select="vernacular" />
@@ -1892,7 +1892,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+<xsl:otherwise></xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -1902,7 +1902,7 @@
 <tr>
 <td> </td>
 <td> </td>
-<xsl:for-each select="//np/other/form[1]">
+<xsl:for-each select="//np/otherCase/form[1]">
 <td>
 <langData lang="lIPA">
 <xsl:value-of select="ipa" />
@@ -1912,7 +1912,7 @@
 </xsl:for-each>
 </tr>
 </xsl:if>
-<xsl:for-each select="//np/other/form[position() &gt; 1]">
+<xsl:for-each select="//np/otherCase/form[position() &gt; 1]">
 <tr>
 <td> </td>
 <td> </td>
@@ -1930,7 +1930,7 @@
 <xsl:when test="string-length(normalize-space($sGloss)) &gt; 0">
 <xsl:value-of select="$sGloss" />
 </xsl:when>
-<xsl:otherwise>ENTER GLOSS</xsl:otherwise>
+<xsl:otherwise></xsl:otherwise>
 </xsl:choose>
 </gloss>
 </td>
@@ -2516,7 +2516,8 @@
 <xsl:text>, not the other way around.  In all compound nouns and noun modifier constructions in English, the head is the right-most noun in the series.</xsl:text>
 </p>
 		   <p>
-<xsl:text>Noun compounds include those which are combined into a single word as well as those written as two or more independent words.  Some typical categories of noun compounds are exemplified here.</xsl:text>
+<xsl:text>Noun compounds include those which are combined into a single word as well as those written as two or more independent words.  Some typical categories of noun compounds are exemplified here. </xsl:text>
+<object type="tComment"> The gloss you entered in PAWS is given in both columns for the gloss here.  You need to edit those cells to be correct. </object>
 </p>
 		   <example num="xN.NPCompounds.10">
 <table border="1">
@@ -2526,8 +2527,8 @@
 		         <tr>
 		            <th>Compound</th>
 		            <th>Gloss for each noun</th>
-		            <th>Gloss for the compound</th>
-		         </tr>
+		         <th>Gloss for the compound</th>
+		            </tr>
 		         <tr>
 <xsl:for-each select="//np/compBodyPartExample/form[1]">
 <td>

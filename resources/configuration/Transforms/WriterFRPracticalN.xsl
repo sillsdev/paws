@@ -1877,7 +1877,7 @@
 <td>
 	                              	<xsl:text>autres marqueurs spécifiques</xsl:text>
 	                              </td>
-<xsl:for-each select="//np/other/form[1]">
+<xsl:for-each select="//np/otherCase/form[1]">
 <td>
 <langData lang="lVernacular">
 <xsl:value-of select="vernacular" />
@@ -1902,7 +1902,7 @@
 <tr>
 <td> </td>
 <td> </td>
-<xsl:for-each select="//np/other/form[1]">
+<xsl:for-each select="//np/otherCase/form[1]">
 <td>
 <langData lang="lIPA">
 <xsl:value-of select="ipa" />
@@ -1912,7 +1912,7 @@
 </xsl:for-each>
 </tr>
 </xsl:if>
-<xsl:for-each select="//np/other/form[position() &gt; 1]">
+<xsl:for-each select="//np/otherCase/form[position() &gt; 1]">
 <tr>
 <td> </td>
 <td> </td>
@@ -2581,6 +2581,7 @@
 </p>
 			<p>
 <xsl:text>Les noms composés incluent ceux qui sont combinés en un seul mot tout comme ceux qui sont écrits comme deux ou plus mots indépendants.  Voici des exemples pour quelques catégories typiques de noms composés.</xsl:text>
+<object type="tComment"> La glose que vous avez saisie dans PAWS est indiquée dans les deux colonnes de la glose ici.  Vous devez modifier ces cellules pour qu'elles soient correctes.</object>
 </p>
 		   <example num="xN.NPCompounds.12">
 <table border="1">
@@ -2590,7 +2591,7 @@
 		         <tr>
 		         	<th>Nom composé</th>
 		         	<th>Glose pour chaque nom</th>
-		         	<th>Glose pour chaque nom composé</th>
+		         	<th>Glose pour le composé</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compBodyPartExample/form[1]">
@@ -2696,7 +2697,7 @@
 		         <tr>
 		         	<th>Nom composé</th>
 		         	<th>Glose pour chaque nom</th>
-		         	<th>Glose pour chaque nom composé</th>
+		         	<th>Glose pour le composé</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compKinshipExample/form[1]">
@@ -2802,7 +2803,7 @@
 		         <tr>
 		         	<th>Nom composé</th>
 		         	<th>Glose pour chaque nom</th>
-		         	<th>Glose pour chaque nom composé</th>
+		         	<th>Glose pour le composé</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compFoodExample/form[1]">
@@ -2908,7 +2909,7 @@
 		         <tr>
 		         	<th>Nom composé</th>
 		         	<th>Glose pour chaque nom</th>
-		         	<th>Glose pour chaque nom composé</th>
+		         	<th>Glose pour le composé</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compMaterialExample/form[1]">
@@ -3014,7 +3015,7 @@
 		         <tr>
 		         	<th>Nom composé</th>
 		         	<th>Glose pour chaque nom</th>
-		         	<th>Glose pour chaque nom composé</th>
+		         	<th>Glose pour le composé</th>
 		         </tr>
 		         <tr>
 <xsl:for-each select="//np/compExample/form[1]">

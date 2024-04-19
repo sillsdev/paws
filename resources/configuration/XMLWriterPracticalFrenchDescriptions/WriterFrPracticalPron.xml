@@ -1695,7 +1695,8 @@
 		         	<caseText value="yes">, surtout à la troisième personne, sont identiques ou sont étroitement associés au classificateurs appropriés.</caseText>
 		         </case></text>
 		      </p>
-		         
+		     <p><comment>Votre langue n’a peut-être pas de formes pour tous les mêmes ensembles que pour les pronoms indépendants. Les ensembles vides peuvent être supprimés ici. Il serait bon d’ajouter une explication sur les ensembles qui sont utilisés dans votre langue, comme l’accord de sujet uniquement ou l’accord de sujet et de possesseur uniquement.</comment></p>  
+			
 			<p show="swNPCaseNoneAndExperiencerNoAndDependentYes"><content>Comme on l’a vu ci-dessus, il n’y a pas de distinctions de cas en </content><langName/>
 				<content>, il n’y a donc qu’une seule classe de pronoms qu’on peut employer dans toutes les positions dans la phrase.</content>
 		   </p>

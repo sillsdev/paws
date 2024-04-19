@@ -649,11 +649,13 @@
 		</section2>
 		<section2 id="sExamples">
 			<secTitle>Conventions utilisées dans les exemples</secTitle>
-			<p>
+			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
+<p>
 <xsl:text>Cette grammaire contient beaucoup de syntagmes et phrases illustratifs.  La plupart des exemples sont présentés dans un format interlinéaire consistant en trois ou quatre lignes comme cela est montré sous </xsl:text>
 <exampleRef num="xEx" equal="no" letterOnly="no" />
 <xsl:text> :</xsl:text>
 </p>
+</xsl:if>
 			<xsl:if test="normalize-space(//language/interlinearOutputStyle/@style)='standard'">
 <example num="xEx">
 <table>
@@ -696,7 +698,7 @@
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[gloses de morphème]</xsl:text>
+							<xsl:text>[gloses de morphème en français]</xsl:text>
 						</td>
 						<td align="left">
 							<xsl:text>PRE-racine-SUF</xsl:text>
@@ -710,7 +712,7 @@
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[traduction libre]</xsl:text>
+							<xsl:text>[traduction libre en français]</xsl:text>
 						</td>
 						<td align="left" colspan="3">
 							<xsl:text>traduction libre du syntagme ou de la phrase</xsl:text>
@@ -867,7 +869,7 @@
 </xsl:otherwise>
 </xsl:choose>
 <xsl:text> sont donnés sur la première ligne. La deuxième ligne présente les mots en API.  La troisième ligne ajoute des traits d'union à l'API pour montrer la séparation des mots en morphèmes.
-					La quatrième ligne donne la traduction morphème par morphème en françaish, les morphèmes étant séparés par des traits d'union.  La meilleure traduction littérale est utilisée pour chaque racine, séparée par des points si plus d'un mot espagnol est nécessaire pour exprimer le sens du </xsl:text>
+					La quatrième ligne donne la traduction morphème par morphème en français, les morphèmes étant séparés par des traits d'union.  La meilleure traduction littérale est utilisée pour chaque racine, séparée par des points si plus d'un mot français est nécessaire pour exprimer le sens du </xsl:text>
 <xsl:choose>
 <xsl:when test="string-length(normalize-space(//language/langNames/langName[@lang='fr'])) &gt; 0">
 <xsl:value-of select="normalize-space(//language/langNames/langName[@lang='fr'])" />

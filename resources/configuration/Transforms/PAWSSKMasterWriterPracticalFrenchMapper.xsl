@@ -121,13 +121,13 @@
 			</p>
 			<xsl:variable name="sTextTitle" select="'titre - texte '"/>
 			<xsl:variable name="sParagraphContent" select="'paragraphes pour le texte entier dans la langue'"/>
-			<xsl:variable name="sLanguage" select="'langue'"/>
-			<xsl:variable name="sGloss" select="'glose'"/>
-			<xsl:variable name="sIPA" select="'API'"/>
-			<xsl:variable name="sIPAMorphBreaks" select="'API avec ruptures de morphèmes'"/>
-			<xsl:variable name="sMorphemes" select="'morphèmes'"/>
-			<xsl:variable name="sFree" select="'la traduction libre'"/>
-			<xsl:variable name="sStateFree" select="'la traduction libre dans la langue de l’état'"/>
+			<xsl:variable name="sLanguage" select="'mots vernaculaires'"/>
+			<xsl:variable name="sGloss" select="'gloses littérales du mot'"/>
+			<xsl:variable name="sIPA" select="'mots en API'"/>
+			<xsl:variable name="sIPAMorphBreaks" select="'API séparée par des morphèmes'"/>
+			<xsl:variable name="sMorphemes" select="'gloses de morphème en français'"/>
+			<xsl:variable name="sFree" select="'traduction libre en français'"/>
+			<xsl:variable name="sStateFree" select="'traduction libre en langue officielle de l’Etat'"/>
 			<xsl:variable name="sFreeParagraphContent" select="'paragraphes pour la traduction libre de l’ensemble du texte'"/>
 			<xsl:call-template name="DoAnIntelinearText">
 				<xsl:with-param name="sTextTitle" select="$sTextTitle"/>

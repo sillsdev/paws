@@ -708,7 +708,7 @@
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[morpheme glosses]</xsl:text>
+							<xsl:text>[English morpheme glosses]</xsl:text>
 						</td>
 						<td align="left">
 							<xsl:text>PRE-root-SUF</xsl:text>
@@ -722,7 +722,7 @@
 					</tr>
 					<tr>
 						<td align="left">
-							<xsl:text>[free translation]</xsl:text>
+							<xsl:text>[English free translation]</xsl:text>
 						</td>
 						<td align="left" colspan="3">
 							<xsl:text>free translation phrase or sentence</xsl:text>

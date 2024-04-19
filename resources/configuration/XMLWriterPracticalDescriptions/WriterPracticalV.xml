@@ -22,7 +22,7 @@
 						<headerCol>Type of feature</headerCol>
 						<headerCol>Feature</headerCol>
 						<headerCol>Morphemes</headerCol>
-						<headerCol>Gloss</headerCol>
+						<headerCol>Other Restrictions</headerCol>
 					</headerRow>
 					<row show="swIPInflFeatPresent">
 						<col>
@@ -74,7 +74,7 @@
 							<content>tense</content>
 						</col>
 						<col>
-							<content>ENTER GLOSS</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherTense"/>			
 					</row>
@@ -218,7 +218,7 @@
 							<content>aspect</content>
 						</col>
 						<col>
-							<content>ENTER GLOSS</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherAspect"/>			
 					</row>
@@ -299,7 +299,7 @@
 							<content>mood</content>
 						</col>
 						<col>
-							<content>ENTER GLOSS</content>
+							<content></content>
 						</col>
 						<col exampleLoc="ip/otherMood"/>			
 					</row>
@@ -370,7 +370,7 @@
 					</row>
 					<row show="swIPInflFeatOtherEvident">
 						<col><content>evidentiality</content></col>
-						<col><content>ENTER GLOSS</content></col>
+						<col><content></content></col>
 						<col exampleLoc="ip/otherEvident"/>
 					</row>
 					
@@ -524,7 +524,7 @@
 						<headerCol>Type of feature</headerCol>
 						<headerCol>Feature</headerCol>
 					   <headerCol>Morphemes</headerCol>
-						<headerCol>Gloss</headerCol>
+						<headerCol>Other Restrictions</headerCol>
 					</headerRow>
 					<row show="swIPAgrFeatFirstSubject">
 						<col>
@@ -1068,6 +1068,7 @@
 					</row>
 				</table>
 			</example>
+			<p><content>Some or all of these features may be expressed as portmanteau morphemes which combine more than one feature together in a single form.  It is likely that these portmanteau morphemes are the dependent pronoun forms shown earlier in </content><sectionRef sec="sPronPersonal"/><content>.</content></p>
 		</section2>
 	   <section2 id="sVerbParadigms">
 	      <secTitle>Verb Paradigms</secTitle>

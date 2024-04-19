@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronPoss" count="8.3">
+<page id="PronPoss" count="7.3">
     <title level="2">Pronouns - Possessives</title>
     <introduction>Many languages also have possessive pronouns which can stand alone, such as <example>yours</example>, <example>mine</example>, <example>theirs</example> or <example>hers</example> in English.  <technicalTermRef term="ttPossessives" capitalize="yes"/> are distinct from those pronouns which can occur in possessor position and directly possess a noun, such as <example>your</example>, <example>my</example>, <example>their</example> or <example>her</example>, which were handled on the previous page.<br/><br/>
     The possessive pronouns may not be written as a single word in some languages.</introduction>

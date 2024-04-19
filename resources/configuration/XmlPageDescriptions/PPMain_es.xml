@@ -10,7 +10,7 @@
       <br/><br/>
       Considere las frases adposicionales locativas en su lengua, como <example>en [la casa de Bill]</example> y <example>bajo [el gigante árbol sicómoro]</example>. El español tiene preposiciones que son palabras independientes y vienen antes de la frase nominal que es su complemento. En una lengua con posposiciones, la frase nominal que es su complemento se presenta primera, antes de la posposición.</introduction>
    <form section="pp">
-      <prompt><br/> Escriba algunos ejemplos de las frases adposicionales de lugar en su lengua (sin corchetes pero cada uno en una línea separada):</prompt>
+      <prompt><br/> Escriba algunos ejemplos de las frases adposicionales de lugar en su lengua (sin corchetes):</prompt>
       <textBox id="PPCompsNominalExample" dataItem="ppExample" cols="80"/>
       <radioGroup>
          <groupName dataItem="pPos" default="unknown" position="yesHead"> RPPPosition</groupName>

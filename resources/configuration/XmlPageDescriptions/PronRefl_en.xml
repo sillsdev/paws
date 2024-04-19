@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronRefl" count="8.4">
+<page id="PronRefl" count="7.4">
     <title level="2">Pronouns - Reflexives</title>
    <introduction><technicalTermRef term="ttReflexives" capitalize="yes"/> are another type of pronoun that most languages have.  They normally occur in the object position of a transitive sentence to refer back to the subject.  Reflexives occur only in the same case as direct objects and normally must agree with the subject in person, gender, and number features.  Examples in English are: <example>herself</example>, <example>himself</example>, <example>themselves</example>, <example>myself</example>.   
       <br/><br/>There is quite a bit of variety in the ways reflexives are formed.  Some languages have a completely separate set of pronoun forms for reflexives. Other languages use a phrase which consists of a noun (usually meaning ‘self’) that is possessed by the pronoun that refers back to the subject. Some languages might use a special quantified nominal phrase something like ‘one another’ that English uses for <technicalTermRef term="ttReciprocals"/>. Some languages have a verbal affix to indicate reflexive action, and some languages do not distinguish reflexive constructions at all.</introduction>

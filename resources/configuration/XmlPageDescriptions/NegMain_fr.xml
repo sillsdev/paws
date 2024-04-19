@@ -32,7 +32,7 @@
     </EnglishExample>
  
     <form section="neg">
-       <prompt>Saisissez la façon dont votre langue exprime « pas », « nul » ou « non » (modifiant un syntagme nominal plutôt qu’un syntagme verbal), en mettant chaque mot sur une ligne séparée. (Si « pas » ou « non » est un affixe ou un clitique qui se rattache à un autre mot du syntagme nominal, saisissez-le ici, en mettant un tiret ou un signe d’égalité pour indiquer de quel côté il se rattache.)</prompt>
+       <prompt>Saisissez la façon dont votre langue exprime « pas », « nul » ou « non » (modifiant un syntagme nominal plutôt qu’un syntagme verbal). (Si « pas » ou « non » est un affixe ou un clitique qui se rattache à un autre mot du syntagme nominal, saisissez-le ici, en mettant un tiret ou un signe d’égalité pour indiquer de quel côté il se rattache.)</prompt>
        <textBox id="NegNotExample" dataItem="not" rows="3" kind="table"/>
        <br/><br/>
        <radioGroup>
@@ -76,7 +76,7 @@
           <checkbox id="NegNPDegreeNegWordBefore" dataItem="npDegreeNegWordBefore">Avant</checkbox>
           <checkbox id="NegNPDegreeNegWordAfter"  dataItem="npDegreeNegWordAfter">Après</checkbox>
           <checkbox id="NegNPDegreeNegWordBoth"  dataItem="npDegreeNegWordBoth">De part et d’autre en même temps</checkbox>
-          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">Dans ma langue ces éléments se placent dans la position suivante : <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70" kind="o"/></checkbox>
+          <checkbox id="NegNPDegreeNegWordOther" dataItem="npDegreeNegWordOther">Dans ma langue ces éléments se placent dans la position suivante : <textBox  id="NegNPDegreeNegWordOtherContent" dataItem="npDegreeNegWordOther" rows="1" cols="70" kind="other"/></checkbox>
        </checkboxGroup>	
        <prompt id="NegNPDegreeWordNoCheckPrompt" show="swNegNPDegreeYesAndNoCheck">ATTENTION : Vous devez soit cocher au moins une case pour décrire la position de ces éléments négatifs dans votre langue ; soit changer votre réponse et cocher : « Non, ils se rattachent tous à un autre mot dans le syntagme nominal ».</prompt>
        <instruction id="NegNPDegreeNegYesInstruction" show="swNegNPDegreeNegYesOrSome">In the lexicon, mark the words meaning   « not »  and  « no »  with the features <feature>makeNeg modifies_DP</feature>. </instruction>

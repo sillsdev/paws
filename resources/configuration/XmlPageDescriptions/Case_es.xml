@@ -10,9 +10,10 @@
        <prompt>En la página anterior, usted escribió los siguientes ejemplos de oraciones <technicalTermRef term="ttTransitive">transitivas</technicalTermRef> en su lengua.  Si los ejemplos solamente tienen nombres como el sujeto y el objeto directo, escriba ejemplos adicionales aquí utilizando frase nominales simples como el sujeto y el objeto directo.   Por favor, utiliza solamente las oraciones con un sujeto-<technicalTermRef term="ttAgent"/> y que no tienen cambios por la  <technicalTermRef term="ttVoice"/> aquí.</prompt>
        <textBox id="OTExample" dataItem="example" cols="80"/>
 <prompt>En los ejemplos de arriba, observe si existe un indicador en los sustantivos para señalar cuáles son sujetos y cuáles son objetos directos.  (Las observaciones que usted hace cuando examina los ejemplos de varios tipos aquí van a ayudayle en responder a las preguntas abajo.)<br/><br/>
-            Ahora escriba ejemplos similares de oraciones transitivas con un sujeto-agente, pero con pronombres como el sujeto y el objeto directo:</prompt>
+            Ahora escriba ejemplos similares de oraciones transitivas con un sujeto-agente, pero con pronombres como el sujeto y el objeto directo. 
+Asegúrese de usar pronombres independientes en cada posición para estos ejemplos, no un pronombre dependiente adjunto al verbo, incluso si su lengua lo permite.</prompt>
         <textBox id="OTPnExample" dataItem="pnExample" cols="80"/>       
-       <prompt>En los ejemplos de arriba, observe si existen distintos grupos de pronombres para el sujeto y el objeto directo. </prompt>
+       <prompt>En los ejemplos de arriba, observe si existen distintos grupos de pronombres para el sujeto y el objeto directo. Trata de incluir ejemplos con los pronombres de "yo, nosotros, tú, él, ellos" en posición de sujeto y los pronombres de "yo, nosotros, tú, él, ellos" en posición de objeto. </prompt>
        <br/>
        <introduction>Algunas lenguas tienen indicadores de caso distintos y un sistema de pronombes distinto para sujetos-<technicalTermRef term="ttExperiencer">experimentadores</technicalTermRef> que sujetos-agentes.  
           En algunas lenguas esta distinción es solamente para el pronombre primera singular “yo”.  Algunos verbos transitivos con sujetos-experimentadores son: ‘aparecer', ‘ver', ‘temer', ‘encontrarse', ‘desear' y ‘oír'.</introduction>     
@@ -20,7 +21,7 @@
        <prompt>Escriba ejemplos de oraciones transitivas con un sujeto-experimentador, con frases nominales simples como el sujeto y el objeto directo aquí:</prompt>
        <textBox id="OTExperiencerExample" dataItem="experiencerExample" cols="80"/>
        <prompt>En los ejemplos de arriba, observe si existe un indicador en los sustantivos para señalar cuáles son sujetos y cuáles son objetos directos.  Si existe, ¿es el indicador el mismo para un sujeto-experimentador que un sujeto-agente?  Tal vez es el  mismo que para los objetos directos en los ejemplos transitivos con un sujeto-agente, o tal vez es un indicador distinto. <br/><br/>
-          Ahora escriba ejemplos similares de oraciones transitivas con un sujeto-experimentador, pero con pronombres como el sujeto y objeto directo: </prompt>
+          Ahora escriba ejemplos similares de oraciones transitivas con un sujeto-experimentador, pero con pronombres independientes como el sujeto y objeto directo.  Una vez más, trata de incluir ejemplos con los pronombres independientes para "yo, nosotros, tú, él, ellos" en posición de sujeto y los pronombres para "yo, nosotros, tú, él, ellos" en posición de objeto.  </prompt>
        <textBox id="OTExperiencerPnExample" dataItem="experiencerPnExample" cols="80"/>       
        <prompt>En los ejemplos de arriba, observe si existen distintos grupos de pronombres para el sujeto y el objeto directo.   Ahora observe si los pronombres utilizados para un sujeto-experimentador son los mismos o distintos que los para un sujeto-agente.  
           Si son distintos, ¿son los mismos que los pronombres utilizadas para objetos directos en los ejemplos con un sujeto-agente, o son distintos de los objetos también?</prompt>
@@ -35,7 +36,7 @@
         <prompt>Necesitamos observar si existe distinciones con un sujeto-experimentador.  Algunos verbos intransitivos con un sujeto-experimentador son: ‘reírse', ‘llorar', ‘temerse' y ‘enojarse'. (Algunos de estos pueden ser oraciones con un adjetivo predicativo, pero son verbos en algunas lenguas.) Escriba ejemplos de oraciones intransitivas con un sujeto-experimentador, con frases nominales simples como el sujeto aquí:</prompt>
        <textBox id="OTExperiencerIntExample" dataItem="experiencerIntExample" cols="80"/>
        <prompt>En los ejemplos de arriba, observe si existe un indicador en los sustantivos para señalar a los sujetos.  Si existe, ¿es el indicador el mismo para los sujetos-experimentadores que para los sujetos-agentes? Tal vez es el  mismo que para los objetos directos en los ejemplos transitivos con un sujeto-agente, o tal vez es un indicador distinto. <br/><br/>
-          Ahora escriba ejemplos similares de oraciones intransitivas con un sujeto-experimentador, pero con pronombres como el sujeto.  Incluye ejemplos con los pronombres para "yo, nosotros, usted, él y ellos" como sujetos.</prompt>
+          Ahora escriba ejemplos similares de oraciones intransitivas con un sujeto-experimentador, pero con pronombres independientes como el sujeto.  Incluye ejemplos con los pronombres para "yo, nosotros, usted, él y ellos" como sujetos.</prompt>
        <textBox id="OTExperiencerPnIntExample" dataItem="experiencerPnIntExample" cols="80"/>       
        <prompt>En los ejemplos de arriba, observe si los pronombres utilizados como los sujetos-experimentadores son los mismos o distintos que los utilizados como los sujetos-agentes.
           Si son distintos, ¿son los pronombres utilizados como los sujetos-experimentadores los mismos que los pronombres utilizados como los objetos directos en las oraciones transitivas con un sujeto-agente de arriba, o son distintos?</prompt>

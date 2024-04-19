@@ -422,7 +422,7 @@
 	                              <col>
 	                              	<content>autres marqueurs spécifiques</content>
 	                              </col>
-	                           	<col exampleLoc="np/other"/>
+	                           	<col exampleLoc="np/otherCase"/>
 	                           </row>
 	         </table>
 	      </example>	      
@@ -708,14 +708,14 @@
 			<p contentType="ctComparativeIntro">
 			<content>Par contraste, en français de tels exemples sont beaucoup plus rares, en ce sens que le modificateur est introduit par de.  </content><langData>Kitchen table</langData><content> peut être traduit </content><langData>table de cuisine</langData><content> s’il s’agit d’un type de meuble en général, ou </content><langData>la table de la cuisine</langData><content> si c’est une table en particulier, celle qui se trouve dans la cuisine et non dans le salon. </content><langData>Table cuisine</langData><content> ou </content><langData>cuisine table</langData><content> ne seraient pas permis. Certains noms peuvent fonctionner comme adjectif dans des expressions généralement figées - par exemple, </content><langData>panneau indicateur</langData><content> mais </content><langData>indicateur de vitesse</langData><content>.</content>
 			</p>
-			<p><content>Les noms composés incluent ceux qui sont combinés en un seul mot tout comme ceux qui sont écrits comme deux ou plus mots indépendants.  Voici des exemples pour quelques catégories typiques de noms composés.</content></p>
+			<p><content>Les noms composés incluent ceux qui sont combinés en un seul mot tout comme ceux qui sont écrits comme deux ou plus mots indépendants.  Voici des exemples pour quelques catégories typiques de noms composés.</content> <comment> La glose que vous avez saisie dans PAWS est indiquée dans les deux colonnes de la glose ici.  Vous devez modifier ces cellules pour qu'elles soient correctes.</comment></p>
 		   <example>
 		      <table border="1">
 		      	<caption><content>Noms composés pour les parties du corps </content></caption>
 		         <headerRow>
 		         	<headerCol>Nom composé</headerCol>
 		         	<headerCol>Glose pour chaque nom</headerCol>
-		         	<headerCol>Glose pour chaque nom composé</headerCol>
+		         	<headerCol>Glose pour le composé</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compBodyPartExample"/>
@@ -730,7 +730,7 @@
 		         <headerRow>
 		         	<headerCol>Nom composé</headerCol>
 		         	<headerCol>Glose pour chaque nom</headerCol>
-		         	<headerCol>Glose pour chaque nom composé</headerCol>
+		         	<headerCol>Glose pour le composé</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compKinshipExample"/>
@@ -745,7 +745,7 @@
 		         <headerRow>
 		         	<headerCol>Nom composé</headerCol>
 		         	<headerCol>Glose pour chaque nom</headerCol>
-		         	<headerCol>Glose pour chaque nom composé</headerCol>
+		         	<headerCol>Glose pour le composé</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compFoodExample"/>
@@ -760,7 +760,7 @@
 		         <headerRow>
 		         	<headerCol>Nom composé</headerCol>
 		         	<headerCol>Glose pour chaque nom</headerCol>
-		         	<headerCol>Glose pour chaque nom composé</headerCol>
+		         	<headerCol>Glose pour le composé</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compMaterialExample"/>
@@ -775,7 +775,7 @@
 		         <headerRow>
 		         	<headerCol>Nom composé</headerCol>
 		         	<headerCol>Glose pour chaque nom</headerCol>
-		         	<headerCol>Glose pour chaque nom composé</headerCol>
+		         	<headerCol>Glose pour le composé</headerCol>
 		         </headerRow>
 		         <row>
 		            <col exampleLoc="np/compExample"/>

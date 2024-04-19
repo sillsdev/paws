@@ -1691,7 +1691,8 @@
 		            <caseText value="yes">, especially for third person, are either identical or closely related to the appropriate classifiers.</caseText>
 		         </case></text>
 		      </p>
-		         
+		  <p><comment>Your language may not have forms for all the same sets as for the independent pronouns.  Those sets which are blank can be deleted here.  It would be good to add an explanation about which sets are utilized in your language, such as subject agreement only or subject and possessor agreement only.</comment></p>
+		  
 		   <p show="swNPCaseNoneAndExperiencerNoAndDependentYes"><content>As seen above, </content><langName/>
 		      <content> does not have any case distinctions, so there is only a single set of pronouns that can be used in any position in the sentence:</content>
 		   </p>

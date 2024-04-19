@@ -368,7 +368,7 @@
         </section2>
         <section2 id="sExamples">
             <secTitle>Estructura usada en los ejemplos</secTitle>
-            <p>
+            <p show="swStandardInterlinear">
                 <content>Esta gramática contiene muchas frases y oraciones ilustrativas. La mayor parte de ellas se presentan en un formato interlinearizado que consiste en tres o cuatro líneas, como se muestra en </content>
                 <exampleRef num="xEx"/>
                 <content>:</content>
@@ -405,7 +405,7 @@
                     </row>
                     <row>
                         <col>
-                            <content>[glosa por morfemas]</content>
+                           <content>[glosa por morfemas en español]</content>
                         </col>
                         <col>
                             <content>PRE-raíz-SUF</content>
@@ -419,7 +419,7 @@
                     </row>
                     <row>
                         <col>
-                            <content>[traducción libre]</content>
+                            <content>[traducción libre en español]</content>
                         </col>
                         <col colspan="3">
                             <content>traducción libre de frase u oración</content>
@@ -504,7 +504,7 @@
 					</row>
 					<row>
 						<col>
-							<content>[traducción libre]</content>
+						   <content>[traducción libre en español]</content>
 						</col>
 						<col colspan="3">
 							<content>traducción libre de frase u oración</content>
@@ -512,7 +512,7 @@
 					</row>
 					<row>
 						<col>
-							<content>[traducción libre a la lengua oficial del estado ]</content>
+							<content>[traducción libre a la lengua oficial del estado]</content>
 						</col>
 						<col colspan="3">
 							<content>traducción libre de frase u oración</content>
@@ -523,7 +523,7 @@
 			<p show="swBlessymolInterlinear">
 				<content>Las palabras en el </content>
 				<langName/>
-				<content> aparecen en la primera línea. La segunda línea presenta las palabras in AFI.  La tercera línea añade guiones al A para mostrar la separación de las palabras en morfemas.
+				<content> aparecen en la primera línea. La segunda línea presenta las palabras in AFI.  La tercera línea añade guiones al AFI para mostrar la separación de las palabras en morfemas.
 					La cuarta línea presenta la traducción morfema por morfema al español, con los morfemas separados por guiones.  Se utiliza la mejor traducción literal para cada raíz, separada por puntos si se necesita más de una palabra en español para expresar el significado del </content>
 				<langName/>
 				<content> raíz, mientras que los prefijos y sufijos se muestran mediante glosas o abreviaturas de sus características.  Esta cuarta línea puede ser de gran utilidad para los lingüistas.  Las dos últimas líneas ofrecen la traducción libre de todo el ejemplo, primero en español y luego en la lengua oficial del Estado.</content>
@@ -1043,7 +1043,7 @@
       <example show="swClassifiersYesAgrTypeAndNoNumAgr">
          <table border="1" >
             <caption>
-               <content>Inidcadores de clase de sustantivos por nombre de clase</content>
+               <content>Indicadores de clase de sustantivos por nombre de clase</content>
             </caption>
             <headerRow>
                <headerCol>
@@ -1284,7 +1284,7 @@
                   Número de clase
                </headerCol>
                <headerCol>Concordancia de número</headerCol>
-               <headerCol>Indiicador</headerCol>
+               <headerCol>Indicador</headerCol>
                <headerCol>Glosa</headerCol>
             </headerRow>
             <row>
@@ -1325,13 +1325,6 @@
                   </case>
                </col>
               <col exampleLoc="typology/class3Example"/>
-               <col>
-                  <case element="typology" attr="class3agr">
-                     <caseText value="sg">singular</caseText>
-                     <caseText value="pl">plural</caseText>
-                     <caseText value="irrelevant">no aplica</caseText>
-                  </case>
-               </col>
             </row>
             <row>
                <col>

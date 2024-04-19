@@ -42,7 +42,7 @@
 					   <th>Accidente</th>
 					   <th>Significado</th>
 					   <th>Morfemas</th>
-						<th>Glosa</th>
+						<th>Otras restricciones</th>
 					</tr>
 					<xsl:if test="normalize-space(//ip/ipInflFeatPresent/@checked)='yes'">
 <tr>
@@ -450,7 +450,7 @@
 							<xsl:text>tiempo</xsl:text>
 						</td>
 <td>
-							<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherTense/form[1]">
 <td>
@@ -1730,7 +1730,7 @@
 				   			<xsl:text>aspecto</xsl:text>
 				   		</td>
 <td>
-				   			<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+				   			<xsl:text></xsl:text>
 				   		</td>
 <xsl:for-each select="//ip/otherAspect/form[1]">
 <td>
@@ -2450,7 +2450,7 @@
 							<xsl:text>modo</xsl:text>
 						</td>
 <td>
-							<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherMood/form[1]">
 <td>
@@ -3570,7 +3570,7 @@
 <xsl:text>evidencialidad</xsl:text>
 </td>
 <td>
-<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+<xsl:text></xsl:text>
 </td>
 <xsl:for-each select="//ip/otherEvident/form[1]">
 <td>
@@ -4770,7 +4770,7 @@
 							<xsl:text>voz</xsl:text>
 						</td>
 <td>
-							<xsl:text>ESCRIBA LA GLOSA</xsl:text>
+							<xsl:text></xsl:text>
 						</td>
 <xsl:for-each select="//ip/otherVoice/form[1]">
 <td>
@@ -4875,7 +4875,7 @@
 					   <th>Accidente</th>
 					   <th>Significado</th>
 					   <th>Morfemas</th>
-						<th>Glosa</th>
+						<th>Otras restricciones</th>
 					</tr>
 					<xsl:if test="normalize-space(//ip/ipAgrFeatFirstSubject/@checked)='yes'">
 <tr>
@@ -9679,7 +9679,11 @@
 </xsl:if>
 				</table>
 </example>
-		</section2>
+			<p>
+<xsl:text>Algunas o todas estas características pueden expresarse como morfemas acrónimo que combinan más de una característica en una sola forma. Es probable que estos morfemas acrónimos sean las formas de pronombres dependientes que se mostraron anteriormente en </xsl:text>
+<sectionRef sec="sPronPersonal" />
+<xsl:text>.</xsl:text>
+</p>	</section2>
 	   	   <section2 id="sVerbParadigms">
 	      <secTitle>Paradigmas de verbos</secTitle>
 	   	      <p>

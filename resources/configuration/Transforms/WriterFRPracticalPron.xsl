@@ -16751,7 +16751,10 @@
 </xsl:if>
 </p>
 </xsl:if>
-		         
+		     <p>
+<object type="tComment">Votre langue n’a peut-être pas de formes pour tous les mêmes ensembles que pour les pronoms indépendants. Les ensembles vides peuvent être supprimés ici. Il serait bon d’ajouter une explication sur les ensembles qui sont utilisés dans votre langue, comme l’accord de sujet uniquement ou l’accord de sujet et de possesseur uniquement.</object>
+</p>  
+			
 			<xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)='no' and normalize-space(//pron/@dependentPron)='yes'">
 <p>
 <xsl:text>Comme on l’a vu ci-dessus, il n’y a pas de distinctions de cas en </xsl:text>
@@ -16781,7 +16784,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.122">
+<example num="xPron.PronPersonal.124">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants</xsl:text>
@@ -17159,7 +17162,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.124">
+<example num="xPron.PronPersonal.126">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants</xsl:text>
@@ -17810,7 +17813,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)!='no' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.128">
+<example num="xPron.PronPersonal.130">
 <table border="1">
 		      	<caption>
 <xsl:text>Pronoms personnels dépendants pour les sujets expérient</xsl:text>
@@ -18188,7 +18191,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='none' and normalize-space(//typology/@noCaseExperiencer)!='no' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.130">
+<example num="xPron.PronPersonal.132">
 <table border="1">
 		      	<caption>
 <xsl:text>Pronoms personnels dépendants pour les sujets expérient</xsl:text>
@@ -18864,7 +18867,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.136">
+<example num="xPron.PronPersonal.138">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants nominatifs</xsl:text>
@@ -19242,7 +19245,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.138">
+<example num="xPron.PronPersonal.140">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants nominatifs</xsl:text>
@@ -19897,7 +19900,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.142">
+<example num="xPron.PronPersonal.144">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants accusatifs</xsl:text>
@@ -20275,7 +20278,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.144">
+<example num="xPron.PronPersonal.146">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants accusatifs</xsl:text>
@@ -20929,7 +20932,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.148">
+<example num="xPron.PronPersonal.150">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants datifs</xsl:text>
@@ -21307,7 +21310,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.150">
+<example num="xPron.PronPersonal.152">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants datifs</xsl:text>
@@ -21957,7 +21960,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.154">
+<example num="xPron.PronPersonal.156">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants génitifs</xsl:text>
@@ -22335,7 +22338,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='nominative' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.156">
+<example num="xPron.PronPersonal.158">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants génitifs</xsl:text>
@@ -23016,7 +23019,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.162">
+<example num="xPron.PronPersonal.164">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants ergatifs</xsl:text>
@@ -23394,7 +23397,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.164">
+<example num="xPron.PronPersonal.166">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants ergatifs</xsl:text>
@@ -24049,7 +24052,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.168">
+<example num="xPron.PronPersonal.170">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants absolutifs</xsl:text>
@@ -24427,7 +24430,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.170">
+<example num="xPron.PronPersonal.172">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants absolutifs</xsl:text>
@@ -25081,7 +25084,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.174">
+<example num="xPron.PronPersonal.176">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants datifs</xsl:text>
@@ -25459,7 +25462,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.176">
+<example num="xPron.PronPersonal.178">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants datifs</xsl:text>
@@ -26110,7 +26113,7 @@
 </xsl:if>
 
 				   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.180">
+<example num="xPron.PronPersonal.182">
 <table border="1">
 				      	<caption>
 <xsl:text>Pronoms personnels dépendants </xsl:text>
@@ -26494,7 +26497,7 @@
 </xsl:if>
 				   
 				   <xsl:if test="normalize-space(//typology/@case)='ergative' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.182">
+<example num="xPron.PronPersonal.184">
 <table border="1">
 				      	<caption>
 <xsl:text>Pronoms personnels dépendants </xsl:text>
@@ -27174,7 +27177,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.188">
+<example num="xPron.PronPersonal.190">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants nominatifs</xsl:text>
@@ -27552,7 +27555,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.190">
+<example num="xPron.PronPersonal.192">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants nominatifs</xsl:text>
@@ -28207,7 +28210,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.194">
+<example num="xPron.PronPersonal.196">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants accusatifs</xsl:text>
@@ -28585,7 +28588,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.196">
+<example num="xPron.PronPersonal.198">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants accusatifs</xsl:text>
@@ -29239,7 +29242,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.200">
+<example num="xPron.PronPersonal.202">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants datifs</xsl:text>
@@ -29617,7 +29620,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.202">
+<example num="xPron.PronPersonal.204">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants datifs</xsl:text>
@@ -30267,7 +30270,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.206">
+<example num="xPron.PronPersonal.208">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants génitifs</xsl:text>
@@ -30645,7 +30648,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.208">
+<example num="xPron.PronPersonal.210">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants génitifs</xsl:text>
@@ -31301,7 +31304,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.212">
+<example num="xPron.PronPersonal.214">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants ergatifs</xsl:text>
@@ -31679,7 +31682,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.214">
+<example num="xPron.PronPersonal.216">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants ergatifs</xsl:text>
@@ -32335,7 +32338,7 @@
 </p>
 </xsl:if>
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='no' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.218">
+<example num="xPron.PronPersonal.220">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants absolutifs</xsl:text>
@@ -32713,7 +32716,7 @@
 </xsl:if>
 		   
 		   <xsl:if test="normalize-space(//typology/@case)='split' and normalize-space(//pron/@pronounNumber)='yes' and normalize-space(//pron/@dependentPron)='yes'">
-<example num="xPron.PronPersonal.220">
+<example num="xPron.PronPersonal.222">
 <table border="1">
 		         <caption>
 <xsl:text>Pronoms personnels dépendants absolutifs</xsl:text>

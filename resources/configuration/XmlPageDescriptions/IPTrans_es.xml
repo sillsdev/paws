@@ -31,7 +31,7 @@
             <exItem label="7.">La muchacha dio el regalo a su madre.</exItem>
             <exItem label="8.">La muchacha dio a su madre el regalo.</exItem>
         </EnglishExample>
-      <prompt><br/>Escriba sus ejemplos de oraciones ditransitivasaquí:</prompt>
+      <prompt><br/>Escriba sus ejemplos de oraciones ditransitivas aquí:</prompt>
         <textBox id="IPExamplesDiExamples" dataItem="diExample" cols="80"/>
        <br/><br/>
         <radioGroup>

@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_es.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronMain" count="8.1">
+<page id="PronMain" count="7.1">
     <title>Los pronombres</title>
    <introduction>Hay pronombres de varios tipos: personales, <technicalTermRef term="ttPossessors">posesivos</technicalTermRef>, <technicalTermRef term="ttReflexives">reflexivos</technicalTermRef>, <technicalTermRef term="ttReciprocals">recíprocos</technicalTermRef>, demostrativos e <technicalTermRef term="ttIndefinite">indefinidos</technicalTermRef>.  (Los pronombres <technicalTermRef term="ttInterrogative">interrogativos</technicalTermRef> se presentan en la sección <section number="11.">Las preguntas - Las frases interrogativas</section>.)
       Estos pronombres por lo regular se colocan solamente en lugar de una frase nominal completa, pero pueden también ser modificados por una cláusula relativa y en algunas lenguas pueden ser modificados por una frase <technicalTermRef term="ttPartitive">partitiva</technicalTermRef> y por los <technicalTermRef term="ttDeterminers">determinantes</technicalTermRef> y cuantificadores.  Algunas lenguas tienen sistemas independientes y dependientes del pronombre. 
@@ -40,69 +40,69 @@
           <br/>Puesto que su lengua no distingue el caso, debe tener un solo sistema de los pronombres independientes que pueden presentarse en cualquier posición de la oración, y un sistema adicional para los pronambres que se usan para sujetos-experimentadores.  El primero sistema es para sujetos-agentes.<br/>
        </prompt>
        <prompt id="PronFirstSgCaseNonePrompt" show="swNPCaseNone"><br/>
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan" show="swPronNumberYes">singular </span>aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan" show="swPronNumberYes">singular </span>aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstSgNoCaseExample" dataItem="personalFirstSgNoCaseExample"  rows="2" show="swNPCaseNone" kind="table"/>
        <prompt id="PronFirstPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona plural aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNoCaseExample" dataItem="personalFirstPlNoCaseExample"  rows="2" show="swNPCaseNoneAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNonePrompt" show="swNPCaseNoneAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan" show="swPronNumberYes">plural </span>exclusiva aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan" show="swPronNumberYes">plural </span>exclusiva aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNoCaseExample" dataItem="personalFirstExclNoCaseExample"  rows="2" show="swNPCaseNoneAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNonePrompt" show="swNPCaseNoneAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan1" show="swPronNumberYes">plural </span>inclusiva aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan1" show="swPronNumberYes">plural </span>inclusiva aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNoCaseExample" dataItem="personalFirstInclNoCaseExample"  rows="2" show="swNPCaseNoneAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNonePrompt" show="swNPCaseNone">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan1" show="swPronNumberYes">singular </span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan1" show="swPronNumberYes">singular </span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalSecondSgNoCaseExample" dataItem="personalSecondSgNoCaseExample" rows="2" show="swNPCaseNone" kind="table"/>
        <prompt id="PronSecondPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la segunda persona plural aquí. <br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNoCaseExample" dataItem="personalSecondPlNoCaseExample" rows="2" show="swNPCaseNoneAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNonePrompt" show="swNPCaseNone">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan2" show="swPronNumberYes">singular </span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan2" show="swPronNumberYes">singular </span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNoCaseExample" dataItem="personalThirdSgNoCaseExample" rows="5" show="swNPCaseNone" kind="table"/>
        <prompt id="PronThirdPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la tercera persona plural aquí. <br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNoCaseExample" dataItem="personalThirdPlNoCaseExample" rows="5" show="swNPCaseNoneAndPronNumberYes" kind="table"/>
               
        <prompt id="PronFirstSgCaseNoneExperiencerYes2Prompt" show="swNPCaseNoneAndExperiencerNotNo">
           <br/>Este segundo sistema es para sujetos-experimentadores.<br/><br/>
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan53" show="swPronNumberYes">singular </span>aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan53" show="swPronNumberYes">singular </span>aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstSgNoCaseExperiencerYes2Example" dataItem="personalFirstSgNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNo" kind="table"/>
        <prompt id="PronFirstPlCaseNoneExperiencerYes2Prompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona plural aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNoCaseExperiencerYes2Example" dataItem="personalFirstPlNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNoneExperiencerYes2Prompt" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan53" show="swPronNumberYes">plural </span>exclusiva aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan53" show="swPronNumberYes">plural </span>exclusiva aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNoCaseExperiencerYes2Example" dataItem="personalFirstExclNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNoneExperiencerYes2Prompt" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan54" show="swPronNumberYes">plural </span>inclusiva aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan54" show="swPronNumberYes">plural </span>inclusiva aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNoCaseExperiencerYes2Example" dataItem="personalFirstInclNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNoneExperiencerYes2Prompt" show="swNPCaseNoneAndExperiencerNotNo">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan54" show="swPronNumberYes">singular </span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan54" show="swPronNumberYes">singular </span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalSecondSgNoCaseExperiencerYes2Example" dataItem="personalSecondSgNoneDativeExample" rows="2" show="swNPCaseNoneAndExperiencerNotNo" kind="table"/>
        <prompt id="PronSecondPlCaseNoneExperiencerYes2Prompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la segunda persona plural aquí. <br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNoCaseExperiencerYes2Example" dataItem="personalSecondPlNoneDativeExample" rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNoneExperiencerYes2Prompt" show="swNPCaseNoneAndExperiencerNotNo">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan55" show="swPronNumberYes">singular </span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan55" show="swPronNumberYes">singular </span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNoCaseExperiencerYes2Example" dataItem="personalThirdSgNoneDativeExample" rows="5" show="swNPCaseNoneAndExperiencerNotNo" kind="table"/>
        <prompt id="PronThirdPlCaseNoneExperiencerYes2Prompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la tercera persona plural aquí. <br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNoCaseExperiencerYes2Example" dataItem="personalThirdPlNoneDativeExample" rows="5" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYes" kind="table"/>
        
@@ -116,132 +116,132 @@
           <span id="ExperYesObjSpan" show="swExperiencerYesObj">En <section number="1.">La tipología - Sistema de caso</section>, usted dijo que su lengua utiliza el mismo sistema de pronombres para sujetos-<technicalTermRef term="ttExperiencer">experimentadores</technicalTermRef> que para los objetos directos de verbos con un sujeto-<technicalTermRef term="ttAgent">agente</technicalTermRef>.  Es posible tener un sistema adicional de pronombres <technicalTermRef term="ttDative">dativos</technicalTermRef> para objetos indirectos. </span>
           <span id="ExperYesDatSpan" show="swExperiencerYesDat">En <section number="1.">La tipología - Sistema de caso</section>, usted dijo que su lengua utiliza un sistema distinto de pronombres para sujetos-<technicalTermRef term="ttExperiencer">experimentadores</technicalTermRef> de para los sujetos o objetos directos de verbos con un sujeto-<technicalTermRef term="ttAgent">agente</technicalTermRef>.  Por eso, se asume que los pronombres que se utilizan normalmente para objetos indirectos son los mismos que se utilizan para sujetos-experimentadores, y se le pide acerca de un sistema adicional de pronombres <technicalTermRef term="ttDative">dativos</technicalTermRef>. </span>
           <br/><br/>
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan3" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSpan" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan3" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSpan" show="swExperiencerNotNo">-agentes</span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstSgNomSubjectExample" dataItem="personalFirstSgNomSubjectExample"  rows="2" show="swNPCaseNom" kind="table"/>
-       <prompt id="PronFirstPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYesExclNo">Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos<span id="ExperYesSpanPl" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada. <br/>
+       <prompt id="PronFirstPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYesExclNo">Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos<span id="ExperYesSpanPl" show="swExperiencerNotNo">-agentes</span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNomSubjectExample" dataItem="personalFirstPlNomSubjectExample"  rows="2" show="swNPCaseNomAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNomSubjectPrompt" show="swNPCaseNomAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan3" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos<span id="ExperYesSpan2b" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan3" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos<span id="ExperYesSpan2b" show="swExperiencerNotNo">-agentes</span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNomSubjectExample" dataItem="personalFirstExclNomSubjectExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNomSubjectPrompt" show="swNPCaseNomAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan4" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos<span id="ExperYesSpan2a" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan4" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos<span id="ExperYesSpan2a" show="swExperiencerNotNo">-agentes</span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNomSubjectExample" dataItem="personalFirstInclNomSubjectExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNomPrompt" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan4" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSpan2" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan4" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSpan2" show="swExperiencerNotNo">-agentes</span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalSecondSgNomSubjectExample" dataItem="personalSecondSgNomSubjectExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronSecondPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos<span id="ExperYesSpan2Pl" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos<span id="ExperYesSpan2Pl" show="swExperiencerNotNo">-agentes</span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNomSubjectExample" dataItem="personalSecondPlNomSubjectExample" rows="2" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNomPrompt" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan5" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSpan3" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan5" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSpan3" show="swExperiencerNotNo">-agentes</span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNomSubjectExample" dataItem="personalThirdSgNomSubjectExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos<span id="ExperYesSpan3Pl" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada. <br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos<span id="ExperYesSpan3Pl" show="swExperiencerNotNo">-agentes</span> aquí. <br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNomSubjectExample" dataItem="personalThirdPlNomSubjectExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        
        <prompt id="PronCaseSgNomPrompt1" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan6" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan6" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgNomObjectExample" dataItem="personalFirstSgNomObjectExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronCasePlNomPrompt1" show="swNPCaseNomAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNomObjectExample" dataItem="personalFirstPlNomObjectExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNomObjectPrompt" show="swNPCaseNomAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan5" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan5" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNomObjectExample" dataItem="personalFirstExclNomObjectExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNomObjectPrompt" show="swNPCaseNomAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan6" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan6" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNomObjectExample" dataItem="personalFirstInclNomObjectExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNomPrompt1" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan7" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>      </prompt>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan7" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí.<br/>      </prompt>
        <textBox id="PronPersonalSecondSgNomObjectExample" dataItem="personalSecondSgNomObjectExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronSecondPlCaseNomPrompt1" show="swNPCaseNomAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNomObjectExample" dataItem="personalSecondPlNomObjectExample" rows="2" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNomPrompt1" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan8" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan8" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNomObjectExample" dataItem="personalThirdSgNomObjectExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt1" show="swNPCaseNomAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNomObjectExample" dataItem="personalThirdPlNomObjectExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseNomPrompt2" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan9" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan9" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgNomPossessorExample" dataItem="personalFirstSgNomPossessorExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNomPossessorExample" dataItem="personalFirstPlNomPossessorExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNomPossPrompt" show="swNPCaseNomAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan7" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan7" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNomPossExample" dataItem="personalFirstExclNomPossessorExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNomPossPrompt" show="swNPCaseNomAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan8" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan8" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNomPossExample" dataItem="personalFirstInclNomPossessorExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNomPrompt2" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan10" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan10" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronSecondPersonalSgNomPossessorExample" dataItem="personalSecondSgNomPossessorExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronSecondPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronSecondPersonalPlNomPossessorExample" dataItem="personalSecondPlNomPossessorExample" rows="2" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNomPrompt2" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan11" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan11" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNomPossessorExample" dataItem="personalThirdSgNomPossessorExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNomPossessorExample" dataItem="personalThirdPlNomPossessorExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseNomPrompt3" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan12" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan12" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgNomDativeExample" dataItem="personalFirstSgNomDativeExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan1" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan1" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNomDativeExample" dataItem="personalFirstPlNomDativeExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNomDativePrompt" show="swNPCaseNomAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan9" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan2" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan9" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan2" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNomDativeExample" dataItem="personalFirstExclNomDativeExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNomDativePrompt" show="swNPCaseNomAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan10" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan3" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan10" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan3" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNomDativeExample" dataItem="personalFirstInclNomDativeExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNomPrompt3" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan13" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan4" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan13" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan4" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgNomDativeExample" dataItem="personalSecondSgNomDativeExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronSecondPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan7" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan7" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNomDativeExample" dataItem="personalSecondPlNomDativeExample" rows="2" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNomPrompt3" show="swNPCaseNom">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan14" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan5" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan14" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan5" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNomDativeExample" dataItem="personalThirdSgNomDativeExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan6" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan6" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNomDativeExample" dataItem="personalThirdPlNomDativeExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <br/>
@@ -266,134 +266,134 @@
           <span id="ExperYesObjErgSpan" show="swExperiencerYesObj">En <section number="1.">La tipología - Sistema de caso</section>, usted dijo que su lengua utiliza el mismo sistema de pronombres para sujetos-<technicalTermRef term="ttExperiencer">experimentadores</technicalTermRef> que para los objetos directos de verbos con un sujeto-<technicalTermRef term="ttAgent">agente</technicalTermRef>.  Es posible tener un sistema adicional de pronombres <technicalTermRef term="ttDative">dativos</technicalTermRef> para objetos indirectos. </span>
           <span id="ExperYesDatErgSpan" show="swExperiencerYesDat">En <section number="1.">La tipología - Sistema de caso</section>, usted dijo que su lengua utiliza un sistema distinto de pronombres para sujetos-<technicalTermRef term="ttExperiencer">experimentadores</technicalTermRef> que los pronombres para los sujetos o objetos directos de verbos con un sujeto-<technicalTermRef term="ttAgent">agente</technicalTermRef>.  Por eso, se asume que los pronombres que se utilizan normalmente para objetos indirectos son los mismos que se utilizan para sujetos-experimentadores, y se le pide acerca de un sistema adicional de pronombres <technicalTermRef term="ttDative">dativos</technicalTermRef>. </span>
           <br/><br/>
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan15" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesErgSpan" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan15" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesErgSpan" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgErgSubjectTransExample" dataItem="personalFirstSgErgSubjectTransExample"  rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos<span id="ExperYesErgSpanPl" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos<span id="ExperYesErgSpanPl" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlErgSubjectTransExample" dataItem="personalFirstPlErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseErgSubjectTransPrompt" show="swNPCaseErgAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan10E" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos<span id="ExperYesErgSpan10" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan10E" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos<span id="ExperYesErgSpan10" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclErgSubjectTransExample" dataItem="personalFirstExclErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseErgSubjectTransPrompt" show="swNPCaseErgAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan11" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos<span id="ExperYesErgSpan11" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan11" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos<span id="ExperYesErgSpan11" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclErgSubjectTransExample" dataItem="personalFirstInclErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseErgPrompt" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan16" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesErgSpan2" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan16" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesErgSpan2" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgErgSubjectTransExample" dataItem="personalSecondSgErgSubjectTransExample"  rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronSecondPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos<span id="ExperYesErgSpan2Pl" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos<span id="ExperYesErgSpan2Pl" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlErgSubjectTransExample" dataItem="personalSecondPlErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseErgPrompt" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan17" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesErgSpan3" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan17" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesErgSpan3" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgErgSubjectTransExample" dataItem="personalThirdSgErgSubjectTransExample"  rows="5" show="swNPCaseErg" kind="table"/>
        <prompt id="PronThirdPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos<span id="ExperYesErgSpan3Pl" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos<span id="ExperYesErgSpan3Pl" show="swExperiencerNotNo">-agentes</span> de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlErgSubjectTransExample" dataItem="personalThirdPlErgSubjectTransExample"  rows="5" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseErgPrompt1" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan18" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan18" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgErgSubjectIntransExample" dataItem="personalFirstSgErgSubjectIntransExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlErgSubjectIntransExample" dataItem="personalFirstPlErgSubjectIntransExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseErgSubjectIntransPrompt" show="swNPCaseErgAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan12" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan12" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclErgSubjectIntransExample" dataItem="personalFirstExclErgSubjectIntransExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseErgSubjectIntransPrompt" show="swNPCaseErgAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan13" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan13" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclErgSubjectIntransExample" dataItem="personalFirstInclErgSubjectIntransExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseErgPrompt1" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan19" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan19" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgErgSubjectIntransExample" dataItem="personalSecondSgErgSubjectIntransExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronSecondPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlErgSubjectIntransExample" dataItem="personalSecondPlErgSubjectIntransExample" rows="2" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseErgPrompt1" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan20" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan20" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgErgSubjectIntransExample" dataItem="personalThirdSgErgSubjectIntransExample" rows="5" show="swNPCaseErg" kind="table"/>
        <prompt id="PronThirdPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos de verbos intransitivos o como objetos de verbos transitivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlErgSubjectIntransExample" dataItem="personalThirdPlErgSubjectIntransExample" rows="5" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseErgPrompt2" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan21" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan21" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgErgPossessorExample" dataItem="personalFirstSgErgPossessorExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlErgPossessorExample" dataItem="personalFirstPlErgPossessorExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseErgPossessorPrompt" show="swNPCaseErgAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan14" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan14" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclErgPossessorExample" dataItem="personalFirstExclErgPossessorExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseErgPossessorPrompt" show="swNPCaseErgAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan15" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan15" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclErgPossessorExample" dataItem="personalFirstInclErgPossessorExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseErgPrompt2" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan22" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan22" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgErgPossessorExample" dataItem="personalSecondSgErgPossessorExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronSecondPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlErgPossessorExample" dataItem="personalSecondPlErgPossessorExample" rows="2" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseErgPrompt2" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan23" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan23" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgErgPossessorExample" dataItem="personalThirdSgErgPossessorExample" rows="5" show="swNPCaseErg" kind="table"/>
        <prompt id="PronThirdPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlErgPossessorExample" dataItem="personalThirdPlErgPossessorExample" rows="5" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseErgPrompt3" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan24" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan10" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan24" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan10" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgErgDativeExample" dataItem="personalFirstSgErgDativeExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan11" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan11" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlErgDativeExample" dataItem="personalFirstPlErgDativeExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseErgDativePrompt" show="swNPCaseErgAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan16" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan12" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan16" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan12" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclErgDativeExample" dataItem="personalFirstExclErgDativeExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseErgDativePrompt" show="swNPCaseErgAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan17" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan13" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan17" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan13" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclErgDativeExample" dataItem="personalFirstInclErgDativeExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseErgPrompt3" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan25" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan14" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan25" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan14" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgErgDativeExample" dataItem="personalSecondSgErgDativeExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronSecondPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan15" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan15" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlErgDativeExample" dataItem="personalSecondPlErgDativeExample" rows="2" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseErgPrompt3" show="swNPCaseErg">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan26" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan16" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan26" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan16" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgErgDativeExample" dataItem="personalThirdSgErgDativeExample" rows="5" show="swNPCaseErg" kind="table"/>
        <prompt id="PronThirdPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan17" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan17" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlErgDativeExample" dataItem="personalThirdPlErgDativeExample" rows="5" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        
@@ -428,201 +428,201 @@
           <span id="ExperYesObjSplitSpan" show="swExperiencerYesObj">En <section number="1.">La tipología - Sistema de caso</section>, usted dijo que su lengua utiliza el mismo sistema de pronombres para sujetos-<technicalTermRef term="ttExperiencer">experimentadores</technicalTermRef> que para los objetos directos de verbos con un sujeto-<technicalTermRef term="ttAgent">agente</technicalTermRef>.  Es posible tener un sistema adicional de pronombres <technicalTermRef term="ttDative">dativos</technicalTermRef> para objetos indirectos. </span>
           <span id="ExperYesDatSplitSpan" show="swExperiencerYesDat">En <section number="1.">La tipología - Sistema de caso</section>, usted dijo que su lengua utiliza un sistema distinto de pronombres para sujetos-<technicalTermRef term="ttExperiencer">experimentadores</technicalTermRef> que los pronombres para los sujetos o objetos directos de verbos con un sujeto-<technicalTermRef term="ttAgent">agente</technicalTermRef>.  Por eso, se asume que los pronombres que se utilizan normalmente para objetos indirectos son los mismos que se utilizan para sujetos-experimentadores, y se le pide acerca de un sistema adicional de pronombres <technicalTermRef term="ttDative">dativos</technicalTermRef>. </span>
           <br/><br/>  
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan27" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSplitSpan" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan27" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSplitSpan" show="swExperiencerNotNo">-agentes</span> aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgSplitSubjectExample" dataItem="personalFirstSgSplitSubjectExample"  rows="2" show="swNPCaseSplit" kind="table"/>
        <br/><br/>  
        <prompt id="PronPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos<span id="ExperYesSplitSpanPl" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos<span id="ExperYesSplitSpanPl" show="swExperiencerNotNo">-agentes</span> aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitSubjectExample" dataItem="personalFirstPlSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitSubjectPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan18" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos<span id="ExperYesSplitSpanPl1" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan18" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos<span id="ExperYesSplitSpanPl1" show="swExperiencerNotNo">-agentes</span> aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitSubjectExample" dataItem="personalFirstExclSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitSubjectPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan19" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos<span id="ExperYesSplitSpanPl2" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan19" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos<span id="ExperYesSplitSpanPl2" show="swExperiencerNotNo">-agentes</span> aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitSubjectExample" dataItem="personalFirstInclSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan28" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSplitSpan2" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan28" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSplitSpan2" show="swExperiencerNotNo">-agentes</span> aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgSplitSubjectExample" dataItem="personalSecondSgSplitSubjectExample"  rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos<span id="ExperYesSplitSpan2Pl" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos<span id="ExperYesSplitSpan2Pl" show="swExperiencerNotNo">-agentes</span> aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitSubjectExample" dataItem="personalSecondPlSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan29" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSplitSpan3" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan29" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos<span id="ExperYesSplitSpan3" show="swExperiencerNotNo">-agentes</span> aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgSplitSubjectExample" dataItem="personalThirdSgSplitSubjectExample"  rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos<span id="ExperYesSplitSpan3Pl" show="swExperiencerNotNo">-agentes</span> aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos<span id="ExperYesSplitSpan3Pl" show="swExperiencerNotNo">-agentes</span> aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitSubjectExample" dataItem="personalThirdPlSplitSubjectExample"  rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt1" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan30" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan30" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgSplitObjectExample" dataItem="personalFirstSgSplitObjectExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitObjectExample" dataItem="personalFirstPlSplitObjectExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitObjectPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan20" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan20" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitObjectExample" dataItem="personalFirstExclSplitObjectExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitObjectPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan21" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan21" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitObjectExample" dataItem="personalFirstInclSplitObjectExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt1" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan31" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan31" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgSplitObjectExample" dataItem="personalSecondSgSplitObjectExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitObjectExample" dataItem="personalSecondPlSplitObjectExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt1" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan32" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan32" show="swPronNumberYes">singular </span>que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgSplitObjectExample" dataItem="personalThirdSgSplitObjectExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitObjectExample" dataItem="personalThirdPlSplitObjectExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt2" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan33" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan33" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgSplitPossessorExample" dataItem="personalFirstSgSplitPossessorExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitPossessorExample" dataItem="personalFirstPlSplitPossessorExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitPossessorPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan22" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan22" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitPossessorExample" dataItem="personalFirstExclSplitPossessorExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitPossessorPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan23" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan23" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitPossessorExample" dataItem="personalFirstInclSplitPossessorExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt2" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan34" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan34" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgSplitPossessorExample" dataItem="personalSecondSgSplitPossessorExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitPossessorExample" dataItem="personalSecondPlSplitPossessorExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt2" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan35" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan35" show="swPronNumberYes">singular </span>que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgSplitPossessorExample" dataItem="personalThirdSgSplitPossessorExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como posesivos aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como posesivos aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitPossessorExample" dataItem="personalThirdPlSplitPossessorExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt5" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan36" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan20" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan36" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan20" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgSplitDativeExample" dataItem="personalFirstSgSplitDativeExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan21" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan21" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitDativeExample" dataItem="personalFirstPlSplitDativeExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitDativePrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan24" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan22" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan24" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan22" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitDativeExample" dataItem="personalFirstExclSplitDativeExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitDativePrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan25" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan23" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan25" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan23" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitDativeExample" dataItem="personalFirstInclSplitDativeExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt5" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan37" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan24" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan37" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan24" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgSplitDativeExample" dataItem="personalSecondSgSplitDativeExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan25" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan25" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitDativeExample" dataItem="personalSecondPlSplitDativeExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt5" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan38" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan26" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan38" show="swPronNumberYes">singular </span>que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan26" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgSplitDativeExample" dataItem="personalThirdSgSplitDativeExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan27" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como objetos indirectos <span id="ExperiencerDatSpan27" show="swExperiencerYesDat">o como sujetos-experimentadores </span>aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitDativeExample" dataItem="personalThirdPlSplitDativeExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt3" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan39" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan39" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgSplitErgExample" dataItem="personalFirstSgSplitErgExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitErgExample" dataItem="personalFirstPlSplitErgExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitErgPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan26" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan26" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitErgExample" dataItem="personalFirstExclSplitErgExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitErgPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan27" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan27" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitErgExample" dataItem="personalFirstInclSplitErgExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt3" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan40" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan40" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgSplitErgExample" dataItem="personalSecondSgSplitErgExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitErgExample" dataItem="personalSecondPlSplitErgExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt3" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan41" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan41" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgSplitErgExample" dataItem="personalThirdSgSplitErgExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitErgExample" dataItem="personalThirdPlSplitErgExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt4" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan42" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberSpan42" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgSplitAbsExample" dataItem="personalFirstSgSplitAbsExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona plural que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitAbsExample" dataItem="personalFirstPlSplitAbsExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitAbsPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan28" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan28" show="swPronNumberYes">plural </span>exclusiva que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitAbsExample" dataItem="personalFirstExclSplitAbsExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitAbsPrompt" show="swNPCaseSplitAndPronExclYes">
-          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan29" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la primera persona <span id="PronNumberPlSpan29" show="swPronNumberYes">plural </span>inclusiva que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitAbsExample" dataItem="personalFirstInclSplitAbsExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt4" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan43" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona <span id="PronNumberSpan43" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgSplitAbsExample" dataItem="personalSecondSgSplitAbsExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la segunda persona plural que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitAbsExample" dataItem="personalSecondPlSplitAbsExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt4" show="swNPCaseSplit">
-          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan44" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona <span id="PronNumberSpan44" show="swPronNumberYes">singular </span>que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgSplitAbsExample" dataItem="personalThirdSgSplitAbsExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYes">
-          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí, con cada pronombre en una línea separada.<br/>
+          Escriba los pronombres personales independientes de la tercera persona plural que pueden presentarse como sujetos de verbos intransitivos y como objetos de verbos transitivos en los casos especiales del ergatividad escindida aquí.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitAbsExample" dataItem="personalThirdPlSplitAbsExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        

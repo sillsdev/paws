@@ -10,7 +10,7 @@
     <br/><br/>
       Considérez les syntagmes adpositionnels de lieu dans votre langue comme par exemple <example>à [la maison]</example> et <example>sous [le sycomore géant]</example>.  Le français a des prépositions qui sont des mots indépendantes et sont placées avant le complément du syntagme adpositionnel. Dans une langue avec des postpositions, le syntagme nominal se trouve avant la postposition.</introduction>  
    <form section="pp">
-      <prompt><br/>Saisissez ici quelques exemples de syntagmes adpositionnels de lieu dans votre langue (sans parenthèses mais en mettant chacun sur une ligne séparée) :</prompt>
+      <prompt><br/>Saisissez ici quelques exemples de syntagmes adpositionnels de lieu dans votre langue (sans parenthèses) :</prompt>
       <textBox id="PPCompsNominalExample" dataItem="ppExample" cols="80"/>
       <radioGroup>
          <groupName dataItem="pPos" default="unknown" position="yesHead">RPPPosition</groupName>

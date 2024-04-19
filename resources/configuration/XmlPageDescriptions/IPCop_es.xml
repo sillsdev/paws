@@ -25,7 +25,7 @@
             <radio id="IPCopVerbNo" dataValue="no">No se utiliza un verbo copulativo en las oraciones copulativas</radio>
            </radioGroup>
     <prompt id="IPCopularVerb" show="swIPCopVerbYesOrOptional">
-       <br/>Escriba los verbos copulativos, cada uno en linea separada: 
+       <br/>Escriba los verbos copulativos aquí: 
     </prompt>
     <textBox id="IPCopuparVerbExample" dataItem="copularVerb" show="swIPCopVerbYesOrOptional" rows="3" kind="table"/>
     <radioGroup id="IPCopVerbNoTable" show="swIPCopVerbNoOrOptional">

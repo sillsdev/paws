@@ -48,15 +48,15 @@ o <example>pocos</example>, y</li>
       <prompt id="QPClassifierAgrPrompt" show="swOTClassifierAgrNPDegreeYes">Puesto que usted ha detallado ya las formas de los indicadores de clase, usted necesita solamente escribir las raíces para cada una de las palabras solicitadas en esta página.  En los ejemplos de frases nominales completas y de oraciones que se pide a lo largo en PAWS, usted debe, por supuesto, incluir los indicadores de clase de sustantivo.</prompt>	   
       <br/>
       <br/>
-      <prompt>Escriba la manera que su lengua expresa “todos”, con cada palabra en una línea separada.  (Si “todos” es un afijo o un <technicalTermRef term="ttClitic"/> que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
+      <prompt>Escriba la manera que su lengua expresa “todos” aquí.  (Si “todos” es un afijo o un <technicalTermRef term="ttClitic"/> que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
       <textBox id="QPAllExample" dataItem="all" rows="3" kind="table"><gloss>todos</gloss></textBox>
       <br/>
       <br/>
-      <prompt>Escriba la manera que su lengua expresa “casi”, con cada palabra en una línea separada.  (Si “casi” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
+      <prompt>Escriba la manera que su lengua expresa “casi” aquí.  (Si “casi” es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
       <textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"><gloss>casi</gloss></textBox>
       <br/>
       <br/>
-      <prompt>Escriba la manera que su lengua expresa “solamente” o “apenas”, con cada palabra en una línea separada.  (Si uno es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
+      <prompt>Escriba la manera que su lengua expresa “solamente” o “apenas” aquí.  (Si uno es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
       <textBox id="QPOnlyExample" dataItem="only" rows="3" kind="table"><gloss>solamente o apenas</gloss></textBox>
       <br/>
       <br/>

@@ -109,13 +109,13 @@
 			</p>
 			<xsl:variable name="sTextTitle" select="'título - texto '"/>
 			<xsl:variable name="sParagraphContent" select="'parrafos para el texto completa en la lenga'"/>
-			<xsl:variable name="sLanguage" select="'lengua'"/>
-			<xsl:variable name="sGloss" select="'glosa'"/>
-			<xsl:variable name="sIPA" select="'AFI'"/>
-			<xsl:variable name="sIPAMorphBreaks" select="'AFI con rupturas morfémicas'"/>
-			<xsl:variable name="sMorphemes" select="'morfemas'"/>
-			<xsl:variable name="sFree" select="'traducción libre'"/>
-			<xsl:variable name="sStateFree" select="'traducción libre a la lengua del estado'"/>
+			<xsl:variable name="sLanguage" select="'palabras vernáculas'"/>
+			<xsl:variable name="sGloss" select="'glosa literal de palabras'"/>
+			<xsl:variable name="sIPA" select="'palabras en AFI'"/>
+			<xsl:variable name="sIPAMorphBreaks" select="'AFI separada por morfemas'"/>
+			<xsl:variable name="sMorphemes" select="'glosa por morfemas en español'"/>
+			<xsl:variable name="sFree" select="'traducción libre en español'"/>
+			<xsl:variable name="sStateFree" select="'traducción libre a la lengua oficial del estado'"/>
 			<xsl:variable name="sFreeParagraphContent" select="'párrafos para la traducción libre de todo el texto'"/>
 			<xsl:call-template name="DoAnIntelinearText">
 				<xsl:with-param name="sTextTitle" select="$sTextTitle"/>

@@ -7,7 +7,9 @@
     <title level="2">Las oraciones básicas - La concordancia verbal</title>
    <introduction>Los verbos y los auxiliares también pueden sufrir cambios para expresar concordancia con el sujeto, y a veces también con el objeto directo, incluyen persona, número, género, animado y clase.  La mayoría de los cambios o accidentes se agregan como afijos o clíticos pronominales que pueden unirse con el verbo. Las lenguas difieren en cuántos accidentes se marcan en los verbos o auxliairies.</introduction>
    <form section="ip">
-      <prompt><br/>Mire los accidentes de concordancia en el cuadro abajo y haga clic a la izquierda de cualquier que su lengua utiliza. La concordancia de clase se explica en <section number="1.">La tipología - Clases de sustantivo y clasificadores</section>. Escriba los <technicalTermRef term="ttMorphemes">morfemas</technicalTermRef> para cada accidente de concordancia en la columna final. Incluyen clíticos pronominales que se unen a los verbos (los pronombres dependientes) así como afijos verbales.</prompt>
+      <prompt><br/>Mire los accidentes de concordancia en el cuadro abajo y haga clic a la izquierda de cualquier que su lengua utiliza. (La concordancia de clase se explica en <section number="1.">La tipología - Clases de sustantivo y clasificadores</section>.) Escriba los <technicalTermRef term="ttMorphemes">morfemas</technicalTermRef> para cada accidente de concordancia en la columna final. Incluyen clíticos pronominales que se unen a los verbos (los pronombres dependientes) así como afijos verbales.
+      <br/>
+      Algunas o todas estas características pueden expresarse como morfemas acrónimo que combinan más de una característica en una sola forma. Introduzca todas las entidades representadas en esta tabla. Es probable que estos morfemas acrónimos sean las formas de pronombres dependientes que escribiste en <section number="7.2">Los pronombres dependientes</section>. Puede aclarar esto al editar la salida gramatical.</prompt>
       <instruction> <span id="IPAgrFeaturesNotPracticalSpan" show="swNotPractical">In the lexicon, add the appropriate features to the relevant affixes, including pronominal clitics that may attach to the verb.      
        <br/><br/>
 For animacy, it is most likely a property of the semantics of the individual verb whether its subject and/or object must be animate, so those features will need to be keyed on the verb entry.  Since verbs are a large, open class, you do not need to mark all verbs at this point (or even ever).  Mark those common verbs that come to mind that can only have an animate subject or object.  For example, any “experiencer” verbs which have to do with feeling or thinking must have an animate subject.  Later, when you are working on eliminating incorrect parses, you will find others that need these features.</span><br/>
@@ -374,10 +376,12 @@ For animacy, it is most likely a property of the semantics of the individual ver
             </featureRow>
         </featureChart>
     </instruction>
-      <prompt id="IPAgrFeatExclYesAndPronNoPrompt" show="swIPAgrFeatExclYesAndPronNo">ADVERTENCIA: En <section number="7.">Los pronombres</section> usted dijo que su lengua no distingue entre las formas exclusivas e inclusivas de los pronombres, pero haya seleccionado algunas opciones exclusivas y inclusivas aquí. Si su lengua tiene formas exclusivas e inclusivas para cualquiero de los pronombres, incluyendo las formas dependientes que pueden presentarse en los verbos, por favor devuelva a <section number="7.">Los pronombres</section> (primera página) y cambia su respuesta a ‘Sí’. Este agregará campos adicionales para rellenar para esas formas como apropiado. Si en cambio su lengua realmente no distingue entre formas exclusivas e inclusivas, por favor desactive los accidentes en el cuadro de arriba.</prompt>
-      <prompt id="IPAgrFeatExclNoAndPronYesPrompt" show="swIPAgrFeatExclNoAndPronDepYes">ADVERTENCIA: En <section number="7.">Los pronombres</section> usted dijo que su lengua tiene pronombres dependientes y hace una distinción entre las formas exclusivas e inclusivas de los pronombres, pero todavía no ha seleccionado cualquiera de las opciones exclusivas o inclusivas que se ofrecen aquí. Por lo tanto es más probable que necesita seleccionar todas o algunas de las opciones exclusivas e inclusivas en el cuadro de arriba. De lo contrario, por favor devuelva a <section number="7.">Los pronombres</section> (primera página) y cambia su respuesta a ‘No’, pero eso significa que no se incluyen ninguna forma que escribió en los campos para los pronombres exclusivos o inclusivos en cualquiera salida.</prompt>
-      <prompt id="IPAgrFeatNumberYesAndPronNoPrompt" show="swIPAgrFeatNumberYesAndPronNo">ADVERTENCIA: En <section number="7.">Los pronombres</section> usted dijo que su lengua no tiene diversas formas para los singulares y los plurales de los pronombres, pero haya seleccionado algunas opciones de número aquí. Si su lengua tiene formas singulares y plurales para cualquiero de los pronombres, incluyendo las formas dependientes que pueden presentarse en los verbos, por favor devuelva a <section number="7.">Los pronombres</section> (primera página) y cambia su respuesta al ‘S’.  Este agregará campos adicionales para rellenar para esas formas como apropiado. Si en cambio su lengua realmente no distingue entre formas de número, por favor desactive los accidentess en el cuadro de arriba.</prompt>
-      <prompt id="IPAgrFeatNumberNoAndPronYesPrompt" show="swIPAgrFeatNumberNoAndPronDepYes">ADVERTENCIA: En <section number="7.">Los pronombres</section> usted dijo que su lengua tiene pronombres dependientes y hace una distinción entre los pronombres singluares y plurales, pero todavía no ha seleccionado cualquiera de las opciones singulares o plurales que se ofrecen aquí. Por lo tanto es más probable que necesita seleccionar todas o algunas de las opciones singulares y plurales en el cuadro de arribas. De lo contrario, por favor devuelva a <section number="7.">Los pronombres</section> (primera página) y cambia su respuesta a ‘No, los pronombres marcan solo persona’, pero eso significa que no se incluyen ninguna forma que escribió en los campos para los pronombres plurales en cualquiera salida.</prompt>
+  <prompt id="PronDependentNoAndIPAgrFeaturesCheckedYesPrompt" show="swDependentNoAndIPAgrFeaturesYes">ADVERTENCIA: Usted marcó las características de concordancia de sujeto arriba pero en <section number="7.2">Los pronombres dependientes</section> dijo que su lengua no tiene pronombres dependientes.  Tienes que volver a <section number="7.2">Los pronombres dependientes</section> y cambiar tu respuesta a "Sí, también hay formas de pronombres dependientes que se unen a verbos y posiblemente a sustantivos u otras palabras" y escriba las formas de todos los pronombres dependientes antes de volver a esta <section number="9.2.2">Oraciones básicas - La concordancia verbal</section>, ya que los pronombres dependientes son los morfemas que expresan estos rasgos de concordancia.</prompt>
+     
+         <prompt id="IPAgrFeatExclYesAndPronNoPrompt" show="swIPAgrFeatExclYesAndPronNo">ADVERTENCIA: En <section number="7.1">Los pronombres</section> usted dijo que su lengua no distingue entre las formas exclusivas e inclusivas de los pronombres, pero haya seleccionado algunas opciones exclusivas y inclusivas aquí. Si su lengua tiene formas exclusivas e inclusivas para cualquiero de los pronombres, incluyendo las formas dependientes que pueden presentarse en los verbos, por favor devuelva a <section number="7.1">Los pronombres</section> y cambia su respuesta a ‘Sí’. Este agregará campos adicionales para rellenar para esas formas como apropiado. Si en cambio su lengua realmente no distingue entre formas exclusivas e inclusivas, por favor desactive los accidentes en el cuadro de arriba.</prompt>
+      <prompt id="IPAgrFeatExclNoAndPronYesPrompt" show="swIPAgrFeatExclNoAndPronDepYes">ADVERTENCIA: En <section number="7.1">Los pronombres</section> usted dijo que su lengua tiene pronombres dependientes y hace una distinción entre las formas exclusivas e inclusivas de los pronombres, pero todavía no ha seleccionado cualquiera de las opciones exclusivas o inclusivas que se ofrecen aquí. Por lo tanto es más probable que necesita seleccionar todas o algunas de las opciones exclusivas e inclusivas en el cuadro de arriba. De lo contrario, por favor devuelva a <section number="7.1">Los pronombres</section> y cambia su respuesta a ‘No’, pero eso significa que no se incluyen ninguna forma que escribió en los campos para los pronombres exclusivos o inclusivos en cualquiera salida.</prompt>
+      <prompt id="IPAgrFeatNumberYesAndPronNoPrompt" show="swIPAgrFeatNumberYesAndPronNo">ADVERTENCIA: En <section number="7.1">Los pronombres</section> usted dijo que su lengua no tiene diversas formas para los singulares y los plurales de los pronombres, pero haya seleccionado algunas opciones de número aquí. Si su lengua tiene formas singulares y plurales para cualquiero de los pronombres, incluyendo las formas dependientes que pueden presentarse en los verbos, por favor devuelva a <section number="7.1">Los pronombres</section> y cambia su respuesta al ‘Sí’.  Este agregará campos adicionales para rellenar para esas formas como apropiado. Si en cambio su lengua realmente no distingue entre formas de número, por favor desactive los accidentess en el cuadro de arriba.</prompt>
+      <prompt id="IPAgrFeatNumberNoAndPronYesPrompt" show="swIPAgrFeatNumberNoAndPronDepYes">ADVERTENCIA: En <section number="7.1">Los pronombres</section> usted dijo que su lengua tiene pronombres dependientes y hace una distinción entre los pronombres singluares y plurales, pero todavía no ha seleccionado cualquiera de las opciones singulares o plurales que se ofrecen aquí. Por lo tanto es más probable que necesita seleccionar todas o algunas de las opciones singulares y plurales en el cuadro de arribas. De lo contrario, por favor devuelva a <section number="7.1">Los pronombres</section> y cambia su respuesta a ‘No, los pronombres marcan solo persona’, pero eso significa que no se incluyen ninguna forma que escribió en los campos para los pronombres plurales en cualquiera salida.</prompt>
       
       <br/><br/>
       
@@ -394,7 +398,58 @@ For animacy, it is most likely a property of the semantics of the individual ver
       <or/>
       <whenValue element="typology" attr="case" value="split"/>
    </showWhen>
-   <showWhen id="swIPAgrFeatExclYesAndPronNo">
+
+  <showWhen id="swDependentNoAndIPAgrFeaturesYes">
+      <whenValue element="pron" attr="dependentPron" value="no"/>
+      <and/>
+   <openParen/>
+      <whenValue element="ip/ipAgrFeatFirstExclusiveSubject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstExclusiveObject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstInclusiveSubject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstInclusiveObject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstExclusiveErgative" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstExclusiveAbsolutive" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstInclusiveErgative" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstInclusiveAbsolutive" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatSingularSubject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatSingularObject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatPluralSubject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatPluralObject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatSingularErgative" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatSingularAbsolutive" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatPluralErgative" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatPluralAbsolutive" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstSubject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatFirstObject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatSecondSubject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatSecondObject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatThirdSubject" attr="checked" value="yes"/>
+      <or/>
+      <whenValue element="ip/ipAgrFeatThirdObject" attr="checked" value="yes"/>
+      <closeParen/>
+ </showWhen>
+
+ <showWhen id="swIPAgrFeatExclYesAndPronNo">
       <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <openParen/>

@@ -33,7 +33,7 @@
              <u>ninguna</u> hija</exItem>
        </EnglishExample>
        <form section="neg">       
-          <prompt>Escriba la manera que su lengua expresa ‘no’ o ‘ningún’ (cuando modifica a una frase nominal en vez de una frase verbal), con cada palabra seguida con una línea separada. (Si ‘no’ o ‘ningún’ es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
+          <prompt>Escriba la manera que su lengua expresa ‘no’ o ‘ningún’ (cuando modifica a una frase nominal en vez de una frase verbal) aquí. (Si ‘no’ o ‘ningún’ es un afijo o un clítico que se une a otra palabra en la frase nominal, escríbalo aquí con una indicación del guión o signo igual en el lado que se une.)</prompt>
           <textBox id="NegNotExample" dataItem="not" rows="3" kind="table"/>
           <br/><br/>
           <radioGroup>
@@ -54,22 +54,22 @@
           </checkboxGroup>	
           <prompt id="NegNPDegreeAttachesNoCheckPrompt" show="swNegNPDegreeNoAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir dónde se unen los elementos negativos que no son palabras en su lengua, o cambia su respuesta de arriba a ‘Sí, todos son palabras independientes’.</prompt>
           <br/>
-          <prompt id="NegDegreeNegNPCliticPrompt" show="swNegNPDegreeNegNoOrSomeClitic">Escriba ejemplos de frases nominales con los clíticos negativos, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí</prompt>
+          <prompt id="NegDegreeNegNPCliticPrompt" show="swNegNPDegreeNegNoOrSomeClitic">Escriba ejemplos de frases nominales con los clíticos negativos, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí.</prompt>
           <textBox id="NegNPNegCliticExample" dataItem="negCliticExample" cols="80" show="swNegNPDegreeNegNoOrSomeClitic"/>
           <instruction id="NegNPDegreeNegProcliticInstruction" show="swNegNPDegreeNegNoOrSomeProclitic">In the lexicon, mark the negative proclitic(s) with the feature <feature>negative_prefix</feature>. 
           </instruction>
           <instruction id="NegNPDegreeNegEncliticInstruction" show="swNegNPDegreeNegNoOrSomeEnclitic">In the lexicon, mark the negative enclitic(s) with the feature <feature>negative_suffix</feature>.
           </instruction>
-          <prompt id="NegDegreeNegNPAffixPrompt" show="swNegNPDegreeNegNoOrSomeAffix">Escriba ejemplos de frases nominales con los afijos negativos, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí</prompt>
+          <prompt id="NegDegreeNegNPAffixPrompt" show="swNegNPDegreeNegNoOrSomeAffix">Escriba ejemplos de frases nominales con los afijos negativos, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí.</prompt>
           <textBox id="NegNPNegAffixExample" dataItem="negAffixExample" cols="80" show="swNegNPDegreeNegNoOrSomeAffix"/>
           <instruction id="NegNPDegreeNegPrefixInstruction" show="swNegNPDegreeNegNoOrSomePrefix">In the lexicon, mark the negative prefix(es) with the feature <feature>negative</feature>. 
           </instruction>
           <instruction id="NegNPDegreeNegSuffixInstruction" show="swNegNPDegreeNegNoOrSomeSuffix">In the lexicon, mark the negative suffix(es) with the feature <feature>negative</feature>. 
           </instruction>
-          <prompt id="NegDegreeNegNPOtherPrompt" show="swNegNPDegreeNegNoOrSomeOther">Escriba ejemplos de frases nominales con los elementos negativos unidos como se permiten en su lengua, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí</prompt>
+          <prompt id="NegDegreeNegNPOtherPrompt" show="swNegNPDegreeNegNoOrSomeOther">Escriba ejemplos de frases nominales con los elementos negativos unidos como se permiten en su lengua, como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí.</prompt>
           <textBox id="NegNPNegOtherExample" dataItem="negOtherExample" cols="80" show="swNegNPDegreeNegNoOrSomeOther"/>
           
-          <prompt id="NegDegreeNegNPPrompt" show="swNegNPDegreeNegYesOrSome">Escriba ejemplos de frases nominales con las palabras negativas que significan ‘no'  o ‘ningún', como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí</prompt>
+          <prompt id="NegDegreeNegNPPrompt" show="swNegNPDegreeNegYesOrSome">Escriba ejemplos de frases nominales con las palabras negativas que significan ‘no'  o ‘ningún', como ejemplos 1, 5 o 6 de arriba (sin las cuantificadores o palabras de grado de ámbito amplio) aquí.</prompt>
           <textBox id="NegNPNegExample" dataItem="negExample" cols="80" show="swNegNPDegreeNegYesOrSome"/>
           <br/><br/>
           <checkboxGroup id="NegNPDegreeNegYesTable" show="swNegNPDegreeNegYesOrSome">

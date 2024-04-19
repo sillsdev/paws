@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronMain" count="8.1">
+<page id="PronMain" count="7.1">
     <title>Pronoms</title>
    <introduction>Il y a une grande variété de pronoms, comprenant les pronoms personnels, <technicalTermRef term="ttPossessives">possessifs</technicalTermRef>, <technicalTermRef term="ttReflexives">réflexifs</technicalTermRef>, <technicalTermRef term="ttReciprocals">réciproques</technicalTermRef>, démonstratifs et <technicalTermRef term="ttIndefinite">indéfinis</technicalTermRef>.  (Les pronoms <technicalTermRef term="ttInterrogative">interrogatifs</technicalTermRef> seront traités dans la <section number="11.">Interrogations – Syntagmes interrogatifs</section>.)  Ces pronoms peuvent être employés seuls en remplacement d’un syntagme nominal, mais ils peuvent être modifiés par une proposition relative et, dans certaines langues, ils peuvent être modifiés par un syntagme <technicalTermRef term="ttPartitive">partitif</technicalTermRef> et par les <technicalTermRef term="ttDeterminers">déterminateurs</technicalTermRef> et les quantifieurs.  Certaines langues ont des séries de pronoms indépendants et de pronoms dépendants.  Chacun de ces types de pronoms et ces sujets seront traités à tour de rôle.
  </introduction>
@@ -38,70 +38,70 @@
           <br/>Puisque votre langue ne distingue pas de cas, vous ne devriez avoir qu’une seule série de pronoms indépendants utilisés dans toutes les positions dans la phrase, ainsi  qu’une série supplémentaire utilisée pour le sujet de verbes qui ont un sujet expérient agent.  La première série est utilisée pour le sujet agent.<br/>
           </prompt>
        <prompt id="PronFirstSgCaseNonePrompt" show="swNPCaseNone"><br/>
-          Saisissez, dans la boîte, les pronoms de la première personne <span id="PronNumberSpan" show="swPronNumberYes">du singulier </span>indépendants en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte, les pronoms de la première personne <span id="PronNumberSpan" show="swPronNumberYes">du singulier </span>indépendants. <br/>
         </prompt>
        <textBox id="PronPersonalFirstSgNoCaseExample" dataItem="personalFirstSgNoCaseExample"  rows="2" show="swNPCaseNone" kind="table"/>
        <prompt id="PronFirstPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYesExclNo">
-          Saisissez, dans la boîte, les pronoms indépendants de la première personne du pluriel, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms indépendants de la première personne du pluriel.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNoCaseExample" dataItem="personalFirstPlNoCaseExample"  rows="2" show="swNPCaseNoneAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNonePrompt" show="swNPCaseNoneAndPronExclYes">
-          Saisissez, dans la boîte, les pronoms indépendants de la première personne <span id="PronNumberPlSpan" show="swPronNumberYes">du pluriel </span>exclusif, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte, les pronoms indépendants de la première personne <span id="PronNumberPlSpan" show="swPronNumberYes">du pluriel </span>exclusif. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNoCaseExample" dataItem="personalFirstExclNoCaseExample"  rows="2" show="swNPCaseNoneAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNonePrompt" show="swNPCaseNoneAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan1" show="swPronNumberYes">du pluriel </span>inclusif, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan1" show="swPronNumberYes">du pluriel </span>inclusif. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNoCaseExample" dataItem="personalFirstInclNoCaseExample"  rows="2" show="swNPCaseNoneAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNonePrompt" show="swNPCaseNone">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan1" show="swPronNumberYes">du singulier </span>en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan1" show="swPronNumberYes">du singulier</span>. <br/>
         </prompt>
        <textBox id="PronPersonalSecondSgNoCaseExample" dataItem="personalSecondSgNoCaseExample" rows="2" show="swNPCaseNone" kind="table"/>
        <prompt id="PronSecondPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel. <br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNoCaseExample" dataItem="personalSecondPlNoCaseExample" rows="2" show="swNPCaseNoneAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNonePrompt" show="swNPCaseNone">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan2" show="swPronNumberYes">du singulier </span>en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan2" show="swPronNumberYes">du singulier</span>. <br/>
         </prompt>
        <textBox id="PronPersonalThirdSgNoCaseExample" dataItem="personalThirdSgNoCaseExample" rows="5" show="swNPCaseNone" kind="table"/>
        <prompt id="PronThirdPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel. <br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNoCaseExample" dataItem="personalThirdPlNoCaseExample" rows="5" show="swNPCaseNoneAndPronNumberYes" kind="table"/>
 
 
        <prompt id="PronFirstSgCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNo">
           <br/>Cette deuxième série est pour les sujets expérient.<br/><br/>
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan53" show="swPronNumberYes">du singulier </span>en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan53" show="swPronNumberYes">du singulier</span>. <br/>
        </prompt>
        <textBox id="PronPersonalFirstSgNoCaseExperiencerYesExample" dataItem="personalFirstSgNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNo" kind="table"/>
        <prompt id="PronFirstPlCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel. <br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNoCaseExperiencerYesExample" dataItem="personalFirstPlNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan53" show="swPronNumberYes">du pluriel </span>exclusif, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan53" show="swPronNumberYes">du pluriel </span>exclusif. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNoCaseExperiencerYesExample" dataItem="personalFirstExclNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan54" show="swPronNumberYes">du pluriel </span>inclusif, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan54" show="swPronNumberYes">du pluriel </span>inclusif. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNoCaseExperiencerYesExample" dataItem="personalFirstInclNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan54" show="swPronNumberYes">du singulier </span>en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan54" show="swPronNumberYes">du singulier</span>. <br/>
        </prompt>
        <textBox id="PronPersonalSecondSgNoCaseExperiencerYesExample" dataItem="personalSecondSgNoneDativeExample" rows="2" show="swNPCaseNoneAndExperiencerNotNo" kind="table"/>
        <prompt id="PronSecondPlCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel. <br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNoCaseExperiencerYesExample" dataItem="personalSecondPlNoneDativeExample" rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan55" show="swPronNumberYes">du singulier </span>en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan55" show="swPronNumberYes">du singulier</span>. <br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNoCaseExperiencerYesExample" dataItem="personalThirdSgNoneDativeExample" rows="5" show="swNPCaseNoneAndExperiencerNotNo" kind="table"/>
        <prompt id="PronThirdPlCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel. <br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNoCaseExperiencerYesExample" dataItem="personalThirdPlNoneDativeExample" rows="5" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYes" kind="table"/>
   
@@ -115,30 +115,30 @@
           <span id="ExperYesObjSpan" show="swExperiencerYesObj">Dans la <section number="1.">Questions générales de typologie – Le système casuel</section>, vous avez dit que votre langue utilise la même série de pronoms pour les verbes qui ont un sujet <technicalTermRef term="ttExperiencer">expérient</technicalTermRef> que pour les objets des verbes qui ont un sujet <technicalTermRef term="ttAgent">agent</technicalTermRef>.  Nous admettrons une série supplémentaire de pronoms <technicalTermRef term="ttDative">datifs</technicalTermRef> pour les objets indirects. </span>
           <span id="ExperYesDatSpan" show="swExperiencerYesDat">Dans la <section number="1.">Questions générales de typologie – Le système casuel</section>, vous avez dit que votre langue utilise une série distincte de pronoms pour les sujets de verbes qui demandent un sujet <technicalTermRef term="ttExperiencer">expérient</technicalTermRef> et que ces pronoms sont distincts des sujets ou des objets de verbes qui ont un sujet <technicalTermRef term="ttAgent">agent</technicalTermRef>.  Nous admettrons que les pronoms utilisés pour les objets indirects sont ceux qui expriment les sujets des verbes expérients et nous vous demanderons une série supplémentaire de pronoms <technicalTermRef term="ttDative">datifs</technicalTermRef>. </span>
            <br/><br/>
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan3" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesSpan" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan3" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesSpan" show="swExperiencerNotNo"> agent</span>. <br/>
         </prompt>
         <textBox id="PronPersonalFirstSgNomSubjectExample" dataItem="personalFirstSgNomSubjectExample"  rows="2" show="swNPCaseNom" kind="table"/>
-       <prompt id="PronFirstPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYesExclNo">Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet<span id="ExperYesSpanPl" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte. <br/>
+       <prompt id="PronFirstPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYesExclNo">Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet<span id="ExperYesSpanPl" show="swExperiencerNotNo"> agent</span>. <br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNomSubjectExample" dataItem="personalFirstPlNomSubjectExample"  rows="2" show="swNPCaseNomAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNomSubjectPrompt" show="swNPCaseNomAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan3" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet<span id="ExperYesSpan2b" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan3" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet<span id="ExperYesSpan2b" show="swExperiencerNotNo"> agent</span>. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNomSubjectExample" dataItem="personalFirstExclNomSubjectExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNomSubjectPrompt" show="swNPCaseNomAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan4" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet<span id="ExperYesSpan2a" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan4" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet<span id="ExperYesSpan2a" show="swExperiencerNotNo"> agent</span>. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNomSubjectExample" dataItem="personalFirstInclNomSubjectExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNomPrompt" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan4" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesSpan2" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan4" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesSpan2" show="swExperiencerNotNo"> agent</span>. <br/>
         </prompt>
         <textBox id="PronPersonalSecondSgNomSubjectExample" dataItem="personalSecondSgNomSubjectExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronSecondPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet<span id="ExperYesSpan2Pl" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet<span id="ExperYesSpan2Pl" show="swExperiencerNotNo"> agent</span>. <br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNomSubjectExample" dataItem="personalSecondPlNomSubjectExample" rows="2" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNomPrompt" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan5" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesSpan3" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan5" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesSpan3" show="swExperiencerNotNo"> agent</span>. <br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNomSubjectExample" dataItem="personalThirdSgNomSubjectExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYes">
@@ -147,101 +147,101 @@
        <textBox id="PronPersonalThirdPlNomSubjectExample" dataItem="personalThirdPlNomSubjectExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        
        <prompt id="PronCaseSgNomPrompt1" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan6" show="swPronNumberYes">du singulier </span>utilisés comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan6" show="swPronNumberYes">du singulier </span>utilisés comme objet.<br/>
         </prompt>
        <textBox id="PronPersonalFirstSgNomObjectExample" dataItem="personalFirstSgNomObjectExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronCasePlNomPrompt1" show="swNPCaseNomAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme objet.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNomObjectExample" dataItem="personalFirstPlNomObjectExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNomObjectPrompt" show="swNPCaseNomAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan5" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme objet, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan5" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme objet. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNomObjectExample" dataItem="personalFirstExclNomObjectExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNomObjectPrompt" show="swNPCaseNomAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan6" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme objet, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan6" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme objet. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNomObjectExample" dataItem="personalFirstInclNomObjectExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNomPrompt1" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan7" show="swPronNumberYes">du singulier </span>utilisés comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan7" show="swPronNumberYes">du singulier </span>utilisés comme objet.<br/>
         </prompt>
         <textBox id="PronPersonalSecondSgNomObjectExample" dataItem="personalSecondSgNomObjectExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronSecondPlCaseNomPrompt1" show="swNPCaseNomAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme objet.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNomObjectExample" dataItem="personalSecondPlNomObjectExample" rows="2" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNomPrompt1" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan8" show="swPronNumberYes">du singulier </span>utilisés comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan8" show="swPronNumberYes">du singulier </span>utilisés comme objet.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgNomObjectExample" dataItem="personalThirdSgNomObjectExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt1" show="swNPCaseNomAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme objet.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNomObjectExample" dataItem="personalThirdPlNomObjectExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseNomPrompt2" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan9" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan9" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgNomPossessorExample" dataItem="personalFirstSgNomPossessorExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNomPossessorExample" dataItem="personalFirstPlNomPossessorExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNomPossPrompt" show="swNPCaseNomAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan7" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan7" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme possesseur. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNomPossExample" dataItem="personalFirstExclNomPossessorExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNomPossPrompt" show="swNPCaseNomAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan8" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan8" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme possesseur. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNomPossExample" dataItem="personalFirstInclNomPossessorExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNomPrompt2" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan10" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan10" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronSecondPersonalSgNomPossessorExample" dataItem="personalSecondSgNomPossessorExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronSecondPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronSecondPersonalPlNomPossessorExample" dataItem="personalSecondPlNomPossessorExample" rows="2" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNomPrompt2" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne  <span id="PronNumberSpan11" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne  <span id="PronNumberSpan11" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgNomPossessorExample" dataItem="personalThirdSgNomPossessorExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNomPossessorExample" dataItem="personalThirdPlNomPossessorExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseNomPrompt3" show="swNPCaseNom">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan12" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan12" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgNomDativeExample" dataItem="personalFirstSgNomDativeExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan1" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan1" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlNomDativeExample" dataItem="personalFirstPlNomDativeExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseNomDativePrompt" show="swNPCaseNomAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan9" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme objet indirect <span id="ExperiencerDatSpan2" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan9" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme objet indirect <span id="ExperiencerDatSpan2" show="swExperiencerYesDat">ou comme sujet expérient</span>. <br/>
        </prompt>
        <textBox id="PronPersonalFirstExclNomDativeExample" dataItem="personalFirstExclNomDativeExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseNomDativePrompt" show="swNPCaseNomAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan10" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme objet indirect <span id="ExperiencerDatSpan3" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan10" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme objet indirect <span id="ExperiencerDatSpan3" show="swExperiencerYesDat">ou comme sujet expérient</span>. <br/>
        </prompt>
        <textBox id="PronPersonalFirstInclNomDativeExample" dataItem="personalFirstInclNomDativeExample"  rows="2" show="swNPCaseNomAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseNomPrompt3" show="swNPCaseNom">
-          Entrez les pronoms de la deuxième personne <span id="PronNumberSpan13" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan4" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Entrez les pronoms de la deuxième personne <span id="PronNumberSpan13" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan4" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgNomDativeExample" dataItem="personalSecondSgNomDativeExample" rows="2" show="swNPCaseNom" kind="table"/>
        <prompt id="PronSecondPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYes">
-          Entrez les pronoms de la deuxième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan5" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Entrez les pronoms de la deuxième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan5" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlNomDativeExample" dataItem="personalSecondPlNomDativeExample" rows="2" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseNomPrompt3" show="swNPCaseNom">
-          Entrez les pronoms de la troisième personne <span id="PronNumberSpan14" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan6" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Entrez les pronoms de la troisième personne <span id="PronNumberSpan14" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan6" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgNomDativeExample" dataItem="personalThirdSgNomDativeExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYes">
-          Entrez les pronoms de la troisième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan7" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Entrez les pronoms de la troisième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan7" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNomDativeExample" dataItem="personalThirdPlNomDativeExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        <br/>
@@ -266,134 +266,134 @@
           <span id="ExperYesObjErgSpan" show="swExperiencerYesObj">Dans la <section number="1.">Questions générales de typologie – Le système casuel</section>, vous avez dit que votre langue utilise la même série de pronoms pour les verbes qui ont un sujet <technicalTermRef term="ttExperiencer">expérient</technicalTermRef> que pour les objets de verbes qui ont un sujet <technicalTermRef term="ttAgent">agent</technicalTermRef>. Nous admettrons une série supplémentaire de pronoms <technicalTermRef term="ttDative">datifs</technicalTermRef> pour les objets indirects. </span>
           <span id="ExperYesDatErgSpan" show="swExperiencerYesDat">Dans la <section number="1.">Questions générales de typologie – Le système casuel</section>, vous avez dit que votre langue utilise une série de pronoms pour les sujets de verbes qui ont un sujet <technicalTermRef term="ttExperiencer">expérient</technicalTermRef> distincte des sujets et des objets de verbes qui ont un sujet <technicalTermRef term="ttAgent">agent</technicalTermRef>.  Nous supposons que les pronoms qu’on peut utiliser comme objet indirect sont ceux qui expriment les sujets des verbes expérient et nous vous demanderons une série supplémentaire de pronoms <technicalTermRef term="ttDative">datifs</technicalTermRef>. </span>
            <br/><br/>
-           Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan15" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesErgSpan" show="swExperiencerNotNo"> agent</span> de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+           Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan15" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesErgSpan" show="swExperiencerNotNo"> agent</span> de verbes transitifs.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgErgSubjectTransExample" dataItem="personalFirstSgErgSubjectTransExample"  rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet<span id="ExperYesErgSpanPl" show="swExperiencerNotNo"> agent</span> de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet<span id="ExperYesErgSpanPl" show="swExperiencerNotNo"> agent</span> de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlErgSubjectTransExample" dataItem="personalFirstPlErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseErgSubjectTransPrompt" show="swNPCaseErgAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan10E" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet<span id="ExperYesErgSpan10" show="swExperiencerNotNo"> agent</span> de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan10E" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet<span id="ExperYesErgSpan10" show="swExperiencerNotNo"> agent</span> de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclErgSubjectTransExample" dataItem="personalFirstExclErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseErgSubjectTransPrompt" show="swNPCaseErgAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan11" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet<span id="ExperYesErgSpan11" show="swExperiencerNotNo"> agent</span> de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan11" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet<span id="ExperYesErgSpan11" show="swExperiencerNotNo"> agent</span> de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclErgSubjectTransExample" dataItem="personalFirstInclErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseErgPrompt" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan16" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesErgSpan2" show="swExperiencerNotNo"> agent</span> de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan16" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesErgSpan2" show="swExperiencerNotNo"> agent</span> de verbes transitifs.<br/>
         </prompt>
         <textBox id="PronPersonalSecondSgErgSubjectTransExample" dataItem="personalSecondSgErgSubjectTransExample"  rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronSecondPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet<span id="ExperYesErgSpan2Pl" show="swExperiencerNotNo"> agent</span> de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet<span id="ExperYesErgSpan2Pl" show="swExperiencerNotNo"> agent</span> de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlErgSubjectTransExample" dataItem="personalSecondPlErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseErgPrompt" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan17" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesErgSpan3" show="swExperiencerNotNo"> agent</span> de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan17" show="swPronNumberYes">du singulier </span>utilisés comme sujet<span id="ExperYesErgSpan3" show="swExperiencerNotNo"> agent</span> de verbes transitifs.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgErgSubjectTransExample" dataItem="personalThirdSgErgSubjectTransExample"  rows="5" show="swNPCaseErg" kind="table"/>
        <prompt id="PronThirdPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet<span id="ExperYesErgSpan3Pl" show="swExperiencerNotNo"> agent</span> de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet<span id="ExperYesErgSpan3Pl" show="swExperiencerNotNo"> agent</span> de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlErgSubjectTransExample" dataItem="personalThirdPlErgSubjectTransExample"  rows="5" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseErgPrompt1" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan18" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan18" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgErgSubjectIntransExample" dataItem="personalFirstSgErgSubjectIntransExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlErgSubjectIntransExample" dataItem="personalFirstPlErgSubjectIntransExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseErgSubjectIntransPrompt" show="swNPCaseErgAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan12" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan12" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclErgSubjectIntransExample" dataItem="personalFirstExclErgSubjectIntransExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseErgSubjectIntransPrompt" show="swNPCaseErgAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan13" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan13" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclErgSubjectIntransExample" dataItem="personalFirstInclErgSubjectIntransExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseErgPrompt1" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan19" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan19" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs.<br/>
         </prompt>
        <textBox id="PronPersonalSecondSgErgSubjectIntransExample" dataItem="personalSecondSgErgSubjectIntransExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronSecondPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlErgSubjectIntransExample" dataItem="personalSecondPlErgSubjectIntransExample" rows="2" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseErgPrompt1" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan20" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan20" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgErgSubjectIntransExample" dataItem="personalThirdSgErgSubjectIntransExample" rows="5" show="swNPCaseErg" kind="table"/>
        <prompt id="PronThirdPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet de verbes intransitifs ou comme objet de verbes transitifs.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlErgSubjectIntransExample" dataItem="personalThirdPlErgSubjectIntransExample" rows="5" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseErgPrompt2" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan21" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan21" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgErgPossessorExample" dataItem="personalFirstSgErgPossessorExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlErgPossessorExample" dataItem="personalFirstPlErgPossessorExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseErgPossessorPrompt" show="swNPCaseErgAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan14" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan14" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclErgPossessorExample" dataItem="personalFirstExclErgPossessorExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseErgPossessorPrompt" show="swNPCaseErgAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan15" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan15" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclErgPossessorExample" dataItem="personalFirstInclErgPossessorExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseErgPrompt2" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du <span id="PronNumberSpan22" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du <span id="PronNumberSpan22" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronPersonalSecondSgErgPossessorExample" dataItem="personalSecondSgErgPossessorExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronSecondPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlErgPossessorExample" dataItem="personalSecondPlErgPossessorExample" rows="2" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseErgPrompt2" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan23" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan23" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgErgPossessorExample" dataItem="personalThirdSgErgPossessorExample" rows="5" show="swNPCaseErg" kind="table"/>
        <prompt id="PronThirdPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlErgPossessorExample" dataItem="personalThirdPlErgPossessorExample" rows="5" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseErgPrompt3" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan24" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan10" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan24" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan10" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgErgDativeExample" dataItem="personalFirstSgErgDativeExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel indépendants utilisés comme objet indirect <span id="ExperiencerDatSpan11" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel indépendants utilisés comme objet indirect <span id="ExperiencerDatSpan11" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlErgDativeExample" dataItem="personalFirstPlErgDativeExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseErgDativePrompt" show="swNPCaseErgAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan16" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme objet indirect <span id="ExperiencerDatSpan12" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan16" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme objet indirect <span id="ExperiencerDatSpan12" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclErgDativeExample" dataItem="personalFirstExclErgDativeExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseErgDativePrompt" show="swNPCaseErgAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan17" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme objet indirect <span id="ExperiencerDatSpan13" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan17" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme objet indirect <span id="ExperiencerDatSpan13" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclErgDativeExample" dataItem="personalFirstInclErgDativeExample"  rows="2" show="swNPCaseErgAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseErgPrompt3" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan25" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan14" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan25" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan14" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgErgDativeExample" dataItem="personalSecondSgErgDativeExample" rows="2" show="swNPCaseErg" kind="table"/>
        <prompt id="PronSecondPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan15" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan15" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlErgDativeExample" dataItem="personalSecondPlErgDativeExample" rows="2" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseErgPrompt3" show="swNPCaseErg">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan26" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan16" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan26" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan16" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgErgDativeExample" dataItem="personalThirdSgErgDativeExample" rows="5" show="swNPCaseErg" kind="table"/>
        <prompt id="PronThirdPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan17" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan17" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlErgDativeExample" dataItem="personalThirdPlErgDativeExample" rows="5" show="swNPCaseErgAndPronNumberYes" kind="table"/>
        
@@ -428,201 +428,201 @@
           <span id="ExperYesObjSplitSpan" show="swExperiencerYesObj">Dans la <section number="1.">Questions générales de typologie – Le système casuel</section>, vous avez dit que votre langue utilise la même série de pronoms pour les sujets <technicalTermRef term="ttExperiencer">expérient</technicalTermRef> que pour les objets de verbes qui ont un sujet <technicalTermRef term="ttAgent">agent</technicalTermRef>. Nous admettrons une série supplémentaire de pronoms <technicalTermRef term="ttDative">datifs</technicalTermRef> pour les objets indirects. </span>
           <span id="ExperYesDatSplitSpan" show="swExperiencerYesDat">Dans la <section number="1.">Questions générales de typologie – Le système casuel</section>, vous avez dit que votre langue utilise une série de pronoms pour les sujets de verbes qui ont un sujet <technicalTermRef term="ttExperiencer">expérient</technicalTermRef> distincte de celle utilisée pour les sujets ou les objets de verbes qui ont un sujet <technicalTermRef term="ttAgent">agent</technicalTermRef>. Nous admettrons que les pronoms qui sont utilisés pour les  objets indirects sont ceux qui expriment le sujet des verbes expérient et nous vous demanderons une série supplémentaire de pronoms <technicalTermRef term="ttDative">datifs</technicalTermRef>. </span>
            <br/><br/>  
-          Saisissez, dans la boîte,  le pronom indépendant de la première personne <span id="PronNumberSpan27" show="swPronNumberYes">du singulier </span>utilisés normalement comme sujet<span id="ExperYesSplitSpan" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  le pronom indépendant de la première personne <span id="PronNumberSpan27" show="swPronNumberYes">du singulier </span>utilisés normalement comme sujet<span id="ExperYesSplitSpan" show="swExperiencerNotNo"> agent</span>.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgSplitSubjectExample" dataItem="personalFirstSgSplitSubjectExample"  rows="2" show="swNPCaseSplit" kind="table"/>
        <br/><br/>  
        <prompt id="PronPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  le pronom indépendant de la première personne du pluriel utilisés normalement comme sujet<span id="ExperYesSplitSpanPl" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  le pronom indépendant de la première personne du pluriel utilisés normalement comme sujet<span id="ExperYesSplitSpanPl" show="swExperiencerNotNo"> agent</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitSubjectExample" dataItem="personalFirstPlSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitSubjectPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  le pronom indépendant de la première personne <span id="PronNumberPlSpan18" show="swPronNumberYes">du pluriel </span>exclusif utilisés normalement comme sujet<span id="ExperYesSplitSpanPl1" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  le pronom indépendant de la première personne <span id="PronNumberPlSpan18" show="swPronNumberYes">du pluriel </span>exclusif utilisés normalement comme sujet<span id="ExperYesSplitSpanPl1" show="swExperiencerNotNo"> agent</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitSubjectExample" dataItem="personalFirstExclSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitSubjectPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  le pronom indépendant de la première personne <span id="PronNumberPlSpan19" show="swPronNumberYes">du pluriel </span>inclusif utilisés normalement comme sujet<span id="ExperYesSplitSpanPl2" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  le pronom indépendant de la première personne <span id="PronNumberPlSpan19" show="swPronNumberYes">du pluriel </span>inclusif utilisés normalement comme sujet<span id="ExperYesSplitSpanPl2" show="swExperiencerNotNo"> agent</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitSubjectExample" dataItem="personalFirstInclSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan28" show="swPronNumberYes">du singulier </span>utilisés normalement comme sujet<span id="ExperYesSplitSpan2" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan28" show="swPronNumberYes">du singulier </span>utilisés normalement comme sujet<span id="ExperYesSplitSpan2" show="swExperiencerNotNo"> agent</span>.<br/>
         </prompt>
         <textBox id="PronPersonalSecondSgSplitSubjectExample" dataItem="personalSecondSgSplitSubjectExample"  rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés normalement comme sujet<span id="ExperYesSplitSpan2Pl" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés normalement comme sujet<span id="ExperYesSplitSpan2Pl" show="swExperiencerNotNo"> agent</span>.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitSubjectExample" dataItem="personalSecondPlSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan29" show="swPronNumberYes">du singulier </span>utilisés normalement comme sujet<span id="ExperYesSplitSpan3" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan29" show="swPronNumberYes">du singulier </span>utilisés normalement comme sujet<span id="ExperYesSplitSpan3" show="swExperiencerNotNo"> agent</span>.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgSplitSubjectExample" dataItem="personalThirdSgSplitSubjectExample"  rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés normalement comme sujet<span id="ExperYesSplitSpan3Pl" show="swExperiencerNotNo"> agent</span> en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés normalement comme sujet<span id="ExperYesSplitSpan3Pl" show="swExperiencerNotNo"> agent</span>.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitSubjectExample" dataItem="personalThirdPlSplitSubjectExample"  rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt1" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan30" show="swPronNumberYes">du singulier </span>utilisés normalement comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan30" show="swPronNumberYes">du singulier </span>utilisés normalement comme objet.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgSplitObjectExample" dataItem="personalFirstSgSplitObjectExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés normalement comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés normalement comme objet.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitObjectExample" dataItem="personalFirstPlSplitObjectExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitObjectPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan20" show="swPronNumberYes">du pluriel </span>exclusif utilisés normalement comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan20" show="swPronNumberYes">du pluriel </span>exclusif utilisés normalement comme objet.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitObjectExample" dataItem="personalFirstExclSplitObjectExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitObjectPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan21" show="swPronNumberYes">du pluriel </span>inclusif utilisés normalement comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan21" show="swPronNumberYes">du pluriel </span>inclusif utilisés normalement comme objet.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitObjectExample" dataItem="personalFirstInclSplitObjectExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt1" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan31" show="swPronNumberYes">du singulier </span>utilisés normalement comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan31" show="swPronNumberYes">du singulier </span>utilisés normalement comme objet.<br/>
         </prompt>
         <textBox id="PronPersonalSecondSgSplitObjectExample" dataItem="personalSecondSgSplitObjectExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés normalement comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés normalement comme objet.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitObjectExample" dataItem="personalSecondPlSplitObjectExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt1" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan32" show="swPronNumberYes">du singulier </span>utilisés normalement comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan32" show="swPronNumberYes">du singulier </span>utilisés normalement comme objet.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgSplitObjectExample" dataItem="personalThirdSgSplitObjectExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés normalement comme objet, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés normalement comme objet.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitObjectExample" dataItem="personalThirdPlSplitObjectExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt2" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan33" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan33" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgSplitPossessorExample" dataItem="personalFirstSgSplitPossessorExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitPossessorExample" dataItem="personalFirstPlSplitPossessorExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitPossessorPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan22" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan22" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitPossessorExample" dataItem="personalFirstExclSplitPossessorExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitPossessorPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan23" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan23" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitPossessorExample" dataItem="personalFirstInclSplitPossessorExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt2" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan34" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan34" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronPersonalSecondSgSplitPossessorExample" dataItem="personalSecondSgSplitPossessorExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitPossessorExample" dataItem="personalSecondPlSplitPossessorExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt2" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan35" show="swPronNumberYes">du singulier </span>utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan35" show="swPronNumberYes">du singulier </span>utilisés comme possesseur.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgSplitPossessorExample" dataItem="personalThirdSgSplitPossessorExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme possesseur, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme possesseur.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitPossessorExample" dataItem="personalThirdPlSplitPossessorExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt5" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan36" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan20" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan36" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan20" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstSgSplitDativeExample" dataItem="personalFirstSgSplitDativeExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan21" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan21" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitDativeExample" dataItem="personalFirstPlSplitDativeExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitDativePrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan24" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme objet indirect <span id="ExperiencerDatSpan22" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan24" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme objet indirect <span id="ExperiencerDatSpan22" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitDativeExample" dataItem="personalFirstExclSplitDativeExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitDativePrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan25" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme objet indirect <span id="ExperiencerDatSpan27" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan25" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme objet indirect <span id="ExperiencerDatSpan27" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitDativeExample" dataItem="personalFirstInclSplitDativeExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt5" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan37" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan23" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan37" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan23" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalSecondSgSplitDativeExample" dataItem="personalSecondSgSplitDativeExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan24" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan24" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitDativeExample" dataItem="personalSecondPlSplitDativeExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt5" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan38" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan25" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan38" show="swPronNumberYes">du singulier </span>utilisés comme objet indirect <span id="ExperiencerDatSpan25" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalThirdSgSplitDativeExample" dataItem="personalThirdSgSplitDativeExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan26" show="swExperiencerYesDat">ou comme sujet expérient </span>en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme objet indirect <span id="ExperiencerDatSpan26" show="swExperiencerYesDat">ou comme sujet expérient</span>.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitDativeExample" dataItem="personalThirdPlSplitDativeExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt3" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan39" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan39" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgSplitErgExample" dataItem="personalFirstSgSplitErgExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitErgExample" dataItem="personalFirstPlSplitErgExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitErgPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan26" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan26" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitErgExample" dataItem="personalFirstExclSplitErgExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitErgPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan27" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan27" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitErgExample" dataItem="personalFirstInclSplitErgExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt3" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan40" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan40" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
         </prompt>
         <textBox id="PronPersonalSecondSgSplitErgExample" dataItem="personalSecondSgSplitErgExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitErgExample" dataItem="personalSecondPlSplitErgExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt3" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan41" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan41" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgSplitErgExample" dataItem="personalThirdSgSplitErgExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitErgExample" dataItem="personalThirdPlSplitErgExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        
        <prompt id="PronSgCaseSplitPrompt4" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan42" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberSpan42" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
         </prompt>
         <textBox id="PronPersonalFirstSgSplitAbsExample" dataItem="personalFirstSgSplitAbsExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYesExclNo">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne du pluriel utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalFirstPlSplitAbsExample" dataItem="personalFirstPlSplitAbsExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronFirstExclCaseSplitAbsPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan28" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan28" show="swPronNumberYes">du pluriel </span>exclusif utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalFirstExclSplitAbsExample" dataItem="personalFirstExclSplitAbsExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronFirstInclCaseSplitAbsPrompt" show="swNPCaseSplitAndPronExclYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan29" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la première personne <span id="PronNumberPlSpan29" show="swPronNumberYes">du pluriel </span>inclusif utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalFirstInclSplitAbsExample" dataItem="personalFirstInclSplitAbsExample"  rows="2" show="swNPCaseSplitAndPronExclYes" kind="table"/>
        <prompt id="PronSecondSgCaseSplitPrompt4" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan43" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne <span id="PronNumberSpan43" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
         </prompt>
         <textBox id="PronPersonalSecondSgSplitAbsExample" dataItem="personalSecondSgSplitAbsExample" rows="2" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronSecondPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la deuxième personne du pluriel utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalSecondPlSplitAbsExample" dataItem="personalSecondPlSplitAbsExample" rows="2" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        <prompt id="PronThirdSgCaseSplitPrompt4" show="swNPCaseSplit">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan44" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne <span id="PronNumberSpan44" show="swPronNumberYes">du singulier </span>utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
         </prompt>
         <textBox id="PronPersonalThirdSgSplitAbsExample" dataItem="personalThirdSgSplitAbsExample" rows="5" show="swNPCaseSplit" kind="table"/>
        <prompt id="PronThirdPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet de verbes intransitifs et comme objet de verbes transitifs dans les cas spéciaux d’ergativité mixte.<br/>
        </prompt>
        <textBox id="PronPersonalThirdPlSplitAbsExample" dataItem="personalThirdPlSplitAbsExample" rows="5" show="swNPCaseSplitAndPronNumberYes" kind="table"/>
        

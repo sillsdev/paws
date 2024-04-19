@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE page SYSTEM "../Data/PAWSSKHtmlMapper.dtd">
 <?xml-stylesheet type="text/xsl" href="..\Templates\PAWSSKHtmlMapper.xsl"?>
-<page id="PronCatMap" count="7.8">
+<page id="PronCatMap" count="7.9">
 	<title level="2">Pronouns - Category Mapper</title>
 	<form section="pron">
 		<instruction> You need to make sure the pronouns in your lexicon will be mapped to the syntactic category <category>Pron</category> (which will then be mapped again appropriately to the positions they can occur in the tree structure).  Choose one of the following options, depending on your situation:

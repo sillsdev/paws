@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_fr.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronPoss" count="8.3">
+<page id="PronPoss" count="7.3">
     <title level="2">Pronoms – Possessifs</title>
    <introduction>Beaucoup de langues ont aussi des pronoms possessifs qui peuvent être employés seuls, tels que <example>(le) tien</example>, <example>(le) mien</example>, <example>(le) leur</example> ou <example>(la) sienne</example> en français.  Les <technicalTermRef term="ttPossessives">possessifs</technicalTermRef> sont distincts des pronoms qui peuvent se présenter dans la position d’un possesseur et qui possèdent directement un substantif, tels que <example>ta</example>, <example>ma</example>, <example>leur</example> ou <example>sa</example>, traités à la page précédente.<br/><br/>
       Dans certaines langues les pronoms ne sont pas écrits comme un seul mot.</introduction>

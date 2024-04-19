@@ -20,7 +20,7 @@
 	   </checkboxGroup>
 	   <prompt id="IPCausativeNoCheckPrompt" show="swIPCausativeNoCheck">ADVERTENCIA: Usted necesita sellecione al menos una opción para describir cómo se forman las causativas en su lengua. </prompt>
 	   <prompt id="IPCausativeAffixAndFeaturesNoPrompt" show="swIPCausativeAffixAndFeaturesNo">ADVERTENCIA: En <section number="9.2"> Las oraciones básicas - La flexión verbal</section> no seleccionó el accidente gramatical de voz causativa para su lengua. Esto es inconsistente con su respuesta que existe un afijo verbal para causativo aquí. Si su lengua tiene uno o más afijos causativos, vuelva a <section number="9.2"> Las oraciones básicas - La flexión verbal</section> y seleccione el accidente gramatical de voz causativa.</prompt>
-	   <prompt id="IPCausativeAffixPrompt" show="swIPCausativeAffix"><br/>Escriba los afijos causativos en su lengua con una indicación del guión en el lado que se unen al verbo (con cada uno en una línea separada) aquí:  </prompt>
+	   <prompt id="IPCausativeAffixPrompt" show="swIPCausativeAffix"><br/>Escriba los afijos causativos en su lengua con una indicación del guión en el lado que se unen al verbo aquí:  </prompt>
 	   <textBox id="IPCausativeAffixExample" dataItem="causativeAffixExample" rows="3" show="swIPCausativeAffix" kind="table"/>		
 
 	   <instruction id="IPCausativeAffixInstruction" show="swIPCausativeAffix">Mark the causative affixes with the feature <feature>causative</feature> in the lexicon, if you have not already done so. </instruction>
@@ -79,7 +79,7 @@
 	   </checkboxGroup>
 	   <prompt id="IPAntipassiveNoCheckPrompt" show="swIPAntipassiveYesAndNoCheck">ADVERTENCIA: Usted necesita seleccionar al menos una opción para describir cómo se forman las antipasivas en su lengua, o cambia su respuesta de arriba a ‘No’.  En este caso, no debe ser ningún ejemplo de antipasivas en el campo de arriba.tampoco.</prompt>
 	   
-	   <prompt id="IPAntipassiveAffixPrompt" show="swIPAntipassiveYesAffix">Escriba los afijos antipasivos en su lengua con una indicación del guión en el lado que se une con el verbo, con cada uno en una linea separada, aquí: </prompt>
+	   <prompt id="IPAntipassiveAffixPrompt" show="swIPAntipassiveYesAffix">Escriba los afijos antipasivos en su lengua con una indicación del guión en el lado que se une con el verbo aquí: </prompt>
 	   <textBox id="IPAntipassiveAffixExample" dataItem="antipassiveAffixExample" rows="3" show="swIPAntipassiveYesAffix" kind="table"/>		
 	   <instruction id="IPAntipassiveInstruction" show="swIPAntipassiveYesAffix">Mark the antipassive affixes with the feature <feature>antipassive</feature> in the lexicon, if you have not already done so.
 	   </instruction>	   

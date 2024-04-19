@@ -100,13 +100,13 @@ Include other templates
 				</p>
 			<xsl:variable name="sTextTitle" select="'title - text '"/>
 			<xsl:variable name="sParagraphContent" select="'paragraphs for the entire text in the language'"/>
-			<xsl:variable name="sLanguage" select="'language'"/>
-			<xsl:variable name="sGloss" select="'gloss'"/>
-			<xsl:variable name="sIPA" select="'IPA'"/>
+			<xsl:variable name="sLanguage" select="'vernacular words'"/>
+			<xsl:variable name="sGloss" select="'literal word glosses'"/>
+			<xsl:variable name="sIPA" select="'words in IPA'"/>
 			<xsl:variable name="sIPAMorphBreaks" select="'IPA with morpheme breaks'"/>
-			<xsl:variable name="sMorphemes" select="'morphemes'"/>
-			<xsl:variable name="sFree" select="'free translation'"/>
-			<xsl:variable name="sStateFree" select="'free translation in state language'"/>
+			<xsl:variable name="sMorphemes" select="'English morpheme glosses'"/>
+			<xsl:variable name="sFree" select="'English free translation'"/>
+			<xsl:variable name="sStateFree" select="'State language free translation'"/>
 			<xsl:variable name="sFreeParagraphContent" select="'paragraphs for the free translation of the entire text'"/>
 			<xsl:call-template name="DoAnIntelinearText">
 				<xsl:with-param name="sTextTitle" select="$sTextTitle"/>

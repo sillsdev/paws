@@ -3,15 +3,20 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronDependent" count="8.2">
+<page id="PronDependent" count="7.2">
     <title level="2">Dependent Pronouns</title>
+   <introduction>Be sure to include as dependent pronouns here all affixes that attach to nouns to agree with or express the possessor and those that attach to verbs to agree with the subject or object.  Your language may not have dependent forms for all the same sets as the independent pronouns.
+   In that case, leave them blank here and plan to remove the extra sets with the appropriate explanation when you edit the grammar output.</introduction>
     <form section="pron">
         <radioGroup>
             <groupName dataItem="dependentPron" default="no">RPronDependent</groupName>
             <prompt>Does your language also have sets of dependent pronouns?</prompt>
             <radio id="PronDependentNo" dataValue="no">No, only independent pronouns</radio>
-            <radio id="PronDependentYes" dataValue="yes">Yes, there are dependent pronoun forms which attach to other words, as well as the independent pronouns</radio>
+            <radio id="PronDependentYes" dataValue="yes">Yes, there are also dependent pronoun forms which attach to verbs and possibly nouns or other words</radio>
         </radioGroup>
+       <br/>
+        <prompt id="PronDependentNoAndNPPossAgrYesPrompt" show="swDependentNoAndNPPossAgrYes">WARNING: You said above that your language does not have dependent pronouns, but you said in <section number="5.4.2">Nominal Phrases - Possessor Agreement</section> that nouns are marked with an affix that agrees with or expresses the possessor.  Those affixes should be added in this section as dependent pronouns for the possessor.  Please change your answer above to "Yes" so you will be able to add the dependent pronouns for possessors and possibly for others with agree with the subject, etc.</prompt>
+       <br/>    
        <checkboxGroup id="PronDepPosTable" show="swPronDependentYes">
           <prompt>Where do the dependent pronouns attach to the verb or noun or other words?  Check all options that are correct for your language</prompt>
           <checkbox id="PronDependentProclitic" dataItem="dependentTypeProclitic">As a proclitic which attaches to the beginning of whatever word begins the verb phrase or nominal phrase</checkbox>
@@ -28,7 +33,8 @@
           <radio id="PronDepClassifierAgrNo" dataValue="no">No, the dependent pronouns are distinct from the noun class markers</radio>
           <radio id="PronDepClassifierAgrYes" dataValue="yes">Yes, the dependent pronouns are either identical or closely related to the appropriate noun class markers</radio>
        </radioGroup>	   
-       <br/>
+       <br/> 
+ 
        <prompt id="PronDependentCaseNoneAndExperiencerNoPrompt" show="swNPCaseNoneAndExperiencerNoAndDependentYes">
           <br/>Since your language does not distinguish case, you should have only a single set of dependent pronouns that can be used in any position in the sentence.<br/>
        </prompt>
@@ -36,72 +42,70 @@
           <br/>Since your language does not distinguish case, you should have a single set of dependent pronouns that can be used in any position in the sentence, plus an additional set which are used as subjects of verbs which have an Experiencer subject, rather than an Agent subject.  The first set is for Agent subjects.<br/>
        </prompt>  
        <prompt id="PronDependentFirstSgCaseNonePrompt" show="swNPCaseNoneAndDependentYes"><br/>
-          Key the dependent first person <span id="PronDependentNumberSpan" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberSpan" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstSgNoCaseExample" dataItem="personalDependentFirstSgNoCaseExample"  rows="2" show="swNPCaseNoneAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person plural pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlNoCaseExample" dataItem="personalDependentFirstPlNoCaseExample"  rows="2" show="swNPCaseNoneAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseNonePrompt" show="swNPCaseNoneAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclNoCaseExample" dataItem="personalDependentFirstExclNoCaseExample"  rows="2" show="swNPCaseNoneAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseNonePrompt" show="swNPCaseNoneAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan1" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan1" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclNoCaseExample" dataItem="personalDependentFirstInclNoCaseExample"  rows="2" show="swNPCaseNoneAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseNonePrompt" show="swNPCaseNoneAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan1" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent second person <span id="PronDependentNumberSpan1" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondSgNoCaseExample" dataItem="personalDependentSecondSgNoCaseExample" rows="2" show="swNPCaseNoneAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent second person plural pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlNoCaseExample" dataItem="personalDependentSecondPlNoCaseExample" rows="2" show="swNPCaseNoneAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseNonePrompt" show="swNPCaseNoneAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan2" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent third person <span id="PronDependentNumberSpan2" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdSgNoCaseExample" dataItem="personalDependentThirdSgNoCaseExample" rows="5" show="swNPCaseNoneAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseNonePrompt" show="swNPCaseNoneAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent third person plural pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlNoCaseExample" dataItem="personalDependentThirdPlNoCaseExample" rows="5" show="swNPCaseNoneAndPronNumberYesAndDependentYes" kind="table"/>
        
 
        <prompt id="PronDependentCaseNoneExperiencerYesPrompt2" show="swNPCaseNoneAndExperiencerNotNoAndDependentYes">
           <br/>This second set is for Experiencer subjects.<br/><br/>
-          Key the dependent first person <span id="PronDependentNumberSpan53" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberSpan53" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstSgNoCaseExperiencerYesExample" dataItem="personalDependentFirstSgNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstPlCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person plural pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlNoCaseExperiencerYesExample" dataItem="personalDependentFirstPlNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan53" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan53" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns in the text box. <br/>
        </prompt>
-       <textBox id="PronDependentPersonalFirstExclNoCaseExperiencerYesExample" dataItem="personalDependentFirstExclNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYesAndDependentYes 
-          
-          "/>
+       <textBox id="PronDependentPersonalFirstExclNoCaseExperiencerYesExample" dataItem="personalDependentFirstExclNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYesAndDependentYes"/>
        <prompt id="PronDependentFirstInclCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan54" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan54" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclNoCaseExperiencerYesExample" dataItem="personalDependentFirstInclNoneDativeExample"  rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan54" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent second person <span id="PronDependentNumberSpan54" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondSgNoCaseExperiencerYesExample" dataItem="personalDependentSecondSgNoneDativeExample" rows="2" show="swNPCaseNoneAndExperiencerNotNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent second person plural pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlNoCaseExperiencerYesExample" dataItem="personalDependentSecondPlNoneDativeExample" rows="2" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan55" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent third person <span id="PronDependentNumberSpan55" show="swPronNumberYesAndDependentYes">singular </span>pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdSgNoCaseExperiencerYesExample" dataItem="personalDependentThirdSgNoneDativeExample" rows="5" show="swNPCaseNoneAndExperiencerNotNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseNoneExperiencerYesPrompt" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent third person plural pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlNoCaseExperiencerYesExample" dataItem="personalDependentThirdPlNoneDativeExample" rows="5" show="swNPCaseNoneAndExperiencerNotNoAndPronNumberYesAndDependentYes" kind="table"/>
        
@@ -110,138 +114,138 @@
        </instruction>
        
        <prompt id="PronDependentCaseNomPrompt" show="swNPCaseNomAndDependentYes">
-            <br/>Since your language has a nominative-accusative case system, you should have distinct sets of dependent pronouns that are normally used as subjects, objects, and possessors. 
+            <br/>Since your language has a nominative-accusative case system, you should have distinct sets of dependent pronouns that are normally used to serve as or agree with subjects, objects, and possessors. 
           <span id="ExperNoDependentSpan" show="swExperiencerNoAndDependentYes">In <section number="1.">Overall Typology Questions - Case System</section>, you said that your language uses the same set of pronouns for subjects of verbs which have an <technicalTermRef term="ttExperiencer"/> subject as for verbs which have an <technicalTermRef term="ttAgent"/> subject.  We will allow for an additional set of <technicalTermRef term="ttDative"/> pronouns for indirect objects. </span>
           <span id="ExperYesObjDependentSpan" show="swExperiencerYesObjAndDependentYes">In <section number="1.">Overall Typology Questions - Case System</section>, you said that your language uses the same set of pronouns for subjects of verbs which have an <technicalTermRef term="ttExperiencer"/> subject as for the objects of verbs which have an <technicalTermRef term="ttAgent"/> subject.  We will allow for an additional set of <technicalTermRef term="ttDative"/> pronouns for indirect objects. </span>
           <span id="ExperYesDatDependentSpan" show="swExperiencerYesDatAndDependentYes">In <section number="1.">Overall Typology Questions - Case System</section>, you said that your language uses a distinct set of pronouns for subjects of verbs which have an <technicalTermRef term="ttExperiencer"/> subject from either the subjects or objects of verbs which have an <technicalTermRef term="ttAgent"/> subject.  We will assume the pronouns which can be used for indirect objects are the ones which express the subjects of Experiencer verbs and will ask you for an additional set of <technicalTermRef term="ttDative"/> pronouns. </span>
            <br/><br/>
-          Key the dependent first person <span id="PronDependentNumberSpan3" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesDependentSpan" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberSpan3" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesDependentSpan" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box. <br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgNomSubjectExample" dataItem="personalDependentFirstSgNomSubjectExample"  rows="2" show="swNPCaseNomAndDependentYes" kind="table"/>
-       <prompt id="PronDependentFirstPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes">Key the dependent first person plural pronouns which can appear as<span id="ExperYesDependentSpanPl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line. <br/>
+       <prompt id="PronDependentFirstPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes">Key the dependent first person plural pronouns which can appear as<span id="ExperYesDependentSpanPl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlNomSubjectExample" dataItem="personalDependentFirstPlNomSubjectExample"  rows="2" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseNomSubjectPrompt" show="swNPCaseNomAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan3" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as subjects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan3" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as subjects in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclNomSubjectExample" dataItem="personalDependentFirstExclNomSubjectExample"  rows="2" show="swNPCaseNomAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseNomSubjectPrompt" show="swNPCaseNomAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan4" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as subjects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan4" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as subjects in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclNomSubjectExample" dataItem="personalDependentFirstInclNomSubjectExample"  rows="2" show="swNPCaseNomAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseNomPrompt" show="swNPCaseNomAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan4" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesDependentSpan2" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent second person <span id="PronDependentNumberSpan4" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesDependentSpan2" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box. <br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgNomSubjectExample" dataItem="personalDependentSecondSgNomSubjectExample" rows="2" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as<span id="ExperYesDependentSpan2Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent second person plural pronouns which can appear as<span id="ExperYesDependentSpan2Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlNomSubjectExample" dataItem="personalDependentSecondPlNomSubjectExample" rows="2" show="swNPCaseNomAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseNomPrompt" show="swNPCaseNomAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan5" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesDependentSpan3" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent third person <span id="PronDependentNumberSpan5" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesDependentSpan3" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdSgNomSubjectExample" dataItem="personalDependentThirdSgNomSubjectExample" rows="5" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as<span id="ExperYesDependentSpan3Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent third person plural pronouns which can appear as<span id="ExperYesDependentSpan3Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlNomSubjectExample" dataItem="personalDependentThirdPlNomSubjectExample" rows="5" show="swNPCaseNomAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentCaseSgNomPrompt1" show="swNPCaseNomAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan6" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan6" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as objects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgNomObjectExample" dataItem="personalDependentFirstSgNomObjectExample" rows="2" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentCasePlNomPrompt1" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as objects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlNomObjectExample" dataItem="personalDependentFirstPlNomObjectExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseNomObjectPrompt" show="swNPCaseNomAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan5" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as objects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan5" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as objects in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclNomObjectExample" dataItem="personalDependentFirstExclNomObjectExample"  rows="2" show="swNPCaseNomAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseNomObjectPrompt" show="swNPCaseNomAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan6" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as objects in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan6" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as objects in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclNomObjectExample" dataItem="personalDependentFirstInclNomObjectExample"  rows="2" show="swNPCaseNomAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseNomPrompt1" show="swNPCaseNomAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan7" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan7" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as objects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgNomObjectExample" dataItem="personalDependentSecondSgNomObjectExample" rows="2" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseNomPrompt1" show="swNPCaseNomAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as objects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlNomObjectExample" dataItem="personalDependentSecondPlNomObjectExample" rows="2" show="swNPCaseNomAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseNomPrompt1" show="swNPCaseNomAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan8" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan8" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as objects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgNomObjectExample" dataItem="personalDependentThirdSgNomObjectExample" rows="5" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseNomPrompt1" show="swNPCaseNomAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as objects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlNomObjectExample" dataItem="personalDependentThirdPlNomObjectExample" rows="5" show="swNPCaseNomAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseNomPrompt2" show="swNPCaseNomAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan9" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan9" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgNomPossessorExample" dataItem="personalDependentFirstSgNomPossessorExample" rows="2" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlNomPossessorExample" dataItem="personalDependentFirstPlNomPossessorExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseNomPossPrompt" show="swNPCaseNomAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan7" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as possessors in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan7" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as possessors in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclNomPossExample" dataItem="personalDependentFirstExclNomPossessorExample"  rows="2" show="swNPCaseNomAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseNomPossPrompt" show="swNPCaseNomAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan8" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as possessors in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan8" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as possessors in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclNomPossExample" dataItem="personalDependentFirstInclNomPossessorExample"  rows="2" show="swNPCaseNomAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseNomPrompt2" show="swNPCaseNomAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan10" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan10" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentSecondPersonalSgNomPossessorExample" dataItem="personalDependentSecondSgNomPossessorExample" rows="2" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentSecondPersonalPlNomPossessorExample" dataItem="personalDependentSecondPlNomPossessorExample" rows="2" show="swNPCaseNomAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseNomPrompt2" show="swNPCaseNomAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan11" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan11" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgNomPossessorExample" dataItem="personalDependentThirdSgNomPossessorExample" rows="5" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseNomPrompt2" show="swNPCaseNomAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlNomPossessorExample" dataItem="personalDependentThirdPlNomPossessorExample" rows="5" show="swNPCaseNomAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseNomPrompt3" show="swNPCaseNomAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan12" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan30" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan12" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan30" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstSgNomDativeExample" dataItem="personalDependentFirstSgNomDativeExample" rows="2" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan31" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan31" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlNomDativeExample" dataItem="personalDependentFirstPlNomDativeExample" rows="2" show="swNPCaseNomAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseNomDativePrompt" show="swNPCaseNomAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan9" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as indirect objects <span id="ExperiencerDatSpan32" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan9" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as indirect objects <span id="ExperiencerDatSpan32" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclNomDativeExample" dataItem="personalDependentFirstExclNomDativeExample"  rows="2" show="swNPCaseNomAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseNomDativePrompt" show="swNPCaseNomAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan10" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as indirect objects <span id="ExperiencerDatSpan33" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line. <br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan10" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as indirect objects <span id="ExperiencerDatSpan33" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box. <br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclNomDativeExample" dataItem="personalDependentFirstInclNomDativeExample"  rows="2" show="swNPCaseNomAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseNomPrompt3" show="swNPCaseNomAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan13" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan34" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan13" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan34" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondSgNomDativeExample" dataItem="personalDependentSecondSgNomDativeExample" rows="2" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan35" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan35" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlNomDativeExample" dataItem="personalDependentSecondPlNomDativeExample" rows="2" show="swNPCaseNomAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseNomPrompt3" show="swNPCaseNomAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan14" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan36" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan14" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan36" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdSgNomDativeExample" dataItem="personalDependentThirdSgNomDativeExample" rows="5" show="swNPCaseNomAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseNomPrompt3" show="swNPCaseNomAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan37" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan37" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlNomDativeExample" dataItem="personalDependentThirdPlNomDativeExample" rows="5" show="swNPCaseNomAndPronNumberYesAndDependentYes" kind="table"/>
        <br/>
@@ -265,134 +269,134 @@
           <span id="ExperYesObjErgDependentSpan" show="swExperiencerYesObjAndDependentYes">In <section number="1.">Overall Typology Questions - Case System</section>, you said your language uses the same set of pronouns for subjects of verbs which have an <technicalTermRef term="ttExperiencer"/> subject as for the objects of verbs which have an <technicalTermRef term="ttAgent"/> subject. We will allow for an additional set of <technicalTermRef term="ttDative"/> pronouns for indirect objects. </span>
           <span id="ExperYesDatErgDependentSpan" show="swExperiencerYesDatAndDependentYes">In <section number="1.">Overall Typology Questions - Case System</section>, you said your language uses a distinct set of pronouns for subjects of verbs which have an <technicalTermRef term="ttExperiencer"/> subject from either the subjects or objects of verbs which have an <technicalTermRef term="ttAgent"/> subject. We will assume the pronouns which can be used for indirect objects are the ones which express the subjects of Experiencer verbs and will ask you for an additional set of <technicalTermRef term="ttDative"/> pronouns. </span>
            <br/><br/>
-          Key the dependent first person <span id="PronDependentNumberSpan15" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesErgDependentSpan" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan15" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesErgDependentSpan" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgErgSubjectTransExample" dataItem="personalDependentFirstSgErgSubjectTransExample"  rows="2" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as<span id="ExperYesErgDependentSpanPl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as<span id="ExperYesErgDependentSpanPl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlErgSubjectTransExample" dataItem="personalDependentFirstPlErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseErgSubjectTransPrompt" show="swNPCaseErgAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan10E" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as <span id="ExperYesErgDependentSpan10" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan10E" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as <span id="ExperYesErgDependentSpan10" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclErgSubjectTransExample" dataItem="personalDependentFirstExclErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseErgSubjectTransPrompt" show="swNPCaseErgAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan11" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as <span id="ExperYesErgDependentSpan11" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan11" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as <span id="ExperYesErgDependentSpan11" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclErgSubjectTransExample" dataItem="personalDependentFirstInclErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseErgPrompt" show="swNPCaseErgAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan16" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesErgDependentSpan2" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan16" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesErgDependentSpan2" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgErgSubjectTransExample" dataItem="personalDependentSecondSgErgSubjectTransExample"  rows="2" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as<span id="ExperYesErgDependentSpan2Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as<span id="ExperYesErgDependentSpan2Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlErgSubjectTransExample" dataItem="personalDependentSecondPlErgSubjectTransExample"  rows="2" show="swNPCaseErgAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseErgPrompt" show="swNPCaseErgAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan17" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesErgDependentSpan3" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan17" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as<span id="ExperYesErgDependentSpan3" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgErgSubjectTransExample" dataItem="personalDependentThirdSgErgSubjectTransExample"  rows="5" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseErgPrompt" show="swNPCaseErgAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as<span id="ExperYesErgDependentSpan3Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as<span id="ExperYesErgDependentSpan3Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlErgSubjectTransExample" dataItem="personalDependentThirdPlErgSubjectTransExample"  rows="5" show="swNPCaseErgAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseErgPrompt1" show="swNPCaseErgAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan18" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan18" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgErgSubjectIntransExample" dataItem="personalDependentFirstSgErgSubjectIntransExample" rows="2" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlErgSubjectIntransExample" dataItem="personalDependentFirstPlErgSubjectIntransExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseErgSubjectIntransPrompt" show="swNPCaseErgAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan12" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan12" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclErgSubjectIntransExample" dataItem="personalDependentFirstExclErgSubjectIntransExample"  rows="2" show="swNPCaseErgAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseErgSubjectIntransPrompt" show="swNPCaseErgAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan13" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan13" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclErgSubjectIntransExample" dataItem="personalDependentFirstInclErgSubjectIntransExample"  rows="2" show="swNPCaseErgAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseErgPrompt1" show="swNPCaseErgAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan19" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan19" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgErgSubjectIntransExample" dataItem="personalDependentSecondSgErgSubjectIntransExample" rows="2" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlErgSubjectIntransExample" dataItem="personalDependentSecondPlErgSubjectIntransExample" rows="2" show="swNPCaseErgAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseErgPrompt1" show="swNPCaseErgAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan20" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan20" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgErgSubjectIntransExample" dataItem="personalDependentThirdSgErgSubjectIntransExample" rows="5" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseErgPrompt1" show="swNPCaseErgAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as subjects of intransitive verbs or as objects of transitive verbs in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlErgSubjectIntransExample" dataItem="personalDependentThirdPlErgSubjectIntransExample" rows="5" show="swNPCaseErgAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseErgPrompt2" show="swNPCaseErgAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan21" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan21" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgErgPossessorExample" dataItem="personalDependentFirstSgErgPossessorExample" rows="2" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlErgPossessorExample" dataItem="personalDependentFirstPlErgPossessorExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseErgPossessorPrompt" show="swNPCaseErgAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan14" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan14" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclErgPossessorExample" dataItem="personalDependentFirstExclErgPossessorExample"  rows="2" show="swNPCaseErgAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseErgPossessorPrompt" show="swNPCaseErgAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan15" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan15" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclErgPossessorExample" dataItem="personalDependentFirstInclErgPossessorExample"  rows="2" show="swNPCaseErgAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseErgPrompt2" show="swNPCaseErgAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan22" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan22" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgErgPossessorExample" dataItem="personalDependentSecondSgErgPossessorExample" rows="2" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlErgPossessorExample" dataItem="personalDependentSecondPlErgPossessorExample" rows="2" show="swNPCaseErgAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseErgPrompt2" show="swNPCaseErgAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan23" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan23" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgErgPossessorExample" dataItem="personalDependentThirdSgErgPossessorExample" rows="5" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseErgPrompt2" show="swNPCaseErgAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlErgPossessorExample" dataItem="personalDependentThirdPlErgPossessorExample" rows="5" show="swNPCaseErgAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseErgPrompt3" show="swNPCaseErgAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan24" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan40" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan24" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan40" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstSgErgDativeExample" dataItem="personalDependentFirstSgErgDativeExample" rows="2" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan41" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan41" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlErgDativeExample" dataItem="personalDependentFirstPlErgDativeExample" rows="2" show="swNPCaseErgAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseErgDativePrompt" show="swNPCaseErgAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan16" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as indirect objects <span id="ExperiencerDatSpan42" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan16" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as indirect objects <span id="ExperiencerDatSpan42" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclErgDativeExample" dataItem="personalDependentFirstExclErgDativeExample"  rows="2" show="swNPCaseErgAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseErgDativePrompt" show="swNPCaseErgAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan17" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as indirect objects <span id="ExperiencerDatSpan43" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan17" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as indirect objects <span id="ExperiencerDatSpan43" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclErgDativeExample" dataItem="personalDependentFirstInclErgDativeExample"  rows="2" show="swNPCaseErgAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseErgPrompt3" show="swNPCaseErgAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan25" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan44" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan25" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan44" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondSgErgDativeExample" dataItem="personalDependentSecondSgErgDativeExample" rows="2" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan45" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan45" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlErgDativeExample" dataItem="personalDependentSecondPlErgDativeExample" rows="2" show="swNPCaseErgAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseErgPrompt3" show="swNPCaseErgAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan26" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan46" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan26" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan46" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdSgErgDativeExample" dataItem="personalDependentThirdSgErgDativeExample" rows="5" show="swNPCaseErgAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseErgPrompt3" show="swNPCaseErgAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan47" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan47" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlErgDativeExample" dataItem="personalDependentThirdPlErgDativeExample" rows="5" show="swNPCaseErgAndPronNumberYesAndDependentYes" kind="table"/>
        
@@ -427,201 +431,201 @@
           <span id="ExperYesObjSplitDependentSpan" show="swExperiencerYesObjAndDependentYes">In <section number="1.">Overall Typology Questions - Case System</section>, you said your language uses the same set of pronouns for subjects of verbs which have an <technicalTermRef term="ttExperiencer"/> subject as for the objects of verbs which have an <technicalTermRef term="ttAgent"/> subject.  We will allow for an additional set of <technicalTermRef term="ttDative"/> pronouns for indirect objetcs. </span>
           <span id="ExperYesDatSplitDependentSpan" show="swExperiencerYesDatAndDependentYes">In <section number="1.">Overall Typology Questions - Case System</section>, you said your language uses a distinct set of pronouns for subjects of verbs which have an <technicalTermRef term="ttExperiencer"/> subject from either the subjects or objects of verbs which have an <technicalTermRef term="ttAgent"/> subject.  We will assume the pronouns which can be used for indirect objects are the ones which express the subjects of Experiencer verbs and will ask you for an additional set of <technicalTermRef term="ttDative"/> pronouns. </span>
            <br/><br/>  
-          Key the dependent first person <span id="PronDependentNumberSpan27" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as<span id="ExperYesSplitDependentSpan" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan27" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as<span id="ExperYesSplitDependentSpan" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgSplitSubjectExample" dataItem="personalDependentFirstSgSplitSubjectExample"  rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <br/><br/>  
        <prompt id="PronDependentPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which normally appear as<span id="ExperYesSplitDependentSpanPl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which normally appear as<span id="ExperYesSplitDependentSpanPl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlSplitSubjectExample" dataItem="personalDependentFirstPlSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseSplitSubjectPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan18" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as<span id="ExperYesSplitDependentSpanPl1" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan18" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which can appear as<span id="ExperYesSplitDependentSpanPl1" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclSplitSubjectExample" dataItem="personalDependentFirstExclSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseSplitSubjectPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan19" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as<span id="ExperYesSplitDependentSpanPl2" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan19" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which can appear as<span id="ExperYesSplitDependentSpanPl2" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclSplitSubjectExample" dataItem="personalDependentFirstInclSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseSplitPrompt" show="swNPCaseSplitAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan28" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as<span id="ExperYesSplitDependentSpan2" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan28" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as<span id="ExperYesSplitDependentSpan2" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgSplitSubjectExample" dataItem="personalDependentSecondSgSplitSubjectExample"  rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which normally appear as<span id="ExperYesSplitDependentSpan2Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which normally appear as<span id="ExperYesSplitDependentSpan2Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlSplitSubjectExample" dataItem="personalDependentSecondPlSplitSubjectExample"  rows="2" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseSplitPrompt" show="swNPCaseSplitAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan29" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as<span id="ExperYesSplitDependentSpan3" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan29" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as<span id="ExperYesSplitDependentSpan3" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgSplitSubjectExample" dataItem="personalDependentThirdSgSplitSubjectExample"  rows="5" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseSplitPrompt" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which normally appear as<span id="ExperYesSplitDependentSpan3Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which normally appear as<span id="ExperYesSplitDependentSpan3Pl" show="swExperiencerNotNoAndDependentYes"> Agent</span> subjects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlSplitSubjectExample" dataItem="personalDependentThirdPlSplitSubjectExample"  rows="5" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseSplitPrompt1" show="swNPCaseSplitAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan30" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan30" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as objects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgSplitObjectExample" dataItem="personalDependentFirstSgSplitObjectExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which normally appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which normally appear as objects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlSplitObjectExample" dataItem="personalDependentFirstPlSplitObjectExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseSplitObjectPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan20" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which normally appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan20" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which normally appear as objects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclSplitObjectExample" dataItem="personalDependentFirstExclSplitObjectExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseSplitObjectPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan21" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which normally appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan21" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which normally appear as objects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclSplitObjectExample" dataItem="personalDependentFirstInclSplitObjectExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseSplitPrompt1" show="swNPCaseSplitAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan31" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan31" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as objects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgSplitObjectExample" dataItem="personalDependentSecondSgSplitObjectExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which normally appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which normally appear as objects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlSplitObjectExample" dataItem="personalDependentSecondPlSplitObjectExample" rows="2" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseSplitPrompt1" show="swNPCaseSplitAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan32" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan32" show="swPronNumberYesAndDependentYes">singular </span>pronouns which normally appear as objects in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgSplitObjectExample" dataItem="personalDependentThirdSgSplitObjectExample" rows="5" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseSplitPrompt1" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which normally appear as objects in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which normally appear as objects in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlSplitObjectExample" dataItem="personalDependentThirdPlSplitObjectExample" rows="5" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseSplitPrompt2" show="swNPCaseSplitAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan33" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan33" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgSplitPossessorExample" dataItem="personalDependentFirstSgSplitPossessorExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlSplitPossessorExample" dataItem="personalDependentFirstPlSplitPossessorExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseSplitPossessorPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan22" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which normally appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan22" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which normally appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclSplitPossessorExample" dataItem="personalDependentFirstExclSplitPossessorExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseSplitPossessorPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan23" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which normally appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan23" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which normally appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclSplitPossessorExample" dataItem="personalDependentFirstInclSplitPossessorExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseSplitPrompt2" show="swNPCaseSplitAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan34" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan34" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgSplitPossessorExample" dataItem="personalDependentSecondSgSplitPossessorExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlSplitPossessorExample" dataItem="personalDependentSecondPlSplitPossessorExample" rows="2" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseSplitPrompt2" show="swNPCaseSplitAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan35" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan35" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as possessors in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgSplitPossessorExample" dataItem="personalDependentThirdSgSplitPossessorExample" rows="5" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseSplitPrompt2" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as possessors in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as possessors in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlSplitPossessorExample" dataItem="personalDependentThirdPlSplitPossessorExample" rows="5" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseSplitPrompt5" show="swNPCaseSplitAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan36" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan50" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan36" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan50" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstSgSplitDativeExample" dataItem="personalDependentFirstSgSplitDativeExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan51" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan51" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlSplitDativeExample" dataItem="personalDependentFirstPlSplitDativeExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseSplitDativePrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan24" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which normally appear as indirect objects <span id="ExperiencerDatSpan52" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan24" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which normally appear as indirect objects <span id="ExperiencerDatSpan52" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclSplitDativeExample" dataItem="personalDependentFirstExclSplitDativeExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseSplitDativePrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan25" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which normally appear as indirect objects <span id="ExperiencerDatSpan53" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan25" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which normally appear as indirect objects <span id="ExperiencerDatSpan53" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclSplitDativeExample" dataItem="personalDependentFirstInclSplitDativeExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseSplitPrompt5" show="swNPCaseSplitAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan37" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan54" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan37" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan54" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondSgSplitDativeExample" dataItem="personalDependentSecondSgSplitDativeExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan55" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan55" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlSplitDativeExample" dataItem="personalDependentSecondPlSplitDativeExample" rows="2" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseSplitPrompt5" show="swNPCaseSplitAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan38" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan56" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan38" show="swPronNumberYesAndDependentYes">singular </span>pronouns which can appear as indirect objects <span id="ExperiencerDatSpan56" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdSgSplitDativeExample" dataItem="personalDependentThirdSgSplitDativeExample" rows="5" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseSplitPrompt5" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan57" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which can appear as indirect objects <span id="ExperiencerDatSpan57" show="swExperiencerYesDatAndDependentYes">or as Experiencer subjects </span>in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlSplitDativeExample" dataItem="personalDependentThirdPlSplitDativeExample" rows="5" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseSplitPrompt3" show="swNPCaseSplitAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan39" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan39" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgSplitErgExample" dataItem="personalDependentFirstSgSplitErgExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlSplitErgExample" dataItem="personalDependentFirstPlSplitErgExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseSplitErgPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan26" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan26" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclSplitErgExample" dataItem="personalDependentFirstExclSplitErgExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseSplitErgPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan27" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan27" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclSplitErgExample" dataItem="personalDependentFirstInclSplitErgExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseSplitPrompt3" show="swNPCaseSplitAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan40" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan40" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgSplitErgExample" dataItem="personalDependentSecondSgSplitErgExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlSplitErgExample" dataItem="personalDependentSecondPlSplitErgExample" rows="2" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseSplitPrompt3" show="swNPCaseSplitAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan41" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan41" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgSplitErgExample" dataItem="personalDependentThirdSgSplitErgExample" rows="5" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseSplitPrompt3" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which appear as subjects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlSplitErgExample" dataItem="personalDependentThirdPlSplitErgExample" rows="5" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        
        <prompt id="PronDependentSgCaseSplitPrompt4" show="swNPCaseSplitAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberSpan42" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberSpan42" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalFirstSgSplitAbsExample" dataItem="personalDependentFirstSgSplitAbsExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes">
-          Key the dependent first person plural pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person plural pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstPlSplitAbsExample" dataItem="personalDependentFirstPlSplitAbsExample" rows="2" show="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstExclCaseSplitAbsPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan28" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan28" show="swPronNumberYesAndDependentYes">plural </span>exclusive pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstExclSplitAbsExample" dataItem="personalDependentFirstExclSplitAbsExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentFirstInclCaseSplitAbsPrompt" show="swNPCaseSplitAndPronExclYesAndDependentYes">
-          Key the dependent first person <span id="PronDependentNumberPlSpan29" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent first person <span id="PronDependentNumberPlSpan29" show="swPronNumberYesAndDependentYes">plural </span>inclusive pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalFirstInclSplitAbsExample" dataItem="personalDependentFirstInclSplitAbsExample"  rows="2" show="swNPCaseSplitAndPronExclYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondSgCaseSplitPrompt4" show="swNPCaseSplitAndDependentYes">
-          Key the dependent second person <span id="PronDependentNumberSpan43" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person <span id="PronDependentNumberSpan43" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalSecondSgSplitAbsExample" dataItem="personalDependentSecondSgSplitAbsExample" rows="2" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentSecondPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent second person plural pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent second person plural pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalSecondPlSplitAbsExample" dataItem="personalDependentSecondPlSplitAbsExample" rows="2" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdSgCaseSplitPrompt4" show="swNPCaseSplitAndDependentYes">
-          Key the dependent third person <span id="PronDependentNumberSpan44" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person <span id="PronDependentNumberSpan44" show="swPronNumberYesAndDependentYes">singular </span>pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box.<br/>
         </prompt>
        <textBox id="PronDependentPersonalThirdSgSplitAbsExample" dataItem="personalDependentThirdSgSplitAbsExample" rows="5" show="swNPCaseSplitAndDependentYes" kind="table"/>
        <prompt id="PronDependentThirdPlCaseSplitPrompt4" show="swNPCaseSplitAndPronNumberYesAndDependentYes">
-          Key the dependent third person plural pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box, with each pronoun on a separate line.<br/>
+          Key the dependent third person plural pronouns which appear as subjects of intransitive verbs and objects of transitive verbs in the special cases of split ergativity in the text box.<br/>
        </prompt>
        <textBox id="PronDependentPersonalThirdPlSplitAbsExample" dataItem="personalDependentThirdPlSplitAbsExample" rows="5" show="swNPCaseSplitAndPronNumberYesAndDependentYes" kind="table"/>
        
@@ -658,6 +662,11 @@
    <showWhen id="swPronDependentYes">
       <whenRadio button="PronDependentYes"/>
    </showWhen>
+   <showWhen id="swDependentNoAndNPPossAgrYes">
+      <whenRadio button="PronDependentNo"/>
+      <and/>
+      <whenValue element="np" attr="possAgr" value="yes"/>
+   </showWhen>
    <showWhen id="swPronDependentYesandNoCheck">
       <whenRadio button="PronDependentYes"/>
       <and/><not/>
@@ -671,9 +680,7 @@
       <and/><not/>
       <whenCheckbox button="PronDependentOther"/>
    </showWhen>
-
-
-
+   
    <showWhen id="swNPCaseNoneAndExperiencerNoAndDependentYes">
         <whenValue element="typology" attr="case" value="none"/>
        <and/>
@@ -696,25 +703,25 @@
    <showWhen id="swNPCaseNoneAndPronNumberYesExclNoAndDependentYes">
       <whenValue element="typology" attr="case" value="none"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="no"/>
+      <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
    <showWhen id="swNPCaseNoneAndPronExclYesAndDependentYes">
       <whenValue element="typology" attr="case" value="none"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="yes"/>
+      <whenValue element="pron" attr="pronounExcl" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
    <showWhen id="swNPCaseNoneAndPronNumberYesAndDependentYes">
       <whenValue element="typology" attr="case" value="none"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -724,9 +731,9 @@
       <and/><not/>
       <whenValue element="typology" attr="noCaseExperiencer" value="no"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="no"/>
+      <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -735,9 +742,9 @@
       <and/><not/>
       <whenValue element="typology" attr="noCaseExperiencer" value="no"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="yes"/>
+      <whenValue element="pron" attr="pronounExcl" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -746,7 +753,7 @@
       <and/><not/>
       <whenValue element="typology" attr="noCaseExperiencer" value="no"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>  
@@ -759,7 +766,7 @@
    </showWhen>  
    
    <showWhen id="swPronNumberYesAndDependentYes">
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -768,7 +775,7 @@
       <and/>
       <whenValue element="typology" attr="case" value="nominative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -777,9 +784,9 @@
       <and/>
       <whenValue element="typology" attr="case" value="nominative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="no"/>
+      <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -793,23 +800,23 @@
    <showWhen id="swNPCaseNomAndPronNumberYesExclNoAndDependentYes">
       <whenValue element="typology" attr="case" value="nominative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="no"/>
+      <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
    <showWhen id="swNPCaseNomAndPronExclYesAndDependentYes">
       <whenValue element="typology" attr="case" value="nominative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
    <showWhen id="swNPCaseNomAndPronNumberYesAndDependentYes">
       <whenValue element="typology" attr="case" value="nominative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -818,7 +825,7 @@
       <and/>
       <whenValue element="typology" attr="case" value="split"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -827,9 +834,9 @@
       <and/>
       <whenValue element="typology" attr="case" value="split"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="no"/>
+      <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -838,7 +845,7 @@
       <and/>
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -847,9 +854,9 @@
       <and/>
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="no"/>
+      <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -863,7 +870,7 @@
    <showWhen id="swNPCaseErgAndPronNumberYesAndDependentYes">
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
@@ -875,43 +882,43 @@
    <showWhen id="swNPCaseSplitAndPronNumberYesAndDependentYes">
       <whenValue element="typology" attr="case" value="split"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
    <showWhen id="swNPCaseErgAndPronExclYesAndDependentYes">
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="yes"/>
+      <whenValue element="pron" attr="pronounExcl" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
    <showWhen id="swNPCaseSplitAndPronExclYesAndDependentYes">
       <whenValue element="typology" attr="case" value="split"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="yes"/>
+      <whenValue element="pron" attr="pronounExcl" value="yes"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
    <showWhen id="swNPCaseErgAndPronNumberYesExclNoAndDependentYes">
       <whenValue element="typology" attr="case" value="ergative"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="no"/>
+      <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
    </showWhen>
    <showWhen id="swNPCaseSplitAndPronNumberYesExclNoAndDependentYes">
       <whenValue element="typology" attr="case" value="split"/>
       <and/>
-      <whenValue element="pron" attr="pronNumber" value="yes"/>
+      <whenValue element="pron" attr="pronounNumber" value="yes"/>
       <and/>
-      <whenValue element="pron" attr="pronExcl" value="no"/>
+      <whenValue element="pron" attr="pronounExcl" value="no"/>
       <and/>
       <whenRadio button="PronDependentYes"/>
       </showWhen>

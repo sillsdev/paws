@@ -3,7 +3,7 @@
 <!ENTITY TechnicalTerms SYSTEM  "TechnicalTerms_en.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="..\Transforms\PAWSSKHtmlMapper.xsl"?>
-<page id="PronIndefinite" count="8.7">
+<page id="PronIndefinite" count="7.7">
     <title level="2">Pronouns - Indefinites</title>
    <introduction>A final type of pronouns is <technicalTermRef term="ttIndefinite">indefinites</technicalTermRef>.        
       There are two basic sets of indefinite pronouns, though not all languages merge them into a single word:
