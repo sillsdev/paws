@@ -460,7 +460,9 @@ var trv = CreateExampleRow(idValue, "<xsl:value-of select="$prmVernacular"/>", "
 var tri = CreateExampleRow(idValue, "<xsl:value-of select="$prmIpa"/>", "i", size, "ipa");
 var trg = CreateExampleRow(idValue, "<xsl:value-of select="$prmGloss"/>", "f", size, "free");
 tbodynew.appendChild(trv);
+<xsl:if test="$prmInterlinearOutputStyle='Blessymol'">
 tbodynew.appendChild(tri);
+</xsl:if>
 tbodynew.appendChild(trg);
 tablenew.appendChild(tbodynew);
 
