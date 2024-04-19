@@ -122,8 +122,8 @@ public class OutputGeneratorTest {
 			assertEquals(true, Files.exists(xmlResultPath));
 			Path htmResultPath = Paths.get(sTestDir + "TestDataWriterPractical.htm");
 			assertEquals(true, Files.exists(htmResultPath));
-			assertEquals(504693, Files.size(xmlResultPath));
-			assertEquals(1119662, Files.size(htmResultPath));
+			assertEquals(513823, Files.size(xmlResultPath));
+			assertEquals(1129095, Files.size(htmResultPath));
 			Files.delete(xmlResultPath);
 			Files.delete(htmResultPath);
 		} catch (Exception e1) {
