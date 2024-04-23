@@ -16,35 +16,35 @@
         </radioGroup>
        
        <prompt id="PronPossYesFirstSgPrompt" show="swPronPossYes">
-          Saisissez, dans la boîte, les pronoms possessifs de la première personne<span id="PronNumberSpan" show="swPronNumberYes"> du singulier</span>, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms possessifs de la première personne<span id="PronNumberSpan" show="swPronNumberYes"> du singulier</span>.<br/>
        </prompt>
        <textBox id="PronPossFirstSgExample" dataItem="possFirstSgExample"  rows="2" show="swPronPossYes" kind="table"/>
        <prompt id="PronPossYesFirstPlPrompt" show="swPronPossYesAndPronNumberYesExclNo">
-          Saisissez, dans la boîte, les pronoms possessifs de la première personne du pluriel, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms possessifs de la première personne du pluriel.<br/>
        </prompt>
        <textBox id="PronPossFirstPlExample" dataItem="possFirstPlExample"  rows="2" show="swPronPossYesAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronPossFirstExclPrompt" show="swPronPossYesAndPronExclYes">
-          Saisissez, dans la boîte, les pronoms possessifs de la première personne<span id="PronNumberPlSpan" show="swPronNumberYes"> du pluriel</span>exclusif, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms possessifs de la première personne<span id="PronNumberPlSpan" show="swPronNumberYes"> du pluriel</span>exclusif.<br/>
        </prompt>
        <textBox id="PronPossFirstExclExample" dataItem="possFirstExclExample"  rows="2" show="swPronPossYesAndPronExclYes" kind="table"/>
        <prompt id="PronPossFirstInclPrompt" show="swPronPossYesAndPronExclYes">
-          Saisissez, dans la boîte, les pronoms possessifs de la première personne<span id="PronNumberPlSpan1" show="swPronNumberYes"> du pluriel</span>inclusif, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms possessifs de la première personne<span id="PronNumberPlSpan1" show="swPronNumberYes"> du pluriel</span>inclusif.<br/>
        </prompt>
        <textBox id="PronPossFirstInclExample" dataItem="possFirstInclExample"  rows="2" show="swPronPossYesAndPronExclYes" kind="table"/>
        <prompt id="PronPossYesSecondSgPrompt" show="swPronPossYes">
-          Saisissez, dans la boîte, les pronoms possessifs de la deuxième personne<span id="PronNumberSpan1" show="swPronNumberYes"> du singulier</span>, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms possessifs de la deuxième personne<span id="PronNumberSpan1" show="swPronNumberYes"> du singulier</span>.<br/>
        </prompt>
        <textBox id="PronPossSecondSgExample" dataItem="possSecondSgExample"  rows="2" show="swPronPossYes" kind="table"/>
        <prompt id="PronPossYesSecondPlPrompt" show="swPronPossYesAndPronNumberYes">
-          Saisissez, dans la boîte, les pronoms possessifs de la deuxième personne du pluriel, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms possessifs de la deuxième personne du pluriel.<br/>
        </prompt>
        <textBox id="PronPossSecondPlExample" dataItem="possSecondPlExample"  rows="2" show="swPronPossYesAndPronNumberYes" kind="table"/>
        <prompt id="PronPossYesThirdSgPrompt" show="swPronPossYes">
-          Saisissez, dans la boîte, les pronoms possessifs de la troisième personne<span id="PronNumberSpan2" show="swPronNumberYes"> du singulier</span>, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms possessifs de la troisième personne<span id="PronNumberSpan2" show="swPronNumberYes"> du singulier</span>.<br/>
        </prompt>
        <textBox id="PronPossThirdSgExample" dataItem="possThirdSgExample"  rows="2" show="swPronPossYes" kind="table"/>
        <prompt id="PronPossYesThirdPlPrompt" show="swPronPossYesAndPronNumberYes">
-          Saisissez, dans la boîte, les pronoms possessifs de la troisième personne du pluriel, Saisissez, dans la boîte, les pronoms possessifs de la troisième personne du pluriel, en écrivant chaque pronom sur une ligne distincte.<br/>
+          Saisissez, dans la boîte, les pronoms possessifs de la troisième personne du pluriel, Saisissez, dans la boîte, les pronoms possessifs de la troisième personne du pluriel.<br/>
        </prompt>
        <textBox id="PronPossThirdPlExample" dataItem="possThirdPlExample"  rows="2" show="swPronPossYesAndPronNumberYes" kind="table"/>    
  <br/><br/>     

@@ -19,7 +19,7 @@ We will deal with each type in turn.
             <radio id="NPPossAlienableNo" dataValue="no">No</radio>
             <radio id="NPPossAlienableYes" dataValue="yes">Yes</radio>
         </radioGroup>
-        <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Enter the affix(es) which are used to mark alienably possessed nouns when they have a possessor in the box (each on a separate line if more than one).  Use a hyphen after the alphabetic characters to indicate a prefix, a hyphen before to indicate a suffix, and hyphens on both sides to indicate an infix.<br/><br/>
+        <prompt id="NPPossAlienableYesPrompt" show="swNPPossAlienableYes">Enter the affix(es) which are used to mark alienably possessed nouns when they have a possessor in the box.  Use a hyphen after the alphabetic characters to indicate a prefix, a hyphen before to indicate a suffix, and hyphens on both sides to indicate an infix.<br/><br/>
         Please note that these affixes should not be the same as those that agree with or express the possessor, discussed below.</prompt>
         <textBox id="NPPossAlienableYesAffixExample" dataItem="possAlienableAffixExample" rows="2" show="swNPPossAlienableYes" kind="table"/>
         <br/>
@@ -118,7 +118,7 @@ We will deal with each type in turn.
           <radio id="NPPossAbsolutiveNo" dataValue="no">No</radio>
           <radio id="NPPossAbsolutiveYes" dataValue="yes">Yes</radio>
        </radioGroup>
-       <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Enter the affix(es) which are used to mark nouns in these situations in the box (each on a separate line if more than one).  Use a hyphen after the alphabetic characters to indicate a prefix, a hyphen before to indicate a suffix, and hyphens on both sides to indicate an infix.</prompt>
+       <prompt id="NPPossAbsolutiveYesPrompt" show="swNPPossAbsolutiveYes">Enter the affix(es) which are used to mark nouns in these situations in the box.  Use a hyphen after the alphabetic characters to indicate a prefix, a hyphen before to indicate a suffix, and hyphens on both sides to indicate an infix.</prompt>
        <textBox id="NPPossAbsolutiveAffixExample" dataItem="possAbsolutiveAffixExample" rows="2" show="swNPPossAbsolutiveYes" kind="table"/>
        <br/><br/>
         <buttons>

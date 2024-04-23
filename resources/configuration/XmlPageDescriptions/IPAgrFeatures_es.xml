@@ -8,7 +8,7 @@
    <introduction>Los verbos y los auxiliares también pueden sufrir cambios para expresar concordancia con el sujeto, y a veces también con el objeto directo, incluyen persona, número, género, animado y clase.  La mayoría de los cambios o accidentes se agregan como afijos o clíticos pronominales que pueden unirse con el verbo. Las lenguas difieren en cuántos accidentes se marcan en los verbos o auxliairies.</introduction>
    <form section="ip">
       <prompt><br/>Mire los accidentes de concordancia en el cuadro abajo y haga clic a la izquierda de cualquier que su lengua utiliza. (La concordancia de clase se explica en <section number="1.">La tipología - Clases de sustantivo y clasificadores</section>.) Escriba los <technicalTermRef term="ttMorphemes">morfemas</technicalTermRef> para cada accidente de concordancia en la columna final. Incluyen clíticos pronominales que se unen a los verbos (los pronombres dependientes) así como afijos verbales.
-      <br/>
+      <br/><br/>
       Algunas o todas estas características pueden expresarse como morfemas acrónimo que combinan más de una característica en una sola forma. Introduzca todas las entidades representadas en esta tabla. Es probable que estos morfemas acrónimos sean las formas de pronombres dependientes que escribiste en <section number="7.2">Los pronombres dependientes</section>. Puede aclarar esto al editar la salida gramatical.</prompt>
       <instruction> <span id="IPAgrFeaturesNotPracticalSpan" show="swNotPractical">In the lexicon, add the appropriate features to the relevant affixes, including pronominal clitics that may attach to the verb.      
        <br/><br/>

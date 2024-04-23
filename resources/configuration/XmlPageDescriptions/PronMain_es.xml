@@ -31,7 +31,7 @@
        </radioGroup>
        <br/>
        <prompt>Los sistemas del pronombres que se presentan a continuación se basan en sus respuestas sobre el sistema de caso en su lengua, así como las preguntas anteriores aquí. Si el número de sistemas de pronombres no parece correcto, por favor reconsidere su respuesta en <section number="1.">La tipología - Sistema de caso</section> antes de continuar aquí.</prompt>
-       <prompt>Si su lengua tiene formas enfáticos para cualquiera de los pronombres, escríbalos en las casillas correspondientes, en una línea separada después de las formas regulares.</prompt>
+       <prompt>Si su lengua tiene formas enfáticos para cualquiera de los pronombres, escríbalos en los cuadros de texto correspondientes (usando el signo +) después de las formas regulares.</prompt>
        
        <prompt id="PronCaseNoneAndExperiencerNoPrompt" show="swNPCaseNoneAndExperiencerNo">
           <br/>Puesto que su lengua no distingue el caso, debe tener solamente un solo sistema de los pronombres independientes que pueden presentarse en cualquier posición de la oración.<br/>

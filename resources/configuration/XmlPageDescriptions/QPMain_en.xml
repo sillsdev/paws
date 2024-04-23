@@ -50,11 +50,11 @@ like <example>only</example> and <example>just</example> (which can also act as 
 	   </radioGroup>
 	   <prompt id="QPClassifierAgrPrompt" show="swOTClassifierAgrNPDegreeYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the words asked for on this page.  The full nominal phrase examples and sentential examples asked for throughout PAWS should, of course, include the noun class markers.</prompt>	   
 	   <br/>
-		<prompt>Key the way your language expresses “all”, with each word on a separate line.  (If “all” is an affix or a <technicalTermRef term="ttClitic"/> which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
+		<prompt>Key the way your language expresses “all”.  (If “all” is an affix or a <technicalTermRef term="ttClitic"/> which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
 		<textBox id="QPAllExample" dataItem="all" rows="3" kind="table"><gloss>all</gloss></textBox>
 		<br/>
 		<br/>
-		<prompt>Key the way your language expresses “almost” or “nearly”, with each word on a separate line.  (If either one is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
+		<prompt>Key the way your language expresses “almost” or “nearly”.  (If either one is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
 		<textBox id="QPAlmostExample" dataItem="almost" rows="3" kind="table"><gloss>almost or nearly</gloss></textBox>
 		<br/>
 		<br/>

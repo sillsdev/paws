@@ -5,7 +5,7 @@
     <title level="2">Interrogations – Syntagmes interrogatifs</title>
     <introduction>Les questions d’information diffèrent des questions oui/non en ce sens qu’elles contiennent un mot ou un syntagme interrogatif, tel <example>que</example>, <example>qu’</example>, <example>qui</example>, <example>pourquoi</example>, <example>où</example>, <example>quand</example>, <example>comment</example> et <example>combien</example>.  Dans quelques langues, certains ou tous ces interrogatifs sont rattachés à un autre mot.</introduction>
     <form section="q">
-        <prompt>Pour chacune des boîtes suivantes, si votre langue exprime l’interrogatif au moyen d’un affixe ou clitique, saisissez-le dans la boîte avec un trait d’union ou un signe d’égalité avant si c'est un préfixe ou un proclitique, ou après si c’est un suffixe ou un enclitique.  Chaque terme devrait être saisi sur une ligne individuelle.</prompt>
+        <prompt>Pour chacune des boîtes suivantes, si votre langue exprime l’interrogatif au moyen d’un affixe ou clitique, saisissez-le dans la boîte avec un trait d’union ou un signe d’égalité avant si c'est un préfixe ou un proclitique, ou après si c’est un suffixe ou un enclitique.  </prompt>
         <prompt>Saisissez ici la manière dont votre langue exprime « qui » :</prompt>
         <textBox id="QWho" dataItem="who" rows="3" kind="table"><gloss>qui</gloss></textBox>
         <br/>

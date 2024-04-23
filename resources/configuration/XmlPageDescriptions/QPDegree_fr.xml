@@ -17,18 +17,18 @@
 	   </radioGroup>
 		<prompt id="QPQuantifierClassifierAgrPrompt" show="swOTClassifierAgrAndQuantifierYes">Puisque vous avez déjà identifié les formes des marqueurs de classe nominale,  il suffit de saisir ici les radicaux de chaque quantifieur.</prompt>	   
 <br/>
-		<prompt>Saisissez la façon dont votre langue exprime « beaucoup de » (qui modifie les substantifs qu’on peut compter), en mettant chaque mot sur une ligne. </prompt>
+		<prompt>Saisissez la façon dont votre langue exprime « beaucoup de » (qui modifie les substantifs qu’on peut compter). </prompt>
 	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"><gloss>beaucoup de (qui modifie les substantifs qu’on peut compter)</gloss></textBox>
 	   <br/>
 	   <br/>
-		<prompt>Saisissez la manière dont votre langue exprime  « beaucoup de » (qui modifie les noms de <technicalTermRef term="ttMass">masse</technicalTermRef>), en mettant chaque mot sur une ligne.</prompt>
+		<prompt>Saisissez la manière dont votre langue exprime  « beaucoup de » (qui modifie les noms de <technicalTermRef term="ttMass">masse</technicalTermRef>).</prompt>
 	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"><gloss>beaucoup de(qui modifie les noms de masse)</gloss></textBox>
 	   <br/><br/>
-		<prompt>Saisissez la manière dont votre langue exprime  « peu de », en mettant chaque mot sur une ligne. </prompt>
+		<prompt>Saisissez la manière dont votre langue exprime  « peu de » . </prompt>
 	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"><gloss>peu de</gloss></textBox>
 	   <br/>
 	   <br/>
-		<prompt>Saisissez la manière dont votre langue exprime d’autres quantifieurs de ce type, en mettant chaque mot sur une ligne.</prompt>
+		<prompt>Saisissez la manière dont votre langue exprime d’autres quantifieurs de ce type.</prompt>
 	   <textBox id="QPOtherQExample" dataItem="otherQ" rows="3" kind="table"/>
 		<instruction id="QPDegreeInstruction">In the lexicon, if this type of quantifier does not already have the category <category>Q</category>, mark them
 			with the feature <feature>makeQ</feature>.  This will change
@@ -54,7 +54,7 @@
 		<prompt id="QPDegreeClassifierAgrPrompt" show="swOTClassifierAgrAndDegreeYesOrSomeAndClassifierYes">Puisque vous avez déjà identifié les formes des marqueurs de classe nominale, il suffit de saisir ici les radicaux de chaque mot de degré.</prompt>	   
 	   
 	   <br/>
-		<prompt id="QPDegreeWordYesExamples" show="swQPDegreeYesOrSome">Saisissez ici des exemples de mots de degré, en mettant chacun sur une ligne.  Notez que ces mots de degré ne seront pas probablement les mêmes que ceux qui peuvent modifier un syntagme nominal entier et qu’on a traités dans la section ci-dessus.</prompt>
+		<prompt id="QPDegreeWordYesExamples" show="swQPDegreeYesOrSome">Saisissez ici des exemples de mots de degré.  Notez que ces mots de degré ne seront pas probablement les mêmes que ceux qui peuvent modifier un syntagme nominal entier et qu’on a traités dans la section ci-dessus.</prompt>
 		<textBox id="QPDegreeWordExample" dataItem="degreeWordExample" show="swQPDegreeYesOrSome" kind="table"/>
 		<prompt id="QPDegreeYesExamples" show="swQPDegreeYesOrSome">Saisissez ici des exemples de mots de degré qui modifient un quantifieur dans un syntagme nominal simple :</prompt>
 		<textBox id="QPDegreeExample" dataItem="degreeExample" cols="80" show="swQPDegreeYesOrSome"/>
@@ -72,7 +72,7 @@
 	   <instruction id="QPDegreeEitherNoInstruction" show="swQPDegreeEitherRestricted">Those which can only occur before the quantifier also need to have the feature <feature>QP-initial</feature> and those which can only occur after the quantifier also need the
 	      feature <feature>QP-final</feature>.  Do not enter either feature <feature>QP-initial</feature> or <feature>QP-final</feature> on any degree words which can occur on either side.</instruction>
 	   <br/><br/>
-		<prompt id="QPDegreeWordAttachesExamples" show="swQPDegreeAttachesOrSome">Saisissez des exemples d’affixes ou de clitiques de degré, avec un trait d’union ou un signe d’égalité pour indiquer le côté duquel ils s’attachent, chacun sur une ligne distincte.  Notez que ces éléments de degré ne seront pas probablement pas les mêmes que ceux qui peuvent modifier un syntagme nominal entier et qui ont été traités dans la section ci-dessus.</prompt>
+		<prompt id="QPDegreeWordAttachesExamples" show="swQPDegreeAttachesOrSome">Saisissez des exemples d’affixes ou de clitiques de degré, avec un trait d’union ou un signe d’égalité pour indiquer le côté duquel ils se rattachent.  Notez que ces éléments de degré ne seront pas probablement pas les mêmes que ceux qui peuvent modifier un syntagme nominal entier et qui ont été traités dans la section ci-dessus.</prompt>
 	   <textBox id="QPDegreeAttachesExample" dataItem="degreeAttachesExample" show="swQPDegreeAttachesOrSome" kind="table"/>
 		<prompt id="QPDegreeAttachesExamples" show="swQPDegreeAttachesOrSome">Maintenant, saisissez ici des exemples d’affixes ou de clitiques de degré modifiant un quantifieur dans un syntagme nominal simple :</prompt>
 		<textBox id="QPDegreeAttachesNPExample" dataItem="degreeAttachesNPExample" cols="80" show="swQPDegreeAttachesOrSome"/>

@@ -20,18 +20,18 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	   </radioGroup>
 	   <prompt id="QPQuantifierClassifierAgrPrompt" show="swOTClassifierAgrAndQuantifierYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the quantifiers here.</prompt>	   
 <br/>
-	   <prompt>Key the way your language expresses “many” (which modifies nouns which can be counted), with each word on a separate line. </prompt>
+	   <prompt>Key the way your language expresses “many” (which modifies nouns which can be counted). </prompt>
 	   <textBox id="QPManyExample" dataItem="many" rows="3" kind="table"><gloss>many</gloss></textBox>
 	   <br/>
 	   <br/>
-	   <prompt>Key the way your language expresses “much” (which only modifies <technicalTermRef term="ttMass"/> nouns), with each word on a separate line.</prompt>
+	   <prompt>Key the way your language expresses “much” (which only modifies <technicalTermRef term="ttMass"/> nouns).</prompt>
 	   <textBox id="QPMuchExample" dataItem="much" rows="3" kind="table"><gloss>much</gloss></textBox>
 	   <br/><br/>
-	   <prompt>Key the way your language expresses “few”, with each word on a separate line. </prompt>
+	   <prompt>Key the way your language expresses “few”. </prompt>
 	   <textBox id="QPFewExample" dataItem="few" rows="3" kind="table"><gloss>few</gloss></textBox>
 	   <br/>
 	   <br/>
-	   <prompt>Key the way your language expresses any other quantifiers of this type, with each word on a separate line.</prompt>
+	   <prompt>Key the way your language expresses any other quantifiers of this type.</prompt>
 	   <textBox id="QPOtherQExample" dataItem="otherQ" rows="3" kind="table"/>
 		<instruction id="QPDegreeInstruction">In the lexicon, if this type of quantifier does not already have the category <category>Q</category>, mark them
 			with the feature <feature>makeQ</feature>.  This will change
@@ -57,7 +57,7 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	   <prompt id="QPDegreeClassifierAgrPrompt" show="swOTClassifierAgrAndDegreeYesOrSomeAndClassifierYes">Since you have already detailed the forms of the noun class markers, you only need to enter the roots for each of the degree words here.</prompt>	   
 	   
 	   <br/>
-		<prompt id="QPDegreeWordYesExamples" show="swQPDegreeYesOrSome">Key examples of the degree words here, with each on a separate line.  Note that these degree words will most likely not be the same as the ones which can modify an entire nominal phrase dealt with in the first section above.</prompt>
+		<prompt id="QPDegreeWordYesExamples" show="swQPDegreeYesOrSome">Key examples of the degree words here.  Note that these degree words will most likely not be the same as the ones which can modify an entire nominal phrase dealt with in the first section above.</prompt>
 		<textBox id="QPDegreeWordExample" dataItem="degreeWordExample" show="swQPDegreeYesOrSome" kind="table"/>
 		<prompt id="QPDegreeYesExamples" show="swQPDegreeYesOrSome">Now key examples of the degree words modifying a quantifier within a simple nominal phrase here:</prompt>
 		<textBox id="QPDegreeExample" dataItem="degreeExample" cols="80" show="swQPDegreeYesOrSome"/>
@@ -75,7 +75,7 @@ such as <example>very</example> and <example>so</example>, as in <example>very m
 	   <instruction id="QPDegreeEitherNoInstruction" show="swQPDegreeEitherRestricted">Those which can only occur before the quantifier also need to have the feature <feature>QP-initial</feature> and those which can only occur after the quantifier also need the
 	      feature <feature>QP-final</feature>.  Do not enter either feature <feature>QP-initial</feature> or <feature>QP-final</feature> on any degree words which can occur on either side.</instruction>
 	   <br/><br/>
-	   <prompt id="QPDegreeWordAttachesExamples" show="swQPDegreeAttachesOrSome">Key examples of the degree affixes or clitics here, with a hyphen or equal sign to indicate which side it attaches on an each on a separate line.  Note that these degree elements will most likely not be the same as the ones which can modify an entire nominal phrase dealt with in the first section above.</prompt>
+	   <prompt id="QPDegreeWordAttachesExamples" show="swQPDegreeAttachesOrSome">Key examples of the degree affixes or clitics here, with a hyphen or equal sign to indicate which side it attaches on.  Note that these degree elements will most likely not be the same as the ones which can modify an entire nominal phrase dealt with in the first section above.</prompt>
 	   <textBox id="QPDegreeAttachesExample" dataItem="degreeAttachesExample" show="swQPDegreeAttachesOrSome" kind="table"/>
 	   <prompt id="QPDegreeAttachesExamples" show="swQPDegreeAttachesOrSome">Now key examples of the degree affixes or clitics modifying a quantifier within a simple nominal phrase here:</prompt>
 		<textBox id="QPDegreeAttachesNPExample" dataItem="degreeAttachesNPExample" cols="80" show="swQPDegreeAttachesOrSome"/>

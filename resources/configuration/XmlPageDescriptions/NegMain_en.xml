@@ -34,7 +34,7 @@ The final page then deals with any co-occurrence restrictions between the variou
     </EnglishExample>
  
     <form section="neg">
-       <prompt>Key the way your language expresses 'not' or 'no' (when it modifies a nominal rather than a verbal phrase), with each word on a separate line.  (If 'not' or 'no' is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.)</prompt>
+       <prompt>Key the way your language expresses 'not' or 'no' (when it modifies a nominal rather than a verbal phrase) here.  If 'not' or 'no' is an affix or a clitic which attaches to another word in the nominal phrase, key it here with a hyphen or equal sign indicating which side it attaches on.</prompt>
        <textBox id="NegNotExample" dataItem="not" rows="3" kind="table"/>
        <br/><br/>
        <radioGroup>

@@ -509,7 +509,7 @@
       </table>
       
       
-      <introduction>Vous avez terminé le programme de PAWS.  Vous pouvez voir les ébauches de la grammaire en doble-cliquant sur les fichiers.htm.  <br></br><br/>
+      <introduction>Vous avez terminé le programme de PAWS.  Veuillez utiliser l’option Générer des fichiers (Ctrl+S).  Vous pouvez voir les ébauches de la grammaire en doble-cliquant sur les fichiers.htm.  <br></br><br/>
     Il faut enregistrer les versions .xml sous un nom de fichier différent avant de commencer à l’éditer.  Comme éditeur XML à utiliser pour l’esquisse grammaticale, nous préférons XMLMind XML Editor.  Il facilite la rédaction et l’impression d’un fichier pdf, puisqu’il a des extensions spéciales pour gérer les fonctionnalités supplémentaires de XLingPaper, utilisé par le scripteur de grammaire.  Vous trouverez plus d’information sur <a href="http://www.xlingpaper.org/">http://www.xlingpaper.org/</a>.
   <br/><br/>
     Vous pouvez maintenant quitter PAWS pour la dernière fois.  Félicitations !

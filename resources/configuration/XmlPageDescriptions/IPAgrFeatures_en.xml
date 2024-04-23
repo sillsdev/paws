@@ -8,7 +8,7 @@
    <introduction>Agreement features for verbs and auxiliaries provide us with specific information about the subject and possibly the object of the sentence.  These features include person, number, gender, animacy and class.  Languages differ greatly in how many features are marked on verbs or auxliairies.</introduction>
    <form section="ip">
       <prompt><br/>Look through the features in the chart below and check any that your language uses.  (Class agreement was dealt with in <section number="1.">Overall Typology Questions - Noun Classes and Classifiers</section>.)   Key the <technicalTermRef term="ttMorphemes"/> for each feature in the final column.  Include pronominal clitics that attach to verbs (the dependent pronouns) as well as verbal affixes.
-       <br/>
+       <br/><br/>
        Some or all of these features may be expressed as portmanteau morphemes which combine more than one feature together in a single form.  Enter all the features represented in this table.  It is likely that these portmanteau morphemes are the dependent pronoun forms you added in <section number="7.2">Dependent Pronouns</section>.  You can make this clearer when you edit the grammar output.</prompt>
 <br/>
     <instruction><span id="IPAgrFeaturesNotPracticalSpan" show="swNotPractical">In the lexicon, add the appropriate features (as given in the chart) to the relevant affixes, including pronominal clitics that may attach to the verb.

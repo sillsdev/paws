@@ -16,35 +16,35 @@
         </radioGroup>
        
        <prompt id="PronPossYesFirstSgPrompt" show="swPronPossYes">
-          Key the first person <span id="PronNumberSpan" show="swPronNumberYes">singular </span>possessive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the first person <span id="PronNumberSpan" show="swPronNumberYes">singular </span>possessive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronPossFirstSgExample" dataItem="possFirstSgExample"  rows="2" show="swPronPossYes" kind="table"/>
        <prompt id="PronPossYesFirstPlPrompt" show="swPronPossYesAndPronNumberYesExclNo">
-          Key the first person plural possessive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the first person plural possessive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronPossFirstPlExample" dataItem="possFirstPlExample"  rows="2" show="swPronPossYesAndPronNumberYesExclNo" kind="table"/>
        <prompt id="PronPossFirstExclPrompt" show="swPronPossYesAndPronExclYes">
-          Key the first person <span id="PronNumberPlSpan" show="swPronNumberYes">plural </span>exclusive possessive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the first person <span id="PronNumberPlSpan" show="swPronNumberYes">plural </span>exclusive possessive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronPossFirstExclExample" dataItem="possFirstExclExample"  rows="2" show="swPronPossYesAndPronExclYes" kind="table"/>
        <prompt id="PronPossFirstInclPrompt" show="swPronPossYesAndPronExclYes">
-          Key the first person <span id="PronNumberPlSpan1" show="swPronNumberYes">plural </span>inclusive possessive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the first person <span id="PronNumberPlSpan1" show="swPronNumberYes">plural </span>inclusive possessive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronPossFirstInclExample" dataItem="possFirstInclExample"  rows="2" show="swPronPossYesAndPronExclYes" kind="table"/>
        <prompt id="PronPossYesSecondSgPrompt" show="swPronPossYes">
-          Key the second person <span id="PronNumberSpan1" show="swPronNumberYes">singular </span>possessive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the second person <span id="PronNumberSpan1" show="swPronNumberYes">singular </span>possessive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronPossSecondSgExample" dataItem="possSecondSgExample"  rows="2" show="swPronPossYes" kind="table"/>
        <prompt id="PronPossYesSecondPlPrompt" show="swPronPossYesAndPronNumberYes">
-          Key the second person plural possessive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the second person plural possessive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronPossSecondPlExample" dataItem="possSecondPlExample"  rows="2" show="swPronPossYesAndPronNumberYes" kind="table"/>
        <prompt id="PronPossYesThirdSgPrompt" show="swPronPossYes">
-          Key the third person <span id="PronNumberSpan2" show="swPronNumberYes">singular </span>possessive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the third person <span id="PronNumberSpan2" show="swPronNumberYes">singular </span>possessive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronPossThirdSgExample" dataItem="possThirdSgExample"  rows="2" show="swPronPossYes" kind="table"/>
        <prompt id="PronPossYesThirdPlPrompt" show="swPronPossYesAndPronNumberYes">
-          Key the third person plural possessive pronouns in the text box, with each pronoun on a separate line. <br/>
+          Key the third person plural possessive pronouns in the text box. <br/>
        </prompt>
        <textBox id="PronPossThirdPlExample" dataItem="possThirdPlExample"  rows="2" show="swPronPossYesAndPronNumberYes" kind="table"/>    
  <br/><br/>     

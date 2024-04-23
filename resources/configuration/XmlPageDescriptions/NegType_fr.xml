@@ -62,7 +62,7 @@ In Negative Concord languages, any number of negative elements expresses negativ
                <radio id="PolarityItemsNo" dataValue="no">Non, les pronoms négatifs, les déterminateurs et les adverbes peuvent se trouver dans la position de l’objet ou la position habituelle de l’adverbe, même dans les cas où la phrase contient un autre élément négatif</radio>
             </radioGroup>
         </radioGroup>
-      <prompt id="PolarityItemsYesInstruction" show="swPolarityItemsYes">Saisissez les exemples de différents éléments de polarité négative dans les boîtes correspondantes, chacun sur une ligne distincte. Ajoutez les éléments qui ont le même sens mais s’écrivent en plus d’un mot.</prompt>
+      <prompt id="PolarityItemsYesInstruction" show="swPolarityItemsYes">Saisissez les exemples de différents éléments de polarité négative dans les boîtes correspondantes. Ajoutez les éléments qui ont le même sens mais s’écrivent en plus d’un mot.</prompt>
       <prompt id="PronounPolarityItemsPrompt" show="swPolarityItemsYes">Les éléments de polarité négative qui sont des pronoms, comme « anyone, anybody »  (personne, n’importe qui), « anything » (rien, quelque chose, n’importe quoi) :</prompt>
         <textBox id="PronounPolarityItemsExamples" dataItem="npiPronounExample" rows="3" show="swPolarityItemsYes" kind="table"/>
       <prompt id="DeterminerPolarityItemsPrompt" show="swPolarityItemsYes">Les éléments de polarité négative qui sont des déterminants, tels que « any »  (aucun, de, d’) :</prompt>

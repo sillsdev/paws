@@ -10,7 +10,7 @@
     <br/><br/>
        Consider locative PPs in your language, as in <example>at [Bill’s house]</example> and <example>under [the giant Sycamore tree]</example>.  English has prepositions which are independent words and come before the nominal phrase complement.  In a language with postpositions, the nominal phrase complement comes first.</introduction>  
    <form section="pp">
-      <prompt><br/>Key some locative PP examples from your language here (without brackets but each on a separate line):</prompt>
+      <prompt><br/>Key some locative PP examples from your language here (without brackets):</prompt>
       <textBox id="PPCompsNominalExample" dataItem="ppExample" cols="80"/>
       <radioGroup>
          <groupName dataItem="pPos" default="unknown" position="yesHead">RPPPosition</groupName>

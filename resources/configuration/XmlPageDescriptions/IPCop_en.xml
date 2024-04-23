@@ -24,7 +24,7 @@
             <radio id="IPCopVerbNo" dataValue="no">No, there is no verb used in copular type sentences</radio>
         </radioGroup>
        <prompt id="IPCopularVerb" show="swIPCopVerbYesOrOptional">
-          <br/>Key the copular verbs in the textbox, each on a separate line: 
+          <br/>Key the copular verbs in the textbox: 
        </prompt>
        <textBox id="IPCopuparVerbExample" dataItem="copularVerb" show="swIPCopVerbYesOrOptional" rows="3" kind="table"/>
        <radioGroup id="IPCopVerbNoTable" show="swIPCopVerbNoOrOptional">

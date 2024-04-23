@@ -39,7 +39,7 @@
 	      <radio id="QPPartitivePPEitherSide" checked="yes" dataValue="either">On either side</radio>
 	   </radioGroup>
 	   
-	   <prompt id="QPPartitiveOfPrompt" show="swQPPartitiveYes">Key the prepositions or postpositions that can be used to mean “of” in these partitive constructions, with each word on a separate line. </prompt>
+	   <prompt id="QPPartitiveOfPrompt" show="swQPPartitiveYes">Key the prepositions or postpositions that can be used to mean “of” in these partitive constructions. </prompt>
 	   <textBox id="QPPartitiveOfExample" dataItem="partitiveOf" rows="3" show="swQPPartitiveYes" kind="table"/>
 	   <br/>
 	   

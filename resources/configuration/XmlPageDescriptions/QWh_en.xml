@@ -5,7 +5,7 @@
     <title level="2">Questions - Interrogative Phrases</title>
    <introduction>Content questions differ from Yes/No questions in that they contain an interrogative word or phrase, known as <i>wh</i>-phrases in English because they almost all begin with <example>wh</example> (<example>who(m)</example>, <example>what</example>, <example>why</example>, <example>where</example>, <example>when</example>, <example>how</example>, <example>how many</example>, <example>which</example>, <example>whose</example>).  In some languages, some or all of these interrogatives attach to another word.</introduction>
     <form section="q">
-<prompt>For each of the following text boxes, if your language expresses that interrogative via an affix or clitic, enter it in the box with a hyphen or equal sign on the appropriate side to indicate whether it is a prefix or proclitic or a suffix or enclitic.  Each item should be entered on a separate line.</prompt>
+<prompt>For each of the following text boxes, if your language expresses that interrogative via an affix or clitic, enter it in the box with a hyphen or equal sign on the appropriate side to indicate whether it is a prefix or proclitic or a suffix or enclitic. </prompt>
         <prompt>Key the way your language expresses ‘who’ or ‘whom’ here:</prompt>
         <textBox id="QWho" dataItem="who" rows="3" kind="table"><gloss>who</gloss></textBox>
         <br/>

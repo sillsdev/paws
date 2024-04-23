@@ -47,7 +47,7 @@
 	   <prompt id="QPDeterminerClassifierAgrPrompt" show="swOTClassifierAgrAndYesOrSomeAndDeterminerClassifierYes">Puesto que usted ha detallado ya las formas de los indicadores de clase, necesita solamente escribir las raíces para cada una de las palabras solicitadas en esta página.</prompt>	   
 	   <br/>
 	   <br/>
-	   <prompt id="QPDeterminerTypeWordPrompt" show="swQPDeterminerTypeYesOrSome"><br/>Escriba ejemplos de frases nominales con las palabras independientes que significan ‘alguno’, ‘cualquier’ o 'cada'  aquí, con cada uno en una línea separada:</prompt>
+	   <prompt id="QPDeterminerTypeWordPrompt" show="swQPDeterminerTypeYesOrSome"><br/>Escriba ejemplos de frases nominales con las palabras independientes que significan ‘alguno’, ‘cualquier’ o 'cada' aquí:</prompt>
 	   <textBox id="QPDeterminerExample" dataItem="determinerExample" show="swQPDeterminerTypeYesOrSome"  cols="80" />
 	   <radioGroup id="DeterminerWord" show="swQPDeterminerTypeYesOrSome">
 	      <groupName dataItem="determiner" default="yes">RDeterminer</groupName>

@@ -64,7 +64,7 @@ In Negative Concord languages, any number of negative elements expresses negativ
                 <radio id="PolarityItemsNo" dataValue="no">No, the negative pronouns, determiners, and adverbs may occur in object position or the normal adverb position even when there is another negative element in the sentence</radio>
             </radioGroup>
         </radioGroup>
-        <prompt id="PolarityItemsYesInstruction" show="swPolarityItemsYes">Key your examples of the various negative polarity items in the appropriate boxes, each on a separate line.</prompt>
+        <prompt id="PolarityItemsYesInstruction" show="swPolarityItemsYes">Key your examples of the various negative polarity items in the appropriate boxes.</prompt>
         <prompt id="PronounPolarityItemsPrompt" show="swPolarityItemsYes">The negative polarity items which are pronouns, such as ‘anyone’, ‘anybody’, ‘anything’.  Include elements which mean the same, but are written as more than one word.</prompt>
         <textBox id="PronounPolarityItemsExamples" dataItem="npiPronounExample" rows="3" show="swPolarityItemsYes" kind="table"/>
         <prompt id="DeterminerPolarityItemsPrompt" show="swPolarityItemsYes">The negative polarity items which are determiners such as ‘any’:</prompt>

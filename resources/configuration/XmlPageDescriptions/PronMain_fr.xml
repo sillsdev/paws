@@ -29,7 +29,7 @@
        </radioGroup>
        <br/>
        <prompt>Les séries de pronoms présentées ci-dessous sont basées d’une part sur vos réponses concernant le système casuel dans votre langue et sur les réponses aux questions ci-dessus d’autre part.  Si le nombre de séries de pronoms ne semble pas correct, il est nécessaire de revoir la réponse dans  la <section number="1.">Questions générales de typologie – Le système casuel</section> avant de continuer ici.</prompt>
-       <prompt>Si votre langue a des formes emphatiques pour ces pronoms, ajoutez-les ici dans les boîtes appropriées, en les mettant sur une ligne distincte après la forme ordinaire.</prompt>
+       <prompt>Si votre langue a des formes emphatiques pour ces pronoms, ajoutez-les ici dans les boîtes appropriées (à l’aide du signe +) après la forme ordinaire.</prompt>
        
        <prompt id="PronCaseNoneAndExperiencerNoPrompt" show="swNPCaseNoneAndExperiencerNo">
           <br/>Puisque votre langue ne distingue pas de cas, vous ne devriez avoir qu’une seule série de pronoms indépendants utilisés dans toutes les positions dans la phrase.<br/>
@@ -142,7 +142,7 @@
        </prompt>
        <textBox id="PronPersonalThirdSgNomSubjectExample" dataItem="personalThirdSgNomSubjectExample" rows="5" show="swNPCaseNom" kind="table"/>
        <prompt id="PronThirdPlCaseNomPrompt" show="swNPCaseNomAndPronNumberYes">
-          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet<span id="ExperYesSpan3Pl" show="swExperiencerNotNo"> agent</span> dans la zone de texte, avec chaque pronom sur une ligne distincte. <br/>
+          Saisissez, dans la boîte,  les pronoms indépendants de la troisième personne du pluriel utilisés comme sujet<span id="ExperYesSpan3Pl" show="swExperiencerNotNo"> agent</span> dans la zone de texte. <br/>
        </prompt>
        <textBox id="PronPersonalThirdPlNomSubjectExample" dataItem="personalThirdPlNomSubjectExample" rows="5" show="swNPCaseNomAndPronNumberYes" kind="table"/>
        

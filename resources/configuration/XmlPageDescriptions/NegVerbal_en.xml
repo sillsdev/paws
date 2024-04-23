@@ -172,13 +172,13 @@
       </radioGroup>
       <prompt id="NegAuxRequiresAuxButNoAuxInstruction" show="swNegAuxRequiresAuxButNoAux">WARNING - The answers you have entered are incompatible!! A negative auxiliary word cannot require the presence of another auxiliary if your language does not have (positive) auxiliaries that are written as independent words.  Please change your answer either here or in <section number="9.3">Basic Sentences - Auxiliaries</section> to correct this problem before proceeding.</prompt>
       <prompt id="NegAuxAffixButNoAuxInstruction" show="swNegAuxAffixButNoAux">WARNING - The answers you have entered are incompatible!! A negative auxiliary affix cannot attach to anything if your language does not have (positive) auxiliaries that are written as independent words.  Please change your answer either here or in <section number="9.3">Basic Sentences - Auxiliaries</section> to correct this problem before proceeding.</prompt>
-      <prompt id="NegAuxWordPrompt" show="swNegAuxAndVerbalYes">Key the negative auxiliary word(s) only (each on a separate line) here:</prompt>
+      <prompt id="NegAuxWordPrompt" show="swNegAuxAndVerbalYes">Key the negative auxiliary word(s) only here:</prompt>
       <textBox id="NegAuxWordExample" dataItem="negAuxExample" rows="3" show="swNegAuxAndVerbalYes" kind="table"/>
       <instruction id="NegAuxYesInstruction" show="swNegAuxAndVerbalYes">Add the features <feature>negative makeAux</feature> to the negative auxiliary elements that are written as independent words.  This will mark them as negative and also assure that they have the category <category>Aux</category>.  If this same negative word can be used to modify nouns or adverbs, you will need to make two separate entries in the lexicon.</instruction>
-      <prompt id="NegAuxAffixPrompt" show="swNegAuxAffixAndVerbalYes">Key examples of the negative auxiliary affix(es) attached to an auxiliary (each on a separate line) here:</prompt>
+      <prompt id="NegAuxAffixPrompt" show="swNegAuxAffixAndVerbalYes">Key examples of the negative auxiliary affix(es) attached to an auxiliary here:</prompt>
       <textBox id="NegAuxAffixExample" dataItem="negAuxAffixExample" rows="3" show="swNegAuxAffixAndVerbalYes" kind="table"/>
       <instruction id="NegAuxAffixInstruction" show="swNegAuxAffixAndVerbalYes">Add either of the features <feature>negative_prefix</feature> or <feature>negative_suffix</feature> as appropriate to the negative auxiliary affix(es).</instruction>
-      <prompt id="NegVerbPrompt" show="swNegVAffixAndVerbalYes">Key examples of the negative affix(es) attached to a verb (each on a separate line) here:</prompt>
+      <prompt id="NegVerbPrompt" show="swNegVAffixAndVerbalYes">Key examples of the negative affix(es) attached to a verb here:</prompt>
       <textBox id="NegVerbExample" dataItem="negVerbExample" rows="3" show="swNegVAffixAndVerbalYes" kind="table"/>
       <instruction id="NegVerbInstruction" show="swNegVAffixAndVerbalYes">Add the feature <feature>negative</feature> to the negative verbal affix(es).</instruction>
       <prompt id="NegVerbalOtherExamplePrompt" show="swNegVerbalOther">Key some examples of the other ways that your language expresses the negative verbal or auxiliary meaning here:</prompt>

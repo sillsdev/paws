@@ -37,7 +37,7 @@
 	   	<radio id="QPPartitivePPEitherSide" checked="yes" dataValue="either">D’un côté ou de l’autre</radio>
 	   </radioGroup>
 	   
-		<prompt id="QPPartitiveOfPrompt" show="swQPPartitiveYes">Saisissez les prépositions ou postpositions qu’on utilise pour dire « de » dans les constructions partitives, en mettant chaque mot sur une ligne distincte. </prompt>
+		<prompt id="QPPartitiveOfPrompt" show="swQPPartitiveYes">Saisissez les prépositions ou postpositions qu’on utilise pour dire « de » dans les constructions partitives. </prompt>
 	   <textBox id="QPPartitiveOfExample" dataItem="partitiveOf" rows="3" show="swQPPartitiveYes" kind="table"/>
 	   <br/>
 	   

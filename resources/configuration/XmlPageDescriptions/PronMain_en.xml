@@ -29,7 +29,7 @@
        </radioGroup>
        <br/>
        <prompt>The pronoun sets given below are based on your answers regarding the case system in your language as well as the questions above here.  If the number of sets of pronouns does not seem correct, please reconsider your answer in <section number="1.">Overall Typology Questions - Case System</section> before continuing here.</prompt>
-       <prompt>If your language has emphatic forms for any of the pronouns, add them in the appropriate boxes here, on a seperate line after the regular forms.</prompt>
+       <prompt>If your language has emphatic forms for any of the pronouns, add them in the appropriate boxes here (using the + sign) after the regular forms.</prompt>
        
        <prompt id="PronCaseNoneAndExperiencerNoPrompt" show="swNPCaseNoneAndExperiencerNo">
             <br/>Since your language does not distinguish case, you should have only a single set of independent pronouns that can be used in any position in the sentence.<br/>

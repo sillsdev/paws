@@ -24,7 +24,7 @@
             <radio id="IPCopVerbNo" dataValue="no">Non, il n’y a pas de verbe dans les constructions copulatives</radio>
         </radioGroup>
        <prompt id="IPCopularVerb" show="swIPCopVerbYesOrOptional">
-           <br/>Saisissez les copules verbales dans la boîte de texte, chacune sur une ligne individuelle : 
+           <br/>Saisissez les copules verbales dans la boîte de texte : 
        </prompt>
        <textBox id="IPCopuparVerbExample" dataItem="copularVerb" show="swIPCopVerbYesOrOptional" rows="3" kind="table"/>
        <radioGroup id="IPCopVerbNoTable" show="swIPCopVerbNoOrOptional">

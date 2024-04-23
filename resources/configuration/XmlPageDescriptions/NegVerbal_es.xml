@@ -170,13 +170,13 @@
          </radioGroup>
       <prompt id="NegAuxRequiresAuxButNoAuxInstruction" show="swNegAuxRequiresAuxButNoAux">ADVERTENCIA - las respuestas que usted escribió son incompatibles!! Una palabra auxiliar negativa no puede requerir la presencia de otro auxiliar si su lengua no tiene auxiliares (positivos) que se escriben como palabras independientes. Por favor, cambie la respuesta aquí o en <section number="9.3">Las oraciones básicas - Los auxiliares</section> para corregir este problema antes de continuar.</prompt>
       <prompt id="NegAuxAffixButNoAuxInstruction" show="swNegAuxAffixButNoAux">ADVERTENCIA - las respuestas que usted escribió son incompatibles!! Un afijo auxiliar negativo no puede unirse con nada si su lengua no tiene auxiliares (positivos) que se escriben como palabras independientes. Por favor, cambie la respuesta aquí o en <section number="9.3">Las oraciones básicas - Los auxiliares</section> para corregir este problema antes de continuar.</prompt>
-      <prompt id="NegAuxWordPrompt" show="swNegAuxAndVerbalYes">Escriba las palabras auxiliares negativas (cada uno en una línea separada) aquí:</prompt>
+      <prompt id="NegAuxWordPrompt" show="swNegAuxAndVerbalYes">Escriba las palabras auxiliares negativas aquí:</prompt>
          <textBox id="NegAuxWordExample" dataItem="negAuxExample" rows="3" show="swNegAuxAndVerbalYes" kind="table"/>
       <instruction id="NegAuxYesInstruction" show="swNegAuxAndVerbalYes">Add the features <feature>negative makeAux</feature> to the negative auxiliary elements that are written as independent words.  This will mark them as negative and also assure that they have the category <category>Aux</category>.  If this same negative word can be used to modify nouns or adverbs, you will need to make two separate entries in the lexicon.</instruction>
-      <prompt id="NegAuxAffixPrompt" show="swNegAuxAffixAndVerbalYes">Escriba ejemplos del afijo negativo unido con un auxiliar (cada uno en una línea separada) aquí:</prompt>
+      <prompt id="NegAuxAffixPrompt" show="swNegAuxAffixAndVerbalYes">Escriba ejemplos del afijo negativo unido con un auxiliar aquí:</prompt>
          <textBox id="NegAuxAffixExample" dataItem="negAuxAffixExample" rows="3" show="swNegAuxAffixAndVerbalYes" kind="table"/>
       <instruction id="NegAuxAffixInstruction" show="swNegAuxAffixAndVerbalYes">Add either of the features <feature>negative_prefix</feature> or <feature>negative_suffix</feature> as appropriate to the negative auxiliary affix(es).</instruction>
-      <prompt id="NegVerbPrompt" show="swNegVAffixAndVerbalYes">Escriba ejemplos del afijo verbal negativo unido con un verbo (cada uno en una línea separada) aquí:</prompt>
+      <prompt id="NegVerbPrompt" show="swNegVAffixAndVerbalYes">Escriba ejemplos del afijo verbal negativo unido con un verbo aquí:</prompt>
          <textBox id="NegVerbExample" dataItem="negVerbExample" rows="3" show="swNegVAffixAndVerbalYes" kind="table"/>
          <instruction id="NegVerbInstruction" show="swNegVAffixAndVerbalYes">Add the feature <feature>negative</feature> to the negative verbal affix(es).</instruction>
       <prompt id="NegVerbalOtherExamplePrompt" show="swNegVerbalOther">Escriba ejemplos de la otra manera su lengua expresa un verbo  o un auxiliar negativo aquí:</prompt>
