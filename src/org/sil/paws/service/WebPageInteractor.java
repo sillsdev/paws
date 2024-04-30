@@ -44,6 +44,7 @@ public class WebPageInteractor {
 	RootLayoutController controller;
 	MainApp mainApp;
 	ApplicationPreferences prefs;
+	String sOperatingSystem = System.getProperty("os.name");
 
 	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
 	static {
@@ -345,6 +346,16 @@ public class WebPageInteractor {
 		language.setValue(ksKeyboardLocale, String.valueOf(keyboardInfo.getLocale()));
 		language.setValue(ksKeyboardWindowsLangID, sKeyboardWindowsLangID);
 		controller.handleSaveLanguage();
+	}
+
+	public boolean keyboardsEnabled() {
+		if (sOperatingSystem.toLowerCase().contains("windows")) {
+			return true;
+		} else if (sOperatingSystem.toLowerCase().contains("mac")) {
+			return false;
+		} else {
+			return false;
+		}
 	}
 
 	public void switchToVernacularKeyboard() {
