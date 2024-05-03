@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2018 SIL International
+// Copyright (c) 2017-2024 SIL International
 // This software is licensed under the LGPL, version 2.1 or later
 // (http://www.gnu.org/licenses/lgpl-2.1.html)
 
@@ -289,9 +289,7 @@ public class MainApp extends Application implements MainAppUtilities {
 		applicationPreferences.setLastWindowParameters(ApplicationPreferences.LAST_WINDOW,
 				primaryStage);
 		applicationPreferences.setLastLocaleLanguage(locale.getLanguage());
-		if (controller.isDirty()) {
-			controller.askAboutSaving();
-		}
+		controller.handleExit();
 	}
 
 	public Locale getLocale() {
