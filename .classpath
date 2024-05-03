@@ -10,6 +10,6 @@
 	<classpathentry kind="lib" path="LibJavaDev/jna/jna-5.11.0.jar"/>
 	<classpathentry kind="lib" path="LibJavaDev/jna/jna-platform-5.11.0.jar"/>
 	<classpathentry kind="lib" path="LibJavaDev/json/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="LibJavaDev/libjavadev-1.6.2.jar"/>
+	<classpathentry kind="lib" path="LibJavaDev/libjavadev-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

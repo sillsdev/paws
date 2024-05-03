@@ -1248,7 +1248,6 @@ public class RootLayoutController implements Initializable {
 	 */
 	@FXML
 	public void handleExit() {
-		keyboardChanger.closeKeyboardHandler();
 		if (fIsDirty) {
 			askAboutSaving();
 		}
