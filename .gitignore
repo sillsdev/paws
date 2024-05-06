@@ -34,7 +34,7 @@ build/dist
 build/doc
 build/externalLibs
 build/project
-resources/images
+#resources/images
 /testdata
 *.*~
 *.orig
