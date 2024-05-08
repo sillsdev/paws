@@ -3,8 +3,8 @@
 [Setup]
 AppId={{868009FD-62E9-4349-9747-D1438E46E669}
 AppName=PAWS
-AppVersion=1.6.0
-AppVerName=PAWS version 1.6.0
+AppVersion=1.6.1
+AppVerName=PAWS version 1.6.1
 AppPublisher=SIL International
 AppComments=paws
 AppCopyright=Copyright ﾩ 2018 SIL International
@@ -23,13 +23,13 @@ DefaultGroupName=SIL International
 LicenseFile=
 ;WinXP or above
 MinVersion=0,5.1 
-OutputBaseFilename=PAWS-1.6.0
+OutputBaseFilename=PAWS-1.6.1
 Compression=lzma
 SolidCompression=yes
 PrivilegesRequired=admin
 SetupIconFile=PAWS\PAWS.ico
 UninstallDisplayIcon={app}\PAWS.ico
-UninstallDisplayName=PAWS version 1.6.0
+UninstallDisplayName=PAWS version 1.6.1
 WizardImageStretch=No
 WizardSmallImageFile=PAWS-setup-icon.bmp   
 ArchitecturesInstallIn64BitMode=x64
