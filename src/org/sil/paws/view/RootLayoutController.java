@@ -71,7 +71,6 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import netscape.javascript.JSObject;
 
-import org.controlsfx.dialog.FontSelectorDialogWithColor;
 import org.sil.paws.view.KeyboardChooserController;
 import org.sil.paws.view.RootLayoutController;
 import org.sil.paws.model.FontInfo;
@@ -260,7 +259,7 @@ public class RootLayoutController implements Initializable {
 		this.location = location;
 		bundle = resources;
 		keyboardChanger = KeyboardChanger.getInstance();
-		keyboardChanger.initKeyboardHandler();
+		keyboardChanger.initKeyboardHandler(MainApp.class);
 		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
 		try {
 			sConfigurationDirectory = new File(".").getCanonicalPath() + File.separator
@@ -771,44 +770,44 @@ public class RootLayoutController implements Initializable {
 	protected void initToolbarButtons(ResourceBundle bundle) {
 		tooltipToolbarFileNew = ControllerUtilities.createToolbarButtonWithImage("newAction.png",
 				buttonToolbarFileNew, tooltipToolbarFileNew, bundle.getString("tooltip.new"),
-				Constants.RESOURCE_SOURCE_LOCATION);
+				Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarFileNew.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.new"));
 		tooltipToolbarFileOpen = ControllerUtilities.createToolbarButtonWithImage("openAction.png",
 				buttonToolbarFileOpen, tooltipToolbarFileOpen, bundle.getString("tooltip.open"),
-				Constants.RESOURCE_SOURCE_LOCATION);
+				Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarFileOpen.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.open"));
 		tooltipToolbarGenerateFiles = ControllerUtilities.createToolbarButtonWithImage(
 				"saveAction.png", buttonToolbarGenerateFiles, tooltipToolbarGenerateFiles,
-				bundle.getString("tooltip.save"), Constants.RESOURCE_SOURCE_LOCATION);
+				bundle.getString("tooltip.save"), Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarGenerateFiles.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.save"));
 		tooltipToolbarEditCut = ControllerUtilities.createToolbarButtonWithImage("cutAction.png",
 				buttonToolbarEditCut, tooltipToolbarEditCut, bundle.getString("tooltip.cut"),
-				Constants.RESOURCE_SOURCE_LOCATION);
+				Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarEditCut.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.cut"));
 		tooltipToolbarEditCopy = ControllerUtilities.createToolbarButtonWithImage("copyAction.png",
 				buttonToolbarEditCopy, tooltipToolbarEditCopy, bundle.getString("tooltip.copy"),
-				Constants.RESOURCE_SOURCE_LOCATION);
+				Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarEditCopy.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.copy"));
 		tooltipToolbarEditPaste = ControllerUtilities.createToolbarButtonWithImage(
 				"pasteAction.png", buttonToolbarEditPaste, tooltipToolbarEditPaste,
-				bundle.getString("tooltip.paste"), Constants.RESOURCE_SOURCE_LOCATION);
+				bundle.getString("tooltip.paste"), Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarEditPaste.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.paste"));
 		tooltipToolbarBack = ControllerUtilities.createToolbarButtonWithImage("back.png",
 				buttonToolbarBack, tooltipToolbarBack, bundle.getString("tooltip.back"),
-				Constants.RESOURCE_SOURCE_LOCATION);
+				Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarBack.textProperty().bind(RESOURCE_FACTORY.getStringBinding("tooltip.back"));
 		tooltipToolbarForward = ControllerUtilities.createToolbarButtonWithImage("forward.png",
 				buttonToolbarForward, tooltipToolbarForward, bundle.getString("tooltip.forward"),
-				Constants.RESOURCE_SOURCE_LOCATION);
+				Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarForward.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.forward"));
 		tooltipToolbarRefresh = ControllerUtilities.createToolbarButtonWithImage("refresh.png",
 				buttonToolbarRefresh, tooltipToolbarRefresh, bundle.getString("tooltip.refresh"),
-				Constants.RESOURCE_SOURCE_LOCATION);
+				Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		tooltipToolbarRefresh.textProperty().bind(
 				RESOURCE_FACTORY.getStringBinding("tooltip.refresh"));
 	}
@@ -1224,7 +1223,7 @@ public class RootLayoutController implements Initializable {
 		alert.setHeaderText(null);
 		alert.setContentText(sAboutContent);
 		Image silLogo = ControllerUtilities.getIconImageFromURL(
-				"file:resources/images/SILLogo.png", Constants.RESOURCE_SOURCE_LOCATION);
+				"file:resources/images/SILLogo.png", Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		alert.setGraphic(new ImageView(silLogo));
 		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(mainApp.getNewMainIconImage());
@@ -1302,16 +1301,16 @@ public class RootLayoutController implements Initializable {
 	public void switchToKeyboard(String sCode) {
 		switch (sCode) {
 		case "f":
-			keyboardChanger.tryToChangeKeyboardTo(language.getFreeGlossKeyboard());
+			keyboardChanger.tryToChangeKeyboardTo(language.getFreeGlossKeyboard(), MainApp.class);
 			break;
 		case "i":
-			keyboardChanger.tryToChangeKeyboardTo(language.getIpaKeyboard());
+			keyboardChanger.tryToChangeKeyboardTo(language.getIpaKeyboard(), MainApp.class);
 			break;
 		case "v":
-			keyboardChanger.tryToChangeKeyboardTo(language.getVernacularKeyboard());
+			keyboardChanger.tryToChangeKeyboardTo(language.getVernacularKeyboard(), MainApp.class);
 			break;
 		case "w":
-			keyboardChanger.tryToChangeKeyboardTo(language.getWriterKeyboard());
+			keyboardChanger.tryToChangeKeyboardTo(language.getWriterKeyboard(), MainApp.class);
 			break;
 		}
 	}

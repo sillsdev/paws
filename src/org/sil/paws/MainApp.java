@@ -11,7 +11,6 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 import org.sil.paws.backendprovider.XMLBackEndProvider;
-import org.sil.paws.ApplicationPreferences;
 import org.sil.paws.model.Language;
 import org.sil.paws.service.DatabaseMigrator;
 import org.sil.paws.view.RootLayoutController;
@@ -106,6 +105,22 @@ public class MainApp extends Application implements MainAppUtilities {
 		userArgs = args;
 		launch(args);
 	}
+
+	public static void reportException(Exception ex, ResourceBundle bundle) {
+		String sTitle = "Error Found!";
+		String sHeader = "A serious error happened.";
+		String sContent = "Please copy the exception information below, email it to blackhandrew@gmail.com along with a description of what you were doing.";
+		String sLabel = "The exception stacktrace was:";
+		if (bundle != null) {
+			sTitle = bundle.getString("exception.title");
+			sHeader = bundle.getString("exception.header");
+			sContent = bundle.getString("exception.content");
+			sLabel = bundle.getString("exception.label");
+		}
+		ControllerUtilities.showExceptionInErrorDialog(ex, sTitle, sHeader, sContent, sLabel);
+		System.exit(1);
+	}
+
 
 	/**
 	 * Initializes the root layout.
@@ -231,7 +246,7 @@ public class MainApp extends Application implements MainAppUtilities {
 	 */
 	public Image getNewMainIconImage() {
 		Image img = ControllerUtilities.getIconImageFromURL(kApplicationIconResource,
-				Constants.RESOURCE_SOURCE_LOCATION);
+				Constants.RESOURCE_SOURCE_LOCATION, MainApp.class);
 		return img;
 	}
 

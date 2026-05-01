@@ -22,10 +22,8 @@ import org.sil.paws.model.Language;
 import org.sil.paws.view.RootLayoutController;
 import org.sil.utility.StringUtilities;
 import org.sil.utility.service.keyboards.KeyboardInfo;
+import org.sil.utility.view.ControllerUtilities;
 import org.sil.utility.view.ObservableResourceFactory;
-
-import com.sun.deploy.uitoolkit.impl.fx.HostServicesFactory;
-import com.sun.javafx.application.HostServicesDelegate;
 
 import java.awt.Desktop;
 import java.io.File;
@@ -45,6 +43,7 @@ public class WebPageInteractor {
 	MainApp mainApp;
 	ApplicationPreferences prefs;
 	String sOperatingSystem = System.getProperty("os.name");
+	private final String kMacOSInstallDirectory = "/Applications/PAWS.app/Contents/app/";
 
 	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
 	static {
@@ -135,21 +134,51 @@ public class WebPageInteractor {
 	}
 
 	protected void showFileToUser(String sFileToShow) {
-		MainApp mainApp = controller.getMainApp();
-		if (!mainApp.getOperatingSystem().equals("Mac OS X")) {
-			HostServicesDelegate hostServices = HostServicesFactory.getInstance(mainApp);
-			hostServices.showDocument(sFileToShow);
-		} else {
-			if (Desktop.isDesktopSupported()) {
-				try {
-					File myFile = new File(sFileToShow);
-					Desktop.getDesktop().open(myFile);
-				} catch (IOException ex) {
-					// no application registered for PDFs
+		if (Desktop.isDesktopSupported()) {
+			try {
+				File myFile = new File(sFileToShow);
+				if (!myFile.exists()) {
+					// this can happen on Linux
+					String sUriOfProgram = ControllerUtilities.getUriOfProgram(MainApp.class);
+					String sPathToTry = sUriOfProgram.substring(5) + sFileToShow;
+					myFile = new File(sPathToTry);
 				}
+				String sOS = mainApp.getOperatingSystem().toLowerCase();
+				if (sOS.contains("linux")) {
+					Runtime.getRuntime().exec(new String[] { "xdg-open", myFile.getAbsolutePath() });
+				} else if (sOS.contains("mac")) {
+					if (!myFile.exists()) {
+						String sFullPath = kMacOSInstallDirectory + sFileToShow;
+						System.out
+								.println("File '" + sFileToShow + "' does not exist; trying it as '" + sFullPath + "'");
+						myFile = new File(sFullPath);
+					}
+					Desktop.getDesktop().open(myFile);
+				} else {
+					Desktop.getDesktop().open(myFile);
+				}
+			} catch (IOException ex) {
+				// no application registered for PDFs
+				MainApp.reportException(ex, null);
 			}
 		}
 	}
+//	protected void showFileToUser(String sFileToShow) {
+//		MainApp mainApp = controller.getMainApp();
+//		if (!mainApp.getOperatingSystem().equals("Mac OS X")) {
+//			HostServicesDelegate hostServices = HostServicesFactory.getInstance(mainApp);
+//			hostServices.showDocument(sFileToShow);
+//		} else {
+//			if (Desktop.isDesktopSupported()) {
+//				try {
+//					File myFile = new File(sFileToShow);
+//					Desktop.getDesktop().open(myFile);
+//				} catch (IOException ex) {
+//					// no application registered for PDFs
+//				}
+//			}
+//		}
+//	}
 
 	public void saveData() {
 		controller.handleSaveLanguage();

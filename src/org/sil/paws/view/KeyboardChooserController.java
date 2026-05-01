@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import org.sil.paws.MainApp;
 import org.sil.paws.model.Language;
 import org.sil.utility.service.keyboards.KeyboardChanger;
 import org.sil.utility.service.keyboards.KeyboardInfo;
@@ -82,7 +83,7 @@ public class KeyboardChooserController implements Initializable {
 	 */
 	public void initialize(URL location, ResourceBundle resources) {
 		keyboardChanger = KeyboardChanger.getInstance();
-		keyboardChanger.initKeyboardHandler();
+		keyboardChanger.initKeyboardHandler(MainApp.class);
 		
 		ObservableList<KeyboardInfo> activeKeyboards = FXCollections
 				.observableArrayList(keyboardChanger.getActiveKeyboards());

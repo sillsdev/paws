@@ -1,4 +1,4 @@
-// Copyright (c) 2016 SIL International 
+// Copyright (c) 2016-2025 SIL Global 
 // This software is licensed under the LGPL, version 2.1 or later 
 // (http://www.gnu.org/licenses/lgpl-2.1.html) 
 /**
@@ -7,10 +7,10 @@
 
 package org.sil.paws.model;
 
-import javax.xml.bind.annotation.*;
-
 import org.sil.utility.StringUtilities;
 
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
@@ -20,7 +20,7 @@ import javafx.scene.text.FontWeight;
  * @author Andy Black
  *
  */
-public class FontInfo {
+public class FontInfo implements Cloneable {
 
 	private Font font;
 	private String fontFamily;
@@ -93,6 +93,7 @@ public class FontInfo {
 		this.font = createFont(this.fontFamily, this.fontSize, fontType);
 	}
 
+	@XmlJavaTypeAdapter(ColorXmlAdaptor.class)
 	public Color getColor() {
 		return color;
 	}
@@ -166,5 +167,15 @@ public class FontInfo {
 		sb.append(StringUtilities.toRGBCode(getColor()));
 		sb.append(";\n");
 		return(sb.toString());
+	}
+
+	@Override
+	public FontInfo clone() throws CloneNotSupportedException {
+		FontInfo newFontInfo = new FontInfo();
+		newFontInfo.setFontFamily(getFontFamily());
+		newFontInfo.setFontSize(getFontSize());
+		newFontInfo.setFontType(getFontType());
+		newFontInfo.setColor(getColor());
+		return newFontInfo;
 	}
 }

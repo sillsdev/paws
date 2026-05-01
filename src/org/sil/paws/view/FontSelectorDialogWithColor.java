@@ -24,7 +24,13 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package org.controlsfx.dialog;
+// Modifications: 
+/* Copyright (c) 2016-2025 SIL Global
+ * This software is licensed under the LGPL, version 2.1 or later
+ * (http://www.gnu.org/licenses/lgpl-2.1.html)
+ */
+
+package org.sil.paws.view;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -40,10 +46,8 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.transformation.FilteredList;
-import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Dialog;
@@ -64,11 +68,11 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
-
+// This extends the font selector dialog of ControlsFX and is based on it
 public class FontSelectorDialogWithColor extends Dialog<Font> {
 
 	private FontPanel fontPanel;
-	private Font defaultFont;
+//	private Font defaultFont;
 	private String dialogTitle;
 	private String dialogHeaderText;
 
@@ -79,7 +83,7 @@ public class FontSelectorDialogWithColor extends Dialog<Font> {
 		fontPanel = new FontPanel(bundle, defaultColor);
 		fontPanel.setFont(defaultFont);
 
-		this.defaultFont = defaultFont;
+//		this.defaultFont = defaultFont;
 
 		setResultConverter(dialogButton -> dialogButton == ButtonType.OK ? fontPanel.getFont()
 				: null);
@@ -89,8 +93,8 @@ public class FontSelectorDialogWithColor extends Dialog<Font> {
 		setTitle(dialogTitle);
 		dialogPane.setHeaderText(dialogHeaderText);
 		dialogPane.getStyleClass().add("font-selector-dialog");
-		dialogPane.getStylesheets().add(
-				FontSelectorDialogWithColor.class.getResource("dialogs.css").toExternalForm());
+//		dialogPane.getStylesheets().add(
+//				FontSelectorDialogWithColor.class.getResource("dialogs.css").toExternalForm());
 		dialogPane.getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
 		dialogPane.setContent(fontPanel);
 	}
@@ -379,11 +383,14 @@ public class FontSelectorDialogWithColor extends Dialog<Font> {
 			add(sampleStack, 0, 3, 1, 3);
 			
 			 ColorPicker colorPicker = new ColorPicker(defaultColor);
-			 colorPicker.setOnAction(new EventHandler() {
-			     public void handle(Event t) {
+			 colorPicker.setOnAction(e -> {
 			         color = colorPicker.getValue();
-			     }
 			 });
+//			 colorPicker.setOnAction(new EventHandler() {
+//			     public void handle(Event t) {
+//			         color = colorPicker.getValue();
+//			     }
+//			 });
 			 colorPicker.setMinHeight(25);
 			 colorPicker.setPrefWidth(100);
 			 add(colorPicker, 0, 4, 4, 4);
@@ -402,9 +409,9 @@ public class FontSelectorDialogWithColor extends Dialog<Font> {
 			return color;
 		}
 
-		public void setColor(Color color) {
-			this.color = color;
-		}
+//		public void setColor(Color color) {
+//			this.color = color;
+//		}
 
 		public Font getFont() {
 			try {
