@@ -17,7 +17,7 @@ module org.sil.paws {
 	requires transitive javafx.fxml;
 	requires javafx.graphics;
 	requires javafx.swing;
-	requires javafx.web;
+	requires transitive javafx.web;
 
 	// JNA
 	requires com.sun.jna;
@@ -34,6 +34,7 @@ module org.sil.paws {
 	requires javafx.base;
 	requires javafx.media;
 	requires java.base;
+	requires transitive java.xml;
 	requires jakarta.xml.bind;
 	requires jdk.jsobject;
 }

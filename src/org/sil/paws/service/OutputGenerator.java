@@ -303,7 +303,7 @@ public class OutputGenerator {
 			sResult = language.getValue("/paws/@outputWriterPractical");
 			if (sResult.equals("True")) {
 				sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime,
-						new Locale("en"));
+						Locale.of("en"));
 				setDateTimeStamp(sDateTimeStamp);
 				if (transformerPAWSSKMasterWriterPracticalMapper == null) {
 					initMasterWriterPracticalMapperTransform();
@@ -315,7 +315,7 @@ public class OutputGenerator {
 			sResult = language.getValue("/paws/@outputWriterPracticalFrench");
 			if (sResult.equals("True")) {
 				sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime,
-						new Locale("fr"));
+						Locale.of("fr"));
 				setDateTimeStamp(sDateTimeStamp);
 				if (transformerPAWSSKMasterWriterPracticalFrenchMapper == null) {
 					initMasterWriterPracticalFrenchMapperTransform();
@@ -327,7 +327,7 @@ public class OutputGenerator {
 			sResult = language.getValue("/paws/@outputWriterPracticalSpanish");
 			if (sResult.equals("True")) {
 				sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime,
-						new Locale("es"));
+						Locale.of("es"));
 				setDateTimeStamp(sDateTimeStamp);
 				if (transformerPAWSSKMasterWriterPracticalSpanishMapper == null) {
 					initMasterWriterPracticalSpanishMapperTransform();
@@ -379,8 +379,7 @@ public class OutputGenerator {
 
 	public void generateWriterPracticalOutputFile() {
 		try {
-			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, new Locale(
-					"en"));
+			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, Locale.of("en"));
 			setDateTimeStamp(sDateTimeStamp);
 			if (transformerPAWSSKMasterWriterPracticalMapper == null) {
 				initMasterWriterPracticalMapperTransform();
@@ -394,8 +393,7 @@ public class OutputGenerator {
 
 	public void generateWriterPracticalFrenchOutputFile() {
 		try {
-			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, new Locale(
-					"fr"));
+			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, Locale.of("fr"));
 			setDateTimeStamp(sDateTimeStamp);
 			if (transformerPAWSSKMasterWriterPracticalFrenchMapper == null) {
 				initMasterWriterPracticalFrenchMapperTransform();
@@ -409,8 +407,7 @@ public class OutputGenerator {
 
 	public void generateWriterPracticalSpanishOutputFile() {
 		try {
-			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, new Locale(
-					"es"));
+			sDateTimeStamp = DateTimeNormalizer.normalizeDateTimeWithWords(dateTime, Locale.of("es"));
 			setDateTimeStamp(sDateTimeStamp);
 			if (transformerPAWSSKMasterWriterPracticalSpanishMapper == null) {
 				initMasterWriterPracticalSpanishMapperTransform();

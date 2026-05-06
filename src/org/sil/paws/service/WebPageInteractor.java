@@ -48,7 +48,7 @@ public class WebPageInteractor {
 	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
 	static {
 		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
-				new Locale("en")));
+				Locale.of("en")));
 	}
 
 	/**
@@ -94,7 +94,7 @@ public class WebPageInteractor {
 	}
 
 	public void setInterfaceLanguage(String sLangCode) {
-		mainApp.setLocale(new Locale(sLangCode));
+		mainApp.setLocale(Locale.of(sLangCode));
 	}
 
 	public void saveInterfaceLanguage() {
@@ -364,7 +364,7 @@ public class WebPageInteractor {
 		String sKeyboardDescription = language.getValue(ksKeyboardDescription);
 		String sKeyboardLocale = language.getValue(ksKeyboardLocale);
 		String sKeyboardWindowsLangID = language.getValue(ksKeyboardWindowsLangID);
-		Locale locale = new Locale(sKeyboardLocale);
+		Locale locale = Locale.of(sKeyboardLocale);
 		if (sKeyboardWindowsLangID.equals("")) {
 			sKeyboardWindowsLangID = "0";
 		}

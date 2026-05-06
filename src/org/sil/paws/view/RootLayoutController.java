@@ -71,7 +71,6 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import netscape.javascript.JSObject;
 
-import org.sil.paws.view.KeyboardChooserController;
 import org.sil.paws.view.RootLayoutController;
 import org.sil.paws.model.FontInfo;
 import org.sil.paws.ApplicationPreferences;
@@ -251,7 +250,7 @@ public class RootLayoutController implements Initializable {
 			.getInstance();
 	static {
 		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
-				new Locale("en")));
+				Locale.of("en")));
 	}
 
 	@Override

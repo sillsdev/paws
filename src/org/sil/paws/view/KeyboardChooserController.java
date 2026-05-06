@@ -42,10 +42,10 @@ public class KeyboardChooserController implements Initializable {
 	@FXML
 	private ComboBox<KeyboardInfo> writer = new ComboBox<KeyboardInfo>();
 
-	private KeyboardInfo vernacularKeyboardInfo = new KeyboardInfo(new Locale("en"), "English"); 
-	private KeyboardInfo freeGlossKeyboardInfo = new KeyboardInfo(new Locale("en"), "English"); 
-	private KeyboardInfo ipaKeyboardInfo = new KeyboardInfo(new Locale("en"), "English"); 
-	private KeyboardInfo writerKeyboardInfo = new KeyboardInfo(new Locale("en"), "English");
+	private KeyboardInfo vernacularKeyboardInfo = new KeyboardInfo(Locale.of("en"), "English"); 
+	private KeyboardInfo freeGlossKeyboardInfo = new KeyboardInfo(Locale.of("en"), "English"); 
+	private KeyboardInfo ipaKeyboardInfo = new KeyboardInfo(Locale.of("en"), "English"); 
+	private KeyboardInfo writerKeyboardInfo = new KeyboardInfo(Locale.of("en"), "English");
 	private Text keyboardText = new Text();
 	
 	Stage dialogStage;

@@ -42,7 +42,7 @@ public class DatabaseMigrator {
 	private static final ObservableResourceFactory RESOURCE_FACTORY = ObservableResourceFactory.getInstance();
 	static {
 		RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION,
-				new Locale("en")));
+				Locale.of("en")));
 	}
 
 	String[][] versionToTransform = {

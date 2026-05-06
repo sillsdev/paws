@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2024 SIL International
+// Copyright (c) 2016-2026 SIL International
 // This software is licensed under the LGPL, version 2.1 or later
 // (http://www.gnu.org/licenses/lgpl-2.1.html)
 /**
@@ -21,7 +21,6 @@ import org.junit.Test;
 import org.sil.paws.model.Language;
 import org.sil.paws.Constants;
 import org.sil.paws.backendprovider.XMLBackEndProvider;
-import org.sil.paws.service.DatabaseMigrator;
 import org.sil.utility.view.JavaFXThreadingRule;
 
 /**
@@ -58,7 +57,7 @@ public class DatabaseMigratorTest {
 		Files.copy(Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_11_ORIG),
 				Paths.get(Constants.UNIT_TEST_DATA_FILE_VERSION_11),
 				StandardCopyOption.REPLACE_EXISTING);
-		locale = new Locale("en");
+		locale = Locale.of("en");
 	}
 
 	/**

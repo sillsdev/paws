@@ -17,7 +17,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.sil.paws.Constants;
 import org.sil.paws.model.Language;
-import org.sil.paws.backendprovider.XMLBackEndProvider;
 
 /**
  * @author Andy Black
@@ -35,7 +34,7 @@ public class XMLBackEndProviderTest {
 	public void setUp() throws Exception {
 
 		language = new Language();
-		Locale locale = new Locale("en");
+		Locale locale = Locale.of("en");
 		xmlBackEndProvider = new XMLBackEndProvider(language, locale);
 		File file = new File(Constants.UNIT_TEST_DATA_FILE);
 		xmlBackEndProvider.loadLanguageDataFromFile(file);

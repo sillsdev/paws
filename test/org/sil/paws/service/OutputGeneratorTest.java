@@ -45,7 +45,7 @@ public class OutputGeneratorTest {
 	@Before
 	public void setUp() throws Exception {
 		language = new Language();
-		Locale locale = new Locale("en");
+		Locale locale = Locale.of("en");
 		XMLBackEndProvider xmlBackEndProvider = new XMLBackEndProvider(language, locale);
 		languageFile = new File(Constants.UNIT_TEST_DATA_FILE);
 		xmlBackEndProvider.loadLanguageDataFromFile(languageFile);

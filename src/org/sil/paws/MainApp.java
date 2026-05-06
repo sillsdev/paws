@@ -72,7 +72,7 @@ public class MainApp extends Application implements MainAppUtilities {
 					createSplashScreen();
 
 					applicationPreferences = new ApplicationPreferences(this);
-					locale = new Locale(applicationPreferences.getLastLocaleLanguage());
+					locale = Locale.of(applicationPreferences.getLastLocaleLanguage());
 					language = new Language();
 					xmlBackEndProvider = new XMLBackEndProvider(language, locale);
 					restoreWindowSettings();

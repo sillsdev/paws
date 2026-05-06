@@ -119,7 +119,7 @@ public class Language {
 		String sKeyboardDescription = getValue(ksKeyboardDescription);
 		String sKeyboardLocale = getValue(ksKeyboardLocale);
 		String sKeyboardWindowsLangID = getValue(ksKeyboardWindowsLangID);
-		Locale locale = new Locale(sKeyboardLocale);
+		Locale locale = Locale.of(sKeyboardLocale);
 		if (sKeyboardWindowsLangID.equals("")) {
 			sKeyboardWindowsLangID = "0";
 		}
