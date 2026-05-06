@@ -43,3 +43,8 @@ build/project
 *.properties~
 bin/
 Cheri'sWork/
+installer/windows/*.exe
+installer/windows/input/
+installer/windows/installtemp/
+installer/windows/output/
+installer/windows/setPath.bat
