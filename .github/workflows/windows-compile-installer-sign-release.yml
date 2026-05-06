@@ -1,0 +1,99 @@
+# This workflow will build a Java project with Ant
+
+name: Windows Build Installer with Version
+
+on:
+  push:
+    tags:
+      - 'v*'  # Build the app for commits that are tagged starting with 'v' e.g. v1.2.3
+      # to tag a commit, use "git tag v1.2.3"
+      # when you then use "git push origin v1.2.3" this workflow will be invoked
+
+jobs:
+  build-installer:
+
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+
+      - name: Set VERSION (e.g. 1.0.0) and FULL_VERSION (e.g. 1.0.0-abcdef4)
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          FULL_VERSION="${VERSION}-${SHORT_SHA}"
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "FULL_VERSION=${FULL_VERSION}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Validate version format
+        run: |
+          echo ${VERSION}
+          if [[ ! "${VERSION}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Error: Version format is incorrect. It should match N.N.N where N is an integer."
+            exit 1
+          fi
+        shell: bash
+#      - name: Build version ${{ env.VERSION }}
+#      - uses: actions/checkout@v4
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'zulu'
+          java-package: 'jdk+fx'
+      - name: Build with Ant
+        run: |
+          ant -noinput -buildfile build.xml
+          echo $JAVA_HOME
+        shell: bash
+      - name: Run the Windows installer batch file
+        run: |
+          cd installer/windows
+          BuildWin.bat ${{ env.VERSION }}
+        shell: cmd
+      - name: Rename exe file with version and architecture
+        env:
+          PUBLISH_PATH: 'installer/windows'
+        run: |
+          mv ${{env.PUBLISH_PATH}}\PAWS-${{ env.VERSION }}.exe PAWS-${{ env.VERSION }}.exe
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PAWS
+          path: PAWS-*.exe
+          if-no-files-found: error
+
+  sign-installer-release:
+    name: Sign Installer and Create Release
+    needs: build-installer 
+    runs-on: windows-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: PAWS
+      - name: Sign with Trusted Signing
+        uses: sillsdev/codesign/trusted-signing-action@v3
+        with:
+          credentials: ${{ secrets.TRUSTED_SIGNING_CREDENTIALS }}
+          files-folder: .
+          files-folder-filter: PAWS*.exe
+          files-folder-recurse: true
+          files-folder-depth: 4
+          description:  'Release for version ${{ needs.build.outputs.version }} from branch ${{ github.ref }}'
+          description-url: 'https://software.sil.org/paws/'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PAWSSigned
+          path: PAWS-*.exe
+          if-no-files-found: error
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: PAWS-*.exe
+          body: |
+            Release for version ${{ github.ref }}
+          draft: true
