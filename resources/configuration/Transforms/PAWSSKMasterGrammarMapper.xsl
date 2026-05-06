@@ -39,7 +39,17 @@ Main template
     <xsl:apply-templates select="/" mode="vpintcop"/>
     <xsl:apply-templates select="/" mode="vptran"/>
     <xsl:apply-templates select="/" mode="vpditranpp"/>
+    <xsl:apply-templates select="/" mode="vpditranpp2"/>
+    <xsl:apply-templates select="/" mode="vpditranpp3"/>
+    <xsl:apply-templates select="/" mode="vpditranpp4"/>
+    <xsl:apply-templates select="/" mode="vpditranpp5"/>
     <xsl:apply-templates select="/" mode="vpditrandp"/>
+    <xsl:apply-templates select="/" mode="vpditrandp2"/>
+    <xsl:apply-templates select="/" mode="vpditrandp3"/>
+    <xsl:apply-templates select="/" mode="vpditrandp4"/>
+    <xsl:apply-templates select="/" mode="vpditrandp5"/>
+    <xsl:apply-templates select="/" mode="vpditrandp6"/>
+    <xsl:apply-templates select="/" mode="vpditrandp7"/>
     <xsl:apply-templates select="/" mode="vpsentpass"/>
     <xsl:apply-templates select="/" mode="vppassvso"/>
     <xsl:apply-templates select="/" mode="vpvsoaux"/>
@@ -67,7 +77,17 @@ Include other templates
   <xsl:include href="GrammarVPIntCop.xsl"/>
   <xsl:include href="GrammarVPTran.xsl"/>
   <xsl:include href="GrammarVPDitranPP.xsl"/>
+  <xsl:include href="GrammarVPDitranPP2.xsl"/>
+  <xsl:include href="GrammarVPDitranPP3.xsl"/>
+  <xsl:include href="GrammarVPDitranPP4.xsl"/>
+  <xsl:include href="GrammarVPDitranPP5.xsl"/>
   <xsl:include href="GrammarVPDitranDP.xsl"/>
+  <xsl:include href="GrammarVPDitranDP2.xsl"/>
+  <xsl:include href="GrammarVPDitranDP3.xsl"/>
+  <xsl:include href="GrammarVPDitranDP4.xsl"/>
+  <xsl:include href="GrammarVPDitranDP5.xsl"/>
+  <xsl:include href="GrammarVPDitranDP6.xsl"/>
+  <xsl:include href="GrammarVPDitranDP7.xsl"/>
   <xsl:include href="GrammarVPSentPass.xsl"/>
   <xsl:include href="GrammarVPPassVSO.xsl"/>
   <xsl:include href="GrammarVPVSOAux.xsl"/>

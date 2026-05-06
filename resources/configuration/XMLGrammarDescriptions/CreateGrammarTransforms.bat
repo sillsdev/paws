@@ -10,7 +10,17 @@ call CreateGrammarTransform QP qp
 call CreateGrammarTransform VPIntCop vpintcop
 call CreateGrammarTransform VPTran vptran
 call CreateGrammarTransform VPDitranPP vpditranpp
+call CreateGrammarTransform VPDitranPP2 vpditranpp2
+call CreateGrammarTransform VPDitranPP3 vpditranpp3
+call CreateGrammarTransform VPDitranPP4 vpditranpp4
+call CreateGrammarTransform VPDitranPP5 vpditranpp5
 call CreateGrammarTransform VPDitranDP vpditrandp
+call CreateGrammarTransform VPDitranDP2 vpditrandp2
+call CreateGrammarTransform VPDitranDP3 vpditrandp3
+call CreateGrammarTransform VPDitranDP4 vpditrandp4
+call CreateGrammarTransform VPDitranDP5 vpditrandp5
+call CreateGrammarTransform VPDitranDP6 vpditrandp6
+call CreateGrammarTransform VPDitranDP7 vpditrandp7
 call CreateGrammarTransform VPSentPass vpsentpass
 call CreateGrammarTransform VPPassVSO vppassvso
 call CreateGrammarTransform VPVSOAux vpvsoaux
