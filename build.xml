@@ -3,7 +3,8 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="paws">
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="paws">
     <property environment="env"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
@@ -20,6 +21,23 @@
     </path>
     <path id="paws.classpath">
         <pathelement location="bin"/>
+        <path refid="JavaFX SDK.libraryclasspath"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="libs/JAXB/jakarta.activation.jar"/>
+        <pathelement location="libs/JAXB/jakarta.xml.bind-api.jar"/>
+        <pathelement location="libs/JAXB/jaxb-core.jar"/>
+        <pathelement location="libs/JAXB/jaxb-impl.jar"/>
+        <pathelement location="libs/JAXB/jaxb-jxc.jar"/>
+        <pathelement location="libs/JAXB/jaxb-xjc.jar"/>
+        <pathelement location="libs/jna/jna-5.11.0.jar"/>
+        <pathelement location="libs/jna/jna-platform-5.11.0.jar"/>
+        <pathelement location="libs/json/json-20230618.jar"/>
+        <pathelement location="libs/ControlsFX/controlsfx-11.0.2.jar"/>
+        <pathelement location="libs/LibJavaDev/libjavadev-1.7.1.jar"/>
+        <pathelement location="libs/saxon/saxon9he.jar"/>
+    </path>
+    <path id="run.MainApp (4).classpath">
+        <path refid="paws.classpath"/>
         <path refid="JavaFX SDK.libraryclasspath"/>
         <path refid="JUnit 4.libraryclasspath"/>
         <pathelement location="libs/JAXB/jakarta.activation.jar"/>
