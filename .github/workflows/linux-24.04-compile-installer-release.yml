@@ -1,6 +1,6 @@
 # This workflow will build a Java project with Ant
 
-name: Linux (22.04) Build Installer with Version
+name: Linux (24.04) Build Installer with Version
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
   build-installer:
 
 #    runs-on: ubuntu-latest
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,7 +26,7 @@ jobs:
           VERSION="${GITHUB_REF#refs/tags/v}"
           SHORT_SHA=$(git rev-parse --short HEAD)
           FULL_VERSION="${VERSION}-${SHORT_SHA}"
-          LINUXTARGET="22.04"
+          LINUXTARGET="24.04"
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
           echo "FULL_VERSION=${FULL_VERSION}" >> $GITHUB_ENV
           echo "LINUXTARGET=${LINUXTARGET}" >> $GITHUB_ENV
@@ -75,7 +75,7 @@ jobs:
     name: Create Release
     needs: build-installer
 #    runs-on: ubuntu-latest
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/download-artifact@v4
         with:

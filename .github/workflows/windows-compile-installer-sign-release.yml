@@ -13,7 +13,8 @@ jobs:
   build-installer:
 
     runs-on: windows-latest
-
+    env:
+      WIX_OSMF_EULA_ACCEPTED: "1"  # Acknowledges the WiX v7 license requirement
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,16 +46,29 @@ jobs:
           java-version: '25'
           distribution: 'zulu'
           java-package: 'jdk+fx'
+
       - name: Build with Ant
         run: |
           ant -noinput -buildfile build.xml
           echo $JAVA_HOME
         shell: bash
+
+      - name: Prepare WiX Extensions
+        run: |
+          # Install the stable v5 tool
+          dotnet tool install -g wix --version 5.0.2
+
+          # Re-add the extensions for v5
+          wix extension add -g WixToolset.Util.wixext/5.0.2
+          wix extension add -g WixToolset.UI.wixext/5.0.2
+        shell: powershell
+
       - name: Run the Windows installer batch file
         run: |
           cd installer/windows
           BuildWin.bat ${{ env.VERSION }}
         shell: cmd
+
       - name: Rename exe file with version and architecture
         env:
           PUBLISH_PATH: 'installer/windows'

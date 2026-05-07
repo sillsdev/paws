@@ -381,7 +381,7 @@ public class WebPageInteractor {
 		if (sOperatingSystem.toLowerCase().contains("windows")) {
 			return true;
 		} else if (sOperatingSystem.toLowerCase().contains("mac")) {
-			return false;
+			return true;
 		} else {
 			return false;
 		}

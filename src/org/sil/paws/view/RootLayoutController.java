@@ -232,7 +232,8 @@ public class RootLayoutController implements Initializable {
 	ApplicationPreferences applicationPreferences;
 	WebPageInteractor webPageInteractor;
 	boolean fIsDirty;
-	private static final String kHTMsFolder = "/resources/configuration/HTMs/";
+//	private static final String kHTMsFolder = "/resources/configuration/HTMs/";
+	private static final String kHTMsFolder = "/HTMs/";
 	private String sProgramLocation;
 	private String sPAWSWorkingDirectory;
 	private String htmlMapperStylesheet;
@@ -260,13 +261,26 @@ public class RootLayoutController implements Initializable {
 		keyboardChanger = KeyboardChanger.getInstance();
 		keyboardChanger.initKeyboardHandler(MainApp.class);
 		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
-		try {
-			sConfigurationDirectory = new File(".").getCanonicalPath() + File.separator
+//		try {
+			String sExecutable= System.getProperty("user.dir");
+			String sUri = ControllerUtilities.getUriOfProgram(MainApp.class).replace("file:","");
+			if (File.separator.equals("\\")) {
+				sUri = sUri.replace("/", "\\");
+			}
+			System.out.println("exe = '" + sExecutable + "'");
+			System.out.println("uri = '" + sUri + "'");
+//			showAlert("uri = '" + sUri + "'");
+//			showAlert("exe = '" + sExecutable + "'");
+//			sConfigurationDirectory = new File(sUri).getCanonicalPath() + File.separator
+//					+ "resources" + File.separator + "configuration" + File.separator;
+			sConfigurationDirectory = sUri.replace("%20", " ") //+ File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+//			showAlert("config = '" + sConfigurationDirectory + "'");
+			System.out.println("config = '" + sConfigurationDirectory + "'");
+//		} catch (IOException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
 		initToolbarButtons(bundle);
 
 		webEngine = browser.getEngine();
@@ -330,12 +344,13 @@ public class RootLayoutController implements Initializable {
 		initMenuItemsForLocalization();
 		createContextMenu();
 
-		try {
-			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
+			sProgramLocation = Constants.FILE_PROTOCOL + "/" + sConfigurationDirectory;
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 
 		sPAWSWorkingDirectory = getWorkingPageOutputDirectory();
 
@@ -370,6 +385,7 @@ public class RootLayoutController implements Initializable {
 			public void run() {
 				String sPath = sConfigurationDirectory + "HTMs" + File.separator + "Contents"
 						+ getCurrentLocaleCode() + ".htm";
+				System.out.println("loadContentsPageInNewMode: sPath = '" + sPath + "'");
 				File contentsFile = new File(sPath);
 				String sPageToLoad = Constants.FILE_PROTOCOL + contentsFile.toURI().getPath();
 				webEngine.load(sPageToLoad);
@@ -813,6 +829,7 @@ public class RootLayoutController implements Initializable {
 
 	private void showAlert(String message) {
 		Dialog<Void> alert = new Dialog<>();
+		alert.setWidth(750.0);
 		alert.getDialogPane().setContentText(message);
 		alert.getDialogPane().getButtonTypes().add(ButtonType.OK);
 		alert.showAndWait();

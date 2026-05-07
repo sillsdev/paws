@@ -8,5 +8,5 @@ mkdir -p output/PAWS/resources
 cp -r input/resources output/PAWS/ > /dev/null
 chmod +x output/PAWS/resources/Keyboards/macOS/xkbswitch
 #rm -r input/PcPatrEditor/lib/app/resources > /dev/null
-cp -r input/doc output/PAWS > /dev/null
+#cp -r input/doc output/PAWS > /dev/null
 #rm -r input/PcPatrEditor/lib/app/doc > /dev/null
