@@ -48,3 +48,14 @@ installer/windows/input/
 installer/windows/installtemp/
 installer/windows/output/
 installer/windows/setPath.bat
+installer/linux/input
+installer/linux/output
+installer/linux/installtemp
+installer/linux/META-INF
+installer/linux/*.deb
+installer/macos/input
+installer/macos/output
+installer/macos/installtemp
+installer/macos/META-INF
+installer/macos/*.dmg
+installer/macos/check-notarized.sh

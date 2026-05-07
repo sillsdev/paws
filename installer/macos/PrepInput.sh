@@ -1,0 +1,27 @@
+#! /bin/bash
+echo "	Libraries"
+if [ ! -d input/libs ]; then
+ mkdir -p input/libs
+else
+ rm -r input/libs/* > /dev/null
+fi
+cp -r ../../libs/ControlsFX/* input/libs > /dev/null
+cp -r ../../libs/JAXB/* input/libs > /dev/null
+cp -r ../../libs/jna input/libs > /dev/null
+cp -r ../../libs/json input/libs > /dev/null
+cp -r ../../libs/LibJavaDev input/libs > /dev/null
+cp -r ../../libs/saxon/* input/libs > /dev/null
+
+echo "	Resources"
+if [ ! -d input/resources ]; then
+ mkdir -p input/resources
+else
+ rm -r input/resources/* > /dev/null
+fi
+cp -r ../../src/org/sil/paws/resources input
+cp PAWS.icns input/PAWS.icns > /dev/null
+chmod +x input/resources/Keyboards/macOS/*
+
+echo "	Jar file"
+./CreateJar.sh
+
