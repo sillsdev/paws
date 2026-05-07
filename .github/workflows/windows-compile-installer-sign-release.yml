@@ -13,7 +13,8 @@ jobs:
   build-installer:
 
     runs-on: windows-latest
-
+    env:
+      WIX_OSMF_EULA_ACCEPTED: "1"  # Acknowledges the WiX v7 license requirement
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,6 +46,13 @@ jobs:
           java-version: '25'
           distribution: 'zulu'
           java-package: 'jdk+fx'
+
+      - name: Prepare WiX Extensions
+        run: |
+          wix extension add -g WixToolset.Util.wixext
+          wix extension add -g WixToolset.UI.wixext
+        shell: powershell
+
       - name: Build with Ant
         run: |
           ant -noinput -buildfile build.xml
