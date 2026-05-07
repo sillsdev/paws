@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=PAWS
+Comment=Parser & Writer for Syntax
+Exec=/opt/sil/paws/bin/PAWS
+Path=/opt/sil/paws/bin
+Icon=/opt/sil/paws/lib/PAWS.png
+Terminal=false
+Type=Application
+Categories=Education
+MimeType=text/paw
