@@ -30,7 +30,7 @@ module org.sil.paws {
 	requires transitive org.sil.utility;
 
 	// JUnit
-	requires junit;
+//	requires junit;
 
 	// Other modules/libraries
 	requires transitive org.controlsfx.controls;
