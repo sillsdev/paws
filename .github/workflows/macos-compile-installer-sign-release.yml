@@ -51,16 +51,19 @@ jobs:
           distribution: 'zulu'
           java-package: 'jdk+fx'
           architecture: 'aarch64'
+
       - name: Build with Ant
         run: |
           ant -noinput -buildfile build.xml
         shell: bash
+
       - name: Run the macOS installer script
         run: |
           cd installer/macos
           chmod +x *.sh
           ./BuildMacOS.sh ${{ env.VERSION }}
         shell: bash
+
       - name: Rename dmg file with version
         env:
           PUBLISH_PATH: 'installer/macos'
@@ -147,6 +150,14 @@ jobs:
           </plist>
           EOF
         shell: bash
+
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'zulu'
+          java-package: 'jdk+fx'
+          architecture: 'aarch64'
 
       - name: Sign dmg and app
         run: |
