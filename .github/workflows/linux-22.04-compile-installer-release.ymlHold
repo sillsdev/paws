@@ -1,0 +1,90 @@
+# This workflow will build a Java project with Ant
+
+name: Linux (22.04) Build Installer with Version
+
+on:
+  push:
+    tags:
+      - 'v*'  # Build the app for commits that are tagged starting with 'v' e.g. v1.2.3
+      # to tag a commit, use "git tag v1.2.3"
+      # when you then use "git push origin v1.2.3" this workflow will be invoked
+#  workflow_dispatch:
+
+jobs:
+  build-installer:
+
+#    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+
+      - name: Set VERSION (e.g. 1.0.0) and FULL_VERSION (e.g. 1.0.0-abcdef4)
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          FULL_VERSION="${VERSION}-${SHORT_SHA}"
+          LINUXTARGET="22.04"
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "FULL_VERSION=${FULL_VERSION}" >> $GITHUB_ENV
+          echo "LINUXTARGET=${LINUXTARGET}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Validate version format
+        run: |
+          echo ${VERSION}
+          if [[ ! "${VERSION}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Error: Version format is incorrect. It should match N.N.N where N is an integer."
+            exit 1
+          fi
+        shell: bash
+
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'zulu'
+          java-package: 'jdk+fx'
+      - name: Build with Ant
+        run: |
+          ant -noinput -buildfile build.xml
+        shell: bash
+
+      - name: Run the Linux installer script
+        run: |
+          cd installer/linux
+          chmod +x *.sh
+          ./BuildLinux.sh ${{ env.VERSION }}
+        shell: bash
+
+      - name: Rename deb file with version and architecture
+        env:
+          PUBLISH_PATH: 'installer/linux'
+        run: |
+          mv ${{env.PUBLISH_PATH}}/paws_${{ env.VERSION }}_amd64.deb PAWS-${{ env.VERSION }}-${{ env.LINUXTARGET }}.deb
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PAWS
+          path: PAWS-*.deb
+          if-no-files-found: error
+
+  create-release:
+    name: Create Release
+    needs: build-installer
+#    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: PAWS
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: PAWS-*.deb
+          body: |
+            Release for version ${{ github.ref }}
+          draft: true
