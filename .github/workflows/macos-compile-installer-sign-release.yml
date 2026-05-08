@@ -193,12 +193,13 @@ jobs:
           ls -l
           jar xf jna-5.11.0.jar com/sun/jna/darwin-aarch64/libjnidispatch.jnilib com/sun/jna/darwin-x86-64/libjnidispatch.jnilib
           echo sign jna
-          codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../../../../../../installer/macos/entitlements.plist com/sun/jna/darwin-aarch64/libjnidispatch.jnilib -v
-          codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../../../../../../installer/macos/entitlements.plist com/sun/jna/darwin-x86-64/libjnidispatch.jnilib -v
+          codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../../../../../installer/macos/entitlements.plist com/sun/jna/darwin-aarch64/libjnidispatch.jnilib -v
+          codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../../../../../installer/macos/entitlements.plist com/sun/jna/darwin-x86-64/libjnidispatch.jnilib -v
           echo update jna
           jar uf jna-5.11.0.jar com/sun/jna/darwin-aarch64/libjnidispatch.jnilib com/sun/jna/darwin-x86-64/libjnidispatch.jnilib
           rm -r com
-          cd ../../../../..
+          #cd ../../../../..
+          cd ../../../..
           echo fx stuff
           #pwd
           #ls -l
