@@ -41,12 +41,6 @@ jobs:
           fi
         shell: bash
 
-#      - name: Install Linux Build Tools
-#        # fakeroot and binutils are strictly required by jpackage on Linux
-#        run: |
-#          sudo apt-get update
-#          sudo apt-get install -y fakeroot binutils rpm
-
       - name: Set up JDK 25
         uses: actions/setup-java@v4
         with:
@@ -69,6 +63,8 @@ jobs:
         env:
           PUBLISH_PATH: 'installer/linux'
         run: |
+          cd ${{env.PUBLISH_PATH}}
+          pwd
           ls -lR
           mv ${{env.PUBLISH_PATH}}/paws_${{ env.VERSION }}-1_amd64.deb PAWS-${{ env.VERSION }}-${{ env.LINUXTARGET }}.deb
 
