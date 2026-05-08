@@ -4,7 +4,7 @@
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
-<project basedir="." default="PAWS" name="paws">
+<project basedir="." default="build" name="paws">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../eclipse/java-2023-09/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
@@ -15,9 +15,9 @@
         <pathelement location="../../../.p2/pool/plugins/org.eclipse.fx.ide.css.jfx8_3.10.0.202303150700.jar"/>
     </path>
     <path id="JUnit 4.libraryclasspath">
-        <pathelement location="../../../.p2/pool/plugins/org.junit_4.13.2.v20230809-1000.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.hamcrest_2.2.0.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.hamcrest.core_2.2.0.v20230809-1000.jar"/>
+        <pathelement location="libs/JUnit/org.junit_4.13.2.v20230809-1000.jar"/>
+        <pathelement location="libs/JUnit/org.hamcrest_2.2.0.jar"/>
+        <pathelement location="libs/JUnit/org.hamcrest.core_2.2.0.v20230809-1000.jar"/>
     </path>
     <path id="paws.classpath">
         <pathelement location="bin"/>
@@ -35,23 +35,6 @@
         <pathelement location="libs/JAXB/jaxb-impl.jar"/>
         <pathelement location="libs/JAXB/jaxb-jxc.jar"/>
         <pathelement location="libs/JAXB/jaxb-xjc.jar"/>
-    </path>
-    <path id="run.OutputGeneratorTest.classpath">
-        <path refid="paws.classpath"/>
-        <path refid="JavaFX SDK.libraryclasspath"/>
-        <path refid="JUnit 4.libraryclasspath"/>
-        <pathelement location="libs/ControlsFX/controlsfx-11.0.2.jar"/>
-        <pathelement location="libs/jna/jna-5.11.0.jar"/>
-        <pathelement location="libs/jna/jna-platform-5.11.0.jar"/>
-        <pathelement location="libs/json/json-20230618.jar"/>
-        <pathelement location="libs/saxon/saxon9he.jar"/>
-        <pathelement location="libs/LibJavaDev/libjavadev-1.7.1.jar"/>
-        <pathelement location="libs/JAXB/jakarta.activation.jar"/>
-        <pathelement location="libs/JAXB/jakarta.xml.bind-api.jar"/>
-        <pathelement location="libs/JAXB/jaxb-core.jar"/>
-        <pathelement location="libs/JAXB/jaxb-impl.jar"/>
-        <pathelement location="libs/JAXB/jaxb-xjc.jar"/>
-        <pathelement location="libs/JAXB/jaxb-jxc.jar"/>
     </path>
     <path id="run.PAWS test.classpath">
         <path refid="paws.classpath"/>
@@ -110,10 +93,10 @@
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" encoding="utf-8" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <src path="test"/>
-            <classpath refid="paws.classpath"/>
+            <modulepath refid="paws.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
@@ -129,15 +112,6 @@
     <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
-    </target>
-    <target name="OutputGeneratorTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="org.sil.paws.service.OutputGeneratorTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.OutputGeneratorTest.classpath"/>
-        </junit>
     </target>
     <target name="PAWS test">
         <mkdir dir="${junit.output.dir}"/>
