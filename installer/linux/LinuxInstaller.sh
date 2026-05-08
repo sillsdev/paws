@@ -20,6 +20,6 @@ jpackage --type deb \
 	--icon input/PAWS.png \
 	--temp installtemp \
 	--app-version $1 \
-	--file-associations lingtree.properties \
+	--file-associations paws.properties \
 	--vendor "SIL International"
 # ./FixDesktopShortcutInDebFile.sh $VERSION
