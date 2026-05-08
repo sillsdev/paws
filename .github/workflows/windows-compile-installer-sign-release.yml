@@ -49,8 +49,12 @@ jobs:
 
       - name: Prepare WiX Extensions
         run: |
-          wix extension add -g WixToolset.Util.wixext
-          wix extension add -g WixToolset.UI.wixext
+          # Install the stable v5 tool
+          dotnet tool install -g wix --version 5.0.2
+
+          # Re-add the extensions for v5
+          wix extension add -g WixToolset.Util.wixext/5.0.2
+          wix extension add -g WixToolset.UI.wixext/5.0.2
         shell: powershell
 
       - name: Build with Ant
