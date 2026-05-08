@@ -47,6 +47,12 @@ jobs:
           distribution: 'zulu'
           java-package: 'jdk+fx'
 
+      - name: Build with Ant
+        run: |
+          ant -noinput -buildfile build.xml
+          echo $JAVA_HOME
+        shell: bash
+
       - name: Prepare WiX Extensions
         run: |
           # Install the stable v5 tool
@@ -57,16 +63,12 @@ jobs:
           wix extension add -g WixToolset.UI.wixext/5.0.2
         shell: powershell
 
-      - name: Build with Ant
-        run: |
-          ant -noinput -buildfile build.xml
-          echo $JAVA_HOME
-        shell: bash
       - name: Run the Windows installer batch file
         run: |
           cd installer/windows
           BuildWin.bat ${{ env.VERSION }}
         shell: cmd
+
       - name: Rename exe file with version and architecture
         env:
           PUBLISH_PATH: 'installer/windows'

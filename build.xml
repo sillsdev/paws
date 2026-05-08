@@ -4,7 +4,7 @@
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
-<project basedir="." default="build" name="paws">
+<project basedir="." default="PAWS" name="paws">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../eclipse/java-2023-09/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
