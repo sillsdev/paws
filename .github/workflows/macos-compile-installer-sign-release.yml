@@ -153,7 +153,7 @@ jobs:
           # leaving comments used for debugging in case we need them again
           #echo start
           #pwd
-          #ls -l
+          ls -l
           mkdir dmgContents
           cp -R /Volumes/PAWS dmgContents
           cd dmgContents/PAWS
