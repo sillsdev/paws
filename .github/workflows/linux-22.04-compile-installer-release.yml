@@ -41,25 +41,11 @@ jobs:
           fi
         shell: bash
 
-      - name: Install Linux Build Tools
-        # fakeroot and binutils are strictly required by jpackage on Linux
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y fakeroot binutils rpm
-
-#      - name: Setup Zulu JDK 25 (Full with JavaFX)
-#        uses: actions/setup-java@v4
-#        with:
-#          java-version: '25'
-#          distribution: 'zulu'
-#          # This ensures JavaFX modules are included in the JDK
-#          java-package: jdk+fx
-#
-#      - name: Run Ant Build
+#      - name: Install Linux Build Tools
+#        # fakeroot and binutils are strictly required by jpackage on Linux
 #        run: |
-#          # We pass JAVA_HOME explicitly to ensure Ant uses JDK 25
-#          ant -f build.xml -Djava.home=$JAVA_HOME
-#        shell: bash
+#          sudo apt-get update
+#          sudo apt-get install -y fakeroot binutils rpm
 
       - name: Set up JDK 25
         uses: actions/setup-java@v4
