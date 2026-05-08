@@ -170,7 +170,8 @@ jobs:
           #ls -l ../../../..
           codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../../../../installer/macos/entitlements.plist resources/Keyboards/macOS/xkbswitch -v
           #codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../../../../installer/macos/entitlements.plist org/sil/paws/resources/Keyboards/macOS/xkbswitch -v
-          echo before updating xkbswitch in paws.jar
+          echo before updating xkbswitch in paws.jar; the version of jar is
+          jar --version
           jar uf paws.jar resources/Keyboards/macOS/xkbswitch resources/Keyboards/macOS/xkbswitch
           echo after updating xkbswitch in paws.jar
           #rm -r org
