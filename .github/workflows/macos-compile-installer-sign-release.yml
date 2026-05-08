@@ -188,19 +188,19 @@ jobs:
           #rm -r org
           #cd libs/jna/
           cd libs
-          echo jna
-          pwd
-          ls -l
+          #echo jna
+          #pwd
+          #ls -l
           jar xf jna-5.11.0.jar com/sun/jna/darwin-aarch64/libjnidispatch.jnilib com/sun/jna/darwin-x86-64/libjnidispatch.jnilib
-          echo sign jna
+          #echo sign jna
           codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../../../../../installer/macos/entitlements.plist com/sun/jna/darwin-aarch64/libjnidispatch.jnilib -v
           codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../../../../../installer/macos/entitlements.plist com/sun/jna/darwin-x86-64/libjnidispatch.jnilib -v
-          echo update jna
+          #echo update jna
           jar uf jna-5.11.0.jar com/sun/jna/darwin-aarch64/libjnidispatch.jnilib com/sun/jna/darwin-x86-64/libjnidispatch.jnilib
           rm -r com
           #cd ../../../../..
           cd ../../../..
-          echo fx stuff
+          #echo fx stuff
           #pwd
           #ls -l
           # -------------  sign all JavaFX runtime executables included in the app
@@ -219,18 +219,18 @@ jobs:
           # libjli.dylib is there two times; remove the non -standard one
           rm -f PAWS.app/Contents/runtime/Contents/MacOS/libjli.dylib
           # -------------  sign the main app itself
-          echo sign PAWS.app
+          #echo sign PAWS.app
           codesign --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements ../../installer/macos/entitlements.plist PAWS.app -v
-          echo verify the app
+          #echo verify the app
           codesign -vvv --deep --strict PAWS.app
           cd ..
-          echo recreate dmg
+          #echo recreate dmg
           #pwd
           # ln -s /Applications PAWS/Applications
           hdiutil create -volname PAWSInstaller -srcfolder PAWS -ov -format UDZO PAWS-Signed.dmg
           mv PAWS-Signed.dmg ../PAWS-Signed.dmg
           cd ..
-          echo sign dmg
+          #echo sign dmg
           #pwd
           #ls -l
           codesign --deep --force --sign "${{ vars.SIL_APPLE_CODESIGN_IDENTITY }}" --timestamp --options runtime --entitlements installer/macos/entitlements.plist PAWS-Signed.dmg -v
