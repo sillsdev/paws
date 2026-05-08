@@ -158,8 +158,8 @@ jobs:
           cp -R /Volumes/PAWS dmgContents
           cd dmgContents/PAWS
           cd PAWS.app/Contents/app/
-          #pwd
-          #ls -lR
+          pwd
+          ls -lR resources
           #jar xf paws.jar resources/Keyboards/macOS/xkbswitch org/sil/paws/resources/Keyboards/macOS/xkbswitch
           chmod a+w resources/Keyboards/macOS/xkbswitch
           #chmod a+w org/sil/paws/resources/Keyboards/macOS/xkbswitch

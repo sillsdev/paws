@@ -65,8 +65,8 @@ jobs:
         run: |
           cd ${{env.PUBLISH_PATH}}
           pwd
-          ls -lR
-          mv ${{env.PUBLISH_PATH}}/paws_${{ env.VERSION }}-1_amd64.deb PAWS-${{ env.VERSION }}-${{ env.LINUXTARGET }}.deb
+          ls -l
+          mv ${{env.PUBLISH_PATH}}/paws_${{ env.VERSION }}_amd64.deb PAWS-${{ env.VERSION }}-${{ env.LINUXTARGET }}.deb
 
       - uses: actions/upload-artifact@v4
         with:
