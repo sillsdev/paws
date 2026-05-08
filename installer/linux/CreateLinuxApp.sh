@@ -12,7 +12,6 @@ jpackage --type app-image \
 	--name PAWS \
 	--main-jar paws.jar \
 	--main-class org.sil.paws.MainApp \
-	--java-options --enable-native-access=javafx.graphics,javafx.web,com.sun.jna ^
 	--icon input/PAWS.png \
 	--module-path jmods \
 	--vendor "SIL International"
