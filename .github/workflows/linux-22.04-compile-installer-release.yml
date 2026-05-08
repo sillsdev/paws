@@ -40,18 +40,38 @@ jobs:
             exit 1
           fi
         shell: bash
-#      - name: Build version ${{ env.VERSION }}
-#      - uses: actions/checkout@v4
-      - name: Set up JDK 25
+
+      - name: Install Linux Build Tools
+        # fakeroot and binutils are strictly required by jpackage on Linux
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fakeroot binutils rpm
+
+      - name: Setup Zulu JDK 25 (Full with JavaFX)
         uses: actions/setup-java@v4
         with:
           java-version: '25'
           distribution: 'zulu'
-          java-package: 'jdk+fx'
-      - name: Build with Ant
+          # This ensures JavaFX modules are included in the JDK
+          java-package: jdk+fx
+
+      - name: Run Ant Build
         run: |
-          ant -noinput -buildfile build.xml
+          # We pass JAVA_HOME explicitly to ensure Ant uses JDK 25
+          ant -f build.xml -Djava.home=$JAVA_HOME
         shell: bash
+
+#      - name: Set up JDK 25
+#        uses: actions/setup-java@v4
+#        with:
+#          java-version: '25'
+#          distribution: 'zulu'
+#          java-package: 'jdk+fx'
+#      - name: Build with Ant
+#        run: |
+#          ant -noinput -buildfile build.xml
+#        shell: bash
+
       - name: Run the Linux installer script
         run: |
           cd installer/linux
