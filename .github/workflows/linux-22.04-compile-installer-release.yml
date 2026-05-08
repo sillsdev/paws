@@ -63,9 +63,9 @@ jobs:
         env:
           PUBLISH_PATH: 'installer/linux'
         run: |
-          cd ${{env.PUBLISH_PATH}}
-          pwd
-          ls -l
+          #cd ${{env.PUBLISH_PATH}}
+          #pwd
+          #ls -l
           mv ${{env.PUBLISH_PATH}}/paws_${{ env.VERSION }}_amd64.deb PAWS-${{ env.VERSION }}-${{ env.LINUXTARGET }}.deb
 
       - uses: actions/upload-artifact@v4
