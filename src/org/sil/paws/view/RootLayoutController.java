@@ -262,14 +262,14 @@ public class RootLayoutController implements Initializable {
 		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
 //		try {
 			String sExecutable= System.getProperty("user.dir");
-			String sUri = ControllerUtilities.getUriOfProgram(MainApp.class);
+			String sUri = ControllerUtilities.getUriOfProgram(MainApp.class).replace("file:/","");
 			System.out.println("exe = '" + sExecutable + "'");
 			System.out.println("uri = '" + sUri + "'");
 			showAlert("uri = '" + sUri + "'");
 			showAlert("exe = '" + sExecutable + "'");
 //			sConfigurationDirectory = new File(sUri).getCanonicalPath() + File.separator
 //					+ "resources" + File.separator + "configuration" + File.separator;
-			sConfigurationDirectory = sUri.replace("/","\\").replace("file:\\", "").replace("%20", " ") + File.separator
+			sConfigurationDirectory = sUri.replace("/","\\").replace("%20", " ") + File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
 			showAlert("config = '" + sConfigurationDirectory + "'");
 //		} catch (IOException e1) {
