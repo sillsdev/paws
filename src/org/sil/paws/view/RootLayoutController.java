@@ -260,20 +260,22 @@ public class RootLayoutController implements Initializable {
 		keyboardChanger = KeyboardChanger.getInstance();
 		keyboardChanger.initKeyboardHandler(MainApp.class);
 		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
-		try {
+//		try {
 			String sExecutable= System.getProperty("user.dir");
 			String sUri = ControllerUtilities.getUriOfProgram(MainApp.class);
 			System.out.println("exe = '" + sExecutable + "'");
 			System.out.println("uri = '" + sUri + "'");
 			showAlert("uri = '" + sUri + "'");
 			showAlert("exe = '" + sExecutable + "'");
-			sConfigurationDirectory = new File(sUri).getCanonicalPath() + File.separator
+//			sConfigurationDirectory = new File(sUri).getCanonicalPath() + File.separator
+//					+ "resources" + File.separator + "configuration" + File.separator;
+			sConfigurationDirectory = sUri.replace("/","\\").replace("file:\\", "").replace("%20", " ") + File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
 			showAlert("config = '" + sConfigurationDirectory + "'");
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+//		} catch (IOException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
 		initToolbarButtons(bundle);
 
 		webEngine = browser.getEngine();
