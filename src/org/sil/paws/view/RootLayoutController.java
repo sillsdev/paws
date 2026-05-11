@@ -232,7 +232,8 @@ public class RootLayoutController implements Initializable {
 	ApplicationPreferences applicationPreferences;
 	WebPageInteractor webPageInteractor;
 	boolean fIsDirty;
-	private static final String kHTMsFolder = "/resources/configuration/HTMs/";
+//	private static final String kHTMsFolder = "/resources/configuration/HTMs/";
+	private static final String kHTMsFolder = "/HTMs/";
 	private String sProgramLocation;
 	private String sPAWSWorkingDirectory;
 	private String htmlMapperStylesheet;
@@ -272,7 +273,7 @@ public class RootLayoutController implements Initializable {
 //			showAlert("exe = '" + sExecutable + "'");
 //			sConfigurationDirectory = new File(sUri).getCanonicalPath() + File.separator
 //					+ "resources" + File.separator + "configuration" + File.separator;
-			sConfigurationDirectory = sUri.replace("%20", " ") + File.separator
+			sConfigurationDirectory = sUri.replace("%20", " ") //+ File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
 //			showAlert("config = '" + sConfigurationDirectory + "'");
 			System.out.println("config = '" + sConfigurationDirectory + "'");
@@ -343,12 +344,13 @@ public class RootLayoutController implements Initializable {
 		initMenuItemsForLocalization();
 		createContextMenu();
 
-		try {
-			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			sProgramLocation = Constants.FILE_PROTOCOL + "/" + new File(".").getCanonicalPath();
+			sProgramLocation = Constants.FILE_PROTOCOL + "/" + sConfigurationDirectory;
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 
 		sPAWSWorkingDirectory = getWorkingPageOutputDirectory();
 
