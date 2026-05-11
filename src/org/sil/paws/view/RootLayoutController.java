@@ -261,7 +261,8 @@ public class RootLayoutController implements Initializable {
 		keyboardChanger.initKeyboardHandler(MainApp.class);
 		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
 		try {
-			sConfigurationDirectory = new File(".").getCanonicalPath() + File.separator
+			String sExecutable= System.getProperty("user.dir");
+			sConfigurationDirectory = new File(sExecutable).getCanonicalPath() + File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block

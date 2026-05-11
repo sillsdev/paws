@@ -168,6 +168,8 @@ jobs:
           mkdir dmgContents
           cp -R /Volumes/PAWS dmgContents
           cd dmgContents/PAWS
+          echo dmg contents
+          ls -lR
           cd PAWS.app/Contents/app/
           #pwd
           #ls -lR resources
