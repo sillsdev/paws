@@ -267,7 +267,7 @@ public class RootLayoutController implements Initializable {
 			System.out.println("uri = '" + sUri + "'");
 			showAlert("uri = '" + sUri + "'");
 			showAlert("exe = '" + sExecutable + "'");
-			sConfigurationDirectory = new File(sExecutable).getCanonicalPath() + File.separator
+			sConfigurationDirectory = new File(sUri).getCanonicalPath() + File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
 			showAlert("config = '" + sConfigurationDirectory + "'");
 		} catch (IOException e1) {
