@@ -262,16 +262,20 @@ public class RootLayoutController implements Initializable {
 		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
 //		try {
 			String sExecutable= System.getProperty("user.dir");
-			String sUri = ControllerUtilities.getUriOfProgram(MainApp.class).replace("file:/","");
+			String sUri = ControllerUtilities.getUriOfProgram(MainApp.class).replace("file:","");
+			if (File.separator.equals("\\")) {
+				sUri = sUri.replace("/", "\\");
+			}
 			System.out.println("exe = '" + sExecutable + "'");
 			System.out.println("uri = '" + sUri + "'");
-			showAlert("uri = '" + sUri + "'");
-			showAlert("exe = '" + sExecutable + "'");
+//			showAlert("uri = '" + sUri + "'");
+//			showAlert("exe = '" + sExecutable + "'");
 //			sConfigurationDirectory = new File(sUri).getCanonicalPath() + File.separator
 //					+ "resources" + File.separator + "configuration" + File.separator;
-			sConfigurationDirectory = sUri.replace("/","\\").replace("%20", " ") + File.separator
+			sConfigurationDirectory = sUri.replace("%20", " ") + File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
-			showAlert("config = '" + sConfigurationDirectory + "'");
+//			showAlert("config = '" + sConfigurationDirectory + "'");
+			System.out.println("config = '" + sConfigurationDirectory + "'");
 //		} catch (IOException e1) {
 //			// TODO Auto-generated catch block
 //			e1.printStackTrace();
@@ -379,6 +383,7 @@ public class RootLayoutController implements Initializable {
 			public void run() {
 				String sPath = sConfigurationDirectory + "HTMs" + File.separator + "Contents"
 						+ getCurrentLocaleCode() + ".htm";
+				System.out.println("loadContentsPageInNewMode: sPath = '" + sPath + "'");
 				File contentsFile = new File(sPath);
 				String sPageToLoad = Constants.FILE_PROTOCOL + contentsFile.toURI().getPath();
 				webEngine.load(sPageToLoad);
