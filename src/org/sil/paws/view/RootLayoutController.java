@@ -262,8 +262,14 @@ public class RootLayoutController implements Initializable {
 		sFileFilterDescription = RESOURCE_FACTORY.getStringBinding("file.filterdescription").get();
 		try {
 			String sExecutable= System.getProperty("user.dir");
+			String sUri = ControllerUtilities.getUriOfProgram(MainApp.class);
+			System.out.println("exe = '" + sExecutable + "'");
+			System.out.println("uri = '" + sUri + "'");
+			showAlert("uri = '" + sUri + "'");
+			showAlert("exe = '" + sExecutable + "'");
 			sConfigurationDirectory = new File(sExecutable).getCanonicalPath() + File.separator
 					+ "resources" + File.separator + "configuration" + File.separator;
+			showAlert("config = '" + sConfigurationDirectory + "'");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -814,6 +820,7 @@ public class RootLayoutController implements Initializable {
 
 	private void showAlert(String message) {
 		Dialog<Void> alert = new Dialog<>();
+		alert.setWidth(750.0);
 		alert.getDialogPane().setContentText(message);
 		alert.getDialogPane().getButtonTypes().add(ButtonType.OK);
 		alert.showAndWait();
