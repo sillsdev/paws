@@ -12,12 +12,12 @@ jpackage --type app-image \
 	--name PAWS \
 	--main-jar paws.jar \
 	--main-class org.sil.paws.MainApp \
+	--java-options --enable-native-access=javafx.graphics \
+	--java-options --enable-native-access=javafx.web \
+	--java-options --enable-native-access=com.sun.jna \
 	--icon input/PAWS.icns \
 	--module-path jmods \
 	--vendor "SIL International"
-#	--vendor "SIL International" \
-#	--mac-sign \
-#	--mac-signing-key-user-name "Developer ID Application: Summer Institute of Linguistics, Inc (SIL) (3YE4W86L3G)"
 echo "	MoveResources"
 ./MoveResources.sh
 
