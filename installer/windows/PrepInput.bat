@@ -6,11 +6,11 @@ echo 	Libraries
 if not exist input\libs mkdir input\libs
 del /q input\libs\*
 copy ..\..\libs\ControlsFX\* input\libs > nul
-copy ..\..\libs\JAXB input\libs > nul
-copy ..\..\libs\jna input\libs > nul
-copy ..\..\libs\json input\libs > nul
-copy ..\..\libs\LibJavaDev input\libs > nul
-copy ..\..\libs\saxon input\libs > nul
+copy ..\..\libs\JAXB\* input\libs > nul
+copy ..\..\libs\jna\* input\libs > nul
+copy ..\..\libs\json\* input\libs > nul
+copy ..\..\libs\LibJavaDev\* input\libs > nul
+copy ..\..\libs\saxon\* input\libs > nul
 
 REM Resources
 echo 	Resources
