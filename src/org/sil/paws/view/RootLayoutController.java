@@ -266,6 +266,9 @@ public class RootLayoutController implements Initializable {
 			String sUri = ControllerUtilities.getUriOfProgram(MainApp.class).replace("file:","");
 			if (File.separator.equals("\\")) {
 				sUri = sUri.replace("/", "\\");
+				if (sUri.startsWith("\\")) {
+					sUri = sUri.substring(1);
+				}
 			}
 			System.out.println("exe = '" + sExecutable + "'");
 			System.out.println("uri = '" + sUri + "'");

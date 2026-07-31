@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><paws dbversion="13" outputGrammar="False" outputWriter="False" outputWriterPractical="True" outputWriterPracticalFrench="True" outputWriterPracticalSpanish="True">
+<?xml version="1.0" encoding="UTF-8"?><paws dbversion="15" outputGrammar="False" outputWriter="False" outputWriterPractical="True" outputWriterPracticalFrench="True" outputWriterPracticalSpanish="True">
     <leftOffAt>Contents_en.htm</leftOffAt>
     <language>
        <langNames>
@@ -31,7 +31,7 @@
         <writerPracticalSpanishFile/>
         <writerPracticalFrenchFile/>
         <exampleFilesPath/>
-    </language>
+    <keyboard><description>Default</description><SLocale>en</SLocale><windowsLangID>0</windowsLangID></keyboard><freeGlossKeyboard><description>Default</description><SLocale>en</SLocale><windowsLangID>0</windowsLangID></freeGlossKeyboard><ipaKeyboard><description>Default</description><SLocale>en</SLocale><windowsLangID>0</windowsLangID></ipaKeyboard><writerKeyboard><description>Default</description><SLocale>en</SLocale><windowsLangID>0</windowsLangID></writerKeyboard></language>
    <typology case="nominative" caseExperiencer="no" checkedOff="no" class10agr="irrelevant" class11agr="irrelevant" class12agr="irrelevant" class13agr="irrelevant" class14agr="irrelevant" class15agr="irrelevant" class16agr="irrelevant" class17agr="irrelevant" class18agr="irrelevant" class19agr="irrelevant" class1agr="irrelevant" class20agr="irrelevant" class21agr="irrelevant" class22agr="irrelevant" class23agr="irrelevant" class24agr="irrelevant" class25agr="irrelevant" class2agr="irrelevant" class3agr="irrelevant" class4agr="irrelevant" class5agr="irrelevant" class6agr="irrelevant" class7agr="irrelevant" class8agr="irrelevant" class9agr="irrelevant" classifier="no" classifierNum="number" classifierTypeNumAgr="no" noCaseExperiencer="no" wordOrder="SVO">
         <example>
          <interlinearEntry>
@@ -369,72 +369,72 @@
             <freeLine/>
          </interlinearEntry>
       </experiencerPnIntExample>
-      <splitConditions/>
-      <class1Example/>
-      <class2Example/>
-      <class3Example/>
-      <class4Example/>
-      <class5Example/>
-      <class6Example/>
-      <class7Example/>
-      <class8Example/>
-      <class9Example/>
-      <class10Example/>
-      <class11Example/>
-      <class12Example/>
-      <class13Example/>
-      <class14Example/>
-      <class15Example/>
-      <class16Example/>
-      <class17Example/>
-      <class18Example/>
-      <class19Example/>
-      <class20Example/>
-      <class21Example/>
-      <class22Example/>
-      <class23Example/>
-      <class24Example/>
-      <class25Example/>
-      <classAnimalSgExample/>
-      <classAnimalPlExample/>
-      <classInsectSgExample/>
-      <classInsectPlExample/>
-      <classLiquidSgExample/>
-      <classLiquidPlExample/>
-      <classRoundSgExample/>
-      <classRoundPlExample/>
-      <classCylinderSgExample/>
-      <classCylinderPlExample/>
-      <classSphereSgExample/>
-      <classSpherePlExample/>
-      <classTreeSgExample/>
-      <classTreePlExample/>
-      <classWoodSgExample/>
-      <classWoodPlExample/>
-      <classOtherSgExample/>
-      <classOtherPlExample/>
-      <classAnimalExample/>
-      <classInsectExample/>
-      <classLiquidExample/>
-      <classRoundExample/>
-      <classCylinderExample/>
-      <classSphereExample/>
-      <classTreeExample/>
-      <classWoodExample/>
-      <classOtherExample/>
-      <classifierHumanExample/>
-      <classifierAnimalExample/>
-      <classifierBirdExample/>
-      <classifierBoatExample/>
-      <classifierClothingExample/>
-      <classifierTreeExample/>
-      <classifierLongThinExample/>
-      <classifierLongWavyExample/>
-      <classifierFlatExample/>
-      <classifierCylindricalExample/>
-      <classifierMechanicalExample/>
-      <classifierGenericExample/>
-      <classifierOtherExample/>
+      <splitConditions><form><vernacular/><ipa/><gloss/></form></splitConditions>
+      <class1Example><form><vernacular/><ipa/><gloss/></form></class1Example>
+      <class2Example><form><vernacular/><ipa/><gloss/></form></class2Example>
+      <class3Example><form><vernacular/><ipa/><gloss/></form></class3Example>
+      <class4Example><form><vernacular/><ipa/><gloss/></form></class4Example>
+      <class5Example><form><vernacular/><ipa/><gloss/></form></class5Example>
+      <class6Example><form><vernacular/><ipa/><gloss/></form></class6Example>
+      <class7Example><form><vernacular/><ipa/><gloss/></form></class7Example>
+      <class8Example><form><vernacular/><ipa/><gloss/></form></class8Example>
+      <class9Example><form><vernacular/><ipa/><gloss/></form></class9Example>
+      <class10Example><form><vernacular/><ipa/><gloss/></form></class10Example>
+      <class11Example><form><vernacular/><ipa/><gloss/></form></class11Example>
+      <class12Example><form><vernacular/><ipa/><gloss/></form></class12Example>
+      <class13Example><form><vernacular/><ipa/><gloss/></form></class13Example>
+      <class14Example><form><vernacular/><ipa/><gloss/></form></class14Example>
+      <class15Example><form><vernacular/><ipa/><gloss/></form></class15Example>
+      <class16Example><form><vernacular/><ipa/><gloss/></form></class16Example>
+      <class17Example><form><vernacular/><ipa/><gloss/></form></class17Example>
+      <class18Example><form><vernacular/><ipa/><gloss/></form></class18Example>
+      <class19Example><form><vernacular/><ipa/><gloss/></form></class19Example>
+      <class20Example><form><vernacular/><ipa/><gloss/></form></class20Example>
+      <class21Example><form><vernacular/><ipa/><gloss/></form></class21Example>
+      <class22Example><form><vernacular/><ipa/><gloss/></form></class22Example>
+      <class23Example><form><vernacular/><ipa/><gloss/></form></class23Example>
+      <class24Example><form><vernacular/><ipa/><gloss/></form></class24Example>
+      <class25Example><form><vernacular/><ipa/><gloss/></form></class25Example>
+      <classAnimalSgExample><form><vernacular/><ipa/><gloss/></form></classAnimalSgExample>
+      <classAnimalPlExample><form><vernacular/><ipa/><gloss/></form></classAnimalPlExample>
+      <classInsectSgExample><form><vernacular/><ipa/><gloss/></form></classInsectSgExample>
+      <classInsectPlExample><form><vernacular/><ipa/><gloss/></form></classInsectPlExample>
+      <classLiquidSgExample><form><vernacular/><ipa/><gloss/></form></classLiquidSgExample>
+      <classLiquidPlExample><form><vernacular/><ipa/><gloss/></form></classLiquidPlExample>
+      <classRoundSgExample><form><vernacular/><ipa/><gloss/></form></classRoundSgExample>
+      <classRoundPlExample><form><vernacular/><ipa/><gloss/></form></classRoundPlExample>
+      <classCylinderSgExample><form><vernacular/><ipa/><gloss/></form></classCylinderSgExample>
+      <classCylinderPlExample><form><vernacular/><ipa/><gloss/></form></classCylinderPlExample>
+      <classSphereSgExample><form><vernacular/><ipa/><gloss/></form></classSphereSgExample>
+      <classSpherePlExample><form><vernacular/><ipa/><gloss/></form></classSpherePlExample>
+      <classTreeSgExample><form><vernacular/><ipa/><gloss/></form></classTreeSgExample>
+      <classTreePlExample><form><vernacular/><ipa/><gloss/></form></classTreePlExample>
+      <classWoodSgExample><form><vernacular/><ipa/><gloss/></form></classWoodSgExample>
+      <classWoodPlExample><form><vernacular/><ipa/><gloss/></form></classWoodPlExample>
+      <classOtherSgExample><form><vernacular/><ipa/><gloss/></form></classOtherSgExample>
+      <classOtherPlExample><form><vernacular/><ipa/><gloss/></form></classOtherPlExample>
+      <classAnimalExample><form><vernacular/><ipa/><gloss/></form></classAnimalExample>
+      <classInsectExample><form><vernacular/><ipa/><gloss/></form></classInsectExample>
+      <classLiquidExample><form><vernacular/><ipa/><gloss/></form></classLiquidExample>
+      <classRoundExample><form><vernacular/><ipa/><gloss/></form></classRoundExample>
+      <classCylinderExample><form><vernacular/><ipa/><gloss/></form></classCylinderExample>
+      <classSphereExample><form><vernacular/><ipa/><gloss/></form></classSphereExample>
+      <classTreeExample><form><vernacular/><ipa/><gloss/></form></classTreeExample>
+      <classWoodExample><form><vernacular/><ipa/><gloss/></form></classWoodExample>
+      <classOtherExample><form><vernacular/><ipa/><gloss/></form></classOtherExample>
+      <classifierHumanExample><form><vernacular/><ipa/><gloss/></form></classifierHumanExample>
+      <classifierAnimalExample><form><vernacular/><ipa/><gloss/></form></classifierAnimalExample>
+      <classifierBirdExample><form><vernacular/><ipa/><gloss/></form></classifierBirdExample>
+      <classifierBoatExample><form><vernacular/><ipa/><gloss/></form></classifierBoatExample>
+      <classifierClothingExample><form><vernacular/><ipa/><gloss/></form></classifierClothingExample>
+      <classifierTreeExample><form><vernacular/><ipa/><gloss/></form></classifierTreeExample>
+      <classifierLongThinExample><form><vernacular/><ipa/><gloss/></form></classifierLongThinExample>
+      <classifierLongWavyExample><form><vernacular/><ipa/><gloss/></form></classifierLongWavyExample>
+      <classifierFlatExample><form><vernacular/><ipa/><gloss/></form></classifierFlatExample>
+      <classifierCylindricalExample><form><vernacular/><ipa/><gloss/></form></classifierCylindricalExample>
+      <classifierMechanicalExample><form><vernacular/><ipa/><gloss/></form></classifierMechanicalExample>
+      <classifierGenericExample><form><vernacular/><ipa/><gloss/></form></classifierGenericExample>
+      <classifierOtherExample><form><vernacular/><ipa/><gloss/></form></classifierOtherExample>
       <classifierAgrExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -519,7 +519,7 @@
             <freeLine/>
          </interlinearEntry>
       </classifierSpecificExample>
-      <classifierTypeExample/>
+      <classifierTypeExample><form><vernacular/><ipa/><gloss/></form></classifierTypeExample>
     </typology>
    <qp cardinalHead="final" checkedOff="no" degree="no" degreeClassifier="no" determiner="yes" determinerClassifier="no" determinerType="yes" npDegree="yes" npDegreeClassifier="no" numberClassifier="no" partitive="no" partitivePPPos="unknown" quantifierClassifier="no">
       <npDegreeTypeProclitic checked="no"/>
@@ -560,9 +560,9 @@
       <ordinalBoth checked="no"/>
       <ordinalNumOther checked="no"/>
       <ordinalNumNowhere checked="no"/>
-      <all/>
-        <almost/>
-        <only/>
+      <all><form><vernacular/><ipa/><gloss/></form></all>
+        <almost><form><vernacular/><ipa/><gloss/></form></almost>
+        <only><form><vernacular/><ipa/><gloss/></form></only>
       <npDegreeCliticExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -731,9 +731,9 @@
             <freeLine/>
          </interlinearEntry>
       </example>
-        <some/>
-      <any/>
-      <every/>
+        <some><form><vernacular/><ipa/><gloss/></form></some>
+      <any><form><vernacular/><ipa/><gloss/></form></any>
+      <every><form><vernacular/><ipa/><gloss/></form></every>
       <determinerExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -902,11 +902,11 @@
             <freeLine/>
          </interlinearEntry>
       </determinerOtherExample>
-        <many/>
-      <much/>
-      <few/>
-      <otherQ/>
-      <degreeWordExample/>
+        <many><form><vernacular/><ipa/><gloss/></form></many>
+      <much><form><vernacular/><ipa/><gloss/></form></much>
+      <few><form><vernacular/><ipa/><gloss/></form></few>
+      <otherQ><form><vernacular/><ipa/><gloss/></form></otherQ>
+      <degreeWordExample><form><vernacular/><ipa/><gloss/></form></degreeWordExample>
        <degreeExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -949,7 +949,7 @@
             <freeLine/>
          </interlinearEntry>
       </degreeExample>
-      <degreeAttachesExample/>
+      <degreeAttachesExample><form><vernacular/><ipa/><gloss/></form></degreeAttachesExample>
       <degreeAttachesNPExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -992,34 +992,34 @@
             <freeLine/>
          </interlinearEntry>
       </degreeAttachesNPExample>
-      <cardinalNumbers1/>
-      <cardinalNumbers2/>
-      <cardinalNumbers3/>
-      <cardinalNumbers4/>
-      <cardinalNumbers5/>
-      <cardinalNumbers6/>
-      <cardinalNumbers7/>
-      <cardinalNumbers8/>
-      <cardinalNumbers9/>
-      <cardinalNumbers10/>
-      <cardinalNumbers11/>
-      <cardinalNumbers12/>
-      <cardinalNumbers13/>
-      <cardinalNumbers14/>
-      <cardinalNumbers15/>
-      <cardinalNumbers16/>
-      <cardinalNumbers17/>
-      <cardinalNumbers18/>
-      <cardinalNumbers19/>
-      <cardinalNumbers20/>
-      <cardinalNumbers30/>
-      <cardinalNumbers40/>
-      <cardinalNumbers50/>
-      <cardinalNumbers60/>
-      <cardinalNumbers70/>
-      <cardinalNumbers80/>
-      <cardinalNumbers90/>
-      <cardinalNumbers100/>
+      <cardinalNumbers1><form><vernacular/><ipa/><gloss/></form></cardinalNumbers1>
+      <cardinalNumbers2><form><vernacular/><ipa/><gloss/></form></cardinalNumbers2>
+      <cardinalNumbers3><form><vernacular/><ipa/><gloss/></form></cardinalNumbers3>
+      <cardinalNumbers4><form><vernacular/><ipa/><gloss/></form></cardinalNumbers4>
+      <cardinalNumbers5><form><vernacular/><ipa/><gloss/></form></cardinalNumbers5>
+      <cardinalNumbers6><form><vernacular/><ipa/><gloss/></form></cardinalNumbers6>
+      <cardinalNumbers7><form><vernacular/><ipa/><gloss/></form></cardinalNumbers7>
+      <cardinalNumbers8><form><vernacular/><ipa/><gloss/></form></cardinalNumbers8>
+      <cardinalNumbers9><form><vernacular/><ipa/><gloss/></form></cardinalNumbers9>
+      <cardinalNumbers10><form><vernacular/><ipa/><gloss/></form></cardinalNumbers10>
+      <cardinalNumbers11><form><vernacular/><ipa/><gloss/></form></cardinalNumbers11>
+      <cardinalNumbers12><form><vernacular/><ipa/><gloss/></form></cardinalNumbers12>
+      <cardinalNumbers13><form><vernacular/><ipa/><gloss/></form></cardinalNumbers13>
+      <cardinalNumbers14><form><vernacular/><ipa/><gloss/></form></cardinalNumbers14>
+      <cardinalNumbers15><form><vernacular/><ipa/><gloss/></form></cardinalNumbers15>
+      <cardinalNumbers16><form><vernacular/><ipa/><gloss/></form></cardinalNumbers16>
+      <cardinalNumbers17><form><vernacular/><ipa/><gloss/></form></cardinalNumbers17>
+      <cardinalNumbers18><form><vernacular/><ipa/><gloss/></form></cardinalNumbers18>
+      <cardinalNumbers19><form><vernacular/><ipa/><gloss/></form></cardinalNumbers19>
+      <cardinalNumbers20><form><vernacular/><ipa/><gloss/></form></cardinalNumbers20>
+      <cardinalNumbers30><form><vernacular/><ipa/><gloss/></form></cardinalNumbers30>
+      <cardinalNumbers40><form><vernacular/><ipa/><gloss/></form></cardinalNumbers40>
+      <cardinalNumbers50><form><vernacular/><ipa/><gloss/></form></cardinalNumbers50>
+      <cardinalNumbers60><form><vernacular/><ipa/><gloss/></form></cardinalNumbers60>
+      <cardinalNumbers70><form><vernacular/><ipa/><gloss/></form></cardinalNumbers70>
+      <cardinalNumbers80><form><vernacular/><ipa/><gloss/></form></cardinalNumbers80>
+      <cardinalNumbers90><form><vernacular/><ipa/><gloss/></form></cardinalNumbers90>
+      <cardinalNumbers100><form><vernacular/><ipa/><gloss/></form></cardinalNumbers100>
       <cardinalExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1062,18 +1062,18 @@
             <freeLine/>
          </interlinearEntry>
       </cardinalExample>
-      <ordinalNumbers1/>
-      <ordinalNumbers2/>
-      <ordinalNumbers3/>
-      <ordinalNumbers4/>
-      <ordinalNumbers5/>
-      <ordinalNumbers6/>
-      <ordinalNumbers7/>
-      <ordinalNumbers8/>
-      <ordinalNumbers9/>
-      <ordinalNumbers10/>
-      <ordinalAffixExample/>
-      <ordinalWordExample/>
+      <ordinalNumbers1><form><vernacular/><ipa/><gloss/></form></ordinalNumbers1>
+      <ordinalNumbers2><form><vernacular/><ipa/><gloss/></form></ordinalNumbers2>
+      <ordinalNumbers3><form><vernacular/><ipa/><gloss/></form></ordinalNumbers3>
+      <ordinalNumbers4><form><vernacular/><ipa/><gloss/></form></ordinalNumbers4>
+      <ordinalNumbers5><form><vernacular/><ipa/><gloss/></form></ordinalNumbers5>
+      <ordinalNumbers6><form><vernacular/><ipa/><gloss/></form></ordinalNumbers6>
+      <ordinalNumbers7><form><vernacular/><ipa/><gloss/></form></ordinalNumbers7>
+      <ordinalNumbers8><form><vernacular/><ipa/><gloss/></form></ordinalNumbers8>
+      <ordinalNumbers9><form><vernacular/><ipa/><gloss/></form></ordinalNumbers9>
+      <ordinalNumbers10><form><vernacular/><ipa/><gloss/></form></ordinalNumbers10>
+      <ordinalAffixExample><form><vernacular/><ipa/><gloss/></form></ordinalAffixExample>
+      <ordinalWordExample><form><vernacular/><ipa/><gloss/></form></ordinalWordExample>
       <ordinalExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1158,8 +1158,8 @@
             <freeLine/>
          </interlinearEntry>
       </ordinalCardinalExample>
-      <nextExample/>
-      <lastExample/>
+      <nextExample><form><vernacular/><ipa/><gloss/></form></nextExample>
+      <lastExample><form><vernacular/><ipa/><gloss/></form></lastExample>
       <nextlastNPExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1286,8 +1286,8 @@
             <freeLine/>
          </interlinearEntry>
       </partitiveQExample>
-      <partitiveConstruction/>
-      <partitiveOf/>
+      <partitiveConstruction><form><vernacular/><ipa/><gloss/></form></partitiveConstruction>
+      <partitiveOf><form><vernacular/><ipa/><gloss/></form></partitiveOf>
       <cardinalNumberCategory/>
         <conjunctionCategory/>
     </qp>
@@ -1352,8 +1352,8 @@
       <mannerAffixDegreeYesAfter checked="no"/>      
       <mannerAffixDegreeRedup checked="no"/>      
       <mannerAffixDegreeOther checked="no"/>
-      <temporalExample/>
-       <temporalDegreeExample/>
+      <temporalExample><form><vernacular/><ipa/><gloss/></form></temporalExample>
+       <temporalDegreeExample><form><vernacular/><ipa/><gloss/></form></temporalDegreeExample>
       <temporalPhraseExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1396,11 +1396,11 @@
             <freeLine/>
          </interlinearEntry>
       </temporalPhraseExample>
-      <temporalDegreeAffixExample/>
-      <temporalPhraseAffixExample/>
-      <temporalDegreeRedupExample/>
-      <temporalDegreeOtherExample/>
-      <temporalNounExample/>
+      <temporalDegreeAffixExample><form><vernacular/><ipa/><gloss/></form></temporalDegreeAffixExample>
+      <temporalPhraseAffixExample><form><vernacular/><ipa/><gloss/></form></temporalPhraseAffixExample>
+      <temporalDegreeRedupExample><form><vernacular/><ipa/><gloss/></form></temporalDegreeRedupExample>
+      <temporalDegreeOtherExample><form><vernacular/><ipa/><gloss/></form></temporalDegreeOtherExample>
+      <temporalNounExample><form><vernacular/><ipa/><gloss/></form></temporalNounExample>
       <temporalNounModifierExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1443,15 +1443,15 @@
             <freeLine/>
          </interlinearEntry>
       </temporalNounModifierExample>
-      <temporalIndefTypeQWordExample/>
-      <temporalIndefTypeQPhraseExample/>
-      <temporalIndefTypeQOtherExample/>
-      <temporalIndefTypeIntWordExample/>
-         <temporalIndefTypeIntPhraseExample/>
-         <temporalIndefTypeIntOtherExample/>
-        <locativeExample/>
+      <temporalIndefTypeQWordExample><form><vernacular/><ipa/><gloss/></form></temporalIndefTypeQWordExample>
+      <temporalIndefTypeQPhraseExample><form><vernacular/><ipa/><gloss/></form></temporalIndefTypeQPhraseExample>
+      <temporalIndefTypeQOtherExample><form><vernacular/><ipa/><gloss/></form></temporalIndefTypeQOtherExample>
+      <temporalIndefTypeIntWordExample><form><vernacular/><ipa/><gloss/></form></temporalIndefTypeIntWordExample>
+         <temporalIndefTypeIntPhraseExample><form><vernacular/><ipa/><gloss/></form></temporalIndefTypeIntPhraseExample>
+         <temporalIndefTypeIntOtherExample><form><vernacular/><ipa/><gloss/></form></temporalIndefTypeIntOtherExample>
+        <locativeExample><form><vernacular/><ipa/><gloss/></form></locativeExample>
       <locativeDemOther/>
-      <locativeDegreeExample/>
+      <locativeDegreeExample><form><vernacular/><ipa/><gloss/></form></locativeDegreeExample>
       <locativePhraseExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1494,18 +1494,18 @@
             <freeLine/>
          </interlinearEntry>
       </locativePhraseExample> 
-      <locativeDegreeAffixExample/>
-      <locativePhraseAffixExample/>
-      <locativeDegreeRedupExample/>
-      <locativeOtherExample/> 
-      <locativeIndefTypeQWordExample/>
-      <locativeIndefTypeQPhraseExample/>
-      <locativeIndefTypeQOtherExample/>
-      <locativeIndefTypeIntWordExample/>
-      <locativeIndefTypeIntPhraseExample/>
-      <locativeIndefTypeIntOtherExample/>
-      <mannerExample/>
-      <mannerDegreeExample/>
+      <locativeDegreeAffixExample><form><vernacular/><ipa/><gloss/></form></locativeDegreeAffixExample>
+      <locativePhraseAffixExample><form><vernacular/><ipa/><gloss/></form></locativePhraseAffixExample>
+      <locativeDegreeRedupExample><form><vernacular/><ipa/><gloss/></form></locativeDegreeRedupExample>
+      <locativeOtherExample><form><vernacular/><ipa/><gloss/></form></locativeOtherExample> 
+      <locativeIndefTypeQWordExample><form><vernacular/><ipa/><gloss/></form></locativeIndefTypeQWordExample>
+      <locativeIndefTypeQPhraseExample><form><vernacular/><ipa/><gloss/></form></locativeIndefTypeQPhraseExample>
+      <locativeIndefTypeQOtherExample><form><vernacular/><ipa/><gloss/></form></locativeIndefTypeQOtherExample>
+      <locativeIndefTypeIntWordExample><form><vernacular/><ipa/><gloss/></form></locativeIndefTypeIntWordExample>
+      <locativeIndefTypeIntPhraseExample><form><vernacular/><ipa/><gloss/></form></locativeIndefTypeIntPhraseExample>
+      <locativeIndefTypeIntOtherExample><form><vernacular/><ipa/><gloss/></form></locativeIndefTypeIntOtherExample>
+      <mannerExample><form><vernacular/><ipa/><gloss/></form></mannerExample>
+      <mannerDegreeExample><form><vernacular/><ipa/><gloss/></form></mannerDegreeExample>
       <mannerDegreePhraseExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1548,16 +1548,16 @@
             <freeLine/>
          </interlinearEntry>
       </mannerDegreePhraseExample>
-      <mannerDegreeAffixExample/>
-      <mannerPhraseAffixExample/>
-      <mannerDegreeRedupExample/>
-      <mannerDegreeOtherExample/>
-      <mannerAffixDegreeExample/>
-      <mannerAffixDegreePhraseExample/>
-       <mannerAffixDegreeRedupExample/>
-      <mannerAffixDegreeOtherExample/>
-      <reasonExample/>
-       <reasonPPExample/>
+      <mannerDegreeAffixExample><form><vernacular/><ipa/><gloss/></form></mannerDegreeAffixExample>
+      <mannerPhraseAffixExample><form><vernacular/><ipa/><gloss/></form></mannerPhraseAffixExample>
+      <mannerDegreeRedupExample><form><vernacular/><ipa/><gloss/></form></mannerDegreeRedupExample>
+      <mannerDegreeOtherExample><form><vernacular/><ipa/><gloss/></form></mannerDegreeOtherExample>
+      <mannerAffixDegreeExample><form><vernacular/><ipa/><gloss/></form></mannerAffixDegreeExample>
+      <mannerAffixDegreePhraseExample><form><vernacular/><ipa/><gloss/></form></mannerAffixDegreePhraseExample>
+       <mannerAffixDegreeRedupExample><form><vernacular/><ipa/><gloss/></form></mannerAffixDegreeRedupExample>
+      <mannerAffixDegreeOtherExample><form><vernacular/><ipa/><gloss/></form></mannerAffixDegreeOtherExample>
+      <reasonExample><form><vernacular/><ipa/><gloss/></form></reasonExample>
+       <reasonPPExample><form><vernacular/><ipa/><gloss/></form></reasonPPExample>
        <reasonSentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1616,8 +1616,8 @@
       <mannerAfter checked="no"/>
       <mannerBoth checked="no"/>
       <mannerOther checked="no"/>      
-      <example/>
-      <adjectiveDegreeExample/>
+      <example><form><vernacular/><ipa/><gloss/></form></example>
+      <adjectiveDegreeExample><form><vernacular/><ipa/><gloss/></form></adjectiveDegreeExample>
       <adjectiveDegreePhraseExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -1702,10 +1702,10 @@
             <freeLine/>
          </interlinearEntry>
       </adjectiveMannerPhraseExample>
-      <adjectiveDegreeAffixExample/>
-      <adjectiveDegreeAffixPhraseExample/>
-      <adjectiveDegreeRedupExample/>
-      <adjectiveDegreeOtherExample/>
+      <adjectiveDegreeAffixExample><form><vernacular/><ipa/><gloss/></form></adjectiveDegreeAffixExample>
+      <adjectiveDegreeAffixPhraseExample><form><vernacular/><ipa/><gloss/></form></adjectiveDegreeAffixPhraseExample>
+      <adjectiveDegreeRedupExample><form><vernacular/><ipa/><gloss/></form></adjectiveDegreeRedupExample>
+      <adjectiveDegreeOtherExample><form><vernacular/><ipa/><gloss/></form></adjectiveDegreeOtherExample>
         <adjectiveCategory/>
     </adjp>
    <np adjPPart="no" adjpCaseAffix="no" adjpCaseChange="no" agreeNumber="no" artAndDem="no" artBothCooccur="different" artCase="no" artDefOnly="no" artDemClassifier="no" artPl="no" artRequired="no" caseDefault="no" caseN="no" caseWord="yes" checkedOff="no" classifierPresent="no" classifierPresentAdj="no" classifierPresentDem="no" classifierPresentDemBoth="no" classifierPresentQ="no" comp="no" compHead="right" compHeadMorpheme="right" demAndArtArtRequired="no" demAndArtDemRequired="no" demOrArtRequired="no" demPl="no" demRequired="no" partNP="no" possAbsolutive="no" possAgr="no" possAlienable="no" possCaseErg="genitive" possCooccur="yes" possMarked="no" possNP="yes" possNounCaseChange="no" possNounPos="unknown" possPPPos="unknown" possPronPos="unknown" possWordRequired="no" ppComp="no" ppPos="unknown" qpEitherRestrictedNumPos="unknown">
@@ -1720,7 +1720,7 @@
       <agreeClassifier checked="no"/>
       <agreeGender checked="no"/>
       <agreeAnimacy checked="no"/>
-      <agreeOtherFeat checked="no"/>      
+      <agreeOtherFeat><form><vernacular/><ipa/><gloss/></form></agreeOtherFeat>      
       <agreeOtherNone checked="no"/>
       <caseWordBefore checked="no"/>
       <caseWordAfter checked="no"/>
@@ -2085,88 +2085,88 @@
             <freeLine/>
          </interlinearEntry>
       </caseNPExample>    
-      <nominative/>
-      <accusative/>
-      <ergative/>
-      <absolutive/>
-      <genitive/>
-      <dative/>
-      <ablative/>
-      <instrumental/>
-      <locative/>
-      <vocative/>
-      <oblique/>
-      <otherCase/>
-      <articleExample/>
-      <articlePlExample/>
-      <articleIndefExample/>
-      <articleIndefPlExample/>
-      <articleNomExample/>
-      <articlePlNomExample/>
-      <articleIndefNomExample/>
-      <articleIndefPlNomExample/>
-      <articleAccExample/>
-      <articlePlAccExample/>
-      <articleIndefAccExample/>
-      <articleIndefPlAccExample/>
-      <articleGenExample/>
-      <articlePlGenExample/>
-      <articleIndefGenExample/>
-      <articleIndefPlGenExample/>
-      <articleErgExample/>
-      <articlePlErgExample/>
-      <articleIndefErgExample/>
-      <articleIndefPlErgExample/>
-      <articleAbsExample/>
-      <articlePlAbsExample/>
-      <articleIndefAbsExample/>
-      <articleIndefPlAbsExample/>
-      <articleDatExample/>
-      <articlePlDatExample/>
-      <articleIndefDatExample/>
-      <articleIndefPlDatExample/>
-      <demProximalExample/>
-      <demMedialExample/>
-      <demDistalExample/>
-      <demProximalPlExample/>
-      <demMedialPlExample/>
-      <demDistalPlExample/>
-      <demProximalNomExample/>
-      <demMedialNomExample/>
-      <demDistalNomExample/>
-      <demProximalPlNomExample/>
-      <demMedialPlNomExample/>
-      <demDistalPlNomExample/>
-      <demProximalAccExample/>
-      <demMedialAccExample/>
-      <demDistalAccExample/>
-      <demProximalPlAccExample/>
-      <demMedialPlAccExample/>
-      <demDistalPlAccExample/>
-      <demProximalGenExample/>
-      <demMedialGenExample/>
-      <demDistalGenExample/>
-      <demProximalPlGenExample/>
-      <demMedialPlGenExample/>
-      <demDistalPlGenExample/>
-      <demProximalErgExample/>
-      <demMedialErgExample/>
-      <demDistalErgExample/>
-      <demProximalPlErgExample/>
-      <demMedialPlErgExample/>
-      <demDistalPlErgExample/>
-      <demProximalAbsExample/>
-      <demMedialAbsExample/>
-      <demDistalAbsExample/>
-      <demProximalPlAbsExample/>
-      <demMedialPlAbsExample/>
-      <demDistalPlAbsExample/>
-      <demProximalDatExample/>
-      <demMedialDatExample/>
-      <demDistalDatExample/>
-      <demProximalPlDatExample/>
-      <demMedialPlDatExample/>
-      <demDistalPlDatExample/>
+      <nominative><form><vernacular/><ipa/><gloss/></form></nominative>
+      <accusative><form><vernacular/><ipa/><gloss/></form></accusative>
+      <ergative><form><vernacular/><ipa/><gloss/></form></ergative>
+      <absolutive><form><vernacular/><ipa/><gloss/></form></absolutive>
+      <genitive><form><vernacular/><ipa/><gloss/></form></genitive>
+      <dative><form><vernacular/><ipa/><gloss/></form></dative>
+      <ablative><form><vernacular/><ipa/><gloss/></form></ablative>
+      <instrumental><form><vernacular/><ipa/><gloss/></form></instrumental>
+      <locative><form><vernacular/><ipa/><gloss/></form></locative>
+      <vocative><form><vernacular/><ipa/><gloss/></form></vocative>
+      <oblique><form><vernacular/><ipa/><gloss/></form></oblique>
+      <otherCase><form><vernacular/><ipa/><gloss/></form></otherCase>
+      <articleExample><form><vernacular/><ipa/><gloss/></form></articleExample>
+      <articlePlExample><form><vernacular/><ipa/><gloss/></form></articlePlExample>
+      <articleIndefExample><form><vernacular/><ipa/><gloss/></form></articleIndefExample>
+      <articleIndefPlExample><form><vernacular/><ipa/><gloss/></form></articleIndefPlExample>
+      <articleNomExample><form><vernacular/><ipa/><gloss/></form></articleNomExample>
+      <articlePlNomExample><form><vernacular/><ipa/><gloss/></form></articlePlNomExample>
+      <articleIndefNomExample><form><vernacular/><ipa/><gloss/></form></articleIndefNomExample>
+      <articleIndefPlNomExample><form><vernacular/><ipa/><gloss/></form></articleIndefPlNomExample>
+      <articleAccExample><form><vernacular/><ipa/><gloss/></form></articleAccExample>
+      <articlePlAccExample><form><vernacular/><ipa/><gloss/></form></articlePlAccExample>
+      <articleIndefAccExample><form><vernacular/><ipa/><gloss/></form></articleIndefAccExample>
+      <articleIndefPlAccExample><form><vernacular/><ipa/><gloss/></form></articleIndefPlAccExample>
+      <articleGenExample><form><vernacular/><ipa/><gloss/></form></articleGenExample>
+      <articlePlGenExample><form><vernacular/><ipa/><gloss/></form></articlePlGenExample>
+      <articleIndefGenExample><form><vernacular/><ipa/><gloss/></form></articleIndefGenExample>
+      <articleIndefPlGenExample><form><vernacular/><ipa/><gloss/></form></articleIndefPlGenExample>
+      <articleErgExample><form><vernacular/><ipa/><gloss/></form></articleErgExample>
+      <articlePlErgExample><form><vernacular/><ipa/><gloss/></form></articlePlErgExample>
+      <articleIndefErgExample><form><vernacular/><ipa/><gloss/></form></articleIndefErgExample>
+      <articleIndefPlErgExample><form><vernacular/><ipa/><gloss/></form></articleIndefPlErgExample>
+      <articleAbsExample><form><vernacular/><ipa/><gloss/></form></articleAbsExample>
+      <articlePlAbsExample><form><vernacular/><ipa/><gloss/></form></articlePlAbsExample>
+      <articleIndefAbsExample><form><vernacular/><ipa/><gloss/></form></articleIndefAbsExample>
+      <articleIndefPlAbsExample><form><vernacular/><ipa/><gloss/></form></articleIndefPlAbsExample>
+      <articleDatExample><form><vernacular/><ipa/><gloss/></form></articleDatExample>
+      <articlePlDatExample><form><vernacular/><ipa/><gloss/></form></articlePlDatExample>
+      <articleIndefDatExample><form><vernacular/><ipa/><gloss/></form></articleIndefDatExample>
+      <articleIndefPlDatExample><form><vernacular/><ipa/><gloss/></form></articleIndefPlDatExample>
+      <demProximalExample><form><vernacular/><ipa/><gloss/></form></demProximalExample>
+      <demMedialExample><form><vernacular/><ipa/><gloss/></form></demMedialExample>
+      <demDistalExample><form><vernacular/><ipa/><gloss/></form></demDistalExample>
+      <demProximalPlExample><form><vernacular/><ipa/><gloss/></form></demProximalPlExample>
+      <demMedialPlExample><form><vernacular/><ipa/><gloss/></form></demMedialPlExample>
+      <demDistalPlExample><form><vernacular/><ipa/><gloss/></form></demDistalPlExample>
+      <demProximalNomExample><form><vernacular/><ipa/><gloss/></form></demProximalNomExample>
+      <demMedialNomExample><form><vernacular/><ipa/><gloss/></form></demMedialNomExample>
+      <demDistalNomExample><form><vernacular/><ipa/><gloss/></form></demDistalNomExample>
+      <demProximalPlNomExample><form><vernacular/><ipa/><gloss/></form></demProximalPlNomExample>
+      <demMedialPlNomExample><form><vernacular/><ipa/><gloss/></form></demMedialPlNomExample>
+      <demDistalPlNomExample><form><vernacular/><ipa/><gloss/></form></demDistalPlNomExample>
+      <demProximalAccExample><form><vernacular/><ipa/><gloss/></form></demProximalAccExample>
+      <demMedialAccExample><form><vernacular/><ipa/><gloss/></form></demMedialAccExample>
+      <demDistalAccExample><form><vernacular/><ipa/><gloss/></form></demDistalAccExample>
+      <demProximalPlAccExample><form><vernacular/><ipa/><gloss/></form></demProximalPlAccExample>
+      <demMedialPlAccExample><form><vernacular/><ipa/><gloss/></form></demMedialPlAccExample>
+      <demDistalPlAccExample><form><vernacular/><ipa/><gloss/></form></demDistalPlAccExample>
+      <demProximalGenExample><form><vernacular/><ipa/><gloss/></form></demProximalGenExample>
+      <demMedialGenExample><form><vernacular/><ipa/><gloss/></form></demMedialGenExample>
+      <demDistalGenExample><form><vernacular/><ipa/><gloss/></form></demDistalGenExample>
+      <demProximalPlGenExample><form><vernacular/><ipa/><gloss/></form></demProximalPlGenExample>
+      <demMedialPlGenExample><form><vernacular/><ipa/><gloss/></form></demMedialPlGenExample>
+      <demDistalPlGenExample><form><vernacular/><ipa/><gloss/></form></demDistalPlGenExample>
+      <demProximalErgExample><form><vernacular/><ipa/><gloss/></form></demProximalErgExample>
+      <demMedialErgExample><form><vernacular/><ipa/><gloss/></form></demMedialErgExample>
+      <demDistalErgExample><form><vernacular/><ipa/><gloss/></form></demDistalErgExample>
+      <demProximalPlErgExample><form><vernacular/><ipa/><gloss/></form></demProximalPlErgExample>
+      <demMedialPlErgExample><form><vernacular/><ipa/><gloss/></form></demMedialPlErgExample>
+      <demDistalPlErgExample><form><vernacular/><ipa/><gloss/></form></demDistalPlErgExample>
+      <demProximalAbsExample><form><vernacular/><ipa/><gloss/></form></demProximalAbsExample>
+      <demMedialAbsExample><form><vernacular/><ipa/><gloss/></form></demMedialAbsExample>
+      <demDistalAbsExample><form><vernacular/><ipa/><gloss/></form></demDistalAbsExample>
+      <demProximalPlAbsExample><form><vernacular/><ipa/><gloss/></form></demProximalPlAbsExample>
+      <demMedialPlAbsExample><form><vernacular/><ipa/><gloss/></form></demMedialPlAbsExample>
+      <demDistalPlAbsExample><form><vernacular/><ipa/><gloss/></form></demDistalPlAbsExample>
+      <demProximalDatExample><form><vernacular/><ipa/><gloss/></form></demProximalDatExample>
+      <demMedialDatExample><form><vernacular/><ipa/><gloss/></form></demMedialDatExample>
+      <demDistalDatExample><form><vernacular/><ipa/><gloss/></form></demDistalDatExample>
+      <demProximalPlDatExample><form><vernacular/><ipa/><gloss/></form></demProximalPlDatExample>
+      <demMedialPlDatExample><form><vernacular/><ipa/><gloss/></form></demMedialPlDatExample>
+      <demDistalPlDatExample><form><vernacular/><ipa/><gloss/></form></demDistalPlDatExample>
       <example>
          <interlinearEntry>
             <vernacularLine/>
@@ -2377,11 +2377,11 @@
             <freeLine/>
          </interlinearEntry>
       </relClExample>
-      <possMarkerAffix/>
-      <possMarkerClitic/>
-      <possMarkerWord/>
-      <possAlienableAffixExample/>
-      <possAbsolutiveAffixExample/>
+      <possMarkerAffix><form><vernacular/><ipa/><gloss/></form></possMarkerAffix>
+      <possMarkerClitic><form><vernacular/><ipa/><gloss/></form></possMarkerClitic>
+      <possMarkerWord><form><vernacular/><ipa/><gloss/></form></possMarkerWord>
+      <possAlienableAffixExample><form><vernacular/><ipa/><gloss/></form></possAlienableAffixExample>
+      <possAbsolutiveAffixExample><form><vernacular/><ipa/><gloss/></form></possAbsolutiveAffixExample>
       <qpExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -2508,11 +2508,11 @@
             <freeLine/>
          </interlinearEntry>
       </partExample>
-        <compBodyPartExample/>
-      <compKinshipExample/>
-      <compFoodExample/>
-      <compMaterialExample/>
-      <compExample/>
+        <compBodyPartExample><form><vernacular/><ipa/><gloss/></form></compBodyPartExample>
+      <compKinshipExample><form><vernacular/><ipa/><gloss/></form></compKinshipExample>
+      <compFoodExample><form><vernacular/><ipa/><gloss/></form></compFoodExample>
+      <compMaterialExample><form><vernacular/><ipa/><gloss/></form></compMaterialExample>
+      <compExample><form><vernacular/><ipa/><gloss/></form></compExample>
       <compPPExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -2642,66 +2642,66 @@
         <articleCategory/>
         <demonstrativeCategory/>
         <nounCategory/>
-      <articleErgGenExample/>
-      <articleErgPlGenExample/>
-      <articleErgIndefGenExample/>
-      <articleErgIndefPlGenExample/>
-      <articleSplitNomExample/>
-      <articleSplitPlNomExample/>
-      <articleSplitIndefNomExample/>
-      <articleSplitIndefPlNomExample/>
-      <articleSplitAccExample/>
-      <articleSplitPlAccExample/>
-      <articleSplitIndefAccExample/>
-      <articleSplitIndefPlAccExample/>
-      <articleSplitGenExample/>
-      <articleSplitPlGenExample/>
-      <articleSplitIndefGenExample/>
-      <articleSplitIndefPlGenExample/>
-      <articleSplitErgExample/>
-      <articleSplitPlErgExample/>
-      <articleSplitIndefErgExample/>
-      <articleSplitIndefPlErgExample/>
-      <articleSplitAbsExample/>
-      <articleSplitPlAbsExample/>
-      <articleSplitIndefAbsExample/>
-      <articleSplitIndefPlAbsExample/>
-      <demErgProximalGenExample/>
-      <demErgMedialGenExample/>
-      <demErgDistalGenExample/>
-      <demErgProximalPlGenExample/>
-      <demErgMedialPlGenExample/>
-      <demErgDistalPlGenExample/>     
-      <demSplitProximalNomExample/>
-      <demSplitMedialNomExample/>
-      <demSplitDistalNomExample/>
-      <demSplitProximalPlNomExample/>
-      <demSplitMedialPlNomExample/>
-      <demSplitDistalPlNomExample/>
-      <demSplitProximalAccExample/>
-      <demSplitMedialAccExample/>
-      <demSplitDistalAccExample/>
-      <demSplitProximalPlAccExample/>
-      <demSplitMedialPlAccExample/>
-      <demSplitDistalPlAccExample/>
-      <demSplitProximalGenExample/>
-      <demSplitMedialGenExample/>
-      <demSplitDistalGenExample/>
-      <demSplitProximalPlGenExample/>
-      <demSplitMedialPlGenExample/>
-      <demSplitDistalPlGenExample/>
-      <demSplitProximalErgExample/>
-      <demSplitMedialErgExample/>
-      <demSplitDistalErgExample/>
-      <demSplitProximalPlErgExample/>
-      <demSplitMedialPlErgExample/>
-      <demSplitDistalPlErgExample/>
-      <demSplitProximalAbsExample/>
-      <demSplitMedialAbsExample/>
-      <demSplitDistalAbsExample/>
-      <demSplitProximalPlAbsExample/>
-      <demSplitMedialPlAbsExample/>
-      <demSplitDistalPlAbsExample/>     
+      <articleErgGenExample><form><vernacular/><ipa/><gloss/></form></articleErgGenExample>
+      <articleErgPlGenExample><form><vernacular/><ipa/><gloss/></form></articleErgPlGenExample>
+      <articleErgIndefGenExample><form><vernacular/><ipa/><gloss/></form></articleErgIndefGenExample>
+      <articleErgIndefPlGenExample><form><vernacular/><ipa/><gloss/></form></articleErgIndefPlGenExample>
+      <articleSplitNomExample><form><vernacular/><ipa/><gloss/></form></articleSplitNomExample>
+      <articleSplitPlNomExample><form><vernacular/><ipa/><gloss/></form></articleSplitPlNomExample>
+      <articleSplitIndefNomExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefNomExample>
+      <articleSplitIndefPlNomExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefPlNomExample>
+      <articleSplitAccExample><form><vernacular/><ipa/><gloss/></form></articleSplitAccExample>
+      <articleSplitPlAccExample><form><vernacular/><ipa/><gloss/></form></articleSplitPlAccExample>
+      <articleSplitIndefAccExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefAccExample>
+      <articleSplitIndefPlAccExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefPlAccExample>
+      <articleSplitGenExample><form><vernacular/><ipa/><gloss/></form></articleSplitGenExample>
+      <articleSplitPlGenExample><form><vernacular/><ipa/><gloss/></form></articleSplitPlGenExample>
+      <articleSplitIndefGenExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefGenExample>
+      <articleSplitIndefPlGenExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefPlGenExample>
+      <articleSplitErgExample><form><vernacular/><ipa/><gloss/></form></articleSplitErgExample>
+      <articleSplitPlErgExample><form><vernacular/><ipa/><gloss/></form></articleSplitPlErgExample>
+      <articleSplitIndefErgExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefErgExample>
+      <articleSplitIndefPlErgExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefPlErgExample>
+      <articleSplitAbsExample><form><vernacular/><ipa/><gloss/></form></articleSplitAbsExample>
+      <articleSplitPlAbsExample><form><vernacular/><ipa/><gloss/></form></articleSplitPlAbsExample>
+      <articleSplitIndefAbsExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefAbsExample>
+      <articleSplitIndefPlAbsExample><form><vernacular/><ipa/><gloss/></form></articleSplitIndefPlAbsExample>
+      <demErgProximalGenExample><form><vernacular/><ipa/><gloss/></form></demErgProximalGenExample>
+      <demErgMedialGenExample><form><vernacular/><ipa/><gloss/></form></demErgMedialGenExample>
+      <demErgDistalGenExample><form><vernacular/><ipa/><gloss/></form></demErgDistalGenExample>
+      <demErgProximalPlGenExample><form><vernacular/><ipa/><gloss/></form></demErgProximalPlGenExample>
+      <demErgMedialPlGenExample><form><vernacular/><ipa/><gloss/></form></demErgMedialPlGenExample>
+      <demErgDistalPlGenExample><form><vernacular/><ipa/><gloss/></form></demErgDistalPlGenExample>     
+      <demSplitProximalNomExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalNomExample>
+      <demSplitMedialNomExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialNomExample>
+      <demSplitDistalNomExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalNomExample>
+      <demSplitProximalPlNomExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalPlNomExample>
+      <demSplitMedialPlNomExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialPlNomExample>
+      <demSplitDistalPlNomExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalPlNomExample>
+      <demSplitProximalAccExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalAccExample>
+      <demSplitMedialAccExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialAccExample>
+      <demSplitDistalAccExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalAccExample>
+      <demSplitProximalPlAccExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalPlAccExample>
+      <demSplitMedialPlAccExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialPlAccExample>
+      <demSplitDistalPlAccExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalPlAccExample>
+      <demSplitProximalGenExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalGenExample>
+      <demSplitMedialGenExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialGenExample>
+      <demSplitDistalGenExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalGenExample>
+      <demSplitProximalPlGenExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalPlGenExample>
+      <demSplitMedialPlGenExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialPlGenExample>
+      <demSplitDistalPlGenExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalPlGenExample>
+      <demSplitProximalErgExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalErgExample>
+      <demSplitMedialErgExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialErgExample>
+      <demSplitDistalErgExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalErgExample>
+      <demSplitProximalPlErgExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalPlErgExample>
+      <demSplitMedialPlErgExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialPlErgExample>
+      <demSplitDistalPlErgExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalPlErgExample>
+      <demSplitProximalAbsExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalAbsExample>
+      <demSplitMedialAbsExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialAbsExample>
+      <demSplitDistalAbsExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalAbsExample>
+      <demSplitProximalPlAbsExample><form><vernacular/><ipa/><gloss/></form></demSplitProximalPlAbsExample>
+      <demSplitMedialPlAbsExample><form><vernacular/><ipa/><gloss/></form></demSplitMedialPlAbsExample>
+      <demSplitDistalPlAbsExample><form><vernacular/><ipa/><gloss/></form></demSplitDistalPlAbsExample>     
       <npContents1 checkedOff="no"/>
         <npContents2 checkedOff="no"/>
         <npContents3 checkedOff="no"/>
@@ -2936,144 +2936,144 @@
        <indefTypeIntAfter checked="no"/>
        <indefTypeIntBoth checked="no"/>
        <indefTypeIntOther checked="no"/>       
-       <personalFirstSgNoCaseExample/>
-       <personalFirstPlNoCaseExample/>
-       <personalFirstExclNoCaseExample/>
-       <personalFirstInclNoCaseExample/>
-       <personalSecondSgNoCaseExample/>
-       <personalSecondPlNoCaseExample/>
-       <personalThirdSgNoCaseExample/>
-       <personalThirdPlNoCaseExample/>    
-       <personalFirstSgNoneDativeExample/>
-       <personalFirstPlNoneDativeExample/>
-       <personalFirstExclNoneDativeExample/>
-       <personalFirstInclNoneDativeExample/>
-       <personalSecondSgNoneDativeExample/>
-       <personalSecondPlNoneDativeExample/>
-       <personalThirdSgNoneDativeExample/>
-       <personalThirdPlNoneDativeExample/>
-       <personalFirstSgNomSubjectExample/>
-       <personalFirstPlNomSubjectExample/>
-       <personalFirstExclNomSubjectExample/>
-       <personalFirstInclNomSubjectExample/>
-       <personalSecondSgNomSubjectExample/>
-       <personalSecondPlNomSubjectExample/>
-       <personalThirdSgNomSubjectExample/>
-       <personalThirdPlNomSubjectExample/>
-       <personalFirstSgNomObjectExample/>
-       <personalFirstPlNomObjectExample/>
-       <personalFirstExclNomObjectExample/>
-       <personalFirstInclNomObjectExample/>
-       <personalSecondSgNomObjectExample/>
-       <personalSecondPlNomObjectExample/>
-       <personalThirdSgNomObjectExample/>
-       <personalThirdPlNomObjectExample/>
-       <personalFirstSgNomPossessorExample/>
-       <personalFirstPlNomPossessorExample/>
-       <personalFirstExclNomPossessorExample/>
-       <personalFirstInclNomPossessorExample/>
-       <personalSecondSgNomPossessorExample/>
-       <personalSecondPlNomPossessorExample/>
-       <personalThirdSgNomPossessorExample/>
-       <personalThirdPlNomPossessorExample/>
-       <personalFirstSgNomDativeExample/>
-       <personalFirstPlNomDativeExample/>
-       <personalFirstExclNomDativeExample/>
-       <personalFirstInclNomDativeExample/>
-       <personalSecondSgNomDativeExample/>
-       <personalSecondPlNomDativeExample/>
-       <personalThirdSgNomDativeExample/>
-       <personalThirdPlNomDativeExample/>
-       <personalFirstSgErgSubjectTransExample/>
-       <personalFirstPlErgSubjectTransExample/>
-       <personalFirstExclErgSubjectTransExample/>
-       <personalFirstInclErgSubjectTransExample/>
-       <personalSecondSgErgSubjectTransExample/>
-       <personalSecondPlErgSubjectTransExample/>
-       <personalThirdSgErgSubjectTransExample/>
-       <personalThirdPlErgSubjectTransExample/>
-       <personalFirstSgErgSubjectIntransExample/>
-       <personalFirstPlErgSubjectIntransExample/>
-       <personalFirstExclErgSubjectIntransExample/>
-       <personalFirstInclErgSubjectIntransExample/>
-       <personalSecondSgErgSubjectIntransExample/>
-       <personalSecondPlErgSubjectIntransExample/>
-       <personalThirdSgErgSubjectIntransExample/>
-       <personalThirdPlErgSubjectIntransExample/>
-       <personalFirstSgErgPossessorExample/>
-       <personalFirstPlErgPossessorExample/>
-       <personalFirstExclErgPossessorExample/>
-       <personalFirstInclErgPossessorExample/>
-       <personalSecondSgErgPossessorExample/>
-       <personalSecondPlErgPossessorExample/>
-       <personalThirdSgErgPossessorExample/>
-       <personalThirdPlErgPossessorExample/>
-       <personalFirstSgErgDativeExample/>
-       <personalFirstPlErgDativeExample/>
-       <personalFirstExclErgDativeExample/>
-       <personalFirstInclErgDativeExample/>
-       <personalSecondSgErgDativeExample/>
-       <personalSecondPlErgDativeExample/>
-       <personalThirdSgErgDativeExample/>
-       <personalThirdPlErgDativeExample/>
-       <personalFirstSgSplitSubjectExample/>
-       <personalFirstPlSplitSubjectExample/>
-       <personalFirstExclSplitSubjectExample/>
-       <personalFirstInclSplitSubjectExample/>
-       <personalSecondSgSplitSubjectExample/>
-       <personalSecondPlSplitSubjectExample/>
-       <personalThirdSgSplitSubjectExample/>
-       <personalThirdPlSplitSubjectExample/>
-       <personalFirstSgSplitObjectExample/>
-       <personalFirstPlSplitObjectExample/>
-       <personalFirstExclSplitObjectExample/>
-       <personalFirstInclSplitObjectExample/>
-       <personalSecondSgSplitObjectExample/>
-       <personalSecondPlSplitObjectExample/>
-       <personalThirdSgSplitObjectExample/>
-       <personalThirdPlSplitObjectExample/>
-       <personalFirstSgSplitPossessorExample/>
-       <personalFirstPlSplitPossessorExample/>
-       <personalFirstExclSplitPossessorExample/>
-       <personalFirstInclSplitPossessorExample/>
-       <personalSecondSgSplitPossessorExample/>
-       <personalSecondPlSplitPossessorExample/>
-       <personalThirdSgSplitPossessorExample/>
-       <personalThirdPlSplitPossessorExample/>
-       <personalFirstSgSplitDativeExample/>
-       <personalFirstPlSplitDativeExample/>
-       <personalFirstExclSplitDativeExample/>
-       <personalFirstInclSplitDativeExample/>
-       <personalSecondSgSplitDativeExample/>
-       <personalSecondPlSplitDativeExample/>
-       <personalThirdSgSplitDativeExample/>
-       <personalThirdPlSplitDativeExample/>
-       <personalFirstSgSplitErgExample/>
-       <personalFirstPlSplitErgExample/>
-       <personalFirstExclSplitErgExample/>
-       <personalFirstInclSplitErgExample/>
-       <personalSecondSgSplitErgExample/>
-       <personalSecondPlSplitErgExample/>
-       <personalThirdSgSplitErgExample/>
-       <personalThirdPlSplitErgExample/>
-       <personalFirstSgSplitAbsExample/>
-       <personalFirstPlSplitAbsExample/>
-       <personalFirstExclSplitAbsExample/>
-       <personalFirstInclSplitAbsExample/>
-       <personalSecondSgSplitAbsExample/>
-       <personalSecondPlSplitAbsExample/>
-       <personalThirdSgSplitAbsExample/>
-       <personalThirdPlSplitAbsExample/>    
-       <personalDependentFirstSgNoCaseExample/>
-       <personalDependentFirstPlNoCaseExample/>
-       <personalDependentFirstExclNoCaseExample/>
-       <personalDependentFirstInclNoCaseExample/>
-       <personalDependentSecondSgNoCaseExample/>
-       <personalDependentSecondPlNoCaseExample/>
-       <personalDependentThirdSgNoCaseExample/>
-       <personalDependentThirdPlNoCaseExample/>    
-       <personalDependentFirstSgNoneDativeExample/>
-       <personalDependentFirstPlNoneDativeExample/>
+       <personalFirstSgNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgNoCaseExample>
+       <personalFirstPlNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlNoCaseExample>
+       <personalFirstExclNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclNoCaseExample>
+       <personalFirstInclNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclNoCaseExample>
+       <personalSecondSgNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgNoCaseExample>
+       <personalSecondPlNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlNoCaseExample>
+       <personalThirdSgNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgNoCaseExample>
+       <personalThirdPlNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlNoCaseExample>    
+       <personalFirstSgNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgNoneDativeExample>
+       <personalFirstPlNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlNoneDativeExample>
+       <personalFirstExclNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclNoneDativeExample>
+       <personalFirstInclNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclNoneDativeExample>
+       <personalSecondSgNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgNoneDativeExample>
+       <personalSecondPlNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlNoneDativeExample>
+       <personalThirdSgNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgNoneDativeExample>
+       <personalThirdPlNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlNoneDativeExample>
+       <personalFirstSgNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgNomSubjectExample>
+       <personalFirstPlNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlNomSubjectExample>
+       <personalFirstExclNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclNomSubjectExample>
+       <personalFirstInclNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclNomSubjectExample>
+       <personalSecondSgNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgNomSubjectExample>
+       <personalSecondPlNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlNomSubjectExample>
+       <personalThirdSgNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgNomSubjectExample>
+       <personalThirdPlNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlNomSubjectExample>
+       <personalFirstSgNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgNomObjectExample>
+       <personalFirstPlNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlNomObjectExample>
+       <personalFirstExclNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclNomObjectExample>
+       <personalFirstInclNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclNomObjectExample>
+       <personalSecondSgNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgNomObjectExample>
+       <personalSecondPlNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlNomObjectExample>
+       <personalThirdSgNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgNomObjectExample>
+       <personalThirdPlNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlNomObjectExample>
+       <personalFirstSgNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgNomPossessorExample>
+       <personalFirstPlNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlNomPossessorExample>
+       <personalFirstExclNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclNomPossessorExample>
+       <personalFirstInclNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclNomPossessorExample>
+       <personalSecondSgNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgNomPossessorExample>
+       <personalSecondPlNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlNomPossessorExample>
+       <personalThirdSgNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgNomPossessorExample>
+       <personalThirdPlNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlNomPossessorExample>
+       <personalFirstSgNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgNomDativeExample>
+       <personalFirstPlNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlNomDativeExample>
+       <personalFirstExclNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclNomDativeExample>
+       <personalFirstInclNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclNomDativeExample>
+       <personalSecondSgNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgNomDativeExample>
+       <personalSecondPlNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlNomDativeExample>
+       <personalThirdSgNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgNomDativeExample>
+       <personalThirdPlNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlNomDativeExample>
+       <personalFirstSgErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgErgSubjectTransExample>
+       <personalFirstPlErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlErgSubjectTransExample>
+       <personalFirstExclErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclErgSubjectTransExample>
+       <personalFirstInclErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclErgSubjectTransExample>
+       <personalSecondSgErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgErgSubjectTransExample>
+       <personalSecondPlErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlErgSubjectTransExample>
+       <personalThirdSgErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgErgSubjectTransExample>
+       <personalThirdPlErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlErgSubjectTransExample>
+       <personalFirstSgErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgErgSubjectIntransExample>
+       <personalFirstPlErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlErgSubjectIntransExample>
+       <personalFirstExclErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclErgSubjectIntransExample>
+       <personalFirstInclErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclErgSubjectIntransExample>
+       <personalSecondSgErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgErgSubjectIntransExample>
+       <personalSecondPlErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlErgSubjectIntransExample>
+       <personalThirdSgErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgErgSubjectIntransExample>
+       <personalThirdPlErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlErgSubjectIntransExample>
+       <personalFirstSgErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgErgPossessorExample>
+       <personalFirstPlErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlErgPossessorExample>
+       <personalFirstExclErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclErgPossessorExample>
+       <personalFirstInclErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclErgPossessorExample>
+       <personalSecondSgErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgErgPossessorExample>
+       <personalSecondPlErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlErgPossessorExample>
+       <personalThirdSgErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgErgPossessorExample>
+       <personalThirdPlErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlErgPossessorExample>
+       <personalFirstSgErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgErgDativeExample>
+       <personalFirstPlErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlErgDativeExample>
+       <personalFirstExclErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclErgDativeExample>
+       <personalFirstInclErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclErgDativeExample>
+       <personalSecondSgErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgErgDativeExample>
+       <personalSecondPlErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlErgDativeExample>
+       <personalThirdSgErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgErgDativeExample>
+       <personalThirdPlErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlErgDativeExample>
+       <personalFirstSgSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgSplitSubjectExample>
+       <personalFirstPlSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlSplitSubjectExample>
+       <personalFirstExclSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclSplitSubjectExample>
+       <personalFirstInclSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclSplitSubjectExample>
+       <personalSecondSgSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgSplitSubjectExample>
+       <personalSecondPlSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlSplitSubjectExample>
+       <personalThirdSgSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgSplitSubjectExample>
+       <personalThirdPlSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlSplitSubjectExample>
+       <personalFirstSgSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgSplitObjectExample>
+       <personalFirstPlSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlSplitObjectExample>
+       <personalFirstExclSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclSplitObjectExample>
+       <personalFirstInclSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclSplitObjectExample>
+       <personalSecondSgSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgSplitObjectExample>
+       <personalSecondPlSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlSplitObjectExample>
+       <personalThirdSgSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgSplitObjectExample>
+       <personalThirdPlSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlSplitObjectExample>
+       <personalFirstSgSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgSplitPossessorExample>
+       <personalFirstPlSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlSplitPossessorExample>
+       <personalFirstExclSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclSplitPossessorExample>
+       <personalFirstInclSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclSplitPossessorExample>
+       <personalSecondSgSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgSplitPossessorExample>
+       <personalSecondPlSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlSplitPossessorExample>
+       <personalThirdSgSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgSplitPossessorExample>
+       <personalThirdPlSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlSplitPossessorExample>
+       <personalFirstSgSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgSplitDativeExample>
+       <personalFirstPlSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlSplitDativeExample>
+       <personalFirstExclSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclSplitDativeExample>
+       <personalFirstInclSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclSplitDativeExample>
+       <personalSecondSgSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgSplitDativeExample>
+       <personalSecondPlSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlSplitDativeExample>
+       <personalThirdSgSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgSplitDativeExample>
+       <personalThirdPlSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlSplitDativeExample>
+       <personalFirstSgSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgSplitErgExample>
+       <personalFirstPlSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlSplitErgExample>
+       <personalFirstExclSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclSplitErgExample>
+       <personalFirstInclSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclSplitErgExample>
+       <personalSecondSgSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgSplitErgExample>
+       <personalSecondPlSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlSplitErgExample>
+       <personalThirdSgSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgSplitErgExample>
+       <personalThirdPlSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlSplitErgExample>
+       <personalFirstSgSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalFirstSgSplitAbsExample>
+       <personalFirstPlSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalFirstPlSplitAbsExample>
+       <personalFirstExclSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalFirstExclSplitAbsExample>
+       <personalFirstInclSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalFirstInclSplitAbsExample>
+       <personalSecondSgSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalSecondSgSplitAbsExample>
+       <personalSecondPlSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalSecondPlSplitAbsExample>
+       <personalThirdSgSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalThirdSgSplitAbsExample>
+       <personalThirdPlSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalThirdPlSplitAbsExample>    
+       <personalDependentFirstSgNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgNoCaseExample>
+       <personalDependentFirstPlNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlNoCaseExample>
+       <personalDependentFirstExclNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclNoCaseExample>
+       <personalDependentFirstInclNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclNoCaseExample>
+       <personalDependentSecondSgNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgNoCaseExample>
+       <personalDependentSecondPlNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlNoCaseExample>
+       <personalDependentThirdSgNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgNoCaseExample>
+       <personalDependentThirdPlNoCaseExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlNoCaseExample>    
+       <personalDependentFirstSgNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgNoneDativeExample>
+       <personalDependentFirstPlNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlNoneDativeExample>
        <personalDependentFirstExclNoneDativeExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -3116,136 +3116,136 @@
             <freeLine/>
          </interlinearEntry>
       </personalDependentFirstExclNoneDativeExample>
-       <personalDependentFirstInclNoneDativeExample/>
-       <personalDependentSecondSgNoneDativeExample/>
-       <personalDependentSecondPlNoneDativeExample/>
-       <personalDependentThirdSgNoneDativeExample/>
-       <personalDependentThirdPlNoneDativeExample/>
-       <personalDependentFirstSgNomSubjectExample/>
-       <personalDependentFirstPlNomSubjectExample/>
-       <personalDependentFirstExclNomSubjectExample/>
-       <personalDependentFirstInclNomSubjectExample/>
-       <personalDependentSecondSgNomSubjectExample/>
-       <personalDependentSecondPlNomSubjectExample/>
-       <personalDependentThirdSgNomSubjectExample/>
-       <personalDependentThirdPlNomSubjectExample/>
-       <personalDependentFirstSgNomObjectExample/>
-       <personalDependentFirstPlNomObjectExample/>
-       <personalDependentFirstExclNomObjectExample/>
-       <personalDependentFirstInclNomObjectExample/>
-       <personalDependentSecondSgNomObjectExample/>
-       <personalDependentSecondPlNomObjectExample/>
-       <personalDependentThirdSgNomObjectExample/>
-       <personalDependentThirdPlNomObjectExample/>
-       <personalDependentFirstSgNomPossessorExample/>
-       <personalDependentFirstPlNomPossessorExample/>
-       <personalDependentFirstExclNomPossessorExample/>
-       <personalDependentFirstInclNomPossessorExample/>
-       <personalDependentSecondSgNomPossessorExample/>
-       <personalDependentSecondPlNomPossessorExample/>
-       <personalDependentThirdSgNomPossessorExample/>
-       <personalDependentThirdPlNomPossessorExample/>
-       <personalDependentFirstSgNomDativeExample/>
-       <personalDependentFirstPlNomDativeExample/>
-       <personalDependentFirstExclNomDativeExample/>
-       <personalDependentFirstInclNomDativeExample/>
-       <personalDependentSecondSgNomDativeExample/>
-       <personalDependentSecondPlNomDativeExample/>
-       <personalDependentThirdSgNomDativeExample/>
-       <personalDependentThirdPlNomDativeExample/>
-       <personalDependentFirstSgErgSubjectTransExample/>
-       <personalDependentFirstPlErgSubjectTransExample/>
-       <personalDependentFirstExclErgSubjectTransExample/>
-       <personalDependentFirstInclErgSubjectTransExample/>
-       <personalDependentSecondSgErgSubjectTransExample/>
-       <personalDependentSecondPlErgSubjectTransExample/>
-       <personalDependentThirdSgErgSubjectTransExample/>
-       <personalDependentThirdPlErgSubjectTransExample/>
-       <personalDependentFirstSgErgSubjectIntransExample/>
-       <personalDependentFirstPlErgSubjectIntransExample/>
-       <personalDependentFirstExclErgSubjectIntransExample/>
-       <personalDependentFirstInclErgSubjectIntransExample/>
-       <personalDependentSecondSgErgSubjectIntransExample/>
-       <personalDependentSecondPlErgSubjectIntransExample/>
-       <personalDependentThirdSgErgSubjectIntransExample/>
-       <personalDependentThirdPlErgSubjectIntransExample/>
-       <personalDependentFirstSgErgPossessorExample/>
-       <personalDependentFirstPlErgPossessorExample/>
-       <personalDependentFirstExclErgPossessorExample/>
-       <personalDependentFirstInclErgPossessorExample/>
-       <personalDependentSecondSgErgPossessorExample/>
-       <personalDependentSecondPlErgPossessorExample/>
-       <personalDependentThirdSgErgPossessorExample/>
-       <personalDependentThirdPlErgPossessorExample/>
-       <personalDependentFirstSgErgDativeExample/>
-       <personalDependentFirstPlErgDativeExample/>
-       <personalDependentFirstExclErgDativeExample/>
-       <personalDependentFirstInclErgDativeExample/>
-       <personalDependentSecondSgErgDativeExample/>
-       <personalDependentSecondPlErgDativeExample/>
-       <personalDependentThirdSgErgDativeExample/>
-       <personalDependentThirdPlErgDativeExample/>
-       <personalDependentFirstSgSplitSubjectExample/>
-       <personalDependentFirstPlSplitSubjectExample/>
-       <personalDependentFirstExclSplitSubjectExample/>
-       <personalDependentFirstInclSplitSubjectExample/>
-       <personalDependentSecondSgSplitSubjectExample/>
-       <personalDependentSecondPlSplitSubjectExample/>
-       <personalDependentThirdSgSplitSubjectExample/>
-       <personalDependentThirdPlSplitSubjectExample/>
-       <personalDependentFirstSgSplitObjectExample/>
-       <personalDependentFirstPlSplitObjectExample/>
-       <personalDependentFirstExclSplitObjectExample/>
-       <personalDependentFirstInclSplitObjectExample/>
-       <personalDependentSecondSgSplitObjectExample/>
-       <personalDependentSecondPlSplitObjectExample/>
-       <personalDependentThirdSgSplitObjectExample/>
-       <personalDependentThirdPlSplitObjectExample/>
-       <personalDependentFirstSgSplitPossessorExample/>
-       <personalDependentFirstPlSplitPossessorExample/>
-       <personalDependentFirstExclSplitPossessorExample/>
-       <personalDependentFirstInclSplitPossessorExample/>
-       <personalDependentSecondSgSplitPossessorExample/>
-       <personalDependentSecondPlSplitPossessorExample/>
-       <personalDependentThirdSgSplitPossessorExample/>
-       <personalDependentThirdPlSplitPossessorExample/>
-       <personalDependentFirstSgSplitDativeExample/>
-       <personalDependentFirstPlSplitDativeExample/>
-       <personalDependentFirstExclSplitDativeExample/>
-       <personalDependentFirstInclSplitDativeExample/>
-       <personalDependentSecondSgSplitDativeExample/>
-       <personalDependentSecondPlSplitDativeExample/>
-       <personalDependentThirdSgSplitDativeExample/>
-       <personalDependentThirdPlSplitDativeExample/>
-       <personalDependentFirstSgSplitErgExample/>
-       <personalDependentFirstPlSplitErgExample/>
-       <personalDependentFirstExclSplitErgExample/>
-       <personalDependentFirstInclSplitErgExample/>
-       <personalDependentSecondSgSplitErgExample/>
-       <personalDependentSecondPlSplitErgExample/>
-       <personalDependentThirdSgSplitErgExample/>
-       <personalDependentThirdPlSplitErgExample/>
-       <personalDependentFirstSgSplitAbsExample/>
-       <personalDependentFirstPlSplitAbsExample/>
-       <personalDependentFirstExclSplitAbsExample/>
-       <personalDependentFirstInclSplitAbsExample/>
-       <personalDependentSecondSgSplitAbsExample/>
-       <personalDependentSecondPlSplitAbsExample/>
-       <personalDependentThirdSgSplitAbsExample/>
-       <personalDependentThirdPlSplitAbsExample/>
-        <possFirstSgExample/>
-       <possFirstPlExample/>
-       <possFirstExclExample/>
-       <possFirstInclExample/>
-       <possSecondSgExample/>
-       <possSecondPlExample/>
-       <possThirdSgExample/>
-       <possThirdPlExample/>
-       <pronPossAffixExample/>
-       <pronPossAffixWordExample/>
-       <pronPossAffixWordAffixesExample/>
-       <pronPossPhraseWordExample/>
-       <reflVerbAffixExample/>
+       <personalDependentFirstInclNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclNoneDativeExample>
+       <personalDependentSecondSgNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgNoneDativeExample>
+       <personalDependentSecondPlNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlNoneDativeExample>
+       <personalDependentThirdSgNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgNoneDativeExample>
+       <personalDependentThirdPlNoneDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlNoneDativeExample>
+       <personalDependentFirstSgNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgNomSubjectExample>
+       <personalDependentFirstPlNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlNomSubjectExample>
+       <personalDependentFirstExclNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclNomSubjectExample>
+       <personalDependentFirstInclNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclNomSubjectExample>
+       <personalDependentSecondSgNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgNomSubjectExample>
+       <personalDependentSecondPlNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlNomSubjectExample>
+       <personalDependentThirdSgNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgNomSubjectExample>
+       <personalDependentThirdPlNomSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlNomSubjectExample>
+       <personalDependentFirstSgNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgNomObjectExample>
+       <personalDependentFirstPlNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlNomObjectExample>
+       <personalDependentFirstExclNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclNomObjectExample>
+       <personalDependentFirstInclNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclNomObjectExample>
+       <personalDependentSecondSgNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgNomObjectExample>
+       <personalDependentSecondPlNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlNomObjectExample>
+       <personalDependentThirdSgNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgNomObjectExample>
+       <personalDependentThirdPlNomObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlNomObjectExample>
+       <personalDependentFirstSgNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgNomPossessorExample>
+       <personalDependentFirstPlNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlNomPossessorExample>
+       <personalDependentFirstExclNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclNomPossessorExample>
+       <personalDependentFirstInclNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclNomPossessorExample>
+       <personalDependentSecondSgNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgNomPossessorExample>
+       <personalDependentSecondPlNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlNomPossessorExample>
+       <personalDependentThirdSgNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgNomPossessorExample>
+       <personalDependentThirdPlNomPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlNomPossessorExample>
+       <personalDependentFirstSgNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgNomDativeExample>
+       <personalDependentFirstPlNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlNomDativeExample>
+       <personalDependentFirstExclNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclNomDativeExample>
+       <personalDependentFirstInclNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclNomDativeExample>
+       <personalDependentSecondSgNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgNomDativeExample>
+       <personalDependentSecondPlNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlNomDativeExample>
+       <personalDependentThirdSgNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgNomDativeExample>
+       <personalDependentThirdPlNomDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlNomDativeExample>
+       <personalDependentFirstSgErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgErgSubjectTransExample>
+       <personalDependentFirstPlErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlErgSubjectTransExample>
+       <personalDependentFirstExclErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclErgSubjectTransExample>
+       <personalDependentFirstInclErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclErgSubjectTransExample>
+       <personalDependentSecondSgErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgErgSubjectTransExample>
+       <personalDependentSecondPlErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlErgSubjectTransExample>
+       <personalDependentThirdSgErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgErgSubjectTransExample>
+       <personalDependentThirdPlErgSubjectTransExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlErgSubjectTransExample>
+       <personalDependentFirstSgErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgErgSubjectIntransExample>
+       <personalDependentFirstPlErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlErgSubjectIntransExample>
+       <personalDependentFirstExclErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclErgSubjectIntransExample>
+       <personalDependentFirstInclErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclErgSubjectIntransExample>
+       <personalDependentSecondSgErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgErgSubjectIntransExample>
+       <personalDependentSecondPlErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlErgSubjectIntransExample>
+       <personalDependentThirdSgErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgErgSubjectIntransExample>
+       <personalDependentThirdPlErgSubjectIntransExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlErgSubjectIntransExample>
+       <personalDependentFirstSgErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgErgPossessorExample>
+       <personalDependentFirstPlErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlErgPossessorExample>
+       <personalDependentFirstExclErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclErgPossessorExample>
+       <personalDependentFirstInclErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclErgPossessorExample>
+       <personalDependentSecondSgErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgErgPossessorExample>
+       <personalDependentSecondPlErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlErgPossessorExample>
+       <personalDependentThirdSgErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgErgPossessorExample>
+       <personalDependentThirdPlErgPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlErgPossessorExample>
+       <personalDependentFirstSgErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgErgDativeExample>
+       <personalDependentFirstPlErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlErgDativeExample>
+       <personalDependentFirstExclErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclErgDativeExample>
+       <personalDependentFirstInclErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclErgDativeExample>
+       <personalDependentSecondSgErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgErgDativeExample>
+       <personalDependentSecondPlErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlErgDativeExample>
+       <personalDependentThirdSgErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgErgDativeExample>
+       <personalDependentThirdPlErgDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlErgDativeExample>
+       <personalDependentFirstSgSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgSplitSubjectExample>
+       <personalDependentFirstPlSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlSplitSubjectExample>
+       <personalDependentFirstExclSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclSplitSubjectExample>
+       <personalDependentFirstInclSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclSplitSubjectExample>
+       <personalDependentSecondSgSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgSplitSubjectExample>
+       <personalDependentSecondPlSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlSplitSubjectExample>
+       <personalDependentThirdSgSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgSplitSubjectExample>
+       <personalDependentThirdPlSplitSubjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlSplitSubjectExample>
+       <personalDependentFirstSgSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgSplitObjectExample>
+       <personalDependentFirstPlSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlSplitObjectExample>
+       <personalDependentFirstExclSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclSplitObjectExample>
+       <personalDependentFirstInclSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclSplitObjectExample>
+       <personalDependentSecondSgSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgSplitObjectExample>
+       <personalDependentSecondPlSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlSplitObjectExample>
+       <personalDependentThirdSgSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgSplitObjectExample>
+       <personalDependentThirdPlSplitObjectExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlSplitObjectExample>
+       <personalDependentFirstSgSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgSplitPossessorExample>
+       <personalDependentFirstPlSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlSplitPossessorExample>
+       <personalDependentFirstExclSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclSplitPossessorExample>
+       <personalDependentFirstInclSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclSplitPossessorExample>
+       <personalDependentSecondSgSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgSplitPossessorExample>
+       <personalDependentSecondPlSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlSplitPossessorExample>
+       <personalDependentThirdSgSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgSplitPossessorExample>
+       <personalDependentThirdPlSplitPossessorExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlSplitPossessorExample>
+       <personalDependentFirstSgSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgSplitDativeExample>
+       <personalDependentFirstPlSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlSplitDativeExample>
+       <personalDependentFirstExclSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclSplitDativeExample>
+       <personalDependentFirstInclSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclSplitDativeExample>
+       <personalDependentSecondSgSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgSplitDativeExample>
+       <personalDependentSecondPlSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlSplitDativeExample>
+       <personalDependentThirdSgSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgSplitDativeExample>
+       <personalDependentThirdPlSplitDativeExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlSplitDativeExample>
+       <personalDependentFirstSgSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgSplitErgExample>
+       <personalDependentFirstPlSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlSplitErgExample>
+       <personalDependentFirstExclSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclSplitErgExample>
+       <personalDependentFirstInclSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclSplitErgExample>
+       <personalDependentSecondSgSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgSplitErgExample>
+       <personalDependentSecondPlSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlSplitErgExample>
+       <personalDependentThirdSgSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgSplitErgExample>
+       <personalDependentThirdPlSplitErgExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlSplitErgExample>
+       <personalDependentFirstSgSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstSgSplitAbsExample>
+       <personalDependentFirstPlSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstPlSplitAbsExample>
+       <personalDependentFirstExclSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstExclSplitAbsExample>
+       <personalDependentFirstInclSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalDependentFirstInclSplitAbsExample>
+       <personalDependentSecondSgSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondSgSplitAbsExample>
+       <personalDependentSecondPlSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalDependentSecondPlSplitAbsExample>
+       <personalDependentThirdSgSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdSgSplitAbsExample>
+       <personalDependentThirdPlSplitAbsExample><form><vernacular/><ipa/><gloss/></form></personalDependentThirdPlSplitAbsExample>
+        <possFirstSgExample><form><vernacular/><ipa/><gloss/></form></possFirstSgExample>
+       <possFirstPlExample><form><vernacular/><ipa/><gloss/></form></possFirstPlExample>
+       <possFirstExclExample><form><vernacular/><ipa/><gloss/></form></possFirstExclExample>
+       <possFirstInclExample><form><vernacular/><ipa/><gloss/></form></possFirstInclExample>
+       <possSecondSgExample><form><vernacular/><ipa/><gloss/></form></possSecondSgExample>
+       <possSecondPlExample><form><vernacular/><ipa/><gloss/></form></possSecondPlExample>
+       <possThirdSgExample><form><vernacular/><ipa/><gloss/></form></possThirdSgExample>
+       <possThirdPlExample><form><vernacular/><ipa/><gloss/></form></possThirdPlExample>
+       <pronPossAffixExample><form><vernacular/><ipa/><gloss/></form></pronPossAffixExample>
+       <pronPossAffixWordExample><form><vernacular/><ipa/><gloss/></form></pronPossAffixWordExample>
+       <pronPossAffixWordAffixesExample><form><vernacular/><ipa/><gloss/></form></pronPossAffixWordAffixesExample>
+       <pronPossPhraseWordExample><form><vernacular/><ipa/><gloss/></form></pronPossPhraseWordExample>
+       <reflVerbAffixExample><form><vernacular/><ipa/><gloss/></form></reflVerbAffixExample>
         <reflVerbSentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -3288,14 +3288,14 @@
             <freeLine/>
          </interlinearEntry>
       </reflVerbSentExample>
-       <reflFirstSgExample/>
-       <reflFirstPlExample/>
-       <reflFirstExclExample/>
-       <reflFirstInclExample/>
-       <reflSecondSgExample/>
-       <reflSecondPlExample/>
-       <reflThirdSgExample/>
-       <reflThirdPlExample/>
+       <reflFirstSgExample><form><vernacular/><ipa/><gloss/></form></reflFirstSgExample>
+       <reflFirstPlExample><form><vernacular/><ipa/><gloss/></form></reflFirstPlExample>
+       <reflFirstExclExample><form><vernacular/><ipa/><gloss/></form></reflFirstExclExample>
+       <reflFirstInclExample><form><vernacular/><ipa/><gloss/></form></reflFirstInclExample>
+       <reflSecondSgExample><form><vernacular/><ipa/><gloss/></form></reflSecondSgExample>
+       <reflSecondPlExample><form><vernacular/><ipa/><gloss/></form></reflSecondPlExample>
+       <reflThirdSgExample><form><vernacular/><ipa/><gloss/></form></reflThirdSgExample>
+       <reflThirdPlExample><form><vernacular/><ipa/><gloss/></form></reflThirdPlExample>
        <reflSentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -3338,10 +3338,10 @@
             <freeLine/>
          </interlinearEntry>
       </reflSentExample>
-       <pronReflAffixExample/>
-       <pronReflNounPossExample/>
-       <pronReflQExample/>
-       <recipVerbAffixExample/>
+       <pronReflAffixExample><form><vernacular/><ipa/><gloss/></form></pronReflAffixExample>
+       <pronReflNounPossExample><form><vernacular/><ipa/><gloss/></form></pronReflNounPossExample>
+       <pronReflQExample><form><vernacular/><ipa/><gloss/></form></pronReflQExample>
+       <recipVerbAffixExample><form><vernacular/><ipa/><gloss/></form></recipVerbAffixExample>
         <recipVerbSentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -3384,14 +3384,14 @@
             <freeLine/>
          </interlinearEntry>
       </recipVerbSentExample>
-       <recipFirstPlExample/>
-       <recipFirstExclExample/>
-       <recipFirstInclExample/>
-       <recipSecondExample/>
-       <recipThirdExample/>
-       <pronRecipAffixExample/>
-       <pronRecipNounPossExample/>
-       <pronRecipQExample/>
+       <recipFirstPlExample><form><vernacular/><ipa/><gloss/></form></recipFirstPlExample>
+       <recipFirstExclExample><form><vernacular/><ipa/><gloss/></form></recipFirstExclExample>
+       <recipFirstInclExample><form><vernacular/><ipa/><gloss/></form></recipFirstInclExample>
+       <recipSecondExample><form><vernacular/><ipa/><gloss/></form></recipSecondExample>
+       <recipThirdExample><form><vernacular/><ipa/><gloss/></form></recipThirdExample>
+       <pronRecipAffixExample><form><vernacular/><ipa/><gloss/></form></pronRecipAffixExample>
+       <pronRecipNounPossExample><form><vernacular/><ipa/><gloss/></form></pronRecipNounPossExample>
+       <pronRecipQExample><form><vernacular/><ipa/><gloss/></form></pronRecipQExample>
        <recipSentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -3434,54 +3434,54 @@
             <freeLine/>
          </interlinearEntry>
       </recipSentExample>
-       <demProximalExample/>
-       <demMedialExample/>
-       <demDistalExample/>
-       <demProximalPlExample/>
-       <demMedialPlExample/>
-       <demDistalPlExample/>
-       <demProximalNomExample/>
-       <demMedialNomExample/>
-       <demDistalNomExample/>
-       <demProximalPlNomExample/>
-       <demMedialPlNomExample/>
-       <demDistalPlNomExample/>
-       <demProximalAccExample/>
-       <demMedialAccExample/>
-       <demDistalAccExample/>
-       <demProximalPlAccExample/>
-       <demMedialPlAccExample/>
-       <demDistalPlAccExample/>
-       <demProximalGenExample/>
-       <demMedialGenExample/>
-       <demDistalGenExample/>
-       <demProximalPlGenExample/>
-       <demMedialPlGenExample/>
-       <demDistalPlGenExample/>
-       <demProximalErgExample/>
-       <demMedialErgExample/>
-       <demDistalErgExample/>
-       <demProximalPlErgExample/>
-       <demMedialPlErgExample/>
-       <demDistalPlErgExample/>
-       <demProximalAbsExample/>
-       <demMedialAbsExample/>
-       <demDistalAbsExample/>
-       <demProximalPlAbsExample/>
-       <demMedialPlAbsExample/>
-       <demDistalPlAbsExample/>
-       <demProximalDatExample/>
-       <demMedialDatExample/>
-       <demDistalDatExample/>
-       <demProximalPlDatExample/>
-       <demMedialPlDatExample/>
-       <demDistalPlDatExample/>
-       <indefTypeQWordExample/>
-       <indefTypeQPhraseExample/>
-       <indefTypeQOtherExample/>
-       <indefTypeIntWordExample/>
-       <indefTypeIntPhraseExample/>
-       <indefTypeIntOtherExample/>
+       <demProximalExample><form><vernacular/><ipa/><gloss/></form></demProximalExample>
+       <demMedialExample><form><vernacular/><ipa/><gloss/></form></demMedialExample>
+       <demDistalExample><form><vernacular/><ipa/><gloss/></form></demDistalExample>
+       <demProximalPlExample><form><vernacular/><ipa/><gloss/></form></demProximalPlExample>
+       <demMedialPlExample><form><vernacular/><ipa/><gloss/></form></demMedialPlExample>
+       <demDistalPlExample><form><vernacular/><ipa/><gloss/></form></demDistalPlExample>
+       <demProximalNomExample><form><vernacular/><ipa/><gloss/></form></demProximalNomExample>
+       <demMedialNomExample><form><vernacular/><ipa/><gloss/></form></demMedialNomExample>
+       <demDistalNomExample><form><vernacular/><ipa/><gloss/></form></demDistalNomExample>
+       <demProximalPlNomExample><form><vernacular/><ipa/><gloss/></form></demProximalPlNomExample>
+       <demMedialPlNomExample><form><vernacular/><ipa/><gloss/></form></demMedialPlNomExample>
+       <demDistalPlNomExample><form><vernacular/><ipa/><gloss/></form></demDistalPlNomExample>
+       <demProximalAccExample><form><vernacular/><ipa/><gloss/></form></demProximalAccExample>
+       <demMedialAccExample><form><vernacular/><ipa/><gloss/></form></demMedialAccExample>
+       <demDistalAccExample><form><vernacular/><ipa/><gloss/></form></demDistalAccExample>
+       <demProximalPlAccExample><form><vernacular/><ipa/><gloss/></form></demProximalPlAccExample>
+       <demMedialPlAccExample><form><vernacular/><ipa/><gloss/></form></demMedialPlAccExample>
+       <demDistalPlAccExample><form><vernacular/><ipa/><gloss/></form></demDistalPlAccExample>
+       <demProximalGenExample><form><vernacular/><ipa/><gloss/></form></demProximalGenExample>
+       <demMedialGenExample><form><vernacular/><ipa/><gloss/></form></demMedialGenExample>
+       <demDistalGenExample><form><vernacular/><ipa/><gloss/></form></demDistalGenExample>
+       <demProximalPlGenExample><form><vernacular/><ipa/><gloss/></form></demProximalPlGenExample>
+       <demMedialPlGenExample><form><vernacular/><ipa/><gloss/></form></demMedialPlGenExample>
+       <demDistalPlGenExample><form><vernacular/><ipa/><gloss/></form></demDistalPlGenExample>
+       <demProximalErgExample><form><vernacular/><ipa/><gloss/></form></demProximalErgExample>
+       <demMedialErgExample><form><vernacular/><ipa/><gloss/></form></demMedialErgExample>
+       <demDistalErgExample><form><vernacular/><ipa/><gloss/></form></demDistalErgExample>
+       <demProximalPlErgExample><form><vernacular/><ipa/><gloss/></form></demProximalPlErgExample>
+       <demMedialPlErgExample><form><vernacular/><ipa/><gloss/></form></demMedialPlErgExample>
+       <demDistalPlErgExample><form><vernacular/><ipa/><gloss/></form></demDistalPlErgExample>
+       <demProximalAbsExample><form><vernacular/><ipa/><gloss/></form></demProximalAbsExample>
+       <demMedialAbsExample><form><vernacular/><ipa/><gloss/></form></demMedialAbsExample>
+       <demDistalAbsExample><form><vernacular/><ipa/><gloss/></form></demDistalAbsExample>
+       <demProximalPlAbsExample><form><vernacular/><ipa/><gloss/></form></demProximalPlAbsExample>
+       <demMedialPlAbsExample><form><vernacular/><ipa/><gloss/></form></demMedialPlAbsExample>
+       <demDistalPlAbsExample><form><vernacular/><ipa/><gloss/></form></demDistalPlAbsExample>
+       <demProximalDatExample><form><vernacular/><ipa/><gloss/></form></demProximalDatExample>
+       <demMedialDatExample><form><vernacular/><ipa/><gloss/></form></demMedialDatExample>
+       <demDistalDatExample><form><vernacular/><ipa/><gloss/></form></demDistalDatExample>
+       <demProximalPlDatExample><form><vernacular/><ipa/><gloss/></form></demProximalPlDatExample>
+       <demMedialPlDatExample><form><vernacular/><ipa/><gloss/></form></demMedialPlDatExample>
+       <demDistalPlDatExample><form><vernacular/><ipa/><gloss/></form></demDistalPlDatExample>
+       <indefTypeQWordExample><form><vernacular/><ipa/><gloss/></form></indefTypeQWordExample>
+       <indefTypeQPhraseExample><form><vernacular/><ipa/><gloss/></form></indefTypeQPhraseExample>
+       <indefTypeQOtherExample><form><vernacular/><ipa/><gloss/></form></indefTypeQOtherExample>
+       <indefTypeIntWordExample><form><vernacular/><ipa/><gloss/></form></indefTypeIntWordExample>
+       <indefTypeIntPhraseExample><form><vernacular/><ipa/><gloss/></form></indefTypeIntPhraseExample>
+       <indefTypeIntOtherExample><form><vernacular/><ipa/><gloss/></form></indefTypeIntOtherExample>
         <standAloneNPExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -3693,42 +3693,42 @@
          </interlinearEntry>
       </classifierNoNExample>
         <pronounCategory/>
-       <demProximalErgGenExample/>
-       <demMedialErgGenExample/>
-       <demDistalErgGenExample/>
-       <demProximalErgPlGenExample/>
-       <demMedialErgPlGenExample/>
-       <demDistalErgPlGenExample/>     
-       <demProximalSplitNomExample/>
-       <demMedialSplitNomExample/>
-       <demDistalSplitNomExample/>
-       <demProximalSplitPlNomExample/>
-          <demMedialSplitPlNomExample/>
-          <demDistalSplitPlNomExample/>
-          <demProximalSplitAccExample/>
-          <demMedialSplitAccExample/>
-          <demDistalSplitAccExample/>
-          <demProximalSplitPlAccExample/>
-          <demMedialSplitPlAccExample/>
-          <demDistalSplitPlAccExample/>
-          <demProximalSplitGenExample/>
-          <demMedialSplitGenExample/>
-          <demDistalSplitGenExample/>
-          <demProximalSplitPlGenExample/>
-          <demMedialSplitPlGenExample/>
-          <demDistalSplitPlGenExample/>
-          <demProximalSplitErgExample/>
-          <demMedialSplitErgExample/>
-          <demDistalSplitErgExample/>
-          <demProximalSplitPlErgExample/>
-          <demMedialSplitPlErgExample/>
-          <demDistalSplitPlErgExample/>
-          <demProximalSplitAbsExample/>
-          <demMedialSplitAbsExample/>
-          <demDistalSplitAbsExample/>
-          <demProximalSplitPlAbsExample/>
-          <demMedialSplitPlAbsExample/>
-          <demDistalSplitPlAbsExample/>
+       <demProximalErgGenExample><form><vernacular/><ipa/><gloss/></form></demProximalErgGenExample>
+       <demMedialErgGenExample><form><vernacular/><ipa/><gloss/></form></demMedialErgGenExample>
+       <demDistalErgGenExample><form><vernacular/><ipa/><gloss/></form></demDistalErgGenExample>
+       <demProximalErgPlGenExample><form><vernacular/><ipa/><gloss/></form></demProximalErgPlGenExample>
+       <demMedialErgPlGenExample><form><vernacular/><ipa/><gloss/></form></demMedialErgPlGenExample>
+       <demDistalErgPlGenExample><form><vernacular/><ipa/><gloss/></form></demDistalErgPlGenExample>     
+       <demProximalSplitNomExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitNomExample>
+       <demMedialSplitNomExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitNomExample>
+       <demDistalSplitNomExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitNomExample>
+       <demProximalSplitPlNomExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitPlNomExample>
+          <demMedialSplitPlNomExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitPlNomExample>
+          <demDistalSplitPlNomExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitPlNomExample>
+          <demProximalSplitAccExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitAccExample>
+          <demMedialSplitAccExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitAccExample>
+          <demDistalSplitAccExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitAccExample>
+          <demProximalSplitPlAccExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitPlAccExample>
+          <demMedialSplitPlAccExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitPlAccExample>
+          <demDistalSplitPlAccExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitPlAccExample>
+          <demProximalSplitGenExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitGenExample>
+          <demMedialSplitGenExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitGenExample>
+          <demDistalSplitGenExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitGenExample>
+          <demProximalSplitPlGenExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitPlGenExample>
+          <demMedialSplitPlGenExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitPlGenExample>
+          <demDistalSplitPlGenExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitPlGenExample>
+          <demProximalSplitErgExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitErgExample>
+          <demMedialSplitErgExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitErgExample>
+          <demDistalSplitErgExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitErgExample>
+          <demProximalSplitPlErgExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitPlErgExample>
+          <demMedialSplitPlErgExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitPlErgExample>
+          <demDistalSplitPlErgExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitPlErgExample>
+          <demProximalSplitAbsExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitAbsExample>
+          <demMedialSplitAbsExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitAbsExample>
+          <demDistalSplitAbsExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitAbsExample>
+          <demProximalSplitPlAbsExample><form><vernacular/><ipa/><gloss/></form></demProximalSplitPlAbsExample>
+          <demMedialSplitPlAbsExample><form><vernacular/><ipa/><gloss/></form></demMedialSplitPlAbsExample>
+          <demDistalSplitPlAbsExample><form><vernacular/><ipa/><gloss/></form></demDistalSplitPlAbsExample>
     </pron>
    <pp alone="no" attaches="edge" bodyPart="no" checkedOff="no" locative="no" modifiers="no" pPos="unknown" pType="word" ppClassifier="no" ppComp="no" tempComp="no">
       <ppModifierDegree checked="no"/>
@@ -3794,7 +3794,7 @@
             <freeLine/>
          </interlinearEntry>
       </ppExample>
-      <degree/>      
+      <degree><form><vernacular/><ipa/><gloss/></form></degree>      
       <degreeWithPP>
          <interlinearEntry>
             <vernacularLine/>
@@ -3837,7 +3837,7 @@
             <freeLine/>
          </interlinearEntry>
       </degreeWithPP>     
-      <ordinal/>  
+      <ordinal><form><vernacular/><ipa/><gloss/></form></ordinal>  
       <ordinalWithPP>
          <interlinearEntry>
             <vernacularLine/>
@@ -3880,7 +3880,7 @@
             <freeLine/>
          </interlinearEntry>
       </ordinalWithPP>   
-      <manner/>      
+      <manner><form><vernacular/><ipa/><gloss/></form></manner>      
       <mannerWithPP>
          <interlinearEntry>
             <vernacularLine/>
@@ -3923,7 +3923,7 @@
             <freeLine/>
          </interlinearEntry>
       </mannerWithPP>     
-      <locative/>     
+      <locative><form><vernacular/><ipa/><gloss/></form></locative>     
       <locativeWithPP>
          <interlinearEntry>
             <vernacularLine/>
@@ -3966,7 +3966,7 @@
             <freeLine/>
          </interlinearEntry>
       </locativeWithPP>     
-      <otherMod/>      
+      <otherMod><form><vernacular/><ipa/><gloss/></form></otherMod>      
       <otherModWithPP>
          <interlinearEntry>
             <vernacularLine/>
@@ -4009,8 +4009,8 @@
             <freeLine/>
          </interlinearEntry>
       </otherModWithPP>    
-      <locativePrepExample/>
-      <locativePostExample/>
+      <locativePrepExample><form><vernacular/><ipa/><gloss/></form></locativePrepExample>
+      <locativePostExample><form><vernacular/><ipa/><gloss/></form></locativePostExample>
       <locativePrepPPExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -4095,8 +4095,8 @@
             <freeLine/>
          </interlinearEntry>
       </locativePostPPExample>
-      <bodyPartPrepExample/>
-      <bodyPartPostExample/>
+      <bodyPartPrepExample><form><vernacular/><ipa/><gloss/></form></bodyPartPrepExample>
+      <bodyPartPostExample><form><vernacular/><ipa/><gloss/></form></bodyPartPostExample>
       <bodyPartPrepPPExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -4181,12 +4181,12 @@
             <freeLine/>
          </interlinearEntry>
       </bodyPartPostPPExample>
-      <genitiveP/>
-      <dativeP/>
-      <ablativeP/>
-      <instrumentalP/>
-      <vocativeP/>
-      <obliqueP/>
+      <genitiveP><form><vernacular/><ipa/><gloss/></form></genitiveP>
+      <dativeP><form><vernacular/><ipa/><gloss/></form></dativeP>
+      <ablativeP><form><vernacular/><ipa/><gloss/></form></ablativeP>
+      <instrumentalP><form><vernacular/><ipa/><gloss/></form></instrumentalP>
+      <vocativeP><form><vernacular/><ipa/><gloss/></form></vocativeP>
+      <obliqueP><form><vernacular/><ipa/><gloss/></form></obliqueP>
       <aloneExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -4393,126 +4393,126 @@
        <antipassiveAgr checked="no"/>
        <antipassiveAffix checked="no"/>
        <antipassiveOther checked="no"/>       
-       <presentTense/>
-       <pastTense/>
-       <futureTense/>
-       <nonPastTense/>
-     <nonFutureTense/>
-     <otherTense/>
-     <completiveAspect/>
-       <contemplativeAspect/>
-          <continuativeAspect/>
-          <contrafactualAspect/>
-             <habitualAspect/>
-             <imperfectAspect/>
-       <imperfectiveAspect/>
-       <incompletiveAspect/>
-             <perfectAspect/>
-             <perfectiveAspect/>
-             <potentialAspect/>
-             <progressiveAspect/>
-     <purposiveAspect/>
-     <stativeAspect/>
-             <unrealAspect/>
-      <otherAspect/>
-     <declarativeMood/>
-             <indicativeMood/>
-                   <realisMood/>
-                   <imperativeMood/>
-                   <interrogativeMood/>
-                   <conditionalMood/>
-                   <subjunctiveMood/>
-                   <irrealisMood/>
-     <otherMood/>
-     <witnessEvident/>
-     <nonwitnessEvident/>
-     <firsthandEvident/>
-     <secondhandEvident/>
-     <thirdhandEvident/>
-     <visualEvident/>
-     <auditoryEvident/>
-     <olfactoryEvident/>
-     <inferentialEvident/>
-     <reportativeEvident/>
-     <hearsayEvident/>
-     <quotativeEvident/>
-     <assumedEvident/>
-     <otherEvident/>
-     <finiteOther/>
-                   <nonfiniteOther/>
-                   <gerundOther/>
-                   <participleOther/>
-                   <antipassiveVoice/>
-     <applicativeVoice/>
-     <causativeVoice/>
-                   <passiveVoice/>
-                   <actorVoice/>
-                   <dativeVoice/>
-                   <goalVoice/>
-                   <instrumentalVoice/>
-                   <locativeVoice/>
-                   <objectVoice/>
-     <otherVoice/>
-                   <firstSubjectPerson/>
-                   <firstObjectPerson/>
-                   <firstErgativePerson/>
-       <firstAbsolutivePerson/>
-       <firstExclusiveSubjectPerson/>
-                   <firstExclusiveObjectPerson/>
-                   <firstExclusiveErgativePerson/>
-                   <firstExclusiveAbsolutivePerson/>
-                   <firstInclusiveSubjectPerson/>
-                   <firstInclusiveObjectPerson/>
-                   <firstInclusiveErgativePerson/>
-                   <firstInclusiveAbsolutivePerson/>
-                   <secondSubjectPerson/>
-                   <secondObjectPerson/>
-                   <secondErgativePerson/>
-                   <secondAbsolutivePerson/>
-                   <thirdSubjectPerson/>
-                   <thirdObjectPerson/>
-                   <thirdErgativePerson/>
-                   <thirdAbsolutivePerson/>
-                   <singularSubjectNumber/>
-                   <singularObjectNumber/>
-                   <singularErgativeNumber/>
-                   <singularAbsolutiveNumber/>
-                   <dualSubjectNumber/>
-                   <dualObjectNumber/>
-                   <dualErgativeNumber/>
-                   <dualAbsolutiveNumber/>
-                   <pluralSubjectNumber/>
-                   <pluralObjectNumber/>
-                   <pluralErgativeNumber/>
-                   <pluralAbsolutiveNumber/>
-                   <masculineSubjectGender/>
-                   <masculineObjectGender/>
-                   <masculineErgativeGender/>
-                   <masculineAbsolutiveGender/>
-                   <feminineSubjectGender/>
-                   <feminineObjectGender/>
-                   <feminineErgativeGender/>
-                   <feminineAbsolutiveGender/>
-                   <neuterSubjectGender/>
-                   <neuterObjectGender/>
-                   <neuterErgativeGender/>
-                   <neuterAbsolutiveGender/>
-                   <animateSubjectAnimacy/>
-                   <animateObjectAnimacy/>
-                   <animateErgativeAnimacy/>
-                   <animateAbsolutiveAnimacy/>
-                   <inanimateSubjectAnimacy/>
-                   <inanimateObjectAnimacy/>
-                   <inanimateErgativeAnimacy/>
-                   <inanimateAbsolutiveAnimacy/>
-                   <humanSubjectAnimacy/>
-                      <humanObjectAnimacy/>
-                      <humanErgativeAnimacy/>
-                      <humanAbsolutiveAnimacy/>
-                      <nonhumanSubjectAnimacy/>
-                      <nonhumanObjectAnimacy/>
-                      <nonhumanErgativeAnimacy/>
-                      <nonhumanAbsolutiveAnimacy/>
+       <presentTense><form><vernacular/><ipa/><gloss/></form></presentTense>
+       <pastTense><form><vernacular/><ipa/><gloss/></form></pastTense>
+       <futureTense><form><vernacular/><ipa/><gloss/></form></futureTense>
+       <nonPastTense><form><vernacular/><ipa/><gloss/></form></nonPastTense>
+     <nonFutureTense><form><vernacular/><ipa/><gloss/></form></nonFutureTense>
+     <otherTense><form><vernacular/><ipa/><gloss/></form></otherTense>
+     <completiveAspect><form><vernacular/><ipa/><gloss/></form></completiveAspect>
+       <contemplativeAspect><form><vernacular/><ipa/><gloss/></form></contemplativeAspect>
+          <continuativeAspect><form><vernacular/><ipa/><gloss/></form></continuativeAspect>
+          <contrafactualAspect><form><vernacular/><ipa/><gloss/></form></contrafactualAspect>
+             <habitualAspect><form><vernacular/><ipa/><gloss/></form></habitualAspect>
+             <imperfectAspect><form><vernacular/><ipa/><gloss/></form></imperfectAspect>
+       <imperfectiveAspect><form><vernacular/><ipa/><gloss/></form></imperfectiveAspect>
+       <incompletiveAspect><form><vernacular/><ipa/><gloss/></form></incompletiveAspect>
+             <perfectAspect><form><vernacular/><ipa/><gloss/></form></perfectAspect>
+             <perfectiveAspect><form><vernacular/><ipa/><gloss/></form></perfectiveAspect>
+             <potentialAspect><form><vernacular/><ipa/><gloss/></form></potentialAspect>
+             <progressiveAspect><form><vernacular/><ipa/><gloss/></form></progressiveAspect>
+     <purposiveAspect><form><vernacular/><ipa/><gloss/></form></purposiveAspect>
+     <stativeAspect><form><vernacular/><ipa/><gloss/></form></stativeAspect>
+             <unrealAspect><form><vernacular/><ipa/><gloss/></form></unrealAspect>
+      <otherAspect><form><vernacular/><ipa/><gloss/></form></otherAspect>
+     <declarativeMood><form><vernacular/><ipa/><gloss/></form></declarativeMood>
+             <indicativeMood><form><vernacular/><ipa/><gloss/></form></indicativeMood>
+                   <realisMood><form><vernacular/><ipa/><gloss/></form></realisMood>
+                   <imperativeMood><form><vernacular/><ipa/><gloss/></form></imperativeMood>
+                   <interrogativeMood><form><vernacular/><ipa/><gloss/></form></interrogativeMood>
+                   <conditionalMood><form><vernacular/><ipa/><gloss/></form></conditionalMood>
+                   <subjunctiveMood><form><vernacular/><ipa/><gloss/></form></subjunctiveMood>
+                   <irrealisMood><form><vernacular/><ipa/><gloss/></form></irrealisMood>
+     <otherMood><form><vernacular/><ipa/><gloss/></form></otherMood>
+     <witnessEvident><form><vernacular/><ipa/><gloss/></form></witnessEvident>
+     <nonwitnessEvident><form><vernacular/><ipa/><gloss/></form></nonwitnessEvident>
+     <firsthandEvident><form><vernacular/><ipa/><gloss/></form></firsthandEvident>
+     <secondhandEvident><form><vernacular/><ipa/><gloss/></form></secondhandEvident>
+     <thirdhandEvident><form><vernacular/><ipa/><gloss/></form></thirdhandEvident>
+     <visualEvident><form><vernacular/><ipa/><gloss/></form></visualEvident>
+     <auditoryEvident><form><vernacular/><ipa/><gloss/></form></auditoryEvident>
+     <olfactoryEvident><form><vernacular/><ipa/><gloss/></form></olfactoryEvident>
+     <inferentialEvident><form><vernacular/><ipa/><gloss/></form></inferentialEvident>
+     <reportativeEvident><form><vernacular/><ipa/><gloss/></form></reportativeEvident>
+     <hearsayEvident><form><vernacular/><ipa/><gloss/></form></hearsayEvident>
+     <quotativeEvident><form><vernacular/><ipa/><gloss/></form></quotativeEvident>
+     <assumedEvident><form><vernacular/><ipa/><gloss/></form></assumedEvident>
+     <otherEvident><form><vernacular/><ipa/><gloss/></form></otherEvident>
+     <finiteOther><form><vernacular/><ipa/><gloss/></form></finiteOther>
+                   <nonfiniteOther><form><vernacular/><ipa/><gloss/></form></nonfiniteOther>
+                   <gerundOther><form><vernacular/><ipa/><gloss/></form></gerundOther>
+                   <participleOther><form><vernacular/><ipa/><gloss/></form></participleOther>
+                   <antipassiveVoice><form><vernacular/><ipa/><gloss/></form></antipassiveVoice>
+     <applicativeVoice><form><vernacular/><ipa/><gloss/></form></applicativeVoice>
+     <causativeVoice><form><vernacular/><ipa/><gloss/></form></causativeVoice>
+                   <passiveVoice><form><vernacular/><ipa/><gloss/></form></passiveVoice>
+                   <actorVoice><form><vernacular/><ipa/><gloss/></form></actorVoice>
+                   <dativeVoice><form><vernacular/><ipa/><gloss/></form></dativeVoice>
+                   <goalVoice><form><vernacular/><ipa/><gloss/></form></goalVoice>
+                   <instrumentalVoice><form><vernacular/><ipa/><gloss/></form></instrumentalVoice>
+                   <locativeVoice><form><vernacular/><ipa/><gloss/></form></locativeVoice>
+                   <objectVoice><form><vernacular/><ipa/><gloss/></form></objectVoice>
+     <otherVoice><form><vernacular/><ipa/><gloss/></form></otherVoice>
+                   <firstSubjectPerson><form><vernacular/><ipa/><gloss/></form></firstSubjectPerson>
+                   <firstObjectPerson><form><vernacular/><ipa/><gloss/></form></firstObjectPerson>
+                   <firstErgativePerson><form><vernacular/><ipa/><gloss/></form></firstErgativePerson>
+       <firstAbsolutivePerson><form><vernacular/><ipa/><gloss/></form></firstAbsolutivePerson>
+       <firstExclusiveSubjectPerson><form><vernacular/><ipa/><gloss/></form></firstExclusiveSubjectPerson>
+                   <firstExclusiveObjectPerson><form><vernacular/><ipa/><gloss/></form></firstExclusiveObjectPerson>
+                   <firstExclusiveErgativePerson><form><vernacular/><ipa/><gloss/></form></firstExclusiveErgativePerson>
+                   <firstExclusiveAbsolutivePerson><form><vernacular/><ipa/><gloss/></form></firstExclusiveAbsolutivePerson>
+                   <firstInclusiveSubjectPerson><form><vernacular/><ipa/><gloss/></form></firstInclusiveSubjectPerson>
+                   <firstInclusiveObjectPerson><form><vernacular/><ipa/><gloss/></form></firstInclusiveObjectPerson>
+                   <firstInclusiveErgativePerson><form><vernacular/><ipa/><gloss/></form></firstInclusiveErgativePerson>
+                   <firstInclusiveAbsolutivePerson><form><vernacular/><ipa/><gloss/></form></firstInclusiveAbsolutivePerson>
+                   <secondSubjectPerson><form><vernacular/><ipa/><gloss/></form></secondSubjectPerson>
+                   <secondObjectPerson><form><vernacular/><ipa/><gloss/></form></secondObjectPerson>
+                   <secondErgativePerson><form><vernacular/><ipa/><gloss/></form></secondErgativePerson>
+                   <secondAbsolutivePerson><form><vernacular/><ipa/><gloss/></form></secondAbsolutivePerson>
+                   <thirdSubjectPerson><form><vernacular/><ipa/><gloss/></form></thirdSubjectPerson>
+                   <thirdObjectPerson><form><vernacular/><ipa/><gloss/></form></thirdObjectPerson>
+                   <thirdErgativePerson><form><vernacular/><ipa/><gloss/></form></thirdErgativePerson>
+                   <thirdAbsolutivePerson><form><vernacular/><ipa/><gloss/></form></thirdAbsolutivePerson>
+                   <singularSubjectNumber><form><vernacular/><ipa/><gloss/></form></singularSubjectNumber>
+                   <singularObjectNumber><form><vernacular/><ipa/><gloss/></form></singularObjectNumber>
+                   <singularErgativeNumber><form><vernacular/><ipa/><gloss/></form></singularErgativeNumber>
+                   <singularAbsolutiveNumber><form><vernacular/><ipa/><gloss/></form></singularAbsolutiveNumber>
+                   <dualSubjectNumber><form><vernacular/><ipa/><gloss/></form></dualSubjectNumber>
+                   <dualObjectNumber><form><vernacular/><ipa/><gloss/></form></dualObjectNumber>
+                   <dualErgativeNumber><form><vernacular/><ipa/><gloss/></form></dualErgativeNumber>
+                   <dualAbsolutiveNumber><form><vernacular/><ipa/><gloss/></form></dualAbsolutiveNumber>
+                   <pluralSubjectNumber><form><vernacular/><ipa/><gloss/></form></pluralSubjectNumber>
+                   <pluralObjectNumber><form><vernacular/><ipa/><gloss/></form></pluralObjectNumber>
+                   <pluralErgativeNumber><form><vernacular/><ipa/><gloss/></form></pluralErgativeNumber>
+                   <pluralAbsolutiveNumber><form><vernacular/><ipa/><gloss/></form></pluralAbsolutiveNumber>
+                   <masculineSubjectGender><form><vernacular/><ipa/><gloss/></form></masculineSubjectGender>
+                   <masculineObjectGender><form><vernacular/><ipa/><gloss/></form></masculineObjectGender>
+                   <masculineErgativeGender><form><vernacular/><ipa/><gloss/></form></masculineErgativeGender>
+                   <masculineAbsolutiveGender><form><vernacular/><ipa/><gloss/></form></masculineAbsolutiveGender>
+                   <feminineSubjectGender><form><vernacular/><ipa/><gloss/></form></feminineSubjectGender>
+                   <feminineObjectGender><form><vernacular/><ipa/><gloss/></form></feminineObjectGender>
+                   <feminineErgativeGender><form><vernacular/><ipa/><gloss/></form></feminineErgativeGender>
+                   <feminineAbsolutiveGender><form><vernacular/><ipa/><gloss/></form></feminineAbsolutiveGender>
+                   <neuterSubjectGender><form><vernacular/><ipa/><gloss/></form></neuterSubjectGender>
+                   <neuterObjectGender><form><vernacular/><ipa/><gloss/></form></neuterObjectGender>
+                   <neuterErgativeGender><form><vernacular/><ipa/><gloss/></form></neuterErgativeGender>
+                   <neuterAbsolutiveGender><form><vernacular/><ipa/><gloss/></form></neuterAbsolutiveGender>
+                   <animateSubjectAnimacy><form><vernacular/><ipa/><gloss/></form></animateSubjectAnimacy>
+                   <animateObjectAnimacy><form><vernacular/><ipa/><gloss/></form></animateObjectAnimacy>
+                   <animateErgativeAnimacy><form><vernacular/><ipa/><gloss/></form></animateErgativeAnimacy>
+                   <animateAbsolutiveAnimacy><form><vernacular/><ipa/><gloss/></form></animateAbsolutiveAnimacy>
+                   <inanimateSubjectAnimacy><form><vernacular/><ipa/><gloss/></form></inanimateSubjectAnimacy>
+                   <inanimateObjectAnimacy><form><vernacular/><ipa/><gloss/></form></inanimateObjectAnimacy>
+                   <inanimateErgativeAnimacy><form><vernacular/><ipa/><gloss/></form></inanimateErgativeAnimacy>
+                   <inanimateAbsolutiveAnimacy><form><vernacular/><ipa/><gloss/></form></inanimateAbsolutiveAnimacy>
+                   <humanSubjectAnimacy><form><vernacular/><ipa/><gloss/></form></humanSubjectAnimacy>
+                      <humanObjectAnimacy><form><vernacular/><ipa/><gloss/></form></humanObjectAnimacy>
+                      <humanErgativeAnimacy><form><vernacular/><ipa/><gloss/></form></humanErgativeAnimacy>
+                      <humanAbsolutiveAnimacy><form><vernacular/><ipa/><gloss/></form></humanAbsolutiveAnimacy>
+                      <nonhumanSubjectAnimacy><form><vernacular/><ipa/><gloss/></form></nonhumanSubjectAnimacy>
+                      <nonhumanObjectAnimacy><form><vernacular/><ipa/><gloss/></form></nonhumanObjectAnimacy>
+                      <nonhumanErgativeAnimacy><form><vernacular/><ipa/><gloss/></form></nonhumanErgativeAnimacy>
+                      <nonhumanAbsolutiveAnimacy><form><vernacular/><ipa/><gloss/></form></nonhumanAbsolutiveAnimacy>
                       
        <proDropExample>
          <interlinearEntry>
@@ -4766,10 +4766,10 @@
             <freeLine/>
          </interlinearEntry>
       </conditionalExample>
-       <conditionCliticExample/>
-       <conditionAffixExample/>
-       <conditionOtherExample/>
-       <conditionWordExample/>
+       <conditionCliticExample><form><vernacular/><ipa/><gloss/></form></conditionCliticExample>
+       <conditionAffixExample><form><vernacular/><ipa/><gloss/></form></conditionAffixExample>
+       <conditionOtherExample><form><vernacular/><ipa/><gloss/></form></conditionOtherExample>
+       <conditionWordExample><form><vernacular/><ipa/><gloss/></form></conditionWordExample>
        <subjunctiveExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -4812,10 +4812,10 @@
             <freeLine/>
          </interlinearEntry>
       </subjunctiveExample>
-       <subjunctiveCondCliticExample/>
-       <subjunctiveCondAffixExample/>
-       <subjunctiveCondOtherExample/>
-       <subjunctiveCondWordExample/>
+       <subjunctiveCondCliticExample><form><vernacular/><ipa/><gloss/></form></subjunctiveCondCliticExample>
+       <subjunctiveCondAffixExample><form><vernacular/><ipa/><gloss/></form></subjunctiveCondAffixExample>
+       <subjunctiveCondOtherExample><form><vernacular/><ipa/><gloss/></form></subjunctiveCondOtherExample>
+       <subjunctiveCondWordExample><form><vernacular/><ipa/><gloss/></form></subjunctiveCondWordExample>
        <auxExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -4858,7 +4858,7 @@
             <freeLine/>
          </interlinearEntry>
       </auxExample>
-       <auxiliaryExample/>
+       <auxiliaryExample><form><vernacular/><ipa/><gloss/></form></auxiliaryExample>
         <auxNonfiniteExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -4901,7 +4901,7 @@
             <freeLine/>
          </interlinearEntry>
       </auxNonfiniteExample>
-        <auxiliaryNonfiniteExample/>
+        <auxiliaryNonfiniteExample><form><vernacular/><ipa/><gloss/></form></auxiliaryNonfiniteExample>
         <auxOtherExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -4944,10 +4944,10 @@
             <freeLine/>
          </interlinearEntry>
       </auxOtherExample>
-        <auxiliaryOtherExample/>
-        <heartCompoundExample/>
-       <bodypartCompoundExample/>
-       <verbNCompoundExample/>
+        <auxiliaryOtherExample><form><vernacular/><ipa/><gloss/></form></auxiliaryOtherExample>
+        <heartCompoundExample><form><vernacular/><ipa/><gloss/></form></heartCompoundExample>
+       <bodypartCompoundExample><form><vernacular/><ipa/><gloss/></form></bodypartCompoundExample>
+       <verbNCompoundExample><form><vernacular/><ipa/><gloss/></form></verbNCompoundExample>
        <verbNCompoundSentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -4990,7 +4990,7 @@
             <freeLine/>
          </interlinearEntry>
       </verbNCompoundSentExample>
-       <verbOtherCompoundExample/>
+       <verbOtherCompoundExample><form><vernacular/><ipa/><gloss/></form></verbOtherCompoundExample>
        <verbOtherCompoundSentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -5117,8 +5117,8 @@
             <freeLine/>
          </interlinearEntry>
       </copularExample>
-       <copularVerb/>
-       <copularAffix/>
+       <copularVerb><form><vernacular/><ipa/><gloss/></form></copularVerb>
+       <copularAffix><form><vernacular/><ipa/><gloss/></form></copularAffix>
        <perceptionExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -5203,9 +5203,9 @@
             <freeLine/>
          </interlinearEntry>
       </sameExample>
-       <sameWordExample/>
-       <sameAffixExample/>
-       <compareNExample/>
+       <sameWordExample><form><vernacular/><ipa/><gloss/></form></sameWordExample>
+       <sameAffixExample><form><vernacular/><ipa/><gloss/></form></sameAffixExample>
+       <compareNExample><form><vernacular/><ipa/><gloss/></form></compareNExample>
        <asExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -5248,8 +5248,8 @@
             <freeLine/>
          </interlinearEntry>
       </asExample>
-       <compareAdjExample/>
-     <asWordExample/>
+       <compareAdjExample><form><vernacular/><ipa/><gloss/></form></compareAdjExample>
+     <asWordExample><form><vernacular/><ipa/><gloss/></form></asWordExample>
      <comparativeExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -5292,9 +5292,9 @@
             <freeLine/>
          </interlinearEntry>
       </comparativeExample>
-       <comparativeWordExample/>
-       <comparativeAffixExample/>
-       <comparativeDegExample/>
+       <comparativeWordExample><form><vernacular/><ipa/><gloss/></form></comparativeWordExample>
+       <comparativeAffixExample><form><vernacular/><ipa/><gloss/></form></comparativeAffixExample>
+       <comparativeDegExample><form><vernacular/><ipa/><gloss/></form></comparativeDegExample>
        <comparativeSentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -5379,8 +5379,8 @@
             <freeLine/>
          </interlinearEntry>
       </superlativeExample>
-       <superlativeAffixExample/>
-       <superlativeDegExample/>
+       <superlativeAffixExample><form><vernacular/><ipa/><gloss/></form></superlativeAffixExample>
+       <superlativeDegExample><form><vernacular/><ipa/><gloss/></form></superlativeDegExample>
        <existExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -5423,10 +5423,10 @@
             <freeLine/>
          </interlinearEntry>
       </existExample>
-       <existWordExample/>
-       <existVerbExample/>
-       <existPositionExample/>
-       <existOtherExample/>
+       <existWordExample><form><vernacular/><ipa/><gloss/></form></existWordExample>
+       <existVerbExample><form><vernacular/><ipa/><gloss/></form></existVerbExample>
+       <existPositionExample><form><vernacular/><ipa/><gloss/></form></existPositionExample>
+       <existOtherExample><form><vernacular/><ipa/><gloss/></form></existOtherExample>
        <motionExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -5553,9 +5553,9 @@
             <freeLine/>
          </interlinearEntry>
       </passiveExample>
-       <passiveAgentPExample/>
-       <passiveAuxExample/>
-       <causativeAffixExample/>
+       <passiveAgentPExample><form><vernacular/><ipa/><gloss/></form></passiveAgentPExample>
+       <passiveAuxExample><form><vernacular/><ipa/><gloss/></form></passiveAuxExample>
+       <causativeAffixExample><form><vernacular/><ipa/><gloss/></form></causativeAffixExample>
        <causativeExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -5766,7 +5766,7 @@
             <freeLine/>
          </interlinearEntry>
       </antipassiveExample>
-       <antipassiveAffixExample/>
+       <antipassiveAffixExample><form><vernacular/><ipa/><gloss/></form></antipassiveAffixExample>
        <voiceExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -6330,7 +6330,7 @@
             <freeLine/>
          </interlinearEntry>
       </quotationExample>
-       <otherRestrictions/>
+       <otherRestrictions><form><vernacular/><ipa/><gloss/></form></otherRestrictions>
        <otherExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -6373,10 +6373,10 @@
             <freeLine/>
          </interlinearEntry>
       </otherExample>
-       <compCliticExample/>
-       <compAffixExample/>
-       <compOtherExample/>
-       <compExample/>
+       <compCliticExample><form><vernacular/><ipa/><gloss/></form></compCliticExample>
+       <compAffixExample><form><vernacular/><ipa/><gloss/></form></compAffixExample>
+       <compOtherExample><form><vernacular/><ipa/><gloss/></form></compOtherExample>
+       <compExample><form><vernacular/><ipa/><gloss/></form></compExample>
     </comp>
     <q checkedOff="no" contFront="unknown" embCont="no" embContAuxPos="unknown" embContAuxRequired="no" embContRequired="no" embContWord="no" embYN="no" embYNAuxPos="unknown" embYNWord="no" mainCont="no" mainContAuxPos="unknown" mainContAuxRequired="no" mainContRequired="no" mainContWord="no" mainYN="no" mainYNAuxPos="unknown" mainYNWord="no" whArtPos="unknown" whDegAdjPos="unknown" whDegQPos="unknown" whDemPos="unknown">
        <mainYNProclitic checked="no"/>
@@ -6469,9 +6469,9 @@
             <freeLine/>
          </interlinearEntry>
       </example>
-       <mainYNCliticExample/>
-       <mainYNAffixExample/>
-       <mainYNWordExample/>
+       <mainYNCliticExample><form><vernacular/><ipa/><gloss/></form></mainYNCliticExample>
+       <mainYNAffixExample><form><vernacular/><ipa/><gloss/></form></mainYNAffixExample>
+       <mainYNWordExample><form><vernacular/><ipa/><gloss/></form></mainYNWordExample>
        <embYNExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -6514,19 +6514,19 @@
             <freeLine/>
          </interlinearEntry>
       </embYNExample>
-       <embYNCliticExample/>
-       <embYNAffixExample/>
-       <embYNWordExample/>
-        <who/>
-        <what/>
-        <why/>
-        <where/>
-        <when/>
-        <how/>
-       <howMany/>
-        <which/>
-        <whose/>
-        <other/>
+       <embYNCliticExample><form><vernacular/><ipa/><gloss/></form></embYNCliticExample>
+       <embYNAffixExample><form><vernacular/><ipa/><gloss/></form></embYNAffixExample>
+       <embYNWordExample><form><vernacular/><ipa/><gloss/></form></embYNWordExample>
+        <who><form><vernacular/><ipa/><gloss/></form></who>
+        <what><form><vernacular/><ipa/><gloss/></form></what>
+        <why><form><vernacular/><ipa/><gloss/></form></why>
+        <where><form><vernacular/><ipa/><gloss/></form></where>
+        <when><form><vernacular/><ipa/><gloss/></form></when>
+        <how><form><vernacular/><ipa/><gloss/></form></how>
+       <howMany><form><vernacular/><ipa/><gloss/></form></howMany>
+        <which><form><vernacular/><ipa/><gloss/></form></which>
+        <whose><form><vernacular/><ipa/><gloss/></form></whose>
+        <other><form><vernacular/><ipa/><gloss/></form></other>
        <contentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -6569,10 +6569,10 @@
             <freeLine/>
          </interlinearEntry>
       </contentExample>
-       <mainContCliticExample/>
-       <mainContAffixExample/>
-       <mainContWordExample/>
-       <mainContSpecialConditions/>
+       <mainContCliticExample><form><vernacular/><ipa/><gloss/></form></mainContCliticExample>
+       <mainContAffixExample><form><vernacular/><ipa/><gloss/></form></mainContAffixExample>
+       <mainContWordExample><form><vernacular/><ipa/><gloss/></form></mainContWordExample>
+       <mainContSpecialConditions><form><vernacular/><ipa/><gloss/></form></mainContSpecialConditions>
        <embContentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -6615,10 +6615,10 @@
             <freeLine/>
          </interlinearEntry>
       </embContentExample>
-       <embContCliticExample/>
-       <embContAffixExample/>
-       <embContWordExample/>
-       <embContSpecialConditions/>
+       <embContCliticExample><form><vernacular/><ipa/><gloss/></form></embContCliticExample>
+       <embContAffixExample><form><vernacular/><ipa/><gloss/></form></embContAffixExample>
+       <embContWordExample><form><vernacular/><ipa/><gloss/></form></embContWordExample>
+       <embContSpecialConditions><form><vernacular/><ipa/><gloss/></form></embContSpecialConditions>
        <whPronCategory/>
     </q>
     <relcl checkedOff="no" clausePos="unknown" exist="no" headless="no" relCliticPos="unknown" relWord="yes" whAndComp="no">
@@ -6716,9 +6716,9 @@
             <freeLine/>
          </interlinearEntry>
       </sentExample>
-     <relCliticExample/>
-     <relWordExample/>
-     <relAffixExample/>
+     <relCliticExample><form><vernacular/><ipa/><gloss/></form></relCliticExample>
+     <relWordExample><form><vernacular/><ipa/><gloss/></form></relWordExample>
+     <relAffixExample><form><vernacular/><ipa/><gloss/></form></relAffixExample>
      <headlessExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -6835,12 +6835,12 @@
       <negLocativeAdverbWordBefore checked="no"/>
       <negLocativeAdverbWordAfter checked="no"/>
       <negLocativeAdverbWordBoth checked="no"/>
-      <negLocativeAdverbWordOther checked="no"/>      
+      <negLocativeAdverbWordOther><form><vernacular/><ipa/><gloss/></form></negLocativeAdverbWordOther>      
       <negAuxWord checked="no"/>
       <negAuxAffix checked="no"/>
       <negVAffix checked="no"/>
       <negVerbalOther checked="no"/>      
-      <not/>
+      <not><form><vernacular/><ipa/><gloss/></form></not>
        <negCliticExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7093,8 +7093,8 @@
             <freeLine/>
          </interlinearEntry>
       </npDegreeSubjExample>
-       <negIndefExample/>
-       <negIndefNPExample/>
+       <negIndefExample><form><vernacular/><ipa/><gloss/></form></negIndefExample>
+       <negIndefNPExample><form><vernacular/><ipa/><gloss/></form></negIndefNPExample>
        <negIndefSubjExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7137,9 +7137,9 @@
             <freeLine/>
          </interlinearEntry>
       </negIndefSubjExample>
-      <negTemporalExample/>
-      <negTemporalAdverbAffixExample/>
-      <negTemporalAdverbExample/>
+      <negTemporalExample><form><vernacular/><ipa/><gloss/></form></negTemporalExample>
+      <negTemporalAdverbAffixExample><form><vernacular/><ipa/><gloss/></form></negTemporalAdverbAffixExample>
+      <negTemporalAdverbExample><form><vernacular/><ipa/><gloss/></form></negTemporalAdverbExample>
       <negTemporalAdverbWordExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7224,8 +7224,8 @@
             <freeLine/>
          </interlinearEntry>
       </negTemporalAdverbWordsExample>
-      <negTemporalAffixExample/>
-      <negTemporalAffixVerbExample/>
+      <negTemporalAffixExample><form><vernacular/><ipa/><gloss/></form></negTemporalAffixExample>
+      <negTemporalAffixVerbExample><form><vernacular/><ipa/><gloss/></form></negTemporalAffixVerbExample>
       <negTemporalVerbExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7268,7 +7268,7 @@
             <freeLine/>
          </interlinearEntry>
       </negTemporalVerbExample>
-      <negTemporalOtherExample/>
+      <negTemporalOtherExample><form><vernacular/><ipa/><gloss/></form></negTemporalOtherExample>
       <advTemporalExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7311,10 +7311,10 @@
             <freeLine/>
          </interlinearEntry>
       </advTemporalExample>
-      <negLocativeExample/>
-      <negLocativeAdverbAffixExample/>
-      <negLocativeAdverbExample/>
-      <negLocativeAdverbWordExample/>
+      <negLocativeExample><form><vernacular/><ipa/><gloss/></form></negLocativeExample>
+      <negLocativeAdverbAffixExample><form><vernacular/><ipa/><gloss/></form></negLocativeAdverbAffixExample>
+      <negLocativeAdverbExample><form><vernacular/><ipa/><gloss/></form></negLocativeAdverbExample>
+      <negLocativeAdverbWordExample><form><vernacular/><ipa/><gloss/></form></negLocativeAdverbWordExample>
       <negLocativeAdverbWordsExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7357,8 +7357,8 @@
             <freeLine/>
          </interlinearEntry>
       </negLocativeAdverbWordsExample>
-      <negLocativeAffixExample/>
-      <negLocativeAffixVerbExample/>
+      <negLocativeAffixExample><form><vernacular/><ipa/><gloss/></form></negLocativeAffixExample>
+      <negLocativeAffixVerbExample><form><vernacular/><ipa/><gloss/></form></negLocativeAffixVerbExample>
       <negLocativeVerbExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7401,7 +7401,7 @@
             <freeLine/>
          </interlinearEntry>
       </negLocativeVerbExample>
-      <negLocativeOtherExample/>
+      <negLocativeOtherExample><form><vernacular/><ipa/><gloss/></form></negLocativeOtherExample>
       <advLocativeExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7444,10 +7444,10 @@
             <freeLine/>
          </interlinearEntry>
       </advLocativeExample>
-      <negAuxExample/>
-      <negAuxAffixExample/>
-      <negVerbExample/>
-      <negVerbalOtherExample/>
+      <negAuxExample><form><vernacular/><ipa/><gloss/></form></negAuxExample>
+      <negAuxAffixExample><form><vernacular/><ipa/><gloss/></form></negAuxAffixExample>
+      <negVerbExample><form><vernacular/><ipa/><gloss/></form></negVerbExample>
+      <negVerbalOtherExample><form><vernacular/><ipa/><gloss/></form></negVerbalOtherExample>
       <auxExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7617,9 +7617,9 @@
          </interlinearEntry>
       </negVerbalOtherSentExample>
       <npiPronounExample/>
-        <npiDeterminerExample/>
-        <npiTemporalExample/>
-        <npiLocativeExample/>
+        <npiDeterminerExample><form><vernacular/><ipa/><gloss/></form></npiDeterminerExample>
+        <npiTemporalExample><form><vernacular/><ipa/><gloss/></form></npiTemporalExample>
+        <npiLocativeExample><form><vernacular/><ipa/><gloss/></form></npiLocativeExample>
         <objectExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -7751,17 +7751,17 @@
       <proclitic checked="no"/>
       <enclitic checked="no"/>
       <attachesOther checked="no"/>      
-      <and/>
-      <andThen/>
-      <or/>
-        <but/>
-        <andOr/>
-        <with/>
-        <other/>
-        <either/>
-      <eitherOr/>
-      <neither/>
-        <nor/>
+      <and><form><vernacular/><ipa/><gloss/></form></and>
+      <andThen><form><vernacular/><ipa/><gloss/></form></andThen>
+      <or><form><vernacular/><ipa/><gloss/></form></or>
+        <but><form><vernacular/><ipa/><gloss/></form></but>
+        <andOr><form><vernacular/><ipa/><gloss/></form></andOr>
+        <with><form><vernacular/><ipa/><gloss/></form></with>
+        <other><form><vernacular/><ipa/><gloss/></form></other>
+        <either><form><vernacular/><ipa/><gloss/></form></either>
+      <eitherOr><form><vernacular/><ipa/><gloss/></form></eitherOr>
+      <neither><form><vernacular/><ipa/><gloss/></form></neither>
+        <nor><form><vernacular/><ipa/><gloss/></form></nor>
         <sentExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -8151,9 +8151,9 @@
             <freeLine/>
          </interlinearEntry>
       </topicExample>
-        <topicMarkerExample/>
-       <topicMarkerCliticExample/>
-       <topicMarkerAffixExample/>
+        <topicMarkerExample><form><vernacular/><ipa/><gloss/></form></topicMarkerExample>
+       <topicMarkerCliticExample><form><vernacular/><ipa/><gloss/></form></topicMarkerCliticExample>
+       <topicMarkerAffixExample><form><vernacular/><ipa/><gloss/></form></topicMarkerAffixExample>
        <focusExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -8196,9 +8196,9 @@
             <freeLine/>
          </interlinearEntry>
       </focusExample>
-        <focusMarkerExample/>
-       <focusMarkerCliticExample/>
-       <focusMarkerAffixExample/>
+        <focusMarkerExample><form><vernacular/><ipa/><gloss/></form></focusMarkerExample>
+       <focusMarkerCliticExample><form><vernacular/><ipa/><gloss/></form></focusMarkerCliticExample>
+       <focusMarkerAffixExample><form><vernacular/><ipa/><gloss/></form></focusMarkerAffixExample>
     </focus>
     <excl checkedOff="no" exclM="no">
        <exclMBefore checked="no"/>
@@ -8289,8 +8289,8 @@
             <freeLine/>
          </interlinearEntry>
       </intjExample>
-        <yesExample/>
-        <noExample/>
+        <yesExample><form><vernacular/><ipa/><gloss/></form></yesExample>
+        <noExample><form><vernacular/><ipa/><gloss/></form></noExample>
         <exclExample>
          <interlinearEntry>
             <vernacularLine/>
@@ -8333,7 +8333,7 @@
             <freeLine/>
          </interlinearEntry>
       </exclExample>
-        <exclMExample/>
+        <exclMExample><form><vernacular/><ipa/><gloss/></form></exclMExample>
     </excl>
    <final checkedOff="no"/>
 </paws>

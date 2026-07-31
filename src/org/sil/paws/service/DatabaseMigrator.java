@@ -109,13 +109,19 @@ public class DatabaseMigrator {
 
 	public void doMigration(Locale locale) {
 		try {
+			System.out.println("doMigration");
 			String version = getVersion();
+			System.out.println("\tversion = '" + version + "'");
 			// make a backup of the database file just in case
 			String sFile = databaseFile.getPath();
+			System.out.println("\tsFile = '" + sFile + "'");
 			int i = sFile.lastIndexOf(Constants.PAWS_DATA_FILE_EXTENSION);
+			System.out.println("\ti = " + i);
 			String sBackupFileName = sFile.substring(0, i) + "bak";
+			System.out.println("\tsBackupFileName = '" + sBackupFileName + "'");
 			Files.copy(Paths.get(databaseFile.getPath()), Paths.get(sBackupFileName),
 					StandardCopyOption.REPLACE_EXISTING);
+			System.out.println("\tafter file copy");
 
 			boolean doMigration = false;
 			File file = databaseFile;
@@ -124,11 +130,14 @@ public class DatabaseMigrator {
 					doMigration = true;
 				}
 				if (doMigration) {
+					System.out.println("\tdoMigration is true");
 						List<XsltParameter> params = new ArrayList<XsltParameter>();
 						RESOURCE_FACTORY.setResources(ResourceBundle.getBundle(Constants.RESOURCE_LOCATION, locale));
 						String sDefaultKeyboard = RESOURCE_FACTORY.getStringBinding("label.defaultkeyboard").get();
+						System.out.println("\tsDefaultKeyboard = '" + sDefaultKeyboard + "'");
 						XsltParameter defaultKeyboard = new XsltParameter("prmDefaultKeyboard", sDefaultKeyboard);
 						params.add(defaultKeyboard);
+						System.out.println("\tbefore apply");
 						file = applyMigrationTransformToFile(v[0], file, v[1], params);
 				}
 			}
@@ -144,8 +153,11 @@ public class DatabaseMigrator {
 	}
 
 	private File applyMigrationTransformToFile(String version, File file, String transform, List<XsltParameter> params) {
+		System.out.println("applyMigrationTransformToFile");
 		String stylesheet = Constants.MIGRATION_XSLT_FILE_NAME + transform;
+		System.out.println("\tstylesheet = '" + stylesheet + "'");
 		File tempSaveFile = null;
+		System.out.println("\tbefore tempSaveFile");
 		try {
 			tempSaveFile = File.createTempFile("PawsDataMigration" + version, ".paw");
 		} catch (IOException e) {
@@ -154,7 +166,9 @@ public class DatabaseMigrator {
 		}
 
 		try {
+			System.out.println("\tbefore create xslt");
 			File xslt = new File(stylesheet);
+			System.out.println("\txslt = " + xslt.getAbsolutePath());
 			if (!xslt.exists()) {
 				throw new DataMigrationException(xslt.getPath());
 			}
