@@ -243,6 +243,8 @@ public class RootLayoutController implements Initializable {
 	private String operatingSystem = System.getProperty("os.name");
 	private Transformer transformerPAWSSKHtmlMapper;
 
+	private boolean fLanguagePropertiesIsNew = false;
+	private boolean fLanguageFilesIsNew = false;
 	URL location;
 
 	// following lines from
@@ -305,6 +307,16 @@ public class RootLayoutController implements Initializable {
 							// We are working around it by sleeping for 10ms in
 							// the
 							// javascript onload() function.
+							String pageUrl = webEngine.getLocation();
+							if (swapShowButtonsAndReturn(pageUrl)) {
+								System.out.println("firing script for " + pageUrl);
+								webEngine.executeScript("setTimeout(function() {"
+										+ "    var elem = document.getElementById('ShowBackNextButtons');"
+										+ "    if (elem) elem.style.setProperty('display', 'block', 'important');"
+										+ "    var elem = document.getElementById('Return');"
+										+ "    if (elem) elem.style.setProperty('display', 'none', 'important');"
+										+ "}, 200);");
+							}
 							JSObject win = (JSObject) webEngine.executeScript("window");
 							win.setMember("pawsApp", webPageInteractor);
 							webEngine.executeScript("Initialize('" + getCurrentLocaleCode() + "')");
@@ -328,6 +340,8 @@ public class RootLayoutController implements Initializable {
 						loadLanguagePropertiesPageInNewMode();
 					} else if (sUrl.endsWith("LanguageFilesNewMode")) {
 						loadLanguageFilesPageInNewMode();
+					} else if (sUrl.equals("Contents.htm")) {
+						loadContentsPageInNewMode();
 					} else {
 						Throwable e = webEngine.getLoadWorker().getException();
 						if (e != null) {
@@ -365,6 +379,19 @@ public class RootLayoutController implements Initializable {
 		});
 	}
 
+	private boolean swapShowButtonsAndReturn(String pageUrl) {
+		boolean result = false;
+		if (fLanguagePropertiesIsNew && pageUrl.contains("LanguageProperties")) {
+			fLanguagePropertiesIsNew = false;
+			result = true;
+		}
+		if (fLanguageFilesIsNew && pageUrl.contains("PAWSFiles")) {
+			fLanguageFilesIsNew = false;
+			result = true;
+		}
+		return result;
+	}
+
 	protected void reportFileNotFound(String sUrl) {
 		Object[] args = { sUrl };
 		MessageFormat msgFormatter = new MessageFormat("", currentLocale);
@@ -392,7 +419,6 @@ public class RootLayoutController implements Initializable {
 				File contentsFile = new File(sPath);
 				String sPageToLoad = Constants.FILE_PROTOCOL + contentsFile.toURI().getPath();
 				webEngine.load(sPageToLoad);
-				//webEngine.loadContent(sPage);
 			}
 		});
 	}
@@ -402,32 +428,14 @@ public class RootLayoutController implements Initializable {
 			@Override
 			public void run() {
 				try {
+					fLanguagePropertiesIsNew = true;
 					String sPath = sConfigurationDirectory + "HTMs" + File.separator
 							+ "LanguageProperties" + getCurrentLocaleCode() + ".htm";
-					String sPage = new String(Files.readAllBytes(Paths.get(sPath)),
-							StandardCharsets.UTF_8);
-					sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..",
-							"<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
-					sPage = sPage.replace(".style.display = \"none\";",
-							".style.display = \"temp\";");
-					sPage = sPage.replace(".style.display = \"\";", ".style.display = \"none\";");
-					sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
-					// exception for UseIpa
-					sPage = sPage.replace("UseIpa.style.display = \"none\";",
-							"UseIpa.style.display = \"temp\";");
-					sPage = sPage.replace("UseIpa.style.display = \"\";", "UseIpa.style.display = \"none\";");
-					sPage = sPage.replace("UseIpa.style.display = \"temp\";", "UseIpa.style.display = \"\";");
-					webEngine.loadContent(sPage);
+					System.out.println("loading new props; sPath = '" + sPath + "'");
+					webEngine.load(Path.of(sPath).toUri().toURL().toString());
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				// System.out.println("loadLanguagePropertiesPageInNewMode: loading="
-				// + sProgramLocation + kHTMsFolder + "LanguagePropertiesNew"
-				// + getCurrentLocaleCode() + ".htm");
-				// webEngine.load(sProgramLocation.replace("\\", "/") +
-				// kHTMsFolder + "LanguagePropertiesNew"
-				// + getCurrentLocaleCode() + ".htm");
 			}
 		});
 	}
@@ -437,34 +445,15 @@ public class RootLayoutController implements Initializable {
 			@Override
 			public void run() {
 				try {
+					fLanguageFilesIsNew = true;
 					String sPath = sConfigurationDirectory + "HTMs" + File.separator + "PAWSFiles"
 							+ getCurrentLocaleCode() + ".htm";
-					String sPage = new String(Files.readAllBytes(Paths.get(sPath)),
-							StandardCharsets.UTF_8);
-					sPage = sPage.replace("<link rel=\"stylesheet\" href=\"..",
-							"<link rel=\"stylesheet\" href=\"file:///" + sConfigurationDirectory);
-					sPage = sPage.replace("ShowBackNextButtons.style.display = \"none\";",
-							"ShowBackNextButtons.style.display = \"temp\";");
-					sPage = sPage.replace("ShowBackNextButtons.style.display = \"\";",
-							"ShowBackNextButtons.style.display = \"none\";");
-					sPage = sPage.replace(".style.display = \"temp\";", ".style.display = \"\";");
-					sPage = sPage.replace(
-							"pawsApp.load(\"Contents.htm\");",
-							"pawsApp.load(\"file:///"
-									+ sConfigurationDirectory.replace("\\", "\\\\")
-									+ "HTMs/Contents" + getCurrentLocaleCode() + ".htm\");");
-					webEngine.loadContent(sPage);
+					System.out.println("loading new files; sPath = '" + sPath + "'");
+					webEngine.load(Path.of(sPath).toUri().toURL().toString());
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				// System.out.println("loadLanguageFilesPageInNewMode: loading="
-				// + sProgramLocation + kHTMsFolder + "PAWSFilesNew" +
-				// getCurrentLocaleCode()
-				// + ".htm");
-				// webEngine.load(sProgramLocation + kHTMsFolder +
-				// "PAWSFilesNew" + getCurrentLocaleCode()
-				// + ".htm");
 			}
 		});
 	}
