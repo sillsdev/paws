@@ -78,6 +78,7 @@ function Initialize(locale) {
 
 
 	FileTextSFM.value = pawsApp.getAnswerValue("//language/textSFM");
+	FileFreeSFM.value = pawsApp.getAnswerValue("//language/freeSFM");
 
 	displayCheckBoxValue(OutputGrammar, "/paws/@outputGrammar");
 	/*displayCheckBoxValue(OutputWriter, "/paws/@outputWriter");*/
@@ -112,6 +113,7 @@ function saveData() {
 	pawsApp.setAnswerValue("//language/exampleFilesPath", FileLocExampleFiles.value);
 
 	pawsApp.setAnswerValue("//language/textSFM", FileTextSFM.value);
+	pawsApp.setAnswerValue("//language/freeSFM", FileFreeSFM.value);
 
 	pawsApp.setAnswerValue("/paws/@outputGrammar", OutputGrammar.value);
 
@@ -389,11 +391,13 @@ function ButtonNext() {
 <input type="button" value="Navigation" name="BFileLocExampleFiles" id="BFileLocExampleFiles" onclick="ButtonFileLocExampleFiles()" style="width: 85px; height: 24px"><br>
 <br/>
 <div class="introduction">
-    <p>Les fichiers d’exemples sont des fichiers de format standard. Vous pouvez régler le code à utiliser.</p>
+    <p>Les fichiers d’exemples sont des fichiers de format standard. Vous pouvez régler les codes à utiliser.</p>
 </div>
-    <p style="margin-left: 0.125in">Entrez le code à utiliser pour les fichiers d’exemples (y compris la barre oblique inverse):<br></p>
+	<p style="margin-left: 0.125in">Entrez le code à utiliser pour le texte en langue locale pour les fichiers d’exemples (y compris la barre oblique inverse) :<br></p>
 <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="10" id="FileTextSFM" name="FileTextSFM" contenteditable="inherit"></textarea>
-</div>
+	<p style="margin-left: 0.125in">Entrez le code à utiliser pour la traduction libre pour les fichiers d’exemples (y compris la barre oblique inverse) :<br></p>
+	<textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="10" id="FileFreeSFM" name="FileFreeSFM" contenteditable="inherit"></textarea>
+    </div>
 <div id="ShowBackNextButtons">
 <br/>
     <input type="button" value="< Suivant" name="BBack" id="PAWSFilesBack" onclick="ButtonBack()" style="width: 78px; height: 24px">&nbsp;<input type="button" value="Précédent >" name="BNext" id="PAWSFilesNext" onclick="ButtonNext()" style="width: 78px; height: 24px">

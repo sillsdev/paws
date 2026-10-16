@@ -360,11 +360,13 @@ public class OutputGenerator {
 			String sDirectory = language.getValue("/paws/language/exampleFilesPath");
 			String sAbbreviation = language.getValue("/paws/language/langAbbr");
 			String sTextSFM = language.getValue("/paws/language/textSFM");
+			String sFreeSFM = language.getValue("/paws/language/freeSFM");
 			for (String outputParam : parameters) {
 				File resultFile = new File(sDirectory + File.separator + sAbbreviation + outputParam + "Test.txt");
 				List<XsltParameter> params = new ArrayList<XsltParameter>();
 				params.add(new XsltParameter("prmIdTitle", outputParam));
 				params.add(new XsltParameter("prmTextSFM", sTextSFM));
+				params.add(new XsltParameter("prmFreeSFM", sFreeSFM));
 				transformerPAWSSKParameterizedExample.clearParameters();
 				for (XsltParameter param : params) {
 					transformerPAWSSKParameterizedExample.setParameter(param.name, param.value);

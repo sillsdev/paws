@@ -76,8 +76,8 @@ function Initialize(locale) {
 		}
 	}
 
-
-	FileTextSFM.value = pawsApp.getAnswerValue("//language/textSFM");
+    FileTextSFM.value = pawsApp.getAnswerValue("//language/textSFM");
+    FileFreeSFM.value = pawsApp.getAnswerValue("//language/freeSFM");
 
 	displayCheckBoxValue(OutputGrammar, "/paws/@outputGrammar");
 	/*displayCheckBoxValue(OutputWriter, "/paws/@outputWriter");*/
@@ -112,6 +112,7 @@ function saveData() {
 	pawsApp.setAnswerValue("//language/exampleFilesPath", FileLocExampleFiles.value);
 
 	pawsApp.setAnswerValue("//language/textSFM", FileTextSFM.value);
+	pawsApp.setAnswerValue("//language/freeSFM", FileFreeSFM.value);
 
 	pawsApp.setAnswerValue("/paws/@outputGrammar", OutputGrammar.value);
 
@@ -398,10 +399,12 @@ function ButtonNext() {
 <input type="button" value=" Browse " name="BFileLocExampleFiles" id="BFileLocExampleFiles" onclick="ButtonFileLocExampleFiles()" style="width: 85px; height: 24px"><br>
 <br/>
 <div class="introduction">
-<p>The example files are standard format files.  You can set the field code to use in them.</p>
+<p>The example files are standard format files.  You can set the field codes to use in them.</p>
 </div>
-<p style="margin-left: 0.125in">Enter the field code to use for example files (include the backslash):<br></p>
+<p style="margin-left: 0.125in">Enter the field code to use for vernacular text in example files (include the backslash):<br></p>
 <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="10" id="FileTextSFM" name="FileTextSFM" contenteditable="inherit"></textarea>
+<p style="margin-left: 0.125in">Enter the field code to use for free translations in example files (include the backslash):<br></p>
+<textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="10" id="FileFreeSFM" name="FileFreeSFM" contenteditable="inherit"></textarea>
 </div>
 <div id="ShowBackNextButtons">
 <br/>

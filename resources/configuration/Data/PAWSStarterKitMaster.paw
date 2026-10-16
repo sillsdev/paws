@@ -24,6 +24,7 @@
       </ipaFont>
       <interlinearOutputStyle style="standard"/>
         <textSFM>\t</textSFM>
+        <freeSFM>\f</freeSFM>
         <answerFile/>
         <grammarFile/>
         <writerFile/>

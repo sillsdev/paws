@@ -78,6 +78,7 @@ function Initialize(locale) {
 
 
 	FileTextSFM.value = pawsApp.getAnswerValue("//language/textSFM");
+	FileFreeSFM.value = pawsApp.getAnswerValue("//language/freeSFM");
 
 	displayCheckBoxValue(OutputGrammar, "/paws/@outputGrammar");
 	/*displayCheckBoxValue(OutputWriter, "/paws/@outputWriter");*/
@@ -112,6 +113,7 @@ function saveData() {
 	pawsApp.setAnswerValue("//language/exampleFilesPath", FileLocExampleFiles.value);
 
 	pawsApp.setAnswerValue("//language/textSFM", FileTextSFM.value);
+	pawsApp.setAnswerValue("//language/freeSFM", FileFreeSFM.value);
 
 	pawsApp.setAnswerValue("/paws/@outputGrammar", OutputGrammar.value);
 
@@ -390,9 +392,11 @@ function ButtonNext() {
 <div class="introduction">
    <p>Los archivos de los ejemplos están en el formato estándar.  Usted puede poner una codificación particular para utilizar en los archivos.</p>
 </div>
-    <p style="margin-left: 0.125in">Escriba la codificación para el campo (incluyendo el '\') que desea utilizar en los archivos de ejemplos:<br></p>
+	<p style="margin-left: 0.125in">Escriba la codificación para el campo (incluyendo el '\') que desea utilizar para el texto en lengua vernácula en los archivos de ejemplos:<br></p>
 <textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="10" id="FileTextSFM" name="FileTextSFM" contenteditable="inherit"></textarea>
-</div>
+	<p style="margin-left: 0.125in">Escriba la codificación para el campo (incluyendo el '\') que desea utilizar para la traducción libre en los archivos de ejemplos:<br></p>
+	<textarea style="margin-left: 0.5in" wrap="off" rows="1" cols="10" id="FileFreeSFM" name="FileFreeSFM" contenteditable="inherit"></textarea>
+    </div>
 <div id="ShowBackNextButtons">
 <br/>
 <input type="button" value="< Atrás" name="BBack" id="PAWSFilesBack" onclick="ButtonBack()" style="width: 78px; height: 24px">&nbsp;<input type="button" value="Próximo >" name="BNext" id="PAWSFilesNext" onclick="ButtonNext()" style="width: 78px; height: 24px">
