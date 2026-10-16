@@ -935,6 +935,7 @@ public class RootLayoutController implements Initializable {
 		language = mainApp.getAnswers();
 		OutputGenerator.getInstance(language);
 		browser.requestFocus();
+		handleRefresh();
 	}
 
 	public void doFileOpen(Boolean fCloseIfCanceled) {
