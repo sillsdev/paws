@@ -3113,6 +3113,7 @@ Let Pron                                 be    &lt;cat&gt;                      
                                                &lt;head infl polarity&gt;              = !positive
                                                &lt;head type wh&gt;                    = !-
                                                &lt;head agr animacy&gt;                = !animate
+                                               &lt;head agr peron&gt;                  = !third
                                                &lt;head type reciprocal&gt;            = !-
                                                &lt;head type reflexive&gt;             = !-
                                                &lt;head type possessive&gt;            = !-
@@ -5757,6 +5758,7 @@ Let makePron                             be    &lt;cat&gt;                      
                                                &lt;head infl polarity&gt;              = !positive
                                                &lt;head type wh&gt;                    = !-
                                                &lt;head agr animacy&gt;                = !animate
+                                               &lt;head agr person&gt;                 = !third
                                                &lt;head type reciprocal&gt;            = !-
                                                &lt;head type reflexive&gt;             = !-
                                                &lt;head type possessive&gt;            = !-

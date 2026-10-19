@@ -108,6 +108,7 @@
        
        <instruction id="PronNoCaseExperiencerYesInstruction" show="swNPCaseNoneAndExperiencerNotNo">
           <br/>In the lexicon, add the feature <feature>dative</feature> to all the pronouns that occur as Experiencer subjects.
+   All pronouns are assumed to be third person singular as default. You need to add the feature <feature>first</feature> or <feature>second</feature> and <feature>plural</feature> to the appropriate entries.
        </instruction>
        
        <prompt id="PronCaseNomPrompt" show="swNPCaseNom">
@@ -248,7 +249,8 @@
        <instruction id="PronCaseTypeNomAccInstruction" show="swNPCaseNom">
           <br/>In the lexicon:
           <ul>
-             <li>Add the feature <feature>nominative</feature> to all the pronouns that occur as<span id="ExperYesSpan4" show="swExperiencerNotNo"> Agent</span> subjects.</li>
+         <li>All pronouns are assumed to be third person singular as default. You need to add the feature <feature>first</feature> or <feature>second</feature> and <feature>plural</feature> to the appropriate entries.</li>
+          <li>Add the feature <feature>nominative</feature> to all the pronouns that occur as<span id="ExperYesSpan4" show="swExperiencerNotNo"> Agent</span> subjects.</li>
              <li id="ExpNotDat" show="swExperiencerNotYesDat">Add the feature <feature>accusative.or.dative</feature> to all the pronouns that can occur as objects and indirect objects<span id="ExpYesObjSpan" show="swExperiencerYesObj"> and Experiencer subjects</span>. </li>
              <li id="ExpYesDatAcc" show="swExperiencerYesDat">Add the feature <feature>accusative</feature> to all the pronouns that occur as objects.</li>
              <li id="ExpYesDat" show="swExperiencerYesDat">Add the feature <feature>dative</feature> to all the pronouns that occur as indirect objects or as Experiencer subjects.</li>
@@ -400,6 +402,7 @@
        <instruction id="PronCaseTypeErgInstruction" show="swNPCaseErg">
           <br/>In the lexicon:
           <ul>
+            <li>All pronouns are assumed to be third person singular as default. You need to add the feature <feature>first</feature> or <feature>second</feature> and <feature>plural</feature> to the appropriate entries.</li>
              <li>Add the feature <feature>ergative</feature> to all the pronouns that occur as<span id="ExperYesSpan5" show="swExperiencerNotNo"> Agent</span> subjects of transitive verbs.</li>
              <li id="ExpNotDatErg" show="swExperiencerNotYesDat">Add the feature <feature>absolutive.or.dative</feature> to all the pronouns that occur as objects or indirect objects of transitive verbs and as subjects of intransitive verbs.</li>
              <li id="ExpYesDatErgAbs" show="swExperiencerYesDat">Add the feature <feature>absolutive</feature> to all the pronouns that occur as objects of transitive verbs and as<span id="ExperYesSpan6Dep" show="swExperiencerNotNo"> Agent</span> subjects of intransitive verbs.</li>
@@ -629,6 +632,7 @@
        <instruction id="PronCaseTypeSplitInstruction" show="swNPCaseSplit">
           <br/>In the lexicon:
           <ul>
+            <li>All pronouns are assumed to be third person singular as default. You need to add the feature <feature>first</feature> or <feature>second</feature> and <feature>plural</feature> to the appropriate entries.</li>
              <li>Add the feature <feature>nominative</feature> to all the pronouns that occur as<span id="ExperYesSplitSpan4" show="swExperiencerNotNo"> Agent</span> subjects.</li>
              <li id="ExpNotDatSplit" show="swExperiencerNotYesDat">Add the feature <feature>accusative.or.dative</feature> to all the pronouns that can occur as objects and indirect objects<span id="ExpYesObjSplitSpan" show="swExperiencerYesObj"> and Experiencer subjects</span>. </li>
              <li id="ExpYesDatAccSplit" show="swExperiencerYesDat">Add the feature <feature>accusative</feature> to all the pronouns that occur as objects.</li>
