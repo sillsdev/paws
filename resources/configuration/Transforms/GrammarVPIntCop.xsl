@@ -1358,31 +1358,25 @@ VP = V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='VOS' or normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='SVO'">
 <xsl:text>
 rule {VP option 3a - V initial, motion intransitive}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
           &lt;V head infl valence&gt; = active
           &lt;PP head type suffix poss&gt; = -         | only in possessor position
           &lt;PP head type prefix poss&gt; = -
-          &lt;DP head type suffix poss&gt; = -         | only in possessor position
-          &lt;DP head type prefix poss&gt; = -
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP option&gt; = 3a
 </xsl:text>
@@ -1399,31 +1393,25 @@ VP = V {PP / AdvP / DP}
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='VOS' or normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='SVO'">
 <xsl:text>
 rule {VP option 3aNeg - V initial, motion intransitive, neg adv requires neg verb}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
           &lt;V head infl valence&gt; = active
           &lt;PP head type suffix poss&gt; = -         | only in possessor position
           &lt;PP head type prefix poss&gt; = -
-          &lt;DP head type suffix poss&gt; = -         | only in possessor position
-          &lt;DP head type prefix poss&gt; = -
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head&gt; == [location:[head:[infl:[polarity:negative]]]] -&gt;  
                        [infl:[polarity:negative]] | if locative negative, verb must be
@@ -1468,16 +1456,14 @@ VP = V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='OVS' or normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='SOV'">
 <xsl:text>
 rule {VP option 3b - V final, motion intransitive}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1486,10 +1472,8 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP option&gt; = 3b
 </xsl:text>
@@ -1506,16 +1490,14 @@ VP = {PP / AdvP / DP} V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='OVS' or normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='SOV'">
 <xsl:text>
 rule {VP option 3bNeg - V final, motion intransitive, neg adv requires neg verb}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1524,7 +1506,6 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
@@ -1547,12 +1528,11 @@ VP = {PP / AdvP / DP} V
 <xsl:if test="normalize-space(//typology/@wordOrder)='SOV' and normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//q/@contFront)='after'">
 <xsl:text>
 rule {VP option 3bQSubj - V final, motion intransitive, subject questioned}
-VP = {PP / AdvP / DP_1} DP V
+VP = {PP / AdvP } DP V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head subject&gt; = &lt;DP&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP_1&gt;
           &lt;VP head type question&gt; = +
           &lt;VP head type pro-drop&gt; = -
           &lt;DP head type wh&gt; = +
@@ -1560,7 +1540,6 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1569,11 +1548,9 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP_1 head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP_1 head type prefix&gt;
           &lt;VP option&gt; = 3bQSubj
 </xsl:text>
 </xsl:if>
@@ -1588,12 +1565,11 @@ VP = {PP / AdvP / DP_1} DP V
 <xsl:if test="normalize-space(//typology/@wordOrder)='SOV' and normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//q/@contFront)='after'">
 <xsl:text>
 rule {VP option 3bQSubjNegAdvVerbRequired - V final, motion intransitive, subject questioned}
-VP = {PP / AdvP / DP_1} DP V
+VP = {PP / AdvP } DP V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head subject&gt; = &lt;DP&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP_1&gt;
           &lt;VP head type question&gt; = +
           &lt;VP head type pro-drop&gt; = -
           &lt;DP head type wh&gt; = +
@@ -1601,7 +1577,6 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1610,7 +1585,6 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP_1 head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
@@ -1631,12 +1605,11 @@ VP = {PP / AdvP / DP_1} DP V
 <xsl:if test="normalize-space(//typology/@wordOrder)='SOV' and normalize-space(//neg/@negFront)='beforeVerb' and normalize-space(//neg/@subjVerbRequired)='no' and normalize-space(//neg/@advVerbRequired)='no'">
 <xsl:text>
 rule {VP option 3bNegSubj - V final, motion intransitive, subject negative}
-VP = {PP / AdvP / DP_1} DP V
+VP = {PP / AdvP } DP V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head subject&gt; = &lt;DP&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP_1&gt;
           &lt;VP head type pro-drop&gt; = -
           &lt;DP head type wh&gt; = -
           &lt;DP head infl polarity&gt; = negative
@@ -1644,7 +1617,6 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1653,7 +1625,6 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP_1 head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
@@ -1674,12 +1645,11 @@ VP = {PP / AdvP / DP_1} DP V
 <xsl:if test="normalize-space(//typology/@wordOrder)='SOV' and normalize-space(//neg/@negFront)='beforeVerb' and normalize-space(//neg/@subjVerbRequired)='yes'">
 <xsl:text>
 rule {VP option 3bNegSubjVerbRequired - V final, motion intransitive, subject and verb negative}
-VP = {PP / AdvP / DP_1} DP V
+VP = {PP / AdvP } DP V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head subject&gt; = &lt;DP&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP_1&gt;
           &lt;VP head type pro-drop&gt; = -
           &lt;DP head type wh&gt; = -
           &lt;DP head infl polarity&gt; = negative
@@ -1688,7 +1658,6 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1697,11 +1666,9 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP_1 head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP_1 head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP option&gt; = 3bNegSubjVerbRequired
 </xsl:text>
@@ -1716,12 +1683,11 @@ VP = {PP / AdvP / DP_1} DP V
 <xsl:if test="normalize-space(//typology/@wordOrder)='SOV' and normalize-space(//neg/@negFront)='beforeVerb' and normalize-space(//neg/@subjVerbRequired)='no' and normalize-space(//neg/@advVerbRequired)='yes'">
 <xsl:text>
 rule {VP option 3bNegSubjNegAdvVerbRequired - V final, motion intransitive, subject negative}
-VP = {PP / AdvP / DP_1} DP V
+VP = {PP / AdvP } DP V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head subject&gt; = &lt;DP&gt;
           &lt;VP head location&gt; = &lt;PP&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
-          &lt;VP head location&gt; = &lt;DP_1&gt;
           &lt;VP head type pro-drop&gt; = -
           &lt;DP head type wh&gt; = -
           &lt;DP head infl polarity&gt; = negative
@@ -1729,7 +1695,6 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1738,11 +1703,9 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP_1 head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP_1 head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head&gt; == [location:[head:[infl:[polarity:negative]]]] -&gt;   
                        [infl:[polarity:negative]] | if locative negative, verb must be
@@ -1842,13 +1805,12 @@ VP = AdvP V
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//neg/@subjVerbRequired)='no' and normalize-space(//neg/@advVerbRequired)='no'">
 <xsl:text>
 rule {VP option 3c - VSO order, motion intransitive}
-VP = V DP {PP / AdvP / DP_1}
+VP = V DP {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1868,10 +1830,8 @@ VP = V DP {PP / AdvP / DP_1}
           &lt;DP head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP_1 head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP_1 head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;DP head&gt; == ~[case:accusative]
@@ -1890,14 +1850,13 @@ VP = V DP {PP / AdvP / DP_1}
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//neg/@subjVerbRequired)='yes' and normalize-space(//neg/@advVerbRequired)='no'">
 <xsl:text>
 rule {VP option 3cNegSubjVerbRequired - VSO order, motion intransitive, neg subject requires neg verb}
-VP = V DP {PP / AdvP / DP_1}
+VP = V DP {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1917,10 +1876,8 @@ VP = V DP {PP / AdvP / DP_1}
           &lt;DP head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP_1 head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP_1 head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;DP head&gt; == ~[case:accusative]
@@ -1941,14 +1898,13 @@ VP = V DP {PP / AdvP / DP_1}
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//neg/@subjVerbRequired)='yes' and normalize-space(//neg/@advVerbRequired)='yes'">
 <xsl:text>
 rule {VP option 3cNegSubjOrAdvVerbRequired - VSO order, motion intransitive, neg subject or adv requires neg verb}
-VP = V DP {PP / AdvP / DP_1}
+VP = V DP {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -1968,10 +1924,8 @@ VP = V DP {PP / AdvP / DP_1}
           &lt;DP head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP_1 head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP_1 head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;DP head&gt; == ~[case:accusative]
@@ -1994,14 +1948,13 @@ VP = V DP {PP / AdvP / DP_1}
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//neg/@subjVerbRequired)='no' and normalize-space(//neg/@advVerbRequired)='yes'">
 <xsl:text> 
 rule {VP option 3cNegAdvVerbRequired - VSO order, motion intransitive, neg adv requires neg verb}
-VP = V DP {PP / AdvP / DP_1}
+VP = V DP {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2021,10 +1974,8 @@ VP = V DP {PP / AdvP / DP_1}
           &lt;DP head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP_1 head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP_1 head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;DP head&gt; == ~[case:accusative]
@@ -2045,7 +1996,7 @@ VP = V DP {PP / AdvP / DP_1}
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//ip/proDropImp/@checked)='yes' and normalize-space(//neg/@advVerbRequired)='no'">
 <xsl:text>
 rule {VP option 3ci - VSO order, motion intransitive, imperative}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head infl mood&gt; =  imperative
           &lt;PP head type locative&gt; = +
@@ -2054,7 +2005,6 @@ VP = V {PP / AdvP / DP}
           &lt;PP head type suffix poss&gt; = -         | only in possessor position
           &lt;PP head type prefix poss&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type motion&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
@@ -2063,10 +2013,8 @@ VP = V {PP / AdvP / DP}
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP option&gt; = 3ci
 </xsl:text>
@@ -2081,7 +2029,7 @@ VP = V {PP / AdvP / DP}
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//ip/proDropImp/@checked)='yes' and normalize-space(//neg/@advVerbRequired)='yes'">
 <xsl:text>
 rule {VP option 3ciNegAdvVerbRequired - VSO order, motion intransitive, imperative, neg adv requires neg verb}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;VP head infl mood&gt; =  imperative
@@ -2091,7 +2039,6 @@ VP = V {PP / AdvP / DP}
           &lt;PP head type suffix poss&gt; = -          | only in possessor position
           &lt;PP head type prefix poss&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type motion&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
@@ -2100,10 +2047,8 @@ VP = V {PP / AdvP / DP}
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head&gt; == [location:[head:[infl:[polarity:negative]]]] -&gt;   
                        [infl:[polarity:negative]] | if locative negative, verb must be
@@ -2120,7 +2065,7 @@ VP = V {PP / AdvP / DP}
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//ip/proDropYes/@checked)='yes' or normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//ip/proDropClitic/@checked)='yes'">
 <xsl:text>
 rule {VP option 3cp - VSO order, motion intransitive, pro-drop}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head infl mood&gt; =  declarative
           &lt;PP head type locative&gt; = +
@@ -2129,7 +2074,6 @@ VP = V {PP / AdvP / DP}
           &lt;PP head type suffix poss&gt; = -          | only in possessor position
           &lt;PP head type prefix poss&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type motion&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
@@ -2139,10 +2083,8 @@ VP = V {PP / AdvP / DP}
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;VP option&gt; = 3cp
@@ -2164,7 +2106,7 @@ VP = V {PP / AdvP / DP}
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//ip/proDropYes/@checked)='yes' or normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//ip/proDropClitic/@checked)='yes'">
 <xsl:text>
 rule {VP option 3cpNegAdvVerbRequired - VSO order, motion intransitive, pro-drop, neg adv requires neg verb}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;VP head infl mood&gt; =  declarative
@@ -2174,7 +2116,6 @@ VP = V {PP / AdvP / DP}
           &lt;PP head type suffix poss&gt; = -          | only in possessor position
           &lt;PP head type prefix poss&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type motion&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
@@ -2184,10 +2125,8 @@ VP = V {PP / AdvP / DP}
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;VP head&gt; == [location:[head:[infl:[polarity:negative]]]] -&gt;   
                        [infl:[polarity:negative]] | if locative negative, verb must be
           &lt;VP head fronted&gt; == ~[cat:FocusP]
@@ -2311,13 +2250,12 @@ VP = V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='OSV'">
 <xsl:text>
 rule {VP option 3d - OSV order, motion intransitive}
-VP = {PP / AdvP / DP_1} DP V
+VP = {PP / AdvP } DP V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2337,11 +2275,9 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;DP head type suffix copular&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP_1 head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP_1 head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;DP head&gt; == ~[case:accusative]
@@ -2358,14 +2294,13 @@ VP = {PP / AdvP / DP_1} DP V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='OSV'">
 <xsl:text>
 rule {VP option 3dNegAdvVerbRequired - OSV order, motion intransitive}
-VP = {PP / AdvP / DP_1} DP V
+VP = {PP / AdvP } DP V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP_1 head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2385,11 +2320,9 @@ VP = {PP / AdvP / DP_1} DP V
           &lt;DP head type suffix copular&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP_1 head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP_1 head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;DP head&gt; == ~[case:accusative]
@@ -2408,7 +2341,7 @@ VP = {PP / AdvP / DP_1} DP V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//ip/proDropImp/@checked)='yes'">
 <xsl:text>
 rule {VP option 3di - OSV order, motion intransitive, imperative}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head infl mood&gt; = imperative
           &lt;PP head type locative&gt; = +
@@ -2417,7 +2350,6 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type suffix poss&gt; = -         | only in possessor position
           &lt;PP head type prefix poss&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type motion&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
@@ -2425,10 +2357,8 @@ VP = {PP / AdvP / DP} V
           &lt;VP head type question&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP option&gt; = 3di
 </xsl:text>
@@ -2443,7 +2373,7 @@ VP = {PP / AdvP / DP} V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//ip/proDropImp/@checked)='yes'">
 <xsl:text>
 rule {VP option 3diNegAdvVerbRequired - OSV order, motion intransitive, imperative}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;VP head infl mood&gt; = imperative
@@ -2453,7 +2383,6 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type suffix poss&gt; = -          | only in possessor position
           &lt;PP head type prefix poss&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type motion&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
@@ -2461,10 +2390,8 @@ VP = {PP / AdvP / DP} V
           &lt;VP head type question&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head&gt; == [location:[head:[infl:[polarity:negative]]]] -&gt;  
                        [infl:[polarity:negative]] | if locative negative, verb must be
@@ -2481,7 +2408,7 @@ VP = {PP / AdvP / DP} V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//ip/proDropYes/@checked)='yes' or normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//ip/proDropClitic/@checked)='yes'">
 <xsl:text>
 rule {VP option 3dp - OSV order, motion intransitive, pro-drop}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head infl mood&gt; = declarative
           &lt;PP head type locative&gt; = +
@@ -2490,7 +2417,6 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type suffix poss&gt; = -          | only in possessor position
           &lt;PP head type prefix poss&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type motion&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
@@ -2499,10 +2425,8 @@ VP = {PP / AdvP / DP} V
           &lt;VP head type question&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;VP option&gt; = 3dp
@@ -2524,7 +2448,7 @@ VP = {PP / AdvP / DP} V
 <xsl:if test="normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//ip/proDropYes/@checked)='yes' or normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//ip/proDropClitic/@checked)='yes'">
 <xsl:text>
 rule {VP option 3dpNegAdvVerbRequired - OSV order, motion intransitive, pro-drop}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;VP head infl mood&gt; = declarative
@@ -2534,7 +2458,6 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type suffix poss&gt; = -          | only in possessor position
           &lt;PP head type prefix poss&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type motion&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
@@ -2543,10 +2466,8 @@ VP = {PP / AdvP / DP} V
           &lt;VP head type question&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;VP head fronted&gt; == ~[cat:DP]
           &lt;VP head&gt; == [location:[head:[infl:[polarity:negative]]]] -&gt;  
@@ -2625,13 +2546,12 @@ VP = DP V
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//neg/@advVerbRequired)='no'">
 <xsl:text>
 rule {VP option 3e - VSO order, motion intransitive, subject questioned}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2646,10 +2566,8 @@ VP = V {PP / AdvP / DP}
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;DP head&gt; == ~[case:accusative]
           &lt;DP head&gt; == ~[case:ergative]
@@ -2667,13 +2585,12 @@ VP = V {PP / AdvP / DP}
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//focus/@focus)='yes'">
 <xsl:text>
 rule {VP option 3efoc - VSO order, motion intransitive, subject focused}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2688,10 +2605,8 @@ VP = V {PP / AdvP / DP}
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;DP head&gt; == ~[case:accusative]
           &lt;DP head&gt; == ~[case:ergative]
           &lt;DP head&gt; == ~[case:dative]
@@ -2708,14 +2623,13 @@ VP = V {PP / AdvP / DP}
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//q/@contFront)='before' and normalize-space(//neg/@advVerbRequired)='yes'">
 <xsl:text>
 rule {VP option 3eNegAdvVerbRequired - VSO order, motion intransitive, subject questioned}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2730,10 +2644,8 @@ VP = V {PP / AdvP / DP}
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;VP head fronted&gt; == ~[cat:FocusP]
           &lt;DP head&gt; == ~[case:accusative]
           &lt;DP head&gt; == ~[case:ergative]
@@ -2753,14 +2665,13 @@ VP = V {PP / AdvP / DP}
 <xsl:if test="normalize-space(//typology/@wordOrder)='VSO' and normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//focus/@focus)='yes'">
 <xsl:text>
 rule {VP option 3eNegAdvVerbRequiredFoc - VSO order, motion intransitive, subject focused}
-VP = V {PP / AdvP / DP}
+VP = V {PP / AdvP }
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2775,10 +2686,8 @@ VP = V {PP / AdvP / DP}
           &lt;V head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;VP head type comma&gt; &lt;= &lt;AdvP head type comma&gt;
-          &lt;VP head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
           &lt;VP head type suffix&gt; &lt;= &lt;AdvP head type suffix&gt;
-          &lt;VP head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
           &lt;DP head&gt; == ~[case:accusative]
           &lt;DP head&gt; == ~[case:ergative]
           &lt;DP head&gt; == ~[case:dative]
@@ -2797,13 +2706,12 @@ VP = V {PP / AdvP / DP}
 <xsl:if test="normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//q/@contFront)='before' and normalize-space(//neg/@advVerbRequired)='no'">
 <xsl:text>
 rule {VP option 3f - OSV order, motion intransitive, subject questioned}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2817,10 +2725,8 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;DP head&gt; == ~[case:accusative]
           &lt;DP head&gt; == ~[case:ergative]
           &lt;DP head&gt; == ~[case:dative]
@@ -2837,13 +2743,12 @@ VP = {PP / AdvP / DP} V
 <xsl:if test="normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//neg/@advVerbRequired)='no' and normalize-space(//focus/@focus)='yes'">
 <xsl:text>
 rule {VP option 3fFoc - OSV order, motion intransitive, subject focused}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2857,10 +2762,8 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;DP head&gt; == ~[case:accusative]
           &lt;DP head&gt; == ~[case:ergative]
           &lt;DP head&gt; == ~[case:dative]
@@ -2877,14 +2780,13 @@ VP = {PP / AdvP / DP} V
 <xsl:if test="normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//q/@contFront)='before' and normalize-space(//neg/@advVerbRequired)='yes'">
 <xsl:text>
 rule {VP option 3fNegAdvVerbRequired - OSV order, motion intransitive, subject questioned}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2898,10 +2800,8 @@ VP = {PP / AdvP / DP} V
           &lt;PP head type prefix poss&gt; = -
           &lt;PP head type comma&gt; = -
           &lt;AdvP head type comma&gt; = -
-          &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;DP head&gt; == ~[case:accusative]
           &lt;DP head&gt; == ~[case:ergative]
           &lt;DP head&gt; == ~[case:dative]
@@ -2920,14 +2820,13 @@ VP = {PP / AdvP / DP} V
 <xsl:if test="normalize-space(//typology/@wordOrder)='OSV' and normalize-space(//neg/@advVerbRequired)='yes' and normalize-space(//focus/@focus)='yes'">
 <xsl:text>
 rule {VP option 3fNegAdvVerbRequiredFoc - OSV order, motion intransitive, subject focused}
-VP = {PP / AdvP / DP} V
+VP = {PP / AdvP } V
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;VP head location&gt; = &lt;AdvP&gt;
           &lt;PP head type locative&gt; = +
           &lt;PP head case&gt; = locative
           &lt;PP head type sentential&gt; = -
           &lt;AdvP head type locative&gt; = +
-          &lt;DP head type locative&gt; = +
           &lt;V head type transitive&gt; = -
           &lt;V head type copular&gt; = -
           &lt;V head type motion&gt; = +
@@ -2944,7 +2843,6 @@ VP = {PP / AdvP / DP} V
           &lt;DP head type comma&gt; = -
           &lt;VP head type prefix&gt; &lt;= &lt;PP head type prefix&gt;
           &lt;VP head type prefix&gt; &lt;= &lt;AdvP head type prefix&gt;
-          &lt;VP head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
           &lt;DP head&gt; == ~[case:accusative]
           &lt;DP head&gt; == ~[case:ergative]
           &lt;DP head&gt; == ~[case:dative]

@@ -4949,6 +4949,7 @@ N'_1 = AdjP N'_2
           &lt;AdjP head agr&gt; = &lt;N'_2 head agr&gt;
           &lt;AdjP head case&gt; = &lt;N'_2 head case&gt;
           &lt;AdjP head type DP-initial&gt; = +
+          &lt;AdjP head type existential&gt; = -          |* added Oct 2026
           &lt;AdjP head type prefix copular&gt; = -      | only in no V/Aux copulars
           &lt;AdjP head type suffix copular&gt; = -
           &lt;AdjP head type clausal-comp&gt; = -
@@ -5018,6 +5019,7 @@ N'_1 = N'_2 AdjP
           &lt;AdjP head agr&gt; = &lt;N'_2 head agr&gt;
           &lt;AdjP head case&gt; = &lt;N'_2 head case&gt;
           &lt;AdjP head type DP-final&gt; = +
+          &lt;AdjP head type existential&gt; = -          |* added Oct 2026
           &lt;AdjP head type prefix copular&gt; = -      | only in no V/Aux copulars
           &lt;AdjP head type suffix copular&gt; = -
           &lt;AdjP head type clausal-comp&gt; = -
@@ -6365,9 +6367,11 @@ N' = N PP
           &lt;PP head infl valence&gt; = active  | passive by-phrase not within NP
           &lt;PP head type sentential&gt; = -  | sentential not within NP
           &lt;PP head type locative&gt; = -  
+          &lt;PP head type temporal&gt; = -            | added October 2026
           &lt;N head type comma&gt; = -
           &lt;N' head type comma&gt; &lt;= &lt;PP head type comma&gt;
           &lt;N' head type suffix&gt; &lt;= &lt;PP head type suffix&gt;
+          &lt;PP head&gt; == ~[case:dative]             | added October 2026
           &lt;N' option&gt; = 4e
 </xsl:text>
 </xsl:if>

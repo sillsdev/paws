@@ -151,7 +151,7 @@ IP = I'
           &lt;IP head type existential&gt; = +
           &lt;IP head infl mood&gt; = declarative
           &lt;IP head infl valence&gt; = active
-          &lt;IP head type verbheaded&gt; = +  | if no existential verb, then existential Adv required
+          &lt;IP head type verbheaded&gt; = +  | if no existential verb, then existential Adv required  |* changed showWhen Oct 2026 to not allow this rule when Adv in language
           &lt;IP head fronted&gt; == ~[cat:DP]
           &lt;IP head fronted&gt; == ~[cat:FocusP]
           &lt;IP option&gt; = 1exist
@@ -159,11 +159,15 @@ IP = I'
   <showWhen id="IPoption1exist">
     <whenValue element="ip/existVerb" attr="checked" value="yes"/>
     <and/>
+   <whenValue element="ip/existWord" attr="checked" value="no"/>
+   <and/>
     <whenValue element="typology" attr="wordOrder" value="VSO" negateValue="yes"/>
     <and/>
     <whenValue element="typology" attr="wordOrder" value="OSV" negateValue="yes"/>
   <or/>
     <whenValue element="ip/existPosition" attr="checked" value="yes"/>
+    <and/>
+   <whenValue element="ip/existWord" attr="checked" value="no"/>
     <and/>
     <whenValue element="typology" attr="wordOrder" value="VSO" negateValue="yes"/>
     <and/>

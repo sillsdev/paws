@@ -312,7 +312,7 @@ PP = AdjP_1 P' AdjP_2
 
 <xsl:if test="normalize-space(//pp/@pPos)='before' and normalize-space(//pp/@pType)!='clitic' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@pType)!='clitic'">
 <xsl:text>
-rule {PBar option 1aNoCase - prepositions, P marks case, no case on DP complement}
+rule {PBar option 1aCase - prepositions, P marks case, DP complement not temporal or locative}  |New October 2026
 P' = P DP
           &lt;P' head&gt; = &lt;P head&gt;
           &lt;P' head object&gt; = &lt;DP&gt;
@@ -323,6 +323,72 @@ P' = P DP
           &lt;P' head type wh&gt; &lt;= &lt;DP head type wh&gt;  | wh for pied-piping
           &lt;DP head type prefix copular&gt; = -    | only in no V/Aux copulars
           &lt;DP head type suffix copular&gt; = -
+          &lt;P' head type temporal&gt; = -
+          &lt;DP head type temporal&gt; = -
+          &lt;P' head type locative&gt; = -
+          &lt;DP head type locative&gt; = -
+          &lt;P head type comma&gt; = -
+          &lt;P' head type comma&gt; &lt;= &lt;DP head type comma&gt;
+          &lt;P' head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
+          &lt;P' option&gt; = 1aCase
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+<xsl:if test="normalize-space(//pp/@pPos)='after' and normalize-space(//pp/@pType)!='clitic' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@pType)!='clitic'">
+<xsl:text>
+rule {PBar option 1bCase - postpositions, P marks case, DP complement not temporal or locative}  New October 2026
+P' = DP P
+          &lt;P' head&gt; = &lt;P head&gt;
+          &lt;P' head object&gt; = &lt;DP&gt;
+          &lt;P head type PP-final&gt; = +
+          &lt;DP head type case-marked&gt; = -
+          &lt;P' head type temporal&gt; = - 
+          &lt;DP head type temporal&gt; = -    |* testing October 2026 P and N marked with features
+          &lt;P' head type locative&gt; = -
+          &lt;DP head type locative&gt; = -  |* testing October 2026
+          &lt;DP head type relative&gt; = -    | no relative clauses, use IP rule
+          &lt;P' head type stranded&gt; = -    | not missing a complement
+          &lt;P' head type wh&gt; &lt;= &lt;DP head type wh&gt;  | wh for pied-piping
+          &lt;DP head type prefix copular&gt; = -    | only in no V/Aux copulars   
+          &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type comma&gt; = -
+          &lt;P' head type prefix&gt; &lt;= &lt;DP head type prefix&gt;
+          &lt;P' option&gt; = 1bCase
+</xsl:text>
+</xsl:if>
+    
+        
+        
+        
+        
+        
+        
+        
+    
+
+<xsl:if test="normalize-space(//pp/@pPos)='before' and normalize-space(//pp/@pType)!='clitic' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@pType)!='clitic'">
+<xsl:text>
+rule {PBar option 1aNoCase - prepositions, P and N agree in locative and temporal}
+P' = P DP
+          &lt;P' head&gt; = &lt;P head&gt;
+          &lt;P' head object&gt; = &lt;DP&gt;
+          &lt;P head type PP-initial&gt; = +
+          &lt;DP head type case-marked&gt; = -
+          &lt;DP head type relative&gt; = -    | no relative clauses, use IP rule
+          &lt;P' head type stranded&gt; = -    | not missing a complement
+          &lt;P' head type wh&gt; &lt;= &lt;DP head type wh&gt;  | wh for pied-piping
+          &lt;DP head type prefix copular&gt; = -    | only in no V/Aux copulars
+          &lt;DP head type suffix copular&gt; = -
+          &lt;P' head type temporal&gt; = &lt;DP head type temporal&gt;    |* testing October 2026 P and N marked with features
+          &lt;P' head type locative&gt; = &lt;DP head type locative&gt;    |* testing October 2026
           &lt;P head type comma&gt; = -
           &lt;P' head type comma&gt; &lt;= &lt;DP head type comma&gt;
           &lt;P' head type suffix&gt; &lt;= &lt;DP head type suffix&gt;
@@ -340,12 +406,14 @@ P' = P DP
     
 <xsl:if test="normalize-space(//pp/@pPos)='after' and normalize-space(//pp/@pType)!='clitic' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@pType)!='clitic'">
 <xsl:text>
-rule {PBar option 1bNoCase - postpositions, P marks case, no case on DP complement}
+rule {PBar option 1bNoCase - postpositions, P and N agree in locative and temporal}
 P' = DP P
           &lt;P' head&gt; = &lt;P head&gt;
           &lt;P' head object&gt; = &lt;DP&gt;
           &lt;P head type PP-final&gt; = +
           &lt;DP head type case-marked&gt; = -
+          &lt;P' head type temporal&gt; = &lt;DP head type temporal&gt;    |* testing October 2026 P and N marked with features
+          &lt;P' head type locative&gt; = &lt;DP head type locative&gt;    |* testing October 2026
           &lt;DP head type relative&gt; = -    | no relative clauses, use IP rule
           &lt;P' head type stranded&gt; = -    | not missing a complement
           &lt;P' head type wh&gt; &lt;= &lt;DP head type wh&gt;  | wh for pied-piping
@@ -365,7 +433,9 @@ P' = DP P
         
         
     
-<xsl:if test="normalize-space(//pp/@pPos)='before' and normalize-space(//pp/@pType)!='clitic' and normalize-space(//pp/@locative)='yes' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@pType)!='clitic' and normalize-space(//pp/@locative)='yes'">
+
+    
+    <xsl:if test="normalize-space(//pp/@pPos)='before' and normalize-space(//pp/@pType)!='clitic' and normalize-space(//pp/@locative)='yes' or normalize-space(//pp/@pPos)='both' and normalize-space(//pp/@pType)!='clitic' and normalize-space(//pp/@locative)='yes'">
 <xsl:text>
 rule {PBar option 2a - prepositions, locative AdvP complement}
 P' = P AdvP

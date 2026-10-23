@@ -154,7 +154,7 @@ IP = I'
     
     
   
-<xsl:if test="normalize-space(//ip/existVerb/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' and normalize-space(//typology/@wordOrder)!='OSV' or normalize-space(//ip/existPosition/@checked)='yes' and normalize-space(//typology/@wordOrder)!='VSO' and normalize-space(//typology/@wordOrder)!='OSV'">
+<xsl:if test="normalize-space(//ip/existVerb/@checked)='yes' and normalize-space(//ip/existWord/@checked)='no' and normalize-space(//typology/@wordOrder)!='VSO' and normalize-space(//typology/@wordOrder)!='OSV' or normalize-space(//ip/existPosition/@checked)='yes' and normalize-space(//ip/existWord/@checked)='no' and normalize-space(//typology/@wordOrder)!='VSO' and normalize-space(//typology/@wordOrder)!='OSV'">
 <xsl:text>
 rule {IP option 1exist - subject missing for existentials without an existential Adv}
 IP = I'
@@ -162,7 +162,7 @@ IP = I'
           &lt;IP head type existential&gt; = +
           &lt;IP head infl mood&gt; = declarative
           &lt;IP head infl valence&gt; = active
-          &lt;IP head type verbheaded&gt; = +  | if no existential verb, then existential Adv required
+          &lt;IP head type verbheaded&gt; = +  | if no existential verb, then existential Adv required  |* changed showWhen Oct 2026 to not allow this rule when Adv in language
           &lt;IP head fronted&gt; == ~[cat:DP]
           &lt;IP head fronted&gt; == ~[cat:FocusP]
           &lt;IP option&gt; = 1exist
@@ -171,11 +171,15 @@ IP = I'
   
     
     
+   
+   
     
     
     
   
     
+    
+   
     
     
     

@@ -449,6 +449,7 @@ Let dative.or.nominative                 be    &lt;head case&gt;                
 Let dativeVoice                          be    &lt;head infl voice&gt;               = dative
 Let declarative                          be    &lt;head infl mood&gt;                = declarative
 Let definite                             be    &lt;head type definite&gt;            = +
+Let demonstrative                        be    &lt;head type demonstrative&gt;       = +
 Let ditransitive                         be    &lt;head type ditransitive&gt;        = +
                                                &lt;head type transitive&gt;          = +
 Let ditransitive.opt                     be   { [head:[type:[ditransitive:+]]]
@@ -1013,6 +1014,7 @@ Let Adj                                  be    &lt;cat&gt;                      
                                                &lt;head type sentential&gt;            = !-
                                                &lt;head type clausal-comp&gt;          = !-
                                                &lt;head type focusmarked&gt;           = !-
+                                               &lt;AdjP head type existential&gt;      = !-          |* added Oct 2026
                                                &lt;head type subject_focused&gt;       = !-
                                                &lt;head type gerund&gt;                = -
                                                &lt;head type participle&gt;            = -
@@ -2263,6 +2265,7 @@ Let N                                    be    &lt;cat&gt;                      
                                                &lt;head type proper&gt;                = !-
                                                &lt;head type relative&gt;              = !-
                                                &lt;head type mass&gt;                  = !-
+                                               &lt;head type locative&gt;              = !-     |* added October 2026
                                                &lt;head type temporal&gt;              = !-
                                                &lt;head embedded cat&gt;               = !none
                                                &lt;head type definite&gt;              = !+
@@ -2539,6 +2542,7 @@ Let Num                                  be    &lt;cat&gt;                      
                                                &lt;head type gerund&gt;                = -
                                                &lt;head type participle&gt;            = -
                                                &lt;head type quantifier&gt;            = +
+                                               &lt;head type modifies_Q&gt;            = -      |* added October 2026
                                                &lt;head type comma&gt;                 = !-
                                                &lt;head type topic&gt;                 = !-      </xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
@@ -2797,6 +2801,7 @@ Let P                                    be    &lt;cat&gt;                      
                                                &lt;head infl valence&gt;               = !active
                                                &lt;head type wh&gt;                    = -
                                                &lt;head type partitive&gt;             = !-
+                                               &lt;head type locative&gt;              = !-     |* added October 2026
                                                &lt;head type temporal&gt;              = !-
                                                &lt;head type sentential&gt;            = !-
                                                &lt;head type gerund&gt;                = -
@@ -3113,7 +3118,7 @@ Let Pron                                 be    &lt;cat&gt;                      
                                                &lt;head infl polarity&gt;              = !positive
                                                &lt;head type wh&gt;                    = !-
                                                &lt;head agr animacy&gt;                = !animate
-                                               &lt;head agr peron&gt;                  = !third
+                                               &lt;head agr person&gt;                 = !third
                                                &lt;head type reciprocal&gt;            = !-
                                                &lt;head type reflexive&gt;             = !-
                                                &lt;head type possessive&gt;            = !-
@@ -3793,6 +3798,7 @@ Let makeAdj                              be     &lt;cat&gt;                     
                                                 &lt;head type sentential&gt;           = !-
                                                 &lt;head type clausal-comp&gt;         = !-
                                                 &lt;head type focusmarked&gt;          = !-
+                                                &lt;AdjP head type existential&gt;     = !-          |* added Oct 2026
                                                 &lt;head type subject_focused&gt;      = !-
                                                 &lt;head type gerund&gt;               = -
                                                 &lt;head type participle&gt;           = -
@@ -5043,6 +5049,7 @@ Let makeN                                be    &lt;cat&gt;                      
                                                &lt;head type proper&gt;                = !-
                                                &lt;head type relative&gt;              = !-
                                                &lt;head type mass&gt;                  = !-
+                                               &lt;head type locative&gt;              = !-     |* added October 2026
                                                &lt;head type temporal&gt;              = !-
                                                &lt;head embedded cat&gt;               = !none
                                                &lt;head type definite&gt;              = !+
@@ -5319,6 +5326,7 @@ Let makeNum                              be    &lt;cat&gt;                      
                                                &lt;head type gerund&gt;                = -
                                                &lt;head type participle&gt;            = -
                                                &lt;head type quantifier&gt;            = +
+                                               &lt;head type modifies_Q&gt;            = -      |* added October 2026
                                                &lt;head type comma&gt;                 = !-
                                                &lt;head type topic&gt;                 = !-      </xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
@@ -5452,6 +5460,7 @@ Let makeP                                be    &lt;cat&gt;                      
                                                &lt;head infl valence&gt;               = !active
                                                &lt;head type wh&gt;                    = -
                                                &lt;head type partitive&gt;             = !-
+                                               &lt;head type locative&gt;              = !-     |* added October 2026
                                                &lt;head type temporal&gt;              = !-
                                                &lt;head type sentential&gt;            = !-
                                                &lt;head type gerund&gt;                = -

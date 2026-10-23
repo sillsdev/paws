@@ -238,33 +238,34 @@ DP = DP_1  DP_2
       
       
    
-<xsl:text>
-rule {DP option conjListAppos - conjoined DPs, lists and appositives}
-DP = DP_1  DP_2
-          &lt;DP head&gt; = &lt;DP_2 head&gt;
-          &lt;DP conjoined&gt; = +
-          &lt;DP_1 conjoined&gt; = -                |limit recursion
-          &lt;DP_1 head type noN&gt; = -
-          &lt;DP_2 head type noN&gt; = -
-          &lt;DP_1 head type gerund&gt; = -         | rule out gerunds 
-          &lt;DP_2 head type gerund&gt; = -         | rule out gerunds
-          &lt;DP_1 head type verbheaded&gt; = -     | rule out relative clauses 
-          &lt;DP_2 head type verbheaded&gt; = -     | rule out relative clauses
-          &lt;DP_1 head type possessive&gt; = -     | rule out possessors
-          &lt;DP_2 head type possessive&gt; = -     | rule out possessors
-          &lt;DP_1 head type prefix poss&gt; = -    | rule out possessors
-          &lt;DP_2 head type prefix poss&gt; = -    | rule out possessors
-          &lt;DP_1 head type suffix poss&gt; = -    | rule out possessors
-          &lt;DP_2 head type suffix poss&gt; = -    | rule out possessors
-          &lt;DP_2 head type prefix conj&gt; = -
-          &lt;DP_1 head type suffix conj&gt; = -
+|<xsl:text>
+|rule {DP option conjListAppos - conjoined DPs, lists and appositives}  | commenting off due to multiple incorrect parses October 2026
+|DP = DP_1  DP_2
+|          &lt;DP head&gt; = &lt;DP_2 head&gt;
+|          &lt;DP_1 head&gt; = &lt;DP_2 head&gt;            
+|          &lt;DP conjoined&gt; = +
+|          &lt;DP_1 conjoined&gt; = -                |limit recursion
+|          &lt;DP_1 head type noN&gt; = -
+|          &lt;DP_2 head type noN&gt; = -
+|          &lt;DP_1 head type gerund&gt; = -         | rule out gerunds 
+|          &lt;DP_2 head type gerund&gt; = -         | rule out gerunds
+|          &lt;DP_1 head type verbheaded&gt; = -     | rule out relative clauses 
+|          &lt;DP_2 head type verbheaded&gt; = -     | rule out relative clauses
+|          &lt;DP_1 head type possessive&gt; = -     | rule out possessors
+|          &lt;DP_2 head type possessive&gt; = -     | rule out possessors
+|          &lt;DP_1 head type prefix poss&gt; = -    | rule out possessors
+|          &lt;DP_2 head type prefix poss&gt; = -    | rule out possessors
+|          &lt;DP_1 head type suffix poss&gt; = -    | rule out possessors
+|          &lt;DP_2 head type suffix poss&gt; = -    | rule out possessors
+|          &lt;DP_2 head type prefix conj&gt; = -
+|          &lt;DP_1 head type suffix conj&gt; = -
 |         &lt;DP_1 head type comma&gt; = +          | activate this constraint if/when you make comma a word-formation character
-                                              | until then you will get ambiguity if you also have DP option conjNone, so deactivate one rule
-          &lt;DP_1 head case&gt; = &lt;DP_2 head case&gt;  
-          &lt;DP head type prefix&gt; &lt;= &lt;DP_1 head type prefix&gt;
-          &lt;DP head type topic&gt; &lt;= &lt;DP_1 head type topic&gt;
-          &lt;DP option&gt; = conjListAppos
-</xsl:text>
+|                                              | until then you will get ambiguity if you also have DP option conjNone, so deactivate one rule
+|          &lt;DP_1 head case&gt; = &lt;DP_2 head case&gt;  
+|          &lt;DP head type prefix&gt; &lt;= &lt;DP_1 head type prefix&gt;
+|          &lt;DP head type topic&gt; &lt;= &lt;DP_1 head type topic&gt;
+|          &lt;DP option&gt; = conjListAppos
+|</xsl:text>
   
 <xsl:if test="normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/@headless)='yes' and normalize-space(//relcl/relTypeCPComp/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/@headless)='yes' and normalize-space(//relcl/relTypeCPRel/@checked)='yes' or normalize-space(//relcl/@exist)='yes' and normalize-space(//relcl/@headless)='yes' and normalize-space(//relcl/relTypeCPWh/@checked)='yes'">
 <xsl:text>
@@ -847,13 +848,9 @@ DP = Pron
   
 <xsl:if test="normalize-space(//pron/@pronMod)='no'">
 <xsl:text>
-rule {DP option noMod - pronoun,dem,quantifiers}
-DP = {Pron / Dem / Q / Num / Deg}
-          &lt;DP head&gt; = &lt;Pron head&gt;
+rule {DP option noMod - dem,quantifiers}
+DP = {Dem / Q / Num / Deg}                        | removed Pron here October 2026 to reduce ambiguity with DP Pron and D' to Pron
           &lt;DP head type case-marked&gt; = -  
-          &lt;Pron head type possessive&gt; = -   | these use DP rule "Pron"
-          &lt;Pron head type reflexive&gt; = -
-          &lt;Pron head type reciprocal&gt; = - 
           &lt;DP head&gt; = &lt;Dem head&gt;
           &lt;DP head&gt; = &lt;Q head&gt;
           &lt;DP head&gt; = &lt;Num head&gt;
