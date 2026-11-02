@@ -3702,7 +3702,7 @@ rule {NBarBar option 1 - QPs initial}
 N'' = QP N'
           &lt;N'' head&gt; = &lt;N' head&gt;
           &lt;N'' head agr number&gt; = &lt;QP head agr number&gt;
-          &lt;QP head type DP-initial&gt; = -   | not quantifier like "all"
+|          &lt;QP head type DP-initial&gt; = -   | not quantifier like "all" | removed October 2026
           &lt;QP head type comma&gt; = -
           &lt;N'' head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;N'' head type wh&gt; &lt;= &lt;QP head type wh&gt;
@@ -4949,7 +4949,7 @@ N'_1 = AdjP N'_2
           &lt;AdjP head agr&gt; = &lt;N'_2 head agr&gt;
           &lt;AdjP head case&gt; = &lt;N'_2 head case&gt;
           &lt;AdjP head type DP-initial&gt; = +
-          &lt;AdjP head type existential&gt; = -          |* added Oct 2026
+          &lt;AdjP head type existential&gt; = -          | added Oct 2026
           &lt;AdjP head type prefix copular&gt; = -      | only in no V/Aux copulars
           &lt;AdjP head type suffix copular&gt; = -
           &lt;AdjP head type clausal-comp&gt; = -

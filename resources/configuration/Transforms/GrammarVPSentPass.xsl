@@ -4,11 +4,13 @@
   
   <xsl:if test="normalize-space(//typology/@wordOrder)!='VSO' and normalize-space(//typology/@wordOrder)!='OSV' and normalize-space(//ip/@voice)='no' or normalize-space(//typology/@wordOrder)!='VSO' and normalize-space(//typology/@wordOrder)!='OSV' and normalize-space(//ip/@voice)='yes' and normalize-space(//ip/@voiceCase)='no'">
 <xsl:text>
-rule {VP option 8a - V initial, sentential complement}
-VP = V {CP / IP}
+rule {VP option 8a - V initial, sentential complement}     | optional temporal PP added October 2026
+VP = V (PP) {CP / IP}              
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
+          &lt;PP head type temporal&gt; = +
           &lt;CP head type root&gt; = -
           &lt;CP head type relative&gt; = -
           &lt;IP head type relative&gt; = -
@@ -17,6 +19,7 @@ VP = V {CP / IP}
           &lt;IP head type prefix comp&gt; = -                  | uses CP
           &lt;IP head type suffix comp&gt; = -
           &lt;IP head type root&gt; = -
+          &lt;V head type participle&gt; = - 
           &lt;V head type sentential&gt; = +
           &lt;V head type transitive&gt; = +
           &lt;V head object head type reflexive&gt; = -         | to eliminate ambiguity
@@ -57,6 +60,7 @@ VP = V {CP / IP}
 rule {VP option 8b - V final, sentential complement}
 VP = {CP / IP} V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
           &lt;CP head type root&gt; = -
@@ -67,6 +71,7 @@ VP = {CP / IP} V
           &lt;IP head type prefix comp&gt; = -                  | uses CP
           &lt;IP head type suffix comp&gt; = -
           &lt;IP head type root&gt; = -
+          &lt;V head type participle&gt; = - 
           &lt;V head type sentential&gt; = +
           &lt;V head type transitive&gt; = +
           &lt;V head object head type reflexive&gt; = -         | to eliminate ambiguity
@@ -170,6 +175,7 @@ VP = {CP / IP} DP V
 rule {VP option 8bQAdvP - V final, sentential complement, AdvP questioned}
 VP = {CP / IP} AdvP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
           &lt;VP head type question&gt; = +
@@ -223,6 +229,7 @@ VP = {CP / IP} AdvP V
 rule {VP option 8aoacc - V initial, accusative object with sentential complement}
 VP = V DP {CP / IP}
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -242,6 +249,8 @@ VP = V DP {CP / IP}
           &lt;DP head type prefix poss&gt; = -
           &lt;DP head type prefix copular&gt; = -                  | only in no V/Aux copulars
           &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type requires_relative_clause&gt; = -              | to restrict Num alone 
+added October 2026
           &lt;V head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;CP head type comma&gt;
@@ -255,6 +264,7 @@ VP = V DP {CP / IP}
           &lt;IP head&gt; == [type:[auxiliary-VP:+]] -&gt; [type:[auxiliary-I':+]]
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-
                                                           auxiliary-I':-]]
+          &lt;DP head&gt; == ~[cat:Num]				 | to restrict Num alone added October 2026 
           &lt;VP option&gt; = 8aoacc
 </xsl:text>
 </xsl:if>
@@ -300,6 +310,7 @@ VP = V DP {CP / IP}
 rule {VP option 8aoaccNegObjVerbRequired - V initial, accusative object with sentential complement}
 VP = V DP {CP / IP}
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -379,6 +390,7 @@ VP = V DP {CP / IP}
 rule {VP option 8aoabs - V initial, absolutive object with sentential complement}
 VP = V DP {CP / IP}
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -398,6 +410,8 @@ VP = V DP {CP / IP}
           &lt;DP head type prefix poss&gt; = -
           &lt;DP head type prefix copular&gt; = -                  | only in no V/Aux copulars
           &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type requires_relative_clause&gt; = -              | to restrict Num alone 
+added October 2026
           &lt;V head type comma&gt; = -
           &lt;DP head type comma&gt; = -
           &lt;VP head type comma&gt; &lt;= &lt;CP head type comma&gt;
@@ -411,6 +425,7 @@ VP = V DP {CP / IP}
           &lt;IP head&gt; == [type:[auxiliary-VP:+]] -&gt; [type:[auxiliary-I':+]]
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-
                                                           auxiliary-I':-]]
+          &lt;DP head&gt; == ~[cat:Num]				 | to restrict Num alone added October 2026 
           &lt;VP option&gt; = 8aoabs
 </xsl:text>
 </xsl:if>
@@ -492,6 +507,7 @@ VP = V DP {CP / IP}
 rule {VP option 8aoabsNegObjVerbRequired - V initial, absolutive object with sentential complement}
 VP = V DP {CP / IP}
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -607,6 +623,7 @@ VP = V DP {CP / IP}
 rule {VP option 8boacc - V final, accusative object with sentential complement}
 VP = {CP / IP} DP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -626,6 +643,8 @@ VP = {CP / IP} DP V
           &lt;DP head type prefix poss&gt; = -
           &lt;DP head type prefix copular&gt; = -                     | only in no V/Aux copulars
           &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type requires_relative_clause&gt; = -              | to restrict Num alone 
+added October 2026
           &lt;CP head type comma&gt; = -
           &lt;IP head type comma&gt; = -
           &lt;DP head type comma&gt; = -
@@ -638,6 +657,7 @@ VP = {CP / IP} DP V
           &lt;IP head&gt; == [type:[auxiliary-VP:+]] -&gt; [type:[auxiliary-I':+]]
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-
                                                           auxiliary-I':-]]
+          &lt;DP head&gt; == ~[cat:Num]				 | to restrict Num alone added October 2026 
           &lt;VP option&gt; = 8boacc
 </xsl:text>
 </xsl:if>
@@ -683,6 +703,7 @@ VP = {CP / IP} DP V
 rule {VP option 8boaccNegObjVerbRequired - V final, accusative object with sentential complement}
 VP = {CP / IP} DP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -789,6 +810,8 @@ VP = {CP / IP} DP_1 DP V
           &lt;DP_1 head type prefix poss&gt; = -
           &lt;DP_1 head type prefix copular&gt; = -                   | only in no V/Aux copulars
           &lt;DP_1 head type suffix copular&gt; = -
+          &lt;DP_1 head type requires_relative_clause&gt; = -              | to restrict Num alone 
+added October 2026
           &lt;CP head type comma&gt; = -
           &lt;IP head type comma&gt; = -
           &lt;DP head type comma&gt; = -
@@ -807,6 +830,7 @@ VP = {CP / IP} DP_1 DP V
           &lt;IP head&gt; == [type:[auxiliary-VP:+]] -&gt; [type:[auxiliary-I':+]]
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-
                                                           auxiliary-I':-]]
+          &lt;DP_1 head&gt; == ~[cat:Num]				 | to restrict Num alone added October 2026 
           &lt;VP option&gt; = 8boaccQSubj
 </xsl:text>
 </xsl:if>
@@ -917,6 +941,7 @@ VP = {CP / IP} DP_1 DP V
 rule {VP option 8boaccQAdvP - V final, sentential complement with accusative object, AdvP questioned}
 VP = {CP / IP} DP AdvP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -938,6 +963,8 @@ VP = {CP / IP} DP AdvP V
           &lt;DP head type prefix poss&gt; = -
           &lt;DP head type prefix copular&gt; = -                     | only in no V/Aux copulars
           &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type requires_relative_clause&gt; = -              | to restrict Num alone 
+added October 2026
           &lt;CP head type comma&gt; = -
           &lt;IP head type comma&gt; = -
           &lt;DP head type comma&gt; = -
@@ -951,6 +978,7 @@ VP = {CP / IP} DP AdvP V
           &lt;IP head&gt; == [type:[auxiliary-VP:+]] -&gt; [type:[auxiliary-I':+]]
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-
                                                           auxiliary-I':-]]
+          &lt;DP head&gt; == ~[cat:Num]				 | to restrict Num alone added October 2026 
           &lt;VP option&gt; = 8boaccQAdvP
 </xsl:text>
 </xsl:if>
@@ -982,6 +1010,7 @@ VP = {CP / IP} DP AdvP V
 rule {VP option 8boaccQAdvPNegObjVerbRequired - V final, sentential complement with accusative object, AdvP questioned}
 VP = {CP / IP} DP AdvP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -1049,6 +1078,7 @@ VP = {CP / IP} DP AdvP V
 rule {VP option 8boabs - V final, absolutive object with sentential complement}
 VP = {CP / IP} DP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -1068,6 +1098,8 @@ VP = {CP / IP} DP V
           &lt;DP head type prefix poss&gt; = -
           &lt;DP head type prefix copular&gt; = -                  | only in no V/Aux copulars
           &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type requires_relative_clause&gt; = -              | to restrict Num alone 
+added October 2026
           &lt;CP head type comma&gt; = -
           &lt;IP head type comma&gt; = -
           &lt;DP head type comma&gt; = -
@@ -1080,6 +1112,7 @@ VP = {CP / IP} DP V
           &lt;IP head&gt; == [type:[auxiliary-VP:+]] -&gt; [type:[auxiliary-I':+]]
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-
                                                           auxiliary-I':-]]
+          &lt;DP head&gt; == ~[cat:Num]				 | to restrict Num alone added October 2026 
           &lt;VP option&gt; = 8boabs
 </xsl:text>
 </xsl:if>
@@ -1161,6 +1194,7 @@ VP = {CP / IP} DP V
 rule {VP option 8boabsNegObjVerbRequired - V final, absolutive object with sentential complement}
 VP = {CP / IP} DP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -1303,6 +1337,8 @@ VP = {CP / IP} DP_1 DP V
           &lt;DP_1 head type prefix poss&gt; = -
           &lt;DP_1 head type prefix copular&gt; = -                   | only in no V/Aux copulars
           &lt;DP_1 head type suffix copular&gt; = -
+          &lt;DP_1 head type requires_relative_clause&gt; = -              | to restrict Num alone 
+added October 2026
           &lt;CP head type comma&gt; = -
           &lt;IP head type comma&gt; = -
           &lt;DP head type comma&gt; = -
@@ -1321,6 +1357,7 @@ VP = {CP / IP} DP_1 DP V
           &lt;IP head&gt; == [type:[auxiliary-VP:+]] -&gt; [type:[auxiliary-I':+]]
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-
                                                           auxiliary-I':-]]
+          &lt;DP_1 head&gt; == ~[cat:Num]				 | to restrict Num alone added October 2026 
           &lt;VP option&gt; = 8boabsQSubj
 </xsl:text>
 </xsl:if>
@@ -1475,6 +1512,7 @@ VP = {CP / IP} DP_1 DP V
 rule {VP option 8boabsQAdvP - V final, sentential complement with absolutive object, AdvP questioned}
 VP = {CP / IP} DP AdvP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;
@@ -1496,6 +1534,8 @@ VP = {CP / IP} DP AdvP V
           &lt;DP head type prefix poss&gt; = -
           &lt;DP head type prefix copular&gt; = -                     | only in no V/Aux copulars
           &lt;DP head type suffix copular&gt; = -
+          &lt;DP head type requires_relative_clause&gt; = -              | to restrict Num alone 
+added October 2026
           &lt;CP head type comma&gt; = -
           &lt;IP head type comma&gt; = -
           &lt;DP head type comma&gt; = -
@@ -1509,6 +1549,7 @@ VP = {CP / IP} DP AdvP V
           &lt;IP head&gt; == [type:[auxiliary-VP:+]] -&gt; [type:[auxiliary-I':+]]
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-
                                                           auxiliary-I':-]]
+          &lt;DP head&gt; == ~[cat:Num]				 | to restrict Num alone added October 2026 
           &lt;VP option&gt; = 8boabsQAdvP
 </xsl:text>
 </xsl:if>
@@ -1562,6 +1603,7 @@ VP = {CP / IP} DP AdvP V
 rule {VP option 8boabsQAdvPNegObjVerbRequired - V final, sentential complement with absolutive object, AdvP questioned}
 VP = {CP / IP} DP AdvP V
           &lt;VP head&gt; = &lt;V head&gt;
+          &lt;VP head subject head agr person&gt; = &lt;V head embedded head subject head agr person&gt;  |added October 2026
           &lt;V head object&gt; = &lt;DP&gt;
           &lt;V head embedded&gt; = &lt;CP&gt;
           &lt;V head embedded&gt; = &lt;IP&gt;

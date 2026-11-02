@@ -1491,6 +1491,7 @@ DP = QP D'
           &lt;DP head type prefix case&gt; = none  
           &lt;DP head type suffix case&gt; = none  
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1q
 </rule>
 <showWhen id="DPoption1q">
@@ -1543,6 +1544,7 @@ DP = QP D'
           &lt;DP head type suffix case&gt; = none  
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qNegI
 </rule>
 <showWhen id="DPoption1qNegI">
@@ -1659,6 +1661,7 @@ DP = QP D'
           &lt;DP head case&gt; &lt;= &lt;QP head type prefix case&gt;  | promote clitic case
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;QP head type prefix&gt; == ~[case:none]  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qcl
 </rule>
 <showWhen id="DPoption1qcl">
@@ -1742,6 +1745,7 @@ DP = QP D'
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
           &lt;QP head type prefix&gt; == ~[case:none]  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclNegI
 </rule>
 <showWhen id="DPoption1qclNegI">
@@ -1926,6 +1930,7 @@ DP = Class QP D'
           &lt;QP head type comma&gt; = -
           &lt;Class head type comma&gt; = -
           &lt;DP head type prefix&gt; &lt;= &lt;Class head type prefix&gt;
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCL
 </rule>
   <showWhen id="DPoption1qCL">
@@ -1956,6 +1961,7 @@ DP = Class QP D'
           &lt;Class head type comma&gt; = -
           &lt;DP head type prefix&gt; &lt;= &lt;Class head type prefix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLNegI
 </rule>
   <showWhen id="DPoption1qCLNegI">
@@ -2003,6 +2009,7 @@ DP = QP Class D'
           &lt;QP head type comma&gt; = -
           &lt;Class head type comma&gt; = -
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLf
 </rule>
 <showWhen id="DPoption1qCLf">
@@ -2033,6 +2040,7 @@ DP = QP Class D'
           &lt;Class head type comma&gt; = -
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLfNegI
 </rule>
 <showWhen id="DPoption1qCLfNegI">
@@ -2084,6 +2092,7 @@ DP = QP D' Class
           &lt;DP head type comma&gt; &lt;= &lt;Class head type comma&gt;
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;DP head type suffix&gt; &lt;= &lt;Class head type suffix&gt;
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLo
 </rule>
 <showWhen id="DPoption1qCLo">
@@ -2117,6 +2126,7 @@ DP = QP D' Class
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;DP head type suffix&gt; &lt;= &lt;Class head type suffix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLoNegI
 </rule>
 <showWhen id="DPoption1qCLoNegI">
@@ -2169,6 +2179,7 @@ DP = QP D' Class
           &lt;DP head type suffix&gt; &lt;= &lt;Class head type suffix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
           &lt;DP head type case-marked&gt; = -  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLoNegF
 </rule>
 <showWhen id="DPoption1qCLoNegF">
@@ -2221,6 +2232,7 @@ DP = QP D' Class
           &lt;DP head type suffix&gt; &lt;= &lt;Class head type suffix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
           &lt;DP head type case-marked&gt; = -  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLoNegBoth
 </rule>
 <showWhen id="DPoption1qCLoNegBoth">
@@ -2271,6 +2283,7 @@ DP = Class QP D'
           &lt;Class head type prefix&gt; == ~[case:none]  
           &lt;DP head case&gt; &lt;= &lt;Class head type prefix case&gt;  |promote clitic case to phrase  ????
           &lt;DP head type case-marked&gt; &lt;= +  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCL
 </rule>
 <showWhen id="DPoption1qclCL">
@@ -2308,6 +2321,7 @@ DP = Class QP D'
           &lt;DP head case&gt; &lt;= &lt;Class head type prefix case&gt;  |promote clitic case to phrase  ????
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLNegI
 </rule>
 <showWhen id="DPoption1qclCLNegI">
@@ -2370,6 +2384,7 @@ DP = QP Class D'
           &lt;QP head type prefix&gt; == ~[case:none]  
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLf
   </rule>
   <showWhen id="DPoption1qclCLf">
@@ -2407,6 +2422,7 @@ DP = QP Class D'
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLfNegI
   </rule>
   <showWhen id="DPoption1qclCLfNegI">
@@ -2472,6 +2488,7 @@ DP = QP D' Class
           &lt;QP head type prefix&gt; == ~[case:none]  
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLop
 </rule>
 <showWhen id="DPoption1qclCLop">
@@ -2512,6 +2529,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLopNegI
 </rule>
 <showWhen id="DPoption1qclCLopNegI">
@@ -2578,6 +2596,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLopNegF
 </rule>
 <showWhen id="DPoption1qclCLopNegF">
@@ -2644,6 +2663,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLopNegBoth
 </rule>
 <showWhen id="DPoption1qclCLopNegBoth">
@@ -2713,6 +2733,7 @@ DP = QP D' Class
           &lt;Class head type suffix&gt; == ~[case:none]  
           &lt;DP head case&gt;  &lt;= &lt;Class head type suffix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLoe
 </rule>
 <showWhen id="DPoption1qclCLoe">
@@ -2753,6 +2774,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;Class head type suffix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLoeNegI
 </rule>
 <showWhen id="DPoption1qclCLoeNegI">
@@ -2819,6 +2841,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;Class head type suffix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLoeNegF
 </rule>
 <showWhen id="DPoption1qclCLoeNegF">
@@ -2885,6 +2908,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;Class head type suffix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLoeNegBoth
 </rule>
 <showWhen id="DPoption1qclCLoeNegBoth">
@@ -16605,7 +16629,7 @@ DP = QP_1 Class_1 D' QP_2 Class_2
 <rule show="DBaroptionnoNRel">
 rule {DBar option noNRel - pronoun,dem,quantifiers which can be modified by Rel Cl only (or partitive also with NP rules}
 D' = {Pron / Dem / Q / Num / Deg}
-          &lt;D' head&gt; = &lt;Pron head&gt;
+          &lt;D' head type requires_relative_clause&gt; &lt;= +   | to restrict use to presence of RelCl  added October 2026
           &lt;D' head type case-marked&gt; = -  
           &lt;D' head type noN&gt; = +  
           &lt;Pron head type possessive&gt; = -    | these use DP rule "Pron"
@@ -16735,6 +16759,7 @@ D' = D'_1 CP
           &lt;D' head type comma&gt; &lt;= &lt;CP head type comma&gt;
           &lt;D' head type suffix&gt; &lt;= &lt;CP head type suffix&gt;
           &lt;D' head type relative&gt; &lt;= +  | restrict rel cl in subjects/copulars
+          &lt;D' head type relative&gt; &lt;= +  | know presence of rel cl for lower rules  | added October 2026
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-  
                                                           auxiliary-I':-]]
           &lt;D' option&gt; = 1frel

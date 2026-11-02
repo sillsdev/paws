@@ -1570,6 +1570,7 @@ DP = QP D'
           &lt;DP head type prefix case&gt; = none  
           &lt;DP head type suffix case&gt; = none  
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1q
 </xsl:text>
 </xsl:if>
@@ -1624,6 +1625,7 @@ DP = QP D'
           &lt;DP head type suffix case&gt; = none  
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qNegI
 </xsl:text>
 </xsl:if>
@@ -1742,6 +1744,7 @@ DP = QP D'
           &lt;DP head case&gt; &lt;= &lt;QP head type prefix case&gt;  | promote clitic case
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;QP head type prefix&gt; == ~[case:none]  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qcl
 </xsl:text>
 </xsl:if>
@@ -1827,6 +1830,7 @@ DP = QP D'
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
           &lt;QP head type prefix&gt; == ~[case:none]  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclNegI
 </xsl:text>
 </xsl:if>
@@ -2013,6 +2017,7 @@ DP = Class QP D'
           &lt;QP head type comma&gt; = -
           &lt;Class head type comma&gt; = -
           &lt;DP head type prefix&gt; &lt;= &lt;Class head type prefix&gt;
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCL
 </xsl:text>
 </xsl:if>
@@ -2045,6 +2050,7 @@ DP = Class QP D'
           &lt;Class head type comma&gt; = -
           &lt;DP head type prefix&gt; &lt;= &lt;Class head type prefix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLNegI
 </xsl:text>
 </xsl:if>
@@ -2094,6 +2100,7 @@ DP = QP Class D'
           &lt;QP head type comma&gt; = -
           &lt;Class head type comma&gt; = -
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLf
 </xsl:text>
 </xsl:if>
@@ -2126,6 +2133,7 @@ DP = QP Class D'
           &lt;Class head type comma&gt; = -
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLfNegI
 </xsl:text>
 </xsl:if>
@@ -2179,6 +2187,7 @@ DP = QP D' Class
           &lt;DP head type comma&gt; &lt;= &lt;Class head type comma&gt;
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;DP head type suffix&gt; &lt;= &lt;Class head type suffix&gt;
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLo
 </xsl:text>
 </xsl:if>
@@ -2214,6 +2223,7 @@ DP = QP D' Class
           &lt;DP head type prefix&gt; &lt;= &lt;QP head type prefix&gt;
           &lt;DP head type suffix&gt; &lt;= &lt;Class head type suffix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLoNegI
 </xsl:text>
 </xsl:if>
@@ -2268,6 +2278,7 @@ DP = QP D' Class
           &lt;DP head type suffix&gt; &lt;= &lt;Class head type suffix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
           &lt;DP head type case-marked&gt; = -  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLoNegF
 </xsl:text>
 </xsl:if>
@@ -2322,6 +2333,7 @@ DP = QP D' Class
           &lt;DP head type suffix&gt; &lt;= &lt;Class head type suffix&gt;
           &lt;DP head infl polarity&gt; &lt;= negative
           &lt;DP head type case-marked&gt; = -  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qCLoNegBoth
 </xsl:text>
 </xsl:if>
@@ -2374,6 +2386,7 @@ DP = Class QP D'
           &lt;Class head type prefix&gt; == ~[case:none]  
           &lt;DP head case&gt; &lt;= &lt;Class head type prefix case&gt;  |promote clitic case to phrase  ????
           &lt;DP head type case-marked&gt; &lt;= +  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCL
 </xsl:text>
 </xsl:if>
@@ -2413,6 +2426,7 @@ DP = Class QP D'
           &lt;DP head case&gt; &lt;= &lt;Class head type prefix case&gt;  |promote clitic case to phrase  ????
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLNegI
 </xsl:text>
 </xsl:if>
@@ -2477,6 +2491,7 @@ DP = QP Class D'
           &lt;QP head type prefix&gt; == ~[case:none]  
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLf
   </xsl:text>
 </xsl:if>
@@ -2516,6 +2531,7 @@ DP = QP Class D'
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLfNegI
   </xsl:text>
 </xsl:if>
@@ -2583,6 +2599,7 @@ DP = QP D' Class
           &lt;QP head type prefix&gt; == ~[case:none]  
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLop
 </xsl:text>
 </xsl:if>
@@ -2625,6 +2642,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLopNegI
 </xsl:text>
 </xsl:if>
@@ -2693,6 +2711,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLopNegF
 </xsl:text>
 </xsl:if>
@@ -2761,6 +2780,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;QP head type prefix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLopNegBoth
 </xsl:text>
 </xsl:if>
@@ -2832,6 +2852,7 @@ DP = QP D' Class
           &lt;Class head type suffix&gt; == ~[case:none]  
           &lt;DP head case&gt;  &lt;= &lt;Class head type suffix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLoe
 </xsl:text>
 </xsl:if>
@@ -2874,6 +2895,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;Class head type suffix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLoeNegI
 </xsl:text>
 </xsl:if>
@@ -2942,6 +2964,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;Class head type suffix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLoeNegF
 </xsl:text>
 </xsl:if>
@@ -3010,6 +3033,7 @@ DP = QP D' Class
           &lt;DP head case&gt;  &lt;= &lt;Class head type suffix case&gt;  |promote clitic case to phrase
           &lt;DP head type case-marked&gt; &lt;= +  
           &lt;DP head infl polarity&gt; &lt;= negative
+          &lt;QP head&gt; == ~[cat:Num]		|numbers not in this position added October 2026
           &lt;DP option&gt; = 1qclCLoeNegBoth
 </xsl:text>
 </xsl:if>
@@ -17104,7 +17128,7 @@ DP = QP_1 Class_1 D' QP_2 Class_2
 <xsl:text>
 rule {DBar option noNRel - pronoun,dem,quantifiers which can be modified by Rel Cl only (or partitive also with NP rules}
 D' = {Pron / Dem / Q / Num / Deg}
-          &lt;D' head&gt; = &lt;Pron head&gt;
+          &lt;D' head type requires_relative_clause&gt; &lt;= +   | to restrict use to presence of RelCl  added October 2026
           &lt;D' head type case-marked&gt; = -  
           &lt;D' head type noN&gt; = +  
           &lt;Pron head type possessive&gt; = -    | these use DP rule "Pron"
@@ -17242,6 +17266,7 @@ D' = D'_1 CP
           &lt;D' head type comma&gt; &lt;= &lt;CP head type comma&gt;
           &lt;D' head type suffix&gt; &lt;= &lt;CP head type suffix&gt;
           &lt;D' head type relative&gt; &lt;= +  | restrict rel cl in subjects/copulars
+          &lt;D' head type relative&gt; &lt;= +  | know presence of rel cl for lower rules  | added October 2026
           &lt;CP head&gt; == [type:[auxiliary-VP:+]] -&gt; ~[type:[auxiliary-C':-  
                                                           auxiliary-I':-]]
           &lt;D' option&gt; = 1frel

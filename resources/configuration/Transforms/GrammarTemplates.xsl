@@ -848,6 +848,14 @@ Let sentential_-finiteIPpro-drop         be      [head:[type:[sentential:+]
                                                         embedded:[cat:IP
                                                                   head:[infl:[finite:-]
                                                                         type:[pro-drop:+]]]]]
+Let sentential_-finiteIPpro-drop_or_motion be {[head:[type:[sentential:+]                            |added October 2026
+                                                          embedded:[cat:IP
+                                                                    head:[infl:[finite:-]
+                                                                          type:[pro-drop:+]]]]]
+                                                   [head:[type:[sentential:-
+                                                                transitive:-
+                                                                motion:+]
+                                                          embedded:[cat:none]]] }  
 Let sentential_-finiteIPpro-drop_or_transitive be {[head:[type:[sentential:+]
                                                           embedded:[cat:IP
                                                                     head:[infl:[finite:-]
@@ -916,6 +924,30 @@ Let sentential_subjunctive               be    &lt;head embedded head infl mood&
                                                &lt;head type sentential&gt;            = +
 Let sentential_with_object               be    &lt;head type sentential_with_object&gt; = +
                                                &lt;head embedded cat&gt;               = {IP CP}
+                                               &lt;head type transitive&gt;            = +              | added October 2026
+Let sentential_with_object_-finiteIPpro-drop_or_transitive                                              | added October 2026
+                                         be    { [head:[type:[sentential_with_object:+
+                                                               transitive:+]
+                                                         embedded:[cat:IP
+                                                                   head:[subject:[head:[type:[pro-drop:+]]]
+                                                                         infl:[finite:-]]]]] 
+                                                  [head:[type:[sentential:-
+                                                               transitive:+]
+                                                         embedded:[cat:none]]] }                          
+Let sentential_with_object_or_sentential_-finiteIPpro-drop_or_transitive                                  | added October 2026
+                                          be   { [head:[type:[sentential:+
+                                                              transitive:+]
+                                                        embedded:[cat:IP
+                                                                  head:[subject:[head:[type:[pro-drop:+]]]
+                                                                        infl:[finite:-]]]]]
+                                                  [head:[type:[sentential_with_object:+
+                                                               transitive:+]
+                                                         embedded:[cat:IP
+                                                                   head:[subject:[head:[type:[pro-drop:+]]]
+                                                                         infl:[finite:-]]]]] 
+                                                  [head:[type:[sentential:-
+                                                               transitive:+]
+                                                         embedded:[cat:none]]] }                             
 Let singular                             be    &lt;head agr number&gt;                 = singular
 Let singular_absolutive                  be   { [head:[object:[head:[agr:[number:singular]]]
                                                        type:[transitive:+]]]
@@ -1014,7 +1046,7 @@ Let Adj                                  be    &lt;cat&gt;                      
                                                &lt;head type sentential&gt;            = !-
                                                &lt;head type clausal-comp&gt;          = !-
                                                &lt;head type focusmarked&gt;           = !-
-                                               &lt;AdjP head type existential&gt;      = !-          |* added Oct 2026
+                                               &lt;AdjP head type existential&gt;      = !-          | added October 2026
                                                &lt;head type subject_focused&gt;       = !-
                                                &lt;head type gerund&gt;                = -
                                                &lt;head type participle&gt;            = -
@@ -1774,7 +1806,9 @@ Let Deg                                  be    &lt;cat&gt;                      
                                                &lt;head type comparative&gt;           = !-
                                                &lt;head type equalAdj&gt;              = !-
                                                &lt;head type equalN&gt;                = !-
-                                               &lt;head type superlative&gt;           = !-       </xsl:text>
+                                               &lt;head type superlative&gt;           = !-       
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -1906,7 +1940,10 @@ Let Dem                                  be    &lt;cat&gt;                      
                                                &lt;head type participle&gt;            = -
                                                &lt;head type emphatic&gt;              = !-
                                                &lt;head type comma&gt;                 = !-
-                                               &lt;head type topic&gt;                 = !-       </xsl:text>
+                                               &lt;head type topic&gt;                 = !-       
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -2265,7 +2302,7 @@ Let N                                    be    &lt;cat&gt;                      
                                                &lt;head type proper&gt;                = !-
                                                &lt;head type relative&gt;              = !-
                                                &lt;head type mass&gt;                  = !-
-                                               &lt;head type locative&gt;              = !-     |* added October 2026
+                                               &lt;head type locative&gt;              = !-     | added October 2026
                                                &lt;head type temporal&gt;              = !-
                                                &lt;head embedded cat&gt;               = !none
                                                &lt;head type definite&gt;              = !+
@@ -2542,9 +2579,12 @@ Let Num                                  be    &lt;cat&gt;                      
                                                &lt;head type gerund&gt;                = -
                                                &lt;head type participle&gt;            = -
                                                &lt;head type quantifier&gt;            = +
-                                               &lt;head type modifies_Q&gt;            = -      |* added October 2026
+                                               &lt;head type modifies_Q&gt;            = -      | added October 2026
                                                &lt;head type comma&gt;                 = !-
-                                               &lt;head type topic&gt;                 = !-      </xsl:text>
+                                               &lt;head type topic&gt;                 = !-      
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -2801,13 +2841,14 @@ Let P                                    be    &lt;cat&gt;                      
                                                &lt;head infl valence&gt;               = !active
                                                &lt;head type wh&gt;                    = -
                                                &lt;head type partitive&gt;             = !-
-                                               &lt;head type locative&gt;              = !-     |* added October 2026
+                                               &lt;head type locative&gt;              = !-     | added October 2026
                                                &lt;head type temporal&gt;              = !-
                                                &lt;head type sentential&gt;            = !-
                                                &lt;head type gerund&gt;                = -
                                                &lt;head type participle&gt;            = -
                                                &lt;head type particle&gt;              = !-
-                                               &lt;head type comma&gt;                 = !-       </xsl:text>
+                                               &lt;head type comma&gt;                 = !-       
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -3132,7 +3173,10 @@ Let Pron                                 be    &lt;cat&gt;                      
                                                &lt;head type emphatic&gt;              = !-
                                                &lt;head type locative&gt;              = !-
                                                &lt;head type comma&gt;                 = !-
-                                               &lt;head type topic&gt;                 = !-       </xsl:text>
+                                               &lt;head type topic&gt;                 = !-       
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -3465,7 +3509,10 @@ Let Q                                    be    &lt;cat&gt;                      
                                                &lt;head type quantifier&gt;            = +
                                                &lt;head type comma&gt;                 = !- 
                                                &lt;head type topic&gt;                 = !-
-                                               &lt;head type modifies_NP&gt;           = !-      </xsl:text>
+                                               &lt;head type modifies_NP&gt;           = !-      
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -3798,7 +3845,7 @@ Let makeAdj                              be     &lt;cat&gt;                     
                                                 &lt;head type sentential&gt;           = !-
                                                 &lt;head type clausal-comp&gt;         = !-
                                                 &lt;head type focusmarked&gt;          = !-
-                                                &lt;AdjP head type existential&gt;     = !-          |* added Oct 2026
+                                                &lt;AdjP head type existential&gt;     = !-          | added Oct 2026
                                                 &lt;head type subject_focused&gt;      = !-
                                                 &lt;head type gerund&gt;               = -
                                                 &lt;head type participle&gt;           = -
@@ -4536,7 +4583,7 @@ Let makeConseq                           be    &lt;cat&gt;                      
 <xsl:text>
 
 Let makeDeg                              be    &lt;cat&gt;                             = Deg
-                                               &lt;head infl polarity&gt;              =!positive
+                                               &lt;head infl polarity&gt;              = !positive
                                                &lt;head type modifies_Adj&gt;          = !-
                                                &lt;head type modifies_Adv temporal&gt; = !-
                                                &lt;head type modifies_Adv locative&gt; = !-
@@ -4558,7 +4605,10 @@ Let makeDeg                              be    &lt;cat&gt;                      
                                                &lt;head type comparative&gt;           = !-
                                                &lt;head type equalAdj&gt;              = !-
                                                &lt;head type equalN&gt;                = !-
-                                               &lt;head type superlative&gt;           = !-     </xsl:text>
+                                               &lt;head type superlative&gt;           = !-     
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -4691,7 +4741,10 @@ Let makeDem                              be    &lt;cat&gt;                      
                                                &lt;head type emphatic&gt;              = !-
                                                &lt;head type pronoun&gt;               = -
                                                &lt;head type comma&gt;                 = !-
-                                               &lt;head type topic&gt;                 = !-      </xsl:text>
+                                               &lt;head type topic&gt;                 = !-      
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -5049,7 +5102,7 @@ Let makeN                                be    &lt;cat&gt;                      
                                                &lt;head type proper&gt;                = !-
                                                &lt;head type relative&gt;              = !-
                                                &lt;head type mass&gt;                  = !-
-                                               &lt;head type locative&gt;              = !-     |* added October 2026
+                                               &lt;head type locative&gt;              = !-     | added October 2026
                                                &lt;head type temporal&gt;              = !-
                                                &lt;head embedded cat&gt;               = !none
                                                &lt;head type definite&gt;              = !+
@@ -5326,9 +5379,12 @@ Let makeNum                              be    &lt;cat&gt;                      
                                                &lt;head type gerund&gt;                = -
                                                &lt;head type participle&gt;            = -
                                                &lt;head type quantifier&gt;            = +
-                                               &lt;head type modifies_Q&gt;            = -      |* added October 2026
+                                               &lt;head type modifies_Q&gt;            = -      | added October 2026
                                                &lt;head type comma&gt;                 = !-
-                                               &lt;head type topic&gt;                 = !-      </xsl:text>
+                                               &lt;head type topic&gt;                 = !-      
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -5460,7 +5516,7 @@ Let makeP                                be    &lt;cat&gt;                      
                                                &lt;head infl valence&gt;               = !active
                                                &lt;head type wh&gt;                    = -
                                                &lt;head type partitive&gt;             = !-
-                                               &lt;head type locative&gt;              = !-     |* added October 2026
+                                               &lt;head type locative&gt;              = !-     | added October 2026
                                                &lt;head type temporal&gt;              = !-
                                                &lt;head type sentential&gt;            = !-
                                                &lt;head type gerund&gt;                = -
@@ -5781,7 +5837,10 @@ Let makePron                             be    &lt;cat&gt;                      
                                                &lt;head type emphatic&gt;              = !-
                                                &lt;head type locative&gt;              = !-
                                                &lt;head type comma&gt;                 = !-
-                                               &lt;head type topic&gt;                 = !-      </xsl:text>
+                                               &lt;head type topic&gt;                 = !-      
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+</xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none
@@ -6114,7 +6173,10 @@ Let makeQ                                be    &lt;cat&gt;                      
                                                &lt;head type quantifier&gt;            = +
                                                &lt;head type comma&gt;                 = !- 
                                                &lt;head type topic&gt;                 = !-
-                                               &lt;head type modifies_NP&gt;           = !-     </xsl:text>
+                                               &lt;head type modifies_NP&gt;           = !-     
+                                               &lt;head type requires_relative_clause&gt; = !-  | added October 2026
+
+       </xsl:text>
 <xsl:if test="normalize-space(//np/@caseN)='yes' and normalize-space(//np/@caseWord)!='yes' and normalize-space(//np/caseAttachesProclitic/@checked)='yes'">
 <xsl:text>
                                                &lt;head type prefix case&gt;           = !none

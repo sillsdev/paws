@@ -90,8 +90,8 @@
       <prompt id="NegObjectNegConcordPrompt" show="swNegTypeConcord">Ahora escriba ejemplos similares pero con un sujeto positivo y una frase nominal negativa en la posición del objeto, como en <example>John saw nobody ‘Juán vió a nadie’</example> o <example>John didn't see nobody ‘Juán no vió a nadie’</example>.</prompt>
       <textBox id="NegObjectExample" dataItem="objectExample" cols="80"/>
       <prompt id="NegIObjectPrompt" show="swPolarityItemsNo">Ahora escriba ejemplos similares pero con un sujeto positivo y una frase nominal negativa en la posición del objeto indirecto, por ejemplo <example>María dió regalos a nadie</example>.</prompt>
-      <prompt id="NegPolarityIObjectPrompt" show="swPolarityItemsYes">Ahora escriba ejemplos similares pero con un sujeto positivo y una frase nominal negativa en la posición del objeto indirecto, por ejemplo <example>Mary didn’t give gifts to anybody ‘María no dió regalos a nadie’</example></prompt>
-      <prompt id="NegIObjectNegConcordPrompt" show="swNegTypeConcord">Ahora escriba ejemplos similares pero con un sujeto positivo y una frase nominal negativa en la posición del objeto indirecto, por ejemplo <example>Mary gave gifts to nobody ‘María dió regalos a nadie’</example> or<example>Mary didn't give gifts to nobody ‘María no dió regalos a nadie’</example>.</prompt>
+      <prompt id="NegPolarityIObjectPrompt" show="swPolarityItemsYes">Ahora escriba ejemplos similares pero con un sujeto positivo y una frase nominal negativa en la posición del objeto indirecto, por ejemplo <example>Mary didn’t give gifts to anybody ‘María no dió regalos a nadie’</example>.</prompt>
+      <prompt id="NegIObjectNegConcordPrompt" show="swNegTypeConcord">Ahora escriba ejemplos similares pero con un sujeto positivo y una frase nominal negativa en la posición del objeto indirecto, por ejemplo <example>Mary gave gifts to nobody ‘María dió regalos a nadie’</example> or <example>Mary didn't give gifts to nobody ‘María no dió regalos a nadie’</example>.</prompt>
       <textBox id="NegIObjectExample" dataItem="indirectObjectExample" cols="80"/>
       <br/>
       <br/>

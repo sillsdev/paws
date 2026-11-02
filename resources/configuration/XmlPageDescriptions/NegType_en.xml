@@ -89,8 +89,8 @@ In Negative Concord languages, any number of negative elements expresses negativ
       <prompt id="NegObjectNegConcordPrompt" show="swNegTypeConcord">Now give similar examples where the negative nominal phrase is the object and the subject is positive, such as <example>John saw nobody</example> or <example>John didn't see nobody</example>.</prompt>
         <textBox id="NegObjectExample" dataItem="objectExample" cols="80"/>
                 <prompt id="NegIObjectPrompt" show="swPolarityItemsNo">Now give similar examples where the negative nominal phrase is the indirect object and the subject is positive, such as <example>Mary gave gifts to nobody</example>.</prompt>
-                <prompt id="NegPolarityIObjectPrompt" show="swPolarityItemsYes">Now give similar examples with a positive subject and a negative polarity item as the indirect object, such as <example>Mary didn’t give gifts to anybody</example></prompt>
-      <prompt id="NegIObjectNegConcordPrompt" show="swNegTypeConcord">Now give similar examples where the negative nominal phrase is the indirect object and the subject is positive, such as <example>Mary gave gifts to nobody</example> or <example>Mary didn't give gifts to nobody</example></prompt>
+                <prompt id="NegPolarityIObjectPrompt" show="swPolarityItemsYes">Now give similar examples with a positive subject and a negative polarity item as the indirect object, such as <example>Mary didn’t give gifts to anybody</example>.</prompt>
+      <prompt id="NegIObjectNegConcordPrompt" show="swNegTypeConcord">Now give similar examples where the negative nominal phrase is the indirect object and the subject is positive, such as <example>Mary gave gifts to nobody</example> or <example>Mary didn't give gifts to nobody</example>.</prompt>
         <textBox id="NegIObjectExample" dataItem="indirectObjectExample" cols="80"/>
       <br/>
       <br/>
