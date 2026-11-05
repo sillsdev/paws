@@ -64,7 +64,7 @@
         <textBox id="CompNonfiniteProDropExample" dataItem="nonfiniteProDropExample" cols="80"/>
         <br/>
         <br/>
-     <instruction id="CompSententialProDropInstruction">Add the feature <feature>sentential_-finiteIPpro-drop_or_transitive</feature> to the lexical entries for the main verbs in the examples (and remove any separate <feature>transitive</feature> feature).</instruction>
+     <instruction id="CompSententialProDropInstruction">Add the feature <feature>sentential_-finiteIPpro-drop_or_transitive</feature> to the lexical entries for the main verbs in the examples (and remove any separate <feature>transitive</feature> feature).  Further, for motion verbs like forms of <example>go</example> or <example>come</example> that take an embedded nonfinite sentential complement in which the subject must be coreferent with the main clause subject and not expressed, add the feature: <feature>sentential_-finiteIPpro-drop_or_motion</feature> and remove any separate <feature>motion</feature> feature.</instruction>
         <br/>
        <introduction>Some verbs only take a nonfinite complement, but the complementizer ‘for’ is present when the embedded subject is overt, as in:</introduction>
         <EnglishExample>
@@ -92,7 +92,7 @@
        <br/>
      <instruction id="CompRaisingInstruction">Add the feature <feature>sentential_raising_or_perception</feature> to the lexical entries for the main verbs in the examples which are perception verbs (and remove the separate <feature>perception</feature> feature.  
       Add the feature <feature>sentential_raising_or_copular</feature> to the lexical entries for the main verbs in the examples which are copular verbs, and remove the separate <feature>copular</feature> feature.  
-      In the examples with adjectives, it is really the adjective that is acting as the predicate that selects the complement clause.  Therefore, add the feature <feature>sentential_A</feature> to their lexical entries.</instruction>
+      In the examples with adjectives, it is really the adjective that is acting as the predicate that selects the complement clause.  Therefore, add the feature <feature>sentential_A</feature> to their lexical entries. Add the feature <feature>expletive</feature> to the <example>dummy it</example> if applicable in your language.  Please note that these raising examples have not been tested fully.</instruction>
        <br/>
        <introduction>Causatives made up of two clauses have an object that also acts as the subject of the complement clause.  That complement clause is always nonfinite, but does not need the nonfinite marker with some verbs, as in 20, while it is required with others, as in 21:</introduction>
        <EnglishExample>

@@ -67,7 +67,7 @@
         <textBox id="CompNonfiniteProDropExample" dataItem="nonfiniteProDropExample" cols="80"/>
         <br/>
         <br/>
-       <instruction id="CompSententialProDropInstruction">Add the feature <feature>sentential_-finiteIPpro-drop_or_transitive</feature> to the lexical entries for the main verbs in the examples (and remove any separate <feature>transitive</feature> feature).</instruction>
+     <instruction id="CompSententialProDropInstruction">Add the feature <feature>sentential_-finiteIPpro-drop_or_transitive</feature> to the lexical entries for the main verbs in the examples (and remove any separate <feature>transitive</feature> feature).  Further, for motion verbs like forms of <example>go</example> or <example>come</example> that take an embedded nonfinite sentential complement in which the subject must be coreferent with the main clause subject and not expressed, add the feature: <feature>sentential_-finiteIPpro-drop_or_motion</feature> and remove any separate <feature>motion</feature> feature.</instruction>
        <br/>
      <introduction>Certains verbes se construisent uniquement avec un complément non-fini mais la conjonction de subordination <example>for « que »</example> est présente lorsque le sujet enchâssé est explicite comme dans les exemples suivants :</introduction>
         <EnglishExample>
@@ -94,9 +94,9 @@
        <textBox id="CompRaisingExample" dataItem="raisingExample" cols="80"/>
        <br/>
        <br/>
-       <instruction id="CompRaisingInstruction">Add the feature <feature>sentential_raising_or_perception</feature> to the lexical entries for the main verbs in the examples which are perception verbs (and remove the separate <feature>perception</feature> feature.  
-          Add the feature <feature>sentential_raising_or_copular</feature> to the lexical entries for the main verbs in the examples which are copular verbs, and remove the separate <feature>copular</feature> feature.  
-          In the examples with adjectives, it is really the adjective that is acting as the predicate that selects the complement clause.  Therefore, add the feature <feature>sentential_A</feature> to their lexical entries.</instruction> 
+     <instruction id="CompRaisingInstruction">Add the feature <feature>sentential_raising_or_perception</feature> to the lexical entries for the main verbs in the examples which are perception verbs (and remove the separate <feature>perception</feature> feature.  
+      Add the feature <feature>sentential_raising_or_copular</feature> to the lexical entries for the main verbs in the examples which are copular verbs, and remove the separate <feature>copular</feature> feature.  
+      In the examples with adjectives, it is really the adjective that is acting as the predicate that selects the complement clause.  Therefore, add the feature <feature>sentential_A</feature> to their lexical entries. Add the feature <feature>expletive</feature> to the <example>dummy it</example> if applicable in your language.  Please note that these raising examples have not been tested fully.</instruction>
        <br/>
      <introduction>Des causatifs composés de deux propositions ont un objet qui fonctionne aussi comme le sujet de la proposition complétive. Cette proposition complétive est toujours non-finie mais n'a pas besoin du marqueur non-fini avec certains verbes (en anglais), comme dans 20, 
         alors que cela est nécessaire avec d'autres comme dans 21 :</introduction>

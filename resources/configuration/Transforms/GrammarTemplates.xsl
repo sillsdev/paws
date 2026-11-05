@@ -487,6 +487,9 @@ Let excl-initial                         be    &lt;head type excl-initial&gt;   
 Let excl-final                           be    &lt;head type excl-final&gt;          = +
 Let exist                                be    &lt;head type existential&gt;         = +
 Let experiencer                          be    &lt;head subject head case&gt;        = dative
+Let expletive                            be    &lt;cat&gt;                           = Pron      | added November 2026 - needs more testing
+                                               &lt;head type expletive&gt;           = +
+                                               &lt;head agr&gt;                      = none
 Let feminine                             be    &lt;head agr gender&gt;               = feminine
 Let feminine_absolutive                  be   { [head:[object:[head:[agr:[gender:feminine]]]
                                                        type:[transitive:+]]]
@@ -889,6 +892,9 @@ Let sentential_raising                   be   { [head:[type:[sentential:+
                                                                        infl:[finite:-]]]]]
                                                 [head:[type:[sentential:+
                                                              transitive:+]
+                                                      [subject:[head:[agr:none]                        | for dummy "it" added NOvember 2026
+                                                                     [cat:Pron]
+                                                                     [type:[expletive:+]]]]
                                                        embedded:[cat:CP
                                                                  head:[subject:[head:[type:[pro-drop:-]]]
                                                                        infl:[finite:+]]]]] }
@@ -899,6 +905,9 @@ Let sentential_raising_or_copular        be   { [head:[type:[sentential:+
                                                                        infl:[finite:-]]]]]
                                                 [head:[type:[sentential:+
                                                              transitive:+]
+                                                      [subject:[head:[agr:none]                        | for dummy "it" added NOvember 2026
+                                                                     [cat:Pron]
+                                                                     [type:[expletive:+]]]]
                                                        embedded:[cat:CP
                                                                  head:[subject:[head:[type:[pro-drop:-]]]
                                                                        infl:[finite:+]]]]] 
@@ -913,6 +922,9 @@ Let sentential_raising_or_perception     be   { [head:[type:[sentential:+
                                                                        infl:[finite:-]]]]]
                                                 [head:[type:[sentential:+
                                                              transitive:+]
+                                                      [subject:[head:[agr:none]                        | for dummy "it" added NOvember 2026
+                                                                     [cat:Pron]
+                                                                     [type:[expletive:+]]]]
                                                        embedded:[cat:CP
                                                                  head:[subject:[head:[type:[pro-drop:-]]]
                                                                        infl:[finite:+]]]]] 
@@ -6497,8 +6509,68 @@ Let makeV                                be    &lt;cat&gt;                      
 <xsl:if test="normalize-space(//ip/@voice)='yes' and normalize-space(//ip/@voiceCase)='no' or normalize-space(//ip/@voice)='no'">
 <xsl:text>
                                                &lt;head infl voice&gt;                 = !none
-       </xsl:text>
+     </xsl:text>
 </xsl:if>
+<xsl:text>
+       
+
+Let adj        be [Adj]
+Let adp        be [P]
+Let post       be [P] [PP-final]
+Let prep       be [P] [PP-initial]
+Let adv        be [Adv]
+Let clf        be [Class]
+Let nclf       be [Class]
+Let conn       be [Conj]
+Let coordconn  be [Conj]
+Let correlconn be [Conj]
+Let subordconn be [COnj]
+Let comp       be [C]
+Let rel        be [C] [relative]
+Let det        be [Det]
+Let art        be [Art]
+Let def        be [Art] [definite]
+Let indf       be [Art] [indefinite]
+Let dem        be [Dem]
+Let quant      be [Q]
+Let num        be [Num]
+Let cardnum    be [Num]
+Let distrnum   be [Num]
+Let multipnum  be [Num]
+Let ordnum     be [Num] [ordinal]
+Let partnum    be [Num]
+Let existmrkr  be [Adv] [exist]
+Let expl       be [expletive]
+Let interj     be [Intj]
+Let noun       be [N]
+Let nom        be [N]
+Let gerund     be [V] [gerund]
+Let nprop      be [N] [proper]
+Let subs       be [N]
+Let ptcp       be [V] [participle]
+Let q          be [C] [question]
+Let pro-form   be [Pron]
+Let interrog   be [Pron] [wh]
+Let pro-adj    be [Adj] [wh]
+Let pro-adv    be [Adv] [wh]
+Let pro        be [Pron]
+Let indfpro    be [Pron] [indefinite]
+Let pers       be [Pron]
+Let emph       be [Pron] [emphatic]
+Let poss       be [Pron} [possessive]
+Let refl       be [Pron] [reflexive]
+Let recp       be [Pron] [reciprocal]
+Let relpro     be [C] [relative]
+Let v          be [V]
+Let cop        be [V] [copular]
+Let vd         be [V] [ditransitive]
+Let vi         be [V] [intransitive]
+Let vt         be [V] [transitive]
+
+
+
+</xsl:text>
+
        
               
               
