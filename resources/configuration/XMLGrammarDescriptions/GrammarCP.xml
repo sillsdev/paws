@@ -93,13 +93,21 @@ CP = C'
           &lt;CP option&gt; = 1
 </rule>
     <showWhen id="CPoption1">
-        <whenValue element="q" attr="mainYN" value="no" negateValue="yes"/>
-        <and/>
-        <whenValue element="q" attr="mainYNWord" value="no" negateValue="yes"/>
+        <whenValue element="q" attr="mainYN" value="no" negateValue="no"/>
         <or/>
-        <whenValue element="q" attr="mainCont" value="no" negateValue="yes"/>
+        <whenValue element="q" attr="mainYN" value="noAux" negateValue="no"/>
+        <or/>
+        <whenValue element="q" attr="mainYN" value="yes" negateValue="no"/>
         <and/>
-        <whenValue element="q" attr="mainContWord" value="no" negateValue="yes"/>
+        <whenValue element="q" attr="mainYNWord" value="no" negateValue="no"/>
+        <or/>
+        <whenValue element="q" attr="mainCont" value="no" negateValue="no"/>
+        <or/>
+        <whenValue element="q" attr="mainCont" value="noAux" negateValue="no"/>
+        <or/>
+        <whenValue element="q" attr="mainCont" value="yes" negateValue="no"/>
+        <and/>
+        <whenValue element="q" attr="mainContWord" value="no" negateValue="no"/>
     </showWhen>
 <rule show="CPoption2a">
 rule {CP option 2a - DP specifier initial, wh, root}

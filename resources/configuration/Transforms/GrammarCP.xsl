@@ -90,7 +90,7 @@ CP = CP_1  CP_2
        
    
     
-<xsl:if test="normalize-space(//q/@mainYN)!='no' and normalize-space(//q/@mainYNWord)!='no' or normalize-space(//q/@mainCont)!='no' and normalize-space(//q/@mainContWord)!='no'">
+<xsl:if test="normalize-space(//q/@mainYN)='no' or normalize-space(//q/@mainYN)='noAux' or normalize-space(//q/@mainYN)='yes' and normalize-space(//q/@mainYNWord)='no' or normalize-space(//q/@mainCont)='no' or normalize-space(//q/@mainCont)='noAux' or normalize-space(//q/@mainCont)='yes' and normalize-space(//q/@mainContWord)='no'">
 <xsl:text>
 rule {CP option 1 - no fronting, root}
 CP = C'
@@ -103,6 +103,14 @@ CP = C'
 </xsl:text>
 </xsl:if>
     
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
