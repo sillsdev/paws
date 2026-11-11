@@ -51633,7 +51633,7 @@ rule {VP option 9uAgentDPQ - V initial, passive, with DP Agent questioned, PP di
 VP = V PP
           &lt;VP head&gt; = &lt;V head&gt;
           &lt;V head object&gt; = &lt;VP head fronted&gt;
-          &lt;V head indirectobject&gt; = &lt;PP head bject&gt;
+          &lt;V head indirectobject&gt; = &lt;PP head object&gt;
           &lt;V head infl valence&gt; = passive
           &lt;PP head infl valence&gt; = active
           &lt;VP head type auxiliary_required&gt; = +   | passive Aux required
