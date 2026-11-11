@@ -105,7 +105,7 @@
                 </featureRow>
             </featureChart>
         </prompt>
-        <instruction id="NPPossAgr2Instruction" show="swNPPossAgrYes"> In the lexicon, add one or more features from the following list as appropriate to the affix entries.<br/> 
+        <instruction id="NPPossAgr2Instruction" show="swNPPossAgrYes"> 
             Note that this possessor agreement, at least in person features, cannot be tested until pronoun possessors are added in <section number="7">Pronouns</section>.</instruction>
         <instruction id="NPPossNounAgrKeyedInstruction" show="swNPArtAndOrDem">If you followed instructions, any agreement marking on nouns for number, gender, animacy and/or class should have already been done in the section on Articles and Demonstratives.  If not, return there to complete the feature marking in the lexicon, before continuing on.</instruction>
        <br/><br/>
